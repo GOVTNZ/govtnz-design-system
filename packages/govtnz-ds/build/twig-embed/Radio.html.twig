@@ -1,12 +1,12 @@
 <input
-aria-describedby="{{ hintId }}"
+aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-radios__input{{ if fakeFocus }} :focus{{ endif }}"
-id="{{ gov1 }}"
-name="{{ name }}"
+id="{{ gov1 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 type="radio"
 disabled="{{ if disabled }}disabled{{ endif }}"
 readonly="{{ if readOnly }}readOnly{{ endif }}"
 autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
-value="{{ value }}"
+value="{{ value | escape('html_attr') }}"
 checked="{{ if checked }}checked{{ endif }}"
 />

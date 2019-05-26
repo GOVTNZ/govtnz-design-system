@@ -10,7 +10,7 @@ class="g-textareaWithLabelAsPageHeading-label-wrapper"
     
 <label
 class="g-textareaWithLabelAsPageHeading-label"
-for="{{ textareaWithPageHeading }}"
+for="{{ textareaWithPageHeading | escape('html_attr') }}"
 >
   
       Full address
@@ -23,7 +23,7 @@ for="{{ textareaWithPageHeading }}"
   
 <textarea
 class="g-textareaWithLabelAsPageHeading-textarea"
-id="{{ textareaWithPageHeading }}"
+id="{{ textareaWithPageHeading | escape('html_attr') }}"
 name="address"
 rows="5"
 />

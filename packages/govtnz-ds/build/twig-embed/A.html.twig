@@ -1,7 +1,7 @@
 <a
 class="g-a-link{{ if isMuted }} g-a-link--muted{{ endif }}"
-href="{{ href }}"
-rel="{{ rel }}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
 target=""
 >
   {{{children}}}

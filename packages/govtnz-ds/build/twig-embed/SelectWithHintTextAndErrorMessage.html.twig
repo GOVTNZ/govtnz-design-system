@@ -5,7 +5,7 @@ class="g-selectWithHintTextAndErrorMessage-form-group g-selectWithHintTextAndErr
   
 <label
 class="g-selectWithHintTextAndErrorMessage-label"
-for="{{ select2 }}"
+for="{{ select2 | escape('html_attr') }}"
 >
   
     Label text goes here
@@ -15,7 +15,7 @@ for="{{ select2 }}"
   
 <span
 class="g-selectWithHintTextAndErrorMessage-hint"
-id="{{ select2Hint }}"
+id="{{ select2Hint | escape('html_attr') }}"
 >
   
     Hint text goes here
@@ -25,7 +25,7 @@ id="{{ select2Hint }}"
   
 <span
 class="g-selectWithHintTextAndErrorMessage-error-message"
-id="{{ select2Error }}"
+id="{{ select2Error | escape('html_attr') }}"
 >
   
     Error message goes here
@@ -34,10 +34,10 @@ id="{{ select2Error }}"
   
   
 <select
-aria-describedby="{{ select2Hint }} {{ select2Error }}"
+aria-describedby="{{ select2Hint | escape('html_attr') }} {{ select2Error | escape('html_attr') }}"
 class="g-selectWithHintTextAndErrorMessage-select g-selectWithHintTextAndErrorMessage-select--error"
-id="{{ select2 }}"
-name="{{ name }}"
+id="{{ select2 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 multiple="{{ if multiple }}multiple{{ endif }}"
 >
   

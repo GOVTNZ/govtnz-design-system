@@ -12,7 +12,7 @@ class="g-characterCountWithCustomRows-form-group"
     
 <label
 class="g-characterCountWithCustomRows-label"
-for="{{ customRows }}"
+for="{{ customRows | escape('html_attr') }}"
 >
   
       Full address
@@ -22,14 +22,14 @@ for="{{ customRows }}"
     
 <textarea
 class="g-characterCountWithCustomRows-textarea js-character-count"
-id="{{ customRows }}"
+id="{{ customRows | escape('html_attr') }}"
 name="custom"
 rows="8"
 />
 <span
 aria-live="polite"
 class="g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
-id="{{ customRowsInfo }}"
+id="{{ customRowsInfo | escape('html_attr') }}"
 >
   You have 10 characters remaining
 </span>

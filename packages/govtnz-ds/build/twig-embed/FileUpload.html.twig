@@ -5,7 +5,7 @@ class="g-fileUpload-form-group"
   
 <label
 class="g-fileUpload-label"
-for="{{ fileUpload1 }}"
+for="{{ fileUpload1 | escape('html_attr') }}"
 >
   
     Upload a file
@@ -15,8 +15,8 @@ for="{{ fileUpload1 }}"
   
 <input
 class="g-file-upload"
-id="{{ fileUpload1 }}"
-name="{{ name }}"
+id="{{ fileUpload1 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 type="file"
 disabled="{{ if disabled }}disabled{{ endif }}"
 readonly="{{ if readOnly }}readOnly{{ endif }}"

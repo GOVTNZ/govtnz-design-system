@@ -4,7 +4,7 @@
         
 <label
 class="g-selectBlock-label"
-for="{{ selectId }}"
+for="{{ selectId | escape('html_attr') }}"
 >
   
           
@@ -16,8 +16,8 @@ for="{{ selectId }}"
         
 <select
 class="g-selectBlock-select{{ if hasError }} g-selectBlock-select--error{{ endif }}"
-id="{{ selectId }}"
-name="{{ name }}"
+id="{{ selectId | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 multiple="{{ if multiple }}multiple{{ endif }}"
 >
   {{{children}}}

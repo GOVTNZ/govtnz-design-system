@@ -4,7 +4,7 @@ class="g-fieldset-form-group"
   
       
 <fieldset
-aria-describedby="{{ hintId }}"
+aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-fieldset"
 >
   {{{children}}}

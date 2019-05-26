@@ -15,8 +15,8 @@ class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__list-item"
       
 <a
 class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link"
-href="{{ href }}"
-rel="{{ rel }}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
 target=""
 >
   Home
@@ -33,8 +33,8 @@ class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__list-item"
       
 <a
 class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link"
-href="{{ href2 }}"
-rel="{{ rel2 }}"
+href="{{ href2 | escape('html_attr') }}"
+rel="{{ rel2 | escape('html_attr') }}"
 target=""
 >
   Passports, travel and living abroad

@@ -5,7 +5,7 @@ class="g-selectWithFullWidthOverride-form-group"
   
 <label
 class="g-selectWithFullWidthOverride-label"
-for="{{ select1 }}"
+for="{{ select1 | escape('html_attr') }}"
 >
   
     Label text goes here
@@ -15,8 +15,8 @@ for="{{ select1 }}"
   
 <select
 class="g-selectWithFullWidthOverride-select g-!-width-full"
-id="{{ select1 }}"
-name="{{ name }}"
+id="{{ select1 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 multiple="{{ if multiple }}multiple{{ endif }}"
 >
   

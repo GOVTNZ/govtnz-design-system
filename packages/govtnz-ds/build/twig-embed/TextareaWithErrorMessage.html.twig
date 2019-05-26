@@ -5,7 +5,7 @@ class="g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-gro
   
 <label
 class="g-textareaWithErrorMessage-label"
-for="{{ noNiReason }}"
+for="{{ noNiReason | escape('html_attr') }}"
 >
   
     Why can't you provide a National Insurance number?
@@ -15,7 +15,7 @@ for="{{ noNiReason }}"
   
 <span
 class="g-textareaWithErrorMessage-error-message"
-id="{{ noNiReasonError }}"
+id="{{ noNiReasonError | escape('html_attr') }}"
 >
   
     You must provide an explanation
@@ -24,9 +24,9 @@ id="{{ noNiReasonError }}"
   
   
 <textarea
-aria-describedby="{{ noNiReasonError }}"
+aria-describedby="{{ noNiReasonError | escape('html_attr') }}"
 class="g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error"
-id="{{ noNiReason }}"
+id="{{ noNiReason | escape('html_attr') }}"
 name="no-ni-reason"
 rows="5"
 />

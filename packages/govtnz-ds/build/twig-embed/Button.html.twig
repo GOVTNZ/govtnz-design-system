@@ -3,7 +3,7 @@ aria-disabled="{{ if disabled }}true{{ endif }}"
 class="g-button{{ if disabled }} g-button--disabled{{ endif }}"
 disabled="{{ if disabled }}true{{ endif }}"
 type=""
-name="{{ name }}"
+name="{{ name | escape('html_attr') }}"
 >
   {{{children}}}
 </button>

@@ -1,5 +1,5 @@
 <div
-aria-labelledby="{{ errorSummaryTitle }}"
+aria-labelledby="{{ errorSummaryTitle | escape('html_attr') }}"
 class="g-error-summary optional-extra-class"
 data-module="error-summary"
 role="alert"
@@ -9,7 +9,7 @@ tabindex="-1"
   
 <h2
 class="g-error-summary__title"
-id="{{ errorSummaryTitle }}"
+id="{{ errorSummaryTitle | escape('html_attr') }}"
 >
   
     Message to alert the user to a problem goes here
@@ -40,8 +40,8 @@ class="g-errorSummary-list g-error-summary__list"
   
         
 <a
-href="{{ href }}"
-rel="{{ rel }}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
 target=""
 >
   Descriptive link to the question with an error
@@ -56,8 +56,8 @@ target=""
   
         
 <a
-href="{{ href2 }}"
-rel="{{ rel2 }}"
+href="{{ href2 | escape('html_attr') }}"
+rel="{{ rel2 | escape('html_attr') }}"
 target=""
 >
   Descriptive link to the question with an error

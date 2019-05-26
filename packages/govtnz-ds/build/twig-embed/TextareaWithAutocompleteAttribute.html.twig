@@ -5,7 +5,7 @@ class="g-textareaWithAutocompleteAttribute-form-group"
   
 <label
 class="g-textareaWithAutocompleteAttribute-label"
-for="{{ textareaWithAutocompleteAttribute }}"
+for="{{ textareaWithAutocompleteAttribute | escape('html_attr') }}"
 >
   
     Full address
@@ -16,7 +16,7 @@ for="{{ textareaWithAutocompleteAttribute }}"
 <textarea
 autocomplete="street-address"
 class="g-textareaWithAutocompleteAttribute-textarea"
-id="{{ textareaWithAutocompleteAttribute }}"
+id="{{ textareaWithAutocompleteAttribute | escape('html_attr') }}"
 name="address"
 rows="5"
 />

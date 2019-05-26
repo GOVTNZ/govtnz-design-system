@@ -5,7 +5,7 @@ class="g-textareaWithDefaultValue-form-group"
   
 <label
 class="g-textareaWithDefaultValue-label"
-for="{{ fullAddress }}"
+for="{{ fullAddress | escape('html_attr') }}"
 >
   
     Full address
@@ -15,7 +15,7 @@ for="{{ fullAddress }}"
   
 <textarea
 class="g-textareaWithDefaultValue-textarea"
-id="{{ fullAddress }}"
+id="{{ fullAddress | escape('html_attr') }}"
 name="address"
 rows="5"
 >

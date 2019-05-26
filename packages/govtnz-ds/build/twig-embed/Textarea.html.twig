@@ -5,7 +5,7 @@ class="g-textarea-form-group"
   
 <label
 class="g-textarea-label"
-for="{{ moreDetail }}"
+for="{{ moreDetail | escape('html_attr') }}"
 >
   
     Can you provide more detail?
@@ -15,7 +15,7 @@ for="{{ moreDetail }}"
   
 <span
 class="g-textarea-hint"
-id="{{ moreDetailHint }}"
+id="{{ moreDetailHint | escape('html_attr') }}"
 >
   
     Don't include personal or financial information, eg your National Insurance
@@ -25,9 +25,9 @@ id="{{ moreDetailHint }}"
   
   
 <textarea
-aria-describedby="{{ moreDetailHint }}"
+aria-describedby="{{ moreDetailHint | escape('html_attr') }}"
 class="g-textarea"
-id="{{ moreDetail }}"
+id="{{ moreDetail | escape('html_attr') }}"
 name="more-detail"
 rows="5"
 />

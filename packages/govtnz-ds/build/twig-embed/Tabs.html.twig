@@ -27,14 +27,14 @@ role="presentation"
   
       
 <a
-aria-controls="{{ pastDay }}"
+aria-controls="{{ pastDay | escape('html_attr') }}"
 aria-selected="true"
 class="g-tabs__tab g-tabs__tab--selected"
-href="{{ href }}"
-id="{{ tabPastDay }}"
+href="{{ href | escape('html_attr') }}"
+id="{{ tabPastDay | escape('html_attr') }}"
 role="tab"
 tabindex="0"
-rel="{{ rel }}"
+rel="{{ rel | escape('html_attr') }}"
 target=""
 >
   
@@ -53,14 +53,14 @@ role="presentation"
   
       
 <a
-aria-controls="{{ pastWeek }}"
+aria-controls="{{ pastWeek | escape('html_attr') }}"
 aria-selected="false"
 class="g-tabs__tab"
-href="{{ href2 }}"
-id="{{ tabPastWeek }}"
+href="{{ href2 | escape('html_attr') }}"
+id="{{ tabPastWeek | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
-rel="{{ rel2 }}"
+rel="{{ rel2 | escape('html_attr') }}"
 target=""
 >
   
@@ -79,14 +79,14 @@ role="presentation"
   
       
 <a
-aria-controls="{{ pastMonth }}"
+aria-controls="{{ pastMonth | escape('html_attr') }}"
 aria-selected="false"
 class="g-tabs__tab"
-href="{{ href3 }}"
-id="{{ tabPastMonth }}"
+href="{{ href3 | escape('html_attr') }}"
+id="{{ tabPastMonth | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
-rel="{{ rel3 }}"
+rel="{{ rel3 | escape('html_attr') }}"
 target=""
 >
   
@@ -105,14 +105,14 @@ role="presentation"
   
       
 <a
-aria-controls="{{ pastYear }}"
+aria-controls="{{ pastYear | escape('html_attr') }}"
 aria-selected="false"
 class="g-tabs__tab"
-href="{{ href4 }}"
-id="{{ tabPastYear }}"
+href="{{ href4 | escape('html_attr') }}"
+id="{{ tabPastYear | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
-rel="{{ rel4 }}"
+rel="{{ rel4 | escape('html_attr') }}"
 target=""
 >
   
@@ -129,9 +129,9 @@ target=""
 
   
 <section
-aria-labelledby="{{ tabPastDay }}"
+aria-labelledby="{{ tabPastDay | escape('html_attr') }}"
 class="g-tabs__panel"
-id="{{ pastDay }}"
+id="{{ pastDay | escape('html_attr') }}"
 role="tabpanel"
 >
   
@@ -215,9 +215,9 @@ class="g-tabs-table__row"
   
   
 <section
-aria-labelledby="{{ tabPastWeek }}"
+aria-labelledby="{{ tabPastWeek | escape('html_attr') }}"
 class="g-tabs__panel g-tabs__panel--hidden"
-id="{{ pastWeek }}"
+id="{{ pastWeek | escape('html_attr') }}"
 role="tabpanel"
 >
   
@@ -301,9 +301,9 @@ class="g-tabs-table__row"
   
   
 <section
-aria-labelledby="{{ tabPastMonth }}"
+aria-labelledby="{{ tabPastMonth | escape('html_attr') }}"
 class="g-tabs__panel g-tabs__panel--hidden"
-id="{{ pastMonth }}"
+id="{{ pastMonth | escape('html_attr') }}"
 role="tabpanel"
 >
   
@@ -387,9 +387,9 @@ class="g-tabs-table__row"
   
   
 <section
-aria-labelledby="{{ tabPastYear }}"
+aria-labelledby="{{ tabPastYear | escape('html_attr') }}"
 class="g-tabs__panel g-tabs__panel--hidden"
-id="{{ pastYear }}"
+id="{{ pastYear | escape('html_attr') }}"
 role="tabpanel"
 >
   

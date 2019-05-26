@@ -95,6 +95,10 @@ const IndexPage = () => (
               <A href="https://www.styled-components.com/">Styled Components</A>
             </Li>
             <Li>
+              <A href="https://vuejs.org/">Vue</A> components, in JavaScript or
+              TypeScript
+            </Li>
+            <Li>
               <A href="https://handlebarsjs.com/">Mustache / Handlebars</A>
             </Li>
           </Ul>
@@ -103,10 +107,6 @@ const IndexPage = () => (
             <Li>
               SilverStripe for{' '}
               <A href="https://www.silverstripe.org/">SilverStripe</A> 3 and 4.
-            </Li>
-            <Li>
-              <A href="https://vuejs.org/">Vue</A> components, in JavaScript or
-              TypeScript
             </Li>
           </Ul>
           <P styleSize="medium">
