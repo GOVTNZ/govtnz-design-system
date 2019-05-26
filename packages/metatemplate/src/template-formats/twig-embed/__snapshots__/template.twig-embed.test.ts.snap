@@ -21,10 +21,10 @@ Object {
       "files": Object {
         "twig-embed/imgSrc.html.twig": "<img
 class=\\"frogs\\"
-src=\\"{{src}}\\"
-width=\\"{{width}}\\"
-height=\\"{{height}}\\"
-srcset=\\"{{srcset}}\\"
+src=\\"{{ src | escape('html_attr') }}\\"
+width=\\"{{ width | escape('html_attr') }}\\"
+height=\\"{{ height | escape('html_attr') }}\\"
+srcset=\\"{{ srcset | escape('html_attr') }}\\"
 crossorigin=\\"\\"
 />",
       },
@@ -56,7 +56,7 @@ Array [
   Object {
     "files": Object {
       "twig-embed/row.html.twig": "<div
-class=\\"g-flex-row{{#isReversed}} g-flex-reverse{{/isReversed}}\\"
+class=\\"g-flex-row{{ if isReversed }} g-flex-reverse{{ endif }}\\"
 >
   
             
@@ -96,14 +96,14 @@ Object {
     Object {
       "files": Object {
         "twig-embed/input.html.twig": "<input
-id=\\"{{textId}}\\"
+id=\\"{{ textId | escape('html_attr') }}\\"
 type=\\"checkbox\\"
-name=\\"{{name}}\\"
-disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
-readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
-autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
-value=\\"{{value}}\\"
-checked=\\"{{#checked}}checked{{/checked}}\\"
+name=\\"{{ name | escape('html_attr') }}\\"
+disabled=\\"{{ if disabled }}disabled{{ endif }}\\"
+readonly=\\"{{ if readOnly }}readOnly{{ endif }}\\"
+autofocus=\\"{{ if autoFocus }}autoFocus{{ endif }}\\"
+value=\\"{{ value | escape('html_attr') }}\\"
+checked=\\"{{ if checked }}checked{{ endif }}\\"
 />",
       },
       "formatId": "twig-embed",
@@ -119,17 +119,17 @@ Object {
     Object {
       "files": Object {
         "twig-embed/input.html.twig": "<label
-for=\\"{{textId}}\\"
+for=\\"{{ textId | escape('html_attr') }}\\"
 >
 <input
-id=\\"{{textId}}\\"
+id=\\"{{ textId | escape('html_attr') }}\\"
 type=\\"checkbox\\"
-name=\\"{{name}}\\"
-disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
-readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
-autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
-value=\\"{{value}}\\"
-checked=\\"{{#checked}}checked{{/checked}}\\"
+name=\\"{{ name | escape('html_attr') }}\\"
+disabled=\\"{{ if disabled }}disabled{{ endif }}\\"
+readonly=\\"{{ if readOnly }}readOnly{{ endif }}\\"
+autofocus=\\"{{ if autoFocus }}autoFocus{{ endif }}\\"
+value=\\"{{ value | escape('html_attr') }}\\"
+checked=\\"{{ if checked }}checked{{ endif }}\\"
 />
 </label>",
       },
@@ -146,7 +146,7 @@ Object {
     Object {
       "files": Object {
         "twig-embed/h1Id.html.twig": "<h1
-id=\\"{{id}}\\"
+id=\\"{{ id | escape('html_attr') }}\\"
 >
   stuff
 </h1>",
@@ -162,9 +162,9 @@ Array [
   Object {
     "files": Object {
       "twig-embed/a.html.twig": "<a
-class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
-href=\\"{{href}}\\"
-rel=\\"{{rel}}\\"
+class=\\"g-link{{ if isMuted }} g-link--muted{{ endif }}\\"
+href=\\"{{ href | escape('html_attr') }}\\"
+rel=\\"{{ rel | escape('html_attr') }}\\"
 target=\\"\\"
 >
   {{{children}}}
@@ -180,7 +180,7 @@ Array [
   Object {
     "files": Object {
       "twig-embed/container.html.twig": "<div
-class=\\"g-flex-col{{#isReversed}} g-flex-reverse{{/isReversed}}\\"
+class=\\"g-flex-col{{ if isReversed }} g-flex-reverse{{ endif }}\\"
 >
   
         
@@ -201,19 +201,19 @@ Object {
     Object {
       "files": Object {
         "twig-embed/input.html.twig": "<label
-for=\\"{{textId}}\\"
+for=\\"{{ textId | escape('html_attr') }}\\"
 >
   Label text
 </label>
 <input
-id=\\"{{textId}}\\"
+id=\\"{{ textId | escape('html_attr') }}\\"
 type=\\"\\"
-name=\\"{{name}}\\"
-disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
-readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
-autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
-value=\\"{{value}}\\"
-spellcheck=\\"{{#spellCheck}}spellCheck{{/spellCheck}}\\"
+name=\\"{{ name | escape('html_attr') }}\\"
+disabled=\\"{{ if disabled }}disabled{{ endif }}\\"
+readonly=\\"{{ if readOnly }}readOnly{{ endif }}\\"
+autofocus=\\"{{ if autoFocus }}autoFocus{{ endif }}\\"
+value=\\"{{ value | escape('html_attr') }}\\"
+spellcheck=\\"{{ if spellCheck }}spellCheck{{ endif }}\\"
 autocomplete=\\"\\"
 />",
       },
@@ -228,9 +228,9 @@ Array [
   Object {
     "files": Object {
       "twig-embed/a.html.twig": "<a
-class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
-href=\\"{{href}}\\"
-rel=\\"{{rel}}\\"
+class=\\"g-link{{ if isMuted }} g-link--muted{{ endif }}\\"
+href=\\"{{ href | escape('html_attr') }}\\"
+rel=\\"{{ rel | escape('html_attr') }}\\"
 target=\\"\\"
 >
   {{{children}}}
@@ -246,9 +246,9 @@ Array [
   Object {
     "files": Object {
       "twig-embed/a.html.twig": "<a
-class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
-href=\\"{{href}}\\"
-rel=\\"{{rel}}\\"
+class=\\"g-link{{ if isMuted }} g-link--muted{{ endif }}\\"
+href=\\"{{ href | escape('html_attr') }}\\"
+rel=\\"{{ rel | escape('html_attr') }}\\"
 target=\\"\\"
 >
   {{{children}}}
@@ -265,8 +265,8 @@ Array [
     "files": Object {
       "twig-embed/a.html.twig": "<a
 class=\\"g-link\\"
-href=\\"{{href}}\\"
-rel=\\"{{rel}}\\"
+href=\\"{{ href | escape('html_attr') }}\\"
+rel=\\"{{ rel | escape('html_attr') }}\\"
 target=\\"\\"
 >
   {{{children}}}
