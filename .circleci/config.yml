@@ -60,6 +60,6 @@ jobs:
                 version="$(git show --format="%h" --no-patch)"
                 echo "Version ${version}"
                 aws s3 sync --delete --metadata "version=${version}" --cache-control max-age=900 . s3://${PROJECT}-${ENVIRONMENT}/;
-                aws cloudfront create-invalidation --distribution-id ${ENVIRONMENT^^}_DISTRIBUTION_ID --paths '/*';
+                aws cloudfront create-invalidation --distribution-id $SITE_DISTRIBUTION_ID --paths '/*';
                 exit $?
             fi
