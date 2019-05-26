@@ -1,0 +1,13 @@
+{
+  "name": "@govtnz/ds-boilerplate-twig-embed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "demo": "node src/index.js"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  }
+}

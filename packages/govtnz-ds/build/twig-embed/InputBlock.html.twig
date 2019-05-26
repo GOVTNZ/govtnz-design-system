@@ -1,11 +1,11 @@
 <div
-class="g-inputBlock-form-group{{#hasError}} g-inputBlock-form-group--error{{/hasError}}"
+class="g-inputBlock-form-group{{ if hasError }} g-inputBlock-form-group--error{{ endif }}"
 >
   
       
 <label
 class="g-inputBlock-label"
-for="{{inputId}}"
+for="{{ inputId }}"
 >
   {{{label}}}
 </label>
@@ -13,7 +13,7 @@ for="{{inputId}}"
       
 <div
 class="g-inputBlock-hint"
-id="{{hintId}}"
+id="{{ hintId }}"
 >
   {{{hint}}}
 </div>
@@ -21,23 +21,23 @@ id="{{hintId}}"
       
 <div
 class="g-inputBlock-error-message"
-id="{{errorId}}"
+id="{{ errorId }}"
 >
   {{{error}}}
 </div>
   
       
 <input
-aria-describedby="{{hintId}} {{errorId}}"
-class="g-inputBlock-input{{#hasError}} g-inputBlock-input--error{{/hasError}} {{#fakeFocus}} :focus{{/fakeFocus}}"
-id="{{inputId}}"
-name="{{name}}"
+aria-describedby="{{ hintId }} {{ errorId }}"
+class="g-inputBlock-input{{ if hasError }} g-inputBlock-input--error{{ endif }} {{ if fakeFocus }} :focus{{ endif }}"
+id="{{ inputId }}"
+name="{{ name }}"
 type=""
-disabled="{{#disabled}}disabled{{/disabled}}"
-readonly="{{#readOnly}}readOnly{{/readOnly}}"
-autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
-value="{{value}}"
-spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+value="{{ value }}"
+spellcheck="{{ if spellCheck }}spellCheck{{ endif }}"
 autocomplete=""
 />
   

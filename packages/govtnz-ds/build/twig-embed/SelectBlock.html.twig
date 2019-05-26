@@ -4,7 +4,7 @@
         
 <label
 class="g-selectBlock-label"
-for="{{selectId}}"
+for="{{ selectId }}"
 >
   
           
@@ -15,10 +15,10 @@ for="{{selectId}}"
   
         
 <select
-class="g-selectBlock-select{{#hasError}} g-selectBlock-select--error{{/hasError}}"
-id="{{selectId}}"
-name="{{name}}"
-multiple="{{#multiple}}multiple{{/multiple}}"
+class="g-selectBlock-select{{ if hasError }} g-selectBlock-select--error{{ endif }}"
+id="{{ selectId }}"
+name="{{ name }}"
+multiple="{{ if multiple }}multiple{{ endif }}"
 >
   {{{children}}}
 </select>

@@ -4,7 +4,7 @@ class="g-dateInputWithAutocompleteValues-form-group"
   
   
 <fieldset
-aria-describedby="{{dobWithAutocompleteAttributeHint}}"
+aria-describedby="{{ dobWithAutocompleteAttributeHint }}"
 class="g-dateInputWithAutocompleteValues-fieldset"
 role="group"
 >
@@ -19,7 +19,7 @@ class="g-dateInputWithAutocompleteValues-fieldset__legend"
     
 <span
 class="g-dateInputWithAutocompleteValues-hint"
-id="{{dobWithAutocompleteAttributeHint}}"
+id="{{ dobWithAutocompleteAttributeHint }}"
 >
   
       For example, 31 3 1980
@@ -29,7 +29,7 @@ id="{{dobWithAutocompleteAttributeHint}}"
     
 <div
 class="g-dateInputWithAutocompleteValues-date-input"
-id="{{dobWithAutocompleteAttribute}}"
+id="{{ dobWithAutocompleteAttribute }}"
 >
   
       
@@ -45,7 +45,7 @@ class="g-dateInputWithAutocompleteValues-form-group"
           
 <label
 class="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-for="{{dobWithAutocompleteAttributeDay}}"
+for="{{ dobWithAutocompleteAttributeDay }}"
 >
   
             Day
@@ -56,15 +56,15 @@ for="{{dobWithAutocompleteAttributeDay}}"
 <input
 autocomplete=""
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-id="{{dobWithAutocompleteAttributeDay}}"
-name="{{name}}"
+id="{{ dobWithAutocompleteAttributeDay }}"
+name="{{ name }}"
 pattern="[0-9]*"
 type=""
-disabled="{{#disabled}}disabled{{/disabled}}"
-readonly="{{#readOnly}}readOnly{{/readOnly}}"
-autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
-value="{{value}}"
-spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+value="{{ value }}"
+spellcheck="{{ if spellCheck }}spellCheck{{ endif }}"
 />
   
         
@@ -86,7 +86,7 @@ class="g-dateInputWithAutocompleteValues-form-group"
           
 <label
 class="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-for="{{dobWithAutocompleteAttributeMonth}}"
+for="{{ dobWithAutocompleteAttributeMonth }}"
 >
   
             Month
@@ -97,15 +97,15 @@ for="{{dobWithAutocompleteAttributeMonth}}"
 <input
 autocomplete=""
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-id="{{dobWithAutocompleteAttributeMonth}}"
-name="{{name2}}"
+id="{{ dobWithAutocompleteAttributeMonth }}"
+name="{{ name2 }}"
 pattern="[0-9]*"
 type=""
-disabled="{{#disabled2}}disabled2{{/disabled2}}"
-readonly="{{#readOnly2}}readOnly2{{/readOnly2}}"
-autofocus="{{#autoFocus2}}autoFocus2{{/autoFocus2}}"
-value="{{value2}}"
-spellcheck="{{#spellCheck2}}spellCheck2{{/spellCheck2}}"
+disabled="{{ if disabled2 }}disabled2{{ endif }}"
+readonly="{{ if readOnly2 }}readOnly2{{ endif }}"
+autofocus="{{ if autoFocus2 }}autoFocus2{{ endif }}"
+value="{{ value2 }}"
+spellcheck="{{ if spellCheck2 }}spellCheck2{{ endif }}"
 />
   
         
@@ -127,7 +127,7 @@ class="g-dateInputWithAutocompleteValues-form-group"
           
 <label
 class="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-for="{{dobWithAutocompleteAttributeYear}}"
+for="{{ dobWithAutocompleteAttributeYear }}"
 >
   
             Year
@@ -138,15 +138,15 @@ for="{{dobWithAutocompleteAttributeYear}}"
 <input
 autocomplete=""
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-id="{{dobWithAutocompleteAttributeYear}}"
-name="{{name3}}"
+id="{{ dobWithAutocompleteAttributeYear }}"
+name="{{ name3 }}"
 pattern="[0-9]*"
 type=""
-disabled="{{#disabled3}}disabled3{{/disabled3}}"
-readonly="{{#readOnly3}}readOnly3{{/readOnly3}}"
-autofocus="{{#autoFocus3}}autoFocus3{{/autoFocus3}}"
-value="{{value3}}"
-spellcheck="{{#spellCheck3}}spellCheck3{{/spellCheck3}}"
+disabled="{{ if disabled3 }}disabled3{{ endif }}"
+readonly="{{ if readOnly3 }}readOnly3{{ endif }}"
+autofocus="{{ if autoFocus3 }}autoFocus3{{ endif }}"
+value="{{ value3 }}"
+spellcheck="{{ if spellCheck3 }}spellCheck3{{ endif }}"
 />
   
         

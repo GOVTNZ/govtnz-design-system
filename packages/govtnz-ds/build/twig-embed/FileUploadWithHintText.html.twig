@@ -5,7 +5,7 @@ class="g-fileUploadWithHintText-form-group"
   
 <label
 class="g-fileUploadWithHintText-label"
-for="{{fileUpload2}}"
+for="{{ fileUpload2 }}"
 >
   
     Upload your photo
@@ -15,7 +15,7 @@ for="{{fileUpload2}}"
   
 <span
 class="g-fileUploadWithHintText-hint"
-id="{{fileUpload2Hint}}"
+id="{{ fileUpload2Hint }}"
 >
   
     Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or
@@ -25,14 +25,14 @@ id="{{fileUpload2Hint}}"
   
   
 <input
-aria-describedby="{{fileUpload2Hint}}"
+aria-describedby="{{ fileUpload2Hint }}"
 class="g-fileUploadWithHintText-file-upload"
-id="{{fileUpload2}}"
-name="{{name}}"
+id="{{ fileUpload2 }}"
+name="{{ name }}"
 type="file"
-disabled="{{#disabled}}disabled{{/disabled}}"
-readonly="{{#readOnly}}readOnly{{/readOnly}}"
-autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
 />
   
 

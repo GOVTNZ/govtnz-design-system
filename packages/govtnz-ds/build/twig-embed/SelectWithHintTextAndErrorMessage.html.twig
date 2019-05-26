@@ -5,7 +5,7 @@ class="g-selectWithHintTextAndErrorMessage-form-group g-selectWithHintTextAndErr
   
 <label
 class="g-selectWithHintTextAndErrorMessage-label"
-for="{{select2}}"
+for="{{ select2 }}"
 >
   
     Label text goes here
@@ -15,7 +15,7 @@ for="{{select2}}"
   
 <span
 class="g-selectWithHintTextAndErrorMessage-hint"
-id="{{select2Hint}}"
+id="{{ select2Hint }}"
 >
   
     Hint text goes here
@@ -25,7 +25,7 @@ id="{{select2Hint}}"
   
 <span
 class="g-selectWithHintTextAndErrorMessage-error-message"
-id="{{select2Error}}"
+id="{{ select2Error }}"
 >
   
     Error message goes here
@@ -34,11 +34,11 @@ id="{{select2Error}}"
   
   
 <select
-aria-describedby="{{select2Hint}} {{select2Error}}"
+aria-describedby="{{ select2Hint }} {{ select2Error }}"
 class="g-selectWithHintTextAndErrorMessage-select g-selectWithHintTextAndErrorMessage-select--error"
-id="{{select2}}"
-name="{{name}}"
-multiple="{{#multiple}}multiple{{/multiple}}"
+id="{{ select2 }}"
+name="{{ name }}"
+multiple="{{ if multiple }}multiple{{ endif }}"
 >
   
     Govt.NZ frontend option 1

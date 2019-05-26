@@ -1,9 +1,9 @@
 <button
-aria-disabled="{{#disabled}}true{{/disabled}}"
-class="g-button{{#disabled}} g-button--disabled{{/disabled}}"
-disabled="{{#disabled}}true{{/disabled}}"
+aria-disabled="{{ if disabled }}true{{ endif }}"
+class="g-button{{ if disabled }} g-button--disabled{{ endif }}"
+disabled="{{ if disabled }}true{{ endif }}"
 type=""
-name="{{name}}"
+name="{{ name }}"
 >
   {{{children}}}
 </button>

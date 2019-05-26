@@ -39,8 +39,8 @@ export default class TwigEmbed {
     this.unescapedKeys = [];
   }
 
-  wrapVar = (key: string): string => {
-    return `{{${key}}}`;
+  wrapVar = (key: string, isAttribute: boolean): string => {
+    return `{{ ${key} | escape('${isAttribute ? "html_attr" : "html"}') }}`;
   };
 
   ifVar = (
@@ -48,7 +48,9 @@ export default class TwigEmbed {
     key: string,
     children: string
   ): string => {
-    return `{{#${key}}}${needsPrecedingSpace ? " " : ""}${children}{{/${key}}}`;
+    return `{{ if ${key} }}${
+      needsPrecedingSpace ? " " : ""
+    }${children}{{ endif }}`;
   };
 
   renderAttribute = (attribute: TemplateAttribute, id: string): string => {
@@ -81,7 +83,7 @@ export default class TwigEmbed {
               break;
             }
             case "string": {
-              return this.wrapVar(dynamicKey.key);
+              return this.wrapVar(dynamicKey.key, true);
               break;
             }
             default: {

@@ -5,7 +5,7 @@ class="g-fileUploadWithErrorMessage-form-group g-fileUploadWithErrorMessage-form
   
 <label
 class="g-fileUploadWithErrorMessage-label"
-for="{{fileUpload3}}"
+for="{{ fileUpload3 }}"
 >
   
     Upload a file
@@ -15,7 +15,7 @@ for="{{fileUpload3}}"
   
 <span
 class="g-fileUploadWithErrorMessage-hint"
-id="{{fileUpload3Hint}}"
+id="{{ fileUpload3Hint }}"
 >
   
     Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or
@@ -26,7 +26,7 @@ id="{{fileUpload3Hint}}"
   
 <span
 class="g-fileUploadWithErrorMessage-error-message"
-id="{{fileUpload3Error}}"
+id="{{ fileUpload3Error }}"
 >
   
     Error message goes here
@@ -35,14 +35,14 @@ id="{{fileUpload3Error}}"
   
   
 <input
-aria-describedby="{{fileUpload3Hint}} {{fileUpload3Error}}"
+aria-describedby="{{ fileUpload3Hint }} {{ fileUpload3Error }}"
 class="g-fileUploadWithErrorMessage-file-upload g-fileUploadWithErrorMessage-file-upload--error"
-id="{{fileUpload3}}"
-name="{{name}}"
+id="{{ fileUpload3 }}"
+name="{{ name }}"
 type="file"
-disabled="{{#disabled}}disabled{{/disabled}}"
-readonly="{{#readOnly}}readOnly{{/readOnly}}"
-autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
 />
   
 

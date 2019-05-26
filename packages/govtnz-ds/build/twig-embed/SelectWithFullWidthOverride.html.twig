@@ -5,7 +5,7 @@ class="g-selectWithFullWidthOverride-form-group"
   
 <label
 class="g-selectWithFullWidthOverride-label"
-for="{{select1}}"
+for="{{ select1 }}"
 >
   
     Label text goes here
@@ -15,22 +15,22 @@ for="{{select1}}"
   
 <select
 class="g-selectWithFullWidthOverride-select g-!-width-full"
-id="{{select1}}"
-name="{{name}}"
-multiple="{{#multiple}}multiple{{/multiple}}"
+id="{{ select1 }}"
+name="{{ name }}"
+multiple="{{ if multiple }}multiple{{ endif }}"
 >
   
     
 <option
 value="1"
-selected="{{#selected}}selected{{/selected}}"
+selected="{{ if selected }}selected{{ endif }}"
 >
   Govt.NZ frontend option 1
 </option>
   
     
 <option
-selected="{{#selected2}}selected2{{/selected2}}"
+selected="{{ if selected2 }}selected2{{ endif }}"
 value="2"
 >
   Govt.NZ frontend option 2
@@ -40,7 +40,7 @@ value="2"
 <option
 disabled=""
 value="3"
-selected="{{#selected3}}selected3{{/selected3}}"
+selected="{{ if selected3 }}selected3{{ endif }}"
 >
   Govt.NZ frontend option 3
 </option>

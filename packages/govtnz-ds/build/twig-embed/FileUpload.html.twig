@@ -5,7 +5,7 @@ class="g-fileUpload-form-group"
   
 <label
 class="g-fileUpload-label"
-for="{{fileUpload1}}"
+for="{{ fileUpload1 }}"
 >
   
     Upload a file
@@ -15,12 +15,12 @@ for="{{fileUpload1}}"
   
 <input
 class="g-file-upload"
-id="{{fileUpload1}}"
-name="{{name}}"
+id="{{ fileUpload1 }}"
+name="{{ name }}"
 type="file"
-disabled="{{#disabled}}disabled{{/disabled}}"
-readonly="{{#readOnly}}readOnly{{/readOnly}}"
-autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
 />
   
 
