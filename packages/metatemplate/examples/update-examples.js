@@ -52,7 +52,7 @@ async function getInputs() {
   for (let i = 0; i < inputPaths.length; i++) {
     const part = inputPaths[i].substring(__dirname.length + 1);
     const id = path.dirname(part);
-    const extname = path.extname(part).replace(/^\./, "");
+    const extname = path.extname(part).replace(/^\.?$/, "");
     if (!inputsObj[id]) {
       inputsObj[id] = { id };
     }
