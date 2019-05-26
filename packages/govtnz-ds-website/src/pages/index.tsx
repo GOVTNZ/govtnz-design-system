@@ -72,7 +72,7 @@ const IndexPage = () => (
             use them.
           </P>
           <P styleSize="medium">
-            <A href="https://www.ict.govt.nz/governance-and-leadership/the-gcio-team/government-information-services/">
+            <A href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
               Government Information Services
             </A>{' '}
             is creating the design system now, and you can contribute. This
