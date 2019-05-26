@@ -129,7 +129,7 @@ const IndexPage = () => (
 
           <H2 styleSize="large">Content Designer </H2>
           <P styleSize="medium">
-            Compo nents and patterns in the design system help content designers
+            Components and patterns in the design system help content designers
             by providing a tried and tested structure for content that users can
             easily follow, and that meets the{' '}
             <A href="https://www.digital.govt.nz/web-usability-standard/">
