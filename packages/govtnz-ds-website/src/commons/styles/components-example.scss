@@ -1,0 +1,151 @@
+// ============================================================================
+// Example Component
+// ============================================================================
+@import './settings-global';
+@import './settings-breakpoints';
+
+.example--bg-off-white {
+  background-color: $color-ds-default-off-white;
+  background-color: var(--color-theme-off-white, $color-ds-default-off-white);
+}
+
+.example__format-heading {
+  border-bottom: solid 1px $color-ds-default-light-grey;
+  border-bottom: solid 1px
+    var(--color-theme-light-grey, $color-ds-default-light-grey);
+  padding-top: $spacing-24;
+  padding-bottom: $spacing-24;
+  margin-left: $spacing-32;
+  margin-right: $spacing-32;
+}
+
+.example__visual {
+  padding-top: $spacing-40;
+  padding-left: $spacing-32;
+  padding-right: $spacing-32;
+  padding-bottom: $spacing-40;
+  border-bottom: solid 1px $color-ds-default-mid-grey;
+  border-bottom: solid 1px
+    var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+}
+
+.example__visual::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.example__code {
+  display: block;
+  // We need to override styling coming from the prism-js theme.
+  border: none !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+  padding: $spacing-40 $spacing-32 $spacing-32 !important;
+}
+
+.example__format {
+  padding: $spacing-24 $spacing-32 0;
+}
+
+.example__summary {
+  padding: $spacing-24 $spacing-32 $spacing-24;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+.example__summary-button {
+  font-size: 16px;
+  margin: 0;
+  font-weight: normal;
+  text-decoration: underline;
+  color: $color-ds-default-link;
+  color: var(--color-theme-link, $color-ds-default-link);
+}
+
+.example__summary-icon-down {
+  margin-left: 0.5em;
+  margin-bottom: -2px;
+  transform: rotate(0deg);
+  transition: transform 0.15s;
+  [open] & {
+    transform: rotate(180deg);
+  }
+}
+
+.example__label {
+  display: inline-block;
+  margin-bottom: $spacing-4;
+  margin-right: $spacing-8;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.example__note {
+  padding-top: $spacing-16;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: $color-ds-default-mid-grey;
+  color: var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+}
+
+.example__select {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  background-color: $color-core-white;
+  border: 1px solid $color-ds-default-mid-grey;
+  border: 1px solid var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+  overflow: hidden;
+
+  select {
+    font-size: 1rem;
+    padding: $spacing-8 $spacing-16;
+    padding-right: 50px;
+    appearance: none;
+    position: relative;
+    background: transparent;
+    color: $color-ds-default-slate;
+    color: var(--color-theme-slate, $color-ds-default-slate);
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+    width: 105%;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    @include xsmall {
+      font-size: 14px;
+      padding-left: $spacing-12;
+    }
+  }
+}
+
+.example__select-icon-down {
+  position: absolute;
+  top: 26%;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  > use {
+    fill: $color-ds-default-green-mid;
+    fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+  }
+}
+
+.example__visual .g-flex-col {
+  background: #eeeeee;
+  outline: solid 1px black;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}

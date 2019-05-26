@@ -1,0 +1,3 @@
+<strong class="g-tag"> 
+  alpha
+</strong>

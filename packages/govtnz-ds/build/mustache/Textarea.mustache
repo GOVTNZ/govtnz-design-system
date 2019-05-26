@@ -1,0 +1,44 @@
+<div
+class="g-textarea-form-group"
+>
+  
+  
+<label
+class="g-textarea-label"
+{{#moreDetail}}
+  for="{{moreDetail}}"
+{{/moreDetail}}
+>
+  
+    Can you provide more detail?
+  
+</label>
+  
+  
+<span
+class="g-textarea-hint"
+{{#moreDetailHint}}
+  id="{{moreDetailHint}}"
+{{/moreDetailHint}}
+>
+  
+    Don't include personal or financial information, eg your National Insurance
+    number or credit card details.
+  
+</span>
+  
+  
+<textarea
+{{#moreDetailHint}}
+  aria-describedby="{{moreDetailHint}}"
+{{/moreDetailHint}}
+class="g-textarea"
+{{#moreDetail}}
+  id="{{moreDetail}}"
+{{/moreDetail}}
+name="more-detail"
+rows="5"
+/>
+  
+
+</div>

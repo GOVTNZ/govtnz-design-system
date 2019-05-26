@@ -1,0 +1,15 @@
+{
+  "extends": "../govtnz-ds-common/tsconfig-common.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "../govtnz-ds-website/src/templates/components-index-template.js"
+  ],
+  "exclude": ["dist", "src/**/*.test.ts", "src/**/*.test.tsx"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "noImplicitUseStrict": true,
+    "declaration": true
+  }
+}

@@ -1,0 +1,65 @@
+// ============================================================================
+// Page elements
+// ============================================================================
+
+@import './settings-global';
+@import './settings-fonts';
+
+// CSS Variables
+:root {
+  --color-theme-slate: #{$color-ds-default-slate};
+  --color-theme-dark-grey: #{$color-ds-default-dark-grey};
+  --color-theme-mid-grey: #{$color-ds-default-mid-grey};
+  --color-theme-light-grey: #{$color-ds-default-light-grey};
+  --color-theme-off-white: #{$color-ds-default-off-white};
+  --color-theme-highlight: #{$color-ds-default-green};
+  --color-theme-highlight-dark: #{$color-ds-default-green-dark};
+  --color-theme-highlight-ui: #{$color-ds-default-green-mid};
+  --color-theme-focus: #{$color-ds-default-focus};
+  --color-theme-link: #{$color-ds-default-link};
+  --color-theme-link-hover: #{$color-ds-default-link-hover};
+  --color-theme-link-visited: #{$color-ds-default-link-visited};
+
+  --max-width-layout: calc(#{$max-width} * 1px);
+
+  --g-theme-font-family: National2, Arial, sans-serif;
+}
+
+// ::selection {
+//   background: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+// }
+
+// DEVELOPER NOTE:
+// Previously this was *:focus which was highlighing <div> tags in IE11
+a:focus,
+input:focus,
+button:focus,
+summary:focus,
+textarea:focus {
+  outline: $color-ds-default-focus;
+  outline: 3px solid var(--color-theme-focus, $color-ds-default-focus);
+}
+
+html {
+  font-family: var(--g-theme-font-family);
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  background-color: $color-core-white;
+  color: $color-ds-default-slate;
+  color: var(--color-theme-slate, $color-ds-default-slate);
+  -webkit-tap-highlight-color: transparent;
+  height: 100%;
+  min-height: 100%;
+  background: #ffffff;
+  background: var(--theme-color-white, #ffffff);
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  font-size: 18px;
+  @media (min-width: 40.0625em) {
+    font-size: 20px;
+  }
+}

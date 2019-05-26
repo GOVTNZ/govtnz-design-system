@@ -1,0 +1,28 @@
+{
+  "name": "compilation-templates",
+  "version": "0.0.1",
+  "description": "GDS - Compilation Templates (Sketch, PDF, etc.)",
+  "author": "Matthew Holloway <matthew@springload.co.nz>",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": "10.14.2"
+  },
+  "scripts": {
+    "build": "yarn rimraf && tsc",
+    "test": "exit 0",
+    "test:typescript": "tsc --project ./ --noEmit",
+    "rimraf": "rimraf ./dist/* && rimraf ./tmp/*"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@govtnz/ds-common": "0.0.1",
+    "glob-promise": "^3.4.0",
+    "html-sketchapp-cli": "^0.6.2",
+    "rimraf": "^2.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.19",
+    "typescript": "^3.2.4"
+  }
+}

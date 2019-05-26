@@ -1,0 +1,122 @@
+// ============================================================================
+// Typography Overrides
+// ============================================================================
+// We are temporarily overriding the gov.uk typography styling here
+// TODO: move these into the Design System
+
+[class^='g-heading'],
+[class^='g-body'],
+[class^='g-p-body'] {
+  color: #2a2a2a !important;
+  color: var(--g-theme-color-heading, #2a2a2a) !important;
+}
+
+// [class^='g-heading'] {
+//   font-weight: 500 !important;
+// }
+
+// .g-heading-xl {
+//   margin-top: 4rem;
+//   margin-bottom: 1rem !important;
+//   font-size: 3.5rem !important;
+//   line-height: 1.15 !important;
+
+//   @media (min-width: 40.0625em) {
+//     margin-top: 5rem;
+//   }
+// }
+
+// .g-heading-l {
+//   margin-top: 3rem !important;
+//   margin-bottom: 0.5rem !important;
+//   font-size: 2.5rem !important;
+//   line-height: 1.2 !important;
+// }
+
+// .g-heading-m {
+//   margin-top: 2.5rem !important;
+//   margin-bottom: 0.5rem !important;
+//   font-size: 1.5rem !important;
+//   line-height: 1.25 !important;
+// }
+
+// .g-heading-s {
+//   margin-top: 2.5rem !important;
+//   margin-bottom: 0.5rem !important;
+//   line-height: 1.5 !important;
+//   font-size: 1.25rem !important;
+// }
+
+[class^='g-heading']:first-child,
+[class^='g-caption'] + [class^='g-heading'] {
+  margin-top: 0 !important;
+}
+
+// Body Copy
+// ============================================================================
+
+[class^='g-body'],
+[class^='g-p-body'] {
+  line-height: 1.625 !important;
+  margin-bottom: 1rem !important;
+}
+
+.g-body-l,
+.g-p-body-l {
+  font-size: 1.5rem !important;
+}
+
+.g-body-m,
+.g-p-body-m {
+  font-size: 1.125rem !important;
+
+  @media (min-width: 40.0625em) {
+    font-size: 1.25rem !important;
+  }
+}
+
+.g-body-s,
+.g-p-body-s {
+  font-size: 1rem !important;
+}
+
+// Lists
+// ============================================================================
+.g-ul-list,
+.g-ol-list {
+  line-height: 1.625 !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.125rem !important;
+
+  @media (min-width: 40.0625em) {
+    font-size: 1.25rem !important;
+  }
+}
+
+.g-ul-list li,
+.g-ol-list li {
+  margin-bottom: 0.25rem;
+}
+
+.g-ul-list li .g-ul-list,
+.g-ul-list li .g-ol-list,
+.g-ol-list li .g-ol-list,
+.g-ol-list li .g-ul-list {
+  margin-top: 0.5rem;
+}
+
+// Links
+// ============================================================================
+
+.g-link,
+.g-a-link {
+  color: var(--color-theme-link, #005dbb) !important;
+
+  &:visited {
+    color: var(--color-theme-link-visited, #4c2c92) !important;
+  }
+
+  &:hover {
+    color: var(--color-theme-link-hover, #000c48) !important;
+  }
+}

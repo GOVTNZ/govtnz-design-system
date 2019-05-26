@@ -1,0 +1,1099 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react ts styled components Snapshots makeIndexImports 1`] = `
+Object {
+  "react-ts/index.tsx": "// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+
+export const blah.js = () => import(\\"./blah.js\\");
+",
+  "react-ts/indexNotLazy.tsx": "// DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
+
+export { default as blahJs } from \\"./blah.js\\";
+",
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: <img src="pic.jpeg" class="frogs"> 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/imgSrc.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  src: string;
+  width?: string | undefined;
+  height?: string | undefined;
+  srcSet?: string | undefined;
+  crossOrigin?: \\"Anonymous\\" | \\"Use Credentials\\" | undefined;
+};
+
+const StyledImg = styled.img\`
+  background: green;
+\`;
+
+const constants = {
+  crossOrigin: { Anonymous: \\"anonymous\\", \\"Use Credentials\\": \\"use-credentials\\" }
+};
+
+const ImgSrc = ({ src, width, height, srcSet, crossOrigin }: Props) => (
+  <StyledImg
+    src={src}
+    width={width}
+    height={height}
+    srcSet={srcSet}
+    crossOrigin={constants.crossOrigin[crossOrigin]}
+  />
+);
+ImgSrc.props = [\\"src\\", \\"width\\", \\"height\\", \\"srcSet\\", \\"crossOrigin\\"];
+export default ImgSrc;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Basic variables 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/paragraph.tsx": "import * as React from \\"react\\";
+
+type Props = {
+  children?: React.ReactNode;
+};
+
+const Paragraph = ({ children }: Props) => (
+  <p>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Some placeholder text</React.Fragment>
+    )}
+  </p>
+);
+Paragraph.props = [\\"children\\"];
+export default Paragraph;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Boolean attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/row.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  isReversed?: boolean | undefined;
+  children?: React.ReactNode;
+};
+
+const StyledDiv = styled.div\`
+  color: red;
+  color: blue;
+\`;
+
+const Row = ({ isReversed, children }: Props) => (
+  <StyledDiv isReversed={isReversed}>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Columns</React.Fragment>
+    )}
+  </StyledDiv>
+);
+Row.props = [\\"isReversed\\", \\"children\\"];
+export default Row;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/container.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  containerType: \\"g-flex-container\\" | \\"g-flex-container-fluid\\";
+  children?: React.ReactNode;
+};
+
+const StyledDiv = styled.div<Pick<Props, \\"containerType\\">>\`
+  \${props =>
+    [\\"g-flex-container\\", \\"g-flex-container-fluid\\"].indexOf(
+      props.containerType
+    ) !== -1 &&
+    styled.css\`
+      background: red;
+      color: purple;
+    \`}
+  \${props =>
+    props.containerType === \\"g-flex-container-fluid\\" &&
+    styled.css\`
+      color: red;
+    \`}
+@media only screen and (min-width: 48em) {
+    \${props =>
+      props.containerType === \\"g-flex-container\\" &&
+      styled.css\`
+        color: blue;
+      \`};
+  }
+\`;
+
+const Container = ({ containerType, children }: Props) => (
+  <StyledDiv containerType={containerType}>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Rows...</React.Fragment>
+    )}
+  </StyledDiv>
+);
+Container.props = [\\"containerType\\", \\"children\\"];
+export default Container;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Form input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/input.tsx": "import * as React from \\"react\\";
+
+type Props = {
+  textId?: string | undefined;
+  name: string;
+  disabled?: boolean | undefined;
+  readOnly?: boolean | undefined;
+  autoFocus?: boolean | undefined;
+  value?: string | undefined;
+  checked?: boolean | undefined;
+  onChange: any;
+};
+
+const Input = ({
+  textId,
+  name,
+  disabled,
+  readOnly,
+  autoFocus,
+  value,
+  checked,
+  onChange
+}: Props) => (
+  <input
+    id={textId}
+    type=\\"checkbox\\"
+    name={name}
+    disabled={disabled}
+    readOnly={readOnly}
+    autoFocus={autoFocus}
+    value={value}
+    checked={checked}
+    onChange={onChange}
+  />
+);
+Input.props = [
+  \\"textId\\",
+  \\"name\\",
+  \\"disabled\\",
+  \\"readOnly\\",
+  \\"autoFocus\\",
+  \\"value\\",
+  \\"checked\\",
+  \\"onChange\\"
+];
+export default Input;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Form label input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/input.tsx": "import * as React from \\"react\\";
+
+type Props = {
+  textId?: string | undefined;
+  name: string;
+  disabled?: boolean | undefined;
+  readOnly?: boolean | undefined;
+  autoFocus?: boolean | undefined;
+  value?: string | undefined;
+  checked?: boolean | undefined;
+  onChange: any;
+};
+
+const Input = ({
+  textId,
+  name,
+  disabled,
+  readOnly,
+  autoFocus,
+  value,
+  checked,
+  onChange
+}: Props) => (
+  <label htmlFor={textId}>
+    <input
+      id={textId}
+      type=\\"checkbox\\"
+      name={name}
+      disabled={disabled}
+      readOnly={readOnly}
+      autoFocus={autoFocus}
+      value={value}
+      checked={checked}
+      onChange={onChange}
+    />
+  </label>
+);
+Input.props = [
+  \\"textId\\",
+  \\"name\\",
+  \\"disabled\\",
+  \\"readOnly\\",
+  \\"autoFocus\\",
+  \\"value\\",
+  \\"checked\\",
+  \\"onChange\\"
+];
+export default Input;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: H1 with configurable Id 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/h1Id.tsx": "import * as React from \\"react\\";
+
+type Props = {
+  id?: string | undefined;
+};
+
+const H1Id = ({ id }: Props) => <h1 id={id}>stuff</h1>;
+H1Id.props = [\\"id\\"];
+export default H1Id;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Link with boolean class 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/a.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  isMuted?: boolean | undefined;
+  href: string;
+  rel?: string | undefined;
+  target?: \\"Blank\\" | \\"Top\\" | \\"Self\\" | \\"Parent\\" | undefined;
+  children?: React.ReactNode;
+};
+
+const StyledA = styled.a<Pick<Props, \\"isMuted\\">>\`
+  color: white;
+  \${props =>
+    props.isMuted &&
+    styled.css\`
+      opacity: 0.5;
+    \`}
+\`;
+
+const constants = {
+  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
+};
+
+const A = ({ isMuted, href, rel, target, children }: Props) => (
+  <StyledA
+    isMuted={isMuted}
+    href={href}
+    rel={rel}
+    target={constants.target[target]}
+  >
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Example text</React.Fragment>
+    )}
+  </StyledA>
+);
+A.props = [\\"isMuted\\", \\"href\\", \\"rel\\", \\"target\\", \\"children\\"];
+export default A;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: Lots of enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/container.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  isReversed?: boolean | undefined;
+  columnXs:
+    | \\"g-flex-col-xs\\"
+    | \\"g-flex-col-xs-1\\"
+    | \\"g-flex-col-xs-2\\"
+    | \\"g-flex-col-xs-3\\"
+    | \\"g-flex-col-xs-4\\"
+    | \\"g-flex-col-xs-5\\"
+    | \\"g-flex-col-xs-6\\"
+    | \\"g-flex-col-xs-7\\"
+    | \\"g-flex-col-xs-8\\"
+    | \\"g-flex-col-xs-9\\"
+    | \\"g-flex-col-xs-10\\"
+    | \\"g-flex-col-xs-11\\"
+    | \\"g-flex-col-xs-12\\";
+  children?: React.ReactNode;
+};
+
+const StyledDiv = styled.div<Pick<Props, \\"columnXs\\">>\`
+  color: red;
+  \${props =>
+    props.columnXs === \\"g-flex-col-xs\\" &&
+    styled.css\`
+      color: blue;
+    \`}
+\`;
+
+const Container = ({ isReversed, columnXs, children }: Props) => (
+  <StyledDiv isReversed={isReversed} columnXs={columnXs}>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Columns</React.Fragment>
+    )}
+  </StyledDiv>
+);
+Container.props = [\\"isReversed\\", \\"columnXs\\", \\"children\\"];
+export default Container;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components Snapshots react-ts-styled-components: form input[text] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "react-ts-styled-components/input.tsx": "import * as React from \\"react\\";
+
+type Props = {
+  textId?: string | undefined;
+  name: string;
+  disabled?: boolean | undefined;
+  readOnly?: boolean | undefined;
+  autoFocus?: boolean | undefined;
+  value?: string | undefined;
+  type:
+    | \\"Button\\"
+    | \\"Checkbox\\"
+    | \\"Color\\"
+    | \\"Date\\"
+    | \\"DateTime: Local\\"
+    | \\"Email\\"
+    | \\"File\\"
+    | \\"Hidden\\"
+    | \\"Image\\"
+    | \\"Month\\"
+    | \\"Number\\"
+    | \\"Password\\"
+    | \\"Radio\\"
+    | \\"Range\\"
+    | \\"Reset\\"
+    | \\"Search\\"
+    | \\"Submit\\"
+    | \\"Telephone\\"
+    | \\"Text\\"
+    | \\"Time\\"
+    | \\"URL\\"
+    | \\"Week\\";
+  spellCheck?: boolean | undefined;
+  autoComplete:
+    | \\"Off\\"
+    | \\"On\\"
+    | \\"Name\\"
+    | \\"Honorific: Prefix\\"
+    | \\"Given Name\\"
+    | \\"Additional Name\\"
+    | \\"Family Name\\"
+    | \\"Honorific: Suffix\\"
+    | \\"Nickname\\"
+    | \\"Email\\"
+    | \\"Username\\"
+    | \\"New Password\\"
+    | \\"Current Password\\"
+    | \\"Organization Title\\"
+    | \\"Organization\\"
+    | \\"Street Address\\"
+    | \\"Address Line 1\\"
+    | \\"Address Line 2\\"
+    | \\"Address Line 3\\"
+    | \\"Address Level 4\\"
+    | \\"Address Level 3\\"
+    | \\"Address Level 2\\"
+    | \\"Address Level 1\\"
+    | \\"Country\\"
+    | \\"Country Name\\"
+    | \\"Postal Code\\"
+    | \\"Credit Card: Name\\"
+    | \\"Credit Card: Given Name\\"
+    | \\"Credit Card: Additional Name\\"
+    | \\"Credit Card: Family Name\\"
+    | \\"Credit Card: Number\\"
+    | \\"Credit Card: Expiry\\"
+    | \\"Credit Card: Expiry Month\\"
+    | \\"Credit Card: Expiry Year\\"
+    | \\"Credit Card: CSC\\"
+    | \\"Credit Card: Type\\"
+    | \\"Transaction: Currency\\"
+    | \\"Transaction: Amount\\"
+    | \\"Language\\"
+    | \\"Birthday\\"
+    | \\"Birthday: Day\\"
+    | \\"Birthday: Month\\"
+    | \\"Birthday: Year\\"
+    | \\"Sex\\"
+    | \\"Telephone\\"
+    | \\"Telephone: Country Code\\"
+    | \\"Telephone: National\\"
+    | \\"Telephone: Area Code\\"
+    | \\"Telephone: Local\\"
+    | \\"Telephone: Extension\\"
+    | \\"IMPP\\"
+    | \\"URL\\"
+    | \\"Photo\\";
+  onChange: any;
+};
+
+const constants = {
+  type: {
+    Button: \\"button\\",
+    Checkbox: \\"checkbox\\",
+    Color: \\"color\\",
+    Date: \\"date\\",
+    \\"DateTime: Local\\": \\"datetime-local\\",
+    Email: \\"email\\",
+    File: \\"file\\",
+    Hidden: \\"hidden\\",
+    Image: \\"image\\",
+    Month: \\"month\\",
+    Number: \\"number\\",
+    Password: \\"password\\",
+    Radio: \\"radio\\",
+    Range: \\"range\\",
+    Reset: \\"reset\\",
+    Search: \\"search\\",
+    Submit: \\"submit\\",
+    Telephone: \\"tel\\",
+    Text: \\"text\\",
+    Time: \\"time\\",
+    URL: \\"url\\",
+    Week: \\"week\\"
+  },
+  autoComplete: {
+    Off: \\"off\\",
+    On: \\"on\\",
+    Name: \\"name\\",
+    \\"Honorific: Prefix\\": \\"honorific-prefix\\",
+    \\"Given Name\\": \\"given-name\\",
+    \\"Additional Name\\": \\"additional-name\\",
+    \\"Family Name\\": \\"family-name\\",
+    \\"Honorific: Suffix\\": \\"honorific-suffix\\",
+    Nickname: \\"nickname\\",
+    Email: \\"email\\",
+    Username: \\"username\\",
+    \\"New Password\\": \\"new-password\\",
+    \\"Current Password\\": \\"current-password\\",
+    \\"Organization Title\\": \\"organization-title\\",
+    Organization: \\"organization\\",
+    \\"Street Address\\": \\"street-address\\",
+    \\"Address Line 1\\": \\"address-line1\\",
+    \\"Address Line 2\\": \\"address-line2\\",
+    \\"Address Line 3\\": \\"address-line3\\",
+    \\"Address Level 4\\": \\"address-level4\\",
+    \\"Address Level 3\\": \\"address-level3\\",
+    \\"Address Level 2\\": \\"address-level2\\",
+    \\"Address Level 1\\": \\"address-level1\\",
+    Country: \\"country\\",
+    \\"Country Name\\": \\"country-name\\",
+    \\"Postal Code\\": \\"postal-code\\",
+    \\"Credit Card: Name\\": \\"cc-name\\",
+    \\"Credit Card: Given Name\\": \\"cc-given-name\\",
+    \\"Credit Card: Additional Name\\": \\"cc-additional-name\\",
+    \\"Credit Card: Family Name\\": \\"cc-family-name\\",
+    \\"Credit Card: Number\\": \\"cc-number\\",
+    \\"Credit Card: Expiry\\": \\"cc-exp\\",
+    \\"Credit Card: Expiry Month\\": \\"cc-exp-month\\",
+    \\"Credit Card: Expiry Year\\": \\"cc-exp-year\\",
+    \\"Credit Card: CSC\\": \\"cc-csc\\",
+    \\"Credit Card: Type\\": \\"cc-type\\",
+    \\"Transaction: Currency\\": \\"transaction-currency\\",
+    \\"Transaction: Amount\\": \\"transaction-amount\\",
+    Language: \\"language\\",
+    Birthday: \\"bday\\",
+    \\"Birthday: Day\\": \\"bday-day\\",
+    \\"Birthday: Month\\": \\"bday-month\\",
+    \\"Birthday: Year\\": \\"bday-year\\",
+    Sex: \\"sex\\",
+    Telephone: \\"tel\\",
+    \\"Telephone: Country Code\\": \\"tel-country-code\\",
+    \\"Telephone: National\\": \\"tel-national\\",
+    \\"Telephone: Area Code\\": \\"tel-area-code\\",
+    \\"Telephone: Local\\": \\"tel-local\\",
+    \\"Telephone: Extension\\": \\"tel-extension\\",
+    IMPP: \\"impp\\",
+    URL: \\"url\\",
+    Photo: \\"photo\\"
+  }
+};
+
+const Input = ({
+  textId,
+  name,
+  disabled,
+  readOnly,
+  autoFocus,
+  value,
+  type,
+  spellCheck,
+  autoComplete,
+  onChange
+}: Props) => (
+  <React.Fragment>
+    <label htmlFor={textId}>Label text</label>
+    <input
+      id={textId}
+      type={constants.type[type]}
+      name={name}
+      disabled={disabled}
+      readOnly={readOnly}
+      autoFocus={autoFocus}
+      value={value}
+      spellCheck={spellCheck}
+      autoComplete={constants.autoComplete[autoComplete]}
+      onChange={onChange}
+    />
+  </React.Fragment>
+);
+Input.props = [
+  \\"textId\\",
+  \\"name\\",
+  \\"disabled\\",
+  \\"readOnly\\",
+  \\"autoFocus\\",
+  \\"value\\",
+  \\"type\\",
+  \\"spellCheck\\",
+  \\"autoComplete\\",
+  \\"onChange\\"
+];
+export default Input;
+",
+      },
+      "formatId": "react-ts-styled-components",
+    },
+  ],
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: CSS Configuration (CSS Variables and Scss Variables) 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/a.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  isMuted?: boolean | undefined;
+  href: string;
+  rel?: string | undefined;
+  target?: \\"Blank\\" | \\"Top\\" | \\"Self\\" | \\"Parent\\" | undefined;
+  children?: React.ReactNode;
+};
+
+const StyledA = styled.a<Pick<Props, \\"isMuted\\">>\`
+  color: #ffffff !important;
+  \${props =>
+    props.isMuted &&
+    styled.css\`
+      opacity: 0.5;
+    \`}
+\`;
+
+const constants = {
+  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
+};
+
+const A = ({ isMuted, href, rel, target, children }: Props) => (
+  <StyledA
+    isMuted={isMuted}
+    href={href}
+    rel={rel}
+    target={constants.target[target]}
+  >
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Example text</React.Fragment>
+    )}
+  </StyledA>
+);
+A.props = [\\"isMuted\\", \\"href\\", \\"rel\\", \\"target\\", \\"children\\"];
+export default A;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components react-ts-styled-components: CSS Configuration (CSS Variables and Scss Variables) 2`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/a.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  isMuted?: boolean | undefined;
+  href: string;
+  rel?: string | undefined;
+  target?: \\"Blank\\" | \\"Top\\" | \\"Self\\" | \\"Parent\\" | undefined;
+  children?: React.ReactNode;
+};
+
+const StyledA = styled.a<Pick<Props, \\"isMuted\\">>\`
+  background: #ffffff url(\\"big.gif\\") !important;
+  \${props =>
+    props.isMuted &&
+    styled.css\`
+      opacity: 0.5;
+    \`}
+\`;
+
+const constants = {
+  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
+};
+
+const A = ({ isMuted, href, rel, target, children }: Props) => (
+  <StyledA
+    isMuted={isMuted}
+    href={href}
+    rel={rel}
+    target={constants.target[target]}
+  >
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Example text</React.Fragment>
+    )}
+  </StyledA>
+);
+A.props = [\\"isMuted\\", \\"href\\", \\"rel\\", \\"target\\", \\"children\\"];
+export default A;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components react-ts-styled-components: CSS Configuration of Fonts 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-ts-styled-components/a.tsx": "import * as React from \\"react\\";
+import * as styled from \\"styled-components\\";
+
+type Props = {
+  href: string;
+  rel?: string | undefined;
+  target?: \\"Blank\\" | \\"Top\\" | \\"Self\\" | \\"Parent\\" | undefined;
+  children?: React.ReactNode;
+};
+
+const StyledA = styled.a\`
+  font-family: Arial, sans-serif;
+\`;
+
+const constants = {
+  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
+};
+
+const A = ({ href, rel, target, children }: Props) => (
+  <StyledA href={href} rel={rel} target={constants.target[target]}>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Example text</React.Fragment>
+    )}
+  </StyledA>
+);
+A.props = [\\"href\\", \\"rel\\", \\"target\\", \\"children\\"];
+export default A;
+",
+    },
+    "formatId": "react-ts-styled-components",
+  },
+]
+`;
+
+exports[`react ts styled components react-ts-styled-components: jsxToUsageCode with boolean false 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as Ul from \\"@govtnz/ds/build/react-ts-styled-components/Ul\\";
+import * as Li from \\"@govtnz/ds/build/react-ts-styled-components/Li\\";
+
+export default () => (
+  <Ul isBulleted=\\"false\\">
+    <Li>Unordered item one</Li>
+    <Li>Unordered item two</Li>
+  </Ul>
+);
+",
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: jsxToUsageCode with boolean false and inline HTML 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as Ul from \\"@govtnz/ds/build/react-ts-styled-components/Ul\\";
+import * as Li from \\"@govtnz/ds/build/react-ts-styled-components/Li\\";
+
+export default () => (
+  <Ul isBulleted=\\"false\\">
+    <Li>
+      Unordered<a href=\\"http://zombo.com/\\">item one</a>
+    </Li>
+    <Li>Unordered item two</Li>
+  </Ul>
+);
+",
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: jsxToUsageCode with boolean true 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as Ul from \\"@govtnz/ds/build/react-ts-styled-components/Ul\\";
+import * as Li from \\"@govtnz/ds/build/react-ts-styled-components/Li\\";
+
+export default () => (
+  <Ul isBulleted>
+    <Li>Unordered item one</Li>
+    <Li>Unordered item two</Li>
+  </Ul>
+);
+",
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: jsxToUsageCode with enumerations 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as Div from \\"@govtnz/ds/build/react-ts-styled-components/Div\\";
+
+export default () => <Div containerType=\\"fixed\\" />;
+",
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: makeUsage 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as H1 from \\"@govtnz/ds/build/react-ts-styled-components/H1\\";
+import * as A from \\"@govtnz/ds/build/react-ts-styled-components/A\\";
+
+export default () => (
+  <H1>
+    <A href=\\"https://html5zombo.com/\\" reversed=\\"On\\">
+      Click me
+    </A>
+  </H1>
+);
+",
+}
+`;
+
+exports[`react ts styled components react-ts-styled-components: makeUsage with booleans 1`] = `
+Object {
+  "react-ts-styled-components": "import * as React from \\"react\\";
+import * as H1 from \\"@govtnz/ds/build/react-ts-styled-components/H1\\";
+import * as A from \\"@govtnz/ds/build/react-ts-styled-components/A\\";
+
+export default () => (
+  <H1>
+    <A href=\\"https://html5zombo.com/\\" isReversed>
+      Click me
+    </A>
+  </H1>
+);
+",
+}
+`;
+
+exports[`react ts styled components: basic <input> makeIndexImports 1`] = `
+"import * as React from \\"react\\";
+
+type Props = {
+  name: string;
+  disabled?: boolean | undefined;
+  readOnly?: boolean | undefined;
+  autoFocus?: boolean | undefined;
+  value?: string | undefined;
+  type:
+    | \\"Button\\"
+    | \\"Checkbox\\"
+    | \\"Color\\"
+    | \\"Date\\"
+    | \\"DateTime: Local\\"
+    | \\"Email\\"
+    | \\"File\\"
+    | \\"Hidden\\"
+    | \\"Image\\"
+    | \\"Month\\"
+    | \\"Number\\"
+    | \\"Password\\"
+    | \\"Radio\\"
+    | \\"Range\\"
+    | \\"Reset\\"
+    | \\"Search\\"
+    | \\"Submit\\"
+    | \\"Telephone\\"
+    | \\"Text\\"
+    | \\"Time\\"
+    | \\"URL\\"
+    | \\"Week\\";
+  spellCheck?: boolean | undefined;
+  autoComplete:
+    | \\"Off\\"
+    | \\"On\\"
+    | \\"Name\\"
+    | \\"Honorific: Prefix\\"
+    | \\"Given Name\\"
+    | \\"Additional Name\\"
+    | \\"Family Name\\"
+    | \\"Honorific: Suffix\\"
+    | \\"Nickname\\"
+    | \\"Email\\"
+    | \\"Username\\"
+    | \\"New Password\\"
+    | \\"Current Password\\"
+    | \\"Organization Title\\"
+    | \\"Organization\\"
+    | \\"Street Address\\"
+    | \\"Address Line 1\\"
+    | \\"Address Line 2\\"
+    | \\"Address Line 3\\"
+    | \\"Address Level 4\\"
+    | \\"Address Level 3\\"
+    | \\"Address Level 2\\"
+    | \\"Address Level 1\\"
+    | \\"Country\\"
+    | \\"Country Name\\"
+    | \\"Postal Code\\"
+    | \\"Credit Card: Name\\"
+    | \\"Credit Card: Given Name\\"
+    | \\"Credit Card: Additional Name\\"
+    | \\"Credit Card: Family Name\\"
+    | \\"Credit Card: Number\\"
+    | \\"Credit Card: Expiry\\"
+    | \\"Credit Card: Expiry Month\\"
+    | \\"Credit Card: Expiry Year\\"
+    | \\"Credit Card: CSC\\"
+    | \\"Credit Card: Type\\"
+    | \\"Transaction: Currency\\"
+    | \\"Transaction: Amount\\"
+    | \\"Language\\"
+    | \\"Birthday\\"
+    | \\"Birthday: Day\\"
+    | \\"Birthday: Month\\"
+    | \\"Birthday: Year\\"
+    | \\"Sex\\"
+    | \\"Telephone\\"
+    | \\"Telephone: Country Code\\"
+    | \\"Telephone: National\\"
+    | \\"Telephone: Area Code\\"
+    | \\"Telephone: Local\\"
+    | \\"Telephone: Extension\\"
+    | \\"IMPP\\"
+    | \\"URL\\"
+    | \\"Photo\\";
+  onChange: any;
+};
+
+const constants = {
+  type: {
+    Button: \\"button\\",
+    Checkbox: \\"checkbox\\",
+    Color: \\"color\\",
+    Date: \\"date\\",
+    \\"DateTime: Local\\": \\"datetime-local\\",
+    Email: \\"email\\",
+    File: \\"file\\",
+    Hidden: \\"hidden\\",
+    Image: \\"image\\",
+    Month: \\"month\\",
+    Number: \\"number\\",
+    Password: \\"password\\",
+    Radio: \\"radio\\",
+    Range: \\"range\\",
+    Reset: \\"reset\\",
+    Search: \\"search\\",
+    Submit: \\"submit\\",
+    Telephone: \\"tel\\",
+    Text: \\"text\\",
+    Time: \\"time\\",
+    URL: \\"url\\",
+    Week: \\"week\\"
+  },
+  autoComplete: {
+    Off: \\"off\\",
+    On: \\"on\\",
+    Name: \\"name\\",
+    \\"Honorific: Prefix\\": \\"honorific-prefix\\",
+    \\"Given Name\\": \\"given-name\\",
+    \\"Additional Name\\": \\"additional-name\\",
+    \\"Family Name\\": \\"family-name\\",
+    \\"Honorific: Suffix\\": \\"honorific-suffix\\",
+    Nickname: \\"nickname\\",
+    Email: \\"email\\",
+    Username: \\"username\\",
+    \\"New Password\\": \\"new-password\\",
+    \\"Current Password\\": \\"current-password\\",
+    \\"Organization Title\\": \\"organization-title\\",
+    Organization: \\"organization\\",
+    \\"Street Address\\": \\"street-address\\",
+    \\"Address Line 1\\": \\"address-line1\\",
+    \\"Address Line 2\\": \\"address-line2\\",
+    \\"Address Line 3\\": \\"address-line3\\",
+    \\"Address Level 4\\": \\"address-level4\\",
+    \\"Address Level 3\\": \\"address-level3\\",
+    \\"Address Level 2\\": \\"address-level2\\",
+    \\"Address Level 1\\": \\"address-level1\\",
+    Country: \\"country\\",
+    \\"Country Name\\": \\"country-name\\",
+    \\"Postal Code\\": \\"postal-code\\",
+    \\"Credit Card: Name\\": \\"cc-name\\",
+    \\"Credit Card: Given Name\\": \\"cc-given-name\\",
+    \\"Credit Card: Additional Name\\": \\"cc-additional-name\\",
+    \\"Credit Card: Family Name\\": \\"cc-family-name\\",
+    \\"Credit Card: Number\\": \\"cc-number\\",
+    \\"Credit Card: Expiry\\": \\"cc-exp\\",
+    \\"Credit Card: Expiry Month\\": \\"cc-exp-month\\",
+    \\"Credit Card: Expiry Year\\": \\"cc-exp-year\\",
+    \\"Credit Card: CSC\\": \\"cc-csc\\",
+    \\"Credit Card: Type\\": \\"cc-type\\",
+    \\"Transaction: Currency\\": \\"transaction-currency\\",
+    \\"Transaction: Amount\\": \\"transaction-amount\\",
+    Language: \\"language\\",
+    Birthday: \\"bday\\",
+    \\"Birthday: Day\\": \\"bday-day\\",
+    \\"Birthday: Month\\": \\"bday-month\\",
+    \\"Birthday: Year\\": \\"bday-year\\",
+    Sex: \\"sex\\",
+    Telephone: \\"tel\\",
+    \\"Telephone: Country Code\\": \\"tel-country-code\\",
+    \\"Telephone: National\\": \\"tel-national\\",
+    \\"Telephone: Area Code\\": \\"tel-area-code\\",
+    \\"Telephone: Local\\": \\"tel-local\\",
+    \\"Telephone: Extension\\": \\"tel-extension\\",
+    IMPP: \\"impp\\",
+    URL: \\"url\\",
+    Photo: \\"photo\\"
+  }
+};
+
+const Inputblock1 = ({
+  name,
+  disabled,
+  readOnly,
+  autoFocus,
+  value,
+  type,
+  spellCheck,
+  autoComplete,
+  onChange
+}: Props) => (
+  <input
+    name={name}
+    disabled={disabled}
+    readOnly={readOnly}
+    autoFocus={autoFocus}
+    value={value}
+    type={constants.type[type]}
+    spellCheck={spellCheck}
+    autoComplete={constants.autoComplete[autoComplete]}
+    onChange={onChange}
+  />
+);
+Inputblock1.props = [
+  \\"name\\",
+  \\"disabled\\",
+  \\"readOnly\\",
+  \\"autoFocus\\",
+  \\"value\\",
+  \\"type\\",
+  \\"spellCheck\\",
+  \\"autoComplete\\",
+  \\"onChange\\"
+];
+export default Inputblock1;
+"
+`;

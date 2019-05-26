@@ -1,0 +1,3 @@
+<span class="g-error-message"> 
+  Error message about full name goes here
+</span>

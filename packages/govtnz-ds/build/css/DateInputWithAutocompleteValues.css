@@ -1,0 +1,244 @@
+.g-dateInputWithAutocompleteValues-form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithAutocompleteValues-form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.g-dateInputWithAutocompleteValues-form-group
+  .g-dateInputWithAutocompleteValues-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.g-dateInputWithAutocompleteValues-form-group--error
+  .g-dateInputWithAutocompleteValues-form-group {
+  padding: 0;
+  border: 0;
+}
+
+.g-dateInputWithAutocompleteValues-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.g-dateInputWithAutocompleteValues-fieldset:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.g-dateInputWithAutocompleteValues-fieldset__legend {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #0b0c0c;
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  white-space: normal;
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-fieldset__legend {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithAutocompleteValues-fieldset__legend {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-fieldset__legend {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-fieldset__legend {
+    color: #000000;
+    color: var(--g-theme-color-black, #000000);
+  }
+}
+
+.g-dateInputWithAutocompleteValues-hint {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-hint {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithAutocompleteValues-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-dateInputWithAutocompleteValues-fieldset__legend
+  + .g-dateInputWithAutocompleteValues-hint {
+  margin-top: -5px;
+}
+
+.g-dateInputWithAutocompleteValues-label {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-label {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithAutocompleteValues-label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-label {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-label {
+    color: #000000;
+    color: var(--g-theme-color-black, #000000);
+  }
+}
+
+.g-dateInputWithAutocompleteValues-character-count
+  .g-dateInputWithAutocompleteValues-form-group {
+  margin-bottom: 5px;
+}
+
+.g-dateInputWithAutocompleteValues-input {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 0.5rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-input {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithAutocompleteValues-input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithAutocompleteValues-input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-dateInputWithAutocompleteValues-input:focus {
+  outline: 3px solid #ffbf47;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline-offset: 0;
+}
+
+.g-dateInputWithAutocompleteValues-input::-webkit-outer-spin-button,
+.g-dateInputWithAutocompleteValues-input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.g-dateInputWithAutocompleteValues-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.g-dateInputWithAutocompleteValues-input--width-2 {
+  max-width: 5.4ex;
+}
+
+.g-dateInputWithAutocompleteValues-date-input {
+  font-size: 0;
+}
+
+.g-dateInputWithAutocompleteValues-date-input:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.g-dateInputWithAutocompleteValues-date-input__item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.g-dateInputWithAutocompleteValues-date-input__label {
+  display: block;
+}
+
+.g-dateInputWithAutocompleteValues-date-input__input {
+  margin-bottom: 0;
+}

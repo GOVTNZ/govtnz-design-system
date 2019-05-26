@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "@govtnz/ds-common",
+  "version": "0.0.1",
+  "description": "Government Design System - Common Utils",
+  "author": "Matthew Holloway <matthew@springload.co.nz>",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": "10.14.2"
+  },
+  "scripts": {
+    "build": "yarn rimraf && tsc",
+    "test:typescript": "tsc --project ./ --noEmit",
+    "rimraf": "rimraf ./dist/*",
+    "test": "jest --config=./jest.config.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.19",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "follow-redirects": "^1.6.1",
+    "jest": "^24.0.0",
+    "jsdom": "^13.2.0",
+    "lodash": "^4.17.11",
+    "postcss": "^7.0.14",
+    "postcss-media-query-parser": "^0.2.3",
+    "rimraf": "^2.6.3",
+    "unzipper": "^0.9.10"
+  }
+}

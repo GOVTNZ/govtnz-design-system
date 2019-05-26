@@ -1,0 +1,57 @@
+// ============================================================================
+// Design System Search
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+
+.note {
+  background: #f4f4f4;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: $spacing-32;
+  margin-bottom: $spacing-40;
+
+  @include medium {
+    display: flex;
+    flex-direction: row;
+    margin-top: $spacing-64;
+    margin-bottom: $spacing-80;
+  }
+}
+
+.note__strip {
+  flex: 0 0 64px;
+  background: #1f1bfb;
+  padding-top: 8px;
+  padding-left: 16px;
+  height: 32px;
+  text-align: left;
+
+  @include medium {
+    height: auto;
+    width: 64px;
+    flex: 0 0 64px;
+    text-align: center;
+    padding-top: 16px;
+    padding-left: 0px;
+  }
+}
+
+.note__icon {
+  width: 24px;
+  height: 24px;
+
+  @include medium {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.note__content {
+  padding: 16px;
+
+  @include medium {
+    padding: 24px;
+  }
+}

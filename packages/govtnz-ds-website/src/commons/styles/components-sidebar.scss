@@ -1,0 +1,120 @@
+// ============================================================================
+// Sidebar
+// ============================================================================
+@import './settings-global';
+@import './settings-breakpoints';
+
+.sidebar {
+  display: none;
+
+  @include medium {
+    display: block;
+  }
+}
+
+.sidebar__navigation {
+  padding: 0;
+  padding-right: $spacing-24;
+  list-style-type: none;
+  margin: 0;
+  font-size: $font-size-base;
+
+  @include small {
+    padding-left: 0;
+    margin-bottom: $spacing-16;
+  }
+}
+
+.sidebar__category__items {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar__item {
+  margin-left: -17px;
+}
+
+.sidebar__link {
+  display: block;
+  padding-left: $spacing-12;
+  padding-top: $spacing-8;
+  padding-bottom: $spacing-8;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  text-decoration: none;
+  color: $color-core-grey;
+  transition: background-color 0.2s, border-color 0.2s;
+
+  &:visited {
+    color: $color-core-grey;
+  }
+
+  &:hover,
+  &.sidebar__link--current {
+    background-color: var(
+      --color-theme-light-grey,
+      $color-ds-default-light-grey
+    );
+    border-color: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+  }
+
+  &.sidebar__link--current {
+    font-weight: $font-weight-medium;
+  }
+
+  @include small {
+    padding-top: $spacing-8;
+    padding-bottom: $spacing-8;
+  }
+}
+
+.sidebar__category {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  font-size: $font-size-base;
+}
+
+.sidebar__category:first-child .sidebar__category-title {
+  padding-top: 0;
+}
+
+.sidebar__category-title {
+  font-size: 1rem;
+  font-weight: $font-weight-regular;
+  padding-top: $spacing-32;
+  padding-right: $spacing-16;
+  padding-bottom: $spacing-8;
+  color: #078766;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sidebar__category-title--small {
+  display: block;
+  margin: $spacing-8 0 0 0;
+  padding: $spacing-16 $spacing-16 $spacing-8 $spacing-16;
+  font-size: $font-size-base;
+}
+
+.dss-details {
+}
+
+.dss-summary {
+  cursor: pointer;
+}
+
+.dss-summary:hover {
+  background: #eeeeee;
+}
+
+.dss-summary::-webkit-details-marker {
+  display: none;
+}
+
+.dss-summary:before {
+  color: #696f7c;
+  margin-right: 5px;
+}

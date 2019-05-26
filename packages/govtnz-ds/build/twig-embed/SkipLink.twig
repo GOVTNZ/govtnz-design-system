@@ -1,0 +1,1 @@
+<a class="g-skip-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="<% if $target == "Blank" %>_blank<% else_if $target == "Top" %>_top<% else_if $target == "Self" %>_self<% else_if $target == "Parent" %>_parent<% end_if %>"<% end_if %>> Skip to main content</a>

@@ -1,0 +1,187 @@
+<div
+class="g-tabsTabsWithAnchorInPanel-tabs"
+data-module="tabs"
+>
+  
+  
+<h2
+class="g-tabsTabsWithAnchorInPanel-tabs__title"
+>
+  
+    Contents
+  
+</h2>
+  
+
+  
+<ul
+class="g-tabsTabsWithAnchorInPanel-tabs__list"
+role="tablist"
+>
+  
+    
+<li
+class="g-tabsTabsWithAnchorInPanel-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#tab1}}
+  aria-controls="{{tab1}}"
+{{/tab1}}
+aria-selected="true"
+class="g-tabsTabsWithAnchorInPanel-tabs__tab g-tabsTabsWithAnchorInPanel-tabs__tab--selected"
+{{#href}}
+  href="{{href}}"
+{{/href}}
+{{#tabTab1}}
+  id="{{tabTab1}}"
+{{/tabTab1}}
+role="tab"
+tabindex="0"
+{{#rel}}
+  rel="{{rel}}"
+{{/rel}}
+{{#target}}
+  target="{{#target=Blank}}_blank{{/target=Blank}}{{#target=Top}}_top{{/target=Top}}{{#target=Self}}_self{{/target=Self}}{{#target=Parent}}_parent{{/target=Parent}}"
+{{/target}}
+>
+  
+        Tab 1
+      
+</a>
+  
+    
+</li>
+  
+    
+<li
+class="g-tabsTabsWithAnchorInPanel-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#tab2}}
+  aria-controls="{{tab2}}"
+{{/tab2}}
+aria-selected="false"
+class="g-tabsTabsWithAnchorInPanel-tabs__tab"
+{{#href2}}
+  href="{{href2}}"
+{{/href2}}
+{{#tabTab2}}
+  id="{{tabTab2}}"
+{{/tabTab2}}
+role="tab"
+tabindex="-1"
+{{#rel2}}
+  rel="{{rel2}}"
+{{/rel2}}
+{{#target2}}
+  target="{{#target2=Blank}}_blank{{/target2=Blank}}{{#target2=Top}}_top{{/target2=Top}}{{#target2=Self}}_self{{/target2=Self}}{{#target2=Parent}}_parent{{/target2=Parent}}"
+{{/target2}}
+>
+  
+        Tab 2
+      
+</a>
+  
+    
+</li>
+  
+  
+</ul>
+  
+
+  
+<section
+{{#tabTab1}}
+  aria-labelledby="{{tabTab1}}"
+{{/tabTab1}}
+class="g-tabsTabsWithAnchorInPanel-tabs__panel"
+{{#tab1}}
+  id="{{tab1}}"
+{{/tab1}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabsTabsWithAnchorInPanel-heading-l"
+>
+  Tab 1
+</h2>
+  
+    
+<p
+>
+  
+      Testing that when you click the anchor it moves to the anchor point
+      successfully
+    
+</p>
+  
+    
+<a
+class="g-tabsTabsWithAnchorInPanel-link"
+{{#href3}}
+  href="{{href3}}"
+{{/href3}}
+{{#rel3}}
+  rel="{{rel3}}"
+{{/rel3}}
+{{#target3}}
+  target="{{#target3=Blank}}_blank{{/target3=Blank}}{{#target3=Top}}_top{{/target3=Top}}{{#target3=Self}}_self{{/target3=Self}}{{#target3=Parent}}_parent{{/target3=Parent}}"
+{{/target3}}
+>
+  Anchor
+</a>
+  
+    
+<a
+{{#anchor}}
+  id="{{anchor}}"
+{{/anchor}}
+tabindex="0"
+{{#href4}}
+  href="{{href4}}"
+{{/href4}}
+{{#rel4}}
+  rel="{{rel4}}"
+{{/rel4}}
+{{#target4}}
+  target="{{#target4=Blank}}_blank{{/target4=Blank}}{{#target4=Top}}_top{{/target4=Top}}{{#target4=Self}}_self{{/target4=Self}}{{#target4=Parent}}_parent{{/target4=Parent}}"
+{{/target4}}
+>
+  Anchor Point
+</a>
+  
+  
+</section>
+  
+  
+<section
+{{#tabTab2}}
+  aria-labelledby="{{tabTab2}}"
+{{/tabTab2}}
+class="g-tabsTabsWithAnchorInPanel-tabs__panel g-tabsTabsWithAnchorInPanel-tabs__panel--hidden"
+{{#tab2}}
+  id="{{tab2}}"
+{{/tab2}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabsTabsWithAnchorInPanel-heading-l"
+>
+  Tab 2
+</h2>
+  
+  
+</section>
+  
+
+</div>

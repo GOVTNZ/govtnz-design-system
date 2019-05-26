@@ -1,0 +1,34 @@
+// ============================================================================
+// Icon styles
+// ============================================================================
+@import '../commons/styles/settings-global';
+
+.icon {
+  display: inline-block;
+  // margin: 0 auto;
+  width: 16px;
+  height: 16px;
+
+  > use {
+    fill: currentColor;
+  }
+}
+
+// Icon colors
+.icon--white {
+  > use {
+    fill: $color-core-white;
+  }
+}
+
+.icon--theme-highlight {
+  > use {
+    fill: $color-ds-default-green-mid;
+    fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+  }
+}
+
+.icon--lg {
+  width: 32px;
+  height: 32px;
+}

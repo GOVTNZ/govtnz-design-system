@@ -1,0 +1,66 @@
+<div
+class="g-selectWithFullWidthOverride-form-group"
+>
+  
+  
+<label
+class="g-selectWithFullWidthOverride-label"
+{{#select1}}
+  for="{{select1}}"
+{{/select1}}
+>
+  
+    Label text goes here
+  
+</label>
+  
+  
+<select
+class="g-selectWithFullWidthOverride-select g-!-width-full"
+{{#select1}}
+  id="{{select1}}"
+{{/select1}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#multiple}}
+  multiple="{{#multiple}}multiple{{/multiple}}"
+{{/multiple}}
+>
+  
+    
+<option
+value="1"
+{{#selected}}
+  selected="{{#selected}}selected{{/selected}}"
+{{/selected}}
+>
+  Govt.NZ frontend option 1
+</option>
+  
+    
+<option
+{{#selected2}}
+  selected="{{#selected2}}selected2{{/selected2}}"
+{{/selected2}}
+value="2"
+>
+  Govt.NZ frontend option 2
+</option>
+  
+    
+<option
+disabled=""
+value="3"
+{{#selected3}}
+  selected="{{#selected3}}selected3{{/selected3}}"
+{{/selected3}}
+>
+  Govt.NZ frontend option 3
+</option>
+  
+  
+</select>
+  
+
+</div>

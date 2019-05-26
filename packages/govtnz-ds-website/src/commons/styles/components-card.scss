@@ -1,0 +1,31 @@
+// ============================================================================
+// Card
+// ============================================================================
+@import './settings-global';
+@import './settings-breakpoints';
+
+.card {
+  margin-top: $spacing-32;
+  margin-bottom: $spacing-32;
+  @include medium {
+    margin-top: $spacing-64;
+    margin-bottom: $spacing-48;
+  }
+  @include large {
+    margin-top: $spacing-80;
+    margin-bottom: 0;
+  }
+}
+
+.card__icon-container {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $color-ds-default-light-grey;
+  background-color: var(--color-theme-light-grey, $color-ds-default-light-grey);
+  padding: $spacing-24;
+}
+
+.card__icon {
+  width: 100%;
+  height: 100%;
+}

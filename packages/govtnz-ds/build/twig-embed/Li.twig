@@ -1,0 +1,2 @@
+<li> {$children}
+</li>

@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`twig-embed Snapshots makeIndexImports 1`] = `
+Object {
+  "react-ts/index.tsx": "// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+
+export const blah.js = () => import(\\"./blah.js\\");
+",
+  "react-ts/indexNotLazy.tsx": "// DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
+
+export { default as blahJs } from \\"./blah.js\\";
+",
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: <img src="pic.jpeg" class="frogs"> 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/imgSrc.html.twig": "<img
+class=\\"frogs\\"
+src=\\"{{src}}\\"
+width=\\"{{width}}\\"
+height=\\"{{height}}\\"
+srcset=\\"{{srcset}}\\"
+crossorigin=\\"\\"
+/>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: Basic variables 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/paragraph.html.twig": "<p
+>
+  {{{children}}}
+</p>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: Boolean attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/row.html.twig": "<div
+class=\\"g-flex-row{{#isReversed}} g-flex-reverse{{/isReversed}}\\"
+>
+  
+            
+  {{{children}}}
+  
+          
+</div>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed Snapshots twig-embed: Enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/container.html.twig": "<div
+class=\\"\\"
+>
+  
+          
+  {{{children}}}
+  
+        
+</div>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed Snapshots twig-embed: Form input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/input.html.twig": "<input
+id=\\"{{textId}}\\"
+type=\\"checkbox\\"
+name=\\"{{name}}\\"
+disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
+readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
+autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
+value=\\"{{value}}\\"
+checked=\\"{{#checked}}checked{{/checked}}\\"
+/>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: Form label input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/input.html.twig": "<label
+for=\\"{{textId}}\\"
+>
+<input
+id=\\"{{textId}}\\"
+type=\\"checkbox\\"
+name=\\"{{name}}\\"
+disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
+readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
+autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
+value=\\"{{value}}\\"
+checked=\\"{{#checked}}checked{{/checked}}\\"
+/>
+</label>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: H1 with configurable Id 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/h1Id.html.twig": "<h1
+id=\\"{{id}}\\"
+>
+  stuff
+</h1>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: Link with boolean class 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/a.html.twig": "<a
+class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
+href=\\"{{href}}\\"
+rel=\\"{{rel}}\\"
+target=\\"\\"
+>
+  {{{children}}}
+</a>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed Snapshots twig-embed: Lots of enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/container.html.twig": "<div
+class=\\"g-flex-col{{#isReversed}} g-flex-reverse{{/isReversed}}\\"
+>
+  
+        
+  {{{children}}}
+  
+      
+</div>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed Snapshots twig-embed: form input[text] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "twig-embed/input.html.twig": "<label
+for=\\"{{textId}}\\"
+>
+  Label text
+</label>
+<input
+id=\\"{{textId}}\\"
+type=\\"\\"
+name=\\"{{name}}\\"
+disabled=\\"{{#disabled}}disabled{{/disabled}}\\"
+readonly=\\"{{#readOnly}}readOnly{{/readOnly}}\\"
+autofocus=\\"{{#autoFocus}}autoFocus{{/autoFocus}}\\"
+value=\\"{{value}}\\"
+spellcheck=\\"{{#spellCheck}}spellCheck{{/spellCheck}}\\"
+autocomplete=\\"\\"
+/>",
+      },
+      "formatId": "twig-embed",
+    },
+  ],
+}
+`;
+
+exports[`twig-embed twig-embed: CSS Configuration (CSS Variables and Scss Variables) 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/a.html.twig": "<a
+class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
+href=\\"{{href}}\\"
+rel=\\"{{rel}}\\"
+target=\\"\\"
+>
+  {{{children}}}
+</a>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed twig-embed: CSS Configuration (CSS Variables and Scss Variables) 2`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/a.html.twig": "<a
+class=\\"g-link{{#isMuted}} g-link--muted{{/isMuted}}\\"
+href=\\"{{href}}\\"
+rel=\\"{{rel}}\\"
+target=\\"\\"
+>
+  {{{children}}}
+</a>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed twig-embed: CSS Configuration of Fonts 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/a.html.twig": "<a
+class=\\"g-link\\"
+href=\\"{{href}}\\"
+rel=\\"{{rel}}\\"
+target=\\"\\"
+>
+  {{{children}}}
+</a>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed twig-embed: jsxToUsageCode with boolean false 1`] = `
+Object {
+  "twig-embed": "{% embed \\"Ul.html.twig\\"  with {'isBulleted':'false'} only %}{% block children %}{% embed \\"Li.html.twig\\"  with {'children':'Unordered item one'} only %}{% endembed %}
+{% embed \\"Li.html.twig\\"  with {'children':'Unordered item two'} only %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed twig-embed: jsxToUsageCode with boolean false and inline HTML 1`] = `
+Object {
+  "twig-embed": "{% embed \\"Ul.html.twig\\"  with {'isBulleted':'false'} only %}{% block children %}{% embed \\"Li.html.twig\\" %}{% block children %}Unordered
+<a href=\\"http://zombo.com/\\">item one</a>{% endblock %}{% endembed %}
+{% embed \\"Li.html.twig\\"  with {'children':'Unordered item two'} only %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed twig-embed: jsxToUsageCode with boolean true 1`] = `
+Object {
+  "twig-embed": "{% embed \\"Ul.html.twig\\"  with {'isBulleted':'true'} only %}{% block children %}{% embed \\"Li.html.twig\\"  with {'children':'Unordered item one'} only %}{% endembed %}
+{% embed \\"Li.html.twig\\"  with {'children':'Unordered item two'} only %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed twig-embed: jsxToUsageCode with enumerations 1`] = `
+Object {
+  "twig-embed": "{% embed \\"Div.html.twig\\"  with {'containerType':'fixed'} only %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed twig-embed: makeUsage 1`] = `
+Object {
+  "twig-embed": "{% embed \\"H1.html.twig\\" %}{% block children %}{% embed \\"A.html.twig\\"  with {'href':'https://html5zombo.com/', 'children':'Click me', 'reversed':'On'} only %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed twig-embed: makeUsage with booleans 1`] = `
+Object {
+  "twig-embed": "{% embed \\"H1.html.twig\\" %}{% block children %}{% embed \\"A.html.twig\\"  with {'href':'https://html5zombo.com/', 'children':'Click me', 'isReversed':'true'} only %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;

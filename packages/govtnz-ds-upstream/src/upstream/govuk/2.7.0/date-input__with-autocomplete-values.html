@@ -1,0 +1,68 @@
+<div class="govuk-form-group">
+  <fieldset
+    class="govuk-fieldset"
+    role="group"
+    aria-describedby="dob-with-autocomplete-attribute-hint"
+  >
+    <legend class="govuk-fieldset__legend">What is your date of birth?</legend>
+    <span class="govuk-hint" id="dob-with-autocomplete-attribute-hint">
+      For example, 31 3 1980
+    </span>
+    <div class="govuk-date-input" id="dob-with-autocomplete-attribute">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-with-autocomplete-attribute-day"
+          >
+            Day
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-2"
+            id="dob-with-autocomplete-attribute-day"
+            name="dob-with-autocomplete-day"
+            type="number"
+            autocomplete="bday-day"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-with-autocomplete-attribute-month"
+          >
+            Month
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-2"
+            id="dob-with-autocomplete-attribute-month"
+            name="dob-with-autocomplete-month"
+            type="number"
+            autocomplete="bday-month"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-with-autocomplete-attribute-year"
+          >
+            Year
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-2"
+            id="dob-with-autocomplete-attribute-year"
+            name="dob-with-autocomplete-year"
+            type="number"
+            autocomplete="bday-year"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>

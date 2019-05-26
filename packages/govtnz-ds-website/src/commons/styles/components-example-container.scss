@@ -1,0 +1,25 @@
+// ============================================================================
+// Example Component
+// ============================================================================
+@import './settings-global';
+@import './settings-breakpoints';
+
+.example__container {
+  border: solid 1px $color-ds-default-mid-grey;
+  border: solid 1px var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+  margin-top: $spacing-64;
+  margin-bottom: $spacing-40;
+}
+
+.example__container--padded {
+  padding: $spacing-32 $spacing-32 $spacing-32;
+}
+
+.example__container + .g-heading-m,
+.example__container + .g-heading-s {
+  margin-top: $spacing-64 !important; // Override css from .g-heading-m/s
+}
+
+[class^='g-heading'] + .example__container {
+  margin-top: $spacing-32;
+}

@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scss Snapshots makeIndexImports 1`] = `
+Object {
+  "react-ts/index.tsx": "// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+
+export const blah.js = () => import(\\"./blah.js\\");
+",
+  "react-ts/indexNotLazy.tsx": "// DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
+
+export { default as blahJs } from \\"./blah.js\\";
+",
+}
+`;
+
+exports[`scss Snapshots scss: <img src="pic.jpeg" class="frogs"> 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/imgSrc.scss": ".frogs {
+  background: green;
+}
+",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss Snapshots scss: Basic variables 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/paragraph.scss": "",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss Snapshots scss: Boolean attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/row.scss": ".g-flex-row {
+  color: red;
+}
+
+.g-flex-row.g-flex-reverse {
+  color: blue;
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss Snapshots scss: Enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/container.scss": ".g-flex-container,
+.g-flex-container-fluid {
+  background: red;
+  color: purple;
+}
+
+.g-flex-container-fluid {
+  color: red;
+}
+
+@media only screen and (min-width: 48em) {
+  .g-flex-container {
+    color: blue;
+  }
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss Snapshots scss: Form input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/input.scss": "",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss Snapshots scss: Form label input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/input.scss": "",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss Snapshots scss: H1 with configurable Id 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/h1Id.scss": "",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss Snapshots scss: Link with boolean class 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/a.scss": ".g-link {
+  color: white;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss Snapshots scss: Lots of enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/container.scss": ".g-flex-col.g-flex-reverse {
+  color: red;
+}
+
+.g-flex-col-xs {
+  color: blue;
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss Snapshots scss: form input[text] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "scss/input.scss": "",
+      },
+      "formatId": "scss",
+    },
+  ],
+}
+`;
+
+exports[`scss scss: CSS Configuration (CSS Variables and Scss Variables) 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/a.scss": ".g-link {
+  color: $theme-color-white !important;
+  color: var(--theme-color-white, $theme-color-white) !important;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss scss: CSS Configuration (CSS Variables and Scss Variables) 2`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/a.scss": ".g-link {
+  background: $theme-color-white url(\\"big.gif\\") !important;
+  background: var(--theme-color-white, $theme-color-white) url(\\"big.gif\\") !important;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss scss: CSS Configuration of Fonts 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "scss/a.scss": ".g-link {
+  font-family: $theme-font-family;
+  font-family: var(--theme-font-family, $theme-font-family);
+}
+",
+    },
+    "formatId": "scss",
+  },
+]
+`;
+
+exports[`scss scss: jsxToUsageCode with boolean false 1`] = `
+Object {
+  "scss": "",
+}
+`;
+
+exports[`scss scss: jsxToUsageCode with boolean false and inline HTML 1`] = `
+Object {
+  "scss": "",
+}
+`;
+
+exports[`scss scss: jsxToUsageCode with boolean true 1`] = `
+Object {
+  "scss": "",
+}
+`;
+
+exports[`scss scss: jsxToUsageCode with enumerations 1`] = `
+Object {
+  "scss": "",
+}
+`;
+
+exports[`scss scss: makeUsage 1`] = `
+Object {
+  "scss": "",
+}
+`;
+
+exports[`scss scss: makeUsage with booleans 1`] = `
+Object {
+  "scss": "",
+}
+`;

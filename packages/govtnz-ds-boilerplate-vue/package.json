@@ -1,0 +1,28 @@
+{
+  "name": "@govtnz/ds-boilerplate-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "start": "yarn serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@govtnz/ds": "0.0.1",
+    "@vue/cli-service": "3.5.3",
+    "vue-class-component": "^6.0.0",
+    "vue-property-decorator": "^7.0.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-typescript": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.0.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}

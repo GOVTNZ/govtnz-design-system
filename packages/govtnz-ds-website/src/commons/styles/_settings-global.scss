@@ -1,0 +1,76 @@
+// =============================================================================
+// Global settings
+// =============================================================================
+@import './settings-mixins';
+
+// Fonts & Typography
+// =============================================================================
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+// Spacing
+// =============================================================================
+$spacing-base-unit: 8;
+
+$spacing-1: rem(1);
+$spacing-2: rem(2);
+$spacing-4: rem($spacing-base-unit * 0.5);
+$spacing-8: rem($spacing-base-unit);
+$spacing-12: rem($spacing-base-unit * 1.5);
+$spacing-16: rem($spacing-base-unit * 2);
+$spacing-20: rem($spacing-base-unit * 2.5);
+$spacing-24: rem($spacing-base-unit * 3);
+$spacing-32: rem($spacing-base-unit * 4);
+$spacing-40: rem($spacing-base-unit * 5);
+$spacing-48: rem($spacing-base-unit * 6);
+$spacing-56: rem($spacing-base-unit * 7);
+$spacing-64: rem($spacing-base-unit * 8);
+$spacing-72: rem($spacing-base-unit * 9);
+$spacing-80: rem($spacing-base-unit * 10);
+$spacing-120: rem($spacing-base-unit * 15);
+$spacing-192: rem($spacing-base-unit * 24);
+
+// Default theme colours
+// =============================================================================
+
+// These colours cannot be changed by theming, they are core govt colours.
+$color-core-white: #ffffff;
+$color-core-black: #000000;
+$color-core-grey: #363636;
+
+// These colours can be changed by theming, using CSS variables
+// set on the :root element.
+$color-ds-default-slate: #2a2a2a;
+$color-ds-default-dark-grey: #363636;
+$color-ds-default-mid-grey: #595959;
+$color-ds-default-light-grey: #d3d3d3;
+$color-ds-default-off-white: #f4f4f4;
+$color-ds-default-white: #ffffff;
+
+$color-ds-default-green: #23cba5;
+$color-ds-default-green-dark: #158c6a;
+$color-ds-default-green-mid: #24a882;
+
+$color-ds-default-focus: #b53cde;
+$color-ds-default-link: #005dbb;
+$color-ds-default-link-hover: #000c48;
+$color-ds-default-link-visited: #4c2c92;
+
+// These colours cannot be changed by theming.
+$color-ds-alert-red: #b10e1e;
+$color-ds-alert-amber: #fcab30;
+$color-ds-alert-green: #30bb0d;
+$color-ds-alert-blue: #3000ff;
+
+// Colours mapped to a state/interaction.
+$color-error: $color-ds-alert-red;
+$color-warning: $color-ds-alert-amber;
+$color-success: $color-ds-alert-green;
+$color-info: $color-ds-alert-blue;
+
+// Site width
+// =============================================================================
+$max-width: 1366;

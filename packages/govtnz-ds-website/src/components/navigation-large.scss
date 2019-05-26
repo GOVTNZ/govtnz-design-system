@@ -1,0 +1,29 @@
+// ============================================================================
+// Design System site Main navigation (large)
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-mixins';
+@import '../commons/styles/settings-breakpoints';
+
+.navigation-large {
+  display: none;
+  @include medium {
+    display: block;
+    margin-bottom: $spacing-64;
+  }
+
+  @include large {
+    margin-bottom: $spacing-80;
+  }
+}
+
+.navigation-large__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: $font-size-base;
+
+  @include medium {
+    margin-left: -6px;
+  }
+}

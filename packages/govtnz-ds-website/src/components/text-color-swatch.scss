@@ -1,0 +1,28 @@
+// ============================================================================
+// Color Swatch component
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+@import '../commons/styles/settings-mixins';
+
+.text-color-swatch {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.text-color-swatch__color {
+  padding: $spacing-8;
+  flex: 1 1 auto;
+}
+
+.text-color-swatch__heading {
+  font-size: 1.25rem;
+  margin-top: $spacing-40;
+  margin-bottom: 0;
+  flex: 0 1 auto;
+}
+
+.text-color-swatch li {
+  font-size: 1rem;
+}

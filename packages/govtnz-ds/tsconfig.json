@@ -1,0 +1,10 @@
+{
+  "extends": "../govtnz-ds-common/tsconfig-common.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["dist", "src/**/*.test.ts", "src/**/*.test.tsx"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true
+  }
+}

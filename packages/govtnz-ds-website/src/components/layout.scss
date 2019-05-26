@@ -1,0 +1,15 @@
+// ============================================================================
+// Layout
+// ============================================================================
+
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+
+.main-content {
+  padding-bottom: $spacing-80;
+  min-height: 35vh;
+}
+
+summary {
+  display: block;
+}

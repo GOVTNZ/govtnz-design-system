@@ -1,0 +1,9 @@
+// ============================================================================
+// Example Component
+// ============================================================================
+@import './settings-global';
+@import './settings-breakpoints';
+
+.example__section {
+  margin-bottom: $spacing-24;
+}

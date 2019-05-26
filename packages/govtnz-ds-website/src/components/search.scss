@@ -1,0 +1,14 @@
+// ============================================================================
+// Design System Search
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+
+.search {
+  margin-top: $spacing-12;
+  margin-bottom: $spacing-12;
+  @include medium {
+    margin-top: $spacing-24;
+    margin-bottom: $spacing-24;
+  }
+}

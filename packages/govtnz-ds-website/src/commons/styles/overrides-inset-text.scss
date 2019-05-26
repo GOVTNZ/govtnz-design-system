@@ -1,0 +1,15 @@
+// ============================================================================
+// Inset Text overrides
+// ============================================================================
+// We are temporarily overriding the Flexbox grid styling here
+// TODO: move these into the Design System
+
+.g-inset-text {
+  background-color: #f4f4f4;
+  background-color: var(--color-theme-off-white, #f4f4f4);
+  border-left: 8px solid #23cba5;
+  border-left: 8px solid var(--color-theme-highlight, #23cba5);
+  padding: 2rem 2rem 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}

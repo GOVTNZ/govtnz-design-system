@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn workspace css-sniff build && yarn workspace @springload/metatemplate build && yarn workspace react-accessible-details build && yarn workspace @govtnz/ds-common build && yarn workspace @govtnz/ds-upstream build && yarn workspace compilation-templates build",
+    "build:release": "yarn workspace @govtnz/ds build:release",
+    "build:website": "yarn workspace @govtnz/ds-website build",
+    "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",
+    "build:all": "yarn build && yarn build:release && yarn build:website:compile-markdown && yarn build:website",
+    "test": "yarn workspace @govtnz/ds-common test && yarn workspace @springload/metatemplate test && yarn workspace @govtnz/ds-boilerplate-mustache test",
+    "test__comment": "Also the website static build itself tests parts of the React-TS integration type",
+    "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "yarn": "^1.13.0"
+  }
+}

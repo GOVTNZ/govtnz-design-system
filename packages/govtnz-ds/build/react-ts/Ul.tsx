@@ -1,0 +1,18 @@
+import * as React from "react";
+
+type Props = {
+  bulleted?: boolean | undefined;
+  children?: React.ReactNode;
+};
+
+const Ul = ({ bulleted, children }: Props) => (
+  <ul className={`g-ul-list${bulleted ? " g-ul-list--bullet" : ""}`}>
+    {children !== undefined ? (
+      children
+    ) : (
+      <React.Fragment>Example text</React.Fragment>
+    )}
+  </ul>
+);
+Ul.props = ["bulleted", "children"];
+export default Ul;

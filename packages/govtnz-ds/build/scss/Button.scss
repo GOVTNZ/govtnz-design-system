@@ -1,0 +1,135 @@
+.g-button {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding: 16px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  color: black;
+  background-color: $g-theme-color-brand-2;
+  background-color: var(--g-theme-color-brand-2, $g-theme-color-brand-2);
+  box-shadow: none;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+@media print {
+  .g-button {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-button {
+    font-size: 1.1875rem;
+    line-height: 1;
+  }
+}
+
+@media print {
+  .g-button {
+    font-size: 14pt;
+    line-height: 19px;
+  }
+}
+
+.g-button:focus {
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline-offset: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .g-button {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-button {
+    width: auto;
+  }
+}
+
+.g-button:link,
+.g-button:visited,
+.g-button:active,
+.g-button:hover {
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  text-decoration: none;
+}
+
+.g-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.g-button:hover,
+.g-button:focus {
+  background-color: $g-theme-color-brand-4;
+  background-color: var(--g-theme-color-brand-4, $g-theme-color-brand-4);
+}
+
+.g-button:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.g-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -4px;
+  left: -2px;
+  background: transparent;
+}
+
+.g-button:active::before {
+  top: -4px;
+}
+
+.g-button--disabled,
+.g-button[disabled] {
+  opacity: 0.5;
+  background: $g-theme-color-brand-2;
+  background: var(--g-theme-color-brand-2, $g-theme-color-brand-2);
+}
+
+.g-button--disabled:hover,
+.g-button[disabled]:hover {
+  background-color: $g-theme-color-brand-2;
+  background-color: var(--g-theme-color-brand-2, $g-theme-color-brand-2);
+  cursor: default;
+}
+
+.g-button--disabled:focus,
+.g-button[disabled]:focus {
+  outline: none;
+}
+
+.g-button--disabled:active,
+.g-button[disabled]:active {
+  top: 0;
+  box-shadow: 0 2px 0 $g-theme-color-brand-3;
+  box-shadow: 0 2px 0 var(--g-theme-color-brand-3, $g-theme-color-brand-3);
+}
+
+.g-button {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}

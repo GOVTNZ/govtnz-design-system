@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS Snapshots css: <img src="pic.jpeg" class="frogs"> 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/imgSrc.css": ".frogs {
+  background: green;
+}
+",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots css: Basic variables 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/paragraph.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots css: Boolean attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/row.css": ".g-flex-row {
+  color: red;
+}
+
+.g-flex-row.g-flex-reverse {
+  color: blue;
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS Snapshots css: Enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/container.css": ".g-flex-container,
+.g-flex-container-fluid {
+  background: red;
+  color: purple;
+}
+
+.g-flex-container-fluid {
+  color: red;
+}
+
+@media only screen and (min-width: 48em) {
+  .g-flex-container {
+    color: blue;
+  }
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS Snapshots css: Form input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/input.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots css: Form label input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/input.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots css: H1 with configurable Id 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/h1Id.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots css: Link with boolean class 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/a.css": ".g-link {
+  color: white;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS Snapshots css: Lots of enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/container.css": ".g-flex-col.g-flex-reverse {
+  color: red;
+}
+
+.g-flex-col-xs {
+  color: blue;
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS Snapshots css: form input[text] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/input.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
+exports[`CSS Snapshots makeIndexImports 1`] = `
+Object {
+  "react-ts/index.tsx": "// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+
+export const blah.js = () => import(\\"./blah.js\\");
+",
+  "react-ts/indexNotLazy.tsx": "// DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
+
+export { default as blahJs } from \\"./blah.js\\";
+",
+}
+`;
+
+exports[`CSS css: CSS Configuration (CSS Variables and Scss Variables) 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/a.css": ".g-link {
+  color: #ffffff !important;
+  color: var(--theme-color-white, #ffffff) !important;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS css: CSS Configuration (CSS Variables and Scss Variables) 2`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/a.css": ".g-link {
+  background: #ffffff url(\\"big.gif\\") !important;
+  background: var(--theme-color-white, #ffffff) url(\\"big.gif\\") !important;
+}
+
+.g-link--muted {
+  opacity: 0.5;
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS css: CSS Configuration of Fonts 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/a.css": ".g-link {
+  font-family: Arial, sans-serif;
+  font-family: var(--theme-font-family, Thing);
+}
+",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS css: jsxToUsageCode with boolean false 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS css: jsxToUsageCode with boolean false and inline HTML 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS css: jsxToUsageCode with boolean true 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS css: jsxToUsageCode with enumerations 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS css: makeUsage 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS css: makeUsage with booleans 1`] = `
+Object {
+  "css": "",
+}
+`;

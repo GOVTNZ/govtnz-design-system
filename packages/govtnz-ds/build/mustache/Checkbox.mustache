@@ -1,0 +1,28 @@
+<input
+{{#hintId}}
+  aria-describedby="{{hintId}}"
+{{/hintId}}
+class="g-checkboxes__input{{#fakeFocus}} :focus{{/fakeFocus}}"
+{{#checkboxId}}
+  id="{{checkboxId}}"
+{{/checkboxId}}
+type="checkbox"
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+{{#checked}}
+  checked="{{#checked}}checked{{/checked}}"
+{{/checked}}
+/>

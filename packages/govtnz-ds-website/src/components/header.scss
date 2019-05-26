@@ -1,0 +1,105 @@
+// ============================================================================
+// Design System site header
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+@import '../commons/styles/settings-mixins';
+
+.header {
+  background-color: $color-core-grey;
+  background-color: var(--color-theme-dark-grey, $color-core-grey);
+  color: $color-core-white;
+  @include font-smoothing;
+
+  @include small {
+    margin-bottom: $spacing-32;
+  }
+
+  .g-flex-row {
+    align-items: center;
+  }
+}
+
+.header__logo,
+.header__icon,
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-core-white;
+  fill: $color-core-white;
+}
+
+.header__logo {
+  max-width: 64px;
+
+  @include xsmall {
+    max-width: 56px;
+  }
+
+  @include medium {
+    max-width: 200px;
+  }
+  @include large {
+    max-width: 228px;
+  }
+}
+
+.header__logo--show\@medium {
+  display: none;
+  @include medium {
+    display: inline-block;
+  }
+}
+
+.header__logo--hide\@medium {
+  @include medium {
+    display: none;
+  }
+}
+
+.header__icon {
+  max-width: 100%;
+  max-height: 24px;
+  > use {
+    fill: $color-core-white;
+  }
+}
+
+.header__title {
+  margin-top: $spacing-8;
+  margin-bottom: $spacing-8;
+  margin-left: $spacing-16;
+  padding-left: $spacing-16;
+  padding-top: $spacing-2;
+  padding-bottom: $spacing-2;
+  border-left: $color-ds-default-mid-grey;
+  border-left: 1px solid var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+  font-size: rem(18);
+  color: $color-core-white;
+
+  > * {
+    margin: 0;
+  }
+
+  @include xsmall {
+    font-size: rem(16);
+    margin-left: $spacing-8;
+    padding-left: $spacing-8;
+  }
+
+  @include medium {
+    margin-top: $spacing-24;
+    margin-bottom: $spacing-24;
+    margin-left: $spacing-12;
+    padding-left: $spacing-12;
+    padding-top: $spacing-4;
+    padding-bottom: $spacing-8;
+    font-size: rem(20);
+  }
+
+  @include large {
+    margin-left: $spacing-24;
+    padding-left: $spacing-24;
+    font-size: rem(24);
+  }
+}

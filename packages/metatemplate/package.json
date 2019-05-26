@@ -1,0 +1,45 @@
+{
+  "version": "0.0.17",
+  "name": "@springload/metatemplate",
+  "description": "MetaTemplate",
+  "author": "Springload - Matthew Holloway <matthew@springload.co.nz>",
+  "homepage": "https://github.com/springload/metatemplate",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "engines": {
+    "node": "10.14.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:typescript": "tsc --project ./ --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "glob-promise": "^3.4.0"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.4.4",
+    "css-sniff": "2.0.0",
+    "jest": "^24.8.0",
+    "jsdom": "^14.0.0",
+    "jsx2json": "^1.0.1",
+    "lodash": "^4.17.11",
+    "postcss-safe-parser": "^4.0.1",
+    "prettier": "^1.16.4",
+    "puppeteer": "1.14.0",
+    "rmfr": "^2.0.0",
+    "split-css-selector": "^1.0.0",
+    "string-replace-async": "^1.2.1",
+    "typescript": "^3.4.5",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

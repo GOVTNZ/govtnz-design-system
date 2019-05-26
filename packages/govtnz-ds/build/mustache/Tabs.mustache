@@ -1,0 +1,531 @@
+<div
+class="g-tabs"
+data-module="tabs"
+>
+  
+  
+<h2
+class="g-tabs__title"
+>
+  
+    Contents
+  
+</h2>
+  
+
+  
+<ul
+class="g-tabs__list"
+role="tablist"
+>
+  
+    
+<li
+class="g-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#pastDay}}
+  aria-controls="{{pastDay}}"
+{{/pastDay}}
+aria-selected="true"
+class="g-tabs__tab g-tabs__tab--selected"
+{{#href}}
+  href="{{href}}"
+{{/href}}
+{{#tabPastDay}}
+  id="{{tabPastDay}}"
+{{/tabPastDay}}
+role="tab"
+tabindex="0"
+{{#rel}}
+  rel="{{rel}}"
+{{/rel}}
+{{#target}}
+  target="{{#target=Blank}}_blank{{/target=Blank}}{{#target=Top}}_top{{/target=Top}}{{#target=Self}}_self{{/target=Self}}{{#target=Parent}}_parent{{/target=Parent}}"
+{{/target}}
+>
+  
+        Past day
+      
+</a>
+  
+    
+</li>
+  
+    
+<li
+class="g-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#pastWeek}}
+  aria-controls="{{pastWeek}}"
+{{/pastWeek}}
+aria-selected="false"
+class="g-tabs__tab"
+{{#href2}}
+  href="{{href2}}"
+{{/href2}}
+{{#tabPastWeek}}
+  id="{{tabPastWeek}}"
+{{/tabPastWeek}}
+role="tab"
+tabindex="-1"
+{{#rel2}}
+  rel="{{rel2}}"
+{{/rel2}}
+{{#target2}}
+  target="{{#target2=Blank}}_blank{{/target2=Blank}}{{#target2=Top}}_top{{/target2=Top}}{{#target2=Self}}_self{{/target2=Self}}{{#target2=Parent}}_parent{{/target2=Parent}}"
+{{/target2}}
+>
+  
+        Past week
+      
+</a>
+  
+    
+</li>
+  
+    
+<li
+class="g-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#pastMonth}}
+  aria-controls="{{pastMonth}}"
+{{/pastMonth}}
+aria-selected="false"
+class="g-tabs__tab"
+{{#href3}}
+  href="{{href3}}"
+{{/href3}}
+{{#tabPastMonth}}
+  id="{{tabPastMonth}}"
+{{/tabPastMonth}}
+role="tab"
+tabindex="-1"
+{{#rel3}}
+  rel="{{rel3}}"
+{{/rel3}}
+{{#target3}}
+  target="{{#target3=Blank}}_blank{{/target3=Blank}}{{#target3=Top}}_top{{/target3=Top}}{{#target3=Self}}_self{{/target3=Self}}{{#target3=Parent}}_parent{{/target3=Parent}}"
+{{/target3}}
+>
+  
+        Past month
+      
+</a>
+  
+    
+</li>
+  
+    
+<li
+class="g-tabs__list-item"
+role="presentation"
+>
+  
+      
+<a
+{{#pastYear}}
+  aria-controls="{{pastYear}}"
+{{/pastYear}}
+aria-selected="false"
+class="g-tabs__tab"
+{{#href4}}
+  href="{{href4}}"
+{{/href4}}
+{{#tabPastYear}}
+  id="{{tabPastYear}}"
+{{/tabPastYear}}
+role="tab"
+tabindex="-1"
+{{#rel4}}
+  rel="{{rel4}}"
+{{/rel4}}
+{{#target4}}
+  target="{{#target4=Blank}}_blank{{/target4=Blank}}{{#target4=Top}}_top{{/target4=Top}}{{#target4=Self}}_self{{/target4=Self}}{{#target4=Parent}}_parent{{/target4=Parent}}"
+{{/target4}}
+>
+  
+        Past year
+      
+</a>
+  
+    
+</li>
+  
+  
+</ul>
+  
+
+  
+<section
+{{#tabPastDay}}
+  aria-labelledby="{{tabPastDay}}"
+{{/tabPastDay}}
+class="g-tabs__panel"
+{{#pastDay}}
+  id="{{pastDay}}"
+{{/pastDay}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabs-heading-l"
+>
+  Past day
+</h2>
+  
+    
+<table
+class="g-tabs-table"
+>
+  
+      
+<thead
+class="g-tabs-table__head"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Case manager
+          Cases opened
+          Cases closed
+        
+</tr>
+  
+      
+</thead>
+  
+      
+<tbody
+class="g-tabs-table__body"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          David Francis
+          3
+          0
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Paul Farmer
+          1
+          0
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Rita Patel
+          2
+          0
+        
+</tr>
+  
+      
+</tbody>
+  
+    
+</table>
+  
+  
+</section>
+  
+  
+<section
+{{#tabPastWeek}}
+  aria-labelledby="{{tabPastWeek}}"
+{{/tabPastWeek}}
+class="g-tabs__panel g-tabs__panel--hidden"
+{{#pastWeek}}
+  id="{{pastWeek}}"
+{{/pastWeek}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabs-heading-l"
+>
+  Past week
+</h2>
+  
+    
+<table
+class="g-tabs-table"
+>
+  
+      
+<thead
+class="g-tabs-table__head"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Case manager
+          Cases opened
+          Cases closed
+        
+</tr>
+  
+      
+</thead>
+  
+      
+<tbody
+class="g-tabs-table__body"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          David Francis
+          24
+          18
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Paul Farmer
+          16
+          20
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Rita Patel
+          24
+          27
+        
+</tr>
+  
+      
+</tbody>
+  
+    
+</table>
+  
+  
+</section>
+  
+  
+<section
+{{#tabPastMonth}}
+  aria-labelledby="{{tabPastMonth}}"
+{{/tabPastMonth}}
+class="g-tabs__panel g-tabs__panel--hidden"
+{{#pastMonth}}
+  id="{{pastMonth}}"
+{{/pastMonth}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabs-heading-l"
+>
+  Past month
+</h2>
+  
+    
+<table
+class="g-tabs-table"
+>
+  
+      
+<thead
+class="g-tabs-table__head"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Case manager
+          Cases opened
+          Cases closed
+        
+</tr>
+  
+      
+</thead>
+  
+      
+<tbody
+class="g-tabs-table__body"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          David Francis
+          98
+          95
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Paul Farmer
+          122
+          131
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Rita Patel
+          126
+          142
+        
+</tr>
+  
+      
+</tbody>
+  
+    
+</table>
+  
+  
+</section>
+  
+  
+<section
+{{#tabPastYear}}
+  aria-labelledby="{{tabPastYear}}"
+{{/tabPastYear}}
+class="g-tabs__panel g-tabs__panel--hidden"
+{{#pastYear}}
+  id="{{pastYear}}"
+{{/pastYear}}
+role="tabpanel"
+>
+  
+    
+<h2
+class="g-tabs-heading-l"
+>
+  Past year
+</h2>
+  
+    
+<table
+class="g-tabs-table"
+>
+  
+      
+<thead
+class="g-tabs-table__head"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Case manager
+          Cases opened
+          Cases closed
+        
+</tr>
+  
+      
+</thead>
+  
+      
+<tbody
+class="g-tabs-table__body"
+>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          David Francis
+          1380
+          1472
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Paul Farmer
+          1129
+          1083
+        
+</tr>
+  
+        
+<tr
+class="g-tabs-table__row"
+>
+  
+          Rita Patel
+          1539
+          1265
+        
+</tr>
+  
+      
+</tbody>
+  
+    
+</table>
+  
+  
+</section>
+  
+
+</div>

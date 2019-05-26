@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`html Snapshots html: <img src="pic.jpeg" class="frogs"> 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/imgSrc.html": "<img class=\\"frogs\\" src=\\"example\\" />
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots html: Basic variables 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/paragraph.html": "<p>Some placeholder text</p>
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots html: Boolean attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/row.html": "<div class=\\"g-flex-row\\">
+  Columns
+</div>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html Snapshots html: Enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/container.html": "<div class=\\"g-flex-container\\">
+  Rows...
+</div>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html Snapshots html: Form input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/input.html": "<input type=\\"checkbox\\" name=\\"example\\" />
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots html: Form label input[checked] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/input.html": "<label><input type=\\"checkbox\\" name=\\"example\\"/></label>
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots html: H1 with configurable Id 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/h1Id.html": "<h1>stuff</h1>
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots html: Link with boolean class 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/a.html": "<a class=\\"g-link\\" href=\\"example\\">Example text</a>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html Snapshots html: Lots of enum attribute values 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/container.html": "<div class=\\"g-flex-col g-flex-col-xs\\">
+  Columns
+</div>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html Snapshots html: form input[text] 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/input.html": "<label>Label text</label
+><input type=\\"button\\" name=\\"example\\" autocomplete=\\"off\\" />
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
+exports[`html Snapshots makeIndexImports 1`] = `
+Object {
+  "react-ts/index.tsx": "// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+
+export const blah.js = () => import(\\"./blah.js\\");
+",
+  "react-ts/indexNotLazy.tsx": "// DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
+
+export { default as blahJs } from \\"./blah.js\\";
+",
+}
+`;
+
+exports[`html html: CSS Configuration (CSS Variables and Scss Variables) 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/a.html": "<a class=\\"g-link\\" href=\\"example\\">Example text</a>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html html: CSS Configuration (CSS Variables and Scss Variables) 2`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/a.html": "<a class=\\"g-link\\" href=\\"example\\">Example text</a>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html html: CSS Configuration of Fonts 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "html/a.html": "<a class=\\"g-link\\" href=\\"example\\">Example text</a>
+",
+    },
+    "formatId": "html",
+  },
+]
+`;
+
+exports[`html html: jsxToUsageCode with boolean false 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: Ul.css, Li.css
+OR in Sass (SCSS): Ul.scss, Li.scss
+-->
+<ul>
+  <li>Unordered item one</li>
+  <li>Unordered item two</li>
+</ul>
+",
+}
+`;
+
+exports[`html html: jsxToUsageCode with boolean false and inline HTML 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: Ul.css, Li.css
+OR in Sass (SCSS): Ul.scss, Li.scss
+-->
+<ul>
+  <li>Unordered<a href=\\"http://zombo.com/\\"> item one </a></li>
+  <li>Unordered item two</li>
+</ul>
+",
+}
+`;
+
+exports[`html html: jsxToUsageCode with boolean true 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: Ul.css, Li.css
+OR in Sass (SCSS): Ul.scss, Li.scss
+-->
+<ul class=\\"g-on\\">
+  <li>Unordered item one</li>
+  <li>Unordered item two</li>
+</ul>
+",
+}
+`;
+
+exports[`html html: jsxToUsageCode with enumerations 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: Div.css
+OR in Sass (SCSS): Div.scss
+-->
+<div class=\\"g-flex-container\\">test</div>
+",
+}
+`;
+
+exports[`html html: makeUsage 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: H1.css, A.css
+OR in Sass (SCSS): H1.scss, A.scss
+-->
+<h1><a class=\\"g-on\\"> Click me </a></h1>
+",
+}
+`;
+
+exports[`html html: makeUsage with booleans 1`] = `
+Object {
+  "html": "<!--
+Remember to add these styles:
+in CSS: H1.css, A.css
+OR in Sass (SCSS): H1.scss, A.scss
+-->
+<h1><a class=\\"g-on\\"> Click me </a></h1>
+",
+}
+`;

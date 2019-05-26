@@ -1,0 +1,27 @@
+// ============================================================================
+// Themeing
+// ============================================================================
+
+// Regular
+@font-face {
+  font-family: 'National2';
+  src: url('../fonts/National2Web-Regular.eot');
+  src: url('../fonts/National2Web-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/National2Web-Regular.woff2') format('woff2'),
+    url('../fonts/National2Web-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Medium
+@font-face {
+  font-family: 'National2';
+  src: url('../fonts/National2Web-Medium.eot');
+  src: url('../fonts/National2Web-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../fonts/National2Web-Medium.woff2') format('woff2'),
+    url('../fonts/National2Web-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}

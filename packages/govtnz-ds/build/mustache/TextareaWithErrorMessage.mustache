@@ -1,0 +1,43 @@
+<div
+class="g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"
+>
+  
+  
+<label
+class="g-textareaWithErrorMessage-label"
+{{#noNiReason}}
+  for="{{noNiReason}}"
+{{/noNiReason}}
+>
+  
+    Why can't you provide a National Insurance number?
+  
+</label>
+  
+  
+<span
+class="g-textareaWithErrorMessage-error-message"
+{{#noNiReasonError}}
+  id="{{noNiReasonError}}"
+{{/noNiReasonError}}
+>
+  
+    You must provide an explanation
+  
+</span>
+  
+  
+<textarea
+{{#noNiReasonError}}
+  aria-describedby="{{noNiReasonError}}"
+{{/noNiReasonError}}
+class="g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error"
+{{#noNiReason}}
+  id="{{noNiReason}}"
+{{/noNiReason}}
+name="no-ni-reason"
+rows="5"
+/>
+  
+
+</div>

@@ -1,0 +1,57 @@
+<div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list" role="tablist">
+    <li class="govuk-tabs__list-item" role="presentation">
+      <a
+        class="govuk-tabs__tab govuk-tabs__tab--selected"
+        id="tab_tab-1"
+        href="#tab-1"
+        role="tab"
+        aria-controls="tab-1"
+        aria-selected="true"
+        tabindex="0"
+      >
+        Tab 1
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item" role="presentation">
+      <a
+        class="govuk-tabs__tab"
+        id="tab_tab-2"
+        href="#tab-2"
+        role="tab"
+        aria-controls="tab-2"
+        aria-selected="false"
+        tabindex="-1"
+      >
+        Tab 2
+      </a>
+    </li>
+  </ul>
+
+  <section
+    class="govuk-tabs__panel"
+    id="tab-1"
+    role="tabpanel"
+    aria-labelledby="tab_tab-1"
+  >
+    <h2 class="govuk-heading-l">Tab 1</h2>
+    <p>
+      Testing that when you click the anchor it moves to the anchor point
+      successfully
+    </p>
+    <a class="govuk-link" href="#anchor">Anchor</a>
+    <a id="anchor" tabindex="0">Anchor Point</a>
+  </section>
+  <section
+    class="govuk-tabs__panel govuk-tabs__panel--hidden"
+    id="tab-2"
+    role="tabpanel"
+    aria-labelledby="tab_tab-2"
+  >
+    <h2 class="govuk-heading-l">Tab 2</h2>
+  </section>
+</div>

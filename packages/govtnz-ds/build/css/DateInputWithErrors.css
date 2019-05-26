@@ -1,0 +1,291 @@
+.g-dateInputWithErrors-form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.g-dateInputWithErrors-form-group
+  .g-dateInputWithErrors-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.g-dateInputWithErrors-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+  border-left: 5px solid var(--g-theme-color-dark2, #b10e1e);
+}
+
+.g-dateInputWithErrors-form-group--error .g-dateInputWithErrors-form-group {
+  padding: 0;
+  border: 0;
+}
+
+.g-dateInputWithErrors-error-message {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+  color: var(--g-theme-color-dark2, #b10e1e);
+}
+
+@media print {
+  .g-dateInputWithErrors-error-message {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-error-message {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-error-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-dateInputWithErrors-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.g-dateInputWithErrors-fieldset:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.g-dateInputWithErrors-fieldset__legend {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #0b0c0c;
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  white-space: normal;
+}
+
+@media print {
+  .g-dateInputWithErrors-fieldset__legend {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-fieldset__legend {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-fieldset__legend {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-fieldset__legend {
+    color: #000000;
+    color: var(--g-theme-color-black, #000000);
+  }
+}
+
+.g-dateInputWithErrors-hint {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+}
+
+@media print {
+  .g-dateInputWithErrors-hint {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-dateInputWithErrors-fieldset__legend + .g-dateInputWithErrors-hint {
+  margin-top: -5px;
+}
+
+.g-dateInputWithErrors-label {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .g-dateInputWithErrors-label {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-label {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-label {
+    color: #000000;
+    color: var(--g-theme-color-black, #000000);
+  }
+}
+
+.g-dateInputWithErrors-character-count .g-dateInputWithErrors-form-group {
+  margin-bottom: 5px;
+}
+
+.g-dateInputWithErrors-input {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 0.5rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media print {
+  .g-dateInputWithErrors-input {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-dateInputWithErrors-input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-dateInputWithErrors-input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-dateInputWithErrors-input:focus {
+  outline: 3px solid #ffbf47;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline-offset: 0;
+}
+
+.g-dateInputWithErrors-input::-webkit-outer-spin-button,
+.g-dateInputWithErrors-input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.g-dateInputWithErrors-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.g-dateInputWithErrors-input--error {
+  border: 1px solid #b10e1e;
+  border: 1px solid var(--g-theme-color-dark2, #b10e1e);
+}
+
+.g-dateInputWithErrors-input--width-4 {
+  max-width: 9ex;
+}
+
+.g-dateInputWithErrors-input--width-2 {
+  max-width: 5.4ex;
+}
+
+.g-dateInputWithErrors-date-input {
+  font-size: 0;
+}
+
+.g-dateInputWithErrors-date-input:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.g-dateInputWithErrors-date-input__item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.g-dateInputWithErrors-date-input__label {
+  display: block;
+}
+
+.g-dateInputWithErrors-date-input__input {
+  margin-bottom: 0;
+}

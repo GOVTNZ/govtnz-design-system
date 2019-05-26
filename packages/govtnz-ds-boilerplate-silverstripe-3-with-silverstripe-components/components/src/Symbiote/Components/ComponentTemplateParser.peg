@@ -1,0 +1,183 @@
+<?php
+
+namespace Symbiote\Components;
+
+use Injector;
+use SSTemplateParser;
+
+/*!* !insert_autogen_warning */
+
+/*!* !silent
+This is an uncompiled parser extension for the SilverStripe template language, PHP with special comments that define the
+parser.
+
+It gets run through the php-peg parser compiler to have those comments turned into code
+
+To recompile after changing this file, run this from the 'components' module directory via command line:
+
+    composer run-script php-peg
+
+*/
+
+/**
+ * NOTE(Jake): 2018-03-31
+ *
+ * We aren't using "trait" for this as overriding "protected" variables
+ * from "Template" / "TopTemplate" blocks won't work in strict mode in
+ * PHP versions 5.X
+ */
+class ComponentTemplateParser extends SSTemplateParser
+{
+    /*!* SSTemplateParser
+
+    # NOTE(Jake): 2018-03-30, This was copied from SS Framework 3.6
+    # - Note: "Component" and "ComponentSelfClosing"
+    #
+    # Template is any structurally-complete portion of template (a full nested level in other words). It's the
+    # primary matcher, and is used by all enclosing blocks, as well as a base for the top level.
+    # Any new template elements need to be included in this list, if they are to work.
+
+    Template: (Comment | Translate | If | Require | CacheBlock | UncachedBlock | OldI18NTag | Include | ClosedBlock |
+        OpenBlock | MalformedBlock | Injection | Text | Component | ComponentSelfClosing)+
+    */
+
+    /*!*
+
+    # NOTE(Jake): 2018-03-30, This was copied from SS Framework 3.6
+    #
+    # TopTemplate is the same as Template, but should only be used at the top level (not nested), as it includes
+    # MismatchedEndBlock detection, which only works at the top level
+
+    TopTemplate extends Template (TemplateMatcher = Template); MalformedBlock => MalformedBlock | MismatchedEndBlock
+    */
+
+    /*!*
+
+    # NOTE(Jake): 2018-03-30, This was copied from SS Framework 3.6
+    #
+    # An argument that can be passed through to an included template
+
+    NamedArgument: Name:Word "=" Value:Argument
+
+    */
+
+    /*!*
+
+    ComposedArgumentString: / (\\\\ | \\. | [^$q\\]) /
+
+    ComposedArgumentInjection: BracketInjection | SimpleInjection | If
+
+    ComposedArgumentQuotedString: q:/['"]/ ( ComposedArgumentInjection | ComposedArgumentString )* '$q'
+
+    # Rule copied from SSTemplateParser to allow for extension
+    Argument:
+        :DollarMarkedLookup |
+        :QuotedString |
+        :Lookup !(< FreeString)|
+        :FreeString
+
+    ComposedArgument extends Argument:
+        '{' < :IfArgument > '}' |
+        :DollarMarkedLookup |
+        :ComposedArgumentQuotedString |
+        :Lookup !(< FreeString)|
+        :FreeString
+
+    */
+    function ComposedArgumentInjection_STR(&$res, $sub)
+    {
+        $obj = str_replace('$$FINAL', 'obj', $sub['Lookup']['php']) . '->self()';
+        // NOTE: CFP == Component Field Part
+        $res['php'] = "'[_CFP]".$obj."[_CFP]'";
+    }
+
+    function ComposedArgumentInjection_If(&$res, $sub)
+    {
+        $res['php'] = <<<PHP
+' [_CPB] {$sub['php']} [_CPB] '
+PHP;
+    }
+
+    function ComposedArgumentQuotedString_ComposedArgumentString(&$res, $sub)
+    {
+        $res['php'] .= str_replace(array("\\", "'"), array("\\\\", "\\'"), $sub['text']);
+    }
+
+    function ComposedArgumentQuotedString_ComposedArgumentInjection(&$res, $sub)
+    {
+        $res['php'] .= $sub['php'];
+    }
+
+    function ComposedArgument_ComposedArgumentQuotedString(&$res, $sub)
+    {
+        $res['ArgumentMode'] = 'string';
+        $php = $sub['php'];
+        $res['php'] = "'" . $php . "'";
+    }
+
+    function ComposedArgument_IfArgument(&$res, $sub)
+    {
+        $res['ArgumentMode'] = 'string';
+        $res['php'] = $sub['php'];
+    }
+
+
+    /*!*
+
+    # Extend 'NamedArgument' copied from SSTemplateParser to allow for extension
+
+    ComposeWord: / [A-Za-z_] [A-Za-z0-9_\-]* /
+    ComposedNamedArgument extends NamedArgument: Name:ComposeWord "=" Value:ComposedArgument
+
+    */
+
+    /*!*
+
+    # The compose tag syntax allowing for including template with an HTML-like syntax
+    # Also used to allow template composition where a template content is passed into another
+    # template using the following syntax: <:TemplateName>Some content</:TemplateName
+
+    # whitespace with a newline
+    N: / [\s\n]* /
+    Component: '<:' ComponentName:Word N < (ComposedNamedArgument ( N < ComposedNamedArgument N < )*)? N < N '>' Children:$TemplateMatcher?
+        '</:' N < '$ComponentName' N < '>'
+    ComponentSelfClosing extends Component: '<:' N < ComponentName:Word N < (ComposedNamedArgument ( N < ComposedNamedArgument N < )*)? N > N '/>'
+    */
+    function Component__construct(&$res)
+    {
+        $res['arguments'] = array();
+    }
+
+    function Component_ComposedNamedArgument(&$res, $sub)
+    {
+        $res['arguments'][] = $sub['php'];
+    }
+
+    function Component__finalise(&$res)
+    {
+        $res['php'] .= Injector::inst()->get('Symbiote\\Components\\ComponentService')->generateTemplateCode($res, $this);
+    }
+
+    /*!*
+
+    # NOTE(Jake): 2018-03-30, This was copied from SS Framework 3.6
+    #
+    # Text matches anything that isn't a template command (not an injection, block of any kind or comment)
+
+    Text: (
+            # Any set of characters that aren't potentially a control mark or an escaped character
+            / [^<${\\]+ / |
+            # An escaped character
+            / (\\.) / |
+            # A '<' that isn't the start of a block tag
+            # - NOTE(Jake): 2018-03-30, Add additional rules to handle : in component
+            '<' !/ % | : | \/: / |
+            # A '$' that isn't the start of an injection
+            '$' !(/[A-Za-z_]/) |
+            # A '{' that isn't the start of an injection
+            '{' !'$' |
+            # A '{$' that isn't the start of an injection
+            '{$' !(/[A-Za-z_]/)
+        )+
+    */
+}

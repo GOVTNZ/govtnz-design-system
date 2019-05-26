@@ -1,0 +1,32 @@
+// ============================================================================
+// Input Groups
+// ============================================================================
+@import './settings-global';
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+
+  .input {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    border-right: 0;
+  }
+}
+
+.input-group__append,
+.input-group__prepend {
+  display: flex;
+}
+
+.input-group__append {
+  .g-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 0;
+  }
+}

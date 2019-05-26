@@ -1,0 +1,26 @@
+// ============================================================================
+// Color Swatch component
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-breakpoints';
+@import '../commons/styles/settings-mixins';
+
+.color-swatch {
+  padding-top: $spacing-40;
+}
+
+.color-swatch__color {
+  width: 100%;
+  height: 96px;
+}
+
+.color-swatch__color--border {
+  border: 1px solid $color-ds-default-mid-grey;
+  border: 1px solid var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+}
+
+.color-swatch__heading {
+  margin-top: $spacing-16;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}

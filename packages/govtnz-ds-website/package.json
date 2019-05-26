@@ -1,0 +1,77 @@
+{
+  "private": true,
+  "name": "@govtnz/ds-website",
+  "description": "Government Design System - Website",
+  "version": "0.0.1",
+  "author": "Matthew Holloway <matthew@springload.co.nz>",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@govtnz/ds": "0.0.1",
+    "@sentry/browser": "^5.3.0",
+    "@springload/metatemplate": "0.0.17",
+    "copy-text-to-clipboard": "^2.1.0",
+    "css-sniff": "2.0.0",
+    "gatsby": "^2.3.27",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-plugin-sentry": "^1.0.1",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-svg-sprite": "^2.0.1",
+    "gatsby-plugin-typescript": "^2.0.9",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "glob-promise": "^3.4.0",
+    "inert-polyfill": "^0.2.5",
+    "lodash-es": "^4.17.11",
+    "marked": "^0.6.1",
+    "mkdirp-promise": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "prismjs-mt": "1.15.0",
+    "query-string": "5",
+    "react": "^16.8.2",
+    "react-accessible-details": "1.0.0",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
+    "react-modal": "^3.8.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build && cp public/404/index.html public/error.html",
+    "build__comment": "copying 404 because the host wants an error page at error.html",
+    "compile-markdown": "yarn rimraf && node ./prebuild/prebuild.js",
+    "develop": "gatsby develop",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "watch-prebuild": "nodemon ./prebuild/prebuild.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "test:typescript": "exit 0",
+    "rimraf": "rimraf ./public/ && rimraf ./.cache"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "nodemonConfig": {
+    "ext": "tsx ts html css",
+    "watch": [
+      "src/commons/templates/",
+      "../govt-ds/releases/"
+    ],
+    "delay": "2500"
+  }
+}

@@ -1,0 +1,80 @@
+// ============================================================================
+// Design System site Main navigation list items
+// ============================================================================
+@import '../commons/styles/settings-global';
+@import '../commons/styles/settings-mixins';
+@import '../commons/styles/settings-breakpoints';
+
+.navigation-list__item {
+  @include small {
+    border-bottom: 1px solid $color-ds-default-light-grey;
+    border-bottom: 1px solid
+      var(--color-theme-light-grey, $color-ds-default-light-grey);
+  }
+
+  @include medium {
+    border: none;
+    display: inline-block;
+    padding: $spacing-8;
+  }
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: $color-core-grey;
+  font-size: 1rem;
+  font-weight: $font-weight-medium;
+  padding-top: $spacing-16;
+  padding-bottom: $spacing-16;
+  cursor: pointer;
+
+  &:visited {
+    color: $color-core-grey;
+  }
+
+  @include medium {
+    padding-top: $spacing-16;
+    padding-bottom: $spacing-8;
+    padding-left: $spacing-8;
+    padding-right: $spacing-8;
+    box-shadow: inset 0px -4px 0px 0px transparent;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: inset 0px -4px 0px 0px $color-ds-default-mid-grey;
+      box-shadow: inset 0px -4px 0px 0px var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+    }
+  }
+}
+
+.navigation__link::-webkit-details-marker {
+  display: none;
+}
+
+.navigation__link--active {
+  @include medium {
+    cursor: pointer;
+    box-shadow: inset 0px -4px 0px 0px $color-ds-default-green-mid !important;
+    box-shadow: inset 0px -4px 0px 0px var(--color-theme-highlight-ui, $color-ds-default-green-mid) !important;
+  }
+}
+
+.navigation__link--disabled {
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.navigation__link-icon {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+
+  [open] & {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,6 @@
+/* https://github.com/alphagov/govuk-frontend/issues/1204 */
+@media only screen {
+  .container {
+    overflow-y: scroll;
+  }
+}
