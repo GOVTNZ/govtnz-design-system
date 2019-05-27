@@ -3,8 +3,8 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: `Design System - Alpha`,
-    description: ``,
-    author: `@aogdesignsystem`,
+    description: `Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online`,
+    author: `New Zealand Government`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

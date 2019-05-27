@@ -2,6 +2,13 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
+// const socialThumbnail =
+//   'https://design-system-alpha.digital.govt.nz/social-thumbnail.png'; // Not imported as an image because it's less-than 10kb and Gatsby would base64+data-uri the image which isn't what we want
+
+// Not imported as an image because it's less-than 10kb and Gatsby would base64+data-uri the image which isn't what we want
+const socialThumbnail =
+  'https://dia-design-system-preview.springload.nz/social-thumbnail.png';
+
 type Props = {
   description: string;
   lang: string;
@@ -11,7 +18,7 @@ type Props = {
   title: string;
 };
 
-function SEO({ description, lang, meta, keywords, title, robots }: Props) {
+function SEO({ description, meta, keywords, title, robots }: Props) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -62,6 +69,18 @@ function SEO({ description, lang, meta, keywords, title, robots }: Props) {
               {
                 name: 'robots',
                 content: robotsValue,
+              },
+              {
+                name: 'image',
+                content: socialThumbnail,
+              },
+              {
+                property: 'og:image',
+                content: socialThumbnail,
+              },
+              {
+                name: 'twitter:image',
+                content: socialThumbnail,
               },
             ]
               .concat(

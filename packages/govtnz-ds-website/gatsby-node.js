@@ -1,1 +1,1 @@
-// Nothing. See ./prebuild/prebuild.js
+// Nothing. See ./prebuild/prebuild.js instead
