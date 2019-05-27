@@ -1,40 +1,50 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledDiv = styled.div`
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const StyledFieldset = styled.fieldset`
-  margin: 0;
-  padding: 0;
-  border: 0;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 
-const Fieldset = ({ hintId, children }) => (
-  <StyledDiv>
-    <StyledFieldset aria-describedby={hintId}>
-      {children !== undefined ? (
-        children
-      ) : (
-        <React.Fragment>Legend and other fieldset contents...</React.Fragment>
-      )}
-    </StyledFieldset>
-  </StyledDiv>
-);
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledDiv = _styledComponents["default"].div(_templateObject());
+
+var StyledFieldset = _styledComponents["default"].fieldset(_templateObject2());
+
+var Fieldset = function Fieldset(_ref) {
+  var hintId = _ref.hintId,
+      children = _ref.children;
+  return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledFieldset, {
+    "aria-describedby": hintId
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents...")));
+};
+
 Fieldset.props = ["hintId", "children"];
-export default Fieldset;
+var _default = Fieldset;
+exports["default"] = _default;

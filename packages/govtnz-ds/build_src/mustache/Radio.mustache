@@ -1,0 +1,28 @@
+<input
+{{#hintId}}
+  aria-describedby="{{hintId}}"
+{{/hintId}}
+class="g-radios__input{{#fakeFocus}} :focus{{/fakeFocus}}"
+{{#gov1}}
+  id="{{gov1}}"
+{{/gov1}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+type="radio"
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+{{#checked}}
+  checked="{{#checked}}checked{{/checked}}"
+{{/checked}}
+/>

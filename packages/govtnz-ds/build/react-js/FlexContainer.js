@@ -1,21 +1,29 @@
-import React from "react";
+"use strict";
 
-const constants = {
-  width: { fixed: "g-flex-container", fluid: "g-flex-container-fluid" }
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
+  width: {
+    fixed: "g-flex-container",
+    fluid: "g-flex-container-fluid"
+  }
 };
 
-const FlexContainer = ({ width, children }) => (
-  <div
-    className={
-      constants.width[width] !== undefined ? constants.width[width] : ""
-    }
-  >
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Rows...</React.Fragment>
-    )}
-  </div>
-);
+var FlexContainer = function FlexContainer(_ref) {
+  var width = _ref.width,
+      children = _ref.children;
+  return _react["default"].createElement("div", {
+    className: constants.width[width] !== undefined ? constants.width[width] : ""
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
+};
+
 FlexContainer.props = ["width", "children"];
-export default FlexContainer;
+var _default = FlexContainer;
+exports["default"] = _default;

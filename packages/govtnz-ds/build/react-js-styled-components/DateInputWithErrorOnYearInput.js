@@ -1,386 +1,235 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledDiv = styled.div`
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding-left: 15px;
-  border-left: 5px solid #b10e1e;
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const StyledFieldset = styled.fieldset`
-  margin: 0;
-  padding: 0;
-  border: 0;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 
-const StyledLegend = styled.legend`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #0b0c0c;
-  box-sizing: border-box;
-  display: table;
-  max-width: 100%;
-  margin-bottom: 0px;
-  padding: 0;
-  overflow: hidden;
-  white-space: normal;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-`;
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
-const StyledSpan = styled.span`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  margin-bottom: 15px;
-  color: #595959;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  margin-top: -5px;
-`;
+var _react = _interopRequireDefault(require("react"));
 
-const StyledSpan2 = styled.span`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  margin-bottom: 15px;
-  clear: both;
-  color: #b10e1e;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-`;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-const StyledDiv2 = styled.div`
-  font-size: 0;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
+function _templateObject18() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  border: 1px solid #b10e1e;\n  max-width: 9ex;\n  margin-bottom: 0;\n"]);
 
-const StyledDiv3 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-`;
+  _templateObject18 = function _templateObject18() {
+    return data;
+  };
 
-const StyledDiv4 = styled.div`
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
+  return data;
+}
 
-const StyledLabel = styled.label`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  display: block;
-`;
+function _templateObject17() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 500;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
 
-const StyledInput = styled.input`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 40px;
-  margin-top: 0;
-  padding: 0.5rem;
-  border: 1px solid #2a2a2a;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  ::-webkit-outer-spin-button,
-  ::-webkit-inner-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
-  }
-  -moz-appearance: textfield;
-  max-width: 5.4ex;
-  margin-bottom: 0;
-`;
+  _templateObject17 = function _templateObject17() {
+    return data;
+  };
 
-const StyledDiv5 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-`;
+  return data;
+}
 
-const StyledDiv6 = styled.div`
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
+function _templateObject16() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
 
-const StyledLabel2 = styled.label`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  display: block;
-`;
+  _templateObject16 = function _templateObject16() {
+    return data;
+  };
 
-const StyledInput2 = styled.input`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 40px;
-  margin-top: 0;
-  padding: 0.5rem;
-  border: 1px solid #2a2a2a;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  ::-webkit-outer-spin-button,
-  ::-webkit-inner-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
-  }
-  -moz-appearance: textfield;
-  max-width: 5.4ex;
-  margin-bottom: 0;
-`;
+  return data;
+}
 
-const StyledDiv7 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-`;
+function _templateObject15() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
 
-const StyledDiv8 = styled.div`
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
+  _templateObject15 = function _templateObject15() {
+    return data;
+  };
 
-const StyledLabel3 = styled.label`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  display: block;
-`;
+  return data;
+}
 
-const StyledInput3 = styled.input`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  box-sizing: border-box;
-  width: 100%;
-  height: 40px;
-  margin-top: 0;
-  padding: 0.5rem;
-  border: 1px solid #2a2a2a;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  ::-webkit-outer-spin-button,
-  ::-webkit-inner-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
-  }
-  -moz-appearance: textfield;
-  border: 1px solid #b10e1e;
-  max-width: 9ex;
-  margin-bottom: 0;
-`;
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n"]);
 
-const constants = {
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 500;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n"]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 500;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-size: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding-left: 15px;\n  border-left: 5px solid #b10e1e;\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledDiv = _styledComponents["default"].div(_templateObject());
+
+var StyledFieldset = _styledComponents["default"].fieldset(_templateObject2());
+
+var StyledLegend = _styledComponents["default"].legend(_templateObject3());
+
+var StyledSpan = _styledComponents["default"].span(_templateObject4());
+
+var StyledSpan2 = _styledComponents["default"].span(_templateObject5());
+
+var StyledDiv2 = _styledComponents["default"].div(_templateObject6());
+
+var StyledDiv3 = _styledComponents["default"].div(_templateObject7());
+
+var StyledDiv4 = _styledComponents["default"].div(_templateObject8());
+
+var StyledLabel = _styledComponents["default"].label(_templateObject9());
+
+var StyledInput = _styledComponents["default"].input(_templateObject10());
+
+var StyledDiv5 = _styledComponents["default"].div(_templateObject11());
+
+var StyledDiv6 = _styledComponents["default"].div(_templateObject12());
+
+var StyledLabel2 = _styledComponents["default"].label(_templateObject13());
+
+var StyledInput2 = _styledComponents["default"].input(_templateObject14());
+
+var StyledDiv7 = _styledComponents["default"].div(_templateObject15());
+
+var StyledDiv8 = _styledComponents["default"].div(_templateObject16());
+
+var StyledLabel3 = _styledComponents["default"].label(_templateObject17());
+
+var StyledInput3 = _styledComponents["default"].input(_templateObject18());
+
+var constants = {
   type: {
     Button: "button",
     Checkbox: "checkbox",
@@ -620,147 +469,94 @@ const constants = {
   }
 };
 
-const DateInputWithErrorOnYearInput = ({
-  dobYearErrorHint,
-  dobYearErrorError,
-  dobYearError,
-  dobYearErrorDay,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange,
-  dobYearErrorMonth,
-  name2,
-  disabled2,
-  readOnly2,
-  autoFocus2,
-  value2,
-  type2,
-  spellCheck2,
-  autoComplete2,
-  onChange2,
-  dobYearErrorYear,
-  name3,
-  disabled3,
-  readOnly3,
-  autoFocus3,
-  value3,
-  type3,
-  spellCheck3,
-  autoComplete3,
-  onChange3
-}) => (
-  <StyledDiv>
-    <StyledFieldset
-      aria-describedby={
-        dobYearErrorHint !== undefined || dobYearErrorError !== undefined
-          ? `${dobYearErrorHint ? dobYearErrorHint : ""}${
-              dobYearErrorError ? " " + dobYearErrorError : ""
-            }`
-          : undefined
-      }
-      role="group"
-    >
-      <StyledLegend>What is your date of birth?</StyledLegend>
-      <StyledSpan id={dobYearErrorHint}>For example, 31 3 1980</StyledSpan>
-      <StyledSpan2 id={dobYearErrorError}>Error message goes here</StyledSpan2>
-      <StyledDiv2 id={dobYearError}>
-        <StyledDiv3>
-          <StyledDiv4>
-            <StyledLabel htmlFor={dobYearErrorDay}>Day</StyledLabel>
-            <StyledInput
-              id={dobYearErrorDay}
-              name={name}
-              pattern="[0-9]*"
-              type={constants.type[type]}
-              disabled={disabled}
-              readOnly={readOnly}
-              autoFocus={autoFocus}
-              value={value}
-              spellCheck={spellCheck}
-              autoComplete={constants.autoComplete[autoComplete]}
-              onChange={onChange}
-            />
-          </StyledDiv4>
-        </StyledDiv3>
-        <StyledDiv5>
-          <StyledDiv6>
-            <StyledLabel2 htmlFor={dobYearErrorMonth}>Month</StyledLabel2>
-            <StyledInput2
-              id={dobYearErrorMonth}
-              name={name2}
-              pattern="[0-9]*"
-              type={constants.type2[type2]}
-              disabled={disabled2}
-              readOnly={readOnly2}
-              autoFocus={autoFocus2}
-              value={value2}
-              spellCheck={spellCheck2}
-              autoComplete={constants.autoComplete2[autoComplete2]}
-              onChange={onChange2}
-            />
-          </StyledDiv6>
-        </StyledDiv5>
-        <StyledDiv7>
-          <StyledDiv8>
-            <StyledLabel3 htmlFor={dobYearErrorYear}>Year</StyledLabel3>
-            <StyledInput3
-              id={dobYearErrorYear}
-              name={name3}
-              pattern="[0-9]*"
-              type={constants.type3[type3]}
-              disabled={disabled3}
-              readOnly={readOnly3}
-              autoFocus={autoFocus3}
-              value={value3}
-              spellCheck={spellCheck3}
-              autoComplete={constants.autoComplete3[autoComplete3]}
-              onChange={onChange3}
-            />
-          </StyledDiv8>
-        </StyledDiv7>
-      </StyledDiv2>
-    </StyledFieldset>
-  </StyledDiv>
-);
-DateInputWithErrorOnYearInput.props = [
-  "dobYearErrorHint",
-  "dobYearErrorError",
-  "dobYearError",
-  "dobYearErrorDay",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "dobYearErrorMonth",
-  "name2",
-  "disabled2",
-  "readOnly2",
-  "autoFocus2",
-  "value2",
-  "type2",
-  "spellCheck2",
-  "autoComplete2",
-  "onChange2",
-  "dobYearErrorYear",
-  "name3",
-  "disabled3",
-  "readOnly3",
-  "autoFocus3",
-  "value3",
-  "type3",
-  "spellCheck3",
-  "autoComplete3",
-  "onChange3"
-];
-export default DateInputWithErrorOnYearInput;
+var DateInputWithErrorOnYearInput = function DateInputWithErrorOnYearInput(_ref) {
+  var dobYearErrorHint = _ref.dobYearErrorHint,
+      dobYearErrorError = _ref.dobYearErrorError,
+      dobYearError = _ref.dobYearError,
+      dobYearErrorDay = _ref.dobYearErrorDay,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange,
+      dobYearErrorMonth = _ref.dobYearErrorMonth,
+      name2 = _ref.name2,
+      disabled2 = _ref.disabled2,
+      readOnly2 = _ref.readOnly2,
+      autoFocus2 = _ref.autoFocus2,
+      value2 = _ref.value2,
+      type2 = _ref.type2,
+      spellCheck2 = _ref.spellCheck2,
+      autoComplete2 = _ref.autoComplete2,
+      onChange2 = _ref.onChange2,
+      dobYearErrorYear = _ref.dobYearErrorYear,
+      name3 = _ref.name3,
+      disabled3 = _ref.disabled3,
+      readOnly3 = _ref.readOnly3,
+      autoFocus3 = _ref.autoFocus3,
+      value3 = _ref.value3,
+      type3 = _ref.type3,
+      spellCheck3 = _ref.spellCheck3,
+      autoComplete3 = _ref.autoComplete3,
+      onChange3 = _ref.onChange3;
+  return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledFieldset, {
+    "aria-describedby": dobYearErrorHint !== undefined || dobYearErrorError !== undefined ? "".concat(dobYearErrorHint ? dobYearErrorHint : "").concat(dobYearErrorError ? " " + dobYearErrorError : "") : undefined,
+    role: "group"
+  }, _react["default"].createElement(StyledLegend, null, "What is your date of birth?"), _react["default"].createElement(StyledSpan, {
+    id: dobYearErrorHint
+  }, "For example, 31 3 1980"), _react["default"].createElement(StyledSpan2, {
+    id: dobYearErrorError
+  }, "Error message goes here"), _react["default"].createElement(StyledDiv2, {
+    id: dobYearError
+  }, _react["default"].createElement(StyledDiv3, null, _react["default"].createElement(StyledDiv4, null, _react["default"].createElement(StyledLabel, {
+    htmlFor: dobYearErrorDay
+  }, "Day"), _react["default"].createElement(StyledInput, {
+    id: dobYearErrorDay,
+    name: name,
+    pattern: "[0-9]*",
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: constants.autoComplete[autoComplete],
+    onChange: onChange
+  }))), _react["default"].createElement(StyledDiv5, null, _react["default"].createElement(StyledDiv6, null, _react["default"].createElement(StyledLabel2, {
+    htmlFor: dobYearErrorMonth
+  }, "Month"), _react["default"].createElement(StyledInput2, {
+    id: dobYearErrorMonth,
+    name: name2,
+    pattern: "[0-9]*",
+    type: constants.type2[type2],
+    disabled: disabled2,
+    readOnly: readOnly2,
+    autoFocus: autoFocus2,
+    value: value2,
+    spellCheck: spellCheck2,
+    autoComplete: constants.autoComplete2[autoComplete2],
+    onChange: onChange2
+  }))), _react["default"].createElement(StyledDiv7, null, _react["default"].createElement(StyledDiv8, null, _react["default"].createElement(StyledLabel3, {
+    htmlFor: dobYearErrorYear
+  }, "Year"), _react["default"].createElement(StyledInput3, {
+    id: dobYearErrorYear,
+    name: name3,
+    pattern: "[0-9]*",
+    type: constants.type3[type3],
+    disabled: disabled3,
+    readOnly: readOnly3,
+    autoFocus: autoFocus3,
+    value: value3,
+    spellCheck: spellCheck3,
+    autoComplete: constants.autoComplete3[autoComplete3],
+    onChange: onChange3
+  }))))));
+};
+
+DateInputWithErrorOnYearInput.props = ["dobYearErrorHint", "dobYearErrorError", "dobYearError", "dobYearErrorDay", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange", "dobYearErrorMonth", "name2", "disabled2", "readOnly2", "autoFocus2", "value2", "type2", "spellCheck2", "autoComplete2", "onChange2", "dobYearErrorYear", "name3", "disabled3", "readOnly3", "autoFocus3", "value3", "type3", "spellCheck3", "autoComplete3", "onChange3"];
+var _default = DateInputWithErrorOnYearInput;
+exports["default"] = _default;

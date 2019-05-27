@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   styleSize: {
     xlarge: "g-heading-xl",
     large: "g-heading-l",
@@ -11,21 +20,17 @@ const constants = {
   }
 };
 
-const H5 = ({ styleSize, marginBottom8, id, children }) => (
-  <h5
-    className={`${
-      constants.styleSize[styleSize] !== undefined
-        ? constants.styleSize[styleSize]
-        : ""
-    }${marginBottom8 ? " g-heading-mb-8" : ""}`}
-    id={id}
-  >
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Example text</React.Fragment>
-    )}
-  </h5>
-);
+var H5 = function H5(_ref) {
+  var styleSize = _ref.styleSize,
+      marginBottom8 = _ref.marginBottom8,
+      id = _ref.id,
+      children = _ref.children;
+  return _react["default"].createElement("h5", {
+    className: "".concat(constants.styleSize[styleSize] !== undefined ? constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : ""),
+    id: id
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+};
+
 H5.props = ["styleSize", "marginBottom8", "id", "children"];
-export default H5;
+var _default = H5;
+exports["default"] = _default;

@@ -1,6 +1,15 @@
-import Vue from "vue";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _vue = _interopRequireDefault(require("vue"));
+
+var constants = {
   xs: {
     "1": "g-flex-col-xs-1",
     "2": "g-flex-col-xs-2",
@@ -123,221 +132,82 @@ const constants = {
   }
 };
 
-export default Vue.extend({
-  functional: true, // no internal state
+var _default = _vue["default"].extend({
+  functional: true,
+  // no internal state
   props: {
     xs: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "auto"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "auto"].indexOf(value) !== -1;
       },
       required: true
     },
     sm: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "auto"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "auto"].indexOf(value) !== -1;
       },
       required: true
     },
     md: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "auto"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "auto"].indexOf(value) !== -1;
       },
       required: true
     },
     lg: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "auto"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "auto"].indexOf(value) !== -1;
       },
       required: true
     },
     xsOffset: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"].indexOf(value) !== -1;
       },
       required: false
     },
     smOffset: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"].indexOf(value) !== -1;
       },
       required: false
     },
     mdOffset: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"].indexOf(value) !== -1;
       },
       required: false
     },
     lgOffset: {
       type: String,
-      validator: value => {
-        return (
-          [
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12"
-          ].indexOf(value) !== -1
-        );
+      validator: function validator(value) {
+        return ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"].indexOf(value) !== -1;
       },
       required: false
     },
-    isReversed: { type: Boolean, default: false, required: false },
-    children: { required: false, default: "Content..." }
-  },
-  computed: {
-    computed__class() {
-      return (
-        "g-flex-col" +
-        (constants[this.xs] !== undefined ? ` ${constants[this.xs]}` : "") +
-        (constants[this.sm] !== undefined ? ` ${constants[this.sm]}` : "") +
-        (constants[this.md] !== undefined ? ` ${constants[this.md]}` : "") +
-        (constants[this.lg] !== undefined ? ` ${constants[this.lg]}` : "") +
-        (constants[this.xsOffset] !== undefined
-          ? ` ${constants[this.xsOffset]}`
-          : "") +
-        (constants[this.smOffset] !== undefined
-          ? ` ${constants[this.smOffset]}`
-          : "") +
-        (constants[this.mdOffset] !== undefined
-          ? ` ${constants[this.mdOffset]}`
-          : "") +
-        (constants[this.lgOffset] !== undefined
-          ? ` ${constants[this.lgOffset]}`
-          : "") +
-        (this.isReversed ? " g-flex-reverse" : "")
-      );
+    isReversed: {
+      type: Boolean,
+      "default": false,
+      required: false
+    },
+    children: {
+      required: false,
+      "default": "Content..."
     }
   },
-  render: new Function(
-    "with(this){return _c('div',{class:computed__class},[_t(\"default\")],2)}"
-  )
+  computed: {
+    computed__class: function computed__class() {
+      return "g-flex-col" + (constants[this.xs] !== undefined ? " ".concat(constants[this.xs]) : "") + (constants[this.sm] !== undefined ? " ".concat(constants[this.sm]) : "") + (constants[this.md] !== undefined ? " ".concat(constants[this.md]) : "") + (constants[this.lg] !== undefined ? " ".concat(constants[this.lg]) : "") + (constants[this.xsOffset] !== undefined ? " ".concat(constants[this.xsOffset]) : "") + (constants[this.smOffset] !== undefined ? " ".concat(constants[this.smOffset]) : "") + (constants[this.mdOffset] !== undefined ? " ".concat(constants[this.mdOffset]) : "") + (constants[this.lgOffset] !== undefined ? " ".concat(constants[this.lgOffset]) : "") + (this.isReversed ? " g-flex-reverse" : "");
+    }
+  },
+  render: new Function("with(this){return _c('div',{class:computed__class},[_t(\"default\")],2)}")
 });
+
+exports["default"] = _default;

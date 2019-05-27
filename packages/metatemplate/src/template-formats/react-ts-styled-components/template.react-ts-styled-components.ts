@@ -160,6 +160,11 @@ export default class ReactTsStyledComponents {
             ? "undefined"
             : '""';
 
+        const typeCoersion =
+          this.options.language === "typescript" && typeCoersions[attr.key]
+            ? ` as ${typeCoersions[attr.key]}`
+            : "";
+
         attrValue += attr.dynamicKeys
           .map((dynamicKey, index) => {
             if (index >= 1) {
@@ -169,6 +174,9 @@ export default class ReactTsStyledComponents {
             const spacer = hasPrecedingValues ? `"${A_SPACE}" + ` : "";
 
             if (dynamicKey.ifTrueValue) {
+              if (attr.dataType !== "string" || forceAttributeAsRef[attr.key]) {
+                return `$\{${dynamicKey.key}${typeCoersion}}`;
+              }
               return `$\{${dynamicKey.key} ? "${
                 hasPrecedingValues ? A_SPACE : ""
               }${dynamicKey.ifTrueValue}" : ${fallback}}`;
@@ -178,7 +186,9 @@ export default class ReactTsStyledComponents {
                 this.constants[dynamicKey.key][option.name] = option.value;
               });
               if (attr.isOmittedIfEmpty && !needsFullOmitWrapper) {
-                return `$\{constants.${dynamicKey.key}[${dynamicKey.key}]}`;
+                return `$\{constants.${dynamicKey.key}[${
+                  dynamicKey.key
+                }]${typeCoersion}}`;
               }
               return `$\{constants.${dynamicKey.key}[${
                 dynamicKey.key
@@ -224,7 +234,10 @@ export default class ReactTsStyledComponents {
             } else {
               attrValue = `{\`${attrValue}\`}`;
             }
-          } else if (attr.dataType !== "string") {
+          } else if (
+            attr.dataType !== "string" ||
+            forceAttributeAsRef[attr.key]
+          ) {
             // non-string
             if (attr.dataType === "boolean") {
               attrValue = (!!attrValue).toString();
@@ -240,8 +253,13 @@ export default class ReactTsStyledComponents {
               .replace(/}$/, "")} : undefined}`;
           }
         } else {
-          // conventional string attribute value
-          attrValue = `"${attrValue}"`;
+          if (attr.dataType !== "string" || forceAttributeAsRef[attr.key]) {
+            attrValue = `{${attrValue}}`;
+          } else {
+            // conventional string attribute value
+
+            attrValue = `"${attrValue}"`;
+          }
         }
       }
     } else {
@@ -252,14 +270,14 @@ export default class ReactTsStyledComponents {
           }" string literal. Not yet supported.`
         );
         attrValue = `{{}}`; // FIXME: parse inline style="" value and convert to React-style Object, and allow ...spread override too.
+      } else if (forceAttributeAsRef[attr.key]) {
+        attrValue = `{${attr.value}}`;
       } else {
         attrValue = `"${attr.value}"`;
       }
     }
 
-    let attrString;
-
-    attrString = ` ${attr.key}=${attrValue}`;
+    const attrString = ` ${attr.key}=${attrValue}`;
 
     return attrString;
   };
@@ -464,10 +482,6 @@ export default class ReactTsStyledComponents {
           // allow "href" prop too, not just props related
           // to styles.
           // See: https://www.styled-components.com/docs/api#caveat-with-function-components
-          //
-          // However I've been told that TypeScript understands
-          // the 'styled.a' as an <a> so we don't need to add
-          // "& someHTMLElementTypes"
           this.style += ">";
         }
         this.style += `\`${scBody}\`;\n\n`;
@@ -476,13 +490,18 @@ export default class ReactTsStyledComponents {
 
     this.render += `<${tag}`;
 
+    const renderedAttributeKeys = [];
+
     if (this.options.css === "styled-components") {
       const classAttribute = attributes.find(
         attribute => attribute.key === "class"
       );
       if (classAttribute && classAttribute.dynamicKeys) {
         this.render += classAttribute.dynamicKeys
-          .map(dynamicKey => ` ${dynamicKey.key}={${dynamicKey.key}}`)
+          .map(dynamicKey => {
+            renderedAttributeKeys.push(dynamicKey.key);
+            return ` ${dynamicKey.key}={${dynamicKey.key}}`;
+          })
           .join("");
       }
     }
@@ -496,6 +515,7 @@ export default class ReactTsStyledComponents {
                 attribute.key === "class"
               );
             })
+            .filter(attribute => !renderedAttributeKeys.includes(attribute.key))
             .map((attribute: TemplateAttribute) =>
               this.renderAttribute(tagName, attribute, this.options)
             )
@@ -643,6 +663,10 @@ export default class ReactTsStyledComponents {
         typing = ["boolean"];
         break;
       }
+      case "number": {
+        typing = ["number"];
+        break;
+      }
       case "node": {
         alreadyDefinedTheUndefinedType = true;
         // React.ReactNode includes `undefined` already
@@ -679,7 +703,8 @@ export default class ReactTsStyledComponents {
       autofocus: "autoFocus",
       srcset: "srcSet",
       crossorigin: "crossOrigin",
-      spellcheck: "spellCheck"
+      spellcheck: "spellCheck",
+      tabindex: "tabIndex"
       // TODO: expand this list... presumably there's an NPM package with these mappings?
     };
     return transform[key] ? transform[key] : key;
@@ -969,4 +994,21 @@ export default class ReactTsStyledComponents {
 type StyledComponentsResponse = {
   scBody: string;
   usedProps: string[];
+};
+
+// List of attributes who values must be values. Ie,
+//   <textarea rows="8" />
+// is invalid as it should be forced to be this,
+//   <textarea rows={8} />
+const forceAttributeAsRef = {
+  rows: "number",
+  tabIndex: "number",
+  "aria-disabled": "boolean",
+  disabled: "boolean",
+  open: "boolean"
+};
+
+const typeCoersions = {
+  type: "any",
+  crossOrigin: "any" // Pick<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, 'crossOrigin'>
 };

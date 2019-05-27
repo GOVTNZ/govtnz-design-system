@@ -1,37 +1,32 @@
-import React from "react";
+"use strict";
 
-const FieldsetBlock = ({ hintId, legend, hint, children }) => (
-  <div className="g-fieldsetBlock-form-group">
-    <fieldset aria-describedby={hintId} className="g-fieldset">
-      <legend className="g-fieldset__legend">
-        {legend !== undefined ? (
-          legend
-        ) : (
-          <React.Fragment>Legend text</React.Fragment>
-        )}
-      </legend>
-      {hintId !== undefined ? (
-        <React.Fragment>
-          <div className="g-fieldsetBlock-hint" id={hintId}>
-            {hint !== undefined ? (
-              hint
-            ) : (
-              <React.Fragment>Hint text</React.Fragment>
-            )}
-          </div>
-        </React.Fragment>
-      ) : (
-        ""
-      )}
-      <div>
-        {children !== undefined ? (
-          children
-        ) : (
-          <React.Fragment>Fieldset contents</React.Fragment>
-        )}
-      </div>
-    </fieldset>
-  </div>
-);
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var FieldsetBlock = function FieldsetBlock(_ref) {
+  var hintId = _ref.hintId,
+      legend = _ref.legend,
+      hint = _ref.hint,
+      children = _ref.children;
+  return _react["default"].createElement("div", {
+    className: "g-fieldsetBlock-form-group"
+  }, _react["default"].createElement("fieldset", {
+    "aria-describedby": hintId,
+    className: "g-fieldset"
+  }, _react["default"].createElement("legend", {
+    className: "g-fieldset__legend"
+  }, legend !== undefined ? legend : _react["default"].createElement(_react["default"].Fragment, null, "Legend text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+    className: "g-fieldsetBlock-hint",
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", _react["default"].createElement("div", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
+};
+
 FieldsetBlock.props = ["hintId", "legend", "hint", "children"];
-export default FieldsetBlock;
+var _default = FieldsetBlock;
+exports["default"] = _default;

@@ -1,79 +1,469 @@
-// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+"use strict";
 
-export const A = () => import("./A");
-export const BackLinkWithCustomText = () => import("./BackLinkWithCustomText");
-export const BreadcrumbsWithLastBreadcrumbAsCurrentPage = () => import("./BreadcrumbsWithLastBreadcrumbAsCurrentPage");
-export const Breadcrumbs = () => import("./Breadcrumbs");
-export const Button = () => import("./Button");
-export const CaptionL = () => import("./CaptionL");
-export const CaptionM = () => import("./CaptionM");
-export const CaptionXl = () => import("./CaptionXl");
-export const CharacterCountWithCustomRows = () => import("./CharacterCountWithCustomRows");
-export const CheckboxBlock = () => import("./CheckboxBlock");
-export const Checkbox = () => import("./Checkbox");
-export const CustomTable = () => import("./CustomTable");
-export const DateInputWithAutocompleteValues = () => import("./DateInputWithAutocompleteValues");
-export const DateInputWithErrorOnDayInput = () => import("./DateInputWithErrorOnDayInput");
-export const DateInputWithErrorOnMonthInput = () => import("./DateInputWithErrorOnMonthInput");
-export const DateInputWithErrorOnYearInput = () => import("./DateInputWithErrorOnYearInput");
-export const DateInputWithErrors = () => import("./DateInputWithErrors");
-export const DateInput = () => import("./DateInput");
-export const DetailsExpanded = () => import("./DetailsExpanded");
-export const DetailsWithHtml = () => import("./DetailsWithHtml");
-export const Details = () => import("./Details");
-export const ErrorMessage = () => import("./ErrorMessage");
-export const ErrorSummary = () => import("./ErrorSummary");
-export const FileUploadWithErrorMessage = () => import("./FileUploadWithErrorMessage");
-export const FileUploadWithHintText = () => import("./FileUploadWithHintText");
-export const FileUpload = () => import("./FileUpload");
-export const H1 = () => import("./H1");
-export const H2 = () => import("./H2");
-export const H3 = () => import("./H3");
-export const H4 = () => import("./H4");
-export const H5 = () => import("./H5");
-export const H6 = () => import("./H6");
-export const InputBlock = () => import("./InputBlock");
-export const Input = () => import("./Input");
-export const InsetText = () => import("./InsetText");
-export const Ol = () => import("./Ol");
-export const Li = () => import("./Li");
-export const P = () => import("./P");
-export const Fieldset = () => import("./Fieldset");
-export const FieldsetBlockWithError = () => import("./FieldsetBlockWithError");
-export const FieldsetBlock = () => import("./FieldsetBlock");
-export const Legend = () => import("./Legend");
-export const FieldsetLabel = () => import("./FieldsetLabel");
-export const Radios = () => import("./Radios");
-export const RadioBlock = () => import("./RadioBlock");
-export const RadioBlockWithHint = () => import("./RadioBlockWithHint");
-export const Radio = () => import("./Radio");
-export const FormDivider = () => import("./FormDivider");
-export const SelectWithFullWidthOverride = () => import("./SelectWithFullWidthOverride");
-export const SelectWithHintTextAndErrorMessage = () => import("./SelectWithHintTextAndErrorMessage");
-export const Select = () => import("./Select");
-export const SelectBlock = () => import("./SelectBlock");
-export const SkipLink = () => import("./SkipLink");
-export const SummaryListCheckYourAnswers = () => import("./SummaryListCheckYourAnswers");
-export const SummaryListExtreme = () => import("./SummaryListExtreme");
-export const SummaryList = () => import("./SummaryList");
-export const TableTableWithHeadAndCaption = () => import("./TableTableWithHeadAndCaption");
-export const TableTableWithHead = () => import("./TableTableWithHead");
-export const Table = () => import("./Table");
-export const TabsTabsWithAnchorInPanel = () => import("./TabsTabsWithAnchorInPanel");
-export const Tabs = () => import("./Tabs");
-export const TagInactive = () => import("./TagInactive");
-export const Tag = () => import("./Tag");
-export const TextareaWithAutocompleteAttribute = () => import("./TextareaWithAutocompleteAttribute");
-export const TextareaWithCustomRows = () => import("./TextareaWithCustomRows");
-export const TextareaWithDefaultValue = () => import("./TextareaWithDefaultValue");
-export const TextareaWithErrorMessage = () => import("./TextareaWithErrorMessage");
-export const TextareaWithLabelAsPageHeading = () => import("./TextareaWithLabelAsPageHeading");
-export const TextareaWithOptionalFormGroupClasses = () => import("./TextareaWithOptionalFormGroupClasses");
-export const Textarea = () => import("./Textarea");
-export const Ul = () => import("./Ul");
-export const WarningText = () => import("./WarningText");
-export const FlexColumn = () => import("./FlexColumn");
-export const FlexContainer = () => import("./FlexContainer");
-export const FlexRow = () => import("./FlexRow");
-export const FooterStandard = () => import("./FooterStandard");
-export const FooterWrapper = () => import("./FooterWrapper");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.WarningText = exports.Ul = exports.Textarea = exports.TextareaWithOptionalFormGroupClasses = exports.TextareaWithLabelAsPageHeading = exports.TextareaWithErrorMessage = exports.TextareaWithDefaultValue = exports.TextareaWithCustomRows = exports.TextareaWithAutocompleteAttribute = exports.Tag = exports.TagInactive = exports.Tabs = exports.TabsTabsWithAnchorInPanel = exports.Table = exports.TableTableWithHead = exports.TableTableWithHeadAndCaption = exports.SummaryList = exports.SummaryListExtreme = exports.SummaryListCheckYourAnswers = exports.SkipLink = exports.SelectBlock = exports.Select = exports.SelectWithHintTextAndErrorMessage = exports.SelectWithFullWidthOverride = exports.FormDivider = exports.Radio = exports.RadioBlockWithHint = exports.RadioBlock = exports.Radios = exports.FieldsetLabel = exports.Legend = exports.FieldsetBlock = exports.FieldsetBlockWithError = exports.Fieldset = exports.P = exports.Li = exports.Ol = exports.InsetText = exports.Input = exports.InputBlock = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FileUpload = exports.FileUploadWithHintText = exports.FileUploadWithErrorMessage = exports.ErrorSummary = exports.ErrorMessage = exports.Details = exports.DetailsWithHtml = exports.DetailsExpanded = exports.DateInput = exports.DateInputWithErrors = exports.DateInputWithErrorOnYearInput = exports.DateInputWithErrorOnMonthInput = exports.DateInputWithErrorOnDayInput = exports.DateInputWithAutocompleteValues = exports.CustomTable = exports.Checkbox = exports.CheckboxBlock = exports.CharacterCountWithCustomRows = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.Breadcrumbs = exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = exports.BackLinkWithCustomText = exports.A = void 0;
+
+// DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
+var A = function A() {
+  return import("./A");
+};
+
+exports.A = A;
+
+var BackLinkWithCustomText = function BackLinkWithCustomText() {
+  return import("./BackLinkWithCustomText");
+};
+
+exports.BackLinkWithCustomText = BackLinkWithCustomText;
+
+var BreadcrumbsWithLastBreadcrumbAsCurrentPage = function BreadcrumbsWithLastBreadcrumbAsCurrentPage() {
+  return import("./BreadcrumbsWithLastBreadcrumbAsCurrentPage");
+};
+
+exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = BreadcrumbsWithLastBreadcrumbAsCurrentPage;
+
+var Breadcrumbs = function Breadcrumbs() {
+  return import("./Breadcrumbs");
+};
+
+exports.Breadcrumbs = Breadcrumbs;
+
+var Button = function Button() {
+  return import("./Button");
+};
+
+exports.Button = Button;
+
+var CaptionL = function CaptionL() {
+  return import("./CaptionL");
+};
+
+exports.CaptionL = CaptionL;
+
+var CaptionM = function CaptionM() {
+  return import("./CaptionM");
+};
+
+exports.CaptionM = CaptionM;
+
+var CaptionXl = function CaptionXl() {
+  return import("./CaptionXl");
+};
+
+exports.CaptionXl = CaptionXl;
+
+var CharacterCountWithCustomRows = function CharacterCountWithCustomRows() {
+  return import("./CharacterCountWithCustomRows");
+};
+
+exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
+
+var CheckboxBlock = function CheckboxBlock() {
+  return import("./CheckboxBlock");
+};
+
+exports.CheckboxBlock = CheckboxBlock;
+
+var Checkbox = function Checkbox() {
+  return import("./Checkbox");
+};
+
+exports.Checkbox = Checkbox;
+
+var CustomTable = function CustomTable() {
+  return import("./CustomTable");
+};
+
+exports.CustomTable = CustomTable;
+
+var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues() {
+  return import("./DateInputWithAutocompleteValues");
+};
+
+exports.DateInputWithAutocompleteValues = DateInputWithAutocompleteValues;
+
+var DateInputWithErrorOnDayInput = function DateInputWithErrorOnDayInput() {
+  return import("./DateInputWithErrorOnDayInput");
+};
+
+exports.DateInputWithErrorOnDayInput = DateInputWithErrorOnDayInput;
+
+var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput() {
+  return import("./DateInputWithErrorOnMonthInput");
+};
+
+exports.DateInputWithErrorOnMonthInput = DateInputWithErrorOnMonthInput;
+
+var DateInputWithErrorOnYearInput = function DateInputWithErrorOnYearInput() {
+  return import("./DateInputWithErrorOnYearInput");
+};
+
+exports.DateInputWithErrorOnYearInput = DateInputWithErrorOnYearInput;
+
+var DateInputWithErrors = function DateInputWithErrors() {
+  return import("./DateInputWithErrors");
+};
+
+exports.DateInputWithErrors = DateInputWithErrors;
+
+var DateInput = function DateInput() {
+  return import("./DateInput");
+};
+
+exports.DateInput = DateInput;
+
+var DetailsExpanded = function DetailsExpanded() {
+  return import("./DetailsExpanded");
+};
+
+exports.DetailsExpanded = DetailsExpanded;
+
+var DetailsWithHtml = function DetailsWithHtml() {
+  return import("./DetailsWithHtml");
+};
+
+exports.DetailsWithHtml = DetailsWithHtml;
+
+var Details = function Details() {
+  return import("./Details");
+};
+
+exports.Details = Details;
+
+var ErrorMessage = function ErrorMessage() {
+  return import("./ErrorMessage");
+};
+
+exports.ErrorMessage = ErrorMessage;
+
+var ErrorSummary = function ErrorSummary() {
+  return import("./ErrorSummary");
+};
+
+exports.ErrorSummary = ErrorSummary;
+
+var FileUploadWithErrorMessage = function FileUploadWithErrorMessage() {
+  return import("./FileUploadWithErrorMessage");
+};
+
+exports.FileUploadWithErrorMessage = FileUploadWithErrorMessage;
+
+var FileUploadWithHintText = function FileUploadWithHintText() {
+  return import("./FileUploadWithHintText");
+};
+
+exports.FileUploadWithHintText = FileUploadWithHintText;
+
+var FileUpload = function FileUpload() {
+  return import("./FileUpload");
+};
+
+exports.FileUpload = FileUpload;
+
+var H1 = function H1() {
+  return import("./H1");
+};
+
+exports.H1 = H1;
+
+var H2 = function H2() {
+  return import("./H2");
+};
+
+exports.H2 = H2;
+
+var H3 = function H3() {
+  return import("./H3");
+};
+
+exports.H3 = H3;
+
+var H4 = function H4() {
+  return import("./H4");
+};
+
+exports.H4 = H4;
+
+var H5 = function H5() {
+  return import("./H5");
+};
+
+exports.H5 = H5;
+
+var H6 = function H6() {
+  return import("./H6");
+};
+
+exports.H6 = H6;
+
+var InputBlock = function InputBlock() {
+  return import("./InputBlock");
+};
+
+exports.InputBlock = InputBlock;
+
+var Input = function Input() {
+  return import("./Input");
+};
+
+exports.Input = Input;
+
+var InsetText = function InsetText() {
+  return import("./InsetText");
+};
+
+exports.InsetText = InsetText;
+
+var Ol = function Ol() {
+  return import("./Ol");
+};
+
+exports.Ol = Ol;
+
+var Li = function Li() {
+  return import("./Li");
+};
+
+exports.Li = Li;
+
+var P = function P() {
+  return import("./P");
+};
+
+exports.P = P;
+
+var Fieldset = function Fieldset() {
+  return import("./Fieldset");
+};
+
+exports.Fieldset = Fieldset;
+
+var FieldsetBlockWithError = function FieldsetBlockWithError() {
+  return import("./FieldsetBlockWithError");
+};
+
+exports.FieldsetBlockWithError = FieldsetBlockWithError;
+
+var FieldsetBlock = function FieldsetBlock() {
+  return import("./FieldsetBlock");
+};
+
+exports.FieldsetBlock = FieldsetBlock;
+
+var Legend = function Legend() {
+  return import("./Legend");
+};
+
+exports.Legend = Legend;
+
+var FieldsetLabel = function FieldsetLabel() {
+  return import("./FieldsetLabel");
+};
+
+exports.FieldsetLabel = FieldsetLabel;
+
+var Radios = function Radios() {
+  return import("./Radios");
+};
+
+exports.Radios = Radios;
+
+var RadioBlock = function RadioBlock() {
+  return import("./RadioBlock");
+};
+
+exports.RadioBlock = RadioBlock;
+
+var RadioBlockWithHint = function RadioBlockWithHint() {
+  return import("./RadioBlockWithHint");
+};
+
+exports.RadioBlockWithHint = RadioBlockWithHint;
+
+var Radio = function Radio() {
+  return import("./Radio");
+};
+
+exports.Radio = Radio;
+
+var FormDivider = function FormDivider() {
+  return import("./FormDivider");
+};
+
+exports.FormDivider = FormDivider;
+
+var SelectWithFullWidthOverride = function SelectWithFullWidthOverride() {
+  return import("./SelectWithFullWidthOverride");
+};
+
+exports.SelectWithFullWidthOverride = SelectWithFullWidthOverride;
+
+var SelectWithHintTextAndErrorMessage = function SelectWithHintTextAndErrorMessage() {
+  return import("./SelectWithHintTextAndErrorMessage");
+};
+
+exports.SelectWithHintTextAndErrorMessage = SelectWithHintTextAndErrorMessage;
+
+var Select = function Select() {
+  return import("./Select");
+};
+
+exports.Select = Select;
+
+var SelectBlock = function SelectBlock() {
+  return import("./SelectBlock");
+};
+
+exports.SelectBlock = SelectBlock;
+
+var SkipLink = function SkipLink() {
+  return import("./SkipLink");
+};
+
+exports.SkipLink = SkipLink;
+
+var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers() {
+  return import("./SummaryListCheckYourAnswers");
+};
+
+exports.SummaryListCheckYourAnswers = SummaryListCheckYourAnswers;
+
+var SummaryListExtreme = function SummaryListExtreme() {
+  return import("./SummaryListExtreme");
+};
+
+exports.SummaryListExtreme = SummaryListExtreme;
+
+var SummaryList = function SummaryList() {
+  return import("./SummaryList");
+};
+
+exports.SummaryList = SummaryList;
+
+var TableTableWithHeadAndCaption = function TableTableWithHeadAndCaption() {
+  return import("./TableTableWithHeadAndCaption");
+};
+
+exports.TableTableWithHeadAndCaption = TableTableWithHeadAndCaption;
+
+var TableTableWithHead = function TableTableWithHead() {
+  return import("./TableTableWithHead");
+};
+
+exports.TableTableWithHead = TableTableWithHead;
+
+var Table = function Table() {
+  return import("./Table");
+};
+
+exports.Table = Table;
+
+var TabsTabsWithAnchorInPanel = function TabsTabsWithAnchorInPanel() {
+  return import("./TabsTabsWithAnchorInPanel");
+};
+
+exports.TabsTabsWithAnchorInPanel = TabsTabsWithAnchorInPanel;
+
+var Tabs = function Tabs() {
+  return import("./Tabs");
+};
+
+exports.Tabs = Tabs;
+
+var TagInactive = function TagInactive() {
+  return import("./TagInactive");
+};
+
+exports.TagInactive = TagInactive;
+
+var Tag = function Tag() {
+  return import("./Tag");
+};
+
+exports.Tag = Tag;
+
+var TextareaWithAutocompleteAttribute = function TextareaWithAutocompleteAttribute() {
+  return import("./TextareaWithAutocompleteAttribute");
+};
+
+exports.TextareaWithAutocompleteAttribute = TextareaWithAutocompleteAttribute;
+
+var TextareaWithCustomRows = function TextareaWithCustomRows() {
+  return import("./TextareaWithCustomRows");
+};
+
+exports.TextareaWithCustomRows = TextareaWithCustomRows;
+
+var TextareaWithDefaultValue = function TextareaWithDefaultValue() {
+  return import("./TextareaWithDefaultValue");
+};
+
+exports.TextareaWithDefaultValue = TextareaWithDefaultValue;
+
+var TextareaWithErrorMessage = function TextareaWithErrorMessage() {
+  return import("./TextareaWithErrorMessage");
+};
+
+exports.TextareaWithErrorMessage = TextareaWithErrorMessage;
+
+var TextareaWithLabelAsPageHeading = function TextareaWithLabelAsPageHeading() {
+  return import("./TextareaWithLabelAsPageHeading");
+};
+
+exports.TextareaWithLabelAsPageHeading = TextareaWithLabelAsPageHeading;
+
+var TextareaWithOptionalFormGroupClasses = function TextareaWithOptionalFormGroupClasses() {
+  return import("./TextareaWithOptionalFormGroupClasses");
+};
+
+exports.TextareaWithOptionalFormGroupClasses = TextareaWithOptionalFormGroupClasses;
+
+var Textarea = function Textarea() {
+  return import("./Textarea");
+};
+
+exports.Textarea = Textarea;
+
+var Ul = function Ul() {
+  return import("./Ul");
+};
+
+exports.Ul = Ul;
+
+var WarningText = function WarningText() {
+  return import("./WarningText");
+};
+
+exports.WarningText = WarningText;
+
+var FlexColumn = function FlexColumn() {
+  return import("./FlexColumn");
+};
+
+exports.FlexColumn = FlexColumn;
+
+var FlexContainer = function FlexContainer() {
+  return import("./FlexContainer");
+};
+
+exports.FlexContainer = FlexContainer;
+
+var FlexRow = function FlexRow() {
+  return import("./FlexRow");
+};
+
+exports.FlexRow = FlexRow;
+
+var FooterStandard = function FooterStandard() {
+  return import("./FooterStandard");
+};
+
+exports.FooterStandard = FooterStandard;
+
+var FooterWrapper = function FooterWrapper() {
+  return import("./FooterWrapper");
+};
+
+exports.FooterWrapper = FooterWrapper;

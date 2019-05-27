@@ -1,48 +1,34 @@
-import React from "react";
+"use strict";
 
-const SelectBlock = ({
-  selectId,
-  label,
-  hasError,
-  name,
-  multiple,
-  onChange,
-  children
-}) => (
-  <div>
-    <label className="g-selectBlock-label" htmlFor={selectId}>
-      {label !== undefined ? (
-        label
-      ) : (
-        <React.Fragment>Example label text</React.Fragment>
-      )}
-    </label>
-    <select
-      className={`g-selectBlock-select${
-        hasError ? " g-selectBlock-select--error" : ""
-      }`}
-      id={selectId}
-      name={name}
-      multiple={multiple}
-      onChange={onChange}
-    >
-      {children !== undefined ? (
-        children
-      ) : (
-        <React.Fragment>
-          <option>Options</option>
-        </React.Fragment>
-      )}
-    </select>
-  </div>
-);
-SelectBlock.props = [
-  "selectId",
-  "label",
-  "hasError",
-  "name",
-  "multiple",
-  "onChange",
-  "children"
-];
-export default SelectBlock;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var SelectBlock = function SelectBlock(_ref) {
+  var selectId = _ref.selectId,
+      label = _ref.label,
+      hasError = _ref.hasError,
+      name = _ref.name,
+      multiple = _ref.multiple,
+      onChange = _ref.onChange,
+      children = _ref.children;
+  return _react["default"].createElement("div", null, _react["default"].createElement("label", {
+    className: "g-selectBlock-label",
+    htmlFor: selectId
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label text")), _react["default"].createElement("select", {
+    className: "g-selectBlock-select".concat(hasError ? " g-selectBlock-select--error" : ""),
+    id: selectId,
+    name: name,
+    multiple: multiple,
+    onChange: onChange
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("option", null, "Options"))));
+};
+
+SelectBlock.props = ["selectId", "label", "hasError", "name", "multiple", "onChange", "children"];
+var _default = SelectBlock;
+exports["default"] = _default;

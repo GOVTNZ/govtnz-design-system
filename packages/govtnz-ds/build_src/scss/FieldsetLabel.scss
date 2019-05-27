@@ -1,0 +1,36 @@
+.g-fieldsetLabel-hint {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+}
+
+@media print {
+  .g-fieldsetLabel-hint {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-fieldsetLabel-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-fieldsetLabel-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-fieldset__legend + .g-fieldsetLabel-hint {
+  margin-top: -5px;
+}

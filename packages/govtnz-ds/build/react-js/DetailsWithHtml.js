@@ -1,34 +1,35 @@
-import React from "react";
+"use strict";
 
-const DetailsWithHtml = ({
-  detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0
-}) => (
-  <details className="g-detailsWithHtml-details" role="group">
-    <summary
-      aria-controls={detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0}
-      aria-expanded="false"
-      className="g-detailsWithHtml-details__summary"
-      role="button"
-    >
-      <span className="g-detailsWithHtml-details__summary-text">
-        Where to find your National Insurance Number
-      </span>
-    </summary>
-    <div
-      aria-hidden="true"
-      className="g-detailsWithHtml-details__text"
-      id={detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0}
-    >
-      Your National Insurance number can be found on
-      <ul>
-        <li>your National Insurance card</li>
-        <li>your payslip</li>
-        <li>P60</li>
-        <li>benefits information</li>
-        <li>tax return</li>
-      </ul>
-    </div>
-  </details>
-);
-DetailsWithHtml.props = ["detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0"];
-export default DetailsWithHtml;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var DetailsWithHtml = function DetailsWithHtml(_ref) {
+  var open = _ref.open,
+      detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0 = _ref.detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0;
+  return _react["default"].createElement("details", {
+    className: "g-detailsWithHtml-details",
+    role: "group",
+    open: open
+  }, _react["default"].createElement("summary", {
+    "aria-controls": detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0,
+    "aria-expanded": "false",
+    className: "g-detailsWithHtml-details__summary",
+    role: "button"
+  }, _react["default"].createElement("span", {
+    className: "g-detailsWithHtml-details__summary-text"
+  }, "Where to find your National Insurance Number")), _react["default"].createElement("div", {
+    "aria-hidden": "true",
+    className: "g-detailsWithHtml-details__text",
+    id: detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0
+  }, "Your National Insurance number can be found on", _react["default"].createElement("ul", null, _react["default"].createElement("li", null, "your National Insurance card"), _react["default"].createElement("li", null, "your payslip"), _react["default"].createElement("li", null, "P60"), _react["default"].createElement("li", null, "benefits information"), _react["default"].createElement("li", null, "tax return"))));
+};
+
+DetailsWithHtml.props = ["open", "detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0"];
+var _default = DetailsWithHtml;
+exports["default"] = _default;

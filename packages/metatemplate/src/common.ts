@@ -209,6 +209,7 @@ export type DynamicKeyType =
   | "node"
   | "reference"
   | "function"
+  | "number"
   | EnumOption[];
 
 export type EnumOption = {

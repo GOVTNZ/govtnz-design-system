@@ -1,17 +1,34 @@
-import Vue from "vue";
+"use strict";
 
-export default Vue.extend({
-  functional: true, // no internal state
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _vue = _interopRequireDefault(require("vue"));
+
+var _default = _vue["default"].extend({
+  functional: true,
+  // no internal state
   props: {
-    numbered: { type: Boolean, default: false, required: false },
-    children: { required: false, default: "Example text" }
+    numbered: {
+      type: Boolean,
+      "default": false,
+      required: false
+    },
+    children: {
+      required: false,
+      "default": "Example text"
+    }
   },
   computed: {
-    computed__class() {
+    computed__class: function computed__class() {
       return "g-ol-list" + (this.numbered ? " g-ol-list--number" : "");
     }
   },
-  render: new Function(
-    "with(this){return _c('ol',{class:computed__class},[_t(\"default\")],2)}"
-  )
+  render: new Function("with(this){return _c('ol',{class:computed__class},[_t(\"default\")],2)}")
 });
+
+exports["default"] = _default;

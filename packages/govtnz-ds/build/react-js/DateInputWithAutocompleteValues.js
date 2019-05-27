@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   autoComplete: {
     Off: "off",
     On: "on",
@@ -240,167 +249,116 @@ const constants = {
   }
 };
 
-const DateInputWithAutocompleteValues = ({
-  dobWithAutocompleteAttributeHint,
-  dobWithAutocompleteAttribute,
-  dobWithAutocompleteAttributeDay,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange,
-  dobWithAutocompleteAttributeMonth,
-  name2,
-  disabled2,
-  readOnly2,
-  autoFocus2,
-  value2,
-  type2,
-  spellCheck2,
-  autoComplete2,
-  onChange2,
-  dobWithAutocompleteAttributeYear,
-  name3,
-  disabled3,
-  readOnly3,
-  autoFocus3,
-  value3,
-  type3,
-  spellCheck3,
-  autoComplete3,
-  onChange3
-}) => (
-  <div className="g-dateInputWithAutocompleteValues-form-group">
-    <fieldset
-      aria-describedby={dobWithAutocompleteAttributeHint}
-      className="g-dateInputWithAutocompleteValues-fieldset"
-      role="group"
-    >
-      <legend className="g-dateInputWithAutocompleteValues-fieldset__legend">
-        What is your date of birth?
-      </legend>
-      <span
-        className="g-dateInputWithAutocompleteValues-hint"
-        id={dobWithAutocompleteAttributeHint}
-      >
-        For example, 31 3 1980
-      </span>
-      <div
-        className="g-dateInputWithAutocompleteValues-date-input"
-        id={dobWithAutocompleteAttribute}
-      >
-        <div className="g-dateInputWithAutocompleteValues-date-input__item">
-          <div className="g-dateInputWithAutocompleteValues-form-group">
-            <label
-              className="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-              htmlFor={dobWithAutocompleteAttributeDay}
-            >
-              Day
-            </label>
-            <input
-              autoComplete={constants.autoComplete[autoComplete]}
-              className="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-              id={dobWithAutocompleteAttributeDay}
-              name={name}
-              pattern="[0-9]*"
-              type={constants.type[type]}
-              disabled={disabled}
-              readOnly={readOnly}
-              autoFocus={autoFocus}
-              value={value}
-              spellCheck={spellCheck}
-              onChange={onChange}
-            />
-          </div>
-        </div>
-        <div className="g-dateInputWithAutocompleteValues-date-input__item">
-          <div className="g-dateInputWithAutocompleteValues-form-group">
-            <label
-              className="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-              htmlFor={dobWithAutocompleteAttributeMonth}
-            >
-              Month
-            </label>
-            <input
-              autoComplete={constants.autoComplete2[autoComplete2]}
-              className="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-              id={dobWithAutocompleteAttributeMonth}
-              name={name2}
-              pattern="[0-9]*"
-              type={constants.type2[type2]}
-              disabled={disabled2}
-              readOnly={readOnly2}
-              autoFocus={autoFocus2}
-              value={value2}
-              spellCheck={spellCheck2}
-              onChange={onChange2}
-            />
-          </div>
-        </div>
-        <div className="g-dateInputWithAutocompleteValues-date-input__item">
-          <div className="g-dateInputWithAutocompleteValues-form-group">
-            <label
-              className="g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label"
-              htmlFor={dobWithAutocompleteAttributeYear}
-            >
-              Year
-            </label>
-            <input
-              autoComplete={constants.autoComplete3[autoComplete3]}
-              className="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
-              id={dobWithAutocompleteAttributeYear}
-              name={name3}
-              pattern="[0-9]*"
-              type={constants.type3[type3]}
-              disabled={disabled3}
-              readOnly={readOnly3}
-              autoFocus={autoFocus3}
-              value={value3}
-              spellCheck={spellCheck3}
-              onChange={onChange3}
-            />
-          </div>
-        </div>
-      </div>
-    </fieldset>
-  </div>
-);
-DateInputWithAutocompleteValues.props = [
-  "dobWithAutocompleteAttributeHint",
-  "dobWithAutocompleteAttribute",
-  "dobWithAutocompleteAttributeDay",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "dobWithAutocompleteAttributeMonth",
-  "name2",
-  "disabled2",
-  "readOnly2",
-  "autoFocus2",
-  "value2",
-  "type2",
-  "spellCheck2",
-  "autoComplete2",
-  "onChange2",
-  "dobWithAutocompleteAttributeYear",
-  "name3",
-  "disabled3",
-  "readOnly3",
-  "autoFocus3",
-  "value3",
-  "type3",
-  "spellCheck3",
-  "autoComplete3",
-  "onChange3"
-];
-export default DateInputWithAutocompleteValues;
+var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_ref) {
+  var dobWithAutocompleteAttributeHint = _ref.dobWithAutocompleteAttributeHint,
+      dobWithAutocompleteAttribute = _ref.dobWithAutocompleteAttribute,
+      dobWithAutocompleteAttributeDay = _ref.dobWithAutocompleteAttributeDay,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange,
+      dobWithAutocompleteAttributeMonth = _ref.dobWithAutocompleteAttributeMonth,
+      name2 = _ref.name2,
+      disabled2 = _ref.disabled2,
+      readOnly2 = _ref.readOnly2,
+      autoFocus2 = _ref.autoFocus2,
+      value2 = _ref.value2,
+      type2 = _ref.type2,
+      spellCheck2 = _ref.spellCheck2,
+      autoComplete2 = _ref.autoComplete2,
+      onChange2 = _ref.onChange2,
+      dobWithAutocompleteAttributeYear = _ref.dobWithAutocompleteAttributeYear,
+      name3 = _ref.name3,
+      disabled3 = _ref.disabled3,
+      readOnly3 = _ref.readOnly3,
+      autoFocus3 = _ref.autoFocus3,
+      value3 = _ref.value3,
+      type3 = _ref.type3,
+      spellCheck3 = _ref.spellCheck3,
+      autoComplete3 = _ref.autoComplete3,
+      onChange3 = _ref.onChange3;
+  return _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-form-group"
+  }, _react["default"].createElement("fieldset", {
+    "aria-describedby": dobWithAutocompleteAttributeHint,
+    className: "g-dateInputWithAutocompleteValues-fieldset",
+    role: "group"
+  }, _react["default"].createElement("legend", {
+    className: "g-dateInputWithAutocompleteValues-fieldset__legend"
+  }, "What is your date of birth?"), _react["default"].createElement("span", {
+    className: "g-dateInputWithAutocompleteValues-hint",
+    id: dobWithAutocompleteAttributeHint
+  }, "For example, 31 3 1980"), _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-date-input",
+    id: dobWithAutocompleteAttribute
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label",
+    htmlFor: dobWithAutocompleteAttributeDay
+  }, "Day"), _react["default"].createElement("input", {
+    autoComplete: constants.autoComplete[autoComplete],
+    className: "g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2",
+    id: dobWithAutocompleteAttributeDay,
+    name: name,
+    pattern: "[0-9]*",
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    onChange: onChange
+  }))), _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label",
+    htmlFor: dobWithAutocompleteAttributeMonth
+  }, "Month"), _react["default"].createElement("input", {
+    autoComplete: constants.autoComplete2[autoComplete2],
+    className: "g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2",
+    id: dobWithAutocompleteAttributeMonth,
+    name: name2,
+    pattern: "[0-9]*",
+    type: constants.type2[type2],
+    disabled: disabled2,
+    readOnly: readOnly2,
+    autoFocus: autoFocus2,
+    value: value2,
+    spellCheck: spellCheck2,
+    onChange: onChange2
+  }))), _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithAutocompleteValues-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label",
+    htmlFor: dobWithAutocompleteAttributeYear
+  }, "Year"), _react["default"].createElement("input", {
+    autoComplete: constants.autoComplete3[autoComplete3],
+    className: "g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2",
+    id: dobWithAutocompleteAttributeYear,
+    name: name3,
+    pattern: "[0-9]*",
+    type: constants.type3[type3],
+    disabled: disabled3,
+    readOnly: readOnly3,
+    autoFocus: autoFocus3,
+    value: value3,
+    spellCheck: spellCheck3,
+    onChange: onChange3
+  }))))));
+};
+
+DateInputWithAutocompleteValues.props = ["dobWithAutocompleteAttributeHint", "dobWithAutocompleteAttribute", "dobWithAutocompleteAttributeDay", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange", "dobWithAutocompleteAttributeMonth", "name2", "disabled2", "readOnly2", "autoFocus2", "value2", "type2", "spellCheck2", "autoComplete2", "onChange2", "dobWithAutocompleteAttributeYear", "name3", "disabled3", "readOnly3", "autoFocus3", "value3", "type3", "spellCheck3", "autoComplete3", "onChange3"];
+var _default = DateInputWithAutocompleteValues;
+exports["default"] = _default;

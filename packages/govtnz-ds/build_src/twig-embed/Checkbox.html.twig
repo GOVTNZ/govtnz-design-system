@@ -1,0 +1,12 @@
+<input
+aria-describedby="{{ hintId | escape('html_attr') }}"
+class="g-checkboxes__input{{ if fakeFocus }} :focus{{ endif }}"
+id="{{ checkboxId | escape('html_attr') }}"
+type="checkbox"
+name="{{ name | escape('html_attr') }}"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+value="{{ value | escape('html_attr') }}"
+checked="{{ if checked }}checked{{ endif }}"
+/>

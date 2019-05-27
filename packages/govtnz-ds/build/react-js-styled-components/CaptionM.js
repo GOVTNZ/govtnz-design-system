@@ -1,36 +1,35 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledSpan = styled.span`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  color: #6f777b;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const CaptionM = ({ children }) => (
-  <StyledSpan>
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Example text</React.Fragment>
-    )}
-  </StyledSpan>
-);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  color: #6f777b;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledSpan = _styledComponents["default"].span(_templateObject());
+
+var CaptionM = function CaptionM(_ref) {
+  var children = _ref.children;
+  return _react["default"].createElement(StyledSpan, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+};
+
 CaptionM.props = ["children"];
-export default CaptionM;
+var _default = CaptionM;
+exports["default"] = _default;

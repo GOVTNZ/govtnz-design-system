@@ -1,118 +1,84 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledDetails = styled.details`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #0b0c0c;
-  margin-bottom: 20px;
-  display: block;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const StyledSummary = styled.summary`
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  padding-left: 25px;
-  color: #005ea5;
-  cursor: pointer;
-  :hover {
-    color: #2b8cc4;
-  }
-  :focus {
-    outline: 4px solid #ffbf47;
-    outline-offset: -1px;
-    color: #0b0c0c;
-    background: #ffbf47;
-  }
-  ::-webkit-details-marker {
-    display: none;
-  }
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
-    border-width: 7px 0 7px 12.124px;
-    border-left-color: inherit;
-  }
-  :before {
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    border-width: 12.124px 7px 0 7px;
-    border-top-color: inherit;
-  }
-`;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 
-const StyledSpan = styled.span`
-  text-decoration: underline;
-`;
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
-const StyledDiv = styled.div`
-  padding: 15px;
-  padding-left: 20px;
-  border-left: 5px solid #bfc1c3;
-`;
+var _react = _interopRequireDefault(require("react"));
 
-const DetailsExpanded = ({
-  helpWithNationality,
-  detailsContent3E1674E973084F93B79C1A8694B6F4D5
-}) => (
-  <StyledDetails id={helpWithNationality} open="" role="group">
-    <StyledSummary
-      aria-controls={detailsContent3E1674E973084F93B79C1A8694B6F4D5}
-      aria-expanded="true"
-      role="button"
-    >
-      <StyledSpan>Help with nationality</StyledSpan>
-    </StyledSummary>
-    <StyledDiv
-      aria-hidden="false"
-      id={detailsContent3E1674E973084F93B79C1A8694B6F4D5}
-    >
-      We need to know your nationality so we can work out which elections you’re
-      entitled to vote in. If you can’t provide your nationality, you’ll have to
-      send copies of identity documents through the post.
-    </StyledDiv>
-  </StyledDetails>
-);
-DetailsExpanded.props = [
-  "helpWithNationality",
-  "detailsContent3E1674E973084F93B79C1A8694B6F4D5"
-];
-export default DetailsExpanded;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  padding: 15px;\n  padding-left: 20px;\n  border-left: 5px solid #bfc1c3;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  text-decoration: underline;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  padding-left: 25px;\n  color: #005ea5;\n  cursor: pointer;\n  :hover {\n    color: #2b8cc4;\n  }\n  :focus {\n    outline: 4px solid #ffbf47;\n    outline-offset: -1px;\n    color: #0b0c0c;\n    background: #ffbf47;\n  }\n  ::-webkit-details-marker {\n    display: none;\n  }\n  :before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    bottom: 0;\n    left: 0;\n    margin: auto;\n    display: block;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-color: transparent;\n    -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);\n    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);\n    border-width: 7px 0 7px 12.124px;\n    border-left-color: inherit;\n  }\n  :before {\n    display: block;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-color: transparent;\n    -webkit-clip-path: polygon(0% 0%, 50% 100%, 100% 0%);\n    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);\n    border-width: 12.124px 7px 0 7px;\n    border-top-color: inherit;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  margin-bottom: 20px;\n  display: block;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledDetails = _styledComponents["default"].details(_templateObject());
+
+var StyledSummary = _styledComponents["default"].summary(_templateObject2());
+
+var StyledSpan = _styledComponents["default"].span(_templateObject3());
+
+var StyledDiv = _styledComponents["default"].div(_templateObject4());
+
+var DetailsExpanded = function DetailsExpanded(_ref) {
+  var helpWithNationality = _ref.helpWithNationality,
+      open = _ref.open,
+      detailsContent3E1674E973084F93B79C1A8694B6F4D5 = _ref.detailsContent3E1674E973084F93B79C1A8694B6F4D5;
+  return _react["default"].createElement(StyledDetails, {
+    id: helpWithNationality,
+    open: open,
+    role: "group"
+  }, _react["default"].createElement(StyledSummary, {
+    "aria-controls": detailsContent3E1674E973084F93B79C1A8694B6F4D5,
+    "aria-expanded": "true",
+    role: "button"
+  }, _react["default"].createElement(StyledSpan, null, "Help with nationality")), _react["default"].createElement(StyledDiv, {
+    "aria-hidden": "false",
+    id: detailsContent3E1674E973084F93B79C1A8694B6F4D5
+  }, "We need to know your nationality so we can work out which elections you\u2019re entitled to vote in. If you can\u2019t provide your nationality, you\u2019ll have to send copies of identity documents through the post."));
+};
+
+DetailsExpanded.props = ["helpWithNationality", "open", "detailsContent3E1674E973084F93B79C1A8694B6F4D5"];
+var _default = DetailsExpanded;
+exports["default"] = _default;

@@ -1,0 +1,55 @@
+<div
+class="g-fileUploadWithHintText-form-group"
+>
+  
+  
+<label
+class="g-fileUploadWithHintText-label"
+{{#fileUpload2}}
+  for="{{fileUpload2}}"
+{{/fileUpload2}}
+>
+  
+    Upload your photo
+  
+</label>
+  
+  
+<span
+class="g-fileUploadWithHintText-hint"
+{{#fileUpload2Hint}}
+  id="{{fileUpload2Hint}}"
+{{/fileUpload2Hint}}
+>
+  
+    Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or
+    in an app like iPhoto.
+  
+</span>
+  
+  
+<input
+{{#fileUpload2Hint}}
+  aria-describedby="{{fileUpload2Hint}}"
+{{/fileUpload2Hint}}
+class="g-fileUploadWithHintText-file-upload"
+{{#fileUpload2}}
+  id="{{fileUpload2}}"
+{{/fileUpload2}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+type="file"
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+/>
+  
+
+</div>

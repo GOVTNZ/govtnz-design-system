@@ -10,7 +10,7 @@ This is a new service – your feedback will help us to improve it.
 
 ## Contributions
 
-We welcome contributions to the all of government (AOG) design system. See [CONTRIBUTING](./CONTRIBUTING.md).
+We welcome contributions to the all of government (AOG) design system. See [CONTRIBUTING](https://github.com/GOVTNZ/govtnz-design-system/blob/master/CONTRIBUTING.md).
 
 ## Install
 
@@ -157,4 +157,4 @@ What other browsers would you like us to support? Please let us know. (See conta
 
 ## Changelog
 
-See [CHANGELOG](./CHANGELOG.md).
+See [CHANGELOG](https://github.com/GOVTNZ/govtnz-design-system/blob/master/CHANGELOG.md).

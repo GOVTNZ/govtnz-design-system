@@ -1,52 +1,50 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledUl = styled.ul`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.625;
-  color: #2a2a2a;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  padding-left: 0;
-  list-style-type: none;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-  margin-top: 10px;
-  ${props =>
-    props.bulleted &&
-    styled.css`
-      padding-left: 20px;
-      list-style-type: disc;
-    `}
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const Ul = ({ bulleted, children }) => (
-  <StyledUl bulleted={bulleted}>
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Example text</React.Fragment>
-    )}
-  </StyledUl>
-);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      padding-left: 20px;\n      list-style-type: disc;\n    "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 20px;\n  line-height: 1.625;\n  color: #2a2a2a;\n  margin-top: 0;\n  margin-bottom: 1rem;\n  padding-left: 0;\n  list-style-type: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-top: 10px;\n  ", "\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledUl = _styledComponents["default"].ul(_templateObject(), function (props) {
+  return props.bulleted && _styledComponents["default"].css(_templateObject2());
+});
+
+var Ul = function Ul(_ref) {
+  var bulleted = _ref.bulleted,
+      children = _ref.children;
+  return _react["default"].createElement(StyledUl, {
+    bulleted: bulleted
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+};
+
 Ul.props = ["bulleted", "children"];
-export default Ul;
+var _default = Ul;
+exports["default"] = _default;

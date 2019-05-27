@@ -1,0 +1,32 @@
+import * as React from "react";
+declare type Props = {
+    href: string;
+    rel?: string | undefined;
+    target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    label1?: React.ReactNode;
+    href2: string;
+    rel2?: string | undefined;
+    target2?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    label2?: React.ReactNode;
+    href3: string;
+    rel3?: string | undefined;
+    target3?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    label3?: React.ReactNode;
+    href4: string;
+    rel4?: string | undefined;
+    target4?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    href5: string;
+    rel5?: string | undefined;
+    target5?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    src: string;
+    width?: string | undefined;
+    height?: string | undefined;
+    srcSet?: string | undefined;
+    crossOrigin?: "Anonymous" | "Use Credentials" | undefined;
+    copyrightYear?: React.ReactNode;
+};
+declare const FooterStandard: {
+    ({ href, rel, target, label1, href2, rel2, target2, label2, href3, rel3, target3, label3, href4, rel4, target4, href5, rel5, target5, src, width, height, srcSet, crossOrigin, copyrightYear }: Props): JSX.Element;
+    props: string[];
+};
+export default FooterStandard;

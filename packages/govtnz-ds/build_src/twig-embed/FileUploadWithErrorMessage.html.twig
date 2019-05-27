@@ -1,0 +1,49 @@
+<div
+class="g-fileUploadWithErrorMessage-form-group g-fileUploadWithErrorMessage-form-group--error"
+>
+  
+  
+<label
+class="g-fileUploadWithErrorMessage-label"
+for="{{ fileUpload3 | escape('html_attr') }}"
+>
+  
+    Upload a file
+  
+</label>
+  
+  
+<span
+class="g-fileUploadWithErrorMessage-hint"
+id="{{ fileUpload3Hint | escape('html_attr') }}"
+>
+  
+    Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or
+    in an app like iPhoto.
+  
+</span>
+  
+  
+<span
+class="g-fileUploadWithErrorMessage-error-message"
+id="{{ fileUpload3Error | escape('html_attr') }}"
+>
+  
+    Error message goes here
+  
+</span>
+  
+  
+<input
+aria-describedby="{{ fileUpload3Hint | escape('html_attr') }} {{ fileUpload3Error | escape('html_attr') }}"
+class="g-fileUploadWithErrorMessage-file-upload g-fileUploadWithErrorMessage-file-upload--error"
+id="{{ fileUpload3 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+type="file"
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+/>
+  
+
+</div>

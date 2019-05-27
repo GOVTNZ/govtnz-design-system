@@ -1,0 +1,11 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<span
+class="g-caption-xl"
+>
+  {{{children}}}
+</span>

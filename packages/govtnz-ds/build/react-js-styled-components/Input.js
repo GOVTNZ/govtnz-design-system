@@ -1,83 +1,127 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledInput = styled.input`font-family: Arial, sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-weight: 400;
-font-size: 1rem;
-line-height: 1.25;
-box-sizing: border-box;
-width: 100%;
-height: 40px;
-margin-top: 0;
-padding: .5rem;
-border: 1px solid #2a2a2a;
-border-radius: 0;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-@media print{
-font-family: sans-serif;;
-}
-@media (min-width: 40.0625em){
-font-size: 1.1875rem;
-line-height: 1.31579;;
-}
-@media print{
-font-size: 14pt;
-line-height: 1.15;;
-}
-:focus,:focus{
-outline: 3px solid #ffbf47;
-outline-offset: 0;
-}
-::-webkit-outer-spin-button,::-webkit-inner-spin-button{
-margin: 0;
--webkit-appearance: none;
-}
-${props =>
-  props.hasError &&
-  styled.css`
-    border: 1px solid #b10e1e;
-  `}
-${props =>
-  props.width === "30" &&
-  styled.css`
-    max-width: 59ex;
-  `}
-${props =>
-  props.width === "20" &&
-  styled.css`
-    max-width: 41ex;
-  `}
-${props =>
-  props.width === "10" &&
-  styled.css`
-    max-width: 23ex;
-  `}
-${props =>
-  props.width === "5" &&
-  styled.css`
-    max-width: 10.8ex;
-  `}
-${props =>
-  props.width === "4" &&
-  styled.css`
-    max-width: 9ex;
-  `}
-${props =>
-  props.width === "3" &&
-  styled.css`
-    max-width: 7.2ex;
-  `}
-${props =>
-  props.width === "2" &&
-  styled.css`
-    max-width: 5.4ex;
-  `}`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const constants = {
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 5.4ex;\n  "]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 7.2ex;\n  "]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 9ex;\n  "]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 10.8ex;\n  "]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 23ex;\n  "]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 41ex;\n  "]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 59ex;\n  "]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    border: 1px solid #b10e1e;\n  "]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["font-family: Arial, sans-serif;\n-webkit-font-smoothing: antialiased;\n-moz-osx-font-smoothing: grayscale;\nfont-weight: 400;\nfont-size: 1rem;\nline-height: 1.25;\nbox-sizing: border-box;\nwidth: 100%;\nheight: 40px;\nmargin-top: 0;\npadding: .5rem;\nborder: 1px solid #2a2a2a;\nborder-radius: 0;\n-webkit-appearance: none;\n-moz-appearance: none;\nappearance: none;\n@media print{\nfont-family: sans-serif;;\n}\n@media (min-width: 40.0625em){\nfont-size: 1.1875rem;\nline-height: 1.31579;;\n}\n@media print{\nfont-size: 14pt;\nline-height: 1.15;;\n}\n:focus,:focus{\noutline: 3px solid #ffbf47;\noutline-offset: 0;\n}\n::-webkit-outer-spin-button,::-webkit-inner-spin-button{\nmargin: 0;\n-webkit-appearance: none;\n}\n", "\n", "\n", "\n", "\n", "\n", "\n", "\n", ""]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledInput = _styledComponents["default"].input(_templateObject(), function (props) {
+  return props.hasError && _styledComponents["default"].css(_templateObject2());
+}, function (props) {
+  return props.width === "30" && _styledComponents["default"].css(_templateObject3());
+}, function (props) {
+  return props.width === "20" && _styledComponents["default"].css(_templateObject4());
+}, function (props) {
+  return props.width === "10" && _styledComponents["default"].css(_templateObject5());
+}, function (props) {
+  return props.width === "5" && _styledComponents["default"].css(_templateObject6());
+}, function (props) {
+  return props.width === "4" && _styledComponents["default"].css(_templateObject7());
+}, function (props) {
+  return props.width === "3" && _styledComponents["default"].css(_templateObject8());
+}, function (props) {
+  return props.width === "2" && _styledComponents["default"].css(_templateObject9());
+});
+
+var constants = {
   type: {
     Button: "button",
     Checkbox: "checkbox",
@@ -159,53 +203,39 @@ const constants = {
   }
 };
 
-const Input = ({
-  width,
-  hasError,
-  fakeFocus,
-  inputId,
-  describedBy,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange
-}) => (
-  <StyledInput
-    width={width}
-    hasError={hasError}
-    fakeFocus={fakeFocus}
-    aria-describedby={describedBy}
-    id={inputId}
-    name={name}
-    type={constants.type[type]}
-    disabled={disabled}
-    readOnly={readOnly}
-    autoFocus={autoFocus}
-    value={value}
-    spellCheck={spellCheck}
-    autoComplete={constants.autoComplete[autoComplete]}
-    onChange={onChange}
-  />
-);
-Input.props = [
-  "width",
-  "hasError",
-  "fakeFocus",
-  "inputId",
-  "describedBy",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
-export default Input;
+var Input = function Input(_ref) {
+  var width = _ref.width,
+      hasError = _ref.hasError,
+      fakeFocus = _ref.fakeFocus,
+      inputId = _ref.inputId,
+      describedBy = _ref.describedBy,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange;
+  return _react["default"].createElement(StyledInput, {
+    width: width,
+    hasError: hasError,
+    fakeFocus: fakeFocus,
+    "aria-describedby": describedBy,
+    id: inputId,
+    name: name,
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: constants.autoComplete[autoComplete],
+    onChange: onChange
+  });
+};
+
+Input.props = ["width", "hasError", "fakeFocus", "inputId", "describedBy", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange"];
+var _default = Input;
+exports["default"] = _default;

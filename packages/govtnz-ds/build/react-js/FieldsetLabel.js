@@ -1,9 +1,23 @@
-import React from "react";
+"use strict";
 
-const FieldsetLabel = ({ hintId, hint }) => (
-  <div className="g-fieldsetLabel-hint" id={hintId}>
-    {hint !== undefined ? hint : <React.Fragment>Hint text</React.Fragment>}
-  </div>
-);
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var FieldsetLabel = function FieldsetLabel(_ref) {
+  var hintId = _ref.hintId,
+      hint = _ref.hint;
+  return _react["default"].createElement("div", {
+    className: "g-fieldsetLabel-hint",
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"));
+};
+
 FieldsetLabel.props = ["hintId", "hint"];
-export default FieldsetLabel;
+var _default = FieldsetLabel;
+exports["default"] = _default;

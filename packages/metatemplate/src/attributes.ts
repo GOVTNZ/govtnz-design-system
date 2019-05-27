@@ -209,6 +209,16 @@ export const insertDefaultVariables = async (
       makeTemplateAttribute("content", attributes, format, true);
       break;
     }
+    case "details": {
+      makeTemplateAttribute("open", attributes, format, [
+        {
+          key: format.registerDynamicKey("open", "boolean", true),
+          type: "boolean",
+          optional: true
+        }
+      ]);
+      break;
+    }
     case "input": {
       makeTemplateAttribute("name", attributes, format, false);
 
@@ -286,6 +296,66 @@ export const insertDefaultVariables = async (
       }
       break;
     }
+    case "textarea": {
+      makeTemplateAttribute("name", attributes, format, false);
+      makeTemplateAttribute("disabled", attributes, format, [
+        {
+          key: format.registerDynamicKey("disabled", "boolean", true),
+          type: "boolean",
+          optional: true
+        }
+      ]);
+      makeTemplateAttribute("readonly", attributes, format, [
+        {
+          key: format.registerDynamicKey("readOnly", "boolean", true),
+          type: "boolean",
+          optional: true
+        }
+      ]);
+      makeTemplateAttribute("rows", attributes, format, [
+        {
+          key: format.registerDynamicKey("rows", "number", true),
+          type: "number",
+          optional: true
+        }
+      ]);
+      makeTemplateAttribute("cols", attributes, format, [
+        {
+          key: format.registerDynamicKey("cols", "number", true),
+          type: "number",
+          optional: true
+        }
+      ]);
+      makeTemplateAttribute("autofocus", attributes, format, [
+        {
+          key: format.registerDynamicKey("autoFocus", "boolean", true),
+          type: "boolean",
+          optional: true
+        }
+      ]);
+
+      makeTemplateAttribute("spellcheck", attributes, format, [
+        {
+          key: format.registerDynamicKey("spellCheck", "boolean", true),
+          type: "boolean",
+          optional: true
+        }
+      ]);
+      makeTemplateAttribute("autocomplete", attributes, format, [
+        {
+          key: format.registerDynamicKey(
+            "autoComplete",
+            byNames(autocompletes),
+            false
+          ),
+          optional: false,
+          type: autocompletes
+        }
+      ]);
+
+      break;
+    }
+
     case "select": {
       makeTemplateAttribute("name", attributes, format, false);
       makeTemplateAttribute("multiple", attributes, format, [

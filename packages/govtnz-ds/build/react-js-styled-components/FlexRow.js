@@ -1,49 +1,46 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledDiv = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const FlexRow = ({
-  alignXs,
-  alignSm,
-  alignMd,
-  alignLg,
-  isReversed,
-  children
-}) => (
-  <StyledDiv
-    alignXs={alignXs}
-    alignSm={alignSm}
-    alignMd={alignMd}
-    alignLg={alignLg}
-    isReversed={isReversed}
-  >
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Columns...</React.Fragment>
-    )}
-  </StyledDiv>
-);
-FlexRow.props = [
-  "alignXs",
-  "alignSm",
-  "alignMd",
-  "alignLg",
-  "isReversed",
-  "children"
-];
-export default FlexRow;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  box-sizing: border-box;\n  display: flex;\n  -ms-flex: 0 1 auto;\n  flex: 0 1 auto;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  margin-right: -0.5rem;\n  margin-left: -0.5rem;\n  -ms-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledDiv = _styledComponents["default"].div(_templateObject());
+
+var FlexRow = function FlexRow(_ref) {
+  var alignXs = _ref.alignXs,
+      alignSm = _ref.alignSm,
+      alignMd = _ref.alignMd,
+      alignLg = _ref.alignLg,
+      isReversed = _ref.isReversed,
+      children = _ref.children;
+  return _react["default"].createElement(StyledDiv, {
+    alignXs: alignXs,
+    alignSm: alignSm,
+    alignMd: alignMd,
+    alignLg: alignLg,
+    isReversed: isReversed
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
+};
+
+FlexRow.props = ["alignXs", "alignSm", "alignMd", "alignLg", "isReversed", "children"];
+var _default = FlexRow;
+exports["default"] = _default;

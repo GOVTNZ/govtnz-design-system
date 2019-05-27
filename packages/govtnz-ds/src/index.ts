@@ -27,6 +27,8 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
+import BabelCore from '@babel/core';
+
 ensureNodeVersion();
 
 async function main(
@@ -291,15 +293,16 @@ const componentToFiles = async ({
 
   gc();
 
+  const metaTemplateFiles = response.metaTemplates.map(
+    metaTemplate => metaTemplate.files
+  );
+
   // merge all metatemplates together
   return {
-    files: safeMerge(
-      ...response.metaTemplates.map(metaTemplate => metaTemplate.files),
-      {
-        ['css/README.md']: cssReadme,
-        [`docs/${markdownFileName}`]: md
-      }
-    ),
+    files: safeMerge(...metaTemplateFiles, {
+      ['css/README.md']: cssReadme,
+      [`docs/${markdownFileName}`]: md
+    }),
     disposeMetaTemplate: response.disposeAll
   };
 };
@@ -324,8 +327,8 @@ const saveRelease = async (
   // }
 
   const specPaths = {
-    alpha: path.resolve(__dirname, '..', 'alpha'),
-    build: path.resolve(__dirname, '..', 'build')
+    alpha: path.resolve(__dirname, '..', 'alpha_src'),
+    build: path.resolve(__dirname, '..', 'build_src')
   };
 
   const specPath = specPaths[mode];

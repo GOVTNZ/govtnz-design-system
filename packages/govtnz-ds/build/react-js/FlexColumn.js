@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   xs: {
     "1": "g-flex-col-xs-1",
     "2": "g-flex-col-xs-2",
@@ -123,58 +132,22 @@ const constants = {
   }
 };
 
-const FlexColumn = ({
-  xs,
-  sm,
-  md,
-  lg,
-  xsOffset,
-  smOffset,
-  mdOffset,
-  lgOffset,
-  isReversed,
-  children
-}) => (
-  <div
-    className={`g-flex-col${
-      constants.xs[xs] !== undefined ? " " + constants.xs[xs] : ""
-    }${constants.sm[sm] !== undefined ? " " + constants.sm[sm] : ""}${
-      constants.md[md] !== undefined ? " " + constants.md[md] : ""
-    }${constants.lg[lg] !== undefined ? " " + constants.lg[lg] : ""}${
-      constants.xsOffset[xsOffset] !== undefined
-        ? " " + constants.xsOffset[xsOffset]
-        : ""
-    }${
-      constants.smOffset[smOffset] !== undefined
-        ? " " + constants.smOffset[smOffset]
-        : ""
-    }${
-      constants.mdOffset[mdOffset] !== undefined
-        ? " " + constants.mdOffset[mdOffset]
-        : ""
-    }${
-      constants.lgOffset[lgOffset] !== undefined
-        ? " " + constants.lgOffset[lgOffset]
-        : ""
-    }${isReversed ? " g-flex-reverse" : ""}`}
-  >
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment>Content...</React.Fragment>
-    )}
-  </div>
-);
-FlexColumn.props = [
-  "xs",
-  "sm",
-  "md",
-  "lg",
-  "xsOffset",
-  "smOffset",
-  "mdOffset",
-  "lgOffset",
-  "isReversed",
-  "children"
-];
-export default FlexColumn;
+var FlexColumn = function FlexColumn(_ref) {
+  var xs = _ref.xs,
+      sm = _ref.sm,
+      md = _ref.md,
+      lg = _ref.lg,
+      xsOffset = _ref.xsOffset,
+      smOffset = _ref.smOffset,
+      mdOffset = _ref.mdOffset,
+      lgOffset = _ref.lgOffset,
+      isReversed = _ref.isReversed,
+      children = _ref.children;
+  return _react["default"].createElement("div", {
+    className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(isReversed ? " g-flex-reverse" : "")
+  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Content..."));
+};
+
+FlexColumn.props = ["xs", "sm", "md", "lg", "xsOffset", "smOffset", "mdOffset", "lgOffset", "isReversed", "children"];
+var _default = FlexColumn;
+exports["default"] = _default;

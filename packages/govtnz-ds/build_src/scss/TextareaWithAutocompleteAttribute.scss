@@ -1,0 +1,117 @@
+.g-textareaWithAutocompleteAttribute-form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-textareaWithAutocompleteAttribute-form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.g-textareaWithAutocompleteAttribute-form-group
+  .g-textareaWithAutocompleteAttribute-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.g-textareaWithAutocompleteAttribute-form-group--error
+  .g-textareaWithAutocompleteAttribute-form-group {
+  padding: 0;
+  border: 0;
+}
+
+.g-textareaWithAutocompleteAttribute-label {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .g-textareaWithAutocompleteAttribute-label {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-textareaWithAutocompleteAttribute-label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-textareaWithAutocompleteAttribute-label {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-textareaWithAutocompleteAttribute-label {
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
+  }
+}
+
+.g-textareaWithAutocompleteAttribute-character-count
+  .g-textareaWithAutocompleteAttribute-textarea {
+  margin-bottom: 5px;
+}
+
+.g-textareaWithAutocompleteAttribute-textarea {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: 20px;
+  padding: 5px;
+  resize: vertical;
+  border: 2px solid #0b0c0c;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+@media print {
+  .g-textareaWithAutocompleteAttribute-textarea {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-textareaWithAutocompleteAttribute-textarea {
+    font-size: 1.1875rem;
+    line-height: 1.25;
+  }
+}
+
+@media print {
+  .g-textareaWithAutocompleteAttribute-textarea {
+    font-size: 14pt;
+    line-height: 1.25;
+  }
+}
+
+.g-textareaWithAutocompleteAttribute-textarea:focus {
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline-offset: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .g-textareaWithAutocompleteAttribute-textarea {
+    margin-bottom: 30px;
+  }
+}

@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   type: {
     Button: "button",
     Checkbox: "checkbox",
@@ -240,181 +249,120 @@ const constants = {
   }
 };
 
-const DateInputWithErrorOnDayInput = ({
-  dobDayErrorHint,
-  dobDayErrorError,
-  dobDayError,
-  dobDayErrorDay,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange,
-  dobDayErrorMonth,
-  name2,
-  disabled2,
-  readOnly2,
-  autoFocus2,
-  value2,
-  type2,
-  spellCheck2,
-  autoComplete2,
-  onChange2,
-  dobDayErrorYear,
-  name3,
-  disabled3,
-  readOnly3,
-  autoFocus3,
-  value3,
-  type3,
-  spellCheck3,
-  autoComplete3,
-  onChange3
-}) => (
-  <div className="g-dateInputWithErrorOnDayInput-form-group g-dateInputWithErrorOnDayInput-form-group--error">
-    <fieldset
-      aria-describedby={
-        dobDayErrorHint !== undefined || dobDayErrorError !== undefined
-          ? `${dobDayErrorHint ? dobDayErrorHint : ""}${
-              dobDayErrorError ? " " + dobDayErrorError : ""
-            }`
-          : undefined
-      }
-      className="g-dateInputWithErrorOnDayInput-fieldset"
-      role="group"
-    >
-      <legend className="g-dateInputWithErrorOnDayInput-fieldset__legend">
-        What is your date of birth?
-      </legend>
-      <span
-        className="g-dateInputWithErrorOnDayInput-hint"
-        id={dobDayErrorHint}
-      >
-        For example, 31 3 1980
-      </span>
-      <span
-        className="g-dateInputWithErrorOnDayInput-error-message"
-        id={dobDayErrorError}
-      >
-        Error message goes here
-      </span>
-      <div
-        className="g-dateInputWithErrorOnDayInput-date-input"
-        id={dobDayError}
-      >
-        <div className="g-dateInputWithErrorOnDayInput-date-input__item">
-          <div className="g-dateInputWithErrorOnDayInput-form-group">
-            <label
-              className="g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label"
-              htmlFor={dobDayErrorDay}
-            >
-              Day
-            </label>
-            <input
-              className="g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-2 g-dateInputWithErrorOnDayInput-input--error"
-              id={dobDayErrorDay}
-              name={name}
-              pattern="[0-9]*"
-              type={constants.type[type]}
-              disabled={disabled}
-              readOnly={readOnly}
-              autoFocus={autoFocus}
-              value={value}
-              spellCheck={spellCheck}
-              autoComplete={constants.autoComplete[autoComplete]}
-              onChange={onChange}
-            />
-          </div>
-        </div>
-        <div className="g-dateInputWithErrorOnDayInput-date-input__item">
-          <div className="g-dateInputWithErrorOnDayInput-form-group">
-            <label
-              className="g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label"
-              htmlFor={dobDayErrorMonth}
-            >
-              Month
-            </label>
-            <input
-              className="g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-2"
-              id={dobDayErrorMonth}
-              name={name2}
-              pattern="[0-9]*"
-              type={constants.type2[type2]}
-              disabled={disabled2}
-              readOnly={readOnly2}
-              autoFocus={autoFocus2}
-              value={value2}
-              spellCheck={spellCheck2}
-              autoComplete={constants.autoComplete2[autoComplete2]}
-              onChange={onChange2}
-            />
-          </div>
-        </div>
-        <div className="g-dateInputWithErrorOnDayInput-date-input__item">
-          <div className="g-dateInputWithErrorOnDayInput-form-group">
-            <label
-              className="g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label"
-              htmlFor={dobDayErrorYear}
-            >
-              Year
-            </label>
-            <input
-              className="g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-4"
-              id={dobDayErrorYear}
-              name={name3}
-              pattern="[0-9]*"
-              type={constants.type3[type3]}
-              disabled={disabled3}
-              readOnly={readOnly3}
-              autoFocus={autoFocus3}
-              value={value3}
-              spellCheck={spellCheck3}
-              autoComplete={constants.autoComplete3[autoComplete3]}
-              onChange={onChange3}
-            />
-          </div>
-        </div>
-      </div>
-    </fieldset>
-  </div>
-);
-DateInputWithErrorOnDayInput.props = [
-  "dobDayErrorHint",
-  "dobDayErrorError",
-  "dobDayError",
-  "dobDayErrorDay",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "dobDayErrorMonth",
-  "name2",
-  "disabled2",
-  "readOnly2",
-  "autoFocus2",
-  "value2",
-  "type2",
-  "spellCheck2",
-  "autoComplete2",
-  "onChange2",
-  "dobDayErrorYear",
-  "name3",
-  "disabled3",
-  "readOnly3",
-  "autoFocus3",
-  "value3",
-  "type3",
-  "spellCheck3",
-  "autoComplete3",
-  "onChange3"
-];
-export default DateInputWithErrorOnDayInput;
+var DateInputWithErrorOnDayInput = function DateInputWithErrorOnDayInput(_ref) {
+  var dobDayErrorHint = _ref.dobDayErrorHint,
+      dobDayErrorError = _ref.dobDayErrorError,
+      dobDayError = _ref.dobDayError,
+      dobDayErrorDay = _ref.dobDayErrorDay,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange,
+      dobDayErrorMonth = _ref.dobDayErrorMonth,
+      name2 = _ref.name2,
+      disabled2 = _ref.disabled2,
+      readOnly2 = _ref.readOnly2,
+      autoFocus2 = _ref.autoFocus2,
+      value2 = _ref.value2,
+      type2 = _ref.type2,
+      spellCheck2 = _ref.spellCheck2,
+      autoComplete2 = _ref.autoComplete2,
+      onChange2 = _ref.onChange2,
+      dobDayErrorYear = _ref.dobDayErrorYear,
+      name3 = _ref.name3,
+      disabled3 = _ref.disabled3,
+      readOnly3 = _ref.readOnly3,
+      autoFocus3 = _ref.autoFocus3,
+      value3 = _ref.value3,
+      type3 = _ref.type3,
+      spellCheck3 = _ref.spellCheck3,
+      autoComplete3 = _ref.autoComplete3,
+      onChange3 = _ref.onChange3;
+  return _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-form-group g-dateInputWithErrorOnDayInput-form-group--error"
+  }, _react["default"].createElement("fieldset", {
+    "aria-describedby": dobDayErrorHint !== undefined || dobDayErrorError !== undefined ? "".concat(dobDayErrorHint ? dobDayErrorHint : "").concat(dobDayErrorError ? " " + dobDayErrorError : "") : undefined,
+    className: "g-dateInputWithErrorOnDayInput-fieldset",
+    role: "group"
+  }, _react["default"].createElement("legend", {
+    className: "g-dateInputWithErrorOnDayInput-fieldset__legend"
+  }, "What is your date of birth?"), _react["default"].createElement("span", {
+    className: "g-dateInputWithErrorOnDayInput-hint",
+    id: dobDayErrorHint
+  }, "For example, 31 3 1980"), _react["default"].createElement("span", {
+    className: "g-dateInputWithErrorOnDayInput-error-message",
+    id: dobDayErrorError
+  }, "Error message goes here"), _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-date-input",
+    id: dobDayError
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label",
+    htmlFor: dobDayErrorDay
+  }, "Day"), _react["default"].createElement("input", {
+    className: "g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-2 g-dateInputWithErrorOnDayInput-input--error",
+    id: dobDayErrorDay,
+    name: name,
+    pattern: "[0-9]*",
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: constants.autoComplete[autoComplete],
+    onChange: onChange
+  }))), _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label",
+    htmlFor: dobDayErrorMonth
+  }, "Month"), _react["default"].createElement("input", {
+    className: "g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-2",
+    id: dobDayErrorMonth,
+    name: name2,
+    pattern: "[0-9]*",
+    type: constants.type2[type2],
+    disabled: disabled2,
+    readOnly: readOnly2,
+    autoFocus: autoFocus2,
+    value: value2,
+    spellCheck: spellCheck2,
+    autoComplete: constants.autoComplete2[autoComplete2],
+    onChange: onChange2
+  }))), _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-date-input__item"
+  }, _react["default"].createElement("div", {
+    className: "g-dateInputWithErrorOnDayInput-form-group"
+  }, _react["default"].createElement("label", {
+    className: "g-dateInputWithErrorOnDayInput-label g-dateInputWithErrorOnDayInput-date-input__label",
+    htmlFor: dobDayErrorYear
+  }, "Year"), _react["default"].createElement("input", {
+    className: "g-dateInputWithErrorOnDayInput-input g-dateInputWithErrorOnDayInput-date-input__input g-dateInputWithErrorOnDayInput-input--width-4",
+    id: dobDayErrorYear,
+    name: name3,
+    pattern: "[0-9]*",
+    type: constants.type3[type3],
+    disabled: disabled3,
+    readOnly: readOnly3,
+    autoFocus: autoFocus3,
+    value: value3,
+    spellCheck: spellCheck3,
+    autoComplete: constants.autoComplete3[autoComplete3],
+    onChange: onChange3
+  }))))));
+};
+
+DateInputWithErrorOnDayInput.props = ["dobDayErrorHint", "dobDayErrorError", "dobDayError", "dobDayErrorDay", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange", "dobDayErrorMonth", "name2", "disabled2", "readOnly2", "autoFocus2", "value2", "type2", "spellCheck2", "autoComplete2", "onChange2", "dobDayErrorYear", "name3", "disabled3", "readOnly3", "autoFocus3", "value3", "type3", "spellCheck3", "autoComplete3", "onChange3"];
+var _default = DateInputWithErrorOnDayInput;
+exports["default"] = _default;

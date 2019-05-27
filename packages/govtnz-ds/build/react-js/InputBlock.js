@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   width: {
     "2": "g-inputBlock-input--width-2",
     "3": "g-inputBlock-input--width-3",
@@ -91,100 +100,52 @@ const constants = {
   }
 };
 
-const InputBlock = ({
-  hasError,
-  inputId,
-  label,
-  hintId,
-  hint,
-  errorId,
-  error,
-  width,
-  fakeFocus,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange
-}) => (
-  <div
-    className={`g-inputBlock-form-group${
-      hasError ? " g-inputBlock-form-group--error" : ""
-    }`}
-  >
-    <label className="g-inputBlock-label" htmlFor={inputId}>
-      {label !== undefined ? (
-        label
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </label>
-    <div className="g-inputBlock-hint" id={hintId}>
-      {hint !== undefined ? (
-        hint
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </div>
-    {hasError !== undefined ? (
-      <React.Fragment>
-        <div className="g-inputBlock-error-message" id={errorId}>
-          {error !== undefined ? (
-            error
-          ) : (
-            <React.Fragment>Example text</React.Fragment>
-          )}
-        </div>
-      </React.Fragment>
-    ) : (
-      ""
-    )}
-    <input
-      aria-describedby={
-        hintId !== undefined || errorId !== undefined
-          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
-          : undefined
-      }
-      className={`g-inputBlock-input${
-        constants.width[width] !== undefined ? " " + constants.width[width] : ""
-      }${hasError ? " g-inputBlock-input--error" : ""}${
-        fakeFocus ? " :focus" : ""
-      }`}
-      id={inputId}
-      name={name}
-      type={constants.type[type]}
-      disabled={disabled}
-      readOnly={readOnly}
-      autoFocus={autoFocus}
-      value={value}
-      spellCheck={spellCheck}
-      autoComplete={constants.autoComplete[autoComplete]}
-      onChange={onChange}
-    />
-  </div>
-);
-InputBlock.props = [
-  "hasError",
-  "inputId",
-  "label",
-  "hintId",
-  "hint",
-  "errorId",
-  "error",
-  "width",
-  "fakeFocus",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
-export default InputBlock;
+var InputBlock = function InputBlock(_ref) {
+  var hasError = _ref.hasError,
+      inputId = _ref.inputId,
+      label = _ref.label,
+      hintId = _ref.hintId,
+      hint = _ref.hint,
+      errorId = _ref.errorId,
+      error = _ref.error,
+      width = _ref.width,
+      fakeFocus = _ref.fakeFocus,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange;
+  return _react["default"].createElement("div", {
+    className: "g-inputBlock-form-group".concat(hasError ? " g-inputBlock-form-group--error" : "")
+  }, _react["default"].createElement("label", {
+    className: "g-inputBlock-label",
+    htmlFor: inputId
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), _react["default"].createElement("div", {
+    className: "g-inputBlock-hint",
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+    className: "g-inputBlock-error-message",
+    id: errorId
+  }, error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement("input", {
+    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
+    className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(hasError ? " g-inputBlock-input--error" : "").concat(fakeFocus ? " :focus" : ""),
+    id: inputId,
+    name: name,
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: constants.autoComplete[autoComplete],
+    onChange: onChange
+  }));
+};
+
+InputBlock.props = ["hasError", "inputId", "label", "hintId", "hint", "errorId", "error", "width", "fakeFocus", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange"];
+var _default = InputBlock;
+exports["default"] = _default;

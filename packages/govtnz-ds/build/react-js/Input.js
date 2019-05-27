@@ -1,6 +1,15 @@
-import React from "react";
+"use strict";
 
-const constants = {
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var constants = {
   width: {
     "2": "g-input--width-2",
     "3": "g-input--width-3",
@@ -91,53 +100,37 @@ const constants = {
   }
 };
 
-const Input = ({
-  width,
-  hasError,
-  fakeFocus,
-  inputId,
-  describedBy,
-  name,
-  disabled,
-  readOnly,
-  autoFocus,
-  value,
-  type,
-  spellCheck,
-  autoComplete,
-  onChange
-}) => (
-  <input
-    aria-describedby={describedBy}
-    className={`g-input${
-      constants.width[width] !== undefined ? " " + constants.width[width] : ""
-    }${hasError ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`}
-    id={inputId}
-    name={name}
-    type={constants.type[type]}
-    disabled={disabled}
-    readOnly={readOnly}
-    autoFocus={autoFocus}
-    value={value}
-    spellCheck={spellCheck}
-    autoComplete={constants.autoComplete[autoComplete]}
-    onChange={onChange}
-  />
-);
-Input.props = [
-  "width",
-  "hasError",
-  "fakeFocus",
-  "inputId",
-  "describedBy",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
-export default Input;
+var Input = function Input(_ref) {
+  var width = _ref.width,
+      hasError = _ref.hasError,
+      fakeFocus = _ref.fakeFocus,
+      inputId = _ref.inputId,
+      describedBy = _ref.describedBy,
+      name = _ref.name,
+      disabled = _ref.disabled,
+      readOnly = _ref.readOnly,
+      autoFocus = _ref.autoFocus,
+      value = _ref.value,
+      type = _ref.type,
+      spellCheck = _ref.spellCheck,
+      autoComplete = _ref.autoComplete,
+      onChange = _ref.onChange;
+  return _react["default"].createElement("input", {
+    "aria-describedby": describedBy,
+    className: "g-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(hasError ? " g-input--error" : "").concat(fakeFocus ? " :focus" : ""),
+    id: inputId,
+    name: name,
+    type: constants.type[type],
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: constants.autoComplete[autoComplete],
+    onChange: onChange
+  });
+};
+
+Input.props = ["width", "hasError", "fakeFocus", "inputId", "describedBy", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange"];
+var _default = Input;
+exports["default"] = _default;

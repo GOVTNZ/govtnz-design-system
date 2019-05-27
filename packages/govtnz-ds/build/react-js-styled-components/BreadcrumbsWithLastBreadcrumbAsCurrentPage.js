@@ -1,337 +1,137 @@
-import React from "react";
-import styled from "styled-components";
+"use strict";
 
-const StyledDiv = styled.div`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  color: #0b0c0c;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  @media print {
-    color: #000000;
-  }
-`;
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-const StyledOl = styled.ol`
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = void 0;
 
-const StyledLi = styled.li`
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15.655px;
-  float: left;
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: -3.31px;
-    width: 7px;
-    height: 7px;
-    margin: auto 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid;
-    border-width: 1px 1px 0 0;
-    border-color: #6f777b;
-  }
-  :first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  :first-child:before {
-    content: none;
-    display: none;
-  }
-`;
+var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
-const StyledA = styled.a`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
-  }
-  @media print {
-    :link,
-    :visited,
-    :hover,
-    :active,
-    :focus {
-      color: #000000;
-    }
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
+var _react = _interopRequireDefault(require("react"));
 
-const StyledLi2 = styled.li`
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15.655px;
-  float: left;
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: -3.31px;
-    width: 7px;
-    height: 7px;
-    margin: auto 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid;
-    border-width: 1px 1px 0 0;
-    border-color: #6f777b;
-  }
-  :first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  :first-child:before {
-    content: none;
-    display: none;
-  }
-`;
+var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-const StyledA2 = styled.a`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
-  }
-  @media print {
-    :link,
-    :visited,
-    :hover,
-    :active,
-    :focus {
-      color: #000000;
-    }
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
+function _templateObject7() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"]);
 
-const StyledLi3 = styled.li`
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15.655px;
-  float: left;
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: -3.31px;
-    width: 7px;
-    height: 7px;
-    margin: auto 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid;
-    border-width: 1px 1px 0 0;
-    border-color: #6f777b;
-  }
-  :first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  :first-child:before {
-    content: none;
-    display: none;
-  }
-`;
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
+  return data;
+}
+
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  color: #0b0c0c;\n  margin-top: 15px;\n  margin-bottom: 10px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  @media print {\n    color: #000000;\n  }\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+var StyledDiv = _styledComponents["default"].div(_templateObject());
+
+var StyledOl = _styledComponents["default"].ol(_templateObject2());
+
+var StyledLi = _styledComponents["default"].li(_templateObject3());
+
+var StyledA = _styledComponents["default"].a(_templateObject4());
+
+var StyledLi2 = _styledComponents["default"].li(_templateObject5());
+
+var StyledA2 = _styledComponents["default"].a(_templateObject6());
+
+var StyledLi3 = _styledComponents["default"].li(_templateObject7());
+
+var constants = {
+  target: {
+    Blank: "_blank",
+    Top: "_top",
+    Self: "_self",
+    Parent: "_parent"
+  },
+  target2: {
+    Blank: "_blank",
+    Top: "_top",
+    Self: "_self",
+    Parent: "_parent"
+  }
 };
 
-const BreadcrumbsWithLastBreadcrumbAsCurrentPage = ({
-  href,
-  rel,
-  target,
-  href2,
-  rel2,
-  target2
-}) => (
-  <StyledDiv>
-    <StyledOl>
-      <StyledLi>
-        <StyledA href={href} rel={rel} target={constants.target[target]}>
-          Home
-        </StyledA>
-      </StyledLi>
-      <StyledLi2>
-        <StyledA2 href={href2} rel={rel2} target={constants.target2[target2]}>
-          Passports, travel and living abroad
-        </StyledA2>
-      </StyledLi2>
-      <StyledLi3 aria-current="page">Travel abroad</StyledLi3>
-    </StyledOl>
-  </StyledDiv>
-);
-BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = [
-  "href",
-  "rel",
-  "target",
-  "href2",
-  "rel2",
-  "target2"
-];
-export default BreadcrumbsWithLastBreadcrumbAsCurrentPage;
+var BreadcrumbsWithLastBreadcrumbAsCurrentPage = function BreadcrumbsWithLastBreadcrumbAsCurrentPage(_ref) {
+  var href = _ref.href,
+      rel = _ref.rel,
+      target = _ref.target,
+      href2 = _ref.href2,
+      rel2 = _ref.rel2,
+      target2 = _ref.target2;
+  return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledOl, null, _react["default"].createElement(StyledLi, null, _react["default"].createElement(StyledA, {
+    href: href,
+    rel: rel,
+    target: constants.target[target]
+  }, "Home")), _react["default"].createElement(StyledLi2, null, _react["default"].createElement(StyledA2, {
+    href: href2,
+    rel: rel2,
+    target: constants.target2[target2]
+  }, "Passports, travel and living abroad")), _react["default"].createElement(StyledLi3, {
+    "aria-current": "page"
+  }, "Travel abroad")));
+};
+
+BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = ["href", "rel", "target", "href2", "rel2", "target2"];
+var _default = BreadcrumbsWithLastBreadcrumbAsCurrentPage;
+exports["default"] = _default;

@@ -1,0 +1,45 @@
+<div
+class="g-inputBlock-form-group{{ if hasError }} g-inputBlock-form-group--error{{ endif }}"
+>
+  
+      
+<label
+class="g-inputBlock-label"
+for="{{ inputId | escape('html_attr') }}"
+>
+  {{{label}}}
+</label>
+  
+      
+<div
+class="g-inputBlock-hint"
+id="{{ hintId | escape('html_attr') }}"
+>
+  {{{hint}}}
+</div>
+  
+      
+<div
+class="g-inputBlock-error-message"
+id="{{ errorId | escape('html_attr') }}"
+>
+  {{{error}}}
+</div>
+  
+      
+<input
+aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
+class="g-inputBlock-input{{ if hasError }} g-inputBlock-input--error{{ endif }} {{ if fakeFocus }} :focus{{ endif }}"
+id="{{ inputId | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+type=""
+disabled="{{ if disabled }}disabled{{ endif }}"
+readonly="{{ if readOnly }}readOnly{{ endif }}"
+autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+value="{{ value | escape('html_attr') }}"
+spellcheck="{{ if spellCheck }}spellCheck{{ endif }}"
+autocomplete=""
+/>
+  
+    
+</div>
