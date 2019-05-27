@@ -5,7 +5,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "demo": "node src/index.js"
+    "demo": "php ./index.php"
   },
   "dependencies": {
     "jest": "^24.8.0"

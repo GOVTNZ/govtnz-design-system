@@ -18,9 +18,9 @@ class="g-file-upload"
 id="{{ fileUpload1 | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 type="file"
-disabled="{{ if disabled }}disabled{{ endif }}"
-readonly="{{ if readOnly }}readOnly{{ endif }}"
-autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
 />
   
 

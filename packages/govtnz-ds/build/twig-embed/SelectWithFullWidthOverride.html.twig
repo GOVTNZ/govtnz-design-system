@@ -17,20 +17,20 @@ for="{{ select1 | escape('html_attr') }}"
 class="g-selectWithFullWidthOverride-select g-!-width-full"
 id="{{ select1 | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
-multiple="{{ if multiple }}multiple{{ endif }}"
+multiple="{% if multiple %}multiple{% endif %}"
 >
   
     
 <option
 value="1"
-selected="{{ if selected }}selected{{ endif }}"
+selected="{% if selected %}selected{% endif %}"
 >
   Govt.NZ frontend option 1
 </option>
   
     
 <option
-selected="{{ if selected2 }}selected2{{ endif }}"
+selected="{% if selected2 %}selected2{% endif %}"
 value="2"
 >
   Govt.NZ frontend option 2
@@ -40,7 +40,7 @@ value="2"
 <option
 disabled=""
 value="3"
-selected="{{ if selected3 }}selected3{{ endif }}"
+selected="{% if selected3 %}selected3{% endif %}"
 >
   Govt.NZ frontend option 3
 </option>

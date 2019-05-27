@@ -40,9 +40,9 @@ class="g-fileUploadWithErrorMessage-file-upload g-fileUploadWithErrorMessage-fil
 id="{{ fileUpload3 | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 type="file"
-disabled="{{ if disabled }}disabled{{ endif }}"
-readonly="{{ if readOnly }}readOnly{{ endif }}"
-autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
 />
   
 

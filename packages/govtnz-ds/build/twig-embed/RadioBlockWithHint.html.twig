@@ -5,15 +5,15 @@ class="g-radios__item"
         
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
-class="g-radios__input{{ if fakeFocus }} :focus{{ endif }}"
+class="g-radios__input{% if fakeFocus %} :focus{% endif %}"
 id="{{ radioId | escape('html_attr') }}"
 type="radio"
 name="{{ name | escape('html_attr') }}"
-disabled="{{ if disabled }}disabled{{ endif }}"
-readonly="{{ if readOnly }}readOnly{{ endif }}"
-autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
 value="{{ value | escape('html_attr') }}"
-checked="{{ if checked }}checked{{ endif }}"
+checked="{% if checked %}checked{% endif %}"
 />
   
         
@@ -21,7 +21,7 @@ checked="{{ if checked }}checked{{ endif }}"
 class="g-radios-label g-radios__label"
 for="{{ radioId | escape('html_attr') }}"
 >
-  {{{label}}}
+{% block label %}Label text{% endblock %}
 </label>
   
         
@@ -29,7 +29,7 @@ for="{{ radioId | escape('html_attr') }}"
 class="g-radios-hint g-radios__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-  {{{hint}}}
+{% block hint %}Hint text{% endblock %}
 </div>
   
       

@@ -38,7 +38,7 @@ aria-describedby="{{ select2Hint | escape('html_attr') }} {{ select2Error | esca
 class="g-selectWithHintTextAndErrorMessage-select g-selectWithHintTextAndErrorMessage-select--error"
 id="{{ select2 | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
-multiple="{{ if multiple }}multiple{{ endif }}"
+multiple="{% if multiple %}multiple{% endif %}"
 >
   
     Govt.NZ frontend option 1

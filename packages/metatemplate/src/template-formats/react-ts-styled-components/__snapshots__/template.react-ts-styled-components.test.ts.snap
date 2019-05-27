@@ -44,7 +44,7 @@ const ImgSrc = ({ src, width, height, srcSet, crossOrigin }: Props) => (
     width={width}
     height={height}
     srcSet={srcSet}
-    crossOrigin={constants.crossOrigin[crossOrigin]}
+    crossOrigin={constants.crossOrigin[crossOrigin] as any}
   />
 );
 ImgSrc.props = [\\"src\\", \\"width\\", \\"height\\", \\"srcSet\\", \\"crossOrigin\\"];
@@ -619,7 +619,7 @@ const Input = ({
     <label htmlFor={textId}>Label text</label>
     <input
       id={textId}
-      type={constants.type[type]}
+      type={constants.type[type] as any}
       name={name}
       disabled={disabled}
       readOnly={readOnly}
@@ -1077,7 +1077,7 @@ const Inputblock1 = ({
     readOnly={readOnly}
     autoFocus={autoFocus}
     value={value}
-    type={constants.type[type]}
+    type={constants.type[type] as any}
     spellCheck={spellCheck}
     autoComplete={constants.autoComplete[autoComplete]}
     onChange={onChange}

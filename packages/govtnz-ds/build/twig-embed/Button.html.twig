@@ -1,9 +1,9 @@
 <button
-aria-disabled="{{ if disabled }}true{{ endif }}"
-class="g-button{{ if disabled }} g-button--disabled{{ endif }}"
-disabled="{{ if disabled }}true{{ endif }}"
-type=""
+aria-disabled="{% if disabled %}true{% endif %}"
+class="g-button{% if disabled %} g-button--disabled{% endif %}"
+disabled="{% if disabled %}true{% endif %}"
+type="{% if type == "Submit" %}submit{% elseif type == "Reset" %}reset{% elseif type == "Button" %}button{% endif %}"
 name="{{ name | escape('html_attr') }}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </button>

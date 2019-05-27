@@ -1,9 +1,9 @@
 <div
-class="g-flex-row{{ if isReversed }} g-flex-reverse{{ endif }}"
+class="g-flex-row{% if alignXs == "start" %}start-xs{% elseif alignXs == "center" %}center-xs{% elseif alignXs == "end" %}end-xs{% endif %} {% if alignSm == "start" %}start-sm{% elseif alignSm == "center" %}center-sm{% elseif alignSm == "end" %}end-sm{% endif %} {% if alignMd == "start" %}start-md{% elseif alignMd == "center" %}center-md{% elseif alignMd == "end" %}end-md{% endif %} {% if alignLg == "start" %}start-lg{% elseif alignLg == "center" %}center-lg{% elseif alignLg == "end" %}end-lg{% endif %} {% if isReversed %} g-flex-reverse{% endif %}"
 >
   
   
-  {{{children}}}
+{% block children %}Columns...{% endblock %}
   
 
 </div>

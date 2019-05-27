@@ -1,5 +1,5 @@
 <ul
-class="g-ul-list{{ if bulleted }} g-ul-list--bullet{{ endif }}"
+class="g-ul-list{% if bulleted %} g-ul-list--bullet{% endif %}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </ul>

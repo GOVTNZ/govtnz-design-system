@@ -1,8 +1,8 @@
 <a
-class="g-a-link{{ if isMuted }} g-a-link--muted{{ endif }}"
+class="g-a-link{% if isMuted %} g-a-link--muted{% endif %}"
 href="{{ href | escape('html_attr') }}"
 rel="{{ rel | escape('html_attr') }}"
-target=""
+target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </a>

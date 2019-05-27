@@ -1,5 +1,5 @@
 <div
-class="g-radios{{ if inline }} g-radios--inline{{ endif }}"
+class="g-radios{% if inline %} g-radios--inline{% endif %}"
 >
-  {{{children}}}
+{% block children %}Radio components{% endblock %}
 </div>

@@ -17,7 +17,7 @@ class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__list-item"
 class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link"
 href="{{ href | escape('html_attr') }}"
 rel="{{ rel | escape('html_attr') }}"
-target=""
+target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"
 >
   Home
 </a>
@@ -35,7 +35,7 @@ class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__list-item"
 class="g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link"
 href="{{ href2 | escape('html_attr') }}"
 rel="{{ rel2 | escape('html_attr') }}"
-target=""
+target="{% if target2 == "Blank" %}_blank{% elseif target2 == "Top" %}_top{% elseif target2 == "Self" %}_self{% elseif target2 == "Parent" %}_parent{% endif %}"
 >
   Passports, travel and living abroad
 </a>

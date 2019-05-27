@@ -48,9 +48,9 @@ export default class TwigEmbed {
     key: string,
     children: string
   ): string => {
-    return `{{ if ${key} }}${
+    return `{% if ${key} %}${
       needsPrecedingSpace ? " " : ""
-    }${children}{{ endif }}`;
+    }${children}{% endif %}`;
   };
 
   renderAttribute = (attribute: TemplateAttribute, id: string): string => {
@@ -98,6 +98,8 @@ export default class TwigEmbed {
                   )
                   .join(" elseif ");
                 response += " endif %}";
+
+                return response;
               }
               break;
             }
@@ -142,9 +144,9 @@ export default class TwigEmbed {
     this.data += `${INDENT_WHITESPACE}${text}\n`;
   };
 
-  onVariable = async ({ key }: OnVariable): Promise<void> => {
+  onVariable = async ({ key, defaultValue }: OnVariable): Promise<void> => {
     this.unescapedKeys.push(key);
-    this.data += `${INDENT_WHITESPACE}{{{${key}}}}\n`;
+    this.data += `{% block ${key} %}${defaultValue}{% endblock %}\n`;
   };
 
   serialize = async ({ css }: OnSerialize): Promise<Object> => {

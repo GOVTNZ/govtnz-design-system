@@ -28,11 +28,19 @@ async function main() {
                 console.log(e);
               }
             }
-            await fs.promises.writeFile(
-              path.join(dirname, path.basename(fileKey)),
-              mT.files[fileKey],
-              { encoding: "utf-8" }
-            );
+            const targetPath = path.join(dirname, path.basename(fileKey));
+            const data = mT.files[fileKey];
+            if (!data || data.length === 0) {
+              console.error(
+                `ERROR: MetaTemplate: internal error generating data for "${
+                  input.id
+                }". ${targetPath} was empty!`
+              );
+            } else {
+              await fs.promises.writeFile(targetPath, data, {
+                encoding: "utf-8"
+              });
+            }
           })
         );
       })
@@ -52,13 +60,17 @@ async function getInputs() {
   for (let i = 0; i < inputPaths.length; i++) {
     const part = inputPaths[i].substring(__dirname.length + 1);
     const id = path.dirname(part);
-    const extname = path.extname(part).replace(/^\.?$/, "");
+    const extname = path.extname(part).replace(/^\.?/, "");
     if (!inputsObj[id]) {
       inputsObj[id] = { id };
     }
     inputsObj[id][extname] = inputData[i];
   }
   const inputs = Object.values(inputsObj);
+  inputs.forEach(anInput => {
+    if (!anInput.html) throw Error("Unable to load HTML");
+    if (!anInput.css) throw Error("Unable to load CSS");
+  });
   return inputs;
 }
 

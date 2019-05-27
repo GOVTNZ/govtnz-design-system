@@ -54,17 +54,17 @@ for="{{ dobWithAutocompleteAttributeDay | escape('html_attr') }}"
   
           
 <input
-autocomplete=""
+autocomplete="{% if autoComplete == "Off" %}off{% elseif autoComplete == "On" %}on{% elseif autoComplete == "Name" %}name{% elseif autoComplete == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete == "Given Name" %}given-name{% elseif autoComplete == "Additional Name" %}additional-name{% elseif autoComplete == "Family Name" %}family-name{% elseif autoComplete == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete == "Nickname" %}nickname{% elseif autoComplete == "Email" %}email{% elseif autoComplete == "Username" %}username{% elseif autoComplete == "New Password" %}new-password{% elseif autoComplete == "Current Password" %}current-password{% elseif autoComplete == "Organization Title" %}organization-title{% elseif autoComplete == "Organization" %}organization{% elseif autoComplete == "Street Address" %}street-address{% elseif autoComplete == "Address Line 1" %}address-line1{% elseif autoComplete == "Address Line 2" %}address-line2{% elseif autoComplete == "Address Line 3" %}address-line3{% elseif autoComplete == "Address Level 4" %}address-level4{% elseif autoComplete == "Address Level 3" %}address-level3{% elseif autoComplete == "Address Level 2" %}address-level2{% elseif autoComplete == "Address Level 1" %}address-level1{% elseif autoComplete == "Country" %}country{% elseif autoComplete == "Country Name" %}country-name{% elseif autoComplete == "Postal Code" %}postal-code{% elseif autoComplete == "Credit Card: Name" %}cc-name{% elseif autoComplete == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete == "Credit Card: Number" %}cc-number{% elseif autoComplete == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete == "Credit Card: CSC" %}cc-csc{% elseif autoComplete == "Credit Card: Type" %}cc-type{% elseif autoComplete == "Transaction: Currency" %}transaction-currency{% elseif autoComplete == "Transaction: Amount" %}transaction-amount{% elseif autoComplete == "Language" %}language{% elseif autoComplete == "Birthday" %}bday{% elseif autoComplete == "Birthday: Day" %}bday-day{% elseif autoComplete == "Birthday: Month" %}bday-month{% elseif autoComplete == "Birthday: Year" %}bday-year{% elseif autoComplete == "Sex" %}sex{% elseif autoComplete == "Telephone" %}tel{% elseif autoComplete == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete == "Telephone: National" %}tel-national{% elseif autoComplete == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete == "Telephone: Local" %}tel-local{% elseif autoComplete == "Telephone: Extension" %}tel-extension{% elseif autoComplete == "IMPP" %}impp{% elseif autoComplete == "URL" %}url{% elseif autoComplete == "Photo" %}photo{% endif %}"
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
 id="{{ dobWithAutocompleteAttributeDay | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 pattern="[0-9]*"
-type=""
-disabled="{{ if disabled }}disabled{{ endif }}"
-readonly="{{ if readOnly }}readOnly{{ endif }}"
-autofocus="{{ if autoFocus }}autoFocus{{ endif }}"
+type="{% if type == "Button" %}button{% elseif type == "Checkbox" %}checkbox{% elseif type == "Color" %}color{% elseif type == "Date" %}date{% elseif type == "DateTime: Local" %}datetime-local{% elseif type == "Email" %}email{% elseif type == "File" %}file{% elseif type == "Hidden" %}hidden{% elseif type == "Image" %}image{% elseif type == "Month" %}month{% elseif type == "Number" %}number{% elseif type == "Password" %}password{% elseif type == "Radio" %}radio{% elseif type == "Range" %}range{% elseif type == "Reset" %}reset{% elseif type == "Search" %}search{% elseif type == "Submit" %}submit{% elseif type == "Telephone" %}tel{% elseif type == "Text" %}text{% elseif type == "Time" %}time{% elseif type == "URL" %}url{% elseif type == "Week" %}week{% endif %}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
 value="{{ value | escape('html_attr') }}"
-spellcheck="{{ if spellCheck }}spellCheck{{ endif }}"
+spellcheck="{% if spellCheck %}spellCheck{% endif %}"
 />
   
         
@@ -95,17 +95,17 @@ for="{{ dobWithAutocompleteAttributeMonth | escape('html_attr') }}"
   
           
 <input
-autocomplete=""
+autocomplete="{% if autoComplete2 == "Off" %}off{% elseif autoComplete2 == "On" %}on{% elseif autoComplete2 == "Name" %}name{% elseif autoComplete2 == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete2 == "Given Name" %}given-name{% elseif autoComplete2 == "Additional Name" %}additional-name{% elseif autoComplete2 == "Family Name" %}family-name{% elseif autoComplete2 == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete2 == "Nickname" %}nickname{% elseif autoComplete2 == "Email" %}email{% elseif autoComplete2 == "Username" %}username{% elseif autoComplete2 == "New Password" %}new-password{% elseif autoComplete2 == "Current Password" %}current-password{% elseif autoComplete2 == "Organization Title" %}organization-title{% elseif autoComplete2 == "Organization" %}organization{% elseif autoComplete2 == "Street Address" %}street-address{% elseif autoComplete2 == "Address Line 1" %}address-line1{% elseif autoComplete2 == "Address Line 2" %}address-line2{% elseif autoComplete2 == "Address Line 3" %}address-line3{% elseif autoComplete2 == "Address Level 4" %}address-level4{% elseif autoComplete2 == "Address Level 3" %}address-level3{% elseif autoComplete2 == "Address Level 2" %}address-level2{% elseif autoComplete2 == "Address Level 1" %}address-level1{% elseif autoComplete2 == "Country" %}country{% elseif autoComplete2 == "Country Name" %}country-name{% elseif autoComplete2 == "Postal Code" %}postal-code{% elseif autoComplete2 == "Credit Card: Name" %}cc-name{% elseif autoComplete2 == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete2 == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete2 == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete2 == "Credit Card: Number" %}cc-number{% elseif autoComplete2 == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete2 == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete2 == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete2 == "Credit Card: CSC" %}cc-csc{% elseif autoComplete2 == "Credit Card: Type" %}cc-type{% elseif autoComplete2 == "Transaction: Currency" %}transaction-currency{% elseif autoComplete2 == "Transaction: Amount" %}transaction-amount{% elseif autoComplete2 == "Language" %}language{% elseif autoComplete2 == "Birthday" %}bday{% elseif autoComplete2 == "Birthday: Day" %}bday-day{% elseif autoComplete2 == "Birthday: Month" %}bday-month{% elseif autoComplete2 == "Birthday: Year" %}bday-year{% elseif autoComplete2 == "Sex" %}sex{% elseif autoComplete2 == "Telephone" %}tel{% elseif autoComplete2 == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete2 == "Telephone: National" %}tel-national{% elseif autoComplete2 == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete2 == "Telephone: Local" %}tel-local{% elseif autoComplete2 == "Telephone: Extension" %}tel-extension{% elseif autoComplete2 == "IMPP" %}impp{% elseif autoComplete2 == "URL" %}url{% elseif autoComplete2 == "Photo" %}photo{% endif %}"
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
 id="{{ dobWithAutocompleteAttributeMonth | escape('html_attr') }}"
 name="{{ name2 | escape('html_attr') }}"
 pattern="[0-9]*"
-type=""
-disabled="{{ if disabled2 }}disabled2{{ endif }}"
-readonly="{{ if readOnly2 }}readOnly2{{ endif }}"
-autofocus="{{ if autoFocus2 }}autoFocus2{{ endif }}"
+type="{% if type2 == "Button" %}button{% elseif type2 == "Checkbox" %}checkbox{% elseif type2 == "Color" %}color{% elseif type2 == "Date" %}date{% elseif type2 == "DateTime: Local" %}datetime-local{% elseif type2 == "Email" %}email{% elseif type2 == "File" %}file{% elseif type2 == "Hidden" %}hidden{% elseif type2 == "Image" %}image{% elseif type2 == "Month" %}month{% elseif type2 == "Number" %}number{% elseif type2 == "Password" %}password{% elseif type2 == "Radio" %}radio{% elseif type2 == "Range" %}range{% elseif type2 == "Reset" %}reset{% elseif type2 == "Search" %}search{% elseif type2 == "Submit" %}submit{% elseif type2 == "Telephone" %}tel{% elseif type2 == "Text" %}text{% elseif type2 == "Time" %}time{% elseif type2 == "URL" %}url{% elseif type2 == "Week" %}week{% endif %}"
+disabled="{% if disabled2 %}disabled2{% endif %}"
+readonly="{% if readOnly2 %}readOnly2{% endif %}"
+autofocus="{% if autoFocus2 %}autoFocus2{% endif %}"
 value="{{ value2 | escape('html_attr') }}"
-spellcheck="{{ if spellCheck2 }}spellCheck2{{ endif }}"
+spellcheck="{% if spellCheck2 %}spellCheck2{% endif %}"
 />
   
         
@@ -136,17 +136,17 @@ for="{{ dobWithAutocompleteAttributeYear | escape('html_attr') }}"
   
           
 <input
-autocomplete=""
+autocomplete="{% if autoComplete3 == "Off" %}off{% elseif autoComplete3 == "On" %}on{% elseif autoComplete3 == "Name" %}name{% elseif autoComplete3 == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete3 == "Given Name" %}given-name{% elseif autoComplete3 == "Additional Name" %}additional-name{% elseif autoComplete3 == "Family Name" %}family-name{% elseif autoComplete3 == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete3 == "Nickname" %}nickname{% elseif autoComplete3 == "Email" %}email{% elseif autoComplete3 == "Username" %}username{% elseif autoComplete3 == "New Password" %}new-password{% elseif autoComplete3 == "Current Password" %}current-password{% elseif autoComplete3 == "Organization Title" %}organization-title{% elseif autoComplete3 == "Organization" %}organization{% elseif autoComplete3 == "Street Address" %}street-address{% elseif autoComplete3 == "Address Line 1" %}address-line1{% elseif autoComplete3 == "Address Line 2" %}address-line2{% elseif autoComplete3 == "Address Line 3" %}address-line3{% elseif autoComplete3 == "Address Level 4" %}address-level4{% elseif autoComplete3 == "Address Level 3" %}address-level3{% elseif autoComplete3 == "Address Level 2" %}address-level2{% elseif autoComplete3 == "Address Level 1" %}address-level1{% elseif autoComplete3 == "Country" %}country{% elseif autoComplete3 == "Country Name" %}country-name{% elseif autoComplete3 == "Postal Code" %}postal-code{% elseif autoComplete3 == "Credit Card: Name" %}cc-name{% elseif autoComplete3 == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete3 == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete3 == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete3 == "Credit Card: Number" %}cc-number{% elseif autoComplete3 == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete3 == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete3 == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete3 == "Credit Card: CSC" %}cc-csc{% elseif autoComplete3 == "Credit Card: Type" %}cc-type{% elseif autoComplete3 == "Transaction: Currency" %}transaction-currency{% elseif autoComplete3 == "Transaction: Amount" %}transaction-amount{% elseif autoComplete3 == "Language" %}language{% elseif autoComplete3 == "Birthday" %}bday{% elseif autoComplete3 == "Birthday: Day" %}bday-day{% elseif autoComplete3 == "Birthday: Month" %}bday-month{% elseif autoComplete3 == "Birthday: Year" %}bday-year{% elseif autoComplete3 == "Sex" %}sex{% elseif autoComplete3 == "Telephone" %}tel{% elseif autoComplete3 == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete3 == "Telephone: National" %}tel-national{% elseif autoComplete3 == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete3 == "Telephone: Local" %}tel-local{% elseif autoComplete3 == "Telephone: Extension" %}tel-extension{% elseif autoComplete3 == "IMPP" %}impp{% elseif autoComplete3 == "URL" %}url{% elseif autoComplete3 == "Photo" %}photo{% endif %}"
 class="g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2"
 id="{{ dobWithAutocompleteAttributeYear | escape('html_attr') }}"
 name="{{ name3 | escape('html_attr') }}"
 pattern="[0-9]*"
-type=""
-disabled="{{ if disabled3 }}disabled3{{ endif }}"
-readonly="{{ if readOnly3 }}readOnly3{{ endif }}"
-autofocus="{{ if autoFocus3 }}autoFocus3{{ endif }}"
+type="{% if type3 == "Button" %}button{% elseif type3 == "Checkbox" %}checkbox{% elseif type3 == "Color" %}color{% elseif type3 == "Date" %}date{% elseif type3 == "DateTime: Local" %}datetime-local{% elseif type3 == "Email" %}email{% elseif type3 == "File" %}file{% elseif type3 == "Hidden" %}hidden{% elseif type3 == "Image" %}image{% elseif type3 == "Month" %}month{% elseif type3 == "Number" %}number{% elseif type3 == "Password" %}password{% elseif type3 == "Radio" %}radio{% elseif type3 == "Range" %}range{% elseif type3 == "Reset" %}reset{% elseif type3 == "Search" %}search{% elseif type3 == "Submit" %}submit{% elseif type3 == "Telephone" %}tel{% elseif type3 == "Text" %}text{% elseif type3 == "Time" %}time{% elseif type3 == "URL" %}url{% elseif type3 == "Week" %}week{% endif %}"
+disabled="{% if disabled3 %}disabled3{% endif %}"
+readonly="{% if readOnly3 %}readOnly3{% endif %}"
+autofocus="{% if autoFocus3 %}autoFocus3{% endif %}"
 value="{{ value3 | escape('html_attr') }}"
-spellcheck="{{ if spellCheck3 }}spellCheck3{{ endif }}"
+spellcheck="{% if spellCheck3 %}spellCheck3{% endif %}"
 />
   
         

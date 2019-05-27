@@ -1,5 +1,5 @@
 <p
-class=""
+class="{% if styleSize == "large" %}g-p-body-l{% elseif styleSize == "medium" %}g-p-body-m{% elseif styleSize == "small" %}g-p-body-s{% elseif styleSize == "x-small" %}g-p-body-xs{% endif %}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </p>

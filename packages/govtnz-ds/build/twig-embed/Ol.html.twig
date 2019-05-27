@@ -1,5 +1,5 @@
 <ol
-class="g-ol-list{{ if numbered }} g-ol-list--number{{ endif }}"
+class="g-ol-list{% if numbered %} g-ol-list--number{% endif %}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </ol>

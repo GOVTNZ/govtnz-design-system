@@ -12,7 +12,7 @@ class="g-fieldset"
 <legend
 class="g-fieldset__legend"
 >
-  {{{legend}}}
+{% block legend %}Legend text{% endblock %}
 </legend>
   
           
@@ -22,7 +22,7 @@ class="g-fieldset__legend"
 class="g-fieldsetBlock-hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-  {{{hint}}}
+{% block hint %}Hint text{% endblock %}
 </div>
   
           
@@ -30,7 +30,7 @@ id="{{ hintId | escape('html_attr') }}"
           
 <div
 >
-  {{{children}}}
+{% block children %}Fieldset contents{% endblock %}
 </div>
   
         

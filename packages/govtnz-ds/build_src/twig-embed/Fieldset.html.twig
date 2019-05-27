@@ -7,7 +7,7 @@ class="g-fieldset-form-group"
 aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-fieldset"
 >
-  {{{children}}}
+{% block children %}Legend and other fieldset contents...{% endblock %}
 </fieldset>
   
     

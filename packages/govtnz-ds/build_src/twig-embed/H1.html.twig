@@ -1,6 +1,6 @@
 <h1
-class="{{ if marginBottom8 }} g-heading-mb-8{{ endif }}"
+class="{% if styleSize == "xlarge" %}g-heading-xl{% elseif styleSize == "large" %}g-heading-l{% elseif styleSize == "medium" %}g-heading-m{% elseif styleSize == "small" %}g-heading-s{% elseif styleSize == "xsmall" %}g-heading-xs{% elseif styleSize == "xxsmall" %}g-heading-xxs{% endif %} {% if marginBottom8 %} g-heading-mb-8{% endif %}"
 id="{{ id | escape('html_attr') }}"
 >
-  {{{children}}}
+{% block children %}Example text{% endblock %}
 </h1>

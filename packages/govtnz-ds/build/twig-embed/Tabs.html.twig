@@ -35,7 +35,7 @@ id="{{ tabPastDay | escape('html_attr') }}"
 role="tab"
 tabindex="0"
 rel="{{ rel | escape('html_attr') }}"
-target=""
+target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"
 >
   
         Past day
@@ -61,7 +61,7 @@ id="{{ tabPastWeek | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
 rel="{{ rel2 | escape('html_attr') }}"
-target=""
+target="{% if target2 == "Blank" %}_blank{% elseif target2 == "Top" %}_top{% elseif target2 == "Self" %}_self{% elseif target2 == "Parent" %}_parent{% endif %}"
 >
   
         Past week
@@ -87,7 +87,7 @@ id="{{ tabPastMonth | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
 rel="{{ rel3 | escape('html_attr') }}"
-target=""
+target="{% if target3 == "Blank" %}_blank{% elseif target3 == "Top" %}_top{% elseif target3 == "Self" %}_self{% elseif target3 == "Parent" %}_parent{% endif %}"
 >
   
         Past month
@@ -113,7 +113,7 @@ id="{{ tabPastYear | escape('html_attr') }}"
 role="tab"
 tabindex="-1"
 rel="{{ rel4 | escape('html_attr') }}"
-target=""
+target="{% if target4 == "Blank" %}_blank{% elseif target4 == "Top" %}_top{% elseif target4 == "Self" %}_self{% elseif target4 == "Parent" %}_parent{% endif %}"
 >
   
         Past year

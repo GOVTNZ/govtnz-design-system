@@ -1,5 +1,5 @@
 {
-  "version": "0.0.17",
+  "version": "0.0.20",
   "name": "@springload/metatemplate",
   "description": "MetaTemplate",
   "author": "Springload - Matthew Holloway <matthew@springload.co.nz>",
@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "test:typescript": "tsc --project ./ --noEmit"
+    "test:typescript": "tsc --project ./ --noEmit",
+    "update-examples": "yarn build && node ./examples/update-examples.js"
   },
   "license": "MIT",
   "devDependencies": {

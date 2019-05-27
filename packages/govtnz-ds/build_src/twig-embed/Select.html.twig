@@ -2,11 +2,11 @@
 class="g-select"
 id="{{ selectId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
-multiple="{{ if multiple }}multiple{{ endif }}"
+multiple="{% if multiple %}multiple{% endif %}"
 >
   
       
-  {{{children}}}
+{% block children %}<option>Options</option>{% endblock %}
   
     
 </select>
