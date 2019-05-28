@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 
 // Not imported as an image because it's less-than 10kb and Gatsby would base64+data-uri the image which isn't what we want
 const socialThumbnail =
-  'https://dia-design-system-preview.springload.nz/social-thumbnail.png';
+  'https://design-system-alpha.digital.govt.nz/social-thumbnail.png';
 
 type Props = {
   description: string;
