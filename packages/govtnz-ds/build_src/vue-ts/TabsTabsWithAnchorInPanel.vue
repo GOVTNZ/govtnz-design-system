@@ -180,7 +180,6 @@ export default Vue.extend({
 .g-tabsTabsWithAnchorInPanel-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-tabsTabsWithAnchorInPanel-link:link {
   color: #005ea5;
@@ -297,7 +296,6 @@ export default Vue.extend({
 .g-tabsTabsWithAnchorInPanel-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-tabsTabsWithAnchorInPanel-error-summary__list a:link,
 .g-tabsTabsWithAnchorInPanel-error-summary__list a:visited,

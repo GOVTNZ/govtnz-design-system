@@ -192,7 +192,6 @@ export default Vue.extend({
 .g-breadcrumbs-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-breadcrumbs-error-summary__list a:link,
 .g-breadcrumbs-error-summary__list a:visited,

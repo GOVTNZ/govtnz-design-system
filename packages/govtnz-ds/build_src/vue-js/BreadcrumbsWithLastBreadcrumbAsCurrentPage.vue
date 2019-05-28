@@ -203,7 +203,6 @@ export default Vue.extend({
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-error-summary__list a:link,
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-error-summary__list a:visited,

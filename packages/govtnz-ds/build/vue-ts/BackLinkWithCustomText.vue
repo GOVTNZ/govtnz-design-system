@@ -114,7 +114,6 @@ export default Vue.extend({
 .g-backLinkWithCustomText-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-backLinkWithCustomText-error-summary__list a:link,
 .g-backLinkWithCustomText-error-summary__list a:visited,

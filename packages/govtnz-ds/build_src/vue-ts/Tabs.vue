@@ -364,7 +364,6 @@ export default Vue.extend({
 .g-tabs-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-tabs-error-summary__list a:link,
 .g-tabs-error-summary__list a:visited,

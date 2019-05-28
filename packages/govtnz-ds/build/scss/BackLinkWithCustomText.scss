@@ -92,8 +92,6 @@
   outline: 3px solid $g-theme-color-brand-1;
   outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
-  background-color: $g-theme-color-brand-1;
-  background-color: var(--g-theme-color-brand-1, $g-theme-color-brand-1);
 }
 
 .g-backLinkWithCustomText-error-summary__list a:link,

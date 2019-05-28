@@ -79,7 +79,6 @@ const StyledA = styled.a `
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
-    background-color: #ffbf47;
   }
   :link,
   :visited,

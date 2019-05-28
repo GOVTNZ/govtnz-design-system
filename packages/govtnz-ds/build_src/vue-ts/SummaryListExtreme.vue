@@ -1897,7 +1897,6 @@ export default Vue.extend({
 .g-summaryListExtreme-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-summaryListExtreme-link:link {
   color: #005ea5;
@@ -2113,7 +2112,6 @@ export default Vue.extend({
 .g-summaryListExtreme-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #ffbf47;
 }
 .g-summaryListExtreme-error-summary__list a:link,
 .g-summaryListExtreme-error-summary__list a:visited,

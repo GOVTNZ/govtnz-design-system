@@ -97,8 +97,6 @@
   outline: 3px solid #ffbf47;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
-  background-color: #ffbf47;
-  background-color: var(--g-theme-color-brand-1, #b53cde);
 }
 
 .g-tabs-error-summary__list a:link,

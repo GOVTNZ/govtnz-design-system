@@ -897,8 +897,8 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.
     ['all', '.g-link:visited', 'color: #4c2c92'],
     ['all', '.g-link:hover', 'color: #000c48'],
-    // ['all', '.g-link:focus', '', '', 'background-color'], // Removes background colour
-    // ['all', '.g-error-summary__list a:focus', '', '', 'background-color'],
+    ['all', '.g-link:focus', '', '', 'background-color'], // Removes background colour
+    ['all', '.g-error-summary__list a:focus', '', '', 'background-color'],
 
     // LISTS
     [
