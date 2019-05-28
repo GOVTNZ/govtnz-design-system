@@ -1,6 +1,6 @@
 {
   "name": "@govtnz/ds",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Government Design System",
   "author": "New Zealand Government",
   "engines": {
@@ -8,7 +8,9 @@
   },
   "scripts": {
     "build:release:debugger": "babel-node --inspect --expose-gc --max_old_space_size=8192 --extensions '.ts' ./src/index.ts",
-    "build:release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts && yarn babel build_src --out-dir build --copy-files && yarn tsc",
+    "build:release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
+    "build:compile": "rimraf ./build && yarn babel build_src --out-dir build --copy-files && yarn tsc",
+    "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
     "rimraf": "exit 0"
   },
@@ -25,7 +27,7 @@
     "@babel/preset-typescript": "^7.1.0",
     "@govtnz/ds-common": "0.0.1",
     "@govtnz/ds-upstream": "0.0.1",
-    "@springload/metatemplate": "0.0.17",
+    "@springload/metatemplate": "0.0.20",
     "@types/node": "^10.12.19",
     "argparse": "^1.0.10",
     "compilation-templates": "0.0.1",
@@ -44,9 +46,10 @@
     "progress": "^2.0.3",
     "rmfr": "^2.0.0",
     "svg-to-dataurl": "^1.0.0",
-    "typescript": "^3.2.4"
-  },
-  "dependencies": {
+    "typescript": "^3.2.4",
+    "jest": "^24.8.0",
+    "rimraf": "^2.6.3",
     "styled-components": "^4.2.0"
+
   }
 }

@@ -27,7 +27,6 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-import BabelCore from '@babel/core';
 
 ensureNodeVersion();
 
@@ -84,8 +83,10 @@ async function main(
           : 'ALL patterns.'
       } `
     );
+
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem, noCache);
     release.push(releaseItem);
+
     cssVariables = safeMergeCssVariables(
       cssVariables,
       releaseItem.cssVariables
@@ -198,6 +199,7 @@ const makeReleaseSpecItem = async (
   async function processJob(jobIndex: number, job: ComponentToFilesArgs) {
     const response: ComponentToFilesResponse = await componentToFiles(job);
     filesArr.push(response.files);
+    cssVariables = safeMergeCssVariables(cssVariables, response.cssVariables);
     disposeMetaTemplate = response.disposeMetaTemplate;
   }
 
@@ -266,6 +268,7 @@ type ComponentToFilesArgs = {
 
 type ComponentToFilesResponse = {
   files: AnyObject;
+  cssVariables: CSSVariablePattern[];
   disposeMetaTemplate: Function;
 };
 
@@ -303,6 +306,7 @@ const componentToFiles = async ({
       ['css/README.md']: cssReadme,
       [`docs/${markdownFileName}`]: md
     }),
+    cssVariables,
     disposeMetaTemplate: response.disposeAll
   };
 };
