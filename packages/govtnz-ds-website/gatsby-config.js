@@ -7,6 +7,22 @@ module.exports = {
     author: `New Zealand Government`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-compile-es6-packages`,
+      options: {
+        modules: [
+          `query-string`,
+          // `react-accessible-details`,
+          // `react-helmet`,
+          // `react-modal`,
+          // `prismjs-mt`,
+          // `marked`,
+          // `lodash-es`,
+          // `css-sniff`,
+          `copy-text-to-clipboard`,
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,8 +31,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    // `gatsby-transformer-sharp`,
+    // `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -32,9 +48,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-svg-sprite`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
     'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-plugin-sentry',
