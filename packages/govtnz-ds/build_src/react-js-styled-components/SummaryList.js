@@ -135,6 +135,7 @@ const StyledA = styled.a`
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;
@@ -235,6 +236,7 @@ const StyledA2 = styled.a`
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;
@@ -386,6 +388,7 @@ const StyledA3 = styled.a`
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;
@@ -634,6 +637,7 @@ const StyledA4 = styled.a`
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;
@@ -734,6 +738,7 @@ const StyledA5 = styled.a`
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;

@@ -400,6 +400,7 @@ const StyledA3 = styled.a `
   :focus {
     outline: 3px solid #ffbf47;
     outline-offset: 0;
+    background-color: #ffbf47;
   }
   :link {
     color: #005ea5;

@@ -52,6 +52,7 @@ export default Vue.extend({
 .g-a-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
+  background-color: #ffbf47;
 }
 .g-a-link:link {
   color: #005ea5;

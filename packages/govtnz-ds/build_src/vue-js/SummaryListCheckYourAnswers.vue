@@ -361,6 +361,7 @@ export default Vue.extend({
 .g-summaryListCheckYourAnswers-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
+  background-color: #ffbf47;
 }
 .g-summaryListCheckYourAnswers-link:link {
   color: #005ea5;

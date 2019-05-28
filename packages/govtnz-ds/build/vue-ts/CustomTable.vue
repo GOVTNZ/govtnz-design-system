@@ -379,6 +379,7 @@ export default Vue.extend({
 .g-customTable-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
+  background-color: #ffbf47;
 }
 .g-customTable-link:link {
   color: #005ea5;
