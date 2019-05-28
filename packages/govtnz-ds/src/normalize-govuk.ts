@@ -4,13 +4,20 @@ import { CSSVariablePattern } from '@springload/metatemplate';
 import ProgressBar from 'progress';
 import { sleep } from '@govtnz/ds-common';
 import { ReleaseVersion, Component } from '@govtnz/ds-upstream';
-import { filterCSSByClassName, setCSSValues, MetaTemplateDef, toId } from './normalize';
+import {
+  filterCSSByClassName,
+  setCSSValues,
+  MetaTemplateDef,
+  toId
+} from './normalize';
 import { gc, cssPropertiesToObject, splitSelectors, AnyObject } from './utils';
 import svgToDataURL from 'svg-to-dataurl';
 
 const ONE_REM_IN_PIXELS = 16; // in our DS
 
-export const normalizeReleaseVersionGovUk = async (upstreamReleaseVersion: ReleaseVersion): Promise<ReleaseVersion> => {
+export const normalizeReleaseVersionGovUk = async (
+  upstreamReleaseVersion: ReleaseVersion
+): Promise<ReleaseVersion> => {
   let components: Component[] = [];
 
   const bar = new ProgressBar(
@@ -44,7 +51,11 @@ export const normalizeReleaseVersionGovUk = async (upstreamReleaseVersion: Relea
     metaTemplateDefs.forEach(({ id, html, css, message }: MetaTemplateDef) => {
       if (id !== toId(id)) {
         // id should be normalized by now...
-        throw new Error(`${__filename}: Bad id generated of ${id} (vs ${toId(id)}). Current message was: ${message}`);
+        throw new Error(
+          `${__filename}: Bad id generated of ${id} (vs ${toId(
+            id
+          )}). Current message was: ${message}`
+        );
       }
       const metaTemplateComponent: Component = {
         id,
@@ -359,7 +370,9 @@ export const govukToMetaTemplateInput = async (
       message += `Note: ${oldTemplateId} renamed to ${id}.\n`;
     }
     additionalTemplates.forEach(template => {
-      message += `Note: Additional template ${template.id} made (probably based on ${id}).\n`;
+      message += `Note: Additional template ${
+        template.id
+      } made (probably based on ${id}).\n`;
     });
     // 'unshift' because it must be the first index because we're adding 'message' here
     additionalTemplates.unshift({ id, html });
@@ -407,7 +420,19 @@ type CSSReplacementRuleWithAdd = [
   string, // css properties to REPLACE (will error if unable to replace)
   string // css properties to ADD
 ];
-type CSSReplacementRule = CSSReplacementRuleOnlyReplace | CSSReplacementRuleWithAdd;
+
+type CSSReplacementRuleWithRemove = [
+  'all' | 'print' | 'screen-big',
+  string, // selector
+  string, // css properties to REPLACE (will error if unable to replace)
+  string, // css properties to ADD
+  string // css properties to REMOVE using comma separated properties
+];
+
+type CSSReplacementRule =
+  | CSSReplacementRuleOnlyReplace
+  | CSSReplacementRuleWithAdd
+  | CSSReplacementRuleWithRemove;
 
 type GovUkMediaCategory =
   | 'all'
@@ -422,28 +447,32 @@ type CSSReplacementRuleObject = [
   GovUkMediaCategory,
   string[], // selectors, split by comma
   AnyObject, // css properties to replace
-  string | undefined // css properties to add
+  string | undefined, // css properties to add
+  string[]
 ];
 
 export const updateCSS = (css: string, rules: CSSReplacementRule[]): string => {
   const newRules: CSSReplacementRuleObject[] = rules.map(rule => {
     const newRule: CSSReplacementRuleObject = [
       rule[0],
-      splitSelectors(rule[1]).map(selectorPart => normalizeSelector(selectorPart)),
+      splitSelectors(rule[1]).map(selectorPart =>
+        normalizeSelector(selectorPart)
+      ),
       rule[2] && cssPropertiesToObject(rule[2]),
-      rule[3]
+      rule[3],
+      rule[4] && rule[4].split(',').map(propertyName => propertyName.trim())
     ];
     return newRule;
   });
 
   const matchedRules = newRules.map(newRule =>
     newRule[1].map(s => ({
-      replace:
-        newRule[2] &&
-        Object.keys(newRule[2]).reduce((obj, key) => {
-          obj[key] = false;
-          return obj;
-        }, {}),
+      replace: newRule[2]
+        ? Object.keys(newRule[2]).reduce((obj, key) => {
+            obj[key] = false;
+            return obj;
+          }, {})
+        : {},
       add: newRule[3] ? false : undefined
     }))
   );
@@ -451,7 +480,9 @@ export const updateCSS = (css: string, rules: CSSReplacementRule[]): string => {
   const newCSS = setCSSValues(
     css,
     ({ atRule, selector, name, value }) => {
-      let govUkMediaCategory: GovUkMediaCategory = atRuleToGovMediaCategory(atRule);
+      let govUkMediaCategory: GovUkMediaCategory = atRuleToGovMediaCategory(
+        atRule
+      );
 
       for (let i = 0; i < newRules.length; i++) {
         const rule = newRules[i];
@@ -475,7 +506,9 @@ export const updateCSS = (css: string, rules: CSSReplacementRule[]): string => {
     },
     undefined,
     ({ atRule, selector }) => {
-      let govUkMediaCategory: GovUkMediaCategory = atRuleToGovMediaCategory(atRule);
+      let govUkMediaCategory: GovUkMediaCategory = atRuleToGovMediaCategory(
+        atRule
+      );
       for (let i = 0; i < newRules.length; i++) {
         const rule = newRules[i];
         if (rule[0] !== govUkMediaCategory) {
@@ -494,6 +527,36 @@ export const updateCSS = (css: string, rules: CSSReplacementRule[]): string => {
         }
       }
       return undefined;
+    },
+    ({ atRule, selector, name, value }): boolean => {
+      // Whether to remove the property
+      let govUkMediaCategory: GovUkMediaCategory = atRuleToGovMediaCategory(
+        atRule
+      );
+      for (let i = 0; i < newRules.length; i++) {
+        const rule = newRules[i];
+        if (rule[0] !== govUkMediaCategory || !rule[4]) {
+          continue;
+        }
+
+        for (let x = 0; x < rule[1].length; x++) {
+          const ruleSelector = rule[1][x];
+          const normalizedSelector = normalizeSelector(selector);
+          if (ruleSelector === normalizedSelector) {
+            if (rule[4]) {
+              for (let y = 0; y < rule[4].length; y++) {
+                const propertyName = rule[4][y];
+                if (propertyName === name) {
+                  // Removal match!
+                  // (we don't currently support matching values as well)
+                  return true;
+                }
+              }
+            }
+          }
+        }
+      }
+      return false;
     }
   );
 
@@ -511,8 +574,16 @@ export const updateCSS = (css: string, rules: CSSReplacementRule[]): string => {
 
       const unusedAddStyles = obj.add === false ? newRules[i][3] : undefined;
 
-      if ((unusedReplaceStyles && Object.keys(unusedReplaceStyles).length) || unusedAddStyles) {
-        unmatchedRules.push([newRules[i][0], newRules[i][1][x], unusedReplaceStyles, unusedAddStyles]);
+      if (
+        (unusedReplaceStyles && Object.keys(unusedReplaceStyles).length) ||
+        unusedAddStyles
+      ) {
+        unmatchedRules.push([
+          newRules[i][0],
+          newRules[i][1][x],
+          unusedReplaceStyles,
+          unusedAddStyles
+        ]);
       }
     });
   });
@@ -554,13 +625,19 @@ const atRuleToGovMediaCategory = (atRule: string): GovUkMediaCategory => {
     case '@font-face':
       return undefined;
     default: {
-      if (atRule.includes('@media only screen and (-webkit-min-device-pixel-ratio: 2)')) {
+      if (
+        atRule.includes(
+          '@media only screen and (-webkit-min-device-pixel-ratio: 2)'
+        )
+      ) {
         return 'high-dpi';
       }
       break;
     }
   }
-  throw Error(`Unknown atRule "${atRule}". Unable to map to govUKMediaCategory.`);
+  throw Error(
+    `Unknown atRule "${atRule}". Unable to map to govUKMediaCategory.`
+  );
 };
 
 const cssVariables: CSSVariablePattern[] = [
@@ -713,7 +790,12 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
   css = updateCSS(css, [
     // FORM
     // Label
-    ['all', '.g-label', `color: #2a2a2a; font-weight: 500; font-size: ${pxToRem(20)}`, undefined],
+    [
+      'all',
+      '.g-label',
+      `color: #2a2a2a; font-weight: 500; font-size: ${pxToRem(20)}`,
+      undefined
+    ],
 
     // INPUT
     ['all', '.g-input', 'border: 1px solid #2a2a2a; padding: .5rem'],
@@ -733,24 +815,52 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     ],
     // Heading size ranges
     //  - larger sizes
-    ['all', '.g-heading-l, .g-heading-m, .g-heading-s, .g-heading-xs', 'margin-bottom: 0.5rem;'],
-    ['screen-big', '.g-heading-m, .g-heading-s, .g-heading-xs', 'margin-bottom: 0.5rem;'],
+    [
+      'all',
+      '.g-heading-l, .g-heading-m, .g-heading-s, .g-heading-xs',
+      'margin-bottom: 0.5rem;'
+    ],
+    [
+      'screen-big',
+      '.g-heading-m, .g-heading-s, .g-heading-xs',
+      'margin-bottom: 0.5rem;'
+    ],
     //  - smaller sizes
     ['all', '.g-heading-xs, .g-heading-xxs', 'margin-top: 2.5rem;'],
 
     // heading xl
-    ['all', '.g-heading-xl', 'font-size: 3rem; line-height: 1.125; margin-bottom: 1rem;'],
-    ['screen-big', '.g-heading-xl', 'font-size: 3.5rem; line-height: 1.15; margin-bottom: 1rem'],
+    [
+      'all',
+      '.g-heading-xl',
+      'font-size: 3rem; line-height: 1.125; margin-bottom: 1rem;'
+    ],
+    [
+      'screen-big',
+      '.g-heading-xl',
+      'font-size: 3.5rem; line-height: 1.15; margin-bottom: 1rem'
+    ],
 
     // heading l
-    ['all', '.g-heading-l', 'font-size: 2rem; line-height: 1.2; margin-top: 3.5rem;'],
+    [
+      'all',
+      '.g-heading-l',
+      'font-size: 2rem; line-height: 1.2; margin-top: 3.5rem;'
+    ],
     ['screen-big', '.g-heading-l', 'font-size: 2.5rem; line-height: 1.25'],
 
     // heading m
-    ['all', '.g-heading-m', 'font-size: 1.5rem; line-height: 1.25; margin-top: 2.5rem; font-weight: 500'],
+    [
+      'all',
+      '.g-heading-m',
+      'font-size: 1.5rem; line-height: 1.25; margin-top: 2.5rem; font-weight: 500'
+    ],
 
     // heading s
-    ['all', '.g-heading-s', 'font-size: 1.25rem; line-height: 1.25; margin-top: 2.5rem;'],
+    [
+      'all',
+      '.g-heading-s',
+      'font-size: 1.25rem; line-height: 1.25; margin-top: 2.5rem;'
+    ],
 
     // heading xs
     ['all', '.g-heading-xs', 'font-size: 1.125rem'],
@@ -769,19 +879,33 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
       'border-radius: 2px; font-weight: 500; line-height: 1.2; color: black; padding: 16px; padding-top: 16px; padding-bottom: 16px; box-shadow:none'
     ],
     // BODY
-    ['all', '.g-body-l, .g-body-m, .g-body-s', 'color: #2a2a2a; line-height: 1.625; margin-bottom: 1rem;'],
+    [
+      'all',
+      '.g-body-l, .g-body-m, .g-body-s',
+      'color: #2a2a2a; line-height: 1.625; margin-bottom: 1rem;'
+    ],
 
     // Fieldset
     ['all', '.g-fieldset__legend', 'margin-bottom: 0px'],
-    ['all', '.g-checkboxes__input + .g-checkboxes__label::before', 'border: 1px solid #000000'],
+    [
+      'all',
+      '.g-checkboxes__input + .g-checkboxes__label::before',
+      'border: 1px solid #000000'
+    ],
 
     // LINK
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.
     ['all', '.g-link:visited', 'color: #4c2c92'],
     ['all', '.g-link:hover', 'color: #000c48'],
+    ['all', '.g-link:focus', '', '', 'background-color'],
+    ['all', '.g-error-summary__list a:focus', '', '', 'background-color'],
 
     // LISTS
-    ['all', '.g-list', 'line-height: 1.625; color: #2a2a2a; font-size: 20px; margin-bottom: 1rem;'],
+    [
+      'all',
+      '.g-list',
+      'line-height: 1.625; color: #2a2a2a; font-size: 20px; margin-bottom: 1rem;'
+    ],
     // ['all', '.g-list li, .g-ol-list li', 'margin-bottom: 0.25rem;']
 
     // Checkboxes
@@ -829,7 +953,13 @@ const govUkClassNameToGenericClassName = (
   // pointless.
   //
   // So if it already starts with the namespace then we don't a insert a namespace
-  if (originalIds && originalIds.some(anId => !!className.match(new RegExp(`^${anId}[-_]`)) || anId === className)) {
+  if (
+    originalIds &&
+    originalIds.some(
+      anId =>
+        !!className.match(new RegExp(`^${anId}[-_]`)) || anId === className
+    )
+  ) {
     return {
       newMessage: `Note: Using CSS concated namespace of "g-${className}" because of the duplicate start of "g-${namespace}-${className}")\n`,
       replacement: `g-${className}`

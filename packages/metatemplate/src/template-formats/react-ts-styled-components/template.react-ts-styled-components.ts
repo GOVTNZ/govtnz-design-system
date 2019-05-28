@@ -10,7 +10,7 @@ import {
   TemplatesById,
   PRETTIER_LINE_WIDTH,
   FormatUsageResponse,
-  FormatUsageOptions
+  UsageOptions
 } from "../../index";
 import {
   TemplateAttribute,
@@ -783,7 +783,7 @@ export default class ReactTsStyledComponents {
   static makeUsageTags = (
     code: TemplateUsages,
     templates: TemplatesById,
-    options: FormatUsageOptions
+    options: UsageOptions
   ): FormatUsageResponse => {
     const imports: string[] = [];
     const tagNameReplacer = options && options.tagNameReplacer;
@@ -897,7 +897,7 @@ export default class ReactTsStyledComponents {
   makeUsage = async (
     code: TemplateUsages,
     templates: TemplatesById,
-    options?: FormatUsageOptions | undefined
+    options?: UsageOptions | undefined
   ): Promise<FormatUsageResponse> => {
     const importPrefix =
       (options && options.importPrefix) || "@govtnz/ds/build/"; // TODO: Refactor this out so it's always config
@@ -919,8 +919,13 @@ export default class ReactTsStyledComponents {
       .map(item => {
         const rI = renderImport || this.renderImport;
 
+        const suffix =
+          options && options.filenameExtensionOverride[this.dirname];
+
         const from =
-          item === "React" ? "react" : `${importPrefix}${this.dirname}/${item}`;
+          item === "React"
+            ? "react"
+            : `${importPrefix}${this.dirname}/${item}${suffix || ""}`;
 
         const shouldNotHaveStyleFile =
           this.options.css === "styled-components" || item === "React";

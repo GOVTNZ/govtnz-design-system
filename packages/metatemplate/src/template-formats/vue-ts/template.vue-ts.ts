@@ -7,7 +7,7 @@ import {
   TemplatesById,
   PRETTIER_LINE_WIDTH,
   FormatUsageResponse,
-  FormatUsageOptions
+  UsageOptions
 } from "../../index";
 import {
   TemplateAttribute,
@@ -386,7 +386,7 @@ export default class VueTs {
       }
       return componentNameMapping[tagName];
     };
-    const options: FormatUsageOptions = {
+    const options: UsageOptions = {
       tagNameReplacer,
       flattenAttributeValues: true
     };

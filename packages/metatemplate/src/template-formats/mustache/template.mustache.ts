@@ -4,9 +4,8 @@ import {
   TemplateUsages,
   TemplatesById,
   FormatUsageResponse,
-  TemplateUsage,
   TemplateUsageElement,
-  FormatUsageOptions,
+  UsageOptions,
   PRETTIER_LINE_WIDTH
 } from "../../index";
 import {
@@ -190,7 +189,7 @@ export default class Mustache {
   makeUsage = async (
     code: TemplateUsages,
     templatesById: TemplatesById,
-    options: FormatUsageOptions
+    options: UsageOptions
   ): Promise<FormatUsageResponse> => {
     const imports = [`import Mustache from 'mustache';\n`];
     const mustacheImports = [];

@@ -5,8 +5,7 @@ import {
   TemplatesById,
   FormatUsageResponse,
   TemplateUsageElement,
-  FormatUsageOptions,
-  PRETTIER_LINE_WIDTH
+  UsageOptions
 } from "../../index";
 import {
   TemplateAttribute,
@@ -171,7 +170,7 @@ export default class TwigEmbed {
   makeUsage = async (
     code: TemplateUsages,
     templatesById: TemplatesById,
-    options: FormatUsageOptions
+    options: UsageOptions
   ): Promise<FormatUsageResponse> => {
     const mustacheImports = [];
     const templateVariables = {};

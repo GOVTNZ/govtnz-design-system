@@ -17,7 +17,9 @@ export const normalizeUpstream = async (
     case 'govuk': {
       releaseVersions = await Promise.all(
         upstreamReleaseVersions.map(
-          async (upstreamReleaseVersion: ReleaseVersion): Promise<ReleaseVersion> =>
+          async (
+            upstreamReleaseVersion: ReleaseVersion
+          ): Promise<ReleaseVersion> =>
             await normalizeReleaseVersionGovUk(upstreamReleaseVersion)
         )
       );
@@ -28,7 +30,9 @@ export const normalizeUpstream = async (
       // already in metatemplate format, but need to camelCase names
       releaseVersions = await Promise.all(
         upstreamReleaseVersions.map(
-          async (upstreamReleaseVersion: ReleaseVersion): Promise<ReleaseVersion> =>
+          async (
+            upstreamReleaseVersion: ReleaseVersion
+          ): Promise<ReleaseVersion> =>
             await normalizeGeneric(upstreamReleaseVersion)
         )
       );
@@ -43,7 +47,9 @@ export const normalizeUpstream = async (
     releaseVersion.components.forEach(component => {
       if (component.id !== toId(component.id)) {
         throw new Error(
-          `${__filename}: Component Id name check failure: "${component.id}" !== "${toId(component.id)}"`
+          `${__filename}: Component Id name check failure: "${
+            component.id
+          }" !== "${toId(component.id)}"`
         );
       }
     });
@@ -89,7 +95,9 @@ export const insertVariableBySelector = async (
     lastParentNode.removeChild(removeTag);
   });
   lastParentNode.innerHTML = metaTemplateVariable;
-  const result = [...body.childNodes].map(childNode => childNode.outerHTML).join('');
+  const result = [...body.childNodes]
+    .map(childNode => childNode.outerHTML)
+    .join('');
   setTimeout(() => {
     dom.window.close();
     gc();
@@ -111,7 +119,10 @@ export const setAttributeBySelector = (
   if (!target) {
     throw Error(`Unable to select node with "${selector}" in ${html}.`);
   }
-  let value: string = defaultValue === undefined ? target.getAttribute(attributeName) || '' : defaultValue;
+  let value: string =
+    defaultValue === undefined
+      ? target.getAttribute(attributeName) || ''
+      : defaultValue;
 
   if (dynamicKeys && dynamicKeys.length) {
     if (value.length > 0) {
@@ -127,7 +138,9 @@ export const setAttributeBySelector = (
         }
         if (Array.isArray(dynamicKey.type)) {
           dk += `${dynamicKey.optional ? '?' : ''}: `;
-          dk += dynamicKey.type.map(anEnum => `${anEnum.value} as ${anEnum.name}`).join(' | ');
+          dk += dynamicKey.type
+            .map(anEnum => `${anEnum.value} as ${anEnum.name}`)
+            .join(' | ');
         } else if (dynamicKey.type === 'boolean') {
           // "?" because all booleans are optional ie, not provided=false, provided=true
           dk += `?: ${dynamicKey.ifTrueValue}`;
@@ -140,13 +153,19 @@ export const setAttributeBySelector = (
 
   target.setAttribute(attributeName, value);
 
-  const result = [...body.childNodes].map(childNode => childNode.outerHTML).join('');
+  const result = [...body.childNodes]
+    .map(childNode => childNode.outerHTML)
+    .join('');
   dom.window.close();
   gc();
   return result;
 };
 
-export const removeAttribute = (html: string, selector: string, attributeName: string) => {
+export const removeAttribute = (
+  html: string,
+  selector: string,
+  attributeName: string
+) => {
   const dom = new JSDOM(wrapBody(html));
   const body = dom.window.document.body;
   const target = body.querySelector(selector);
@@ -192,7 +211,11 @@ export const select = (html: string, selector: string): string => {
   return result;
 };
 
-export const replaceClass = (html: string, className: string, withValue: string): string => {
+export const replaceClass = (
+  html: string,
+  className: string,
+  withValue: string
+): string => {
   // TODO: Use a CSS Parser to rename the class
   if (html.indexOf(className) === -1) {
     throw Error(`Unable to find "${className}" in "${html}".`);
@@ -206,7 +229,10 @@ export const toId = (id: string): string => {
   return id.substring(0, 1).toUpperCase() + camelCase(id.substring(1));
 };
 
-export const filterCSSByClassName = async (className: string, css: string): Promise<string> => {
+export const filterCSSByClassName = async (
+  className: string,
+  css: string
+): Promise<string> => {
   const html = `<html><head><style>${css}</style></head><body><div class="${className}">text that doesn't matter</div></body></html>`;
   const dom = new JSDOM(html, {
     resources: 'usable',
@@ -232,7 +258,7 @@ export const filterCSSByClassName = async (className: string, css: string): Prom
   return serializeCSSRules(matchedCSS);
 };
 
-type ValueReplacerProps = {
+type PropertyMatchProps = {
   atRule: string;
   selector: string;
   name: string;
@@ -240,7 +266,7 @@ type ValueReplacerProps = {
   isImportant: boolean;
 };
 
-type ValueReplacer = (props: ValueReplacerProps) => string | undefined;
+type ValueReplacer = (props: PropertyMatchProps) => string | undefined;
 
 type SelectorReplacerProps = {
   selector: string;
@@ -255,11 +281,14 @@ type AddProps = {
 
 type AddCallback = (props: AddProps) => string | undefined;
 
+type RemoveCallback = (props: PropertyMatchProps) => boolean;
+
 export const setCSSValues = (
   css: string,
   valueReplacer?: ValueReplacer | undefined,
   selectorReplacer?: SelectorReplacer | undefined,
-  addCallback?: AddCallback | undefined
+  addCallback?: AddCallback | undefined,
+  removeCallback?: RemoveCallback | undefined
 ): string => {
   // Prettier maintains single and double but not triple linebreaks,
   // so to compare CSS files we need to increase spacing between CSS rules
@@ -282,7 +311,8 @@ export const setCSSValues = (
         if (selectorReplacer) {
           callbackResponse = selectorReplacer({ selector: node.selector });
         }
-        response += callbackResponse !== undefined ? callbackResponse : node.selector;
+        response +=
+          callbackResponse !== undefined ? callbackResponse : node.selector;
         response += '{';
         response += node.nodes ? node.nodes.map(renderCSS).join('\n') : '';
         if (addCallback) {
@@ -330,17 +360,53 @@ export const setCSSValues = (
             });
             if (callbackResponse && newVal) {
               // two competing replacement values for this particular CSS property
-              throw Error(`replaceCSSValues error: two competing selectors replaced the value ${lastSelector}`);
+              throw Error(
+                `replaceCSSValues error: two competing selectors replaced the value ${lastSelector}`
+              );
             }
             callbackResponse = newVal;
           }
         }
-        response +=
-          node.prop +
-          node.raws.between +
-          (callbackResponse !== undefined ? callbackResponse : defaultResponse) +
-          (node.important ? ' !important' : '') +
-          ';';
+        let shouldBeRemoved = false;
+        if (removeCallback) {
+          const selectors = splitSelectors(lastSelector);
+          for (let i = 0; i < selectors.length; i++) {
+            if (
+              removeCallback({
+                atRule: lastAtRule,
+                selector: selectors[i],
+                name: node.prop,
+                value: node.value,
+                isImportant: !!node.important
+              })
+            ) {
+              // In an 'if' block so that once set `true` it can't
+              // be unset.
+              shouldBeRemoved = true;
+            }
+          }
+        }
+        if (shouldBeRemoved === false) {
+          response +=
+            node.prop +
+            node.raws.between +
+            (callbackResponse !== undefined
+              ? callbackResponse
+              : defaultResponse) +
+            (node.important ? ' !important' : '') +
+            ';';
+        } else {
+          console.log('REMOVED');
+          console.log(
+            node.prop +
+              node.raws.between +
+              (callbackResponse !== undefined
+                ? callbackResponse
+                : defaultResponse) +
+              (node.important ? ' !important' : '') +
+              ';'
+          );
+        }
         break;
       }
       case 'comment': {
@@ -369,7 +435,11 @@ export const setCSSValues = (
   return cssNodes.map(node => renderCSS(node)).join('\n');
 };
 
-export const wrapIfBySelector = (html: string, selector: string, key: string): string => {
+export const wrapIfBySelector = (
+  html: string,
+  selector: string,
+  key: string
+): string => {
   const dom = new JSDOM(wrapBody(html), {
     resources: 'usable',
     pretendToBeVisual: true
@@ -381,7 +451,9 @@ export const wrapIfBySelector = (html: string, selector: string, key: string): s
   const element = document.querySelector(selector);
   element.parentNode.insertBefore(mtIf, element);
   mtIf.appendChild(element);
-  const result = [...document.body.childNodes].map(childNode => childNode.outerHTML).join('');
+  const result = [...document.body.childNodes]
+    .map(childNode => childNode.outerHTML)
+    .join('');
   dom.window.close();
   gc();
   return result;

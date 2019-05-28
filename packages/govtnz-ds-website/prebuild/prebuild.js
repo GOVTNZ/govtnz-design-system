@@ -111,6 +111,11 @@ const main = async () => {
   );
 
   // Step 2. Get ALL the release files
+  const releaseSrcPath = path.resolve(
+    __dirname,
+    '../../',
+    'govtnz-ds/build_src'
+  );
   const releasePath = path.resolve(__dirname, '../../', 'govtnz-ds/build');
   const allComponentsPattern = releasePath + '/**';
   const allComponents = (await glob(allComponentsPattern)).filter(aPath => {
@@ -127,7 +132,7 @@ const main = async () => {
   });
 
   const metatemplateInputsPath = path.join(
-    releasePath,
+    releaseSrcPath,
     '.metatemplate-inputs.json'
   );
   const metatemplateInputsJson = await fs.promises.readFile(

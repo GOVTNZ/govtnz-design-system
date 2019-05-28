@@ -320,7 +320,8 @@ export const emptyTemplate: TemplateInput = {
 export const makeUsage = async (
   code: TemplateUsages,
   templates: TemplatesById,
-  formatIds: string[] = defaultFormats
+  formatIds: string[] = defaultFormats,
+  options?: UsageOptions | undefined
 ): Promise<FormatUsageExamples> => {
   const chosenFormatIds: string[] =
     formatIds && formatIds.length === 1 && formatIds[0] === ALL_FORMATS
@@ -334,7 +335,8 @@ export const makeUsage = async (
       if (format.makeUsage) {
         const usageResponse: FormatUsageResponse = await format.makeUsage(
           code,
-          templates
+          templates,
+          options
         );
         return usageResponse.code;
       }
@@ -499,8 +501,13 @@ export type FormatUsageResponse = {
   imports?: string[] | undefined;
 };
 
-export type FormatUsageOptions = {
+export type ExtensionOverride = {
+  [key: string]: string;
+};
+
+export type UsageOptions = {
   flattenAttributeValues?: boolean | undefined;
+  filenameExtensionOverride?: ExtensionOverride | undefined;
   tagNameReplacer?: Function | undefined;
   renderImport?: Function | undefined;
   importPrefix?: string | undefined; // TODO: Make this a required arg
