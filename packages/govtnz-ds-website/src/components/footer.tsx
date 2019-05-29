@@ -14,7 +14,7 @@ import CCByIcon from '../commons/svgs/icon-cc-by.svg';
 import CoatIcon from '../commons/svgs/icon-coat-of-arms.svg';
 
 const Footer = () => (
-  <div className="g-footer-wrapper" role="contentinfo">
+  <footer className="g-footer-wrapper" role="contentinfo">
     <div className="g-footer__standard">
       <Container width="fixed">
         <Row>
@@ -108,7 +108,7 @@ const Footer = () => (
         </Row>
       </Container>
     </div>
-  </div>
+  </footer>
 );
 
 export default Footer;

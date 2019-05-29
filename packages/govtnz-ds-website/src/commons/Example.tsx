@@ -50,7 +50,7 @@ export default class Example extends Component<Props, State> {
       hasClickedExpand: false,
       copyingMode: false,
       supportsJavaScript: false,
-      supportsClipboard: false,
+      supportsClipboard: true,
     };
   }
 
@@ -215,7 +215,7 @@ export default class Example extends Component<Props, State> {
                 </p>
               )}
 
-              {supportsClipboard ? (
+              {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
                   <div
                     role="alert"
