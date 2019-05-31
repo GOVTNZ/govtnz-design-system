@@ -1,6 +1,12 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 
+export const GA_MEASUREMENT_ID = 'UA-109491125-3';
+
+export const getGaEventTarget = () => {
+  return `gtag_${GA_MEASUREMENT_ID.replace(new RegExp('-', 'g'), '_')}`;
+};
+
 const Analytics = () => (
   <Fragment>
     <Helmet
@@ -8,11 +14,11 @@ const Analytics = () => (
         {
           async: true,
           type: 'text/javascript',
-          src: 'https://www.googletagmanager.com/gtag/js?id=UA-109491125-3',
+          src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
         },
         {
           type: 'text/javascript',
-          innerHTML: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-109491125-3');`,
+          innerHTML: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '${GA_MEASUREMENT_ID}');`,
         },
         {
           type: 'text/javascript',
