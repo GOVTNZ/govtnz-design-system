@@ -36,7 +36,7 @@ input:focus,
 button:focus,
 summary:focus,
 textarea:focus {
-  outline: $color-ds-default-focus;
+  outline: 3px solid $color-ds-default-focus;
   outline: 3px solid var(--color-theme-focus, $color-ds-default-focus);
 }
 
