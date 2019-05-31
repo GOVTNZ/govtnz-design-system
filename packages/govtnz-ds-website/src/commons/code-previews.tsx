@@ -1,7 +1,7 @@
 import React from 'react';
 import Prism from 'prismjs-mt';
 import { localStorageWrapper } from './storage';
-import { getGaEventTarget } from '../components/analytics';
+import CONSTANTS from '../commons/constants';
 import './prism-theme.css';
 import './styles/components-example.scss';
 
@@ -38,9 +38,8 @@ export const setPreferredFormat = (formatId: string): string => {
 
   // Stats...
   const eventId = 'template-format-change';
-  const GA_EVENT_TARGET = getGaEventTarget();
   const GA_eventArgs = [
-    `${GA_EVENT_TARGET}.send`,
+    `${CONSTANTS.GA_EVENT_TARGET}.send`,
     'event',
     eventId,
     formatId,
