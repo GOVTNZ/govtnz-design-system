@@ -1,11 +1,12 @@
 import React from 'react';
 import Prism from 'prismjs-mt';
 import { localStorageWrapper } from './storage';
-import CONSTANTS from '../commons/constants';
+import CONSTANTS from '../commons/constants.json';
 import './prism-theme.css';
 import './styles/components-example.scss';
 
 const LSKEY = 'ds:user-metatemplateid';
+const GA_EVENT_TARGET = `gtag_${CONSTANTS.GA_MEASUREMENT_ID.replace(new RegExp('-', 'g'), '_')}`;
 
 let preferredFormatId: string = 'html';
 
@@ -39,7 +40,7 @@ export const setPreferredFormat = (formatId: string): string => {
   // Stats...
   const eventId = 'template-format-change';
   const GA_eventArgs = [
-    `${CONSTANTS.GA_EVENT_TARGET}.send`,
+    `${GA_EVENT_TARGET}.send`,
     'event',
     eventId,
     formatId,

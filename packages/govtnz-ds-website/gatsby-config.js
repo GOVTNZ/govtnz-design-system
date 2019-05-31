@@ -1,5 +1,5 @@
 const path = require('path');
-const CONSTANTS = require('./src/commons/constants');
+const CONSTANTS = require('./src/commons/constants.json');
 
 module.exports = {
   siteMetadata: {
