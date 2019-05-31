@@ -229,6 +229,7 @@ const InputBlock = ({
     {hasError !== undefined ? (
       <React.Fragment>
         <div className="g-inputBlock-error-message" id={errorId}>
+          <span className="g-inputBlock-visually-hidden">Error: </span>
           {error !== undefined ? (
             error
           ) : (

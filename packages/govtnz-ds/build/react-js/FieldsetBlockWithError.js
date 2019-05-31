@@ -29,7 +29,9 @@ var FieldsetBlockWithError = function FieldsetBlockWithError(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text")), _react["default"].createElement("div", {
     className: "g-fieldsetBlockWithError-error-message",
     id: errorId
-  }, error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text")), _react["default"].createElement("div", {
+  }, _react["default"].createElement("span", {
+    className: "g-fieldsetBlockWithError-visually-hidden"
+  }, "Error:", " "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text")), _react["default"].createElement("div", {
     className: "g-fieldsetBlockWithError-children"
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };

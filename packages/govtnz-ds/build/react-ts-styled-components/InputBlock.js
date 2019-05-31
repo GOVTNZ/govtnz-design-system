@@ -97,6 +97,19 @@ const StyledDiv3 = styled.div `
     line-height: 1.15;
   }
 `;
+const StyledSpan = styled.span `
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+`;
 const StyledInput = styled.input `font-family: Arial, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -249,7 +262,9 @@ const InputBlock = ({ hasError, inputId, label, hintId, hint, errorId, error, wi
     React.createElement(StyledLabel, { htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
     React.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))),
     hasError !== undefined ? (React.createElement(React.Fragment, null,
-        React.createElement(StyledDiv3, { id: errorId }, error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
+        React.createElement(StyledDiv3, { id: errorId },
+            React.createElement(StyledSpan, null, "Error: "),
+            error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
     React.createElement(StyledInput, { width: width, hasError: hasError, fakeFocus: fakeFocus, "aria-describedby": hintId !== undefined || errorId !== undefined
             ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
             : undefined, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));

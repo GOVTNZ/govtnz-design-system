@@ -94,6 +94,20 @@ const StyledDiv3 = styled.div`
   }
 `;
 
+const StyledSpan = styled.span`
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+`;
+
 const StyledInput = styled.input`font-family: Arial, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -290,6 +304,7 @@ const InputBlock = ({
     {hasError !== undefined ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
+          <StyledSpan>Error: </StyledSpan>
           {error !== undefined ? (
             error
           ) : (

@@ -16,6 +16,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-fieldsetBlockWithError-form-group g-fieldsetBlockWithError-form-group--error"},[_c(\'fieldset\',{staticClass:"g-fieldset",attrs:{"aria-describedby":computed__ariaDescribedby}},[_c(\'legend\',{staticClass:"g-fieldset__legend"},[_t("legend")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-error-message",attrs:{"id":errorId}},[_t("error")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-children"},[_t("default")],2)])])}'
+    'with(this){return _c(\'div\',{staticClass:"g-fieldsetBlockWithError-form-group g-fieldsetBlockWithError-form-group--error"},[_c(\'fieldset\',{staticClass:"g-fieldset",attrs:{"aria-describedby":computed__ariaDescribedby}},[_c(\'legend\',{staticClass:"g-fieldset__legend"},[_t("legend")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-fieldsetBlockWithError-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'div\',{staticClass:"g-fieldsetBlockWithError-children"},[_t("default")],2)])])}'
   )
 });

@@ -13,6 +13,16 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject6() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject5() {
   var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n"]);
 
@@ -73,6 +83,8 @@ var StyledDiv2 = _styledComponents["default"].div(_templateObject4());
 
 var StyledDiv3 = _styledComponents["default"].div(_templateObject5());
 
+var StyledSpan = _styledComponents["default"].span(_templateObject6());
+
 var FieldsetBlockWithError = function FieldsetBlockWithError(_ref) {
   var hintId = _ref.hintId,
       errorId = _ref.errorId,
@@ -86,7 +98,7 @@ var FieldsetBlockWithError = function FieldsetBlockWithError(_ref) {
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text")), _react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text")), _react["default"].createElement("div", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
+  }, _react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text")), _react["default"].createElement("div", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };
 
 FieldsetBlockWithError.props = ["hintId", "errorId", "legend", "hint", "error", "children"];

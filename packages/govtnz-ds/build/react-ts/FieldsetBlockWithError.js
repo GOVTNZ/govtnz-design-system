@@ -14,7 +14,11 @@ const FieldsetBlockWithError = ({ hintId, errorId, legend, hint, error, children
             : undefined, className: "g-fieldset" },
         React.createElement("legend", { className: "g-fieldset__legend" }, legend !== undefined ? (legend) : (React.createElement(React.Fragment, null, "Legend text"))),
         React.createElement("div", { className: "g-fieldsetBlockWithError-hint", id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text")),
-        React.createElement("div", { className: "g-fieldsetBlockWithError-error-message", id: errorId }, error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))),
+        React.createElement("div", { className: "g-fieldsetBlockWithError-error-message", id: errorId },
+            React.createElement("span", { className: "g-fieldsetBlockWithError-visually-hidden" },
+                "Error:",
+                " "),
+            error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))),
         React.createElement("div", { className: "g-fieldsetBlockWithError-children" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Fieldset contents"))))));
 FieldsetBlockWithError.props = [
     "hintId",

@@ -102,7 +102,9 @@ const InputBlock = ({ hasError, inputId, label, hintId, hint, errorId, error, wi
     React.createElement("label", { className: "g-inputBlock-label", htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
     React.createElement("div", { className: "g-inputBlock-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))),
     hasError !== undefined ? (React.createElement(React.Fragment, null,
-        React.createElement("div", { className: "g-inputBlock-error-message", id: errorId }, error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
+        React.createElement("div", { className: "g-inputBlock-error-message", id: errorId },
+            React.createElement("span", { className: "g-inputBlock-visually-hidden" }, "Error: "),
+            error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
     React.createElement("input", { "aria-describedby": hintId !== undefined || errorId !== undefined
             ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
             : undefined, className: `g-inputBlock-input${constants.width[width] !== undefined ? " " + constants.width[width] : ""}${hasError ? " g-inputBlock-input--error" : ""}${fakeFocus ? " :focus" : ""}`, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));

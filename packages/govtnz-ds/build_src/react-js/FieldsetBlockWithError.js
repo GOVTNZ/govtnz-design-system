@@ -28,6 +28,9 @@ const FieldsetBlockWithError = ({
         {hint !== undefined ? hint : <React.Fragment>Hint text</React.Fragment>}
       </div>
       <div className="g-fieldsetBlockWithError-error-message" id={errorId}>
+        <span className="g-fieldsetBlockWithError-visually-hidden">
+          Error:{" "}
+        </span>
         {error !== undefined ? (
           error
         ) : (

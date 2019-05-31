@@ -109,13 +109,28 @@ const StyledDiv3 = styled.div `
     line-height: 1.15;
   }
 `;
+const StyledSpan = styled.span `
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+`;
 const FieldsetBlockWithError = ({ hintId, errorId, legend, hint, error, children }) => (React.createElement(StyledDiv, null,
     React.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
             ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
             : undefined },
         React.createElement(StyledLegend, null, legend !== undefined ? (legend) : (React.createElement(React.Fragment, null, "Legend text"))),
         React.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text")),
-        React.createElement(StyledDiv3, { id: errorId }, error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))),
+        React.createElement(StyledDiv3, { id: errorId },
+            React.createElement(StyledSpan, null, "Error: "),
+            error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))),
         React.createElement("div", null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Fieldset contents"))))));
 FieldsetBlockWithError.props = [
     "hintId",
