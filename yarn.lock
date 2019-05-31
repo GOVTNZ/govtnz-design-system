@@ -6573,6 +6573,13 @@ gatsby-plugin-google-gtag@^1.0.17:
     "@babel/runtime" "^7.0.0"
     minimatch "^3.0.4"
 
+gatsby-plugin-google-tagmanager@^2.0.15:
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-tagmanager/-/gatsby-plugin-google-tagmanager-2.0.15.tgz#11bc4e0a96aae55b434b7a6dd32f6aedf8e686fb"
+  integrity sha512-Qz6KuEXqD1m/d3KSkKlypSMidJQtA06NWB35qTHXfLTSWrkrylyKRTuZc1/+KsrU9AzsgGsdVNHcQXHO7NQLkQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-manifest@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.1.1.tgz#e987d6e655b1dcfba6e10d65ff20722aaeb75391"

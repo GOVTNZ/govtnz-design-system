@@ -9,6 +9,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: CONSTANTS.GA_TAG_MANAGER_ID,
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
