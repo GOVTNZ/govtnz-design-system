@@ -223,6 +223,13 @@ const main = async () => {
     metaTemplateInputsById
   );
 
+  filesToDelete = await generateContentPages(
+    'patterns',
+    templateFormatsById,
+    filesToDelete,
+    metaTemplateInputsById
+  );
+
   await cleanUp(filesToDelete);
 };
 

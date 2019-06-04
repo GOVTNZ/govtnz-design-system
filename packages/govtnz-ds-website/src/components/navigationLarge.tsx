@@ -13,7 +13,7 @@ const NavigationLarge = () => {
             <NavigationItem to="/get-started/" label="Get started" />
             <NavigationItem to="/basics/" label="Basics" />
             <NavigationItem to="/components/" label="Components" />
-            <NavigationItem to="/patterns/" label="Patterns" disabled={true} />
+            <NavigationItem to="/patterns/" label="Patterns" />
             <NavigationItem
               to="/community/"
               label="Community"
