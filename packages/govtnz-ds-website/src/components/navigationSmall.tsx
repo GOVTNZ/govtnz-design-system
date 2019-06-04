@@ -109,14 +109,12 @@ class NavigationSmall extends React.Component<Props, State> {
                 <NavigationItem
                   to="/patterns/"
                   label="Patterns"
-                  disabled={true}
                 />
                 <NavigationItem
                   to="/community/"
                   label="Community"
-                  disabled={true}
                 />
-                <NavigationItem to="/about/" label="About" disabled={true} />
+                <NavigationItem to="/about/" label="About" />
               </ul>
             </div>
           </div>
