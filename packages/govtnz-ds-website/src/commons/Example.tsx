@@ -77,7 +77,8 @@ export default class Example extends Component<Props, State> {
     setTimeout(redrawCode, 750);
   };
 
-  copyToClipboard = () => {
+  copyToClipboard = e => {
+    e.preventDefault();
     const { code } = this.props;
     const { formatId } = this.state;
     const rawCode = code[formatId];
