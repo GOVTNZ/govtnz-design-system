@@ -6,6 +6,11 @@ type Props = {
   className?: string | undefined;
 };
 
+const KEYS = {
+  ENTER: 13,
+  SPACE: 32
+};
+
 export default function Summary({ children, className }: Props) {
   return (
     <Context.Consumer>
@@ -18,6 +23,12 @@ export default function Summary({ children, className }: Props) {
             onClick={e => {
               e.preventDefault();
               value.setIsOpen(!value.isOpen);
+            }}
+            onKeyDown={e => {
+              if ([KEYS.ENTER, KEYS.SPACE].indexOf(e.keyCode) !== -1) {
+                e.preventDefault();
+                value.setIsOpen(!value.isOpen);
+              }
             }}
             className={className || undefined}
           >
