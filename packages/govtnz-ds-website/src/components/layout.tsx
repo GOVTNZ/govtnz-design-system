@@ -2,7 +2,6 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import Header from './header';
 import Footer from './footer';
-import Analytics from './analytics';
 import '../commons/styles/elements-global.scss';
 import '../commons/styles/elements-typography.scss';
 import '../commons/styles/overrides-typography.scss';
@@ -28,7 +27,6 @@ const Layout = ({ children }: Props) => (
     `}
     render={data => (
       <>
-        <Analytics />
         <Header siteTitle={data.site.siteMetadata.title} />
         <main role="main" id="main-content" className="main-content">
           {children}
