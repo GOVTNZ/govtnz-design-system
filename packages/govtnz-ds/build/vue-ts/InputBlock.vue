@@ -9,6 +9,10 @@
     </div>
 
     <div class="g-inputBlock-error-message" v-bind:id="errorId">
+      <span class="g-inputBlock-visually-hidden">
+        Error:
+      </span>
+
       <slot name="error"></slot>
     </div>
 
@@ -454,5 +458,18 @@ export default Vue.extend({
 }
 .g-inputBlock-input--width-2 {
   max-width: 5.4ex;
+}
+.g-inputBlock-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 </style>

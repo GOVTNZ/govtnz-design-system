@@ -176,7 +176,7 @@ export const govukToMetaTemplateInput = async (
       html = `<div class="g-form-group {{ hasError!?: g-form-group--error }}">
       <label class="g-label" for="inputId"><mt-variable key="label">Example text</mt-variable></label>
       <div class="g-hint" id="hintId"><mt-variable key="hint">Example text</mt-variable></div>
-      <mt-if key="!hasError"><div class="g-error-message" id="errorId"><mt-variable key="error">Example text</mt-variable></div></mt-if>
+      <mt-if key="!hasError"><div class="g-error-message" id="errorId"><span class="g-visually-hidden">Error: </span><mt-variable key="error">Example text</mt-variable></div></mt-if>
       <input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ hasError!?: g-input--error }} {{ fakeFocus?: :focus }}" id="inputId" name="test-name-3" type="text" aria-describedby="hintId errorId">
     </div>`;
       // Derive a version that's just the input tag
@@ -227,7 +227,7 @@ export const govukToMetaTemplateInput = async (
         <fieldset class="g-fieldset" aria-describedby="hintId errorId">
           <legend class="g-fieldset__legend"><mt-variable key="legend">Legend text</mt-variable></legend>
           <div class="g-hint" id="hintId"><mt-variable key="hint">Hint text</mt-variable></div>
-          <div class="g-error-message" id="errorId"><mt-variable key="error">Error text</mt-variable></div>
+          <div class="g-error-message" id="errorId"><span class="g-visually-hidden">Error: </span><mt-variable key="error">Error text</mt-variable></div>
           <div class="g-children"><mt-variable key="children">Fieldset contents</mt-variable></div>
         </fieldset>
       </div>`

@@ -23,6 +23,11 @@ id="{{ hintId | escape('html_attr') }}"
 class="g-inputBlock-error-message"
 id="{{ errorId | escape('html_attr') }}"
 >
+<span
+class="g-inputBlock-visually-hidden"
+>
+  Error: 
+</span>
 {% block error %}Example text{% endblock %}
 </div>
   

@@ -130,7 +130,9 @@ var InputBlock = function InputBlock(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-error-message",
     id: errorId
-  }, error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement("input", {
+  }, _react["default"].createElement("span", {
+    className: "g-inputBlock-visually-hidden"
+  }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement("input", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(hasError ? " g-inputBlock-input--error" : "").concat(fakeFocus ? " :focus" : ""),
     id: inputId,

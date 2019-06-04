@@ -241,6 +241,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
+    'with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-inputBlock-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
   )
 });

@@ -4,7 +4,7 @@
 </legend> 
           <div class="g-fieldsetBlockWithError-hint"<% if $hintId %> id="{$hintId}"<% end_if %>> {$hint}
 </div> 
-          <div class="g-fieldsetBlockWithError-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> {$error}
+          <div class="g-fieldsetBlockWithError-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> <span class="g-fieldsetBlockWithError-visually-hidden"> Error: </span> {$error}
 </div> 
           <div class="g-fieldsetBlockWithError-children"> {$children}
 </div> 
