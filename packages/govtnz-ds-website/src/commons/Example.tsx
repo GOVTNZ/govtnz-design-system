@@ -50,7 +50,7 @@ export default class Example extends Component<Props, State> {
       hasClickedExpand: false,
       copyingMode: false,
       supportsJavaScript: false,
-      supportsClipboard: true,
+      supportsClipboard: false,
     };
   }
 
