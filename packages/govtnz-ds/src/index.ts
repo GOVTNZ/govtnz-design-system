@@ -27,6 +27,7 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
+// import getSilverStripe4Files from './template-formats/silverstripe-4/silverstripe-4';
 
 ensureNodeVersion();
 
@@ -60,6 +61,8 @@ async function main(
       'Building release with cache. Use `--no-cache` to disable cache.'
     );
   }
+
+  // const silverStripe4Files = await getSilverStripe4Files();
 
   const releaseSpecItems: ReleaseSpecItem[] = JSON.parse(specString);
   const release: ReleaseItem[] = [];
@@ -102,12 +105,20 @@ async function main(
     fileKeys: Object.keys(allFiles),
     cssVariables
   });
-  // const compilationFiles = await makeCompilation(release);
-  const nonComponentDocs = await makeNonComponentDocs(allFiles);
-
-  let files = safeMerge(allFiles, indexImports, nonComponentDocs);
 
   const isCompleteRelease = !patternIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
+
+  // Disabling compilation files until specific ticket to reenable
+  // because we're unclear of the features users want.
+  // const compilationFiles = await makeCompilation(release);
+
+  const nonComponentDocs = await makeNonComponentDocs(allFiles);
+  let files = safeMerge(
+    allFiles,
+    indexImports,
+    nonComponentDocs
+    // silverStripe4Files
+  );
 
   await saveRelease(
     mode,
