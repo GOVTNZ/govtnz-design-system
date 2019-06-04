@@ -9,6 +9,7 @@ import {
   SelectExampleFormat,
   highlightCode,
   CodeToName,
+  trackFormat,
 } from './code-previews';
 
 type Props = {
@@ -114,10 +115,11 @@ export default class Example extends Component<Props, State> {
   };
 
   clickFormat = () => {
-    const { hasClickedExpand } = this.state;
+    const { hasClickedExpand, formatId } = this.state;
     if (hasClickedExpand) {
       return;
     }
+    trackFormat(formatId);
     this.setState({ hasClickedExpand: true });
     this.resetFormatChoice();
   };

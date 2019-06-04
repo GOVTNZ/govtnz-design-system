@@ -6,7 +6,10 @@ import './prism-theme.css';
 import './styles/components-example.scss';
 
 const LSKEY = 'ds:user-metatemplateid';
-const GA_EVENT_TARGET = `gtag_${CONSTANTS.GA_MEASUREMENT_ID.replace(new RegExp('-', 'g'), '_')}`;
+const GA_EVENT_TARGET = `gtag_${CONSTANTS.GA_MEASUREMENT_ID.replace(
+  new RegExp('-', 'g'),
+  '_'
+)}`;
 
 let preferredFormatId: string = 'html';
 
@@ -36,7 +39,11 @@ function createFunctionWithTimeout(callback, opt_timeout?: number | undefined) {
 export const setPreferredFormat = (formatId: string): string => {
   preferredFormatId = formatId;
   localStorageWrapper.setItem(LSKEY, formatId);
+  trackFormat(formatId);
+  return preferredFormatId;
+};
 
+export const trackFormat = (formatId: string) => {
   // Stats...
   const eventId = 'template-format-change';
   const GA_eventArgs = [
@@ -79,8 +86,6 @@ export const setPreferredFormat = (formatId: string): string => {
     ' given to ',
     window['dataLayer']
   );
-
-  return preferredFormatId;
 };
 
 type SelectProps = {
