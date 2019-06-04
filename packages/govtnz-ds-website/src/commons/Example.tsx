@@ -10,6 +10,7 @@ import {
   highlightCode,
   CodeToName,
 } from './code-previews';
+import Icon from '../components/Icon';
 
 type Props = {
   children: React.ReactNode;
@@ -150,12 +151,11 @@ export default class Example extends Component<Props, State> {
                   Template format:{' '}
                 </label>
                 <span className="example__select">
-                  <svg
+                  <Icon
                     className="example__select-icon-down"
                     role="presentation"
-                  >
-                    <use xlinkHref={`#${iconDown.id}`} />
-                  </svg>
+                    id={iconDown.id}
+                  />
                   <SelectExampleFormat
                     id={id}
                     formatId={formatId}
@@ -264,12 +264,11 @@ export default class Example extends Component<Props, State> {
               <Summary className="example__summary">
                 <h5 className="example__summary-button">
                   Code
-                  <svg
+                  <Icon
                     className="example__summary-icon-down icon icon--theme-highlight"
                     role="presentation"
-                  >
-                    <use xlinkHref={`#${iconDown.id}`} />
-                  </svg>
+                    id={iconDown.id}
+                  />
                 </h5>
               </Summary>
               {codePreview}
