@@ -237,6 +237,13 @@ const main = async () => {
     metaTemplateInputsById
   );
 
+  filesToDelete = await generateContentPages(
+    'about',
+    templateFormatsById,
+    filesToDelete,
+    metaTemplateInputsById
+  );
+
   await cleanUp(filesToDelete);
 };
 

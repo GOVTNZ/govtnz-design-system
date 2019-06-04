@@ -18,7 +18,7 @@ const NavigationLarge = () => {
               to="/community/"
               label="Community"
             />
-            <NavigationItem to="/about/" label="About" disabled={true} />
+            <NavigationItem to="/about/" label="About" />
           </ul>
         </Row>
       </Container>
