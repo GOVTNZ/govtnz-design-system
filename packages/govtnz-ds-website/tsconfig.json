@@ -1,18 +1,18 @@
 {
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "src/**/*.test.ts", "src/**/*.test.tsx"],
   "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": false,
     "module": "commonjs",
     "target": "esnext",
-    "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
-    "strict": false,
-    "noEmit": true,
-    "isolatedModules": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": false,
-    "preserveConstEnums": true
-  },
-  "include": ["./src/**/*"]
+    "lib": ["es2015", "es2016", "es2017", "dom"]
+  }
 }
