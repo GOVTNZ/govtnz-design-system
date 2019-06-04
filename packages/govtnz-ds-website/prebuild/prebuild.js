@@ -230,6 +230,13 @@ const main = async () => {
     metaTemplateInputsById
   );
 
+  filesToDelete = await generateContentPages(
+    'community',
+    templateFormatsById,
+    filesToDelete,
+    metaTemplateInputsById
+  );
+
   await cleanUp(filesToDelete);
 };
 
