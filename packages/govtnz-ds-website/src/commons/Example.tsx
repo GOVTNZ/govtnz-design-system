@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Details, Summary } from 'react-accessible-details';
-import copyToClipboard from 'copy-text-to-clipboard';
+import copyToClipboard from './copy-text-to-clipboard';
 import './styles/clipboard.css';
 import iconDown from './svgs/icon-down.svg';
 import A from '@govtnz/ds/build/react-ts/A';
@@ -104,7 +104,6 @@ export default class Example extends Component<Props, State> {
         }, 10000);
       }, 75);
     }, 75);
-    console.log(rawCode);
   };
 
   resetCopyToClipboard = () => {
@@ -153,6 +152,7 @@ export default class Example extends Component<Props, State> {
                   <svg
                     className="example__select-icon-down"
                     role="presentation"
+                    focusable="false"
                   >
                     <use xlinkHref={`#${iconDown.id}`} />
                   </svg>
@@ -267,6 +267,7 @@ export default class Example extends Component<Props, State> {
                   <svg
                     className="example__summary-icon-down icon icon--theme-highlight"
                     role="presentation"
+                    focusable="false"
                   >
                     <use xlinkHref={`#${iconDown.id}`} />
                   </svg>
