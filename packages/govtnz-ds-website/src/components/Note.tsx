@@ -1,6 +1,6 @@
 import React from 'react';
 import Icon from './Icon';
-import IcfoIcon from '../commons/svgs/icon-info.svg';
+import InfoIcon from '../commons/svgs/icon-info.svg';
 import './Note.scss';
 
 type Props = {
@@ -13,7 +13,7 @@ const Note = ({ children }: Props) => (
       <Icon
         className="note__icon"
         role="presentation"
-        id={IcfoIcon.id}
+        id={InfoIcon.id}
       />
     </div>
     <div className="note__content">{children}</div>
