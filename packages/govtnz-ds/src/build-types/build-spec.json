@@ -15,7 +15,6 @@
       "input__with-error-message",
       "inset-text",
       "radios__with-hints-on-items",
-      "button__disabled",
       "radios__with-all-fieldset-attributes",
       "back-link__with-custom-text",
       "character-count__with-custom-rows",
@@ -58,6 +57,19 @@
       "textarea__with-label-as-page-heading",
       "textarea__with-optional-form-group-classes",
       "warning-text"
+    ]
+  },
+  {
+    "sourceId": "govuk",
+    "version": "2.12.0",
+    "patternIds": [
+      "button",
+      "button__disabled",
+      "button__secondary",
+      "button__warning",
+      "button__with-active-state",
+      "button__with-focus-state",
+      "button__with-hover-state"
     ]
   },
   {
