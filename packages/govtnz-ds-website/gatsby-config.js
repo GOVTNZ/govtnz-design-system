@@ -1,4 +1,5 @@
 const path = require('path');
+const CONSTANTS = require('./src/commons/constants.json');
 
 module.exports = {
   siteMetadata: {
@@ -7,6 +8,24 @@ module.exports = {
     author: `New Zealand Government`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: CONSTANTS.GA_TAG_MANAGER_ID,
+        includeInDevelopment: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          CONSTANTS.GA_MEASUREMENT_ID,
+        ],
+        pluginConfig: {
+          head: false,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-compile-es6-packages`,
       options: {
