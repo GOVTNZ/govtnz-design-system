@@ -161,7 +161,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <h4 id="if-nothing-is-selected-and-the-question-does-not-include-options-h4">If nothing is selected and the question does not include options [H4]</h4>
 <p>Say ‘Select [whatever it is]’. For example, ‘Select the day of the week you pay your rent’.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

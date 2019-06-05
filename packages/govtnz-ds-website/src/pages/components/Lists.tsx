@@ -89,7 +89,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
 <p>If you’re asking just one question per page as recommended, you can set the contents of the <code>&lt;label&gt;</code> as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
 <p>Read more about why and how to set legends as headings.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

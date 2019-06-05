@@ -81,4 +81,4 @@ Captions can be either _before_ or _inside_ headings.
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

@@ -160,7 +160,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <h4 id="if-the-input-is-an-amount-of-money-that-must-not-have-decimals">If the input is an amount of money that must not have decimals</h4>
 <p>Say ‘[whatever it is] must not include cents, like 123 or 156’. For example, ‘How much you earn a week must not include cents, like 123 or 156’.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

@@ -34,7 +34,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
 </ExampleContainer>
 
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

@@ -29,4 +29,4 @@ Before deciding to use a select component, do some research with users to find o
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

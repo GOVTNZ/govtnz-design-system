@@ -13,4 +13,4 @@ First choose a heading level based on the structure of your page, and then choos
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

@@ -42,7 +42,7 @@ const PageContent = (props) => <React.Fragment><p>The select component (sometime
 <p>The select component allows users to choose an option from a list, usually more than 6 and fewer than 15 options.</p>
 <p>Before deciding to use a select component, do some research with users to find out if fewer options are feasible. If you can reduce the list to 6 items or fewer, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

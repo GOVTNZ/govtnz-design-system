@@ -90,7 +90,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <p>Another example of pre-selected ordering is listing options chronologically. For example, you could order possible time periods for contact from earliest to latest, so users can select the periods that suit them best.</p>
 <p>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {
