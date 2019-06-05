@@ -6,6 +6,7 @@ import '../commons/styles/components/icon.scss'
 import '../commons/styles/components/button.scss'
 import '../commons/styles/components/utilities.scss'
 import SearchIcon from '../commons/svgs/icon-search.svg'
+import Icon from '../components/Icon';
 
 class Search extends React.Component {
   constructor(props) {
@@ -34,9 +35,11 @@ class Search extends React.Component {
             />
             <div className="input-group__append">
               <Button aria-label="Submit">
-                <svg className="icon icon--white" role="presentation">
-                  <use xlinkHref={`#${SearchIcon.id}`} />
-                </svg>
+                <Icon
+                  className="icon icon--white"
+                  role="presentation"
+                  id={SearchIcon.id}
+                />
               </Button>
             </div>
           </div>
