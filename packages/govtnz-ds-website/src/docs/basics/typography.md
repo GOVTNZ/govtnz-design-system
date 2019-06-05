@@ -207,4 +207,4 @@ You do not need a lead-in line for numbered lists, although a summary sentence c
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

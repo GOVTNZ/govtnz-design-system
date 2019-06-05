@@ -75,4 +75,4 @@ Read more about why and how to set legends as headings.
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

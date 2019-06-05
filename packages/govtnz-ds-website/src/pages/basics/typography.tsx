@@ -229,7 +229,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Use numbered lists instead of bulleted lists when the order of the items is relevant.</p>
 <p>You do not need a lead-in line for numbered lists, although a summary sentence can be helpful for users. If numbered items are complete sentences, use full stops at the end.</p>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

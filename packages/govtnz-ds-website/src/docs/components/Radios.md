@@ -149,4 +149,4 @@ Say ‘Select [whatever it is]’. For example, ‘Select the day of the week yo
 
 ## Credit
 
-Original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
