@@ -1,10 +1,9 @@
 .g-button {
-  font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  font-family: National2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.2;
   box-sizing: border-box;
   display: inline-block;
@@ -14,11 +13,12 @@
   margin-bottom: 22px;
   padding: 16px;
   border: 2px solid transparent;
-  border-radius: 2px;
-  color: black;
+  border-radius: 4px;
+  color: #ffffff;
+  color: var(--g-theme-color-white, #ffffff);
   background-color: #00823b;
-  background-color: var(--g-theme-color-brand-2, #00823b);
-  box-shadow: none;
+  background-color: var(--g-theme-button-color, #078766);
+  box-shadow: 0 2px 0 0 #2a2a2a;
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -79,8 +79,8 @@
 
 .g-button:hover,
 .g-button:focus {
-  background-color: #00692f;
-  background-color: var(--g-theme-color-brand-4, #00692f);
+  background-color: #00682f;
+  background-color: var(--g-theme-button-color-hover-focus, #0c6c53);
 }
 
 .g-button:active {
@@ -107,13 +107,13 @@
 .g-button[disabled] {
   opacity: 0.5;
   background: #00823b;
-  background: var(--g-theme-color-brand-2, #00823b);
+  background: var(--g-theme-button-color, #078766);
 }
 
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
   background-color: #00823b;
-  background-color: var(--g-theme-color-brand-2, #00823b);
+  background-color: var(--g-theme-button-color, #078766);
   cursor: default;
 }
 
@@ -125,8 +125,48 @@
 .g-button--disabled:active,
 .g-button[disabled]:active {
   top: 0;
-  box-shadow: 0 2px 0 #003618;
-  box-shadow: 0 2px 0 var(--g-theme-color-brand-3, #003618);
+  box-shadow: 0 2px 0 #003418;
+}
+
+.g-button--secondary {
+  background-color: #dee0e2;
+  background-color: var(--g-theme-button-color-secondary, #d3d3d3);
+  box-shadow: 0 2px 0 #858688;
+}
+
+.g-button--secondary,
+.g-button--secondary:link,
+.g-button--secondary:visited,
+.g-button--secondary:active,
+.g-button--secondary:hover {
+  color: #0b0c0c;
+}
+
+.g-button--secondary:hover,
+.g-button--secondary:focus {
+  background-color: #c8cacb;
+  background-color: var(--g-theme-button-color-secondary-hover-focus, #b2b2b2);
+}
+
+.g-button--warning {
+  background-color: #b10e1e;
+  background-color: var(--g-theme-button-color-warning, #b10e1e);
+  box-shadow: 0 2px 0 #47060c;
+}
+
+.g-button--warning,
+.g-button--warning:link,
+.g-button--warning:visited,
+.g-button--warning:active,
+.g-button--warning:hover {
+  color: #ffffff;
+  color: var(--g-theme-color-white, #ffffff);
+}
+
+.g-button--warning:hover,
+.g-button--warning:focus {
+  background-color: #8e0b18;
+  background-color: var(--g-theme-button-color-warning-hover-focus, #900815);
 }
 
 .g-button {

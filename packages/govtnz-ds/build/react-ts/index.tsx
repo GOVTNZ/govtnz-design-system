@@ -4,7 +4,6 @@ export const A = () => import("./A");
 export const BackLinkWithCustomText = () => import("./BackLinkWithCustomText");
 export const BreadcrumbsWithLastBreadcrumbAsCurrentPage = () => import("./BreadcrumbsWithLastBreadcrumbAsCurrentPage");
 export const Breadcrumbs = () => import("./Breadcrumbs");
-export const Button = () => import("./Button");
 export const CaptionL = () => import("./CaptionL");
 export const CaptionM = () => import("./CaptionM");
 export const CaptionXl = () => import("./CaptionXl");
@@ -72,6 +71,7 @@ export const TextareaWithOptionalFormGroupClasses = () => import("./TextareaWith
 export const Textarea = () => import("./Textarea");
 export const Ul = () => import("./Ul");
 export const WarningText = () => import("./WarningText");
+export const Button = () => import("./Button");
 export const FlexColumn = () => import("./FlexColumn");
 export const FlexContainer = () => import("./FlexContainer");
 export const FlexRow = () => import("./FlexRow");

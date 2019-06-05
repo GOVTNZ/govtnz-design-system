@@ -12,7 +12,6 @@ exports.A = () => Promise.resolve().then(() => __importStar(require("./A")));
 exports.BackLinkWithCustomText = () => Promise.resolve().then(() => __importStar(require("./BackLinkWithCustomText")));
 exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = () => Promise.resolve().then(() => __importStar(require("./BreadcrumbsWithLastBreadcrumbAsCurrentPage")));
 exports.Breadcrumbs = () => Promise.resolve().then(() => __importStar(require("./Breadcrumbs")));
-exports.Button = () => Promise.resolve().then(() => __importStar(require("./Button")));
 exports.CaptionL = () => Promise.resolve().then(() => __importStar(require("./CaptionL")));
 exports.CaptionM = () => Promise.resolve().then(() => __importStar(require("./CaptionM")));
 exports.CaptionXl = () => Promise.resolve().then(() => __importStar(require("./CaptionXl")));
@@ -80,6 +79,7 @@ exports.TextareaWithOptionalFormGroupClasses = () => Promise.resolve().then(() =
 exports.Textarea = () => Promise.resolve().then(() => __importStar(require("./Textarea")));
 exports.Ul = () => Promise.resolve().then(() => __importStar(require("./Ul")));
 exports.WarningText = () => Promise.resolve().then(() => __importStar(require("./WarningText")));
+exports.Button = () => Promise.resolve().then(() => __importStar(require("./Button")));
 exports.FlexColumn = () => Promise.resolve().then(() => __importStar(require("./FlexColumn")));
 exports.FlexContainer = () => Promise.resolve().then(() => __importStar(require("./FlexContainer")));
 exports.FlexRow = () => Promise.resolve().then(() => __importStar(require("./FlexRow")));

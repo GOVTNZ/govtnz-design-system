@@ -15,7 +15,7 @@
 .g-inputBlock-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
-  border-left: 5px solid var(--g-theme-color-dark2, #b10e1e);
+  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-inputBlock-form-group--error .g-inputBlock-form-group {
@@ -35,7 +35,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
-  color: var(--g-theme-color-dark2, #b10e1e);
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {
@@ -194,7 +194,7 @@
 
 .g-inputBlock-input--error {
   border: 1px solid #b10e1e;
-  border: 1px solid var(--g-theme-color-dark2, #b10e1e);
+  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-inputBlock-input--width-30 {

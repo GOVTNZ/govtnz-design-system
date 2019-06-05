@@ -1,6 +1,7 @@
 import Vue from "vue";
 
 const constants = {
+  kind: { secondary: "g-button--secondary", warning: "g-button--warning" },
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
@@ -8,6 +9,13 @@ export default Vue.extend({
   functional: true, // no internal state
   props: {
     disabled: { type: Boolean, default: false, required: false },
+    kind: {
+      type: String,
+      validator: value => {
+        return ["secondary", "warning"].indexOf(value) !== -1;
+      },
+      required: true
+    },
     name: { type: String, required: false },
     type: {
       type: String,
@@ -16,14 +24,21 @@ export default Vue.extend({
       },
       required: false
     },
-    children: { required: false, default: "Example text" }
+    children: {
+      required: false,
+      default: "\n            Example text\n          "
+    }
   },
   computed: {
     computed__ariaDisabled() {
       return this.disabled ? "true" : "";
     },
     computed__class() {
-      return "g-button" + (this.disabled ? " g-button--disabled" : "");
+      return (
+        "g-button" +
+        (this.disabled ? " g-button--disabled" : "") +
+        (constants[this.kind] !== undefined ? ` ${constants[this.kind]}` : "")
+      );
     },
     computed__disabled() {
       return this.disabled ? "true" : "";

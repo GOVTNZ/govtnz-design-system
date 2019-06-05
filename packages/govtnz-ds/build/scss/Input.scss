@@ -52,8 +52,9 @@
 }
 
 .g-input--error {
-  border: 1px solid $g-theme-color-dark2;
-  border: 1px solid var(--g-theme-color-dark2, $g-theme-color-dark2);
+  border: 1px solid $g-theme-button-color-warning;
+  border: 1px solid
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-input--width-30 {

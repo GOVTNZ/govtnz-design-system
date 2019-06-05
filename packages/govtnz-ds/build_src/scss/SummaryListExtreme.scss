@@ -292,8 +292,8 @@
 .g-summaryListExtreme-error-summary__list a:visited,
 .g-summaryListExtreme-error-summary__list a:hover,
 .g-summaryListExtreme-error-summary__list a:active {
-  color: $g-theme-color-dark2;
-  color: var(--g-theme-color-dark2, $g-theme-color-dark2);
+  color: $g-theme-button-color-warning;
+  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-summaryListExtreme-error-summary__list a:focus {

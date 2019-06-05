@@ -166,11 +166,29 @@ export const govukToMetaTemplateInput = async (
       html = `<a class="g-back-link" href="#"><mt-variable key="children">Example text</mt-variable></a>`;
       break;
     }
-    case 'button__disabled': {
+
+    case 'button':
+    case 'button__disabled':
+    case 'button__with-active-state':
+    case 'button__with-focus-state':
+    case 'button__with-hover-state':
+    case 'button__secondary':
+    case 'button__warning': {
       id = 'button';
-      html = `<button class="g-button {{ disabled!?: g-button--disabled }}" type="submit" aria-disabled="{{ disabled!?: true }}" disabled="{{ disabled!?: true }}"><mt-variable key="children">Example text</mt-variable></button>`;
+      html = 
+        `<button
+          class="g-button {{ disabled!?: g-button--disabled }} {{ kind: g-button--secondary as secondary | g-button--warning as warning }}"
+          type="submit"
+          aria-disabled="{{ disabled!?: true }}"
+          disabled="{{ disabled!?: true }}"
+        >
+          <mt-variable key="children">
+            Example text
+          </mt-variable>
+        </button>`;
       break;
     }
+
     case 'input__with-error-message': {
       id = 'InputBlock';
       html = `<div class="g-form-group {{ hasError!?: g-form-group--error }}">
@@ -623,6 +641,11 @@ const atRuleToGovMediaCategory = (atRule: string): GovUkMediaCategory => {
     case '@media (min-width: 1020px)':
       return 'min-width-1024';
     case '@font-face':
+    case '@media screen':
+    case '@supports (margin: max(calc(0px)))':
+    case '@supports (padding: max(calc(0px)))':
+    case '@supports not (caret-color: auto)':
+    case '@media (hover: none), (pointer: coarse)':
       return undefined;
     default: {
       if (
@@ -759,9 +782,34 @@ const cssVariables: CSSVariablePattern[] = [
   },
   {
     id: 'g-theme-button-color',
-    valueSubstringMatch: 'BUTTON_COLOUR',
-    defaultValue: '#00823b'
-  }
+    valueSubstringMatch: '#00823b',
+    defaultValue: '#078766'
+  },
+  {
+    id: 'g-theme-button-color-hover-focus',
+    valueSubstringMatch: '#00682f',
+    defaultValue: '#0c6c53'
+  },
+  {
+    id: 'g-theme-button-color-secondary',
+    valueSubstringMatch: '#dee0e2',
+    defaultValue: '#d3d3d3'
+  },
+  {
+    id: 'g-theme-button-color-secondary-hover-focus',
+    valueSubstringMatch: '#c8cacb',
+    defaultValue: '#b2b2b2'
+  },
+  {
+    id: 'g-theme-button-color-warning',
+    valueSubstringMatch: '#b10e1e',
+    defaultValue: '#b10e1e'
+  },
+  {
+    id: 'g-theme-button-color-warning-hover-focus',
+    valueSubstringMatch: '#8e0b18',
+    defaultValue: '#900815'
+  },
 ];
 
 const govUKToGovtNZCSS = async (oldCSS: string) => {
@@ -876,8 +924,20 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-button',
-      'border-radius: 2px; font-weight: 500; line-height: 1.2; color: black; padding: 16px; padding-top: 16px; padding-bottom: 16px; box-shadow:none'
+      `
+        padding: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        font-family: National2;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 0 0 #2a2a2a;
+      `
     ],
+
     // BODY
     [
       'all',
@@ -887,11 +947,6 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
 
     // Fieldset
     ['all', '.g-fieldset__legend', 'margin-bottom: 0px'],
-    [
-      'all',
-      '.g-checkboxes__input + .g-checkboxes__label::before',
-      'border: 1px solid #000000'
-    ],
 
     // LINK
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.

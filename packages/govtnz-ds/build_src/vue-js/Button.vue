@@ -12,6 +12,7 @@
 import Vue from "vue";
 
 const constants = {
+  kind: { secondary: "g-button--secondary", warning: "g-button--warning" },
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
@@ -19,6 +20,13 @@ export default Vue.extend({
   functional: true, // no internal state
   props: {
     disabled: { type: Boolean, default: false, required: false },
+    kind: {
+      type: String,
+      validator: value => {
+        return ["secondary", "warning"].indexOf(value) !== -1;
+      },
+      required: true
+    },
     name: { type: String, required: false },
     type: {
       type: String,
@@ -27,14 +35,21 @@ export default Vue.extend({
       },
       required: false
     },
-    children: { required: false, default: "Example text" }
+    children: {
+      required: false,
+      default: "\n            Example text\n          "
+    }
   },
   computed: {
     computed__ariaDisabled() {
       return this.disabled ? "true" : "";
     },
     computed__class() {
-      return "g-button" + (this.disabled ? " g-button--disabled" : "");
+      return (
+        "g-button" +
+        (this.disabled ? " g-button--disabled" : "") +
+        (constants[this.kind] !== undefined ? ` ${constants[this.kind]}` : "")
+      );
     },
     computed__disabled() {
       return this.disabled ? "true" : "";
@@ -46,11 +61,11 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-button {
-  font-family: Arial, sans-serif;
+  font-family: National2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 20px;
   line-height: 1.2;
   box-sizing: border-box;
   display: inline-block;
@@ -60,10 +75,10 @@ export default Vue.extend({
   margin-bottom: 22px;
   padding: 16px;
   border: 2px solid transparent;
-  border-radius: 2px;
-  color: black;
+  border-radius: 4px;
+  color: #ffffff;
   background-color: #00823b;
-  box-shadow: none;
+  box-shadow: 0 2px 0 0 #2a2a2a;
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -113,7 +128,7 @@ export default Vue.extend({
 }
 .g-button:hover,
 .g-button:focus {
-  background-color: #00692f;
+  background-color: #00682f;
 }
 .g-button:active {
   top: 2px;
@@ -149,7 +164,37 @@ export default Vue.extend({
 .g-button--disabled:active,
 .g-button[disabled]:active {
   top: 0;
-  box-shadow: 0 2px 0 #003618;
+  box-shadow: 0 2px 0 #003418;
+}
+.g-button--secondary {
+  background-color: #dee0e2;
+  box-shadow: 0 2px 0 #858688;
+}
+.g-button--secondary,
+.g-button--secondary:link,
+.g-button--secondary:visited,
+.g-button--secondary:active,
+.g-button--secondary:hover {
+  color: #0b0c0c;
+}
+.g-button--secondary:hover,
+.g-button--secondary:focus {
+  background-color: #c8cacb;
+}
+.g-button--warning {
+  background-color: #b10e1e;
+  box-shadow: 0 2px 0 #47060c;
+}
+.g-button--warning,
+.g-button--warning:link,
+.g-button--warning:visited,
+.g-button--warning:active,
+.g-button--warning:hover {
+  color: #ffffff;
+}
+.g-button--warning:hover,
+.g-button--warning:focus {
+  background-color: #8e0b18;
 }
 .g-button {
   padding-top: 16px;

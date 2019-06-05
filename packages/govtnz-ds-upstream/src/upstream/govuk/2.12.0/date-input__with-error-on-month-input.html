@@ -1,0 +1,70 @@
+<div class="govuk-form-group govuk-form-group--error">
+  <fieldset
+    class="govuk-fieldset"
+    role="group"
+    aria-describedby="dob-month-error-hint dob-month-error-error"
+  >
+    <legend class="govuk-fieldset__legend">
+      What is your date of birth?
+    </legend>
+    <span class="govuk-hint" id="dob-month-error-hint">
+      For example, 31 3 1980
+    </span>
+    <span class="govuk-error-message" id="dob-month-error-error">
+      <span class="govuk-visually-hidden">Error:</span> Error message goes here
+    </span>
+    <div class="govuk-date-input" id="dob-month-error">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-month-error-day"
+          >
+            Day
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-2"
+            id="dob-month-error-day"
+            name="dob-month-error-day"
+            type="number"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-month-error-month"
+          >
+            Month
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error"
+            id="dob-month-error-month"
+            name="dob-month-error-month"
+            type="number"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label
+            class="govuk-label govuk-date-input__label"
+            for="dob-month-error-year"
+          >
+            Year
+          </label>
+          <input
+            class="govuk-input govuk-date-input__input govuk-input--width-4"
+            id="dob-month-error-year"
+            name="dob-month-error-year"
+            type="number"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
