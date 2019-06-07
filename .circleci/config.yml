@@ -25,7 +25,7 @@ jobs:
             yarn
             yarn build
             yarn build:website
-            yarn build:website:validate-html
+            yarn build:website:validate-build
       - run:
           name: test
           command: |-
