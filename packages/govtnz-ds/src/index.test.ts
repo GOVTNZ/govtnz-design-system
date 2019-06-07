@@ -33,8 +33,42 @@ describe(`CSS/SCSS contains values`, () => {
   });
 });
 
+describe(`ES5 build for IE11 compatibility`, () => {
+  test(`file doesn't contain ES6 features`, async () => {
+    const allJavaScript = await Promise.all([
+      getAggregatedData('react-js', 'js'),
+      getAggregatedData('react-ts', 'js'),
+      getAggregatedData('react-js-styled-components', 'js'),
+      getAggregatedData('react-ts-styled-components', 'js'),
+      getAggregatedData('vue-js', 'js'),
+      getAggregatedData('vue-ts', 'js')
+    ]);
+
+    allJavaScript.forEach(js => {
+      // Basic check to see whether it could find any javascript
+      expect(js.length).toBeGreaterThan(10000);
+    });
+
+    // Ensure we are generating ES5 by testing for some ES6 indicators
+    const allJavaScriptString = allJavaScript.join('');
+    expect(allJavaScriptString.length).toBeGreaterThan(10000);
+    // should not contain arrow functions
+    expect(allJavaScriptString).toEqual(expect.not.stringContaining('()=>{'));
+    // should not contain backticks
+    expect(allJavaScriptString).toEqual(expect.not.stringContaining('`'));
+  });
+});
+
 async function getAggregatedData(
-  integrationType: 'css' | 'scss',
+  integrationType:
+    | 'css'
+    | 'scss'
+    | 'react-ts'
+    | 'react-js'
+    | 'react-js-styled-components'
+    | 'react-ts-styled-components'
+    | 'vue-js'
+    | 'vue-ts',
   fileExtension: string,
   filterPath?: (aPath: string) => boolean
 ) {

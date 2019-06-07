@@ -43,17 +43,31 @@ test('Validate not ES6 (IE11 needs ES5)', async () => {
       await validateNotES6(data, jsPath, 'jest');
     })
   );
+
+  // Test whether validateNotES6 is working as expected by whether it
+  // will throw an exception on ES6 code
+  // (and yeah I know the proper name is ES2015)
   try {
     validateNotES6('() => {}', '(string)', 'throw');
     expect(
-      "Shouldn't get this far, expected exception thrown in validateNoES6"
+      "SHOULDN'T get this far, expected exception thrown in validateNoES6"
     ).toBe(true);
   } catch (e) {
+    // SHOULD get this far, expected exception thrown in validateNoES6
+    expect(true).toBe(true);
+  }
+
+  // Test whether validateNotES6 is working as expected by whether it
+  // will NOT throw an exception on ES5 code
+  // (and yeah I know the proper name is ES2015)
+  try {
+    validateNotES6('thing;', '(string)', 'throw');
+    // SHOULD get this far, expected exception thrown in validateNoES6
+    expect(true).toBe(true);
+  } catch (e) {
     expect(
-      "Shouldn't get this far, expected exception thrown in validateNoES6"
-    ).toBe(
-      "Shouldn't get this far, expected exception thrown in validateNoES6"
-    );
+      "SHOULDN'T get this far, didn't expect exception thrown in validateNoES6"
+    ).toBe(true);
   }
 });
 
