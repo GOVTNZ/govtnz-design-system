@@ -7,8 +7,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     styleSize: {
         large: "g-p-body-l",
         medium: "g-p-body-m",
@@ -16,9 +16,12 @@ const constants = {
         "x-small": "g-p-body-xs"
     }
 };
-const P = ({ styleSize, children }) => (React.createElement("p", { className: constants.styleSize[styleSize] !== undefined
-        ? constants.styleSize[styleSize]
-        : "" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var P = function (_a) {
+    var styleSize = _a.styleSize, children = _a.children;
+    return (React.createElement("p", { className: constants.styleSize[styleSize] !== undefined
+            ? constants.styleSize[styleSize]
+            : "" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 P.props = ["styleSize", "children"];
 exports.default = P;
 //# sourceMappingURL=P.js.map

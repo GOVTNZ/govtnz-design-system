@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",
+    "@babel/parser": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@govtnz/ds": "0.0.6",
     "@sentry/browser": "^5.3.0",
@@ -62,7 +63,7 @@
     "serve": "gatsby serve",
     "watch-prebuild": "nodemon ./prebuild/prebuild.js",
     "format": "prettier --write \"src/**/*.js\"",
-    "validate-html": "yarn jest",
+    "validate-build": "yarn jest",
     "test:typescript": "exit 0",
     "rimraf": "rimraf ./public/ && rimraf ./.cache"
   },

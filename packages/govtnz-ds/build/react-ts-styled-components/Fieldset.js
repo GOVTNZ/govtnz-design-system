@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,32 +11,16 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledDiv = styled.div `
-  margin-bottom: 20px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  :last-of-type {
-    margin-bottom: 0;
-  }
-  padding: 0;
-  border: 0;
-  margin-bottom: 5px;
-`;
-const StyledFieldset = styled.fieldset `
-  margin: 0;
-  padding: 0;
-  border: 0;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
-const Fieldset = ({ hintId, children }) => (React.createElement(StyledDiv, null,
-    React.createElement(StyledFieldset, { "aria-describedby": hintId }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend and other fieldset contents...")))));
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledDiv = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"], ["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"])));
+var StyledFieldset = styled.fieldset(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"], ["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"])));
+var Fieldset = function (_a) {
+    var hintId = _a.hintId, children = _a.children;
+    return (React.createElement(StyledDiv, null,
+        React.createElement(StyledFieldset, { "aria-describedby": hintId }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend and other fieldset contents...")))));
+};
 Fieldset.props = ["hintId", "children"];
 exports.default = Fieldset;
+var templateObject_1, templateObject_2;
 //# sourceMappingURL=Fieldset.js.map

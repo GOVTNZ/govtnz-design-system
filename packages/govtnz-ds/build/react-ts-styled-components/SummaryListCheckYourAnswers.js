@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,1301 +11,61 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledDl = styled.dl `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #0b0c0c;
-  margin: 0;
-  margin-bottom: 20px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  @media (min-width: 40.0625em) {
-    display: table;
-    width: 100%;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-`;
-const StyledDiv = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd2 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv2 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt2 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd3 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd4 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA2 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan2 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv3 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt3 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd5 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd6 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA3 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan3 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv4 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt4 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd7 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd8 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA4 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan4 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv5 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt5 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd9 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd10 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA5 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan5 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv6 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt6 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd11 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledDd12 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA6 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan6 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv7 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt7 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd13 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledP = styled.p `
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media print {
-    color: #000000;
-  }
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-  margin-bottom: 10px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-`;
-const StyledDd14 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA7 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan7 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const StyledDiv8 = styled.div `
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  @media (min-width: 40.0625em) {
-    display: table-row;
-  }
-  border: 0;
-`;
-const StyledDt8 = styled.dt `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  margin-bottom: 5px;
-  font-weight: 700;
-  @media (min-width: 40.0625em) {
-    width: 30%;
-  }
-  border: 0;
-`;
-const StyledDd15 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  word-break: break-all;
-  @media (max-width: 40.0525em) {
-    margin-bottom: 15px;
-  }
-  border: 0;
-`;
-const StyledP2 = styled.p `
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media print {
-    color: #000000;
-  }
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-  margin-bottom: 10px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-`;
-const StyledP3 = styled.p `
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media print {
-    color: #000000;
-  }
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-  margin-bottom: 10px;
-  margin-top: 0;
-  margin-bottom: 20px;
-  margin-top: 0;
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
-  }
-`;
-const StyledDd16 = styled.dd `
-  margin: 0;
-  @media (min-width: 40.0625em) {
-    display: table-cell;
-    padding-right: 20px;
-  }
-  @media (min-width: 40.0625em) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #bfc1c3;
-  }
-  margin-bottom: 15px;
-  @media (min-width: 40.0625em) {
-    padding-right: 0;
-    text-align: right;
-  }
-  border: 0;
-`;
-const StyledA8 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link {
-    color: #005ea5;
-  }
-  :visited {
-    color: #4c2c92;
-  }
-  :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledSpan8 = styled.span `
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-`;
-const constants = {
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledDl = styled.dl(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  margin: 0;\n  margin-bottom: 20px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  @media (min-width: 40.0625em) {\n    display: table;\n    width: 100%;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  margin: 0;\n  margin-bottom: 20px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  @media (min-width: 40.0625em) {\n    display: table;\n    width: 100%;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n"])));
+var StyledDiv = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt = styled.dt(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd = styled.dd(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd2 = styled.dd(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA = styled.a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan = styled.span(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv2 = styled.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt2 = styled.dt(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd3 = styled.dd(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd4 = styled.dd(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA2 = styled.a(templateObject_12 || (templateObject_12 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan2 = styled.span(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv3 = styled.div(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt3 = styled.dt(templateObject_15 || (templateObject_15 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd5 = styled.dd(templateObject_16 || (templateObject_16 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd6 = styled.dd(templateObject_17 || (templateObject_17 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA3 = styled.a(templateObject_18 || (templateObject_18 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan3 = styled.span(templateObject_19 || (templateObject_19 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv4 = styled.div(templateObject_20 || (templateObject_20 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt4 = styled.dt(templateObject_21 || (templateObject_21 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd7 = styled.dd(templateObject_22 || (templateObject_22 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd8 = styled.dd(templateObject_23 || (templateObject_23 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA4 = styled.a(templateObject_24 || (templateObject_24 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan4 = styled.span(templateObject_25 || (templateObject_25 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv5 = styled.div(templateObject_26 || (templateObject_26 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt5 = styled.dt(templateObject_27 || (templateObject_27 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd9 = styled.dd(templateObject_28 || (templateObject_28 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd10 = styled.dd(templateObject_29 || (templateObject_29 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA5 = styled.a(templateObject_30 || (templateObject_30 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan5 = styled.span(templateObject_31 || (templateObject_31 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv6 = styled.div(templateObject_32 || (templateObject_32 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt6 = styled.dt(templateObject_33 || (templateObject_33 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd11 = styled.dd(templateObject_34 || (templateObject_34 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledDd12 = styled.dd(templateObject_35 || (templateObject_35 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA6 = styled.a(templateObject_36 || (templateObject_36 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan6 = styled.span(templateObject_37 || (templateObject_37 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv7 = styled.div(templateObject_38 || (templateObject_38 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt7 = styled.dt(templateObject_39 || (templateObject_39 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd13 = styled.dd(templateObject_40 || (templateObject_40 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledP = styled.p(templateObject_41 || (templateObject_41 = __makeTemplateObject(["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"], ["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"])));
+var StyledDd14 = styled.dd(templateObject_42 || (templateObject_42 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA7 = styled.a(templateObject_43 || (templateObject_43 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan7 = styled.span(templateObject_44 || (templateObject_44 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var StyledDiv8 = styled.div(templateObject_45 || (templateObject_45 = __makeTemplateObject(["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"], ["\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  @media (min-width: 40.0625em) {\n    display: table-row;\n  }\n  border: 0;\n"])));
+var StyledDt8 = styled.dt(templateObject_46 || (templateObject_46 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  margin-bottom: 5px;\n  font-weight: 700;\n  @media (min-width: 40.0625em) {\n    width: 30%;\n  }\n  border: 0;\n"])));
+var StyledDd15 = styled.dd(templateObject_47 || (templateObject_47 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  word-break: break-all;\n  @media (max-width: 40.0525em) {\n    margin-bottom: 15px;\n  }\n  border: 0;\n"])));
+var StyledP2 = styled.p(templateObject_48 || (templateObject_48 = __makeTemplateObject(["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"], ["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"])));
+var StyledP3 = styled.p(templateObject_49 || (templateObject_49 = __makeTemplateObject(["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"], ["\n  color: #0b0c0c;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media print {\n    color: #000000;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n"])));
+var StyledDd16 = styled.dd(templateObject_50 || (templateObject_50 = __makeTemplateObject(["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"], ["\n  margin: 0;\n  @media (min-width: 40.0625em) {\n    display: table-cell;\n    padding-right: 20px;\n  }\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n    padding-bottom: 10px;\n    border-bottom: 1px solid #bfc1c3;\n  }\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    padding-right: 0;\n    text-align: right;\n  }\n  border: 0;\n"])));
+var StyledA8 = styled.a(templateObject_51 || (templateObject_51 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledSpan8 = styled.span(templateObject_52 || (templateObject_52 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n"])));
+var constants = {
     target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
     target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
     target3: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
@@ -1311,79 +75,82 @@ const constants = {
     target7: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
     target8: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
 };
-const SummaryListCheckYourAnswers = ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5, href6, rel6, target6, href7, rel7, target7, href8, rel8, target8 }) => (React.createElement(StyledDl, null,
-    React.createElement(StyledDiv, null,
-        React.createElement(StyledDt, null, "Name"),
-        React.createElement(StyledDd, null, "Sarah Philips"),
-        React.createElement(StyledDd2, null,
-            React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] },
-                "Change",
-                React.createElement(StyledSpan, null, " name")))),
-    React.createElement(StyledDiv2, null,
-        React.createElement(StyledDt2, null, "Date of birth"),
-        React.createElement(StyledDd3, null, "5 January 1978"),
-        React.createElement(StyledDd4, null,
-            React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] },
-                "Change",
-                React.createElement(StyledSpan2, null, " date of birth")))),
-    React.createElement(StyledDiv3, null,
-        React.createElement(StyledDt3, null, "Contact information"),
-        React.createElement(StyledDd5, null,
-            "72 Guild Street",
-            React.createElement("br", null),
-            "London",
-            React.createElement("br", null),
-            "SE23 6FH"),
-        React.createElement(StyledDd6, null,
-            React.createElement(StyledA3, { href: href3, rel: rel3, target: constants.target3[target3] },
-                "Change",
-                React.createElement(StyledSpan3, null, " contact information")))),
-    React.createElement(StyledDiv4, null,
-        React.createElement(StyledDt4, null, "Contact details"),
-        React.createElement(StyledDd7, null,
-            "07700 900457",
-            React.createElement("br", null),
-            "sarah.phillips@example.com"),
-        React.createElement(StyledDd8, null,
-            React.createElement(StyledA4, { href: href4, rel: rel4, target: constants.target4[target4] },
-                "Change",
-                React.createElement(StyledSpan4, null, " contact details")))),
-    React.createElement(StyledDiv5, null,
-        React.createElement(StyledDt5, null, "Previous application number"),
-        React.createElement(StyledDd9, null, "502135326"),
-        React.createElement(StyledDd10, null,
-            React.createElement(StyledA5, { href: href5, rel: rel5, target: constants.target5[target5] },
-                "Change",
-                React.createElement(StyledSpan5, null, "previous application number")))),
-    React.createElement(StyledDiv6, null,
-        React.createElement(StyledDt6, null, "Licence type"),
-        React.createElement(StyledDd11, null, "For personal use"),
-        React.createElement(StyledDd12, null,
-            React.createElement(StyledA6, { href: href6, rel: rel6, target: constants.target6[target6] },
-                "Change",
-                React.createElement(StyledSpan6, null, " licence type")))),
-    React.createElement(StyledDiv7, null,
-        React.createElement(StyledDt7, null, "Home address"),
-        React.createElement(StyledDd13, null,
-            React.createElement(StyledP, null,
+var SummaryListCheckYourAnswers = function (_a) {
+    var href = _a.href, rel = _a.rel, target = _a.target, href2 = _a.href2, rel2 = _a.rel2, target2 = _a.target2, href3 = _a.href3, rel3 = _a.rel3, target3 = _a.target3, href4 = _a.href4, rel4 = _a.rel4, target4 = _a.target4, href5 = _a.href5, rel5 = _a.rel5, target5 = _a.target5, href6 = _a.href6, rel6 = _a.rel6, target6 = _a.target6, href7 = _a.href7, rel7 = _a.rel7, target7 = _a.target7, href8 = _a.href8, rel8 = _a.rel8, target8 = _a.target8;
+    return (React.createElement(StyledDl, null,
+        React.createElement(StyledDiv, null,
+            React.createElement(StyledDt, null, "Name"),
+            React.createElement(StyledDd, null, "Sarah Philips"),
+            React.createElement(StyledDd2, null,
+                React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] },
+                    "Change",
+                    React.createElement(StyledSpan, null, " name")))),
+        React.createElement(StyledDiv2, null,
+            React.createElement(StyledDt2, null, "Date of birth"),
+            React.createElement(StyledDd3, null, "5 January 1978"),
+            React.createElement(StyledDd4, null,
+                React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] },
+                    "Change",
+                    React.createElement(StyledSpan2, null, " date of birth")))),
+        React.createElement(StyledDiv3, null,
+            React.createElement(StyledDt3, null, "Contact information"),
+            React.createElement(StyledDd5, null,
                 "72 Guild Street",
                 React.createElement("br", null),
                 "London",
                 React.createElement("br", null),
-                "SE23 6FH")),
-        React.createElement(StyledDd14, null,
-            React.createElement(StyledA7, { href: href7, rel: rel7, target: constants.target7[target7] },
-                "Change",
-                React.createElement(StyledSpan7, null, " home address")))),
-    React.createElement(StyledDiv8, null,
-        React.createElement(StyledDt8, null, "Licence period"),
-        React.createElement(StyledDd15, null,
-            React.createElement(StyledP2, null, "This is a longer paragraph of text provided by the user to provide additional information."),
-            React.createElement(StyledP3, null, "This is a second paragraph of text provided by the user.")),
-        React.createElement(StyledDd16, null,
-            React.createElement(StyledA8, { href: href8, rel: rel8, target: constants.target8[target8] },
-                "Change",
-                React.createElement(StyledSpan8, null, " licence period"))))));
+                "SE23 6FH"),
+            React.createElement(StyledDd6, null,
+                React.createElement(StyledA3, { href: href3, rel: rel3, target: constants.target3[target3] },
+                    "Change",
+                    React.createElement(StyledSpan3, null, " contact information")))),
+        React.createElement(StyledDiv4, null,
+            React.createElement(StyledDt4, null, "Contact details"),
+            React.createElement(StyledDd7, null,
+                "07700 900457",
+                React.createElement("br", null),
+                "sarah.phillips@example.com"),
+            React.createElement(StyledDd8, null,
+                React.createElement(StyledA4, { href: href4, rel: rel4, target: constants.target4[target4] },
+                    "Change",
+                    React.createElement(StyledSpan4, null, " contact details")))),
+        React.createElement(StyledDiv5, null,
+            React.createElement(StyledDt5, null, "Previous application number"),
+            React.createElement(StyledDd9, null, "502135326"),
+            React.createElement(StyledDd10, null,
+                React.createElement(StyledA5, { href: href5, rel: rel5, target: constants.target5[target5] },
+                    "Change",
+                    React.createElement(StyledSpan5, null, "previous application number")))),
+        React.createElement(StyledDiv6, null,
+            React.createElement(StyledDt6, null, "Licence type"),
+            React.createElement(StyledDd11, null, "For personal use"),
+            React.createElement(StyledDd12, null,
+                React.createElement(StyledA6, { href: href6, rel: rel6, target: constants.target6[target6] },
+                    "Change",
+                    React.createElement(StyledSpan6, null, " licence type")))),
+        React.createElement(StyledDiv7, null,
+            React.createElement(StyledDt7, null, "Home address"),
+            React.createElement(StyledDd13, null,
+                React.createElement(StyledP, null,
+                    "72 Guild Street",
+                    React.createElement("br", null),
+                    "London",
+                    React.createElement("br", null),
+                    "SE23 6FH")),
+            React.createElement(StyledDd14, null,
+                React.createElement(StyledA7, { href: href7, rel: rel7, target: constants.target7[target7] },
+                    "Change",
+                    React.createElement(StyledSpan7, null, " home address")))),
+        React.createElement(StyledDiv8, null,
+            React.createElement(StyledDt8, null, "Licence period"),
+            React.createElement(StyledDd15, null,
+                React.createElement(StyledP2, null, "This is a longer paragraph of text provided by the user to provide additional information."),
+                React.createElement(StyledP3, null, "This is a second paragraph of text provided by the user.")),
+            React.createElement(StyledDd16, null,
+                React.createElement(StyledA8, { href: href8, rel: rel8, target: constants.target8[target8] },
+                    "Change",
+                    React.createElement(StyledSpan8, null, " licence period"))))));
+};
 SummaryListCheckYourAnswers.props = [
     "href",
     "rel",
@@ -1411,4 +178,5 @@ SummaryListCheckYourAnswers.props = [
     "target8"
 ];
 exports.default = SummaryListCheckYourAnswers;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23, templateObject_24, templateObject_25, templateObject_26, templateObject_27, templateObject_28, templateObject_29, templateObject_30, templateObject_31, templateObject_32, templateObject_33, templateObject_34, templateObject_35, templateObject_36, templateObject_37, templateObject_38, templateObject_39, templateObject_40, templateObject_41, templateObject_42, templateObject_43, templateObject_44, templateObject_45, templateObject_46, templateObject_47, templateObject_48, templateObject_49, templateObject_50, templateObject_51, templateObject_52;
 //# sourceMappingURL=SummaryListCheckYourAnswers.js.map

@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Radio = ({ fakeFocus, gov1, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }) => (React.createElement("input", { "aria-describedby": hintId, className: `g-radios__input${fakeFocus ? " :focus" : ""}`, id: gov1, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }));
+var React = __importStar(require("react"));
+var Radio = function (_a) {
+    var fakeFocus = _a.fakeFocus, gov1 = _a.gov1, hintId = _a.hintId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, checked = _a.checked, onChange = _a.onChange;
+    return (React.createElement("input", { "aria-describedby": hintId, className: "g-radios__input" + (fakeFocus ? " :focus" : ""), id: gov1, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }));
+};
 Radio.props = [
     "fakeFocus",
     "gov1",

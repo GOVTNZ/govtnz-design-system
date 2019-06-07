@@ -7,8 +7,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const TagInactive = ({}) => (React.createElement("strong", { className: "g-tagInactive-tag g-tagInactive-tag--inactive" }, "alpha"));
+var React = __importStar(require("react"));
+var TagInactive = function (_a) { return (React.createElement("strong", { className: "g-tagInactive-tag g-tagInactive-tag--inactive" }, "alpha")); };
 TagInactive.props = [];
 exports.default = TagInactive;
 //# sourceMappingURL=TagInactive.js.map

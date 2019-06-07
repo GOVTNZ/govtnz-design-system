@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const FieldsetLabel = ({ hintId, hint }) => (React.createElement("div", { className: "g-fieldsetLabel-hint", id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text")));
+var React = __importStar(require("react"));
+var FieldsetLabel = function (_a) {
+    var hintId = _a.hintId, hint = _a.hint;
+    return (React.createElement("div", { className: "g-fieldsetLabel-hint", id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text")));
+};
 FieldsetLabel.props = ["hintId", "hint"];
 exports.default = FieldsetLabel;
 //# sourceMappingURL=FieldsetLabel.js.map

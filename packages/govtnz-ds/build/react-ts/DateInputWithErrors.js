@@ -7,8 +7,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     type: {
         Button: "button",
         Checkbox: "checkbox",
@@ -247,26 +247,29 @@ const constants = {
         Photo: "photo"
     }
 };
-const DateInputWithErrors = ({ dobErrorsHint, dobErrorsError, dobErrors, dobErrorsDay, name, disabled, readOnly, autoFocus, value, type, spellCheck, autoComplete, onChange, dobErrorsMonth, name2, disabled2, readOnly2, autoFocus2, value2, type2, spellCheck2, autoComplete2, onChange2, dobErrorsYear, name3, disabled3, readOnly3, autoFocus3, value3, type3, spellCheck3, autoComplete3, onChange3 }) => (React.createElement("div", { className: "g-dateInputWithErrors-form-group g-dateInputWithErrors-form-group--error" },
-    React.createElement("fieldset", { "aria-describedby": dobErrorsHint !== undefined || dobErrorsError !== undefined
-            ? `${dobErrorsHint ? dobErrorsHint : ""}${dobErrorsError ? " " + dobErrorsError : ""}`
-            : undefined, className: "g-dateInputWithErrors-fieldset", role: "group" },
-        React.createElement("legend", { className: "g-dateInputWithErrors-fieldset__legend" }, "What is your date of birth?"),
-        React.createElement("span", { className: "g-dateInputWithErrors-hint", id: dobErrorsHint }, "For example, 31 3 1980"),
-        React.createElement("span", { className: "g-dateInputWithErrors-error-message", id: dobErrorsError }, "Error message goes here"),
-        React.createElement("div", { className: "g-dateInputWithErrors-date-input", id: dobErrors },
-            React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
-                React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
-                    React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsDay }, "Day"),
-                    React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-2 g-dateInputWithErrors-input--error", id: dobErrorsDay, name: name, pattern: "[0-9]*", type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
-            React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
-                React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
-                    React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsMonth }, "Month"),
-                    React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-2 g-dateInputWithErrors-input--error", id: dobErrorsMonth, name: name2, pattern: "[0-9]*", type: constants.type2[type2], disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
-            React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
-                React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
-                    React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsYear }, "Year"),
-                    React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-4 g-dateInputWithErrors-input--error", id: dobErrorsYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
+var DateInputWithErrors = function (_a) {
+    var dobErrorsHint = _a.dobErrorsHint, dobErrorsError = _a.dobErrorsError, dobErrors = _a.dobErrors, dobErrorsDay = _a.dobErrorsDay, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, dobErrorsMonth = _a.dobErrorsMonth, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, type2 = _a.type2, spellCheck2 = _a.spellCheck2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, dobErrorsYear = _a.dobErrorsYear, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, type3 = _a.type3, spellCheck3 = _a.spellCheck3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
+    return (React.createElement("div", { className: "g-dateInputWithErrors-form-group g-dateInputWithErrors-form-group--error" },
+        React.createElement("fieldset", { "aria-describedby": dobErrorsHint !== undefined || dobErrorsError !== undefined
+                ? "" + (dobErrorsHint ? dobErrorsHint : "") + (dobErrorsError ? " " + dobErrorsError : "")
+                : undefined, className: "g-dateInputWithErrors-fieldset", role: "group" },
+            React.createElement("legend", { className: "g-dateInputWithErrors-fieldset__legend" }, "What is your date of birth?"),
+            React.createElement("span", { className: "g-dateInputWithErrors-hint", id: dobErrorsHint }, "For example, 31 3 1980"),
+            React.createElement("span", { className: "g-dateInputWithErrors-error-message", id: dobErrorsError }, "Error message goes here"),
+            React.createElement("div", { className: "g-dateInputWithErrors-date-input", id: dobErrors },
+                React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
+                    React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
+                        React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsDay }, "Day"),
+                        React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-2 g-dateInputWithErrors-input--error", id: dobErrorsDay, name: name, pattern: "[0-9]*", type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
+                React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
+                    React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
+                        React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsMonth }, "Month"),
+                        React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-2 g-dateInputWithErrors-input--error", id: dobErrorsMonth, name: name2, pattern: "[0-9]*", type: constants.type2[type2], disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
+                React.createElement("div", { className: "g-dateInputWithErrors-date-input__item" },
+                    React.createElement("div", { className: "g-dateInputWithErrors-form-group" },
+                        React.createElement("label", { className: "g-dateInputWithErrors-label g-dateInputWithErrors-date-input__label", htmlFor: dobErrorsYear }, "Year"),
+                        React.createElement("input", { className: "g-dateInputWithErrors-input g-dateInputWithErrors-date-input__input g-dateInputWithErrors-input--width-4 g-dateInputWithErrors-input--error", id: dobErrorsYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
+};
 DateInputWithErrors.props = [
     "dobErrorsHint",
     "dobErrorsError",

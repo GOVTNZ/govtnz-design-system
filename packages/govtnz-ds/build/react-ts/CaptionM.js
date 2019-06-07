@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const CaptionM = ({ children }) => (React.createElement("span", { className: "g-caption-m" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var React = __importStar(require("react"));
+var CaptionM = function (_a) {
+    var children = _a.children;
+    return (React.createElement("span", { className: "g-caption-m" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 CaptionM.props = ["children"];
 exports.default = CaptionM;
 //# sourceMappingURL=CaptionM.js.map

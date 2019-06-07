@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Ul = ({ bulleted, children }) => (React.createElement("ul", { className: `g-ul-list${bulleted ? " g-ul-list--bullet" : ""}` }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var React = __importStar(require("react"));
+var Ul = function (_a) {
+    var bulleted = _a.bulleted, children = _a.children;
+    return (React.createElement("ul", { className: "g-ul-list" + (bulleted ? " g-ul-list--bullet" : "") }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 Ul.props = ["bulleted", "children"];
 exports.default = Ul;
 //# sourceMappingURL=Ul.js.map

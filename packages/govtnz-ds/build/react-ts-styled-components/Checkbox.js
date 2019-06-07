@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,23 +11,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledInput = styled.input `
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  margin: 0;
-  opacity: 0;
-  :disabled {
-    cursor: default;
-  }
-`;
-const Checkbox = ({ fakeFocus, checkboxId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }) => (React.createElement(StyledInput, { fakeFocus: fakeFocus, "aria-describedby": hintId, id: checkboxId, type: "checkbox", name: name, disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }));
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledInput = styled.input(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  left: 0;\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  margin: 0;\n  opacity: 0;\n  :disabled {\n    cursor: default;\n  }\n"], ["\n  position: absolute;\n  z-index: 1;\n  top: 0;\n  left: 0;\n  width: 40px;\n  height: 40px;\n  cursor: pointer;\n  margin: 0;\n  opacity: 0;\n  :disabled {\n    cursor: default;\n  }\n"])));
+var Checkbox = function (_a) {
+    var fakeFocus = _a.fakeFocus, checkboxId = _a.checkboxId, hintId = _a.hintId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, checked = _a.checked, onChange = _a.onChange;
+    return (React.createElement(StyledInput, { fakeFocus: fakeFocus, "aria-describedby": hintId, id: checkboxId, type: "checkbox", name: name, disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }));
+};
 Checkbox.props = [
     "fakeFocus",
     "checkboxId",
@@ -37,4 +31,5 @@ Checkbox.props = [
     "onChange"
 ];
 exports.default = Checkbox;
+var templateObject_1;
 //# sourceMappingURL=Checkbox.js.map

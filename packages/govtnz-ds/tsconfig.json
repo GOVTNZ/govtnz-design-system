@@ -5,6 +5,7 @@
   "compilerOptions": {
     "rootDir": "build_src",
     "outDir": "build",
-    "declaration": true
+    "declaration": true,
+    "target": "es5"
   }
 }

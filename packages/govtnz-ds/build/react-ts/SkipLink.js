@@ -7,11 +7,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
 };
-const SkipLink = ({ href, rel, target }) => (React.createElement("a", { className: "g-skip-link", href: href, rel: rel, target: constants.target[target] }, "Skip to main content"));
+var SkipLink = function (_a) {
+    var href = _a.href, rel = _a.rel, target = _a.target;
+    return (React.createElement("a", { className: "g-skip-link", href: href, rel: rel, target: constants.target[target] }, "Skip to main content"));
+};
 SkipLink.props = ["href", "rel", "target"];
 exports.default = SkipLink;
 //# sourceMappingURL=SkipLink.js.map

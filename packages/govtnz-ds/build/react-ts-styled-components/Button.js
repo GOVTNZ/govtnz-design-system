@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,107 +11,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledButton = styled.button `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.2;
-  box-sizing: border-box;
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 22px;
-  padding: 16px;
-  border: 2px solid transparent;
-  border-radius: 2px;
-  color: black;
-  background-color: #00823b;
-  box-shadow: none;
-  text-align: center;
-  vertical-align: top;
-  cursor: pointer;
-  -webkit-appearance: none;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 19px;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 32px;
-  }
-  @media (min-width: 40.0625em) {
-    width: auto;
-  }
-  :link,
-  :visited,
-  :active,
-  :hover {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  ::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-  }
-  :hover,
-  :focus {
-    background-color: #00692f;
-  }
-  :active {
-    top: 2px;
-    box-shadow: none;
-  }
-  ::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    bottom: -4px;
-    left: -2px;
-    background: transparent;
-  }
-  :active::before {
-    top: -4px;
-  }
-  opacity: 0.5;
-  background: #00823b;
-  :hover,
-  :hover {
-    background-color: #00823b;
-    cursor: default;
-  }
-  :focus,
-  :focus {
-    outline: none;
-  }
-  :active,
-  :active {
-    top: 0;
-    box-shadow: 0 2px 0 #003618;
-  }
-  padding-top: 16px;
-  padding-bottom: 16px;
-`;
-const constants = {
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledButton = styled.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 500;\n  font-size: 1rem;\n  line-height: 1.2;\n  box-sizing: border-box;\n  display: inline-block;\n  position: relative;\n  width: 100%;\n  margin-top: 0;\n  margin-bottom: 22px;\n  padding: 16px;\n  border: 2px solid transparent;\n  border-radius: 2px;\n  color: black;\n  background-color: #00823b;\n  box-shadow: none;\n  text-align: center;\n  vertical-align: top;\n  cursor: pointer;\n  -webkit-appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 19px;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 32px;\n  }\n  @media (min-width: 40.0625em) {\n    width: auto;\n  }\n  :link,\n  :visited,\n  :active,\n  :hover {\n    color: #ffffff;\n    text-decoration: none;\n  }\n  ::-moz-focus-inner {\n    padding: 0;\n    border: 0;\n  }\n  :hover,\n  :focus {\n    background-color: #00692f;\n  }\n  :active {\n    top: 2px;\n    box-shadow: none;\n  }\n  ::before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -2px;\n    right: -2px;\n    bottom: -4px;\n    left: -2px;\n    background: transparent;\n  }\n  :active::before {\n    top: -4px;\n  }\n  opacity: 0.5;\n  background: #00823b;\n  :hover,\n  :hover {\n    background-color: #00823b;\n    cursor: default;\n  }\n  :focus,\n  :focus {\n    outline: none;\n  }\n  :active,\n  :active {\n    top: 0;\n    box-shadow: 0 2px 0 #003618;\n  }\n  padding-top: 16px;\n  padding-bottom: 16px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 500;\n  font-size: 1rem;\n  line-height: 1.2;\n  box-sizing: border-box;\n  display: inline-block;\n  position: relative;\n  width: 100%;\n  margin-top: 0;\n  margin-bottom: 22px;\n  padding: 16px;\n  border: 2px solid transparent;\n  border-radius: 2px;\n  color: black;\n  background-color: #00823b;\n  box-shadow: none;\n  text-align: center;\n  vertical-align: top;\n  cursor: pointer;\n  -webkit-appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 19px;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 32px;\n  }\n  @media (min-width: 40.0625em) {\n    width: auto;\n  }\n  :link,\n  :visited,\n  :active,\n  :hover {\n    color: #ffffff;\n    text-decoration: none;\n  }\n  ::-moz-focus-inner {\n    padding: 0;\n    border: 0;\n  }\n  :hover,\n  :focus {\n    background-color: #00692f;\n  }\n  :active {\n    top: 2px;\n    box-shadow: none;\n  }\n  ::before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -2px;\n    right: -2px;\n    bottom: -4px;\n    left: -2px;\n    background: transparent;\n  }\n  :active::before {\n    top: -4px;\n  }\n  opacity: 0.5;\n  background: #00823b;\n  :hover,\n  :hover {\n    background-color: #00823b;\n    cursor: default;\n  }\n  :focus,\n  :focus {\n    outline: none;\n  }\n  :active,\n  :active {\n    top: 0;\n    box-shadow: 0 2px 0 #003618;\n  }\n  padding-top: 16px;\n  padding-bottom: 16px;\n"])));
+var constants = {
     type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
-const Button = ({ disabled, name, type, children }) => (React.createElement(StyledButton, { disabled: disabled, "aria-disabled": disabled, type: constants.type[type], name: name }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var Button = function (_a) {
+    var disabled = _a.disabled, name = _a.name, type = _a.type, children = _a.children;
+    return (React.createElement(StyledButton, { disabled: disabled, "aria-disabled": disabled, type: constants.type[type], name: name }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 Button.props = ["disabled", "name", "type", "children"];
 exports.default = Button;
+var templateObject_1;
 //# sourceMappingURL=Button.js.map

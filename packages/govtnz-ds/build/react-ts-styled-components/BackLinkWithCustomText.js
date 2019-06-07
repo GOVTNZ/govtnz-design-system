@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,119 +11,17 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledA = styled.a `
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: inline-block;
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 14px;
-  border-bottom: 1px solid #0b0c0c;
-  text-decoration: none;
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
-  }
-  @media print {
-    :link,
-    :visited,
-    :hover,
-    :active,
-    :focus {
-      color: #000000;
-    }
-  }
-  :before {
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: transparent;
-    -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
-    clip-path: polygon(0% 50%, 100% 100%, 100% 0%);
-    border-width: 5px 6px 5px 0;
-    border-right-color: inherit;
-    content: "";
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: 0;
-    margin: auto;
-  }
-  :before {
-    top: -1px;
-    bottom: 1px;
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const constants = {
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledA = styled.a(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  display: inline-block;\n  position: relative;\n  margin-top: 15px;\n  margin-bottom: 15px;\n  padding-left: 14px;\n  border-bottom: 1px solid #0b0c0c;\n  text-decoration: none;\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  :before {\n    display: block;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-color: transparent;\n    -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0%);\n    clip-path: polygon(0% 50%, 100% 100%, 100% 0%);\n    border-width: 5px 6px 5px 0;\n    border-right-color: inherit;\n    content: \"\";\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: 0;\n    margin: auto;\n  }\n  :before {\n    top: -1px;\n    bottom: 1px;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  display: inline-block;\n  position: relative;\n  margin-top: 15px;\n  margin-bottom: 15px;\n  padding-left: 14px;\n  border-bottom: 1px solid #0b0c0c;\n  text-decoration: none;\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  :before {\n    display: block;\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-color: transparent;\n    -webkit-clip-path: polygon(0% 50%, 100% 100%, 100% 0%);\n    clip-path: polygon(0% 50%, 100% 100%, 100% 0%);\n    border-width: 5px 6px 5px 0;\n    border-right-color: inherit;\n    content: \"\";\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: 0;\n    margin: auto;\n  }\n  :before {\n    top: -1px;\n    bottom: 1px;\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var constants = {
     target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
 };
-const BackLinkWithCustomText = ({ href, rel, target, children }) => (React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var BackLinkWithCustomText = function (_a) {
+    var href = _a.href, rel = _a.rel, target = _a.target, children = _a.children;
+    return (React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
 exports.default = BackLinkWithCustomText;
+var templateObject_1;
 //# sourceMappingURL=BackLinkWithCustomText.js.map

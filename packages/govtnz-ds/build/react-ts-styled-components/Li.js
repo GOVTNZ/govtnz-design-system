@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,16 +11,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledLi = styled.li `
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-`;
-const Li = ({ children }) => (React.createElement(StyledLi, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledLi = styled.li(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n"], ["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n"])));
+var Li = function (_a) {
+    var children = _a.children;
+    return (React.createElement(StyledLi, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 Li.props = ["children"];
 exports.default = Li;
+var templateObject_1;
 //# sourceMappingURL=Li.js.map

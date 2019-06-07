@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const FormDivider = ({ children }) => (React.createElement("div", { className: "g-radios-form-divider" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
+var React = __importStar(require("react"));
+var FormDivider = function (_a) {
+    var children = _a.children;
+    return (React.createElement("div", { className: "g-radios-form-divider" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
+};
 FormDivider.props = ["children"];
 exports.default = FormDivider;
 //# sourceMappingURL=FormDivider.js.map

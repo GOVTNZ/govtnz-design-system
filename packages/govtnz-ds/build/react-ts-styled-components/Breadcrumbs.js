@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,267 +11,28 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledDiv = styled.div `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  color: #0b0c0c;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  @media print {
-    color: #000000;
-  }
-`;
-const StyledOl = styled.ol `
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-`;
-const StyledLi = styled.li `
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15.655px;
-  float: left;
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: -3.31px;
-    width: 7px;
-    height: 7px;
-    margin: auto 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid;
-    border-width: 1px 1px 0 0;
-    border-color: #6f777b;
-  }
-  :first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  :first-child:before {
-    content: none;
-    display: none;
-  }
-`;
-const StyledA = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
-  }
-  @media print {
-    :link,
-    :visited,
-    :hover,
-    :active,
-    :focus {
-      color: #000000;
-    }
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const StyledLi2 = styled.li `
-  margin-bottom: 5px;
-  margin-bottom: 0;
-  @media (min-width: 40.0625em) {
-    margin-bottom: 5px;
-  }
-  display: inline-block;
-  position: relative;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  padding-left: 15.655px;
-  float: left;
-  :before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    bottom: 1px;
-    left: -3.31px;
-    width: 7px;
-    height: 7px;
-    margin: auto 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    border: solid;
-    border-width: 1px 1px 0 0;
-    border-color: #6f777b;
-  }
-  :first-child {
-    margin-left: 0;
-    padding-left: 0;
-  }
-  :first-child:before {
-    content: none;
-    display: none;
-  }
-`;
-const StyledA2 = styled.a `
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @media print {
-    font-family: sans-serif;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-    background-color: #ffbf47;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
-  }
-  @media print {
-    :link,
-    :visited,
-    :hover,
-    :active,
-    :focus {
-      color: #000000;
-    }
-  }
-  font-weight: 700;
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #b10e1e;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  white-space: nowrap;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
-  :focus {
-    color: #0b0c0c;
-  }
-`;
-const constants = {
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledDiv = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  color: #0b0c0c;\n  margin-top: 15px;\n  margin-bottom: 10px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  @media print {\n    color: #000000;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  color: #0b0c0c;\n  margin-top: 15px;\n  margin-bottom: 10px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  @media print {\n    color: #000000;\n  }\n"])));
+var StyledOl = styled.ol(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"], ["\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"])));
+var StyledLi = styled.li(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"], ["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"])));
+var StyledA = styled.a(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var StyledLi2 = styled.li(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"], ["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline-block;\n  position: relative;\n  margin-bottom: 5px;\n  margin-left: 10px;\n  padding-left: 15.655px;\n  float: left;\n  :before {\n    content: \"\";\n    display: block;\n    position: absolute;\n    top: -1px;\n    bottom: 1px;\n    left: -3.31px;\n    width: 7px;\n    height: 7px;\n    margin: auto 0;\n    -webkit-transform: rotate(45deg);\n    -ms-transform: rotate(45deg);\n    transform: rotate(45deg);\n    border: solid;\n    border-width: 1px 1px 0 0;\n    border-color: #6f777b;\n  }\n  :first-child {\n    margin-left: 0;\n    padding-left: 0;\n  }\n  :first-child:before {\n    content: none;\n    display: none;\n  }\n"])));
+var StyledA2 = styled.a(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n    background-color: #ffbf47;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active,\n  :focus {\n    color: #0b0c0c;\n  }\n  @media print {\n    :link,\n    :visited,\n    :hover,\n    :active,\n    :focus {\n      color: #000000;\n    }\n  }\n  font-weight: 700;\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #b10e1e;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 0.875rem;\n  line-height: 1.14286;\n  white-space: nowrap;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.2;\n  }\n  :link,\n  :hover,\n  :visited {\n    color: #1d8feb;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"])));
+var constants = {
     target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
     target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
 };
-const Breadcrumbs = ({ href, rel, target, href2, rel2, target2 }) => (React.createElement(StyledDiv, null,
-    React.createElement(StyledOl, null,
-        React.createElement(StyledLi, null,
-            React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] }, "Section")),
-        React.createElement(StyledLi2, null,
-            React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] }, "Sub-section")))));
+var Breadcrumbs = function (_a) {
+    var href = _a.href, rel = _a.rel, target = _a.target, href2 = _a.href2, rel2 = _a.rel2, target2 = _a.target2;
+    return (React.createElement(StyledDiv, null,
+        React.createElement(StyledOl, null,
+            React.createElement(StyledLi, null,
+                React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] }, "Section")),
+            React.createElement(StyledLi2, null,
+                React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] }, "Sub-section")))));
+};
 Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
 exports.default = Breadcrumbs;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
 //# sourceMappingURL=Breadcrumbs.js.map

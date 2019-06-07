@@ -7,8 +7,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     width: {
         "2": "g-input--width-2",
         "3": "g-input--width-3",
@@ -98,7 +98,10 @@ const constants = {
         Photo: "photo"
     }
 };
-const Input = ({ width, hasError, fakeFocus, inputId, describedBy, name, disabled, readOnly, autoFocus, value, type, spellCheck, autoComplete, onChange }) => (React.createElement("input", { "aria-describedby": describedBy, className: `g-input${constants.width[width] !== undefined ? " " + constants.width[width] : ""}${hasError ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
+var Input = function (_a) {
+    var width = _a.width, hasError = _a.hasError, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    return (React.createElement("input", { "aria-describedby": describedBy, className: "g-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (hasError ? " g-input--error" : "") + (fakeFocus ? " :focus" : ""), id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
+};
 Input.props = [
     "width",
     "hasError",

@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const Ol = ({ numbered, children }) => (React.createElement("ol", { className: `g-ol-list${numbered ? " g-ol-list--number" : ""}` }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var React = __importStar(require("react"));
+var Ol = function (_a) {
+    var numbered = _a.numbered, children = _a.children;
+    return (React.createElement("ol", { className: "g-ol-list" + (numbered ? " g-ol-list--number" : "") }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 Ol.props = ["numbered", "children"];
 exports.default = Ol;
 //# sourceMappingURL=Ol.js.map

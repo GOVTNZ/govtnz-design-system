@@ -1,4 +1,8 @@
 "use strict";
+var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -7,76 +11,34 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const styled = __importStar(require("styled-components"));
-const StyledInput = styled.input `font-family: Arial, sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-weight: 400;
-font-size: 1rem;
-line-height: 1.25;
-box-sizing: border-box;
-width: 100%;
-height: 40px;
-margin-top: 0;
-padding: .5rem;
-border: 1px solid #2a2a2a;
-border-radius: 0;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
-@media print{
-font-family: sans-serif;;
-}
-@media (min-width: 40.0625em){
-font-size: 1.1875rem;
-line-height: 1.31579;;
-}
-@media print{
-font-size: 14pt;
-line-height: 1.15;;
-}
-:focus,:focus{
-outline: 3px solid #ffbf47;
-outline-offset: 0;
-}
-::-webkit-outer-spin-button,::-webkit-inner-spin-button{
-margin: 0;
--webkit-appearance: none;
-}
-${props => props.hasError &&
-    styled.css `
-    border: 1px solid #b10e1e;
-  `}
-${props => props.width === "30" &&
-    styled.css `
-    max-width: 59ex;
-  `}
-${props => props.width === "20" &&
-    styled.css `
-    max-width: 41ex;
-  `}
-${props => props.width === "10" &&
-    styled.css `
-    max-width: 23ex;
-  `}
-${props => props.width === "5" &&
-    styled.css `
-    max-width: 10.8ex;
-  `}
-${props => props.width === "4" &&
-    styled.css `
-    max-width: 9ex;
-  `}
-${props => props.width === "3" &&
-    styled.css `
-    max-width: 7.2ex;
-  `}
-${props => props.width === "2" &&
-    styled.css `
-    max-width: 5.4ex;
-  `}`;
-const constants = {
+var React = __importStar(require("react"));
+var styled = __importStar(require("styled-components"));
+var StyledInput = styled.input(templateObject_9 || (templateObject_9 = __makeTemplateObject(["font-family: Arial, sans-serif;\n-webkit-font-smoothing: antialiased;\n-moz-osx-font-smoothing: grayscale;\nfont-weight: 400;\nfont-size: 1rem;\nline-height: 1.25;\nbox-sizing: border-box;\nwidth: 100%;\nheight: 40px;\nmargin-top: 0;\npadding: .5rem;\nborder: 1px solid #2a2a2a;\nborder-radius: 0;\n-webkit-appearance: none;\n-moz-appearance: none;\nappearance: none;\n@media print{\nfont-family: sans-serif;;\n}\n@media (min-width: 40.0625em){\nfont-size: 1.1875rem;\nline-height: 1.31579;;\n}\n@media print{\nfont-size: 14pt;\nline-height: 1.15;;\n}\n:focus,:focus{\noutline: 3px solid #ffbf47;\noutline-offset: 0;\n}\n::-webkit-outer-spin-button,::-webkit-inner-spin-button{\nmargin: 0;\n-webkit-appearance: none;\n}\n", "\n", "\n", "\n", "\n", "\n", "\n", "\n", ""], ["font-family: Arial, sans-serif;\n-webkit-font-smoothing: antialiased;\n-moz-osx-font-smoothing: grayscale;\nfont-weight: 400;\nfont-size: 1rem;\nline-height: 1.25;\nbox-sizing: border-box;\nwidth: 100%;\nheight: 40px;\nmargin-top: 0;\npadding: .5rem;\nborder: 1px solid #2a2a2a;\nborder-radius: 0;\n-webkit-appearance: none;\n-moz-appearance: none;\nappearance: none;\n@media print{\nfont-family: sans-serif;;\n}\n@media (min-width: 40.0625em){\nfont-size: 1.1875rem;\nline-height: 1.31579;;\n}\n@media print{\nfont-size: 14pt;\nline-height: 1.15;;\n}\n:focus,:focus{\noutline: 3px solid #ffbf47;\noutline-offset: 0;\n}\n::-webkit-outer-spin-button,::-webkit-inner-spin-button{\nmargin: 0;\n-webkit-appearance: none;\n}\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    ""])), function (props) {
+    return props.hasError && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    border: 1px solid #b10e1e;\n  "], ["\n    border: 1px solid #b10e1e;\n  "])));
+}, function (props) {
+    return props.width === "30" && styled.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    max-width: 59ex;\n  "], ["\n    max-width: 59ex;\n  "])));
+}, function (props) {
+    return props.width === "20" && styled.css(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n    max-width: 41ex;\n  "], ["\n    max-width: 41ex;\n  "])));
+}, function (props) {
+    return props.width === "10" && styled.css(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n    max-width: 23ex;\n  "], ["\n    max-width: 23ex;\n  "])));
+}, function (props) {
+    return props.width === "5" && styled.css(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n    max-width: 10.8ex;\n  "], ["\n    max-width: 10.8ex;\n  "])));
+}, function (props) {
+    return props.width === "4" && styled.css(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n    max-width: 9ex;\n  "], ["\n    max-width: 9ex;\n  "])));
+}, function (props) {
+    return props.width === "3" && styled.css(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n    max-width: 7.2ex;\n  "], ["\n    max-width: 7.2ex;\n  "])));
+}, function (props) {
+    return props.width === "2" && styled.css(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n    max-width: 5.4ex;\n  "], ["\n    max-width: 5.4ex;\n  "])));
+});
+var constants = {
     type: {
         Button: "button",
         Checkbox: "checkbox",
@@ -157,7 +119,10 @@ const constants = {
         Photo: "photo"
     }
 };
-const Input = ({ width, hasError, fakeFocus, inputId, describedBy, name, disabled, readOnly, autoFocus, value, type, spellCheck, autoComplete, onChange }) => (React.createElement(StyledInput, { width: width, hasError: hasError, fakeFocus: fakeFocus, "aria-describedby": describedBy, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
+var Input = function (_a) {
+    var width = _a.width, hasError = _a.hasError, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    return (React.createElement(StyledInput, { width: width, hasError: hasError, fakeFocus: fakeFocus, "aria-describedby": describedBy, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
+};
 Input.props = [
     "width",
     "hasError",
@@ -175,4 +140,5 @@ Input.props = [
     "onChange"
 ];
 exports.default = Input;
+var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9;
 //# sourceMappingURL=Input.js.map

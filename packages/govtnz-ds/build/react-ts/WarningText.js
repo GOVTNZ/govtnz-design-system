@@ -7,12 +7,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const WarningText = ({}) => (React.createElement("div", { className: "g-warning-text" },
+var React = __importStar(require("react"));
+var WarningText = function (_a) { return (React.createElement("div", { className: "g-warning-text" },
     React.createElement("span", { "aria-hidden": "true", className: "g-warning-text__icon" }, "!"),
     React.createElement("strong", { className: "g-warning-text__text" },
         React.createElement("span", { className: "g-warning-text__assistive" }, "Warning"),
-        "You can be fined up to $5,000 if you don\u2019t register.")));
+        "You can be fined up to $5,000 if you don\u2019t register."))); };
 WarningText.props = [];
 exports.default = WarningText;
 //# sourceMappingURL=WarningText.js.map

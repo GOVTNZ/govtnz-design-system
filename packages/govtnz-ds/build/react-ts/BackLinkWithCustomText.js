@@ -7,11 +7,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
 };
-const BackLinkWithCustomText = ({ href, rel, target, children }) => (React.createElement("a", { className: "g-backLinkWithCustomText-back-link", href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+var BackLinkWithCustomText = function (_a) {
+    var href = _a.href, rel = _a.rel, target = _a.target, children = _a.children;
+    return (React.createElement("a", { className: "g-backLinkWithCustomText-back-link", href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+};
 BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
 exports.default = BackLinkWithCustomText;
 //# sourceMappingURL=BackLinkWithCustomText.js.map

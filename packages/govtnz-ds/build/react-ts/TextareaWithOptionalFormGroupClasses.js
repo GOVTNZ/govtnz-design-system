@@ -7,8 +7,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const constants = {
+var React = __importStar(require("react"));
+var constants = {
     autoComplete: {
         Off: "off",
         On: "on",
@@ -65,9 +65,12 @@ const constants = {
         Photo: "photo"
     }
 };
-const TextareaWithOptionalFormGroupClasses = ({ textareaWithPageHeading, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, onChange }) => (React.createElement("div", { className: "g-textareaWithOptionalFormGroupClasses-form-group extra-class" },
-    React.createElement("label", { className: "g-textareaWithOptionalFormGroupClasses-label", htmlFor: textareaWithPageHeading }, "Full address"),
-    React.createElement("textarea", { className: "g-textareaWithOptionalFormGroupClasses-textarea", id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+var TextareaWithOptionalFormGroupClasses = function (_a) {
+    var textareaWithPageHeading = _a.textareaWithPageHeading, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    return (React.createElement("div", { className: "g-textareaWithOptionalFormGroupClasses-form-group extra-class" },
+        React.createElement("label", { className: "g-textareaWithOptionalFormGroupClasses-label", htmlFor: textareaWithPageHeading }, "Full address"),
+        React.createElement("textarea", { className: "g-textareaWithOptionalFormGroupClasses-textarea", id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+};
 TextareaWithOptionalFormGroupClasses.props = [
     "textareaWithPageHeading",
     "name",

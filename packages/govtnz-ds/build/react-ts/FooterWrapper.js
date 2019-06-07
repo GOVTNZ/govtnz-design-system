@@ -7,8 +7,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const React = __importStar(require("react"));
-const FooterWrapper = ({ children }) => (React.createElement("footer", { className: "g-footer-wrapper" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
+var React = __importStar(require("react"));
+var FooterWrapper = function (_a) {
+    var children = _a.children;
+    return (React.createElement("footer", { className: "g-footer-wrapper" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
+};
 FooterWrapper.props = ["children"];
 exports.default = FooterWrapper;
 //# sourceMappingURL=FooterWrapper.js.map
