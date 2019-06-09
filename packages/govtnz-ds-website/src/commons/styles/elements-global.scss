@@ -35,9 +35,24 @@ a:focus,
 input:focus,
 button:focus,
 summary:focus,
+.example__summary:focus,
 textarea:focus {
   outline: 3px solid $color-ds-default-focus;
-  outline: 3px solid var(--color-theme-focus, $color-ds-default-focus);
+}
+
+@supports (--color-theme-focus: $color-ds-default-focus) {
+  // Working around an MS Edge bug where it can't apply
+  // CSS Variables correctly in MS Edge 44.17763.1.0 /
+  // EdgeHTML 18.17763 (2018) so we'll use an @supports to
+  // hide the CSS Variables rule from MS Edge.
+  a:focus,
+  input:focus,
+  button:focus,
+  summary:focus,
+  .example__summary:focus,
+  textarea:focus {
+    outline: 3px solid var(--color-theme-focus, $color-ds-default-focus);
+  }
 }
 
 html {
