@@ -928,7 +928,6 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
         padding: 16px;
         padding-top: 16px;
         padding-bottom: 16px;
-        font-family: National2;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
