@@ -29,7 +29,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
     Buttons make important actions stand out within a task flow, and help users
-    to take that action easily. Use colour and text  in buttons to inform users
+    to take that action easily. Use colour and text in buttons to inform users
     about the action that will happen when they touch or click a button.
 </P>
 
@@ -39,21 +39,21 @@ an application or saving their information.</p>
 <p>If you are considering using an icon in a button, we suggest you use visible
 text as well to ensure all users understand the button&#39;s action.</p>
 <h2 id="how-it-works">How it works</h2>
-<p>Keep button text short. Start with a verb that clearly describes the action the
-button performs. Write button text in sentence case.</p>
+<p>Keep button text short. Start with a verb that clearly describes the action
+the button performs. Write button text in sentence case.</p>
 <p>Some typical examples of button text are:</p>
 <Ul {...onChangeGenerator(Ul)} bulleted>
 <Li {...onChangeGenerator(Li)}>&#39;Start now&#39; at the start of the service</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Sign in&#39; to an account a user has already created</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Continue&#39; when the service does not save a user&#39;s information</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Save and continue&#39; when the service does save a user&#39;s information</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Save and return later&#39; when a user can save their information and come back
-to it later</Li>
+<Li {...onChangeGenerator(Li)}>&#39;Save and return later&#39; when a user can save their information and come
+back to it later</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Pay&#39; to make a payment</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Confirm and send&#39; on a check answers page that does not have any legal
 content a user must agree to</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Accept and send&#39; on a check answers page that has legal content a user must
-agree to</Li>
+<Li {...onChangeGenerator(Li)}>&#39;Accept and send&#39; on a check answers page that has legal content a user
+must agree to</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Sign out&#39; when a user is leaving an account that they signed in to</Li>
 <Li {...onChangeGenerator(Li)}>&#39;Add another [name of thing]&#39; to add another item to a list or group. Ensure
 the button text describes clearly what this button will add, in case there are
@@ -62,9 +62,10 @@ other similar buttons on the same page or form.</Li>
 <p>Consider if you need to include more words to clearly describe a button&#39;s
 action. For example, &#39;Add another address&#39; or &#39;Accept and claim a tax refund&#39;.</p>
 <h2 id="primary-buttons">Primary buttons</h2>
-<p>Use a primary button for the main &#39;call to action&#39; on a page, such as &#39;Save and
-send&#39;. Avoid using several primary buttons on a single page. Having more than
-one &#39;call to action&#39; reduces its impact, and makes it harder for users to know
+<p>Use a primary button for the main &#39;call to action&#39; on a page, such
+as &#39;Save and send&#39;.</p>
+<p>Avoid using several primary buttons on a single page. Having more than one
+&#39;call to action&#39; reduces its impact, and makes it harder for users to know
 what to do next.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary buttons</ExampleHeading>
@@ -74,8 +75,8 @@ what to do next.</p>
 </ExampleContainer>
 
 <h2 id="secondary-buttons">Secondary buttons</h2>
-<p>Use secondary buttons for alternative or intermediary actions on a page.</p>
-<p>Pages with too many calls to action make it hard for users to know what to do
+<p>Use secondary buttons for alternative or intermediary actions on a page.
+Pages with too many calls to action make it hard for users to know what to do
 next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
@@ -98,12 +99,12 @@ button, as more can confuse users.</p>
 </ExampleContainer>
 
 <h2 id="warning-buttons">Warning buttons</h2>
-<p>Warning buttons are designed to make users think carefully before they use them.
-They only work if used very sparingly.</p>
+<p>Warning buttons are designed to make users think carefully before they use
+them. They only work if used very sparingly.</p>
 <p>Only use warning buttons for actions with serious destructive consequences that
 cannot be easily undone by a user, such as permanently deleting an account.</p>
-<p>When letting users carry out an action like this, it&#39;s a good idea to include an
-extra first step that asks users to confirm they want to do
+<p>When letting users carry out an action like this, it&#39;s a good idea to include
+an extra first step that asks users to confirm they want to do
 the destructive action.</p>
 <p>In this instance, use one warning button for the initial call to action, and
 another warning button for the final confirmation.</p>
@@ -140,8 +141,8 @@ preventing multiple clicks from registering.</p>
 to make them work</Li>
 <Li {...onChangeGenerator(Li)}>are experiencing a slow connection, which means they are not given feedback
 on their action quickly enough</Li>
-<Li {...onChangeGenerator(Li)}>have motor impairments, such as hand tremors, that cause them to click the
-button involuntarily.</Li>
+<Li {...onChangeGenerator(Li)}>have motor impairments, such as hand tremors, that cause them to click
+the button involuntarily.</Li>
 </Ul>
 <p>In some cases, multiple clicks can mean users&#39; information is sent more than
 once. For example, a notify team found that a number of users were receiving
