@@ -177,7 +177,7 @@ export const govukToMetaTemplateInput = async (
       id = 'button';
       html = 
         `<button
-          class="g-button {{ disabled!?: g-button--disabled }} {{ kind: g-button--secondary as secondary | g-button--warning as warning }}"
+          class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
           type="submit"
           aria-disabled="{{ disabled!?: true }}"
           disabled="{{ disabled!?: true }}"
