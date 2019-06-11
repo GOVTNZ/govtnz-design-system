@@ -29,12 +29,6 @@ Object.defineProperty(exports, "breadcrumbs", {
     return _Breadcrumbs["default"];
   }
 });
-Object.defineProperty(exports, "button", {
-  enumerable: true,
-  get: function get() {
-    return _Button["default"];
-  }
-});
 Object.defineProperty(exports, "captionL", {
   enumerable: true,
   get: function get() {
@@ -437,6 +431,12 @@ Object.defineProperty(exports, "warningText", {
     return _WarningText["default"];
   }
 });
+Object.defineProperty(exports, "button", {
+  enumerable: true,
+  get: function get() {
+    return _Button["default"];
+  }
+});
 Object.defineProperty(exports, "flexColumn", {
   enumerable: true,
   get: function get() {
@@ -475,8 +475,6 @@ var _BackLinkWithCustomText = _interopRequireDefault(require("./BackLinkWithCust
 var _BreadcrumbsWithLastBreadcrumbAsCurrentPage = _interopRequireDefault(require("./BreadcrumbsWithLastBreadcrumbAsCurrentPage"));
 
 var _Breadcrumbs = _interopRequireDefault(require("./Breadcrumbs"));
-
-var _Button = _interopRequireDefault(require("./Button"));
 
 var _CaptionL = _interopRequireDefault(require("./CaptionL"));
 
@@ -611,6 +609,8 @@ var _Textarea = _interopRequireDefault(require("./Textarea"));
 var _Ul = _interopRequireDefault(require("./Ul"));
 
 var _WarningText = _interopRequireDefault(require("./WarningText"));
+
+var _Button = _interopRequireDefault(require("./Button"));
 
 var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
 

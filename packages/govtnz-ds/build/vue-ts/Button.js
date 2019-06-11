@@ -10,6 +10,10 @@ exports["default"] = void 0;
 var _vue = _interopRequireDefault(require("vue"));
 
 var constants = {
+  level: {
+    secondary: "g-button--secondary",
+    warning: "g-button--warning"
+  },
   type: {
     Submit: "submit",
     Reset: "reset",
@@ -26,6 +30,13 @@ var _default = _vue["default"].extend({
       "default": false,
       required: false
     },
+    level: {
+      type: String,
+      validator: function validator(value) {
+        return ["secondary", "warning"].indexOf(value) !== -1;
+      },
+      required: true
+    },
     name: {
       type: String,
       required: false
@@ -39,7 +50,7 @@ var _default = _vue["default"].extend({
     },
     children: {
       required: false,
-      "default": "Example text"
+      "default": "\n            Example text\n          "
     }
   },
   computed: {
@@ -47,7 +58,7 @@ var _default = _vue["default"].extend({
       return this.disabled ? "true" : "";
     },
     computed__class: function computed__class() {
-      return "g-button" + (this.disabled ? " g-button--disabled" : "");
+      return "g-button" + (this.disabled ? " g-button--disabled" : "") + (constants[this.level] !== undefined ? " ".concat(constants[this.level]) : "");
     },
     computed__disabled: function computed__disabled() {
       return this.disabled ? "true" : "";

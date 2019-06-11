@@ -40,7 +40,7 @@ export default [
     "vue-js": "<template>\n  <c-button type=\"Button\" kind=\"secondary\">\n    Find address\n  </c-button>\n</template>\n<script>\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-js/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "vue-ts": "<template>\n  <c-button type=\"Button\" kind=\"secondary\">\n    Find address\n  </c-button>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-ts/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--secondary\" type=\"button\">Find address</button>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\" type=\"button\">Find address</button>\n",
     "css": "",
     "twig-embed": "{% embed \"Button.html.twig\"  with {'type':'Button', 'kind':'secondary', 'children':'Find address'} only %}{% endembed %}"
   },
@@ -54,7 +54,7 @@ export default [
     "vue-js": "<template>\n  <c-button type=\"Button\">\n    Save and continue\n  </c-button>\n  <c-button type=\"Button\" kind=\"secondary\">\n    Save as draft\n  </c-button>\n</template>\n<script>\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-js/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "vue-ts": "<template>\n  <c-button type=\"Button\">\n    Save and continue\n  </c-button>\n  <c-button type=\"Button\" kind=\"secondary\">\n    Save as draft\n  </c-button>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-ts/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\" type=\"button\">Save and continue</button>\n<button class=\"g-button g-button--secondary\" type=\"button\">\n  Save as draft\n</button>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\" type=\"button\">Save and continue</button>\n<button class=\"g-button\" type=\"button\">Save as draft</button>\n",
     "css": "",
     "twig-embed": "{% embed \"Button.html.twig\"  with {'type':'Button', 'children':'Save and continue'} only %}{% endembed %}{% embed \"Button.html.twig\"  with {'type':'Button', 'kind':'secondary', 'children':'Save as draft'} only %}{% endembed %}"
   },
@@ -68,7 +68,7 @@ export default [
     "vue-js": "<template>\n  <c-button type=\"Button\" kind=\"warning\">\n    Delete account\n  </c-button>\n</template>\n<script>\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-js/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "vue-ts": "<template>\n  <c-button type=\"Button\" kind=\"warning\">\n    Delete account\n  </c-button>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-ts/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--warning\" type=\"button\">Delete account</button>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\" type=\"button\">Delete account</button>\n",
     "css": "",
     "twig-embed": "{% embed \"Button.html.twig\"  with {'type':'Button', 'kind':'warning', 'children':'Delete account'} only %}{% endembed %}"
   },

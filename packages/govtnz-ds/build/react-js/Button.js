@@ -10,6 +10,10 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var constants = {
+  level: {
+    secondary: "g-button--secondary",
+    warning: "g-button--warning"
+  },
   type: {
     Submit: "submit",
     Reset: "reset",
@@ -19,18 +23,19 @@ var constants = {
 
 var Button = function Button(_ref) {
   var disabled = _ref.disabled,
+      level = _ref.level,
       name = _ref.name,
       type = _ref.type,
       children = _ref.children;
   return _react["default"].createElement("button", {
     "aria-disabled": disabled,
-    className: "g-button".concat(disabled ? " g-button--disabled" : ""),
+    className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
     disabled: disabled,
     type: constants.type[type],
     name: name
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Button.props = ["disabled", "name", "type", "children"];
+Button.props = ["disabled", "level", "name", "type", "children"];
 var _default = Button;
 exports["default"] = _default;

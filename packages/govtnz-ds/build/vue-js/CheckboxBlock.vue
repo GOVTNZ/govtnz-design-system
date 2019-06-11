@@ -180,7 +180,7 @@ export default Vue.extend({
   left: 0;
   width: 40px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 2px solid currentColor;
   background: transparent;
 }
 .g-checkboxes__input + .g-checkboxes__label::after {
