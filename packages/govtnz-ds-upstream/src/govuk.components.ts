@@ -696,7 +696,14 @@ const knownColours = [
   "#e4f2ff", // Syntax highlighting
   "#f5f2f0", // Syntax highlighting
   "#708090", // Syntax highlighting
-  "#a67f59" // Syntax highlighting
+  "#a67f59", // Syntax highlighting
+
+  "#003418", // Button (default) box shadow
+  "#00682f", // Button (default) focus background color
+  "#858688", // Button (secondary) box shadow
+  "#c8cacb", // Button (secondary) focus background color
+  "#47060c", // Button (warning) box shadow
+  "#8e0b18", // Button (warning) focus background color
 ];
 
 type Extraction = {

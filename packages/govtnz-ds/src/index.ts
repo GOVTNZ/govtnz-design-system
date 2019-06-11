@@ -35,10 +35,12 @@ async function main(
   mode: BuildMode,
   noCache: boolean = false,
   patternIds?: string[] | undefined,
-  metaTemplateFormatIds: string[] | undefined = ['*']
+  metaTemplateFormatIds: string[] | undefined = ['*'],
+  sources?: string[] | undefined,
 ) {
   console.info('Command line args:');
   console.info('  -  Cache: ', !noCache);
+  console.info('  -  Sources: ', sources ? sources : 'All');
   console.info('  -  Filter By Patterns:', patternIds ? patternIds : false);
   console.info(
     '  -  MetaTemplate formats:',
@@ -64,16 +66,49 @@ async function main(
 
   // const silverStripe4Files = await getSilverStripe4Files();
 
-  const releaseSpecItems: ReleaseSpecItem[] = JSON.parse(specString);
+  let releaseSpecItems: ReleaseSpecItem[] = JSON.parse(specString);
   const release: ReleaseItem[] = [];
   let cssVariables: CSSVariablePattern[] = [];
+
+  if (sources !== null) {
+    releaseSpecItems = sources.reduce((result, source) => {
+      const identifier = source.split('@');
+      const sourceId = identifier[0];
+      const version = identifier[1];
+
+      const releaseSpecItem = releaseSpecItems.find(item => {
+        if (item.sourceId !== sourceId) {
+          return false;
+        }
+
+        if (version !== undefined && item.version !== version) {
+          return false;
+        }
+
+        return true;
+      });
+
+      if (releaseSpecItem !== undefined) {
+        result.push(releaseSpecItem);
+      }
+
+      return result;
+    }, []);
+  }
 
   // Sequentially run because may result in a full scrape (downloading
   // a repo, and installing it, starting webserver, scraping, etc.)
   // may have localhost port conflicts, resource contention issues.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
-    releaseSpecItem.patternIds = patternIds || releaseSpecItem.patternIds;
+    const validPatternIds = patternIds !== null && releaseSpecItem.patternIds !== undefined
+      ? patternIds.filter(patternId => releaseSpecItem.patternIds.includes(patternId))
+      : [];
+
+    releaseSpecItem.patternIds = validPatternIds.length > 0
+      ? validPatternIds
+      : releaseSpecItem.patternIds;
+
     releaseSpecItem.metaTemplateFormatIds =
       metaTemplateFormatIds || releaseSpecItem.metaTemplateFormatIds;
 
@@ -527,6 +562,9 @@ parser.addArgument(['-f', '--filter'], {
 parser.addArgument(['-m', '--metaTemplateFormat'], {
   help: 'MetaTemplate formats by Id (comma separated)'
 });
+parser.addArgument(['-s', '--sources'], {
+  help: 'Use specific sources Ids (comma seperated). Use "-s mysource@1.2.3" for a specific version of a source.'
+});
 
 const args = parser.parseArgs();
 
@@ -539,5 +577,6 @@ main(
   'build',
   !!args.noCache,
   args.filter && args.filter.split(','),
-  argMt && argMt.length > 0 ? argMt : undefined
+  argMt && argMt.length > 0 ? argMt : undefined,
+  args.sources && args.sources.split(',')
 );
