@@ -80,7 +80,7 @@
   padding: 15px;
   margin-bottom: 30px;
   border: 4px solid #b10e1e;
-  border: 4px solid var(--g-theme-color-dark2, #b10e1e);
+  border: 4px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {
@@ -111,7 +111,7 @@
 @media (min-width: 40.0625em) {
   .g-error-summary {
     border: 5px solid #b10e1e;
-    border: 5px solid var(--g-theme-color-dark2, #b10e1e);
+    border: 5px solid var(--g-theme-button-color-warning, #b10e1e);
   }
 }
 
@@ -214,7 +214,7 @@
 .g-error-summary__list a:hover,
 .g-error-summary__list a:active {
   color: #b10e1e;
-  color: var(--g-theme-color-dark2, #b10e1e);
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-error-summary__list a:focus {

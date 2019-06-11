@@ -10,7 +10,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
-  color: var(--g-theme-color-dark2, #b10e1e);
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {

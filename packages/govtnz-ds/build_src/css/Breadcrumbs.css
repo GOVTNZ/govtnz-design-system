@@ -159,7 +159,7 @@
 .g-breadcrumbs-error-summary__list a:hover,
 .g-breadcrumbs-error-summary__list a:active {
   color: #b10e1e;
-  color: var(--g-theme-color-dark2, #b10e1e);
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-breadcrumbs-error-summary__list a:focus {

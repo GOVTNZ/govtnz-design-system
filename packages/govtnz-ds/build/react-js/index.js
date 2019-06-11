@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.WarningText = exports.Ul = exports.Textarea = exports.TextareaWithOptionalFormGroupClasses = exports.TextareaWithLabelAsPageHeading = exports.TextareaWithErrorMessage = exports.TextareaWithDefaultValue = exports.TextareaWithCustomRows = exports.TextareaWithAutocompleteAttribute = exports.Tag = exports.TagInactive = exports.Tabs = exports.TabsTabsWithAnchorInPanel = exports.Table = exports.TableTableWithHead = exports.TableTableWithHeadAndCaption = exports.SummaryList = exports.SummaryListExtreme = exports.SummaryListCheckYourAnswers = exports.SkipLink = exports.SelectBlock = exports.Select = exports.SelectWithHintTextAndErrorMessage = exports.SelectWithFullWidthOverride = exports.FormDivider = exports.Radio = exports.RadioBlockWithHint = exports.RadioBlock = exports.Radios = exports.FieldsetLabel = exports.Legend = exports.FieldsetBlock = exports.FieldsetBlockWithError = exports.Fieldset = exports.P = exports.Li = exports.Ol = exports.InsetText = exports.Input = exports.InputBlock = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FileUpload = exports.FileUploadWithHintText = exports.FileUploadWithErrorMessage = exports.ErrorSummary = exports.ErrorMessage = exports.Details = exports.DetailsWithHtml = exports.DetailsExpanded = exports.DateInput = exports.DateInputWithErrors = exports.DateInputWithErrorOnYearInput = exports.DateInputWithErrorOnMonthInput = exports.DateInputWithErrorOnDayInput = exports.DateInputWithAutocompleteValues = exports.CustomTable = exports.Checkbox = exports.CheckboxBlock = exports.CharacterCountWithCustomRows = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.Breadcrumbs = exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = exports.BackLinkWithCustomText = exports.A = void 0;
+exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.Button = exports.WarningText = exports.Ul = exports.Textarea = exports.TextareaWithOptionalFormGroupClasses = exports.TextareaWithLabelAsPageHeading = exports.TextareaWithErrorMessage = exports.TextareaWithDefaultValue = exports.TextareaWithCustomRows = exports.TextareaWithAutocompleteAttribute = exports.Tag = exports.TagInactive = exports.Tabs = exports.TabsTabsWithAnchorInPanel = exports.Table = exports.TableTableWithHead = exports.TableTableWithHeadAndCaption = exports.SummaryList = exports.SummaryListExtreme = exports.SummaryListCheckYourAnswers = exports.SkipLink = exports.SelectBlock = exports.Select = exports.SelectWithHintTextAndErrorMessage = exports.SelectWithFullWidthOverride = exports.FormDivider = exports.Radio = exports.RadioBlockWithHint = exports.RadioBlock = exports.Radios = exports.FieldsetLabel = exports.Legend = exports.FieldsetBlock = exports.FieldsetBlockWithError = exports.Fieldset = exports.P = exports.Li = exports.Ol = exports.InsetText = exports.Input = exports.InputBlock = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FileUpload = exports.FileUploadWithHintText = exports.FileUploadWithErrorMessage = exports.ErrorSummary = exports.ErrorMessage = exports.Details = exports.DetailsWithHtml = exports.DetailsExpanded = exports.DateInput = exports.DateInputWithErrors = exports.DateInputWithErrorOnYearInput = exports.DateInputWithErrorOnMonthInput = exports.DateInputWithErrorOnDayInput = exports.DateInputWithAutocompleteValues = exports.CustomTable = exports.Checkbox = exports.CheckboxBlock = exports.CharacterCountWithCustomRows = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Breadcrumbs = exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = exports.BackLinkWithCustomText = exports.A = void 0;
 
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 var A = function A() {
@@ -29,12 +29,6 @@ var Breadcrumbs = function Breadcrumbs() {
 };
 
 exports.Breadcrumbs = Breadcrumbs;
-
-var Button = function Button() {
-  return import("./Button");
-};
-
-exports.Button = Button;
 
 var CaptionL = function CaptionL() {
   return import("./CaptionL");
@@ -437,6 +431,12 @@ var WarningText = function WarningText() {
 };
 
 exports.WarningText = WarningText;
+
+var Button = function Button() {
+  return import("./Button");
+};
+
+exports.Button = Button;
 
 var FlexColumn = function FlexColumn() {
   return import("./FlexColumn");

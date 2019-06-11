@@ -97,7 +97,7 @@
 
 .g-selectBlock-select--error {
   border: 1px solid #b10e1e;
-  border: 1px solid var(--g-theme-color-dark2, #b10e1e);
+  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-selectBlock-select::-ms-expand {

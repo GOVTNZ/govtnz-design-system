@@ -15,8 +15,9 @@
 
 .g-dateInputWithErrorOnMonthInput-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-color-dark2;
-  border-left: 5px solid var(--g-theme-color-dark2, $g-theme-color-dark2);
+  border-left: 5px solid $g-theme-button-color-warning;
+  border-left: 5px solid
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-dateInputWithErrorOnMonthInput-form-group--error
@@ -36,8 +37,8 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-color-dark2;
-  color: var(--g-theme-color-dark2, $g-theme-color-dark2);
+  color: $g-theme-button-color-warning;
+  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 @media print {
@@ -257,8 +258,9 @@
 }
 
 .g-dateInputWithErrorOnMonthInput-input--error {
-  border: 1px solid $g-theme-color-dark2;
-  border: 1px solid var(--g-theme-color-dark2, $g-theme-color-dark2);
+  border: 1px solid $g-theme-button-color-warning;
+  border: 1px solid
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-dateInputWithErrorOnMonthInput-input--width-4 {

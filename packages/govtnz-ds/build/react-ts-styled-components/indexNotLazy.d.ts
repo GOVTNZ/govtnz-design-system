@@ -2,7 +2,6 @@ export { default as a } from "./A";
 export { default as backLinkWithCustomText } from "./BackLinkWithCustomText";
 export { default as breadcrumbsWithLastBreadcrumbAsCurrentPage } from "./BreadcrumbsWithLastBreadcrumbAsCurrentPage";
 export { default as breadcrumbs } from "./Breadcrumbs";
-export { default as button } from "./Button";
 export { default as captionL } from "./CaptionL";
 export { default as captionM } from "./CaptionM";
 export { default as captionXl } from "./CaptionXl";
@@ -70,6 +69,7 @@ export { default as textareaWithOptionalFormGroupClasses } from "./TextareaWithO
 export { default as textarea } from "./Textarea";
 export { default as ul } from "./Ul";
 export { default as warningText } from "./WarningText";
+export { default as button } from "./Button";
 export { default as flexColumn } from "./FlexColumn";
 export { default as flexContainer } from "./FlexContainer";
 export { default as flexRow } from "./FlexRow";

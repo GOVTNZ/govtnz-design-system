@@ -2,19 +2,23 @@ import * as React from "react";
 
 type Props = {
   disabled?: boolean | undefined;
+  level: "secondary" | "warning";
   name?: string | undefined;
   type?: "Submit" | "Reset" | "Button" | undefined;
   children?: React.ReactNode;
 };
 
 const constants = {
+  level: { secondary: "g-button--secondary", warning: "g-button--warning" },
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
-const Button = ({ disabled, name, type, children }: Props) => (
+const Button = ({ disabled, level, name, type, children }: Props) => (
   <button
     aria-disabled={disabled}
-    className={`g-button${disabled ? " g-button--disabled" : ""}`}
+    className={`g-button${disabled ? " g-button--disabled" : ""}${
+      constants.level[level] !== undefined ? " " + constants.level[level] : ""
+    }`}
     disabled={disabled}
     type={constants.type[type] as any}
     name={name}
@@ -26,5 +30,5 @@ const Button = ({ disabled, name, type, children }: Props) => (
     )}
   </button>
 );
-Button.props = ["disabled", "name", "type", "children"];
+Button.props = ["disabled", "level", "name", "type", "children"];
 export default Button;

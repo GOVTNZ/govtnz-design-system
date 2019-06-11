@@ -9,12 +9,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var constants = {
+    level: { secondary: "g-button--secondary", warning: "g-button--warning" },
     type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 var Button = function (_a) {
-    var disabled = _a.disabled, name = _a.name, type = _a.type, children = _a.children;
-    return (React.createElement("button", { "aria-disabled": disabled, className: "g-button" + (disabled ? " g-button--disabled" : ""), disabled: disabled, type: constants.type[type], name: name }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, children = _a.children;
+    return (React.createElement("button", { "aria-disabled": disabled, className: "g-button" + (disabled ? " g-button--disabled" : "") + (constants.level[level] !== undefined ? " " + constants.level[level] : ""), disabled: disabled, type: constants.type[type], name: name }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Button.props = ["disabled", "name", "type", "children"];
+Button.props = ["disabled", "level", "name", "type", "children"];
 exports.default = Button;
 //# sourceMappingURL=Button.js.map
