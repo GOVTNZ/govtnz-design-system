@@ -49,13 +49,6 @@
       "tabs__tabs-with-anchor-in-panel",
       "tag",
       "tag__inactive",
-      "textarea",
-      "textarea__with-autocomplete-attribute",
-      "textarea__with-custom-rows",
-      "textarea__with-default-value",
-      "textarea__with-error-message",
-      "textarea__with-label-as-page-heading",
-      "textarea__with-optional-form-group-classes",
       "warning-text"
     ]
   },
@@ -69,7 +62,14 @@
       "button__warning",
       "button__with-active-state",
       "button__with-focus-state",
-      "button__with-hover-state"
+      "button__with-hover-state",
+      "textarea",
+      "textarea__with-autocomplete-attribute",
+      "textarea__with-custom-rows",
+      "textarea__with-default-value",
+      "textarea__with-error-message",
+      "textarea__with-label-as-page-heading",
+      "textarea__with-optional-form-group-classes"
     ]
   },
   {
