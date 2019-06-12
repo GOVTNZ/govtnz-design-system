@@ -29,15 +29,15 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
     Buttons make important actions stand out within a task flow, and help users
-    to take that action easily. Use colour and text in buttons to inform users
-    about the action that will happen when they touch or click a button.
+    to take those actions easily. Use colour and text in buttons to inform users
+    about what will happen when they touch or click a button.
 </P>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-it">When to use it</H2>
 <p>Use buttons to help users carry out key actions in a task flow, like starting
 an application or saving their information.</p>
 <p>If you are considering using an icon in a button, we suggest you use visible
-text as well to ensure all users understand the button&#39;s action.</p>
+text as well to ensure all users understand the button&#39;s function.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>Keep button text short. Start with a verb that clearly describes the action
 the button performs. Write button text in sentence case.</p>
@@ -100,7 +100,7 @@ button, as more can confuse users.</p>
 
 <h2 id="warning-buttons">Warning buttons</h2>
 <p>Warning buttons are designed to make users think carefully before they use
-them. They only work if used very sparingly.</p>
+them. Warning buttons only work well if used very sparingly..</p>
 <p>Only use warning buttons for actions with serious destructive consequences that
 cannot be easily undone by a user, such as permanently deleting an account.</p>
 <p>When letting users carry out an action like this, it&#39;s a good idea to include

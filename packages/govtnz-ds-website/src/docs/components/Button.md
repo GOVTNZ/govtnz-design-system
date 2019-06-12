@@ -1,7 +1,7 @@
 <P styleSize="large">
     Buttons make important actions stand out within a task flow, and help users
-    to take that action easily. Use colour and text in buttons to inform users
-    about the action that will happen when they touch or click a button.
+    to take those actions easily. Use colour and text in buttons to inform users
+    about what will happen when they touch or click a button.
 </P>
 
 ## When to use it
@@ -10,7 +10,7 @@ Use buttons to help users carry out key actions in a task flow, like starting
 an application or saving their information.
 
 If you are considering using an icon in a button, we suggest you use visible
-text as well to ensure all users understand the button's action.
+text as well to ensure all users understand the button's function.
 
 ## How it works
 
@@ -84,7 +84,7 @@ button, as more can confuse users.
 ## Warning buttons
 
 Warning buttons are designed to make users think carefully before they use
-them. They only work if used very sparingly.
+them. Warning buttons only work well if used very sparingly..
 
 Only use warning buttons for actions with serious destructive consequences that
 cannot be easily undone by a user, such as permanently deleting an account.
