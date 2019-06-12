@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Details, Summary } from 'react-accessible-details';
 import copyToClipboard from './copy-text-to-clipboard';
 import './styles/clipboard.css';
+import './styles/components-button.scss';
 import iconDown from './svgs/icon-down.svg';
 import A from '@govtnz/ds/build/react-ts/A';
 import {
@@ -52,7 +53,7 @@ export default class Example extends Component<Props, State> {
       hasClickedExpand: false,
       copyingMode: false,
       supportsJavaScript: false,
-      supportsClipboard: false,
+      supportsClipboard: true,
     };
   }
 
@@ -148,7 +149,7 @@ export default class Example extends Component<Props, State> {
         {supportsJavaScript && (
           <React.Fragment>
             <div className="example__format">
-              <h6 style={{ margin: '0px' }}>
+              <h6 style={{ margin: '0 0 24px' }}>
                 <label className="example__label" htmlFor={id}>
                   Template format:{' '}
                 </label>
@@ -166,57 +167,6 @@ export default class Example extends Component<Props, State> {
                 </span>
               </h6>
 
-              {formatId === 'mustache' && (
-                <p className="example__note">
-                  Please note that our Mustache templates are currently beta
-                  quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.mustache</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/mustache">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#mustache">
-                    Mustache install docs
-                  </A>
-                  .
-                </p>
-              )}
-
-              {formatId === 'silverstripe-components' && (
-                <p className="example__note">
-                  Please note that our SilverStripe Components are currently
-                  alpha quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.ss</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/silverstripe-components">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#silverstripe">
-                    SilverStripe install docs
-                  </A>
-                  .
-                </p>
-              )}
-
-              {(formatId === 'vue-js' || formatId === 'vue-ts') && (
-                <p className="example__note">
-                  Please note that our Vue components are currently beta
-                  quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.vue</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/vue-js">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#vue">
-                    Vue install docs
-                  </A>
-                  .
-                </p>
-              )}
-
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
                   <div
@@ -229,7 +179,7 @@ export default class Example extends Component<Props, State> {
                   </div>
 
                   <button
-                    className="clipboard__button"
+                    className="g-button g-button--secondary g-button--small"
                     onClick={this.copyToClipboard}
                     type="button"
                   >
@@ -238,6 +188,58 @@ export default class Example extends Component<Props, State> {
                 </div>
               ) : null}
             </div>
+
+            {formatId === 'mustache' && (
+              <p className="example__note">
+                Please note that our Mustache templates are currently beta
+                quality. We recommend using HTML until we can give you
+                guidance on how to integrate specific technologies. If you
+                wish to see the <code>.mustache</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/mustache">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#mustache">
+                  Mustache install docs
+                </A>
+                .
+              </p>
+            )}
+
+            {formatId === 'silverstripe-components' && (
+              <p className="example__note">
+                Please note that our SilverStripe Components are currently
+                alpha quality. We recommend using HTML until we can give you
+                guidance on how to integrate specific technologies. If you
+                wish to see the <code>.ss</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/silverstripe-components">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#silverstripe">
+                  SilverStripe install docs
+                </A>
+                .
+              </p>
+            )}
+
+            {(formatId === 'vue-js' || formatId === 'vue-ts') && (
+              <p className="example__note">
+                Please note that our Vue components are currently beta
+                quality. We recommend using HTML until we can give you
+                guidance on how to integrate specific technologies. If you
+                wish to see the <code>.vue</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/vue-js">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#vue">
+                  Vue install docs
+                </A>
+                .
+              </p>
+            )}
+
             <pre className="language-code example__code">
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>

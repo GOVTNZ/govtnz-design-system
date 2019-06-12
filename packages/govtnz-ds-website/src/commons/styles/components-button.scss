@@ -1,0 +1,10 @@
+@import './settings-global';
+@import './settings-breakpoints';
+
+.g-button--small {
+    width: auto !important;
+    margin-bottom: $spacing-24 !important;
+    padding: $spacing-4 $spacing-16 !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+}

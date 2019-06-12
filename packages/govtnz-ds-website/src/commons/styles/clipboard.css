@@ -1,17 +1,7 @@
-.clipboard {
-  position: relative;
-  text-align: right;
-}
-
 .clipboard::after {
   content: ' ';
   display: block;
   clear: both;
-}
-
-.clipboard__button {
-  border: solid 1px black;
-  padding: 0.4rem 0.5rem;
 }
 
 .clipboard__tooltip {
