@@ -1,11 +1,51 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "71dd8a391bb2cbcbb58130fa9e4da2e1",
+    "content-hash": "b6179a7f9b78533c7ac906c1d7a7e87d",
     "packages": [
+        {
+            "name": "benmanu/silverstripe-simple-styleguide",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/benmanu/silverstripe-simple-styleguide.git",
+                "reference": "0f13ab3522d1e0eb1e0f77b937df1ac48a03af1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/benmanu/silverstripe-simple-styleguide/zipball/0f13ab3522d1e0eb1e0f77b937df1ac48a03af1b",
+                "reference": "0f13ab3522d1e0eb1e0f77b937df1ac48a03af1b",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "simple-styleguide"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Manu",
+                    "email": "bmanu10@gmail.com"
+                }
+            ],
+            "description": "Provides a kitchen sink template useful for theme development.",
+            "homepage": "https://github.com/benmanu/silverstripe-simple-styleguide",
+            "keywords": [
+                "silverstripe",
+                "styleguide"
+            ],
+            "time": "2017-05-18T00:42:43+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.6.0",

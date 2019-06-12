@@ -1,0 +1,7 @@
+---
+Name: simplestyleguide
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    '_styleguide': 'SimpleStyleguideController'

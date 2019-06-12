@@ -163,8 +163,6 @@ class ComponentService
             // construct php
             $value = $data['Children']['php'];
             $php = "\$_props['children'] = '';\n" . $value;
-            $php = str_replace("\$_props = array();\n", "", $php);
-            $php = str_replace("unset(\$_props);\n", "", $php);
             $php = str_replace("\$val .=", "\$_props['children'] .=", $php);
             $php .= "\$_props['children'] = DBField::create_field('HTMLText', \$_props['children']);\n";
 

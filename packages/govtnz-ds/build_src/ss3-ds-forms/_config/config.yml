@@ -1,0 +1,38 @@
+name: DSForm
+---
+DSForm:
+  ds_included: false
+  jquery_included: false
+  ds_form_included: false
+  ds_select_included: false
+  inline_fields:
+    - CheckboxField
+    - FormAction
+FormField:
+  extensions:
+    - DSFormField
+TextField:
+  extensions:
+    - DSTextField
+OptionsetField:
+  extensions:
+    - DSOptionsetField
+FormAction:
+  extensions:
+    - DSFormAction
+TextareaField:
+  extensions:
+    - DSTextField
+FieldList:
+  extensions:
+    - DSFieldList
+Injector:
+  MemberLoginForm:
+    class: DSMemberLoginForm
+---
+only:
+  moduleexists: userforms
+---
+UserDefinedForm_Controller:
+  extensions:
+    - DSUserForm
