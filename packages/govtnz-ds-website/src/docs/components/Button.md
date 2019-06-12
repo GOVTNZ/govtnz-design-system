@@ -150,5 +150,5 @@ give the user a 'loading spinner' to show progress.
 
 ## Credit
 
-Guidance, original HTML and CSS derived from
+Guidance, original HTML and CSS derived from&nbsp;
 [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

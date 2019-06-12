@@ -153,7 +153,7 @@ frequently sending information twice, consider using features that configure
 the button to ignore a rapid second click. If the cause is a slow connection,
 give the user a &#39;loading spinner&#39; to show progress.</p>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from
+<p>Guidance, original HTML and CSS derived from&nbsp;
 <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
