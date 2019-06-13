@@ -801,6 +801,11 @@ const cssVariables: CSSVariablePattern[] = [
     defaultValue: '#b2b2b2'
   },
   {
+    id: 'g-theme-button-color-secondary-box-shadow',
+    valueSubstringMatch: '#858688',
+    defaultValue: '#2a2a2a',
+  },
+  {
     id: 'g-theme-button-color-warning',
     valueSubstringMatch: '#b10e1e',
     defaultValue: '#b10e1e'
@@ -809,6 +814,11 @@ const cssVariables: CSSVariablePattern[] = [
     id: 'g-theme-button-color-warning-hover-focus',
     valueSubstringMatch: '#8e0b18',
     defaultValue: '#900815'
+  },
+  {
+    id: 'g-theme-button-color-warning-box-shadow',
+    valueSubstringMatch: '#47060c',
+    defaultValue: '#2a2a2a',
   },
 ];
 

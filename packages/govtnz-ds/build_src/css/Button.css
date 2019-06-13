@@ -133,6 +133,7 @@
   background-color: #dee0e2;
   background-color: var(--g-theme-button-color-secondary, #d3d3d3);
   box-shadow: 0 2px 0 #858688;
+  box-shadow: 0 2px 0 var(--g-theme-button-color-secondary-box-shadow, #2a2a2a);
 }
 
 .g-button--secondary,
@@ -153,6 +154,7 @@
   background-color: #b10e1e;
   background-color: var(--g-theme-button-color-warning, #b10e1e);
   box-shadow: 0 2px 0 #47060c;
+  box-shadow: 0 2px 0 var(--g-theme-button-color-warning-box-shadow, #2a2a2a);
 }
 
 .g-button--warning,

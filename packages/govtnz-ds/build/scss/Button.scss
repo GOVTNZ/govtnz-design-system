@@ -138,7 +138,12 @@
     --g-theme-button-color-secondary,
     $g-theme-button-color-secondary
   );
-  box-shadow: 0 2px 0 #858688;
+  box-shadow: 0 2px 0 $g-theme-button-color-secondary-box-shadow;
+  box-shadow: 0 2px 0
+    var(
+      --g-theme-button-color-secondary-box-shadow,
+      $g-theme-button-color-secondary-box-shadow
+    );
 }
 
 .g-button--secondary,
@@ -164,7 +169,12 @@
     --g-theme-button-color-warning,
     $g-theme-button-color-warning
   );
-  box-shadow: 0 2px 0 #47060c;
+  box-shadow: 0 2px 0 $g-theme-button-color-warning-box-shadow;
+  box-shadow: 0 2px 0
+    var(
+      --g-theme-button-color-warning-box-shadow,
+      $g-theme-button-color-warning-box-shadow
+    );
 }
 
 .g-button--warning,
