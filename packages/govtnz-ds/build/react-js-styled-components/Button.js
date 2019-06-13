@@ -86,16 +86,18 @@ var Button = function Button(_ref) {
       level = _ref.level,
       name = _ref.name,
       type = _ref.type,
+      onClick = _ref.onClick,
       children = _ref.children;
   return _react["default"].createElement(StyledButton, {
     disabled: disabled,
     level: level,
     "aria-disabled": disabled,
     type: constants.type[type],
-    name: name
+    name: name,
+    onClick: onClick
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Button.props = ["disabled", "level", "name", "type", "children"];
+Button.props = ["disabled", "level", "name", "type", "onClick", "children"];
 var _default = Button;
 exports["default"] = _default;

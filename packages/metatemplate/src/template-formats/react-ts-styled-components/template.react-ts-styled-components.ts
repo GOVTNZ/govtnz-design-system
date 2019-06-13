@@ -454,6 +454,22 @@ export default class ReactTsStyledComponents {
       };
       attributes.push(onChange);
     }
+    if (this.hasClickEvent(tagName, attributes)) {
+      // If this is a form element
+      const onClickDynamicKey: DynamicKey = {
+        key: this.registerDynamicKey("onClick", "function", false),
+        optional: false,
+        type: "function"
+      };
+      const onClick: TemplateAttribute = {
+        key: "onClick",
+        dataType: "function",
+        value: "",
+        dynamicKeys: [onClickDynamicKey]
+      };
+      attributes.push(onClick);
+    }
+
     let tag = tagName; // TODO: escape elementName
     if (this.options.css === "styled-components") {
       const {
@@ -716,9 +732,22 @@ export default class ReactTsStyledComponents {
   ): boolean => {
     if (tagName === "input") {
       const inputType = attributes.find(attribute => attribute.key === "type");
-      return !!(inputType && inputType.value !== "file");
+      return !!(
+        inputType && !["file", "submit", "image"].includes(inputType.value)
+      );
     }
     return ["textarea", "select"].includes(tagName);
+  };
+
+  hasClickEvent = (
+    tagName: string,
+    attributes: TemplateAttribute[]
+  ): boolean => {
+    if (tagName === "input") {
+      const inputType = attributes.find(attribute => attribute.key === "type");
+      return !!(inputType && ["submit", "image"].includes(inputType.value));
+    }
+    return ["button"].includes(tagName);
   };
 
   registerDynamicKey = (
