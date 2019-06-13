@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { Details, Summary } from 'react-accessible-details';
 import copyToClipboard from './copy-text-to-clipboard';
-import './styles/clipboard.css';
+import './styles/clipboard.scss';
 import './styles/components-button.scss';
 import iconDown from './svgs/icon-down.svg';
 import A from '@govtnz/ds/build/react-ts/A';
@@ -169,15 +169,6 @@ export default class Example extends Component<Props, State> {
 
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
-                  <div
-                    role="alert"
-                    className={`clipboard__tooltip${
-                      copyingMode ? ` clipboard__tooltip--${copyingMode}` : ''
-                    }`}
-                  >
-                    Copied
-                  </div>
-
                   <button
                     className="g-button g-button--secondary g-button--small"
                     onClick={this.copyToClipboard}
@@ -185,6 +176,14 @@ export default class Example extends Component<Props, State> {
                   >
                     Copy code
                   </button>
+                  <div
+                    role="alert"
+                    className={`clipboard__tooltip${
+                      copyingMode ? ` clipboard__tooltip--${copyingMode}` : ''
+                    }`}
+                  >
+                    Code copied
+                  </div>
                 </div>
               ) : null}
             </div>
