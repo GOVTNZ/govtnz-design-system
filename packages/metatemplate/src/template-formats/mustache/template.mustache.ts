@@ -243,6 +243,13 @@ export default class Mustache {
           // if (x=1) { result1 } endif; if(x=2) { result2 } endif;
           if (!templateVariables[element.templateId]) {
             templateVariables[element.templateId] = {};
+            if (!templatesById[element.templateId]) {
+              throw Error(
+                `MetaTemplate: Unable to find "${
+                  element.templateId
+                }" in templatesById. This template should be provided.`
+              );
+            }
             templatesById[element.templateId].html.replace(
               /{{(.*?)}}/,
               (match, dynamicKeyString) => {

@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import InsetText from '@govtnz/ds/build/react-ts/InsetText.tsx';
-import '@govtnz/ds/build/css/InsetText.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__InsetText from '../../commons/examples/components__InsetText';
@@ -23,9 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Inset Text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__InsetText[0]} >
-        <InsetText {...onChangeGenerator(InsetText)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__InsetText[0]} iframeProps={{id:"iframe_componentsInsetText0", className: "example__iframe", id: "iframe_componentsInsetText0", src:"../InsetText__example0/", title:"Example of Inset Text" }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

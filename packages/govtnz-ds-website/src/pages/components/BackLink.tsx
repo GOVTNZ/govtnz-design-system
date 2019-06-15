@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import BackLinkWithCustomText from '@govtnz/ds/build/react-ts/BackLinkWithCustomText.tsx';
-import '@govtnz/ds/build/css/BackLinkWithCustomText.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__BackLink from '../../commons/examples/components__BackLink';
@@ -23,9 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Back link</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__BackLink[0]} >
-        <BackLinkWithCustomText {...onChangeGenerator(BackLinkWithCustomText)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__BackLink[0]} iframeProps={{id:"iframe_componentsBackLink0", className: "example__iframe", id: "iframe_componentsBackLink0", src:"../BackLink__example0/", title:"Example of Back link" }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

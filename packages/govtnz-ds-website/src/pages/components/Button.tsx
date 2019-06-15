@@ -16,8 +16,6 @@ import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
 import '@govtnz/ds/build/css/Ul.css';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
 import '@govtnz/ds/build/css/Li.css';
-import Button from '@govtnz/ds/build/react-ts/Button.tsx';
-import '@govtnz/ds/build/css/Button.css';
 import components__Button from '../../commons/examples/components__Button';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -69,9 +67,7 @@ as &#39;Save and send&#39;.</p>
 what to do next.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[0]} >
-        <Button {...onChangeGenerator(Button)} type="Button">Save and continue</Button>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[0]} iframeProps={{id:"iframe_componentsButton0", className: "example__iframe", id: "iframe_componentsButton0", src:"../Button__example0/", title:"Primary buttons" }}></Example>
 </ExampleContainer>
 
 <h2 id="secondary-buttons">Secondary buttons</h2>
@@ -81,9 +77,7 @@ next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Secondary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[1]} >
-        <Button {...onChangeGenerator(Button)} type="Button" level="secondary">Find address</Button>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[1]} iframeProps={{id:"iframe_componentsButton1", className: "example__iframe", id: "iframe_componentsButton1", src:"../Button__example1/", title:"Secondary buttons" }}></Example>
 </ExampleContainer>
 
 <p>You can use secondary buttons in combination with a primary button, such as
@@ -92,10 +86,7 @@ combinations to a maximum of two secondary buttons with a single primary
 button, as more can confuse users.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary and secondary combination</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[2]} >
-        <Button {...onChangeGenerator(Button)} type="Button">Save and continue</Button>
-        <Button {...onChangeGenerator(Button)} type="Button" level="secondary">Save as draft</Button>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[2]} iframeProps={{id:"iframe_componentsButton2", className: "example__iframe", id: "iframe_componentsButton2", src:"../Button__example2/", title:"Primary and secondary combination" }}></Example>
 </ExampleContainer>
 
 <h2 id="warning-buttons">Warning buttons</h2>
@@ -114,9 +105,7 @@ or may not understand what it signifies. Make sure the context and button text
 make clear what will happen if the user selects it.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Warning buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[3]} >
-        <Button {...onChangeGenerator(Button)} type="Button" level="warning">Delete account</Button>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[3]} iframeProps={{id:"iframe_componentsButton3", className: "example__iframe", id: "iframe_componentsButton3", src:"../Button__example3/", title:"Warning buttons" }}></Example>
 </ExampleContainer>
 
 <h2 id="disabled-buttons">&#39;Disabled&#39; buttons</h2>
@@ -127,9 +116,7 @@ impede keyboard accessibility.</p>
 easier to understand.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>'Disabled' buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[4]} >
-        <Button {...onChangeGenerator(Button)} type="Button" disabled>Save and continue</Button>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[4]} iframeProps={{id:"iframe_componentsButton4", className: "example__iframe", id: "iframe_componentsButton4", src:"../Button__example4/", title:"'Disabled' buttons" }}></Example>
 </ExampleContainer>
 
 <h2 id="stop-users-from-accidentally-sending-information-twice">Stop users from accidentally sending information twice</h2>

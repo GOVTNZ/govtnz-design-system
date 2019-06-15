@@ -8,10 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';
-import '@govtnz/ds/build/css/DateInput.css';
-import DateInputWithErrors from '@govtnz/ds/build/react-ts/DateInputWithErrors.tsx';
-import '@govtnz/ds/build/css/DateInputWithErrors.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__Date from '../../commons/examples/components__Date';
@@ -25,10 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Date Input</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Date[0]} >
-        <DateInput {...onChangeGenerator(DateInput)} />
-        <DateInputWithErrors {...onChangeGenerator(DateInputWithErrors)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Date[0]} iframeProps={{id:"iframe_componentsDate0", className: "example__iframe", id: "iframe_componentsDate0", src:"../Date__example0/", title:"Example of Date Input" }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

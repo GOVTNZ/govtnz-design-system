@@ -19,22 +19,6 @@
   margin-right: $spacing-32;
 }
 
-.example__visual {
-  padding-top: $spacing-40;
-  padding-left: $spacing-32;
-  padding-right: $spacing-32;
-  padding-bottom: $spacing-40;
-  border-bottom: solid 1px $color-ds-default-mid-grey;
-  border-bottom: solid 1px
-    var(--color-theme-mid-grey, $color-ds-default-mid-grey);
-}
-
-.example__visual::after {
-  content: '';
-  clear: both;
-  display: block;
-}
-
 .example__code {
   display: block;
   // We need to override styling coming from the prism-js theme.
@@ -138,14 +122,4 @@
     fill: $color-ds-default-green-mid;
     fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
   }
-}
-
-.example__visual .g-flex-col {
-  background: #eeeeee;
-  outline: solid 1px black;
-  text-align: center;
-  font-size: small;
-  font-weight: bold;
-  padding-top: 3px;
-  padding-bottom: 4px;
 }

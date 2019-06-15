@@ -8,12 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import Textarea from '@govtnz/ds/build/react-ts/Textarea.tsx';
-import '@govtnz/ds/build/css/Textarea.css';
-import TextareaWithCustomRows from '@govtnz/ds/build/react-ts/TextareaWithCustomRows.tsx';
-import '@govtnz/ds/build/css/TextareaWithCustomRows.css';
-import TextareaWithErrorMessage from '@govtnz/ds/build/react-ts/TextareaWithErrorMessage.tsx';
-import '@govtnz/ds/build/css/TextareaWithErrorMessage.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__Textarea from '../../commons/examples/components__Textarea';
@@ -27,11 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Textarea</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Textarea[0]} >
-        <Textarea {...onChangeGenerator(Textarea)} />
-        <TextareaWithCustomRows {...onChangeGenerator(TextareaWithCustomRows)} />
-        <TextareaWithErrorMessage {...onChangeGenerator(TextareaWithErrorMessage)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Textarea[0]} iframeProps={{id:"iframe_componentsTextarea0", className: "example__iframe", id: "iframe_componentsTextarea0", src:"../Textarea__example0/", title:"Example of Textarea" }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

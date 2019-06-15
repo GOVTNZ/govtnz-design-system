@@ -12,12 +12,6 @@ import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '@govtnz/ds/build/css/P.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
-import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer.tsx';
-import '@govtnz/ds/build/css/FlexContainer.css';
-import FlexRow from '@govtnz/ds/build/react-ts/FlexRow.tsx';
-import '@govtnz/ds/build/css/FlexRow.css';
-import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn.tsx';
-import '@govtnz/ds/build/css/FlexColumn.css';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
 import '@govtnz/ds/build/css/Ul.css';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
@@ -39,15 +33,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of 3-column Flexbox grid</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} >
-        <FlexContainer {...onChangeGenerator(FlexContainer)} width="fixed">
-            <FlexRow {...onChangeGenerator(FlexRow)}>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-            </FlexRow>
-        </FlexContainer>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} iframeProps={{id:"iframe_componentsFlexGrid0", className: "example__iframe", id: "iframe_componentsFlexGrid0", src:"../FlexGrid__example0/", title:"Example of 3-column Flexbox grid" }}></Example>
 </ExampleContainer>
 </div>
 
@@ -70,40 +56,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Flexgrid column variants</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} >
-        <FlexContainer {...onChangeGenerator(FlexContainer)} width="fixed">
-            <FlexRow {...onChangeGenerator(FlexRow)}>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="6" sm="6" md="6" lg="6"> .g-flex-col .g-flex-col-md-6 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="6" sm="6" md="6" lg="6"> .g-flex-col .g-flex-col-md-6 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="12" sm="12" md="12" lg="12"> .g-flex-col .g-flex-col-lg-12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="1" sm="1" md="1" lg="1"> 1/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="11" sm="11" md="11" lg="11"> 11/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="2" sm="2" md="2" lg="2"> 2/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="10" sm="10" md="10" lg="10"> 10/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="3" sm="3" md="3" lg="3"> 3/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="9" sm="9" md="9" lg="9"> 9/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> 4/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="8" sm="8" md="8" lg="8"> 8/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="5" sm="5" md="5" lg="5"> 5/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="7" sm="7" md="7" lg="7"> 7/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="6" sm="6" md="6" lg="6"> 6/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="6" sm="6" md="6" lg="6"> 6/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="7" sm="7" md="7" lg="7"> 7/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="5" sm="5" md="5" lg="5"> 5/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="8" sm="8" md="8" lg="8"> 8/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="4" sm="4" md="4" lg="4"> 4/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="9" sm="9" md="9" lg="9"> 9/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="3" sm="3" md="3" lg="3"> 3/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="10" sm="10" md="10" lg="10"> 10/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="2" sm="2" md="2" lg="2"> 2/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="11" sm="11" md="11" lg="11"> 11/12 </FlexColumn>
-                <FlexColumn {...onChangeGenerator(FlexColumn)} xs="1" sm="1" md="1" lg="1"> 1/12 </FlexColumn>
-            </FlexRow>
-        </FlexContainer>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} iframeProps={{id:"iframe_componentsFlexGrid1", className: "example__iframe", id: "iframe_componentsFlexGrid1", src:"../FlexGrid__example1/", title:"Example of Flexgrid column variants" }}></Example>
 </ExampleContainer>
 </div>
 

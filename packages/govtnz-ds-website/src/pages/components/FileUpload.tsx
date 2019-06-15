@@ -8,10 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import FileUpload from '@govtnz/ds/build/react-ts/FileUpload.tsx';
-import '@govtnz/ds/build/css/FileUpload.css';
-import FileUploadWithErrorMessage from '@govtnz/ds/build/react-ts/FileUploadWithErrorMessage.tsx';
-import '@govtnz/ds/build/css/FileUploadWithErrorMessage.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__FileUpload from '../../commons/examples/components__FileUpload';
@@ -25,10 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of File Upload</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} >
-        <FileUpload {...onChangeGenerator(FileUpload)} />
-        <FileUploadWithErrorMessage {...onChangeGenerator(FileUploadWithErrorMessage)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{id:"iframe_componentsFileUpload0", className: "example__iframe", id: "iframe_componentsFileUpload0", src:"../FileUpload__example0/", title:"Example of File Upload" }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>
