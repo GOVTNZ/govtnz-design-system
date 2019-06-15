@@ -30,7 +30,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[0]} iframeProps={{id:"iframe_componentsRadios0", className: "example__iframe", id: "iframe_componentsRadios0", src:"../Radios__example0/", title:"Example 0" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[0]} iframeProps={{id:"iframe_componentsRadios0", className: "example__iframe", id: "iframe_componentsRadios0", src:"../Radios__example0/", title:"My radios title" }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>

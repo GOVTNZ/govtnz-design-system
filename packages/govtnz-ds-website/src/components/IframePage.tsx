@@ -21,7 +21,6 @@ const IframePage = ({
   PageContent,
 }: Props) => {
   useEffect(() => {
-    console.log('Send message to parent');
     if (!window.parent || !window.parent.postMessage) return;
     window.addEventListener('resize', updateIframeSize, false);
     window.addEventListener('orientationchange', updateIframeSize, false);
@@ -38,7 +37,7 @@ const IframePage = ({
     const data = {
       resizeById: id,
       width: document.body.offsetWidth,
-      height: exampleVisual.offsetHeight,
+      height: exampleVisual && exampleVisual.offsetHeight,
     };
     window.parent.postMessage(data, window.location.origin);
   };

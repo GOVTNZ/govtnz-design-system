@@ -14,7 +14,7 @@ import ExampleSection from '../../commons/ExampleSection';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
+const PageContent = (props) => (<Example {...onChangeGenerator(Example)} title="Example of Select">
         <SelectBlock {...onChangeGenerator(SelectBlock)} selectId="select1" label="Order by">
             <option value="published">Recently published</option>
             <option value="updated">Recently updated</option>
@@ -26,7 +26,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Example 0"}
+      title={"Example of Select"}
       id={"iframe_componentsSelect0"}
       parentUrl={"../Select"}
       pageProps={props}

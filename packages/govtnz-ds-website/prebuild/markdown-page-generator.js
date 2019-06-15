@@ -189,12 +189,19 @@ const generatePage = async (
           );
         }
 
-        const heading =
-          (headings &&
-            headings[0] &&
-            headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
-          `Example ${counter}`;
         const fullExample = fullExamples[0];
+
+        const exampleAsJS = jsxtojson(fullExample);
+
+        let heading = exampleAsJS.props && exampleAsJS.props.title;
+        if (!heading) {
+          heading =
+            (headings &&
+              headings[0] &&
+              headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
+            `Example ${counter}`;
+        }
+
         const exampleRelativePath = `${pageId}__example${counter}`;
         exampleRelativePaths[counter] = exampleRelativePath;
         exampleTitles[counter] = heading;
@@ -599,7 +606,9 @@ const addOnStateChanged = html => {
   return html.replace(/<[A-Z][^ >]+/g, match => {
     // React Managed Components (as distinct from
     // unmanaged components) need a way to set a value
-    // and have an onChange handler so we set one up
+    // and have an onChange handler, but we don't want
+    // that state inside the component itself so we attach
+    // a basic wrapper on all DS components
     //
     // DS components start with a capital letter
     const tagName = match.substring(1, match.length);
