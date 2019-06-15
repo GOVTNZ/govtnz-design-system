@@ -26,8 +26,8 @@ type State = {
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
   supportsClipboard: boolean;
-  iframeHeight: number | string;
-  iframeWidth: number | string;
+  iframeHeight: number;
+  iframeWidth: number;
   copyingMode: false | 'start' | 'end';
 };
 
@@ -55,7 +55,7 @@ export default class Example extends Component<Props, State> {
       copyingMode: false,
       supportsJavaScript: false,
       supportsClipboard: false,
-      iframeWidth: '100%',
+      iframeWidth: 300,
       iframeHeight: 100,
     };
   }
@@ -68,7 +68,7 @@ export default class Example extends Component<Props, State> {
 
     window.addEventListener(
       'message',
-      (e, ...args) => {
+      e => {
         if (e.origin !== window.location.origin) {
           console.info('Ignoring postMessage from', e.origin, e);
           return;
@@ -299,6 +299,7 @@ export default class Example extends Component<Props, State> {
               <iframe
                 width={iframeWidth}
                 height={iframeHeight}
+                style={{ width: '100%' }}
                 {...iframeProps}
               />
             </div>
