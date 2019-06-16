@@ -33,10 +33,13 @@ export const replaceCSSVariables = (
           propertyValue.indexOf(cssVariable.valueSubstringMatch) !== -1
         ) {
           if (language === "css") {
-            v = `${propertyValue} ${important}`;
+            v = `${propertyValue.replace(
+              new RegExp(cssVariable.valueSubstringMatch, "g"),
+              cssVariable.defaultValue
+            )} ${important}`;
             v += ";";
             v += `${propertyName}: ${propertyValue.replace(
-              cssVariable.valueSubstringMatch, // will only replace first instance
+              new RegExp(cssVariable.valueSubstringMatch, "g"),
               `var(--${cssVariable.id}, ${cssVariable.defaultValue})`
             )} ${important}`;
           } else if (language === "scss") {
@@ -47,7 +50,7 @@ export const replaceCSSVariables = (
             );
             v += ` ${important};`;
             v += `${propertyName}: ${propertyValue.replace(
-              cssVariable.valueSubstringMatch, // will only replace first instance
+              new RegExp(cssVariable.valueSubstringMatch, "g"),
               `var(--${cssVariable.id}, ${sassVariable})`
             )} ${important}`;
           }

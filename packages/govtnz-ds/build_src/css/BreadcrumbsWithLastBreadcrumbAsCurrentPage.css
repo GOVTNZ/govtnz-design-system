@@ -118,10 +118,10 @@
 }
 
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #b53cde;
   background-color: var(--g-theme-color-brand-1, #b53cde);
 }
 
@@ -149,7 +149,7 @@
 }
 
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-error-summary__list a:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
