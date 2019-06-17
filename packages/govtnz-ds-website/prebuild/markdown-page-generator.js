@@ -3,7 +3,7 @@ const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
 const puppeteer = require('puppeteer');
-const { startCase, uniq } = require('lodash');
+const { startCase, uniq, clamp } = require('lodash');
 const {
   escapeRegex,
   importGenerator,
@@ -205,7 +205,6 @@ const generatePage = async (
         }
         if (!heading.match(/example/i)) {
           heading = `${heading} (${pageId} example)`;
-          console.log(heading);
         }
 
         const exampleRelativePath = `${pageId}__example${counter}`;
@@ -480,7 +479,7 @@ const getExampleHeight = async srcPath => {
   );
 
   if (newHeight.toString().replace(/[0-9]/gi, '').length === 0) {
-    height = parseFloat(newHeight.toString());
+    height = clamp(parseFloat(newHeight.toString()), 50, 10000);
   }
 
   await browser.close();
