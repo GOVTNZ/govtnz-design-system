@@ -6,14 +6,14 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <Example>
-        <InputBlock type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId" hintId="anyHintId" />
+        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId" hintId="anyHintId" />
     </Example>
 </ExampleContainer>
 
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example>
-        <InputBlock type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter an email address in the correct format, like name@example.com" />
+        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 
@@ -134,7 +134,7 @@ Style error messages as shown in the following example.
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example>
-        <InputBlock type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId2" hintId="anyHintId2Error" errorId="anyErrorId2" hasError error="Enter an email address in the correct format, like name@example.com" />
+        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 
