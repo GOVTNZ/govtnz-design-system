@@ -3,7 +3,6 @@ const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
 const puppeteer = require('puppeteer');
-const { execShellNpmProject } = require('@govtnz/ds-common');
 const { startCase, uniq } = require('lodash');
 const {
   escapeRegex,
@@ -203,6 +202,10 @@ const generatePage = async (
               headings[0] &&
               headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
             `Example ${counter}`;
+        }
+        if (!heading.match(/example/i)) {
+          heading = `${heading} (${pageId} example)`;
+          console.log(heading);
         }
 
         const exampleRelativePath = `${pageId}__example${counter}`;

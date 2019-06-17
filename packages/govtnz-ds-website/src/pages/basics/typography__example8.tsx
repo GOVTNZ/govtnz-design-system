@@ -35,7 +35,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}><P styl
 const template = props => {
   return (
     <IframePage
-      title={"Bulleted lists"}
+      title={"Bulleted lists (typography example)"}
       id={"iframe_basicstypography8"}
       parentUrl={"../typography"}
       pageProps={props}

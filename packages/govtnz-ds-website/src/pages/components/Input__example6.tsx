@@ -21,7 +21,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Error state"}
+      title={"Error state (Input example)"}
       id={"iframe_componentsInput6"}
       parentUrl={"../Input"}
       pageProps={props}

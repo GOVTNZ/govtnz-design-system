@@ -41,7 +41,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Fixed-width text input"}
+      title={"Fixed-width text input (Input example)"}
       id={"iframe_componentsInput2"}
       parentUrl={"../Input"}
       pageProps={props}

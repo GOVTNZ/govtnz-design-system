@@ -24,7 +24,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Small size for small body text"}
+      title={"Small size for small body text (typography example)"}
       id={"iframe_basicstypography6"}
       parentUrl={"../typography"}
       pageProps={props}

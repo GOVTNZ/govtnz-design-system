@@ -21,7 +21,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Warning buttons"}
+      title={"Warning buttons (Button example)"}
       id={"iframe_componentsButton3"}
       parentUrl={"../Button"}
       pageProps={props}

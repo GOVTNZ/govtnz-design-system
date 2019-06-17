@@ -67,7 +67,7 @@ as &#39;Save and send&#39;.</p>
 what to do next.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[0]} iframeProps={{id:"iframe_componentsButton0", className: "example__iframe", id: "iframe_componentsButton0", src:"../Button__example0/", title:"Primary buttons", height: 167 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[0]} iframeProps={{id:"iframe_componentsButton0", className: "example__iframe", id: "iframe_componentsButton0", src:"../Button__example0/", title:"Primary buttons (Button example)", height: 167 }}></Example>
 </ExampleContainer>
 
 <h2 id="secondary-buttons">Secondary buttons</h2>
@@ -77,7 +77,7 @@ next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Secondary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[1]} iframeProps={{id:"iframe_componentsButton1", className: "example__iframe", id: "iframe_componentsButton1", src:"../Button__example1/", title:"Secondary buttons", height: 167 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[1]} iframeProps={{id:"iframe_componentsButton1", className: "example__iframe", id: "iframe_componentsButton1", src:"../Button__example1/", title:"Secondary buttons (Button example)", height: 167 }}></Example>
 </ExampleContainer>
 
 <p>You can use secondary buttons in combination with a primary button, such as
@@ -86,7 +86,7 @@ combinations to a maximum of two secondary buttons with a single primary
 button, as more can confuse users.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary and secondary combination</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[2]} iframeProps={{id:"iframe_componentsButton2", className: "example__iframe", id: "iframe_componentsButton2", src:"../Button__example2/", title:"Primary and secondary combination", height: 167 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[2]} iframeProps={{id:"iframe_componentsButton2", className: "example__iframe", id: "iframe_componentsButton2", src:"../Button__example2/", title:"Primary and secondary combination (Button example)", height: 167 }}></Example>
 </ExampleContainer>
 
 <h2 id="warning-buttons">Warning buttons</h2>
@@ -105,7 +105,7 @@ or may not understand what it signifies. Make sure the context and button text
 make clear what will happen if the user selects it.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Warning buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[3]} iframeProps={{id:"iframe_componentsButton3", className: "example__iframe", id: "iframe_componentsButton3", src:"../Button__example3/", title:"Warning buttons", height: 167 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[3]} iframeProps={{id:"iframe_componentsButton3", className: "example__iframe", id: "iframe_componentsButton3", src:"../Button__example3/", title:"Warning buttons (Button example)", height: 167 }}></Example>
 </ExampleContainer>
 
 <h2 id="disabled-buttons">&#39;Disabled&#39; buttons</h2>
@@ -116,7 +116,7 @@ impede keyboard accessibility.</p>
 easier to understand.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>'Disabled' buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[4]} iframeProps={{id:"iframe_componentsButton4", className: "example__iframe", id: "iframe_componentsButton4", src:"../Button__example4/", title:"'Disabled' buttons", height: 167 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Button[4]} iframeProps={{id:"iframe_componentsButton4", className: "example__iframe", id: "iframe_componentsButton4", src:"../Button__example4/", title:"'Disabled' buttons (Button example)", height: 167 }}></Example>
 </ExampleContainer>
 
 <h2 id="stop-users-from-accidentally-sending-information-twice">Stop users from accidentally sending information twice</h2>

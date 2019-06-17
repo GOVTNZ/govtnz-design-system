@@ -38,7 +38,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Same heading level varying by size only"}
+      title={"Same heading level varying by size only (typography example)"}
       id={"iframe_basicstypography1"}
       parentUrl={"../typography"}
       pageProps={props}

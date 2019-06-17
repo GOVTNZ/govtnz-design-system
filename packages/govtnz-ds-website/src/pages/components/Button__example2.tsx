@@ -22,7 +22,7 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
 const template = props => {
   return (
     <IframePage
-      title={"Primary and secondary combination"}
+      title={"Primary and secondary combination (Button example)"}
       id={"iframe_componentsButton2"}
       parentUrl={"../Button"}
       pageProps={props}
