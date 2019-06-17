@@ -434,16 +434,21 @@ const writeExamplePage = async (
 };
 
 const getExampleHeight = async srcPath => {
+  // This function starts up Chromium and measures the
+  // height of examples so that the <iframe> can be given
+  // a specific height and this will reduce onscreen jank.
+  //
   // Note that this involves reading files from /public/
-  // which hasn't yet been built with a current version of the site
-  // so the example height will always be one build behind (N - 1)
-  // however this is considered ok because:
+  // which will be the previous build so it won't pick up any
+  // recent changes. So the determined height will always be
+  // one build behind (N - 1) however this is considered
+  // acceptable because:
   //
   //    1) there's JavaScript to resize the iframe anyway, so this
   //       initial value isn't particularly important other than to
-  //       minimise jank,
+  //       minimise jank;
   //    2) the alternative before this was a default size of 100px
-  //       which was worse, so this is considered an improvement
+  //       which was worse, so this is considered an improvement.
   //
   //  ...but feel free to somehow build the site, calculate example
   //  heights, and then update sizes in the pages, and then build the
@@ -478,7 +483,10 @@ const getExampleHeight = async srcPath => {
     element => element.offsetHeight
   );
 
-  if (newHeight.toString().replace(/[0-9]/gi, '').length === 0) {
+  if (
+    newHeight.toString().length > 0 &&
+    newHeight.toString().replace(/[0-9]/gi, '').length === 0 // if it is entirely a number
+  ) {
     height = clamp(parseFloat(newHeight.toString()), 50, 10000);
   }
 
