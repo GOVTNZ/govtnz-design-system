@@ -131,7 +131,8 @@ export default Vue.extend({
         );
       },
       required: true
-    }
+    },
+    value: { type: String, required: false }
   },
   computed: {
     computed__autocomplete() {
@@ -141,6 +142,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textareaWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-textareaWithCustomRows-label",attrs:{"for":fullAddress}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithCustomRows-textarea",attrs:{"id":fullAddress,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}})])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textareaWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-textareaWithCustomRows-label",attrs:{"for":fullAddress}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithCustomRows-textarea",attrs:{"id":fullAddress,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
   )
 });

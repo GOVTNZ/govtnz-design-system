@@ -21,7 +21,6 @@ var Ol = function (_a) {
     var numbered = _a.numbered, children = _a.children;
     return (React.createElement(StyledOl, { numbered: numbered }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Ol.props = ["numbered", "children"];
 exports.default = Ol;
 var templateObject_1, templateObject_2;
 //# sourceMappingURL=Ol.js.map

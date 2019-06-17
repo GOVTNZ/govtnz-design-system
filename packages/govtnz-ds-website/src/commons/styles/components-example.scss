@@ -163,13 +163,3 @@
     fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
   }
 }
-
-.example__visual .g-flex-col {
-  background: #eeeeee;
-  outline: solid 1px black;
-  text-align: center;
-  font-size: small;
-  font-weight: bold;
-  padding-top: 3px;
-  padding-bottom: 4px;
-}

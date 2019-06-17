@@ -82,5 +82,5 @@ const TableTableWithHeadAndCaption = ({}) => (
     </tbody>
   </StyledTable>
 );
-TableTableWithHeadAndCaption.props = [];
+
 export default TableTableWithHeadAndCaption;

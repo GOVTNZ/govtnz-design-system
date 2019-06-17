@@ -9,6 +9,5 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var ErrorMessage = function (_a) { return (React.createElement("span", { className: "g-error-message" }, "Error message about full name goes here")); };
-ErrorMessage.props = [];
 exports.default = ErrorMessage;
 //# sourceMappingURL=ErrorMessage.js.map

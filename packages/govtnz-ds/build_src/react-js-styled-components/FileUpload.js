@@ -81,5 +81,5 @@ const FileUpload = ({ fileUpload1, name, disabled, readOnly, autoFocus }) => (
     />
   </StyledDiv>
 );
-FileUpload.props = ["fileUpload1", "name", "disabled", "readOnly", "autoFocus"];
+
 export default FileUpload;

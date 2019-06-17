@@ -5,7 +5,7 @@ const constants = {
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
-const Button = ({ disabled, level, name, type, children }) => (
+const Button = ({ disabled, level, name, type, onClick, children }) => (
   <button
     aria-disabled={disabled}
     className={`g-button${disabled ? " g-button--disabled" : ""}${
@@ -14,6 +14,7 @@ const Button = ({ disabled, level, name, type, children }) => (
     disabled={disabled}
     type={constants.type[type]}
     name={name}
+    onClick={onClick}
   >
     {children !== undefined ? (
       children
@@ -22,5 +23,5 @@ const Button = ({ disabled, level, name, type, children }) => (
     )}
   </button>
 );
-Button.props = ["disabled", "level", "name", "type", "children"];
+
 export default Button;

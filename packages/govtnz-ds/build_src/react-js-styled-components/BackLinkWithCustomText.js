@@ -122,5 +122,5 @@ const BackLinkWithCustomText = ({ href, rel, target, children }) => (
     )}
   </StyledA>
 );
-BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
+
 export default BackLinkWithCustomText;

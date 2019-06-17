@@ -13,7 +13,8 @@ import {
   OnVariable,
   OnSerialize,
   OnIf,
-  OnCloseIf
+  OnCloseIf,
+  DynamicKey as _DynamicKey
 } from "./common";
 import {
   TemplateAttributesArgs,
@@ -25,21 +26,10 @@ const defaultFormats: string[] = Object.keys(formatById).filter(
   id => formatById[id].isDefaultOption
 );
 
-type Options = {
-  async: boolean; // `true` seems good in Puppeteer but not tested properly in JSDOM
-  dom: "jsdom" | "puppeteer";
-  log: boolean;
-};
-
 const DEFAULT_OPTIONS: Options = {
   async: true,
   dom: "jsdom",
   log: false
-};
-
-export type Response = {
-  metaTemplates: TemplateOutput[];
-  disposeAll: Function;
 };
 
 export async function makeTemplates(
@@ -137,6 +127,7 @@ export async function generateFormat({
       ).join(", ")}.`
     );
   }
+
   const format: any = new templateFormat(template);
 
   let allCssRules: AnyObject = {};
@@ -463,6 +454,7 @@ export type TemplateInput = {
   html: string | undefined;
   css: string | undefined;
   cssVariables?: CSSVariablePattern[];
+  calculatedDynamicKeys?: CalculatedDynamicKey[];
 };
 
 export type CSSVariablePattern = {
@@ -511,4 +503,36 @@ export type UsageOptions = {
   tagNameReplacer?: Function | undefined;
   renderImport?: Function | undefined;
   importPrefix?: string | undefined; // TODO: Make this a required arg
+};
+
+export type Response = {
+  metaTemplates: TemplateOutput[];
+  disposeAll: Function;
+};
+
+export type Options = {
+  async: boolean; // `true` seems good in Puppeteer but not tested properly in JSDOM
+  dom: "jsdom" | "puppeteer";
+  log: boolean;
+};
+
+export type DynamicKey = _DynamicKey;
+
+export type CalculatedDynamicKey = {
+  key: string;
+  expression: string /* It's a JavaScript expression...
+                        Assumes being run in the context of a return statement that
+                        is given 'dynamicKeys' of non-calculated dynamicKeys, ie:
+                        assuming a "textValue" dynamicKey a calculated dynamicKey
+                        "textValueLength" might be made,
+                            { key: 'textValueLength', expression: 'dK.textValue.length' }
+                        because that expression will run in the context of,
+                            function ( dK ) {
+                              return dk.textValue.length
+                            }
+                        The expression can be any valid Javascript,
+                            { key: 'epochAtRender', expression: 'Date.now()' }
+                        
+                        
+  */;
 };

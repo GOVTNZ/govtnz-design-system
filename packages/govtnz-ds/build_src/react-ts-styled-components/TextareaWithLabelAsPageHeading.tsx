@@ -64,6 +64,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
 };
 
@@ -216,6 +217,7 @@ const TextareaWithLabelAsPageHeading = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }: Props) => (
   <StyledDiv>
@@ -232,20 +234,10 @@ const TextareaWithLabelAsPageHeading = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithLabelAsPageHeading.props = [
-  "textareaWithPageHeading",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithLabelAsPageHeading;

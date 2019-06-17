@@ -116,6 +116,5 @@ var TabsTabsWithAnchorInPanel = function TabsTabsWithAnchorInPanel(_ref) {
   }, "Tab 2")));
 };
 
-TabsTabsWithAnchorInPanel.props = ["tabTab1", "tab1", "href", "rel", "target", "tabTab2", "tab2", "href2", "rel2", "target2", "href3", "rel3", "target3", "anchor", "href4", "rel4", "target4"];
 var _default = TabsTabsWithAnchorInPanel;
 exports["default"] = _default;

@@ -18,7 +18,6 @@ var Radios = function (_a) {
     var inline = _a.inline, children = _a.children;
     return (React.createElement(StyledDiv, { inline: inline }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Radio components"))));
 };
-Radios.props = ["inline", "children"];
 exports.default = Radios;
 var templateObject_1;
 //# sourceMappingURL=Radios.js.map

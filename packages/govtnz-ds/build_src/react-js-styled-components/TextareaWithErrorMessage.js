@@ -175,6 +175,7 @@ const TextareaWithErrorMessage = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <StyledDiv>
@@ -195,21 +196,10 @@ const TextareaWithErrorMessage = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithErrorMessage.props = [
-  "noNiReason",
-  "noNiReasonError",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithErrorMessage;

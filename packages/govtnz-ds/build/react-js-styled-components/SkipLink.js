@@ -45,6 +45,5 @@ var SkipLink = function SkipLink(_ref) {
   }, "Skip to main content");
 };
 
-SkipLink.props = ["href", "rel", "target"];
 var _default = SkipLink;
 exports["default"] = _default;

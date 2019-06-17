@@ -53,31 +53,5 @@ var FooterStandard = function (_a) {
                             " ",
                             React.createElement("span", null, copyrightYear !== undefined ? (copyrightYear) : (React.createElement(React.Fragment, null, "2019"))))))))));
 };
-FooterStandard.props = [
-    "href",
-    "rel",
-    "target",
-    "label1",
-    "href2",
-    "rel2",
-    "target2",
-    "label2",
-    "href3",
-    "rel3",
-    "target3",
-    "label3",
-    "href4",
-    "rel4",
-    "target4",
-    "href5",
-    "rel5",
-    "target5",
-    "src",
-    "width",
-    "height",
-    "srcSet",
-    "crossOrigin",
-    "copyrightYear"
-];
 exports.default = FooterStandard;
 //# sourceMappingURL=FooterStandard.js.map

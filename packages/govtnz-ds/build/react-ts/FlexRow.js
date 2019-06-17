@@ -26,13 +26,5 @@ var FlexRow = function (_a) {
             ? " " + constants.alignLg[alignLg]
             : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Columns..."))));
 };
-FlexRow.props = [
-    "alignXs",
-    "alignSm",
-    "alignMd",
-    "alignLg",
-    "isReversed",
-    "children"
-];
 exports.default = FlexRow;
 //# sourceMappingURL=FlexRow.js.map

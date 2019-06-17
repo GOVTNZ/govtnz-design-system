@@ -22,6 +22,5 @@ var P = function (_a) {
             ? constants.styleSize[styleSize]
             : "" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-P.props = ["styleSize", "children"];
 exports.default = P;
 //# sourceMappingURL=P.js.map

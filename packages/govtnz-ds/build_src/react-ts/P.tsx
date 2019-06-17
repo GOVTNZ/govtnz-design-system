@@ -29,5 +29,5 @@ const P = ({ styleSize, children }: Props) => (
     )}
   </p>
 );
-P.props = ["styleSize", "children"];
+
 export default P;

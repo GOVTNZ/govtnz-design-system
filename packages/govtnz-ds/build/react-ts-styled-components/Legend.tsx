@@ -45,5 +45,5 @@ const Legend = ({ children }: Props) => (
     )}
   </StyledLegend>
 );
-Legend.props = ["children"];
+
 export default Legend;

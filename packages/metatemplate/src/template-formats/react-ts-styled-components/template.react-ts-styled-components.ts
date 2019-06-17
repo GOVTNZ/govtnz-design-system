@@ -72,7 +72,7 @@ type AssignedDynamicDefsByKey = {
 // if/else branches.
 //
 // (Feel free to prototype it if you think it can be cleaner the
-// classy way though...)
+// class-y way though...)
 
 export default class ReactTsStyledComponents {
   static id = "react-ts-styled-components";
@@ -454,6 +454,22 @@ export default class ReactTsStyledComponents {
       };
       attributes.push(onChange);
     }
+    if (this.hasClickEvent(tagName, attributes)) {
+      // If this is a form element
+      const onClickDynamicKey: DynamicKey = {
+        key: this.registerDynamicKey("onClick", "function", false),
+        optional: false,
+        type: "function"
+      };
+      const onClick: TemplateAttribute = {
+        key: "onClick",
+        dataType: "function",
+        value: "",
+        dynamicKeys: [onClickDynamicKey]
+      };
+      attributes.push(onClick);
+    }
+
     let tag = tagName; // TODO: escape elementName
     if (this.options.css === "styled-components") {
       const {
@@ -608,9 +624,14 @@ export default class ReactTsStyledComponents {
           key =>
             `${key}${
               this.assignedDynamicDefsByKey[key].optional ? "?" : ""
-            }: ${this.renderPropType(key)}`
+            }: ${this.renderPropType(key)};\n`
         )
-        .join(";\n  ")}`; // TODO: refine and maybe use React.FunctionComponent<{ thing: any }>
+        .join("")}`;
+      // if (this.template.calculatedDynamicKeys) {
+      //   code += this.template.calculatedDynamicKeys
+      //     .map(calculatedDynamicKey => `${calculatedDynamicKey.key}: any;\n`) // can't really know what the results of an expression will be. we could allow users to provide that though, I guess
+      //     .join("");
+      // }
       code += "\n}\n\n";
     }
 
@@ -632,11 +653,37 @@ export default class ReactTsStyledComponents {
     }) => (${hasMultipleRootNodes ? "<React.Fragment>" : ""}`;
     code += this.render;
     code += hasMultipleRootNodes ? "</React.Fragment>" : "";
-    code += ");\n";
-    code += `${safeName}.props = ${JSON.stringify(
-      this.assignedDynamicKeys
-    )};\n`;
-    code += `export default ${safeName};\n`;
+    code += ");\n\n";
+
+    if (
+      this.template.calculatedDynamicKeys &&
+      this.template.calculatedDynamicKeys.length
+    ) {
+      const calculatedKeys = this.template.calculatedDynamicKeys.map(
+        item => item.key
+      );
+
+      const safeNameLogic = `${safeName}__calculated`;
+      code += `const ${safeNameLogic} = ( props ${
+        this.options.language === "typescript"
+          ? `: Pick<Props, ${this.assignedDynamicKeys
+              .filter(key => !calculatedKeys.includes(key))
+              .map(name => `"${name}"`)
+              .join(" | ")}>`
+          : ""
+      }) => React.createElement(${safeName}, { ...props, ${this.template.calculatedDynamicKeys
+        .map(
+          calculatedDynamicKey =>
+            `${calculatedDynamicKey.key}: ((props)=>{ return ${
+              calculatedDynamicKey.expression
+            }; })(props) `
+        )
+        .join(", ")} } )\n\n`;
+      code += `\n\nexport { ${safeName} };\n`;
+      code += `\n\nexport default ${safeNameLogic};\n`;
+    } else {
+      code += `\n\nexport default ${safeName};\n`;
+    }
 
     try {
       code = prettier.format(code, {
@@ -716,9 +763,22 @@ export default class ReactTsStyledComponents {
   ): boolean => {
     if (tagName === "input") {
       const inputType = attributes.find(attribute => attribute.key === "type");
-      return !!(inputType && inputType.value !== "file");
+      return !!(
+        inputType && !["file", "submit", "image"].includes(inputType.value)
+      );
     }
     return ["textarea", "select"].includes(tagName);
+  };
+
+  hasClickEvent = (
+    tagName: string,
+    attributes: TemplateAttribute[]
+  ): boolean => {
+    if (tagName === "input") {
+      const inputType = attributes.find(attribute => attribute.key === "type");
+      return !!(inputType && ["submit", "image"].includes(inputType.value));
+    }
+    return ["button"].includes(tagName);
   };
 
   registerDynamicKey = (

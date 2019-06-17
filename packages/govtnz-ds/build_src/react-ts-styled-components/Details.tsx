@@ -116,5 +116,5 @@ const Details = ({
     </StyledDiv>
   </StyledDetails>
 );
-Details.props = ["open", "detailsContent021Df3Ae2Ee5440B98CbFfc001B25657"];
+
 export default Details;

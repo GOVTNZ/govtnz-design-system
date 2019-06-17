@@ -74,23 +74,11 @@ var constants = {
     }
 };
 var TextareaWithCustomRows = function (_a) {
-    var fullAddress = _a.fullAddress, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var fullAddress = _a.fullAddress, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledLabel, { htmlFor: fullAddress }, "Full address"),
-        React.createElement(StyledTextarea, { id: fullAddress, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+        React.createElement(StyledTextarea, { id: fullAddress, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
 };
-TextareaWithCustomRows.props = [
-    "fullAddress",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = TextareaWithCustomRows;
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=TextareaWithCustomRows.js.map

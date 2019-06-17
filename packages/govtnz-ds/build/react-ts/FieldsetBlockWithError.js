@@ -23,13 +23,5 @@ var FieldsetBlockWithError = function (_a) {
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))),
             React.createElement("div", { className: "g-fieldsetBlockWithError-children" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Fieldset contents"))))));
 };
-FieldsetBlockWithError.props = [
-    "hintId",
-    "errorId",
-    "legend",
-    "hint",
-    "error",
-    "children"
-];
 exports.default = FieldsetBlockWithError;
 //# sourceMappingURL=FieldsetBlockWithError.js.map

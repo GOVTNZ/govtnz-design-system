@@ -135,13 +135,14 @@ const constants = {
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
-const Button = ({ disabled, level, name, type, children }) => (
+const Button = ({ disabled, level, name, type, onClick, children }) => (
   <StyledButton
     disabled={disabled}
     level={level}
     aria-disabled={disabled}
     type={constants.type[type]}
     name={name}
+    onClick={onClick}
   >
     {children !== undefined ? (
       children
@@ -150,5 +151,5 @@ const Button = ({ disabled, level, name, type, children }) => (
     )}
   </StyledButton>
 );
-Button.props = ["disabled", "level", "name", "type", "children"];
+
 export default Button;

@@ -12,8 +12,6 @@ import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '@govtnz/ds/build/css/P.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
-import InputBlock from '@govtnz/ds/build/react-ts/InputBlock.tsx';
-import '@govtnz/ds/build/css/InputBlock.css';
 import components__Input from '../../commons/examples/components__Input';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -28,16 +26,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Input[0]} >
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId" hintId="anyHintId" />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[0]} iframeProps={{id:"iframe_componentsInput0", className: "example__iframe", id: "iframe_componentsInput0", src:"../Input__example0/", title:"Example 0", height: 220 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[1]} >
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter an email address in the correct format, like name@example.com" />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[1]} iframeProps={{id:"iframe_componentsInput1", className: "example__iframe", id: "iframe_componentsInput1", src:"../Input__example1/", title:"Error state (Input example)", height: 260 }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
@@ -56,38 +50,14 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>If you want to make the input smaller, you can either use a fixed-width input, or use the width override classes to create a smaller fluid-width input.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Fixed-width text input</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[2]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" hintId="anyHintId3" />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} type="Email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="5" label="5 character width" hint="Fits a post code." name="anyNameWidth5" inputId="anyId6" hintId="anyHintId6" />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="4" label="4 character width" hint="Fits a 4-digit group of a credit card number." name="anyNameWidth4" inputId="anyId7" hintId="anyHintId7"  />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="3" label="3 character width" hint="Fits a prefix for a mobile number." name="anyNameWidth3" inputId="anyId8" hintId="anyHintId8" />
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <InputBlock {...onChangeGenerator(InputBlock)} width="2" label="2 character width" hint="Fits the 2-digit part of a bank account number." name="anyNameWidth2" inputId="anyId9" hintId="anyHintId9" />
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[2]} iframeProps={{id:"iframe_componentsInput2", className: "example__iframe", id: "iframe_componentsInput2", src:"../Input__example2/", title:"Fixed-width text input (Input example)", height: 1060 }}></Example>
 </ExampleContainer>
 
 <p>Use fixed-width inputs for content that has a specific, known length. For example, postcode inputs should be postcode-sized, and telephone number inputs should be telephone number-sized.</p>
 <p>On fixed-width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Hint text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[3]} >
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId10" hintId="anyHintId10" />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[3]} iframeProps={{id:"iframe_componentsInput3", className: "example__iframe", id: "iframe_componentsInput3", src:"../Input__example3/", title:"Hint text (Input example)", height: 220 }}></Example>
 </ExampleContainer>
 
 <p>Use hint text (also known as help text) for advice that’s relevant to the majority of users, like how their information will be used, or where to find it.</p>
@@ -97,9 +67,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>See how to do this in the following example.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)} white>Code</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[4]} codeOnly>
-        <InputBlock {...onChangeGenerator(InputBlock)} label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="Postal Code" />
-    </Example>
+    
 </ExampleContainer>
 
 <h3 id="do-not-disable-copy-and-paste">Do not disable copy and paste</h3>
@@ -110,9 +78,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>To disable spellcheck, set <code>spellcheck=&quot;false&quot;</code>.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)} white>Code</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[5]} codeOnly>
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" />
-    </Example>
+    
 </ExampleContainer>
 
 <p>Browsers do not consistently spellcheck users’ input by default. If you are asking users a question for which spellcheck would be useful, set the <code>spellcheck</code> attribute to <code>true</code>.</p>
@@ -123,9 +89,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>Style error messages as shown in the following example.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[6]} >
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId2" hintId="anyHintId2Error" errorId="anyErrorId2" hasError error="Enter an email address in the correct format, like name@example.com" />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[6]} iframeProps={{id:"iframe_componentsInput6", className: "example__iframe", id: "iframe_componentsInput6", src:"../Input__example6/", title:"Error state (Input example)", height: 260 }}></Example>
 </ExampleContainer>
 
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>

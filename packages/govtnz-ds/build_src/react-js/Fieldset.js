@@ -11,5 +11,5 @@ const Fieldset = ({ hintId, children }) => (
     </fieldset>
   </div>
 );
-Fieldset.props = ["hintId", "children"];
+
 export default Fieldset;

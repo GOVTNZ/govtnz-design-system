@@ -5,5 +5,5 @@ const ErrorMessage = ({}) => (
     Error message about full name goes here
   </span>
 );
-ErrorMessage.props = [];
+
 export default ErrorMessage;

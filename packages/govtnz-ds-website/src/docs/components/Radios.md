@@ -5,7 +5,7 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
-    <Example>
+    <Example title="Radios example">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId" 

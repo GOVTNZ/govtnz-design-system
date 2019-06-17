@@ -7,8 +7,5 @@ declare type Props = {
     isReversed?: boolean | undefined;
     children?: React.ReactNode;
 };
-declare const FlexRow: {
-    ({ alignXs, alignSm, alignMd, alignLg, isReversed, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const FlexRow: ({ alignXs, alignSm, alignMd, alignLg, isReversed, children }: Props) => JSX.Element;
 export default FlexRow;

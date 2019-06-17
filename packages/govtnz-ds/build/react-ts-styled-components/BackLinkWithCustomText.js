@@ -21,7 +21,6 @@ var BackLinkWithCustomText = function (_a) {
     var href = _a.href, rel = _a.rel, target = _a.target, children = _a.children;
     return (React.createElement(StyledA, { href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
 exports.default = BackLinkWithCustomText;
 var templateObject_1;
 //# sourceMappingURL=BackLinkWithCustomText.js.map

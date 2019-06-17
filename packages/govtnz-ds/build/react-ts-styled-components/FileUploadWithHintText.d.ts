@@ -7,8 +7,5 @@ declare type Props = {
     readOnly?: boolean | undefined;
     autoFocus?: boolean | undefined;
 };
-declare const FileUploadWithHintText: {
-    ({ fileUpload2, fileUpload2Hint, name, disabled, readOnly, autoFocus }: Props): JSX.Element;
-    props: string[];
-};
+declare const FileUploadWithHintText: ({ fileUpload2, fileUpload2Hint, name, disabled, readOnly, autoFocus }: Props) => JSX.Element;
 export default FileUploadWithHintText;

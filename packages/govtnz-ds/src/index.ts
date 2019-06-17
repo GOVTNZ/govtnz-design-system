@@ -36,7 +36,7 @@ async function main(
   noCache: boolean = false,
   patternIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
-  sources?: string[] | undefined,
+  sources?: string[] | undefined
 ) {
   console.info('Command line args:');
   console.info('  -  Cache: ', !noCache);
@@ -98,16 +98,19 @@ async function main(
 
   // Sequentially run because may result in a full scrape (downloading
   // a repo, and installing it, starting webserver, scraping, etc.)
-  // may have localhost port conflicts, resource contention issues.
+  // may have localhost port conflicts, resource contention issues...
+  // and other theoretical conflicts so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
-    const validPatternIds = patternIds !== null && releaseSpecItem.patternIds !== undefined
-      ? patternIds.filter(patternId => releaseSpecItem.patternIds.includes(patternId))
-      : [];
+    const validPatternIds =
+      patternIds !== null && releaseSpecItem.patternIds !== undefined
+        ? patternIds.filter(patternId =>
+            releaseSpecItem.patternIds.includes(patternId)
+          )
+        : [];
 
-    releaseSpecItem.patternIds = validPatternIds.length > 0
-      ? validPatternIds
-      : releaseSpecItem.patternIds;
+    releaseSpecItem.patternIds =
+      validPatternIds.length > 0 ? validPatternIds : releaseSpecItem.patternIds;
 
     releaseSpecItem.metaTemplateFormatIds =
       metaTemplateFormatIds || releaseSpecItem.metaTemplateFormatIds;
@@ -327,7 +330,29 @@ const componentToFiles = async ({
   const cssReadme = `These CSS files can be bundled in any order because all selectors are namespaced.`;
   cssVariables = safeMergeCssVariables(cssVariables, component.cssVariables);
 
-  const response = await makeTemplates(component, metaTemplateFormatIds);
+  const metaTemplateInput = Object.assign(
+    {},
+    ...Object.keys(component)
+      .filter(key => key !== 'props')
+      .map(key => {
+        return { [key]: component[key] };
+      }),
+    {
+      calculatedDynamicKeys:
+        component.calculatedDynamicKeys &&
+        Object.keys(component.calculatedDynamicKeys).map(key => {
+          return {
+            key,
+            expression: component.calculatedDynamicKeys[key]
+          };
+        })
+    }
+  );
+
+  const response = await makeTemplates(
+    metaTemplateInput,
+    metaTemplateFormatIds
+  );
 
   const markdownFileName = `${component.id}.md`;
   const relativeMarkdownPath = path.join('docs', markdownFileName);
@@ -563,7 +588,8 @@ parser.addArgument(['-m', '--metaTemplateFormat'], {
   help: 'MetaTemplate formats by Id (comma separated)'
 });
 parser.addArgument(['-s', '--sources'], {
-  help: 'Use specific sources Ids (comma seperated). Use "-s mysource@1.2.3" for a specific version of a source.'
+  help:
+    'Use specific sources Ids (comma seperated). Use "-s mysource@1.2.3" for a specific version of a source.'
 });
 
 const args = parser.parseArgs();

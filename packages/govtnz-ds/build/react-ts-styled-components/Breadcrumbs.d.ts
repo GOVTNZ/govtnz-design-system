@@ -7,8 +7,5 @@ declare type Props = {
     rel2?: string | undefined;
     target2?: "Blank" | "Top" | "Self" | "Parent" | undefined;
 };
-declare const Breadcrumbs: {
-    ({ href, rel, target, href2, rel2, target2 }: Props): JSX.Element;
-    props: string[];
-};
+declare const Breadcrumbs: ({ href, rel, target, href2, rel2, target2 }: Props) => JSX.Element;
 export default Breadcrumbs;

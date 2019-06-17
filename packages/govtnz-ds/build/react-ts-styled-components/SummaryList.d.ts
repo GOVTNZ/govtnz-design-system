@@ -16,8 +16,5 @@ declare type Props = {
     rel5?: string | undefined;
     target5?: "Blank" | "Top" | "Self" | "Parent" | undefined;
 };
-declare const SummaryList: {
-    ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5 }: Props): JSX.Element;
-    props: string[];
-};
+declare const SummaryList: ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5 }: Props) => JSX.Element;
 export default SummaryList;

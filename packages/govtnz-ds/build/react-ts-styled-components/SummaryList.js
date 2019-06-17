@@ -99,23 +99,6 @@ var SummaryList = function (_a) {
                             "Change",
                             React.createElement(StyledSpan5, null, "contact information"))))))));
 };
-SummaryList.props = [
-    "href",
-    "rel",
-    "target",
-    "href2",
-    "rel2",
-    "target2",
-    "href3",
-    "rel3",
-    "target3",
-    "href4",
-    "rel4",
-    "target4",
-    "href5",
-    "rel5",
-    "target5"
-];
 exports.default = SummaryList;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23, templateObject_24, templateObject_25, templateObject_26, templateObject_27, templateObject_28, templateObject_29, templateObject_30, templateObject_31;
 //# sourceMappingURL=SummaryList.js.map

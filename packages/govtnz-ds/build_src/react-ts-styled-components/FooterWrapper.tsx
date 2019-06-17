@@ -19,5 +19,5 @@ const FooterWrapper = ({ children }: Props) => (
     )}
   </StyledFooter>
 );
-FooterWrapper.props = ["children"];
+
 export default FooterWrapper;

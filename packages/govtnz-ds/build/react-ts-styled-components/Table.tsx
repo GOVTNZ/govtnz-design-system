@@ -43,5 +43,5 @@ const Table = ({  }: Props) => (
     </tbody>
   </StyledTable>
 );
-Table.props = [];
+
 export default Table;

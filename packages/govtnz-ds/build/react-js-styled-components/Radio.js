@@ -51,6 +51,5 @@ var Radio = function Radio(_ref) {
   });
 };
 
-Radio.props = ["fakeFocus", "gov1", "hintId", "name", "disabled", "readOnly", "autoFocus", "value", "checked", "onChange"];
 var _default = Radio;
 exports["default"] = _default;

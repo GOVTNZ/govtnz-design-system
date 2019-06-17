@@ -18,14 +18,5 @@ var FileUploadWithErrorMessage = function (_a) {
                 ? "" + (fileUpload3Hint ? fileUpload3Hint : "") + (fileUpload3Error ? " " + fileUpload3Error : "")
                 : undefined, className: "g-fileUploadWithErrorMessage-file-upload g-fileUploadWithErrorMessage-file-upload--error", id: fileUpload3, name: name, type: "file", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus })));
 };
-FileUploadWithErrorMessage.props = [
-    "fileUpload3",
-    "fileUpload3Hint",
-    "fileUpload3Error",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus"
-];
 exports.default = FileUploadWithErrorMessage;
 //# sourceMappingURL=FileUploadWithErrorMessage.js.map

@@ -13,9 +13,8 @@ var constants = {
     type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 var Button = function (_a) {
-    var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, children = _a.children;
-    return (React.createElement("button", { "aria-disabled": disabled, className: "g-button" + (disabled ? " g-button--disabled" : "") + (constants.level[level] !== undefined ? " " + constants.level[level] : ""), disabled: disabled, type: constants.type[type], name: name }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
+    return (React.createElement("button", { "aria-disabled": disabled, className: "g-button" + (disabled ? " g-button--disabled" : "") + (constants.level[level] !== undefined ? " " + constants.level[level] : ""), disabled: disabled, type: constants.type[type], name: name, onClick: onClick }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Button.props = ["disabled", "level", "name", "type", "children"];
 exports.default = Button;
 //# sourceMappingURL=Button.js.map

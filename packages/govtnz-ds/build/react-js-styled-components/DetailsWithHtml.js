@@ -137,6 +137,5 @@ var DetailsWithHtml = function DetailsWithHtml(_ref) {
   }, "Your National Insurance number can be found on", _react["default"].createElement("ul", null, _react["default"].createElement(StyledLi, null, "your National Insurance card"), _react["default"].createElement(StyledLi2, null, "your payslip"), _react["default"].createElement(StyledLi3, null, "P60"), _react["default"].createElement(StyledLi4, null, "benefits information"), _react["default"].createElement(StyledLi5, null, "tax return"))));
 };
 
-DetailsWithHtml.props = ["open", "detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0"];
 var _default = DetailsWithHtml;
 exports["default"] = _default;

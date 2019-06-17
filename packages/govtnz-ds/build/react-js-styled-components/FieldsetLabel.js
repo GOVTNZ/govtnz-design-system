@@ -33,6 +33,5 @@ var FieldsetLabel = function FieldsetLabel(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"));
 };
 
-FieldsetLabel.props = ["hintId", "hint"];
 var _default = FieldsetLabel;
 exports["default"] = _default;

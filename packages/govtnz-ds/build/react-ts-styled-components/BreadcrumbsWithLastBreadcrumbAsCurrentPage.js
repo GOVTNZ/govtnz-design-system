@@ -34,14 +34,6 @@ var BreadcrumbsWithLastBreadcrumbAsCurrentPage = function (_a) {
                 React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] }, "Passports, travel and living abroad")),
             React.createElement(StyledLi3, { "aria-current": "page" }, "Travel abroad"))));
 };
-BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = [
-    "href",
-    "rel",
-    "target",
-    "href2",
-    "rel2",
-    "target2"
-];
 exports.default = BreadcrumbsWithLastBreadcrumbAsCurrentPage;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
 //# sourceMappingURL=BreadcrumbsWithLastBreadcrumbAsCurrentPage.js.map

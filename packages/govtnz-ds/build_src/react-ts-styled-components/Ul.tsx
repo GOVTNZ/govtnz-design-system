@@ -53,5 +53,5 @@ const Ul = ({ bulleted, children }: Props) => (
     )}
   </StyledUl>
 );
-Ul.props = ["bulleted", "children"];
+
 export default Ul;

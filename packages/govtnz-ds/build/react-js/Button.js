@@ -26,16 +26,17 @@ var Button = function Button(_ref) {
       level = _ref.level,
       name = _ref.name,
       type = _ref.type,
+      onClick = _ref.onClick,
       children = _ref.children;
   return _react["default"].createElement("button", {
     "aria-disabled": disabled,
     className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
     disabled: disabled,
     type: constants.type[type],
-    name: name
+    name: name,
+    onClick: onClick
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Button.props = ["disabled", "level", "name", "type", "children"];
 var _default = Button;
 exports["default"] = _default;

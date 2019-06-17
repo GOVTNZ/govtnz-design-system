@@ -68,6 +68,7 @@ const TextareaWithAutocompleteAttribute = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textareaWithAutocompleteAttribute-form-group">
@@ -88,20 +89,10 @@ const TextareaWithAutocompleteAttribute = ({
       cols={cols}
       autoFocus={autoFocus}
       spellCheck={spellCheck}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-TextareaWithAutocompleteAttribute.props = [
-  "textareaWithAutocompleteAttribute",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithAutocompleteAttribute;

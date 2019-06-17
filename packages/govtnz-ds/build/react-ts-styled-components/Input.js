@@ -123,22 +123,6 @@ var Input = function (_a) {
     var width = _a.width, hasError = _a.hasError, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
     return (React.createElement(StyledInput, { width: width, hasError: hasError, fakeFocus: fakeFocus, "aria-describedby": describedBy, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
 };
-Input.props = [
-    "width",
-    "hasError",
-    "fakeFocus",
-    "inputId",
-    "describedBy",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "type",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = Input;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9;
 //# sourceMappingURL=Input.js.map

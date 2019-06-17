@@ -70,6 +70,5 @@ var WarningText = function WarningText(_ref) {
   }, "!"), _react["default"].createElement(StyledStrong, null, _react["default"].createElement(StyledSpan2, null, "Warning"), "You can be fined up to $5,000 if you don\u2019t register."));
 };
 
-WarningText.props = [];
 var _default = WarningText;
 exports["default"] = _default;

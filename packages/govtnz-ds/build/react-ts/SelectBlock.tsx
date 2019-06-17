@@ -46,13 +46,5 @@ const SelectBlock = ({
     </select>
   </div>
 );
-SelectBlock.props = [
-  "selectId",
-  "label",
-  "hasError",
-  "name",
-  "multiple",
-  "onChange",
-  "children"
-];
+
 export default SelectBlock;

@@ -21,8 +21,5 @@ declare type Props = {
     rel4?: string | undefined;
     target4?: "Blank" | "Top" | "Self" | "Parent" | undefined;
 };
-declare const Tabs: {
-    ({ tabPastDay, pastDay, href, rel, target, tabPastWeek, pastWeek, href2, rel2, target2, tabPastMonth, pastMonth, href3, rel3, target3, tabPastYear, pastYear, href4, rel4, target4 }: Props): JSX.Element;
-    props: string[];
-};
+declare const Tabs: ({ tabPastDay, pastDay, href, rel, target, tabPastWeek, pastWeek, href2, rel2, target2, tabPastMonth, pastMonth, href3, rel3, target3, tabPastYear, pastYear, href4, rel4, target4 }: Props) => JSX.Element;
 export default Tabs;

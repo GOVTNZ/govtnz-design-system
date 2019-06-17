@@ -11,5 +11,5 @@ const Table = ({  }: Props) => (
     </tbody>
   </table>
 );
-Table.props = [];
+
 export default Table;

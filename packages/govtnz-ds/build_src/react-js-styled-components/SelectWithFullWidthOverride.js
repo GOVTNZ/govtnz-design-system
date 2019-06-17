@@ -138,13 +138,5 @@ const SelectWithFullWidthOverride = ({
     </StyledSelect>
   </StyledDiv>
 );
-SelectWithFullWidthOverride.props = [
-  "select1",
-  "name",
-  "multiple",
-  "onChange",
-  "selected",
-  "selected2",
-  "selected3"
-];
+
 export default SelectWithFullWidthOverride;

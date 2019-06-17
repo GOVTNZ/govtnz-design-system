@@ -10,14 +10,6 @@ import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock.tsx';
-import '@govtnz/ds/build/css/FieldsetBlock.css';
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
-import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock.tsx';
-import '@govtnz/ds/build/css/CheckboxBlock.css';
-import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError.tsx';
-import '@govtnz/ds/build/css/FieldsetBlockWithError.css';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
 import '@govtnz/ds/build/css/Ul.css';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
@@ -35,35 +27,17 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="providerChoiceTitle1" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId1">
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Aardvark Access" checkboxId="anyCheckboxId1" value="provider1" name="providerChoice1" labelId="labelId1" />
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Bumblebee Business"  checkboxId="anyCheckboxId2" value="provider2" name="providerChoice1" labelId="labelId2" />
-    <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Caterpillar Company"  checkboxId="anyCheckboxId3" value="provider3" name="providerChoice1" labelId="labelId3" />
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{id:"iframe_componentsCheckboxes0", className: "example__iframe", id: "iframe_componentsCheckboxes0", src:"../Checkboxes__example0/", title:"Example 0", height: 364 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} >
-        <FieldsetBlockWithError {...onChangeGenerator(FieldsetBlockWithError)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="providerChoiceTitle2" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId21" errorId="errorId21" error="You must choose at least one provider.">
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Aardvark Access"  checkboxId="anyCheckboxId21" value="provider1" name="providerChoice2" labelId="labelId21" />
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Bumblebee Business"  checkboxId="anyCheckboxId22" value="provider2"  name="providerChoice2" labelId="labelId22" />
-    <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Caterpillar Company"  checkboxId="anyCheckboxId23" value="provider3" name="providerChoice2" labelId="labelId23" />
-        </FieldsetBlockWithError>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{id:"iframe_componentsCheckboxes1", className: "example__iframe", id: "iframe_componentsCheckboxes1", src:"../Checkboxes__example1/", title:"Error (Checkboxes example)", height: 404 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Checkboxes with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="providerChoiceTitle3" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId3">
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Aardvark Access" checkboxId="anyCheckboxId31" value="provider1" name="providerChoice3" labelId="labelId31" hintId="hintId31" hint="Aardvark Access provides internet" />
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Bumblebee Business"  checkboxId="anyCheckboxId32" value="provider2" name="providerChoice3" labelId="labelId32" hintId="hintId32" hint="Bumblebee Business provides electricity" />
-            <CheckboxBlock {...onChangeGenerator(CheckboxBlock)} label="Caterpillar Company"  checkboxId="anyCheckboxId33" value="provider3" name="providerChoice3" labelId="labelId33" hintId="hintId33" hint="Caterpillar Company provides telephone" />
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{id:"iframe_componentsCheckboxes2", className: "example__iframe", id: "iframe_componentsCheckboxes2", src:"../Checkboxes__example2/", title:"Checkboxes with hints (Checkboxes example)", height: 448 }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>

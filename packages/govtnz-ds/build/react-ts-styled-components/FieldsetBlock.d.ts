@@ -5,8 +5,5 @@ declare type Props = {
     hint?: React.ReactNode;
     children?: React.ReactNode;
 };
-declare const FieldsetBlock: {
-    ({ hintId, legend, hint, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const FieldsetBlock: ({ hintId, legend, hint, children }: Props) => JSX.Element;
 export default FieldsetBlock;

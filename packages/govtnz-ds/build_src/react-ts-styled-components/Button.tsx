@@ -6,6 +6,7 @@ type Props = {
   level: "secondary" | "warning";
   name?: string | undefined;
   type?: "Submit" | "Reset" | "Button" | undefined;
+  onClick: any;
   children?: React.ReactNode;
 };
 
@@ -143,13 +144,14 @@ const constants = {
   type: { Submit: "submit", Reset: "reset", Button: "button" }
 };
 
-const Button = ({ disabled, level, name, type, children }: Props) => (
+const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
   <StyledButton
     disabled={disabled}
     level={level}
     aria-disabled={disabled}
     type={constants.type[type] as any}
     name={name}
+    onClick={onClick}
   >
     {children !== undefined ? (
       children
@@ -158,5 +160,5 @@ const Button = ({ disabled, level, name, type, children }: Props) => (
     )}
   </StyledButton>
 );
-Button.props = ["disabled", "level", "name", "type", "children"];
+
 export default Button;

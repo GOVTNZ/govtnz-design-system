@@ -15,14 +15,5 @@ var SelectBlock = function (_a) {
         React.createElement("select", { className: "g-selectBlock-select" + (hasError ? " g-selectBlock-select--error" : ""), id: selectId, name: name, multiple: multiple, onChange: onChange }, children !== undefined ? (children) : (React.createElement(React.Fragment, null,
             React.createElement("option", null, "Options"))))));
 };
-SelectBlock.props = [
-    "selectId",
-    "label",
-    "hasError",
-    "name",
-    "multiple",
-    "onChange",
-    "children"
-];
 exports.default = SelectBlock;
 //# sourceMappingURL=SelectBlock.js.map

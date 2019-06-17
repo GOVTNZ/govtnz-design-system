@@ -12,24 +12,10 @@ import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '@govtnz/ds/build/css/P.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock.tsx';
-import '@govtnz/ds/build/css/FieldsetBlock.css';
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
-import Radios from '@govtnz/ds/build/react-ts/Radios.tsx';
-import '@govtnz/ds/build/css/Radios.css';
-import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock.tsx';
-import '@govtnz/ds/build/css/RadioBlock.css';
-import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError.tsx';
-import '@govtnz/ds/build/css/FieldsetBlockWithError.css';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
 import '@govtnz/ds/build/css/Ul.css';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
 import '@govtnz/ds/build/css/Li.css';
-import RadioBlockWithHint from '@govtnz/ds/build/react-ts/RadioBlockWithHint.tsx';
-import '@govtnz/ds/build/css/RadioBlockWithHint.css';
-import FormDivider from '@govtnz/ds/build/react-ts/FormDivider.tsx';
-import '@govtnz/ds/build/css/FormDivider.css';
 import components__Radios from '../../commons/examples/components__Radios';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -44,28 +30,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[0]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
-            <Radios {...onChangeGenerator(Radios)} inline>
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="Yes" radioId="anyRadioId" 
-                value="true" name="nameChange1" labelId="labelId1" hintId="hintId1" />
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="No" radioId="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" hintId="hintId1" />
-            </Radios>
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[0]} iframeProps={{id:"iframe_componentsRadios0", className: "example__iframe", id: "iframe_componentsRadios0", src:"../Radios__example0/", title:"Radios example", height: 284 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[1]} >
-        <FieldsetBlockWithError {...onChangeGenerator(FieldsetBlockWithError)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
-            <Radios {...onChangeGenerator(Radios)} inline>
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="Yes" radioId="anyRadioId9234" 
-                value="true" name="nameChange5" labelId="labelId9" hintId="hintId5" />
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="No" radioId="anyRadioId10" value="false" name="nameChange5" hintId="hintId5" labelId="labelId10" />
-            </Radios>
-        </FieldsetBlockWithError>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[1]} iframeProps={{id:"iframe_componentsRadios1", className: "example__iframe", id: "iframe_componentsRadios1", src:"../Radios__example1/", title:"Error (Radios example)", height: 324 }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
@@ -89,53 +59,25 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Stacked radio buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[2]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="whereLiveTitle">Where do you live?</H1>}>
-            <RadioBlock {...onChangeGenerator(RadioBlock)} label="North Island" radioId="anyRadioId3334" name="where" value="north" labelId="labelId3" />
-            <RadioBlock {...onChangeGenerator(RadioBlock)} label="South Island" radioId="anyRadioId42344" name="where" value="south" labelId="labelId4" />
-            <RadioBlock {...onChangeGenerator(RadioBlock)} label="Stewart Island" radioId="anyRadioId5234" name="where" value="stewart" labelId="labelId5" />
-            <RadioBlock {...onChangeGenerator(RadioBlock)} label="Chatham Islands" radioId="anyRadioId6234" name="where" value="chatham" labelId="labelId6" />
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[2]} iframeProps={{id:"iframe_componentsRadios2", className: "example__iframe", id: "iframe_componentsRadios2", src:"../Radios__example2/", title:"Stacked radio buttons (Radios example)", height: 380 }}></Example>
 </ExampleContainer>
 
 <p>When there are more than 2 options, radio buttons should be stacked.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Inline radio buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[3]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId6">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId2221">
-            <Radios {...onChangeGenerator(Radios)} inline>
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="Yes" radioId="anyRadioId55" 
-                value="true" name="nameChange1" labelId="labelId1" hintId="hintId2221" />
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" hintId="hintId2221" />
-            </Radios>
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[3]} iframeProps={{id:"iframe_componentsRadios3", className: "example__iframe", id: "iframe_componentsRadios3", src:"../Radios__example3/", title:"Inline radio buttons (Radios example)", height: 284 }}></Example>
 </ExampleContainer>
 
 <p>If there are only 2 options, you can either stack the radio buttons or display them inline.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Radio button items with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[4]} >
-            <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="providerChoiceTitle1">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId">
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" radioId="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" />
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" radioId="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" />
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" radioId="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" />
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[4]} iframeProps={{id:"iframe_componentsRadios4", className: "example__iframe", id: "iframe_componentsRadios4", src:"../Radios__example4/", title:"Radio button items with hints (Radios example)", height: 468 }}></Example>
 </ExampleContainer>
 
 <p>You can add hints to radio button items to provide more information about the options.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Radio button items with a text divider</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[5]} >
-            <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="providerChoiceTitle2">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId234">
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" />
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" />
-                <FormDivider {...onChangeGenerator(FormDivider)}><p>-or-</p></FormDivider>
-                <RadioBlockWithHint {...onChangeGenerator(RadioBlockWithHint)} label="Sign in with Eel Services" hint="Non-New Zealand residents only" hintId="someHintId7234444" radioId="anyRadioId3459" name="providerChoice3" value="provider3" labelId="labelId9" />
-        </FieldsetBlock>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[5]} iframeProps={{id:"iframe_componentsRadios5", className: "example__iframe", id: "iframe_componentsRadios5", src:"../Radios__example5/", title:"Radio button items with a text divider (Radios example)", height: 517 }}></Example>
 </ExampleContainer>
 
 <p>If one or more of your radio button options is different from the others, it can help users if you separate them using a text divider. The text is usually the word ‘or’.</p>
@@ -143,15 +85,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[6]} >
-        <FieldsetBlockWithError {...onChangeGenerator(FieldsetBlockWithError)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name.">
-            <Radios {...onChangeGenerator(Radios)} inline>
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="Yes" radioId="anyRadioId9" 
-                value="true" name="nameChange5" labelId="labelId9" />
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="No" radioId="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" />
-            </Radios>
-        </FieldsetBlockWithError>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Radios[6]} iframeProps={{id:"iframe_componentsRadios6", className: "example__iframe", id: "iframe_componentsRadios6", src:"../Radios__example6/", title:"Error (Radios example)", height: 324 }}></Example>
 </ExampleContainer>
 
 <h4 id="if-nothing-is-selected-and-the-options-are-yes-or-no">If nothing is selected and the options are ‘yes’ or ‘no’</h4>

@@ -12,6 +12,5 @@ var FooterWrapper = function (_a) {
     var children = _a.children;
     return (React.createElement("footer", { className: "g-footer-wrapper" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
 };
-FooterWrapper.props = ["children"];
 exports.default = FooterWrapper;
 //# sourceMappingURL=FooterWrapper.js.map

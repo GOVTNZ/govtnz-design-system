@@ -12,6 +12,5 @@ var CaptionXl = function (_a) {
     var children = _a.children;
     return (React.createElement("span", { className: "g-caption-xl" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-CaptionXl.props = ["children"];
 exports.default = CaptionXl;
 //# sourceMappingURL=CaptionXl.js.map

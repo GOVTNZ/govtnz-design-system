@@ -5,8 +5,7 @@
 @import './settings-global';
 @import './settings-fonts';
 
-// CSS Variables
-:root {
+html.theme-default {
   --color-theme-slate: #{$color-ds-default-slate};
   --color-theme-dark-grey: #{$color-ds-default-dark-grey};
   --color-theme-mid-grey: #{$color-ds-default-mid-grey};
@@ -57,7 +56,7 @@ textarea:focus {
 
 html {
   font-family: National2, Arial, sans-serif;
-  font-family: var(--g-theme-font-family);
+  font-family: var(--g-theme-font-family, National2, Arial, sans-serif);
   font-size: $font-size-base;
   line-height: $line-height-base;
   background-color: $color-core-white;

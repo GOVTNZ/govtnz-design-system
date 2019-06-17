@@ -14,5 +14,5 @@ const Radios = ({ inline, children }: Props) => (
     )}
   </div>
 );
-Radios.props = ["inline", "children"];
+
 export default Radios;

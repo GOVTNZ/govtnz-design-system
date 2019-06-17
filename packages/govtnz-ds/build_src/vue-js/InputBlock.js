@@ -108,7 +108,6 @@ export default Vue.extend({
       },
       required: false
     },
-    fakeFocus: { type: Boolean, default: false, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -227,8 +226,7 @@ export default Vue.extend({
         (constants[this.width] !== undefined
           ? ` ${constants[this.width]}`
           : "") +
-        (this.hasError ? " g-inputBlock-input--error" : "") +
-        (this.fakeFocus ? " :focus" : "")
+        (this.hasError ? " g-inputBlock-input--error" : "")
       );
     },
     computed__type() {

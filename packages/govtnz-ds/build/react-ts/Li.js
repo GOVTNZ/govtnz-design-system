@@ -12,6 +12,5 @@ var Li = function (_a) {
     var children = _a.children;
     return (React.createElement("li", null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Li.props = ["children"];
 exports.default = Li;
 //# sourceMappingURL=Li.js.map
