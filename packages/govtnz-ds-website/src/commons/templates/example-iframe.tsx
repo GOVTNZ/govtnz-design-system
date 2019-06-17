@@ -3,10 +3,10 @@ import React, { Fragment } from 'react';
 // @dynamicImports
 
 import IframePage from '../../components/IframePage';
-import ExampleContainer from '../../commons/ExampleContainer';
-import ExampleHeading from '../../commons/ExampleHeading';
-import ExampleSection from '../../commons/ExampleSection';
 import onChangeGenerator from '../../commons/onChangeGenerator';
+const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
+const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
+const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 // @pageContentComponent

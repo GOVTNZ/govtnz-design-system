@@ -12,10 +12,10 @@ import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock.tsx';
 import '@govtnz/ds/build/css/CheckboxBlock.css';
 
 import IframePage from '../../components/IframePage';
-import ExampleContainer from '../../commons/ExampleContainer';
-import ExampleHeading from '../../commons/ExampleHeading';
-import ExampleSection from '../../commons/ExampleSection';
 import onChangeGenerator from '../../commons/onChangeGenerator';
+const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
+const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
+const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>

@@ -1,13 +1,12 @@
 import React, { Fragment, useEffect, useState, useRef } from 'react';
-import { GatsbyPageProps } from '../components/layout';
-import SEO from '../components/seo';
+import Helmet from 'react-helmet';
 import './IframePage.scss';
 
 type Props = {
   title: string;
   id: string;
   parentUrl: string;
-  pageProps: GatsbyPageProps;
+  pageProps: any;
   PageContent: Function;
 };
 
@@ -48,9 +47,11 @@ const IframePage = ({
 
   return (
     <Fragment>
-      <SEO
+      <Helmet
+        htmlAttributes={{
+          lang: 'en-nz',
+        }}
         title={title}
-        keywords={[title, `design system`, `new zealand government`]}
       />
       <GoToParentPage parentUrl={parentUrl} title={title} />
       <div className={wrapperClassName} onClick={updateIframeSizeEventually}>
