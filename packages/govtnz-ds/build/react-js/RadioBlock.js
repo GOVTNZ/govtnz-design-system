@@ -41,6 +41,5 @@ var RadioBlock = function RadioBlock(_ref) {
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")));
 };
 
-RadioBlock.props = ["fakeFocus", "radioId", "hintId", "name", "disabled", "readOnly", "autoFocus", "value", "checked", "onChange", "label"];
 var _default = RadioBlock;
 exports["default"] = _default;

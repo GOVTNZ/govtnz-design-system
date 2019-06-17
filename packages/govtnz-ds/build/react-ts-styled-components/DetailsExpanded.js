@@ -24,11 +24,6 @@ var DetailsExpanded = function (_a) {
             React.createElement(StyledSpan, null, "Help with nationality")),
         React.createElement(StyledDiv, { "aria-hidden": "false", id: detailsContent3E1674E973084F93B79C1A8694B6F4D5 }, "We need to know your nationality so we can work out which elections you\u2019re entitled to vote in. If you can\u2019t provide your nationality, you\u2019ll have to send copies of identity documents through the post.")));
 };
-DetailsExpanded.props = [
-    "helpWithNationality",
-    "open",
-    "detailsContent3E1674E973084F93B79C1A8694B6F4D5"
-];
 exports.default = DetailsExpanded;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=DetailsExpanded.js.map

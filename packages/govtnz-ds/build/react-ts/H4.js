@@ -24,6 +24,5 @@ var H4 = function (_a) {
             ? constants.styleSize[styleSize]
             : "") + (marginBottom8 ? " g-heading-mb-8" : ""), id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-H4.props = ["styleSize", "marginBottom8", "id", "children"];
 exports.default = H4;
 //# sourceMappingURL=H4.js.map

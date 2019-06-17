@@ -98,6 +98,5 @@ var FileUploadWithErrorMessage = function FileUploadWithErrorMessage(_ref) {
   }));
 };
 
-FileUploadWithErrorMessage.props = ["fileUpload3", "fileUpload3Hint", "fileUpload3Error", "name", "disabled", "readOnly", "autoFocus"];
 var _default = FileUploadWithErrorMessage;
 exports["default"] = _default;

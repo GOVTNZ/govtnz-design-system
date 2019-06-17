@@ -141,7 +141,6 @@ export default Vue.extend({
       },
       required: false
     },
-    fakeFocus: { type: Boolean, default: false, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -260,8 +259,7 @@ export default Vue.extend({
         (constants[this.width] !== undefined
           ? ` ${constants[this.width]}`
           : "") +
-        (this.hasError ? " g-inputBlock-input--error" : "") +
-        (this.fakeFocus ? " :focus" : "")
+        (this.hasError ? " g-inputBlock-input--error" : "")
       );
     },
     computed__type() {
@@ -425,8 +423,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-inputBlock-input:focus,
-.g-inputBlock-input.\:focus {
+.g-inputBlock-input:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }

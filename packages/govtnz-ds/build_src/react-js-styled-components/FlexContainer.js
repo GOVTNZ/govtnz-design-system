@@ -43,5 +43,5 @@ const FlexContainer = ({ width, children }) => (
     )}
   </StyledDiv>
 );
-FlexContainer.props = ["width", "children"];
+
 export default FlexContainer;

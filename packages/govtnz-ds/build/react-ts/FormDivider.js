@@ -12,6 +12,5 @@ var FormDivider = function (_a) {
     var children = _a.children;
     return (React.createElement("div", { className: "g-radios-form-divider" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
 };
-FormDivider.props = ["children"];
 exports.default = FormDivider;
 //# sourceMappingURL=FormDivider.js.map

@@ -25,5 +25,5 @@ const BackLinkWithCustomText = ({ href, rel, target, children }: Props) => (
     )}
   </a>
 );
-BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
+
 export default BackLinkWithCustomText;

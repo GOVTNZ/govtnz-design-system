@@ -39,6 +39,5 @@ var Select = function Select(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("option", null, "Options")));
 };
 
-Select.props = ["selectId", "name", "multiple", "onChange", "children"];
 var _default = Select;
 exports["default"] = _default;

@@ -5,7 +5,9 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports["default"] = exports.CharacterCountWithCustomRows = void 0;
+
+var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
 
 var _taggedTemplateLiteral2 = _interopRequireDefault(require("@babel/runtime/helpers/taggedTemplateLiteral"));
 
@@ -132,7 +134,8 @@ var constants = {
 };
 
 var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
-  var customRows = _ref.customRows,
+  var maxLength = _ref.maxLength,
+      id = _ref.id,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -141,15 +144,15 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange,
-      customRowsInfo = _ref.customRowsInfo;
+      remainingCharacters = _ref.remainingCharacters;
   return _react["default"].createElement(StyledDiv, {
-    "data-maxlength": "10",
-    "data-module": "character-count"
+    "data-maxlength": maxLength ? maxLength : ""
   }, _react["default"].createElement(StyledDiv2, null, _react["default"].createElement(StyledLabel, {
-    htmlFor: customRows
+    htmlFor: id
   }, "Full address"), _react["default"].createElement(StyledTextarea, {
-    id: customRows,
+    id: id,
     name: name,
     rows: rows,
     disabled: disabled,
@@ -158,13 +161,22 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }), _react["default"].createElement(StyledSpan, {
-    "aria-live": "polite",
-    id: customRowsInfo
-  }, "You have 10 characters remaining")));
+    "aria-live": "polite"
+  }, "You have", " ", remainingCharacters !== undefined ? remainingCharacters : _react["default"].createElement(_react["default"].Fragment, null), " ", "characters remaining")));
 };
 
-CharacterCountWithCustomRows.props = ["customRows", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange", "customRowsInfo"];
-var _default = CharacterCountWithCustomRows;
+exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
+
+var CharacterCountWithCustomRows__calculated = function CharacterCountWithCustomRows__calculated(props) {
+  return _react["default"].createElement(CharacterCountWithCustomRows, (0, _objectSpread2["default"])({}, props, {
+    remainingCharacters: function (props) {
+      return props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength, 10) - props.value.length : props.maxLength;
+    }(props)
+  }));
+};
+
+var _default = CharacterCountWithCustomRows__calculated;
 exports["default"] = _default;

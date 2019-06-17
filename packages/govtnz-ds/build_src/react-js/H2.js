@@ -27,5 +27,5 @@ const H2 = ({ styleSize, marginBottom8, id, children }) => (
     )}
   </h2>
 );
-H2.props = ["styleSize", "marginBottom8", "id", "children"];
+
 export default H2;

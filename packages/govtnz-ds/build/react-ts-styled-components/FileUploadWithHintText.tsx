@@ -126,12 +126,5 @@ const FileUploadWithHintText = ({
     />
   </StyledDiv>
 );
-FileUploadWithHintText.props = [
-  "fileUpload2",
-  "fileUpload2Hint",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus"
-];
+
 export default FileUploadWithHintText;

@@ -22,7 +22,6 @@ var WarningText = function (_a) { return (React.createElement(StyledDiv, null,
     React.createElement(StyledStrong, null,
         React.createElement(StyledSpan2, null, "Warning"),
         "You can be fined up to $5,000 if you don\u2019t register."))); };
-WarningText.props = [];
 exports.default = WarningText;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=WarningText.js.map

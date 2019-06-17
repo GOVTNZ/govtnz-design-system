@@ -13,5 +13,5 @@ const WarningText = ({  }: Props) => (
     </strong>
   </div>
 );
-WarningText.props = [];
+
 export default WarningText;

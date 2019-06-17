@@ -30,6 +30,5 @@ var Legend = function Legend(_ref) {
   return _react["default"].createElement(StyledLegend, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
 };
 
-Legend.props = ["children"];
 var _default = Legend;
 exports["default"] = _default;

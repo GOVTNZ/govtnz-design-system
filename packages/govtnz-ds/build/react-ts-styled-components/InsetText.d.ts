@@ -1,7 +1,4 @@
 /// <reference types="react" />
 declare type Props = {};
-declare const InsetText: {
-    ({}: Props): JSX.Element;
-    props: any[];
-};
+declare const InsetText: ({}: Props) => JSX.Element;
 export default InsetText;

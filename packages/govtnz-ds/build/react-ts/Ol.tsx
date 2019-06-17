@@ -14,5 +14,5 @@ const Ol = ({ numbered, children }: Props) => (
     )}
   </ol>
 );
-Ol.props = ["numbered", "children"];
+
 export default Ol;

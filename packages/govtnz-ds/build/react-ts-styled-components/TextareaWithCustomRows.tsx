@@ -64,6 +64,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
 };
 
@@ -212,6 +213,7 @@ const TextareaWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }: Props) => (
   <StyledDiv>
@@ -226,20 +228,10 @@ const TextareaWithCustomRows = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithCustomRows.props = [
-  "fullAddress",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithCustomRows;

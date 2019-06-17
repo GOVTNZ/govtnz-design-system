@@ -33,6 +33,5 @@ var Radios = function Radios(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
 };
 
-Radios.props = ["inline", "children"];
 var _default = Radios;
 exports["default"] = _default;

@@ -18,7 +18,6 @@ var Li = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledLi, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Li.props = ["children"];
 exports.default = Li;
 var templateObject_1;
 //# sourceMappingURL=Li.js.map

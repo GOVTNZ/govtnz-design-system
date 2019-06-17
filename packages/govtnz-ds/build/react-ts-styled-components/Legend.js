@@ -18,7 +18,6 @@ var Legend = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledLegend, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend text"))));
 };
-Legend.props = ["children"];
 exports.default = Legend;
 var templateObject_1;
 //# sourceMappingURL=Legend.js.map

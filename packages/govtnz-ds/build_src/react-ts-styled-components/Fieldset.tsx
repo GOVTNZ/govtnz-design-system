@@ -41,5 +41,5 @@ const Fieldset = ({ hintId, children }: Props) => (
     </StyledFieldset>
   </StyledDiv>
 );
-Fieldset.props = ["hintId", "children"];
+
 export default Fieldset;

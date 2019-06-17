@@ -209,18 +209,5 @@ const RadioBlockWithHint = ({
     </StyledDiv2>
   </StyledDiv>
 );
-RadioBlockWithHint.props = [
-  "fakeFocus",
-  "radioId",
-  "hintId",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "checked",
-  "onChange",
-  "label",
-  "hint"
-];
+
 export default RadioBlockWithHint;

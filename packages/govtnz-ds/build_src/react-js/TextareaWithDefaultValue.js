@@ -68,6 +68,7 @@ const TextareaWithDefaultValue = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textareaWithDefaultValue-form-group">
@@ -85,22 +86,12 @@ const TextareaWithDefaultValue = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     >
       221B Baker Street London NW1 6XE
     </textarea>
   </div>
 );
-TextareaWithDefaultValue.props = [
-  "fullAddress",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithDefaultValue;

@@ -13,6 +13,5 @@ var WarningText = function (_a) { return (React.createElement("div", { className
     React.createElement("strong", { className: "g-warning-text__text" },
         React.createElement("span", { className: "g-warning-text__assistive" }, "Warning"),
         "You can be fined up to $5,000 if you don\u2019t register."))); };
-WarningText.props = [];
 exports.default = WarningText;
 //# sourceMappingURL=WarningText.js.map

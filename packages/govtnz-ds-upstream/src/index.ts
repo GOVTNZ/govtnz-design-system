@@ -241,6 +241,7 @@ export type Component = {
   html: string;
   css: string;
   cssVariables?: CSSVariablePattern[];
+  calculatedDynamicKeys?: { [key: string]: string };
 };
 
 export type ReleaseVersion = {

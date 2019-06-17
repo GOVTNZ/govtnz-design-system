@@ -75,25 +75,12 @@ var constants = {
     }
 };
 var Textarea = function (_a) {
-    var moreDetail = _a.moreDetail, moreDetailHint = _a.moreDetailHint, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var moreDetail = _a.moreDetail, moreDetailHint = _a.moreDetailHint, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledLabel, { htmlFor: moreDetail }, "Can you provide more detail?"),
         React.createElement(StyledSpan, { id: moreDetailHint }, "Don't include personal or financial information, eg your National Insurance number or credit card details."),
-        React.createElement(StyledTextarea, { "aria-describedby": moreDetailHint, id: moreDetail, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+        React.createElement(StyledTextarea, { "aria-describedby": moreDetailHint, id: moreDetail, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
 };
-Textarea.props = [
-    "moreDetail",
-    "moreDetailHint",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = Textarea;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=Textarea.js.map

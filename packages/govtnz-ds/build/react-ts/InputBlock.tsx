@@ -9,7 +9,6 @@ type Props = {
   errorId?: string | undefined;
   error?: React.ReactNode;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  fakeFocus?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -196,7 +195,6 @@ const InputBlock = ({
   errorId,
   error,
   width,
-  fakeFocus,
   name,
   disabled,
   readOnly,
@@ -248,9 +246,7 @@ const InputBlock = ({
       }
       className={`g-inputBlock-input${
         constants.width[width] !== undefined ? " " + constants.width[width] : ""
-      }${hasError ? " g-inputBlock-input--error" : ""}${
-        fakeFocus ? " :focus" : ""
-      }`}
+      }${hasError ? " g-inputBlock-input--error" : ""}`}
       id={inputId}
       name={name}
       type={constants.type[type] as any}
@@ -264,24 +260,5 @@ const InputBlock = ({
     />
   </div>
 );
-InputBlock.props = [
-  "hasError",
-  "inputId",
-  "label",
-  "hintId",
-  "hint",
-  "errorId",
-  "error",
-  "width",
-  "fakeFocus",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default InputBlock;

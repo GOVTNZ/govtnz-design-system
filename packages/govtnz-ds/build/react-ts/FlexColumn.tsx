@@ -286,16 +286,5 @@ const FlexColumn = ({
     )}
   </div>
 );
-FlexColumn.props = [
-  "xs",
-  "sm",
-  "md",
-  "lg",
-  "xsOffset",
-  "smOffset",
-  "mdOffset",
-  "lgOffset",
-  "isReversed",
-  "children"
-];
+
 export default FlexColumn;

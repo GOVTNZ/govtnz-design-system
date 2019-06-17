@@ -1,20 +1,16 @@
 <template>
   <div
     class="g-characterCountWithCustomRows-character-count"
-    data-maxlength="10"
-    data-module="character-count"
+    v-bind:data-maxlength="maxLength"
   >
     <div class="g-characterCountWithCustomRows-form-group">
-      <label
-        class="g-characterCountWithCustomRows-label"
-        v-bind:for="customRows"
-      >
+      <label class="g-characterCountWithCustomRows-label" v-bind:for="id">
         Full address
       </label>
 
       <textarea
-        class="g-characterCountWithCustomRows-textarea js-character-count"
-        v-bind:id="customRows"
+        class="g-characterCountWithCustomRows-textarea"
+        v-bind:id="id"
         v-bind:name="name"
         v-bind:rows="rows"
         v-bind:disabled="disabled"
@@ -23,14 +19,14 @@
         v-bind:autofocus="autoFocus"
         v-bind:spellcheck="spellCheck"
         v-bind:autocomplete="computed__autocomplete"
+        v-bind:value="value"
       />
 
       <span
         aria-live="polite"
         class="g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
-        v-bind:id="customRowsInfo"
       >
-        You have 10 characters remaining
+        You have <slot name="remainingCharacters"></slot> characters remaining
       </span>
     </div>
   </div> </template
@@ -98,7 +94,8 @@ const constants = {
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    customRows: { type: String, required: false },
+    maxLength: { type: String, required: true },
+    id: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -169,7 +166,8 @@ export default Vue.extend({
       },
       required: true
     },
-    customRowsInfo: { type: String, required: false }
+    value: { type: String, required: false },
+    remainingCharacters: { required: false }
   },
   computed: {
     computed__autocomplete() {

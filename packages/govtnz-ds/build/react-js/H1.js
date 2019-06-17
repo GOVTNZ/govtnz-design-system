@@ -31,6 +31,5 @@ var H1 = function H1(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-H1.props = ["styleSize", "marginBottom8", "id", "children"];
 var _default = H1;
 exports["default"] = _default;

@@ -104,5 +104,5 @@ const A = ({ isMuted, href, rel, target, children }: Props) => (
     )}
   </StyledA>
 );
-A.props = ["isMuted", "href", "rel", "target", "children"];
+
 export default A;

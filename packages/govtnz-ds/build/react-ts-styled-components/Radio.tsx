@@ -55,16 +55,5 @@ const Radio = ({
     onChange={onChange}
   />
 );
-Radio.props = [
-  "fakeFocus",
-  "gov1",
-  "hintId",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "checked",
-  "onChange"
-];
+
 export default Radio;

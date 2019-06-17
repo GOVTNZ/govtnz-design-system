@@ -17,6 +17,5 @@ var Ol = function Ol(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Ol.props = ["numbered", "children"];
 var _default = Ol;
 exports["default"] = _default;

@@ -18,7 +18,6 @@ var FormDivider = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledDiv, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
 };
-FormDivider.props = ["children"];
 exports.default = FormDivider;
 var templateObject_1;
 //# sourceMappingURL=FormDivider.js.map

@@ -26,6 +26,5 @@ var P = function P(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-P.props = ["styleSize", "children"];
 var _default = P;
 exports["default"] = _default;

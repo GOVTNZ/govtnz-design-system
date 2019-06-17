@@ -18,14 +18,6 @@ var FlexRow = function (_a) {
     var alignXs = _a.alignXs, alignSm = _a.alignSm, alignMd = _a.alignMd, alignLg = _a.alignLg, isReversed = _a.isReversed, children = _a.children;
     return (React.createElement(StyledDiv, { alignXs: alignXs, alignSm: alignSm, alignMd: alignMd, alignLg: alignLg, isReversed: isReversed }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Columns..."))));
 };
-FlexRow.props = [
-    "alignXs",
-    "alignSm",
-    "alignMd",
-    "alignLg",
-    "isReversed",
-    "children"
-];
 exports.default = FlexRow;
 var templateObject_1;
 //# sourceMappingURL=FlexRow.js.map

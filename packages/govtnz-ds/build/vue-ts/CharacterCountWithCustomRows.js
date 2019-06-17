@@ -71,7 +71,11 @@ var _default = _vue["default"].extend({
   functional: true,
   // no internal state
   props: {
-    customRows: {
+    maxLength: {
+      type: String,
+      required: true
+    },
+    id: {
       type: String,
       required: false
     },
@@ -114,8 +118,11 @@ var _default = _vue["default"].extend({
       },
       required: true
     },
-    customRowsInfo: {
+    value: {
       type: String,
+      required: false
+    },
+    remainingCharacters: {
       required: false
     }
   },
@@ -124,7 +131,7 @@ var _default = _vue["default"].extend({
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'div\',{staticClass:"g-characterCountWithCustomRows-character-count",attrs:{"data-maxlength":"10","data-module":"character-count"}},[_c(\'div\',{staticClass:"g-characterCountWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-characterCountWithCustomRows-label",attrs:{"for":customRows}},[_v("\\n\\n      Full address\\n    \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-characterCountWithCustomRows-textarea js-character-count",attrs:{"id":customRows,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}}),_v(" "),_c(\'span\',{staticClass:"g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message",attrs:{"aria-live":"polite","id":customRowsInfo}},[_v("\\nYou have 10 characters remaining\\n\\n")])])])}')
+  render: new Function('with(this){return _c(\'div\',{staticClass:"g-characterCountWithCustomRows-character-count",attrs:{"data-maxlength":maxLength}},[_c(\'div\',{staticClass:"g-characterCountWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-characterCountWithCustomRows-label",attrs:{"for":id}},[_v("\\n\\n          Full address\\n        \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-characterCountWithCustomRows-textarea",attrs:{"id":id,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}}),_v(" "),_c(\'span\',{staticClass:"g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message",attrs:{"aria-live":"polite"}},[_v("\\nYou have "),_t("remainingCharacters"),_v(" characters remaining\\n\\n")],2)])])}')
 });
 
 exports["default"] = _default;

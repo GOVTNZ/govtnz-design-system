@@ -14,5 +14,5 @@ const SkipLink = ({ href, rel, target }) => (
     Skip to main content
   </a>
 );
-SkipLink.props = ["href", "rel", "target"];
+
 export default SkipLink;

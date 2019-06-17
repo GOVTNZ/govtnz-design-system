@@ -45,6 +45,5 @@ var RadioBlockWithHint = function RadioBlockWithHint(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text")));
 };
 
-RadioBlockWithHint.props = ["fakeFocus", "radioId", "hintId", "name", "disabled", "readOnly", "autoFocus", "value", "checked", "onChange", "label", "hint"];
 var _default = RadioBlockWithHint;
 exports["default"] = _default;

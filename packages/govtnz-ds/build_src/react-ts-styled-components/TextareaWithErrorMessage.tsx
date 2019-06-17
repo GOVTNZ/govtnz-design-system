@@ -65,6 +65,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
 };
 
@@ -242,6 +243,7 @@ const TextareaWithErrorMessage = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }: Props) => (
   <StyledDiv>
@@ -262,21 +264,10 @@ const TextareaWithErrorMessage = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithErrorMessage.props = [
-  "noNiReason",
-  "noNiReasonError",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithErrorMessage;

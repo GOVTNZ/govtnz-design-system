@@ -351,5 +351,5 @@ const H1 = ({ styleSize, marginBottom8, id, children }: Props) => (
     )}
   </StyledH1>
 );
-H1.props = ["styleSize", "marginBottom8", "id", "children"];
+
 export default H1;

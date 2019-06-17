@@ -55,16 +55,5 @@ const Checkbox = ({
     onChange={onChange}
   />
 );
-Checkbox.props = [
-  "fakeFocus",
-  "checkboxId",
-  "hintId",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "checked",
-  "onChange"
-];
+
 export default Checkbox;

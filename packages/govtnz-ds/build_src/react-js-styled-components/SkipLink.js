@@ -113,5 +113,5 @@ const SkipLink = ({ href, rel, target }) => (
     Skip to main content
   </StyledA>
 );
-SkipLink.props = ["href", "rel", "target"];
+
 export default SkipLink;

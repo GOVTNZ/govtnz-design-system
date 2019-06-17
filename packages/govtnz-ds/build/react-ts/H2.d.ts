@@ -5,8 +5,5 @@ declare type Props = {
     id?: string | undefined;
     children?: React.ReactNode;
 };
-declare const H2: {
-    ({ styleSize, marginBottom8, id, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const H2: ({ styleSize, marginBottom8, id, children }: Props) => JSX.Element;
 export default H2;

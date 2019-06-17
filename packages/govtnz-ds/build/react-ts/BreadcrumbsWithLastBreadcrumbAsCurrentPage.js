@@ -22,13 +22,5 @@ var BreadcrumbsWithLastBreadcrumbAsCurrentPage = function (_a) {
                 React.createElement("a", { className: "g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__link", href: href2, rel: rel2, target: constants.target2[target2] }, "Passports, travel and living abroad")),
             React.createElement("li", { "aria-current": "page", className: "g-breadcrumbsWithLastBreadcrumbAsCurrentPage-breadcrumbs__list-item" }, "Travel abroad"))));
 };
-BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = [
-    "href",
-    "rel",
-    "target",
-    "href2",
-    "rel2",
-    "target2"
-];
 exports.default = BreadcrumbsWithLastBreadcrumbAsCurrentPage;
 //# sourceMappingURL=BreadcrumbsWithLastBreadcrumbAsCurrentPage.js.map

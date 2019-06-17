@@ -560,4 +560,19 @@ export const testFormat = (formatId: string) => {
 
     expect(usages).toMatchSnapshot();
   });
+
+  it(`${formatId}: CalculatedProps`, async () => {
+    const metaTemplate = await makeTemplates(
+      {
+        html: "<input>",
+        css: "",
+        id: "textbox",
+        calculatedDynamicKeys: [
+          { key: "textValueLength", expression: "textValue.length" }
+        ]
+      },
+      [formatId]
+    );
+    expect(metaTemplate).toMatchSnapshot();
+  });
 };

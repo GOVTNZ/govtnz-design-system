@@ -20,7 +20,6 @@ var Fieldset = function (_a) {
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledFieldset, { "aria-describedby": hintId }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend and other fieldset contents...")))));
 };
-Fieldset.props = ["hintId", "children"];
 exports.default = Fieldset;
 var templateObject_1, templateObject_2;
 //# sourceMappingURL=Fieldset.js.map

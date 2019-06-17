@@ -41,6 +41,5 @@ var FlexRow = function FlexRow(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
 };
 
-FlexRow.props = ["alignXs", "alignSm", "alignMd", "alignLg", "isReversed", "children"];
 var _default = FlexRow;
 exports["default"] = _default;

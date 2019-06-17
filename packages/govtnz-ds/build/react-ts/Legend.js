@@ -12,6 +12,5 @@ var Legend = function (_a) {
     var children = _a.children;
     return (React.createElement("legend", { className: "g-fieldset__legend" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend text"))));
 };
-Legend.props = ["children"];
 exports.default = Legend;
 //# sourceMappingURL=Legend.js.map

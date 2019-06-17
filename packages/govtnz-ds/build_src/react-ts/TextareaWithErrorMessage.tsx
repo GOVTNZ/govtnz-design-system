@@ -64,6 +64,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
 };
 
@@ -136,6 +137,7 @@ const TextareaWithErrorMessage = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }: Props) => (
   <div className="g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error">
@@ -160,21 +162,10 @@ const TextareaWithErrorMessage = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-TextareaWithErrorMessage.props = [
-  "noNiReason",
-  "noNiReasonError",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithErrorMessage;
