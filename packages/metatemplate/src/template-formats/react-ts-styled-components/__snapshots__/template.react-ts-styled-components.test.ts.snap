@@ -858,7 +858,6 @@ type Props = {
     | \\"URL\\"
     | \\"Photo\\";
   onChange: any;
-  textValueLength: any;
 };
 
 const constants = {
@@ -970,15 +969,15 @@ const Textbox = ({
 const TextboxLogic = (
   props: Pick<
     Props,
-    name,
-    disabled,
-    readOnly,
-    autoFocus,
-    value,
-    type,
-    spellCheck,
-    autoComplete,
-    onChange
+    | \\"name\\"
+    | \\"disabled\\"
+    | \\"readOnly\\"
+    | \\"autoFocus\\"
+    | \\"value\\"
+    | \\"type\\"
+    | \\"spellCheck\\"
+    | \\"autoComplete\\"
+    | \\"onChange\\"
   >
 ) =>
   React.createElement(Textbox, {
