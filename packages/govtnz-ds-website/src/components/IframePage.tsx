@@ -42,7 +42,7 @@ const IframePage = ({
   };
 
   const updateIframeSizeEventually = () => {
-    setTimeout(updateIframeSize, 50); // wait for results of any interaction to be rendered to DOM
+    setTimeout(updateIframeSize, 1000 / 60); // wait for results of any interaction to be rendered to DOM
   };
 
   return (

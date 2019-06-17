@@ -33,7 +33,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of 3-column Flexbox grid</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} iframeProps={{id:"iframe_componentsFlexGrid0", className: "example__iframe", id: "iframe_componentsFlexGrid0", src:"../FlexGrid__example0/", title:"Example of 3-column Flexbox grid" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} iframeProps={{id:"iframe_componentsFlexGrid0", className: "example__iframe", id: "iframe_componentsFlexGrid0", src:"../FlexGrid__example0/", title:"Example of 3-column Flexbox grid", height: 106 }}></Example>
 </ExampleContainer>
 </div>
 
@@ -56,7 +56,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Flexgrid column variants</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} iframeProps={{id:"iframe_componentsFlexGrid1", className: "example__iframe", id: "iframe_componentsFlexGrid1", src:"../FlexGrid__example1/", title:"Example of Flexgrid column variants" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} iframeProps={{id:"iframe_componentsFlexGrid1", className: "example__iframe", id: "iframe_componentsFlexGrid1", src:"../FlexGrid__example1/", title:"Example of Flexgrid column variants", height: 444 }}></Example>
 </ExampleContainer>
 </div>
 

@@ -22,12 +22,12 @@ import ExampleSection from '../../commons/ExampleSection';
 const PageContent = (props) => <React.Fragment><p>For detailed documentation see <Link to="/components/Ul/">Unordered List</Link> and <Link to="/components/Ol/">Ordered List</Link> with <Link to="/components/Li/">List item</Link>s inside either. Here is an introductionary paragraph that succinctly describes what this componeent is, and is easy to scan for users looking to see if this page has the things on it they are looking for.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[0]} iframeProps={{id:"iframe_componentsLists0", className: "example__iframe", id: "iframe_componentsLists0", src:"../Lists__example0/", title:"Example of Lists" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[0]} iframeProps={{id:"iframe_componentsLists0", className: "example__iframe", id: "iframe_componentsLists0", src:"../Lists__example0/", title:"Example of Lists", height: 324 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[1]} iframeProps={{id:"iframe_componentsLists1", className: "example__iframe", id: "iframe_componentsLists1", src:"../Lists__example1/", title:"Example of Lists" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[1]} iframeProps={{id:"iframe_componentsLists1", className: "example__iframe", id: "iframe_componentsLists1", src:"../Lists__example1/", title:"Example of Lists", height: 324 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-this-component">When to use this component</H2>
@@ -38,7 +38,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
 <p>Explanatory text about how to start using the component goes here and it is relatively brief but introuduces how it works I dunno this is not my area of expertise.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists a second time</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[2]} iframeProps={{id:"iframe_componentsLists2", className: "example__iframe", id: "iframe_componentsLists2", src:"../Lists__example2/", title:"Example of Lists a second time" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[2]} iframeProps={{id:"iframe_componentsLists2", className: "example__iframe", id: "iframe_componentsLists2", src:"../Lists__example2/", title:"Example of Lists a second time", height: 324 }}></Example>
 </ExampleContainer>
 
 <h3 id="label-text-inputs">Label text inputs</h3>

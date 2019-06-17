@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Breadcrumbs</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Breadcrumbs[0]} iframeProps={{id:"iframe_componentsBreadcrumbs0", className: "example__iframe", id: "iframe_componentsBreadcrumbs0", src:"../Breadcrumbs__example0/", title:"Example of Breadcrumbs" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Breadcrumbs[0]} iframeProps={{id:"iframe_componentsBreadcrumbs0", className: "example__iframe", id: "iframe_componentsBreadcrumbs0", src:"../Breadcrumbs__example0/", title:"Example of Breadcrumbs", height: 136 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

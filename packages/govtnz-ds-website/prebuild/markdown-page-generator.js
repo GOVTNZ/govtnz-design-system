@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
+const puppeteer = require('puppeteer');
+const { execShellNpmProject } = require('@govtnz/ds-common');
 const { startCase, uniq } = require('lodash');
 const {
   escapeRegex,
@@ -170,6 +172,7 @@ const generatePage = async (
   if (matches) {
     const exampleRelativePaths = new Array(matches.length);
     const exampleTitles = new Array(matches.length);
+    const exampleHeights = new Array(matches.length);
     const exampleIds = new Array(matches.length);
 
     const exampleCodes = await Promise.all(
@@ -216,6 +219,11 @@ const generatePage = async (
           exampleIds[counter],
           `../${pageId}`
         );
+
+        const exampleHeight = await getExampleHeight(exampleSrcPath);
+
+        exampleHeights[counter] = exampleHeight;
+
         filesToNotDelete.push(
           path.resolve(__dirname, '../src', exampleSrcPath)
         );
@@ -274,7 +282,7 @@ const generatePage = async (
         exampleIds[counter - 1]
       }", src:"../${exampleRelativePaths[counter - 1]}/", title:"${
         exampleTitles[counter - 1]
-      }" }}></Example>`;
+      }", height: ${exampleHeights[counter - 1]} }}></Example>`;
     });
   }
 
@@ -421,6 +429,59 @@ const writeExamplePage = async (
   const examplePath = path.resolve(__dirname, '..', `src/${srcPath}`);
   await fs.promises.writeFile(examplePath, page, { encoding: 'utf-8' });
   return srcPath;
+};
+
+const getExampleHeight = async srcPath => {
+  // Note that this involves reading files from /public/
+  // which hasn't yet been built with a current version of the site
+  // so the example height will always be one build behind (N - 1)
+  // however this is considered ok because:
+  //
+  //    1) there's JavaScript to resize the iframe anyway, so this
+  //       initial value isn't particularly important other than to
+  //       minimise jank,
+  //    2) the alternative before this was a default size of 100px
+  //       which was worse, so this is considered an improvement
+  //
+  //  ...but feel free to somehow build the site, calculate example
+  //  heights, and then update sizes in the pages, and then build the
+  //  site again with those sizes, if an N-1 size is too out-of-sync
+  //  for you.
+
+  let height = 100;
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+
+  const npmProjectPath = path.resolve(__dirname, '..');
+
+  const filePath = srcPath
+    .substring('pages/'.length)
+    .replace(/\.tsx$/, '/index.html');
+  const fullFilePath = path.join(npmProjectPath, 'public', filePath);
+  const fileUri = `file://${fullFilePath}`;
+
+  try {
+    await page.goto(fileUri);
+  } catch (e) {
+    console.error(
+      'Problem calculating height of example at ',
+      fileUri,
+      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.',
+      e
+    );
+  }
+
+  const newHeight = await page.$eval(
+    '.css-changes-for-example-only',
+    element => element.offsetHeight
+  );
+
+  if (newHeight.toString().replace(/[0-9]/gi, '').length === 0) {
+    height = parseFloat(newHeight.toString());
+  }
+
+  await browser.close();
+  return height;
 };
 
 module.exports.generateComponentPages = async (

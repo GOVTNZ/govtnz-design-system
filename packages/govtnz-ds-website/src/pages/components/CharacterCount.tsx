@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Character Count</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{id:"iframe_componentsCharacterCount0", className: "example__iframe", id: "iframe_componentsCharacterCount0", src:"../CharacterCount__example0/", title:"Example of Character Count" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{id:"iframe_componentsCharacterCount0", className: "example__iframe", id: "iframe_componentsCharacterCount0", src:"../CharacterCount__example0/", title:"Example of Character Count", height: 230 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

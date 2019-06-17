@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Fieldset</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Fieldset[0]} iframeProps={{id:"iframe_componentsFieldset0", className: "example__iframe", id: "iframe_componentsFieldset0", src:"../Fieldset__example0/", title:"Example of Fieldset" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Fieldset[0]} iframeProps={{id:"iframe_componentsFieldset0", className: "example__iframe", id: "iframe_componentsFieldset0", src:"../Fieldset__example0/", title:"Example of Fieldset", height: 165 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

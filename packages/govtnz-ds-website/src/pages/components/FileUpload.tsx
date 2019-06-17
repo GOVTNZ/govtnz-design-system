@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of File Upload</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{id:"iframe_componentsFileUpload0", className: "example__iframe", id: "iframe_componentsFileUpload0", src:"../FileUpload__example0/", title:"Example of File Upload" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{id:"iframe_componentsFileUpload0", className: "example__iframe", id: "iframe_componentsFileUpload0", src:"../FileUpload__example0/", title:"Example of File Upload", height: 371 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

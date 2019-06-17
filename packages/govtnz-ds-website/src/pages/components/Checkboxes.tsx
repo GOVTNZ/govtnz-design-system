@@ -27,17 +27,17 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{id:"iframe_componentsCheckboxes0", className: "example__iframe", id: "iframe_componentsCheckboxes0", src:"../Checkboxes__example0/", title:"Example 0" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{id:"iframe_componentsCheckboxes0", className: "example__iframe", id: "iframe_componentsCheckboxes0", src:"../Checkboxes__example0/", title:"Example 0", height: 364 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{id:"iframe_componentsCheckboxes1", className: "example__iframe", id: "iframe_componentsCheckboxes1", src:"../Checkboxes__example1/", title:"Error" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{id:"iframe_componentsCheckboxes1", className: "example__iframe", id: "iframe_componentsCheckboxes1", src:"../Checkboxes__example1/", title:"Error", height: 404 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Checkboxes with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{id:"iframe_componentsCheckboxes2", className: "example__iframe", id: "iframe_componentsCheckboxes2", src:"../Checkboxes__example2/", title:"Checkboxes with hints" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{id:"iframe_componentsCheckboxes2", className: "example__iframe", id: "iframe_componentsCheckboxes2", src:"../Checkboxes__example2/", title:"Checkboxes with hints", height: 448 }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>

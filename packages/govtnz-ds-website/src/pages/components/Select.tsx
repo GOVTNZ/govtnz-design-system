@@ -23,7 +23,7 @@ const PageContent = (props) => <React.Fragment><p>The select component (sometime
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="example">Example</H2>
 <p>Interact with this example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Select[0]} iframeProps={{id:"iframe_componentsSelect0", className: "example__iframe", id: "iframe_componentsSelect0", src:"../Select__example0/", title:"Example of Select" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Select[0]} iframeProps={{id:"iframe_componentsSelect0", className: "example__iframe", id: "iframe_componentsSelect0", src:"../Select__example0/", title:"Example of Select", height: 149 }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>

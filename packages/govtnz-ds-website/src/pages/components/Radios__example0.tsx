@@ -20,22 +20,53 @@ const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-const PageContent = (props) => (<Example {...onChangeGenerator(Example)} title="My radios title">
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} legend={<H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
-            <Radios {...onChangeGenerator(Radios)} inline>
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="Yes" radioId="anyRadioId" 
-                value="true" name="nameChange1" labelId="labelId1" hintId="hintId1" />
-                <RadioBlock {...onChangeGenerator(RadioBlock)} label="No" radioId="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" hintId="hintId1" />
-            </Radios>
-        </FieldsetBlock>
-    </Example>);
+const PageContent = props => (
+  <Example {...onChangeGenerator(Example)} title="My radios title">
+    <FieldsetBlock
+      {...onChangeGenerator(FieldsetBlock)}
+      legend={
+        <H1 {...onChangeGenerator(H1)} styleSize="large" id="nameChangeId1">
+          Have you changed your name?
+        </H1>
+      }
+      hint={
+        <p>
+          This includes changing your last name or spelling your name
+          differently.
+        </p>
+      }
+      hintId="hintId1"
+    >
+      <Radios {...onChangeGenerator(Radios)} inline>
+        <RadioBlock
+          {...onChangeGenerator(RadioBlock)}
+          label="Yes"
+          radioId="anyRadioId"
+          value="true"
+          name="nameChange1"
+          labelId="labelId1"
+          hintId="hintId1"
+        />
+        <RadioBlock
+          {...onChangeGenerator(RadioBlock)}
+          label="No"
+          radioId="anyRadioId255"
+          value="false"
+          name="nameChange1"
+          labelId="labelId255"
+          hintId="hintId1"
+        />
+      </Radios>
+    </FieldsetBlock>
+  </Example>
+);
 
 const template = props => {
   return (
     <IframePage
-      title={"My radios title"}
-      id={"iframe_componentsRadios0"}
-      parentUrl={"../Radios"}
+      title={'My radios title'}
+      id={'iframe_componentsRadios0'}
+      parentUrl={'../Radios'}
       pageProps={props}
       PageContent={PageContent}
     />

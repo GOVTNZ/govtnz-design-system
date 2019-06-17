@@ -24,7 +24,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
 <p>First choose a heading level based on the structure of your page, and then choose the appropriate font size for your design as the font size can be chosen independently, but do not conflate these decisions as they are strictly unrelated.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of a Link</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__A[0]} iframeProps={{id:"iframe_componentsA0", className: "example__iframe", id: "iframe_componentsA0", src:"../A__example0/", title:"Example of a Link" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__A[0]} iframeProps={{id:"iframe_componentsA0", className: "example__iframe", id: "iframe_componentsA0", src:"../A__example0/", title:"Example of a Link", height: 128 }}></Example>
 </ExampleContainer>
 
 <h2 id="credit">Credit</h2>

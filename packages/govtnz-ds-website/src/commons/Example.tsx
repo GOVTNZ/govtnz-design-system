@@ -56,7 +56,8 @@ export default class Example extends Component<Props, State> {
       supportsJavaScript: false,
       supportsClipboard: false,
       iframeWidth: 300,
-      iframeHeight: 100,
+      iframeHeight:
+        (props.iframeProps && (props.iframeProps.height as number)) || 100,
     };
   }
 
@@ -325,5 +326,5 @@ export default class Example extends Component<Props, State> {
 }
 
 type AnyObject = {
-  [key: string]: string;
+  [key: string]: string | number;
 };

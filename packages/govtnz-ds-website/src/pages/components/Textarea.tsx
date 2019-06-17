@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Textarea</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Textarea[0]} iframeProps={{id:"iframe_componentsTextarea0", className: "example__iframe", id: "iframe_componentsTextarea0", src:"../Textarea__example0/", title:"Example of Textarea" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Textarea[0]} iframeProps={{id:"iframe_componentsTextarea0", className: "example__iframe", id: "iframe_componentsTextarea0", src:"../Textarea__example0/", title:"Example of Textarea", height: 549 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

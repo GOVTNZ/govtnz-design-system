@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Inset Text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__InsetText[0]} iframeProps={{id:"iframe_componentsInsetText0", className: "example__iframe", id: "iframe_componentsInsetText0", src:"../InsetText__example0/", title:"Example of Inset Text" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__InsetText[0]} iframeProps={{id:"iframe_componentsInsetText0", className: "example__iframe", id: "iframe_componentsInsetText0", src:"../InsetText__example0/", title:"Example of Inset Text", height: 258 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

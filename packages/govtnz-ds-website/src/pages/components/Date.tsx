@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Date Input</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Date[0]} iframeProps={{id:"iframe_componentsDate0", className: "example__iframe", id: "iframe_componentsDate0", src:"../Date__example0/", title:"Example of Date Input" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Date[0]} iframeProps={{id:"iframe_componentsDate0", className: "example__iframe", id: "iframe_componentsDate0", src:"../Date__example0/", title:"Example of Date Input", height: 440 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

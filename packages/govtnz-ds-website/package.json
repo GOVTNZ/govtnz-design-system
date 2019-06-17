@@ -58,7 +58,7 @@
   "scripts": {
     "build": "gatsby build && cp public/404/index.html public/error.html",
     "build__comment": "copying 404 because the host wants an error page at error.html",
-    "compile-markdown": "yarn rimraf && node ./prebuild/prebuild.js",
+    "compile-markdown": "node ./prebuild/prebuild.js",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",

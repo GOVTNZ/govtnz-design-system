@@ -21,7 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Back link</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__BackLink[0]} iframeProps={{id:"iframe_componentsBackLink0", className: "example__iframe", id: "iframe_componentsBackLink0", src:"../BackLink__example0/", title:"Example of Back link" }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__BackLink[0]} iframeProps={{id:"iframe_componentsBackLink0", className: "example__iframe", id: "iframe_componentsBackLink0", src:"../BackLink__example0/", title:"Example of Back link", height: 131 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>
