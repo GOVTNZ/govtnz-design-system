@@ -50,25 +50,6 @@ var TabsTabsWithAnchorInPanel = function (_a) {
         React.createElement(StyledSection2, { "aria-labelledby": tabTab2, id: tab2, role: "tabpanel" },
             React.createElement(StyledH23, null, "Tab 2"))));
 };
-TabsTabsWithAnchorInPanel.props = [
-    "tabTab1",
-    "tab1",
-    "href",
-    "rel",
-    "target",
-    "tabTab2",
-    "tab2",
-    "href2",
-    "rel2",
-    "target2",
-    "href3",
-    "rel3",
-    "target3",
-    "anchor",
-    "href4",
-    "rel4",
-    "target4"
-];
 exports.default = TabsTabsWithAnchorInPanel;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14;
 //# sourceMappingURL=TabsTabsWithAnchorInPanel.js.map

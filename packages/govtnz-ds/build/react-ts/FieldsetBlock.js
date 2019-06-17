@@ -17,6 +17,5 @@ var FieldsetBlock = function (_a) {
                 React.createElement("div", { className: "g-fieldsetBlock-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Hint text"))))) : (""),
             React.createElement("div", null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Fieldset contents"))))));
 };
-FieldsetBlock.props = ["hintId", "legend", "hint", "children"];
 exports.default = FieldsetBlock;
 //# sourceMappingURL=FieldsetBlock.js.map

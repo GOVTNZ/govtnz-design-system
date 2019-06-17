@@ -32,6 +32,5 @@ var TagInactive = function TagInactive(_ref) {
   return _react["default"].createElement(StyledStrong, null, "alpha");
 };
 
-TagInactive.props = [];
 var _default = TagInactive;
 exports["default"] = _default;

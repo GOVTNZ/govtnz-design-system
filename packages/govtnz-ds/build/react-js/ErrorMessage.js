@@ -18,6 +18,5 @@ var ErrorMessage = function ErrorMessage(_ref) {
   }, "Error message about full name goes here");
 };
 
-ErrorMessage.props = [];
 var _default = ErrorMessage;
 exports["default"] = _default;

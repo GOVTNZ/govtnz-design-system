@@ -117,6 +117,10 @@ var _default = _vue["default"].extend({
         return ["Off", "On", "Name", "Honorific: Prefix", "Given Name", "Additional Name", "Family Name", "Honorific: Suffix", "Nickname", "Email", "Username", "New Password", "Current Password", "Organization Title", "Organization", "Street Address", "Address Line 1", "Address Line 2", "Address Line 3", "Address Level 4", "Address Level 3", "Address Level 2", "Address Level 1", "Country", "Country Name", "Postal Code", "Credit Card: Name", "Credit Card: Given Name", "Credit Card: Additional Name", "Credit Card: Family Name", "Credit Card: Number", "Credit Card: Expiry", "Credit Card: Expiry Month", "Credit Card: Expiry Year", "Credit Card: CSC", "Credit Card: Type", "Transaction: Currency", "Transaction: Amount", "Language", "Birthday", "Birthday: Day", "Birthday: Month", "Birthday: Year", "Sex", "Telephone", "Telephone: Country Code", "Telephone: National", "Telephone: Area Code", "Telephone: Local", "Telephone: Extension", "IMPP", "URL", "Photo"].indexOf(value) !== -1;
       },
       required: true
+    },
+    value: {
+      type: String,
+      required: false
     }
   },
   computed: {
@@ -124,7 +128,7 @@ var _default = _vue["default"].extend({
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'div\',{staticClass:"g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"},[_c(\'label\',{staticClass:"g-textareaWithErrorMessage-label",attrs:{"for":noNiReason}},[_v("\\n\\n    Why can\'t you provide a National Insurance number?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textareaWithErrorMessage-error-message",attrs:{"id":noNiReasonError}},[_v("\\n\\n    You must provide an explanation\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error",attrs:{"aria-describedby":noNiReasonError,"id":noNiReason,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}})])}')
+  render: new Function('with(this){return _c(\'div\',{staticClass:"g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"},[_c(\'label\',{staticClass:"g-textareaWithErrorMessage-label",attrs:{"for":noNiReason}},[_v("\\n\\n    Why can\'t you provide a National Insurance number?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textareaWithErrorMessage-error-message",attrs:{"id":noNiReasonError}},[_v("\\n\\n    You must provide an explanation\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error",attrs:{"aria-describedby":noNiReasonError,"id":noNiReason,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}')
 });
 
 exports["default"] = _default;

@@ -32,6 +32,5 @@ var Table = function Table(_ref) {
   return _react["default"].createElement(StyledTable, null, _react["default"].createElement("tbody", null, _react["default"].createElement("tr", null, "January $85 $95"), _react["default"].createElement("tr", null, "February $75 $55"), _react["default"].createElement("tr", null, "March $165 $125")));
 };
 
-Table.props = [];
 var _default = Table;
 exports["default"] = _default;

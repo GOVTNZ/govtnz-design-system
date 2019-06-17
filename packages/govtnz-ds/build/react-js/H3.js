@@ -31,6 +31,5 @@ var H3 = function H3(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-H3.props = ["styleSize", "marginBottom8", "id", "children"];
 var _default = H3;
 exports["default"] = _default;

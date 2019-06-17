@@ -16,6 +16,5 @@ var FormDivider = function FormDivider(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example Text"));
 };
 
-FormDivider.props = ["children"];
 var _default = FormDivider;
 exports["default"] = _default;

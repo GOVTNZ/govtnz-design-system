@@ -75,25 +75,12 @@ var constants = {
     }
 };
 var TextareaWithErrorMessage = function (_a) {
-    var noNiReason = _a.noNiReason, noNiReasonError = _a.noNiReasonError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var noNiReason = _a.noNiReason, noNiReasonError = _a.noNiReasonError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledLabel, { htmlFor: noNiReason }, "Why can't you provide a National Insurance number?"),
         React.createElement(StyledSpan, { id: noNiReasonError }, "You must provide an explanation"),
-        React.createElement(StyledTextarea, { "aria-describedby": noNiReasonError, id: noNiReason, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+        React.createElement(StyledTextarea, { "aria-describedby": noNiReasonError, id: noNiReason, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
 };
-TextareaWithErrorMessage.props = [
-    "noNiReason",
-    "noNiReasonError",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = TextareaWithErrorMessage;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=TextareaWithErrorMessage.js.map

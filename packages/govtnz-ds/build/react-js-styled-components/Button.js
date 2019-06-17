@@ -98,6 +98,5 @@ var Button = function Button(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Button.props = ["disabled", "level", "name", "type", "onClick", "children"];
 var _default = Button;
 exports["default"] = _default;

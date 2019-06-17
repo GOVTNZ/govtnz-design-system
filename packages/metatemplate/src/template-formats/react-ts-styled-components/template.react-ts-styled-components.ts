@@ -72,7 +72,7 @@ type AssignedDynamicDefsByKey = {
 // if/else branches.
 //
 // (Feel free to prototype it if you think it can be cleaner the
-// classy way though...)
+// class-y way though...)
 
 export default class ReactTsStyledComponents {
   static id = "react-ts-styled-components";
@@ -624,9 +624,14 @@ export default class ReactTsStyledComponents {
           key =>
             `${key}${
               this.assignedDynamicDefsByKey[key].optional ? "?" : ""
-            }: ${this.renderPropType(key)}`
+            }: ${this.renderPropType(key)};\n`
         )
-        .join(";\n  ")}`; // TODO: refine and maybe use React.FunctionComponent<{ thing: any }>
+        .join("")}`;
+      // if (this.template.calculatedDynamicKeys) {
+      //   code += this.template.calculatedDynamicKeys
+      //     .map(calculatedDynamicKey => `${calculatedDynamicKey.key}: any;\n`) // can't really know what the results of an expression will be. we could allow users to provide that though, I guess
+      //     .join("");
+      // }
       code += "\n}\n\n";
     }
 
@@ -648,11 +653,36 @@ export default class ReactTsStyledComponents {
     }) => (${hasMultipleRootNodes ? "<React.Fragment>" : ""}`;
     code += this.render;
     code += hasMultipleRootNodes ? "</React.Fragment>" : "";
-    code += ");\n";
-    code += `${safeName}.props = ${JSON.stringify(
-      this.assignedDynamicKeys
-    )};\n`;
-    code += `export default ${safeName};\n`;
+    code += ");\n\n";
+
+    if (
+      this.template.calculatedDynamicKeys &&
+      this.template.calculatedDynamicKeys.length
+    ) {
+      const calculatedKeys =
+        this.template.calculatedDynamicKeys &&
+        this.template.calculatedDynamicKeys.map(item => item.key);
+
+      const safeNameLogic = `${safeName}Logic`;
+      code += `const ${safeNameLogic} = ( props ${
+        this.options.language === "typescript"
+          ? `: Pick<Props, ${this.assignedDynamicKeys
+              .filter(key => !calculatedKeys.includes(key))
+              .map(name => `"${name}"`)
+              .join(" | ")}>`
+          : ""
+      }) => React.createElement(${safeName}, { ...props, ${this.template.calculatedDynamicKeys
+        .map(
+          calculatedDynamicKey =>
+            `${calculatedDynamicKey.key}: ((props)=>{ return ${
+              calculatedDynamicKey.expression
+            }; })(props) `
+        )
+        .join(", ")} } )`;
+      code += `\n\nexport default ${safeNameLogic};\n`;
+    } else {
+      code += `\n\nexport default ${safeName};\n`;
+    }
 
     try {
       code = prettier.format(code, {

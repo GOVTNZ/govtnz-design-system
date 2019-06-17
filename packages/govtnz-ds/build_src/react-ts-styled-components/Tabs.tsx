@@ -1087,26 +1087,5 @@ const Tabs = ({
     </StyledSection4>
   </StyledDiv>
 );
-Tabs.props = [
-  "tabPastDay",
-  "pastDay",
-  "href",
-  "rel",
-  "target",
-  "tabPastWeek",
-  "pastWeek",
-  "href2",
-  "rel2",
-  "target2",
-  "tabPastMonth",
-  "pastMonth",
-  "href3",
-  "rel3",
-  "target3",
-  "tabPastYear",
-  "pastYear",
-  "href4",
-  "rel4",
-  "target4"
-];
+
 export default Tabs;

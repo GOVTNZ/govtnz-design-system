@@ -16,19 +16,5 @@ var CheckboxBlock = function (_a) {
         hintId !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "g-checkboxBlock-hint g-checkboxes__hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Hint text"))))) : ("")));
 };
-CheckboxBlock.props = [
-    "fakeFocus",
-    "checkboxId",
-    "hintId",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "checked",
-    "onChange",
-    "label",
-    "hint"
-];
 exports.default = CheckboxBlock;
 //# sourceMappingURL=CheckboxBlock.js.map

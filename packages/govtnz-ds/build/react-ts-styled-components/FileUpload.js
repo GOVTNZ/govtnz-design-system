@@ -22,7 +22,6 @@ var FileUpload = function (_a) {
         React.createElement(StyledLabel, { htmlFor: fileUpload1 }, "Upload a file"),
         React.createElement(StyledInput, { id: fileUpload1, name: name, type: "file", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus })));
 };
-FileUpload.props = ["fileUpload1", "name", "disabled", "readOnly", "autoFocus"];
 exports.default = FileUpload;
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=FileUpload.js.map

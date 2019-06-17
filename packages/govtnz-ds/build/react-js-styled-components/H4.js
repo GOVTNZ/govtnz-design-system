@@ -481,6 +481,5 @@ var H4 = function H4(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-H4.props = ["styleSize", "marginBottom8", "id", "children"];
 var _default = H4;
 exports["default"] = _default;

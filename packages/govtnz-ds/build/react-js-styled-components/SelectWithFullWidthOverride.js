@@ -113,6 +113,5 @@ var SelectWithFullWidthOverride = function SelectWithFullWidthOverride(_ref) {
   }, "Govt.NZ frontend option 3")));
 };
 
-SelectWithFullWidthOverride.props = ["select1", "name", "multiple", "onChange", "selected", "selected2", "selected3"];
 var _default = SelectWithFullWidthOverride;
 exports["default"] = _default;

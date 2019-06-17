@@ -30,5 +30,5 @@ const StyledSpan = styled.span`
 const ErrorMessage = ({  }: Props) => (
   <StyledSpan>Error message about full name goes here</StyledSpan>
 );
-ErrorMessage.props = [];
+
 export default ErrorMessage;

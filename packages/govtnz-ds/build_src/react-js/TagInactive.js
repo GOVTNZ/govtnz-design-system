@@ -5,5 +5,5 @@ const TagInactive = ({}) => (
     alpha
   </strong>
 );
-TagInactive.props = [];
+
 export default TagInactive;

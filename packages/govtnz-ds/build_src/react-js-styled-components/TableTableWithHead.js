@@ -44,5 +44,5 @@ const TableTableWithHead = ({}) => (
     </tbody>
   </StyledTable>
 );
-TableTableWithHead.props = [];
+
 export default TableTableWithHead;

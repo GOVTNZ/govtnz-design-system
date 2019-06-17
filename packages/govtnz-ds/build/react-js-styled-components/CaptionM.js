@@ -30,6 +30,5 @@ var CaptionM = function CaptionM(_ref) {
   return _react["default"].createElement(StyledSpan, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-CaptionM.props = ["children"];
 var _default = CaptionM;
 exports["default"] = _default;

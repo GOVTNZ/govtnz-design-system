@@ -18,7 +18,6 @@ var FooterWrapper = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledFooter, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
 };
-FooterWrapper.props = ["children"];
 exports.default = FooterWrapper;
 var templateObject_1;
 //# sourceMappingURL=FooterWrapper.js.map

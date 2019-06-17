@@ -30,5 +30,5 @@ const FieldsetLabel = ({ hintId, hint }) => (
     {hint !== undefined ? hint : <React.Fragment>Hint text</React.Fragment>}
   </StyledDiv>
 );
-FieldsetLabel.props = ["hintId", "hint"];
+
 export default FieldsetLabel;

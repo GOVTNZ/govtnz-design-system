@@ -194,6 +194,21 @@ Array [
 ]
 `;
 
+exports[`html html: CalculatedProps 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "html/textbox.html": "<input name=\\"example\\" type=\\"button\\" autocomplete=\\"off\\" />
+",
+      },
+      "formatId": "html",
+    },
+  ],
+}
+`;
+
 exports[`html html: jsxToUsageCode with boolean false 1`] = `
 Object {
   "html": "<!--

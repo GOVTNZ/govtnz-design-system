@@ -26,6 +26,5 @@ var Table = function Table(_ref) {
   }, "March $165 $125")));
 };
 
-Table.props = [];
 var _default = Table;
 exports["default"] = _default;

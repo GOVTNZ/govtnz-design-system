@@ -68,6 +68,7 @@ const TextareaWithOptionalFormGroupClasses = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textareaWithOptionalFormGroupClasses-form-group extra-class">
@@ -88,20 +89,10 @@ const TextareaWithOptionalFormGroupClasses = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-TextareaWithOptionalFormGroupClasses.props = [
-  "textareaWithPageHeading",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithOptionalFormGroupClasses;

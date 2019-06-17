@@ -64,6 +64,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
 };
 
@@ -212,6 +213,7 @@ const TextareaWithOptionalFormGroupClasses = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }: Props) => (
   <StyledDiv>
@@ -226,20 +228,10 @@ const TextareaWithOptionalFormGroupClasses = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithOptionalFormGroupClasses.props = [
-  "textareaWithPageHeading",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithOptionalFormGroupClasses;

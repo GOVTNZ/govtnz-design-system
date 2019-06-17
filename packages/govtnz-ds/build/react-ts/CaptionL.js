@@ -12,6 +12,5 @@ var CaptionL = function (_a) {
     var children = _a.children;
     return (React.createElement("span", { className: "g-caption-l" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-CaptionL.props = ["children"];
 exports.default = CaptionL;
 //# sourceMappingURL=CaptionL.js.map

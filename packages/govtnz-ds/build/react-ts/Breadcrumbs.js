@@ -21,6 +21,5 @@ var Breadcrumbs = function (_a) {
             React.createElement("li", { className: "g-breadcrumbs__list-item" },
                 React.createElement("a", { className: "g-breadcrumbs__link", href: href2, rel: rel2, target: constants.target2[target2] }, "Sub-section")))));
 };
-Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
 exports.default = Breadcrumbs;
 //# sourceMappingURL=Breadcrumbs.js.map

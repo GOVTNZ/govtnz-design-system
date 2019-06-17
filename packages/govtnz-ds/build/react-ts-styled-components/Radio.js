@@ -18,18 +18,6 @@ var Radio = function (_a) {
     var fakeFocus = _a.fakeFocus, gov1 = _a.gov1, hintId = _a.hintId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, checked = _a.checked, onChange = _a.onChange;
     return (React.createElement(StyledInput, { fakeFocus: fakeFocus, "aria-describedby": hintId, id: gov1, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }));
 };
-Radio.props = [
-    "fakeFocus",
-    "gov1",
-    "hintId",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "checked",
-    "onChange"
-];
 exports.default = Radio;
 var templateObject_1;
 //# sourceMappingURL=Radio.js.map

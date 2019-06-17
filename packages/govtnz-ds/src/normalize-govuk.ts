@@ -29,7 +29,7 @@ export const normalizeReleaseVersionGovUk = async (
     }
   );
 
-  // All CSS from GovUK is the same per-component
+  // The 'All CSS' from GovUK is the same per-component
   let css = '';
   if (upstreamReleaseVersion.components.length) {
     css = await govUKToGovtNZCSS(upstreamReleaseVersion.components[0].css);
@@ -48,24 +48,27 @@ export const normalizeReleaseVersionGovUk = async (
       component.version
     );
 
-    metaTemplateDefs.forEach(({ id, html, css, message }: MetaTemplateDef) => {
-      if (id !== toId(id)) {
-        // id should be normalized by now...
-        throw new Error(
-          `${__filename}: Bad id generated of ${id} (vs ${toId(
-            id
-          )}). Current message was: ${message}`
-        );
+    metaTemplateDefs.forEach(
+      ({ id, html, css, message, calculatedDynamicKeys }: MetaTemplateDef) => {
+        if (id !== toId(id)) {
+          // id should be normalized by now...
+          throw new Error(
+            `${__filename}: Bad id generated of ${id} (vs ${toId(
+              id
+            )}). Current message was: ${message}`
+          );
+        }
+        const metaTemplateComponent: Component = {
+          id,
+          version: component.version,
+          html,
+          css,
+          cssVariables,
+          calculatedDynamicKeys
+        };
+        components.push(metaTemplateComponent);
       }
-      const metaTemplateComponent: Component = {
-        id,
-        version: component.version,
-        html,
-        css,
-        cssVariables
-      };
-      components.push(metaTemplateComponent);
-    });
+    );
 
     bar.tick();
     gc(); // JSDOM can use a lot of memory. GC time after we've used it.
@@ -128,6 +131,7 @@ type additionalTemplate = {
   id: string;
   html: string;
   cssNamespace?: string | undefined;
+  calculatedDynamicKeys?: AnyObject;
 };
 
 export const govukToMetaTemplateInput = async (
@@ -138,6 +142,7 @@ export const govukToMetaTemplateInput = async (
 ): Promise<MetaTemplateDef[]> => {
   let html = oldHTML;
   let message = '';
+  const calculatedDynamicKeys: AnyObject = {};
 
   let id: string | undefined = oldTemplateId;
   const additionalPrefixesToBypassNamespacing: string[] = [];
@@ -175,8 +180,7 @@ export const govukToMetaTemplateInput = async (
     case 'button__secondary':
     case 'button__warning': {
       id = 'button';
-      html = 
-        `<button
+      html = `<button
           class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
           type="submit"
           aria-disabled="{{ disabled!?: true }}"
@@ -195,7 +199,7 @@ export const govukToMetaTemplateInput = async (
       <label class="g-label" for="inputId"><mt-variable key="label">Example text</mt-variable></label>
       <div class="g-hint" id="hintId"><mt-variable key="hint">Example text</mt-variable></div>
       <mt-if key="!hasError"><div class="g-error-message" id="errorId"><span class="g-visually-hidden">Error: </span><mt-variable key="error">Example text</mt-variable></div></mt-if>
-      <input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ hasError!?: g-input--error }} {{ fakeFocus?: :focus }}" id="inputId" name="test-name-3" type="text" aria-describedby="hintId errorId">
+      <input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ hasError!?: g-input--error }}" id="inputId" name="test-name-3" type="text" aria-describedby="hintId errorId">
     </div>`;
       // Derive a version that's just the input tag
       additionalTemplates.push({
@@ -296,6 +300,29 @@ export const govukToMetaTemplateInput = async (
       });
       break;
     }
+    case 'character-count__with-custom-rows': {
+      html = `<div class="g-character-count" data-maxlength="{{ maxLength }}">
+      <div class="g-form-group">
+        <label class="g-label" for="id">
+          Full address
+        </label>
+        <textarea
+          class="g-textarea"
+          id="id"
+          name="custom"
+          rows="8"
+        ></textarea>
+        <span
+          class="g-hint g-character-count__message"
+          aria-live="polite"
+          >You have <mt-variable key="remainingCharacters"></mt-variable> characters remaining</span
+        >
+      </div>
+    </div>`;
+      calculatedDynamicKeys.remainingCharacters =
+        'props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength, 10) - props.value.length : props.maxLength';
+      break;
+    }
     case 'radios__with-hints-on-items': {
       // some attributes will be added automatically by MetaTemplate
       // such as:
@@ -393,7 +420,7 @@ export const govukToMetaTemplateInput = async (
       } made (probably based on ${id}).\n`;
     });
     // 'unshift' because it must be the first index because we're adding 'message' here
-    additionalTemplates.unshift({ id, html });
+    additionalTemplates.unshift({ id, html, calculatedDynamicKeys });
   } else {
     additionalTemplates.forEach(template => {
       message += `Note: Additional template ${template.id} made.\n`;
@@ -803,7 +830,7 @@ const cssVariables: CSSVariablePattern[] = [
   {
     id: 'g-theme-button-color-secondary-box-shadow',
     valueSubstringMatch: '#858688',
-    defaultValue: '#2a2a2a',
+    defaultValue: '#2a2a2a'
   },
   {
     id: 'g-theme-button-color-warning',
@@ -818,8 +845,8 @@ const cssVariables: CSSVariablePattern[] = [
   {
     id: 'g-theme-button-color-warning-box-shadow',
     valueSubstringMatch: '#47060c',
-    defaultValue: '#2a2a2a',
-  },
+    defaultValue: '#2a2a2a'
+  }
 ];
 
 const govUKToGovtNZCSS = async (oldCSS: string) => {
@@ -1038,6 +1065,7 @@ export const normalizeGovUkTemplate = ({
   css,
   cssNamespace,
   message,
+  calculatedDynamicKeys,
   additionalPrefixesToBypassNamespacing
 }) => {
   // FIXME: Replace with a real HTML/CSS parser-based replacement
@@ -1087,6 +1115,7 @@ export const normalizeGovUkTemplate = ({
     id: normalizedId,
     html: namespacedHTML,
     css: namespacedCSS,
-    message: newMessage
+    message: newMessage,
+    calculatedDynamicKeys
   };
 };

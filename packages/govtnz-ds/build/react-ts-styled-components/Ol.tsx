@@ -53,5 +53,5 @@ const Ol = ({ numbered, children }: Props) => (
     )}
   </StyledOl>
 );
-Ol.props = ["numbered", "children"];
+
 export default Ol;

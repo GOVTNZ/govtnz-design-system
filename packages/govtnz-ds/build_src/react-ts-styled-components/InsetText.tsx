@@ -44,5 +44,5 @@ const InsetText = ({  }: Props) => (
     are no mistakes in the application.
   </StyledDiv>
 );
-InsetText.props = [];
+
 export default InsetText;

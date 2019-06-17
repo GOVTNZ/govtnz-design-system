@@ -170,7 +170,8 @@ const constants = {
 };
 
 const CharacterCountWithCustomRows = ({
-  customRows,
+  maxLength,
+  id,
   name,
   disabled,
   readOnly,
@@ -179,14 +180,15 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange,
-  customRowsInfo
+  remainingCharacters
 }) => (
-  <StyledDiv data-maxlength="10" data-module="character-count">
+  <StyledDiv data-maxlength={maxLength ? maxLength : ""}>
     <StyledDiv2>
-      <StyledLabel htmlFor={customRows}>Full address</StyledLabel>
+      <StyledLabel htmlFor={id}>Full address</StyledLabel>
       <StyledTextarea
-        id={customRows}
+        id={id}
         name={name}
         rows={rows}
         disabled={disabled}
@@ -195,25 +197,30 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
+        value={value}
         onChange={onChange}
       />
-      <StyledSpan aria-live="polite" id={customRowsInfo}>
-        You have 10 characters remaining
+      <StyledSpan aria-live="polite">
+        You have{" "}
+        {remainingCharacters !== undefined ? (
+          remainingCharacters
+        ) : (
+          <React.Fragment />
+        )}{" "}
+        characters remaining
       </StyledSpan>
     </StyledDiv2>
   </StyledDiv>
 );
-CharacterCountWithCustomRows.props = [
-  "customRows",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "customRowsInfo"
-];
-export default CharacterCountWithCustomRows;
+
+const CharacterCountWithCustomRowsLogic = props =>
+  React.createElement(CharacterCountWithCustomRows, {
+    ...props,
+    remainingCharacters: (props => {
+      return props.value !== undefined && props.maxLength !== undefined
+        ? parseInt(props.maxLength, 10) - props.value.length
+        : props.maxLength;
+    })(props)
+  });
+
+export default CharacterCountWithCustomRowsLogic;

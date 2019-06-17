@@ -289,40 +289,6 @@ var DateInput = function (_a) {
                         React.createElement(StyledLabel3, { htmlFor: dobYear }, "Year"),
                         React.createElement(StyledInput3, { id: dobYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
 };
-DateInput.props = [
-    "dobHint",
-    "dob",
-    "dobDay",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "type",
-    "spellCheck",
-    "autoComplete",
-    "onChange",
-    "dobMonth",
-    "name2",
-    "disabled2",
-    "readOnly2",
-    "autoFocus2",
-    "value2",
-    "type2",
-    "spellCheck2",
-    "autoComplete2",
-    "onChange2",
-    "dobYear",
-    "name3",
-    "disabled3",
-    "readOnly3",
-    "autoFocus3",
-    "value3",
-    "type3",
-    "spellCheck3",
-    "autoComplete3",
-    "onChange3"
-];
 exports.default = DateInput;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17;
 //# sourceMappingURL=DateInput.js.map

@@ -1,7 +1,4 @@
 /// <reference types="react" />
 declare type Props = {};
-declare const ErrorMessage: {
-    ({}: Props): JSX.Element;
-    props: any[];
-};
+declare const ErrorMessage: ({}: Props) => JSX.Element;
 export default ErrorMessage;

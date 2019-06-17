@@ -74,23 +74,11 @@ var constants = {
     }
 };
 var TextareaWithAutocompleteAttribute = function (_a) {
-    var textareaWithAutocompleteAttribute = _a.textareaWithAutocompleteAttribute, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var textareaWithAutocompleteAttribute = _a.textareaWithAutocompleteAttribute, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledLabel, { htmlFor: textareaWithAutocompleteAttribute }, "Full address"),
-        React.createElement(StyledTextarea, { autoComplete: constants.autoComplete[autoComplete], id: textareaWithAutocompleteAttribute, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, onChange: onChange })));
+        React.createElement(StyledTextarea, { autoComplete: constants.autoComplete[autoComplete], id: textareaWithAutocompleteAttribute, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, value: value, onChange: onChange })));
 };
-TextareaWithAutocompleteAttribute.props = [
-    "textareaWithAutocompleteAttribute",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = TextareaWithAutocompleteAttribute;
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=TextareaWithAutocompleteAttribute.js.map

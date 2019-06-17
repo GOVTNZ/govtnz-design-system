@@ -21,7 +21,6 @@ var Ul = function (_a) {
     var bulleted = _a.bulleted, children = _a.children;
     return (React.createElement(StyledUl, { bulleted: bulleted }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-Ul.props = ["bulleted", "children"];
 exports.default = Ul;
 var templateObject_1, templateObject_2;
 //# sourceMappingURL=Ul.js.map

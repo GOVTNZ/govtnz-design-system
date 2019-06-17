@@ -146,6 +146,7 @@ const TextareaWithAutocompleteAttribute = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <StyledDiv>
@@ -162,20 +163,10 @@ const TextareaWithAutocompleteAttribute = ({
       cols={cols}
       autoFocus={autoFocus}
       spellCheck={spellCheck}
+      value={value}
       onChange={onChange}
     />
   </StyledDiv>
 );
-TextareaWithAutocompleteAttribute.props = [
-  "textareaWithAutocompleteAttribute",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithAutocompleteAttribute;

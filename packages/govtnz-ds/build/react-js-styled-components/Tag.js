@@ -32,6 +32,5 @@ var Tag = function Tag(_ref) {
   return _react["default"].createElement(StyledStrong, null, "alpha");
 };
 
-Tag.props = [];
 var _default = Tag;
 exports["default"] = _default;

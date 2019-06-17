@@ -3,6 +3,17 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
 };
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -76,26 +87,25 @@ var constants = {
     }
 };
 var CharacterCountWithCustomRows = function (_a) {
-    var customRows = _a.customRows, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, customRowsInfo = _a.customRowsInfo;
-    return (React.createElement(StyledDiv, { "data-maxlength": "10", "data-module": "character-count" },
+    var maxLength = _a.maxLength, id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
+    return (React.createElement(StyledDiv, { "data-maxlength": maxLength ? maxLength : "" },
         React.createElement(StyledDiv2, null,
-            React.createElement(StyledLabel, { htmlFor: customRows }, "Full address"),
-            React.createElement(StyledTextarea, { id: customRows, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }),
-            React.createElement(StyledSpan, { "aria-live": "polite", id: customRowsInfo }, "You have 10 characters remaining"))));
+            React.createElement(StyledLabel, { htmlFor: id }, "Full address"),
+            React.createElement(StyledTextarea, { id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange }),
+            React.createElement(StyledSpan, { "aria-live": "polite" },
+                "You have",
+                " ",
+                remainingCharacters !== undefined ? (remainingCharacters) : (React.createElement(React.Fragment, null)),
+                " ",
+                "characters remaining"))));
 };
-CharacterCountWithCustomRows.props = [
-    "customRows",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange",
-    "customRowsInfo"
-];
-exports.default = CharacterCountWithCustomRows;
+var CharacterCountWithCustomRowsLogic = function (props) {
+    return React.createElement(CharacterCountWithCustomRows, __assign({}, props, { remainingCharacters: (function (props) {
+            return props.value !== undefined && props.maxLength !== undefined
+                ? parseInt(props.maxLength, 10) - props.value.length
+                : props.maxLength;
+        })(props) }));
+};
+exports.default = CharacterCountWithCustomRowsLogic;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 //# sourceMappingURL=CharacterCountWithCustomRows.js.map

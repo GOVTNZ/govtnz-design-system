@@ -25,5 +25,5 @@ const TableTableWithHeadAndCaption = ({  }: Props) => (
     </tbody>
   </table>
 );
-TableTableWithHeadAndCaption.props = [];
+
 export default TableTableWithHeadAndCaption;

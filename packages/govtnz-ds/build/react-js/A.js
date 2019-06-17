@@ -32,6 +32,5 @@ var A = function A(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-A.props = ["isMuted", "href", "rel", "target", "children"];
 var _default = A;
 exports["default"] = _default;

@@ -140,11 +140,6 @@ var _default = _vue["default"].extend({
       },
       required: false
     },
-    fakeFocus: {
-      type: Boolean,
-      "default": false,
-      required: false
-    },
     name: {
       type: String,
       required: true
@@ -196,7 +191,7 @@ var _default = _vue["default"].extend({
       return +this.hintId + +this.errorId;
     },
     computed__class2: function computed__class2() {
-      return "g-inputBlock-input" + (constants[this.width] !== undefined ? " ".concat(constants[this.width]) : "") + (this.hasError ? " g-inputBlock-input--error" : "") + (this.fakeFocus ? " :focus" : "");
+      return "g-inputBlock-input" + (constants[this.width] !== undefined ? " ".concat(constants[this.width]) : "") + (this.hasError ? " g-inputBlock-input--error" : "");
     },
     computed__type: function computed__type() {
       return constants[this.type] !== undefined ? constants[this.type] : "";

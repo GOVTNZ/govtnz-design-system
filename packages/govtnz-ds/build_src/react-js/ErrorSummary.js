@@ -41,13 +41,5 @@ const ErrorSummary = ({
     </div>
   </div>
 );
-ErrorSummary.props = [
-  "errorSummaryTitle",
-  "href",
-  "rel",
-  "target",
-  "href2",
-  "rel2",
-  "target2"
-];
+
 export default ErrorSummary;

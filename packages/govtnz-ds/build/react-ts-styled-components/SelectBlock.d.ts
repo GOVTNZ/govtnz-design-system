@@ -8,8 +8,5 @@ declare type Props = {
     onChange: any;
     children?: React.ReactNode;
 };
-declare const SelectBlock: {
-    ({ selectId, label, hasError, name, multiple, onChange, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const SelectBlock: ({ selectId, label, hasError, name, multiple, onChange, children }: Props) => JSX.Element;
 export default SelectBlock;

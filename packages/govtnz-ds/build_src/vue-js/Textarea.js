@@ -132,7 +132,8 @@ export default Vue.extend({
         );
       },
       required: true
-    }
+    },
+    value: { type: String, required: false }
   },
   computed: {
     computed__autocomplete() {
@@ -142,6 +143,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textarea-form-group"},[_c(\'label\',{staticClass:"g-textarea-label",attrs:{"for":moreDetail}},[_v("\\n\\n    Can you provide more detail?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textarea-hint",attrs:{"id":moreDetailHint}},[_v("\\n\\n    Don\'t include personal or financial information, eg your National Insurance\\n    number or credit card details.\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textarea",attrs:{"aria-describedby":moreDetailHint,"id":moreDetail,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}})])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textarea-form-group"},[_c(\'label\',{staticClass:"g-textarea-label",attrs:{"for":moreDetail}},[_v("\\n\\n    Can you provide more detail?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textarea-hint",attrs:{"id":moreDetailHint}},[_v("\\n\\n    Don\'t include personal or financial information, eg your National Insurance\\n    number or credit card details.\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textarea",attrs:{"aria-describedby":moreDetailHint,"id":moreDetail,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
   )
 });

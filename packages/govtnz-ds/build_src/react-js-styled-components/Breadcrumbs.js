@@ -277,5 +277,5 @@ const Breadcrumbs = ({ href, rel, target, href2, rel2, target2 }) => (
     </StyledOl>
   </StyledDiv>
 );
-Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
+
 export default Breadcrumbs;

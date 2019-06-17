@@ -129,7 +129,6 @@ var H5 = function (_a) {
     var styleSize = _a.styleSize, marginBottom8 = _a.marginBottom8, id = _a.id, children = _a.children;
     return (React.createElement(StyledH5, { styleSize: styleSize, marginBottom8: marginBottom8, id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-H5.props = ["styleSize", "marginBottom8", "id", "children"];
 exports.default = H5;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23, templateObject_24, templateObject_25, templateObject_26, templateObject_27, templateObject_28, templateObject_29, templateObject_30, templateObject_31, templateObject_32, templateObject_33, templateObject_34, templateObject_35, templateObject_36, templateObject_37, templateObject_38;
 //# sourceMappingURL=H5.js.map

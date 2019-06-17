@@ -221,5 +221,5 @@ const P = ({ styleSize, children }) => (
     )}
   </StyledP>
 );
-P.props = ["styleSize", "children"];
+
 export default P;

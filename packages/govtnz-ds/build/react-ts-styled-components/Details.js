@@ -24,7 +24,6 @@ var Details = function (_a) {
             React.createElement(StyledSpan, null, "Help with nationality")),
         React.createElement(StyledDiv, { "aria-hidden": "true", id: detailsContent021Df3Ae2Ee5440B98CbFfc001B25657 }, "We need to know your nationality so we can work out which elections you\u2019re entitled to vote in. If you can\u2019t provide your nationality, you\u2019ll have to send copies of identity documents through the post.")));
 };
-Details.props = ["open", "detailsContent021Df3Ae2Ee5440B98CbFfc001B25657"];
 exports.default = Details;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=Details.js.map

@@ -78,6 +78,7 @@ var Textarea = function Textarea(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
     className: "g-textarea-form-group"
@@ -99,10 +100,10 @@ var Textarea = function Textarea(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }));
 };
 
-Textarea.props = ["moreDetail", "moreDetailHint", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = Textarea;
 exports["default"] = _default;

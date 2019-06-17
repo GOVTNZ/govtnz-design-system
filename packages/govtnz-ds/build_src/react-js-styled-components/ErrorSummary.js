@@ -258,13 +258,5 @@ const ErrorSummary = ({
     </StyledDiv2>
   </StyledDiv>
 );
-ErrorSummary.props = [
-  "errorSummaryTitle",
-  "href",
-  "rel",
-  "target",
-  "href2",
-  "rel2",
-  "target2"
-];
+
 export default ErrorSummary;

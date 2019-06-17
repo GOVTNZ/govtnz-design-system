@@ -83,6 +83,5 @@ var FileUploadWithHintText = function FileUploadWithHintText(_ref) {
   }));
 };
 
-FileUploadWithHintText.props = ["fileUpload2", "fileUpload2Hint", "name", "disabled", "readOnly", "autoFocus"];
 var _default = FileUploadWithHintText;
 exports["default"] = _default;

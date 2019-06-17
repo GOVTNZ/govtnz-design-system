@@ -15,6 +15,5 @@ var TableTableWithHead = function (_a) { return (React.createElement("table", { 
         React.createElement("tr", { className: "g-tableTableWithHead-table__row" }, "January $85 $95"),
         React.createElement("tr", { className: "g-tableTableWithHead-table__row" }, "February $75 $55"),
         React.createElement("tr", { className: "g-tableTableWithHead-table__row" }, "March $165 $125")))); };
-TableTableWithHead.props = [];
 exports.default = TableTableWithHead;
 //# sourceMappingURL=TableTableWithHead.js.map

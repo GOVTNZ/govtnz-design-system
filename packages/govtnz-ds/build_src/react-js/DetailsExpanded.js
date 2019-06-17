@@ -32,9 +32,5 @@ const DetailsExpanded = ({
     </div>
   </details>
 );
-DetailsExpanded.props = [
-  "helpWithNationality",
-  "open",
-  "detailsContent3E1674E973084F93B79C1A8694B6F4D5"
-];
+
 export default DetailsExpanded;

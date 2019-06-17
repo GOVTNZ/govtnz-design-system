@@ -32,7 +32,6 @@ var Breadcrumbs = function (_a) {
             React.createElement(StyledLi2, null,
                 React.createElement(StyledA2, { href: href2, rel: rel2, target: constants.target2[target2] }, "Sub-section")))));
 };
-Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
 exports.default = Breadcrumbs;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
 //# sourceMappingURL=Breadcrumbs.js.map

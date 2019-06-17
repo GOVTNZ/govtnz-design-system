@@ -1,7 +1,8 @@
 import * as React from "react";
 
 type Props = {
-  customRows?: string | undefined;
+  maxLength: any;
+  id?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -63,8 +64,9 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  value?: string | undefined;
   onChange: any;
-  customRowsInfo?: string | undefined;
+  remainingCharacters?: React.ReactNode;
 };
 
 const constants = {
@@ -126,7 +128,8 @@ const constants = {
 };
 
 const CharacterCountWithCustomRows = ({
-  customRows,
+  maxLength,
+  id,
   name,
   disabled,
   readOnly,
@@ -135,24 +138,21 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange,
-  customRowsInfo
+  remainingCharacters
 }: Props) => (
   <div
     className="g-characterCountWithCustomRows-character-count"
-    data-maxlength="10"
-    data-module="character-count"
+    data-maxlength={maxLength ? maxLength : ""}
   >
     <div className="g-characterCountWithCustomRows-form-group">
-      <label
-        className="g-characterCountWithCustomRows-label"
-        htmlFor={customRows}
-      >
+      <label className="g-characterCountWithCustomRows-label" htmlFor={id}>
         Full address
       </label>
       <textarea
-        className="g-characterCountWithCustomRows-textarea js-character-count"
-        id={customRows}
+        className="g-characterCountWithCustomRows-textarea"
+        id={id}
         name={name}
         rows={rows}
         disabled={disabled}
@@ -161,29 +161,49 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
+        value={value}
         onChange={onChange}
       />
       <span
         aria-live="polite"
         className="g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
-        id={customRowsInfo}
       >
-        You have 10 characters remaining
+        You have{" "}
+        {remainingCharacters !== undefined ? (
+          remainingCharacters
+        ) : (
+          <React.Fragment />
+        )}{" "}
+        characters remaining
       </span>
     </div>
   </div>
 );
-CharacterCountWithCustomRows.props = [
-  "customRows",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "customRowsInfo"
-];
-export default CharacterCountWithCustomRows;
+
+const CharacterCountWithCustomRowsLogic = (
+  props: Pick<
+    Props,
+    | "maxLength"
+    | "id"
+    | "name"
+    | "disabled"
+    | "readOnly"
+    | "rows"
+    | "cols"
+    | "autoFocus"
+    | "spellCheck"
+    | "autoComplete"
+    | "value"
+    | "onChange"
+  >
+) =>
+  React.createElement(CharacterCountWithCustomRows, {
+    ...props,
+    remainingCharacters: (props => {
+      return props.value !== undefined && props.maxLength !== undefined
+        ? parseInt(props.maxLength, 10) - props.value.length
+        : props.maxLength;
+    })(props)
+  });
+
+export default CharacterCountWithCustomRowsLogic;

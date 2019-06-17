@@ -14,6 +14,5 @@ var Li = function Li(_ref) {
   return _react["default"].createElement("li", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Li.props = ["children"];
 var _default = Li;
 exports["default"] = _default;

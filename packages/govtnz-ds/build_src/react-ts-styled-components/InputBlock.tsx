@@ -10,7 +10,6 @@ type Props = {
   errorId?: string | undefined;
   error?: React.ReactNode;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  fakeFocus?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -233,7 +232,7 @@ line-height: 1.31579;;
 font-size: 14pt;
 line-height: 1.15;;
 }
-:focus,:focus{
+:focus{
 outline: 3px solid #ffbf47;
 outline-offset: 0;
 }
@@ -373,7 +372,6 @@ const InputBlock = ({
   errorId,
   error,
   width,
-  fakeFocus,
   name,
   disabled,
   readOnly,
@@ -416,7 +414,6 @@ const InputBlock = ({
     <StyledInput
       width={width}
       hasError={hasError}
-      fakeFocus={fakeFocus}
       aria-describedby={
         hintId !== undefined || errorId !== undefined
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
@@ -435,24 +432,5 @@ const InputBlock = ({
     />
   </StyledDiv>
 );
-InputBlock.props = [
-  "hasError",
-  "inputId",
-  "label",
-  "hintId",
-  "hint",
-  "errorId",
-  "error",
-  "width",
-  "fakeFocus",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default InputBlock;

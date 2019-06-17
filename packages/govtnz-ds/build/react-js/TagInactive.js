@@ -18,6 +18,5 @@ var TagInactive = function TagInactive(_ref) {
   }, "alpha");
 };
 
-TagInactive.props = [];
 var _default = TagInactive;
 exports["default"] = _default;

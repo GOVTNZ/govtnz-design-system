@@ -9,5 +9,5 @@ const Li = ({ children }) => (
     )}
   </li>
 );
-Li.props = ["children"];
+
 export default Li;

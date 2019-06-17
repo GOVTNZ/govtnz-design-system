@@ -19,7 +19,6 @@ var Select = function (_a) {
     return (React.createElement(StyledSelect, { id: selectId, name: name, multiple: multiple, onChange: onChange }, children !== undefined ? (children) : (React.createElement(React.Fragment, null,
         React.createElement("option", null, "Options")))));
 };
-Select.props = ["selectId", "name", "multiple", "onChange", "children"];
 exports.default = Select;
 var templateObject_1;
 //# sourceMappingURL=Select.js.map

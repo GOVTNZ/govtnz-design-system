@@ -15,19 +15,5 @@ var RadioBlockWithHint = function (_a) {
         React.createElement("label", { className: "g-radios-label g-radios__label", htmlFor: radioId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Label text"))),
         React.createElement("div", { className: "g-radios-hint g-radios__hint", id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text"))));
 };
-RadioBlockWithHint.props = [
-    "fakeFocus",
-    "radioId",
-    "hintId",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "checked",
-    "onChange",
-    "label",
-    "hint"
-];
 exports.default = RadioBlockWithHint;
 //# sourceMappingURL=RadioBlockWithHint.js.map

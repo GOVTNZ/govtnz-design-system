@@ -22,19 +22,6 @@ var RadioBlock = function (_a) {
         React.createElement(StyledInput, { fakeFocus: fakeFocus, "aria-describedby": hintId, id: radioId, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }),
         React.createElement(StyledLabel, { htmlFor: radioId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Label text")))));
 };
-RadioBlock.props = [
-    "fakeFocus",
-    "radioId",
-    "hintId",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "checked",
-    "onChange",
-    "label"
-];
 exports.default = RadioBlock;
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=RadioBlock.js.map

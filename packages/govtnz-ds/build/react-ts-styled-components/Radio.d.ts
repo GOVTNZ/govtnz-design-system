@@ -11,8 +11,5 @@ declare type Props = {
     checked?: boolean | undefined;
     onChange: any;
 };
-declare const Radio: {
-    ({ fakeFocus, gov1, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }: Props): JSX.Element;
-    props: string[];
-};
+declare const Radio: ({ fakeFocus, gov1, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }: Props) => JSX.Element;
 export default Radio;

@@ -117,6 +117,10 @@ var _default = _vue["default"].extend({
         return ["Off", "On", "Name", "Honorific: Prefix", "Given Name", "Additional Name", "Family Name", "Honorific: Suffix", "Nickname", "Email", "Username", "New Password", "Current Password", "Organization Title", "Organization", "Street Address", "Address Line 1", "Address Line 2", "Address Line 3", "Address Level 4", "Address Level 3", "Address Level 2", "Address Level 1", "Country", "Country Name", "Postal Code", "Credit Card: Name", "Credit Card: Given Name", "Credit Card: Additional Name", "Credit Card: Family Name", "Credit Card: Number", "Credit Card: Expiry", "Credit Card: Expiry Month", "Credit Card: Expiry Year", "Credit Card: CSC", "Credit Card: Type", "Transaction: Currency", "Transaction: Amount", "Language", "Birthday", "Birthday: Day", "Birthday: Month", "Birthday: Year", "Sex", "Telephone", "Telephone: Country Code", "Telephone: National", "Telephone: Area Code", "Telephone: Local", "Telephone: Extension", "IMPP", "URL", "Photo"].indexOf(value) !== -1;
       },
       required: true
+    },
+    value: {
+      type: String,
+      required: false
     }
   },
   computed: {
@@ -124,7 +128,7 @@ var _default = _vue["default"].extend({
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'div\',{staticClass:"g-textarea-form-group"},[_c(\'label\',{staticClass:"g-textarea-label",attrs:{"for":moreDetail}},[_v("\\n\\n    Can you provide more detail?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textarea-hint",attrs:{"id":moreDetailHint}},[_v("\\n\\n    Don\'t include personal or financial information, eg your National Insurance\\n    number or credit card details.\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textarea",attrs:{"aria-describedby":moreDetailHint,"id":moreDetail,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}})])}')
+  render: new Function('with(this){return _c(\'div\',{staticClass:"g-textarea-form-group"},[_c(\'label\',{staticClass:"g-textarea-label",attrs:{"for":moreDetail}},[_v("\\n\\n    Can you provide more detail?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textarea-hint",attrs:{"id":moreDetailHint}},[_v("\\n\\n    Don\'t include personal or financial information, eg your National Insurance\\n    number or credit card details.\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textarea",attrs:{"aria-describedby":moreDetailHint,"id":moreDetail,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}')
 });
 
 exports["default"] = _default;

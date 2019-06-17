@@ -8,8 +8,5 @@ declare type Props = {
     selected2?: boolean | undefined;
     selected3?: boolean | undefined;
 };
-declare const SelectWithFullWidthOverride: {
-    ({ select1, name, multiple, onChange, selected, selected2, selected3 }: Props): JSX.Element;
-    props: string[];
-};
+declare const SelectWithFullWidthOverride: ({ select1, name, multiple, onChange, selected, selected2, selected3 }: Props) => JSX.Element;
 export default SelectWithFullWidthOverride;

@@ -28,15 +28,6 @@ var SelectWithFullWidthOverride = function (_a) {
             React.createElement(StyledOption2, { selected: selected2, value: "2" }, "Govt.NZ frontend option 2"),
             React.createElement(StyledOption3, { disabled: false, value: "3", selected: selected3 }, "Govt.NZ frontend option 3"))));
 };
-SelectWithFullWidthOverride.props = [
-    "select1",
-    "name",
-    "multiple",
-    "onChange",
-    "selected",
-    "selected2",
-    "selected3"
-];
 exports.default = SelectWithFullWidthOverride;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;
 //# sourceMappingURL=SelectWithFullWidthOverride.js.map

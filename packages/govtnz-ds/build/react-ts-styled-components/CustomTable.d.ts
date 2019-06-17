@@ -37,8 +37,5 @@ declare type Props = {
     rel12?: string | undefined;
     target12?: "Blank" | "Top" | "Self" | "Parent" | undefined;
 };
-declare const CustomTable: {
-    ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5, href6, rel6, target6, href7, rel7, target7, href8, rel8, target8, href9, rel9, target9, href10, rel10, target10, href11, rel11, target11, href12, rel12, target12 }: Props): JSX.Element;
-    props: string[];
-};
+declare const CustomTable: ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5, href6, rel6, target6, href7, rel7, target7, href8, rel8, target8, href9, rel9, target9, href10, rel10, target10, href11, rel11, target11, href12, rel12, target12 }: Props) => JSX.Element;
 export default CustomTable;

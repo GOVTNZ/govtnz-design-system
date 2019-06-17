@@ -17,5 +17,5 @@ const Select = ({ selectId, name, multiple, onChange, children }) => (
     )}
   </select>
 );
-Select.props = ["selectId", "name", "multiple", "onChange", "children"];
+
 export default Select;

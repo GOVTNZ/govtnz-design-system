@@ -36,6 +36,5 @@ var FieldsetBlockWithError = function FieldsetBlockWithError(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };
 
-FieldsetBlockWithError.props = ["hintId", "errorId", "legend", "hint", "error", "children"];
 var _default = FieldsetBlockWithError;
 exports["default"] = _default;
