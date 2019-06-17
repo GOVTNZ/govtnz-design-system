@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = void 0;
+exports["default"] = exports.CharacterCountWithCustomRows = void 0;
 
 var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
 
@@ -110,7 +110,9 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
   }, "You have", " ", remainingCharacters !== undefined ? remainingCharacters : _react["default"].createElement(_react["default"].Fragment, null), " ", "characters remaining")));
 };
 
-var CharacterCountWithCustomRowsLogic = function CharacterCountWithCustomRowsLogic(props) {
+exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
+
+var CharacterCountWithCustomRows__calculated = function CharacterCountWithCustomRows__calculated(props) {
   return _react["default"].createElement(CharacterCountWithCustomRows, (0, _objectSpread2["default"])({}, props, {
     remainingCharacters: function (props) {
       return props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength, 10) - props.value.length : props.maxLength;
@@ -118,5 +120,5 @@ var CharacterCountWithCustomRowsLogic = function CharacterCountWithCustomRowsLog
   }));
 };
 
-var _default = CharacterCountWithCustomRowsLogic;
+var _default = CharacterCountWithCustomRows__calculated;
 exports["default"] = _default;

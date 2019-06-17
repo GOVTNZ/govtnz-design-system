@@ -99,13 +99,14 @@ var CharacterCountWithCustomRows = function (_a) {
                 " ",
                 "characters remaining"))));
 };
-var CharacterCountWithCustomRowsLogic = function (props) {
+exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
+var CharacterCountWithCustomRows__calculated = function (props) {
     return React.createElement(CharacterCountWithCustomRows, __assign({}, props, { remainingCharacters: (function (props) {
             return props.value !== undefined && props.maxLength !== undefined
                 ? parseInt(props.maxLength, 10) - props.value.length
                 : props.maxLength;
         })(props) }));
 };
-exports.default = CharacterCountWithCustomRowsLogic;
+exports.default = CharacterCountWithCustomRows__calculated;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 //# sourceMappingURL=CharacterCountWithCustomRows.js.map

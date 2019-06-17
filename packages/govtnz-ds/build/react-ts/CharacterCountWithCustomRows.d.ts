@@ -14,5 +14,7 @@ declare type Props = {
     onChange: any;
     remainingCharacters?: React.ReactNode;
 };
-declare const CharacterCountWithCustomRowsLogic: (props: Pick<Props, "disabled" | "id" | "spellCheck" | "onChange" | "value" | "name" | "autoFocus" | "maxLength" | "readOnly" | "rows" | "cols" | "autoComplete">) => React.FunctionComponentElement<Props>;
-export default CharacterCountWithCustomRowsLogic;
+declare const CharacterCountWithCustomRows: ({ maxLength, id, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, value, onChange, remainingCharacters }: Props) => JSX.Element;
+declare const CharacterCountWithCustomRows__calculated: (props: Pick<Props, "disabled" | "id" | "spellCheck" | "onChange" | "value" | "name" | "autoFocus" | "maxLength" | "readOnly" | "rows" | "cols" | "autoComplete">) => React.FunctionComponentElement<Props>;
+export { CharacterCountWithCustomRows };
+export default CharacterCountWithCustomRows__calculated;

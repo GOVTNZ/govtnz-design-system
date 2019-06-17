@@ -659,11 +659,11 @@ export default class ReactTsStyledComponents {
       this.template.calculatedDynamicKeys &&
       this.template.calculatedDynamicKeys.length
     ) {
-      const calculatedKeys =
-        this.template.calculatedDynamicKeys &&
-        this.template.calculatedDynamicKeys.map(item => item.key);
+      const calculatedKeys = this.template.calculatedDynamicKeys.map(
+        item => item.key
+      );
 
-      const safeNameLogic = `${safeName}Logic`;
+      const safeNameLogic = `${safeName}__calculated`;
       code += `const ${safeNameLogic} = ( props ${
         this.options.language === "typescript"
           ? `: Pick<Props, ${this.assignedDynamicKeys
@@ -678,7 +678,8 @@ export default class ReactTsStyledComponents {
               calculatedDynamicKey.expression
             }; })(props) `
         )
-        .join(", ")} } )`;
+        .join(", ")} } )\n\n`;
+      code += `\n\nexport { ${safeName} };\n`;
       code += `\n\nexport default ${safeNameLogic};\n`;
     } else {
       code += `\n\nexport default ${safeName};\n`;

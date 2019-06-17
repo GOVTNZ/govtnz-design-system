@@ -213,7 +213,7 @@ const CharacterCountWithCustomRows = ({
   </StyledDiv>
 );
 
-const CharacterCountWithCustomRowsLogic = props =>
+const CharacterCountWithCustomRows__calculated = props =>
   React.createElement(CharacterCountWithCustomRows, {
     ...props,
     remainingCharacters: (props => {
@@ -223,4 +223,6 @@ const CharacterCountWithCustomRowsLogic = props =>
     })(props)
   });
 
-export default CharacterCountWithCustomRowsLogic;
+export { CharacterCountWithCustomRows };
+
+export default CharacterCountWithCustomRows__calculated;

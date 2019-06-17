@@ -282,7 +282,7 @@ const CharacterCountWithCustomRows = ({
   </StyledDiv>
 );
 
-const CharacterCountWithCustomRowsLogic = (
+const CharacterCountWithCustomRows__calculated = (
   props: Pick<
     Props,
     | "maxLength"
@@ -308,4 +308,6 @@ const CharacterCountWithCustomRowsLogic = (
     })(props)
   });
 
-export default CharacterCountWithCustomRowsLogic;
+export { CharacterCountWithCustomRows };
+
+export default CharacterCountWithCustomRows__calculated;
