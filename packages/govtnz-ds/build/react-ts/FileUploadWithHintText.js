@@ -15,13 +15,5 @@ var FileUploadWithHintText = function (_a) {
         React.createElement("span", { className: "g-fileUploadWithHintText-hint", id: fileUpload2Hint }, "Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or in an app like iPhoto."),
         React.createElement("input", { "aria-describedby": fileUpload2Hint, className: "g-fileUploadWithHintText-file-upload", id: fileUpload2, name: name, type: "file", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus })));
 };
-FileUploadWithHintText.props = [
-    "fileUpload2",
-    "fileUpload2Hint",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus"
-];
 exports.default = FileUploadWithHintText;
 //# sourceMappingURL=FileUploadWithHintText.js.map

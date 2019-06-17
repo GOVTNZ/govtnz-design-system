@@ -32,6 +32,5 @@ var ErrorMessage = function ErrorMessage(_ref) {
   return _react["default"].createElement(StyledSpan, null, "Error message about full name goes here");
 };
 
-ErrorMessage.props = [];
 var _default = ErrorMessage;
 exports["default"] = _default;

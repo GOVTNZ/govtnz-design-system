@@ -267,39 +267,5 @@ var DateInput = function (_a) {
                         React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dobYear }, "Year"),
                         React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4", id: dobYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
 };
-DateInput.props = [
-    "dobHint",
-    "dob",
-    "dobDay",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "type",
-    "spellCheck",
-    "autoComplete",
-    "onChange",
-    "dobMonth",
-    "name2",
-    "disabled2",
-    "readOnly2",
-    "autoFocus2",
-    "value2",
-    "type2",
-    "spellCheck2",
-    "autoComplete2",
-    "onChange2",
-    "dobYear",
-    "name3",
-    "disabled3",
-    "readOnly3",
-    "autoFocus3",
-    "value3",
-    "type3",
-    "spellCheck3",
-    "autoComplete3",
-    "onChange3"
-];
 exports.default = DateInput;
 //# sourceMappingURL=DateInput.js.map

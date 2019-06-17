@@ -69,5 +69,5 @@ const Select = ({ selectId, name, multiple, onChange, children }: Props) => (
     )}
   </StyledSelect>
 );
-Select.props = ["selectId", "name", "multiple", "onChange", "children"];
+
 export default Select;

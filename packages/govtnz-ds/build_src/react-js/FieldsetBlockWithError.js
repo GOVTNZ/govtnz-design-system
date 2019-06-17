@@ -47,12 +47,5 @@ const FieldsetBlockWithError = ({
     </fieldset>
   </div>
 );
-FieldsetBlockWithError.props = [
-  "hintId",
-  "errorId",
-  "legend",
-  "hint",
-  "error",
-  "children"
-];
+
 export default FieldsetBlockWithError;

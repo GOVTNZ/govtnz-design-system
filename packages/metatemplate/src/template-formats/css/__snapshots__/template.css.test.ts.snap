@@ -233,6 +233,20 @@ Array [
 ]
 `;
 
+exports[`CSS css: CalculatedProps 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/textbox.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
+`;
+
 exports[`CSS css: jsxToUsageCode with boolean false 1`] = `
 Object {
   "css": "",

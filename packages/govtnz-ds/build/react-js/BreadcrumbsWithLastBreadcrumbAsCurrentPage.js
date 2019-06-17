@@ -55,6 +55,5 @@ var BreadcrumbsWithLastBreadcrumbAsCurrentPage = function BreadcrumbsWithLastBre
   }, "Travel abroad")));
 };
 
-BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = ["href", "rel", "target", "href2", "rel2", "target2"];
 var _default = BreadcrumbsWithLastBreadcrumbAsCurrentPage;
 exports["default"] = _default;

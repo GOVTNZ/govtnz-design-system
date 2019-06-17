@@ -31,6 +31,5 @@ var BackLinkWithCustomText = function BackLinkWithCustomText(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-BackLinkWithCustomText.props = ["href", "rel", "target", "children"];
 var _default = BackLinkWithCustomText;
 exports["default"] = _default;

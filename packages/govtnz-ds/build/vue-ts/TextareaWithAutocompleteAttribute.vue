@@ -18,6 +18,7 @@
       v-bind:cols="cols"
       v-bind:autofocus="autoFocus"
       v-bind:spellcheck="spellCheck"
+      v-bind:value="value"
     />
   </div> </template
 ><script lang="ts">
@@ -154,7 +155,8 @@ export default Vue.extend({
         );
       },
       required: true
-    }
+    },
+    value: { type: String, required: false }
   },
   computed: {
     computed__autocomplete() {

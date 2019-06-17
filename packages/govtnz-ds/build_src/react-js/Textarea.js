@@ -69,6 +69,7 @@ const Textarea = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textarea-form-group">
@@ -91,21 +92,10 @@ const Textarea = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-Textarea.props = [
-  "moreDetail",
-  "moreDetailHint",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default Textarea;

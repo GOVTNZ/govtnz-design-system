@@ -25,8 +25,5 @@ declare type Props = {
     crossOrigin?: "Anonymous" | "Use Credentials" | undefined;
     copyrightYear?: React.ReactNode;
 };
-declare const FooterStandard: {
-    ({ href, rel, target, label1, href2, rel2, target2, label2, href3, rel3, target3, label3, href4, rel4, target4, href5, rel5, target5, src, width, height, srcSet, crossOrigin, copyrightYear }: Props): JSX.Element;
-    props: string[];
-};
+declare const FooterStandard: ({ href, rel, target, label1, href2, rel2, target2, label2, href3, rel3, target3, label3, href4, rel4, target4, href5, rel5, target5, src, width, height, srcSet, crossOrigin, copyrightYear }: Props) => JSX.Element;
 export default FooterStandard;

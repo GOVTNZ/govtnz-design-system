@@ -68,6 +68,7 @@ const TextareaWithLabelAsPageHeading = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textareaWithLabelAsPageHeading-form-group">
@@ -90,20 +91,10 @@ const TextareaWithLabelAsPageHeading = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-TextareaWithLabelAsPageHeading.props = [
-  "textareaWithPageHeading",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithLabelAsPageHeading;

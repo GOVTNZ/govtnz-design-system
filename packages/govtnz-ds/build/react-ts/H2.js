@@ -24,6 +24,5 @@ var H2 = function (_a) {
             ? constants.styleSize[styleSize]
             : "") + (marginBottom8 ? " g-heading-mb-8" : ""), id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-H2.props = ["styleSize", "marginBottom8", "id", "children"];
 exports.default = H2;
 //# sourceMappingURL=H2.js.map

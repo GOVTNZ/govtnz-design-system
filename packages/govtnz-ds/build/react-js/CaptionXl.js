@@ -16,6 +16,5 @@ var CaptionXl = function CaptionXl(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-CaptionXl.props = ["children"];
 var _default = CaptionXl;
 exports["default"] = _default;

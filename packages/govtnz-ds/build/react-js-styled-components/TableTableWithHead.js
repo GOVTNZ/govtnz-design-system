@@ -32,6 +32,5 @@ var TableTableWithHead = function TableTableWithHead(_ref) {
   return _react["default"].createElement(StyledTable, null, _react["default"].createElement("thead", null, _react["default"].createElement("tr", null, "Month you apply Rate for bicycles Rate for vehicles")), _react["default"].createElement("tbody", null, _react["default"].createElement("tr", null, "January $85 $95"), _react["default"].createElement("tr", null, "February $75 $55"), _react["default"].createElement("tr", null, "March $165 $125")));
 };
 
-TableTableWithHead.props = [];
 var _default = TableTableWithHead;
 exports["default"] = _default;

@@ -18,6 +18,5 @@ var Tag = function Tag(_ref) {
   }, "alpha");
 };
 
-Tag.props = [];
 var _default = Tag;
 exports["default"] = _default;

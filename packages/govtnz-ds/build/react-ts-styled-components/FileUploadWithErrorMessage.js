@@ -28,15 +28,6 @@ var FileUploadWithErrorMessage = function (_a) {
                 ? "" + (fileUpload3Hint ? fileUpload3Hint : "") + (fileUpload3Error ? " " + fileUpload3Error : "")
                 : undefined, id: fileUpload3, name: name, type: "file", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus })));
 };
-FileUploadWithErrorMessage.props = [
-    "fileUpload3",
-    "fileUpload3Hint",
-    "fileUpload3Error",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus"
-];
 exports.default = FileUploadWithErrorMessage;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 //# sourceMappingURL=FileUploadWithErrorMessage.js.map

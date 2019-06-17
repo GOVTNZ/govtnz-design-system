@@ -6,8 +6,5 @@ declare type Props = {
     readOnly?: boolean | undefined;
     autoFocus?: boolean | undefined;
 };
-declare const FileUpload: {
-    ({ fileUpload1, name, disabled, readOnly, autoFocus }: Props): JSX.Element;
-    props: string[];
-};
+declare const FileUpload: ({ fileUpload1, name, disabled, readOnly, autoFocus }: Props) => JSX.Element;
 export default FileUpload;

@@ -17,5 +17,5 @@ const FlexContainer = ({ width, children }) => (
     )}
   </div>
 );
-FlexContainer.props = ["width", "children"];
+
 export default FlexContainer;

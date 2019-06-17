@@ -7,8 +7,5 @@ declare type Props = {
     multiple?: boolean | undefined;
     onChange: any;
 };
-declare const SelectWithHintTextAndErrorMessage: {
-    ({ select2, select2Hint, select2Error, name, multiple, onChange }: Props): JSX.Element;
-    props: string[];
-};
+declare const SelectWithHintTextAndErrorMessage: ({ select2, select2Hint, select2Error, name, multiple, onChange }: Props) => JSX.Element;
 export default SelectWithHintTextAndErrorMessage;

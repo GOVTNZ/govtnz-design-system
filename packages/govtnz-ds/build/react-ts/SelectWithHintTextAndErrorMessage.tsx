@@ -52,12 +52,5 @@ const SelectWithHintTextAndErrorMessage = ({
     </select>
   </div>
 );
-SelectWithHintTextAndErrorMessage.props = [
-  "select2",
-  "select2Hint",
-  "select2Error",
-  "name",
-  "multiple",
-  "onChange"
-];
+
 export default SelectWithHintTextAndErrorMessage;

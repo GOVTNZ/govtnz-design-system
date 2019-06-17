@@ -1,7 +1,4 @@
 /// <reference types="react" />
 declare type Props = {};
-declare const TagInactive: {
-    ({}: Props): JSX.Element;
-    props: any[];
-};
+declare const TagInactive: ({}: Props) => JSX.Element;
 export default TagInactive;

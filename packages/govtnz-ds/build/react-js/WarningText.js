@@ -25,6 +25,5 @@ var WarningText = function WarningText(_ref) {
   }, "Warning"), "You can be fined up to $5,000 if you don\u2019t register."));
 };
 
-WarningText.props = [];
 var _default = WarningText;
 exports["default"] = _default;

@@ -22,5 +22,5 @@ const Li = ({ children }: Props) => (
     )}
   </StyledLi>
 );
-Li.props = ["children"];
+
 export default Li;

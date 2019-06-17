@@ -117,6 +117,7 @@ var TextareaWithOptionalFormGroupClasses = function TextareaWithOptionalFormGrou
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledLabel, {
     htmlFor: textareaWithPageHeading
@@ -130,10 +131,10 @@ var TextareaWithOptionalFormGroupClasses = function TextareaWithOptionalFormGrou
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }));
 };
 
-TextareaWithOptionalFormGroupClasses.props = ["textareaWithPageHeading", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = TextareaWithOptionalFormGroupClasses;
 exports["default"] = _default;

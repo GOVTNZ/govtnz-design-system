@@ -30,6 +30,5 @@ var TableTableWithHead = function TableTableWithHead(_ref) {
   }, "March $165 $125")));
 };
 
-TableTableWithHead.props = [];
 var _default = TableTableWithHead;
 exports["default"] = _default;

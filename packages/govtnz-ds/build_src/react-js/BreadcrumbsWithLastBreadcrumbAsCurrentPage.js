@@ -44,12 +44,5 @@ const BreadcrumbsWithLastBreadcrumbAsCurrentPage = ({
     </ol>
   </div>
 );
-BreadcrumbsWithLastBreadcrumbAsCurrentPage.props = [
-  "href",
-  "rel",
-  "target",
-  "href2",
-  "rel2",
-  "target2"
-];
+
 export default BreadcrumbsWithLastBreadcrumbAsCurrentPage;

@@ -19,7 +19,6 @@ var Table = function (_a) { return (React.createElement(StyledTable, null,
         React.createElement("tr", null, "January $85 $95"),
         React.createElement("tr", null, "February $75 $55"),
         React.createElement("tr", null, "March $165 $125")))); };
-Table.props = [];
 exports.default = Table;
 var templateObject_1;
 //# sourceMappingURL=Table.js.map

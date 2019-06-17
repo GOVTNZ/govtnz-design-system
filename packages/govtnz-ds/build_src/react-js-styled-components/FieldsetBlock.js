@@ -113,5 +113,5 @@ const FieldsetBlock = ({ hintId, legend, hint, children }) => (
     </StyledFieldset>
   </StyledDiv>
 );
-FieldsetBlock.props = ["hintId", "legend", "hint", "children"];
+
 export default FieldsetBlock;

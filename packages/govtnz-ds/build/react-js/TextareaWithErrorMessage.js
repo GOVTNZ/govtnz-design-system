@@ -78,6 +78,7 @@ var TextareaWithErrorMessage = function TextareaWithErrorMessage(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
     className: "g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"
@@ -99,10 +100,10 @@ var TextareaWithErrorMessage = function TextareaWithErrorMessage(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }));
 };
 
-TextareaWithErrorMessage.props = ["noNiReason", "noNiReasonError", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = TextareaWithErrorMessage;
 exports["default"] = _default;

@@ -35,5 +35,5 @@ const StyledStrong = styled.strong`
 `;
 
 const TagInactive = ({  }: Props) => <StyledStrong>alpha</StyledStrong>;
-TagInactive.props = [];
+
 export default TagInactive;

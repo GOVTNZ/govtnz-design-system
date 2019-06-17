@@ -45,6 +45,5 @@ var Fieldset = function Fieldset(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents...")));
 };
 
-Fieldset.props = ["hintId", "children"];
 var _default = Fieldset;
 exports["default"] = _default;

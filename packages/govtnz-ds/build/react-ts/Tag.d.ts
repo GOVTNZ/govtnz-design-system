@@ -1,7 +1,4 @@
 /// <reference types="react" />
 declare type Props = {};
-declare const Tag: {
-    ({}: Props): JSX.Element;
-    props: any[];
-};
+declare const Tag: ({}: Props) => JSX.Element;
 export default Tag;

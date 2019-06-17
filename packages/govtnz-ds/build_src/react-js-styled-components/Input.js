@@ -192,20 +192,5 @@ const Input = ({
     onChange={onChange}
   />
 );
-Input.props = [
-  "width",
-  "hasError",
-  "fakeFocus",
-  "inputId",
-  "describedBy",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default Input;

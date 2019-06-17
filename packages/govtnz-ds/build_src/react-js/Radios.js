@@ -9,5 +9,5 @@ const Radios = ({ inline, children }) => (
     )}
   </div>
 );
-Radios.props = ["inline", "children"];
+
 export default Radios;

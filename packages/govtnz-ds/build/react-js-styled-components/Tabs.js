@@ -404,6 +404,5 @@ var Tabs = function Tabs(_ref) {
   }, _react["default"].createElement(StyledH25, null, "Past year"), _react["default"].createElement(StyledTable4, null, _react["default"].createElement("thead", null, _react["default"].createElement("tr", null, "Case manager Cases opened Cases closed")), _react["default"].createElement("tbody", null, _react["default"].createElement("tr", null, "David Francis 1380 1472"), _react["default"].createElement("tr", null, "Paul Farmer 1129 1083"), _react["default"].createElement("tr", null, "Rita Patel 1539 1265")))));
 };
 
-Tabs.props = ["tabPastDay", "pastDay", "href", "rel", "target", "tabPastWeek", "pastWeek", "href2", "rel2", "target2", "tabPastMonth", "pastMonth", "href3", "rel3", "target3", "tabPastYear", "pastYear", "href4", "rel4", "target4"];
 var _default = Tabs;
 exports["default"] = _default;

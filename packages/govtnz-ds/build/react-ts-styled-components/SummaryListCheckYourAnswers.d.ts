@@ -25,8 +25,5 @@ declare type Props = {
     rel8?: string | undefined;
     target8?: "Blank" | "Top" | "Self" | "Parent" | undefined;
 };
-declare const SummaryListCheckYourAnswers: {
-    ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5, href6, rel6, target6, href7, rel7, target7, href8, rel8, target8 }: Props): JSX.Element;
-    props: string[];
-};
+declare const SummaryListCheckYourAnswers: ({ href, rel, target, href2, rel2, target2, href3, rel3, target3, href4, rel4, target4, href5, rel5, target5, href6, rel6, target6, href7, rel7, target7, href8, rel8, target8 }: Props) => JSX.Element;
 export default SummaryListCheckYourAnswers;

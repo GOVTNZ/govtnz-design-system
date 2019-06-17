@@ -9,5 +9,5 @@ const Ul = ({ bulleted, children }) => (
     )}
   </ul>
 );
-Ul.props = ["bulleted", "children"];
+
 export default Ul;

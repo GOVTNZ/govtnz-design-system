@@ -6,5 +6,5 @@ const InsetText = ({}) => (
     are no mistakes in the application.
   </div>
 );
-InsetText.props = [];
+
 export default InsetText;

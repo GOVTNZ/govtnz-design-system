@@ -41,5 +41,5 @@ const FormDivider = ({ children }: Props) => (
     )}
   </StyledDiv>
 );
-FormDivider.props = ["children"];
+
 export default FormDivider;

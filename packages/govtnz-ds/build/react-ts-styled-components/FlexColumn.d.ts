@@ -11,8 +11,5 @@ declare type Props = {
     isReversed?: boolean | undefined;
     children?: React.ReactNode;
 };
-declare const FlexColumn: {
-    ({ xs, sm, md, lg, xsOffset, smOffset, mdOffset, lgOffset, isReversed, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const FlexColumn: ({ xs, sm, md, lg, xsOffset, smOffset, mdOffset, lgOffset, isReversed, children }: Props) => JSX.Element;
 export default FlexColumn;

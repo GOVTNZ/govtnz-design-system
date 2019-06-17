@@ -18,7 +18,6 @@ var CaptionM = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledSpan, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
-CaptionM.props = ["children"];
 exports.default = CaptionM;
 var templateObject_1;
 //# sourceMappingURL=CaptionM.js.map

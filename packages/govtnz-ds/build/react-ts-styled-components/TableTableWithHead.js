@@ -21,7 +21,6 @@ var TableTableWithHead = function (_a) { return (React.createElement(StyledTable
         React.createElement("tr", null, "January $85 $95"),
         React.createElement("tr", null, "February $75 $55"),
         React.createElement("tr", null, "March $165 $125")))); };
-TableTableWithHead.props = [];
 exports.default = TableTableWithHead;
 var templateObject_1;
 //# sourceMappingURL=TableTableWithHead.js.map

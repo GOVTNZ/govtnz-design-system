@@ -142,17 +142,5 @@ var FlexColumn = function (_a) {
             ? " " + constants.lgOffset[lgOffset]
             : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
 };
-FlexColumn.props = [
-    "xs",
-    "sm",
-    "md",
-    "lg",
-    "xsOffset",
-    "smOffset",
-    "mdOffset",
-    "lgOffset",
-    "isReversed",
-    "children"
-];
 exports.default = FlexColumn;
 //# sourceMappingURL=FlexColumn.js.map

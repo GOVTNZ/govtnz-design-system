@@ -64,27 +64,5 @@ var Tabs = function (_a) {
                     React.createElement("tr", { className: "g-tabs-table__row" }, "Paul Farmer 1129 1083"),
                     React.createElement("tr", { className: "g-tabs-table__row" }, "Rita Patel 1539 1265"))))));
 };
-Tabs.props = [
-    "tabPastDay",
-    "pastDay",
-    "href",
-    "rel",
-    "target",
-    "tabPastWeek",
-    "pastWeek",
-    "href2",
-    "rel2",
-    "target2",
-    "tabPastMonth",
-    "pastMonth",
-    "href3",
-    "rel3",
-    "target3",
-    "tabPastYear",
-    "pastYear",
-    "href4",
-    "rel4",
-    "target4"
-];
 exports.default = Tabs;
 //# sourceMappingURL=Tabs.js.map

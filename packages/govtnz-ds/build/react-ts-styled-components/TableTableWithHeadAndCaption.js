@@ -23,7 +23,6 @@ var TableTableWithHeadAndCaption = function (_a) { return (React.createElement(S
         React.createElement("tr", null, "January $85 $95"),
         React.createElement("tr", null, "February $75 $55"),
         React.createElement("tr", null, "March $165 $125")))); };
-TableTableWithHeadAndCaption.props = [];
 exports.default = TableTableWithHeadAndCaption;
 var templateObject_1, templateObject_2;
 //# sourceMappingURL=TableTableWithHeadAndCaption.js.map

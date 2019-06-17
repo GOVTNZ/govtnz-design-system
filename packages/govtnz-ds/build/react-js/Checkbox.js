@@ -35,6 +35,5 @@ var Checkbox = function Checkbox(_ref) {
   });
 };
 
-Checkbox.props = ["fakeFocus", "checkboxId", "hintId", "name", "disabled", "readOnly", "autoFocus", "value", "checked", "onChange"];
 var _default = Checkbox;
 exports["default"] = _default;

@@ -77,6 +77,7 @@ var TextareaWithDefaultValue = function TextareaWithDefaultValue(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
     className: "g-textareaWithDefaultValue-form-group"
@@ -94,10 +95,10 @@ var TextareaWithDefaultValue = function TextareaWithDefaultValue(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }, "221B Baker Street London NW1 6XE"));
 };
 
-TextareaWithDefaultValue.props = ["fullAddress", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = TextareaWithDefaultValue;
 exports["default"] = _default;

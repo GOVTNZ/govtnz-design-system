@@ -13,6 +13,5 @@ var Fieldset = function (_a) {
     return (React.createElement("div", { className: "g-fieldset-form-group" },
         React.createElement("fieldset", { "aria-describedby": hintId, className: "g-fieldset" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Legend and other fieldset contents...")))));
 };
-Fieldset.props = ["hintId", "children"];
 exports.default = Fieldset;
 //# sourceMappingURL=Fieldset.js.map

@@ -160,5 +160,5 @@ const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
     )}
   </StyledButton>
 );
-Button.props = ["disabled", "level", "name", "type", "onClick", "children"];
+
 export default Button;

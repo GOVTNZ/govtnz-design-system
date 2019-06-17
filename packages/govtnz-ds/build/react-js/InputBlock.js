@@ -109,7 +109,6 @@ var InputBlock = function InputBlock(_ref) {
       errorId = _ref.errorId,
       error = _ref.error,
       width = _ref.width,
-      fakeFocus = _ref.fakeFocus,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -134,7 +133,7 @@ var InputBlock = function InputBlock(_ref) {
     className: "g-inputBlock-visually-hidden"
   }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement("input", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
-    className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(hasError ? " g-inputBlock-input--error" : "").concat(fakeFocus ? " :focus" : ""),
+    className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(hasError ? " g-inputBlock-input--error" : ""),
     id: inputId,
     name: name,
     type: constants.type[type],
@@ -148,6 +147,5 @@ var InputBlock = function InputBlock(_ref) {
   }));
 };
 
-InputBlock.props = ["hasError", "inputId", "label", "hintId", "hint", "errorId", "error", "width", "fakeFocus", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange"];
 var _default = InputBlock;
 exports["default"] = _default;

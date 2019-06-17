@@ -6,8 +6,5 @@ declare type Props = {
     target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
     children?: React.ReactNode;
 };
-declare const A: {
-    ({ isMuted, href, rel, target, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const A: ({ isMuted, href, rel, target, children }: Props) => JSX.Element;
 export default A;

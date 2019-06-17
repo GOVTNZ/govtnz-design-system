@@ -32,5 +32,5 @@ const StyledStrong = styled.strong`
 `;
 
 const Tag = ({}) => <StyledStrong>alpha</StyledStrong>;
-Tag.props = [];
+
 export default Tag;

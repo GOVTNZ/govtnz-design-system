@@ -117,6 +117,7 @@ var TextareaWithAutocompleteAttribute = function TextareaWithAutocompleteAttribu
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledLabel, {
     htmlFor: textareaWithAutocompleteAttribute
@@ -130,10 +131,10 @@ var TextareaWithAutocompleteAttribute = function TextareaWithAutocompleteAttribu
     cols: cols,
     autoFocus: autoFocus,
     spellCheck: spellCheck,
+    value: value,
     onChange: onChange
   }));
 };
 
-TextareaWithAutocompleteAttribute.props = ["textareaWithAutocompleteAttribute", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = TextareaWithAutocompleteAttribute;
 exports["default"] = _default;

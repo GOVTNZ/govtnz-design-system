@@ -353,6 +353,11 @@ export const insertDefaultVariables = async (
         }
       ]);
 
+      // For a <textarea> setting a 'value' attribute rather than
+      // childNodes is a React concept: https://reactjs.org/docs/forms.html#the-textarea-tag
+      // but it's transferable to other template formats and I believe
+      // it's an easier abstraction than childNodes.
+      makeTemplateAttribute("value", attributes, format, true);
       break;
     }
 

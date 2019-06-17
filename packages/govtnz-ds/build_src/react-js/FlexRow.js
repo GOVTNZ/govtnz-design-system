@@ -41,12 +41,5 @@ const FlexRow = ({
     )}
   </div>
 );
-FlexRow.props = [
-  "alignXs",
-  "alignSm",
-  "alignMd",
-  "alignLg",
-  "isReversed",
-  "children"
-];
+
 export default FlexRow;

@@ -36,10 +36,6 @@ var DetailsWithHtml = function (_a) {
                 React.createElement(StyledLi4, null, "benefits information"),
                 React.createElement(StyledLi5, null, "tax return")))));
 };
-DetailsWithHtml.props = [
-    "open",
-    "detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0"
-];
 exports.default = DetailsWithHtml;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9;
 //# sourceMappingURL=DetailsWithHtml.js.map

@@ -3,8 +3,5 @@ declare type Props = {
     bulleted?: boolean | undefined;
     children?: React.ReactNode;
 };
-declare const Ul: {
-    ({ bulleted, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const Ul: ({ bulleted, children }: Props) => JSX.Element;
 export default Ul;

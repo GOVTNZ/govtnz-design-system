@@ -88,5 +88,5 @@ const WarningText = ({}) => (
     </StyledStrong>
   </StyledDiv>
 );
-WarningText.props = [];
+
 export default WarningText;

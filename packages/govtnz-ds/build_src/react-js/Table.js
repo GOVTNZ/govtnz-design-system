@@ -9,5 +9,5 @@ const Table = ({}) => (
     </tbody>
   </table>
 );
-Table.props = [];
+
 export default Table;

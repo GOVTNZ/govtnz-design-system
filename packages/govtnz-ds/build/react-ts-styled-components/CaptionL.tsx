@@ -40,5 +40,5 @@ const CaptionL = ({ children }: Props) => (
     )}
   </StyledSpan>
 );
-CaptionL.props = ["children"];
+
 export default CaptionL;

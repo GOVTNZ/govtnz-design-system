@@ -13,5 +13,5 @@ const Legend = ({ children }: Props) => (
     )}
   </legend>
 );
-Legend.props = ["children"];
+
 export default Legend;

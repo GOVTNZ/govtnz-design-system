@@ -13,6 +13,5 @@ var Table = function (_a) { return (React.createElement("table", { className: "g
         React.createElement("tr", { className: "g-table__row" }, "January $85 $95"),
         React.createElement("tr", { className: "g-table__row" }, "February $75 $55"),
         React.createElement("tr", { className: "g-table__row" }, "March $165 $125")))); };
-Table.props = [];
 exports.default = Table;
 //# sourceMappingURL=Table.js.map

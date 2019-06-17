@@ -18,6 +18,5 @@ var InsetText = function InsetText(_ref) {
   }, "It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.");
 };
 
-InsetText.props = [];
 var _default = InsetText;
 exports["default"] = _default;
