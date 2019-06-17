@@ -693,7 +693,7 @@ const Textbox = ({
   />
 );
 
-const TextboxLogic = props =>
+const Textbox__calculated = props =>
   React.createElement(Textbox, {
     ...props,
     textValueLength: (props => {
@@ -701,7 +701,9 @@ const TextboxLogic = props =>
     })(props)
   });
 
-export default TextboxLogic;
+export { Textbox };
+
+export default Textbox__calculated;
 ",
       },
       "formatId": "react-js-styled-components",
