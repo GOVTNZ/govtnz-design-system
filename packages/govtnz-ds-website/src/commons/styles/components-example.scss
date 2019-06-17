@@ -19,26 +19,61 @@
   margin-right: $spacing-32;
 }
 
+.example__visual {
+  padding-top: $spacing-40;
+  padding-left: $spacing-24;
+  padding-right: $spacing-24;
+  padding-bottom: $spacing-40;
+  border-bottom: solid 1px $color-ds-default-mid-grey;
+  border-bottom: solid 1px
+    var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+
+  @include large {
+    padding-left: $spacing-32;
+    padding-right: $spacing-32;
+  }
+}
+
+.example__visual::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
 .example__code {
   display: block;
   // We need to override styling coming from the prism-js theme.
   border: none !important;
   background-color: transparent !important;
   margin: 0 !important;
-  padding: $spacing-40 $spacing-32 $spacing-32 !important;
+  padding: $spacing-40 $spacing-24 $spacing-32 !important;
+
+  @include large {
+    padding: $spacing-40 $spacing-32 $spacing-32 !important;
+  }
 }
 
 .example__format {
-  padding: $spacing-24 $spacing-32 0;
+  padding: $spacing-24 $spacing-24 0;
+
+  @include large {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-24 $spacing-32 0;
+  }
 }
 
 .example__summary {
-  padding: $spacing-24 $spacing-32 $spacing-24;
+  padding: $spacing-24;
   cursor: pointer;
   list-style: none;
 
   &::-webkit-details-marker {
     display: none;
+  }
+
+  @include large {
+    padding: $spacing-24 $spacing-32 $spacing-24;
   }
 }
 
@@ -70,11 +105,16 @@
 }
 
 .example__note {
-  padding-top: $spacing-16;
+  padding: $spacing-32 $spacing-24 0;
   margin-bottom: 0;
   font-size: 14px;
   color: $color-ds-default-mid-grey;
   color: var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+  border-top: 1px solid var(--color-theme-light-grey);
+
+  @include large {
+    padding: $spacing-32 $spacing-32 0;
+  }
 }
 
 .example__select {
