@@ -80,11 +80,11 @@
 }
 
 .g-detailsWithHtml-details__summary:focus {
-  outline: 4px solid #ffbf47;
+  outline: 4px solid #b53cde;
   outline: 4px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #ffbf47;
+  background: #b53cde;
   background: var(--g-theme-color-brand-1, #b53cde);
 }
 

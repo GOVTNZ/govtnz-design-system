@@ -11,6 +11,12 @@
   margin-bottom: $spacing-40;
 }
 
+.example__iframe-wrapper {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
 .example__container--padded {
   padding: $spacing-32 $spacing-32 $spacing-32;
 }
@@ -20,6 +26,16 @@
   margin-top: $spacing-64 !important; // Override css from .g-heading-m/s
 }
 
+.example__details {
+}
+
 [class^='g-heading'] + .example__container {
   margin-top: $spacing-32;
+}
+
+.example__iframe {
+  display: block;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0px 0px 1px 0px;
 }

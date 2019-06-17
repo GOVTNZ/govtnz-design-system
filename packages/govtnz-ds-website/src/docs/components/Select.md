@@ -5,7 +5,7 @@ The select component (sometimes called a dropdown list) allows users to choose a
 Interact with this example to see how it works.
 
 <ExampleContainer>
-    <Example>
+    <Example title="Example of Select">
         <SelectBlock selectId="select1" label="Order by">
             <option value="published">Recently published</option>
             <option value="updated">Recently updated</option>

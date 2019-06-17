@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import CharacterCountWithCustomRows from '@govtnz/ds/build/react-ts/CharacterCountWithCustomRows.tsx';
-import '@govtnz/ds/build/css/CharacterCountWithCustomRows.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__CharacterCount from '../../commons/examples/components__CharacterCount';
@@ -23,9 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Character Count</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} >
-        <CharacterCountWithCustomRows {...onChangeGenerator(CharacterCountWithCustomRows)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{id:"iframe_componentsCharacterCount0", className: "example__iframe", id: "iframe_componentsCharacterCount0", src:"../CharacterCount__example0/", title:"Example of Character Count", height: 230 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

@@ -14,7 +14,7 @@ import {
 import Icon from '../components/Icon';
 
 type Props = {
-  children: React.ReactNode;
+  iframeProps: AnyObject;
   code: AnyObject;
   codeOnly?: boolean | undefined;
 };
@@ -26,6 +26,8 @@ type State = {
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
   supportsClipboard: boolean;
+  iframeHeight: number;
+  iframeWidth: number;
   copyingMode: false | 'start' | 'end';
 };
 
@@ -53,6 +55,9 @@ export default class Example extends Component<Props, State> {
       copyingMode: false,
       supportsJavaScript: false,
       supportsClipboard: false,
+      iframeWidth: 300,
+      iframeHeight:
+        (props.iframeProps && (props.iframeProps.height as number)) || 100,
     };
   }
 
@@ -61,6 +66,34 @@ export default class Example extends Component<Props, State> {
     this.setState({
       supportsJavaScript: true,
     });
+
+    window.addEventListener(
+      'message',
+      e => {
+        if (e.origin !== window.location.origin) {
+          console.info('Ignoring postMessage from', e.origin, e);
+          return;
+        }
+        const data = e.data;
+        const resizeById = data && data.resizeById;
+        if (
+          this.props.iframeProps &&
+          this.props.iframeProps.id &&
+          this.props.iframeProps.id === resizeById
+        ) {
+          console.log(
+            `Updating ${this.props.iframeProps.id} to `,
+            data.width,
+            data.height
+          );
+          this.setState({
+            // iframeWidth: data.width > 300 ? data.width : 300,
+            iframeHeight: data.height > 50 ? data.height : 50,
+          });
+        }
+      },
+      false
+    );
   };
 
   resetFormatChoice = () => {
@@ -133,7 +166,7 @@ export default class Example extends Component<Props, State> {
   };
 
   render() {
-    const { children, codeOnly, code: allCode } = this.props;
+    const { iframeProps, codeOnly, code: allCode } = this.props;
     const {
       id,
       formatId,
@@ -141,6 +174,8 @@ export default class Example extends Component<Props, State> {
       supportsClipboard,
       supportsJavaScript,
       copyingMode,
+      iframeWidth,
+      iframeHeight,
     } = this.state;
 
     const codePreview = (
@@ -233,7 +268,7 @@ export default class Example extends Component<Props, State> {
                     onClick={this.copyToClipboard}
                     type="button"
                   >
-                    Copy code
+                    Copy code ￼
                   </button>
                 </div>
               ) : null}
@@ -261,7 +296,14 @@ export default class Example extends Component<Props, State> {
       <div className="example">
         {!codeOnly && (
           <Fragment>
-            <div className="example__visual">{children}</div>
+            <div className="example__iframe-wrapper">
+              <iframe
+                width={iframeWidth}
+                height={iframeHeight}
+                style={{ width: '100%' }}
+                {...iframeProps}
+              />
+            </div>
             <Details className="example__details" onChange={this.clickFormat}>
               <Summary className="example__summary">
                 <h5 className="example__summary-button">
@@ -284,5 +326,5 @@ export default class Example extends Component<Props, State> {
 }
 
 type AnyObject = {
-  [key: string]: string;
+  [key: string]: string | number;
 };
