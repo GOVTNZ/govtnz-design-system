@@ -34,6 +34,8 @@ type State = {
 
 const DEFAULT_FORMAT_ID = 'html';
 
+const TOOLTIP_DURATION_MS = 5000;
+
 export default class Example extends Component<Props, State> {
   props: Props;
   state: State;
@@ -139,7 +141,7 @@ export default class Example extends Component<Props, State> {
           this.setState({
             copyingMode: false,
           });
-        }, 10000);
+        }, TOOLTIP_DURATION_MS);
       }, 75);
     }, 75);
   };
