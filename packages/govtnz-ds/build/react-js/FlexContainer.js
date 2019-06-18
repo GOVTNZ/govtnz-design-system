@@ -24,6 +24,5 @@ var FlexContainer = function FlexContainer(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
 };
 
-FlexContainer.props = ["width", "children"];
 var _default = FlexContainer;
 exports["default"] = _default;

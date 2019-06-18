@@ -25,15 +25,6 @@ var SelectBlock = function (_a) {
         React.createElement(StyledSelect, { hasError: hasError, id: selectId, name: name, multiple: multiple, onChange: onChange }, children !== undefined ? (children) : (React.createElement(React.Fragment, null,
             React.createElement("option", null, "Options"))))));
 };
-SelectBlock.props = [
-    "selectId",
-    "label",
-    "hasError",
-    "name",
-    "multiple",
-    "onChange",
-    "children"
-];
 exports.default = SelectBlock;
 var templateObject_1, templateObject_2, templateObject_3;
 //# sourceMappingURL=SelectBlock.js.map

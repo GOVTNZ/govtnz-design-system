@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock.tsx';
-import '@govtnz/ds/build/css/FieldsetBlock.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__Fieldset from '../../commons/examples/components__Fieldset';
@@ -23,9 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Fieldset</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Fieldset[0]} >
-        <FieldsetBlock {...onChangeGenerator(FieldsetBlock)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Fieldset[0]} iframeProps={{id:"iframe_componentsFieldset0", className: "example__iframe", id: "iframe_componentsFieldset0", src:"../Fieldset__example0/", title:"Example of Fieldset", height: 165 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

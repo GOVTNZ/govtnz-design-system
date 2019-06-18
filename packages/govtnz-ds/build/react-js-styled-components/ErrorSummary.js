@@ -162,6 +162,5 @@ var ErrorSummary = function ErrorSummary(_ref) {
   }, "Descriptive link to the question with an error")))));
 };
 
-ErrorSummary.props = ["errorSummaryTitle", "href", "rel", "target", "href2", "rel2", "target2"];
 var _default = ErrorSummary;
 exports["default"] = _default;

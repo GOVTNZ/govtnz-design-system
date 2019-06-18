@@ -30,7 +30,6 @@ var FlexContainer = function (_a) {
     var width = _a.width, children = _a.children;
     return (React.createElement(StyledDiv, { width: width }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Rows..."))));
 };
-FlexContainer.props = ["width", "children"];
 exports.default = FlexContainer;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 //# sourceMappingURL=FlexContainer.js.map

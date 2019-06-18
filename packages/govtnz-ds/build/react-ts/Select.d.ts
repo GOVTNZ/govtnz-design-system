@@ -6,8 +6,5 @@ declare type Props = {
     onChange: any;
     children?: React.ReactNode;
 };
-declare const Select: {
-    ({ selectId, name, multiple, onChange, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const Select: ({ selectId, name, multiple, onChange, children }: Props) => JSX.Element;
 export default Select;

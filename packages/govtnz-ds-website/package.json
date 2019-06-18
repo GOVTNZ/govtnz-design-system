@@ -35,6 +35,7 @@
     "glob-promise": "^3.4.0",
     "html-validator": "^4.0.3",
     "jest": "^24.8.0",
+    "jsx2json": "^1.0.1",
     "lodash": "^4.17.11",
     "marked": "^0.6.1",
     "mkdirp-promise": "^5.0.1",
@@ -57,7 +58,7 @@
   "scripts": {
     "build": "gatsby build && cp public/404/index.html public/error.html",
     "build__comment": "copying 404 because the host wants an error page at error.html",
-    "compile-markdown": "yarn rimraf && node ./prebuild/prebuild.js",
+    "compile-markdown": "node ./prebuild/prebuild.js",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",

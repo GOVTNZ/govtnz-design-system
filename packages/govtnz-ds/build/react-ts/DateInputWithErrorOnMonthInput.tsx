@@ -643,39 +643,5 @@ const DateInputWithErrorOnMonthInput = ({
     </fieldset>
   </div>
 );
-DateInputWithErrorOnMonthInput.props = [
-  "dobMonthErrorHint",
-  "dobMonthErrorError",
-  "dobMonthError",
-  "dobMonthErrorDay",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "type",
-  "spellCheck",
-  "autoComplete",
-  "onChange",
-  "dobMonthErrorMonth",
-  "name2",
-  "disabled2",
-  "readOnly2",
-  "autoFocus2",
-  "value2",
-  "type2",
-  "spellCheck2",
-  "autoComplete2",
-  "onChange2",
-  "dobMonthErrorYear",
-  "name3",
-  "disabled3",
-  "readOnly3",
-  "autoFocus3",
-  "value3",
-  "type3",
-  "spellCheck3",
-  "autoComplete3",
-  "onChange3"
-];
+
 export default DateInputWithErrorOnMonthInput;

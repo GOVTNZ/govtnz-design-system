@@ -77,32 +77,6 @@ var FooterStandard = function (_a) {
                             " ",
                             React.createElement("span", null, copyrightYear !== undefined ? (copyrightYear) : (React.createElement(React.Fragment, null, "2019"))))))))));
 };
-FooterStandard.props = [
-    "href",
-    "rel",
-    "target",
-    "label1",
-    "href2",
-    "rel2",
-    "target2",
-    "label2",
-    "href3",
-    "rel3",
-    "target3",
-    "label3",
-    "href4",
-    "rel4",
-    "target4",
-    "href5",
-    "rel5",
-    "target5",
-    "src",
-    "width",
-    "height",
-    "srcSet",
-    "crossOrigin",
-    "copyrightYear"
-];
 exports.default = FooterStandard;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19;
 //# sourceMappingURL=FooterStandard.js.map

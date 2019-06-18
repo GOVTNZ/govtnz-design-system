@@ -18,5 +18,5 @@ const Li = ({ children }) => (
     )}
   </StyledLi>
 );
-Li.props = ["children"];
+
 export default Li;

@@ -37,6 +37,5 @@ var SelectWithHintTextAndErrorMessage = function SelectWithHintTextAndErrorMessa
   }, "Govt.NZ frontend option 1 Govt.NZ frontend option 2 Govt.NZ frontend option 3"));
 };
 
-SelectWithHintTextAndErrorMessage.props = ["select2", "select2Hint", "select2Error", "name", "multiple", "onChange"];
 var _default = SelectWithHintTextAndErrorMessage;
 exports["default"] = _default;

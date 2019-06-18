@@ -20,5 +20,5 @@ const Radios = ({ inline, children }) => (
     )}
   </StyledDiv>
 );
-Radios.props = ["inline", "children"];
+
 export default Radios;

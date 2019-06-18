@@ -481,6 +481,5 @@ var H5 = function H5(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-H5.props = ["styleSize", "marginBottom8", "id", "children"];
 var _default = H5;
 exports["default"] = _default;

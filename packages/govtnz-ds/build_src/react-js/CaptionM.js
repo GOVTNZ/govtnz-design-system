@@ -9,5 +9,5 @@ const CaptionM = ({ children }) => (
     )}
   </span>
 );
-CaptionM.props = ["children"];
+
 export default CaptionM;

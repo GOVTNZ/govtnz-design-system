@@ -66,24 +66,11 @@ var constants = {
     }
 };
 var TextareaWithErrorMessage = function (_a) {
-    var noNiReason = _a.noNiReason, noNiReasonError = _a.noNiReasonError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var noNiReason = _a.noNiReason, noNiReasonError = _a.noNiReasonError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement("div", { className: "g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error" },
         React.createElement("label", { className: "g-textareaWithErrorMessage-label", htmlFor: noNiReason }, "Why can't you provide a National Insurance number?"),
         React.createElement("span", { className: "g-textareaWithErrorMessage-error-message", id: noNiReasonError }, "You must provide an explanation"),
-        React.createElement("textarea", { "aria-describedby": noNiReasonError, className: "g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error", id: noNiReason, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+        React.createElement("textarea", { "aria-describedby": noNiReasonError, className: "g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error", id: noNiReason, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
 };
-TextareaWithErrorMessage.props = [
-    "noNiReason",
-    "noNiReasonError",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = TextareaWithErrorMessage;
 //# sourceMappingURL=TextareaWithErrorMessage.js.map

@@ -45,6 +45,5 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
-CheckboxBlock.props = ["fakeFocus", "checkboxId", "hintId", "name", "disabled", "readOnly", "autoFocus", "value", "checked", "onChange", "label", "hint"];
 var _default = CheckboxBlock;
 exports["default"] = _default;

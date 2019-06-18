@@ -77,6 +77,7 @@ var TextareaWithLabelAsPageHeading = function TextareaWithLabelAsPageHeading(_re
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
     className: "g-textareaWithLabelAsPageHeading-form-group"
@@ -96,10 +97,10 @@ var TextareaWithLabelAsPageHeading = function TextareaWithLabelAsPageHeading(_re
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    value: value,
     onChange: onChange
   }));
 };
 
-TextareaWithLabelAsPageHeading.props = ["textareaWithPageHeading", "name", "disabled", "readOnly", "rows", "cols", "autoFocus", "spellCheck", "autoComplete", "onChange"];
 var _default = TextareaWithLabelAsPageHeading;
 exports["default"] = _default;

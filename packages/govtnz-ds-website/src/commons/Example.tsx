@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import { Details, Summary } from 'react-accessible-details';
 import copyToClipboard from './copy-text-to-clipboard';
-import './styles/clipboard.css';
+import './styles/clipboard.scss';
+import './styles/components-button.scss';
 import iconDown from './svgs/icon-down.svg';
 import A from '@govtnz/ds/build/react-ts/A';
 import {
@@ -14,7 +15,7 @@ import {
 import Icon from '../components/Icon';
 
 type Props = {
-  children: React.ReactNode;
+  iframeProps: AnyObject;
   code: AnyObject;
   codeOnly?: boolean | undefined;
 };
@@ -26,10 +27,14 @@ type State = {
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
   supportsClipboard: boolean;
+  iframeHeight: number;
+  iframeWidth: number;
   copyingMode: false | 'start' | 'end';
 };
 
 const DEFAULT_FORMAT_ID = 'html';
+
+const TOOLTIP_DURATION_MS = 5000;
 
 export default class Example extends Component<Props, State> {
   props: Props;
@@ -53,6 +58,9 @@ export default class Example extends Component<Props, State> {
       copyingMode: false,
       supportsJavaScript: false,
       supportsClipboard: false,
+      iframeWidth: 300,
+      iframeHeight:
+        (props.iframeProps && (props.iframeProps.height as number)) || 100,
     };
   }
 
@@ -60,7 +68,36 @@ export default class Example extends Component<Props, State> {
     this.resetFormatChoice();
     this.setState({
       supportsJavaScript: true,
+      supportsClipboard: true,
     });
+
+    window.addEventListener(
+      'message',
+      e => {
+        if (e.origin !== window.location.origin) {
+          console.info('Ignoring postMessage from', e.origin, e);
+          return;
+        }
+        const data = e.data;
+        const resizeById = data && data.resizeById;
+        if (
+          this.props.iframeProps &&
+          this.props.iframeProps.id &&
+          this.props.iframeProps.id === resizeById
+        ) {
+          console.log(
+            `Updating ${this.props.iframeProps.id} to `,
+            data.width,
+            data.height
+          );
+          this.setState({
+            // iframeWidth: data.width > 300 ? data.width : 300,
+            iframeHeight: data.height > 50 ? data.height : 50,
+          });
+        }
+      },
+      false
+    );
   };
 
   resetFormatChoice = () => {
@@ -85,7 +122,7 @@ export default class Example extends Component<Props, State> {
     const { formatId } = this.state;
     const rawCode = code[formatId];
     if (!rawCode) return;
-    copyToClipboard(rawCode);
+    copyToClipboard(rawCode.toString());
     this.setState({
       copyingMode: false,
     });
@@ -104,7 +141,7 @@ export default class Example extends Component<Props, State> {
           this.setState({
             copyingMode: false,
           });
-        }, 10000);
+        }, TOOLTIP_DURATION_MS);
       }, 75);
     }, 75);
   };
@@ -133,7 +170,7 @@ export default class Example extends Component<Props, State> {
   };
 
   render() {
-    const { children, codeOnly, code: allCode } = this.props;
+    const { iframeProps, codeOnly, code: allCode } = this.props;
     const {
       id,
       formatId,
@@ -141,6 +178,8 @@ export default class Example extends Component<Props, State> {
       supportsClipboard,
       supportsJavaScript,
       copyingMode,
+      iframeWidth,
+      iframeHeight,
     } = this.state;
 
     const codePreview = (
@@ -148,7 +187,7 @@ export default class Example extends Component<Props, State> {
         {supportsJavaScript && (
           <React.Fragment>
             <div className="example__format">
-              <h6 style={{ margin: '0px' }}>
+              <h6 style={{ margin: '0 0 24px' }}>
                 <label className="example__label" htmlFor={id}>
                   Template format:{' '}
                 </label>
@@ -166,78 +205,78 @@ export default class Example extends Component<Props, State> {
                 </span>
               </h6>
 
-              {formatId === 'mustache' && (
-                <p className="example__note">
-                  Please note that our Mustache templates are currently beta
-                  quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.mustache</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/mustache">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#mustache">
-                    Mustache install docs
-                  </A>
-                  .
-                </p>
-              )}
-
-              {formatId === 'silverstripe-components' && (
-                <p className="example__note">
-                  Please note that our SilverStripe Components are currently
-                  alpha quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.ss</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/silverstripe-components">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#silverstripe">
-                    SilverStripe install docs
-                  </A>
-                  .
-                </p>
-              )}
-
-              {(formatId === 'vue-js' || formatId === 'vue-ts') && (
-                <p className="example__note">
-                  Please note that our Vue components are currently beta
-                  quality. We recommend using HTML until we can give you
-                  guidance on how to integrate specific technologies. If you
-                  wish to see the <code>.vue</code> template files{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/vue-js">
-                    see our GitHub repository
-                  </A>{' '}
-                  and{' '}
-                  <A href="https://github.com/GOVTNZ/govtnz-design-system#vue">
-                    Vue install docs
-                  </A>
-                  .
-                </p>
-              )}
-
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
+                  <button
+                    className="g-button g-button--secondary g-button--small"
+                    onClick={this.copyToClipboard}
+                    type="button"
+                  >
+                    Copy code
+                  </button>
                   <div
                     role="alert"
                     className={`clipboard__tooltip${
                       copyingMode ? ` clipboard__tooltip--${copyingMode}` : ''
                     }`}
                   >
-                    Copied
+                    Code copied
                   </div>
-
-                  <button
-                    className="clipboard__button"
-                    onClick={this.copyToClipboard}
-                    type="button"
-                  >
-                    Copy code
-                  </button>
                 </div>
               ) : null}
             </div>
+
+            {formatId === 'mustache' && (
+              <p className="example__note">
+                Please note that our Mustache templates are currently beta
+                quality. We recommend using HTML until we can give you guidance
+                on how to integrate specific technologies. If you wish to see
+                the <code>.mustache</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/mustache">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#mustache">
+                  Mustache install docs
+                </A>
+                .
+              </p>
+            )}
+
+            {formatId === 'silverstripe-components' && (
+              <p className="example__note">
+                Please note that our SilverStripe Components are currently alpha
+                quality. We recommend using HTML until we can give you guidance
+                on how to integrate specific technologies. If you wish to see
+                the <code>.ss</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/silverstripe-components">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#silverstripe">
+                  SilverStripe install docs
+                </A>
+                .
+              </p>
+            )}
+
+            {(formatId === 'vue-js' || formatId === 'vue-ts') && (
+              <p className="example__note">
+                Please note that our Vue components are currently beta quality.
+                We recommend using HTML until we can give you guidance on how to
+                integrate specific technologies. If you wish to see the{' '}
+                <code>.vue</code> template files{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system/tree/master/packages/govtnz-ds/build/vue-js">
+                  see our GitHub repository
+                </A>{' '}
+                and{' '}
+                <A href="https://github.com/GOVTNZ/govtnz-design-system#vue">
+                  Vue install docs
+                </A>
+                .
+              </p>
+            )}
+
             <pre className="language-code example__code">
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>
@@ -261,7 +300,14 @@ export default class Example extends Component<Props, State> {
       <div className="example">
         {!codeOnly && (
           <Fragment>
-            <div className="example__visual">{children}</div>
+            <div className="example__iframe-wrapper">
+              <iframe
+                width={iframeWidth}
+                height={iframeHeight}
+                style={{ width: '100%' }}
+                {...iframeProps}
+              />
+            </div>
             <Details className="example__details" onChange={this.clickFormat}>
               <Summary className="example__summary">
                 <h5 className="example__summary-button">
@@ -284,5 +330,5 @@ export default class Example extends Component<Props, State> {
 }
 
 type AnyObject = {
-  [key: string]: string;
+  [key: string]: string | number;
 };

@@ -75,24 +75,12 @@ var constants = {
     }
 };
 var TextareaWithLabelAsPageHeading = function (_a) {
-    var textareaWithPageHeading = _a.textareaWithPageHeading, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var textareaWithPageHeading = _a.textareaWithPageHeading, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
     return (React.createElement(StyledDiv, null,
         React.createElement(StyledH1, null,
             React.createElement(StyledLabel, { htmlFor: textareaWithPageHeading }, "Full address")),
-        React.createElement(StyledTextarea, { id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+        React.createElement(StyledTextarea, { id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
 };
-TextareaWithLabelAsPageHeading.props = [
-    "textareaWithPageHeading",
-    "name",
-    "disabled",
-    "readOnly",
-    "rows",
-    "cols",
-    "autoFocus",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = TextareaWithLabelAsPageHeading;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;
 //# sourceMappingURL=TextareaWithLabelAsPageHeading.js.map

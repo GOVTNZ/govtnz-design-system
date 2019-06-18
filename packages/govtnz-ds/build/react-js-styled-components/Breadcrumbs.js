@@ -118,6 +118,5 @@ var Breadcrumbs = function Breadcrumbs(_ref) {
   }, "Sub-section"))));
 };
 
-Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
 var _default = Breadcrumbs;
 exports["default"] = _default;

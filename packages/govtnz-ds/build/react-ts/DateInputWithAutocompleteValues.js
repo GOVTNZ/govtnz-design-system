@@ -267,39 +267,5 @@ var DateInputWithAutocompleteValues = function (_a) {
                         React.createElement("label", { className: "g-dateInputWithAutocompleteValues-label g-dateInputWithAutocompleteValues-date-input__label", htmlFor: dobWithAutocompleteAttributeYear }, "Year"),
                         React.createElement("input", { autoComplete: constants.autoComplete3[autoComplete3], className: "g-dateInputWithAutocompleteValues-input g-dateInputWithAutocompleteValues-date-input__input g-dateInputWithAutocompleteValues-input--width-2", id: dobWithAutocompleteAttributeYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, onChange: onChange3 })))))));
 };
-DateInputWithAutocompleteValues.props = [
-    "dobWithAutocompleteAttributeHint",
-    "dobWithAutocompleteAttribute",
-    "dobWithAutocompleteAttributeDay",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "type",
-    "spellCheck",
-    "autoComplete",
-    "onChange",
-    "dobWithAutocompleteAttributeMonth",
-    "name2",
-    "disabled2",
-    "readOnly2",
-    "autoFocus2",
-    "value2",
-    "type2",
-    "spellCheck2",
-    "autoComplete2",
-    "onChange2",
-    "dobWithAutocompleteAttributeYear",
-    "name3",
-    "disabled3",
-    "readOnly3",
-    "autoFocus3",
-    "value3",
-    "type3",
-    "spellCheck3",
-    "autoComplete3",
-    "onChange3"
-];
 exports.default = DateInputWithAutocompleteValues;
 //# sourceMappingURL=DateInputWithAutocompleteValues.js.map

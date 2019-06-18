@@ -30,6 +30,5 @@ var Details = function Details(_ref) {
   }, "We need to know your nationality so we can work out which elections you\u2019re entitled to vote in. If you can\u2019t provide your nationality, you\u2019ll have to send copies of identity documents through the post."));
 };
 
-Details.props = ["open", "detailsContent021Df3Ae2Ee5440B98CbFfc001B25657"];
 var _default = Details;
 exports["default"] = _default;

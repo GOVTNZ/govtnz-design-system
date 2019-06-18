@@ -40,5 +40,5 @@ const Breadcrumbs = ({ href, rel, target, href2, rel2, target2 }: Props) => (
     </ol>
   </div>
 );
-Breadcrumbs.props = ["href", "rel", "target", "href2", "rel2", "target2"];
+
 export default Breadcrumbs;

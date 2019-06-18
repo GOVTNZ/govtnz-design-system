@@ -162,13 +162,5 @@ const FileUploadWithErrorMessage = ({
     />
   </StyledDiv>
 );
-FileUploadWithErrorMessage.props = [
-  "fileUpload3",
-  "fileUpload3Hint",
-  "fileUpload3Error",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus"
-];
+
 export default FileUploadWithErrorMessage;

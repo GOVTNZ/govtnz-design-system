@@ -16,6 +16,5 @@ var Legend = function Legend(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
 };
 
-Legend.props = ["children"];
 var _default = Legend;
 exports["default"] = _default;

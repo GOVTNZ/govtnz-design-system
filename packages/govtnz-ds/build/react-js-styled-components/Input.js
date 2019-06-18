@@ -236,6 +236,5 @@ var Input = function Input(_ref) {
   });
 };
 
-Input.props = ["width", "hasError", "fakeFocus", "inputId", "describedBy", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange"];
 var _default = Input;
 exports["default"] = _default;

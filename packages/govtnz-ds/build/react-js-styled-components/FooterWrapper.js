@@ -30,6 +30,5 @@ var FooterWrapper = function FooterWrapper(_ref) {
   return _react["default"].createElement(StyledFooter, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Content..."));
 };
 
-FooterWrapper.props = ["children"];
 var _default = FooterWrapper;
 exports["default"] = _default;

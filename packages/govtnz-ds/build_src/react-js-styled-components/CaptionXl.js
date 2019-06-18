@@ -33,5 +33,5 @@ const CaptionXl = ({ children }) => (
     )}
   </StyledSpan>
 );
-CaptionXl.props = ["children"];
+
 export default CaptionXl;

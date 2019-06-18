@@ -34,5 +34,5 @@ const H1 = ({ styleSize, marginBottom8, id, children }: Props) => (
     )}
   </h1>
 );
-H1.props = ["styleSize", "marginBottom8", "id", "children"];
+
 export default H1;

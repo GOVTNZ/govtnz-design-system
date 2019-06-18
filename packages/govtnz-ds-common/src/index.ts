@@ -168,7 +168,6 @@ export const execShellNpmProject = async (
       .join(":")
   };
 
-  // Should I automatically run 'nvm ls-remote' ?
   const nvmSetupCommand = npmProjectPath =>
     `cd "${npmProjectPath}" && . "$NVM_DIR/nvm.sh" [ -s "$NVM_DIR/nvm.sh" ] && nvm install && nvm use &&`;
   // PATH=$PATH:${npmProjectPath}/node_modules/.bin

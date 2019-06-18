@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import Breadcrumbs from '@govtnz/ds/build/react-ts/Breadcrumbs.tsx';
-import '@govtnz/ds/build/css/Breadcrumbs.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__Breadcrumbs from '../../commons/examples/components__Breadcrumbs';
@@ -23,9 +21,7 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Breadcrumbs</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Breadcrumbs[0]} >
-        <Breadcrumbs {...onChangeGenerator(Breadcrumbs)} />
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Breadcrumbs[0]} iframeProps={{id:"iframe_componentsBreadcrumbs0", className: "example__iframe", id: "iframe_componentsBreadcrumbs0", src:"../Breadcrumbs__example0/", title:"Example of Breadcrumbs", height: 136 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

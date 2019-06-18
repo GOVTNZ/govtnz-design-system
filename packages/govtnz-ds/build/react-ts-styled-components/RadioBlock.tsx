@@ -177,17 +177,5 @@ const RadioBlock = ({
     </StyledLabel>
   </StyledDiv>
 );
-RadioBlock.props = [
-  "fakeFocus",
-  "radioId",
-  "hintId",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "checked",
-  "onChange",
-  "label"
-];
+
 export default RadioBlock;

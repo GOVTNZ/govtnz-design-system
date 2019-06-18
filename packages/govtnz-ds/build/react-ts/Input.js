@@ -102,21 +102,5 @@ var Input = function (_a) {
     var width = _a.width, hasError = _a.hasError, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange;
     return (React.createElement("input", { "aria-describedby": describedBy, className: "g-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (hasError ? " g-input--error" : "") + (fakeFocus ? " :focus" : ""), id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
 };
-Input.props = [
-    "width",
-    "hasError",
-    "fakeFocus",
-    "inputId",
-    "describedBy",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "type",
-    "spellCheck",
-    "autoComplete",
-    "onChange"
-];
 exports.default = Input;
 //# sourceMappingURL=Input.js.map

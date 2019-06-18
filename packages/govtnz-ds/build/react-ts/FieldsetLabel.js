@@ -12,6 +12,5 @@ var FieldsetLabel = function (_a) {
     var hintId = _a.hintId, hint = _a.hint;
     return (React.createElement("div", { className: "g-fieldsetLabel-hint", id: hintId }, hint !== undefined ? hint : React.createElement(React.Fragment, null, "Hint text")));
 };
-FieldsetLabel.props = ["hintId", "hint"];
 exports.default = FieldsetLabel;
 //# sourceMappingURL=FieldsetLabel.js.map

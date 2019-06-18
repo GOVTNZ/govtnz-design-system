@@ -90,5 +90,5 @@ const WarningText = ({  }: Props) => (
     </StyledStrong>
   </StyledDiv>
 );
-WarningText.props = [];
+
 export default WarningText;

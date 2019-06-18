@@ -8,8 +8,5 @@ declare type Props = {
     readOnly?: boolean | undefined;
     autoFocus?: boolean | undefined;
 };
-declare const FileUploadWithErrorMessage: {
-    ({ fileUpload3, fileUpload3Hint, fileUpload3Error, name, disabled, readOnly, autoFocus }: Props): JSX.Element;
-    props: string[];
-};
+declare const FileUploadWithErrorMessage: ({ fileUpload3, fileUpload3Hint, fileUpload3Error, name, disabled, readOnly, autoFocus }: Props) => JSX.Element;
 export default FileUploadWithErrorMessage;

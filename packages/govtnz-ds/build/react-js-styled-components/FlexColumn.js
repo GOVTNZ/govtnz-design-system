@@ -1261,6 +1261,5 @@ var FlexColumn = function FlexColumn(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Content..."));
 };
 
-FlexColumn.props = ["xs", "sm", "md", "lg", "xsOffset", "smOffset", "mdOffset", "lgOffset", "isReversed", "children"];
 var _default = FlexColumn;
 exports["default"] = _default;

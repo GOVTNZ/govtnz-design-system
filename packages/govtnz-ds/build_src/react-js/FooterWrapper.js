@@ -9,5 +9,5 @@ const FooterWrapper = ({ children }) => (
     )}
   </footer>
 );
-FooterWrapper.props = ["children"];
+
 export default FooterWrapper;

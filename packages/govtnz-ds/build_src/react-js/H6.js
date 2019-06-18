@@ -27,5 +27,5 @@ const H6 = ({ styleSize, marginBottom8, id, children }) => (
     )}
   </h6>
 );
-H6.props = ["styleSize", "marginBottom8", "id", "children"];
+
 export default H6;

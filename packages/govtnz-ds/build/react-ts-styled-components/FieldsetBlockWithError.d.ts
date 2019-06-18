@@ -7,8 +7,5 @@ declare type Props = {
     error?: React.ReactNode;
     children?: React.ReactNode;
 };
-declare const FieldsetBlockWithError: {
-    ({ hintId, errorId, legend, hint, error, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const FieldsetBlockWithError: ({ hintId, errorId, legend, hint, error, children }: Props) => JSX.Element;
 export default FieldsetBlockWithError;

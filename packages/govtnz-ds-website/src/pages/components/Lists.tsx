@@ -8,12 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
-import '@govtnz/ds/build/css/Ul.css';
-import Li from '@govtnz/ds/build/react-ts/Li.tsx';
-import '@govtnz/ds/build/css/Li.css';
-import Ol from '@govtnz/ds/build/react-ts/Ol.tsx';
-import '@govtnz/ds/build/css/Ol.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
 import components__Lists from '../../commons/examples/components__Lists';
@@ -28,36 +22,12 @@ import ExampleSection from '../../commons/ExampleSection';
 const PageContent = (props) => <React.Fragment><p>For detailed documentation see <Link to="/components/Ul/">Unordered List</Link> and <Link to="/components/Ol/">Ordered List</Link> with <Link to="/components/Li/">List item</Link>s inside either. Here is an introductionary paragraph that succinctly describes what this componeent is, and is easy to scan for users looking to see if this page has the things on it they are looking for.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[0]} >
-        <Ul {...onChangeGenerator(Ul)} bulleted>
-            <Li {...onChangeGenerator(Li)}>Unordered item one</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item two</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item three
-                <Ul {...onChangeGenerator(Ul)} bulleted>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                </Ul>
-            </Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item four</Li>
-        </Ul>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[0]} iframeProps={{id:"iframe_componentsLists0", className: "example__iframe", id: "iframe_componentsLists0", src:"../Lists__example0/", title:"Example of Lists", height: 324 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[1]} >
-        <Ol {...onChangeGenerator(Ol)} numbered>
-            <Li {...onChangeGenerator(Li)}>Unordered item one</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item two</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item three
-                <Ol {...onChangeGenerator(Ol)} numbered>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                </Ol>
-            </Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item four</Li>
-        </Ol>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[1]} iframeProps={{id:"iframe_componentsLists1", className: "example__iframe", id: "iframe_componentsLists1", src:"../Lists__example1/", title:"Example of Lists", height: 324 }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-this-component">When to use this component</H2>
@@ -68,19 +38,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
 <p>Explanatory text about how to start using the component goes here and it is relatively brief but introuduces how it works I dunno this is not my area of expertise.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists a second time</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[2]} >
-        <Ul {...onChangeGenerator(Ul)} bulleted>
-            <Li {...onChangeGenerator(Li)}>Unordered item one</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item two</Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item three
-                <Ol {...onChangeGenerator(Ol)}>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                    <Li {...onChangeGenerator(Li)}>Ordered item one</Li>
-                </Ol>
-            </Li>
-            <Li {...onChangeGenerator(Li)}>Unordered item four</Li>
-        </Ul>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={components__Lists[2]} iframeProps={{id:"iframe_componentsLists2", className: "example__iframe", id: "iframe_componentsLists2", src:"../Lists__example2/", title:"Example of Lists a second time", height: 324 }}></Example>
 </ExampleContainer>
 
 <h3 id="label-text-inputs">Label text inputs</h3>

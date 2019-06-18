@@ -131,7 +131,8 @@ export default Vue.extend({
         );
       },
       required: true
-    }
+    },
+    value: { type: String, required: false }
   },
   computed: {
     computed__autocomplete() {
@@ -141,6 +142,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textareaWithDefaultValue-form-group"},[_c(\'label\',{staticClass:"g-textareaWithDefaultValue-label",attrs:{"for":fullAddress}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithDefaultValue-textarea",attrs:{"id":fullAddress,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete}},[_v("221B Baker Street\\nLondon\\nNW1 6XE\\n\\n\\n")])])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textareaWithDefaultValue-form-group"},[_c(\'label\',{staticClass:"g-textareaWithDefaultValue-label",attrs:{"for":fullAddress}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithDefaultValue-textarea",attrs:{"id":fullAddress,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}},[_v("221B Baker Street\\nLondon\\nNW1 6XE\\n\\n\\n")])])}'
   )
 });

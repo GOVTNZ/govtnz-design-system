@@ -24,14 +24,5 @@ var ErrorSummary = function (_a) {
                 React.createElement("li", null,
                     React.createElement("a", { href: href2, rel: rel2, target: constants.target2[target2] }, "Descriptive link to the question with an error"))))));
 };
-ErrorSummary.props = [
-    "errorSummaryTitle",
-    "href",
-    "rel",
-    "target",
-    "href2",
-    "rel2",
-    "target2"
-];
 exports.default = ErrorSummary;
 //# sourceMappingURL=ErrorSummary.js.map

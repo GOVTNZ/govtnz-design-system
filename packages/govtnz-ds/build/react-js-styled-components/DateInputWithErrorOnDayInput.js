@@ -557,6 +557,5 @@ var DateInputWithErrorOnDayInput = function DateInputWithErrorOnDayInput(_ref) {
   }))))));
 };
 
-DateInputWithErrorOnDayInput.props = ["dobDayErrorHint", "dobDayErrorError", "dobDayError", "dobDayErrorDay", "name", "disabled", "readOnly", "autoFocus", "value", "type", "spellCheck", "autoComplete", "onChange", "dobDayErrorMonth", "name2", "disabled2", "readOnly2", "autoFocus2", "value2", "type2", "spellCheck2", "autoComplete2", "onChange2", "dobDayErrorYear", "name3", "disabled3", "readOnly3", "autoFocus3", "value3", "type3", "spellCheck3", "autoComplete3", "onChange3"];
 var _default = DateInputWithErrorOnDayInput;
 exports["default"] = _default;

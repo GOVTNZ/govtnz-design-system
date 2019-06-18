@@ -11,7 +11,7 @@ const copyTextToClipboard = (input: string) => {
   element.setAttribute('readonly', '');
 
   (element.style as any).contain = 'strict';
-  element.style.position = 'absolute';
+  element.style.position = 'fixed'; // Prevent IE11 from scrolling to page bottom on click
   element.style.left = '-9999px';
   element.style.fontSize = '12pt'; // Prevent zooming on iOS
 

@@ -15,6 +15,5 @@ var SkipLink = function (_a) {
     var href = _a.href, rel = _a.rel, target = _a.target;
     return (React.createElement("a", { className: "g-skip-link", href: href, rel: rel, target: constants.target[target] }, "Skip to main content"));
 };
-SkipLink.props = ["href", "rel", "target"];
 exports.default = SkipLink;
 //# sourceMappingURL=SkipLink.js.map

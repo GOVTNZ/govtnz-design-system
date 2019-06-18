@@ -15,6 +15,7 @@
       v-bind:autofocus="autoFocus"
       v-bind:spellcheck="spellCheck"
       v-bind:autocomplete="computed__autocomplete"
+      v-bind:value="value"
     >
 221B Baker Street
 London
@@ -158,7 +159,8 @@ export default Vue.extend({
         );
       },
       required: true
-    }
+    },
+    value: { type: String, required: false }
   },
   computed: {
     computed__autocomplete() {

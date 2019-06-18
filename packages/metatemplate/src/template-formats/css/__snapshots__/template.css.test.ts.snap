@@ -223,7 +223,7 @@ Array [
   Object {
     "files": Object {
       "css/a.css": ".g-link {
-  font-family: Arial, sans-serif;
+  font-family: Thing;
   font-family: var(--theme-font-family, Thing);
 }
 ",
@@ -231,6 +231,20 @@ Array [
     "formatId": "css",
   },
 ]
+`;
+
+exports[`CSS css: CalculatedProps 1`] = `
+Object {
+  "disposeAll": [Function],
+  "metaTemplates": Array [
+    Object {
+      "files": Object {
+        "css/textbox.css": "",
+      },
+      "formatId": "css",
+    },
+  ],
+}
 `;
 
 exports[`CSS css: jsxToUsageCode with boolean false 1`] = `

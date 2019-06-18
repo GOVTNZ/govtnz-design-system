@@ -14,18 +14,5 @@ var RadioBlock = function (_a) {
         React.createElement("input", { "aria-describedby": hintId, className: "g-radios__input" + (fakeFocus ? " :focus" : ""), id: radioId, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }),
         React.createElement("label", { className: "g-radios-label g-radios__label", htmlFor: radioId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Label text")))));
 };
-RadioBlock.props = [
-    "fakeFocus",
-    "radioId",
-    "hintId",
-    "name",
-    "disabled",
-    "readOnly",
-    "autoFocus",
-    "value",
-    "checked",
-    "onChange",
-    "label"
-];
 exports.default = RadioBlock;
 //# sourceMappingURL=RadioBlock.js.map

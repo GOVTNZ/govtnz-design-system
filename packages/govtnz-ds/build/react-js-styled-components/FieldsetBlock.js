@@ -73,6 +73,5 @@ var FieldsetBlock = function FieldsetBlock(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", _react["default"].createElement("div", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };
 
-FieldsetBlock.props = ["hintId", "legend", "hint", "children"];
 var _default = FieldsetBlock;
 exports["default"] = _default;

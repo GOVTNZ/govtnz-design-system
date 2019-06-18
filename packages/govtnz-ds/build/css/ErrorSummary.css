@@ -103,7 +103,7 @@
 }
 
 .g-error-summary:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
@@ -204,7 +204,7 @@
 }
 
 .g-error-summary__list a:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }

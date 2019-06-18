@@ -13,8 +13,5 @@ declare type Props = {
     label?: React.ReactNode;
     hint?: React.ReactNode;
 };
-declare const RadioBlockWithHint: {
-    ({ fakeFocus, radioId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange, label, hint }: Props): JSX.Element;
-    props: string[];
-};
+declare const RadioBlockWithHint: ({ fakeFocus, radioId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange, label, hint }: Props) => JSX.Element;
 export default RadioBlockWithHint;

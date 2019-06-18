@@ -173,7 +173,7 @@
 .g-radios__input.\:focus + .g-radios__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 4px #ffbf47;
+  box-shadow: 0 0 0 4px #b53cde;
   box-shadow: 0 0 0 4px var(--g-theme-color-brand-1, #b53cde);
 }
 

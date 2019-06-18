@@ -1,7 +1,4 @@
 /// <reference types="react" />
 declare type Props = {};
-declare const Table: {
-    ({}: Props): JSX.Element;
-    props: any[];
-};
+declare const Table: ({}: Props) => JSX.Element;
 export default Table;

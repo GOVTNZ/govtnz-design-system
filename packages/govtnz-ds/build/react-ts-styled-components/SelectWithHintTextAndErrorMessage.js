@@ -28,14 +28,6 @@ var SelectWithHintTextAndErrorMessage = function (_a) {
                 ? "" + (select2Hint ? select2Hint : "") + (select2Error ? " " + select2Error : "")
                 : undefined, id: select2, name: name, multiple: multiple, onChange: onChange }, "Govt.NZ frontend option 1 Govt.NZ frontend option 2 Govt.NZ frontend option 3")));
 };
-SelectWithHintTextAndErrorMessage.props = [
-    "select2",
-    "select2Hint",
-    "select2Error",
-    "name",
-    "multiple",
-    "onChange"
-];
 exports.default = SelectWithHintTextAndErrorMessage;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;
 //# sourceMappingURL=SelectWithHintTextAndErrorMessage.js.map

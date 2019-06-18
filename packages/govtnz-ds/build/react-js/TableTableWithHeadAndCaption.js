@@ -32,6 +32,5 @@ var TableTableWithHeadAndCaption = function TableTableWithHeadAndCaption(_ref) {
   }, "March $165 $125")));
 };
 
-TableTableWithHeadAndCaption.props = [];
 var _default = TableTableWithHeadAndCaption;
 exports["default"] = _default;

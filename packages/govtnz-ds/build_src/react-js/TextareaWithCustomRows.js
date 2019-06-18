@@ -68,6 +68,7 @@ const TextareaWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  value,
   onChange
 }) => (
   <div className="g-textareaWithCustomRows-form-group">
@@ -85,20 +86,10 @@ const TextareaWithCustomRows = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      value={value}
       onChange={onChange}
     />
   </div>
 );
-TextareaWithCustomRows.props = [
-  "fullAddress",
-  "name",
-  "disabled",
-  "readOnly",
-  "rows",
-  "cols",
-  "autoFocus",
-  "spellCheck",
-  "autoComplete",
-  "onChange"
-];
+
 export default TextareaWithCustomRows;

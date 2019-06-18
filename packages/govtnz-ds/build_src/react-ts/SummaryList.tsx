@@ -133,21 +133,5 @@ const SummaryList = ({
     </div>
   </dl>
 );
-SummaryList.props = [
-  "href",
-  "rel",
-  "target",
-  "href2",
-  "rel2",
-  "target2",
-  "href3",
-  "rel3",
-  "target3",
-  "href4",
-  "rel4",
-  "target4",
-  "href5",
-  "rel5",
-  "target5"
-];
+
 export default SummaryList;

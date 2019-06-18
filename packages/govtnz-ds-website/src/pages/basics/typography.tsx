@@ -12,30 +12,10 @@ import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '@govtnz/ds/build/css/P.css';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '@govtnz/ds/build/css/H2.css';
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
-import H3 from '@govtnz/ds/build/react-ts/H3.tsx';
-import '@govtnz/ds/build/css/H3.css';
-import H4 from '@govtnz/ds/build/react-ts/H4.tsx';
-import '@govtnz/ds/build/css/H4.css';
-import H5 from '@govtnz/ds/build/react-ts/H5.tsx';
-import '@govtnz/ds/build/css/H5.css';
-import H6 from '@govtnz/ds/build/react-ts/H6.tsx';
-import '@govtnz/ds/build/css/H6.css';
-import CaptionXl from '@govtnz/ds/build/react-ts/CaptionXl.tsx';
-import '@govtnz/ds/build/css/CaptionXl.css';
-import CaptionL from '@govtnz/ds/build/react-ts/CaptionL.tsx';
-import '@govtnz/ds/build/css/CaptionL.css';
-import CaptionM from '@govtnz/ds/build/react-ts/CaptionM.tsx';
-import '@govtnz/ds/build/css/CaptionM.css';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
 import '@govtnz/ds/build/css/Ul.css';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
 import '@govtnz/ds/build/css/Li.css';
-import A from '@govtnz/ds/build/react-ts/A.tsx';
-import '@govtnz/ds/build/css/A.css';
-import Ol from '@govtnz/ds/build/react-ts/Ol.tsx';
-import '@govtnz/ds/build/css/Ol.css';
 import basics__typography from '../../commons/examples/basics__typography';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import BasicsPage from '../../components/basicsPage';
@@ -51,50 +31,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>We are investigating how font choice will be incorporated into the design system, in order to meet New Zealand language requirements.</p>
 <h2 id="headings">Headings</h2>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[0]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H1 {...onChangeGenerator(H1)} styleSize="xlarge">g-heading-xl</H1>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H2 {...onChangeGenerator(H2)} styleSize="large">g-heading-l</H2>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="medium">g-heading-m</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H4 {...onChangeGenerator(H4)} styleSize="small">g-heading-s</H4>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H5 {...onChangeGenerator(H5)} styleSize="xsmall">g-heading-xs</H5>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H6 {...onChangeGenerator(H6)} styleSize="xxsmall">g-heading-xxs</H6>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[0]} iframeProps={{id:"iframe_basicstypography0", className: "example__iframe", id: "iframe_basicstypography0", src:"../typography__example0/", title:"Example 0", height: 522 }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Same heading level varying by size only</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[1]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="xlarge">H3 g-heading-xl</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="large">H3 g-heading-l</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="medium">H3 g-heading-m</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="small">H3 g-heading-s</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="xsmall">H3 g-heading-xs</H3>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <H3 {...onChangeGenerator(H3)} styleSize="xxsmall">H3 g-heading-xxs</H3>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[1]} iframeProps={{id:"iframe_basicstypography1", className: "example__iframe", id: "iframe_basicstypography1", src:"../typography__example1/", title:"Same heading level varying by size only (typography example)", height: 522 }}></Example>
 </ExampleContainer>
 
 <p>Use headings consistently to create a clear hierarchy throughout your content, and to allow people using assistive technology to quickly scan and move through the page.</p>
@@ -102,31 +44,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Write all headings in sentence case, with the exception of proper nouns, which require initial capitals.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Headings with captions</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[2]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <CaptionXl {...onChangeGenerator(CaptionXl)}>caption-xl</CaptionXl>
-            <H1 {...onChangeGenerator(H1)} styleSize="xlarge">g-heading-xl</H1>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <CaptionL {...onChangeGenerator(CaptionL)}>caption-l</CaptionL>
-            <H2 {...onChangeGenerator(H2)} styleSize="large">g-heading-l</H2>
-        </ExampleSection>
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <CaptionM {...onChangeGenerator(CaptionM)}>caption-m</CaptionM>
-            <H3 {...onChangeGenerator(H3)} styleSize="medium">g-heading-m</H3>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[2]} iframeProps={{id:"iframe_basicstypography2", className: "example__iframe", id: "iframe_basicstypography2", src:"../typography__example2/", title:"Headings with captions (typography example)", height: 367 }}></Example>
 </ExampleContainer>
 
 <p>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Headings with captions inside the       <code>h1</code></ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[3]} >
-        <H1 {...onChangeGenerator(H1)} styleSize="xlarge">
-            <CaptionXl {...onChangeGenerator(CaptionXl)}>caption-xl</CaptionXl>
-            g-heading-xl
-        </H1>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[3]} iframeProps={{id:"iframe_basicstypography3", className: "example__iframe", id: "iframe_basicstypography3", src:"../typography__example3/", title:"Headings with captions inside the       h1 (typography example)", height: 194 }}></Example>
 </ExampleContainer>
 
 <p>If the caption should be considered part of the page heading, you can also nest the caption within the <code>h1</code>.</p>
@@ -140,12 +64,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>You can use these text sizes to indicate the relative importance of the content on the page.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Large size for lead paragraph</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[4]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <P styleSize="large">
-                Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online.</P>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[4]} iframeProps={{id:"iframe_basicstypography4", className: "example__iframe", id: "iframe_basicstypography4", src:"../typography__example4/", title:"Large size for lead paragraph (typography example)", height: 174 }}></Example>
 </ExampleContainer>
 
 <p>A lead paragraph, also called a summary or short description, is the introduction at the top of a page that summarises what a user can expect from that page.</p>
@@ -153,34 +72,20 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Only use one lead paragraph per page.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Medium size for standard body text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[5]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <P styleSize="medium">
-                The all-of-government (AOG) design system alpha is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[5]} iframeProps={{id:"iframe_basicstypography5", className: "example__iframe", id: "iframe_basicstypography5", src:"../typography__example5/", title:"Medium size for standard body text (typography example)", height: 192 }}></Example>
 </ExampleContainer>
 
 <p>The majority of your body copy should use medium size.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Small size for small body text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[6]} >
-        <ExampleSection {...onChangeGenerator(ExampleSection)}>
-            <P styleSize="small">
-            Government Information Services is creating the design system now, and you can contribute. This alpha site shows you what we have built so far, what we are working on, and how you can get involved.</P>
-        </ExampleSection>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[6]} iframeProps={{id:"iframe_basicstypography6", className: "example__iframe", id: "iframe_basicstypography6", src:"../typography__example6/", title:"Small size for small body text (typography example)", height: 148 }}></Example>
 </ExampleContainer>
 
 <p>Use it sparingly for &#39;small print&#39; content, such as notes and references.</p>
 <h2 id="links">Links</h2>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Default</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[7]} >
-        <P styleSize="medium">
-            <Link to="#">Discuss typography on 'GitHub issues'</Link>
-        </P>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[7]} iframeProps={{id:"iframe_basicstypography7", className: "example__iframe", id: "iframe_basicstypography7", src:"../typography__example7/", title:"Default (typography example)", height: 128 }}></Example>
 </ExampleContainer>
 
 <p>Links are blue and underlined by default. If your link is at the end of a sentence or paragraph, make sure that the linked text does not include the full stop.</p>
@@ -189,41 +94,14 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Use lists to break up blocks of text into chunks to make them easier to read.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
 <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Bulleted lists</ExampleHeading>
-<Example {...onChangeGenerator(Example)} code={basics__typography[8]} ><P styleSize="medium">To help keep the kitchen clean, please:</P>
-
-<Ul {...onChangeGenerator(Ul)} bulleted>
-    <Li {...onChangeGenerator(Li)}>replace tea and coffee jars on shelf</Li>
-    <Li {...onChangeGenerator(Li)}>wipe down bench</Li>
-    <Li {...onChangeGenerator(Li)}>wash dishes by: <Ul {...onChangeGenerator(Ul)} bulleted>
-            <Li {...onChangeGenerator(Li)}>loading the dishwasher, if it's empty</Li>
-            <Li {...onChangeGenerator(Li)}>rinsing and stacking, if dishwasher is going</Li>
-        </Ul>
-    </Li>
-    <Li {...onChangeGenerator(Li)}>put recycling in labelled bins</Li>
-</Ul>
-</Example>
+<Example {...onChangeGenerator(Example)} code={basics__typography[8]} iframeProps={{id:"iframe_basicstypography8", className: "example__iframe", id: "iframe_basicstypography8", src:"../typography__example8/", title:"Bulleted lists (typography example)", height: 372 }}></Example>
 </ExampleContainer>
 
 <p>Introduce bulleted lists with a partial ‘stub’ sentence ending in a colon. Start each list item with a lowercase letter, and do not use a full stop at the end. Ensure each list item makes grammatical sense when read after the stub sentence above.</p>
 <p>Use bulleted lists to highlight options and examples in content, especially when a sentence contains more than three clauses.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Numbered lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[9]} >
-         <P styleSize="medium">
-            To sign up, you need to complete four steps.</P>
-        <Ol {...onChangeGenerator(Ol)} numbered>
-            <Li {...onChangeGenerator(Li)}>Prove your identity, such as with RealMe</Li>
-            <Li {...onChangeGenerator(Li)}>Provide a passport-sized photo</Li>
-            <Li {...onChangeGenerator(Li)}>
-                Enter your address details:
-                <Ol {...onChangeGenerator(Ol)} numbered>
-                    <Li {...onChangeGenerator(Li)}>Postal address</Li>
-                    <Li {...onChangeGenerator(Li)}>Delivery address</Li>
-                </Ol>
-            </Li>
-            <Li {...onChangeGenerator(Li)}>Confirm payment methods</Li>
-        </Ol>
-    </Example>
+    <Example {...onChangeGenerator(Example)} code={basics__typography[9]} iframeProps={{id:"iframe_basicstypography9", className: "example__iframe", id: "iframe_basicstypography9", src:"../typography__example9/", title:"Numbered lists (typography example)", height: 372 }}></Example>
 </ExampleContainer>
 
 <p>Use numbered lists instead of bulleted lists when the order of the items is relevant.</p>

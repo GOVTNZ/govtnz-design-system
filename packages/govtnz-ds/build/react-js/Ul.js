@@ -17,6 +17,5 @@ var Ul = function Ul(_ref) {
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
-Ul.props = ["bulleted", "children"];
 var _default = Ul;
 exports["default"] = _default;

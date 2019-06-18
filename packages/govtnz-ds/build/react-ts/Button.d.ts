@@ -7,8 +7,5 @@ declare type Props = {
     onClick: any;
     children?: React.ReactNode;
 };
-declare const Button: {
-    ({ disabled, level, name, type, onClick, children }: Props): JSX.Element;
-    props: string[];
-};
+declare const Button: ({ disabled, level, name, type, onClick, children }: Props) => JSX.Element;
 export default Button;

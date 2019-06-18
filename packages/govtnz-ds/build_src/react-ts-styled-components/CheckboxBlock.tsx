@@ -215,18 +215,5 @@ const CheckboxBlock = ({
     )}
   </StyledDiv>
 );
-CheckboxBlock.props = [
-  "fakeFocus",
-  "checkboxId",
-  "hintId",
-  "name",
-  "disabled",
-  "readOnly",
-  "autoFocus",
-  "value",
-  "checked",
-  "onChange",
-  "label",
-  "hint"
-];
+
 export default CheckboxBlock;

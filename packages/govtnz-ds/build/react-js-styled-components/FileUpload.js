@@ -67,6 +67,5 @@ var FileUpload = function FileUpload(_ref) {
   }));
 };
 
-FileUpload.props = ["fileUpload1", "name", "disabled", "readOnly", "autoFocus"];
 var _default = FileUpload;
 exports["default"] = _default;
