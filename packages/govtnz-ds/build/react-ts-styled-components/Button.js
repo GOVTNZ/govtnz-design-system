@@ -31,7 +31,7 @@ var constants = {
 };
 var Button = function (_a) {
     var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
-    return (React.createElement(StyledButton, { disabled: disabled, level: level, "aria-disabled": disabled, type: constants.type[type], name: name, onClick: onClick }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    return (React.createElement(StyledButton, { disabled: disabled, level: level, type: constants.type[type], name: name, onClick: onClick }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
 exports.default = Button;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;

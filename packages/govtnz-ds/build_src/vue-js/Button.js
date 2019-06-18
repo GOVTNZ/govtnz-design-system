@@ -30,9 +30,6 @@ export default Vue.extend({
     }
   },
   computed: {
-    computed__ariaDisabled() {
-      return this.disabled ? "true" : "";
-    },
     computed__class() {
       return (
         "g-button" +
@@ -48,6 +45,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'button\',{class:computed__class,attrs:{"aria-disabled":computed__ariaDisabled,"disabled":computed__disabled,"type":computed__type,"name":name}},[_t("default")],2)}'
+    'with(this){return _c(\'button\',{class:computed__class,attrs:{"disabled":computed__disabled,"type":computed__type,"name":name}},[_t("default")],2)}'
   )
 });

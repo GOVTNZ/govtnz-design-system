@@ -91,7 +91,6 @@ var Button = function Button(_ref) {
   return _react["default"].createElement(StyledButton, {
     disabled: disabled,
     level: level,
-    "aria-disabled": disabled,
     type: constants.type[type],
     name: name,
     onClick: onClick

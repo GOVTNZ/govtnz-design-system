@@ -180,10 +180,13 @@ export const govukToMetaTemplateInput = async (
     case 'button__secondary':
     case 'button__warning': {
       id = 'button';
+
+      // Dev note: this button had
+      //    aria-disabled="{{ disabled!?: true }}"
+      // but as per DS-145 we removed it
       html = `<button
           class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
           type="submit"
-          aria-disabled="{{ disabled!?: true }}"
           disabled="{{ disabled!?: true }}"
         >
           <mt-variable key="children">

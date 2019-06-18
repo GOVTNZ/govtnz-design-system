@@ -29,7 +29,6 @@ var Button = function Button(_ref) {
       onClick = _ref.onClick,
       children = _ref.children;
   return _react["default"].createElement("button", {
-    "aria-disabled": disabled,
     className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
     disabled: disabled,
     type: constants.type[type],

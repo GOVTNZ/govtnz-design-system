@@ -1,6 +1,5 @@
 <template>
   <button
-    v-bind:aria-disabled="computed__ariaDisabled"
     v-bind:class="computed__class"
     v-bind:disabled="computed__disabled"
     v-bind:type="computed__type"
@@ -41,9 +40,6 @@ export default Vue.extend({
     }
   },
   computed: {
-    computed__ariaDisabled() {
-      return this.disabled ? "true" : "";
-    },
     computed__class() {
       return (
         "g-button" +

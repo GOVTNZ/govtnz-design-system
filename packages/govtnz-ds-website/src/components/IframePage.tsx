@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState, useRef } from 'react';
 import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
 import './IframePage.scss';
 
 type Props = {
@@ -46,20 +47,36 @@ const IframePage = ({
   };
 
   return (
-    <Fragment>
-      <Helmet
-        htmlAttributes={{
-          lang: 'en-nz',
-        }}
-        title={title}
-      />
-      <GoToParentPage parentUrl={parentUrl} title={title} />
-      <div className={wrapperClassName} onClick={updateIframeSizeEventually}>
-        <ReactComment text="START OF EXAMPLE" />
-        <PageContent {...pageProps} name={title} />
-        <ReactComment text="END OF EXAMPLE" />
-      </div>
-    </Fragment>
+    <StaticQuery
+      query={graphql`
+        query SiteTitleQuery2 {
+          site {
+            siteMetadata {
+              title
+            }
+          }
+        }
+      `}
+      render={data => (
+        <Fragment>
+          <Helmet
+            htmlAttributes={{
+              lang: 'en-nz',
+            }}
+            title={`${title} | ${data.site.siteMetadata.title}`}
+          />
+          <GoToParentPage parentUrl={parentUrl} title={title} />
+          <div
+            className={wrapperClassName}
+            onClick={updateIframeSizeEventually}
+          >
+            <ReactComment text="START OF EXAMPLE" />
+            <PageContent {...pageProps} name={title} />
+            <ReactComment text="END OF EXAMPLE" />
+          </div>
+        </Fragment>
+      )}
+    />
   );
 };
 

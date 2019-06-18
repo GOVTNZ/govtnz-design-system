@@ -148,7 +148,6 @@ const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
   <StyledButton
     disabled={disabled}
     level={level}
-    aria-disabled={disabled}
     type={constants.type[type] as any}
     name={name}
     onClick={onClick}

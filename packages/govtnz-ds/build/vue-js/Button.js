@@ -54,9 +54,6 @@ var _default = _vue["default"].extend({
     }
   },
   computed: {
-    computed__ariaDisabled: function computed__ariaDisabled() {
-      return this.disabled ? "true" : "";
-    },
     computed__class: function computed__class() {
       return "g-button" + (this.disabled ? " g-button--disabled" : "") + (constants[this.level] !== undefined ? " ".concat(constants[this.level]) : "");
     },
@@ -67,7 +64,7 @@ var _default = _vue["default"].extend({
       return constants[this.type] !== undefined ? constants[this.type] : "";
     }
   },
-  render: new Function('with(this){return _c(\'button\',{class:computed__class,attrs:{"aria-disabled":computed__ariaDisabled,"disabled":computed__disabled,"type":computed__type,"name":name}},[_t("default")],2)}')
+  render: new Function('with(this){return _c(\'button\',{class:computed__class,attrs:{"disabled":computed__disabled,"type":computed__type,"name":name}},[_t("default")],2)}')
 });
 
 exports["default"] = _default;

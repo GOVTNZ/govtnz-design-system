@@ -14,7 +14,7 @@ var constants = {
 };
 var Button = function (_a) {
     var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
-    return (React.createElement("button", { "aria-disabled": disabled, className: "g-button" + (disabled ? " g-button--disabled" : "") + (constants.level[level] !== undefined ? " " + constants.level[level] : ""), disabled: disabled, type: constants.type[type], name: name, onClick: onClick }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    return (React.createElement("button", { className: "g-button" + (disabled ? " g-button--disabled" : "") + (constants.level[level] !== undefined ? " " + constants.level[level] : ""), disabled: disabled, type: constants.type[type], name: name, onClick: onClick }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
 exports.default = Button;
 //# sourceMappingURL=Button.js.map
