@@ -32,12 +32,9 @@ const getLocalTemplateMetaPath = (source:string, version:string, id:string):stri
 };
 
 const getLocalTemplateMarkup = (metaPath:string, id:string):string => {
-  console.log(id);
   if (metaPath === '') {
     return '';
   }
-
-  console.log(metaPath);
 
   const metaJson = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
 
@@ -58,7 +55,7 @@ const getLocalTemplateMarkup = (metaPath:string, id:string):string => {
   }
 
   const template = applicableTemplates.find(tpl => tpl.id === id) || applicableTemplates[0];
-  console.log(template);
+
   return fs.readFileSync(metaPath.replace('meta.json', template.filename), 'utf8');
 };
 
