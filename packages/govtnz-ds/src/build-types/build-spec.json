@@ -21,12 +21,6 @@
       "breadcrumbs",
       "breadcrumbs__with-last-breadcrumb-as-current-page",
       "custom-table",
-      "date-input",
-      "date-input__with-autocomplete-values",
-      "date-input__with-error-on-day-input",
-      "date-input__with-error-on-month-input",
-      "date-input__with-error-on-year-input",
-      "date-input__with-errors",
       "details__expanded",
       "details",
       "details__with-html",
@@ -69,7 +63,10 @@
       "button__warning",
       "button__with-active-state",
       "button__with-focus-state",
-      "button__with-hover-state"
+      "button__with-hover-state",
+      "date-input",
+      "date-input__with-autocomplete-values",
+      "date-input__with-errors"
     ]
   },
   {

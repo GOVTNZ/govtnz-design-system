@@ -19,19 +19,25 @@ const PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
  {...onChangeGenerator(DateInput
 )}            id="passport-issued"
             hintId="passport-issued-hint"
+            errorId="passport-issued-error"
             dayId="passport-issued-day"
             monthId="passport-issued-month"
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
+            value="6"
+            value2="3"
+            value3="2076"
+            hasError
+            error="The date your passport was issued must be in the past"
         />
     </Example>);
 
 const template = props => {
   return (
     <IframePage
-      title={"Example 0"}
-      id={"iframe_componentsDate0"}
+      title={"Error (Date example)"}
+      id={"iframe_componentsDate3"}
       parentUrl={"../Date"}
       pageProps={props}
       PageContent={PageContent}
