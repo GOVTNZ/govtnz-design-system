@@ -104,3 +104,7 @@
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
+
+.g-fileUpload-hint > * {
+  margin-top: 0px;
+}

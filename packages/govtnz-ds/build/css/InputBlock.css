@@ -237,3 +237,7 @@
   border: 0 !important;
   white-space: nowrap !important;
 }
+
+.g-inputBlock-hint > * {
+  margin-top: 0px;
+}

@@ -80,6 +80,7 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      maxLength2 = _ref.maxLength2,
       value = _ref.value,
       onChange = _ref.onChange,
       remainingCharacters = _ref.remainingCharacters;
@@ -102,6 +103,7 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    maxLength: maxLength2,
     value: value,
     onChange: onChange
   }), _react["default"].createElement("span", {

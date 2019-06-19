@@ -24,6 +24,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flexible grid to structure website content. The grid is mobile-first, powered by Flexbox, and based on a 12-column system. The grid includes gutters, column spanning, 4 breakpoints, and column alignment.</P>
 

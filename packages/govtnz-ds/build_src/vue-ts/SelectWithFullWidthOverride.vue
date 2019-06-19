@@ -146,4 +146,7 @@ export default Vue.extend({
 .g-selectWithFullWidthOverride-select::-ms-expand {
   display: none;
 }
+.g-selectWithFullWidthOverride-hint > * {
+  margin-top: 0px;
+}
 </style>

@@ -51,6 +51,7 @@ const StyledSelect = styled.select`
   ::-ms-expand {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const Select = ({ selectId, name, multiple, onChange, children }: Props) => (

@@ -18,6 +18,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>For detailed documentation see <Link to="/components/Ul/">Unordered List</Link> and <Link to="/components/Ol/">Ordered List</Link> with <Link to="/components/Li/">List item</Link>s inside either. Here is an introductionary paragraph that succinctly describes what this componeent is, and is easy to scan for users looking to see if this page has the things on it they are looking for.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>

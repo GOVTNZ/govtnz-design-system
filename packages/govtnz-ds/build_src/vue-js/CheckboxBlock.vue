@@ -217,4 +217,7 @@ export default Vue.extend({
 .g-checkboxes__input.\:disabled + .g-checkboxes__label {
   opacity: 0.5;
 }
+.g-checkboxBlock-hint > * {
+  margin-top: 0px;
+}
 </style>

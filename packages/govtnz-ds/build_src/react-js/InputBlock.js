@@ -107,6 +107,7 @@ const InputBlock = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }) => (
@@ -160,6 +161,7 @@ const InputBlock = ({
       autoFocus={autoFocus}
       value={value}
       spellCheck={spellCheck}
+      maxLength={maxLength}
       autoComplete={constants.autoComplete[autoComplete]}
       onChange={onChange}
     />

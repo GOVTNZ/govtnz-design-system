@@ -32,6 +32,7 @@ const StyledStrong = styled.strong`
     line-height: 1.25;
   }
   background-color: #6f777b;
+  margin-top: 0px;
 `;
 
 const TagInactive = ({  }: Props) => <StyledStrong>alpha</StyledStrong>;

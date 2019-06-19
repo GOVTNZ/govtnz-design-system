@@ -23,6 +23,7 @@ const StyledSpan = styled.span`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const ErrorMessage = ({}) => (

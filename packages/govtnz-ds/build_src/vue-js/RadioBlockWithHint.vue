@@ -222,4 +222,7 @@ export default Vue.extend({
   margin-right: 0;
   float: none;
 }
+.g-radios-hint > * {
+  margin-top: 0px;
+}
 </style>

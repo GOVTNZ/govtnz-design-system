@@ -31,6 +31,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledH2 = styled.h2`
@@ -55,6 +56,7 @@ const StyledH2 = styled.h2`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledUl = styled.ul`
@@ -75,6 +77,7 @@ const StyledUl = styled.ul`
       clear: both;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -95,6 +98,7 @@ const StyledLi = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -204,6 +208,7 @@ const StyledA = styled.a`
       background-color: transparent;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -224,6 +229,7 @@ const StyledLi2 = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -320,6 +326,7 @@ const StyledA2 = styled.a`
     text-align: center;
     text-decoration: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledSection = styled.section`
@@ -339,6 +346,7 @@ const StyledSection = styled.section`
   @media (min-width: 40.0625em) and (min-width: 40.0625em) {
     margin-bottom: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledH22 = styled.h2`
@@ -377,6 +385,7 @@ const StyledH22 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledP = styled.p`
@@ -388,6 +397,7 @@ const StyledP = styled.p`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledA3 = styled.a`
@@ -456,6 +466,7 @@ const StyledA3 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledA4 = styled.a`
@@ -499,6 +510,7 @@ const StyledA4 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSection2 = styled.section`
@@ -521,6 +533,7 @@ const StyledSection2 = styled.section`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledH23 = styled.h2`
@@ -559,6 +572,7 @@ const StyledH23 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const constants = {

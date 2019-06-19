@@ -68,6 +68,7 @@ const TextareaWithAutocompleteAttribute = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -89,6 +90,7 @@ const TextareaWithAutocompleteAttribute = ({
       cols={cols}
       autoFocus={autoFocus}
       spellCheck={spellCheck}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

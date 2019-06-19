@@ -34,6 +34,7 @@ const StyledDiv = styled.div`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledOl = styled.ol`
@@ -45,6 +46,7 @@ const StyledOl = styled.ol`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -84,6 +86,7 @@ const StyledLi = styled.li`
     content: none;
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -154,6 +157,7 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -193,6 +197,7 @@ const StyledLi2 = styled.li`
     content: none;
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -263,6 +268,7 @@ const StyledA2 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const constants = {

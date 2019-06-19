@@ -77,11 +77,11 @@ var constants = {
     }
 };
 var CharacterCountWithCustomRows = function (_a) {
-    var maxLength = _a.maxLength, id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
+    var maxLength = _a.maxLength, id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength2 = _a.maxLength2, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
     return (React.createElement("div", { className: "g-characterCountWithCustomRows-character-count", "data-maxlength": maxLength ? maxLength : "" },
         React.createElement("div", { className: "g-characterCountWithCustomRows-form-group" },
             React.createElement("label", { className: "g-characterCountWithCustomRows-label", htmlFor: id }, "Full address"),
-            React.createElement("textarea", { className: "g-characterCountWithCustomRows-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange }),
+            React.createElement("textarea", { className: "g-characterCountWithCustomRows-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength2, value: value, onChange: onChange }),
             React.createElement("span", { "aria-live": "polite", className: "g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message" },
                 "You have",
                 " ",

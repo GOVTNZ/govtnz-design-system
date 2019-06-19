@@ -141,4 +141,7 @@ export default Vue.extend({
   display: table-caption;
   text-align: left;
 }
+.g-tableTableWithHeadAndCaption-hint > * {
+  margin-top: 0px;
+}
 </style>

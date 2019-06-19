@@ -292,3 +292,7 @@
 .g-dateInputWithErrorOnMonthInput-date-input__input {
   margin-bottom: 0;
 }
+
+.g-dateInputWithErrorOnMonthInput-hint > * {
+  margin-top: 0px;
+}

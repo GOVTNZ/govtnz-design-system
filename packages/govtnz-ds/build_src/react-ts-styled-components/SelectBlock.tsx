@@ -11,6 +11,10 @@ type Props = {
   children?: React.ReactNode;
 };
 
+const StyledDiv = styled.div`
+  margin-top: 0px;
+`;
+
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,6 +39,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSelect = styled.select<Pick<Props, "hasError">>`
@@ -84,6 +89,7 @@ const StyledSelect = styled.select<Pick<Props, "hasError">>`
   ::-ms-expand {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const SelectBlock = ({
@@ -95,7 +101,7 @@ const SelectBlock = ({
   onChange,
   children
 }: Props) => (
-  <div>
+  <StyledDiv>
     <StyledLabel htmlFor={selectId}>
       {label !== undefined ? (
         label
@@ -118,7 +124,7 @@ const SelectBlock = ({
         </React.Fragment>
       )}
     </StyledSelect>
-  </div>
+  </StyledDiv>
 );
 
 export default SelectBlock;

@@ -51,7 +51,7 @@
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: blug;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: $g-theme-heading-font-weight;
   font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 2rem;
@@ -372,4 +372,8 @@
 
 .g-heading-mb-8 {
   margin-bottom: 8px;
+}
+
+.g-hint > * {
+  margin-top: 0px;
 }

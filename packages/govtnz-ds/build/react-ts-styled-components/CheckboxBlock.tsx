@@ -44,6 +44,7 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -59,6 +60,7 @@ const StyledInput = styled.input`
   :disabled {
     cursor: default;
   }
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
@@ -136,6 +138,7 @@ const StyledLabel = styled.label`
   :disabled + .g-checkboxes__label {
     opacity: 0.5;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -163,6 +166,7 @@ const StyledDiv2 = styled.div`
   display: block;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 0px;
 `;
 
 const CheckboxBlock = ({

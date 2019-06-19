@@ -556,4 +556,7 @@ export default Vue.extend({
     display: none;
   }
 }
+.g-tabsTabsWithAnchorInPanel-hint > * {
+  margin-top: 0px;
+}
 </style>

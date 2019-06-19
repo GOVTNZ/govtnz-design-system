@@ -340,6 +340,7 @@ const StyledH6 = styled.h6<Pick<Props, "styleSize" | "marginBottom8">>`
     styled.css`
       margin-bottom: 8px;
     `}
+  margin-top: 0px;
 `;
 
 const H6 = ({ styleSize, marginBottom8, id, children }: Props) => (

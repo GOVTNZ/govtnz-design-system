@@ -77,6 +77,7 @@ var TextareaWithDefaultValue = function TextareaWithDefaultValue(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      maxLength = _ref.maxLength,
       value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
@@ -95,6 +96,7 @@ var TextareaWithDefaultValue = function TextareaWithDefaultValue(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
+    maxLength: maxLength,
     value: value,
     onChange: onChange
   }, "221B Baker Street London NW1 6XE"));

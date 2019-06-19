@@ -252,6 +252,7 @@ const DateInputWithErrors = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange,
   dobErrorsMonth,
@@ -262,6 +263,7 @@ const DateInputWithErrors = ({
   value2,
   type2,
   spellCheck2,
+  maxLength2,
   autoComplete2,
   onChange2,
   dobErrorsYear,
@@ -272,6 +274,7 @@ const DateInputWithErrors = ({
   value3,
   type3,
   spellCheck3,
+  maxLength3,
   autoComplete3,
   onChange3
 }) => (
@@ -316,6 +319,7 @@ const DateInputWithErrors = ({
               autoFocus={autoFocus}
               value={value}
               spellCheck={spellCheck}
+              maxLength={maxLength}
               autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
@@ -340,6 +344,7 @@ const DateInputWithErrors = ({
               autoFocus={autoFocus2}
               value={value2}
               spellCheck={spellCheck2}
+              maxLength={maxLength2}
               autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
@@ -364,6 +369,7 @@ const DateInputWithErrors = ({
               autoFocus={autoFocus3}
               value={value3}
               spellCheck={spellCheck3}
+              maxLength={maxLength3}
               autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />

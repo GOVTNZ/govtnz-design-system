@@ -14,6 +14,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
@@ -40,6 +41,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -64,6 +66,7 @@ const StyledSpan = styled.span`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
 `;
 
 const StyledSpan2 = styled.span`
@@ -88,6 +91,7 @@ const StyledSpan2 = styled.span`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -117,6 +121,7 @@ const StyledInput = styled.input`
     outline-offset: 0;
   }
   border: 4px solid #b10e1e;
+  margin-top: 0px;
 `;
 
 const FileUploadWithErrorMessage = ({

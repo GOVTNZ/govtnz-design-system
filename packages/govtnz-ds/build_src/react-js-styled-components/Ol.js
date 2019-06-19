@@ -37,6 +37,7 @@ const StyledOl = styled.ol`
       padding-left: 20px;
       list-style-type: decimal;
     `}
+  margin-top: 0px;
 `;
 
 const Ol = ({ numbered, children }) => (

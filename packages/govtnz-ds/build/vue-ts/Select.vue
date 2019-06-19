@@ -70,4 +70,7 @@ export default Vue.extend({
 .g-select::-ms-expand {
   display: none;
 }
+.g-select-hint > * {
+  margin-top: 0px;
+}
 </style>

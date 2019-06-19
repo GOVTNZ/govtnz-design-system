@@ -68,6 +68,7 @@ const TextareaWithOptionalFormGroupClasses = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -89,6 +90,7 @@ const TextareaWithOptionalFormGroupClasses = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject18() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 9ex;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject18 = function _templateObject18() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject18() {
 }
 
 function _templateObject17() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"]);
 
   _templateObject17 = function _templateObject17() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject17() {
 }
 
 function _templateObject16() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"]);
 
   _templateObject16 = function _templateObject16() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject16() {
 }
 
 function _templateObject15() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject15 = function _templateObject15() {
     return data;
@@ -54,7 +54,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  border: 1px solid #b10e1e;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  border: 1px solid #b10e1e;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject14 = function _templateObject14() {
     return data;
@@ -64,7 +64,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -74,7 +74,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -84,7 +84,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -94,7 +94,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -104,7 +104,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -114,7 +114,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -124,7 +124,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -134,7 +134,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-size: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-size: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -144,7 +144,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -154,7 +154,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n  margin-top: 0px;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -164,7 +164,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -174,7 +174,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -184,7 +184,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding-left: 15px;\n  border-left: 5px solid #b10e1e;\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding-left: 15px;\n  border-left: 5px solid #b10e1e;\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -481,6 +481,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
       value = _ref.value,
       type = _ref.type,
       spellCheck = _ref.spellCheck,
+      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       dobMonthErrorMonth = _ref.dobMonthErrorMonth,
@@ -491,6 +492,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
       value2 = _ref.value2,
       type2 = _ref.type2,
       spellCheck2 = _ref.spellCheck2,
+      maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
       dobMonthErrorYear = _ref.dobMonthErrorYear,
@@ -501,6 +503,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
       value3 = _ref.value3,
       type3 = _ref.type3,
       spellCheck3 = _ref.spellCheck3,
+      maxLength3 = _ref.maxLength3,
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledFieldset, {
@@ -524,6 +527,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
     autoFocus: autoFocus,
     value: value,
     spellCheck: spellCheck,
+    maxLength: maxLength,
     autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement(StyledDiv5, null, _react["default"].createElement(StyledDiv6, null, _react["default"].createElement(StyledLabel2, {
@@ -538,6 +542,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
     autoFocus: autoFocus2,
     value: value2,
     spellCheck: spellCheck2,
+    maxLength: maxLength2,
     autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement(StyledDiv7, null, _react["default"].createElement(StyledDiv8, null, _react["default"].createElement(StyledLabel3, {
@@ -552,6 +557,7 @@ var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput(_re
     autoFocus: autoFocus3,
     value: value3,
     spellCheck: spellCheck3,
+    maxLength: maxLength3,
     autoComplete: constants.autoComplete3[autoComplete3],
     onChange: onChange3
   }))))));

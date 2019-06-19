@@ -32,18 +32,43 @@ const StyledTable = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr2 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr3 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr4 = styled.tr`
+  margin-top: 0px;
 `;
 
 const TableTableWithHead = ({  }: Props) => (
   <StyledTable>
-    <thead>
-      <tr>Month you apply Rate for bicycles Rate for vehicles</tr>
-    </thead>
-    <tbody>
-      <tr>January $85 $95</tr>
-      <tr>February $75 $55</tr>
-      <tr>March $165 $125</tr>
-    </tbody>
+    <StyledThead>
+      <StyledTr>Month you apply Rate for bicycles Rate for vehicles</StyledTr>
+    </StyledThead>
+    <StyledTbody>
+      <StyledTr2>January $85 $95</StyledTr2>
+      <StyledTr3>February $75 $55</StyledTr3>
+      <StyledTr4>March $165 $125</StyledTr4>
+    </StyledTbody>
   </StyledTable>
 );
 

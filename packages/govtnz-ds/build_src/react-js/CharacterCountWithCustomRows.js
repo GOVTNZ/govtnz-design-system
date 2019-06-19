@@ -69,6 +69,7 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength2,
   value,
   onChange,
   remainingCharacters
@@ -92,6 +93,7 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
+        maxLength={maxLength2}
         value={value}
         onChange={onChange}
       />

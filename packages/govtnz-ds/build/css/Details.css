@@ -112,3 +112,7 @@
   border-left: 5px solid #bfc1c3;
   border-left: 5px solid var(--g-theme-color-grey, #bfc1c3);
 }
+
+.g-details-hint > * {
+  margin-top: 0px;
+}

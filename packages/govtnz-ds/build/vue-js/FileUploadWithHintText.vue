@@ -155,4 +155,7 @@ export default Vue.extend({
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
+.g-fileUploadWithHintText-hint > * {
+  margin-top: 0px;
+}
 </style>

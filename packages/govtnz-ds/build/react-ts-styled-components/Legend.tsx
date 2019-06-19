@@ -34,6 +34,7 @@ const StyledLegend = styled.legend`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const Legend = ({ children }: Props) => (

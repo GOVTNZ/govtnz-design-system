@@ -508,4 +508,7 @@ export default Vue.extend({
     line-height: 1.2 !important;
   }
 }
+.g-customTable-hint > * {
+  margin-top: 0px;
+}
 </style>

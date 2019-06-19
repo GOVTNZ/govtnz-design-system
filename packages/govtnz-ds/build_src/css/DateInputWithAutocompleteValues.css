@@ -242,3 +242,7 @@
 .g-dateInputWithAutocompleteValues-date-input__input {
   margin-bottom: 0;
 }
+
+.g-dateInputWithAutocompleteValues-hint > * {
+  margin-top: 0px;
+}

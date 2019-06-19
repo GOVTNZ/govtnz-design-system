@@ -13,7 +13,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var styled = __importStar(require("styled-components"));
-var StyledLi = styled.li(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n"], ["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n"])));
+var StyledLi = styled.li(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"], ["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"])));
 var Li = function (_a) {
     var children = _a.children;
     return (React.createElement(StyledLi, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));

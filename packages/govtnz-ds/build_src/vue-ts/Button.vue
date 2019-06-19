@@ -196,4 +196,7 @@ export default Vue.extend({
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.g-button-hint > * {
+  margin-top: 0px;
+}
 </style>

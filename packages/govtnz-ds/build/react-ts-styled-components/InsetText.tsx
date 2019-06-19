@@ -36,6 +36,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const InsetText = ({  }: Props) => (

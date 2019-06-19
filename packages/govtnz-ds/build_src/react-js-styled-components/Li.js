@@ -7,6 +7,7 @@ const StyledLi = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const Li = ({ children }) => (

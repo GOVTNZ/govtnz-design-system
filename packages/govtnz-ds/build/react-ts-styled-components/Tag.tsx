@@ -31,6 +31,7 @@ const StyledStrong = styled.strong`
     font-size: 14pt;
     line-height: 1.25;
   }
+  margin-top: 0px;
 `;
 
 const Tag = ({  }: Props) => <StyledStrong>alpha</StyledStrong>;

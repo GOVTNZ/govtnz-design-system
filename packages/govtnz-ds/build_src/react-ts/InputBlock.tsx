@@ -38,6 +38,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck?: boolean | undefined;
+  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -202,6 +203,7 @@ const InputBlock = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }: Props) => (
@@ -255,6 +257,7 @@ const InputBlock = ({
       autoFocus={autoFocus}
       value={value}
       spellCheck={spellCheck}
+      maxLength={maxLength}
       autoComplete={constants.autoComplete[autoComplete]}
       onChange={onChange}
     />

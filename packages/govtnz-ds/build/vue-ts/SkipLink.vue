@@ -152,4 +152,7 @@ export default Vue.extend({
     line-height: 1.2;
   }
 }
+.g-skipLink-hint > * {
+  margin-top: 0px;
+}
 </style>

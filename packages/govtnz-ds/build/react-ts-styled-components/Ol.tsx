@@ -42,6 +42,7 @@ const StyledOl = styled.ol<Pick<Props, "numbered">>`
       padding-left: 20px;
       list-style-type: decimal;
     `}
+  margin-top: 0px;
 `;
 
 const Ol = ({ numbered, children }: Props) => (

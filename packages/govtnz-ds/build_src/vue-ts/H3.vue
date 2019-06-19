@@ -356,4 +356,7 @@ export default Vue.extend({
 .g-heading-mb-8 {
   margin-bottom: 8px;
 }
+.g-hint > * {
+  margin-top: 0px;
+}
 </style>

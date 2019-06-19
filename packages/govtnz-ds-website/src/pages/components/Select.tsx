@@ -18,6 +18,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</p>
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="example">Example</H2>

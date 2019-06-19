@@ -65,6 +65,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  maxLength2?: number | undefined;
   value?: string | undefined;
   onChange: any;
   remainingCharacters?: React.ReactNode;
@@ -75,6 +76,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -88,6 +90,7 @@ const StyledDiv2 = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
@@ -114,6 +117,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledTextarea = styled.textarea`
@@ -152,6 +156,7 @@ const StyledTextarea = styled.textarea`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -178,6 +183,7 @@ const StyledSpan = styled.span`
   margin-top: -5px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -249,6 +255,7 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength2,
   value,
   onChange,
   remainingCharacters
@@ -266,6 +273,7 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
+        maxLength={maxLength2}
         value={value}
         onChange={onChange}
       />
@@ -295,6 +303,7 @@ const CharacterCountWithCustomRows__calculated = (
     | "autoFocus"
     | "spellCheck"
     | "autoComplete"
+    | "maxLength2"
     | "value"
     | "onChange"
   >

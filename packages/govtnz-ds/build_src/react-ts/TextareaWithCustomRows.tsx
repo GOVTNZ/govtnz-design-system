@@ -63,6 +63,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  maxLength?: number | undefined;
   value?: string | undefined;
   onChange: any;
 };
@@ -135,6 +136,7 @@ const TextareaWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }: Props) => (
@@ -153,6 +155,7 @@ const TextareaWithCustomRows = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

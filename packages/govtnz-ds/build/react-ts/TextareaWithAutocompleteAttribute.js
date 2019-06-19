@@ -66,10 +66,10 @@ var constants = {
     }
 };
 var TextareaWithAutocompleteAttribute = function (_a) {
-    var textareaWithAutocompleteAttribute = _a.textareaWithAutocompleteAttribute, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
+    var textareaWithAutocompleteAttribute = _a.textareaWithAutocompleteAttribute, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange;
     return (React.createElement("div", { className: "g-textareaWithAutocompleteAttribute-form-group" },
         React.createElement("label", { className: "g-textareaWithAutocompleteAttribute-label", htmlFor: textareaWithAutocompleteAttribute }, "Full address"),
-        React.createElement("textarea", { autoComplete: constants.autoComplete[autoComplete], className: "g-textareaWithAutocompleteAttribute-textarea", id: textareaWithAutocompleteAttribute, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, value: value, onChange: onChange })));
+        React.createElement("textarea", { autoComplete: constants.autoComplete[autoComplete], className: "g-textareaWithAutocompleteAttribute-textarea", id: textareaWithAutocompleteAttribute, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, maxLength: maxLength, value: value, onChange: onChange })));
 };
 exports.default = TextareaWithAutocompleteAttribute;
 //# sourceMappingURL=TextareaWithAutocompleteAttribute.js.map

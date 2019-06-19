@@ -123,3 +123,7 @@
   display: table-caption;
   text-align: left;
 }
+
+.g-tableTableWithHeadAndCaption-hint > * {
+  margin-top: 0px;
+}

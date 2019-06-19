@@ -879,6 +879,7 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
   css += '.g-heading-mb-8 { margin-bottom: 8px; }'; // Sometimes in code such as the examples
   css = css.replace(/\.g-radios__divider/gi, '.g-form-divider'); // GovUK includes a radio-specific divider which we can generalise
   css += '.g-select::-ms-expand { display: none; }'; // https://stackoverflow.com/a/15933790
+  css += '.g-hint > * { margin-top: 0px; }';
 
   css = updateCSS(css, [
     // FORM
@@ -994,9 +995,13 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
       '.g-body-l, .g-body-m, .g-body-s',
       'color: #2a2a2a; line-height: 1.625; margin-bottom: 1rem;'
     ],
+    ['screen-big', '.g-body-l', 'line-height: 1.625; margin-bottom: 1rem;'],
 
     // Fieldset
     ['all', '.g-fieldset__legend', 'margin-bottom: 0px'],
+
+    // Inset
+    ['all', '.g-inset-text', '8px solid #23cba5'],
 
     // LINK
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.
@@ -1015,6 +1020,11 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
 
     // Checkboxes
     ['all', '.g-checkboxes__item', 'margin-bottom: 16px'],
+    [
+      'all',
+      '.g-checkboxes__input + .g-checkboxes__label::before',
+      '1px solid currentColor'
+    ],
 
     // Selects
     [

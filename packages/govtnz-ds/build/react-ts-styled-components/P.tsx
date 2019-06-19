@@ -215,6 +215,7 @@ const StyledP = styled.p<Pick<Props, "styleSize">>`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
 `;
 
 const P = ({ styleSize, children }: Props) => (

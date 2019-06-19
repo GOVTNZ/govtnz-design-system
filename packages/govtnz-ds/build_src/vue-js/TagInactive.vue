@@ -49,4 +49,7 @@ export default Vue.extend({
 .g-tagInactive-tag--inactive {
   background-color: #6f777b;
 }
+.g-tagInactive-hint > * {
+  margin-top: 0px;
+}
 </style>

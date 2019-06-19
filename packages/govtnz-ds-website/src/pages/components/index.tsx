@@ -18,6 +18,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator(H1)} styleSize="xlarge" id="components">Components</H1>
 <p>As key building blocks of the all-of-government (AOG) design system, our components are designed and coded to solve specific user problems.</p>

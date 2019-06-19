@@ -207,4 +207,7 @@ export default Vue.extend({
 .g-fileUploadWithErrorMessage-file-upload--error {
   border: 4px solid #b10e1e;
 }
+.g-fileUploadWithErrorMessage-hint > * {
+  margin-top: 0px;
+}
 </style>

@@ -27,6 +27,7 @@
       v-bind:autofocus="autoFocus"
       v-bind:value="value"
       v-bind:spellcheck="spellCheck"
+      v-bind:maxlength="maxLength"
       v-bind:autocomplete="computed__autocomplete"
     />
   </div> </template
@@ -179,6 +180,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck: { type: Boolean, default: false, required: false },
+    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -468,5 +470,8 @@ export default Vue.extend({
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+}
+.g-inputBlock-hint > * {
+  margin-top: 0px;
 }
 </style>

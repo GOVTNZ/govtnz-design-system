@@ -33,6 +33,7 @@ const StyledDetails = styled.details`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledSummary = styled.summary`
@@ -82,16 +83,23 @@ const StyledSummary = styled.summary`
     border-width: 12.124px 7px 0 7px;
     border-top-color: inherit;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
   text-decoration: underline;
+  margin-top: 0px;
 `;
 
 const StyledDiv = styled.div`
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
+  margin-top: 0px;
+`;
+
+const StyledUl = styled.ul`
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -100,6 +108,7 @@ const StyledLi = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -108,6 +117,7 @@ const StyledLi2 = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi3 = styled.li`
@@ -116,6 +126,7 @@ const StyledLi3 = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi4 = styled.li`
@@ -124,6 +135,7 @@ const StyledLi4 = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi5 = styled.li`
@@ -132,6 +144,7 @@ const StyledLi5 = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const DetailsWithHtml = ({
@@ -151,13 +164,13 @@ const DetailsWithHtml = ({
       id={detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0}
     >
       Your National Insurance number can be found on
-      <ul>
+      <StyledUl>
         <StyledLi>your National Insurance card</StyledLi>
         <StyledLi2>your payslip</StyledLi2>
         <StyledLi3>P60</StyledLi3>
         <StyledLi4>benefits information</StyledLi4>
         <StyledLi5>tax return</StyledLi5>
-      </ul>
+      </StyledUl>
     </StyledDiv>
   </StyledDetails>
 );

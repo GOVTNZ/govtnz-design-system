@@ -260,6 +260,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
       value = _ref.value,
       type = _ref.type,
       spellCheck = _ref.spellCheck,
+      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       dobWithAutocompleteAttributeMonth = _ref.dobWithAutocompleteAttributeMonth,
@@ -270,6 +271,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
       value2 = _ref.value2,
       type2 = _ref.type2,
       spellCheck2 = _ref.spellCheck2,
+      maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
       dobWithAutocompleteAttributeYear = _ref.dobWithAutocompleteAttributeYear,
@@ -280,6 +282,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
       value3 = _ref.value3,
       type3 = _ref.type3,
       spellCheck3 = _ref.spellCheck3,
+      maxLength3 = _ref.maxLength3,
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement("div", {
@@ -315,6 +318,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
     autoFocus: autoFocus,
     value: value,
     spellCheck: spellCheck,
+    maxLength: maxLength,
     onChange: onChange
   }))), _react["default"].createElement("div", {
     className: "g-dateInputWithAutocompleteValues-date-input__item"
@@ -335,6 +339,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
     autoFocus: autoFocus2,
     value: value2,
     spellCheck: spellCheck2,
+    maxLength: maxLength2,
     onChange: onChange2
   }))), _react["default"].createElement("div", {
     className: "g-dateInputWithAutocompleteValues-date-input__item"
@@ -355,6 +360,7 @@ var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues(_
     autoFocus: autoFocus3,
     value: value3,
     spellCheck: spellCheck3,
+    maxLength: maxLength3,
     onChange: onChange3
   }))))));
 };

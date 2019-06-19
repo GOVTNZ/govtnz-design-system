@@ -333,6 +333,7 @@ const StyledH3 = styled.h3`
     styled.css`
       margin-bottom: 8px;
     `}
+  margin-top: 0px;
 `;
 
 const H3 = ({ styleSize, marginBottom8, id, children }) => (

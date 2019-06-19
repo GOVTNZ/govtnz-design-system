@@ -470,7 +470,7 @@ export default class ReactTsStyledComponents {
       attributes.push(onClick);
     }
 
-    let tag = tagName; // TODO: escape elementName
+    let tag = tagName; // TODO: escape elementName?
     if (this.options.css === "styled-components") {
       const {
         scBody,
@@ -751,7 +751,8 @@ export default class ReactTsStyledComponents {
       srcset: "srcSet",
       crossorigin: "crossOrigin",
       spellcheck: "spellCheck",
-      tabindex: "tabIndex"
+      tabindex: "tabIndex",
+      maxlength: "maxLength"
       // TODO: expand this list... presumably there's an NPM package with these mappings?
     };
     return transform[key] ? transform[key] : key;

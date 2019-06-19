@@ -38,3 +38,7 @@
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
+
+.g-radios-hint > * {
+  margin-top: 0px;
+}

@@ -47,4 +47,7 @@ export default Vue.extend({
 .g-fieldset-character-count .g-fieldset-form-group {
   margin-bottom: 5px;
 }
+.g-fieldset-hint > * {
+  margin-top: 0px;
+}
 </style>

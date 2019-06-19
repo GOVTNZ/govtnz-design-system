@@ -224,4 +224,7 @@ export default Vue.extend({
 .g-selectWithHintTextAndErrorMessage-select::-ms-expand {
   display: none;
 }
+.g-selectWithHintTextAndErrorMessage-hint > * {
+  margin-top: 0px;
+}
 </style>

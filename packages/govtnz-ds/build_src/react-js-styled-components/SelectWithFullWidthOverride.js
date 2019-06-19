@@ -12,6 +12,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
@@ -38,6 +39,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSelect = styled.select`
@@ -83,6 +85,7 @@ const StyledSelect = styled.select`
   ::-ms-expand {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledOption = styled.option`
@@ -91,6 +94,7 @@ const StyledOption = styled.option`
     color: #ffffff;
     background-color: #005ea5;
   }
+  margin-top: 0px;
 `;
 
 const StyledOption2 = styled.option`
@@ -99,6 +103,7 @@ const StyledOption2 = styled.option`
     color: #ffffff;
     background-color: #005ea5;
   }
+  margin-top: 0px;
 `;
 
 const StyledOption3 = styled.option`
@@ -107,6 +112,7 @@ const StyledOption3 = styled.option`
     color: #ffffff;
     background-color: #005ea5;
   }
+  margin-top: 0px;
 `;
 
 const SelectWithFullWidthOverride = ({

@@ -14,6 +14,7 @@ const StyledInput = styled.input`
   :disabled {
     cursor: default;
   }
+  margin-top: 0px;
 `;
 
 const Checkbox = ({

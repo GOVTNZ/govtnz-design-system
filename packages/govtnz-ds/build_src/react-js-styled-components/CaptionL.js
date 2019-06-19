@@ -25,6 +25,7 @@ const StyledSpan = styled.span`
   @media (min-width: 40.0625em) {
     margin-bottom: 0;
   }
+  margin-top: 0px;
 `;
 
 const CaptionL = ({ children }) => (

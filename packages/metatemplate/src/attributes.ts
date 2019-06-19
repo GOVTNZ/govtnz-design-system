@@ -282,6 +282,13 @@ export const insertDefaultVariables = async (
             optional: true
           }
         ]);
+        makeTemplateAttribute("maxlength", attributes, format, [
+          {
+            key: format.registerDynamicKey("maxLength", "number", true),
+            type: "number",
+            optional: true
+          }
+        ]);
         makeTemplateAttribute("autocomplete", attributes, format, [
           {
             key: format.registerDynamicKey(
@@ -350,6 +357,14 @@ export const insertDefaultVariables = async (
           ),
           optional: false,
           type: autocompletes
+        }
+      ]);
+
+      makeTemplateAttribute("maxlength", attributes, format, [
+        {
+          key: format.registerDynamicKey("maxLength", "number", true),
+          type: "number",
+          optional: true
         }
       ]);
 

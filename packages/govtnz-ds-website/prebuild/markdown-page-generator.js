@@ -558,11 +558,11 @@ const writeExamplePage = async (
     path.resolve(__dirname, '..', 'static').length
   );
 
-  const serverExampleHTML = 'stuff'; // ReactDOMServer.renderToStaticMarkup();
+  const serverExampleHTML = '...'; // ReactDOMServer.renderToStaticMarkup();
 
   const cssImports = uniq(reactComponentNames)
     .map(
-      cssFileName => `<link rel="stylesheet" href="/css/${cssFileName}.css">`
+      cssFileName => `<link rel="stylesheet" href="../css/${cssFileName}.css">`
     )
     .join('');
 

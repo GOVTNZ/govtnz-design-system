@@ -18,6 +18,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Headings are structural parts of your page, ranging from 1 (most important) to 6 (least important), and are used by screen readers to understand the relationship between parts of your page. They are for headings, but they also denote the hierarchy of your page.</p>
 <p>There are the conventional <Link to="/components/H1/">H1</Link>, <Link to="/components/H2/">H2</Link>, <Link to="/components/H3/">H3</Link>, <Link to="/components/H4/">H4</Link>, <Link to="/components/H5/">H5</Link>, and <Link to="/components/H6/">H6</Link>. Before headings you may optionally use Captions such as <Link to="/components/CaptionXl/">Caption XL</Link>, <Link to="/components/CaptionL/">Caption L</Link>, and <Link to="/components/CaptionM/">Caption M</Link>.</p>

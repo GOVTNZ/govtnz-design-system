@@ -242,3 +242,7 @@
 .g-date-input__input {
   margin-bottom: 0;
 }
+
+.g-dateInput-hint > * {
+  margin-top: 0px;
+}

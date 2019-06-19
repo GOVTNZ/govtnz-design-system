@@ -490,4 +490,7 @@ export default Vue.extend({
   border: 0 !important;
   white-space: nowrap !important;
 }
+.g-summaryList-hint > * {
+  margin-top: 0px;
+}
 </style>

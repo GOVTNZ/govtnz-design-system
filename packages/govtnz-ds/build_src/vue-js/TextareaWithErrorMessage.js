@@ -133,6 +133,7 @@ export default Vue.extend({
       },
       required: true
     },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false }
   },
   computed: {
@@ -143,6 +144,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"},[_c(\'label\',{staticClass:"g-textareaWithErrorMessage-label",attrs:{"for":noNiReason}},[_v("\\n\\n    Why can\'t you provide a National Insurance number?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textareaWithErrorMessage-error-message",attrs:{"id":noNiReasonError}},[_v("\\n\\n    You must provide an explanation\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error",attrs:{"aria-describedby":noNiReasonError,"id":noNiReason,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textareaWithErrorMessage-form-group g-textareaWithErrorMessage-form-group--error"},[_c(\'label\',{staticClass:"g-textareaWithErrorMessage-label",attrs:{"for":noNiReason}},[_v("\\n\\n    Why can\'t you provide a National Insurance number?\\n  \\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-textareaWithErrorMessage-error-message",attrs:{"id":noNiReasonError}},[_v("\\n\\n    You must provide an explanation\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithErrorMessage-textarea g-textareaWithErrorMessage-textarea--error",attrs:{"aria-describedby":noNiReasonError,"id":noNiReason,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete,"maxlength":maxLength},domProps:{"value":value}})])}'
   )
 });

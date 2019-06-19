@@ -38,4 +38,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
+.g-captionM-hint > * {
+  margin-top: 0px;
+}
 </style>

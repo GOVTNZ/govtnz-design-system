@@ -184,8 +184,6 @@ export default class Example extends Component<Props, State> {
       iframeHeight,
     } = this.state;
 
-    console.log('re-rendering iframe id', iframeProps.id, iframeHeight);
-
     const codePreview = (
       <div className="example--bg-off-white">
         {supportsJavaScript && (

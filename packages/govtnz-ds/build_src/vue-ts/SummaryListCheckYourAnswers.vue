@@ -595,4 +595,7 @@ export default Vue.extend({
   border: 0 !important;
   white-space: nowrap !important;
 }
+.g-summaryListCheckYourAnswers-hint > * {
+  margin-top: 0px;
+}
 </style>

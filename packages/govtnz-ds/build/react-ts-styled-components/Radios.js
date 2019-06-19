@@ -13,7 +13,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var styled = __importStar(require("styled-components"));
-var StyledDiv = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n"], ["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n"])));
+var StyledDiv = styled.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n  margin-top: 0px;\n"], ["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n  margin-top: 0px;\n"])));
 var Radios = function (_a) {
     var inline = _a.inline, children = _a.children;
     return (React.createElement(StyledDiv, { inline: inline }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Radio components"))));

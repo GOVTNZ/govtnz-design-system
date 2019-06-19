@@ -193,3 +193,7 @@
   border: 4px solid
     var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
+
+.g-fileUploadWithErrorMessage-hint > * {
+  margin-top: 0px;
+}

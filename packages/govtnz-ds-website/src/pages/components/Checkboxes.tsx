@@ -22,6 +22,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</p>
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>

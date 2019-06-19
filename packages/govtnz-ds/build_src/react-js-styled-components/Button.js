@@ -129,6 +129,7 @@ const StyledButton = styled.button`
   }
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-top: 0px;
 `;
 
 const constants = {

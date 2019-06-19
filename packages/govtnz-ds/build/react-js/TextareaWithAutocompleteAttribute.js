@@ -77,6 +77,7 @@ var TextareaWithAutocompleteAttribute = function TextareaWithAutocompleteAttribu
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
+      maxLength = _ref.maxLength,
       value = _ref.value,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
@@ -95,6 +96,7 @@ var TextareaWithAutocompleteAttribute = function TextareaWithAutocompleteAttribu
     cols: cols,
     autoFocus: autoFocus,
     spellCheck: spellCheck,
+    maxLength: maxLength,
     value: value,
     onChange: onChange
   }));

@@ -29,6 +29,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -58,11 +59,13 @@ const StyledSpan = styled.span`
   @media print {
     font-family: sans-serif;
   }
+  margin-top: 0px;
 `;
 
 const StyledStrong = styled.strong`
   display: block;
   padding-left: 50px;
+  margin-top: 0px;
 `;
 
 const StyledSpan2 = styled.span`
@@ -77,6 +80,7 @@ const StyledSpan2 = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const WarningText = ({}) => (

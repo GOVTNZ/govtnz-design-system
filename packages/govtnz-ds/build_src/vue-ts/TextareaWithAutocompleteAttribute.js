@@ -132,6 +132,7 @@ export default Vue.extend({
       },
       required: true
     },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false }
   },
   computed: {
@@ -142,6 +143,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textareaWithAutocompleteAttribute-form-group"},[_c(\'label\',{staticClass:"g-textareaWithAutocompleteAttribute-label",attrs:{"for":textareaWithAutocompleteAttribute}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithAutocompleteAttribute-textarea",attrs:{"autocomplete":computed__autocomplete,"id":textareaWithAutocompleteAttribute,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck},domProps:{"value":value}})])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textareaWithAutocompleteAttribute-form-group"},[_c(\'label\',{staticClass:"g-textareaWithAutocompleteAttribute-label",attrs:{"for":textareaWithAutocompleteAttribute}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithAutocompleteAttribute-textarea",attrs:{"autocomplete":computed__autocomplete,"id":textareaWithAutocompleteAttribute,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength},domProps:{"value":value}})])}'
   )
 });

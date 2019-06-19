@@ -2169,4 +2169,7 @@ export default Vue.extend({
   border: 0 !important;
   white-space: nowrap !important;
 }
+.g-summaryListExtreme-hint > * {
+  margin-top: 0px;
+}
 </style>

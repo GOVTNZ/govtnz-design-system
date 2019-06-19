@@ -50,6 +50,7 @@ const StyledDl = styled.dl`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv = styled.div`
@@ -61,6 +62,7 @@ const StyledDiv = styled.div`
     display: table-row;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDt = styled.dt`
@@ -81,6 +83,7 @@ const StyledDt = styled.dt`
     width: 30%;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDd = styled.dd`
@@ -99,6 +102,7 @@ const StyledDd = styled.dd`
     margin-bottom: 15px;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDd2 = styled.dd`
@@ -118,12 +122,14 @@ const StyledDd2 = styled.dd`
     text-align: right;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledUl = styled.ul`
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -141,6 +147,7 @@ const StyledLi = styled.li`
     padding-right: 0;
     border: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -209,6 +216,7 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -223,6 +231,7 @@ const StyledSpan = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -240,6 +249,7 @@ const StyledLi2 = styled.li`
     padding-right: 0;
     border: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -308,6 +318,7 @@ const StyledA2 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan2 = styled.span`
@@ -322,6 +333,7 @@ const StyledSpan2 = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -333,6 +345,7 @@ const StyledDiv2 = styled.div`
     display: table-row;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDt2 = styled.dt`
@@ -353,6 +366,7 @@ const StyledDt2 = styled.dt`
     width: 30%;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDd3 = styled.dd`
@@ -371,6 +385,7 @@ const StyledDd3 = styled.dd`
     margin-bottom: 15px;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDd4 = styled.dd`
@@ -390,6 +405,7 @@ const StyledDd4 = styled.dd`
     text-align: right;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledA3 = styled.a`
@@ -458,6 +474,7 @@ const StyledA3 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan3 = styled.span`
@@ -472,6 +489,7 @@ const StyledSpan3 = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const StyledDiv3 = styled.div`
@@ -483,6 +501,7 @@ const StyledDiv3 = styled.div`
     display: table-row;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDt3 = styled.dt`
@@ -503,6 +522,7 @@ const StyledDt3 = styled.dt`
     width: 30%;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledDd5 = styled.dd`
@@ -521,6 +541,7 @@ const StyledDd5 = styled.dd`
     margin-bottom: 15px;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledP = styled.p`
@@ -558,6 +579,7 @@ const StyledP = styled.p`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledP2 = styled.p`
@@ -595,6 +617,23 @@ const StyledP2 = styled.p`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
+`;
+
+const StyledBr = styled.br`
+  margin-top: 0px;
+`;
+
+const StyledBr2 = styled.br`
+  margin-top: 0px;
+`;
+
+const StyledBr3 = styled.br`
+  margin-top: 0px;
+`;
+
+const StyledBr4 = styled.br`
+  margin-top: 0px;
 `;
 
 const StyledDd6 = styled.dd`
@@ -614,12 +653,14 @@ const StyledDd6 = styled.dd`
     text-align: right;
   }
   border: 0;
+  margin-top: 0px;
 `;
 
 const StyledUl2 = styled.ul`
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-top: 0px;
 `;
 
 const StyledLi3 = styled.li`
@@ -637,6 +678,7 @@ const StyledLi3 = styled.li`
     padding-right: 0;
     border: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledA4 = styled.a`
@@ -705,6 +747,7 @@ const StyledA4 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan4 = styled.span`
@@ -719,6 +762,7 @@ const StyledSpan4 = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const StyledLi4 = styled.li`
@@ -736,6 +780,7 @@ const StyledLi4 = styled.li`
     padding-right: 0;
     border: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledA5 = styled.a`
@@ -804,6 +849,7 @@ const StyledA5 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan5 = styled.span`
@@ -818,6 +864,7 @@ const StyledSpan5 = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -882,10 +929,10 @@ const SummaryList = ({
       <StyledDd5>
         <StyledP>email@email.com</StyledP>
         <StyledP2>
-          Address line 1<br />
-          Address line 2<br />
-          Address line 3<br />
-          Address line 4<br />
+          Address line 1<StyledBr />
+          Address line 2<StyledBr2 />
+          Address line 3<StyledBr3 />
+          Address line 4<StyledBr4 />
           Address line 5
         </StyledP2>
       </StyledDd5>

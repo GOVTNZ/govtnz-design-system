@@ -121,4 +121,7 @@ export default Vue.extend({
 .g-selectBlock-select::-ms-expand {
   display: none;
 }
+.g-selectBlock-hint > * {
+  margin-top: 0px;
+}
 </style>
