@@ -849,6 +849,11 @@ const cssVariables: CSSVariablePattern[] = [
     id: 'g-theme-button-color-warning-box-shadow',
     valueSubstringMatch: '#47060c',
     defaultValue: '#2a2a2a'
+  },
+  {
+    id: 'g-theme-heading-font-weight',
+    valueSubstringMatch: 'g-heading-font-weight',
+    defaultValue: 'bold'
   }
 ];
 
@@ -881,7 +886,7 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-label',
-      `color: #2a2a2a; font-weight: 500; font-size: ${pxToRem(20)}`,
+      `color: #2a2a2a; font-weight: bold; font-size: ${pxToRem(20)}`,
       undefined
     ],
 
@@ -899,8 +904,9 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-heading-xl, .g-heading-l, .g-heading-s, .g-heading-xs, .g-heading-xxs',
-      'font-weight: 500; color: #2a2a2a;'
+      'color: #2a2a2a; font-weight: g-heading-font-weight'
     ],
+
     // Heading size ranges
     //  - larger sizes
     [
@@ -940,7 +946,12 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-heading-m',
-      'font-size: 1.5rem; line-height: 1.25; margin-top: 2.5rem; font-weight: 500'
+      `
+       font-size: 1.5rem;
+       line-height: 1.25;
+       margin-top: 2.5rem;
+       font-weight: g-heading-font-weight
+       `
     ],
 
     // heading s

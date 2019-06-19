@@ -39,7 +39,7 @@ const StyledCaption = styled.caption`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;

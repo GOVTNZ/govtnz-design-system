@@ -85,14 +85,16 @@ export default class Example extends Component<Props, State> {
           this.props.iframeProps.id &&
           this.props.iframeProps.id === resizeById
         ) {
+          const iframeHeightClamped = data.height > 50 ? data.height : 50;
           console.log(
-            `Updating ${this.props.iframeProps.id} to `,
-            data.width,
-            data.height
+            `Updating ${this.props.iframeProps.id} to be height `,
+            iframeHeightClamped,
+            ` (from original height ${data.height})`
           );
+
           this.setState({
             // iframeWidth: data.width > 300 ? data.width : 300,
-            iframeHeight: data.height > 50 ? data.height : 50,
+            iframeHeight: iframeHeightClamped,
           });
         }
       },
@@ -181,6 +183,8 @@ export default class Example extends Component<Props, State> {
       iframeWidth,
       iframeHeight,
     } = this.state;
+
+    console.log('re-rendering iframe id', iframeProps.id, iframeHeight);
 
     const codePreview = (
       <div className="example--bg-off-white">
@@ -302,10 +306,10 @@ export default class Example extends Component<Props, State> {
           <Fragment>
             <div className="example__iframe-wrapper">
               <iframe
+                {...iframeProps}
                 width={iframeWidth}
                 height={iframeHeight}
                 style={{ width: '100%' }}
-                {...iframeProps}
               />
             </div>
             <Details className="example__details" onChange={this.clickFormat}>

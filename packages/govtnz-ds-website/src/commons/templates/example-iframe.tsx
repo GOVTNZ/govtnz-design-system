@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
+import ReactDOM from 'react-dom';
 
 // @dynamicImports
 
-import IframePage from '../../components/IframePage';
-import onChangeGenerator from '../../commons/onChangeGenerator';
+const onChangeGenerator = comp => ({});
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
@@ -11,16 +11,12 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 // @pageContentComponent
 
-const template = props => {
-  return (
-    <IframePage
-      title={'{{title}}'}
-      id={'{{id}}'}
-      parentUrl={'{{parentUrl}}'}
-      pageProps={props}
-      PageContent={PageContent}
-    />
-  );
-};
-
-export default template;
+document.addEventListener('DOMContentLoaded', () => {
+  const selector = '#root';
+  const root = document.querySelector(selector);
+  if (!root) {
+    console.error("Couldn't find app mount point ", selector);
+    return;
+  }
+  ReactDOM.render(<PageContent />, root);
+});

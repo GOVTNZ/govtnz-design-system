@@ -9,7 +9,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import components__FileUpload from '../../commons/examples/components__FileUpload';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -21,7 +21,13 @@ import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of File Upload</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{id:"iframe_componentsFileUpload0", className: "example__iframe", id: "iframe_componentsFileUpload0", src:"../FileUpload__example0/", title:"Example of File Upload", height: 371 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{
+        id:"iframe_componentsFileUpload0",
+        className: "example__iframe",
+        src:"/components/FileUpload__example0.html",
+        title:"Example of File Upload",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>

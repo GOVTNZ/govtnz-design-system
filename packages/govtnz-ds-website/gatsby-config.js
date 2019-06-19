@@ -1,9 +1,18 @@
 const path = require('path');
+const fs = require('fs');
 const CONSTANTS = require('./src/commons/constants.json');
+
+const packagesPath = path.resolve(__dirname, '..');
+
+const dsScss = path.join(packagesPath, 'govtnz-ds/build/scss');
+const dsSiteSettings = 'src/commons/styles/ds/_settings.scss';
+
+console.log(dsSiteSettings);
+console.log(fs.existsSync(dsSiteSettings));
 
 module.exports = {
   siteMetadata: {
-    title: `Design System - Alpha`,
+    title: `Design System - Alpha`, // be sure to also update 'example-iframe.html' with this suffix
     description: `Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online`,
     author: `New Zealand Government`,
   },
@@ -63,7 +72,12 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: ['src/commons/styles/ds'],
+      },
+    },
     `gatsby-plugin-svg-sprite`,
     'gatsby-plugin-typescript',
     {

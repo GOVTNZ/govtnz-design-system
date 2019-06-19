@@ -20,7 +20,8 @@
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 2rem;
   line-height: 1.2;
   display: block;

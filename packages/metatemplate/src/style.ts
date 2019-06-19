@@ -1,6 +1,10 @@
 import cssParser from "postcss-safe-parser";
 import { CSSVariablePattern } from "./index";
 
+const escapeRegexpString = (str: string): string => {
+  return str.replace(/[-[\]/{}()*+?.\\^$|]/g, "\\$&");
+};
+
 export const replaceCSSVariables = (
   cssString: string,
   cssVariables: CSSVariablePattern[] | undefined,
@@ -34,12 +38,18 @@ export const replaceCSSVariables = (
         ) {
           if (language === "css") {
             v = `${propertyValue.replace(
-              new RegExp(cssVariable.valueSubstringMatch, "g"),
+              new RegExp(
+                escapeRegexpString(cssVariable.valueSubstringMatch),
+                "g"
+              ),
               cssVariable.defaultValue
             )} ${important}`;
             v += ";";
             v += `${propertyName}: ${propertyValue.replace(
-              new RegExp(cssVariable.valueSubstringMatch, "g"),
+              new RegExp(
+                escapeRegexpString(cssVariable.valueSubstringMatch),
+                "g"
+              ),
               `var(--${cssVariable.id}, ${cssVariable.defaultValue})`
             )} ${important}`;
           } else if (language === "scss") {
@@ -50,7 +60,10 @@ export const replaceCSSVariables = (
             );
             v += ` ${important};`;
             v += `${propertyName}: ${propertyValue.replace(
-              new RegExp(cssVariable.valueSubstringMatch, "g"),
+              new RegExp(
+                escapeRegexpString(cssVariable.valueSubstringMatch),
+                "g"
+              ),
               `var(--${cssVariable.id}, ${sassVariable})`
             )} ${important}`;
           }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Same heading level varying by size only (typography example) | Design System - Alpha</title>
+    <script src="/react-16.8.6.production.min.js"></script>
+    <script src="/react-dom-16.8.6.production.min.js"></script>
+    <script src="/basics/typography__example1.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        console.log('iframe DOMContentLoaded', window.document.title);
+        updateParentPageLink();
+        if (!window.parent || !window.parent.postMessage) {
+          // then this page is not currently iframed
+          return;
+        }
+        window.addEventListener('resize', updateIframeSize, false);
+        window.addEventListener('orientationchange', updateIframeSize, false);
+        updateIframeSize();
+      });
+
+      function updateIframeSize() {
+        var selector = '#root';
+        var exampleVisual = document.querySelector(selector);
+        if (!exampleVisual) {
+          console.error('Problem finding ', selector);
+          return;
+        }
+        var data = {
+          resizeById: "iframe_basicstypography1",
+          width: document.body.offsetWidth,
+          height: exampleVisual && exampleVisual.offsetHeight,
+        };
+        window.parent.postMessage(data, window.location.origin);
+      }
+
+      function updateParentPageLink() {
+        var isIframed = window.self !== window.top;
+        var selector = '#iframed-message';
+        var iframedMessage = document.querySelector(selector);
+        if (!iframedMessage) {
+          console.error('Problem finding ', selector);
+          return;
+        }
+        iframedMessage.style.display = isIframed ? 'none' : 'block';
+      }
+    </script>
+    <link rel="stylesheet" href="/css/H3.css">
+    <link rel="stylesheet" href="/IframePage.css" />
+  </head>
+  <body>
+    <noscript>
+      <a href="../typography">
+        This example originates from the Same heading level varying by size only (typography example) page
+      </a>
+    </noscript>
+    <div id="iframed-message" style="display:none">
+      <a href="../typography">
+        This example originates from the Same heading level varying by size only (typography example) page
+      </a>
+    </div>
+    <div id="root" class="css-changes-for-example-only">
+      "stuff"
+    </div>
+  </body>
+</html>

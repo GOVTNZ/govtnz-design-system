@@ -9,9 +9,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
-import '@govtnz/ds/build/css/P.css';
+import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import components__Input from '../../commons/examples/components__Input';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -26,12 +26,24 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Input[0]} iframeProps={{id:"iframe_componentsInput0", className: "example__iframe", id: "iframe_componentsInput0", src:"../Input__example0/", title:"Example 0", height: 220 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[0]} iframeProps={{
+        id:"iframe_componentsInput0",
+        className: "example__iframe",
+        src:"/components/Input__example0.html",
+        title:"Example 0",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[1]} iframeProps={{id:"iframe_componentsInput1", className: "example__iframe", id: "iframe_componentsInput1", src:"../Input__example1/", title:"Error state (Input example)", height: 260 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[1]} iframeProps={{
+        id:"iframe_componentsInput1",
+        className: "example__iframe",
+        src:"/components/Input__example1.html",
+        title:"Error state (Input example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
@@ -50,14 +62,26 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>If you want to make the input smaller, you can either use a fixed-width input, or use the width override classes to create a smaller fluid-width input.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Fixed-width text input</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[2]} iframeProps={{id:"iframe_componentsInput2", className: "example__iframe", id: "iframe_componentsInput2", src:"../Input__example2/", title:"Fixed-width text input (Input example)", height: 1060 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[2]} iframeProps={{
+        id:"iframe_componentsInput2",
+        className: "example__iframe",
+        src:"/components/Input__example2.html",
+        title:"Fixed-width text input (Input example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <p>Use fixed-width inputs for content that has a specific, known length. For example, postcode inputs should be postcode-sized, and telephone number inputs should be telephone number-sized.</p>
 <p>On fixed-width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Hint text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[3]} iframeProps={{id:"iframe_componentsInput3", className: "example__iframe", id: "iframe_componentsInput3", src:"../Input__example3/", title:"Hint text (Input example)", height: 220 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[3]} iframeProps={{
+        id:"iframe_componentsInput3",
+        className: "example__iframe",
+        src:"/components/Input__example3.html",
+        title:"Hint text (Input example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <p>Use hint text (also known as help text) for advice that’s relevant to the majority of users, like how their information will be used, or where to find it.</p>
@@ -89,7 +113,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>Style error messages as shown in the following example.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Input[6]} iframeProps={{id:"iframe_componentsInput6", className: "example__iframe", id: "iframe_componentsInput6", src:"../Input__example6/", title:"Error state (Input example)", height: 260 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Input[6]} iframeProps={{
+        id:"iframe_componentsInput6",
+        className: "example__iframe",
+        src:"/components/Input__example6.html",
+        title:"Error state (Input example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>

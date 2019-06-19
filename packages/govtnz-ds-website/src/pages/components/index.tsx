@@ -9,7 +9,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
+import '../../commons/styles/ds/themed-H1.scss';
 
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
