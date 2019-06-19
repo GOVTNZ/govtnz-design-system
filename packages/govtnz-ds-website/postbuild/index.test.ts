@@ -77,6 +77,8 @@ async function validateHTMLErrors(data) {
     data,
   };
 
+  jest.setTimeout(30000); // HTTP requests to the validator service can take a while
+
   const result = await validator(options);
 
   const errors = result.messages
