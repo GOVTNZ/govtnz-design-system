@@ -1,0 +1,32 @@
+{
+    "templates": [
+        {
+            "id": "button",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__disabled",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__secondary",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__warning",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__with-active-state",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__with-focus-state",
+            "filename": "button.html"
+        },
+        {
+            "id": "button__with-hover-state",
+            "filename": "button.html"
+        }
+    ]
+}

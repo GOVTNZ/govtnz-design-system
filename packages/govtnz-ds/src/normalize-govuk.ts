@@ -12,8 +12,55 @@ import {
 } from './normalize';
 import { gc, cssPropertiesToObject, splitSelectors, AnyObject } from './utils';
 import svgToDataURL from 'svg-to-dataurl';
+import glob from 'glob';
+import fs from 'fs';
 
 const ONE_REM_IN_PIXELS = 16; // in our DS
+
+const getLocalTemplateMetaPath = (source:string, version:string, id:string):string => {
+  const metaPath = glob
+    .sync(`${__dirname}/template-definitions/${source}/**/meta.json`)
+    .find(path => {
+      const parts = path.split('/');
+      const idPart = parts[parts.length - 2];
+      const versionPart = parts[parts.length - 3];
+
+      return versionPart === version && id.split('__')[0] === idPart;
+    });
+
+  return metaPath || '';
+};
+
+const getLocalTemplateMarkup = (metaPath:string, id:string):string => {
+  console.log(id);
+  if (metaPath === '') {
+    return '';
+  }
+
+  console.log(metaPath);
+
+  const metaJson = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+
+  if (metaJson.templates === undefined) {
+    throw new Error(`You need to add a 'templates' array to ${metaPath}`);
+  }
+
+  let applicableTemplates = metaJson.templates.reduce((result, tpl) => {
+    if (tpl.id === id || tpl.id === id.split('__')[0]) {
+      result.push(tpl);
+    }
+
+    return result;
+  }, []);
+
+  if (applicableTemplates.length === 0) {
+    return '';
+  }
+
+  const template = applicableTemplates.find(tpl => tpl.id === id) || applicableTemplates[0];
+  console.log(template);
+  return fs.readFileSync(metaPath.replace('meta.json', template.filename), 'utf8');
+};
 
 export const normalizeReleaseVersionGovUk = async (
   upstreamReleaseVersion: ReleaseVersion
@@ -169,27 +216,6 @@ export const govukToMetaTemplateInput = async (
     case 'back-link':
     case 'back-link__with-custom-text': {
       html = `<a class="g-back-link" href="#"><mt-variable key="children">Example text</mt-variable></a>`;
-      break;
-    }
-
-    case 'button':
-    case 'button__disabled':
-    case 'button__with-active-state':
-    case 'button__with-focus-state':
-    case 'button__with-hover-state':
-    case 'button__secondary':
-    case 'button__warning': {
-      id = 'button';
-      html = `<button
-          class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
-          type="submit"
-          aria-disabled="{{ disabled!?: true }}"
-          disabled="{{ disabled!?: true }}"
-        >
-          <mt-variable key="children">
-            Example text
-          </mt-variable>
-        </button>`;
       break;
     }
 
@@ -408,6 +434,9 @@ export const govukToMetaTemplateInput = async (
       html = `<span class="g-${id}"><mt-variable key="children">Example text</mt-variable></span>`;
       break;
     }
+
+    default:
+      html = getLocalTemplateMarkup(getLocalTemplateMetaPath('govuk', semVer, id), id) || oldHTML;
   }
 
   if (id) {
