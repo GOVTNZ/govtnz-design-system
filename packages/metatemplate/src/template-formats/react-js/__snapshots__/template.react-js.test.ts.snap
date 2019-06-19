@@ -414,6 +414,7 @@ const Input = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }) => (
@@ -428,6 +429,7 @@ const Input = ({
       autoFocus={autoFocus}
       value={value}
       spellCheck={spellCheck}
+      maxLength={maxLength}
       autoComplete={constants.autoComplete[autoComplete]}
       onChange={onChange}
     />
@@ -635,6 +637,7 @@ const Textbox = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }) => (
@@ -646,6 +649,7 @@ const Textbox = ({
     value={value}
     type={constants.type[type]}
     spellCheck={spellCheck}
+    maxLength={maxLength}
     autoComplete={constants.autoComplete[autoComplete]}
     onChange={onChange}
   />
