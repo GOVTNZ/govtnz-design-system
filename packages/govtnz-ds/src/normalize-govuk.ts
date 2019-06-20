@@ -196,6 +196,105 @@ export const govukToMetaTemplateInput = async (
       break;
     }
 
+    case 'date-input':
+    case 'date-input__with-autocomplete-values':
+    case 'date-input__with-errors': {
+      id = 'DateInput';
+      html = `
+        <div class="g-form-group {{ hasError!?: g-form-group--error }}">
+          <fieldset
+            class="g-fieldset"
+            aria-describedby="hintId errorId"
+            role="group"
+          >
+            <legend class="g-fieldset__legend g-fieldset__legend--xl">
+              <h1 class="g-fieldset__heading">
+                <mt-variable key="label">Example label</mt-variable>
+              </h1>
+            </legend>
+            <span
+              id="hintId"
+              class="g-hint"
+            >
+              <mt-variable key="hint">Example hint</mt-variable>
+            </span>
+            <mt-if key="!hasError">
+              <span
+                id="errorId"
+                class="g-error-message"
+              >
+                <span class="g-visually-hidden">Error: </span>
+                <mt-variable key="error">Example error</mt-variable>
+            </mt-if>
+            </span>
+            <div
+              id="id"
+              class="g-date-input"
+            >
+              <div class="g-date-input__item">
+                <div class="g-form-group">
+                  <label
+                    class="g-label g-date-input__label"
+                    for="dayId"
+                  >
+                    Day
+                  </label>
+                  <input
+                    id="dayId"
+                    class="g-input g-date-input__input g-input--width-2 {{ hasError!?: g-input--error }}"
+                    name="dayId"
+                    type="number"
+                    pattern="[0-9]*"
+                    value="value"
+                    autocomplete="autocomplete"
+                  />
+                </div>
+              </div>
+              <div class="g-date-input__item">
+                <div class="g-form-group">
+                  <label
+                    class="g-label g-date-input__label"
+                    for="monthId"
+                  >
+                    Month
+                  </label>
+                  <input
+                    id="monthId"
+                    class="g-input g-date-input__input g-input--width-2 {{ hasError!?: g-input--error }}"
+                    name="monthId"
+                    type="number"
+                    pattern="[0-9]*"
+                    value="value1"
+                    autocomplete="autocomplete1"
+                  />
+                </div>
+              </div>
+              <div class="g-date-input__item">
+                <div class="g-form-group">
+                  <label
+                    class="g-label govuk-date-input__label"
+                    for="yearId"
+                  >
+                    Year
+                  </label>
+                  <input
+                    id="yearId"
+                    class="g-input g-date-input__input g-input--width-4 {{ hasError!?: g-input--error }}"
+                    name="yearId"
+                    type="number"
+                    pattern="[0-9]*"
+                    value="value2"
+                    autocomplete="autocomplete2"
+                  />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      `;
+      break;
+    }
+
     case 'input__with-error-message': {
       id = 'InputBlock';
       html = `<div class="g-form-group {{ hasError!?: g-form-group--error }}">

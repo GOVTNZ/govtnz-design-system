@@ -2,9 +2,14 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  dobHint?: string | undefined;
-  dob?: string | undefined;
-  dobDay?: string | undefined;
+  hasError?: boolean | undefined;
+  hintId?: string | undefined;
+  errorId?: string | undefined;
+  label?: React.ReactNode;
+  hint?: React.ReactNode;
+  error?: React.ReactNode;
+  id?: string | undefined;
+  dayId?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -90,7 +95,7 @@ type Props = {
     | "URL"
     | "Photo";
   onChange: any;
-  dobMonth?: string | undefined;
+  monthId?: string | undefined;
   name2: string;
   disabled2?: boolean | undefined;
   readOnly2?: boolean | undefined;
@@ -176,7 +181,7 @@ type Props = {
     | "URL"
     | "Photo";
   onChange2: any;
-  dobYear?: string | undefined;
+  yearId?: string | undefined;
   name3: string;
   disabled3?: boolean | undefined;
   readOnly3?: boolean | undefined;
@@ -264,14 +269,25 @@ type Props = {
   onChange3: any;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "hasError">>`
   margin-bottom: 20px;
+  :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
   :last-of-type {
     margin-bottom: 0;
   }
+  ${props =>
+    props.hasError &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   padding: 0;
   border: 0;
   margin-bottom: 5px;
@@ -279,6 +295,7 @@ const StyledDiv = styled.div`
 `;
 
 const StyledFieldset = styled.fieldset`
+  min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
@@ -286,6 +303,9 @@ const StyledFieldset = styled.fieldset`
     content: "";
     display: block;
     clear: both;
+  }
+  @media not (caret-color: auto) {
+    display: table-cell;
   }
   margin-top: 0px;
 `;
@@ -319,6 +339,31 @@ const StyledLegend = styled.legend`
   @media print {
     color: #000000;
   }
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.09375;
+  margin-bottom: 15px;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 3rem;
+    line-height: 1.04167;
+  }
+  @media print {
+    font-size: 32pt;
+    line-height: 1.15;
+  }
+  margin-top: 0px;
+`;
+
+const StyledH1 = styled.h1`
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
   margin-top: 0px;
 `;
 
@@ -347,6 +392,46 @@ const StyledSpan = styled.span`
   margin-top: 0px;
 `;
 
+const StyledSpan2 = styled.span`
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+  @media print {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+  margin-top: 0px;
+`;
+
+const StyledSpan3 = styled.span`
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+  margin-top: 0px;
+`;
+
 const StyledDiv2 = styled.div`
   font-size: 0;
   :after {
@@ -366,6 +451,11 @@ const StyledDiv3 = styled.div`
 
 const StyledDiv4 = styled.div`
   margin-bottom: 20px;
+  :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
@@ -406,7 +496,7 @@ const StyledLabel = styled.label`
   margin-top: 0px;
 `;
 
-const StyledInput = styled.input`
+const StyledInput = styled.input<Pick<Props, "hasError">>`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -444,6 +534,11 @@ const StyledInput = styled.input`
     -webkit-appearance: none;
   }
   -moz-appearance: textfield;
+  ${props =>
+    props.hasError &&
+    styled.css`
+      border: 1px solid #b10e1e;
+    `}
   max-width: 5.4ex;
   margin-bottom: 0;
   margin-top: 0px;
@@ -458,6 +553,11 @@ const StyledDiv5 = styled.div`
 
 const StyledDiv6 = styled.div`
   margin-bottom: 20px;
+  :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
@@ -498,7 +598,7 @@ const StyledLabel2 = styled.label`
   margin-top: 0px;
 `;
 
-const StyledInput2 = styled.input`
+const StyledInput2 = styled.input<Pick<Props, "hasError">>`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -536,6 +636,11 @@ const StyledInput2 = styled.input`
     -webkit-appearance: none;
   }
   -moz-appearance: textfield;
+  ${props =>
+    props.hasError &&
+    styled.css`
+      border: 1px solid #b10e1e;
+    `}
   max-width: 5.4ex;
   margin-bottom: 0;
   margin-top: 0px;
@@ -550,6 +655,11 @@ const StyledDiv7 = styled.div`
 
 const StyledDiv8 = styled.div`
   margin-bottom: 20px;
+  :after {
+    content: "";
+    display: block;
+    clear: both;
+  }
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
@@ -586,11 +696,10 @@ const StyledLabel3 = styled.label`
   @media print {
     color: #000000;
   }
-  display: block;
   margin-top: 0px;
 `;
 
-const StyledInput3 = styled.input`
+const StyledInput3 = styled.input<Pick<Props, "hasError">>`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -628,36 +737,17 @@ const StyledInput3 = styled.input`
     -webkit-appearance: none;
   }
   -moz-appearance: textfield;
+  ${props =>
+    props.hasError &&
+    styled.css`
+      border: 1px solid #b10e1e;
+    `}
   max-width: 9ex;
   margin-bottom: 0;
   margin-top: 0px;
 `;
 
 const constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -713,7 +803,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
+  type: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -792,7 +882,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type3: {
+  type2: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -870,13 +960,42 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
+  },
+  type3: {
+    Button: "button",
+    Checkbox: "checkbox",
+    Color: "color",
+    Date: "date",
+    "DateTime: Local": "datetime-local",
+    Email: "email",
+    File: "file",
+    Hidden: "hidden",
+    Image: "image",
+    Month: "month",
+    Number: "number",
+    Password: "password",
+    Radio: "radio",
+    Range: "range",
+    Reset: "reset",
+    Search: "search",
+    Submit: "submit",
+    Telephone: "tel",
+    Text: "text",
+    Time: "time",
+    URL: "url",
+    Week: "week"
   }
 };
 
 const DateInput = ({
-  dobHint,
-  dob,
-  dobDay,
+  hasError,
+  hintId,
+  errorId,
+  label,
+  hint,
+  error,
+  id,
+  dayId,
   name,
   disabled,
   readOnly,
@@ -887,7 +1006,7 @@ const DateInput = ({
   maxLength,
   autoComplete,
   onChange,
-  dobMonth,
+  monthId,
   name2,
   disabled2,
   readOnly2,
@@ -898,7 +1017,7 @@ const DateInput = ({
   maxLength2,
   autoComplete2,
   onChange2,
-  dobYear,
+  yearId,
   name3,
   disabled3,
   readOnly3,
@@ -910,64 +1029,103 @@ const DateInput = ({
   autoComplete3,
   onChange3
 }: Props) => (
-  <StyledDiv>
-    <StyledFieldset aria-describedby={dobHint} role="group">
-      <StyledLegend>What is your date of birth?</StyledLegend>
-      <StyledSpan id={dobHint}>For example, 31 3 1980</StyledSpan>
-      <StyledDiv2 id={dob}>
+  <StyledDiv hasError={hasError}>
+    <StyledFieldset
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
+      role="group"
+    >
+      <StyledLegend>
+        <StyledH1>
+          {label !== undefined ? (
+            label
+          ) : (
+            <React.Fragment>Example label</React.Fragment>
+          )}
+        </StyledH1>
+      </StyledLegend>
+      <StyledSpan id={hintId}>
+        {hint !== undefined ? (
+          hint
+        ) : (
+          <React.Fragment>Example hint</React.Fragment>
+        )}
+      </StyledSpan>
+      {hasError !== undefined ? (
+        <React.Fragment>
+          <StyledSpan2 id={errorId}>
+            <StyledSpan3>Error: </StyledSpan3>
+            {error !== undefined ? (
+              error
+            ) : (
+              <React.Fragment>Example error</React.Fragment>
+            )}
+          </StyledSpan2>
+        </React.Fragment>
+      ) : (
+        ""
+      )}
+
+      <StyledDiv2 id={id}>
         <StyledDiv3>
           <StyledDiv4>
-            <StyledLabel htmlFor={dobDay}>Day</StyledLabel>
+            <StyledLabel htmlFor={dayId}>Day</StyledLabel>
             <StyledInput
-              id={dobDay}
+              hasError={hasError}
+              autoComplete={constants.autoComplete[autoComplete]}
+              id={dayId}
               name={name}
               pattern="[0-9]*"
               type={constants.type[type] as any}
+              value={value}
               disabled={disabled}
               readOnly={readOnly}
               autoFocus={autoFocus}
-              value={value}
               spellCheck={spellCheck}
               maxLength={maxLength}
-              autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
           </StyledDiv4>
         </StyledDiv3>
         <StyledDiv5>
           <StyledDiv6>
-            <StyledLabel2 htmlFor={dobMonth}>Month</StyledLabel2>
+            <StyledLabel2 htmlFor={monthId}>Month</StyledLabel2>
             <StyledInput2
-              id={dobMonth}
+              hasError={hasError}
+              autoComplete={constants.autoComplete2[autoComplete2]}
+              id={monthId}
               name={name2}
               pattern="[0-9]*"
               type={constants.type2[type2] as any}
+              value={value2}
               disabled={disabled2}
               readOnly={readOnly2}
               autoFocus={autoFocus2}
-              value={value2}
               spellCheck={spellCheck2}
               maxLength={maxLength2}
-              autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
           </StyledDiv6>
         </StyledDiv5>
         <StyledDiv7>
           <StyledDiv8>
-            <StyledLabel3 htmlFor={dobYear}>Year</StyledLabel3>
+            <StyledLabel3 htmlFor={yearId}>Year</StyledLabel3>
             <StyledInput3
-              id={dobYear}
+              hasError={hasError}
+              autoComplete={constants.autoComplete3[autoComplete3]}
+              id={yearId}
               name={name3}
               pattern="[0-9]*"
               type={constants.type3[type3] as any}
+              value={value3}
               disabled={disabled3}
               readOnly={readOnly3}
               autoFocus={autoFocus3}
-              value={value3}
               spellCheck={spellCheck3}
               maxLength={maxLength3}
-              autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />
           </StyledDiv8>

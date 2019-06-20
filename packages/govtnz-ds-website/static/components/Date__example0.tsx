@@ -5,7 +5,7 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
-import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';import DateInputWithErrors from '@govtnz/ds/build/react-ts/DateInputWithErrors.tsx';
+import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';
 const onChangeGenerator = comp => ({});
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
@@ -13,8 +13,16 @@ const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
-        <DateInput {...onChangeGenerator(DateInput)} />
-        <DateInputWithErrors {...onChangeGenerator(DateInputWithErrors)} />
+        <DateInput
+ {...onChangeGenerator(DateInput
+)}            id="passport-issued"
+            hintId="passport-issued-hint"
+            dayId="passport-issued-day"
+            monthId="passport-issued-month"
+            yearId="passport-issued-year"
+            label="When was your passport issued?"
+            hint="For example, 12 11 2007"
+        />
     </Example>);
 
 document.addEventListener('DOMContentLoaded', () => {

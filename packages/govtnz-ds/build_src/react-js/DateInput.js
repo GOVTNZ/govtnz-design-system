@@ -1,30 +1,6 @@
 import React from "react";
 
 const constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -80,7 +56,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
+  type: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -159,7 +135,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type3: {
+  type2: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -237,13 +213,42 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
+  },
+  type3: {
+    Button: "button",
+    Checkbox: "checkbox",
+    Color: "color",
+    Date: "date",
+    "DateTime: Local": "datetime-local",
+    Email: "email",
+    File: "file",
+    Hidden: "hidden",
+    Image: "image",
+    Month: "month",
+    Number: "number",
+    Password: "password",
+    Radio: "radio",
+    Range: "range",
+    Reset: "reset",
+    Search: "search",
+    Submit: "submit",
+    Telephone: "tel",
+    Text: "text",
+    Time: "time",
+    URL: "url",
+    Week: "week"
   }
 };
 
 const DateInput = ({
-  dobHint,
-  dob,
-  dobDay,
+  hasError,
+  hintId,
+  errorId,
+  label,
+  hint,
+  error,
+  id,
+  dayId,
   name,
   disabled,
   readOnly,
@@ -254,7 +259,7 @@ const DateInput = ({
   maxLength,
   autoComplete,
   onChange,
-  dobMonth,
+  monthId,
   name2,
   disabled2,
   readOnly2,
@@ -265,7 +270,7 @@ const DateInput = ({
   maxLength2,
   autoComplete2,
   onChange2,
-  dobYear,
+  yearId,
   name3,
   disabled3,
   readOnly3,
@@ -277,90 +282,129 @@ const DateInput = ({
   autoComplete3,
   onChange3
 }) => (
-  <div className="g-dateInput-form-group">
+  <div
+    className={`g-dateInput-form-group${
+      hasError ? " g-dateInput-form-group--error" : ""
+    }`}
+  >
     <fieldset
-      aria-describedby={dobHint}
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
       className="g-dateInput-fieldset"
       role="group"
     >
-      <legend className="g-dateInput-fieldset__legend">
-        What is your date of birth?
+      <legend className="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl">
+        <h1 className="g-dateInput-fieldset__heading">
+          {label !== undefined ? (
+            label
+          ) : (
+            <React.Fragment>Example label</React.Fragment>
+          )}
+        </h1>
       </legend>
-      <span className="g-dateInput-hint" id={dobHint}>
-        For example, 31 3 1980
+      <span className="g-dateInput-hint" id={hintId}>
+        {hint !== undefined ? (
+          hint
+        ) : (
+          <React.Fragment>Example hint</React.Fragment>
+        )}
       </span>
-      <div className="g-date-input" id={dob}>
-        <div className="g-date-input__item">
+      {hasError !== undefined ? (
+        <React.Fragment>
+          <span className="g-dateInput-error-message" id={errorId}>
+            <span className="g-dateInput-visually-hidden">Error: </span>
+            {error !== undefined ? (
+              error
+            ) : (
+              <React.Fragment>Example error</React.Fragment>
+            )}
+          </span>
+        </React.Fragment>
+      ) : (
+        ""
+      )}
+
+      <div className="g-dateInput-date-input" id={id}>
+        <div className="g-dateInput-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label g-date-input__label"
-              htmlFor={dobDay}
+              className="g-dateInput-label g-dateInput-date-input__label"
+              htmlFor={dayId}
             >
               Day
             </label>
             <input
-              className="g-dateInput-input g-date-input__input g-dateInput-input--width-2"
-              id={dobDay}
+              autoComplete={constants.autoComplete[autoComplete]}
+              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
+                hasError ? " g-dateInput-input--error" : ""
+              }`}
+              id={dayId}
               name={name}
               pattern="[0-9]*"
               type={constants.type[type]}
+              value={value}
               disabled={disabled}
               readOnly={readOnly}
               autoFocus={autoFocus}
-              value={value}
               spellCheck={spellCheck}
               maxLength={maxLength}
-              autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
           </div>
         </div>
-        <div className="g-date-input__item">
+        <div className="g-dateInput-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label g-date-input__label"
-              htmlFor={dobMonth}
+              className="g-dateInput-label g-dateInput-date-input__label"
+              htmlFor={monthId}
             >
               Month
             </label>
             <input
-              className="g-dateInput-input g-date-input__input g-dateInput-input--width-2"
-              id={dobMonth}
+              autoComplete={constants.autoComplete2[autoComplete2]}
+              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
+                hasError ? " g-dateInput-input--error" : ""
+              }`}
+              id={monthId}
               name={name2}
               pattern="[0-9]*"
               type={constants.type2[type2]}
+              value={value2}
               disabled={disabled2}
               readOnly={readOnly2}
               autoFocus={autoFocus2}
-              value={value2}
               spellCheck={spellCheck2}
               maxLength={maxLength2}
-              autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
           </div>
         </div>
-        <div className="g-date-input__item">
+        <div className="g-dateInput-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label g-date-input__label"
-              htmlFor={dobYear}
+              className="g-dateInput-label govuk-date-input__label"
+              htmlFor={yearId}
             >
               Year
             </label>
             <input
-              className="g-dateInput-input g-date-input__input g-dateInput-input--width-4"
-              id={dobYear}
+              autoComplete={constants.autoComplete3[autoComplete3]}
+              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4${
+                hasError ? " g-dateInput-input--error" : ""
+              }`}
+              id={yearId}
               name={name3}
               pattern="[0-9]*"
               type={constants.type3[type3]}
+              value={value3}
               disabled={disabled3}
               readOnly={readOnly3}
               autoFocus={autoFocus3}
-              value={value3}
               spellCheck={spellCheck3}
               maxLength={maxLength3}
-              autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />
           </div>
