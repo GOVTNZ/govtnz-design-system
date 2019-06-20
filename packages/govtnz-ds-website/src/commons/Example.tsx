@@ -71,35 +71,42 @@ export default class Example extends Component<Props, State> {
       supportsClipboard: true,
     });
 
-    window.addEventListener(
-      'message',
-      e => {
-        if (e.origin !== window.location.origin) {
-          console.info('Ignoring postMessage from', e.origin, e);
-          return;
-        }
-        const data = e.data;
-        const resizeById = data && data.resizeById;
-        if (
-          this.props.iframeProps &&
-          this.props.iframeProps.id &&
-          this.props.iframeProps.id === resizeById
-        ) {
-          const iframeHeightClamped = data.height > 50 ? data.height : 50;
-          console.log(
-            `Updating ${this.props.iframeProps.id} to be height `,
-            iframeHeightClamped,
-            ` (from original height ${data.height})`
-          );
+    window.addEventListener('message', this.handleMessage, false);
 
-          this.setState({
-            // iframeWidth: data.width > 300 ? data.width : 300,
-            iframeHeight: iframeHeightClamped,
-          });
-        }
-      },
-      false
-    );
+    console.log('Attached handle messsage');
+  };
+
+  handleMessage = e => {
+    console.log('PostMessage received');
+    if (e.origin !== window.location.origin) {
+      console.info('Ignoring postMessage from', e.origin, e);
+      return;
+    }
+    const data = e.data;
+    const resizeById = data && data.resizeById;
+    if (
+      this.props.iframeProps &&
+      this.props.iframeProps.id &&
+      this.props.iframeProps.id === resizeById
+    ) {
+      const iframeHeightClamped = data.height > 50 ? data.height : 50;
+      console.log(
+        `Updating ${this.props.iframeProps.id} to be height `,
+        iframeHeightClamped,
+        ` (from original height ${data.height})`
+      );
+
+      this.setState({
+        // iframeWidth: data.width > 300 ? data.width : 300,
+        iframeHeight: iframeHeightClamped,
+      });
+    } else {
+      console.log(
+        'Ignoring update to other iframe id',
+        data,
+        this.props.iframeProps
+      );
+    }
   };
 
   resetFormatChoice = () => {
@@ -297,6 +304,8 @@ export default class Example extends Component<Props, State> {
         })}
       </div>
     );
+
+    console.log('setting', iframeProps.id, iframeHeight);
 
     return (
       <div className="example">

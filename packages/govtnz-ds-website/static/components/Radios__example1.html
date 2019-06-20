@@ -11,16 +11,54 @@
     <script src="../react-16.8.6.production.min.js"></script>
     <script src="../react-dom-16.8.6.production.min.js"></script>
     <script src="/components/Radios__example1.js"></script>
+    <link rel="stylesheet" href="../css/FieldsetBlockWithError.css"><link rel="stylesheet" href="../css/H1.css"><link rel="stylesheet" href="../css/Radios.css"><link rel="stylesheet" href="../css/RadioBlock.css">
+    <link rel="stylesheet" href="/IframePage.css" />
+  </head>
+  <body>
+    <noscript>
+      <a href="./Radios">
+        This example originates from the Error (Radios example) page
+      </a>
+    </noscript>
+    <div id="iframed-message" style="display:none">
+      <a href="./Radios">
+        This example originates from the Error (Radios example) page
+      </a>
+    </div>
+    <div id="root" class="css-changes-for-example-only">
+      "..."
+    </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         console.log('iframe DOMContentLoaded', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
+          console.log('Iframe has no parent');
           // then this page is not currently iframed
           return;
         }
         window.addEventListener('resize', updateIframeSize, false);
         window.addEventListener('orientationchange', updateIframeSize, false);
+        [
+          50,
+          100,
+          200,
+          300,
+          500,
+          700,
+          1000,
+          1500,
+          2000,
+          3000,
+          4000,
+          5000,
+          10000,
+        ].forEach(function(ms) {
+          // temporary workaround to prevent race condition where the parent
+          // hasn't yet registered addEventListener('message')
+          // FIXME
+          setTimeout(updateIframeSize, ms);
+        });
         updateIframeSize();
       });
 
@@ -50,22 +88,5 @@
         iframedMessage.style.display = isIframed ? 'none' : 'block';
       }
     </script>
-    <link rel="stylesheet" href="../css/FieldsetBlockWithError.css"><link rel="stylesheet" href="../css/H1.css"><link rel="stylesheet" href="../css/Radios.css"><link rel="stylesheet" href="../css/RadioBlock.css">
-    <link rel="stylesheet" href="/IframePage.css" />
-  </head>
-  <body>
-    <noscript>
-      <a href="./Radios">
-        This example originates from the Error (Radios example) page
-      </a>
-    </noscript>
-    <div id="iframed-message" style="display:none">
-      <a href="./Radios">
-        This example originates from the Error (Radios example) page
-      </a>
-    </div>
-    <div id="root" class="css-changes-for-example-only">
-      "..."
-    </div>
   </body>
 </html>
