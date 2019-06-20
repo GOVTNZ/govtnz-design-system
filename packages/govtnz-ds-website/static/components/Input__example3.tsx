@@ -16,12 +16,13 @@ var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
         <InputBlock {...onChangeGenerator(InputBlock)} type="Text" label="Event name" name="anyName" inputId="anyId10" hintId="anyHintId10" />
     </Example>);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const selector = '#root';
-  const root = document.querySelector(selector);
-  if (!root) {
-    console.error("Couldn't find app mount point ", selector);
-    return;
-  }
-  ReactDOM.render(<PageContent />, root);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+      const selector = '#root';
+      const root = document.querySelector(selector);
+      if (!root) {
+        console.error("Couldn't find app mount point ", selector);
+        return;
+      }
+      ReactDOM.hydrate(<PageContent />, root, window.afterRender);
+    });
+    

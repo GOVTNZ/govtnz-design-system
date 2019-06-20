@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <p class="g-p-body-m">To sign up, you need to complete four steps.</p><ol class="g-ol-list g-ol-list--number"><li>Prove your identity, such as with RealMe</li><li>Provide a passport-sized photo</li><li>Enter your address details:<ol class="g-ol-list g-ol-list--number"><li>Postal address</li><li>Delivery address</li></ol></li><li>Confirm payment methods</li></ol>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

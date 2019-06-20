@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-dateInput-form-group"><fieldset aria-describedby="bday-hint" class="g-dateInput-fieldset" role="group"><legend class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"><h1 class="g-dateInput-fieldset__heading">What is your date of birth?</h1></legend><span class="g-dateInput-hint" id="bday-hint">For example, 31 3 1980</span><div class="g-dateInput-date-input" id="bday"><div class="g-dateInput-date-input__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput-date-input__label" for="bday-day">Day</label><input autoComplete="bday-day" class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" id="bday-day" pattern="[0-9]*" maxLength="2"/></div></div><div class="g-dateInput-date-input__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput-date-input__label" for="bday-month">Month</label><input autoComplete="bday-month" class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" id="bday-month" pattern="[0-9]*" maxLength="2"/></div></div><div class="g-dateInput-date-input__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label govuk-date-input__label" for="bday-year">Year</label><input autoComplete="bday-year" class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" id="bday-year" pattern="[0-9]*" maxLength="4"/></div></div></div></fieldset></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

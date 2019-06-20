@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-inputBlock-form-group"><label class="g-inputBlock-label" for="anyId122">Your email address</label><div class="g-inputBlock-hint" id="anyHintId122">Please provide your personal email address that we&#x27;ll contact you on.</div><input type="email" aria-describedby="anyHintId122" class="g-inputBlock-input" id="anyId122" name="someEmail" spellcheck="false"/></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

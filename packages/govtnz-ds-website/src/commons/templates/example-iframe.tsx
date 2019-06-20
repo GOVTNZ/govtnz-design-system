@@ -10,13 +10,3 @@ const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 // @pageContentComponent
-
-document.addEventListener('DOMContentLoaded', () => {
-  const selector = '#root';
-  const root = document.querySelector(selector);
-  if (!root) {
-    console.error("Couldn't find app mount point ", selector);
-    return;
-  }
-  ReactDOM.render(<PageContent />, root);
-});

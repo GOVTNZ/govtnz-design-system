@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-fieldsetBlock-form-group"><fieldset class="g-fieldset"><legend class="g-fieldset__legend"><h1 class="g-heading-l" id="whereLiveTitle">Where do you live?</h1></legend><div><div class="g-radios__item"><input type="radio" class="g-radios__input" id="anyRadioId3334" name="where" value="north"/><label class="g-radios-label g-radios__label" for="anyRadioId3334">North Island</label></div><div class="g-radios__item"><input type="radio" class="g-radios__input" id="anyRadioId42344" name="where" value="south"/><label class="g-radios-label g-radios__label" for="anyRadioId42344">South Island</label></div><div class="g-radios__item"><input type="radio" class="g-radios__input" id="anyRadioId5234" name="where" value="stewart"/><label class="g-radios-label g-radios__label" for="anyRadioId5234">Stewart Island</label></div><div class="g-radios__item"><input type="radio" class="g-radios__input" id="anyRadioId6234" name="where" value="chatham"/><label class="g-radios-label g-radios__label" for="anyRadioId6234">Chatham Islands</label></div></div></fieldset></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

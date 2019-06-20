@@ -16,12 +16,13 @@ var PageContent = (props) => (<Example {...onChangeGenerator(Example)} codeOnly>
         <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" />
     </Example>);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const selector = '#root';
-  const root = document.querySelector(selector);
-  if (!root) {
-    console.error("Couldn't find app mount point ", selector);
-    return;
-  }
-  ReactDOM.render(<PageContent />, root);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+      const selector = '#root';
+      const root = document.querySelector(selector);
+      if (!root) {
+        console.error("Couldn't find app mount point ", selector);
+        return;
+      }
+      ReactDOM.hydrate(<PageContent />, root, window.afterRender);
+    });
+    

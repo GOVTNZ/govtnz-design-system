@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-fileUpload-form-group"><label class="g-fileUpload-label">Upload a file</label><input type="file" class="g-file-upload"/></div><div class="g-fileUploadWithErrorMessage-form-group g-fileUploadWithErrorMessage-form-group--error"><label class="g-fileUploadWithErrorMessage-label">Upload a file</label><span class="g-fileUploadWithErrorMessage-hint">Your photo may be in your Pictures, Photos, Downloads or Desktop folder. Or in an app like iPhoto.</span><span class="g-fileUploadWithErrorMessage-error-message">Error message goes here</span><input type="file" class="g-fileUploadWithErrorMessage-file-upload g-fileUploadWithErrorMessage-file-upload--error"/></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

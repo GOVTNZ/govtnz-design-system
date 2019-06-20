@@ -18,12 +18,13 @@ var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
         </P>
     </Example>);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const selector = '#root';
-  const root = document.querySelector(selector);
-  if (!root) {
-    console.error("Couldn't find app mount point ", selector);
-    return;
-  }
-  ReactDOM.render(<PageContent />, root);
-});
+    document.addEventListener('DOMContentLoaded', () => {
+      const selector = '#root';
+      const root = document.querySelector(selector);
+      if (!root) {
+        console.error("Couldn't find app mount point ", selector);
+        return;
+      }
+      ReactDOM.hydrate(<PageContent />, root, window.afterRender);
+    });
+    

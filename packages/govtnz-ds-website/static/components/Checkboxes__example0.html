@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-fieldsetBlock-form-group"><fieldset aria-describedby="hintId1" class="g-fieldset"><legend class="g-fieldset__legend"><h1 class="g-heading-l g-heading-mb-8" id="providerChoiceTitle1">Who are your providers?</h1></legend><div class="g-fieldsetBlock-hint" id="hintId1"><p>Select all that apply.</p></div><div><div class="g-checkboxes__item"><input type="checkbox" class="g-checkboxes__input" id="anyCheckboxId1" name="providerChoice1" value="provider1"/><label class="g-checkboxBlock-label g-checkboxes__label" for="anyCheckboxId1">Aardvark Access</label></div><div class="g-checkboxes__item"><input type="checkbox" class="g-checkboxes__input" id="anyCheckboxId2" name="providerChoice1" value="provider2"/><label class="g-checkboxBlock-label g-checkboxes__label" for="anyCheckboxId2">Bumblebee Business</label></div><div class="g-checkboxes__item"><input type="checkbox" class="g-checkboxes__input" id="anyCheckboxId3" name="providerChoice1" value="provider3"/><label class="g-checkboxBlock-label g-checkboxes__label" for="anyCheckboxId3">Caterpillar Company</label></div></div></fieldset></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

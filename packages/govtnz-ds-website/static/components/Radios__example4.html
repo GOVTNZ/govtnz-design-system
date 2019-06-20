@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-fieldsetBlock-form-group"><fieldset aria-describedby="hintId" class="g-fieldset"><legend class="g-fieldset__legend"><h1 class="g-heading-l" id="providerChoiceTitle1">Choose one provider</h1></legend><div class="g-fieldsetBlock-hint" id="hintId"><p>Select one provider.</p></div><div><div class="g-radios__item"><input type="radio" aria-describedby="someHintId7" class="g-radios__input" id="anyRadioId7234" name="providerChoice3" value="provider1"/><label class="g-radios-label g-radios__label" for="anyRadioId7234">Sign in with Aardvark services</label><div class="g-radios-hint g-radios__hint" id="someHintId7">North Island only</div></div><div class="g-radios__item"><input type="radio" aria-describedby="someHintId8" class="g-radios__input" id="anyRadioId8234" name="providerChoice3" value="provider2"/><label class="g-radios-label g-radios__label" for="anyRadioId8234">Sign in with Bumblebee services</label><div class="g-radios-hint g-radios__hint" id="someHintId8">North and South Island</div></div><div class="g-radios__item"><input type="radio" aria-describedby="someHintId7234" class="g-radios__input" id="anyRadioId9f" name="providerChoice3" value="provider3"/><label class="g-radios-label g-radios__label" for="anyRadioId9f">Sign in with Caterpillar company</label><div class="g-radios-hint g-radios__hint" id="someHintId7234">All new Zealand territories</div></div></div></fieldset></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';

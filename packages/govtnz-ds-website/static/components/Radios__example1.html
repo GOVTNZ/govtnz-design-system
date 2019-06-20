@@ -32,11 +32,11 @@
       <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      "..."
+      <div class="g-fieldsetBlockWithError-form-group g-fieldsetBlockWithError-form-group--error"><fieldset aria-describedby="hintId5 errorId5" class="g-fieldset"><legend class="g-fieldset__legend"><h1 class="g-heading-l" id="nameChangeId5">Have you changed your name?</h1></legend><div class="g-fieldsetBlockWithError-hint" id="hintId5"><p>This includes changing your last name or spelling your name differently.</p></div><div class="g-fieldsetBlockWithError-error-message" id="errorId5"><span class="g-fieldsetBlockWithError-visually-hidden">Error:<!-- --> </span>Select &#x27;yes&#x27; if you have changed your name.</div><div class="g-fieldsetBlockWithError-children"><div class="g-radios g-radios--inline"><div class="g-radios__item"><input type="radio" aria-describedby="hintId5" class="g-radios__input" id="anyRadioId9234" name="nameChange5" value="true"/><label class="g-radios-label g-radios__label" for="anyRadioId9234">Yes</label></div><div class="g-radios__item"><input type="radio" aria-describedby="hintId5" class="g-radios__input" id="anyRadioId10" name="nameChange5" value="false"/><label class="g-radios-label g-radios__label" for="anyRadioId10">No</label></div></div></div></fieldset></div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log('iframe DOMContentLoaded', window.document.title);
+      function afterRender() {
+        console.log('afterRender', window.document.title);
         updateParentPageLink();
         if (!window.parent || !window.parent.postMessage) {
           console.log('Iframe has no parent');
@@ -80,7 +80,7 @@
           setTimeout(updateIframeSize, ms);
         });
         updateIframeSize();
-      });
+      }
 
       function updateIframeSize() {
         var selector = '#root';
