@@ -223,7 +223,7 @@ const generatePage = async (
           addOnStateChanged(fullExample),
           exampleTitles[counter],
           exampleIds[counter],
-          `../${pageId}`
+          `./${pageId}`
         );
 
         const exampleHeight = await getExampleHeight(exampleSrcPath);
