@@ -51,7 +51,7 @@ export default class Example extends Component<Props, State> {
     this.state = {
       id: `select_${Math.random()
         .toString(36)
-        .replace(/[^0-9]/gi, '')}`,
+        .replace(/[^0-9a-fA-F]/gi, '')}`,
       formatId: formatId,
       code: highlightCode(rawCode, formatId),
       hasClickedExpand: false,
@@ -293,8 +293,6 @@ export default class Example extends Component<Props, State> {
         })}
       </div>
     );
-
-    console.log('setting', iframeProps.id, iframeHeight);
 
     return (
       <div className="example">
