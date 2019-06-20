@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[0]} iframeProps={{
         id:"iframe_componentsRadios0",
         className: "example__iframe",
         src:"/components/Radios__example0.html",
@@ -43,7 +43,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[1]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[1]} iframeProps={{
         id:"iframe_componentsRadios1",
         className: "example__iframe",
         src:"/components/Radios__example1.html",
@@ -73,7 +73,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Stacked radio buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[2]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[2]} iframeProps={{
         id:"iframe_componentsRadios2",
         className: "example__iframe",
         src:"/components/Radios__example2.html",
@@ -85,7 +85,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>When there are more than 2 options, radio buttons should be stacked.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Inline radio buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[3]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[3]} iframeProps={{
         id:"iframe_componentsRadios3",
         className: "example__iframe",
         src:"/components/Radios__example3.html",
@@ -97,7 +97,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>If there are only 2 options, you can either stack the radio buttons or display them inline.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Radio button items with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[4]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[4]} iframeProps={{
         id:"iframe_componentsRadios4",
         className: "example__iframe",
         src:"/components/Radios__example4.html",
@@ -109,7 +109,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>You can add hints to radio button items to provide more information about the options.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Radio button items with a text divider</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[5]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[5]} iframeProps={{
         id:"iframe_componentsRadios5",
         className: "example__iframe",
         src:"/components/Radios__example5.html",
@@ -123,7 +123,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Radios[6]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Radios[6]} iframeProps={{
         id:"iframe_componentsRadios6",
         className: "example__iframe",
         src:"/components/Radios__example6.html",

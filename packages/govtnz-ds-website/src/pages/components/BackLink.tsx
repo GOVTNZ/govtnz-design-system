@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Back link</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__BackLink[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__BackLink[0]} iframeProps={{
         id:"iframe_componentsBackLink0",
         className: "example__iframe",
         src:"/components/BackLink__example0.html",

@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of File Upload</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FileUpload[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__FileUpload[0]} iframeProps={{
         id:"iframe_componentsFileUpload0",
         className: "example__iframe",
         src:"/components/FileUpload__example0.html",

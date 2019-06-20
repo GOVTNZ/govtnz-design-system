@@ -69,7 +69,7 @@ as &#39;Save and send&#39;.</p>
 what to do next.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Button[0]} iframeProps={{
         id:"iframe_componentsButton0",
         className: "example__iframe",
         src:"/components/Button__example0.html",
@@ -85,7 +85,7 @@ next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Secondary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[1]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Button[1]} iframeProps={{
         id:"iframe_componentsButton1",
         className: "example__iframe",
         src:"/components/Button__example1.html",
@@ -100,7 +100,7 @@ combinations to a maximum of two secondary buttons with a single primary
 button, as more can confuse users.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary and secondary combination</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[2]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Button[2]} iframeProps={{
         id:"iframe_componentsButton2",
         className: "example__iframe",
         src:"/components/Button__example2.html",
@@ -125,7 +125,7 @@ or may not understand what it signifies. Make sure the context and button text
 make clear what will happen if the user selects it.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Warning buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[3]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Button[3]} iframeProps={{
         id:"iframe_componentsButton3",
         className: "example__iframe",
         src:"/components/Button__example3.html",
@@ -142,7 +142,7 @@ impede keyboard accessibility.</p>
 easier to understand.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>'Disabled' buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Button[4]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Button[4]} iframeProps={{
         id:"iframe_componentsButton4",
         className: "example__iframe",
         src:"/components/Button__example4.html",

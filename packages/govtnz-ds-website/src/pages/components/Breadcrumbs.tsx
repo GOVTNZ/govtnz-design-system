@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Breadcrumbs</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Breadcrumbs[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Breadcrumbs[0]} iframeProps={{
         id:"iframe_componentsBreadcrumbs0",
         className: "example__iframe",
         src:"/components/Breadcrumbs__example0.html",

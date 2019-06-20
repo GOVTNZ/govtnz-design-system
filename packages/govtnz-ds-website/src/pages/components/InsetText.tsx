@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Inset Text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__InsetText[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__InsetText[0]} iframeProps={{
         id:"iframe_componentsInsetText0",
         className: "example__iframe",
         src:"/components/InsetText__example0.html",

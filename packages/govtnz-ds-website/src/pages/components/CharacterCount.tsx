@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Character Count</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__CharacterCount[0]} iframeProps={{
         id:"iframe_componentsCharacterCount0",
         className: "example__iframe",
         src:"/components/CharacterCount__example0.html",

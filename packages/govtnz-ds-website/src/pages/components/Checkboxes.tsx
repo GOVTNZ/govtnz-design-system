@@ -29,7 +29,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[0]} iframeProps={{
         id:"iframe_componentsCheckboxes0",
         className: "example__iframe",
         src:"/components/Checkboxes__example0.html",
@@ -40,7 +40,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[1]} iframeProps={{
         id:"iframe_componentsCheckboxes1",
         className: "example__iframe",
         src:"/components/Checkboxes__example1.html",
@@ -51,7 +51,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Checkboxes with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[2]} iframeProps={{
         id:"iframe_componentsCheckboxes2",
         className: "example__iframe",
         src:"/components/Checkboxes__example2.html",

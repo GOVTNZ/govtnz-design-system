@@ -23,7 +23,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Fieldset</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Fieldset[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Fieldset[0]} iframeProps={{
         id:"iframe_componentsFieldset0",
         className: "example__iframe",
         src:"/components/Fieldset__example0.html",

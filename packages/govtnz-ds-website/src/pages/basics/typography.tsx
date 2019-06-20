@@ -31,7 +31,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>We are investigating how font choice will be incorporated into the design system, in order to meet New Zealand language requirements.</p>
 <h2 id="headings">Headings</h2>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[0]} iframeProps={{
         id:"iframe_basicstypography0",
         className: "example__iframe",
         src:"/basics/typography__example0.html",
@@ -42,7 +42,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Same heading level varying by size only</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[1]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[1]} iframeProps={{
         id:"iframe_basicstypography1",
         className: "example__iframe",
         src:"/basics/typography__example1.html",
@@ -56,7 +56,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Write all headings in sentence case, with the exception of proper nouns, which require initial capitals.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Headings with captions</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[2]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[2]} iframeProps={{
         id:"iframe_basicstypography2",
         className: "example__iframe",
         src:"/basics/typography__example2.html",
@@ -68,7 +68,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Headings with captions inside the       <code>h1</code></ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[3]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[3]} iframeProps={{
         id:"iframe_basicstypography3",
         className: "example__iframe",
         src:"/basics/typography__example3.html",
@@ -88,7 +88,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>You can use these text sizes to indicate the relative importance of the content on the page.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Large size for lead paragraph</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[4]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[4]} iframeProps={{
         id:"iframe_basicstypography4",
         className: "example__iframe",
         src:"/basics/typography__example4.html",
@@ -102,7 +102,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Only use one lead paragraph per page.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Medium size for standard body text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[5]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[5]} iframeProps={{
         id:"iframe_basicstypography5",
         className: "example__iframe",
         src:"/basics/typography__example5.html",
@@ -114,7 +114,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>The majority of your body copy should use medium size.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Small size for small body text</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[6]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[6]} iframeProps={{
         id:"iframe_basicstypography6",
         className: "example__iframe",
         src:"/basics/typography__example6.html",
@@ -127,7 +127,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <h2 id="links">Links</h2>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Default</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[7]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[7]} iframeProps={{
         id:"iframe_basicstypography7",
         className: "example__iframe",
         src:"/basics/typography__example7.html",
@@ -142,7 +142,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Use lists to break up blocks of text into chunks to make them easier to read.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
 <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Bulleted lists</ExampleHeading>
-<Example {...onChangeGenerator(Example)} code={basics__typography[8]} iframeProps={{
+<Example {...onChangeGenerator(Example)}  code={basics__typography[8]} iframeProps={{
         id:"iframe_basicstypography8",
         className: "example__iframe",
         src:"/basics/typography__example8.html",
@@ -155,7 +155,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <p>Use bulleted lists to highlight options and examples in content, especially when a sentence contains more than three clauses.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Numbered lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={basics__typography[9]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={basics__typography[9]} iframeProps={{
         id:"iframe_basicstypography9",
         className: "example__iframe",
         src:"/basics/typography__example9.html",

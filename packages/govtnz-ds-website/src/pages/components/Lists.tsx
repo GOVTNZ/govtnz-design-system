@@ -24,7 +24,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 const PageContent = (props) => <React.Fragment><p>For detailed documentation see <Link to="/components/Ul/">Unordered List</Link> and <Link to="/components/Ol/">Ordered List</Link> with <Link to="/components/Li/">List item</Link>s inside either. Here is an introductionary paragraph that succinctly describes what this componeent is, and is easy to scan for users looking to see if this page has the things on it they are looking for.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[0]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Lists[0]} iframeProps={{
         id:"iframe_componentsLists0",
         className: "example__iframe",
         src:"/components/Lists__example0.html",
@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[1]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Lists[1]} iframeProps={{
         id:"iframe_componentsLists1",
         className: "example__iframe",
         src:"/components/Lists__example1.html",
@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
 <p>Explanatory text about how to start using the component goes here and it is relatively brief but introuduces how it works I dunno this is not my area of expertise.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists a second time</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Lists[2]} iframeProps={{
+    <Example {...onChangeGenerator(Example)}  code={components__Lists[2]} iframeProps={{
         id:"iframe_componentsLists2",
         className: "example__iframe",
         src:"/components/Lists__example2.html",

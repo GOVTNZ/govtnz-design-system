@@ -279,10 +279,10 @@ const generatePage = async (
     html = html.replace(/<Example( [\s\S]*?>|>)[\s\S]*?<\/Example>/g, match => {
       const isCodeOnly = match.includes('codeOnly');
       counter++;
-      if (isCodeOnly) {
-        return ''; // nothing to render
-      }
-      return `<Example code={${importName}[${counter - 1}]} iframeProps={{
+
+      return `<Example ${
+        isCodeOnly ? 'codeOnly' : ''
+      } code={${importName}[${counter - 1}]} iframeProps={{
         id:"${exampleIds[counter - 1]}",
         className: "example__iframe",
         src:"${exampleRelativePaths[counter - 1]}",

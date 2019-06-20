@@ -72,12 +72,13 @@ export default class Example extends Component<Props, State> {
     });
 
     window.addEventListener('message', this.handleMessage, false);
+  };
 
-    console.log('Attached handle messsage');
+  componentWillUnmount = () => {
+    window.removeEventListener('message', this.handleMessage);
   };
 
   handleMessage = e => {
-    console.log('PostMessage received');
     if (e.origin !== window.location.origin) {
       console.info('Ignoring postMessage from', e.origin, e);
       return;
@@ -90,22 +91,10 @@ export default class Example extends Component<Props, State> {
       this.props.iframeProps.id === resizeById
     ) {
       const iframeHeightClamped = data.height > 50 ? data.height : 50;
-      console.log(
-        `Updating ${this.props.iframeProps.id} to be height `,
-        iframeHeightClamped,
-        ` (from original height ${data.height})`
-      );
-
       this.setState({
         // iframeWidth: data.width > 300 ? data.width : 300,
         iframeHeight: iframeHeightClamped,
       });
-    } else {
-      console.log(
-        'Ignoring update to other iframe id',
-        data,
-        this.props.iframeProps
-      );
     }
   };
 
