@@ -9,7 +9,9 @@ import Button from '@govtnz/ds/build/react-ts/Button.tsx';
 const onChangeGenerator = comp => ({});
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
-const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
+const ExampleSection = ({ children }) => (
+  <div className="example__section">{children}</div>
+);
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
