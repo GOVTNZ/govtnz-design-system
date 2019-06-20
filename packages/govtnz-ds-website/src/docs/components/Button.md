@@ -49,7 +49,7 @@ what to do next.
 <ExampleContainer>
     <ExampleHeading>Primary buttons</ExampleHeading>
     <Example>
-        <Button type="Button">Save and continue</Button>
+        <Button>Save and continue</Button>
     </Example>
 </ExampleContainer>
 
@@ -63,7 +63,7 @@ content down into several pages.
 <ExampleContainer>
     <ExampleHeading>Secondary buttons</ExampleHeading>
     <Example>
-        <Button type="Button" level="secondary">Find address</Button>
+        <Button level="secondary">Find address</Button>
     </Example>
 </ExampleContainer>
 
@@ -75,8 +75,8 @@ button, as more can confuse users.
 <ExampleContainer>
     <ExampleHeading>Primary and secondary combination</ExampleHeading>
     <Example>
-        <Button type="Button">Save and continue</Button>
-        <Button type="Button" level="secondary">Save as draft</Button>
+        <Button>Save and continue</Button>
+        <Button level="secondary">Save as draft</Button>
     </Example>
 </ExampleContainer>
 
@@ -103,7 +103,7 @@ make clear what will happen if the user selects it.
 <ExampleContainer>
     <ExampleHeading>Warning buttons</ExampleHeading>
     <Example>
-        <Button type="Button" level="warning">Delete account</Button>
+        <Button level="warning">Delete account</Button>
     </Example>
 </ExampleContainer>
 
@@ -119,7 +119,7 @@ easier to understand.
 <ExampleContainer>
     <ExampleHeading>Disabled buttons</ExampleHeading>
     <Example>
-        <Button type="Button" disabled>Save and continue</Button>
+        <Button disabled>Save and continue</Button>
     </Example>
 </ExampleContainer>
 

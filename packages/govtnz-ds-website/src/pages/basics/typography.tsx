@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example0.html",
         title:"Example 1",
-        height: 522
+        height: 436
       }}></Example>
 </ExampleContainer>
 
@@ -47,7 +47,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example1.html",
         title:"Same heading level varying by size only (typography example)",
-        height: 522
+        height: 436
       }}></Example>
 </ExampleContainer>
 
@@ -61,7 +61,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example2.html",
         title:"Headings with captions (typography example)",
-        height: 367
+        height: 391
       }}></Example>
 </ExampleContainer>
 
@@ -107,7 +107,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example5.html",
         title:"Medium size for standard body text (typography example)",
-        height: 175
+        height: 179
       }}></Example>
 </ExampleContainer>
 
@@ -119,7 +119,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example6.html",
         title:"Small size for small body text (typography example)",
-        height: 140
+        height: 144
       }}></Example>
 </ExampleContainer>
 

@@ -15,8 +15,8 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
-        <Button {...onChangeGenerator(Button)} type="Button">Save and continue</Button>
-        <Button {...onChangeGenerator(Button)} type="Button" level="secondary">Save as draft</Button>
+        <Button {...onChangeGenerator(Button)}>Save and continue</Button>
+        <Button {...onChangeGenerator(Button)} level="secondary">Save as draft</Button>
     </Example>);
 
     document.addEventListener('DOMContentLoaded', () => {
