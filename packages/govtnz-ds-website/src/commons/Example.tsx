@@ -217,7 +217,7 @@ export default class Example extends Component<Props, State> {
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
                   <button
-                    className="g-button g-button--secondary g-button--small"
+                    className="g-button g-button--secondary g-button--small g-button--nowrap"
                     onClick={this.copyToClipboard}
                     type="button"
                   >
