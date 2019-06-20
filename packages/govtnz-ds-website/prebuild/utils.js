@@ -55,7 +55,6 @@ module.exports.importGenerator = async (importName, errorOnMissingImports) => {
 
   const cssFullPath = path.resolve(__dirname, '../src', css);
   cssString = `/* This file is auto-generated. Do not edit. Change config in ./_settings.scss */\n@import "./theme-settings.scss";\n@import "govtnzds/${importName}";\n`;
-  console.log(cssFullPath);
   await fs.promises.writeFile(cssFullPath, cssString, {
     encoding: 'utf-8',
   });

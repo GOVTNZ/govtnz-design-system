@@ -28,7 +28,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGen
         className: "example__iframe",
         src:"/components/FileUpload__example0.html",
         title:"Example of File Upload",
-        height: 50
+        height: 369
       }}></Example>
 </ExampleContainer>
 

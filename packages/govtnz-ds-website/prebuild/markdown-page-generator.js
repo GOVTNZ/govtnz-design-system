@@ -554,9 +554,7 @@ const writeExamplePage = async (
     encoding: 'utf-8',
   });
 
-  const scriptUrl = jsFullPath.substring(
-    path.resolve(__dirname, '..', 'static').length
-  );
+  const scriptUrl = `./${path.basename(jsFullPath)}`;
 
   const serverExampleHTML = '...'; // ReactDOMServer.renderToStaticMarkup();
 
@@ -663,6 +661,7 @@ const getExampleHeight = async srcPath => {
     newHeight.toString().length > 0 &&
     newHeight.toString().replace(/[0-9]/gi, '').length === 0 // if it is entirely a number
   ) {
+    console.log('Retrieved iframe height', newHeight);
     height = clamp(parseFloat(newHeight.toString()), 50, 10000);
   }
 
