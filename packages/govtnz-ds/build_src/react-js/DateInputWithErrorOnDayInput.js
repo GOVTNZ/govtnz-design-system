@@ -252,6 +252,7 @@ const DateInputWithErrorOnDayInput = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange,
   dobDayErrorMonth,
@@ -262,6 +263,7 @@ const DateInputWithErrorOnDayInput = ({
   value2,
   type2,
   spellCheck2,
+  maxLength2,
   autoComplete2,
   onChange2,
   dobDayErrorYear,
@@ -272,6 +274,7 @@ const DateInputWithErrorOnDayInput = ({
   value3,
   type3,
   spellCheck3,
+  maxLength3,
   autoComplete3,
   onChange3
 }) => (
@@ -325,6 +328,7 @@ const DateInputWithErrorOnDayInput = ({
               autoFocus={autoFocus}
               value={value}
               spellCheck={spellCheck}
+              maxLength={maxLength}
               autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
@@ -349,6 +353,7 @@ const DateInputWithErrorOnDayInput = ({
               autoFocus={autoFocus2}
               value={value2}
               spellCheck={spellCheck2}
+              maxLength={maxLength2}
               autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
@@ -373,6 +378,7 @@ const DateInputWithErrorOnDayInput = ({
               autoFocus={autoFocus3}
               value={value3}
               spellCheck={spellCheck3}
+              maxLength={maxLength3}
               autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />

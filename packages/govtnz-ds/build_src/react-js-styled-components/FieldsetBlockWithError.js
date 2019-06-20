@@ -14,6 +14,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledFieldset = styled.fieldset`
@@ -25,6 +26,7 @@ const StyledFieldset = styled.fieldset`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const StyledLegend = styled.legend`
@@ -56,6 +58,7 @@ const StyledLegend = styled.legend`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -80,6 +83,7 @@ const StyledDiv2 = styled.div`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
 `;
 
 const StyledDiv3 = styled.div`
@@ -104,6 +108,7 @@ const StyledDiv3 = styled.div`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -118,6 +123,11 @@ const StyledSpan = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
+`;
+
+const StyledDiv4 = styled.div`
+  margin-top: 0px;
 `;
 
 const FieldsetBlockWithError = ({
@@ -154,13 +164,13 @@ const FieldsetBlockWithError = ({
           <React.Fragment>Error text</React.Fragment>
         )}
       </StyledDiv3>
-      <div>
+      <StyledDiv4>
         {children !== undefined ? (
           children
         ) : (
           <React.Fragment>Fieldset contents</React.Fragment>
         )}
-      </div>
+      </StyledDiv4>
     </StyledFieldset>
   </StyledDiv>
 );

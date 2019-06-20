@@ -69,6 +69,7 @@ const TextareaWithErrorMessage = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -94,6 +95,7 @@ const TextareaWithErrorMessage = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

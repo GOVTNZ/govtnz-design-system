@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.css-changes-for-example-only [class^='g-caption'] + [class^='g-heading'],
+.css-changes-for-example-only [class^='g-heading']:first-child {
+  margin-top: 0 !important;
+}
+
+.css-changes-for-example-only {
+  padding: 2.5rem 2rem;
+}
+
+.css-changes-for-example-only .g-flex-col {
+  background: #eeeeee;
+  outline: solid 1px black;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}

@@ -172,3 +172,7 @@
   border: 0 !important;
   white-space: nowrap !important;
 }
+
+.g-fieldsetBlockWithError-hint > * {
+  margin-top: 0px;
+}

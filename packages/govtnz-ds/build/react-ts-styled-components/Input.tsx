@@ -36,6 +36,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck?: boolean | undefined;
+  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -169,7 +170,8 @@ ${props =>
   props.width === "2" &&
   styled.css`
     max-width: 5.4ex;
-  `}`;
+  `}
+margin-top: 0px;`;
 
 const constants = {
   type: {
@@ -266,6 +268,7 @@ const Input = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }: Props) => (
@@ -282,6 +285,7 @@ const Input = ({
     autoFocus={autoFocus}
     value={value}
     spellCheck={spellCheck}
+    maxLength={maxLength}
     autoComplete={constants.autoComplete[autoComplete]}
     onChange={onChange}
   />

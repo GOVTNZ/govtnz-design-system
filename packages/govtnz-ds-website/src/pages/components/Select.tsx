@@ -9,7 +9,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import components__Select from '../../commons/examples/components__Select';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -18,12 +18,20 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</p>
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="example">Example</H2>
 <p>Interact with this example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Select[0]} iframeProps={{id:"iframe_componentsSelect0", className: "example__iframe", id: "iframe_componentsSelect0", src:"../Select__example0/", title:"Example of Select", height: 149 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Select[0]} iframeProps={{
+        id:"iframe_componentsSelect0",
+        className: "example__iframe",
+        src:"/components/Select__example0.html",
+        title:"Example of Select",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>

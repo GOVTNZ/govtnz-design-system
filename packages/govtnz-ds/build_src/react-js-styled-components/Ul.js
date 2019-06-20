@@ -37,6 +37,7 @@ const StyledUl = styled.ul`
       padding-left: 20px;
       list-style-type: disc;
     `}
+  margin-top: 0px;
 `;
 
 const Ul = ({ bulleted, children }) => (

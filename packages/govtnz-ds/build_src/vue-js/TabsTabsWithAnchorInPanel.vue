@@ -214,7 +214,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -555,5 +555,8 @@ export default Vue.extend({
   .js-enabled .g-tabsTabsWithAnchorInPanel-tabs__panel--hidden {
     display: none;
   }
+}
+.g-tabsTabsWithAnchorInPanel-hint > * {
+  margin-top: 0px;
 }
 </style>

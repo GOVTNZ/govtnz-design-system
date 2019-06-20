@@ -25,4 +25,7 @@ export default Vue.extend({
     clear: both;
   }
 }
+.g-radios-hint > * {
+  margin-top: 0px;
+}
 </style>

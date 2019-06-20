@@ -101,7 +101,7 @@
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -238,4 +238,8 @@
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+}
+
+.g-inputBlock-hint > * {
+  margin-top: 0px;
 }

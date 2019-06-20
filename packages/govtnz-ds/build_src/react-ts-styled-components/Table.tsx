@@ -32,15 +32,32 @@ const StyledTable = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledTbody = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr2 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr3 = styled.tr`
+  margin-top: 0px;
 `;
 
 const Table = ({  }: Props) => (
   <StyledTable>
-    <tbody>
-      <tr>January $85 $95</tr>
-      <tr>February $75 $55</tr>
-      <tr>March $165 $125</tr>
-    </tbody>
+    <StyledTbody>
+      <StyledTr>January $85 $95</StyledTr>
+      <StyledTr2>February $75 $55</StyledTr2>
+      <StyledTr3>March $165 $125</StyledTr3>
+    </StyledTbody>
   </StyledTable>
 );
 

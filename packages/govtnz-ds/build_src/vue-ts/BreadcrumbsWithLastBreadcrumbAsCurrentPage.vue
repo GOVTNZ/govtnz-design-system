@@ -251,4 +251,7 @@ export default Vue.extend({
   a:focus {
   color: #0b0c0c;
 }
+.g-breadcrumbsWithLastBreadcrumbAsCurrentPage-hint > * {
+  margin-top: 0px;
+}
 </style>

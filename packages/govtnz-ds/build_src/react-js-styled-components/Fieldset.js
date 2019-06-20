@@ -12,6 +12,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledFieldset = styled.fieldset`
@@ -23,6 +24,7 @@ const StyledFieldset = styled.fieldset`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const Fieldset = ({ hintId, children }) => (

@@ -5,15 +5,26 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
+import '@govtnz/ds/build/css/FlexContainer.css';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
+import '@govtnz/ds/build/css/FlexRow.css';
 import Column from '@govtnz/ds/build/react-ts/FlexColumn';
+import '@govtnz/ds/build/css/FlexColumn.css';
 import H1 from '@govtnz/ds/build/react-ts/H1';
+import '../commons/styles/ds/themed-H1.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
+import '../commons/styles/ds/themed-H2.scss';
 import H3 from '@govtnz/ds/build/react-ts/H3';
+import '../commons/styles/ds/themed-H3.scss';
+
 import P from '@govtnz/ds/build/react-ts/P';
+import '../commons/styles/ds/themed-P.scss';
 import A from '@govtnz/ds/build/react-ts/A';
+import '../commons/styles/ds/themed-A.scss';
 import Ul from '@govtnz/ds/build/react-ts/Ul';
+import '../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
+import '../commons/styles/ds/themed-Li.scss';
 
 import InsetText from '../components/InsetText';
 

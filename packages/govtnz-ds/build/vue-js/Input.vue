@@ -10,6 +10,7 @@
     v-bind:autofocus="autoFocus"
     v-bind:value="value"
     v-bind:spellcheck="spellCheck"
+    v-bind:maxlength="maxLength"
     v-bind:autocomplete="computed__autocomplete"
   /> </template
 ><script>
@@ -158,6 +159,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck: { type: Boolean, default: false, required: false },
+    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -312,5 +314,8 @@ export default Vue.extend({
 }
 .g-input--width-2 {
   max-width: 5.4ex;
+}
+.g-input-hint > * {
+  margin-top: 0px;
 }
 </style>

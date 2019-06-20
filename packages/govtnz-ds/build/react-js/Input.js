@@ -113,6 +113,7 @@ var Input = function Input(_ref) {
       value = _ref.value,
       type = _ref.type,
       spellCheck = _ref.spellCheck,
+      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement("input", {
@@ -126,6 +127,7 @@ var Input = function Input(_ref) {
     autoFocus: autoFocus,
     value: value,
     spellCheck: spellCheck,
+    maxLength: maxLength,
     autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   });

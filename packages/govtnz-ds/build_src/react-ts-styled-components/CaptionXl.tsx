@@ -26,6 +26,7 @@ const StyledSpan = styled.span`
     font-size: 18pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const CaptionXl = ({ children }: Props) => (

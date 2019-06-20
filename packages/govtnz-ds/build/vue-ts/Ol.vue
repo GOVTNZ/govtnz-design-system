@@ -65,4 +65,7 @@ export default Vue.extend({
   padding-left: 20px;
   list-style-type: decimal;
 }
+.g-ol-hint > * {
+  margin-top: 0px;
+}
 </style>

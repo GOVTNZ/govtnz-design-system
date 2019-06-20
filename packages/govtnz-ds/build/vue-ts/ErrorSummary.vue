@@ -294,4 +294,7 @@ export default Vue.extend({
 .g-errorSummary-header__navigation-item--active a:focus {
   color: #0b0c0c;
 }
+.g-errorSummary-hint > * {
+  margin-top: 0px;
+}
 </style>

@@ -12,6 +12,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledFieldset = styled.fieldset`
@@ -23,6 +24,7 @@ const StyledFieldset = styled.fieldset`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const StyledLegend = styled.legend`
@@ -54,6 +56,7 @@ const StyledLegend = styled.legend`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -78,6 +81,11 @@ const StyledDiv2 = styled.div`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
+`;
+
+const StyledDiv3 = styled.div`
+  margin-top: 0px;
 `;
 
 const FieldsetBlock = ({ hintId, legend, hint, children }) => (
@@ -103,13 +111,13 @@ const FieldsetBlock = ({ hintId, legend, hint, children }) => (
       ) : (
         ""
       )}
-      <div>
+      <StyledDiv3>
         {children !== undefined ? (
           children
         ) : (
           <React.Fragment>Fieldset contents</React.Fragment>
         )}
-      </div>
+      </StyledDiv3>
     </StyledFieldset>
   </StyledDiv>
 );

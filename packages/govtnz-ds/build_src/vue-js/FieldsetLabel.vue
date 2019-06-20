@@ -45,4 +45,7 @@ export default Vue.extend({
 .g-fieldset__legend + .g-fieldsetLabel-hint {
   margin-top: -5px;
 }
+.g-fieldsetLabel-hint > * {
+  margin-top: 0px;
+}
 </style>

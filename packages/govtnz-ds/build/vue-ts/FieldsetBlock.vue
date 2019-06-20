@@ -125,4 +125,7 @@ export default Vue.extend({
 .g-fieldsetBlock-character-count .g-fieldsetBlock-form-group {
   margin-bottom: 5px;
 }
+.g-fieldsetBlock-hint > * {
+  margin-top: 0px;
+}
 </style>

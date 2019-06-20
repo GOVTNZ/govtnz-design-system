@@ -132,6 +132,7 @@ export default Vue.extend({
       },
       required: true
     },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false }
   },
   computed: {
@@ -142,6 +143,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-textareaWithOptionalFormGroupClasses-form-group extra-class"},[_c(\'label\',{staticClass:"g-textareaWithOptionalFormGroupClasses-label",attrs:{"for":textareaWithPageHeading}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithOptionalFormGroupClasses-textarea",attrs:{"id":textareaWithPageHeading,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
+    'with(this){return _c(\'div\',{staticClass:"g-textareaWithOptionalFormGroupClasses-form-group extra-class"},[_c(\'label\',{staticClass:"g-textareaWithOptionalFormGroupClasses-label",attrs:{"for":textareaWithPageHeading}},[_v("\\n\\n    Full address\\n  \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-textareaWithOptionalFormGroupClasses-textarea",attrs:{"id":textareaWithPageHeading,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete,"maxlength":maxLength},domProps:{"value":value}})])}'
   )
 });

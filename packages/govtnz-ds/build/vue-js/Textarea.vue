@@ -21,6 +21,7 @@
       v-bind:autofocus="autoFocus"
       v-bind:spellcheck="spellCheck"
       v-bind:autocomplete="computed__autocomplete"
+      v-bind:maxlength="maxLength"
       v-bind:value="value"
     />
   </div> </template
@@ -160,6 +161,7 @@ export default Vue.extend({
       },
       required: true
     },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false }
   },
   computed: {
@@ -221,7 +223,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -296,5 +298,8 @@ export default Vue.extend({
   .g-textarea {
     margin-bottom: 30px;
   }
+}
+.g-textarea-hint > * {
+  margin-top: 0px;
 }
 </style>

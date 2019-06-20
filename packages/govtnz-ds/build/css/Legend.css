@@ -42,3 +42,7 @@
     color: var(--g-theme-color-black, #000000);
   }
 }
+
+.g-legend-hint > * {
+  margin-top: 0px;
+}

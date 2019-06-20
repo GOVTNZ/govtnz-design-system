@@ -34,6 +34,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck?: boolean | undefined;
+  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -119,6 +120,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck2?: boolean | undefined;
+  maxLength2?: number | undefined;
   autoComplete2:
     | "Off"
     | "On"
@@ -204,6 +206,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck3?: boolean | undefined;
+  maxLength3?: number | undefined;
   autoComplete3:
     | "Off"
     | "On"
@@ -272,6 +275,7 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledFieldset = styled.fieldset`
@@ -283,6 +287,7 @@ const StyledFieldset = styled.fieldset`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const StyledLegend = styled.legend`
@@ -314,6 +319,7 @@ const StyledLegend = styled.legend`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -338,6 +344,7 @@ const StyledSpan = styled.span`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -347,12 +354,14 @@ const StyledDiv2 = styled.div`
     display: block;
     clear: both;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv3 = styled.div`
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledDiv4 = styled.div`
@@ -366,13 +375,14 @@ const StyledDiv4 = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -393,6 +403,7 @@ const StyledLabel = styled.label`
     color: #000000;
   }
   display: block;
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -435,12 +446,14 @@ const StyledInput = styled.input`
   -moz-appearance: textfield;
   max-width: 5.4ex;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledDiv5 = styled.div`
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledDiv6 = styled.div`
@@ -454,13 +467,14 @@ const StyledDiv6 = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel2 = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -481,6 +495,7 @@ const StyledLabel2 = styled.label`
     color: #000000;
   }
   display: block;
+  margin-top: 0px;
 `;
 
 const StyledInput2 = styled.input`
@@ -523,12 +538,14 @@ const StyledInput2 = styled.input`
   -moz-appearance: textfield;
   max-width: 5.4ex;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledDiv7 = styled.div`
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledDiv8 = styled.div`
@@ -542,13 +559,14 @@ const StyledDiv8 = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel3 = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -569,6 +587,7 @@ const StyledLabel3 = styled.label`
     color: #000000;
   }
   display: block;
+  margin-top: 0px;
 `;
 
 const StyledInput3 = styled.input`
@@ -611,6 +630,7 @@ const StyledInput3 = styled.input`
   -moz-appearance: textfield;
   max-width: 9ex;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -864,6 +884,7 @@ const DateInput = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange,
   dobMonth,
@@ -874,6 +895,7 @@ const DateInput = ({
   value2,
   type2,
   spellCheck2,
+  maxLength2,
   autoComplete2,
   onChange2,
   dobYear,
@@ -884,6 +906,7 @@ const DateInput = ({
   value3,
   type3,
   spellCheck3,
+  maxLength3,
   autoComplete3,
   onChange3
 }: Props) => (
@@ -905,6 +928,7 @@ const DateInput = ({
               autoFocus={autoFocus}
               value={value}
               spellCheck={spellCheck}
+              maxLength={maxLength}
               autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
@@ -923,6 +947,7 @@ const DateInput = ({
               autoFocus={autoFocus2}
               value={value2}
               spellCheck={spellCheck2}
+              maxLength={maxLength2}
               autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
@@ -941,6 +966,7 @@ const DateInput = ({
               autoFocus={autoFocus3}
               value={value3}
               spellCheck={spellCheck3}
+              maxLength={maxLength3}
               autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />

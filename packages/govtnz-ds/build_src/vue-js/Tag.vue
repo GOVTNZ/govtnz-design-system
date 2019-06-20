@@ -46,4 +46,7 @@ export default Vue.extend({
     line-height: 1.25;
   }
 }
+.g-tag-hint > * {
+  margin-top: 0px;
+}
 </style>

@@ -5,7 +5,7 @@
 import React from 'react';
 
 import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
+import '../../commons/styles/ds/themed-H1.scss';
 
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';

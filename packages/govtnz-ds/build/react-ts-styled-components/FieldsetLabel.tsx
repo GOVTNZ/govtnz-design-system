@@ -28,6 +28,7 @@ const StyledDiv = styled.div`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
 `;
 
 const FieldsetLabel = ({ hintId, hint }: Props) => (

@@ -40,7 +40,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -120,5 +120,8 @@ export default Vue.extend({
 }
 .g-selectBlock-select::-ms-expand {
   display: none;
+}
+.g-selectBlock-hint > * {
+  margin-top: 0px;
 }
 </style>

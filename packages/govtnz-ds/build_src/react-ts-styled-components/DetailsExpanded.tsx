@@ -34,6 +34,7 @@ const StyledDetails = styled.details`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledSummary = styled.summary`
@@ -83,16 +84,19 @@ const StyledSummary = styled.summary`
     border-width: 12.124px 7px 0 7px;
     border-top-color: inherit;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
   text-decoration: underline;
+  margin-top: 0px;
 `;
 
 const StyledDiv = styled.div`
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
+  margin-top: 0px;
 `;
 
 const DetailsExpanded = ({

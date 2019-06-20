@@ -33,6 +33,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck?: boolean | undefined;
+  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -118,6 +119,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck2?: boolean | undefined;
+  maxLength2?: number | undefined;
   autoComplete2:
     | "Off"
     | "On"
@@ -203,6 +205,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck3?: boolean | undefined;
+  maxLength3?: number | undefined;
   autoComplete3:
     | "Off"
     | "On"
@@ -511,6 +514,7 @@ const DateInputWithAutocompleteValues = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange,
   dobWithAutocompleteAttributeMonth,
@@ -521,6 +525,7 @@ const DateInputWithAutocompleteValues = ({
   value2,
   type2,
   spellCheck2,
+  maxLength2,
   autoComplete2,
   onChange2,
   dobWithAutocompleteAttributeYear,
@@ -531,6 +536,7 @@ const DateInputWithAutocompleteValues = ({
   value3,
   type3,
   spellCheck3,
+  maxLength3,
   autoComplete3,
   onChange3
 }: Props) => (
@@ -573,6 +579,7 @@ const DateInputWithAutocompleteValues = ({
               autoFocus={autoFocus}
               value={value}
               spellCheck={spellCheck}
+              maxLength={maxLength}
               onChange={onChange}
             />
           </div>
@@ -597,6 +604,7 @@ const DateInputWithAutocompleteValues = ({
               autoFocus={autoFocus2}
               value={value2}
               spellCheck={spellCheck2}
+              maxLength={maxLength2}
               onChange={onChange2}
             />
           </div>
@@ -621,6 +629,7 @@ const DateInputWithAutocompleteValues = ({
               autoFocus={autoFocus3}
               value={value3}
               spellCheck={spellCheck3}
+              maxLength={maxLength3}
               onChange={onChange3}
             />
           </div>

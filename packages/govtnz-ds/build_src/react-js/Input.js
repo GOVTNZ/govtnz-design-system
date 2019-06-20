@@ -104,6 +104,7 @@ const Input = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }) => (
@@ -120,6 +121,7 @@ const Input = ({
     autoFocus={autoFocus}
     value={value}
     spellCheck={spellCheck}
+    maxLength={maxLength}
     autoComplete={constants.autoComplete[autoComplete]}
     onChange={onChange}
   />

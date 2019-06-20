@@ -3,6 +3,8 @@ const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
 const puppeteer = require('puppeteer');
+const mkdirp = require('mkdirp');
+const webpack = require('webpack');
 const { startCase, uniq, clamp } = require('lodash');
 const {
   escapeRegex,
@@ -201,14 +203,16 @@ const generatePage = async (
             (headings &&
               headings[0] &&
               headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
-            `Example ${counter}`;
+            `Example ${counter + 1}`;
         }
         if (!heading.match(/example/i)) {
           heading = `${heading} (${pageId} example)`;
         }
 
         const exampleRelativePath = `${pageId}__example${counter}`;
-        exampleRelativePaths[counter] = exampleRelativePath;
+        exampleRelativePaths[
+          counter
+        ] = `/${sectionId}/${exampleRelativePath}.html`;
         exampleTitles[counter] = heading;
         exampleIds[counter] = `iframe_${sectionId}${pageId}${counter}`.replace(
           /[^a-zA-Z0-9_]/g,
@@ -219,7 +223,7 @@ const generatePage = async (
           addOnStateChanged(fullExample),
           exampleTitles[counter],
           exampleIds[counter],
-          `../${pageId}`
+          `./${pageId}`
         );
 
         const exampleHeight = await getExampleHeight(exampleSrcPath);
@@ -278,13 +282,13 @@ const generatePage = async (
       if (isCodeOnly) {
         return ''; // nothing to render
       }
-      return `<Example code={${importName}[${counter - 1}]} iframeProps={{id:"${
-        exampleIds[counter - 1]
-      }", className: "example__iframe", id: "${
-        exampleIds[counter - 1]
-      }", src:"../${exampleRelativePaths[counter - 1]}/", title:"${
-        exampleTitles[counter - 1]
-      }", height: ${exampleHeights[counter - 1]} }}></Example>`;
+      return `<Example code={${importName}[${counter - 1}]} iframeProps={{
+        id:"${exampleIds[counter - 1]}",
+        className: "example__iframe",
+        src:"${exampleRelativePaths[counter - 1]}",
+        title:"${exampleTitles[counter - 1]}",
+        height: ${exampleHeights[counter - 1]}
+      }}></Example>`;
     });
   }
 
@@ -294,6 +298,8 @@ const generatePage = async (
   const ComponentIdsThatDontNeedImports = [
     'Example',
     'ExampleSection',
+    'ExampleHeading',
+    'ExampleContainer',
     'ComponentCode',
   ];
 
@@ -311,13 +317,17 @@ const generatePage = async (
 
   const uniqueReactComponentNames = uniq(reactComponentNames);
   let imports = await Promise.all(
-    [...uniqueReactComponentNames, ...importsByName].map(name => {
-      const code = importGenerator(name);
-      if (!code) {
-        throw Error(`Unable to find imports for "${name}" from\n${md}`);
-      }
-      return code;
-    })
+    [...uniqueReactComponentNames, ...importsByName]
+      .filter(name => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
+      .map(name => {
+        // Dev note: importGenerator returns a promise so we're intentionally
+        // not awaiting it so that we can pass it to Promise.all()
+        const code = importGenerator(name);
+        if (!code) {
+          throw Error(`Unable to find imports for "${name}" from\n${md}`);
+        }
+        return code;
+      })
   );
   imports = uniq([...imports, ...fullImports]);
 
@@ -380,7 +390,52 @@ const writeExamplePage = async (
   id,
   parentUrl
 ) => {
-  const exampleTemplatePath = path.resolve(
+  // This writes an example HTML file so that we can iframe it.
+  //
+  // Back story for why we're doing this:
+  //
+  // The Design System site has a very specific and Niche Requirement[tm]:
+  //
+  //   We want to have examples that use the DS components without
+  //   theming, but we also want to use DS components with theming.
+  //
+  // Unfortunately Gatsby has an optimisation which means it may
+  // preload CSS from other pages, even if those pages couldn't possibly
+  // be browsed to. It's not Gatsby's fault that it can't detect
+  // whether a page is potentially navigable from another page because
+  // this is a very hard problem, but we're stuck with their naive
+  // optimisation to preload CSS just in case we'd browse to it.
+  //
+  // Normally this problem is solved in Gatsby by using distinct CSS
+  // classes for different components,
+  // See https://github.com/gatsbyjs/gatsby/issues/3446
+  // But --to repeat-- Gatsby can't have per-page CSS... there's no way of
+  // having different CSS in an iframe vs another page because Gatsby
+  // doesn't know about iframes of whether it's possible to reach one page
+  // from another -- so Gatsby can potentially just add all CSS from any
+  // page from the entire site onto other pages. In most cases this is an
+  // optimisation, but in our case it conflicts with our Niche Requirement[tm]
+  //
+  // So what can we do to solve this?
+  //
+  // Well it's very complicated, but it seems to be necessary.
+  //
+  // We build pages for every example and put that under the "/static/"
+  // directory so that it's copied into "/public" as-is, and this involves
+  // building every example which might involve multiple components etc.,
+  // that means every example needs its own WebPack config that can resolve
+  // imports and stuff like that.
+  //
+  // So that's what this function is doing. It's working around Gatsby's inability
+  // to have distinct pages that are COMPLETELY separate from others with the same
+  // css classes...
+  //
+  // ...and it's not even a bug of Gatsby, we just have Niche Requirements[tm] that
+  // Gatsby doesn't support.
+  //
+  // So now you know. Please don't hate me.
+
+  const tsxTemplatePath = path.resolve(
     __dirname,
     '..',
     'src/commons/templates/example-iframe.tsx'
@@ -394,7 +449,7 @@ const writeExamplePage = async (
     'ExampleContainer',
   ];
 
-  const exampleTemplate = await fs.promises.readFile(exampleTemplatePath, {
+  const tsxTemplate = await fs.promises.readFile(tsxTemplatePath, {
     encoding: 'utf-8',
   });
   const tagNames = exampleData.match(/<([a-zA-Z0-9]+)/g);
@@ -408,35 +463,149 @@ const writeExamplePage = async (
       })
       .filter(tag => ComponentIdsThatDontNeedImports.indexOf(tag) === -1);
 
-  const imports = uniq(reactComponentNames).map(
+  const scriptImports = uniq(reactComponentNames).map(
     reactComponentName =>
-      `import ${reactComponentName} from '@govtnz/ds/build/react-ts/${reactComponentName}.tsx';\nimport '@govtnz/ds/build/css/${reactComponentName}.css';\n`
+      `import ${reactComponentName} from '@govtnz/ds/build/react-ts/${reactComponentName}.tsx';`
   );
+
   const WARNING = `${autogeneratedFileSignature}\n// WARNING THIS FILE IS AUTOGENERATED! DO NOT EDIT!\n\n`;
   const page =
     WARNING +
     insertTemplate(
-      exampleTemplate,
+      tsxTemplate,
       {
         id,
         title,
         parentUrl,
       },
-      imports.join('')
+      scriptImports.join('')
     ).replace(
       pageContentComponentSignature,
-      `const PageContent = (props) => (${exampleData});`
+      `var PageContent = (props) => (${exampleData});`
     );
-  const srcPath = `pages/${exampleRelativePagePath}.tsx`;
-  const examplePath = path.resolve(__dirname, '..', `src/${srcPath}`);
-  await fs.promises.writeFile(examplePath, page, { encoding: 'utf-8' });
-  return srcPath;
+
+  const tsxRelativePath = `${exampleRelativePagePath}.tsx`;
+  const tsxFullPath = path.resolve(__dirname, '..', 'static', tsxRelativePath);
+  const tsxFullDirectory = tsxFullPath.substring(
+    0,
+    tsxFullPath.length - path.basename(tsxFullPath).length
+  );
+  mkdirp.sync(tsxFullDirectory);
+  await fs.promises.writeFile(tsxFullPath, page, { encoding: 'utf-8' });
+  const jsRelativePath = `${exampleRelativePagePath}.js`;
+  const jsFullPath = path.resolve(__dirname, '..', 'static', jsRelativePath);
+  const jsFullDirectory = jsFullPath.substring(
+    0,
+    jsFullPath.length - path.basename(jsFullPath).length
+  );
+  const jsFilename = path.basename(jsFullPath);
+
+  const webpackConfig = {
+    entry: tsxFullPath,
+    output: { path: jsFullDirectory, filename: jsFilename },
+    mode: 'production',
+    module: {
+      rules: [
+        {
+          test: /\.(js|ts)x?$/,
+          exclude: /(node_modules)/,
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                presets: [
+                  '@babel/preset-env',
+                  '@babel/preset-react',
+                  '@babel/preset-typescript',
+                ],
+              },
+            },
+          ],
+        },
+      ],
+    },
+    externals: {
+      // Use external version of React so that every example
+      // doesn't bundle its own copy
+      react: 'React',
+      'react-dom': 'ReactDOM',
+    },
+  };
+
+  await new Promise((resolve, reject) => {
+    webpack(webpackConfig, (err, stats) => {
+      if (err) {
+        reject(err);
+        console.error(err);
+        throw Error(err);
+      } else {
+        resolve(stats);
+      }
+    });
+  });
+
+  const htmlTemplatePath = path.resolve(
+    __dirname,
+    '..',
+    'src/commons/templates/example-iframe.html'
+  );
+
+  const htmlTemplate = await fs.promises.readFile(htmlTemplatePath, {
+    encoding: 'utf-8',
+  });
+
+  const scriptUrl = jsFullPath.substring(
+    path.resolve(__dirname, '..', 'static').length
+  );
+
+  const serverExampleHTML = '...'; // ReactDOMServer.renderToStaticMarkup();
+
+  const cssImports = uniq(reactComponentNames)
+    .map(
+      cssFileName => `<link rel="stylesheet" href="../css/${cssFileName}.css">`
+    )
+    .join('');
+
+  const cssDirectoryPath = path.resolve(__dirname, '..', 'static', 'css');
+  mkdirp.sync(cssDirectoryPath);
+  await Promise.all(
+    uniq(reactComponentNames).map(cssFileName =>
+      fs.promises.copyFile(
+        path.resolve(
+          __dirname,
+          '../..',
+          'govtnz-ds/build/css',
+          `${cssFileName}.css`
+        ),
+        path.resolve(__dirname, '..', 'static/css', `${cssFileName}.css`)
+      )
+    )
+  );
+
+  const html = insertTemplate(htmlTemplate, {
+    id,
+    title,
+    parentUrl,
+    scriptUrl,
+    serverExampleHTML,
+  }).replace('@css', cssImports);
+
+  const htmlRelativePath = `${exampleRelativePagePath}.html`;
+  const htmlFullPath = path.resolve(
+    __dirname,
+    '..',
+    'static',
+    htmlRelativePath
+  );
+
+  await fs.promises.writeFile(htmlFullPath, html, { encoding: 'utf-8' });
+  return htmlRelativePath;
 };
 
 const getExampleHeight = async srcPath => {
   // This function starts up Chromium and measures the
   // height of examples so that the <iframe> can be given
-  // a specific height and this will reduce onscreen jank.
+  // a specific height, and this is done to reduce onscreen jank.
   //
   // Note that this involves reading files from /public/
   // which will be the previous build so it won't pick up any
@@ -448,7 +617,8 @@ const getExampleHeight = async srcPath => {
   //       initial value isn't particularly important other than to
   //       minimise jank;
   //    2) the alternative before this was a default size of 100px
-  //       which was worse, so this is considered an improvement.
+  //       in all cases which was considered worse, so this is
+  //       considered an improvement.
   //
   //  ...but feel free to somehow build the site, calculate example
   //  heights, and then update sizes in the pages, and then build the
@@ -456,15 +626,24 @@ const getExampleHeight = async srcPath => {
   //  for you.
 
   let height = 100;
+  const npmProjectPath = path.resolve(__dirname, '..');
+
+  const fullFilePath = path.join(npmProjectPath, 'public', srcPath);
+
+  if (!fs.existsSync(fullFilePath)) {
+    console.error(
+      `Example file doesn't exist at `,
+      fullFilePath,
+      ' from ',
+      srcPath,
+      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.'
+    );
+    return height;
+  }
+
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  const npmProjectPath = path.resolve(__dirname, '..');
-
-  const filePath = srcPath
-    .substring('pages/'.length)
-    .replace(/\.tsx$/, '/index.html');
-  const fullFilePath = path.join(npmProjectPath, 'public', filePath);
   const fileUri = `file://${fullFilePath}`;
 
   try {
@@ -478,10 +657,7 @@ const getExampleHeight = async srcPath => {
     );
   }
 
-  const newHeight = await page.$eval(
-    '.css-changes-for-example-only',
-    element => element.offsetHeight
-  );
+  const newHeight = await page.$eval('#root', element => element.offsetHeight);
 
   if (
     newHeight.toString().length > 0 &&
@@ -520,77 +696,79 @@ module.exports.generateComponentPages = async (
   const keys = Object.keys(templateFormatsById);
 
   await Promise.all(
-    keys.map(async templateId => {
-      const templateFormats = templateFormatsById[templateId];
-      // if (!templateFormats.html) {
-      //   console.log(`Component without HTML. Template id = "${templateId}"`)
-      //   return
-      // }
-      let imports = [await importGenerator(templateId)];
-      const [
-        componentImports,
-        generatedComponentPage,
-        filesToNotDelete,
-      ] = await generatePage(
-        sectionId,
-        templateId,
-        metaTemplateInputsById,
-        templateFormatsById
-      );
-      imports = uniq(imports.concat(componentImports));
-
-      filesToNotDelete.forEach(fileToNotDelete => {
-        filesToDelete = removeMatch(filesToDelete, fileToNotDelete);
-      });
-
-      const WARNING = `${autogeneratedFileSignature}\n// WARNING THIS FILE IS AUTOGENERATED! DO NOT EDIT!\n\n`;
-      const code =
-        WARNING +
-        insertTemplate(
-          codeTemplate,
-          {
-            id: templateId,
-            templateFormats,
-            name: startCase(templateId),
-          },
-          imports.join('')
+    keys
+      .filter(name => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
+      .map(async templateId => {
+        const templateFormats = templateFormatsById[templateId];
+        // if (!templateFormats.html) {
+        //   console.log(`Component without HTML. Template id = "${templateId}"`)
+        //   return
+        // }
+        let imports = [await importGenerator(templateId)];
+        const [
+          componentImports,
+          generatedComponentPage,
+          filesToNotDelete,
+        ] = await generatePage(
+          sectionId,
+          templateId,
+          metaTemplateInputsById,
+          templateFormatsById
         );
-      const targetCodePath = path.resolve(
-        __dirname,
-        '..',
-        'src/components/sourcecode',
-        `${templateId}.ts`
-      );
-      await writeFile(targetCodePath, code);
-      filesToDelete = removeMatch(filesToDelete, targetCodePath);
+        imports = uniq(imports.concat(componentImports));
 
-      const page =
-        WARNING +
-        insertTemplate(
-          pageTemplate,
-          {
-            id: templateId,
-          },
-          imports.join('')
-        )
-          .replace(
-            'export default function Page(',
-            `export default function ${templateId}__Page(`
-          )
-          .replace(
-            pageContentComponentSignature,
-            `const PageContent = (props) => ${generatedComponentPage}`
+        filesToNotDelete.forEach(fileToNotDelete => {
+          filesToDelete = removeMatch(filesToDelete, fileToNotDelete);
+        });
+
+        const WARNING = `${autogeneratedFileSignature}\n// WARNING THIS FILE IS AUTOGENERATED! DO NOT EDIT!\n\n`;
+        const code =
+          WARNING +
+          insertTemplate(
+            codeTemplate,
+            {
+              id: templateId,
+              templateFormats,
+              name: startCase(templateId),
+            },
+            imports.join('')
           );
+        const targetCodePath = path.resolve(
+          __dirname,
+          '..',
+          'src/components/sourcecode',
+          `${templateId}.ts`
+        );
+        await writeFile(targetCodePath, code);
+        filesToDelete = removeMatch(filesToDelete, targetCodePath);
 
-      const targetPagePath = path.resolve(
-        __dirname,
-        '..',
-        'src/pages/components',
-        `${templateId}.tsx`
-      );
-      await writeFile(targetPagePath, page);
-      filesToDelete = removeMatch(filesToDelete, targetPagePath);
-    })
+        const page =
+          WARNING +
+          insertTemplate(
+            pageTemplate,
+            {
+              id: templateId,
+            },
+            imports.join('')
+          )
+            .replace(
+              'export default function Page(',
+              `export default function ${templateId}__Page(`
+            )
+            .replace(
+              pageContentComponentSignature,
+              `const PageContent = (props) => ${generatedComponentPage}`
+            );
+
+        const targetPagePath = path.resolve(
+          __dirname,
+          '..',
+          'src/pages/components',
+          `${templateId}.tsx`
+        );
+        await writeFile(targetPagePath, page);
+        filesToDelete = removeMatch(filesToDelete, targetPagePath);
+      })
   );
   return filesToDelete;
 };

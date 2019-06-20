@@ -284,6 +284,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck: { type: Boolean, default: false, required: false },
+    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -386,6 +387,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck2: { type: Boolean, default: false, required: false },
+    maxLength2: { type: String, required: false },
     autoComplete2: {
       type: String,
       validator: value => {
@@ -488,6 +490,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck3: { type: Boolean, default: false, required: false },
+    maxLength3: { type: String, required: false },
     autoComplete3: {
       type: String,
       validator: value => {
@@ -579,6 +582,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'fieldset\',{staticClass:"g-dateInput-fieldset",attrs:{"aria-describedby":dobHint,"role":"group"}},[_c(\'legend\',{staticClass:"g-dateInput-fieldset__legend"},[_v("\\nWhat is your date of birth?\\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-dateInput-hint",attrs:{"id":dobHint}},[_v("\\n\\n      For example, 31 3 1980\\n    \\n\\n")]),_v(" "),_c(\'div\',{staticClass:"g-date-input",attrs:{"id":dob}},[_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobDay}},[_v("\\n\\n            Day\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-2",attrs:{"id":dobDay,"name":name,"pattern":"[0-9]*","type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])]),_v(" "),_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobMonth}},[_v("\\n\\n            Month\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-2",attrs:{"id":dobMonth,"name":name2,"pattern":"[0-9]*","type":computed__type2,"disabled":disabled2,"readonly":readOnly2,"autofocus":autoFocus2,"spellcheck":spellCheck2,"autocomplete":computed__autocomplete2},domProps:{"value":value2}})])]),_v(" "),_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobYear}},[_v("\\n\\n            Year\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-4",attrs:{"id":dobYear,"name":name3,"pattern":"[0-9]*","type":computed__type3,"disabled":disabled3,"readonly":readOnly3,"autofocus":autoFocus3,"spellcheck":spellCheck3,"autocomplete":computed__autocomplete3},domProps:{"value":value3}})])])])])])}'
+    'with(this){return _c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'fieldset\',{staticClass:"g-dateInput-fieldset",attrs:{"aria-describedby":dobHint,"role":"group"}},[_c(\'legend\',{staticClass:"g-dateInput-fieldset__legend"},[_v("\\nWhat is your date of birth?\\n\\n")]),_v(" "),_c(\'span\',{staticClass:"g-dateInput-hint",attrs:{"id":dobHint}},[_v("\\n\\n      For example, 31 3 1980\\n    \\n\\n")]),_v(" "),_c(\'div\',{staticClass:"g-date-input",attrs:{"id":dob}},[_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobDay}},[_v("\\n\\n            Day\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-2",attrs:{"id":dobDay,"name":name,"pattern":"[0-9]*","type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})])]),_v(" "),_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobMonth}},[_v("\\n\\n            Month\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-2",attrs:{"id":dobMonth,"name":name2,"pattern":"[0-9]*","type":computed__type2,"disabled":disabled2,"readonly":readOnly2,"autofocus":autoFocus2,"spellcheck":spellCheck2,"maxlength":maxLength2,"autocomplete":computed__autocomplete2},domProps:{"value":value2}})])]),_v(" "),_c(\'div\',{staticClass:"g-date-input__item"},[_c(\'div\',{staticClass:"g-dateInput-form-group"},[_c(\'label\',{staticClass:"g-dateInput-label g-date-input__label",attrs:{"for":dobYear}},[_v("\\n\\n            Year\\n          \\n\\n")]),_v(" "),_c(\'input\',{staticClass:"g-dateInput-input g-date-input__input g-dateInput-input--width-4",attrs:{"id":dobYear,"name":name3,"pattern":"[0-9]*","type":computed__type3,"disabled":disabled3,"readonly":readOnly3,"autofocus":autoFocus3,"spellcheck":spellCheck3,"maxlength":maxLength3,"autocomplete":computed__autocomplete3},domProps:{"value":value3}})])])])])])}'
   )
 });

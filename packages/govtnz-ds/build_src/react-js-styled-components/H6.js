@@ -9,7 +9,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 3rem;
       line-height: 1.125;
       display: block;
@@ -60,7 +60,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 2rem;
       line-height: 1.2;
       display: block;
@@ -111,7 +111,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 1.5rem;
       line-height: 1.25;
       display: block;
@@ -162,7 +162,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 1.25rem;
       line-height: 1.25;
       display: block;
@@ -225,7 +225,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 1.125rem;
       line-height: 1.25;
       display: block;
@@ -280,7 +280,7 @@ const StyledH6 = styled.h6`
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: 500;
+      font-weight: g-heading-font-weight;
       font-size: 1rem;
       line-height: 1.25;
       display: block;
@@ -333,6 +333,7 @@ const StyledH6 = styled.h6`
     styled.css`
       margin-bottom: 8px;
     `}
+  margin-top: 0px;
 `;
 
 const H6 = ({ styleSize, marginBottom8, id, children }) => (

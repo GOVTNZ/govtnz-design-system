@@ -66,11 +66,11 @@ var constants = {
     }
 };
 var TextareaWithLabelAsPageHeading = function (_a) {
-    var textareaWithPageHeading = _a.textareaWithPageHeading, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, value = _a.value, onChange = _a.onChange;
+    var textareaWithPageHeading = _a.textareaWithPageHeading, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange;
     return (React.createElement("div", { className: "g-textareaWithLabelAsPageHeading-form-group" },
         React.createElement("h1", { className: "g-textareaWithLabelAsPageHeading-label-wrapper" },
             React.createElement("label", { className: "g-textareaWithLabelAsPageHeading-label", htmlFor: textareaWithPageHeading }, "Full address")),
-        React.createElement("textarea", { className: "g-textareaWithLabelAsPageHeading-textarea", id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], value: value, onChange: onChange })));
+        React.createElement("textarea", { className: "g-textareaWithLabelAsPageHeading-textarea", id: textareaWithPageHeading, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength, value: value, onChange: onChange })));
 };
 exports.default = TextareaWithLabelAsPageHeading;
 //# sourceMappingURL=TextareaWithLabelAsPageHeading.js.map

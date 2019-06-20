@@ -107,4 +107,7 @@ export default Vue.extend({
   display: block;
   padding-left: 50px;
 }
+.g-warningText-hint > * {
+  margin-top: 0px;
+}
 </style>

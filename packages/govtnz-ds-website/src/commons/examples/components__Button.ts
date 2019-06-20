@@ -68,7 +68,7 @@ export default [
     "vue-js": "<template>\n  <c-button type=\"Button\" disabled>\n    Save and continue\n  </c-button>\n</template>\n<script>\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-js/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "vue-ts": "<template>\n  <c-button type=\"Button\" disabled>\n    Save and continue\n  </c-button>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport Button from \"@govtnz/ds/build/vue-ts/Button\";\n\nexport default { components: { \"c-button\": Button } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button\n  class=\"g-button g-button--disabled\"\n  type=\"button\"\n  aria-disabled\n  disabled\n>\n  Save and continue\n</button>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--disabled\" type=\"button\" disabled>\n  Save and continue\n</button>\n",
     "css": "",
     "twig-embed": "{% embed \"Button.html.twig\"  with {'type':'Button', 'disabled':'true', 'children':'Save and continue'} only %}{% endembed %}"
   }

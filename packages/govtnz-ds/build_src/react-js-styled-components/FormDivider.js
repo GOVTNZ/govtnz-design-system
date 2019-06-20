@@ -26,6 +26,7 @@ const StyledDiv = styled.div`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const FormDivider = ({ children }) => (

@@ -39,6 +39,7 @@ type Props = {
     | "URL"
     | "Week";
   spellCheck?: boolean | undefined;
+  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -113,13 +114,14 @@ const StyledDiv = styled.div<Pick<Props, "hasError">>`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -139,6 +141,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -163,6 +166,7 @@ const StyledDiv2 = styled.div`
     line-height: 1.15;
   }
   margin-top: -5px;
+  margin-top: 0px;
 `;
 
 const StyledDiv3 = styled.div`
@@ -187,6 +191,7 @@ const StyledDiv3 = styled.div`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -201,6 +206,7 @@ const StyledSpan = styled.span`
   clip-path: inset(50%) !important;
   border: 0 !important;
   white-space: nowrap !important;
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input<
@@ -279,7 +285,8 @@ ${props =>
   props.width === "2" &&
   styled.css`
     max-width: 5.4ex;
-  `}`;
+  `}
+margin-top: 0px;`;
 
 const constants = {
   type: {
@@ -379,6 +386,7 @@ const InputBlock = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }: Props) => (
@@ -427,6 +435,7 @@ const InputBlock = ({
       autoFocus={autoFocus}
       value={value}
       spellCheck={spellCheck}
+      maxLength={maxLength}
       autoComplete={constants.autoComplete[autoComplete]}
       onChange={onChange}
     />

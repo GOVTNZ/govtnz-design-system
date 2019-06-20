@@ -64,6 +64,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
+  maxLength2?: number | undefined;
   value?: string | undefined;
   onChange: any;
   remainingCharacters?: React.ReactNode;
@@ -138,6 +139,7 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength2,
   value,
   onChange,
   remainingCharacters
@@ -161,6 +163,7 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
+        maxLength={maxLength2}
         value={value}
         onChange={onChange}
       />
@@ -193,6 +196,7 @@ const CharacterCountWithCustomRows__calculated = (
     | "autoFocus"
     | "spellCheck"
     | "autoComplete"
+    | "maxLength2"
     | "value"
     | "onChange"
   >

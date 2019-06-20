@@ -260,6 +260,7 @@ var DateInput = function DateInput(_ref) {
       value = _ref.value,
       type = _ref.type,
       spellCheck = _ref.spellCheck,
+      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       dobMonth = _ref.dobMonth,
@@ -270,6 +271,7 @@ var DateInput = function DateInput(_ref) {
       value2 = _ref.value2,
       type2 = _ref.type2,
       spellCheck2 = _ref.spellCheck2,
+      maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
       dobYear = _ref.dobYear,
@@ -280,6 +282,7 @@ var DateInput = function DateInput(_ref) {
       value3 = _ref.value3,
       type3 = _ref.type3,
       spellCheck3 = _ref.spellCheck3,
+      maxLength3 = _ref.maxLength3,
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement("div", {
@@ -314,6 +317,7 @@ var DateInput = function DateInput(_ref) {
     autoFocus: autoFocus,
     value: value,
     spellCheck: spellCheck,
+    maxLength: maxLength,
     autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement("div", {
@@ -334,6 +338,7 @@ var DateInput = function DateInput(_ref) {
     autoFocus: autoFocus2,
     value: value2,
     spellCheck: spellCheck2,
+    maxLength: maxLength2,
     autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement("div", {
@@ -354,6 +359,7 @@ var DateInput = function DateInput(_ref) {
     autoFocus: autoFocus3,
     value: value3,
     spellCheck: spellCheck3,
+    maxLength: maxLength3,
     autoComplete: constants.autoComplete3[autoComplete3],
     onChange: onChange3
   }))))));

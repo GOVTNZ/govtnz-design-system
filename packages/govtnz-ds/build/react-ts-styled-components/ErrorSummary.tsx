@@ -32,6 +32,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     border: 5px solid #b10e1e;
   }
+  margin-top: 0px;
 `;
 
 const StyledH2 = styled.h2`
@@ -57,6 +58,7 @@ const StyledH2 = styled.h2`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -77,6 +79,7 @@ const StyledDiv2 = styled.div`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const StyledP = styled.p`
@@ -88,6 +91,7 @@ const StyledP = styled.p`
   @media (min-width: 40.0625em) {
     margin-bottom: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledUl = styled.ul`
@@ -122,6 +126,7 @@ const StyledUl = styled.ul`
   margin-top: 10px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -130,6 +135,7 @@ const StyledLi = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -173,6 +179,7 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -181,6 +188,7 @@ const StyledLi2 = styled.li`
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
   }
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -224,6 +232,7 @@ const StyledA2 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const constants = {

@@ -248,7 +248,7 @@ var constants = {
     }
 };
 var DateInput = function (_a) {
-    var dobHint = _a.dobHint, dob = _a.dob, dobDay = _a.dobDay, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, dobMonth = _a.dobMonth, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, type2 = _a.type2, spellCheck2 = _a.spellCheck2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, dobYear = _a.dobYear, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, type3 = _a.type3, spellCheck3 = _a.spellCheck3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
+    var dobHint = _a.dobHint, dob = _a.dob, dobDay = _a.dobDay, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange, dobMonth = _a.dobMonth, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, type2 = _a.type2, spellCheck2 = _a.spellCheck2, maxLength2 = _a.maxLength2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, dobYear = _a.dobYear, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, type3 = _a.type3, spellCheck3 = _a.spellCheck3, maxLength3 = _a.maxLength3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
     return (React.createElement("div", { className: "g-dateInput-form-group" },
         React.createElement("fieldset", { "aria-describedby": dobHint, className: "g-dateInput-fieldset", role: "group" },
             React.createElement("legend", { className: "g-dateInput-fieldset__legend" }, "What is your date of birth?"),
@@ -257,15 +257,15 @@ var DateInput = function (_a) {
                 React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
                         React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dobDay }, "Day"),
-                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2", id: dobDay, name: name, pattern: "[0-9]*", type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2", id: dobDay, name: name, pattern: "[0-9]*", type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
                 React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
                         React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dobMonth }, "Month"),
-                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2", id: dobMonth, name: name2, pattern: "[0-9]*", type: constants.type2[type2], disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2", id: dobMonth, name: name2, pattern: "[0-9]*", type: constants.type2[type2], disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, maxLength: maxLength2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
                 React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
                         React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dobYear }, "Year"),
-                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4", id: dobYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4", id: dobYear, name: name3, pattern: "[0-9]*", type: constants.type3[type3], disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, maxLength: maxLength3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
 };
 exports.default = DateInput;
 //# sourceMappingURL=DateInput.js.map

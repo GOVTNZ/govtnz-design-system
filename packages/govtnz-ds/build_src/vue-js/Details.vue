@@ -130,4 +130,7 @@ export default Vue.extend({
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
 }
+.g-details-hint > * {
+  margin-top: 0px;
+}
 </style>

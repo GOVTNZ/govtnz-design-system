@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
+const StyledDiv = styled.div`
+  margin-top: 0px;
+`;
+
 const StyledTable = styled.table`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,6 +44,23 @@ const StyledTable = styled.table`
     font-size: 14pt !important;
     line-height: 1.2 !important;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr2 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -115,6 +136,11 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr3 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -190,6 +216,11 @@ const StyledA2 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr4 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA3 = styled.a`
@@ -265,6 +296,27 @@ const StyledA3 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead2 = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr5 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr6 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody2 = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr7 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA4 = styled.a`
@@ -340,6 +392,11 @@ const StyledA4 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr8 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA5 = styled.a`
@@ -415,6 +472,11 @@ const StyledA5 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr9 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA6 = styled.a`
@@ -490,6 +552,11 @@ const StyledA6 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr10 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA7 = styled.a`
@@ -565,6 +632,7 @@ const StyledA7 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledA8 = styled.a`
@@ -640,6 +708,11 @@ const StyledA8 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr11 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA9 = styled.a`
@@ -715,6 +788,7 @@ const StyledA9 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledA10 = styled.a`
@@ -790,6 +864,11 @@ const StyledA10 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
+`;
+
+const StyledTr12 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledA11 = styled.a`
@@ -865,6 +944,7 @@ const StyledA11 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const StyledA12 = styled.a`
@@ -940,6 +1020,7 @@ const StyledA12 = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -995,78 +1076,78 @@ const CustomTable = ({
   rel12,
   target12
 }) => (
-  <div>
+  <StyledDiv>
     <StyledTable>
-      <thead>
-        <tr>Who is making the request Form</tr>
-      </thead>
-      <tbody>
-        <tr>
+      <StyledThead>
+        <StyledTr>Who is making the request Form</StyledTr>
+      </StyledThead>
+      <StyledTbody>
+        <StyledTr2>
           An individual
           <StyledA href={href} rel={rel} target={constants.target[target]}>
             Form V888
           </StyledA>
-        </tr>
-        <tr>
+        </StyledTr2>
+        <StyledTr3>
           A company
           <StyledA2 href={href2} rel={rel2} target={constants.target2[target2]}>
             Form V8882
           </StyledA2>
-        </tr>
-        <tr>
+        </StyledTr3>
+        <StyledTr4>
           A company that issues parking or trespass charge notices
           <StyledA3 href={href3} rel={rel3} target={constants.target3[target3]}>
             Form V8883
           </StyledA3>
-        </tr>
-      </tbody>
+        </StyledTr4>
+      </StyledTbody>
     </StyledTable>
-    <thead>
-      <tr>Who is making the request Form</tr>
-    </thead>
-    <tr>Who is making the request Form</tr>
+    <StyledThead2>
+      <StyledTr5>Who is making the request Form</StyledTr5>
+    </StyledThead2>
+    <StyledTr6>Who is making the request Form</StyledTr6>
     Who is making the request Form
-    <tbody>
-      <tr>
+    <StyledTbody2>
+      <StyledTr7>
         An individual
         <StyledA4 href={href4} rel={rel4} target={constants.target4[target4]}>
           Form V888
         </StyledA4>
-      </tr>
-      <tr>
+      </StyledTr7>
+      <StyledTr8>
         A company
         <StyledA5 href={href5} rel={rel5} target={constants.target5[target5]}>
           Form V8882
         </StyledA5>
-      </tr>
-      <tr>
+      </StyledTr8>
+      <StyledTr9>
         A company that issues parking or trespass charge notices
         <StyledA6 href={href6} rel={rel6} target={constants.target6[target6]}>
           Form V8883
         </StyledA6>
-      </tr>
-    </tbody>
-    <tr>
+      </StyledTr9>
+    </StyledTbody2>
+    <StyledTr10>
       An individual
       <StyledA7 href={href7} rel={rel7} target={constants.target7[target7]}>
         Form V888
       </StyledA7>
-    </tr>
+    </StyledTr10>
     An individual
     <StyledA8 href={href8} rel={rel8} target={constants.target8[target8]}>
       Form V888
     </StyledA8>
-    <tr>
+    <StyledTr11>
       A company
       <StyledA9 href={href9} rel={rel9} target={constants.target9[target9]}>
         Form V8882
       </StyledA9>
-    </tr>
+    </StyledTr11>
     A company
     <StyledA10 href={href10} rel={rel10} target={constants.target10[target10]}>
       Form V8882
     </StyledA10>
-    <tr>
+    <StyledTr12>
       A company that issues parking or trespass charge notices
       <StyledA11
         href={href11}
@@ -1075,12 +1156,12 @@ const CustomTable = ({
       >
         Form V8883
       </StyledA11>
-    </tr>
+    </StyledTr12>
     A company that issues parking or trespass charge notices
     <StyledA12 href={href12} rel={rel12} target={constants.target12[target12]}>
       Form V8883
     </StyledA12>
-  </div>
+  </StyledDiv>
 );
 
 export default CustomTable;

@@ -175,6 +175,10 @@ var _default = _vue["default"].extend({
       "default": false,
       required: false
     },
+    maxLength: {
+      type: String,
+      required: false
+    },
     autoComplete: {
       type: String,
       validator: function validator(value) {
@@ -200,7 +204,7 @@ var _default = _vue["default"].extend({
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-inputBlock-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}')
+  render: new Function('with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-inputBlock-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}')
 });
 
 exports["default"] = _default;

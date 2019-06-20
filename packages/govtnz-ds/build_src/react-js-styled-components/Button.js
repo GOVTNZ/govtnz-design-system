@@ -129,6 +129,7 @@ const StyledButton = styled.button`
   }
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -139,7 +140,6 @@ const Button = ({ disabled, level, name, type, onClick, children }) => (
   <StyledButton
     disabled={disabled}
     level={level}
-    aria-disabled={disabled}
     type={constants.type[type]}
     name={name}
     onClick={onClick}

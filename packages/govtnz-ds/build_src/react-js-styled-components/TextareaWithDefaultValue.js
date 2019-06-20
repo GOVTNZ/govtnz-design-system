@@ -12,13 +12,14 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -38,6 +39,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledTextarea = styled.textarea`
@@ -76,6 +78,7 @@ const StyledTextarea = styled.textarea`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -146,6 +149,7 @@ const TextareaWithDefaultValue = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -161,6 +165,7 @@ const TextareaWithDefaultValue = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     >

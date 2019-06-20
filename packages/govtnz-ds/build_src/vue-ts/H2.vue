@@ -50,7 +50,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -89,7 +89,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -128,7 +128,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -167,7 +167,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -252,7 +252,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -305,7 +305,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 1rem;
   line-height: 1.25;
   display: block;
@@ -355,5 +355,8 @@ export default Vue.extend({
 }
 .g-heading-mb-8 {
   margin-bottom: 8px;
+}
+.g-hint > * {
+  margin-top: 0px;
 }
 </style>

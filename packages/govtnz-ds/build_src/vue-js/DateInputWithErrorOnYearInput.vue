@@ -49,6 +49,7 @@
               v-bind:autofocus="autoFocus"
               v-bind:value="value"
               v-bind:spellcheck="spellCheck"
+              v-bind:maxlength="maxLength"
               v-bind:autocomplete="computed__autocomplete"
             />
           </div>
@@ -74,6 +75,7 @@
               v-bind:autofocus="autoFocus2"
               v-bind:value="value2"
               v-bind:spellcheck="spellCheck2"
+              v-bind:maxlength="maxLength2"
               v-bind:autocomplete="computed__autocomplete2"
             />
           </div>
@@ -99,6 +101,7 @@
               v-bind:autofocus="autoFocus3"
               v-bind:value="value3"
               v-bind:spellcheck="spellCheck3"
+              v-bind:maxlength="maxLength3"
               v-bind:autocomplete="computed__autocomplete3"
             />
           </div>
@@ -394,6 +397,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck: { type: Boolean, default: false, required: false },
+    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -496,6 +500,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck2: { type: Boolean, default: false, required: false },
+    maxLength2: { type: String, required: false },
     autoComplete2: {
       type: String,
       validator: value => {
@@ -598,6 +603,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck3: { type: Boolean, default: false, required: false },
+    maxLength3: { type: String, required: false },
     autoComplete3: {
       type: String,
       validator: value => {
@@ -827,7 +833,7 @@ export default Vue.extend({
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -934,5 +940,8 @@ export default Vue.extend({
 }
 .g-dateInputWithErrorOnYearInput-date-input__input {
   margin-bottom: 0;
+}
+.g-dateInputWithErrorOnYearInput-hint > * {
+  margin-top: 0px;
 }
 </style>

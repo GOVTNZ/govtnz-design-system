@@ -14,6 +14,7 @@ const StyledDiv = styled.div`
       clear: both;
     }
   }
+  margin-top: 0px;
 `;
 
 const Radios = ({ inline, children }: Props) => (

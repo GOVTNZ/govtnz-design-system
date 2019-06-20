@@ -9,9 +9,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
-import '@govtnz/ds/build/css/P.css';
+import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import components__Date from '../../commons/examples/components__Date';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -20,6 +20,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
     The date input component consists of three grouped text fields that invite
@@ -30,12 +32,24 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Date[0]} iframeProps={{id:"iframe_componentsDate0", className: "example__iframe", id: "iframe_componentsDate0", src:"../Date__example0/", title:"Example 0", height: 340 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Date[0]} iframeProps={{
+        id:"iframe_componentsDate0",
+        className: "example__iframe",
+        src:"/components/Date__example0.html",
+        title:"Example 1",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Date[1]} iframeProps={{id:"iframe_componentsDate1", className: "example__iframe", id: "iframe_componentsDate1", src:"../Date__example1/", title:"Error (Date example)", height: 285 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Date[1]} iframeProps={{
+        id:"iframe_componentsDate1",
+        className: "example__iframe",
+        src:"/components/Date__example1.html",
+        title:"Error (Date example)",
+        height: 100
+      }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
@@ -70,7 +84,13 @@ meet WCAG 2.1 Level AA.</p>
 <p>Style error messages as shown in the following example.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Date[3]} iframeProps={{id:"iframe_componentsDate3", className: "example__iframe", id: "iframe_componentsDate3", src:"../Date__example3/", title:"Error (Date example)", height: 285 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Date[3]} iframeProps={{
+        id:"iframe_componentsDate3",
+        className: "example__iframe",
+        src:"/components/Date__example3.html",
+        title:"Error (Date example)",
+        height: 100
+      }}></Example>
 </ExampleContainer>
 
 <p>Write a specific error message for every possible error state.</p>

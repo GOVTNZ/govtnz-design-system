@@ -75,7 +75,8 @@ ${props =>
   props.width === "2" &&
   styled.css`
     max-width: 5.4ex;
-  `}`;
+  `}
+margin-top: 0px;`;
 
 const constants = {
   type: {
@@ -172,6 +173,7 @@ const Input = ({
   value,
   type,
   spellCheck,
+  maxLength,
   autoComplete,
   onChange
 }) => (
@@ -188,6 +190,7 @@ const Input = ({
     autoFocus={autoFocus}
     value={value}
     spellCheck={spellCheck}
+    maxLength={maxLength}
     autoComplete={constants.autoComplete[autoComplete]}
     onChange={onChange}
   />

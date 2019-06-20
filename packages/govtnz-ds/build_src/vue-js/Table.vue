@@ -63,4 +63,7 @@ export default Vue.extend({
     margin-bottom: 30px;
   }
 }
+.g-table-hint > * {
+  margin-top: 0px;
+}
 </style>

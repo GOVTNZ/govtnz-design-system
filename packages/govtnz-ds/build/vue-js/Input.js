@@ -164,6 +164,10 @@ var _default = _vue["default"].extend({
       "default": false,
       required: false
     },
+    maxLength: {
+      type: String,
+      required: false
+    },
     autoComplete: {
       type: String,
       validator: function validator(value) {
@@ -183,7 +187,7 @@ var _default = _vue["default"].extend({
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})}')
+  render: new Function('with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}')
 });
 
 exports["default"] = _default;

@@ -48,4 +48,7 @@ export default Vue.extend({
 .g-checkboxes__input:disabled {
   cursor: default;
 }
+.g-checkbox-hint > * {
+  margin-top: 0px;
+}
 </style>

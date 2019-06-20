@@ -54,6 +54,7 @@ const StyledDiv = styled.div`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
 `;
 
 const StyledH2 = styled.h2`
@@ -78,6 +79,7 @@ const StyledH2 = styled.h2`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledUl = styled.ul`
@@ -98,6 +100,7 @@ const StyledUl = styled.ul`
       clear: both;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledLi = styled.li`
@@ -118,6 +121,7 @@ const StyledLi = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA = styled.a`
@@ -227,6 +231,7 @@ const StyledA = styled.a`
       background-color: transparent;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledLi2 = styled.li`
@@ -247,6 +252,7 @@ const StyledLi2 = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA2 = styled.a`
@@ -343,6 +349,7 @@ const StyledA2 = styled.a`
     text-align: center;
     text-decoration: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi3 = styled.li`
@@ -363,6 +370,7 @@ const StyledLi3 = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA3 = styled.a`
@@ -459,6 +467,7 @@ const StyledA3 = styled.a`
     text-align: center;
     text-decoration: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledLi4 = styled.li`
@@ -479,6 +488,7 @@ const StyledLi4 = styled.li`
       content: none;
     }
   }
+  margin-top: 0px;
 `;
 
 const StyledA4 = styled.a`
@@ -575,6 +585,7 @@ const StyledA4 = styled.a`
     text-align: center;
     text-decoration: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledSection = styled.section`
@@ -594,6 +605,7 @@ const StyledSection = styled.section`
   @media (min-width: 40.0625em) and (min-width: 40.0625em) {
     margin-bottom: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledH22 = styled.h2`
@@ -601,7 +613,7 @@ const StyledH22 = styled.h2`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -632,6 +644,7 @@ const StyledH22 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledTable = styled.table`
@@ -663,6 +676,31 @@ const StyledTable = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr2 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr3 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr4 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledSection2 = styled.section`
@@ -685,6 +723,7 @@ const StyledSection2 = styled.section`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledH23 = styled.h2`
@@ -692,7 +731,7 @@ const StyledH23 = styled.h2`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -723,6 +762,7 @@ const StyledH23 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledTable2 = styled.table`
@@ -754,6 +794,31 @@ const StyledTable2 = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead2 = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr5 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody2 = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr6 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr7 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr8 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledSection3 = styled.section`
@@ -776,6 +841,7 @@ const StyledSection3 = styled.section`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledH24 = styled.h2`
@@ -783,7 +849,7 @@ const StyledH24 = styled.h2`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -814,6 +880,7 @@ const StyledH24 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledTable3 = styled.table`
@@ -845,6 +912,31 @@ const StyledTable3 = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead3 = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr9 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody3 = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr10 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr11 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr12 = styled.tr`
+  margin-top: 0px;
 `;
 
 const StyledSection4 = styled.section`
@@ -867,6 +959,7 @@ const StyledSection4 = styled.section`
   @media (min-width: 40.0625em) {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const StyledH25 = styled.h2`
@@ -874,7 +967,7 @@ const StyledH25 = styled.h2`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -905,6 +998,7 @@ const StyledH25 = styled.h2`
   @media (min-width: 40.0625em) {
     padding-top: 20px;
   }
+  margin-top: 0px;
 `;
 
 const StyledTable4 = styled.table`
@@ -936,6 +1030,31 @@ const StyledTable4 = styled.table`
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
   }
+  margin-top: 0px;
+`;
+
+const StyledThead4 = styled.thead`
+  margin-top: 0px;
+`;
+
+const StyledTr13 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTbody4 = styled.tbody`
+  margin-top: 0px;
+`;
+
+const StyledTr14 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr15 = styled.tr`
+  margin-top: 0px;
+`;
+
+const StyledTr16 = styled.tr`
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -1032,27 +1151,27 @@ const Tabs = ({
     <StyledSection aria-labelledby={tabPastDay} id={pastDay} role="tabpanel">
       <StyledH22>Past day</StyledH22>
       <StyledTable>
-        <thead>
-          <tr>Case manager Cases opened Cases closed</tr>
-        </thead>
-        <tbody>
-          <tr>David Francis 3 0</tr>
-          <tr>Paul Farmer 1 0</tr>
-          <tr>Rita Patel 2 0</tr>
-        </tbody>
+        <StyledThead>
+          <StyledTr>Case manager Cases opened Cases closed</StyledTr>
+        </StyledThead>
+        <StyledTbody>
+          <StyledTr2>David Francis 3 0</StyledTr2>
+          <StyledTr3>Paul Farmer 1 0</StyledTr3>
+          <StyledTr4>Rita Patel 2 0</StyledTr4>
+        </StyledTbody>
       </StyledTable>
     </StyledSection>
     <StyledSection2 aria-labelledby={tabPastWeek} id={pastWeek} role="tabpanel">
       <StyledH23>Past week</StyledH23>
       <StyledTable2>
-        <thead>
-          <tr>Case manager Cases opened Cases closed</tr>
-        </thead>
-        <tbody>
-          <tr>David Francis 24 18</tr>
-          <tr>Paul Farmer 16 20</tr>
-          <tr>Rita Patel 24 27</tr>
-        </tbody>
+        <StyledThead2>
+          <StyledTr5>Case manager Cases opened Cases closed</StyledTr5>
+        </StyledThead2>
+        <StyledTbody2>
+          <StyledTr6>David Francis 24 18</StyledTr6>
+          <StyledTr7>Paul Farmer 16 20</StyledTr7>
+          <StyledTr8>Rita Patel 24 27</StyledTr8>
+        </StyledTbody2>
       </StyledTable2>
     </StyledSection2>
     <StyledSection3
@@ -1062,27 +1181,27 @@ const Tabs = ({
     >
       <StyledH24>Past month</StyledH24>
       <StyledTable3>
-        <thead>
-          <tr>Case manager Cases opened Cases closed</tr>
-        </thead>
-        <tbody>
-          <tr>David Francis 98 95</tr>
-          <tr>Paul Farmer 122 131</tr>
-          <tr>Rita Patel 126 142</tr>
-        </tbody>
+        <StyledThead3>
+          <StyledTr9>Case manager Cases opened Cases closed</StyledTr9>
+        </StyledThead3>
+        <StyledTbody3>
+          <StyledTr10>David Francis 98 95</StyledTr10>
+          <StyledTr11>Paul Farmer 122 131</StyledTr11>
+          <StyledTr12>Rita Patel 126 142</StyledTr12>
+        </StyledTbody3>
       </StyledTable3>
     </StyledSection3>
     <StyledSection4 aria-labelledby={tabPastYear} id={pastYear} role="tabpanel">
       <StyledH25>Past year</StyledH25>
       <StyledTable4>
-        <thead>
-          <tr>Case manager Cases opened Cases closed</tr>
-        </thead>
-        <tbody>
-          <tr>David Francis 1380 1472</tr>
-          <tr>Paul Farmer 1129 1083</tr>
-          <tr>Rita Patel 1539 1265</tr>
-        </tbody>
+        <StyledThead4>
+          <StyledTr13>Case manager Cases opened Cases closed</StyledTr13>
+        </StyledThead4>
+        <StyledTbody4>
+          <StyledTr14>David Francis 1380 1472</StyledTr14>
+          <StyledTr15>Paul Farmer 1129 1083</StyledTr15>
+          <StyledTr16>Rita Patel 1539 1265</StyledTr16>
+        </StyledTbody4>
       </StyledTable4>
     </StyledSection4>
   </StyledDiv>

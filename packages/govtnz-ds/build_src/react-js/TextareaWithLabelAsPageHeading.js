@@ -68,6 +68,7 @@ const TextareaWithLabelAsPageHeading = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -91,6 +92,7 @@ const TextareaWithLabelAsPageHeading = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

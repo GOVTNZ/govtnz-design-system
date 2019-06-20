@@ -63,7 +63,8 @@
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -490,4 +491,8 @@
   .js-enabled .g-tabsTabsWithAnchorInPanel-tabs__panel--hidden {
     display: none;
   }
+}
+
+.g-tabsTabsWithAnchorInPanel-hint > * {
+  margin-top: 0px;
 }

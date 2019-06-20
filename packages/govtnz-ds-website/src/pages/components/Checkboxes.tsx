@@ -9,11 +9,11 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
-import '@govtnz/ds/build/css/Ul.css';
+import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
-import '@govtnz/ds/build/css/Li.css';
+import '../../commons/styles/ds/themed-Li.scss';
 import components__Checkboxes from '../../commons/examples/components__Checkboxes';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -22,22 +22,42 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</p>
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{id:"iframe_componentsCheckboxes0", className: "example__iframe", id: "iframe_componentsCheckboxes0", src:"../Checkboxes__example0/", title:"Example 0", height: 364 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[0]} iframeProps={{
+        id:"iframe_componentsCheckboxes0",
+        className: "example__iframe",
+        src:"/components/Checkboxes__example0.html",
+        title:"Example 1",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{id:"iframe_componentsCheckboxes1", className: "example__iframe", id: "iframe_componentsCheckboxes1", src:"../Checkboxes__example1/", title:"Error (Checkboxes example)", height: 404 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[1]} iframeProps={{
+        id:"iframe_componentsCheckboxes1",
+        className: "example__iframe",
+        src:"/components/Checkboxes__example1.html",
+        title:"Error (Checkboxes example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Checkboxes with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{id:"iframe_componentsCheckboxes2", className: "example__iframe", id: "iframe_componentsCheckboxes2", src:"../Checkboxes__example2/", title:"Checkboxes with hints (Checkboxes example)", height: 448 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__Checkboxes[2]} iframeProps={{
+        id:"iframe_componentsCheckboxes2",
+        className: "example__iframe",
+        src:"/components/Checkboxes__example2.html",
+        title:"Checkboxes with hints (Checkboxes example)",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>

@@ -65,4 +65,7 @@ export default Vue.extend({
   padding-left: 20px;
   list-style-type: disc;
 }
+.g-ul-hint > * {
+  margin-top: 0px;
+}
 </style>

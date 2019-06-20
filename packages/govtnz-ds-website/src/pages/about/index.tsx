@@ -5,13 +5,13 @@
 import React from 'react';
 
 import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '@govtnz/ds/build/css/H1.css';
+import '../../commons/styles/ds/themed-H1.scss';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
-import '@govtnz/ds/build/css/P.css';
+import '../../commons/styles/ds/themed-P.scss';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
-import '@govtnz/ds/build/css/Ul.css';
+import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
-import '@govtnz/ds/build/css/Li.css';
+import '../../commons/styles/ds/themed-Li.scss';
 
 import AboutPage from '../../components/AboutPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';

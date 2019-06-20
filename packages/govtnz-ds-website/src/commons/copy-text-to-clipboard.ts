@@ -3,6 +3,7 @@
 // Fixes for IE11 made.
 
 const copyTextToClipboard = (input: string) => {
+  const button = document.activeElement;
   const element = document.createElement('textarea');
 
   element.value = input;
@@ -39,6 +40,8 @@ const copyTextToClipboard = (input: string) => {
     selection.removeAllRanges();
     selection.addRange(originalRange);
   }
+
+  button.focus();
 
   return isSuccess;
 };

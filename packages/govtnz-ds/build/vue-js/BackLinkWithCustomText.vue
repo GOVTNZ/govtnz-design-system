@@ -158,4 +158,7 @@ export default Vue.extend({
 .g-backLinkWithCustomText-header__navigation-item--active a:focus {
   color: #0b0c0c;
 }
+.g-backLinkWithCustomText-hint > * {
+  margin-top: 0px;
+}
 </style>

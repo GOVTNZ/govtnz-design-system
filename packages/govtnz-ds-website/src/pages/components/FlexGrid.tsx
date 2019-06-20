@@ -9,13 +9,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
-import '@govtnz/ds/build/css/P.css';
+import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
-import '@govtnz/ds/build/css/Ul.css';
+import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li.tsx';
-import '@govtnz/ds/build/css/Li.css';
+import '../../commons/styles/ds/themed-Li.scss';
 import components__FlexGrid from '../../commons/examples/components__FlexGrid';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -24,6 +24,8 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flexible grid to structure website content. The grid is mobile-first, powered by Flexbox, and based on a 12-column system. The grid includes gutters, column spanning, 4 breakpoints, and column alignment.</P>
 
@@ -33,7 +35,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of 3-column Flexbox grid</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} iframeProps={{id:"iframe_componentsFlexGrid0", className: "example__iframe", id: "iframe_componentsFlexGrid0", src:"../FlexGrid__example0/", title:"Example of 3-column Flexbox grid", height: 106 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[0]} iframeProps={{
+        id:"iframe_componentsFlexGrid0",
+        className: "example__iframe",
+        src:"/components/FlexGrid__example0.html",
+        title:"Example of 3-column Flexbox grid",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 </div>
 
@@ -56,7 +64,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <div className="flexgrid-preview">
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Flexgrid column variants</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} iframeProps={{id:"iframe_componentsFlexGrid1", className: "example__iframe", id: "iframe_componentsFlexGrid1", src:"../FlexGrid__example1/", title:"Example of Flexgrid column variants", height: 444 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__FlexGrid[1]} iframeProps={{
+        id:"iframe_componentsFlexGrid1",
+        className: "example__iframe",
+        src:"/components/FlexGrid__example1.html",
+        title:"Example of Flexgrid column variants",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 </div>
 

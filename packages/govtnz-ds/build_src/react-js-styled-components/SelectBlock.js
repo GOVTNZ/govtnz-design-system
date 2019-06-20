@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 
+const StyledDiv = styled.div`
+  margin-top: 0px;
+`;
+
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -25,6 +29,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSelect = styled.select`
@@ -74,6 +79,7 @@ const StyledSelect = styled.select`
   ::-ms-expand {
     display: none;
   }
+  margin-top: 0px;
 `;
 
 const SelectBlock = ({
@@ -85,7 +91,7 @@ const SelectBlock = ({
   onChange,
   children
 }) => (
-  <div>
+  <StyledDiv>
     <StyledLabel htmlFor={selectId}>
       {label !== undefined ? (
         label
@@ -108,7 +114,7 @@ const SelectBlock = ({
         </React.Fragment>
       )}
     </StyledSelect>
-  </div>
+  </StyledDiv>
 );
 
 export default SelectBlock;

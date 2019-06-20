@@ -45,4 +45,7 @@ export default Vue.extend({
     color: #000000;
   }
 }
+.g-radios-hint > * {
+  margin-top: 0px;
+}
 </style>

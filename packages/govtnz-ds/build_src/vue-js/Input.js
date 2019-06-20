@@ -143,6 +143,7 @@ export default Vue.extend({
       required: true
     },
     spellCheck: { type: Boolean, default: false, required: false },
+    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -228,6 +229,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete},domProps:{"value":value}})}'
+    'with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}'
   )
 });

@@ -180,10 +180,13 @@ export const govukToMetaTemplateInput = async (
     case 'button__secondary':
     case 'button__warning': {
       id = 'button';
+
+      // Dev note: this button had
+      //    aria-disabled="{{ disabled!?: true }}"
+      // but as per DS-145 we removed it
       html = `<button
           class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
           type="submit"
-          aria-disabled="{{ disabled!?: true }}"
           disabled="{{ disabled!?: true }}"
         >
           <mt-variable key="children">
@@ -945,6 +948,11 @@ const cssVariables: CSSVariablePattern[] = [
     id: 'g-theme-button-color-warning-box-shadow',
     valueSubstringMatch: '#47060c',
     defaultValue: '#2a2a2a'
+  },
+  {
+    id: 'g-theme-heading-font-weight',
+    valueSubstringMatch: 'g-heading-font-weight',
+    defaultValue: 'bold'
   }
 ];
 
@@ -970,6 +978,7 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
   css += '.g-heading-mb-8 { margin-bottom: 8px; }'; // Sometimes in code such as the examples
   css = css.replace(/\.g-radios__divider/gi, '.g-form-divider'); // GovUK includes a radio-specific divider which we can generalise
   css += '.g-select::-ms-expand { display: none; }'; // https://stackoverflow.com/a/15933790
+  css += '.g-hint > * { margin-top: 0px; }';
 
   css = updateCSS(css, [
     // FORM
@@ -977,7 +986,7 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-label',
-      `color: #2a2a2a; font-weight: 500; font-size: ${pxToRem(20)}`,
+      `color: #2a2a2a; font-weight: bold; font-size: ${pxToRem(20)}`,
       undefined
     ],
 
@@ -995,8 +1004,9 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-heading-xl, .g-heading-l, .g-heading-s, .g-heading-xs, .g-heading-xxs',
-      'font-weight: 500; color: #2a2a2a;'
+      'color: #2a2a2a; font-weight: g-heading-font-weight'
     ],
+
     // Heading size ranges
     //  - larger sizes
     [
@@ -1036,7 +1046,12 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-heading-m',
-      'font-size: 1.5rem; line-height: 1.25; margin-top: 2.5rem; font-weight: 500'
+      `
+       font-size: 1.5rem;
+       line-height: 1.25;
+       margin-top: 2.5rem;
+       font-weight: g-heading-font-weight
+       `
     ],
 
     // heading s
@@ -1079,9 +1094,13 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
       '.g-body-l, .g-body-m, .g-body-s',
       'color: #2a2a2a; line-height: 1.625; margin-bottom: 1rem;'
     ],
+    ['screen-big', '.g-body-l', 'line-height: 1.625; margin-bottom: 1rem;'],
 
     // Fieldset
     ['all', '.g-fieldset__legend', 'margin-bottom: 0px'],
+
+    // Inset
+    ['all', '.g-inset-text', '8px solid #23cba5'],
 
     // LINK
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.
@@ -1100,6 +1119,11 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
 
     // Checkboxes
     ['all', '.g-checkboxes__item', 'margin-bottom: 16px'],
+    [
+      'all',
+      '.g-checkboxes__input + .g-checkboxes__label::before',
+      '1px solid currentColor'
+    ],
 
     // Selects
     [

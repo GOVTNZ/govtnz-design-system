@@ -29,6 +29,7 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -44,13 +45,14 @@ const StyledInput = styled.input`
   :disabled {
     cursor: default;
   }
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -121,6 +123,7 @@ const StyledLabel = styled.label`
   :disabled + .g-checkboxes__label {
     opacity: 0.5;
   }
+  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
@@ -148,6 +151,7 @@ const StyledDiv2 = styled.div`
   display: block;
   padding-right: 15px;
   padding-left: 15px;
+  margin-top: 0px;
 `;
 
 const CheckboxBlock = ({

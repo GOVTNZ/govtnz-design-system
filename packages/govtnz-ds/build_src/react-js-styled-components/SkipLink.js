@@ -102,6 +102,7 @@ const StyledA = styled.a`
     font-size: 14pt;
     line-height: 1.2;
   }
+  margin-top: 0px;
 `;
 
 const constants = {

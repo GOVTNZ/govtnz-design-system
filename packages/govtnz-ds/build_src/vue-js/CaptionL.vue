@@ -44,4 +44,7 @@ export default Vue.extend({
     margin-bottom: 0;
   }
 }
+.g-captionL-hint > * {
+  margin-top: 0px;
+}
 </style>

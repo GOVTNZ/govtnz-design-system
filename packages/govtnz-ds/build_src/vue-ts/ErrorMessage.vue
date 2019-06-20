@@ -40,4 +40,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
+.g-errorMessage-hint > * {
+  margin-top: 0px;
+}
 </style>

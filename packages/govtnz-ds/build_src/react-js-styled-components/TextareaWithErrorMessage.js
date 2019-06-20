@@ -14,13 +14,14 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -40,6 +41,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledSpan = styled.span`
@@ -64,6 +66,7 @@ const StyledSpan = styled.span`
     font-size: 14pt;
     line-height: 1.15;
   }
+  margin-top: 0px;
 `;
 
 const StyledTextarea = styled.textarea`
@@ -104,6 +107,7 @@ const StyledTextarea = styled.textarea`
     margin-bottom: 30px;
   }
   border: 4px solid #b10e1e;
+  margin-top: 0px;
 `;
 
 const constants = {
@@ -175,6 +179,7 @@ const TextareaWithErrorMessage = ({
   autoFocus,
   spellCheck,
   autoComplete,
+  maxLength,
   value,
   onChange
 }) => (
@@ -196,6 +201,7 @@ const TextareaWithErrorMessage = ({
       autoFocus={autoFocus}
       spellCheck={spellCheck}
       autoComplete={constants.autoComplete[autoComplete]}
+      maxLength={maxLength}
       value={value}
       onChange={onChange}
     />

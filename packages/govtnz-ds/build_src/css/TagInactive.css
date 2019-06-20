@@ -44,3 +44,7 @@
   background-color: #6f777b;
   background-color: var(--g-theme-color-mid-grey, #6f777b);
 }
+
+.g-tagInactive-hint > * {
+  margin-top: 0px;
+}

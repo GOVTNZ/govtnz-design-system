@@ -114,6 +114,7 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  margin-top: 0px;
 `;
 
 const constants = {

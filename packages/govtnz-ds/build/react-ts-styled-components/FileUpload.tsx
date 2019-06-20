@@ -20,13 +20,14 @@ const StyledDiv = styled.div`
   padding: 0;
   border: 0;
   margin-bottom: 5px;
+  margin-top: 0px;
 `;
 
 const StyledLabel = styled.label`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
@@ -46,6 +47,7 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
+  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -74,6 +76,7 @@ const StyledInput = styled.input`
     outline: 3px solid #ffbf47;
     outline-offset: 0;
   }
+  margin-top: 0px;
 `;
 
 const FileUpload = ({

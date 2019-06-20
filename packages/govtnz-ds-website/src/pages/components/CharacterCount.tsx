@@ -9,7 +9,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 import components__CharacterCount from '../../commons/examples/components__CharacterCount';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -18,10 +18,18 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import '../../commons/styles/ds/themed-Button.scss';
+import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
     <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Character Count</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{id:"iframe_componentsCharacterCount0", className: "example__iframe", id: "iframe_componentsCharacterCount0", src:"../CharacterCount__example0/", title:"Example of Character Count", height: 230 }}></Example>
+    <Example {...onChangeGenerator(Example)} code={components__CharacterCount[0]} iframeProps={{
+        id:"iframe_componentsCharacterCount0",
+        className: "example__iframe",
+        src:"/components/CharacterCount__example0.html",
+        title:"Example of Character Count",
+        height: 50
+      }}></Example>
 </ExampleContainer>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>
