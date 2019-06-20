@@ -34,7 +34,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
         className: "example__iframe",
         src:"/components/Checkboxes__example0.html",
         title:"Example 1",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -45,7 +45,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
         className: "example__iframe",
         src:"/components/Checkboxes__example1.html",
         title:"Error (Checkboxes example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -56,7 +56,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
         className: "example__iframe",
         src:"/components/Checkboxes__example2.html",
         title:"Checkboxes with hints (Checkboxes example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 

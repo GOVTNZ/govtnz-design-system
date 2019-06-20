@@ -37,7 +37,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example0.html",
         title:"Radios example",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -48,7 +48,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example1.html",
         title:"Error (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -78,7 +78,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example2.html",
         title:"Stacked radio buttons (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -90,7 +90,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example3.html",
         title:"Inline radio buttons (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -102,7 +102,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example4.html",
         title:"Radio button items with hints (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -114,7 +114,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example5.html",
         title:"Radio button items with a text divider (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
@@ -128,7 +128,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example6.html",
         title:"Error (Radios example)",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 

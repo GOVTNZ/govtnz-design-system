@@ -22,6 +22,9 @@ var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
+            maxLength="2"
+            maxLength2="2"
+            maxLength3="4"
         />
     </Example>);
 
