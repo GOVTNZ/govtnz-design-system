@@ -28,7 +28,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGen
         className: "example__iframe",
         src:"/components/Fieldset__example0.html",
         title:"Example of Fieldset",
-        height: 50
+        height: 100
       }}></Example>
 </ExampleContainer>
 
