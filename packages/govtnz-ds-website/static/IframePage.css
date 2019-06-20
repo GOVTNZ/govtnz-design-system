@@ -22,3 +22,7 @@ body {
   padding-top: 3px;
   padding-bottom: 4px;
 }
+
+.css-changes-for-example-only .g-button {
+  margin-right: 2rem;
+}

@@ -28,7 +28,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGen
         className: "example__iframe",
         src:"/components/Textarea__example0.html",
         title:"Example of Textarea",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 

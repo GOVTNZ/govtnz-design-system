@@ -29,7 +29,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
         className: "example__iframe",
         src:"/components/Lists__example0.html",
         title:"Example of Lists",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -40,7 +40,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
         className: "example__iframe",
         src:"/components/Lists__example1.html",
         title:"Example of Lists",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -57,7 +57,7 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
         className: "example__iframe",
         src:"/components/Lists__example2.html",
         title:"Example of Lists a second time",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 

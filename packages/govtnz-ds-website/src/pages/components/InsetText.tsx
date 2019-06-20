@@ -28,7 +28,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGen
         className: "example__iframe",
         src:"/components/InsetText__example0.html",
         title:"Example of Inset Text",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 

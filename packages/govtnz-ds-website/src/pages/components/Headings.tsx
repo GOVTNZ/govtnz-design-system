@@ -33,7 +33,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
         className: "example__iframe",
         src:"/components/Headings__example0.html",
         title:"Example of Headings",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -46,7 +46,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
         className: "example__iframe",
         src:"/components/Headings__example1.html",
         title:"Example of before headings",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -57,7 +57,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
         className: "example__iframe",
         src:"/components/Headings__example2.html",
         title:"Example of caption inside heading",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -68,7 +68,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
         className: "example__iframe",
         src:"/components/Headings__example3.html",
         title:"Example of Paragraph Sizes",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 

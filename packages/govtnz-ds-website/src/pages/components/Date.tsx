@@ -37,7 +37,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example0.html",
         title:"Example 1",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -48,7 +48,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example1.html",
         title:"Error (Date example)",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
@@ -95,7 +95,7 @@ meet WCAG 2.1 Level AA.</p>
         className: "example__iframe",
         src:"/components/Date__example3.html",
         title:"Error (Date example)",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 

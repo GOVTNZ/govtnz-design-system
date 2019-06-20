@@ -31,7 +31,7 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
         className: "example__iframe",
         src:"/components/A__example0.html",
         title:"Example of a Link",
-        height: 100
+        height: 50
       }}></Example>
 </ExampleContainer>
 
