@@ -103,3 +103,26 @@
     font-size: rem(24);
   }
 }
+
+.subheader {
+  background: #2a2a2a;
+  color: #bfbfbf;
+  padding: 6px 0px;
+  font-size: 0.8rem;
+}
+
+.subheader__badge {
+  background: #23cba5;
+  color: #000000;
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 3px 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.subheader__link,
+.subheader__link:hover,
+.subheader__link:active {
+  color: white;
+}

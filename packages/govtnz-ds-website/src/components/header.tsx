@@ -27,6 +27,15 @@ const Header = ({ siteTitle }: Props) => (
         </Row>
       </Container>
     </div>
+    <div className="subheader">
+      <Container width="fixed">
+        <span className="subheader__badge">Alpha</span>
+        <a href="#" className="subheader__link">
+          Subscribe
+        </a>{' '}
+        for updates on the NZ Government Design System
+      </Container>
+    </div>
     <NavigationLarge />
   </header>
 );

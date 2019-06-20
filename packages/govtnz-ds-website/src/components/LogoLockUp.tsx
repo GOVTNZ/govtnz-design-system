@@ -30,7 +30,7 @@ const LogoLockUp = ({ siteTitle }: Props) => (
       />
     </div>
     <span className="visually-hidden">New Zealand Government</span>
-    <div className="header__title">Design System Alpha</div>
+    <div className="header__title">Design System</div>
   </a>
 );
 
