@@ -203,7 +203,7 @@ const generatePage = async (
             (headings &&
               headings[0] &&
               headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
-            `Example ${counter}`;
+            `Example ${counter + 1}`;
         }
         if (!heading.match(/example/i)) {
           heading = `${heading} (${pageId} example)`;

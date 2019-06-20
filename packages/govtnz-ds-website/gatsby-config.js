@@ -12,7 +12,7 @@ console.log(fs.existsSync(dsSiteSettings));
 
 module.exports = {
   siteMetadata: {
-    title: `Design System - Alpha`, // be sure to also update 'example-iframe.html' with this suffix
+    title: `Design System - Alpha | NZ Government`, // be sure to also update 'example-iframe.html' with this suffix
     description: `Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online`,
     author: `New Zealand Government`,
   },

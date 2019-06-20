@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput0",
         className: "example__iframe",
         src:"/components/Input__example0.html",
-        title:"Example 0",
+        title:"Example 1",
         height: 50
       }}></Example>
 </ExampleContainer>

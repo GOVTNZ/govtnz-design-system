@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-nz">
   <head>
-    <title>Example 0 | Design System - Alpha</title>
+    <title>Example 1 | Design System - Alpha | NZ Government</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
@@ -16,14 +16,20 @@
   </head>
   <body>
     <noscript>
+      This example originates from the
       <a href="./Input">
-        This example originates from the Example 0 page
+        Example 1 component page
       </a>
+      of the
+      <a href="/"> New Zealand all-of-government design system </a>.
     </noscript>
     <div id="iframed-message" style="display:none">
+      This example originates from the
       <a href="./Input">
-        This example originates from the Example 0 page
+        Example 1 component page
       </a>
+      of the
+      <a href="/"> New Zealand all-of-government design system </a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
       "..."
@@ -37,6 +43,20 @@
           // then this page is not currently iframed
           return;
         }
+
+        // When the page is iframed it should not have '| NZ Government',
+        // but when viewed directly it should retain it.
+        // If it's made it this far then it's iframed.
+        const titleSuffix = ' | NZ Government';
+        if (window.document.title.indexOf(titleSuffix) === -1) {
+          console.error(
+            'Could not find window.document.title with ',
+            titleSuffix
+          );
+          return;
+        }
+        window.document.title = window.document.title.replace(titleSuffix, '');
+
         window.addEventListener('resize', updateIframeSize, false);
         window.addEventListener('orientationchange', updateIframeSize, false);
         [
