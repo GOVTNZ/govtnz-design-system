@@ -79,7 +79,7 @@ On fixed-width inputs, the width will remain fixed on all screens unless it is w
 <ExampleContainer>
     <ExampleHeading>Hint text</ExampleHeading>
     <Example>
-        <InputBlock type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId10" hintId="anyHintId10" />
+        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId10" hintId="anyHintId10" />
     </Example>
 </ExampleContainer>
 

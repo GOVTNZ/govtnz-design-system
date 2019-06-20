@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => <Fragment>{children}</Fragment>;
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Email" label="Email address" hint="Provide a email address" name="anyName" inputId="anyId10" hintId="anyHintId10" />
+        <InputBlock {...onChangeGenerator(InputBlock)} type="Text" label="Event name" name="anyName" inputId="anyId10" hintId="anyHintId10" />
     </Example>);
 
 document.addEventListener('DOMContentLoaded', () => {
