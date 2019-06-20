@@ -10,30 +10,6 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -89,7 +65,7 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
+  type: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -168,7 +144,7 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type3: {
+  type2: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -246,13 +222,42 @@ var constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
+  },
+  type3: {
+    Button: "button",
+    Checkbox: "checkbox",
+    Color: "color",
+    Date: "date",
+    "DateTime: Local": "datetime-local",
+    Email: "email",
+    File: "file",
+    Hidden: "hidden",
+    Image: "image",
+    Month: "month",
+    Number: "number",
+    Password: "password",
+    Radio: "radio",
+    Range: "range",
+    Reset: "reset",
+    Search: "search",
+    Submit: "submit",
+    Telephone: "tel",
+    Text: "text",
+    Time: "time",
+    URL: "url",
+    Week: "week"
   }
 };
 
 var DateInput = function DateInput(_ref) {
-  var dobHint = _ref.dobHint,
-      dob = _ref.dob,
-      dobDay = _ref.dobDay,
+  var hasError = _ref.hasError,
+      hintId = _ref.hintId,
+      errorId = _ref.errorId,
+      label = _ref.label,
+      hint = _ref.hint,
+      error = _ref.error,
+      id = _ref.id,
+      dayId = _ref.dayId,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -263,7 +268,7 @@ var DateInput = function DateInput(_ref) {
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
-      dobMonth = _ref.dobMonth,
+      monthId = _ref.monthId,
       name2 = _ref.name2,
       disabled2 = _ref.disabled2,
       readOnly2 = _ref.readOnly2,
@@ -274,7 +279,7 @@ var DateInput = function DateInput(_ref) {
       maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
-      dobYear = _ref.dobYear,
+      yearId = _ref.yearId,
       name3 = _ref.name3,
       disabled3 = _ref.disabled3,
       readOnly3 = _ref.readOnly3,
@@ -286,81 +291,88 @@ var DateInput = function DateInput(_ref) {
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement("div", {
-    className: "g-dateInput-form-group"
+    className: "g-dateInput-form-group".concat(hasError ? " g-dateInput-form-group--error" : "")
   }, _react["default"].createElement("fieldset", {
-    "aria-describedby": dobHint,
+    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-dateInput-fieldset",
     role: "group"
   }, _react["default"].createElement("legend", {
-    className: "g-dateInput-fieldset__legend"
-  }, "What is your date of birth?"), _react["default"].createElement("span", {
+    className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
+  }, _react["default"].createElement("h1", {
+    className: "g-dateInput-fieldset__heading"
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label"))), _react["default"].createElement("span", {
     className: "g-dateInput-hint",
-    id: dobHint
-  }, "For example, 31 3 1980"), _react["default"].createElement("div", {
-    className: "g-date-input",
-    id: dob
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {
+    className: "g-dateInput-error-message",
+    id: errorId
+  }, _react["default"].createElement("span", {
+    className: "g-dateInput-visually-hidden"
+  }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
+    className: "g-dateInput-date-input",
+    id: id
   }, _react["default"].createElement("div", {
-    className: "g-date-input__item"
+    className: "g-dateInput-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label g-date-input__label",
-    htmlFor: dobDay
+    className: "g-dateInput-label g-dateInput-date-input__label",
+    htmlFor: dayId
   }, "Day"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2",
-    id: dobDay,
+    autoComplete: constants.autoComplete[autoComplete],
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(hasError ? " g-dateInput-input--error" : ""),
+    id: dayId,
     name: name,
     pattern: "[0-9]*",
     type: constants.type[type],
+    value: value,
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
-    value: value,
     spellCheck: spellCheck,
     maxLength: maxLength,
-    autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement("div", {
-    className: "g-date-input__item"
+    className: "g-dateInput-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label g-date-input__label",
-    htmlFor: dobMonth
+    className: "g-dateInput-label g-dateInput-date-input__label",
+    htmlFor: monthId
   }, "Month"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2",
-    id: dobMonth,
+    autoComplete: constants.autoComplete2[autoComplete2],
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(hasError ? " g-dateInput-input--error" : ""),
+    id: monthId,
     name: name2,
     pattern: "[0-9]*",
     type: constants.type2[type2],
+    value: value2,
     disabled: disabled2,
     readOnly: readOnly2,
     autoFocus: autoFocus2,
-    value: value2,
     spellCheck: spellCheck2,
     maxLength: maxLength2,
-    autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement("div", {
-    className: "g-date-input__item"
+    className: "g-dateInput-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label g-date-input__label",
-    htmlFor: dobYear
+    className: "g-dateInput-label govuk-date-input__label",
+    htmlFor: yearId
   }, "Year"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4",
-    id: dobYear,
+    autoComplete: constants.autoComplete3[autoComplete3],
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4".concat(hasError ? " g-dateInput-input--error" : ""),
+    id: yearId,
     name: name3,
     pattern: "[0-9]*",
     type: constants.type3[type3],
+    value: value3,
     disabled: disabled3,
     readOnly: readOnly3,
     autoFocus: autoFocus3,
-    value: value3,
     spellCheck: spellCheck3,
     maxLength: maxLength3,
-    autoComplete: constants.autoComplete3[autoComplete3],
     onChange: onChange3
   }))))));
 };

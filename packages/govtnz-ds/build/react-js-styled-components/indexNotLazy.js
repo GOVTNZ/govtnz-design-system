@@ -71,42 +71,6 @@ Object.defineProperty(exports, "customTable", {
     return _CustomTable["default"];
   }
 });
-Object.defineProperty(exports, "dateInputWithAutocompleteValues", {
-  enumerable: true,
-  get: function get() {
-    return _DateInputWithAutocompleteValues["default"];
-  }
-});
-Object.defineProperty(exports, "dateInputWithErrorOnDayInput", {
-  enumerable: true,
-  get: function get() {
-    return _DateInputWithErrorOnDayInput["default"];
-  }
-});
-Object.defineProperty(exports, "dateInputWithErrorOnMonthInput", {
-  enumerable: true,
-  get: function get() {
-    return _DateInputWithErrorOnMonthInput["default"];
-  }
-});
-Object.defineProperty(exports, "dateInputWithErrorOnYearInput", {
-  enumerable: true,
-  get: function get() {
-    return _DateInputWithErrorOnYearInput["default"];
-  }
-});
-Object.defineProperty(exports, "dateInputWithErrors", {
-  enumerable: true,
-  get: function get() {
-    return _DateInputWithErrors["default"];
-  }
-});
-Object.defineProperty(exports, "dateInput", {
-  enumerable: true,
-  get: function get() {
-    return _DateInput["default"];
-  }
-});
 Object.defineProperty(exports, "detailsExpanded", {
   enumerable: true,
   get: function get() {
@@ -437,6 +401,12 @@ Object.defineProperty(exports, "button", {
     return _Button["default"];
   }
 });
+Object.defineProperty(exports, "dateInput", {
+  enumerable: true,
+  get: function get() {
+    return _DateInput["default"];
+  }
+});
 Object.defineProperty(exports, "flexColumn", {
   enumerable: true,
   get: function get() {
@@ -489,18 +459,6 @@ var _CheckboxBlock = _interopRequireDefault(require("./CheckboxBlock"));
 var _Checkbox = _interopRequireDefault(require("./Checkbox"));
 
 var _CustomTable = _interopRequireDefault(require("./CustomTable"));
-
-var _DateInputWithAutocompleteValues = _interopRequireDefault(require("./DateInputWithAutocompleteValues"));
-
-var _DateInputWithErrorOnDayInput = _interopRequireDefault(require("./DateInputWithErrorOnDayInput"));
-
-var _DateInputWithErrorOnMonthInput = _interopRequireDefault(require("./DateInputWithErrorOnMonthInput"));
-
-var _DateInputWithErrorOnYearInput = _interopRequireDefault(require("./DateInputWithErrorOnYearInput"));
-
-var _DateInputWithErrors = _interopRequireDefault(require("./DateInputWithErrors"));
-
-var _DateInput = _interopRequireDefault(require("./DateInput"));
 
 var _DetailsExpanded = _interopRequireDefault(require("./DetailsExpanded"));
 
@@ -611,6 +569,8 @@ var _Ul = _interopRequireDefault(require("./Ul"));
 var _WarningText = _interopRequireDefault(require("./WarningText"));
 
 var _Button = _interopRequireDefault(require("./Button"));
+
+var _DateInput = _interopRequireDefault(require("./DateInput"));
 
 var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
 

@@ -1,93 +1,105 @@
 <template>
-  <div class="g-dateInput-form-group">
+  <div v-bind:class="computed__class">
     <fieldset
-      v-bind:aria-describedby="dobHint"
+      v-bind:aria-describedby="computed__ariaDescribedby"
       class="g-dateInput-fieldset"
       role="group"
     >
-      <legend class="g-dateInput-fieldset__legend">
-        What is your date of birth?
+      <legend
+        class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
+      >
+        <h1 class="g-dateInput-fieldset__heading">
+          <slot name="label"></slot>
+        </h1>
       </legend>
 
-      <span class="g-dateInput-hint" v-bind:id="dobHint">
-        For example, 31 3 1980
+      <span class="g-dateInput-hint" v-bind:id="hintId">
+        <slot name="hint"></slot>
       </span>
 
-      <div class="g-date-input" v-bind:id="dob">
-        <div class="g-date-input__item">
+      <span class="g-dateInput-error-message" v-bind:id="errorId">
+        <span class="g-dateInput-visually-hidden">
+          Error:
+        </span>
+
+        <slot name="error"></slot>
+      </span>
+
+      <div class="g-dateInput-date-input" v-bind:id="id">
+        <div class="g-dateInput-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-date-input__label"
-              v-bind:for="dobDay"
+              class="g-dateInput-label g-dateInput-date-input__label"
+              v-bind:for="dayId"
             >
               Day
             </label>
 
             <input
-              class="g-dateInput-input g-date-input__input g-dateInput-input--width-2"
-              v-bind:id="dobDay"
+              v-bind:autocomplete="computed__autocomplete"
+              v-bind:class="computed__class2"
+              v-bind:id="dayId"
               v-bind:name="name"
               pattern="[0-9]*"
               v-bind:type="computed__type"
+              v-bind:value="value"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
-              v-bind:value="value"
               v-bind:spellcheck="spellCheck"
               v-bind:maxlength="maxLength"
-              v-bind:autocomplete="computed__autocomplete"
             />
           </div>
         </div>
 
-        <div class="g-date-input__item">
+        <div class="g-dateInput-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-date-input__label"
-              v-bind:for="dobMonth"
+              class="g-dateInput-label g-dateInput-date-input__label"
+              v-bind:for="monthId"
             >
               Month
             </label>
 
             <input
-              class="g-dateInput-input g-date-input__input g-dateInput-input--width-2"
-              v-bind:id="dobMonth"
+              v-bind:autocomplete="computed__autocomplete2"
+              v-bind:class="computed__class3"
+              v-bind:id="monthId"
               v-bind:name="name2"
               pattern="[0-9]*"
               v-bind:type="computed__type2"
+              v-bind:value="value2"
               v-bind:disabled="disabled2"
               v-bind:readonly="readOnly2"
               v-bind:autofocus="autoFocus2"
-              v-bind:value="value2"
               v-bind:spellcheck="spellCheck2"
               v-bind:maxlength="maxLength2"
-              v-bind:autocomplete="computed__autocomplete2"
             />
           </div>
         </div>
 
-        <div class="g-date-input__item">
+        <div class="g-dateInput-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-date-input__label"
-              v-bind:for="dobYear"
+              class="g-dateInput-label govuk-date-input__label"
+              v-bind:for="yearId"
             >
               Year
             </label>
 
             <input
-              class="g-dateInput-input g-date-input__input g-dateInput-input--width-4"
-              v-bind:id="dobYear"
+              v-bind:autocomplete="computed__autocomplete3"
+              v-bind:class="computed__class4"
+              v-bind:id="yearId"
               v-bind:name="name3"
               pattern="[0-9]*"
               v-bind:type="computed__type3"
+              v-bind:value="value3"
               v-bind:disabled="disabled3"
               v-bind:readonly="readOnly3"
               v-bind:autofocus="autoFocus3"
-              v-bind:value="value3"
               v-bind:spellcheck="spellCheck3"
               v-bind:maxlength="maxLength3"
-              v-bind:autocomplete="computed__autocomplete3"
             />
           </div>
         </div>
@@ -98,30 +110,6 @@
 import Vue from "vue";
 
 const constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -177,7 +165,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
+  type: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -256,7 +244,7 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type3: {
+  type2: {
     Button: "button",
     Checkbox: "checkbox",
     Color: "color",
@@ -334,15 +322,44 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
+  },
+  type3: {
+    Button: "button",
+    Checkbox: "checkbox",
+    Color: "color",
+    Date: "date",
+    "DateTime: Local": "datetime-local",
+    Email: "email",
+    File: "file",
+    Hidden: "hidden",
+    Image: "image",
+    Month: "month",
+    Number: "number",
+    Password: "password",
+    Radio: "radio",
+    Range: "range",
+    Reset: "reset",
+    Search: "search",
+    Submit: "submit",
+    Telephone: "tel",
+    Text: "text",
+    Time: "time",
+    URL: "url",
+    Week: "week"
   }
 };
 
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    dobHint: { type: String, required: false },
-    dob: { type: String, required: false },
-    dobDay: { type: String, required: false },
+    hasError: { type: Boolean, default: false, required: false },
+    hintId: { type: String, required: false },
+    errorId: { type: String, required: false },
+    label: { required: false, default: "Example label" },
+    hint: { required: false, default: "Example hint" },
+    error: { required: false, default: "Example error" },
+    id: { type: String, required: false },
+    dayId: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -445,7 +462,7 @@ export default Vue.extend({
       },
       required: true
     },
-    dobMonth: { type: String, required: false },
+    monthId: { type: String, required: false },
     name2: { type: String, required: true },
     disabled2: { type: Boolean, default: false, required: false },
     readOnly2: { type: Boolean, default: false, required: false },
@@ -548,7 +565,7 @@ export default Vue.extend({
       },
       required: true
     },
-    dobYear: { type: String, required: false },
+    yearId: { type: String, required: false },
     name3: { type: String, required: true },
     disabled3: { type: Boolean, default: false, required: false },
     readOnly3: { type: Boolean, default: false, required: false },
@@ -653,35 +670,67 @@ export default Vue.extend({
     }
   },
   computed: {
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
+    computed__class() {
+      return (
+        "g-dateInput-form-group" +
+        (this.hasError ? " g-dateInput-form-group--error" : "")
+      );
+    },
+    computed__ariaDescribedby() {
+      return +this.hintId + +this.errorId;
     },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
         ? constants[this.autoComplete]
         : "";
     },
-    computed__type2() {
-      return constants[this.type2] !== undefined ? constants[this.type2] : "";
+    computed__class2() {
+      return (
+        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
+        (this.hasError ? " g-dateInput-input--error" : "")
+      );
+    },
+    computed__type() {
+      return constants[this.type] !== undefined ? constants[this.type] : "";
     },
     computed__autocomplete2() {
       return constants[this.autoComplete2] !== undefined
         ? constants[this.autoComplete2]
         : "";
     },
-    computed__type3() {
-      return constants[this.type3] !== undefined ? constants[this.type3] : "";
+    computed__class3() {
+      return (
+        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
+        (this.hasError ? " g-dateInput-input--error" : "")
+      );
+    },
+    computed__type2() {
+      return constants[this.type2] !== undefined ? constants[this.type2] : "";
     },
     computed__autocomplete3() {
       return constants[this.autoComplete3] !== undefined
         ? constants[this.autoComplete3]
         : "";
+    },
+    computed__class4() {
+      return (
+        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" +
+        (this.hasError ? " g-dateInput-input--error" : "")
+      );
+    },
+    computed__type3() {
+      return constants[this.type3] !== undefined ? constants[this.type3] : "";
     }
   }
 });</script
 ><style scoped>
 .g-dateInput-form-group {
   margin-bottom: 20px;
+}
+.g-dateInput-form-group:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 @media (min-width: 40.0625em) {
   .g-dateInput-form-group {
@@ -691,11 +740,45 @@ export default Vue.extend({
 .g-dateInput-form-group .g-dateInput-form-group:last-of-type {
   margin-bottom: 0;
 }
+.g-dateInput-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+}
 .g-dateInput-form-group--error .g-dateInput-form-group {
   padding: 0;
   border: 0;
 }
+.g-dateInput-error-message {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+}
+@media print {
+  .g-dateInput-error-message {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .g-dateInput-error-message {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+@media print {
+  .g-dateInput-error-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
 .g-dateInput-fieldset {
+  min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
@@ -704,6 +787,11 @@ export default Vue.extend({
   content: "";
   display: block;
   clear: both;
+}
+@media not (caret-color: auto) {
+  .g-dateInput-fieldset {
+    display: table-cell;
+  }
 }
 .g-dateInput-fieldset__legend {
   font-family: Arial, sans-serif;
@@ -742,6 +830,37 @@ export default Vue.extend({
   .g-dateInput-fieldset__legend {
     color: #000000;
   }
+}
+.g-dateInput-fieldset__legend--xl {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.09375;
+  margin-bottom: 15px;
+}
+@media print {
+  .g-dateInput-fieldset__legend--xl {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .g-dateInput-fieldset__legend--xl {
+    font-size: 3rem;
+    line-height: 1.04167;
+  }
+}
+@media print {
+  .g-dateInput-fieldset__legend--xl {
+    font-size: 32pt;
+    line-height: 1.15;
+  }
+}
+.g-dateInput-fieldset__heading {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
 }
 .g-dateInput-hint {
   font-family: Arial, sans-serif;
@@ -857,30 +976,46 @@ export default Vue.extend({
 .g-dateInput-input[type="number"] {
   -moz-appearance: textfield;
 }
+.g-dateInput-input--error {
+  border: 1px solid #b10e1e;
+}
 .g-dateInput-input--width-4 {
   max-width: 9ex;
 }
 .g-dateInput-input--width-2 {
   max-width: 5.4ex;
 }
-.g-date-input {
+.g-dateInput-date-input {
   font-size: 0;
 }
-.g-date-input:after {
+.g-dateInput-date-input:after {
   content: "";
   display: block;
   clear: both;
 }
-.g-date-input__item {
+.g-dateInput-date-input__item {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
 }
-.g-date-input__label {
+.g-dateInput-date-input__label {
   display: block;
 }
-.g-date-input__input {
+.g-dateInput-date-input__input {
   margin-bottom: 0;
+}
+.g-dateInput-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 .g-dateInput-hint > * {
   margin-top: 0px;

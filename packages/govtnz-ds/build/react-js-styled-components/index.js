@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.Button = exports.WarningText = exports.Ul = exports.Textarea = exports.TextareaWithOptionalFormGroupClasses = exports.TextareaWithLabelAsPageHeading = exports.TextareaWithErrorMessage = exports.TextareaWithDefaultValue = exports.TextareaWithCustomRows = exports.TextareaWithAutocompleteAttribute = exports.Tag = exports.TagInactive = exports.Tabs = exports.TabsTabsWithAnchorInPanel = exports.Table = exports.TableTableWithHead = exports.TableTableWithHeadAndCaption = exports.SummaryList = exports.SummaryListExtreme = exports.SummaryListCheckYourAnswers = exports.SkipLink = exports.SelectBlock = exports.Select = exports.SelectWithHintTextAndErrorMessage = exports.SelectWithFullWidthOverride = exports.FormDivider = exports.Radio = exports.RadioBlockWithHint = exports.RadioBlock = exports.Radios = exports.FieldsetLabel = exports.Legend = exports.FieldsetBlock = exports.FieldsetBlockWithError = exports.Fieldset = exports.P = exports.Li = exports.Ol = exports.InsetText = exports.Input = exports.InputBlock = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FileUpload = exports.FileUploadWithHintText = exports.FileUploadWithErrorMessage = exports.ErrorSummary = exports.ErrorMessage = exports.Details = exports.DetailsWithHtml = exports.DetailsExpanded = exports.DateInput = exports.DateInputWithErrors = exports.DateInputWithErrorOnYearInput = exports.DateInputWithErrorOnMonthInput = exports.DateInputWithErrorOnDayInput = exports.DateInputWithAutocompleteValues = exports.CustomTable = exports.Checkbox = exports.CheckboxBlock = exports.CharacterCountWithCustomRows = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Breadcrumbs = exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = exports.BackLinkWithCustomText = exports.A = void 0;
+exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.DateInput = exports.Button = exports.WarningText = exports.Ul = exports.Textarea = exports.TextareaWithOptionalFormGroupClasses = exports.TextareaWithLabelAsPageHeading = exports.TextareaWithErrorMessage = exports.TextareaWithDefaultValue = exports.TextareaWithCustomRows = exports.TextareaWithAutocompleteAttribute = exports.Tag = exports.TagInactive = exports.Tabs = exports.TabsTabsWithAnchorInPanel = exports.Table = exports.TableTableWithHead = exports.TableTableWithHeadAndCaption = exports.SummaryList = exports.SummaryListExtreme = exports.SummaryListCheckYourAnswers = exports.SkipLink = exports.SelectBlock = exports.Select = exports.SelectWithHintTextAndErrorMessage = exports.SelectWithFullWidthOverride = exports.FormDivider = exports.Radio = exports.RadioBlockWithHint = exports.RadioBlock = exports.Radios = exports.FieldsetLabel = exports.Legend = exports.FieldsetBlock = exports.FieldsetBlockWithError = exports.Fieldset = exports.P = exports.Li = exports.Ol = exports.InsetText = exports.Input = exports.InputBlock = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FileUpload = exports.FileUploadWithHintText = exports.FileUploadWithErrorMessage = exports.ErrorSummary = exports.ErrorMessage = exports.Details = exports.DetailsWithHtml = exports.DetailsExpanded = exports.CustomTable = exports.Checkbox = exports.CheckboxBlock = exports.CharacterCountWithCustomRows = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Breadcrumbs = exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = exports.BackLinkWithCustomText = exports.A = void 0;
 
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 var A = function A() {
@@ -71,42 +71,6 @@ var CustomTable = function CustomTable() {
 };
 
 exports.CustomTable = CustomTable;
-
-var DateInputWithAutocompleteValues = function DateInputWithAutocompleteValues() {
-  return import("./DateInputWithAutocompleteValues");
-};
-
-exports.DateInputWithAutocompleteValues = DateInputWithAutocompleteValues;
-
-var DateInputWithErrorOnDayInput = function DateInputWithErrorOnDayInput() {
-  return import("./DateInputWithErrorOnDayInput");
-};
-
-exports.DateInputWithErrorOnDayInput = DateInputWithErrorOnDayInput;
-
-var DateInputWithErrorOnMonthInput = function DateInputWithErrorOnMonthInput() {
-  return import("./DateInputWithErrorOnMonthInput");
-};
-
-exports.DateInputWithErrorOnMonthInput = DateInputWithErrorOnMonthInput;
-
-var DateInputWithErrorOnYearInput = function DateInputWithErrorOnYearInput() {
-  return import("./DateInputWithErrorOnYearInput");
-};
-
-exports.DateInputWithErrorOnYearInput = DateInputWithErrorOnYearInput;
-
-var DateInputWithErrors = function DateInputWithErrors() {
-  return import("./DateInputWithErrors");
-};
-
-exports.DateInputWithErrors = DateInputWithErrors;
-
-var DateInput = function DateInput() {
-  return import("./DateInput");
-};
-
-exports.DateInput = DateInput;
 
 var DetailsExpanded = function DetailsExpanded() {
   return import("./DetailsExpanded");
@@ -437,6 +401,12 @@ var Button = function Button() {
 };
 
 exports.Button = Button;
+
+var DateInput = function DateInput() {
+  return import("./DateInput");
+};
+
+exports.DateInput = DateInput;
 
 var FlexColumn = function FlexColumn() {
   return import("./FlexColumn");
