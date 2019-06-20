@@ -29,8 +29,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
     Buttons make important actions stand out within a task flow, and help users
-    to take those actions easily. Use colour and text in buttons to inform users
-    about what will happen when they touch or click a button.
+    to take those actions easily. Use colour and text in buttons to inform users about what will happen when they activate a button.
 </P>
 
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-it">When to use it</H2>
@@ -134,19 +133,19 @@ make clear what will happen if the user selects it.</p>
       }}></Example>
 </ExampleContainer>
 
-<h2 id="disabled-buttons">&#39;Disabled&#39; buttons</h2>
-<p>&#39;Disabled&#39; buttons, which are often greyed out, have poor contrast and can
-confuse some users, so avoid them if possible. &#39;Disabled&#39; buttons may also
+<h2 id="disabled-buttons">Disabled buttons</h2>
+<p>Disabled buttons, which are often greyed out, have poor contrast and can
+confuse some users, so avoid them if possible. Disabled buttons may also
 impede keyboard accessibility.</p>
-<p>Only use &#39;disabled&#39; buttons if your research shows it makes the user interface
+<p>Only use disabled buttons if your research shows it makes the user interface
 easier to understand.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>'Disabled' buttons</ExampleHeading>
+    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Disabled buttons</ExampleHeading>
     <Example {...onChangeGenerator(Example)}  code={components__Button[4]} iframeProps={{
         id:"iframe_componentsButton4",
         className: "example__iframe",
         src:"/components/Button__example4.html",
-        title:"'Disabled' buttons (Button example)",
+        title:"Disabled buttons (Button example)",
         height: 50
       }}></Example>
 </ExampleContainer>

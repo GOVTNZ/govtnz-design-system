@@ -60,7 +60,7 @@ export default class Example extends Component<Props, State> {
       supportsClipboard: false,
       iframeWidth: 300,
       iframeHeight:
-        (props.iframeProps && (props.iframeProps.height as number)) || 100,
+        (props.iframeProps && (props.iframeProps.height as number)) || 200,
     };
   }
 

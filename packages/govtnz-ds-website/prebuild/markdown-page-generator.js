@@ -625,7 +625,7 @@ const getExampleHeight = async srcPath => {
   //  site again with those sizes, if an N-1 size is too out-of-sync
   //  for you.
 
-  let height = 100;
+  let height = 200;
   const npmProjectPath = path.resolve(__dirname, '..');
 
   const fullFilePath = path.join(npmProjectPath, 'public', srcPath);

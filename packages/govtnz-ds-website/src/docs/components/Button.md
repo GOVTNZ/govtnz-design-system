@@ -1,7 +1,6 @@
 <P styleSize="large">
     Buttons make important actions stand out within a task flow, and help users
-    to take those actions easily. Use colour and text in buttons to inform users
-    about what will happen when they touch or click a button.
+    to take those actions easily. Use colour and text in buttons to inform users about what will happen when they activate a button.
 </P>
 
 ## When to use it
@@ -19,21 +18,21 @@ the button performs. Write button text in sentence case.
 
 Some typical examples of button text are:
 
-* 'Start now' at the start of the service
-* 'Sign in' to an account a user has already created
-* 'Continue' when the service does not save a user's information
-* 'Save and continue' when the service does save a user's information
-* 'Save and return later' when a user can save their information and come
-back to it later
-* 'Pay' to make a payment
-* 'Confirm and send' on a check answers page that does not have any legal
-content a user must agree to
-* 'Accept and send' on a check answers page that has legal content a user
-must agree to
-* 'Sign out' when a user is leaving an account that they signed in to
-* 'Add another [name of thing]' to add another item to a list or group. Ensure
-the button text describes clearly what this button will add, in case there are
-other similar buttons on the same page or form.
+- 'Start now' at the start of the service
+- 'Sign in' to an account a user has already created
+- 'Continue' when the service does not save a user's information
+- 'Save and continue' when the service does save a user's information
+- 'Save and return later' when a user can save their information and come
+  back to it later
+- 'Pay' to make a payment
+- 'Confirm and send' on a check answers page that does not have any legal
+  content a user must agree to
+- 'Accept and send' on a check answers page that has legal content a user
+  must agree to
+- 'Sign out' when a user is leaving an account that they signed in to
+- 'Add another [name of thing]' to add another item to a list or group. Ensure
+  the button text describes clearly what this button will add, in case there are
+  other similar buttons on the same page or form.
 
 Consider if you need to include more words to clearly describe a button's
 action. For example, 'Add another address' or 'Accept and claim a tax refund'.
@@ -108,17 +107,17 @@ make clear what will happen if the user selects it.
     </Example>
 </ExampleContainer>
 
-## 'Disabled' buttons
+## Disabled buttons
 
-'Disabled' buttons, which are often greyed out, have poor contrast and can
-confuse some users, so avoid them if possible. 'Disabled' buttons may also
+Disabled buttons, which are often greyed out, have poor contrast and can
+confuse some users, so avoid them if possible. Disabled buttons may also
 impede keyboard accessibility.
 
-Only use 'disabled' buttons if your research shows it makes the user interface
+Only use disabled buttons if your research shows it makes the user interface
 easier to understand.
 
 <ExampleContainer>
-    <ExampleHeading>'Disabled' buttons</ExampleHeading>
+    <ExampleHeading>Disabled buttons</ExampleHeading>
     <Example>
         <Button type="Button" disabled>Save and continue</Button>
     </Example>
@@ -131,12 +130,12 @@ preventing multiple clicks from registering.
 
 Sometimes, users will click buttons more than once because they:
 
-* have used operating systems where they have to rapidly click twice on items
-to make them work
-* are experiencing a slow connection, which means they are not given feedback
-on their action quickly enough
-* have motor impairments, such as hand tremors, that cause them to click
-the button involuntarily.
+- have used operating systems where they have to rapidly click twice on items
+  to make them work
+- are experiencing a slow connection, which means they are not given feedback
+  on their action quickly enough
+- have motor impairments, such as hand tremors, that cause them to click
+  the button involuntarily.
 
 In some cases, multiple clicks can mean users' information is sent more than
 once. For example, a notify team found that a number of users were receiving
