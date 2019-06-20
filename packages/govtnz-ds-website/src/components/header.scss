@@ -11,10 +11,6 @@
   color: $color-core-white;
   @include font-smoothing;
 
-  @include small {
-    margin-bottom: $spacing-32;
-  }
-
   .g-flex-row {
     align-items: center;
   }
@@ -109,6 +105,21 @@
   color: #bfbfbf;
   padding: 6px 0px;
   font-size: 0.8rem;
+
+  @include small {
+    margin-bottom: $spacing-32;
+  }
+}
+
+.subheader__row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subheader_column1 {
 }
 
 .subheader__badge {
@@ -123,6 +134,12 @@
 
 .subheader__link,
 .subheader__link:hover,
+.subheader__link:visited,
 .subheader__link:active {
   color: white;
+}
+
+.subheader_column2 {
+  flex: 1;
+  padding-top: 3px;
 }

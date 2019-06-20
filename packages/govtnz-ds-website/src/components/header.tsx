@@ -29,11 +29,20 @@ const Header = ({ siteTitle }: Props) => (
     </div>
     <div className="subheader">
       <Container width="fixed">
-        <span className="subheader__badge">Alpha</span>
-        <a href="#" className="subheader__link">
-          Subscribe
-        </a>{' '}
-        for updates on the NZ Government Design System
+        <div className="subheader__row">
+          <div className="subheader_column1">
+            <span className="subheader__badge">Alpha</span>
+          </div>
+          <div className="subheader_column2">
+            <a
+              href="https://confirmsubscription.com/h/j/712F84D0A3086D2B"
+              className="subheader__link"
+            >
+              Subscribe
+            </a>{' '}
+            for updates on the NZ Government Design System
+          </div>
+        </div>
       </Container>
     </div>
     <NavigationLarge />
