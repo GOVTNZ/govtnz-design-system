@@ -29,13 +29,13 @@ const radiosIframe = readFileSync(
   'utf8'
 );
 
-// test('HTML Validation', async () => {
-//   await Promise.all([
-//     validateHTMLErrors(indexPage, 'Index page'),
-//     validateHTMLErrors(radiosPage, 'Radios page'),
-//     validateHTMLErrors(radiosIframe, 'Radios iframed page'),
-//   ]);
-// });
+test('HTML Validation', async () => {
+  await Promise.all([
+    validateHTMLErrors(indexPage, 'Index page'),
+    validateHTMLErrors(radiosPage, 'Radios page'),
+    validateHTMLErrors(radiosIframe, 'Radios iframed page'),
+  ]);
+});
 
 test('Validate not ES6 (IE11 needs ES5)', async () => {
   const jsPaths = await glob(path.resolve(__dirname, '..', 'public', '*.js'));
