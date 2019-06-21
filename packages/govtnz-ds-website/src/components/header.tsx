@@ -40,7 +40,7 @@ const Header = ({ siteTitle }: Props) => (
             >
               Subscribe
             </a>{' '}
-            for updates on the NZ Government Design System
+            for updates on the Design System
           </div>
         </div>
       </Container>
