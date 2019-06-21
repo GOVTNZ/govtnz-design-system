@@ -11,42 +11,42 @@
 
 .clipboard__tooltip {
   position: absolute;
-  display: none;
-  top: .125rem;
+  visibility: hidden;
+  top: 0.125rem;
   left: 100%;
-  padding: .5625rem .84375rem;
+  padding: 0.5625rem 0.84375rem;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1;
   color: #fff;
   white-space: nowrap;
   background: #2a2a2a;
-  border-radius: .25rem;
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, .27);
+  border-radius: 0.25rem;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.27);
   opacity: 0;
   pointer-events: none;
 
   @include large {
     top: -1.75rem;
-    left: -.25rem;
+    left: -0.25rem;
   }
 }
 
 .clipboard__tooltip--start {
   opacity: 0;
-  display: block;
-  transition: all 1s;
+  visibility: visible;
+  transition: all 0.5s;
   transform: translate(0, 0);
 }
 
 .clipboard__tooltip--end {
   opacity: 1;
-  display: block;
-  transition: all 1s;
-  transform: translate(.372rem, 0);
+  visibility: visible;
+  transition: all 0.5s;
+  transform: translate(0.372rem, 0);
 
   @include large {
-    transform: translate(0, -.6875rem);
+    transform: translate(0, -0.6875rem);
   }
 }
 

@@ -206,6 +206,7 @@ export default class Example extends Component<Props, State> {
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
                   <button
+                    key="clipboard-button"
                     className="g-button g-button--secondary g-button--small g-button--nowrap"
                     onClick={this.copyToClipboard}
                     type="button"
@@ -213,12 +214,13 @@ export default class Example extends Component<Props, State> {
                     Copy code
                   </button>
                   <div
-                    role="alert"
+                    key="clipboard-message"
+                    aria-live="assertive"
                     className={`clipboard__tooltip${
                       copyingMode ? ` clipboard__tooltip--${copyingMode}` : ''
                     }`}
                   >
-                    Code copied
+                    {copyingMode !== false ? 'Code copied' : ''}
                   </div>
                 </div>
               ) : null}
