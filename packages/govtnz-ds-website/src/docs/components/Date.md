@@ -1,7 +1,5 @@
 <P styleSize="large">
-    The date input component consists of three grouped text fields that invite
-    users to enter a day, a month, and a year.  This is the easiest way for
-    users to enter dates they know well.
+    The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
 </P>
 
 ## Examples
@@ -44,37 +42,25 @@ Interact with each example to see how it works.
 
 ## When to use it
 
-Use the date input component when you're asking users for a date they'll
-already know, or one they can look up easily.
+Use the date input component when you're asking users for a date they'll already know, or one they can look up easily.
 
 ## When not to use it
 
-Do not use the date input component if users are unlikely to know the exact
-date of the event you're asking about.
+Do not use the date input component if users are unlikely to know the exact date of the event you're asking about.
 
 ## How it works
 
-The three fields in the date input component are grouped together in a
-`fieldset` with a `legend` that describes them, as shown in the examples on
-this page. The legend is usually a question, such as 'What is your
-date of birth?'.
+The three fields in the date input component are grouped together in a `fieldset` with a `legend` that describes them, as shown in the examples on this page. The legend is usually a question, such as 'What is your date of birth?'.
 
-If you're asking one question per page, you can set the contents of the
-`legend` as the page heading. This is good practice as it means that users of
-screen readers will only hear the contents once.
+If you're asking one question per page, you can set the contents of the `legend` as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.
 
-Never automatically tab between the fields of the date input because this can
-confuse users and may clash with normal keyboard controls.
+Never automatically move focus between the fields of the date input because this can confuse users and may clash with normal keyboard controls.
 
 ## Use the autocomplete attribute for a date of birth
 
-Use the `autocomplete` attribute on the date input component when you're
-asking for a date of birth. This allows browsers to autofill the information on
-a user's behalf if they've entered it previously.
+Use the `autocomplete` attribute on the date input component when you're asking for a date of birth. This allows browsers to autofill the information on a user's behalf if they've entered it previously.
 
-To enable this functionality, set the `autocomplete` attribute on the fields to
-`bday-day`, `bday-month`, and `bday-year`. You'll need to do this to
-meet WCAG 2.1 Level AA.
+To enable this functionality, set the `autocomplete` attribute on the fields to `bday-day`, `bday-month`, and `bday-year`. You'll need to do this to meet WCAG 2.1 Level AA.
 
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
@@ -120,13 +106,9 @@ Style error messages as shown in the following example.
 
 Write a specific error message for every possible error state.
 
-When setting up errors, check the entire date as a whole, rather than
-separately checking the day, month, and year.
+When setting up errors, check the entire date as a whole, rather than separately checking the day, month, and year.
 
-Avoid assuming what is wrong with the date entered. For example, if a user
-enters '31 2 2016', the day may be right and the month may be wrong. An error
-message that mentions February may be confusing if they meant to enter '1' in
-the month field.
+Avoid assuming what is wrong with the date entered. For example, if a user enters '31 2 2016', the day may be right and the month may be wrong. An error message that mentions February may be confusing if they meant to enter '1' in the month field.
 
 ### If nothing is entered
 
@@ -202,25 +184,20 @@ August 2017 when they left school'.
 
 Say '[type of date] must be before [date and optional description]'.
 
-For example, 'The date of Gordon's last exam must be the same as or before
-31 August 2017'.
+For example, 'The date of Gordon's last exam must be the same as or before 31 August 2017'.
 
 ### If the date must be between two dates
 
-Say '[type of date] must be between [date] and
-[date and optional description]'.
+Say '[type of date] must be between [date] and [date and optional description]'.
 
-For example, 'The date your contract started must be between 1 September 2017
-and 30 September 2017 when you became self-employed'.
+For example, 'The date your contract started must be between 1 September 2017 and 30 September 2017 when you became self-employed'.
 
 ### Research on this component
 
 If you've used this component, get in touch to share your
 user research findings.
 
-More research is needed to determine the extent to which users struggle to
-enter months as numbers, and whether allowing them to enter months as
-text is helpful.
+More research is needed to determine the extent to which users struggle to enter months as numbers, and whether allowing them to enter months as text is helpful.
 
 ## Credit
 

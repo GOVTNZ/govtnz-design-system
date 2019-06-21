@@ -24,9 +24,7 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
-    The date input component consists of three grouped text fields that invite
-    users to enter a day, a month, and a year.  This is the easiest way for
-    users to enter dates they know well.
+    The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
 </P>
 
 <H2 {...onChangeGenerator()} styleSize="large" id="examples">Examples</H2>
@@ -53,28 +51,16 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
-<p>Use the date input component when you&#39;re asking users for a date they&#39;ll
-already know, or one they can look up easily.</p>
+<p>Use the date input component when you&#39;re asking users for a date they&#39;ll already know, or one they can look up easily.</p>
 <h2 id="when-not-to-use-it">When not to use it</h2>
-<p>Do not use the date input component if users are unlikely to know the exact
-date of the event you&#39;re asking about.</p>
+<p>Do not use the date input component if users are unlikely to know the exact date of the event you&#39;re asking about.</p>
 <h2 id="how-it-works">How it works</h2>
-<p>The three fields in the date input component are grouped together in a
-<code>fieldset</code> with a <code>legend</code> that describes them, as shown in the examples on
-this page. The legend is usually a question, such as &#39;What is your
-date of birth?&#39;.</p>
-<p>If you&#39;re asking one question per page, you can set the contents of the
-<code>legend</code> as the page heading. This is good practice as it means that users of
-screen readers will only hear the contents once.</p>
-<p>Never automatically tab between the fields of the date input because this can
-confuse users and may clash with normal keyboard controls.</p>
+<p>The three fields in the date input component are grouped together in a <code>fieldset</code> with a <code>legend</code> that describes them, as shown in the examples on this page. The legend is usually a question, such as &#39;What is your date of birth?&#39;.</p>
+<p>If you&#39;re asking one question per page, you can set the contents of the <code>legend</code> as the page heading. This is good practice as it means that users of screen readers will only hear the contents once.</p>
+<p>Never automatically move focus between the fields of the date input because this can confuse users and may clash with normal keyboard controls.</p>
 <h2 id="use-the-autocomplete-attribute-for-a-date-of-birth">Use the autocomplete attribute for a date of birth</h2>
-<p>Use the <code>autocomplete</code> attribute on the date input component when you&#39;re
-asking for a date of birth. This allows browsers to autofill the information on
-a user&#39;s behalf if they&#39;ve entered it previously.</p>
-<p>To enable this functionality, set the <code>autocomplete</code> attribute on the fields to
-<code>bday-day</code>, <code>bday-month</code>, and <code>bday-year</code>. You&#39;ll need to do this to
-meet WCAG 2.1 Level AA.</p>
+<p>Use the <code>autocomplete</code> attribute on the date input component when you&#39;re asking for a date of birth. This allows browsers to autofill the information on a user&#39;s behalf if they&#39;ve entered it previously.</p>
+<p>To enable this functionality, set the <code>autocomplete</code> attribute on the fields to <code>bday-day</code>, <code>bday-month</code>, and <code>bday-year</code>. You&#39;ll need to do this to meet WCAG 2.1 Level AA.</p>
 <ExampleContainer {...onChangeGenerator()}>
     <ExampleHeading {...onChangeGenerator()} white>Code</ExampleHeading>
     <Example {...onChangeGenerator()} codeOnly code={components__Date[2]} iframeProps={{
@@ -100,12 +86,8 @@ meet WCAG 2.1 Level AA.</p>
 </ExampleContainer>
 
 <p>Write a specific error message for every possible error state.</p>
-<p>When setting up errors, check the entire date as a whole, rather than
-separately checking the day, month, and year.</p>
-<p>Avoid assuming what is wrong with the date entered. For example, if a user
-enters &#39;31 2 2016&#39;, the day may be right and the month may be wrong. An error
-message that mentions February may be confusing if they meant to enter &#39;1&#39; in
-the month field.</p>
+<p>When setting up errors, check the entire date as a whole, rather than separately checking the day, month, and year.</p>
+<p>Avoid assuming what is wrong with the date entered. For example, if a user enters &#39;31 2 2016&#39;, the day may be right and the month may be wrong. An error message that mentions February may be confusing if they meant to enter &#39;1&#39; in the month field.</p>
 <h3 id="if-nothing-is-entered">If nothing is entered</h3>
 <p>Say &#39;Enter [type of date]&#39;.</p>
 <p>For example, &#39;Enter your date of birth&#39;.</p>
@@ -145,19 +127,14 @@ September 2017 when you started the course&#39;.</p>
 August 2017 when they left school&#39;.</p>
 <h3 id="if-the-date-must-be-before-another-date">If the date must be before another date</h3>
 <p>Say &#39;[type of date] must be before [date and optional description]&#39;.</p>
-<p>For example, &#39;The date of Gordon&#39;s last exam must be the same as or before
-31 August 2017&#39;.</p>
+<p>For example, &#39;The date of Gordon&#39;s last exam must be the same as or before 31 August 2017&#39;.</p>
 <h3 id="if-the-date-must-be-between-two-dates">If the date must be between two dates</h3>
-<p>Say &#39;[type of date] must be between [date] and
-[date and optional description]&#39;.</p>
-<p>For example, &#39;The date your contract started must be between 1 September 2017
-and 30 September 2017 when you became self-employed&#39;.</p>
+<p>Say &#39;[type of date] must be between [date] and [date and optional description]&#39;.</p>
+<p>For example, &#39;The date your contract started must be between 1 September 2017 and 30 September 2017 when you became self-employed&#39;.</p>
 <h3 id="research-on-this-component">Research on this component</h3>
 <p>If you&#39;ve used this component, get in touch to share your
 user research findings.</p>
-<p>More research is needed to determine the extent to which users struggle to
-enter months as numbers, and whether allowing them to enter months as
-text is helpful.</p>
+<p>More research is needed to determine the extent to which users struggle to enter months as numbers, and whether allowing them to enter months as text is helpful.</p>
 <h2 id="credit">Credit</h2>
 <p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
