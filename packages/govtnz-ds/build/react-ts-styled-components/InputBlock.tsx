@@ -2,14 +2,14 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  hasError?: boolean | undefined;
+  error?: boolean | undefined;
   inputId?: string | undefined;
   label?: React.ReactNode;
-  hintId?: string | undefined;
   hint?: React.ReactNode;
+  hintId?: string | undefined;
   errorId?: string | undefined;
-  error?: React.ReactNode;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
+  hasError?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -97,7 +97,7 @@ type Props = {
   onChange: any;
 };
 
-const StyledDiv = styled.div<Pick<Props, "hasError">>`
+const StyledDiv = styled.div<Pick<Props, "error">>`
   margin-bottom: 20px;
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
@@ -106,7 +106,7 @@ const StyledDiv = styled.div<Pick<Props, "hasError">>`
     margin-bottom: 0;
   }
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       padding-left: 15px;
       border-left: 5px solid #b10e1e;
@@ -371,14 +371,14 @@ const constants = {
 };
 
 const InputBlock = ({
-  hasError,
+  error,
   inputId,
   label,
-  hintId,
   hint,
+  hintId,
   errorId,
-  error,
   width,
+  hasError,
   name,
   disabled,
   readOnly,
@@ -390,7 +390,7 @@ const InputBlock = ({
   autoComplete,
   onChange
 }: Props) => (
-  <StyledDiv hasError={hasError}>
+  <StyledDiv error={error}>
     <StyledLabel htmlFor={inputId}>
       {label !== undefined ? (
         label
@@ -398,14 +398,20 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </StyledLabel>
-    <StyledDiv2 id={hintId}>
-      {hint !== undefined ? (
-        hint
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </StyledDiv2>
-    {hasError !== undefined ? (
+    {hint !== undefined ? (
+      <React.Fragment>
+        <StyledDiv2 id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Example text</React.Fragment>
+          )}
+        </StyledDiv2>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {error !== undefined ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
           <StyledSpan>Error: </StyledSpan>

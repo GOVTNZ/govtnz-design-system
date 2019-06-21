@@ -101,14 +101,14 @@ var constants = {
 };
 
 var InputBlock = function InputBlock(_ref) {
-  var hasError = _ref.hasError,
+  var error = _ref.error,
       inputId = _ref.inputId,
       label = _ref.label,
-      hintId = _ref.hintId,
       hint = _ref.hint,
+      hintId = _ref.hintId,
       errorId = _ref.errorId,
-      error = _ref.error,
       width = _ref.width,
+      hasError = _ref.hasError,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -120,14 +120,14 @@ var InputBlock = function InputBlock(_ref) {
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
-    className: "g-inputBlock-form-group".concat(hasError ? " g-inputBlock-form-group--error" : "")
+    className: "g-inputBlock-form-group".concat(error ? " g-inputBlock-form-group--error" : "")
   }, _react["default"].createElement("label", {
     className: "g-inputBlock-label",
     htmlFor: inputId
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), _react["default"].createElement("div", {
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-error-message",
     id: errorId
   }, _react["default"].createElement("span", {

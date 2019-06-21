@@ -6,14 +6,14 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <Example>
-        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId" hintId="anyHintId" />
+        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId" />
     </Example>
 </ExampleContainer>
 
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example>
-        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
+        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 
@@ -79,7 +79,7 @@ On fixed-width inputs, the width will remain fixed on all screens unless it is w
 <ExampleContainer>
     <ExampleHeading>Hint text</ExampleHeading>
     <Example>
-        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId10" hintId="anyHintId10" />
+        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId10" hint="The name you'll use on promotional material" hintId="anyHintId10" />
     </Example>
 </ExampleContainer>
 
@@ -134,7 +134,7 @@ Style error messages as shown in the following example.
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example>
-        <InputBlock type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
+        <InputBlock type="Text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 

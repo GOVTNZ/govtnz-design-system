@@ -94,13 +94,17 @@ const constants = {
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    hasError: { type: Boolean, default: false, required: false },
+    error: {
+      type: Boolean,
+      default: false,
+      required: false,
+      default: "Example text"
+    },
     inputId: { type: String, required: false },
     label: { required: false, default: "Example text" },
-    hintId: { type: String, required: false },
     hint: { required: false, default: "Example text" },
+    hintId: { type: String, required: false },
     errorId: { type: String, required: false },
-    error: { required: false, default: "Example text" },
     width: {
       type: String,
       validator: value => {
@@ -108,6 +112,7 @@ export default Vue.extend({
       },
       required: false
     },
+    hasError: { type: Boolean, default: false, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -215,7 +220,7 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-inputBlock-form-group" +
-        (this.hasError ? " g-inputBlock-form-group--error" : "")
+        (this.error ? " g-inputBlock-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {

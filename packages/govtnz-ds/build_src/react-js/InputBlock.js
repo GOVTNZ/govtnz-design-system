@@ -92,14 +92,14 @@ const constants = {
 };
 
 const InputBlock = ({
-  hasError,
+  error,
   inputId,
   label,
-  hintId,
   hint,
+  hintId,
   errorId,
-  error,
   width,
+  hasError,
   name,
   disabled,
   readOnly,
@@ -113,7 +113,7 @@ const InputBlock = ({
 }) => (
   <div
     className={`g-inputBlock-form-group${
-      hasError ? " g-inputBlock-form-group--error" : ""
+      error ? " g-inputBlock-form-group--error" : ""
     }`}
   >
     <label className="g-inputBlock-label" htmlFor={inputId}>
@@ -123,14 +123,20 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </label>
-    <div className="g-inputBlock-hint" id={hintId}>
-      {hint !== undefined ? (
-        hint
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </div>
-    {hasError !== undefined ? (
+    {hint !== undefined ? (
+      <React.Fragment>
+        <div className="g-inputBlock-hint" id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Example text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {error !== undefined ? (
       <React.Fragment>
         <div className="g-inputBlock-error-message" id={errorId}>
           <span className="g-inputBlock-visually-hidden">Error: </span>

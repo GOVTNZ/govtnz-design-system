@@ -284,9 +284,20 @@ export default class VueTs {
       single += `<style scoped>\n\n${css}\n</style>`;
     }
 
-    const formattedSingle = prettier.format(single, {
-      parser: "vue"
-    });
+    let formattedSingle;
+    try {
+      formattedSingle = prettier.format(single, {
+        parser: "vue"
+      });
+    } catch (e) {
+      console.error(
+        `MetaTemplate internal problem: Vue codegen problem, unable to Prettier #${
+          this._template.id
+        } this code:`
+      );
+      console.error(e);
+      formattedSingle = single;
+    }
 
     const pathPrefix = `${this.dirname}/${this._template.id}`;
 

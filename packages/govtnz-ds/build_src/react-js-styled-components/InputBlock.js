@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
     margin-bottom: 0;
   }
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       padding-left: 15px;
       border-left: 5px solid #b10e1e;
@@ -273,14 +273,14 @@ const constants = {
 };
 
 const InputBlock = ({
-  hasError,
+  error,
   inputId,
   label,
-  hintId,
   hint,
+  hintId,
   errorId,
-  error,
   width,
+  hasError,
   name,
   disabled,
   readOnly,
@@ -292,7 +292,7 @@ const InputBlock = ({
   autoComplete,
   onChange
 }) => (
-  <StyledDiv hasError={hasError}>
+  <StyledDiv error={error}>
     <StyledLabel htmlFor={inputId}>
       {label !== undefined ? (
         label
@@ -300,14 +300,20 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </StyledLabel>
-    <StyledDiv2 id={hintId}>
-      {hint !== undefined ? (
-        hint
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </StyledDiv2>
-    {hasError !== undefined ? (
+    {hint !== undefined ? (
+      <React.Fragment>
+        <StyledDiv2 id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Example text</React.Fragment>
+          )}
+        </StyledDiv2>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {error !== undefined ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
           <StyledSpan>Error: </StyledSpan>

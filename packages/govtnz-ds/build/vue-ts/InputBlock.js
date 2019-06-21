@@ -7,6 +7,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/defineProperty"));
+
 var _vue = _interopRequireDefault(require("vue"));
 
 var constants = {
@@ -104,11 +106,11 @@ var _default = _vue["default"].extend({
   functional: true,
   // no internal state
   props: {
-    hasError: {
+    error: (0, _defineProperty2["default"])({
       type: Boolean,
       "default": false,
       required: false
-    },
+    }, "default", "Example text"),
     inputId: {
       type: String,
       required: false
@@ -117,27 +119,28 @@ var _default = _vue["default"].extend({
       required: false,
       "default": "Example text"
     },
-    hintId: {
-      type: String,
-      required: false
-    },
     hint: {
       required: false,
       "default": "Example text"
     },
-    errorId: {
+    hintId: {
       type: String,
       required: false
     },
-    error: {
-      required: false,
-      "default": "Example text"
+    errorId: {
+      type: String,
+      required: false
     },
     width: {
       type: String,
       validator: function validator(value) {
         return ["30", "20", "10", "5", "4", "3", "2"].indexOf(value) !== -1;
       },
+      required: false
+    },
+    hasError: {
+      type: Boolean,
+      "default": false,
       required: false
     },
     name: {
@@ -189,7 +192,7 @@ var _default = _vue["default"].extend({
   },
   computed: {
     computed__class: function computed__class() {
-      return "g-inputBlock-form-group" + (this.hasError ? " g-inputBlock-form-group--error" : "");
+      return "g-inputBlock-form-group" + (this.error ? " g-inputBlock-form-group--error" : "");
     },
     computed__ariaDescribedby: function computed__ariaDescribedby() {
       return +this.hintId + +this.errorId;

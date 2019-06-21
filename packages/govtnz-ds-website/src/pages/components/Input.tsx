@@ -33,7 +33,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         className: "example__iframe",
         src:"/components/Input__example0.html",
         title:"Example 1",
-        height: 220
+        height: 180
       }}></Example>
 </ExampleContainer>
 
@@ -44,7 +44,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         className: "example__iframe",
         src:"/components/Input__example1.html",
         title:"Error state (Input example)",
-        height: 260
+        height: 220
       }}></Example>
 </ExampleContainer>
 

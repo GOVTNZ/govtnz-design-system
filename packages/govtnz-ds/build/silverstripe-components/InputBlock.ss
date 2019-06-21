@@ -1,4 +1,4 @@
-<div class="g-inputBlock-form-group<% if $hasError %>  g-inputBlock-form-group--error<% end_if %>"> 
+<div class="g-inputBlock-form-group<% if $error %>  g-inputBlock-form-group--error<% end_if %>"> 
       <label class="g-inputBlock-label"<% if $inputId %> for="{$inputId}"<% end_if %>> {$label}
 </label> 
       <div class="g-inputBlock-hint"<% if $hintId %> id="{$hintId}"<% end_if %>> {$hint}

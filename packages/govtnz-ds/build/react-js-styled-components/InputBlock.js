@@ -164,7 +164,7 @@ function _templateObject() {
 }
 
 var StyledDiv = _styledComponents["default"].div(_templateObject(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject2());
+  return props.error && _styledComponents["default"].css(_templateObject2());
 });
 
 var StyledLabel = _styledComponents["default"].label(_templateObject3());
@@ -276,14 +276,14 @@ var constants = {
 };
 
 var InputBlock = function InputBlock(_ref) {
-  var hasError = _ref.hasError,
+  var error = _ref.error,
       inputId = _ref.inputId,
       label = _ref.label,
-      hintId = _ref.hintId,
       hint = _ref.hint,
+      hintId = _ref.hintId,
       errorId = _ref.errorId,
-      error = _ref.error,
       width = _ref.width,
+      hasError = _ref.hasError,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -295,12 +295,12 @@ var InputBlock = function InputBlock(_ref) {
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledDiv, {
-    hasError: hasError
+    error: error
   }, _react["default"].createElement(StyledLabel, {
     htmlFor: inputId
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), _react["default"].createElement(StyledDiv2, {
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
     id: errorId
   }, _react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement(StyledInput, {
     width: width,

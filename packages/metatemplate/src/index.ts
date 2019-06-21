@@ -172,10 +172,17 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
       const tagName = (node as HTMLElement).tagName.toLowerCase();
 
       if (tagName === "mt-variable") {
-        const key: string = await NodeGetAttribute(node, "key");
+        let key: string = await NodeGetAttribute(node, "key");
+        const isStableKey: boolean = key.includes("!");
+        key = key.replace("!", ""); // will only replace one, but there should only be one
+        let safeKey = key;
+        const assignedKeys = format.getAssignedDynamicKeys();
+        if (!isStableKey || !assignedKeys.includes(key)) {
+          safeKey = format.registerDynamicKey(key, "node", true);
+        }
         const defaultValue = (node as HTMLElement).innerHTML;
         const variableArgs: OnVariable = {
-          key: format.registerDynamicKey(key, "node", true),
+          key: safeKey,
           defaultValue
         };
         format.onVariable(variableArgs);
@@ -184,11 +191,11 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
         const isSelfClosing = !node.childNodes.length;
         if (tagName === "mt-if") {
           let key: string = await NodeGetAttribute(node, "key");
-          const stableKey: boolean = key.includes("!");
+          const isStableKey: boolean = key.includes("!");
           key = key.replace("!", ""); // will only replace one, but there should only be one
           let safeKey = key;
           const assignedKeys = format.getAssignedDynamicKeys();
-          if (!stableKey || !assignedKeys.includes(key)) {
+          if (!isStableKey || !assignedKeys.includes(key)) {
             safeKey = format.registerDynamicKey(key, "node", true);
           }
           const ifArgs: OnIf = {

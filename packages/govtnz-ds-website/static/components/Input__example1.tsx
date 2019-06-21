@@ -15,7 +15,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example {...onChangeGenerator(Example)}>
-        <InputBlock {...onChangeGenerator(InputBlock)} type="Text" label="Event name" hint="Provide an event name" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
+        <InputBlock {...onChangeGenerator(InputBlock)} type="Text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>);
 
     document.addEventListener('DOMContentLoaded', () => {

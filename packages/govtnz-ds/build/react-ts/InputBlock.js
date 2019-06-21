@@ -99,11 +99,12 @@ var constants = {
     }
 };
 var InputBlock = function (_a) {
-    var hasError = _a.hasError, inputId = _a.inputId, label = _a.label, hintId = _a.hintId, hint = _a.hint, errorId = _a.errorId, error = _a.error, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
-    return (React.createElement("div", { className: "g-inputBlock-form-group" + (hasError ? " g-inputBlock-form-group--error" : "") },
+    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, hasError = _a.hasError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    return (React.createElement("div", { className: "g-inputBlock-form-group" + (error ? " g-inputBlock-form-group--error" : "") },
         React.createElement("label", { className: "g-inputBlock-label", htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
-        React.createElement("div", { className: "g-inputBlock-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))),
-        hasError !== undefined ? (React.createElement(React.Fragment, null,
+        hint !== undefined ? (React.createElement(React.Fragment, null,
+            React.createElement("div", { className: "g-inputBlock-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
+        error !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "g-inputBlock-error-message", id: errorId },
                 React.createElement("span", { className: "g-inputBlock-visually-hidden" }, "Error: "),
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),

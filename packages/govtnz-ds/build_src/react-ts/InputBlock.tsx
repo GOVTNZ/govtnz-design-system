@@ -1,14 +1,14 @@
 import * as React from "react";
 
 type Props = {
-  hasError?: boolean | undefined;
+  error?: boolean | undefined;
   inputId?: string | undefined;
   label?: React.ReactNode;
-  hintId?: string | undefined;
   hint?: React.ReactNode;
+  hintId?: string | undefined;
   errorId?: string | undefined;
-  error?: React.ReactNode;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
+  hasError?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
@@ -188,14 +188,14 @@ const constants = {
 };
 
 const InputBlock = ({
-  hasError,
+  error,
   inputId,
   label,
-  hintId,
   hint,
+  hintId,
   errorId,
-  error,
   width,
+  hasError,
   name,
   disabled,
   readOnly,
@@ -209,7 +209,7 @@ const InputBlock = ({
 }: Props) => (
   <div
     className={`g-inputBlock-form-group${
-      hasError ? " g-inputBlock-form-group--error" : ""
+      error ? " g-inputBlock-form-group--error" : ""
     }`}
   >
     <label className="g-inputBlock-label" htmlFor={inputId}>
@@ -219,14 +219,20 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </label>
-    <div className="g-inputBlock-hint" id={hintId}>
-      {hint !== undefined ? (
-        hint
-      ) : (
-        <React.Fragment>Example text</React.Fragment>
-      )}
-    </div>
-    {hasError !== undefined ? (
+    {hint !== undefined ? (
+      <React.Fragment>
+        <div className="g-inputBlock-hint" id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Example text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {error !== undefined ? (
       <React.Fragment>
         <div className="g-inputBlock-error-message" id={errorId}>
           <span className="g-inputBlock-visually-hidden">Error: </span>
