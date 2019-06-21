@@ -87,11 +87,11 @@ var constants = {
     }
 };
 var CharacterCountWithCustomRows = function (_a) {
-    var maxLength = _a.maxLength, id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength2 = _a.maxLength2, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
-    return (React.createElement(StyledDiv, { "data-maxlength": maxLength ? maxLength : "" },
+    var id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
+    return (React.createElement(StyledDiv, null,
         React.createElement(StyledDiv2, null,
             React.createElement(StyledLabel, { htmlFor: id }, "Full address"),
-            React.createElement(StyledTextarea, { id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength2, value: value, onChange: onChange }),
+            React.createElement(StyledTextarea, { id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength, value: value, onChange: onChange }),
             React.createElement(StyledSpan, { "aria-live": "polite" },
                 "You have",
                 " ",
@@ -103,7 +103,7 @@ exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
 var CharacterCountWithCustomRows__calculated = function (props) {
     return React.createElement(CharacterCountWithCustomRows, __assign({}, props, { remainingCharacters: (function (props) {
             return props.value !== undefined && props.maxLength !== undefined
-                ? parseInt(props.maxLength, 10) - props.value.length
+                ? parseInt(props.maxLength.toString(), 10) - props.value.length
                 : props.maxLength;
         })(props) }));
 };

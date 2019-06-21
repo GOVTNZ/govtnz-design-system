@@ -61,7 +61,6 @@ const constants = {
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    maxLength: { type: String, required: true },
     id: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
@@ -133,7 +132,7 @@ export default Vue.extend({
       },
       required: true
     },
-    maxLength2: { type: String, required: false },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false },
     remainingCharacters: { required: false }
   },
@@ -145,6 +144,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{staticClass:"g-characterCountWithCustomRows-character-count",attrs:{"data-maxlength":maxLength}},[_c(\'div\',{staticClass:"g-characterCountWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-characterCountWithCustomRows-label",attrs:{"for":id}},[_v("\\n\\n          Full address\\n        \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-characterCountWithCustomRows-textarea",attrs:{"id":id,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete,"maxlength":maxLength2},domProps:{"value":value}}),_v(" "),_c(\'span\',{staticClass:"g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message",attrs:{"aria-live":"polite"}},[_v("\\nYou have "),_t("remainingCharacters"),_v(" characters remaining\\n\\n")],2)])])}'
+    'with(this){return _c(\'div\',{staticClass:"g-characterCountWithCustomRows-character-count"},[_c(\'div\',{staticClass:"g-characterCountWithCustomRows-form-group"},[_c(\'label\',{staticClass:"g-characterCountWithCustomRows-label",attrs:{"for":id}},[_v("\\n\\n          Full address\\n        \\n\\n")]),_v(" "),_c(\'textarea\',{staticClass:"g-characterCountWithCustomRows-textarea",attrs:{"id":id,"name":name,"rows":rows,"disabled":disabled,"readonly":readOnly,"cols":cols,"autofocus":autoFocus,"spellcheck":spellCheck,"autocomplete":computed__autocomplete,"maxlength":maxLength},domProps:{"value":value}}),_v(" "),_c(\'span\',{staticClass:"g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message",attrs:{"aria-live":"polite"}},[_v("\\nYou have "),_t("remainingCharacters"),_v(" characters remaining\\n\\n")],2)])])}'
   )
 });

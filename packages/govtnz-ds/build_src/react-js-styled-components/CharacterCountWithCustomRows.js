@@ -175,7 +175,6 @@ const constants = {
 };
 
 const CharacterCountWithCustomRows = ({
-  maxLength,
   id,
   name,
   disabled,
@@ -185,12 +184,12 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
-  maxLength2,
+  maxLength,
   value,
   onChange,
   remainingCharacters
 }) => (
-  <StyledDiv data-maxlength={maxLength ? maxLength : ""}>
+  <StyledDiv>
     <StyledDiv2>
       <StyledLabel htmlFor={id}>Full address</StyledLabel>
       <StyledTextarea
@@ -203,7 +202,7 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
-        maxLength={maxLength2}
+        maxLength={maxLength}
         value={value}
         onChange={onChange}
       />
@@ -225,7 +224,7 @@ const CharacterCountWithCustomRows__calculated = props =>
     ...props,
     remainingCharacters: (props => {
       return props.value !== undefined && props.maxLength !== undefined
-        ? parseInt(props.maxLength, 10) - props.value.length
+        ? parseInt(props.maxLength.toString(), 10) - props.value.length
         : props.maxLength;
     })(props)
   });

@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
     to take those actions easily. Use colour and text in buttons to inform users about what will happen when they activate a button.
 </P>
 
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-it">When to use it</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="when-to-use-it">When to use it</H2>
 <p>Use buttons to help users carry out key actions in a task flow, like starting
 an application or saving their information.</p>
 <p>If you are considering using an icon in a button, we suggest you use visible
@@ -41,20 +41,20 @@ text as well to ensure all users understand the button&#39;s function.</p>
 <p>Keep button text short. Start with a verb that clearly describes the action
 the button performs. Write button text in sentence case.</p>
 <p>Some typical examples of button text are:</p>
-<Ul {...onChangeGenerator(Ul)} bulleted>
-<Li {...onChangeGenerator(Li)}>&#39;Start now&#39; at the start of the service</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Sign in&#39; to an account a user has already created</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Continue&#39; when the service does not save a user&#39;s information</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Save and continue&#39; when the service does save a user&#39;s information</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Save and return later&#39; when a user can save their information and come
+<Ul {...onChangeGenerator()} bulleted>
+<Li {...onChangeGenerator()}>&#39;Start now&#39; at the start of the service</Li>
+<Li {...onChangeGenerator()}>&#39;Sign in&#39; to an account a user has already created</Li>
+<Li {...onChangeGenerator()}>&#39;Continue&#39; when the service does not save a user&#39;s information</Li>
+<Li {...onChangeGenerator()}>&#39;Save and continue&#39; when the service does save a user&#39;s information</Li>
+<Li {...onChangeGenerator()}>&#39;Save and return later&#39; when a user can save their information and come
 back to it later</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Pay&#39; to make a payment</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Confirm and send&#39; on a check answers page that does not have any legal
+<Li {...onChangeGenerator()}>&#39;Pay&#39; to make a payment</Li>
+<Li {...onChangeGenerator()}>&#39;Confirm and send&#39; on a check answers page that does not have any legal
 content a user must agree to</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Accept and send&#39; on a check answers page that has legal content a user
+<Li {...onChangeGenerator()}>&#39;Accept and send&#39; on a check answers page that has legal content a user
 must agree to</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Sign out&#39; when a user is leaving an account that they signed in to</Li>
-<Li {...onChangeGenerator(Li)}>&#39;Add another [name of thing]&#39; to add another item to a list or group. Ensure
+<Li {...onChangeGenerator()}>&#39;Sign out&#39; when a user is leaving an account that they signed in to</Li>
+<Li {...onChangeGenerator()}>&#39;Add another [name of thing]&#39; to add another item to a list or group. Ensure
 the button text describes clearly what this button will add, in case there are
 other similar buttons on the same page or form.</Li>
 </Ul>
@@ -66,9 +66,9 @@ as &#39;Save and send&#39;.</p>
 <p>Avoid using several primary buttons on a single page. Having more than one
 &#39;call to action&#39; reduces its impact, and makes it harder for users to know
 what to do next.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Button[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Primary buttons</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Button[0]} iframeProps={{
         id:"iframe_componentsButton0",
         className: "example__iframe",
         src:"/components/Button__example0.html",
@@ -82,9 +82,9 @@ what to do next.</p>
 Pages with too many calls to action make it hard for users to know what to do
 next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Secondary buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Button[1]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Secondary buttons</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Button[1]} iframeProps={{
         id:"iframe_componentsButton1",
         className: "example__iframe",
         src:"/components/Button__example1.html",
@@ -97,9 +97,9 @@ content down into several pages.</p>
 offering &#39;Cancel&#39; or &#39;Save and return later&#39; options. Consider limiting
 combinations to a maximum of two secondary buttons with a single primary
 button, as more can confuse users.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Primary and secondary combination</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Button[2]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Primary and secondary combination</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Button[2]} iframeProps={{
         id:"iframe_componentsButton2",
         className: "example__iframe",
         src:"/components/Button__example2.html",
@@ -122,9 +122,9 @@ another warning button for the final confirmation.</p>
 the serious nature of the action. Not all users will be able to see the colour
 or may not understand what it signifies. Make sure the context and button text
 make clear what will happen if the user selects it.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Warning buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Button[3]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Warning buttons</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Button[3]} iframeProps={{
         id:"iframe_componentsButton3",
         className: "example__iframe",
         src:"/components/Button__example3.html",
@@ -139,9 +139,9 @@ confuse some users, so avoid them if possible. Disabled buttons may also
 impede keyboard accessibility.</p>
 <p>Only use disabled buttons if your research shows it makes the user interface
 easier to understand.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Disabled buttons</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Button[4]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Disabled buttons</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Button[4]} iframeProps={{
         id:"iframe_componentsButton4",
         className: "example__iframe",
         src:"/components/Button__example4.html",
@@ -154,12 +154,12 @@ easier to understand.</p>
 <p>You can prevent users from accidentally sending information more than once by
 preventing multiple clicks from registering.</p>
 <p>Sometimes, users will click buttons more than once because they:</p>
-<Ul {...onChangeGenerator(Ul)} bulleted>
-<Li {...onChangeGenerator(Li)}>have used operating systems where they have to rapidly click twice on items
+<Ul {...onChangeGenerator()} bulleted>
+<Li {...onChangeGenerator()}>have used operating systems where they have to rapidly click twice on items
 to make them work</Li>
-<Li {...onChangeGenerator(Li)}>are experiencing a slow connection, which means they are not given feedback
+<Li {...onChangeGenerator()}>are experiencing a slow connection, which means they are not given feedback
 on their action quickly enough</Li>
-<Li {...onChangeGenerator(Li)}>have motor impairments, such as hand tremors, that cause them to click
+<Li {...onChangeGenerator()}>have motor impairments, such as hand tremors, that cause them to click
 the button involuntarily.</Li>
 </Ul>
 <p>In some cases, multiple clicks can mean users&#39; information is sent more than

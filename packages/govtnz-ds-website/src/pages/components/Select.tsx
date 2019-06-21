@@ -22,10 +22,10 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</p>
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="example">Example</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="example">Example</H2>
 <p>Interact with this example to see how it works.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)}  code={components__Select[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <Example {...onChangeGenerator()}  code={components__Select[0]} iframeProps={{
         id:"iframe_componentsSelect0",
         className: "example__iframe",
         src:"/components/Select__example0.html",

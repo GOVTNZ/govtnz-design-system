@@ -22,9 +22,9 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>For detailed documentation see <Link to="/components/Ul/">Unordered List</Link> and <Link to="/components/Ol/">Ordered List</Link> with <Link to="/components/Li/">List item</Link>s inside either. Here is an introductionary paragraph that succinctly describes what this componeent is, and is easy to scan for users looking to see if this page has the things on it they are looking for.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Lists[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of Lists</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Lists[0]} iframeProps={{
         id:"iframe_componentsLists0",
         className: "example__iframe",
         src:"/components/Lists__example0.html",
@@ -33,9 +33,9 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Lists[1]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of Lists</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Lists[1]} iframeProps={{
         id:"iframe_componentsLists1",
         className: "example__iframe",
         src:"/components/Lists__example1.html",
@@ -44,15 +44,15 @@ const PageContent = (props) => <React.Fragment><p>For detailed documentation see
       }}></Example>
 </ExampleContainer>
 
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="when-to-use-this-component">When to use this component</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="when-to-use-this-component">When to use this component</H2>
 <p>Use the text input component when you need to let users enter text that’s no longer than a single line, such as their name or phone number.</p>
 <h2 id="when-not-to-use-this-component">When not to use this component</h2>
 <p>Do not use the text input component if you need to let users enter longer answers that might span multiple lines. In this case, you should use the <Link to="/components/Textarea/">textarea</Link> component.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>Explanatory text about how to start using the component goes here and it is relatively brief but introuduces how it works I dunno this is not my area of expertise.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Lists a second time</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Lists[2]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of Lists a second time</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Lists[2]} iframeProps={{
         id:"iframe_componentsLists2",
         className: "example__iframe",
         src:"/components/Lists__example2.html",

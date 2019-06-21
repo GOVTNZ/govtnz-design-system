@@ -1,7 +1,6 @@
 import * as React from "react";
 
 type Props = {
-  maxLength: any;
   id?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
@@ -64,7 +63,7 @@ type Props = {
     | "IMPP"
     | "URL"
     | "Photo";
-  maxLength2?: number | undefined;
+  maxLength?: number | undefined;
   value?: string | undefined;
   onChange: any;
   remainingCharacters?: React.ReactNode;
@@ -129,7 +128,6 @@ const constants = {
 };
 
 const CharacterCountWithCustomRows = ({
-  maxLength,
   id,
   name,
   disabled,
@@ -139,15 +137,12 @@ const CharacterCountWithCustomRows = ({
   autoFocus,
   spellCheck,
   autoComplete,
-  maxLength2,
+  maxLength,
   value,
   onChange,
   remainingCharacters
 }: Props) => (
-  <div
-    className="g-characterCountWithCustomRows-character-count"
-    data-maxlength={maxLength ? maxLength : ""}
-  >
+  <div className="g-characterCountWithCustomRows-character-count">
     <div className="g-characterCountWithCustomRows-form-group">
       <label className="g-characterCountWithCustomRows-label" htmlFor={id}>
         Full address
@@ -163,7 +158,7 @@ const CharacterCountWithCustomRows = ({
         autoFocus={autoFocus}
         spellCheck={spellCheck}
         autoComplete={constants.autoComplete[autoComplete]}
-        maxLength={maxLength2}
+        maxLength={maxLength}
         value={value}
         onChange={onChange}
       />
@@ -186,7 +181,6 @@ const CharacterCountWithCustomRows = ({
 const CharacterCountWithCustomRows__calculated = (
   props: Pick<
     Props,
-    | "maxLength"
     | "id"
     | "name"
     | "disabled"
@@ -196,7 +190,7 @@ const CharacterCountWithCustomRows__calculated = (
     | "autoFocus"
     | "spellCheck"
     | "autoComplete"
-    | "maxLength2"
+    | "maxLength"
     | "value"
     | "onChange"
   >
@@ -205,7 +199,7 @@ const CharacterCountWithCustomRows__calculated = (
     ...props,
     remainingCharacters: (props => {
       return props.value !== undefined && props.maxLength !== undefined
-        ? parseInt(props.maxLength, 10) - props.value.length
+        ? parseInt(props.maxLength.toString(), 10) - props.value.length
         : props.maxLength;
     })(props)
   });

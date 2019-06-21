@@ -22,11 +22,11 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Headings are structural parts of your page, ranging from 1 (most important) to 6 (least important), and are used by screen readers to understand the relationship between parts of your page. They are for headings, but they also denote the hierarchy of your page.</p>
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="how-to-use">How to use</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="how-to-use">How to use</H2>
 <p>First choose a heading level based on the structure of your page, and then choose the appropriate font size for your design as the font size can be chosen independently, but do not conflate these decisions as they are strictly unrelated.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of a Link</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__A[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of a Link</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__A[0]} iframeProps={{
         id:"iframe_componentsA0",
         className: "example__iframe",
         src:"/components/A__example0.html",

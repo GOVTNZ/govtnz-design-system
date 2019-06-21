@@ -29,10 +29,10 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
     users to enter dates they know well.
 </P>
 
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)}  code={components__Date[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <Example {...onChangeGenerator()}  code={components__Date[0]} iframeProps={{
         id:"iframe_componentsDate0",
         className: "example__iframe",
         src:"/components/Date__example0.html",
@@ -41,9 +41,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Date[1]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Error</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Date[1]} iframeProps={{
         id:"iframe_componentsDate1",
         className: "example__iframe",
         src:"/components/Date__example1.html",
@@ -75,9 +75,9 @@ a user&#39;s behalf if they&#39;ve entered it previously.</p>
 <p>To enable this functionality, set the <code>autocomplete</code> attribute on the fields to
 <code>bday-day</code>, <code>bday-month</code>, and <code>bday-year</code>. You&#39;ll need to do this to
 meet WCAG 2.1 Level AA.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)} white>Code</ExampleHeading>
-    <Example {...onChangeGenerator(Example)} codeOnly code={components__Date[2]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()} white>Code</ExampleHeading>
+    <Example {...onChangeGenerator()} codeOnly code={components__Date[2]} iframeProps={{
         id:"iframe_componentsDate2",
         className: "example__iframe",
         src:"/components/Date__example2.html",
@@ -88,9 +88,9 @@ meet WCAG 2.1 Level AA.</p>
 
 <h2 id="error-messages">Error messages</h2>
 <p>Style error messages as shown in the following example.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Date[3]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Error</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Date[3]} iframeProps={{
         id:"iframe_componentsDate3",
         className: "example__iframe",
         src:"/components/Date__example3.html",

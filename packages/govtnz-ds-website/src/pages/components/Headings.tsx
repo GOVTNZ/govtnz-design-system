@@ -23,12 +23,12 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Headings are structural parts of your page, ranging from 1 (most important) to 6 (least important), and are used by screen readers to understand the relationship between parts of your page. They are for headings, but they also denote the hierarchy of your page.</p>
 <p>There are the conventional <Link to="/components/H1/">H1</Link>, <Link to="/components/H2/">H2</Link>, <Link to="/components/H3/">H3</Link>, <Link to="/components/H4/">H4</Link>, <Link to="/components/H5/">H5</Link>, and <Link to="/components/H6/">H6</Link>. Before headings you may optionally use Captions such as <Link to="/components/CaptionXl/">Caption XL</Link>, <Link to="/components/CaptionL/">Caption L</Link>, and <Link to="/components/CaptionM/">Caption M</Link>.</p>
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="how-to-use">How to use</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="how-to-use">How to use</H2>
 <p>First choose a heading level based on the structure of your page, and then choose the appropriate font size for your design as the font size can be chosen independently, but do not conflate these decisions as they are strictly unrelated.</p>
 <p>All these heading elements support sizes, either as classes of &quot;g-heading-xl&quot;, &quot;g-heading-l&quot;, &quot;g-heading-m&quot;, and &quot;g-heading-s&quot;, or their equivalent template variable.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Headings</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Headings[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of Headings</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Headings[0]} iframeProps={{
         id:"iframe_componentsHeadings0",
         className: "example__iframe",
         src:"/components/Headings__example0.html",
@@ -39,9 +39,9 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
 
 <h2 id="captions-before-headings">Captions before headings</h2>
 <p>Captions can be either <em>before</em> or <em>inside</em> headings.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of before headings</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Headings[1]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of before headings</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Headings[1]} iframeProps={{
         id:"iframe_componentsHeadings1",
         className: "example__iframe",
         src:"/components/Headings__example1.html",
@@ -50,9 +50,9 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of caption inside heading</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Headings[2]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of caption inside heading</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Headings[2]} iframeProps={{
         id:"iframe_componentsHeadings2",
         className: "example__iframe",
         src:"/components/Headings__example2.html",
@@ -61,9 +61,9 @@ const PageContent = (props) => <React.Fragment><p>Headings are structural parts 
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-<ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Paragraph Sizes</ExampleHeading>
-<Example {...onChangeGenerator(Example)}  code={components__Headings[3]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+<ExampleHeading {...onChangeGenerator()}>Example of Paragraph Sizes</ExampleHeading>
+<Example {...onChangeGenerator()}  code={components__Headings[3]} iframeProps={{
         id:"iframe_componentsHeadings3",
         className: "example__iframe",
         src:"/components/Headings__example3.html",

@@ -46,9 +46,9 @@
     "prismjs-mt": "1.15.0",
     "query-string": "5",
     "raf": "^3.4.1",
-    "react": "^16.8.2",
+    "react": "^16.8.6",
     "react-accessible-details": "2.0.1",
-    "react-dom": "^16.8.2",
+    "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-modal": "^3.8.1",
     "typescript": "^3.5.2"

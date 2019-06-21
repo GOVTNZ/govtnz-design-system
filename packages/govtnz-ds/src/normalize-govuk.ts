@@ -400,7 +400,7 @@ export const govukToMetaTemplateInput = async (
       break;
     }
     case 'character-count__with-custom-rows': {
-      html = `<div class="g-character-count" data-maxlength="{{ maxLength }}">
+      html = `<div class="g-character-count">
       <div class="g-form-group">
         <label class="g-label" for="id">
           Full address
@@ -419,7 +419,7 @@ export const govukToMetaTemplateInput = async (
       </div>
     </div>`;
       calculatedDynamicKeys.remainingCharacters =
-        'props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength, 10) - props.value.length : props.maxLength';
+        'props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength.toString(), 10) - props.value.length : props.maxLength';
       break;
     }
     case 'radios__with-hints-on-items': {

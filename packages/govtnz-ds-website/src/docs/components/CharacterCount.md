@@ -1,7 +1,7 @@
 <ExampleContainer>
     <ExampleHeading>Example of Character Count</ExampleHeading>
     <Example>
-        <CharacterCountWithCustomRows />
+        <CharacterCountWithCustomRows maxLength="200" />
     </Example>
 </ExampleContainer>
 

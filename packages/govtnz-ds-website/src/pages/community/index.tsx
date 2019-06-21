@@ -16,7 +16,7 @@ import '../../commons/styles/ds/themed-Li.scss';
 import CommunityPage from '../../components/CommunityPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
-const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator(H1)} styleSize="xlarge" id="community">Community</H1>
+const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator()} styleSize="xlarge" id="community">Community</H1>
 <P styleSize="large">
     <a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
         Government Information Services
@@ -30,10 +30,10 @@ const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator(H1)} st
 government — and beyond — to use, we want a strong cross-government community
 backing it.</p>
 <p>You can contribute by:</p>
-<Ul {...onChangeGenerator(Ul)} bulleted>
-<Li {...onChangeGenerator(Li)}>testing our components and patterns</Li>
-<Li {...onChangeGenerator(Li)}>helping to develop new components and patterns</Li>
-<Li {...onChangeGenerator(Li)}>commenting on our guidance.</Li>
+<Ul {...onChangeGenerator()} bulleted>
+<Li {...onChangeGenerator()}>testing our components and patterns</Li>
+<Li {...onChangeGenerator()}>helping to develop new components and patterns</Li>
+<Li {...onChangeGenerator()}>commenting on our guidance.</Li>
 </Ul>
 <p>This alpha website shows you what we have built so far, what we&#39;re working on,
 and how you can get involved.&nbsp;

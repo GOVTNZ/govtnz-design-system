@@ -26,10 +26,10 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</p>
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[0]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <Example {...onChangeGenerator()}  code={components__Checkboxes[0]} iframeProps={{
         id:"iframe_componentsCheckboxes0",
         className: "example__iframe",
         src:"/components/Checkboxes__example0.html",
@@ -38,9 +38,9 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Error</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[1]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Error</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Checkboxes[1]} iframeProps={{
         id:"iframe_componentsCheckboxes1",
         className: "example__iframe",
         src:"/components/Checkboxes__example1.html",
@@ -49,9 +49,9 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Checkboxes with hints</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Checkboxes[2]} iframeProps={{
+<ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Checkboxes with hints</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Checkboxes[2]} iframeProps={{
         id:"iframe_componentsCheckboxes2",
         className: "example__iframe",
         src:"/components/Checkboxes__example2.html",
@@ -62,9 +62,9 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 
 <h2 id="when-to-use-it">When to use it</h2>
 <p>Use the checkboxes component when you need to help users:</p>
-<Ul {...onChangeGenerator(Ul)} bulleted>
-<Li {...onChangeGenerator(Li)}>select one or more options from a list</Li>
-<Li {...onChangeGenerator(Li)}>toggle a single option on or off.</Li>
+<Ul {...onChangeGenerator()} bulleted>
+<Li {...onChangeGenerator()}>select one or more options from a list</Li>
+<Li {...onChangeGenerator()}>toggle a single option on or off.</Li>
 </Ul>
 <h2 id="when-not-to-use-it">When not to use it</h2>
 <p>Do not use the checkboxes component if users can only choose one option from a selection. In this case, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
@@ -75,9 +75,9 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <p>Unlike with radio buttons, users can select multiple checkboxes from a list. Do not assume that users will know how many checkboxes they can select based on only the visual difference between radio buttons and checkboxes.</p>
 <p>If needed, add a hint to explain this, like ‘Select all that apply’.</p>
 <p>Do not pre-select checkboxes as users are likely to:</p>
-<Ul {...onChangeGenerator(Ul)} bulleted>
-<Li {...onChangeGenerator(Li)}>not realise they’ve missed a question</Li>
-<Li {...onChangeGenerator(Li)}>submit the wrong answer.</Li>
+<Ul {...onChangeGenerator()} bulleted>
+<Li {...onChangeGenerator()}>not realise they’ve missed a question</Li>
+<Li {...onChangeGenerator()}>submit the wrong answer.</Li>
 </Ul>
 <p>Order checkbox labels alphabetically by default.</p>
 <p>In some cases, pre-selected ordering can be helpful, such as listing options from the most to the least common. An example is ordering answers to the question ‘What is your nationality?’ based on population size.</p>

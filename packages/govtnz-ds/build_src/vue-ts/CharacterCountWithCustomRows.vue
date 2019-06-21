@@ -1,8 +1,5 @@
 <template>
-  <div
-    class="g-characterCountWithCustomRows-character-count"
-    v-bind:data-maxlength="maxLength"
-  >
+  <div class="g-characterCountWithCustomRows-character-count">
     <div class="g-characterCountWithCustomRows-form-group">
       <label class="g-characterCountWithCustomRows-label" v-bind:for="id">
         Full address
@@ -19,7 +16,7 @@
         v-bind:autofocus="autoFocus"
         v-bind:spellcheck="spellCheck"
         v-bind:autocomplete="computed__autocomplete"
-        v-bind:maxlength="maxLength2"
+        v-bind:maxlength="maxLength"
         v-bind:value="value"
       />
 
@@ -95,7 +92,6 @@ const constants = {
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    maxLength: { type: String, required: true },
     id: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
@@ -167,7 +163,7 @@ export default Vue.extend({
       },
       required: true
     },
-    maxLength2: { type: String, required: false },
+    maxLength: { type: String, required: false },
     value: { type: String, required: false },
     remainingCharacters: { required: false }
   },

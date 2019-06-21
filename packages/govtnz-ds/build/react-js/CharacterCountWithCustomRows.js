@@ -70,8 +70,7 @@ var constants = {
 };
 
 var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
-  var maxLength = _ref.maxLength,
-      id = _ref.id,
+  var id = _ref.id,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -80,13 +79,12 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
       autoFocus = _ref.autoFocus,
       spellCheck = _ref.spellCheck,
       autoComplete = _ref.autoComplete,
-      maxLength2 = _ref.maxLength2,
+      maxLength = _ref.maxLength,
       value = _ref.value,
       onChange = _ref.onChange,
       remainingCharacters = _ref.remainingCharacters;
   return _react["default"].createElement("div", {
-    className: "g-characterCountWithCustomRows-character-count",
-    "data-maxlength": maxLength ? maxLength : ""
+    className: "g-characterCountWithCustomRows-character-count"
   }, _react["default"].createElement("div", {
     className: "g-characterCountWithCustomRows-form-group"
   }, _react["default"].createElement("label", {
@@ -103,7 +101,7 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
     autoFocus: autoFocus,
     spellCheck: spellCheck,
     autoComplete: constants.autoComplete[autoComplete],
-    maxLength: maxLength2,
+    maxLength: maxLength,
     value: value,
     onChange: onChange
   }), _react["default"].createElement("span", {
@@ -117,7 +115,7 @@ exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
 var CharacterCountWithCustomRows__calculated = function CharacterCountWithCustomRows__calculated(props) {
   return _react["default"].createElement(CharacterCountWithCustomRows, (0, _objectSpread2["default"])({}, props, {
     remainingCharacters: function (props) {
-      return props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength, 10) - props.value.length : props.maxLength;
+      return props.value !== undefined && props.maxLength !== undefined ? parseInt(props.maxLength.toString(), 10) - props.value.length : props.maxLength;
     }(props)
   }));
 };

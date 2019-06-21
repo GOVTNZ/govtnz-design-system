@@ -21,9 +21,9 @@ import ExampleSection from '../../commons/ExampleSection';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator(ExampleContainer)}>
-    <ExampleHeading {...onChangeGenerator(ExampleHeading)}>Example of Textarea</ExampleHeading>
-    <Example {...onChangeGenerator(Example)}  code={components__Textarea[0]} iframeProps={{
+const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGenerator()}>
+    <ExampleHeading {...onChangeGenerator()}>Example of Textarea</ExampleHeading>
+    <Example {...onChangeGenerator()}  code={components__Textarea[0]} iframeProps={{
         id:"iframe_componentsTextarea0",
         className: "example__iframe",
         src:"/components/Textarea__example0.html",
@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer {...onChangeGen
       }}></Example>
 </ExampleContainer>
 
-<H2 {...onChangeGenerator(H2)} styleSize="large" id="credit">Credit</H2>
+<H2 {...onChangeGenerator()} styleSize="large" id="credit">Credit</H2>
 <p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 

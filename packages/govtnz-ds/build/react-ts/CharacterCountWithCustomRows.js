@@ -77,11 +77,11 @@ var constants = {
     }
 };
 var CharacterCountWithCustomRows = function (_a) {
-    var maxLength = _a.maxLength, id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength2 = _a.maxLength2, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
-    return (React.createElement("div", { className: "g-characterCountWithCustomRows-character-count", "data-maxlength": maxLength ? maxLength : "" },
+    var id = _a.id, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange, remainingCharacters = _a.remainingCharacters;
+    return (React.createElement("div", { className: "g-characterCountWithCustomRows-character-count" },
         React.createElement("div", { className: "g-characterCountWithCustomRows-form-group" },
             React.createElement("label", { className: "g-characterCountWithCustomRows-label", htmlFor: id }, "Full address"),
-            React.createElement("textarea", { className: "g-characterCountWithCustomRows-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength2, value: value, onChange: onChange }),
+            React.createElement("textarea", { className: "g-characterCountWithCustomRows-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength, value: value, onChange: onChange }),
             React.createElement("span", { "aria-live": "polite", className: "g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message" },
                 "You have",
                 " ",
@@ -93,7 +93,7 @@ exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
 var CharacterCountWithCustomRows__calculated = function (props) {
     return React.createElement(CharacterCountWithCustomRows, __assign({}, props, { remainingCharacters: (function (props) {
             return props.value !== undefined && props.maxLength !== undefined
-                ? parseInt(props.maxLength, 10) - props.value.length
+                ? parseInt(props.maxLength.toString(), 10) - props.value.length
                 : props.maxLength;
         })(props) }));
 };
