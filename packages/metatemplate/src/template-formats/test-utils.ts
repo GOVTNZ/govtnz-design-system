@@ -32,7 +32,7 @@ export const testFormat = (formatId: string) => {
       const metaTemplate = await makeTemplates(
         {
           html:
-            '<label for="textId">Label text</label><input id="textId" type="text" >',
+            '<label for="textId">Label text</label><input id="textId" type="text">',
           css: "",
           id: "input"
         },

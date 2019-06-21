@@ -707,30 +707,6 @@ Object {
         "vue-js/input.js": "import Vue from \\"vue\\";
 
 const constants = {
-  type: {
-    Button: \\"button\\",
-    Checkbox: \\"checkbox\\",
-    Color: \\"color\\",
-    Date: \\"date\\",
-    \\"DateTime: Local\\": \\"datetime-local\\",
-    Email: \\"email\\",
-    File: \\"file\\",
-    Hidden: \\"hidden\\",
-    Image: \\"image\\",
-    Month: \\"month\\",
-    Number: \\"number\\",
-    Password: \\"password\\",
-    Radio: \\"radio\\",
-    Range: \\"range\\",
-    Reset: \\"reset\\",
-    Search: \\"search\\",
-    Submit: \\"submit\\",
-    Telephone: \\"tel\\",
-    Text: \\"text\\",
-    Time: \\"time\\",
-    URL: \\"url\\",
-    Week: \\"week\\"
-  },
   autoComplete: {
     Off: \\"off\\",
     On: \\"on\\",
@@ -797,38 +773,6 @@ export default Vue.extend({
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"Button\\",
-            \\"Checkbox\\",
-            \\"Color\\",
-            \\"Date\\",
-            \\"DateTime: Local\\",
-            \\"Email\\",
-            \\"File\\",
-            \\"Hidden\\",
-            \\"Image\\",
-            \\"Month\\",
-            \\"Number\\",
-            \\"Password\\",
-            \\"Radio\\",
-            \\"Range\\",
-            \\"Reset\\",
-            \\"Search\\",
-            \\"Submit\\",
-            \\"Telephone\\",
-            \\"Text\\",
-            \\"Time\\",
-            \\"URL\\",
-            \\"Week\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
     autoComplete: {
@@ -896,9 +840,6 @@ export default Vue.extend({
     }
   },
   computed: {
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : \\"\\";
-    },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
         ? constants[this.autoComplete]
@@ -917,7 +858,7 @@ export default Vue.extend({
 
   <input
     v-bind:id=\\"textId\\"
-    v-bind:type=\\"computed__type\\"
+    type=\\"text\\"
     v-bind:name=\\"name\\"
     v-bind:disabled=\\"disabled\\"
     v-bind:readonly=\\"readOnly\\"
@@ -931,30 +872,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 const constants = {
-  type: {
-    Button: \\"button\\",
-    Checkbox: \\"checkbox\\",
-    Color: \\"color\\",
-    Date: \\"date\\",
-    \\"DateTime: Local\\": \\"datetime-local\\",
-    Email: \\"email\\",
-    File: \\"file\\",
-    Hidden: \\"hidden\\",
-    Image: \\"image\\",
-    Month: \\"month\\",
-    Number: \\"number\\",
-    Password: \\"password\\",
-    Radio: \\"radio\\",
-    Range: \\"range\\",
-    Reset: \\"reset\\",
-    Search: \\"search\\",
-    Submit: \\"submit\\",
-    Telephone: \\"tel\\",
-    Text: \\"text\\",
-    Time: \\"time\\",
-    URL: \\"url\\",
-    Week: \\"week\\"
-  },
   autoComplete: {
     Off: \\"off\\",
     On: \\"on\\",
@@ -1021,38 +938,6 @@ export default Vue.extend({
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"Button\\",
-            \\"Checkbox\\",
-            \\"Color\\",
-            \\"Date\\",
-            \\"DateTime: Local\\",
-            \\"Email\\",
-            \\"File\\",
-            \\"Hidden\\",
-            \\"Image\\",
-            \\"Month\\",
-            \\"Number\\",
-            \\"Password\\",
-            \\"Radio\\",
-            \\"Range\\",
-            \\"Reset\\",
-            \\"Search\\",
-            \\"Submit\\",
-            \\"Telephone\\",
-            \\"Text\\",
-            \\"Time\\",
-            \\"URL\\",
-            \\"Week\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
     autoComplete: {
@@ -1120,9 +1005,6 @@ export default Vue.extend({
     }
   },
   computed: {
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : \\"\\";
-    },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
         ? constants[this.autoComplete]

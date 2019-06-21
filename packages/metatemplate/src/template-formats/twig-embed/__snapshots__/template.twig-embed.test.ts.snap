@@ -207,7 +207,7 @@ for=\\"{{ textId | escape('html_attr') }}\\"
 </label>
 <input
 id=\\"{{ textId | escape('html_attr') }}\\"
-type=\\"{% if type == \\"Button\\" %}button{% elseif type == \\"Checkbox\\" %}checkbox{% elseif type == \\"Color\\" %}color{% elseif type == \\"Date\\" %}date{% elseif type == \\"DateTime: Local\\" %}datetime-local{% elseif type == \\"Email\\" %}email{% elseif type == \\"File\\" %}file{% elseif type == \\"Hidden\\" %}hidden{% elseif type == \\"Image\\" %}image{% elseif type == \\"Month\\" %}month{% elseif type == \\"Number\\" %}number{% elseif type == \\"Password\\" %}password{% elseif type == \\"Radio\\" %}radio{% elseif type == \\"Range\\" %}range{% elseif type == \\"Reset\\" %}reset{% elseif type == \\"Search\\" %}search{% elseif type == \\"Submit\\" %}submit{% elseif type == \\"Telephone\\" %}tel{% elseif type == \\"Text\\" %}text{% elseif type == \\"Time\\" %}time{% elseif type == \\"URL\\" %}url{% elseif type == \\"Week\\" %}week{% endif %}\\"
+type=\\"text\\"
 name=\\"{{ name | escape('html_attr') }}\\"
 disabled=\\"{% if disabled %}disabled{% endif %}\\"
 readonly=\\"{% if readOnly %}readOnly{% endif %}\\"

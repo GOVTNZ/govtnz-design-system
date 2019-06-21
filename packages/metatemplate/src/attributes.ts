@@ -293,13 +293,11 @@ export const insertDefaultVariables = async (
           }
         ]);
 
-        const maxLengthAttribute = getTemplateAttribute(
-          "maxlength",
-          attributes
-        );
+        let maxLengthAttribute = getTemplateAttribute("maxlength", attributes);
 
         if (
           maxLengthAttribute &&
+          typeAttribute &&
           !typesThatSupportMaxLength.includes(typeAttribute.value)
         ) {
           console.warn(
@@ -309,15 +307,25 @@ export const insertDefaultVariables = async (
 
         if (
           !maxLengthAttribute &&
-          typesThatSupportMaxLength.includes(typeAttribute.value)
+          (!typeAttribute ||
+            (typeAttribute &&
+              typesThatSupportMaxLength.includes(typeAttribute.value)))
         ) {
-          makeTemplateAttribute("maxlength", attributes, format, [
-            {
-              key: format.registerDynamicKey("maxLength", "number", true),
-              type: "number",
-              optional: true
-            }
-          ]);
+          maxLengthAttribute = makeTemplateAttribute(
+            "maxlength",
+            attributes,
+            format,
+            [
+              {
+                key: format.registerDynamicKey("maxLength", "number", true),
+                type: "number",
+                optional: true
+              }
+            ]
+          );
+        }
+        if (maxLengthAttribute) {
+          maxLengthAttribute.isOmittedIfEmpty = true;
         }
 
         makeTemplateAttribute("autocomplete", attributes, format, [
@@ -435,7 +443,6 @@ export const insertDefaultVariables = async (
       // element, they don't need to use an 'a', so we can make href
       // a required property.
       makeTemplateAttribute("href", attributes, format, false);
-
       makeTemplateAttribute("rel", attributes, format, true);
       makeTemplateAttribute("target", attributes, format, [
         {
@@ -447,7 +454,7 @@ export const insertDefaultVariables = async (
       break;
     }
     case "label": {
-      // already supported in 'idSynonyms'
+      // 'for' already supported in 'idSynonyms'
       break;
     }
     case "abbr": {

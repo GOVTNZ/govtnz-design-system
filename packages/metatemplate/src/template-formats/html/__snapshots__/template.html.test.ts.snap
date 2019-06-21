@@ -135,8 +135,7 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "html/input.html": "<label>Label text</label
-><input type=\\"button\\" name=\\"example\\" autocomplete=\\"off\\" />
+        "html/input.html": "<label>Label text</label><input type=\\"text\\" name=\\"example\\" autocomplete=\\"off\\" />
 ",
       },
       "formatId": "html",

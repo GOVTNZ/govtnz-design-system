@@ -4,21 +4,6 @@
     users to enter dates they know well.
 </P>
 
-<DateInput
-    id="passport-issued"
-    hintId="passport-issued-hint"
-    errorId="passport-issued-error"
-    dayId="passport-issued-day"
-    monthId="passport-issued-month"
-    yearId="passport-issued-year"
-    label="When was your passport issued?"
-    hint="For example, 12 11 2007"
-    value="6"
-    value2="3"
-    value3="2076"
-    error="The date your passport was issued must be in the past"
-    />
-
 ## Examples
 
 Interact with each example to see how it works.
