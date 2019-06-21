@@ -10,30 +10,6 @@ const constants = {
     "20": "g-input--width-20",
     "30": "g-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -93,7 +69,7 @@ const constants = {
 
 const Input = ({
   width,
-  hasError,
+  error,
   fakeFocus,
   inputId,
   describedBy,
@@ -102,7 +78,6 @@ const Input = ({
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -112,10 +87,10 @@ const Input = ({
     aria-describedby={describedBy}
     className={`g-input${
       constants.width[width] !== undefined ? " " + constants.width[width] : ""
-    }${hasError ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`}
+    }${error ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`}
     id={inputId}
     name={name}
-    type={constants.type[type]}
+    type="text"
     disabled={disabled}
     readOnly={readOnly}
     autoFocus={autoFocus}

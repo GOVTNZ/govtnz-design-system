@@ -268,13 +268,23 @@ export const insertDefaultVariables = async (
         ]);
       } else if (!isFileType) {
         // Assume it's a text box
-        makeTemplateAttribute("type", attributes, format, [
-          {
-            key: format.registerDynamicKey("type", byNames(inputTypes), false),
-            optional: false,
-            type: inputTypes
-          }
-        ]);
+
+        // if there is a provided type then retain that and don't
+        // allow it to be configurable
+        if (!typeAttribute) {
+          makeTemplateAttribute("type", attributes, format, [
+            {
+              key: format.registerDynamicKey(
+                "type",
+                byNames(inputTypes),
+                false
+              ),
+              optional: false,
+              type: inputTypes
+            }
+          ]);
+        }
+
         makeTemplateAttribute("spellcheck", attributes, format, [
           {
             key: format.registerDynamicKey("spellCheck", "boolean", true),
@@ -282,13 +292,34 @@ export const insertDefaultVariables = async (
             optional: true
           }
         ]);
-        makeTemplateAttribute("maxlength", attributes, format, [
-          {
-            key: format.registerDynamicKey("maxLength", "number", true),
-            type: "number",
-            optional: true
-          }
-        ]);
+
+        const maxLengthAttribute = getTemplateAttribute(
+          "maxlength",
+          attributes
+        );
+
+        if (
+          maxLengthAttribute &&
+          !typesThatSupportMaxLength.includes(typeAttribute.value)
+        ) {
+          console.warn(
+            `MetaTemplate warning: input type=${typeAttribute} and maxlength are incompatible. See http://w3c.github.io/html/sec-forms.html#apply and https://stackoverflow.com/a/18510925`
+          );
+        }
+
+        if (
+          !maxLengthAttribute &&
+          typesThatSupportMaxLength.includes(typeAttribute.value)
+        ) {
+          makeTemplateAttribute("maxlength", attributes, format, [
+            {
+              key: format.registerDynamicKey("maxLength", "number", true),
+              type: "number",
+              optional: true
+            }
+          ]);
+        }
+
         makeTemplateAttribute("autocomplete", attributes, format, [
           {
             key: format.registerDynamicKey(
@@ -850,6 +881,15 @@ export const NodeSetAttribute = async (
     }
   };
 };
+
+const typesThatSupportMaxLength = [
+  "text",
+  "email",
+  "search",
+  "password",
+  "tel",
+  "url"
+];
 
 export const NodeGetAttribute = async (node, name): Promise<string> => {
   return node.getOriginalAttribute(name) || node.getAttribute(name);

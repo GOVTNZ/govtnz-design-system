@@ -72,7 +72,7 @@ const StyledSelect = styled.select`
     background-color: #005ea5;
   }
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       border: 1px solid #b10e1e;
     `}
@@ -85,7 +85,7 @@ const StyledSelect = styled.select`
 const SelectBlock = ({
   selectId,
   label,
-  hasError,
+  error,
   name,
   multiple,
   onChange,
@@ -100,7 +100,7 @@ const SelectBlock = ({
       )}
     </StyledLabel>
     <StyledSelect
-      hasError={hasError}
+      error={error}
       id={selectId}
       name={name}
       multiple={multiple}

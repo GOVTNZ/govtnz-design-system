@@ -12,7 +12,7 @@ var _react = _interopRequireDefault(require("react"));
 var SelectBlock = function SelectBlock(_ref) {
   var selectId = _ref.selectId,
       label = _ref.label,
-      hasError = _ref.hasError,
+      error = _ref.error,
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
@@ -21,7 +21,7 @@ var SelectBlock = function SelectBlock(_ref) {
     className: "g-selectBlock-label",
     htmlFor: selectId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label text")), _react["default"].createElement("select", {
-    className: "g-selectBlock-select".concat(hasError ? " g-selectBlock-select--error" : ""),
+    className: "g-selectBlock-select".concat(error ? " g-selectBlock-select--error" : ""),
     id: selectId,
     name: name,
     multiple: multiple,

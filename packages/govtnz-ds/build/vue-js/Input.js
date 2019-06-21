@@ -19,30 +19,6 @@ var constants = {
     "20": "g-input--width-20",
     "30": "g-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -111,7 +87,7 @@ var _default = _vue["default"].extend({
       },
       required: false
     },
-    hasError: {
+    error: {
       type: Boolean,
       "default": false,
       required: false
@@ -152,13 +128,6 @@ var _default = _vue["default"].extend({
       type: String,
       required: false
     },
-    type: {
-      type: String,
-      validator: function validator(value) {
-        return ["Button", "Checkbox", "Color", "Date", "DateTime: Local", "Email", "File", "Hidden", "Image", "Month", "Number", "Password", "Radio", "Range", "Reset", "Search", "Submit", "Telephone", "Text", "Time", "URL", "Week"].indexOf(value) !== -1;
-      },
-      required: true
-    },
     spellCheck: {
       type: Boolean,
       "default": false,
@@ -178,16 +147,13 @@ var _default = _vue["default"].extend({
   },
   computed: {
     computed__class: function computed__class() {
-      return "g-input" + (constants[this.width] !== undefined ? " ".concat(constants[this.width]) : "") + (this.hasError ? " g-input--error" : "") + (this.fakeFocus ? " :focus" : "");
-    },
-    computed__type: function computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
+      return "g-input" + (constants[this.width] !== undefined ? " ".concat(constants[this.width]) : "") + (this.error ? " g-input--error" : "") + (this.fakeFocus ? " :focus" : "");
     },
     computed__autocomplete: function computed__autocomplete() {
       return constants[this.autoComplete] !== undefined ? constants[this.autoComplete] : "";
     }
   },
-  render: new Function('with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}')
+  render: new Function('with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":"text","disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}')
 });
 
 exports["default"] = _default;

@@ -10,6 +10,8 @@ import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '../../commons/styles/ds/themed-P.scss';
+import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';
+import '../../commons/styles/ds/themed-DateInput.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
 import '../../commons/styles/ds/themed-H2.scss';
 import components__Date from '../../commons/examples/components__Date';
@@ -29,6 +31,21 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
     users to enter dates they know well.
 </P>
 
+<p><DateInput
+ {...onChangeGenerator(DateInput
+)}    id="passport-issued"
+    hintId="passport-issued-hint"
+    errorId="passport-issued-error"
+    dayId="passport-issued-day"
+    monthId="passport-issued-month"
+    yearId="passport-issued-year"
+    label="When was your passport issued?"
+    hint="For example, 12 11 2007"
+    value="6"
+    value2="3"
+    value3="2076"
+    error="The date your passport was issued must be in the past"
+    /></p>
 <H2 {...onChangeGenerator(H2)} styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer {...onChangeGenerator(ExampleContainer)}>
@@ -131,7 +148,7 @@ the month field.</p>
 <p>Say &#39;[type of date] must be today or in the future&#39;.</p>
 <p>For example, &#39;The date your course ends must be today or in the future&#39;.</p>
 <h3 id="if-the-date-must-be-the-same-as-or-after-another-date">If the date must be the same as or after another date</h3>
-<p>Say &#39;[type of date]  must be the same as or after
+<p>Say &#39;[type of date] must be the same as or after
 [date and optional description]&#39;.</p>
 <p>For example, &#39;The date your course ends must be the same as or after 1
 September 2017 when you started the course&#39;.</p>

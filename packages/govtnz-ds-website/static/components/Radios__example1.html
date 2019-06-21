@@ -36,9 +36,9 @@
     </div>
     <script>
       function afterRender() {
-        console.log('afterRender', window.document.title);
         updateParentPageLink();
-        if (!window.parent || !window.parent.postMessage) {
+        var isIframed = window.self !== window.top;
+        if (!isIframed) {
           console.log('Iframe has no parent');
           // then this page is not currently iframed
           return;

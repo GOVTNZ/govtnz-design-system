@@ -4,6 +4,21 @@
     users to enter dates they know well.
 </P>
 
+<DateInput
+    id="passport-issued"
+    hintId="passport-issued-hint"
+    errorId="passport-issued-error"
+    dayId="passport-issued-day"
+    monthId="passport-issued-month"
+    yearId="passport-issued-year"
+    label="When was your passport issued?"
+    hint="For example, 12 11 2007"
+    value="6"
+    value2="3"
+    value3="2076"
+    error="The date your passport was issued must be in the past"
+    />
+
 ## Examples
 
 Interact with each example to see how it works.
@@ -18,9 +33,6 @@ Interact with each example to see how it works.
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
-            maxLength="2"
-            maxLength2="2"
-            maxLength3="4"
         />
     </Example>
 </ExampleContainer>
@@ -37,13 +49,9 @@ Interact with each example to see how it works.
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
-            maxLength="2"
-            maxLength2="2"
-            maxLength3="4"
             value="6"
             value2="3"
             value3="2076"
-            hasError
             error="The date your passport was issued must be in the past"
         />
     </Example>
@@ -94,9 +102,6 @@ meet WCAG 2.1 Level AA.
             yearId="bday-year"
             label="What is your date of birth?"
             hint="For example, 31 3 1980"
-            maxLength="2"
-            maxLength2="2"
-            maxLength3="4"
             autoComplete="Birthday: Day"
             autoComplete2="Birthday: Month"
             autoComplete3="Birthday: Year"
@@ -120,13 +125,9 @@ Style error messages as shown in the following example.
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
-            maxLength="2"
-            maxLength2="2"
-            maxLength3="4"
             value="6"
             value2="3"
             value3="2076"
-            hasError
             error="The date your passport was issued must be in the past"
         />
     </Example>
@@ -192,7 +193,7 @@ For example, 'The date your course ends must be today or in the future'.
 
 ### If the date must be the same as or after another date
 
-Say '[type of date]  must be the same as or after
+Say '[type of date] must be the same as or after
 [date and optional description]'.
 
 For example, 'The date your course ends must be the same as or after 1

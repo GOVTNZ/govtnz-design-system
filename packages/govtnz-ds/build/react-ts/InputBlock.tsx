@@ -8,35 +8,11 @@ type Props = {
   hintId?: string | undefined;
   errorId?: string | undefined;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  hasError?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
-  type:
-    | "Button"
-    | "Checkbox"
-    | "Color"
-    | "Date"
-    | "DateTime: Local"
-    | "Email"
-    | "File"
-    | "Hidden"
-    | "Image"
-    | "Month"
-    | "Number"
-    | "Password"
-    | "Radio"
-    | "Range"
-    | "Reset"
-    | "Search"
-    | "Submit"
-    | "Telephone"
-    | "Text"
-    | "Time"
-    | "URL"
-    | "Week";
   spellCheck?: boolean | undefined;
   maxLength?: number | undefined;
   autoComplete:
@@ -106,30 +82,6 @@ const constants = {
     "20": "g-inputBlock-input--width-20",
     "30": "g-inputBlock-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -195,13 +147,11 @@ const InputBlock = ({
   hintId,
   errorId,
   width,
-  hasError,
   name,
   disabled,
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -254,10 +204,10 @@ const InputBlock = ({
       }
       className={`g-inputBlock-input${
         constants.width[width] !== undefined ? " " + constants.width[width] : ""
-      }${hasError ? " g-inputBlock-input--error" : ""}`}
+      }${error ? " g-inputBlock-input--error" : ""}`}
       id={inputId}
       name={name}
-      type={constants.type[type] as any}
+      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}

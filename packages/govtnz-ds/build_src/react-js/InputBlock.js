@@ -10,30 +10,6 @@ const constants = {
     "20": "g-inputBlock-input--width-20",
     "30": "g-inputBlock-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -99,13 +75,11 @@ const InputBlock = ({
   hintId,
   errorId,
   width,
-  hasError,
   name,
   disabled,
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -158,10 +132,10 @@ const InputBlock = ({
       }
       className={`g-inputBlock-input${
         constants.width[width] !== undefined ? " " + constants.width[width] : ""
-      }${hasError ? " g-inputBlock-input--error" : ""}`}
+      }${error ? " g-inputBlock-input--error" : ""}`}
       id={inputId}
       name={name}
-      type={constants.type[type]}
+      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}

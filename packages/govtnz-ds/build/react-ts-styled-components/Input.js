@@ -22,7 +22,7 @@ var StyledInput = styled.input(templateObject_9 || (templateObject_9 = __makeTem
     "\n",
     "\n",
     "\nmargin-top: 0px;"])), function (props) {
-    return props.hasError && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    border: 1px solid #b10e1e;\n  "], ["\n    border: 1px solid #b10e1e;\n  "])));
+    return props.error && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n    border: 1px solid #b10e1e;\n  "], ["\n    border: 1px solid #b10e1e;\n  "])));
 }, function (props) {
     return props.width === "30" && styled.css(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n    max-width: 59ex;\n  "], ["\n    max-width: 59ex;\n  "])));
 }, function (props) {
@@ -39,30 +39,6 @@ var StyledInput = styled.input(templateObject_9 || (templateObject_9 = __makeTem
     return props.width === "2" && styled.css(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n    max-width: 5.4ex;\n  "], ["\n    max-width: 5.4ex;\n  "])));
 });
 var constants = {
-    type: {
-        Button: "button",
-        Checkbox: "checkbox",
-        Color: "color",
-        Date: "date",
-        "DateTime: Local": "datetime-local",
-        Email: "email",
-        File: "file",
-        Hidden: "hidden",
-        Image: "image",
-        Month: "month",
-        Number: "number",
-        Password: "password",
-        Radio: "radio",
-        Range: "range",
-        Reset: "reset",
-        Search: "search",
-        Submit: "submit",
-        Telephone: "tel",
-        Text: "text",
-        Time: "time",
-        URL: "url",
-        Week: "week"
-    },
     autoComplete: {
         Off: "off",
         On: "on",
@@ -120,8 +96,8 @@ var constants = {
     }
 };
 var Input = function (_a) {
-    var width = _a.width, hasError = _a.hasError, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
-    return (React.createElement(StyledInput, { width: width, hasError: hasError, fakeFocus: fakeFocus, "aria-describedby": describedBy, id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
+    var width = _a.width, error = _a.error, fakeFocus = _a.fakeFocus, inputId = _a.inputId, describedBy = _a.describedBy, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    return (React.createElement(StyledInput, { width: width, error: error, fakeFocus: fakeFocus, "aria-describedby": describedBy, id: inputId, name: name, type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }));
 };
 exports.default = Input;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9;

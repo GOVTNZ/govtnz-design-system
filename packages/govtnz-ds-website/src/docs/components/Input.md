@@ -134,7 +134,7 @@ Style error messages as shown in the following example.
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example>
-        <InputBlock type="Text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" hasError error="Enter a known event name" />
+        <InputBlock type="Text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 

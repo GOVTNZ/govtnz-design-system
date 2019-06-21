@@ -149,7 +149,7 @@ margin: 0;
 -webkit-appearance: none;
 }
 ${props =>
-  props.hasError &&
+  props.error &&
   styled.css`
     border: 1px solid #b10e1e;
   `}
@@ -191,30 +191,6 @@ ${props =>
 margin-top: 0px;`;
 
 const constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -280,13 +256,11 @@ const InputBlock = ({
   hintId,
   errorId,
   width,
-  hasError,
   name,
   disabled,
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -329,7 +303,7 @@ const InputBlock = ({
     )}
     <StyledInput
       width={width}
-      hasError={hasError}
+      error={error}
       aria-describedby={
         hintId !== undefined || errorId !== undefined
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
@@ -337,7 +311,7 @@ const InputBlock = ({
       }
       id={inputId}
       name={name}
-      type={constants.type[type]}
+      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}

@@ -15,7 +15,7 @@ var React = __importStar(require("react"));
 var styled = __importStar(require("styled-components"));
 var StyledDiv = styled.div(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  ", "\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"], ["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  ",
     "\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"])), function (props) {
-    return props.hasError && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "], ["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "])));
+    return props.error && styled.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "], ["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "])));
 });
 var StyledFieldset = styled.fieldset(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  min-width: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media not (caret-color: auto) {\n    display: table-cell;\n  }\n  margin-top: 0px;\n"], ["\n  min-width: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media not (caret-color: auto) {\n    display: table-cell;\n  }\n  margin-top: 0px;\n"])));
 var StyledLegend = styled.legend(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 2rem;\n  line-height: 1.09375;\n  margin-bottom: 15px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 3rem;\n    line-height: 1.04167;\n  }\n  @media print {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 2rem;\n  line-height: 1.09375;\n  margin-bottom: 15px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 3rem;\n    line-height: 1.04167;\n  }\n  @media print {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"])));
@@ -27,23 +27,23 @@ var StyledDiv2 = styled.div(templateObject_9 || (templateObject_9 = __makeTempla
 var StyledDiv3 = styled.div(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])));
 var StyledDiv4 = styled.div(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"], ["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"])));
 var StyledLabel = styled.label(templateObject_12 || (templateObject_12 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"])));
-var StyledInput = styled.input(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ",
+var StyledInput = styled.input(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ",
     "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])), function (props) {
-    return props.hasError && styled.css(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
+    return props.error && styled.css(templateObject_13 || (templateObject_13 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
 });
 var StyledDiv5 = styled.div(templateObject_15 || (templateObject_15 = __makeTemplateObject(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])));
 var StyledDiv6 = styled.div(templateObject_16 || (templateObject_16 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"], ["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"])));
 var StyledLabel2 = styled.label(templateObject_17 || (templateObject_17 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"])));
-var StyledInput2 = styled.input(templateObject_19 || (templateObject_19 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ",
+var StyledInput2 = styled.input(templateObject_19 || (templateObject_19 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ",
     "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])), function (props) {
-    return props.hasError && styled.css(templateObject_18 || (templateObject_18 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
+    return props.error && styled.css(templateObject_18 || (templateObject_18 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
 });
 var StyledDiv7 = styled.div(templateObject_20 || (templateObject_20 = __makeTemplateObject(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])));
 var StyledDiv8 = styled.div(templateObject_21 || (templateObject_21 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"], ["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"])));
 var StyledLabel3 = styled.label(templateObject_22 || (templateObject_22 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  margin-top: 0px;\n"])));
-var StyledInput3 = styled.input(templateObject_24 || (templateObject_24 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ",
+var StyledInput3 = styled.input(templateObject_24 || (templateObject_24 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ",
     "\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])), function (props) {
-    return props.hasError && styled.css(templateObject_23 || (templateObject_23 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
+    return props.error && styled.css(templateObject_23 || (templateObject_23 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
 });
 var constants = {
     autoComplete: {
@@ -101,30 +101,6 @@ var constants = {
         URL: "url",
         Photo: "photo"
     },
-    type: {
-        Button: "button",
-        Checkbox: "checkbox",
-        Color: "color",
-        Date: "date",
-        "DateTime: Local": "datetime-local",
-        Email: "email",
-        File: "file",
-        Hidden: "hidden",
-        Image: "image",
-        Month: "month",
-        Number: "number",
-        Password: "password",
-        Radio: "radio",
-        Range: "range",
-        Reset: "reset",
-        Search: "search",
-        Submit: "submit",
-        Telephone: "tel",
-        Text: "text",
-        Time: "time",
-        URL: "url",
-        Week: "week"
-    },
     autoComplete2: {
         Off: "off",
         On: "on",
@@ -180,30 +156,6 @@ var constants = {
         URL: "url",
         Photo: "photo"
     },
-    type2: {
-        Button: "button",
-        Checkbox: "checkbox",
-        Color: "color",
-        Date: "date",
-        "DateTime: Local": "datetime-local",
-        Email: "email",
-        File: "file",
-        Hidden: "hidden",
-        Image: "image",
-        Month: "month",
-        Number: "number",
-        Password: "password",
-        Radio: "radio",
-        Range: "range",
-        Reset: "reset",
-        Search: "search",
-        Submit: "submit",
-        Telephone: "tel",
-        Text: "text",
-        Time: "time",
-        URL: "url",
-        Week: "week"
-    },
     autoComplete3: {
         Off: "off",
         On: "on",
@@ -258,58 +210,34 @@ var constants = {
         IMPP: "impp",
         URL: "url",
         Photo: "photo"
-    },
-    type3: {
-        Button: "button",
-        Checkbox: "checkbox",
-        Color: "color",
-        Date: "date",
-        "DateTime: Local": "datetime-local",
-        Email: "email",
-        File: "file",
-        Hidden: "hidden",
-        Image: "image",
-        Month: "month",
-        Number: "number",
-        Password: "password",
-        Radio: "radio",
-        Range: "range",
-        Reset: "reset",
-        Search: "search",
-        Submit: "submit",
-        Telephone: "tel",
-        Text: "text",
-        Time: "time",
-        URL: "url",
-        Week: "week"
     }
 };
 var DateInput = function (_a) {
-    var hasError = _a.hasError, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, type2 = _a.type2, spellCheck2 = _a.spellCheck2, maxLength2 = _a.maxLength2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, yearId = _a.yearId, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, type3 = _a.type3, spellCheck3 = _a.spellCheck3, maxLength3 = _a.maxLength3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
-    return (React.createElement(StyledDiv, { hasError: hasError },
+    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, error2 = _a.error2, id = _a.id, dayId = _a.dayId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, spellCheck2 = _a.spellCheck2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, yearId = _a.yearId, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, spellCheck3 = _a.spellCheck3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
+    return (React.createElement(StyledDiv, { error: error },
         React.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, role: "group" },
             React.createElement(StyledLegend, null,
                 React.createElement(StyledH1, null, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label")))),
             React.createElement(StyledSpan, { id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example hint"))),
-            hasError !== undefined ? (React.createElement(React.Fragment, null,
+            error !== undefined ? (React.createElement(React.Fragment, null,
                 React.createElement(StyledSpan2, { id: errorId },
                     React.createElement(StyledSpan3, null, "Error: "),
-                    error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),
+                    error2 !== undefined ? (error2) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),
             React.createElement(StyledDiv2, { id: id },
                 React.createElement(StyledDiv3, null,
                     React.createElement(StyledDiv4, null,
                         React.createElement(StyledLabel, { htmlFor: dayId }, "Day"),
-                        React.createElement(StyledInput, { hasError: hasError, autoComplete: constants.autoComplete[autoComplete], id: dayId, name: name, pattern: "[0-9]*", type: constants.type[type], value: value, disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, maxLength: maxLength, onChange: onChange }))),
+                        React.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
                 React.createElement(StyledDiv5, null,
                     React.createElement(StyledDiv6, null,
                         React.createElement(StyledLabel2, { htmlFor: monthId }, "Month"),
-                        React.createElement(StyledInput2, { hasError: hasError, autoComplete: constants.autoComplete2[autoComplete2], id: monthId, name: name2, pattern: "[0-9]*", type: constants.type2[type2], value: value2, disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, spellCheck: spellCheck2, maxLength: maxLength2, onChange: onChange2 }))),
+                        React.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: name2, pattern: "[0-9]*", type: "text", disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
                 React.createElement(StyledDiv7, null,
                     React.createElement(StyledDiv8, null,
                         React.createElement(StyledLabel3, { htmlFor: yearId }, "Year"),
-                        React.createElement(StyledInput3, { hasError: hasError, autoComplete: constants.autoComplete3[autoComplete3], id: yearId, name: name3, pattern: "[0-9]*", type: constants.type3[type3], value: value3, disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, spellCheck: spellCheck3, maxLength: maxLength3, onChange: onChange3 })))))));
+                        React.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: name3, pattern: "[0-9]*", type: "text", disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
 };
 exports.default = DateInput;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23, templateObject_24;

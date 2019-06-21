@@ -65,30 +65,6 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete2: {
     Off: "off",
     On: "on",
@@ -144,30 +120,6 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete3: {
     Off: "off",
     On: "on",
@@ -222,40 +174,16 @@ var constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
-  },
-  type3: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
   }
 };
 
 var DateInput = function DateInput(_ref) {
-  var hasError = _ref.hasError,
+  var error = _ref.error,
       hintId = _ref.hintId,
       errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
-      error = _ref.error,
+      error2 = _ref.error2,
       id = _ref.id,
       dayId = _ref.dayId,
       name = _ref.name,
@@ -263,9 +191,7 @@ var DateInput = function DateInput(_ref) {
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
-      type = _ref.type,
       spellCheck = _ref.spellCheck,
-      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       monthId = _ref.monthId,
@@ -274,9 +200,7 @@ var DateInput = function DateInput(_ref) {
       readOnly2 = _ref.readOnly2,
       autoFocus2 = _ref.autoFocus2,
       value2 = _ref.value2,
-      type2 = _ref.type2,
       spellCheck2 = _ref.spellCheck2,
-      maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
       yearId = _ref.yearId,
@@ -285,13 +209,11 @@ var DateInput = function DateInput(_ref) {
       readOnly3 = _ref.readOnly3,
       autoFocus3 = _ref.autoFocus3,
       value3 = _ref.value3,
-      type3 = _ref.type3,
       spellCheck3 = _ref.spellCheck3,
-      maxLength3 = _ref.maxLength3,
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement("div", {
-    className: "g-dateInput-form-group".concat(hasError ? " g-dateInput-form-group--error" : "")
+    className: "g-dateInput-form-group".concat(error ? " g-dateInput-form-group--error" : "")
   }, _react["default"].createElement("fieldset", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-dateInput-fieldset",
@@ -303,12 +225,12 @@ var DateInput = function DateInput(_ref) {
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label"))), _react["default"].createElement("span", {
     className: "g-dateInput-hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {
     className: "g-dateInput-error-message",
     id: errorId
   }, _react["default"].createElement("span", {
     className: "g-dateInput-visually-hidden"
-  }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
+  }, "Error: "), error2 !== undefined ? error2 : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
     className: "g-dateInput-date-input",
     id: id
   }, _react["default"].createElement("div", {
@@ -319,18 +241,18 @@ var DateInput = function DateInput(_ref) {
     className: "g-dateInput-label g-dateInput-date-input__label",
     htmlFor: dayId
   }, "Day"), _react["default"].createElement("input", {
-    autoComplete: constants.autoComplete[autoComplete],
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(hasError ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: dayId,
+    maxLength: 2,
     name: name,
     pattern: "[0-9]*",
-    type: constants.type[type],
-    value: value,
+    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
+    value: value,
     spellCheck: spellCheck,
-    maxLength: maxLength,
+    autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement("div", {
     className: "g-dateInput-date-input__item"
@@ -340,18 +262,18 @@ var DateInput = function DateInput(_ref) {
     className: "g-dateInput-label g-dateInput-date-input__label",
     htmlFor: monthId
   }, "Month"), _react["default"].createElement("input", {
-    autoComplete: constants.autoComplete2[autoComplete2],
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(hasError ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: monthId,
+    maxLength: 2,
     name: name2,
     pattern: "[0-9]*",
-    type: constants.type2[type2],
-    value: value2,
+    type: "text",
     disabled: disabled2,
     readOnly: readOnly2,
     autoFocus: autoFocus2,
+    value: value2,
     spellCheck: spellCheck2,
-    maxLength: maxLength2,
+    autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement("div", {
     className: "g-dateInput-date-input__item"
@@ -361,18 +283,18 @@ var DateInput = function DateInput(_ref) {
     className: "g-dateInput-label govuk-date-input__label",
     htmlFor: yearId
   }, "Year"), _react["default"].createElement("input", {
-    autoComplete: constants.autoComplete3[autoComplete3],
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4".concat(hasError ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4".concat(error ? " g-dateInput-input--error" : ""),
     id: yearId,
+    maxLength: 4,
     name: name3,
     pattern: "[0-9]*",
-    type: constants.type3[type3],
-    value: value3,
+    type: "text",
     disabled: disabled3,
     readOnly: readOnly3,
     autoFocus: autoFocus3,
+    value: value3,
     spellCheck: spellCheck3,
-    maxLength: maxLength3,
+    autoComplete: constants.autoComplete3[autoComplete3],
     onChange: onChange3
   }))))));
 };

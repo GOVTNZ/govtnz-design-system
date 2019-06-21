@@ -299,10 +299,6 @@
   -webkit-appearance: none;
 }
 
-.g-dateInput-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .g-dateInput-input--error {
   border: 1px solid $g-theme-button-color-warning;
   border: 1px solid

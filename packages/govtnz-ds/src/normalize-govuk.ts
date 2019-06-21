@@ -201,7 +201,7 @@ export const govukToMetaTemplateInput = async (
     case 'date-input__with-errors': {
       id = 'DateInput';
       html = `
-        <div class="g-form-group {{ hasError!?: g-form-group--error }}">
+        <div class="g-form-group {{ error!?: g-form-group--error }}">
           <fieldset
             class="g-fieldset"
             aria-describedby="hintId errorId"
@@ -218,7 +218,7 @@ export const govukToMetaTemplateInput = async (
             >
               <mt-variable key="hint">Example hint</mt-variable>
             </span>
-            <mt-if key="!hasError">
+            <mt-if key="!error">
               <span
                 id="errorId"
                 class="g-error-message"
@@ -241,12 +241,11 @@ export const govukToMetaTemplateInput = async (
                   </label>
                   <input
                     id="dayId"
-                    class="g-input g-date-input__input g-input--width-2 {{ hasError!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-2 {{ error!?: g-input--error }}"
                     name="dayId"
-                    type="number"
+                    type="text"
+                    maxlength="2"
                     pattern="[0-9]*"
-                    value="value"
-                    autocomplete="autocomplete"
                   />
                 </div>
               </div>
@@ -260,12 +259,11 @@ export const govukToMetaTemplateInput = async (
                   </label>
                   <input
                     id="monthId"
-                    class="g-input g-date-input__input g-input--width-2 {{ hasError!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-2 {{ error!?: g-input--error }}"
                     name="monthId"
-                    type="number"
+                    type="text"
+                    maxlength="2"
                     pattern="[0-9]*"
-                    value="value1"
-                    autocomplete="autocomplete1"
                   />
                 </div>
               </div>
@@ -279,12 +277,11 @@ export const govukToMetaTemplateInput = async (
                   </label>
                   <input
                     id="yearId"
-                    class="g-input g-date-input__input g-input--width-4 {{ hasError!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-4 {{ error!?: g-input--error }}"
                     name="yearId"
-                    type="number"
+                    type="text"
+                    maxlength="4"
                     pattern="[0-9]*"
-                    value="value2"
-                    autocomplete="autocomplete2"
                   />
                 </div>
               </div>
@@ -301,12 +298,12 @@ export const govukToMetaTemplateInput = async (
       <label class="g-label" for="inputId"><mt-variable key="label">Example text</mt-variable></label>
       <mt-if key="!hint"><div class="g-hint" id="hintId"><mt-variable key="!hint">Example text</mt-variable></div></mt-if>
       <mt-if key="!error"><div class="g-error-message" id="errorId"><span class="g-visually-hidden">Error: </span><mt-variable key="!error">Example text</mt-variable></div></mt-if>
-      <input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ hasError!?: g-input--error }}" id="inputId" name="test-name-3" type="text" aria-describedby="hintId errorId">
+      <input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ error!?: g-input--error }}" id="inputId" name="test-name-3" type="text" aria-describedby="hintId errorId">
     </div>`;
       // Derive a version that's just the input tag
       additionalTemplates.push({
         id: 'input',
-        html: `<input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ hasError!?: g-input--error }} {{ fakeFocus?: :focus }}" id="inputId" name="test-name-3" type="text" aria-describedby="describedBy">`
+        html: `<input class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ error!?: g-input--error }} {{ fakeFocus?: :focus }}" id="inputId" name="test-name-3" type="text" aria-describedby="describedBy">`
       });
       break;
     }
@@ -397,7 +394,7 @@ export const govukToMetaTemplateInput = async (
         <label class="g-label" for="selectId">
           <mt-variable key="label">Example label text</mt-variable>
         </label>
-        <select class="g-select {{ hasError: g-select--error }}" id="selectId"><mt-variable key="children"><option>Options</option></mt-variable></select>
+        <select class="g-select {{ error: g-select--error }}" id="selectId"><mt-variable key="children"><option>Options</option></mt-variable></select>
       </div>`
       });
       break;

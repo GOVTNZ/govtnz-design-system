@@ -48,16 +48,14 @@ class="g-inputBlock-visually-hidden"
       
 <input
 aria-describedby="{{hintId}} {{errorId}}"
-class="g-inputBlock-input{{#width=30}} g-inputBlock-input--width-30{{/width=30}}{{#width=20}} g-inputBlock-input--width-20{{/width=20}}{{#width=10}} g-inputBlock-input--width-10{{/width=10}}{{#width=5}} g-inputBlock-input--width-5{{/width=5}}{{#width=4}} g-inputBlock-input--width-4{{/width=4}}{{#width=3}} g-inputBlock-input--width-3{{/width=3}}{{#width=2}} g-inputBlock-input--width-2{{/width=2}} {{#hasError}} g-inputBlock-input--error{{/hasError}}"
+class="g-inputBlock-input{{#width=30}} g-inputBlock-input--width-30{{/width=30}}{{#width=20}} g-inputBlock-input--width-20{{/width=20}}{{#width=10}} g-inputBlock-input--width-10{{/width=10}}{{#width=5}} g-inputBlock-input--width-5{{/width=5}}{{#width=4}} g-inputBlock-input--width-4{{/width=4}}{{#width=3}} g-inputBlock-input--width-3{{/width=3}}{{#width=2}} g-inputBlock-input--width-2{{/width=2}} {{#error}} g-inputBlock-input--error{{/error}}"
 {{#inputId}}
   id="{{inputId}}"
 {{/inputId}}
 {{#name}}
   name="{{name}}"
 {{/name}}
-{{#type}}
-  type="{{#type=Button}}button{{/type=Button}}{{#type=Checkbox}}checkbox{{/type=Checkbox}}{{#type=Color}}color{{/type=Color}}{{#type=Date}}date{{/type=Date}}{{#type=DateTime: Local}}datetime-local{{/type=DateTime: Local}}{{#type=Email}}email{{/type=Email}}{{#type=File}}file{{/type=File}}{{#type=Hidden}}hidden{{/type=Hidden}}{{#type=Image}}image{{/type=Image}}{{#type=Month}}month{{/type=Month}}{{#type=Number}}number{{/type=Number}}{{#type=Password}}password{{/type=Password}}{{#type=Radio}}radio{{/type=Radio}}{{#type=Range}}range{{/type=Range}}{{#type=Reset}}reset{{/type=Reset}}{{#type=Search}}search{{/type=Search}}{{#type=Submit}}submit{{/type=Submit}}{{#type=Telephone}}tel{{/type=Telephone}}{{#type=Text}}text{{/type=Text}}{{#type=Time}}time{{/type=Time}}{{#type=URL}}url{{/type=URL}}{{#type=Week}}week{{/type=Week}}"
-{{/type}}
+type="text"
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}

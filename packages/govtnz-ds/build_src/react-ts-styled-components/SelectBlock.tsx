@@ -4,7 +4,7 @@ import * as styled from "styled-components";
 type Props = {
   selectId?: string | undefined;
   label?: React.ReactNode;
-  hasError: boolean;
+  error: boolean;
   name: string;
   multiple?: boolean | undefined;
   onChange: any;
@@ -42,7 +42,7 @@ const StyledLabel = styled.label`
   margin-top: 0px;
 `;
 
-const StyledSelect = styled.select<Pick<Props, "hasError">>`
+const StyledSelect = styled.select<Pick<Props, "error">>`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -82,7 +82,7 @@ const StyledSelect = styled.select<Pick<Props, "hasError">>`
     background-color: #005ea5;
   }
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       border: 1px solid #b10e1e;
     `}
@@ -95,7 +95,7 @@ const StyledSelect = styled.select<Pick<Props, "hasError">>`
 const SelectBlock = ({
   selectId,
   label,
-  hasError,
+  error,
   name,
   multiple,
   onChange,
@@ -110,7 +110,7 @@ const SelectBlock = ({
       )}
     </StyledLabel>
     <StyledSelect
-      hasError={hasError}
+      error={error}
       id={selectId}
       name={name}
       multiple={multiple}

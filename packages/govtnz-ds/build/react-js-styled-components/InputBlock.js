@@ -176,7 +176,7 @@ var StyledDiv3 = _styledComponents["default"].div(_templateObject5());
 var StyledSpan = _styledComponents["default"].span(_templateObject6());
 
 var StyledInput = _styledComponents["default"].input(_templateObject7(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject8());
+  return props.error && _styledComponents["default"].css(_templateObject8());
 }, function (props) {
   return props.width === "30" && _styledComponents["default"].css(_templateObject9());
 }, function (props) {
@@ -194,30 +194,6 @@ var StyledInput = _styledComponents["default"].input(_templateObject7(), functio
 });
 
 var constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -283,13 +259,11 @@ var InputBlock = function InputBlock(_ref) {
       hintId = _ref.hintId,
       errorId = _ref.errorId,
       width = _ref.width,
-      hasError = _ref.hasError,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
-      type = _ref.type,
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
@@ -304,11 +278,11 @@ var InputBlock = function InputBlock(_ref) {
     id: errorId
   }, _react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement(StyledInput, {
     width: width,
-    hasError: hasError,
+    error: error,
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: inputId,
     name: name,
-    type: constants.type[type],
+    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,

@@ -22,7 +22,7 @@
           Error:
         </span>
 
-        <slot name="error"></slot>
+        <slot name="error2"></slot>
       </span>
 
       <div class="g-dateInput-date-input" v-bind:id="id">
@@ -36,18 +36,18 @@
             </label>
 
             <input
-              v-bind:autocomplete="computed__autocomplete"
               v-bind:class="computed__class2"
               v-bind:id="dayId"
+              maxlength="2"
               v-bind:name="name"
               pattern="[0-9]*"
-              v-bind:type="computed__type"
-              v-bind:value="value"
+              type="text"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
+              v-bind:value="value"
               v-bind:spellcheck="spellCheck"
-              v-bind:maxlength="maxLength"
+              v-bind:autocomplete="computed__autocomplete"
             />
           </div>
         </div>
@@ -62,18 +62,18 @@
             </label>
 
             <input
-              v-bind:autocomplete="computed__autocomplete2"
               v-bind:class="computed__class3"
               v-bind:id="monthId"
+              maxlength="2"
               v-bind:name="name2"
               pattern="[0-9]*"
-              v-bind:type="computed__type2"
-              v-bind:value="value2"
+              type="text"
               v-bind:disabled="disabled2"
               v-bind:readonly="readOnly2"
               v-bind:autofocus="autoFocus2"
+              v-bind:value="value2"
               v-bind:spellcheck="spellCheck2"
-              v-bind:maxlength="maxLength2"
+              v-bind:autocomplete="computed__autocomplete2"
             />
           </div>
         </div>
@@ -88,18 +88,18 @@
             </label>
 
             <input
-              v-bind:autocomplete="computed__autocomplete3"
               v-bind:class="computed__class4"
               v-bind:id="yearId"
+              maxlength="4"
               v-bind:name="name3"
               pattern="[0-9]*"
-              v-bind:type="computed__type3"
-              v-bind:value="value3"
+              type="text"
               v-bind:disabled="disabled3"
               v-bind:readonly="readOnly3"
               v-bind:autofocus="autoFocus3"
+              v-bind:value="value3"
               v-bind:spellcheck="spellCheck3"
-              v-bind:maxlength="maxLength3"
+              v-bind:autocomplete="computed__autocomplete3"
             />
           </div>
         </div>
@@ -165,30 +165,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete2: {
     Off: "off",
     On: "on",
@@ -244,30 +220,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete3: {
     Off: "off",
     On: "on",
@@ -322,42 +274,18 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
-  },
-  type3: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
   }
 };
 
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    hasError: { type: Boolean, default: false, required: false },
+    error: { type: Boolean, default: false, required: false },
     hintId: { type: String, required: false },
     errorId: { type: String, required: false },
     label: { required: false, default: "Example label" },
     hint: { required: false, default: "Example hint" },
-    error: { required: false, default: "Example error" },
+    error2: { required: false, default: "Example error" },
     id: { type: String, required: false },
     dayId: { type: String, required: false },
     name: { type: String, required: true },
@@ -365,40 +293,7 @@ export default Vue.extend({
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Button",
-            "Checkbox",
-            "Color",
-            "Date",
-            "DateTime: Local",
-            "Email",
-            "File",
-            "Hidden",
-            "Image",
-            "Month",
-            "Number",
-            "Password",
-            "Radio",
-            "Range",
-            "Reset",
-            "Search",
-            "Submit",
-            "Telephone",
-            "Text",
-            "Time",
-            "URL",
-            "Week"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck: { type: Boolean, default: false, required: false },
-    maxLength: { type: String, required: false },
     autoComplete: {
       type: String,
       validator: value => {
@@ -468,40 +363,7 @@ export default Vue.extend({
     readOnly2: { type: Boolean, default: false, required: false },
     autoFocus2: { type: Boolean, default: false, required: false },
     value2: { type: String, required: false },
-    type2: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Button",
-            "Checkbox",
-            "Color",
-            "Date",
-            "DateTime: Local",
-            "Email",
-            "File",
-            "Hidden",
-            "Image",
-            "Month",
-            "Number",
-            "Password",
-            "Radio",
-            "Range",
-            "Reset",
-            "Search",
-            "Submit",
-            "Telephone",
-            "Text",
-            "Time",
-            "URL",
-            "Week"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck2: { type: Boolean, default: false, required: false },
-    maxLength2: { type: String, required: false },
     autoComplete2: {
       type: String,
       validator: value => {
@@ -571,40 +433,7 @@ export default Vue.extend({
     readOnly3: { type: Boolean, default: false, required: false },
     autoFocus3: { type: Boolean, default: false, required: false },
     value3: { type: String, required: false },
-    type3: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Button",
-            "Checkbox",
-            "Color",
-            "Date",
-            "DateTime: Local",
-            "Email",
-            "File",
-            "Hidden",
-            "Image",
-            "Month",
-            "Number",
-            "Password",
-            "Radio",
-            "Range",
-            "Reset",
-            "Search",
-            "Submit",
-            "Telephone",
-            "Text",
-            "Time",
-            "URL",
-            "Week"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck3: { type: Boolean, default: false, required: false },
-    maxLength3: { type: String, required: false },
     autoComplete3: {
       type: String,
       validator: value => {
@@ -673,53 +502,44 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-dateInput-form-group" +
-        (this.hasError ? " g-dateInput-form-group--error" : "")
+        (this.error ? " g-dateInput-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {
       return +this.hintId + +this.errorId;
+    },
+    computed__class2() {
+      return (
+        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
+        (this.error ? " g-dateInput-input--error" : "")
+      );
     },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
         ? constants[this.autoComplete]
         : "";
     },
-    computed__class2() {
+    computed__class3() {
       return (
         "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
-        (this.hasError ? " g-dateInput-input--error" : "")
+        (this.error ? " g-dateInput-input--error" : "")
       );
-    },
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
     },
     computed__autocomplete2() {
       return constants[this.autoComplete2] !== undefined
         ? constants[this.autoComplete2]
         : "";
     },
-    computed__class3() {
+    computed__class4() {
       return (
-        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
-        (this.hasError ? " g-dateInput-input--error" : "")
+        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" +
+        (this.error ? " g-dateInput-input--error" : "")
       );
-    },
-    computed__type2() {
-      return constants[this.type2] !== undefined ? constants[this.type2] : "";
     },
     computed__autocomplete3() {
       return constants[this.autoComplete3] !== undefined
         ? constants[this.autoComplete3]
         : "";
-    },
-    computed__class4() {
-      return (
-        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" +
-        (this.hasError ? " g-dateInput-input--error" : "")
-      );
-    },
-    computed__type3() {
-      return constants[this.type3] !== undefined ? constants[this.type3] : "";
     }
   }
 });</script
@@ -972,9 +792,6 @@ export default Vue.extend({
 .g-dateInput-input::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
-}
-.g-dateInput-input[type="number"] {
-  -moz-appearance: textfield;
 }
 .g-dateInput-input--error {
   border: 1px solid #b10e1e;

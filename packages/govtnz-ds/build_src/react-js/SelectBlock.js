@@ -3,7 +3,7 @@ import React from "react";
 const SelectBlock = ({
   selectId,
   label,
-  hasError,
+  error,
   name,
   multiple,
   onChange,
@@ -19,7 +19,7 @@ const SelectBlock = ({
     </label>
     <select
       className={`g-selectBlock-select${
-        hasError ? " g-selectBlock-select--error" : ""
+        error ? " g-selectBlock-select--error" : ""
       }`}
       id={selectId}
       name={name}

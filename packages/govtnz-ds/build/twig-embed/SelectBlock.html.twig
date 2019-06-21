@@ -15,7 +15,7 @@ for="{{ selectId | escape('html_attr') }}"
   
         
 <select
-class="g-selectBlock-select{% if hasError %} g-selectBlock-select--error{% endif %}"
+class="g-selectBlock-select{% if error %} g-selectBlock-select--error{% endif %}"
 id="{{ selectId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 multiple="{% if multiple %}multiple{% endif %}"

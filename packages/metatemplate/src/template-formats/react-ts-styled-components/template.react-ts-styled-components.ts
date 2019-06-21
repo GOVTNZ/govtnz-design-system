@@ -1071,10 +1071,12 @@ const forceAttributeAsRef = {
   tabIndex: "number",
   "aria-disabled": "boolean",
   disabled: "boolean",
-  open: "boolean"
+  open: "boolean",
+  maxLength: "number"
 };
 
 const typeCoersions = {
   type: "any",
-  crossOrigin: "any" // Pick<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, 'crossOrigin'>
+  crossOrigin: "any", // Pick<DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>, 'crossOrigin'>
+  maxLength: "any"
 };

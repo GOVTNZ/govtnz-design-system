@@ -9,35 +9,11 @@ type Props = {
   hintId?: string | undefined;
   errorId?: string | undefined;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  hasError?: boolean | undefined;
   name: string;
   disabled?: boolean | undefined;
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
-  type:
-    | "Button"
-    | "Checkbox"
-    | "Color"
-    | "Date"
-    | "DateTime: Local"
-    | "Email"
-    | "File"
-    | "Hidden"
-    | "Image"
-    | "Month"
-    | "Number"
-    | "Password"
-    | "Radio"
-    | "Range"
-    | "Reset"
-    | "Search"
-    | "Submit"
-    | "Telephone"
-    | "Text"
-    | "Time"
-    | "URL"
-    | "Week";
   spellCheck?: boolean | undefined;
   maxLength?: number | undefined;
   autoComplete:
@@ -210,7 +186,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledInput = styled.input<
-  Pick<Props, "hasError" | "width">
+  Pick<Props, "error" | "width">
 >`font-family: Arial, sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -247,7 +223,7 @@ margin: 0;
 -webkit-appearance: none;
 }
 ${props =>
-  props.hasError &&
+  props.error &&
   styled.css`
     border: 1px solid #b10e1e;
   `}
@@ -289,30 +265,6 @@ ${props =>
 margin-top: 0px;`;
 
 const constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -378,13 +330,11 @@ const InputBlock = ({
   hintId,
   errorId,
   width,
-  hasError,
   name,
   disabled,
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -427,7 +377,7 @@ const InputBlock = ({
     )}
     <StyledInput
       width={width}
-      hasError={hasError}
+      error={error}
       aria-describedby={
         hintId !== undefined || errorId !== undefined
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
@@ -435,7 +385,7 @@ const InputBlock = ({
       }
       id={inputId}
       name={name}
-      type={constants.type[type] as any}
+      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}

@@ -5,7 +5,7 @@ export default Vue.extend({
   props: {
     selectId: { type: String, required: false },
     label: { required: false, default: "Example label text" },
-    hasError: { type: Boolean, default: false, required: true },
+    error: { type: Boolean, default: false, required: true },
     name: { type: String, required: true },
     multiple: { type: Boolean, default: false, required: false },
     children: { required: false, default: "<option>Options</option>" }
@@ -14,7 +14,7 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-selectBlock-select" +
-        (this.hasError ? " g-selectBlock-select--error" : "")
+        (this.error ? " g-selectBlock-select--error" : "")
       );
     }
   },

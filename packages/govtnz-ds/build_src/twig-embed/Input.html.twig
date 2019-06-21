@@ -1,9 +1,9 @@
 <input
 aria-describedby="{{ describedBy | escape('html_attr') }}"
-class="g-input{% if width == "30" %}g-input--width-30{% elseif width == "20" %}g-input--width-20{% elseif width == "10" %}g-input--width-10{% elseif width == "5" %}g-input--width-5{% elseif width == "4" %}g-input--width-4{% elseif width == "3" %}g-input--width-3{% elseif width == "2" %}g-input--width-2{% endif %} {% if hasError %} g-input--error{% endif %} {% if fakeFocus %} :focus{% endif %}"
+class="g-input{% if width == "30" %}g-input--width-30{% elseif width == "20" %}g-input--width-20{% elseif width == "10" %}g-input--width-10{% elseif width == "5" %}g-input--width-5{% elseif width == "4" %}g-input--width-4{% elseif width == "3" %}g-input--width-3{% elseif width == "2" %}g-input--width-2{% endif %} {% if error %} g-input--error{% endif %} {% if fakeFocus %} :focus{% endif %}"
 id="{{ inputId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
-type="{% if type == "Button" %}button{% elseif type == "Checkbox" %}checkbox{% elseif type == "Color" %}color{% elseif type == "Date" %}date{% elseif type == "DateTime: Local" %}datetime-local{% elseif type == "Email" %}email{% elseif type == "File" %}file{% elseif type == "Hidden" %}hidden{% elseif type == "Image" %}image{% elseif type == "Month" %}month{% elseif type == "Number" %}number{% elseif type == "Password" %}password{% elseif type == "Radio" %}radio{% elseif type == "Range" %}range{% elseif type == "Reset" %}reset{% elseif type == "Search" %}search{% elseif type == "Submit" %}submit{% elseif type == "Telephone" %}tel{% elseif type == "Text" %}text{% elseif type == "Time" %}time{% elseif type == "URL" %}url{% elseif type == "Week" %}week{% endif %}"
+type="text"
 disabled="{% if disabled %}disabled{% endif %}"
 readonly="{% if readOnly %}readOnly{% endif %}"
 autofocus="{% if autoFocus %}autoFocus{% endif %}"

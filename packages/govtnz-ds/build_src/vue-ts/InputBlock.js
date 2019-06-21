@@ -10,30 +10,6 @@ const constants = {
     "20": "g-inputBlock-input--width-20",
     "30": "g-inputBlock-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -112,44 +88,11 @@ export default Vue.extend({
       },
       required: false
     },
-    hasError: { type: Boolean, default: false, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Button",
-            "Checkbox",
-            "Color",
-            "Date",
-            "DateTime: Local",
-            "Email",
-            "File",
-            "Hidden",
-            "Image",
-            "Month",
-            "Number",
-            "Password",
-            "Radio",
-            "Range",
-            "Reset",
-            "Search",
-            "Submit",
-            "Telephone",
-            "Text",
-            "Time",
-            "URL",
-            "Week"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
     autoComplete: {
@@ -232,11 +175,8 @@ export default Vue.extend({
         (constants[this.width] !== undefined
           ? ` ${constants[this.width]}`
           : "") +
-        (this.hasError ? " g-inputBlock-input--error" : "")
+        (this.error ? " g-inputBlock-input--error" : "")
       );
-    },
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
     },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
@@ -245,6 +185,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-inputBlock-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
+    'with(this){return _c(\'div\',{class:computed__class},[_c(\'label\',{staticClass:"g-inputBlock-label",attrs:{"for":inputId}},[_t("label")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-hint",attrs:{"id":hintId}},[_t("hint")],2),_v(" "),_c(\'div\',{staticClass:"g-inputBlock-error-message",attrs:{"id":errorId}},[_c(\'span\',{staticClass:"g-inputBlock-visually-hidden"},[_v("\\nError: \\n\\n")]),_v(" "),_t("error")],2),_v(" "),_c(\'input\',{class:computed__class2,attrs:{"aria-describedby":computed__ariaDescribedby,"id":inputId,"name":name,"type":"text","disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})])}'
   )
 });

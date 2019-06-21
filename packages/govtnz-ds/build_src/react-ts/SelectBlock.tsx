@@ -3,7 +3,7 @@ import * as React from "react";
 type Props = {
   selectId?: string | undefined;
   label?: React.ReactNode;
-  hasError: boolean;
+  error: boolean;
   name: string;
   multiple?: boolean | undefined;
   onChange: any;
@@ -13,7 +13,7 @@ type Props = {
 const SelectBlock = ({
   selectId,
   label,
-  hasError,
+  error,
   name,
   multiple,
   onChange,
@@ -29,7 +29,7 @@ const SelectBlock = ({
     </label>
     <select
       className={`g-selectBlock-select${
-        hasError ? " g-selectBlock-select--error" : ""
+        error ? " g-selectBlock-select--error" : ""
       }`}
       id={selectId}
       name={name}

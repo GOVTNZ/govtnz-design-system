@@ -1,12 +1,12 @@
 import * as React from "react";
 
 type Props = {
-  hasError?: boolean | undefined;
+  error?: boolean | undefined;
   hintId?: string | undefined;
   errorId?: string | undefined;
   label?: React.ReactNode;
   hint?: React.ReactNode;
-  error?: React.ReactNode;
+  error2?: React.ReactNode;
   id?: string | undefined;
   dayId?: string | undefined;
   name: string;
@@ -14,31 +14,7 @@ type Props = {
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
-  type:
-    | "Button"
-    | "Checkbox"
-    | "Color"
-    | "Date"
-    | "DateTime: Local"
-    | "Email"
-    | "File"
-    | "Hidden"
-    | "Image"
-    | "Month"
-    | "Number"
-    | "Password"
-    | "Radio"
-    | "Range"
-    | "Reset"
-    | "Search"
-    | "Submit"
-    | "Telephone"
-    | "Text"
-    | "Time"
-    | "URL"
-    | "Week";
   spellCheck?: boolean | undefined;
-  maxLength?: number | undefined;
   autoComplete:
     | "Off"
     | "On"
@@ -100,31 +76,7 @@ type Props = {
   readOnly2?: boolean | undefined;
   autoFocus2?: boolean | undefined;
   value2?: string | undefined;
-  type2:
-    | "Button"
-    | "Checkbox"
-    | "Color"
-    | "Date"
-    | "DateTime: Local"
-    | "Email"
-    | "File"
-    | "Hidden"
-    | "Image"
-    | "Month"
-    | "Number"
-    | "Password"
-    | "Radio"
-    | "Range"
-    | "Reset"
-    | "Search"
-    | "Submit"
-    | "Telephone"
-    | "Text"
-    | "Time"
-    | "URL"
-    | "Week";
   spellCheck2?: boolean | undefined;
-  maxLength2?: number | undefined;
   autoComplete2:
     | "Off"
     | "On"
@@ -186,31 +138,7 @@ type Props = {
   readOnly3?: boolean | undefined;
   autoFocus3?: boolean | undefined;
   value3?: string | undefined;
-  type3:
-    | "Button"
-    | "Checkbox"
-    | "Color"
-    | "Date"
-    | "DateTime: Local"
-    | "Email"
-    | "File"
-    | "Hidden"
-    | "Image"
-    | "Month"
-    | "Number"
-    | "Password"
-    | "Radio"
-    | "Range"
-    | "Reset"
-    | "Search"
-    | "Submit"
-    | "Telephone"
-    | "Text"
-    | "Time"
-    | "URL"
-    | "Week";
   spellCheck3?: boolean | undefined;
-  maxLength3?: number | undefined;
   autoComplete3:
     | "Off"
     | "On"
@@ -324,30 +252,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete2: {
     Off: "off",
     On: "on",
@@ -403,30 +307,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete3: {
     Off: "off",
     On: "on",
@@ -481,40 +361,16 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
-  },
-  type3: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
   }
 };
 
 const DateInput = ({
-  hasError,
+  error,
   hintId,
   errorId,
   label,
   hint,
-  error,
+  error2,
   id,
   dayId,
   name,
@@ -522,9 +378,7 @@ const DateInput = ({
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
-  maxLength,
   autoComplete,
   onChange,
   monthId,
@@ -533,9 +387,7 @@ const DateInput = ({
   readOnly2,
   autoFocus2,
   value2,
-  type2,
   spellCheck2,
-  maxLength2,
   autoComplete2,
   onChange2,
   yearId,
@@ -544,15 +396,13 @@ const DateInput = ({
   readOnly3,
   autoFocus3,
   value3,
-  type3,
   spellCheck3,
-  maxLength3,
   autoComplete3,
   onChange3
 }: Props) => (
   <div
     className={`g-dateInput-form-group${
-      hasError ? " g-dateInput-form-group--error" : ""
+      error ? " g-dateInput-form-group--error" : ""
     }`}
   >
     <fieldset
@@ -580,12 +430,12 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </span>
-      {hasError !== undefined ? (
+      {error !== undefined ? (
         <React.Fragment>
           <span className="g-dateInput-error-message" id={errorId}>
             <span className="g-dateInput-visually-hidden">Error: </span>
-            {error !== undefined ? (
-              error
+            {error2 !== undefined ? (
+              error2
             ) : (
               <React.Fragment>Example error</React.Fragment>
             )}
@@ -605,20 +455,20 @@ const DateInput = ({
               Day
             </label>
             <input
-              autoComplete={constants.autoComplete[autoComplete]}
               className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
-                hasError ? " g-dateInput-input--error" : ""
+                error ? " g-dateInput-input--error" : ""
               }`}
               id={dayId}
+              maxLength={2}
               name={name}
               pattern="[0-9]*"
-              type={constants.type[type] as any}
-              value={value}
+              type="text"
               disabled={disabled}
               readOnly={readOnly}
               autoFocus={autoFocus}
+              value={value}
               spellCheck={spellCheck}
-              maxLength={maxLength}
+              autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
           </div>
@@ -632,20 +482,20 @@ const DateInput = ({
               Month
             </label>
             <input
-              autoComplete={constants.autoComplete2[autoComplete2]}
               className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
-                hasError ? " g-dateInput-input--error" : ""
+                error ? " g-dateInput-input--error" : ""
               }`}
               id={monthId}
+              maxLength={2}
               name={name2}
               pattern="[0-9]*"
-              type={constants.type2[type2] as any}
-              value={value2}
+              type="text"
               disabled={disabled2}
               readOnly={readOnly2}
               autoFocus={autoFocus2}
+              value={value2}
               spellCheck={spellCheck2}
-              maxLength={maxLength2}
+              autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
           </div>
@@ -659,20 +509,20 @@ const DateInput = ({
               Year
             </label>
             <input
-              autoComplete={constants.autoComplete3[autoComplete3]}
               className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4${
-                hasError ? " g-dateInput-input--error" : ""
+                error ? " g-dateInput-input--error" : ""
               }`}
               id={yearId}
+              maxLength={4}
               name={name3}
               pattern="[0-9]*"
-              type={constants.type3[type3] as any}
-              value={value3}
+              type="text"
               disabled={disabled3}
               readOnly={readOnly3}
               autoFocus={autoFocus3}
+              value={value3}
               spellCheck={spellCheck3}
-              maxLength={maxLength3}
+              autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />
           </div>

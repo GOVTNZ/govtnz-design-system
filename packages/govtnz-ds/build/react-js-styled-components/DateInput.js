@@ -24,7 +24,7 @@ function _templateObject24() {
 }
 
 function _templateObject23() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 9ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject23 = function _templateObject23() {
     return data;
@@ -74,7 +74,7 @@ function _templateObject19() {
 }
 
 function _templateObject18() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject18 = function _templateObject18() {
     return data;
@@ -124,7 +124,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  -moz-appearance: textfield;\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid #2a2a2a;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  ::-webkit-outer-spin-button,\n  ::-webkit-inner-spin-button {\n    margin: 0;\n    -webkit-appearance: none;\n  }\n  ", "\n  max-width: 5.4ex;\n  margin-bottom: 0;\n  margin-top: 0px;\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -254,7 +254,7 @@ function _templateObject() {
 }
 
 var StyledDiv = _styledComponents["default"].div(_templateObject(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject2());
+  return props.error && _styledComponents["default"].css(_templateObject2());
 });
 
 var StyledFieldset = _styledComponents["default"].fieldset(_templateObject3());
@@ -278,7 +278,7 @@ var StyledDiv4 = _styledComponents["default"].div(_templateObject11());
 var StyledLabel = _styledComponents["default"].label(_templateObject12());
 
 var StyledInput = _styledComponents["default"].input(_templateObject13(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject14());
+  return props.error && _styledComponents["default"].css(_templateObject14());
 });
 
 var StyledDiv5 = _styledComponents["default"].div(_templateObject15());
@@ -288,7 +288,7 @@ var StyledDiv6 = _styledComponents["default"].div(_templateObject16());
 var StyledLabel2 = _styledComponents["default"].label(_templateObject17());
 
 var StyledInput2 = _styledComponents["default"].input(_templateObject18(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject19());
+  return props.error && _styledComponents["default"].css(_templateObject19());
 });
 
 var StyledDiv7 = _styledComponents["default"].div(_templateObject20());
@@ -298,7 +298,7 @@ var StyledDiv8 = _styledComponents["default"].div(_templateObject21());
 var StyledLabel3 = _styledComponents["default"].label(_templateObject22());
 
 var StyledInput3 = _styledComponents["default"].input(_templateObject23(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject24());
+  return props.error && _styledComponents["default"].css(_templateObject24());
 });
 
 var constants = {
@@ -357,30 +357,6 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete2: {
     Off: "off",
     On: "on",
@@ -436,30 +412,6 @@ var constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete3: {
     Off: "off",
     On: "on",
@@ -514,40 +466,16 @@ var constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
-  },
-  type3: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
   }
 };
 
 var DateInput = function DateInput(_ref) {
-  var hasError = _ref.hasError,
+  var error = _ref.error,
       hintId = _ref.hintId,
       errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
-      error = _ref.error,
+      error2 = _ref.error2,
       id = _ref.id,
       dayId = _ref.dayId,
       name = _ref.name,
@@ -555,9 +483,7 @@ var DateInput = function DateInput(_ref) {
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
-      type = _ref.type,
       spellCheck = _ref.spellCheck,
-      maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       monthId = _ref.monthId,
@@ -566,9 +492,7 @@ var DateInput = function DateInput(_ref) {
       readOnly2 = _ref.readOnly2,
       autoFocus2 = _ref.autoFocus2,
       value2 = _ref.value2,
-      type2 = _ref.type2,
       spellCheck2 = _ref.spellCheck2,
-      maxLength2 = _ref.maxLength2,
       autoComplete2 = _ref.autoComplete2,
       onChange2 = _ref.onChange2,
       yearId = _ref.yearId,
@@ -577,69 +501,67 @@ var DateInput = function DateInput(_ref) {
       readOnly3 = _ref.readOnly3,
       autoFocus3 = _ref.autoFocus3,
       value3 = _ref.value3,
-      type3 = _ref.type3,
       spellCheck3 = _ref.spellCheck3,
-      maxLength3 = _ref.maxLength3,
       autoComplete3 = _ref.autoComplete3,
       onChange3 = _ref.onChange3;
   return _react["default"].createElement(StyledDiv, {
-    hasError: hasError
+    error: error
   }, _react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     role: "group"
   }, _react["default"].createElement(StyledLegend, null, _react["default"].createElement(StyledH1, null, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label"))), _react["default"].createElement(StyledSpan, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), hasError !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledSpan2, {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledSpan2, {
     id: errorId
-  }, _react["default"].createElement(StyledSpan3, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement(StyledDiv2, {
+  }, _react["default"].createElement(StyledSpan3, null, "Error: "), error2 !== undefined ? error2 : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement(StyledDiv2, {
     id: id
   }, _react["default"].createElement(StyledDiv3, null, _react["default"].createElement(StyledDiv4, null, _react["default"].createElement(StyledLabel, {
     htmlFor: dayId
   }, "Day"), _react["default"].createElement(StyledInput, {
-    hasError: hasError,
-    autoComplete: constants.autoComplete[autoComplete],
+    error: error,
     id: dayId,
+    maxLength: 2,
     name: name,
     pattern: "[0-9]*",
-    type: constants.type[type],
-    value: value,
+    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
+    value: value,
     spellCheck: spellCheck,
-    maxLength: maxLength,
+    autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement(StyledDiv5, null, _react["default"].createElement(StyledDiv6, null, _react["default"].createElement(StyledLabel2, {
     htmlFor: monthId
   }, "Month"), _react["default"].createElement(StyledInput2, {
-    hasError: hasError,
-    autoComplete: constants.autoComplete2[autoComplete2],
+    error: error,
     id: monthId,
+    maxLength: 2,
     name: name2,
     pattern: "[0-9]*",
-    type: constants.type2[type2],
-    value: value2,
+    type: "text",
     disabled: disabled2,
     readOnly: readOnly2,
     autoFocus: autoFocus2,
+    value: value2,
     spellCheck: spellCheck2,
-    maxLength: maxLength2,
+    autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement(StyledDiv7, null, _react["default"].createElement(StyledDiv8, null, _react["default"].createElement(StyledLabel3, {
     htmlFor: yearId
   }, "Year"), _react["default"].createElement(StyledInput3, {
-    hasError: hasError,
-    autoComplete: constants.autoComplete3[autoComplete3],
+    error: error,
     id: yearId,
+    maxLength: 4,
     name: name3,
     pattern: "[0-9]*",
-    type: constants.type3[type3],
-    value: value3,
+    type: "text",
     disabled: disabled3,
     readOnly: readOnly3,
     autoFocus: autoFocus3,
+    value: value3,
     spellCheck: spellCheck3,
-    maxLength: maxLength3,
+    autoComplete: constants.autoComplete3[autoComplete3],
     onChange: onChange3
   }))))));
 };

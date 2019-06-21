@@ -10,30 +10,6 @@ const constants = {
     "20": "g-input--width-20",
     "30": "g-input--width-30"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -101,7 +77,7 @@ export default Vue.extend({
       },
       required: false
     },
-    hasError: { type: Boolean, default: false, required: false },
+    error: { type: Boolean, default: false, required: false },
     fakeFocus: { type: Boolean, default: false, required: false },
     inputId: { type: String, required: false },
     describedBy: { type: String, required: false },
@@ -110,38 +86,6 @@ export default Vue.extend({
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Button",
-            "Checkbox",
-            "Color",
-            "Date",
-            "DateTime: Local",
-            "Email",
-            "File",
-            "Hidden",
-            "Image",
-            "Month",
-            "Number",
-            "Password",
-            "Radio",
-            "Range",
-            "Reset",
-            "Search",
-            "Submit",
-            "Telephone",
-            "Text",
-            "Time",
-            "URL",
-            "Week"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
     autoComplete: {
@@ -215,12 +159,9 @@ export default Vue.extend({
         (constants[this.width] !== undefined
           ? ` ${constants[this.width]}`
           : "") +
-        (this.hasError ? " g-input--error" : "") +
+        (this.error ? " g-input--error" : "") +
         (this.fakeFocus ? " :focus" : "")
       );
-    },
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
     },
     computed__autocomplete() {
       return constants[this.autoComplete] !== undefined
@@ -229,6 +170,6 @@ export default Vue.extend({
     }
   },
   render: new Function(
-    'with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":computed__type,"disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}'
+    'with(this){return _c(\'input\',{class:computed__class,attrs:{"aria-describedby":describedBy,"id":inputId,"name":name,"type":"text","disabled":disabled,"readonly":readOnly,"autofocus":autoFocus,"spellcheck":spellCheck,"maxlength":maxLength,"autocomplete":computed__autocomplete},domProps:{"value":value}})}'
   )
 });

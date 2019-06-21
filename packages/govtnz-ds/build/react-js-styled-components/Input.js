@@ -104,7 +104,7 @@ function _templateObject() {
 }
 
 var StyledInput = _styledComponents["default"].input(_templateObject(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject2());
+  return props.error && _styledComponents["default"].css(_templateObject2());
 }, function (props) {
   return props.width === "30" && _styledComponents["default"].css(_templateObject3());
 }, function (props) {
@@ -122,30 +122,6 @@ var StyledInput = _styledComponents["default"].input(_templateObject(), function
 });
 
 var constants = {
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete: {
     Off: "off",
     On: "on",
@@ -205,7 +181,7 @@ var constants = {
 
 var Input = function Input(_ref) {
   var width = _ref.width,
-      hasError = _ref.hasError,
+      error = _ref.error,
       fakeFocus = _ref.fakeFocus,
       inputId = _ref.inputId,
       describedBy = _ref.describedBy,
@@ -214,19 +190,18 @@ var Input = function Input(_ref) {
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
-      type = _ref.type,
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledInput, {
     width: width,
-    hasError: hasError,
+    error: error,
     fakeFocus: fakeFocus,
     "aria-describedby": describedBy,
     id: inputId,
     name: name,
-    type: constants.type[type],
+    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,

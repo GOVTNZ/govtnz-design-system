@@ -21,7 +21,7 @@ var _default = _vue["default"].extend({
       required: false,
       "default": "Example label text"
     },
-    hasError: {
+    error: {
       type: Boolean,
       "default": false,
       required: true
@@ -42,7 +42,7 @@ var _default = _vue["default"].extend({
   },
   computed: {
     computed__class: function computed__class() {
-      return "g-selectBlock-select" + (this.hasError ? " g-selectBlock-select--error" : "");
+      return "g-selectBlock-select" + (this.error ? " g-selectBlock-select--error" : "");
     }
   },
   render: new Function('with(this){return _c(\'div\',[_c(\'label\',{staticClass:"g-selectBlock-label",attrs:{"for":selectId}},[_t("label")],2),_v(" "),_c(\'select\',{class:computed__class,attrs:{"id":selectId,"name":name,"multiple":multiple}},[_t("default")],2)])}')

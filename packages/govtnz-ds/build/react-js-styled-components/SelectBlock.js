@@ -58,13 +58,13 @@ var StyledDiv = _styledComponents["default"].div(_templateObject());
 var StyledLabel = _styledComponents["default"].label(_templateObject2());
 
 var StyledSelect = _styledComponents["default"].select(_templateObject3(), function (props) {
-  return props.hasError && _styledComponents["default"].css(_templateObject4());
+  return props.error && _styledComponents["default"].css(_templateObject4());
 });
 
 var SelectBlock = function SelectBlock(_ref) {
   var selectId = _ref.selectId,
       label = _ref.label,
-      hasError = _ref.hasError,
+      error = _ref.error,
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
@@ -72,7 +72,7 @@ var SelectBlock = function SelectBlock(_ref) {
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledLabel, {
     htmlFor: selectId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label text")), _react["default"].createElement(StyledSelect, {
-    hasError: hasError,
+    error: error,
     id: selectId,
     name: name,
     multiple: multiple,

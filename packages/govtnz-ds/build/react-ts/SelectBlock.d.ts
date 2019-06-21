@@ -2,11 +2,11 @@ import * as React from "react";
 declare type Props = {
     selectId?: string | undefined;
     label?: React.ReactNode;
-    hasError: boolean;
+    error: boolean;
     name: string;
     multiple?: boolean | undefined;
     onChange: any;
     children?: React.ReactNode;
 };
-declare const SelectBlock: ({ selectId, label, hasError, name, multiple, onChange, children }: Props) => JSX.Element;
+declare const SelectBlock: ({ selectId, label, error, name, multiple, onChange, children }: Props) => JSX.Element;
 export default SelectBlock;

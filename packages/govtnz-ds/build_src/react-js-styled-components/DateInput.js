@@ -15,7 +15,7 @@ const StyledDiv = styled.div`
     margin-bottom: 0;
   }
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       padding-left: 15px;
       border-left: 5px solid #b10e1e;
@@ -265,9 +265,8 @@ const StyledInput = styled.input`
     margin: 0;
     -webkit-appearance: none;
   }
-  -moz-appearance: textfield;
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       border: 1px solid #b10e1e;
     `}
@@ -367,9 +366,8 @@ const StyledInput2 = styled.input`
     margin: 0;
     -webkit-appearance: none;
   }
-  -moz-appearance: textfield;
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       border: 1px solid #b10e1e;
     `}
@@ -468,9 +466,8 @@ const StyledInput3 = styled.input`
     margin: 0;
     -webkit-appearance: none;
   }
-  -moz-appearance: textfield;
   ${props =>
-    props.hasError &&
+    props.error &&
     styled.css`
       border: 1px solid #b10e1e;
     `}
@@ -535,30 +532,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete2: {
     Off: "off",
     On: "on",
@@ -614,30 +587,6 @@ const constants = {
     URL: "url",
     Photo: "photo"
   },
-  type2: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
-  },
   autoComplete3: {
     Off: "off",
     On: "on",
@@ -692,40 +641,16 @@ const constants = {
     IMPP: "impp",
     URL: "url",
     Photo: "photo"
-  },
-  type3: {
-    Button: "button",
-    Checkbox: "checkbox",
-    Color: "color",
-    Date: "date",
-    "DateTime: Local": "datetime-local",
-    Email: "email",
-    File: "file",
-    Hidden: "hidden",
-    Image: "image",
-    Month: "month",
-    Number: "number",
-    Password: "password",
-    Radio: "radio",
-    Range: "range",
-    Reset: "reset",
-    Search: "search",
-    Submit: "submit",
-    Telephone: "tel",
-    Text: "text",
-    Time: "time",
-    URL: "url",
-    Week: "week"
   }
 };
 
 const DateInput = ({
-  hasError,
+  error,
   hintId,
   errorId,
   label,
   hint,
-  error,
+  error2,
   id,
   dayId,
   name,
@@ -733,9 +658,7 @@ const DateInput = ({
   readOnly,
   autoFocus,
   value,
-  type,
   spellCheck,
-  maxLength,
   autoComplete,
   onChange,
   monthId,
@@ -744,9 +667,7 @@ const DateInput = ({
   readOnly2,
   autoFocus2,
   value2,
-  type2,
   spellCheck2,
-  maxLength2,
   autoComplete2,
   onChange2,
   yearId,
@@ -755,13 +676,11 @@ const DateInput = ({
   readOnly3,
   autoFocus3,
   value3,
-  type3,
   spellCheck3,
-  maxLength3,
   autoComplete3,
   onChange3
 }) => (
-  <StyledDiv hasError={hasError}>
+  <StyledDiv error={error}>
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -786,12 +705,12 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </StyledSpan>
-      {hasError !== undefined ? (
+      {error !== undefined ? (
         <React.Fragment>
           <StyledSpan2 id={errorId}>
             <StyledSpan3>Error: </StyledSpan3>
-            {error !== undefined ? (
-              error
+            {error2 !== undefined ? (
+              error2
             ) : (
               <React.Fragment>Example error</React.Fragment>
             )}
@@ -806,18 +725,18 @@ const DateInput = ({
           <StyledDiv4>
             <StyledLabel htmlFor={dayId}>Day</StyledLabel>
             <StyledInput
-              hasError={hasError}
-              autoComplete={constants.autoComplete[autoComplete]}
+              error={error}
               id={dayId}
+              maxLength={2}
               name={name}
               pattern="[0-9]*"
-              type={constants.type[type]}
-              value={value}
+              type="text"
               disabled={disabled}
               readOnly={readOnly}
               autoFocus={autoFocus}
+              value={value}
               spellCheck={spellCheck}
-              maxLength={maxLength}
+              autoComplete={constants.autoComplete[autoComplete]}
               onChange={onChange}
             />
           </StyledDiv4>
@@ -826,18 +745,18 @@ const DateInput = ({
           <StyledDiv6>
             <StyledLabel2 htmlFor={monthId}>Month</StyledLabel2>
             <StyledInput2
-              hasError={hasError}
-              autoComplete={constants.autoComplete2[autoComplete2]}
+              error={error}
               id={monthId}
+              maxLength={2}
               name={name2}
               pattern="[0-9]*"
-              type={constants.type2[type2]}
-              value={value2}
+              type="text"
               disabled={disabled2}
               readOnly={readOnly2}
               autoFocus={autoFocus2}
+              value={value2}
               spellCheck={spellCheck2}
-              maxLength={maxLength2}
+              autoComplete={constants.autoComplete2[autoComplete2]}
               onChange={onChange2}
             />
           </StyledDiv6>
@@ -846,18 +765,18 @@ const DateInput = ({
           <StyledDiv8>
             <StyledLabel3 htmlFor={yearId}>Year</StyledLabel3>
             <StyledInput3
-              hasError={hasError}
-              autoComplete={constants.autoComplete3[autoComplete3]}
+              error={error}
               id={yearId}
+              maxLength={4}
               name={name3}
               pattern="[0-9]*"
-              type={constants.type3[type3]}
-              value={value3}
+              type="text"
               disabled={disabled3}
               readOnly={readOnly3}
               autoFocus={autoFocus3}
+              value={value3}
               spellCheck={spellCheck3}
-              maxLength={maxLength3}
+              autoComplete={constants.autoComplete3[autoComplete3]}
               onChange={onChange3}
             />
           </StyledDiv8>

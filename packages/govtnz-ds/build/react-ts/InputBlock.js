@@ -18,30 +18,6 @@ var constants = {
         "20": "g-inputBlock-input--width-20",
         "30": "g-inputBlock-input--width-30"
     },
-    type: {
-        Button: "button",
-        Checkbox: "checkbox",
-        Color: "color",
-        Date: "date",
-        "DateTime: Local": "datetime-local",
-        Email: "email",
-        File: "file",
-        Hidden: "hidden",
-        Image: "image",
-        Month: "month",
-        Number: "number",
-        Password: "password",
-        Radio: "radio",
-        Range: "range",
-        Reset: "reset",
-        Search: "search",
-        Submit: "submit",
-        Telephone: "tel",
-        Text: "text",
-        Time: "time",
-        URL: "url",
-        Week: "week"
-    },
     autoComplete: {
         Off: "off",
         On: "on",
@@ -99,7 +75,7 @@ var constants = {
     }
 };
 var InputBlock = function (_a) {
-    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, hasError = _a.hasError, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
     return (React.createElement("div", { className: "g-inputBlock-form-group" + (error ? " g-inputBlock-form-group--error" : "") },
         React.createElement("label", { className: "g-inputBlock-label", htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
         hint !== undefined ? (React.createElement(React.Fragment, null,
@@ -110,7 +86,7 @@ var InputBlock = function (_a) {
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
         React.createElement("input", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (hasError ? " g-inputBlock-input--error" : ""), id: inputId, name: name, type: constants.type[type], disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
+                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: inputId, name: name, type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: constants.autoComplete[autoComplete], onChange: onChange })));
 };
 exports.default = InputBlock;
 //# sourceMappingURL=InputBlock.js.map
