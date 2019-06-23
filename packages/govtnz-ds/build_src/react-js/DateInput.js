@@ -174,7 +174,6 @@ const DateInput = ({
   errorId,
   label,
   hint,
-  error2,
   id,
   dayId,
   name,
@@ -238,8 +237,8 @@ const DateInput = ({
         <React.Fragment>
           <span className="g-dateInput-error-message" id={errorId}>
             <span className="g-dateInput-visually-hidden">Error: </span>
-            {error2 !== undefined ? (
-              error2
+            {error !== undefined ? (
+              error
             ) : (
               <React.Fragment>Example error</React.Fragment>
             )}

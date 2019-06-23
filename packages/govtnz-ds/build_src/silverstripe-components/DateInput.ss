@@ -13,7 +13,7 @@
             
               <span class="g-dateInput-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> 
                 <span class="g-dateInput-visually-hidden"> Error: </span> 
-                {$error2}
+                {$error}
 
             </span> 
             

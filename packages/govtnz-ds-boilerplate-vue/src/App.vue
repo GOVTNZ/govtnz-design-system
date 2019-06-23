@@ -4,11 +4,9 @@
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
     </div>
-    <H1 children="sdfdsfffFsdfSDFSDFDSSf">Stfffuff</H1>
     <router-view/>
   </div>
 </template>
-
 <style lang="scss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;

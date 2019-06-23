@@ -218,13 +218,13 @@ export const govukToMetaTemplateInput = async (
             >
               <mt-variable key="hint">Example hint</mt-variable>
             </span>
-            <mt-if key="!error">
+            <mt-if key="!?error">
               <span
                 id="errorId"
                 class="g-error-message"
               >
                 <span class="g-visually-hidden">Error: </span>
-                <mt-variable key="error">Example error</mt-variable>
+                <mt-variable key="!?error">Example error</mt-variable>
             </mt-if>
             </span>
             <div

@@ -183,7 +183,6 @@ var DateInput = function DateInput(_ref) {
       errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
-      error2 = _ref.error2,
       id = _ref.id,
       dayId = _ref.dayId,
       name = _ref.name,
@@ -230,7 +229,7 @@ var DateInput = function DateInput(_ref) {
     id: errorId
   }, _react["default"].createElement("span", {
     className: "g-dateInput-visually-hidden"
-  }, "Error: "), error2 !== undefined ? error2 : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
+  }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
     className: "g-dateInput-date-input",
     id: id
   }, _react["default"].createElement("div", {

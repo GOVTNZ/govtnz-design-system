@@ -32,9 +32,6 @@ Interact with each example to see how it works.
             yearId="passport-issued-year"
             label="When was your passport issued?"
             hint="For example, 12 11 2007"
-            value="6"
-            value2="3"
-            value3="2076"
             error="The date your passport was issued must be in the past"
         />
     </Example>

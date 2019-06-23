@@ -213,7 +213,7 @@ var constants = {
     }
 };
 var DateInput = function (_a) {
-    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, error2 = _a.error2, id = _a.id, dayId = _a.dayId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, spellCheck2 = _a.spellCheck2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, yearId = _a.yearId, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, spellCheck3 = _a.spellCheck3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
+    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, id = _a.id, dayId = _a.dayId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, name2 = _a.name2, disabled2 = _a.disabled2, readOnly2 = _a.readOnly2, autoFocus2 = _a.autoFocus2, value2 = _a.value2, spellCheck2 = _a.spellCheck2, autoComplete2 = _a.autoComplete2, onChange2 = _a.onChange2, yearId = _a.yearId, name3 = _a.name3, disabled3 = _a.disabled3, readOnly3 = _a.readOnly3, autoFocus3 = _a.autoFocus3, value3 = _a.value3, spellCheck3 = _a.spellCheck3, autoComplete3 = _a.autoComplete3, onChange3 = _a.onChange3;
     return (React.createElement(StyledDiv, { error: error },
         React.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
@@ -224,7 +224,7 @@ var DateInput = function (_a) {
             error !== undefined ? (React.createElement(React.Fragment, null,
                 React.createElement(StyledSpan2, { id: errorId },
                     React.createElement(StyledSpan3, null, "Error: "),
-                    error2 !== undefined ? (error2) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),
+                    error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),
             React.createElement(StyledDiv2, { id: id },
                 React.createElement(StyledDiv3, null,
                     React.createElement(StyledDiv4, null,

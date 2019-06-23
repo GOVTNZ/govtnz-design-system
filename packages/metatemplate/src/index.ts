@@ -174,7 +174,7 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
       if (tagName === "mt-variable") {
         let key: string = await NodeGetAttribute(node, "key");
         const isStableKey: boolean = key.includes("!");
-        key = key.replace("!", ""); // will only replace one, but there should only be one
+        key = key.replace("!", "").replace("?", ""); // will only replace one, but there should only be one
         let safeKey = key;
         const assignedKeys = format.getAssignedDynamicKeys();
         if (!isStableKey || !assignedKeys.includes(key)) {
@@ -192,7 +192,7 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
         if (tagName === "mt-if") {
           let key: string = await NodeGetAttribute(node, "key");
           const isStableKey: boolean = key.includes("!");
-          key = key.replace("!", ""); // will only replace one, but there should only be one
+          key = key.replace("!", "").replace("?", ""); // will only replace one, but there should only be one
           let safeKey = key;
           const assignedKeys = format.getAssignedDynamicKeys();
           if (!isStableKey || !assignedKeys.includes(key)) {

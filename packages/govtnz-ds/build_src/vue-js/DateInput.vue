@@ -22,7 +22,7 @@
           Error:
         </span>
 
-        <slot name="error2"></slot>
+        <slot name="error"></slot>
       </span>
 
       <div class="g-dateInput-date-input" v-bind:id="id">
@@ -280,12 +280,16 @@ const constants = {
 export default Vue.extend({
   functional: true, // no internal state
   props: {
-    error: { type: Boolean, default: false, required: false },
+    error: {
+      type: Boolean,
+      default: false,
+      required: false,
+      default: "Example error"
+    },
     hintId: { type: String, required: false },
     errorId: { type: String, required: false },
     label: { required: false, default: "Example label" },
     hint: { required: false, default: "Example hint" },
-    error2: { required: false, default: "Example error" },
     id: { type: String, required: false },
     dayId: { type: String, required: false },
     name: { type: String, required: true },

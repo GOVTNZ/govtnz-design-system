@@ -5,7 +5,6 @@ declare type Props = {
     errorId?: string | undefined;
     label?: React.ReactNode;
     hint?: React.ReactNode;
-    error2?: React.ReactNode;
     id?: string | undefined;
     dayId?: string | undefined;
     name: string;
@@ -35,5 +34,5 @@ declare type Props = {
     autoComplete3: "Off" | "On" | "Name" | "Honorific: Prefix" | "Given Name" | "Additional Name" | "Family Name" | "Honorific: Suffix" | "Nickname" | "Email" | "Username" | "New Password" | "Current Password" | "Organization Title" | "Organization" | "Street Address" | "Address Line 1" | "Address Line 2" | "Address Line 3" | "Address Level 4" | "Address Level 3" | "Address Level 2" | "Address Level 1" | "Country" | "Country Name" | "Postal Code" | "Credit Card: Name" | "Credit Card: Given Name" | "Credit Card: Additional Name" | "Credit Card: Family Name" | "Credit Card: Number" | "Credit Card: Expiry" | "Credit Card: Expiry Month" | "Credit Card: Expiry Year" | "Credit Card: CSC" | "Credit Card: Type" | "Transaction: Currency" | "Transaction: Amount" | "Language" | "Birthday" | "Birthday: Day" | "Birthday: Month" | "Birthday: Year" | "Sex" | "Telephone" | "Telephone: Country Code" | "Telephone: National" | "Telephone: Area Code" | "Telephone: Local" | "Telephone: Extension" | "IMPP" | "URL" | "Photo";
     onChange3: any;
 };
-declare const DateInput: ({ error, hintId, errorId, label, hint, error2, id, dayId, name, disabled, readOnly, autoFocus, value, spellCheck, autoComplete, onChange, monthId, name2, disabled2, readOnly2, autoFocus2, value2, spellCheck2, autoComplete2, onChange2, yearId, name3, disabled3, readOnly3, autoFocus3, value3, spellCheck3, autoComplete3, onChange3 }: Props) => JSX.Element;
+declare const DateInput: ({ error, hintId, errorId, label, hint, id, dayId, name, disabled, readOnly, autoFocus, value, spellCheck, autoComplete, onChange, monthId, name2, disabled2, readOnly2, autoFocus2, value2, spellCheck2, autoComplete2, onChange2, yearId, name3, disabled3, readOnly3, autoFocus3, value3, spellCheck3, autoComplete3, onChange3 }: Props) => JSX.Element;
 export default DateInput;

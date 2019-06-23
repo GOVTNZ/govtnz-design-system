@@ -475,7 +475,6 @@ var DateInput = function DateInput(_ref) {
       errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
-      error2 = _ref.error2,
       id = _ref.id,
       dayId = _ref.dayId,
       name = _ref.name,
@@ -513,7 +512,7 @@ var DateInput = function DateInput(_ref) {
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledSpan2, {
     id: errorId
-  }, _react["default"].createElement(StyledSpan3, null, "Error: "), error2 !== undefined ? error2 : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement(StyledDiv2, {
+  }, _react["default"].createElement(StyledSpan3, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement(StyledDiv2, {
     id: id
   }, _react["default"].createElement(StyledDiv3, null, _react["default"].createElement(StyledDiv4, null, _react["default"].createElement(StyledLabel, {
     htmlFor: dayId
