@@ -269,6 +269,25 @@ export const insertDefaultVariables = async (
       } else if (!isFileType) {
         // Assume it's a text box
 
+        if (!typeAttribute || typeAttribute.value === "number") {
+          // if it could be a type=number then it might
+          // need a min/max.
+          makeTemplateAttribute("min", attributes, format, [
+            {
+              key: format.registerDynamicKey("min", "number", true),
+              type: "number",
+              optional: true
+            }
+          ]);
+          makeTemplateAttribute("max", attributes, format, [
+            {
+              key: format.registerDynamicKey("max", "number", true),
+              type: "number",
+              optional: true
+            }
+          ]);
+        }
+
         // if there is a provided type then retain that and don't
         // allow it to be configurable
         if (!typeAttribute) {
