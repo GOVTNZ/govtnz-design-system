@@ -11,7 +11,6 @@
 
 .clipboard__tooltip {
   position: absolute;
-  visibility: hidden;
   top: 0.125rem;
   left: 100%;
   padding: 0.5625rem 0.84375rem;
@@ -34,14 +33,12 @@
 
 .clipboard__tooltip--start {
   opacity: 0;
-  visibility: visible;
   transition: all 0.5s;
   transform: translate(0, 0);
 }
 
 .clipboard__tooltip--end {
   opacity: 1;
-  visibility: visible;
   transition: all 0.5s;
   transform: translate(0.372rem, 0);
 
