@@ -10,7 +10,7 @@ import '../../commons/styles/ds/themed-H1.scss';
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
-const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator()} styleSize="xlarge" id="patterns-coming-soon">Patterns (coming soon)</H1>
+const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="patterns-coming-soon">Patterns (coming soon)</H1>
 <p>Help users by using our patterns which provide easy action flows for specific tasks, as well as templates for common forms.
 Typical examples include collecting users&#39; address and contact details, and
 guiding users through a step-by-step application form.</p>

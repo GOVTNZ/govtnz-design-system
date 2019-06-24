@@ -275,7 +275,7 @@ const CharacterCountWithCustomRows = ({
         value={value}
         onChange={onChange}
       />
-      <StyledSpan aria-live="polite">
+      <StyledSpan aria-atomic="true" aria-live="polite">
         You have{" "}
         {remainingCharacters !== undefined ? (
           remainingCharacters

@@ -13,60 +13,60 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator()}>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" />
+var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} type="Email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock type="Email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" maxLength={10} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" maxLength={10} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="5" label="5 character width" hint="Fits a post code." name="anyNameWidth5" inputId="anyId6" hintId="anyHintId6" maxLength={5} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="5" label="5 character width" hint="Fits a post code." name="anyNameWidth5" inputId="anyId6" hintId="anyHintId6" maxLength={5} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="4" label="4 character width" hint="Fits a 4-digit group of a credit card number." name="anyNameWidth4" inputId="anyId7" hintId="anyHintId7" maxLength={4} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="4" label="4 character width" hint="Fits a 4-digit group of a credit card number." name="anyNameWidth4" inputId="anyId7" hintId="anyHintId7" maxLength={4} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="3" label="3 character width" hint="Fits a prefix for a mobile number." name="anyNameWidth3" inputId="anyId8" hintId="anyHintId8" maxLength={3} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="3" label="3 character width" hint="Fits a prefix for a mobile number." name="anyNameWidth3" inputId="anyId8" hintId="anyHintId8" maxLength={3} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
-        <ExampleSection {...onChangeGenerator()}>
-            <InputBlock {...onChangeGenerator()} width="2" label="2 character width" hint="Fits the 2-digit part of a bank account number." name="anyNameWidth2" inputId="anyId9" hintId="anyHintId9" maxLength={2} />
+        <ExampleSection {...onChangeGenerator({})}>
+            <InputBlock width="2" label="2 character width" hint="Fits the 2-digit part of a bank account number." name="anyNameWidth2" inputId="anyId9" hintId="anyHintId9" maxLength={2} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
     </Example>);
 
-    const onChangeGenerator = () => {
-      // See onChangeGenerator insertion docs.
-      // We can't know if a component takes props
-      // of 'value' and 'onChange' so we insert some
-      // and if they're not used that's ok.
-      // The reason why we have 3 is because that's the
-      // most number of inputs in a DS components, and it's 
-      // simpler to just make 3.
-
-      const [value, setValue] = useState();
-      const [value2, setValue2] = useState();
-      const [value3, setValue3] = useState();
-    
-      return {
-        value,
-        value2,
-        value3,
-        onChange: e => setValue(e.target.value),
-        onChange2: e => setValue2(e.target.value),
-        onChange3: e => setValue3(e.target.value),
-      };
-    };
+      const onChangeGenerator = (props) => {
+        // See onChangeGenerator insertion docs.
+        // We can't know if a component takes props
+        // of 'value' and 'onChange' so we insert some
+        // and if they're not used that's ok.
+        // The reason why we have 3 is because that's the
+        // most number of inputs in a DS components, and it's 
+        // simpler to just make 3.
   
-    document.addEventListener('DOMContentLoaded', () => {
-      const selector = '#root';
-      const root = document.querySelector(selector);
-      if (!root) {
-        console.error("Couldn't find app mount point ", selector);
-        return;
-      }
-      ReactDOM.hydrate(<PageContent />, root, window.afterRender);
-    });
+        const [value, setValue] = useState(props && props.value);
+        const [value2, setValue2] = useState(props && props.value2);
+        const [value3, setValue3] = useState(props && props.value3);
+      
+        return {
+          value,
+          value2,
+          value3,
+          onChange: e => setValue(e.target.value),
+          onChange2: e => setValue2(e.target.value),
+          onChange3: e => setValue3(e.target.value),
+        };
+      };
     
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = '#root';
+        const root = document.querySelector(selector);
+        if (!root) {
+          console.error("Couldn't find app mount point ", selector);
+          return;
+        }
+        ReactDOM.hydrate(<PageContent />, root, window.afterRender);
+      });
+      

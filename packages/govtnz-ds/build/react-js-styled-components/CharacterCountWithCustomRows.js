@@ -163,6 +163,7 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
     value: value,
     onChange: onChange
   }), _react["default"].createElement(StyledSpan, {
+    "aria-atomic": "true",
     "aria-live": "polite"
   }, "You have", " ", remainingCharacters !== undefined ? remainingCharacters : _react["default"].createElement(_react["default"].Fragment, null), " ", "characters remaining")));
 };

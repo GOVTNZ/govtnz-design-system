@@ -21,6 +21,7 @@
       />
 
       <span
+        aria-atomic="true"
         aria-live="polite"
         class="g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
       >

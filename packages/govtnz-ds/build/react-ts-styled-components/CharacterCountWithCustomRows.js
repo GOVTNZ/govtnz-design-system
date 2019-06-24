@@ -92,7 +92,7 @@ var CharacterCountWithCustomRows = function (_a) {
         React.createElement(StyledDiv2, null,
             React.createElement(StyledLabel, { htmlFor: id }, "Full address"),
             React.createElement(StyledTextarea, { id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength, value: value, onChange: onChange }),
-            React.createElement(StyledSpan, { "aria-live": "polite" },
+            React.createElement(StyledSpan, { "aria-atomic": "true", "aria-live": "polite" },
                 "You have",
                 " ",
                 remainingCharacters !== undefined ? (remainingCharacters) : (React.createElement(React.Fragment, null)),

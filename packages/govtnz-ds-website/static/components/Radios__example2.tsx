@@ -13,45 +13,45 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator()}>
-        <FieldsetBlock {...onChangeGenerator()} legend={<H1 {...onChangeGenerator()} styleSize="large" id="whereLiveTitle">Where do you live?</H1>}>
-            <RadioBlock {...onChangeGenerator()} label="North Island" radioId="anyRadioId3334" name="where" value="north" labelId="labelId3" />
-            <RadioBlock {...onChangeGenerator()} label="South Island" radioId="anyRadioId42344" name="where" value="south" labelId="labelId4" />
-            <RadioBlock {...onChangeGenerator()} label="Stewart Island" radioId="anyRadioId5234" name="where" value="stewart" labelId="labelId5" />
-            <RadioBlock {...onChangeGenerator()} label="Chatham Islands" radioId="anyRadioId6234" name="where" value="chatham" labelId="labelId6" />
+var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="whereLiveTitle">Where do you live?</H1>} {...onChangeGenerator({})}>
+            <RadioBlock label="North Island" radioId="anyRadioId3334" name="where" value="north" labelId="labelId3" {...onChangeGenerator({"value":"north"})}></RadioBlock>
+            <RadioBlock label="South Island" radioId="anyRadioId42344" name="where" value="south" labelId="labelId4" {...onChangeGenerator({"value":"south"})}></RadioBlock>
+            <RadioBlock label="Stewart Island" radioId="anyRadioId5234" name="where" value="stewart" labelId="labelId5" {...onChangeGenerator({"value":"stewart"})}></RadioBlock>
+            <RadioBlock label="Chatham Islands" radioId="anyRadioId6234" name="where" value="chatham" labelId="labelId6" {...onChangeGenerator({"value":"chatham"})}></RadioBlock>
         </FieldsetBlock>
     </Example>);
 
-    const onChangeGenerator = () => {
-      // See onChangeGenerator insertion docs.
-      // We can't know if a component takes props
-      // of 'value' and 'onChange' so we insert some
-      // and if they're not used that's ok.
-      // The reason why we have 3 is because that's the
-      // most number of inputs in a DS components, and it's 
-      // simpler to just make 3.
-
-      const [value, setValue] = useState();
-      const [value2, setValue2] = useState();
-      const [value3, setValue3] = useState();
-    
-      return {
-        value,
-        value2,
-        value3,
-        onChange: e => setValue(e.target.value),
-        onChange2: e => setValue2(e.target.value),
-        onChange3: e => setValue3(e.target.value),
-      };
-    };
+      const onChangeGenerator = (props) => {
+        // See onChangeGenerator insertion docs.
+        // We can't know if a component takes props
+        // of 'value' and 'onChange' so we insert some
+        // and if they're not used that's ok.
+        // The reason why we have 3 is because that's the
+        // most number of inputs in a DS components, and it's 
+        // simpler to just make 3.
   
-    document.addEventListener('DOMContentLoaded', () => {
-      const selector = '#root';
-      const root = document.querySelector(selector);
-      if (!root) {
-        console.error("Couldn't find app mount point ", selector);
-        return;
-      }
-      ReactDOM.hydrate(<PageContent />, root, window.afterRender);
-    });
+        const [value, setValue] = useState(props && props.value);
+        const [value2, setValue2] = useState(props && props.value2);
+        const [value3, setValue3] = useState(props && props.value3);
+      
+        return {
+          value,
+          value2,
+          value3,
+          onChange: e => setValue(e.target.value),
+          onChange2: e => setValue2(e.target.value),
+          onChange3: e => setValue3(e.target.value),
+        };
+      };
     
+      document.addEventListener('DOMContentLoaded', () => {
+        const selector = '#root';
+        const root = document.querySelector(selector);
+        if (!root) {
+          console.error("Couldn't find app mount point ", selector);
+          return;
+        }
+        ReactDOM.hydrate(<PageContent />, root, window.afterRender);
+      });
+      

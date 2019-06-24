@@ -25,10 +25,10 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs allow users to enter any combination of letters, numbers, or symbols to answer questions and provide data.</P>
 
-<H2 {...onChangeGenerator()} styleSize="large" id="examples">Examples</H2>
+<H2 styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <Example {...onChangeGenerator()}  code={components__Input[0]} iframeProps={{
+<ExampleContainer>
+    <Example  code={components__Input[0]} iframeProps={{
         id:"iframe_componentsInput0",
         className: "example__iframe",
         src:"/components/Input__example0.html",
@@ -37,9 +37,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
       }}></Example>
 </ExampleContainer>
 
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator()}  code={components__Input[1]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading>Error state</ExampleHeading>
+    <Example  code={components__Input[1]} iframeProps={{
         id:"iframe_componentsInput1",
         className: "example__iframe",
         src:"/components/Input__example1.html",
@@ -62,9 +62,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>Help users understand what they should enter by making each text input box the right size for the content it’s intended for.</p>
 <p>By default, the width of text inputs in the design system is fluid and will fit the full width of the container they are placed into.</p>
 <p>If you want to make the input smaller, you can either use a fixed-width input, or use the width override classes to create a smaller fluid-width input.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()}>Fixed-width text input</ExampleHeading>
-    <Example {...onChangeGenerator()}  code={components__Input[2]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading>Fixed-width text input</ExampleHeading>
+    <Example  code={components__Input[2]} iframeProps={{
         id:"iframe_componentsInput2",
         className: "example__iframe",
         src:"/components/Input__example2.html",
@@ -75,9 +75,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 
 <p>Use fixed-width inputs for content that has a specific, known length. For example, postcode inputs should be postcode-sized, and telephone number inputs should be telephone number-sized.</p>
 <p>On fixed-width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()}>Hint text</ExampleHeading>
-    <Example {...onChangeGenerator()}  code={components__Input[3]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading>Hint text</ExampleHeading>
+    <Example  code={components__Input[3]} iframeProps={{
         id:"iframe_componentsInput3",
         className: "example__iframe",
         src:"/components/Input__example3.html",
@@ -91,9 +91,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>Use the <code>autocomplete</code> attribute on text inputs to help users complete forms more quickly. This lets you specify an input’s purpose so browsers can autofill the information on a user’s behalf if they’ve entered it previously.</p>
 <p>For example, to enable autofill on a postcode field, set the <code>autocomplete</code> attribute to <code>postal-code</code>. If you are working in production and there is a relevant input purpose, you’ll need to use the <code>autocomplete</code> attribute to meet Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</p>
 <p>See how to do this in the following example.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()} white>Code</ExampleHeading>
-    <Example {...onChangeGenerator()} codeOnly code={components__Input[4]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading white>Code</ExampleHeading>
+    <Example codeOnly code={components__Input[4]} iframeProps={{
         id:"iframe_componentsInput4",
         className: "example__iframe",
         src:"/components/Input__example4.html",
@@ -108,9 +108,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>Sometimes browsers will spellcheck the information a user puts into a text input. If a user enters something that is recognised as a spelling error, sighted users will see a red line under the word.</p>
 <p>If you are asking users for information that&#39;s not appropriate to spellcheck, like a reference number, name, or email address, disable the spellcheck.</p>
 <p>To disable spellcheck, set <code>spellcheck=&quot;false&quot;</code>.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()} white>Code</ExampleHeading>
-    <Example {...onChangeGenerator()} codeOnly code={components__Input[5]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading white>Code</ExampleHeading>
+    <Example codeOnly code={components__Input[5]} iframeProps={{
         id:"iframe_componentsInput5",
         className: "example__iframe",
         src:"/components/Input__example5.html",
@@ -125,9 +125,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
 <p>However, disabled input elements can confuse users so they are best avoided, if possible.</p>
 <h2 id="error-messages">Error messages</h2>
 <p>Style error messages as shown in the following example.</p>
-<ExampleContainer {...onChangeGenerator()}>
-    <ExampleHeading {...onChangeGenerator()}>Error state</ExampleHeading>
-    <Example {...onChangeGenerator()}  code={components__Input[6]} iframeProps={{
+<ExampleContainer>
+    <ExampleHeading>Error state</ExampleHeading>
+    <Example  code={components__Input[6]} iframeProps={{
         id:"iframe_componentsInput6",
         className: "example__iframe",
         src:"/components/Input__example6.html",

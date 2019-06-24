@@ -82,7 +82,7 @@ var CharacterCountWithCustomRows = function (_a) {
         React.createElement("div", { className: "g-characterCountWithCustomRows-form-group" },
             React.createElement("label", { className: "g-characterCountWithCustomRows-label", htmlFor: id }, "Full address"),
             React.createElement("textarea", { className: "g-characterCountWithCustomRows-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], maxLength: maxLength, value: value, onChange: onChange }),
-            React.createElement("span", { "aria-live": "polite", className: "g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message" },
+            React.createElement("span", { "aria-atomic": "true", "aria-live": "polite", className: "g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message" },
                 "You have",
                 " ",
                 remainingCharacters !== undefined ? (remainingCharacters) : (React.createElement(React.Fragment, null)),

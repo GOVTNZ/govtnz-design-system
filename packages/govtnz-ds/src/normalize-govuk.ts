@@ -414,6 +414,7 @@ export const govukToMetaTemplateInput = async (
         <span
           class="g-hint g-character-count__message"
           aria-live="polite"
+          aria-atomic="true"
           >You have <mt-variable key="remainingCharacters"></mt-variable> characters remaining</span
         >
       </div>

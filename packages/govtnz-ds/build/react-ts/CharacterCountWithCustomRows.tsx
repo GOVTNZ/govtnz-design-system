@@ -163,6 +163,7 @@ const CharacterCountWithCustomRows = ({
         onChange={onChange}
       />
       <span
+        aria-atomic="true"
         aria-live="polite"
         className="g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
       >

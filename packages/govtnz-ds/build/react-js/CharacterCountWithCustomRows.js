@@ -105,6 +105,7 @@ var CharacterCountWithCustomRows = function CharacterCountWithCustomRows(_ref) {
     value: value,
     onChange: onChange
   }), _react["default"].createElement("span", {
+    "aria-atomic": "true",
     "aria-live": "polite",
     className: "g-characterCountWithCustomRows-hint g-characterCountWithCustomRows-character-count__message"
   }, "You have", " ", remainingCharacters !== undefined ? remainingCharacters : _react["default"].createElement(_react["default"].Fragment, null), " ", "characters remaining")));

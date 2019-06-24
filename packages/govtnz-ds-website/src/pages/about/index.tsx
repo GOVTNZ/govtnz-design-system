@@ -16,7 +16,7 @@ import '../../commons/styles/ds/themed-Li.scss';
 import AboutPage from '../../components/AboutPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
-const PageContent = (props) => <React.Fragment><H1 {...onChangeGenerator()} styleSize="xlarge" id="about-the-design-system-alpha-website">About the Design System alpha website</H1>
+const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="about-the-design-system-alpha-website">About the Design System alpha website</H1>
 <P styleSize="large">
     New Zealand's all-of-government (AOG) Design System alpha website provides
     a catalogue of reusable basic elements, single components, and patterns of
@@ -34,10 +34,10 @@ and how you can get involved.</p>
 <p>Since the Design System will be available for everyone in central and local
 government (and beyond) to use, we want a strong cross-government community
 backing it. You can contribute by:</p>
-<Ul {...onChangeGenerator()} bulleted>
-<Li {...onChangeGenerator()}>testing our components and patterns</Li>
-<Li {...onChangeGenerator()}>helping to develop new components and patterns</Li>
-<Li {...onChangeGenerator()}>commenting on our guidance.</Li>
+<Ul bulleted>
+<Li>testing our components and patterns</Li>
+<Li>helping to develop new components and patterns</Li>
+<Li>commenting on our guidance.</Li>
 </Ul>
 </React.Fragment>
 
