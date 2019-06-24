@@ -28,7 +28,7 @@
     "@babel/preset-typescript": "^7.3.3",
     "@govtnz/ds-common": "0.0.1",
     "@govtnz/ds-upstream": "0.0.1",
-    "@springload/metatemplate": "0.0.22",
+    "@springload/metatemplate": "0.0.23",
     "@types/node": "^10.12.19",
     "argparse": "^1.0.10",
     "compilation-templates": "0.0.1",
