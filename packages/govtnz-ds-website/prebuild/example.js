@@ -19,7 +19,8 @@ const writeExamplePage = async (
   exampleData,
   title,
   id,
-  parentUrl
+  parentUrl,
+  linkBackPageName
 ) => {
   // This writes an example HTML file so that we can iframe it.
   //
@@ -28,44 +29,43 @@ const writeExamplePage = async (
   // The Design System site has a very specific and Niche Requirement[tm]:
   //
   //   We want to have examples that use the DS components without
-  //   theming, but we also want to use DS components with theming.
+  //   theming, but we also want to use DS components with theming on
+  //   the website, and they should all use the same className so that
+  //   we are 'dogfooding' the DS.
   //
   // Unfortunately Gatsby has an 'optimisation' which means it may
   // preload CSS from other pages, even if those pages couldn't possibly
-  // be browsed to. It's not Gatsby's fault that it can't detect
-  // whether a page is potentially navigable from another page because
-  // that's a very hard problem, but we're stuck with their naive
-  // optimisation to preload CSS just in case we'd browse to it.
+  // be browsed to from the current page.
+  //
+  // It's not Gatsby's fault that it can't detect whether a page is
+  // potentially navigable from another page because that's a very hard
+  // problem (it might even be impossible -- hrefs could be computed in
+  // arbitrary ways), so we're stuck with their naive optimisation that
+  // can preload CSS from any other page.
   //
   // Normally this problem is solved in Gatsby by using distinct CSS
   // classes for different components:
   // See https://github.com/gatsbyjs/gatsby/issues/3446
+  // so that it doesn't matter if load CSS from different pages.
   //
-  // But --to repeat-- Gatsby can't have per-page CSS... there's no way of
-  // having different CSS in an iframe vs another page because Gatsby
-  // doesn't know about iframes of whether it's possible to reach one page
-  // from another -- so Gatsby can potentially just add all CSS from any
-  // page from the entire site onto other pages. In most cases this is an
-  // optimisation, but in our case it conflicts with our Niche Requirement[tm]
+  // However that would conflict with our Niche Requirement[tm]:
+  //
+  //   We want to have examples that use the DS components without
+  //   theming, but we also want to use DS components with theming on
+  //   the website, and they should all use the same className so that
+  //   we are 'dogfooding' the DS.
   //
   // So what can we do to solve this?
   //
   // Well it's very complicated, but it seems to be necessary.
   //
-  // We build pages for every example and put that under the "/static/"
-  // directory so that it's copied into "/public" as-is, and this involves
-  // building every example which might involve multiple components etc.,
-  // that means every example needs its own WebPack config that can resolve
-  // imports and stuff like that.
+  // We build HTML and JS files for every example and put that under the
+  // "/static/" directory so that it's copied into "/public/" as-is.
+  // Every example could involve multiple components etc., that means
+  // every example needs bundling to resolve imports and stuff like that.
+  // That means we need Webpack builds for each example.
   //
-  // So that's what this function is doing. It's working around Gatsby's inability
-  // to have distinct pages that are COMPLETELY separate from others with the same
-  // css classes...
-  //
-  // ...and it's not even a bug of Gatsby, we just have Niche Requirements[tm] that
-  // Gatsby doesn't support.
-  //
-  // So now you know.
+  // So that's what we're doing here
 
   const tsxTemplatePath = path.resolve(
     __dirname,
@@ -200,9 +200,9 @@ const writeExamplePage = async (
       ],
     },
     externals: {
-      // Use external version of React so that every bundle
+      // Use external version of React/ReactDOM so that every bundle
       // doesn't include it's own copy because that would be
-      // very big (a copy of React with every Example)
+      // very big bundle
       react: 'React',
       'react-dom': 'ReactDOM',
     },
@@ -318,6 +318,7 @@ const writeExamplePage = async (
     parentUrl,
     scriptUrl,
     serverExampleHTML,
+    linkBackPageName,
   }).replace('@css', cssImports);
 
   const htmlRelativePath = `${exampleRelativePagePath}.html`;
@@ -430,8 +431,6 @@ const addOnStateChanged = async html => {
 
   return newHTML;
 };
-
-let previousExampleHeights = []; // used to sanity check the height .. if it doesn't vary we probably have a bug
 
 const getExampleHeight = async srcPath => {
   // This function starts up Chromium and measures the

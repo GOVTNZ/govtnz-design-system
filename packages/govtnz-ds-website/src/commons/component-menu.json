@@ -7,7 +7,9 @@
       { "id": "Radios", "name": "Radio buttons", "stable": true },
       { "id": "Input", "name": "Text input", "stable": true },
       { "id": "Checkboxes", "name": "Checkboxes", "stable": true },
-      { "id": "Select", "name": "Select", "stable": true }
+      { "id": "Select", "name": "Select", "stable": true },
+      { "id": "Date", "name": "Date input", "stable": true },
+      { "id": "Button", "name": "Button", "stable": true }
     ]
   },
   {
@@ -15,13 +17,11 @@
     "stable": false,
     "items": [
       { "id": "Textarea", "name": "Textarea", "stable": false },
-      { "id": "Date", "name": "Date input", "stable": false },
       { "id": "Breadcrumbs", "name": "Breadcrumbs", "stable": false },
       { "id": "CharacterCount", "name": "Character count", "stable": false },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "BackLink", "name": "Back link", "stable": false },
-      { "id": "FileUpload", "name": "File upload", "stable": false },
-      { "id": "Button", "name": "Button", "stable": false }
+      { "id": "FileUpload", "name": "File upload", "stable": false }
     ]
   }
 ]

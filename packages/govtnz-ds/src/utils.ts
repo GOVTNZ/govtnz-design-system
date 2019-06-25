@@ -5,7 +5,9 @@ import cssParser from 'postcss-safe-parser';
 import { CSSVariablePattern } from '@springload/metatemplate';
 import { isEqual } from 'lodash';
 
-export const safeMergeCssVariables = (...cssVariableArrays: CSSVariablePattern[][]): CSSVariablePattern[] => {
+export const safeMergeCssVariables = (
+  ...cssVariableArrays: CSSVariablePattern[][]
+): CSSVariablePattern[] => {
   const usedIds: string[] = [];
   const newArr: CSSVariablePattern[] = [];
 
@@ -15,10 +17,14 @@ export const safeMergeCssVariables = (...cssVariableArrays: CSSVariablePattern[]
       for (let x = 0; x < cssVariableArray.length; x++) {
         const cssVariable = cssVariableArray[x];
         if (usedIds.includes(cssVariable.id)) {
-          const previousCssVariableWithSameId = newArr.find(cssVar => cssVar.id === cssVariable.id);
+          const previousCssVariableWithSameId = newArr.find(
+            cssVar => cssVar.id === cssVariable.id
+          );
           if (!isEqual(previousCssVariableWithSameId, cssVariable)) {
             throw new Error(
-              `Can't merge CSSVariable ${cssVariable.id} because different values. ${JSON.stringify(
+              `Can't merge CSSVariable ${
+                cssVariable.id
+              } because different values. ${JSON.stringify(
                 previousCssVariableWithSameId
               )} !== ${JSON.stringify(cssVariable)}`
             );
@@ -108,7 +114,9 @@ const mTTimingPath = path.join(os.tmpdir(), 'metatemplate-timings.json');
 export const getTimingBenchmarks = async (): Promise<TimingsData> => {
   let timings: TimingsData | undefined;
   try {
-    const timingsData: string = (await fs.promises.readFile(mTTimingPath, { encoding: 'utf-8' })).toString();
+    const timingsData: string = (await fs.promises.readFile(mTTimingPath, {
+      encoding: 'utf-8'
+    })).toString();
     if (timingsData && timingsData.includes('{')) {
       timings = JSON.parse(timingsData);
     } else {
@@ -124,4 +132,65 @@ export const getTimingBenchmarks = async (): Promise<TimingsData> => {
 export const setTimingBenchmarks = async (timings: TimingsData) => {
   const timingsJSON = JSON.stringify(timings, null, 2);
   await fs.promises.writeFile(mTTimingPath, timingsJSON, { encoding: 'utf-8' });
+};
+
+const getLocalTemplateDefinitionData = async (
+  source: string,
+  version: 'any' | string
+): Promise<TemplatesDefinition | undefined> => {
+  const defPath = path.resolve(
+    __dirname,
+    'template-definitions',
+    source,
+    version,
+    'definitions.json'
+  );
+  let data;
+  try {
+    data = (await fs.promises.readFile(defPath, {
+      encoding: 'utf-8'
+    })).toString();
+  } catch (e) {
+    // pass
+  }
+  return data ? JSON.parse(data) : undefined;
+};
+
+export const getLocalTemplateDefinitions = async (
+  source: string,
+  version: string,
+  id: string
+): Promise<TemplateDefinition> => {
+  const anyDef = await getLocalTemplateDefinitionData(source, 'any');
+
+  const versionDef = await getLocalTemplateDefinitionData(source, version);
+
+  const versionUsed = versionDef && versionDef.templates[id] ? version : 'any';
+  const def =
+    versionUsed === 'any'
+      ? anyDef && anyDef.templates[id]
+      : versionDef && versionDef.templates[id];
+  if (def === undefined) {
+    return;
+  }
+  def.path = `${__dirname}/template-definitions/${source}/${versionUsed}/${
+    def.filename
+  }`;
+  def.html = (await fs.promises.readFile(def.path as string, {
+    encoding: 'utf-8'
+  })).toString();
+  return def;
+};
+
+type TemplatesDefinition = {
+  templates: {
+    [key: string]: TemplateDefinition;
+  };
+};
+
+type TemplateDefinition = {
+  filename: string;
+  path?: string;
+  html?: string;
+  id?: string;
 };

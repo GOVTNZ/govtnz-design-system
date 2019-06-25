@@ -5,6 +5,12 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "dateInput", {
+  enumerable: true,
+  get: function get() {
+    return _DateInput["default"];
+  }
+});
 Object.defineProperty(exports, "a", {
   enumerable: true,
   get: function get() {
@@ -395,18 +401,6 @@ Object.defineProperty(exports, "warningText", {
     return _WarningText["default"];
   }
 });
-Object.defineProperty(exports, "button", {
-  enumerable: true,
-  get: function get() {
-    return _Button["default"];
-  }
-});
-Object.defineProperty(exports, "dateInput", {
-  enumerable: true,
-  get: function get() {
-    return _DateInput["default"];
-  }
-});
 Object.defineProperty(exports, "flexColumn", {
   enumerable: true,
   get: function get() {
@@ -437,6 +431,8 @@ Object.defineProperty(exports, "footerWrapper", {
     return _FooterWrapper["default"];
   }
 });
+
+var _DateInput = _interopRequireDefault(require("./DateInput"));
 
 var _A = _interopRequireDefault(require("./A"));
 
@@ -567,10 +563,6 @@ var _Textarea = _interopRequireDefault(require("./Textarea"));
 var _Ul = _interopRequireDefault(require("./Ul"));
 
 var _WarningText = _interopRequireDefault(require("./WarningText"));
-
-var _Button = _interopRequireDefault(require("./Button"));
-
-var _DateInput = _interopRequireDefault(require("./DateInput"));
 
 var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
 

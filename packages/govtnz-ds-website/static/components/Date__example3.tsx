@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Error state #2 (Date input)" {...onChangeGenerator({})}>
         <DateInput id="passport-issued" hintId="passport-issued-hint" errorId="passport-issued-error" dayId="passport-issued-day" monthId="passport-issued-month" yearId="passport-issued-year" label={<H1 styleSize="large" marginBottom0>When was your passport issued?</H1>} hint="For example, 12 11 2007" value="6" value2="3" value3="2076" error="The date your passport was issued must be in the past" {...onChangeGenerator({"value":"6","value2":"3","value3":"2076"})}></DateInput>
     </Example>);
 

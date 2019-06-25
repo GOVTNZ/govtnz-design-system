@@ -1,6 +1,7 @@
 // This file imports every CSS file.
 // Feel free to fork and modify this file to activate/deactivate particular components.
 
+@import "./DateInput";
 @import "./A";
 @import "./BackLinkWithCustomText";
 @import "./BreadcrumbsWithLastBreadcrumbAsCurrentPage";
@@ -66,8 +67,6 @@
 @import "./Textarea";
 @import "./Ul";
 @import "./WarningText";
-@import "./Button";
-@import "./DateInput";
 @import "./FlexColumn";
 @import "./FlexContainer";
 @import "./FlexRow";

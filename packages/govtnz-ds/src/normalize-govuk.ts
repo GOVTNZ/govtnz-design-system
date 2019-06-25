@@ -10,7 +10,13 @@ import {
   MetaTemplateDef,
   toId
 } from './normalize';
-import { gc, cssPropertiesToObject, splitSelectors, AnyObject } from './utils';
+import {
+  gc,
+  cssPropertiesToObject,
+  splitSelectors,
+  AnyObject,
+  getLocalTemplateDefinitions
+} from './utils';
 import svgToDataURL from 'svg-to-dataurl';
 
 const ONE_REM_IN_PIXELS = 16; // in our DS
@@ -171,31 +177,6 @@ export const govukToMetaTemplateInput = async (
       html = `<a class="g-back-link" href="#"><mt-variable key="children">Example text</mt-variable></a>`;
       break;
     }
-
-    case 'button':
-    case 'button__disabled':
-    case 'button__with-active-state':
-    case 'button__with-focus-state':
-    case 'button__with-hover-state':
-    case 'button__secondary':
-    case 'button__warning': {
-      id = 'button';
-
-      // Dev note: this button had
-      //    aria-disabled="{{ disabled!?: true }}"
-      // but as per DS-145 we removed it
-      html = `<button
-          class="g-button {{ disabled!?: g-button--disabled }} {{ level: g-button--secondary as secondary | g-button--warning as warning }}"
-          type="submit"
-          disabled="{{ disabled!?: true }}"
-        >
-          <mt-variable key="children">
-            Example text
-          </mt-variable>
-        </button>`;
-      break;
-    }
-
     case 'date-input':
     case 'date-input__with-autocomplete-values':
     case 'date-input__with-errors': {
@@ -489,7 +470,7 @@ export const govukToMetaTemplateInput = async (
         html: `<input class="g-checkboxes__input {{ fakeFocus?: :focus }}" id="checkboxId" type="checkbox" aria-describedby="hintId">`
       });
 
-      id = '';
+      id = ''; // delete it
 
       // id = 'checkboxes';
       // html = `<div class="g-checkboxes {{ inline!?: g-checkboxes--inline }}"><mt-variable key="children">Checkbox components</mt-variable></div>`;
@@ -503,6 +484,14 @@ export const govukToMetaTemplateInput = async (
     case 'caption-l':
     case 'caption-xl': {
       html = `<span class="g-${id}"><mt-variable key="children">Example text</mt-variable></span>`;
+      break;
+    }
+    default: {
+      const def = await getLocalTemplateDefinitions('govuk', semVer, id);
+      if (def) {
+        html = def.html;
+        id = def.id;
+      }
       break;
     }
   }
@@ -544,6 +533,7 @@ export const govukToMetaTemplateInput = async (
       message,
       additionalPrefixesToBypassNamespacing
     });
+    ``;
   });
 };
 

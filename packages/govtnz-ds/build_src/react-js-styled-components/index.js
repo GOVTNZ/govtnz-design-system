@@ -1,5 +1,6 @@
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 
+export const DateInput = () => import("./DateInput");
 export const A = () => import("./A");
 export const BackLinkWithCustomText = () => import("./BackLinkWithCustomText");
 export const BreadcrumbsWithLastBreadcrumbAsCurrentPage = () => import("./BreadcrumbsWithLastBreadcrumbAsCurrentPage");
@@ -65,8 +66,6 @@ export const TextareaWithOptionalFormGroupClasses = () => import("./TextareaWith
 export const Textarea = () => import("./Textarea");
 export const Ul = () => import("./Ul");
 export const WarningText = () => import("./WarningText");
-export const Button = () => import("./Button");
-export const DateInput = () => import("./DateInput");
 export const FlexColumn = () => import("./FlexColumn");
 export const FlexContainer = () => import("./FlexContainer");
 export const FlexRow = () => import("./FlexRow");

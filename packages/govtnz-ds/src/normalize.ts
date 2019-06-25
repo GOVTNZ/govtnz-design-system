@@ -395,17 +395,6 @@ export const setCSSValues = (
               : defaultResponse) +
             (node.important ? ' !important' : '') +
             ';';
-        } else {
-          console.log('REMOVED');
-          console.log(
-            node.prop +
-              node.raws.between +
-              (callbackResponse !== undefined
-                ? callbackResponse
-                : defaultResponse) +
-              (node.important ? ' !important' : '') +
-              ';'
-          );
         }
         break;
       }

@@ -8,6 +8,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DateInput = function () { return Promise.resolve().then(function () { return __importStar(require("./DateInput")); }); };
 exports.A = function () { return Promise.resolve().then(function () { return __importStar(require("./A")); }); };
 exports.BackLinkWithCustomText = function () { return Promise.resolve().then(function () { return __importStar(require("./BackLinkWithCustomText")); }); };
 exports.BreadcrumbsWithLastBreadcrumbAsCurrentPage = function () { return Promise.resolve().then(function () { return __importStar(require("./BreadcrumbsWithLastBreadcrumbAsCurrentPage")); }); };
@@ -73,8 +74,6 @@ exports.TextareaWithOptionalFormGroupClasses = function () { return Promise.reso
 exports.Textarea = function () { return Promise.resolve().then(function () { return __importStar(require("./Textarea")); }); };
 exports.Ul = function () { return Promise.resolve().then(function () { return __importStar(require("./Ul")); }); };
 exports.WarningText = function () { return Promise.resolve().then(function () { return __importStar(require("./WarningText")); }); };
-exports.Button = function () { return Promise.resolve().then(function () { return __importStar(require("./Button")); }); };
-exports.DateInput = function () { return Promise.resolve().then(function () { return __importStar(require("./DateInput")); }); };
 exports.FlexColumn = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexColumn")); }); };
 exports.FlexContainer = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexContainer")); }); };
 exports.FlexRow = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexRow")); }); };

@@ -95,7 +95,7 @@ See how to do this in the following example.
 
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
-    <Example codeOnly title="Example: Error state #2 (Text input)">
+    <Example codeOnly>
         <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="Postal Code" />
     </Example>
 </ExampleContainer>
@@ -133,7 +133,7 @@ Style error messages as shown in the following example.
 
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
-    <Example>
+    <Example title="Example: Error state #2 (Text input)">
         <InputBlock type="Text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>

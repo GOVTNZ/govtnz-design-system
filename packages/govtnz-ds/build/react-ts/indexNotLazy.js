@@ -1,6 +1,8 @@
 "use strict";
 // DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
 Object.defineProperty(exports, "__esModule", { value: true });
+var DateInput_1 = require("./DateInput");
+exports.dateInput = DateInput_1.default;
 var A_1 = require("./A");
 exports.a = A_1.default;
 var BackLinkWithCustomText_1 = require("./BackLinkWithCustomText");
@@ -131,10 +133,6 @@ var Ul_1 = require("./Ul");
 exports.ul = Ul_1.default;
 var WarningText_1 = require("./WarningText");
 exports.warningText = WarningText_1.default;
-var Button_1 = require("./Button");
-exports.button = Button_1.default;
-var DateInput_1 = require("./DateInput");
-exports.dateInput = DateInput_1.default;
 var FlexColumn_1 = require("./FlexColumn");
 exports.flexColumn = FlexColumn_1.default;
 var FlexContainer_1 = require("./FlexContainer");

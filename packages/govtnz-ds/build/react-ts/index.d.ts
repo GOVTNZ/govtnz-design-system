@@ -1,3 +1,4 @@
+export declare const DateInput: () => Promise<typeof import("./DateInput")>;
 export declare const A: () => Promise<typeof import("./A")>;
 export declare const BackLinkWithCustomText: () => Promise<typeof import("./BackLinkWithCustomText")>;
 export declare const BreadcrumbsWithLastBreadcrumbAsCurrentPage: () => Promise<typeof import("./BreadcrumbsWithLastBreadcrumbAsCurrentPage")>;
@@ -63,8 +64,6 @@ export declare const TextareaWithOptionalFormGroupClasses: () => Promise<typeof 
 export declare const Textarea: () => Promise<typeof import("./Textarea")>;
 export declare const Ul: () => Promise<typeof import("./Ul")>;
 export declare const WarningText: () => Promise<typeof import("./WarningText")>;
-export declare const Button: () => Promise<typeof import("./Button")>;
-export declare const DateInput: () => Promise<typeof import("./DateInput")>;
 export declare const FlexColumn: () => Promise<typeof import("./FlexColumn")>;
 export declare const FlexContainer: () => Promise<typeof import("./FlexContainer")>;
 export declare const FlexRow: () => Promise<typeof import("./FlexRow")>;

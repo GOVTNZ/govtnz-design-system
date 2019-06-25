@@ -1,3 +1,4 @@
+export { default as dateInput } from "./DateInput";
 export { default as a } from "./A";
 export { default as backLinkWithCustomText } from "./BackLinkWithCustomText";
 export { default as breadcrumbsWithLastBreadcrumbAsCurrentPage } from "./BreadcrumbsWithLastBreadcrumbAsCurrentPage";
@@ -63,8 +64,6 @@ export { default as textareaWithOptionalFormGroupClasses } from "./TextareaWithO
 export { default as textarea } from "./Textarea";
 export { default as ul } from "./Ul";
 export { default as warningText } from "./WarningText";
-export { default as button } from "./Button";
-export { default as dateInput } from "./DateInput";
 export { default as flexColumn } from "./FlexColumn";
 export { default as flexContainer } from "./FlexContainer";
 export { default as flexRow } from "./FlexRow";

@@ -64,7 +64,7 @@ To enable this functionality, set the `autocomplete` attribute on the fields to 
 
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
-    <Example codeOnly title="Example: Error state #2 (Date input)">
+    <Example codeOnly>
         <DateInput
             id="bday"
             hintId="bday-hint"
@@ -86,7 +86,7 @@ Style error messages as shown in the following example.
 
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
-    <Example>
+    <Example title="Example: Error state #2 (Date input)">
         <DateInput
             id="passport-issued"
             hintId="passport-issued-hint"
