@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';
+import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example codeOnly title="Example: Error state #2 (Date input)" {...onChangeGenerator({})}>
-        <DateInput id="bday" hintId="bday-hint" dayId="bday-day" monthId="bday-month" yearId="bday-year" label="What is your date of birth?" hint="For example, 31 3 1980" autoComplete="Birthday: Day" autoComplete2="Birthday: Month" autoComplete3="Birthday: Year" {...onChangeGenerator({})}></DateInput>
+        <DateInput id="bday" hintId="bday-hint" dayId="bday-day" monthId="bday-month" yearId="bday-year" label={<H1 styleSize="large" marginBottom0>What is your date of birth?</H1>} hint="For example, 31 3 1980" autoComplete="Birthday: Day" autoComplete2="Birthday: Month" autoComplete3="Birthday: Year" {...onChangeGenerator({})}></DateInput>
     </Example>);
 
       const onChangeGenerator = (props) => {

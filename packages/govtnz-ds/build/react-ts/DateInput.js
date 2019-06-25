@@ -181,8 +181,7 @@ var DateInput = function (_a) {
         React.createElement("fieldset", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, className: "g-dateInput-fieldset", role: "group" },
-            React.createElement("legend", { className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl" },
-                React.createElement("h1", { className: "g-dateInput-fieldset__heading" }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label")))),
+            React.createElement("legend", { className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl" }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label"))),
             React.createElement("span", { className: "g-dateInput-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example hint"))),
             error !== undefined ? (React.createElement(React.Fragment, null,
                 React.createElement("span", { className: "g-dateInput-error-message", id: errorId },

@@ -11,13 +11,15 @@ const constants = {
   }
 };
 
-const H3 = ({ styleSize, marginBottom8, id, children }) => (
+const H3 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
   <h3
     className={`${
       constants.styleSize[styleSize] !== undefined
         ? constants.styleSize[styleSize]
         : ""
-    }${marginBottom8 ? " g-heading-mb-8" : ""}`}
+    }${marginBottom8 ? " g-heading-mb-8" : ""}${
+      marginBottom0 ? " g-heading-mb-0" : ""
+    }`}
     id={id}
   >
     {children !== undefined ? (

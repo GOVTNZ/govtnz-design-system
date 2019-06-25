@@ -333,11 +333,21 @@ const StyledH3 = styled.h3`
     styled.css`
       margin-bottom: 8px;
     `}
-  margin-top: 0px;
+  ${props =>
+    props.marginBottom0 &&
+    styled.css`
+      margin-bottom: 0px;
+    `}
+margin-top: 0px;
 `;
 
-const H3 = ({ styleSize, marginBottom8, id, children }) => (
-  <StyledH3 styleSize={styleSize} marginBottom8={marginBottom8} id={id}>
+const H3 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
+  <StyledH3
+    styleSize={styleSize}
+    marginBottom8={marginBottom8}
+    marginBottom0={marginBottom0}
+    id={id}
+  >
     {children !== undefined ? (
       children
     ) : (

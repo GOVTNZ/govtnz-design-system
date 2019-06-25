@@ -218,13 +218,11 @@ const DateInput = ({
       role="group"
     >
       <legend className="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl">
-        <h1 className="g-dateInput-fieldset__heading">
-          {label !== undefined ? (
-            label
-          ) : (
-            <React.Fragment>Example label</React.Fragment>
-          )}
-        </h1>
+        {label !== undefined ? (
+          label
+        ) : (
+          <React.Fragment>Example label</React.Fragment>
+        )}
       </legend>
       <span className="g-dateInput-hint" id={hintId}>
         {hint !== undefined ? (

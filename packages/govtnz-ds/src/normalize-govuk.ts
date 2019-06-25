@@ -97,8 +97,8 @@ export const removeGovUkIdentifiers = (data: string) => {
   const nonUk = data
     .replace(/govuk-/gi, 'g-') // we don't use their namespace...
     .replace(/govuk-/gi, 'g-') // we don't use their namespace...
-    .replace(/\\?["']nta\\?["'],/gi, '') // ...nor their fonts... in a list
-    .replace(/\\?["']nta\\?["'];/gi, '"Name";') // or on their own
+    .replace(/\\?["']nta\\?["'],/gi, '') // ...nor their fonts in a list...
+    .replace(/\\?["']nta\\?["'];/gi, '"Name";') // ...or on their own
     .replace(/GOV\.UK/gi, 'Govt.NZ')
     .replace(/£/g, '$');
 
@@ -208,9 +208,7 @@ export const govukToMetaTemplateInput = async (
             role="group"
           >
             <legend class="g-fieldset__legend g-fieldset__legend--xl">
-              <h1 class="g-fieldset__heading">
-                <mt-variable key="label">Example label</mt-variable>
-              </h1>
+              <mt-variable key="label">Example label</mt-variable>
             </legend>
             <span
               id="hintId"
@@ -309,8 +307,7 @@ export const govukToMetaTemplateInput = async (
     }
     case 'heading--style-size': {
       id = 'H1';
-      html =
-        '<h1 class="{{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}" id="id"><mt-variable key="children">Example text</mt-variable></h1>';
+      html = `<h1 class="{{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}" id="id"><mt-variable key="children">Example text</mt-variable></h1>`;
 
       additionalTemplates = [2, 3, 4, 5, 6].map(headingLevel => ({
         id: `H${headingLevel}`,
@@ -973,7 +970,8 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
   const headingXXS = headingS.replace(/\.g-heading-s/gi, '.g-heading-xxs');
   // ... which we'll subsequently replace in replaceCSS
   css += headingXS + headingXXS;
-  css += '.g-heading-mb-8 { margin-bottom: 8px; }'; // Sometimes in code such as the examples
+  css += '.g-heading-mb-8 { margin-bottom: 8px; }'; // Sometimes used in code such as the examples
+  css += '.g-heading-mb-0 { margin-bottom: 0px; }'; // Sometimes used in code such as the examples
   css = css.replace(/\.g-radios__divider/gi, '.g-form-divider'); // GovUK includes a radio-specific divider which we can generalise
   css += '.g-select::-ms-expand { display: none; }'; // https://stackoverflow.com/a/15933790
   css += '.g-hint > * { margin-top: 0px; }';

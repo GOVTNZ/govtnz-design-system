@@ -92,13 +92,6 @@ const StyledLegend = styled.legend`
   margin-top: 0px;
 `;
 
-const StyledH1 = styled.h1`
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-  margin-top: 0px;
-`;
-
 const StyledSpan = styled.span`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -689,13 +682,11 @@ const DateInput = ({
       role="group"
     >
       <StyledLegend>
-        <StyledH1>
-          {label !== undefined ? (
-            label
-          ) : (
-            <React.Fragment>Example label</React.Fragment>
-          )}
-        </StyledH1>
+        {label !== undefined ? (
+          label
+        ) : (
+          <React.Fragment>Example label</React.Fragment>
+        )}
       </StyledLegend>
       <StyledSpan id={hintId}>
         {hint !== undefined ? (

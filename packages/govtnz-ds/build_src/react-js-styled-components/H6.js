@@ -333,11 +333,21 @@ const StyledH6 = styled.h6`
     styled.css`
       margin-bottom: 8px;
     `}
-  margin-top: 0px;
+  ${props =>
+    props.marginBottom0 &&
+    styled.css`
+      margin-bottom: 0px;
+    `}
+margin-top: 0px;
 `;
 
-const H6 = ({ styleSize, marginBottom8, id, children }) => (
-  <StyledH6 styleSize={styleSize} marginBottom8={marginBottom8} id={id}>
+const H6 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
+  <StyledH6
+    styleSize={styleSize}
+    marginBottom8={marginBottom8}
+    marginBottom0={marginBottom0}
+    id={id}
+  >
     {children !== undefined ? (
       children
     ) : (

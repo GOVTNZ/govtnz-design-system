@@ -219,9 +219,7 @@ var DateInput = function DateInput(_ref) {
     role: "group"
   }, _react["default"].createElement("legend", {
     className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
-  }, _react["default"].createElement("h1", {
-    className: "g-dateInput-fieldset__heading"
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label"))), _react["default"].createElement("span", {
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label")), _react["default"].createElement("span", {
     className: "g-dateInput-hint",
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {

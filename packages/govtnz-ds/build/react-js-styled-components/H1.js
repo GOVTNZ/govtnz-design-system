@@ -13,6 +13,16 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject39() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      margin-bottom: 0px;\n    "]);
+
+  _templateObject39 = function _templateObject39() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject38() {
   var data = (0, _taggedTemplateLiteral2["default"])(["\n      margin-bottom: 8px;\n    "]);
 
@@ -384,7 +394,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  padding-top: 15px;\n  @media (min-width: 40.0625em) {\n    padding-top: 20px;\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  padding-top: 15px;\n  @media (min-width: 40.0625em) {\n    padding-top: 20px;\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  padding-top: 5px;\n  @media (min-width: 40.0625em) {\n    padding-top: 10px;\n  }\n  ", "\n  ", "\nmargin-top: 0px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -467,16 +477,20 @@ var StyledH1 = _styledComponents["default"].h1(_templateObject(), function (prop
   return props.styleSize === "xxsmall" && _styledComponents["default"].css(_templateObject37());
 }, function (props) {
   return props.marginBottom8 && _styledComponents["default"].css(_templateObject38());
+}, function (props) {
+  return props.marginBottom0 && _styledComponents["default"].css(_templateObject39());
 });
 
 var H1 = function H1(_ref) {
   var styleSize = _ref.styleSize,
       marginBottom8 = _ref.marginBottom8,
+      marginBottom0 = _ref.marginBottom0,
       id = _ref.id,
       children = _ref.children;
   return _react["default"].createElement(StyledH1, {
     styleSize: styleSize,
     marginBottom8: marginBottom8,
+    marginBottom0: marginBottom0,
     id: id
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };

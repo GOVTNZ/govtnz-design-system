@@ -333,11 +333,21 @@ const StyledH2 = styled.h2`
     styled.css`
       margin-bottom: 8px;
     `}
-  margin-top: 0px;
+  ${props =>
+    props.marginBottom0 &&
+    styled.css`
+      margin-bottom: 0px;
+    `}
+margin-top: 0px;
 `;
 
-const H2 = ({ styleSize, marginBottom8, id, children }) => (
-  <StyledH2 styleSize={styleSize} marginBottom8={marginBottom8} id={id}>
+const H2 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
+  <StyledH2
+    styleSize={styleSize}
+    marginBottom8={marginBottom8}
+    marginBottom0={marginBottom0}
+    id={id}
+  >
     {children !== undefined ? (
       children
     ) : (

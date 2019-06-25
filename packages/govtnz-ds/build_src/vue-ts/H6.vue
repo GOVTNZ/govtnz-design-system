@@ -30,6 +30,7 @@ export default Vue.extend({
       required: true
     },
     marginBottom8: { type: Boolean, default: false, required: false },
+    marginBottom0: { type: Boolean, default: false, required: false },
     id: { type: String, required: false },
     children: { required: false, default: "Example text" }
   },
@@ -38,7 +39,9 @@ export default Vue.extend({
       return (
         (constants[this.styleSize] !== undefined
           ? ` ${constants[this.styleSize]}`
-          : "") + (this.marginBottom8 ? " g-heading-mb-8" : "")
+          : "") +
+        (this.marginBottom8 ? " g-heading-mb-8" : "") +
+        (this.marginBottom0 ? " g-heading-mb-0" : "")
       );
     }
   }
@@ -354,6 +357,9 @@ export default Vue.extend({
 }
 .g-heading-mb-8 {
   margin-bottom: 8px;
+}
+.g-heading-mb-0 {
+  margin-bottom: 0px;
 }
 .g-hint > * {
   margin-top: 0px;

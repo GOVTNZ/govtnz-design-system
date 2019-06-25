@@ -3,6 +3,7 @@ import * as React from "react";
 type Props = {
   styleSize: "xlarge" | "large" | "medium" | "small" | "xsmall" | "xxsmall";
   marginBottom8?: boolean | undefined;
+  marginBottom0?: boolean | undefined;
   id?: string | undefined;
   children?: React.ReactNode;
 };
@@ -18,13 +19,21 @@ const constants = {
   }
 };
 
-const H5 = ({ styleSize, marginBottom8, id, children }: Props) => (
+const H5 = ({
+  styleSize,
+  marginBottom8,
+  marginBottom0,
+  id,
+  children
+}: Props) => (
   <h5
     className={`${
       constants.styleSize[styleSize] !== undefined
         ? constants.styleSize[styleSize]
         : ""
-    }${marginBottom8 ? " g-heading-mb-8" : ""}`}
+    }${marginBottom8 ? " g-heading-mb-8" : ""}${
+      marginBottom0 ? " g-heading-mb-0" : ""
+    }`}
     id={id}
   >
     {children !== undefined ? (

@@ -159,12 +159,6 @@
   }
 }
 
-.g-dateInput-fieldset__heading {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 .g-dateInput-hint {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);

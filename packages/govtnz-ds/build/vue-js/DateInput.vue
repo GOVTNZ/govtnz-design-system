@@ -8,9 +8,7 @@
       <legend
         class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
       >
-        <h1 class="g-dateInput-fieldset__heading">
-          <slot name="label"></slot>
-        </h1>
+        <slot name="label"></slot>
       </legend>
 
       <span class="g-dateInput-hint" v-bind:id="hintId">
@@ -679,11 +677,6 @@ export default Vue.extend({
     font-size: 32pt;
     line-height: 1.15;
   }
-}
-.g-dateInput-fieldset__heading {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
 }
 .g-dateInput-hint {
   font-family: Arial, sans-serif;

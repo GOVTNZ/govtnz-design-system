@@ -1,10 +1,8 @@
 <div class="g-dateInput-form-group<% if $error %>  g-dateInput-form-group--error<% end_if %>"> 
           <fieldset<% if $hintId && $errorId %> aria-describedby="{$hintId} {$errorId}"<% end_if %> class="g-dateInput-fieldset" role="group"> 
             <legend class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"> 
-              <h1 class="g-dateInput-fieldset__heading"> 
-                {$label}
+              {$label}
 
-              </h1> 
             </legend> 
             <span class="g-dateInput-hint"<% if $hintId %> id="{$hintId}"<% end_if %>> 
               {$hint}

@@ -4,11 +4,14 @@ import * as styled from "styled-components";
 type Props = {
   styleSize: "xlarge" | "large" | "medium" | "small" | "xsmall" | "xxsmall";
   marginBottom8?: boolean | undefined;
+  marginBottom0?: boolean | undefined;
   id?: string | undefined;
   children?: React.ReactNode;
 };
 
-const StyledH3 = styled.h3<Pick<Props, "styleSize" | "marginBottom8">>`
+const StyledH3 = styled.h3<
+  Pick<Props, "styleSize" | "marginBottom8" | "marginBottom0">
+>`
   ${props =>
     props.styleSize === "xlarge" &&
     styled.css`
@@ -340,11 +343,27 @@ const StyledH3 = styled.h3<Pick<Props, "styleSize" | "marginBottom8">>`
     styled.css`
       margin-bottom: 8px;
     `}
-  margin-top: 0px;
+  ${props =>
+    props.marginBottom0 &&
+    styled.css`
+      margin-bottom: 0px;
+    `}
+margin-top: 0px;
 `;
 
-const H3 = ({ styleSize, marginBottom8, id, children }: Props) => (
-  <StyledH3 styleSize={styleSize} marginBottom8={marginBottom8} id={id}>
+const H3 = ({
+  styleSize,
+  marginBottom8,
+  marginBottom0,
+  id,
+  children
+}: Props) => (
+  <StyledH3
+    styleSize={styleSize}
+    marginBottom8={marginBottom8}
+    marginBottom0={marginBottom0}
+    id={id}
+  >
     {children !== undefined ? (
       children
     ) : (

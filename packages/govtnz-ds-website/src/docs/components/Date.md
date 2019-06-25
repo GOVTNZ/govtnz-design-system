@@ -14,7 +14,7 @@ Interact with each example to see how it works.
             dayId="passport-issued-day"
             monthId="passport-issued-month"
             yearId="passport-issued-year"
-            label="When was your passport issued?"
+            label={<H1 styleSize="large" marginBottom0>When was your passport issued?</H1>}
             hint="For example, 12 11 2007"
         />
     </Example>
@@ -30,7 +30,7 @@ Interact with each example to see how it works.
             dayId="passport-issued-day"
             monthId="passport-issued-month"
             yearId="passport-issued-year"
-            label="When was your passport issued?"
+            label={<H1 styleSize="large" marginBottom0>When was your passport issued?</H1>}
             hint="For example, 12 11 2007"
             value="6"
             value2="3"
@@ -71,7 +71,7 @@ To enable this functionality, set the `autocomplete` attribute on the fields to 
             dayId="bday-day"
             monthId="bday-month"
             yearId="bday-year"
-            label="What is your date of birth?"
+            label={<H1 styleSize="large" marginBottom0>What is your date of birth?</H1>}
             hint="For example, 31 3 1980"
             autoComplete="Birthday: Day"
             autoComplete2="Birthday: Month"
@@ -94,7 +94,7 @@ Style error messages as shown in the following example.
             dayId="passport-issued-day"
             monthId="passport-issued-month"
             yearId="passport-issued-year"
-            label="When was your passport issued?"
+            label={<H1 styleSize="large" marginBottom0>When was your passport issued?</H1>}
             hint="For example, 12 11 2007"
             value="6"
             value2="3"
