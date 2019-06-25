@@ -23,7 +23,8 @@ export default Vue.extend({
   margin-top: 20px;
   margin-bottom: 20px;
   clear: both;
-  border-left: 10px solid #bfc1c3;
+  border-left: 8px solid #23cba5;
+  background: #f4f4f4;
 }
 @media print {
   .g-inset-text {

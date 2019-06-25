@@ -1099,7 +1099,13 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     ['all', '.g-fieldset__legend', 'margin-bottom: 0px'],
 
     // Inset
-    ['all', '.g-inset-text', '8px solid #23cba5'],
+    [
+      'all',
+      '.g-inset-text',
+      'border-left: 8px solid #23cba5',
+      'background: #f4f4f4',
+      ''
+    ],
 
     // LINK
     // ['all', '.g-link', 'color: #005dbb'], // Doesn't match. Review later.

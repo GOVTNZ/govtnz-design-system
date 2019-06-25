@@ -95,18 +95,6 @@ export default class VueTs {
     return tagName;
   };
 
-  renderImport(importName) {
-    if (this.options.language === "javascript") {
-      this.imports.push(
-        `import ${importName} from '@govtnz/ds/build/vue-js/${importName}';\n`
-      );
-    } else if (this.options.language === "typescript") {
-      this.imports.push(
-        `import * as ${importName} from '@govtnz/ds/build/vue-ts/${importName}';\n`
-      );
-    }
-  }
-
   renderAttribute = (attribute: TemplateAttribute) => {
     let attr: string = "";
 
@@ -391,7 +379,7 @@ export default class VueTs {
 
     usageTags.imports.forEach(item => {
       imports.push(
-        `import ${item} from '@govtnz/ds/build/${this.dirname}/${item}';`
+        `import ${item} from '@govtnz/ds/build/${this.dirname}/${item}.vue';`
       );
     });
 

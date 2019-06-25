@@ -147,7 +147,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example8.html",
         title:"Example: Bulleted lists (Typography)",
-        height: 335
+        height: 327
       }}></Example>
 </ExampleContainer>
 
@@ -160,7 +160,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example9.html",
         title:"Example: Numbered lists (Typography)",
-        height: 335
+        height: 327
       }}></Example>
 </ExampleContainer>
 
