@@ -1034,8 +1034,8 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-ts/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-ts/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-ts/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-ts/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1059,8 +1059,8 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-ts/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-ts/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-ts/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-ts/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1082,8 +1082,8 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-ts/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-ts/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-ts/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-ts/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1098,7 +1098,7 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import Div from \\"@govtnz/ds/build/vue-ts/Div\\";
+import Div from \\"@govtnz/ds/build/vue-ts/Div.vue\\";
 
 export default { components: { \\"c-div\\": Div } };
 </script>
@@ -1117,8 +1117,8 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import H1 from \\"@govtnz/ds/build/vue-ts/H1\\";
-import A from \\"@govtnz/ds/build/vue-ts/A\\";
+import H1 from \\"@govtnz/ds/build/vue-ts/H1.vue\\";
+import A from \\"@govtnz/ds/build/vue-ts/A.vue\\";
 
 export default { components: { \\"c-h1\\": H1, \\"c-a\\": A } };
 </script>
@@ -1137,8 +1137,8 @@ Object {
 </template>
 <script lang=\\"ts\\">
 import Vue from \\"vue\\";
-import H1 from \\"@govtnz/ds/build/vue-ts/H1\\";
-import A from \\"@govtnz/ds/build/vue-ts/A\\";
+import H1 from \\"@govtnz/ds/build/vue-ts/H1.vue\\";
+import A from \\"@govtnz/ds/build/vue-ts/A.vue\\";
 
 export default { components: { \\"c-h1\\": H1, \\"c-a\\": A } };
 </script>

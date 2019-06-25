@@ -1034,8 +1034,8 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-js/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-js/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-js/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-js/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1059,8 +1059,8 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-js/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-js/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-js/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-js/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1082,8 +1082,8 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import Ul from \\"@govtnz/ds/build/vue-js/Ul\\";
-import Li from \\"@govtnz/ds/build/vue-js/Li\\";
+import Ul from \\"@govtnz/ds/build/vue-js/Ul.vue\\";
+import Li from \\"@govtnz/ds/build/vue-js/Li.vue\\";
 
 export default { components: { \\"c-ul\\": Ul, \\"c-li\\": Li } };
 </script>
@@ -1098,7 +1098,7 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import Div from \\"@govtnz/ds/build/vue-js/Div\\";
+import Div from \\"@govtnz/ds/build/vue-js/Div.vue\\";
 
 export default { components: { \\"c-div\\": Div } };
 </script>
@@ -1117,8 +1117,8 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import H1 from \\"@govtnz/ds/build/vue-js/H1\\";
-import A from \\"@govtnz/ds/build/vue-js/A\\";
+import H1 from \\"@govtnz/ds/build/vue-js/H1.vue\\";
+import A from \\"@govtnz/ds/build/vue-js/A.vue\\";
 
 export default { components: { \\"c-h1\\": H1, \\"c-a\\": A } };
 </script>
@@ -1137,8 +1137,8 @@ Object {
 </template>
 <script>
 import Vue from \\"vue\\";
-import H1 from \\"@govtnz/ds/build/vue-js/H1\\";
-import A from \\"@govtnz/ds/build/vue-js/A\\";
+import H1 from \\"@govtnz/ds/build/vue-js/H1.vue\\";
+import A from \\"@govtnz/ds/build/vue-js/A.vue\\";
 
 export default { components: { \\"c-h1\\": H1, \\"c-a\\": A } };
 </script>
