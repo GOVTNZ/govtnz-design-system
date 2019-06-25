@@ -440,6 +440,12 @@ Object {
 {{#value}}
   value=\\"{{value}}\\"
 {{/value}}
+{{#min}}
+  min=\\"\\"
+{{/min}}
+{{#max}}
+  max=\\"\\"
+{{/max}}
 {{#type}}
   type=\\"{{#type=Button}}button{{/type=Button}}{{#type=Checkbox}}checkbox{{/type=Checkbox}}{{#type=Color}}color{{/type=Color}}{{#type=Date}}date{{/type=Date}}{{#type=DateTime: Local}}datetime-local{{/type=DateTime: Local}}{{#type=Email}}email{{/type=Email}}{{#type=File}}file{{/type=File}}{{#type=Hidden}}hidden{{/type=Hidden}}{{#type=Image}}image{{/type=Image}}{{#type=Month}}month{{/type=Month}}{{#type=Number}}number{{/type=Number}}{{#type=Password}}password{{/type=Password}}{{#type=Radio}}radio{{/type=Radio}}{{#type=Range}}range{{/type=Range}}{{#type=Reset}}reset{{/type=Reset}}{{#type=Search}}search{{/type=Search}}{{#type=Submit}}submit{{/type=Submit}}{{#type=Telephone}}tel{{/type=Telephone}}{{#type=Text}}text{{/type=Text}}{{#type=Time}}time{{/type=Time}}{{#type=URL}}url{{/type=URL}}{{#type=Week}}week{{/type=Week}}\\"
 {{/type}}

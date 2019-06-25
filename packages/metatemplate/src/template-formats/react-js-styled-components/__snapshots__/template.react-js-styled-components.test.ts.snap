@@ -652,6 +652,8 @@ const Textbox = ({
   readOnly,
   autoFocus,
   value,
+  min,
+  max,
   type,
   spellCheck,
   maxLength,
@@ -664,6 +666,8 @@ const Textbox = ({
     readOnly={readOnly}
     autoFocus={autoFocus}
     value={value}
+    min={min}
+    max={max}
     type={constants.type[type]}
     spellCheck={spellCheck}
     maxLength={maxLength}

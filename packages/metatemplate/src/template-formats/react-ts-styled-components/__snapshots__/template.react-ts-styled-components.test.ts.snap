@@ -734,6 +734,8 @@ type Props = {
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
+  min?: number | undefined;
+  max?: number | undefined;
   type:
     | \\"Button\\"
     | \\"Checkbox\\"
@@ -904,6 +906,8 @@ const Textbox = ({
   readOnly,
   autoFocus,
   value,
+  min,
+  max,
   type,
   spellCheck,
   maxLength,
@@ -916,6 +920,8 @@ const Textbox = ({
     readOnly={readOnly}
     autoFocus={autoFocus}
     value={value}
+    min={min}
+    max={max}
     type={constants.type[type] as any}
     spellCheck={spellCheck}
     maxLength={maxLength}
@@ -932,6 +938,8 @@ const Textbox__calculated = (
     | \\"readOnly\\"
     | \\"autoFocus\\"
     | \\"value\\"
+    | \\"min\\"
+    | \\"max\\"
     | \\"type\\"
     | \\"spellCheck\\"
     | \\"maxLength\\"
@@ -1060,6 +1068,8 @@ type Props = {
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
+  min?: number | undefined;
+  max?: number | undefined;
   type:
     | \\"Button\\"
     | \\"Checkbox\\"
@@ -1230,6 +1240,8 @@ const Inputblock1 = ({
   readOnly,
   autoFocus,
   value,
+  min,
+  max,
   type,
   spellCheck,
   maxLength,
@@ -1242,6 +1254,8 @@ const Inputblock1 = ({
     readOnly={readOnly}
     autoFocus={autoFocus}
     value={value}
+    min={min}
+    max={max}
     type={constants.type[type] as any}
     spellCheck={spellCheck}
     maxLength={maxLength}

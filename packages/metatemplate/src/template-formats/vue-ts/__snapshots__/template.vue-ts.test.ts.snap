@@ -19,39 +19,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/imgSrc.js": "import Vue from \\"vue\\";
-
-const constants = {
-  crossorigin: { Anonymous: \\"anonymous\\", \\"Use Credentials\\": \\"use-credentials\\" }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    src: { type: String, required: true },
-    width: { type: String, required: false },
-    height: { type: String, required: false },
-    srcset: { type: String, required: false },
-    crossorigin: {
-      type: String,
-      validator: value => {
-        return [\\"Anonymous\\", \\"Use Credentials\\"].indexOf(value) !== -1;
-      },
-      required: false
-    }
-  },
-  computed: {
-    computed__crossorigin() {
-      return constants[this.crossorigin] !== undefined
-        ? constants[this.crossorigin]
-        : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'img\\\\',{staticClass:\\"frogs\\",attrs:{\\"src\\":src,\\"width\\":width,\\"height\\":height,\\"srcset\\":srcset,\\"crossorigin\\":computed__crossorigin}})}'
-  )
-});
-",
         "vue-ts/imgSrc.vue": "<template>
   <img
     class=\\"frogs\\"
@@ -69,7 +36,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     src: { type: String, required: true },
     width: { type: String, required: false },
@@ -110,15 +76,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/paragraph.js": "import Vue from \\"vue\\";
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: { children: { required: false, default: \\"Some placeholder text\\" } },
-  computed: {},
-  render: new Function(\\"with(this){return _c('p',[_t(\\\\\\"default\\\\\\")],2)}\\")
-});
-",
         "vue-ts/paragraph.vue": "<template>
   <p>
     <slot></slot>
@@ -127,7 +84,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: { children: { required: false, default: \\"Some placeholder text\\" } },
   computed: {}
 });
@@ -144,24 +100,6 @@ exports[`vue-ts Snapshots vue-ts: Boolean attribute values 1`] = `
 Array [
   Object {
     "files": Object {
-      "vue-ts/row.js": "import Vue from \\"vue\\";
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    isReversed: { type: Boolean, default: false, required: false },
-    children: { required: false, default: \\"Columns\\" }
-  },
-  computed: {
-    computed__class() {
-      return \\"g-flex-row\\" + (this.isReversed ? \\" g-flex-reverse\\" : \\"\\");
-    }
-  },
-  render: new Function(
-    \\"with(this){return _c('div',{class:computed__class},[_t(\\\\\\"default\\\\\\")],2)}\\"
-  )
-});
-",
       "vue-ts/row.vue": "<template>
   <div v-bind:class=\\"computed__class\\">
     <slot></slot>
@@ -170,7 +108,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isReversed: { type: Boolean, default: false, required: false },
     children: { required: false, default: \\"Columns\\" }
@@ -200,41 +137,6 @@ exports[`vue-ts Snapshots vue-ts: Enum attribute values 1`] = `
 Array [
   Object {
     "files": Object {
-      "vue-ts/container.js": "import Vue from \\"vue\\";
-
-const constants = {
-  containerType: {
-    \\"g-flex-container\\": \\"g-flex-container\\",
-    \\"g-flex-container-fluid\\": \\"g-flex-container-fluid\\"
-  }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    containerType: {
-      type: String,
-      validator: value => {
-        return (
-          [\\"g-flex-container\\", \\"g-flex-container-fluid\\"].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
-    children: { required: false, default: \\"Rows...\\" }
-  },
-  computed: {
-    computed__class() {
-      return constants[this.containerType] !== undefined
-        ? constants[this.containerType]
-        : \\"\\";
-    }
-  },
-  render: new Function(
-    \\"with(this){return _c('div',{class:computed__class},[_t(\\\\\\"default\\\\\\")],2)}\\"
-  )
-});
-",
       "vue-ts/container.vue": "<template>
   <div v-bind:class=\\"computed__class\\">
     <slot></slot>
@@ -250,7 +152,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     containerType: {
       type: String,
@@ -299,25 +200,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/input.js": "import Vue from \\"vue\\";
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    textId: { type: String, required: false },
-    name: { type: String, required: true },
-    disabled: { type: Boolean, default: false, required: false },
-    readOnly: { type: Boolean, default: false, required: false },
-    autoFocus: { type: Boolean, default: false, required: false },
-    value: { type: String, required: false },
-    checked: { type: Boolean, default: false, required: false }
-  },
-  computed: {},
-  render: new Function(
-    'with(this){return _c(\\\\'input\\\\',{attrs:{\\"id\\":textId,\\"type\\":\\"checkbox\\",\\"name\\":name,\\"disabled\\":disabled,\\"readonly\\":readOnly,\\"autofocus\\":autoFocus},domProps:{\\"value\\":value,\\"checked\\":checked}})}'
-  )
-});
-",
         "vue-ts/input.vue": "<template>
   <input
     v-bind:id=\\"textId\\"
@@ -333,7 +215,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     textId: { type: String, required: false },
     name: { type: String, required: true },
@@ -360,25 +241,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/input.js": "import Vue from \\"vue\\";
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    textId: { type: String, required: false },
-    name: { type: String, required: true },
-    disabled: { type: Boolean, default: false, required: false },
-    readOnly: { type: Boolean, default: false, required: false },
-    autoFocus: { type: Boolean, default: false, required: false },
-    value: { type: String, required: false },
-    checked: { type: Boolean, default: false, required: false }
-  },
-  computed: {},
-  render: new Function(
-    'with(this){return _c(\\\\'label\\\\',{attrs:{\\"for\\":textId}},[_c(\\\\'input\\\\',{attrs:{\\"id\\":textId,\\"type\\":\\"checkbox\\",\\"name\\":name,\\"disabled\\":disabled,\\"readonly\\":readOnly,\\"autofocus\\":autoFocus},domProps:{\\"value\\":value,\\"checked\\":checked}})])}'
-  )
-});
-",
         "vue-ts/input.vue": "<template>
   <label v-bind:for=\\"textId\\">
     <input
@@ -396,7 +258,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     textId: { type: String, required: false },
     name: { type: String, required: true },
@@ -423,17 +284,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/h1Id.js": "import Vue from \\"vue\\";
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: { id: { type: String, required: false } },
-  computed: {},
-  render: new Function(
-    'with(this){return _c(\\\\'h1\\\\',{attrs:{\\"id\\":id}},[_v(\\"\\\\\\\\nstuff\\\\\\\\n\\\\\\\\n\\")])}'
-  )
-});
-",
         "vue-ts/h1Id.vue": "<template>
   <h1 v-bind:id=\\"id\\">
     stuff
@@ -442,7 +292,6 @@ export default Vue.extend({
 import Vue from \\"vue\\";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: { id: { type: String, required: false } },
   computed: {}
 });
@@ -459,40 +308,6 @@ exports[`vue-ts Snapshots vue-ts: Link with boolean class 1`] = `
 Array [
   Object {
     "files": Object {
-      "vue-ts/a.js": "import Vue from \\"vue\\";
-
-const constants = {
-  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    isMuted: { type: Boolean, default: false, required: false },
-    href: { type: String, required: true },
-    rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return [\\"Blank\\", \\"Top\\", \\"Self\\", \\"Parent\\"].indexOf(value) !== -1;
-      },
-      required: false
-    },
-    children: { required: false, default: \\"Example text\\" }
-  },
-  computed: {
-    computed__class() {
-      return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
-    },
-    computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'a\\\\',{class:computed__class,attrs:{\\"href\\":href,\\"rel\\":rel,\\"target\\":computed__target}},[_t(\\"default\\")],2)}'
-  )
-});
-",
       "vue-ts/a.vue": "<template>
   <a
     v-bind:class=\\"computed__class\\"
@@ -510,7 +325,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isMuted: { type: Boolean, default: false, required: false },
     href: { type: String, required: true },
@@ -552,71 +366,6 @@ exports[`vue-ts Snapshots vue-ts: Lots of enum attribute values 1`] = `
 Array [
   Object {
     "files": Object {
-      "vue-ts/container.js": "import Vue from \\"vue\\";
-
-const constants = {
-  columnXs: {
-    \\"g-flex-col-xs\\": \\"g-flex-col-xs\\",
-    \\"g-flex-col-xs-1\\": \\"g-flex-col-xs-1\\",
-    \\"g-flex-col-xs-2\\": \\"g-flex-col-xs-2\\",
-    \\"g-flex-col-xs-3\\": \\"g-flex-col-xs-3\\",
-    \\"g-flex-col-xs-4\\": \\"g-flex-col-xs-4\\",
-    \\"g-flex-col-xs-5\\": \\"g-flex-col-xs-5\\",
-    \\"g-flex-col-xs-6\\": \\"g-flex-col-xs-6\\",
-    \\"g-flex-col-xs-7\\": \\"g-flex-col-xs-7\\",
-    \\"g-flex-col-xs-8\\": \\"g-flex-col-xs-8\\",
-    \\"g-flex-col-xs-9\\": \\"g-flex-col-xs-9\\",
-    \\"g-flex-col-xs-10\\": \\"g-flex-col-xs-10\\",
-    \\"g-flex-col-xs-11\\": \\"g-flex-col-xs-11\\",
-    \\"g-flex-col-xs-12\\": \\"g-flex-col-xs-12\\"
-  }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    isReversed: { type: Boolean, default: false, required: false },
-    columnXs: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"g-flex-col-xs\\",
-            \\"g-flex-col-xs-1\\",
-            \\"g-flex-col-xs-2\\",
-            \\"g-flex-col-xs-3\\",
-            \\"g-flex-col-xs-4\\",
-            \\"g-flex-col-xs-5\\",
-            \\"g-flex-col-xs-6\\",
-            \\"g-flex-col-xs-7\\",
-            \\"g-flex-col-xs-8\\",
-            \\"g-flex-col-xs-9\\",
-            \\"g-flex-col-xs-10\\",
-            \\"g-flex-col-xs-11\\",
-            \\"g-flex-col-xs-12\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
-    children: { required: false, default: \\"Columns\\" }
-  },
-  computed: {
-    computed__class() {
-      return (
-        \\"g-flex-col\\" +
-        (this.isReversed ? \\" g-flex-reverse\\" : \\"\\") +
-        (constants[this.columnXs] !== undefined
-          ? \` \${constants[this.columnXs]}\`
-          : \\"\\")
-      );
-    }
-  },
-  render: new Function(
-    \\"with(this){return _c('div',{class:computed__class},[_t(\\\\\\"default\\\\\\")],2)}\\"
-  )
-});
-",
       "vue-ts/container.vue": "<template>
   <div v-bind:class=\\"computed__class\\">
     <slot></slot>
@@ -643,7 +392,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isReversed: { type: Boolean, default: false, required: false },
     columnXs: {
@@ -704,153 +452,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/input.js": "import Vue from \\"vue\\";
-
-const constants = {
-  autoComplete: {
-    Off: \\"off\\",
-    On: \\"on\\",
-    Name: \\"name\\",
-    \\"Honorific: Prefix\\": \\"honorific-prefix\\",
-    \\"Given Name\\": \\"given-name\\",
-    \\"Additional Name\\": \\"additional-name\\",
-    \\"Family Name\\": \\"family-name\\",
-    \\"Honorific: Suffix\\": \\"honorific-suffix\\",
-    Nickname: \\"nickname\\",
-    Email: \\"email\\",
-    Username: \\"username\\",
-    \\"New Password\\": \\"new-password\\",
-    \\"Current Password\\": \\"current-password\\",
-    \\"Organization Title\\": \\"organization-title\\",
-    Organization: \\"organization\\",
-    \\"Street Address\\": \\"street-address\\",
-    \\"Address Line 1\\": \\"address-line1\\",
-    \\"Address Line 2\\": \\"address-line2\\",
-    \\"Address Line 3\\": \\"address-line3\\",
-    \\"Address Level 4\\": \\"address-level4\\",
-    \\"Address Level 3\\": \\"address-level3\\",
-    \\"Address Level 2\\": \\"address-level2\\",
-    \\"Address Level 1\\": \\"address-level1\\",
-    Country: \\"country\\",
-    \\"Country Name\\": \\"country-name\\",
-    \\"Postal Code\\": \\"postal-code\\",
-    \\"Credit Card: Name\\": \\"cc-name\\",
-    \\"Credit Card: Given Name\\": \\"cc-given-name\\",
-    \\"Credit Card: Additional Name\\": \\"cc-additional-name\\",
-    \\"Credit Card: Family Name\\": \\"cc-family-name\\",
-    \\"Credit Card: Number\\": \\"cc-number\\",
-    \\"Credit Card: Expiry\\": \\"cc-exp\\",
-    \\"Credit Card: Expiry Month\\": \\"cc-exp-month\\",
-    \\"Credit Card: Expiry Year\\": \\"cc-exp-year\\",
-    \\"Credit Card: CSC\\": \\"cc-csc\\",
-    \\"Credit Card: Type\\": \\"cc-type\\",
-    \\"Transaction: Currency\\": \\"transaction-currency\\",
-    \\"Transaction: Amount\\": \\"transaction-amount\\",
-    Language: \\"language\\",
-    Birthday: \\"bday\\",
-    \\"Birthday: Day\\": \\"bday-day\\",
-    \\"Birthday: Month\\": \\"bday-month\\",
-    \\"Birthday: Year\\": \\"bday-year\\",
-    Sex: \\"sex\\",
-    Telephone: \\"tel\\",
-    \\"Telephone: Country Code\\": \\"tel-country-code\\",
-    \\"Telephone: National\\": \\"tel-national\\",
-    \\"Telephone: Area Code\\": \\"tel-area-code\\",
-    \\"Telephone: Local\\": \\"tel-local\\",
-    \\"Telephone: Extension\\": \\"tel-extension\\",
-    IMPP: \\"impp\\",
-    URL: \\"url\\",
-    Photo: \\"photo\\"
-  }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    textId: { type: String, required: false },
-    name: { type: String, required: true },
-    disabled: { type: Boolean, default: false, required: false },
-    readOnly: { type: Boolean, default: false, required: false },
-    autoFocus: { type: Boolean, default: false, required: false },
-    value: { type: String, required: false },
-    spellCheck: { type: Boolean, default: false, required: false },
-    maxLength: { type: String, required: false },
-    autoComplete: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"Off\\",
-            \\"On\\",
-            \\"Name\\",
-            \\"Honorific: Prefix\\",
-            \\"Given Name\\",
-            \\"Additional Name\\",
-            \\"Family Name\\",
-            \\"Honorific: Suffix\\",
-            \\"Nickname\\",
-            \\"Email\\",
-            \\"Username\\",
-            \\"New Password\\",
-            \\"Current Password\\",
-            \\"Organization Title\\",
-            \\"Organization\\",
-            \\"Street Address\\",
-            \\"Address Line 1\\",
-            \\"Address Line 2\\",
-            \\"Address Line 3\\",
-            \\"Address Level 4\\",
-            \\"Address Level 3\\",
-            \\"Address Level 2\\",
-            \\"Address Level 1\\",
-            \\"Country\\",
-            \\"Country Name\\",
-            \\"Postal Code\\",
-            \\"Credit Card: Name\\",
-            \\"Credit Card: Given Name\\",
-            \\"Credit Card: Additional Name\\",
-            \\"Credit Card: Family Name\\",
-            \\"Credit Card: Number\\",
-            \\"Credit Card: Expiry\\",
-            \\"Credit Card: Expiry Month\\",
-            \\"Credit Card: Expiry Year\\",
-            \\"Credit Card: CSC\\",
-            \\"Credit Card: Type\\",
-            \\"Transaction: Currency\\",
-            \\"Transaction: Amount\\",
-            \\"Language\\",
-            \\"Birthday\\",
-            \\"Birthday: Day\\",
-            \\"Birthday: Month\\",
-            \\"Birthday: Year\\",
-            \\"Sex\\",
-            \\"Telephone\\",
-            \\"Telephone: Country Code\\",
-            \\"Telephone: National\\",
-            \\"Telephone: Area Code\\",
-            \\"Telephone: Local\\",
-            \\"Telephone: Extension\\",
-            \\"IMPP\\",
-            \\"URL\\",
-            \\"Photo\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    }
-  },
-  computed: {
-    computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
-        : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'label\\\\',{attrs:{\\"for\\":textId}},[_v(\\"\\\\\\\\nLabel text\\\\\\\\n\\\\\\\\n\\")])}'
-  )
-});
-",
         "vue-ts/input.vue": "<template>
   <label v-bind:for=\\"textId\\">
     Label text
@@ -930,7 +531,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     textId: { type: String, required: false },
     name: { type: String, required: true },
@@ -1025,40 +625,6 @@ exports[`vue-ts vue-ts: CSS Configuration (CSS Variables and Scss Variables) 1`]
 Array [
   Object {
     "files": Object {
-      "vue-ts/a.js": "import Vue from \\"vue\\";
-
-const constants = {
-  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    isMuted: { type: Boolean, default: false, required: false },
-    href: { type: String, required: true },
-    rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return [\\"Blank\\", \\"Top\\", \\"Self\\", \\"Parent\\"].indexOf(value) !== -1;
-      },
-      required: false
-    },
-    children: { required: false, default: \\"Example text\\" }
-  },
-  computed: {
-    computed__class() {
-      return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
-    },
-    computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'a\\\\',{class:computed__class,attrs:{\\"href\\":href,\\"rel\\":rel,\\"target\\":computed__target}},[_t(\\"default\\")],2)}'
-  )
-});
-",
       "vue-ts/a.vue": "<template>
   <a
     v-bind:class=\\"computed__class\\"
@@ -1076,7 +642,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isMuted: { type: Boolean, default: false, required: false },
     href: { type: String, required: true },
@@ -1118,40 +683,6 @@ exports[`vue-ts vue-ts: CSS Configuration (CSS Variables and Scss Variables) 2`]
 Array [
   Object {
     "files": Object {
-      "vue-ts/a.js": "import Vue from \\"vue\\";
-
-const constants = {
-  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    isMuted: { type: Boolean, default: false, required: false },
-    href: { type: String, required: true },
-    rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return [\\"Blank\\", \\"Top\\", \\"Self\\", \\"Parent\\"].indexOf(value) !== -1;
-      },
-      required: false
-    },
-    children: { required: false, default: \\"Example text\\" }
-  },
-  computed: {
-    computed__class() {
-      return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
-    },
-    computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'a\\\\',{class:computed__class,attrs:{\\"href\\":href,\\"rel\\":rel,\\"target\\":computed__target}},[_t(\\"default\\")],2)}'
-  )
-});
-",
       "vue-ts/a.vue": "<template>
   <a
     v-bind:class=\\"computed__class\\"
@@ -1169,7 +700,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isMuted: { type: Boolean, default: false, required: false },
     href: { type: String, required: true },
@@ -1211,36 +741,6 @@ exports[`vue-ts vue-ts: CSS Configuration of Fonts 1`] = `
 Array [
   Object {
     "files": Object {
-      "vue-ts/a.js": "import Vue from \\"vue\\";
-
-const constants = {
-  target: { Blank: \\"_blank\\", Top: \\"_top\\", Self: \\"_self\\", Parent: \\"_parent\\" }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    href: { type: String, required: true },
-    rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return [\\"Blank\\", \\"Top\\", \\"Self\\", \\"Parent\\"].indexOf(value) !== -1;
-      },
-      required: false
-    },
-    children: { required: false, default: \\"Example text\\" }
-  },
-  computed: {
-    computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'a\\\\',{staticClass:\\"g-link\\",attrs:{\\"href\\":href,\\"rel\\":rel,\\"target\\":computed__target}},[_t(\\"default\\")],2)}'
-  )
-});
-",
       "vue-ts/a.vue": "<template>
   <a
     class=\\"g-link\\"
@@ -1258,7 +758,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     href: { type: String, required: true },
     rel: { type: String, required: false },
@@ -1295,211 +794,6 @@ Object {
   "metaTemplates": Array [
     Object {
       "files": Object {
-        "vue-ts/textbox.js": "import Vue from \\"vue\\";
-
-const constants = {
-  type: {
-    Button: \\"button\\",
-    Checkbox: \\"checkbox\\",
-    Color: \\"color\\",
-    Date: \\"date\\",
-    \\"DateTime: Local\\": \\"datetime-local\\",
-    Email: \\"email\\",
-    File: \\"file\\",
-    Hidden: \\"hidden\\",
-    Image: \\"image\\",
-    Month: \\"month\\",
-    Number: \\"number\\",
-    Password: \\"password\\",
-    Radio: \\"radio\\",
-    Range: \\"range\\",
-    Reset: \\"reset\\",
-    Search: \\"search\\",
-    Submit: \\"submit\\",
-    Telephone: \\"tel\\",
-    Text: \\"text\\",
-    Time: \\"time\\",
-    URL: \\"url\\",
-    Week: \\"week\\"
-  },
-  autoComplete: {
-    Off: \\"off\\",
-    On: \\"on\\",
-    Name: \\"name\\",
-    \\"Honorific: Prefix\\": \\"honorific-prefix\\",
-    \\"Given Name\\": \\"given-name\\",
-    \\"Additional Name\\": \\"additional-name\\",
-    \\"Family Name\\": \\"family-name\\",
-    \\"Honorific: Suffix\\": \\"honorific-suffix\\",
-    Nickname: \\"nickname\\",
-    Email: \\"email\\",
-    Username: \\"username\\",
-    \\"New Password\\": \\"new-password\\",
-    \\"Current Password\\": \\"current-password\\",
-    \\"Organization Title\\": \\"organization-title\\",
-    Organization: \\"organization\\",
-    \\"Street Address\\": \\"street-address\\",
-    \\"Address Line 1\\": \\"address-line1\\",
-    \\"Address Line 2\\": \\"address-line2\\",
-    \\"Address Line 3\\": \\"address-line3\\",
-    \\"Address Level 4\\": \\"address-level4\\",
-    \\"Address Level 3\\": \\"address-level3\\",
-    \\"Address Level 2\\": \\"address-level2\\",
-    \\"Address Level 1\\": \\"address-level1\\",
-    Country: \\"country\\",
-    \\"Country Name\\": \\"country-name\\",
-    \\"Postal Code\\": \\"postal-code\\",
-    \\"Credit Card: Name\\": \\"cc-name\\",
-    \\"Credit Card: Given Name\\": \\"cc-given-name\\",
-    \\"Credit Card: Additional Name\\": \\"cc-additional-name\\",
-    \\"Credit Card: Family Name\\": \\"cc-family-name\\",
-    \\"Credit Card: Number\\": \\"cc-number\\",
-    \\"Credit Card: Expiry\\": \\"cc-exp\\",
-    \\"Credit Card: Expiry Month\\": \\"cc-exp-month\\",
-    \\"Credit Card: Expiry Year\\": \\"cc-exp-year\\",
-    \\"Credit Card: CSC\\": \\"cc-csc\\",
-    \\"Credit Card: Type\\": \\"cc-type\\",
-    \\"Transaction: Currency\\": \\"transaction-currency\\",
-    \\"Transaction: Amount\\": \\"transaction-amount\\",
-    Language: \\"language\\",
-    Birthday: \\"bday\\",
-    \\"Birthday: Day\\": \\"bday-day\\",
-    \\"Birthday: Month\\": \\"bday-month\\",
-    \\"Birthday: Year\\": \\"bday-year\\",
-    Sex: \\"sex\\",
-    Telephone: \\"tel\\",
-    \\"Telephone: Country Code\\": \\"tel-country-code\\",
-    \\"Telephone: National\\": \\"tel-national\\",
-    \\"Telephone: Area Code\\": \\"tel-area-code\\",
-    \\"Telephone: Local\\": \\"tel-local\\",
-    \\"Telephone: Extension\\": \\"tel-extension\\",
-    IMPP: \\"impp\\",
-    URL: \\"url\\",
-    Photo: \\"photo\\"
-  }
-};
-
-export default Vue.extend({
-  functional: true, // no internal state
-  props: {
-    name: { type: String, required: true },
-    disabled: { type: Boolean, default: false, required: false },
-    readOnly: { type: Boolean, default: false, required: false },
-    autoFocus: { type: Boolean, default: false, required: false },
-    value: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"Button\\",
-            \\"Checkbox\\",
-            \\"Color\\",
-            \\"Date\\",
-            \\"DateTime: Local\\",
-            \\"Email\\",
-            \\"File\\",
-            \\"Hidden\\",
-            \\"Image\\",
-            \\"Month\\",
-            \\"Number\\",
-            \\"Password\\",
-            \\"Radio\\",
-            \\"Range\\",
-            \\"Reset\\",
-            \\"Search\\",
-            \\"Submit\\",
-            \\"Telephone\\",
-            \\"Text\\",
-            \\"Time\\",
-            \\"URL\\",
-            \\"Week\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    },
-    spellCheck: { type: Boolean, default: false, required: false },
-    maxLength: { type: String, required: false },
-    autoComplete: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            \\"Off\\",
-            \\"On\\",
-            \\"Name\\",
-            \\"Honorific: Prefix\\",
-            \\"Given Name\\",
-            \\"Additional Name\\",
-            \\"Family Name\\",
-            \\"Honorific: Suffix\\",
-            \\"Nickname\\",
-            \\"Email\\",
-            \\"Username\\",
-            \\"New Password\\",
-            \\"Current Password\\",
-            \\"Organization Title\\",
-            \\"Organization\\",
-            \\"Street Address\\",
-            \\"Address Line 1\\",
-            \\"Address Line 2\\",
-            \\"Address Line 3\\",
-            \\"Address Level 4\\",
-            \\"Address Level 3\\",
-            \\"Address Level 2\\",
-            \\"Address Level 1\\",
-            \\"Country\\",
-            \\"Country Name\\",
-            \\"Postal Code\\",
-            \\"Credit Card: Name\\",
-            \\"Credit Card: Given Name\\",
-            \\"Credit Card: Additional Name\\",
-            \\"Credit Card: Family Name\\",
-            \\"Credit Card: Number\\",
-            \\"Credit Card: Expiry\\",
-            \\"Credit Card: Expiry Month\\",
-            \\"Credit Card: Expiry Year\\",
-            \\"Credit Card: CSC\\",
-            \\"Credit Card: Type\\",
-            \\"Transaction: Currency\\",
-            \\"Transaction: Amount\\",
-            \\"Language\\",
-            \\"Birthday\\",
-            \\"Birthday: Day\\",
-            \\"Birthday: Month\\",
-            \\"Birthday: Year\\",
-            \\"Sex\\",
-            \\"Telephone\\",
-            \\"Telephone: Country Code\\",
-            \\"Telephone: National\\",
-            \\"Telephone: Area Code\\",
-            \\"Telephone: Local\\",
-            \\"Telephone: Extension\\",
-            \\"IMPP\\",
-            \\"URL\\",
-            \\"Photo\\"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    }
-  },
-  computed: {
-    computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : \\"\\";
-    },
-    computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
-        : \\"\\";
-    }
-  },
-  render: new Function(
-    'with(this){return _c(\\\\'input\\\\',{attrs:{\\"name\\":name,\\"disabled\\":disabled,\\"readonly\\":readOnly,\\"autofocus\\":autoFocus,\\"type\\":computed__type,\\"spellcheck\\":spellCheck,\\"maxlength\\":maxLength,\\"autocomplete\\":computed__autocomplete},domProps:{\\"value\\":value}})}'
-  )
-});
-",
         "vue-ts/textbox.vue": "<template>
   <input
     v-bind:name=\\"name\\"
@@ -1507,6 +801,8 @@ export default Vue.extend({
     v-bind:readonly=\\"readOnly\\"
     v-bind:autofocus=\\"autoFocus\\"
     v-bind:value=\\"value\\"
+    v-bind:min=\\"min\\"
+    v-bind:max=\\"max\\"
     v-bind:type=\\"computed__type\\"
     v-bind:spellcheck=\\"spellCheck\\"
     v-bind:maxlength=\\"maxLength\\"
@@ -1598,13 +894,14 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
+    min: { type: String, required: false },
+    max: { type: String, required: false },
     type: {
       type: String,
       validator: value => {
