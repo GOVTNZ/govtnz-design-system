@@ -5,14 +5,14 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
-    <Example>
+    <Example title="Example: Text input">
         <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId" />
     </Example>
 </ExampleContainer>
 
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
-    <Example>
+    <Example title="Example: Error state #1 (Text input)">
         <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>
@@ -47,7 +47,7 @@ If you want to make the input smaller, you can either use a fixed-width input, o
 
 <ExampleContainer>
     <ExampleHeading>Fixed-width text input</ExampleHeading>
-    <Example>
+    <Example title="Example: Fixed-width text input">
         <ExampleSection>
             <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" />
         </ExampleSection>
@@ -78,7 +78,7 @@ On fixed-width inputs, the width will remain fixed on all screens unless it is w
 
 <ExampleContainer>
     <ExampleHeading>Hint text</ExampleHeading>
-    <Example>
+    <Example title="Example: Hint text (Text input)">
         <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId10" hint="The name you'll use on promotional material" hintId="anyHintId10" />
     </Example>
 </ExampleContainer>
@@ -95,7 +95,7 @@ See how to do this in the following example.
 
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
-    <Example codeOnly>
+    <Example codeOnly title="Example: Error state #2 (Text input)">
         <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="Postal Code" />
     </Example>
 </ExampleContainer>

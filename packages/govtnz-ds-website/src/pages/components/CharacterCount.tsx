@@ -27,7 +27,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         id:"iframe_componentsCharacterCount0",
         className: "example__iframe",
         src:"/components/CharacterCount__example0.html",
-        title:"Example of Character Count",
+        title:"Example: Character count",
         height: 230
       }}></Example>
 </ExampleContainer>

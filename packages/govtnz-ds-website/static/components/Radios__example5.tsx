@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Radio button items with a text divider" {...onChangeGenerator({})}>
             <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle2">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId234" {...onChangeGenerator({})}>
                 <RadioBlockWithHint label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlockWithHint>
                 <RadioBlockWithHint label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlockWithHint>

@@ -77,7 +77,7 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-list--bullet > li,
 .g-breadcrumbsWithLastBreadcrumbAsCurrentPage-list--number > li {

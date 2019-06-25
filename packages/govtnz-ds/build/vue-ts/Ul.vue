@@ -22,7 +22,7 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.625;
   color: #2a2a2a;
   margin-top: 0;
@@ -54,7 +54,7 @@ export default Vue.extend({
 }
 @media (min-width: 40.0625em) {
   .g-ul-list {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
 }
 .g-ul-list .g-ul-list {
@@ -66,5 +66,8 @@ export default Vue.extend({
 }
 .g-ul-hint > * {
   margin-top: 0px;
+}
+.g-ul-list li .g-ul-list {
+  margin-top: 0.5rem;
 }
 </style>

@@ -1,6 +1,6 @@
 <ExampleContainer>
     <ExampleHeading>Example of Textarea</ExampleHeading>
-    <Example>
+    <Example title="Example: Textarea">
         <Textarea />
         <TextareaWithCustomRows />
         <TextareaWithErrorMessage />

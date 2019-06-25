@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: 3-column Flexbox grid" {...onChangeGenerator({})}>
         <FlexContainer width="fixed" {...onChangeGenerator({})}>
             <FlexRow {...onChangeGenerator({})}>
                 <FlexColumn xs="4" sm="4" md="4" lg="4" {...onChangeGenerator({})}> .g-flex-col .g-flex-col-md-4 </FlexColumn>

@@ -5,7 +5,7 @@ Checkboxes enable users to select one or more options from a visible list of opt
 Interact with each example to see how it works.
 
 <ExampleContainer>
-    <Example>
+    <Example title="Example: Checkboxes">
         <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId1">
             <CheckboxBlock label="Aardvark Access" checkboxId="anyCheckboxId1" value="provider1" name="providerChoice1" labelId="labelId1" />
             <CheckboxBlock label="Bumblebee Business"  checkboxId="anyCheckboxId2" value="provider2" name="providerChoice1" labelId="labelId2" />
@@ -16,7 +16,7 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
-    <Example>
+    <Example title="Example: Error state (Checkboxes)">
         <FieldsetBlockWithError legend={<H1 styleSize="large" id="providerChoiceTitle2" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId21" errorId="errorId21" error="You must choose at least one provider.">
             <CheckboxBlock label="Aardvark Access"  checkboxId="anyCheckboxId21" value="provider1" name="providerChoice2" labelId="labelId21" />
             <CheckboxBlock label="Bumblebee Business"  checkboxId="anyCheckboxId22" value="provider2"  name="providerChoice2" labelId="labelId22" />
@@ -27,7 +27,7 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <ExampleHeading>Checkboxes with hints</ExampleHeading>
-    <Example>
+    <Example title="Example: Checkboxes with hints">
         <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle3" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId3">
             <CheckboxBlock label="Aardvark Access" checkboxId="anyCheckboxId31" value="provider1" name="providerChoice3" labelId="labelId31" hintId="hintId31" hint="Aardvark Access provides internet" />
             <CheckboxBlock label="Bumblebee Business"  checkboxId="anyCheckboxId32" value="provider2" name="providerChoice3" labelId="labelId32" hintId="hintId32" hint="Bumblebee Business provides electricity" />

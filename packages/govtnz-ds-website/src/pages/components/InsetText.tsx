@@ -27,7 +27,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         id:"iframe_componentsInsetText0",
         className: "example__iframe",
         src:"/components/InsetText__example0.html",
-        title:"Example of Inset Text",
+        title:"Example: Inset text",
         height: 220
       }}></Example>
 </ExampleContainer>

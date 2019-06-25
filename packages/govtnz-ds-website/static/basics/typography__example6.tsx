@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Small size for small body text (Typography)" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
             <P styleSize="small" {...onChangeGenerator({})}>
             Government Information Services is creating the design system now, and you can contribute. This alpha site shows you what we have built so far, what we are working on, and how you can get involved.</P>

@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example of Select" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Select" {...onChangeGenerator({})}>
         <SelectBlock selectId="select1" label="Order by" {...onChangeGenerator({})}>
             <option value="published">Recently published</option>
             <option value="updated">Recently updated</option>

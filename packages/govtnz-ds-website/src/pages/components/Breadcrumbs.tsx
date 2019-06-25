@@ -27,7 +27,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         id:"iframe_componentsBreadcrumbs0",
         className: "example__iframe",
         src:"/components/Breadcrumbs__example0.html",
-        title:"Example of Breadcrumbs",
+        title:"Example: Breadcrumbs",
         height: 130
       }}></Example>
 </ExampleContainer>

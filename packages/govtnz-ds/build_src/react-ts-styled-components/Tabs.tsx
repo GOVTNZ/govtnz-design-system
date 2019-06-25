@@ -104,7 +104,7 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -235,7 +235,7 @@ const StyledA = styled.a`
 `;
 
 const StyledLi2 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -353,7 +353,7 @@ const StyledA2 = styled.a`
 `;
 
 const StyledLi3 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -471,7 +471,7 @@ const StyledA3 = styled.a`
 `;
 
 const StyledLi4 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;

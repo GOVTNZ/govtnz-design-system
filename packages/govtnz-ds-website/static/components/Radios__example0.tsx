@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Radios example" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Radio buttons" {...onChangeGenerator({})}>
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1" {...onChangeGenerator({})}>
             <Radios inline {...onChangeGenerator({})}>
                 <RadioBlock label="Yes" radioId="anyRadioId" value="true" name="nameChange1" labelId="labelId1" hintId="hintId1" {...onChangeGenerator({"value":"true"})}></RadioBlock>

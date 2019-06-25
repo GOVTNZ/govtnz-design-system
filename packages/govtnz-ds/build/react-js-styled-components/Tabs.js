@@ -384,7 +384,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -404,7 +404,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -424,7 +424,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -444,7 +444,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-left: 25px;\n  ::before {\n    content: \"\u2014 \";\n    margin-left: -25px;\n    padding-right: 5px;\n  }\n  @media (min-width: 40.0625em) {\n    margin-left: 0;\n    ::before {\n      content: none;\n    }\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;

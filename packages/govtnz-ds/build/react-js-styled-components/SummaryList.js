@@ -34,7 +34,7 @@ function _templateObject34() {
 }
 
 function _templateObject33() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject33 = function _templateObject33() {
     return data;
@@ -64,7 +64,7 @@ function _templateObject31() {
 }
 
 function _templateObject30() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject30 = function _templateObject30() {
     return data;
@@ -264,7 +264,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -294,7 +294,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  display: inline;\n  margin-right: 10px;\n  padding-right: 10px;\n  border-right: 1px solid #bfc1c3;\n  :last-child {\n    margin-right: 0;\n    padding-right: 0;\n    border: 0;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;

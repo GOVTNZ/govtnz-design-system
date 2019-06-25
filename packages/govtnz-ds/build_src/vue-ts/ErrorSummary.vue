@@ -85,7 +85,7 @@ export default Vue.extend({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.625;
   color: #2a2a2a;
   margin-top: 0;
@@ -117,14 +117,14 @@ export default Vue.extend({
 }
 @media (min-width: 40.0625em) {
   .g-errorSummary-list {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
 }
 .g-errorSummary-list .g-errorSummary-list {
   margin-top: 10px;
 }
 .g-errorSummary-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-errorSummary-list--bullet > li,
 .g-errorSummary-list--number > li {
@@ -295,5 +295,8 @@ export default Vue.extend({
 }
 .g-errorSummary-hint > * {
   margin-top: 0px;
+}
+.g-errorSummary-list li .g-errorSummary-list {
+  margin-top: 0.5rem;
 }
 </style>

@@ -977,6 +977,7 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
   css = css.replace(/\.g-radios__divider/gi, '.g-form-divider'); // GovUK includes a radio-specific divider which we can generalise
   css += '.g-select::-ms-expand { display: none; }'; // https://stackoverflow.com/a/15933790
   css += '.g-hint > * { margin-top: 0px; }';
+  css += '.g-list li .g-list { margin-top: .5rem; }';
 
   css = updateCSS(css, [
     // FORM
@@ -1111,9 +1112,10 @@ const govUKToGovtNZCSS = async (oldCSS: string) => {
     [
       'all',
       '.g-list',
-      'line-height: 1.625; color: #2a2a2a; font-size: 20px; margin-bottom: 1rem;'
+      'line-height: 1.625; color: #2a2a2a; font-size: 1.25rem; margin-bottom: 1rem;'
     ],
-    // ['all', '.g-list li, .g-ol-list li', 'margin-bottom: 0.25rem;']
+    ['screen-big', '.g-list', 'margin-bottom: 1rem;'],
+    ['all', '.g-list > li', 'margin-bottom: 0.25rem;'],
 
     // Checkboxes
     ['all', '.g-checkboxes__item', 'margin-bottom: 16px'],

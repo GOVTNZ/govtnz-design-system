@@ -89,7 +89,7 @@ const StyledUl = styled.ul`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.625;
   color: #2a2a2a;
   margin-top: 0;
@@ -111,16 +111,17 @@ const StyledUl = styled.ul`
     color: #000000;
   }
   @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   margin-top: 10px;
   margin-top: 0;
   margin-bottom: 0;
   margin-top: 0px;
+  margin-top: 0.5rem;
 `;
 
 const StyledLi = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -173,7 +174,7 @@ const StyledA = styled.a`
 `;
 
 const StyledLi2 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;

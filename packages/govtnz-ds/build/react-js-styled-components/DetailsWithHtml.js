@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -54,7 +54,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;

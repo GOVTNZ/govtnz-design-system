@@ -6,7 +6,7 @@ const StyledOl = styled.ol`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.625;
   color: #2a2a2a;
   margin-top: 0;
@@ -28,7 +28,7 @@ const StyledOl = styled.ol`
     color: #000000;
   }
   @media (min-width: 40.0625em) {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   margin-top: 10px;
   ${props =>
@@ -38,6 +38,7 @@ const StyledOl = styled.ol`
       list-style-type: decimal;
     `}
   margin-top: 0px;
+  margin-top: 0.5rem;
 `;
 
 const Ol = ({ numbered, children }) => (

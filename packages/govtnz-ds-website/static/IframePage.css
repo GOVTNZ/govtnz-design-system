@@ -30,3 +30,8 @@ body {
 .css-changes-for-example-only .g-button {
   margin-right: 2rem;
 }
+
+.css-changes-for-example-only .g-ol-list li,
+.css-changes-for-example-only .g-ul-list li {
+  margin-bottom: 0.25rem;
+}

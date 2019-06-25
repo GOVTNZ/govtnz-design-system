@@ -56,7 +56,7 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-detailsWithHtml-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-detailsWithHtml-list--bullet > li,
 .g-detailsWithHtml-list--number > li {

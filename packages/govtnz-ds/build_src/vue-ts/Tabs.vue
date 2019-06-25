@@ -282,7 +282,7 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-tabs-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-tabs-list--bullet > li,
 .g-tabs-list--number > li {

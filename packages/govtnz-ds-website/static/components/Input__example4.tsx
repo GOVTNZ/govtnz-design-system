@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example codeOnly {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example codeOnly title="Example: Error state #2 (Text input)" {...onChangeGenerator({})}>
         <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="Postal Code" {...onChangeGenerator({})}></InputBlock>
     </Example>);
 

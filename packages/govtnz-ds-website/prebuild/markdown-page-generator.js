@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
-const puppeteer = require('puppeteer');
-const { startCase, uniq, clamp } = require('lodash');
+const { startCase, uniq } = require('lodash');
 const {
   escapeRegex,
   importGenerator,
@@ -22,7 +21,7 @@ const {
   ALL_FORMATS,
 } = require('@springload/metatemplate');
 const jsxtojson = require('jsx2json');
-const { writeExamplePage } = require('./example');
+const { writeExamplePage, getExampleHeight } = require('./example');
 
 const generateContentPages = async (
   sectionId,
@@ -274,15 +273,16 @@ const generatePage = async (
         const exampleAsJS = jsxtojson(fullExample);
 
         let heading = exampleAsJS.props && exampleAsJS.props.title;
+
         if (!heading) {
           heading =
             (headings &&
               headings[0] &&
               headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
             `Example ${counter + 1}`;
-        }
-        if (!heading.match(/example/i)) {
-          heading = `${heading} (${pageId} example)`;
+          if (!heading.match(/example/i)) {
+            heading = `${heading} (${pageId} example)`;
+          }
         }
 
         const exampleRelativePath = `${pageId}__example${counter}`;
@@ -356,6 +356,8 @@ const generatePage = async (
     html = html.replace(/<Example( [\s\S]*?>|>)[\s\S]*?<\/Example>/g, match => {
       const isCodeOnly = match.includes('codeOnly');
       counter++;
+
+      console.log(counter - 1, exampleTitles[counter - 1]);
 
       return `<Example ${
         isCodeOnly ? 'codeOnly' : ''
@@ -456,81 +458,6 @@ const generatePage = async (
     .replace(/for=/gi, 'htmlFor='); // convert HTML to React JSX with for -> htmlFor. FIXME: Use a real HTML parser
 
   return [imports, componentString, filesToNotDelete];
-};
-
-const getExampleHeight = async srcPath => {
-  // This function starts up Chromium and measures the
-  // height of examples so that the <iframe> can be given
-  // a specific height, and this is done to reduce onscreen jank.
-  //
-  // Note that this involves reading files from /public/
-  // which will be the previous build so it won't pick up any
-  // recent changes. So the determined height will always be
-  // one build behind (N - 1) however this is considered
-  // acceptable because:
-  //
-  //    1) there's JavaScript to resize the iframe anyway, so this
-  //       initial value isn't particularly important other than to
-  //       minimise jank;
-  //    2) the alternative before this was a default size of 100px
-  //       in all cases which was considered worse, so this is
-  //       considered an improvement.
-  //
-  //  ...but feel free to somehow build the site, calculate example
-  //  heights, and then update sizes in the pages, and then build the
-  //  site again with those sizes, if an N-1 size is too out-of-sync
-  //  for you.
-
-  let height = 200;
-  const npmProjectPath = path.resolve(__dirname, '..');
-
-  const fullFilePath = path.join(npmProjectPath, 'public', srcPath);
-
-  if (!fs.existsSync(fullFilePath)) {
-    console.error(
-      `Example file doesn't exist at `,
-      fullFilePath,
-      ' from ',
-      srcPath,
-      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.'
-    );
-    return height;
-  }
-
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-
-  const fileUri = `file://${fullFilePath}`;
-
-  try {
-    await page.goto(fileUri, { waitUntil: 'load' });
-  } catch (e) {
-    console.error(
-      'Problem calculating height of example at ',
-      fileUri,
-      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.',
-      e
-    );
-  }
-
-  // Ensure this element which is only displayed when viewing the iframe
-  // directly doesn't affect the height of the page.
-  await page.$eval('#iframed-message', element =>
-    element.parentNode.removeChild(element)
-  );
-
-  const newHeight = await page.$eval('#root', element => element.offsetHeight);
-
-  if (
-    newHeight.toString().length > 0 &&
-    newHeight.toString().replace(/[0-9]/gi, '').length === 0 // if it is entirely a number
-  ) {
-    console.log('Retrieved iframe height', newHeight);
-    height = clamp(parseFloat(newHeight.toString()), 50, 10000);
-  }
-
-  await browser.close();
-  return height;
 };
 
 module.exports.generateComponentPages = async (

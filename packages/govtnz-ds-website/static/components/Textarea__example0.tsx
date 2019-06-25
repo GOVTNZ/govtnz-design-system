@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Textarea" {...onChangeGenerator({})}>
         <Textarea {...onChangeGenerator({})}></Textarea>
         <TextareaWithCustomRows {...onChangeGenerator({})}></TextareaWithCustomRows>
         <TextareaWithErrorMessage {...onChangeGenerator({})}></TextareaWithErrorMessage>

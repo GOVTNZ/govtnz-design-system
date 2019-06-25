@@ -8,8 +8,8 @@ The following layout (non-responsive) example creates three equal-width columns 
 
 <div class="flexgrid-preview">
 <ExampleContainer>
-    <ExampleHeading>Example of 3-column Flexbox grid</ExampleHeading>
-    <Example>
+    <ExampleHeading>3-column Flexbox grid</ExampleHeading>
+    <Example title="Example: 3-column Flexbox grid">
         <FlexContainer width="fixed">
             <FlexRow>
                 <FlexColumn xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>
@@ -48,8 +48,8 @@ The following example shows all the possible variants of column widths.
 
 <div class="flexgrid-preview">
 <ExampleContainer>
-    <ExampleHeading>Example of Flexgrid column variants</ExampleHeading>
-    <Example>
+    <ExampleHeading>Flexgrid column variants</ExampleHeading>
+    <Example title="Example: Flexgrid column variants (Flexbox grid)">
         <FlexContainer width="fixed">
             <FlexRow>
                 <FlexColumn xs="4" sm="4" md="4" lg="4"> .g-flex-col .g-flex-col-md-4 </FlexColumn>

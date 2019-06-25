@@ -7,7 +7,7 @@ We are investigating how font choice will be incorporated into the design system
 ## Headings
 
 <ExampleContainer>
-    <Example>
+    <Example title="Example: Headings (Typography)">
         <ExampleSection>
             <H1 styleSize="xlarge">g-heading-xl</H1>
         </ExampleSection>
@@ -31,7 +31,7 @@ We are investigating how font choice will be incorporated into the design system
 
 <ExampleContainer>
     <ExampleHeading>Same heading level varying by size only</ExampleHeading>
-    <Example>
+    <Example title="Example: Same heading level varying by size only (Typography)">
         <ExampleSection>
             <H3 styleSize="xlarge">H3 g-heading-xl</H3>
         </ExampleSection>
@@ -61,7 +61,7 @@ Write all headings in sentence case, with the exception of proper nouns, which r
 
 <ExampleContainer>
     <ExampleHeading>Headings with captions</ExampleHeading>
-    <Example>
+    <Example title="Example: Headings with captions (Typography)">
         <ExampleSection>
             <CaptionXl>caption-xl</CaptionXl>
             <H1 styleSize="xlarge">g-heading-xl</H1>
@@ -80,8 +80,8 @@ Write all headings in sentence case, with the exception of proper nouns, which r
 Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.
 
 <ExampleContainer>
-    <ExampleHeading>Headings with captions inside the       <code>h1</code></ExampleHeading>
-    <Example>
+    <ExampleHeading>Headings with captions inside the <code>h1</code></ExampleHeading>
+    <Example title="Example: Headings with captions inside the h1 (Typography)">
         <H1 styleSize="xlarge">
             <CaptionXl>caption-xl</CaptionXl>
             g-heading-xl
@@ -103,7 +103,7 @@ You can use these text sizes to indicate the relative importance of the content 
 
 <ExampleContainer>
     <ExampleHeading>Large size for lead paragraph</ExampleHeading>
-    <Example>
+    <Example title="Example: Large size for lead paragraph (Typography)">
         <ExampleSection>
             <P styleSize="large">
                 Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online.</P>
@@ -119,7 +119,7 @@ Only use one lead paragraph per page.
 
 <ExampleContainer>
     <ExampleHeading>Medium size for standard body text</ExampleHeading>
-    <Example>
+    <Example title="Example: Medium size for standard body text (Typography)">
         <ExampleSection>
             <P styleSize="medium">
                 The all-of-government (AOG) design system alpha is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
@@ -131,7 +131,7 @@ The majority of your body copy should use medium size.
 
 <ExampleContainer>
     <ExampleHeading>Small size for small body text</ExampleHeading>
-    <Example>
+    <Example title="Example: Small size for small body text (Typography)">
         <ExampleSection>
             <P styleSize="small">
             Government Information Services is creating the design system now, and you can contribute. This alpha site shows you what we have built so far, what we are working on, and how you can get involved.</P>
@@ -145,7 +145,7 @@ Use it sparingly for 'small print' content, such as notes and references.
 
 <ExampleContainer>
     <ExampleHeading>Default</ExampleHeading>
-    <Example>
+    <Example title="Example: Links (Typography)">
         <P styleSize="medium">
             <A href="#">Discuss typography on 'GitHub issues'</A>
         </P>
@@ -161,20 +161,20 @@ Remember to make link text descriptive of the destination. Just “Read more” 
 Use lists to break up blocks of text into chunks to make them easier to read.
 
 <ExampleContainer>
-<ExampleHeading>Bulleted lists</ExampleHeading>
-<Example><P styleSize="medium">To help keep the kitchen clean, please:</P>
-
-<Ul bulleted>
-    <Li>replace tea and coffee jars on shelf</Li>
-    <Li>wipe down bench</Li>
-    <Li>wash dishes by: <Ul bulleted>
-            <Li>loading the dishwasher, if it's empty</Li>
-            <Li>rinsing and stacking, if dishwasher is going</Li>
+    <ExampleHeading>Bulleted lists</ExampleHeading>
+    <Example title="Example: Bulleted lists (Typography)">
+        <P styleSize="medium">To help keep the kitchen clean, please:</P>
+        <Ul bulleted>
+            <Li>replace tea and coffee jars on shelf</Li>
+            <Li>wipe down bench</Li>
+            <Li>wash dishes by: <Ul bulleted>
+                    <Li>loading the dishwasher, if it's empty</Li>
+                    <Li>rinsing and stacking, if dishwasher is going</Li>
+                </Ul>
+            </Li>
+            <Li>put recycling in labelled bins</Li>
         </Ul>
-    </Li>
-    <Li>put recycling in labelled bins</Li>
-</Ul>
-</Example>
+    </Example>
 </ExampleContainer>
 
 Introduce bulleted lists with a partial ‘stub’ sentence ending in a colon. Start each list item with a lowercase letter, and do not use a full stop at the end. Ensure each list item makes grammatical sense when read after the stub sentence above.
@@ -183,9 +183,8 @@ Use bulleted lists to highlight options and examples in content, especially when
 
 <ExampleContainer>
     <ExampleHeading>Numbered lists</ExampleHeading>
-    <Example>
-         <P styleSize="medium">
-            To sign up, you need to complete four steps.</P>
+    <Example title="Example: Numbered lists (Typography)">
+        <P styleSize="medium">To sign up, you need to complete four steps.</P>
         <Ol numbered>
             <Li>Prove your identity, such as with RealMe</Li>
             <Li>Provide a passport-sized photo</Li>

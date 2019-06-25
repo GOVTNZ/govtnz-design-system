@@ -11,7 +11,7 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-li-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-li-list--bullet > li,
 .g-li-list--number > li {

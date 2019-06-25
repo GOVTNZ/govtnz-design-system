@@ -7,7 +7,7 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
-    <Example>
+    <Example title="Example: Date input">
         <DateInput
             id="passport-issued"
             hintId="passport-issued-hint"
@@ -22,7 +22,7 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
-    <Example>
+    <Example title="Example: Error state #1 (Date input)">
         <DateInput
             id="passport-issued"
             hintId="passport-issued-hint"
@@ -64,7 +64,7 @@ To enable this functionality, set the `autocomplete` attribute on the fields to 
 
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
-    <Example codeOnly>
+    <Example codeOnly title="Example: Error state #2 (Date input)">
         <DateInput
             id="bday"
             hintId="bday-hint"

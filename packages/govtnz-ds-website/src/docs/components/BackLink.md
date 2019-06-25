@@ -1,6 +1,6 @@
 <ExampleContainer>
     <ExampleHeading>Example of Back link</ExampleHeading>
-    <Example>
+    <Example title="Example: Back link">
         <BackLinkWithCustomText />
     </Example>
 </ExampleContainer>

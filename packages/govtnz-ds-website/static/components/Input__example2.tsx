@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Fixed-width text input" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
             <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>

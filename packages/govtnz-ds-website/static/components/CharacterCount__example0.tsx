@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Character count" {...onChangeGenerator({})}>
         <CharacterCountWithCustomRows maxLength="200" {...onChangeGenerator({})}></CharacterCountWithCustomRows>
     </Example>);
 

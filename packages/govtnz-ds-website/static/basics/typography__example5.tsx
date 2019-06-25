@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Medium size for standard body text (Typography)" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
             <P styleSize="medium" {...onChangeGenerator({})}>
                 The all-of-government (AOG) design system alpha is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>

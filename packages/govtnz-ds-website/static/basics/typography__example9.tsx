@@ -13,9 +13,8 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
-         <P styleSize="medium" {...onChangeGenerator({})}>
-            To sign up, you need to complete four steps.</P>
+var PageContent = (props) => (<Example title="Example: Numbered lists (Typography)" {...onChangeGenerator({})}>
+        <P styleSize="medium" {...onChangeGenerator({})}>To sign up, you need to complete four steps.</P>
         <Ol numbered {...onChangeGenerator({})}>
             <Li {...onChangeGenerator({})}>Prove your identity, such as with RealMe</Li>
             <Li {...onChangeGenerator({})}>Provide a passport-sized photo</Li>

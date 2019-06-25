@@ -1,14 +1,4 @@
-const path = require('path');
-const fs = require('fs');
 const CONSTANTS = require('./src/commons/constants.json');
-
-const packagesPath = path.resolve(__dirname, '..');
-
-const dsScss = path.join(packagesPath, 'govtnz-ds/build/scss');
-const dsSiteSettings = 'src/commons/styles/ds/_settings.scss';
-
-console.log(dsSiteSettings);
-console.log(fs.existsSync(dsSiteSettings));
 
 module.exports = {
   siteMetadata: {

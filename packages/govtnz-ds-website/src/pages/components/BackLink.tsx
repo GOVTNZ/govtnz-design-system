@@ -27,7 +27,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         id:"iframe_componentsBackLink0",
         className: "example__iframe",
         src:"/components/BackLink__example0.html",
-        title:"Example of Back link",
+        title:"Example: Back link",
         height: 131
       }}></Example>
 </ExampleContainer>

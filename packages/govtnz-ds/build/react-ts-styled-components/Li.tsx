@@ -6,7 +6,7 @@ type Props = {
 };
 
 const StyledLi = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;

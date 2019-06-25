@@ -83,6 +83,8 @@ const cleanUp = filesToDelete => {
 const dynamicImportsFileSignature = '// @dynamicImports\n';
 
 const insertTemplate = (template, replacer, importsString = '') => {
+  // FIXME: Replace with Mustache or something like that
+  // there's no need for a custom template maker
   const filledTemplate = template
     .replace(/'{{[\s]*?(.*?)[\s]*?}}'/gi, (all, match) => {
       const variableName = match.replace(/\:.*$/, '').trim();

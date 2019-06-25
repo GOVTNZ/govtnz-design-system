@@ -1,6 +1,6 @@
 <ExampleContainer>
     <ExampleHeading>Example of Breadcrumbs</ExampleHeading>
-    <Example>
+    <Example title="Example: Breadcrumbs">
         <Breadcrumbs />
     </Example>
 </ExampleContainer>

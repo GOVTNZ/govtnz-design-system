@@ -115,7 +115,7 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -217,7 +217,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledLi2 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -646,7 +646,7 @@ const StyledUl2 = styled.ul`
 `;
 
 const StyledLi3 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;
@@ -748,7 +748,7 @@ const StyledSpan4 = styled.span`
 `;
 
 const StyledLi4 = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
   margin-bottom: 0;
   @media (min-width: 40.0625em) {
     margin-bottom: 5px;

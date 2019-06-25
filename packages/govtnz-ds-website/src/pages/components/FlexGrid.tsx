@@ -34,12 +34,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <p>The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.</p>
 <div className="flexgrid-preview">
 <ExampleContainer>
-    <ExampleHeading>Example of 3-column Flexbox grid</ExampleHeading>
+    <ExampleHeading>3-column Flexbox grid</ExampleHeading>
     <Example  code={components__FlexGrid[0]} iframeProps={{
         id:"iframe_componentsFlexGrid0",
         className: "example__iframe",
         src:"/components/FlexGrid__example0.html",
-        title:"Example of 3-column Flexbox grid",
+        title:"Example: 3-column Flexbox grid",
         height: 102
       }}></Example>
 </ExampleContainer>
@@ -63,12 +63,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <p>The following example shows all the possible variants of column widths.</p>
 <div className="flexgrid-preview">
 <ExampleContainer>
-    <ExampleHeading>Example of Flexgrid column variants</ExampleHeading>
+    <ExampleHeading>Flexgrid column variants</ExampleHeading>
     <Example  code={components__FlexGrid[1]} iframeProps={{
         id:"iframe_componentsFlexGrid1",
         className: "example__iframe",
         src:"/components/FlexGrid__example1.html",
-        title:"Example of Flexgrid column variants",
+        title:"Example: Flexgrid column variants (Flexbox grid)",
         height: 388
       }}></Example>
 </ExampleContainer>

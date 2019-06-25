@@ -196,7 +196,7 @@ export default Vue.extend({
   color: #0b0c0c;
 }
 .g-tabsTabsWithAnchorInPanel-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-tabsTabsWithAnchorInPanel-list--bullet > li,
 .g-tabsTabsWithAnchorInPanel-list--number > li {

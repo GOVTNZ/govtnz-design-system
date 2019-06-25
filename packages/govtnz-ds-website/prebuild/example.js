@@ -1,10 +1,11 @@
 const path = require('path');
 const fs = require('fs');
-const { pick, uniq } = require('lodash');
+const { pick, uniq, clamp } = require('lodash');
 const acorn = require('acorn');
 const acornJSX = require('acorn-jsx');
 const mkdirp = require('mkdirp');
 const webpack = require('webpack');
+const puppeteer = require('puppeteer');
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
 const {
@@ -29,11 +30,11 @@ const writeExamplePage = async (
   //   We want to have examples that use the DS components without
   //   theming, but we also want to use DS components with theming.
   //
-  // Unfortunately Gatsby has an optimisation which means it may
+  // Unfortunately Gatsby has an 'optimisation' which means it may
   // preload CSS from other pages, even if those pages couldn't possibly
   // be browsed to. It's not Gatsby's fault that it can't detect
   // whether a page is potentially navigable from another page because
-  // this is a very hard problem, but we're stuck with their naive
+  // that's a very hard problem, but we're stuck with their naive
   // optimisation to preload CSS just in case we'd browse to it.
   //
   // Normally this problem is solved in Gatsby by using distinct CSS
@@ -430,5 +431,92 @@ const addOnStateChanged = async html => {
   return newHTML;
 };
 
+let previousExampleHeights = []; // used to sanity check the height .. if it doesn't vary we probably have a bug
+
+const getExampleHeight = async srcPath => {
+  // This function starts up Chromium and measures the
+  // height of examples so that the <iframe> can be given
+  // a specific height, and this is done to reduce onscreen jank.
+  //
+  // Note that this involves reading files from /public/
+  // which will be the previous build so it won't pick up any
+  // recent changes. So the determined height will always be
+  // one build behind (N - 1) however this is considered
+  // acceptable because:
+  //
+  //    1) there's JavaScript to resize the iframe anyway, so this
+  //       initial value isn't particularly important other than to
+  //       minimise jank;
+  //    2) the alternative before this was a default size of 100px
+  //       in all cases which was considered worse, so this is
+  //       considered an improvement.
+  //
+  //  ...but feel free to somehow build the site, calculate example
+  //  heights, and then update sizes in the pages, and then build the
+  //  site again with those sizes, if an N-1 size is too out-of-sync
+  //  for you.
+  //
+  // ERROR YOU CAN IGNORE:
+  // If Chrome writes,
+  //    Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
+  // then you can ignore that. It's from Chrome and it's just a possible
+  // error and afaik we're doing everything correctly.
+
+  let height = 200;
+  const npmProjectPath = path.resolve(__dirname, '..');
+
+  const fullFilePath = path.join(npmProjectPath, 'public', srcPath);
+
+  if (!fs.existsSync(fullFilePath)) {
+    console.error(
+      `Example file doesn't exist at `,
+      fullFilePath,
+      ' from ',
+      srcPath,
+      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.'
+    );
+    return height;
+  }
+
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+
+  const fileUri = `file://${fullFilePath}`;
+
+  try {
+    await page.goto(fileUri, { waitUntil: 'load' });
+  } catch (e) {
+    console.error(
+      'Problem calculating height of example at ',
+      fileUri,
+      ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.',
+      e
+    );
+  }
+
+  // Ensure this element which is only displayed when viewing the iframe
+  // directly doesn't affect the height of the page.
+  await page.$eval('#iframed-message', element =>
+    element.parentNode.removeChild(element)
+  );
+
+  const newHeight = await page.$eval('#root', element => element.offsetHeight);
+
+  if (
+    newHeight.toString().length > 0 &&
+    newHeight.toString().replace(/[0-9]/gi, '').length === 0 // if it is entirely a number
+  ) {
+    height = clamp(parseFloat(newHeight.toString()), 50, 10000);
+  } else {
+    const errorMessage = `Unable to retrieve iframe height :( . Was given ${newHeight}`;
+    console.error(errorMessage);
+    throw new Error(errorMessage);
+  }
+
+  await browser.close();
+  return height;
+};
+
 module.exports.addOnStateChanged = addOnStateChanged;
 module.exports.writeExamplePage = writeExamplePage;
+module.exports.getExampleHeight = getExampleHeight;

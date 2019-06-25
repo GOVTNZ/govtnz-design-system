@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Large size for lead paragraph (Typography)" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
             <P styleSize="large" {...onChangeGenerator({})}>
                 Design and build fast, accessible websites backed by user research, so New Zealanders can easily use government services online.</P>

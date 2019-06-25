@@ -1,6 +1,6 @@
 <ExampleContainer>
     <ExampleHeading>Example of Inset Text</ExampleHeading>
-    <Example>
+    <Example title="Example: Inset text">
         <InsetText />
     </Example>
 </ExampleContainer>

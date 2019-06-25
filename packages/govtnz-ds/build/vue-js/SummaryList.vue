@@ -242,7 +242,7 @@ export default Vue.extend({
   color: #0b0c0c;
 }
 .g-summaryList-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-summaryList-list--bullet > li,
 .g-summaryList-list--number > li {

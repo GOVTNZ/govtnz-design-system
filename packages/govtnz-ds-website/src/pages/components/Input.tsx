@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput0",
         className: "example__iframe",
         src:"/components/Input__example0.html",
-        title:"Example 1",
+        title:"Example: Text input",
         height: 180
       }}></Example>
 </ExampleContainer>
@@ -43,7 +43,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput1",
         className: "example__iframe",
         src:"/components/Input__example1.html",
-        title:"Error state (Input example)",
+        title:"Example: Error state #1 (Text input)",
         height: 220
       }}></Example>
 </ExampleContainer>
@@ -68,7 +68,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput2",
         className: "example__iframe",
         src:"/components/Input__example2.html",
-        title:"Fixed-width text input (Input example)",
+        title:"Example: Fixed-width text input",
         height: 1060
       }}></Example>
 </ExampleContainer>
@@ -81,7 +81,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput3",
         className: "example__iframe",
         src:"/components/Input__example3.html",
-        title:"Hint text (Input example)",
+        title:"Example: Hint text (Text input)",
         height: 220
       }}></Example>
 </ExampleContainer>
@@ -97,7 +97,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs 
         id:"iframe_componentsInput4",
         className: "example__iframe",
         src:"/components/Input__example4.html",
-        title:"Example 5",
+        title:"Example: Error state #2 (Text input)",
         height: 220
       }}></Example>
 </ExampleContainer>

@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography0",
         className: "example__iframe",
         src:"/basics/typography__example0.html",
-        title:"Example 1",
+        title:"Example: Headings (Typography)",
         height: 436
       }}></Example>
 </ExampleContainer>
@@ -46,7 +46,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography1",
         className: "example__iframe",
         src:"/basics/typography__example1.html",
-        title:"Same heading level varying by size only (typography example)",
+        title:"Example: Same heading level varying by size only (Typography)",
         height: 436
       }}></Example>
 </ExampleContainer>
@@ -60,19 +60,19 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography2",
         className: "example__iframe",
         src:"/basics/typography__example2.html",
-        title:"Headings with captions (typography example)",
+        title:"Example: Headings with captions (Typography)",
         height: 391
       }}></Example>
 </ExampleContainer>
 
 <p>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</p>
 <ExampleContainer>
-    <ExampleHeading>Headings with captions inside the       <code>h1</code></ExampleHeading>
+    <ExampleHeading>Headings with captions inside the <code>h1</code></ExampleHeading>
     <Example  code={basics__typography[3]} iframeProps={{
         id:"iframe_basicstypography3",
         className: "example__iframe",
         src:"/basics/typography__example3.html",
-        title:"Headings with captions inside the       h1 (typography example)",
+        title:"Example: Headings with captions inside the h1 (Typography)",
         height: 194
       }}></Example>
 </ExampleContainer>
@@ -92,7 +92,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography4",
         className: "example__iframe",
         src:"/basics/typography__example4.html",
-        title:"Large size for lead paragraph (typography example)",
+        title:"Example: Large size for lead paragraph (Typography)",
         height: 170
       }}></Example>
 </ExampleContainer>
@@ -106,7 +106,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography5",
         className: "example__iframe",
         src:"/basics/typography__example5.html",
-        title:"Medium size for standard body text (typography example)",
+        title:"Example: Medium size for standard body text (Typography)",
         height: 179
       }}></Example>
 </ExampleContainer>
@@ -118,7 +118,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography6",
         className: "example__iframe",
         src:"/basics/typography__example6.html",
-        title:"Small size for small body text (typography example)",
+        title:"Example: Small size for small body text (Typography)",
         height: 144
       }}></Example>
 </ExampleContainer>
@@ -131,7 +131,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography7",
         className: "example__iframe",
         src:"/basics/typography__example7.html",
-        title:"Default (typography example)",
+        title:"Example: Links (Typography)",
         height: 125
       }}></Example>
 </ExampleContainer>
@@ -141,13 +141,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <h2 id="lists">Lists</h2>
 <p>Use lists to break up blocks of text into chunks to make them easier to read.</p>
 <ExampleContainer>
-<ExampleHeading>Bulleted lists</ExampleHeading>
-<Example  code={basics__typography[8]} iframeProps={{
+    <ExampleHeading>Bulleted lists</ExampleHeading>
+    <Example  code={basics__typography[8]} iframeProps={{
         id:"iframe_basicstypography8",
         className: "example__iframe",
         src:"/basics/typography__example8.html",
-        title:"Bulleted lists (typography example)",
-        height: 325
+        title:"Example: Bulleted lists (Typography)",
+        height: 335
       }}></Example>
 </ExampleContainer>
 
@@ -159,8 +159,8 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         id:"iframe_basicstypography9",
         className: "example__iframe",
         src:"/basics/typography__example9.html",
-        title:"Numbered lists (typography example)",
-        height: 325
+        title:"Example: Numbered lists (Typography)",
+        height: 335
       }}></Example>
 </ExampleContainer>
 

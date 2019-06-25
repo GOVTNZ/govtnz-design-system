@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Inset text" {...onChangeGenerator({})}>
         <InsetText {...onChangeGenerator({})}></InsetText>
     </Example>);
 

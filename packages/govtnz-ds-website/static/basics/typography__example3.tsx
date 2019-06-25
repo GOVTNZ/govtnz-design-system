@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Headings with captions inside the h1 (Typography)" {...onChangeGenerator({})}>
         <H1 styleSize="xlarge" {...onChangeGenerator({})}>
             <CaptionXl {...onChangeGenerator({})}>caption-xl</CaptionXl>
             g-heading-xl

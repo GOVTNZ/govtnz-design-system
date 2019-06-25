@@ -1920,7 +1920,7 @@ export default Vue.extend({
   }
 }
 .g-summaryListExtreme-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-summaryListExtreme-list--bullet > li,
 .g-summaryListExtreme-list--number > li {

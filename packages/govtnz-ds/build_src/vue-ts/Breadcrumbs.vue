@@ -66,7 +66,7 @@ export default Vue.extend({
 });</script
 ><style scoped>
 .g-breadcrumbs-list > li {
-  margin-bottom: 5px;
+  margin-bottom: 0.25rem;
 }
 .g-breadcrumbs-list--bullet > li,
 .g-breadcrumbs-list--number > li {
