@@ -1,0 +1,5 @@
+{
+  css: {
+    extract: false;
+  }
+}

@@ -15,7 +15,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     fakeFocus: { type: Boolean, default: false, required: false },
     gov1: { type: String, required: false },

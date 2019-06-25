@@ -101,7 +101,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     tabTab1: { type: String, required: false },
     tab1: { type: String, required: false },

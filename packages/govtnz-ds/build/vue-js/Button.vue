@@ -16,7 +16,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     disabled: { type: Boolean, default: false, required: false },
     level: {

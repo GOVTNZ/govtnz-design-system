@@ -252,7 +252,6 @@ export default class VueTs {
       .join(", ");
 
     script += `export default Vue.extend({\n
-        functional: true, // no internal state
         props: { ${props} },
         computed: {
             ${Object.keys(this.computed)
@@ -318,25 +317,8 @@ export default class VueTs {
     }
     js += ` ${END_OF_SCRIPT}`;
 
-    let formattedJs: string;
-    try {
-      formattedJs = prettier.format(js, {
-        parser: "babel"
-      });
-    } catch (e) {
-      console.log(
-        `MetaTemplate internal problem: Vue codegen problem, unable to Prettier #${
-          this._template.id
-        } this code:`,
-        js,
-        e
-      );
-      formattedJs = js;
-    }
-
     return {
-      [`${pathPrefix}.vue`]: formattedSingle,
-      [`${pathPrefix}.js`]: formattedJs
+      [`${pathPrefix}.vue`]: formattedSingle
     };
   };
 

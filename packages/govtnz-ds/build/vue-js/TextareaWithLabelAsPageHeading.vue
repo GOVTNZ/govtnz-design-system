@@ -86,7 +86,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     textareaWithPageHeading: { type: String, required: false },
     name: { type: String, required: true },

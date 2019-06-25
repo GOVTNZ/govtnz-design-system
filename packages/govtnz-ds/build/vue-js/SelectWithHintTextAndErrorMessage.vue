@@ -38,7 +38,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     select2: { type: String, required: false },
     select2Hint: { type: String, required: false },

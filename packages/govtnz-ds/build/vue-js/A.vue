@@ -15,7 +15,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     isMuted: { type: Boolean, default: false, required: false },
     href: { type: String, required: true },

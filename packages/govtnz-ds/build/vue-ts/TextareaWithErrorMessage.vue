@@ -91,7 +91,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     noNiReason: { type: String, required: false },
     noNiReasonError: { type: String, required: false },

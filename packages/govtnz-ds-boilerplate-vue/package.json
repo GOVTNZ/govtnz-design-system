@@ -11,6 +11,8 @@
   "dependencies": {
     "@govtnz/ds": "0.0.7",
     "@vue/cli-service": "3.5.3",
+    "postcss-load-config": "^2.1.0",
+    "postcss-loader": "^3.0.0",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",

@@ -24,7 +24,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     fileUpload2: { type: String, required: false },
     fileUpload2Hint: { type: String, required: false },

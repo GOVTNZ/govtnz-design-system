@@ -231,7 +231,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     href: { type: String, required: true },
     rel: { type: String, required: false },

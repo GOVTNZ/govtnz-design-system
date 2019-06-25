@@ -31,7 +31,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     hintId: { type: String, required: false },
     errorId: { type: String, required: false },

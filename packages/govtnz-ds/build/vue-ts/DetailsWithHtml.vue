@@ -45,7 +45,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     open: { type: Boolean, default: false, required: false },
     detailsContentDbb380D380B94F9E8Bb177Fc0E5Cfac0: {

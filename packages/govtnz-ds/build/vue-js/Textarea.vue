@@ -87,7 +87,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     moreDetail: { type: String, required: false },
     moreDetailHint: { type: String, required: false },

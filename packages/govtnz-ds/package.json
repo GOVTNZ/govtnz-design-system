@@ -53,6 +53,8 @@
     "typescript": "^3.2.4"
   },
   "dependencies": {
+    "@vue/cli-service": "^3.8.4",
     "lodash": "^4.17.11"
-  }
+  },
+  "postcss": {}
 }

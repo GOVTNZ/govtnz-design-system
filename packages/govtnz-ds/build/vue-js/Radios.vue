@@ -6,7 +6,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     inline: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Radio components" }

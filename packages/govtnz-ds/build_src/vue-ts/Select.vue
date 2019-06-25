@@ -11,7 +11,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     selectId: { type: String, required: false },
     name: { type: String, required: true },

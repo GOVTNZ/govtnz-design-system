@@ -21,7 +21,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     fakeFocus: { type: Boolean, default: false, required: false },
     radioId: { type: String, required: false },

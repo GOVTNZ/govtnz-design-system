@@ -33,7 +33,6 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     fileUpload3: { type: String, required: false },
     fileUpload3Hint: { type: String, required: false },

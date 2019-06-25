@@ -10,7 +10,6 @@ const constants = {
 };
 
 export default Vue.extend({
-  functional: true, // no internal state
   props: {
     width: {
       type: String,
