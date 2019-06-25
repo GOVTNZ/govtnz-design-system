@@ -83,7 +83,7 @@ async function validateHTMLErrors(data, fileId) {
   try {
     result = await validator(options);
   } catch (e) {
-    console.log('SDFSDf');
+    console.error(e);
   }
 
   const errors =

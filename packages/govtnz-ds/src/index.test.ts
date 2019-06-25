@@ -34,17 +34,15 @@ describe(`CSS/SCSS contains values`, () => {
 });
 
 describe(`ES5 build for IE11 compatibility`, () => {
-  test(`file doesn't contain ES6 features`, async () => {
+  test(`React doesn't contain ES6 features`, async () => {
     const allJavaScript = await Promise.all([
       getAggregatedData('react-js', 'js'),
       getAggregatedData('react-ts', 'js'),
       getAggregatedData('react-js-styled-components', 'js'),
-      getAggregatedData('react-ts-styled-components', 'js'),
-      getAggregatedData('vue-js', 'js'),
-      getAggregatedData('vue-ts', 'js')
+      getAggregatedData('react-ts-styled-components', 'js')
     ]);
 
-    allJavaScript.forEach(js => {
+    allJavaScript.forEach((js, index) => {
       // Basic check to see whether it could find any javascript
       expect(js.length).toBeGreaterThan(10000);
     });
@@ -56,6 +54,18 @@ describe(`ES5 build for IE11 compatibility`, () => {
     expect(allJavaScriptString).toEqual(expect.not.stringContaining('()=>{'));
     // should not contain backticks
     expect(allJavaScriptString).toEqual(expect.not.stringContaining('`'));
+  });
+});
+
+test(`Vue build exists`, async () => {
+  const allJavaScript = await Promise.all([
+    getAggregatedData('vue-js', 'vue'),
+    getAggregatedData('vue-ts', 'vue')
+  ]);
+
+  allJavaScript.forEach((js, index) => {
+    // Basic check to see whether it could find any javascript
+    expect(js.length).toBeGreaterThan(10000);
   });
 });
 
