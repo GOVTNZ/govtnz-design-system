@@ -1051,6 +1051,14 @@
   resolved "https://registry.yarnpkg.com/@govtnz/ds/-/ds-0.0.1.tgz#270266be1eda4e4c02d71641e6e93657a86d3df8"
   integrity sha512-LrYgGTDgN2/jhNiYOV7VUNbkfxkQS3L7Ih0ry43D0+KwVspl2cz/rD1LtjuFVWEJLxQ3Xso86nFkxBMFDjcwXg==
 
+"@govtnz/ds@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@govtnz/ds/-/ds-0.0.7.tgz#365a406dcabbd92fa0890de471e9e0e51e23f1b0"
+  integrity sha512-1JUAOPLp/zPuk9xtGI1IDtMTQvyH/JmhECnnhGzmPYy0vfxuOXYa2R0B3iPtGOgy8tTSnE9YpVHj+WR9YsQMTQ==
+  dependencies:
+    "@vue/cli-service" "^3.8.4"
+    lodash "^4.17.11"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
