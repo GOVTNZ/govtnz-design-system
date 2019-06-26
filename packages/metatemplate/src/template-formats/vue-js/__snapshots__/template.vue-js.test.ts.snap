@@ -51,8 +51,8 @@ export default Vue.extend({
   },
   computed: {
     computed__crossorigin() {
-      return constants[this.crossorigin] !== undefined
-        ? constants[this.crossorigin]
+      return constants.crossorigin[this.crossorigin] !== undefined
+        ? constants.crossorigin[this.crossorigin]
         : \\"\\";
     }
   }
@@ -166,8 +166,8 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return constants[this.containerType] !== undefined
-        ? constants[this.containerType]
+      return constants.containerType[this.containerType] !== undefined
+        ? constants.containerType[this.containerType]
         : \\"\\";
     }
   }
@@ -343,7 +343,9 @@ export default Vue.extend({
       return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
     },
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : \\"\\";
     }
   }
 });</script
@@ -424,8 +426,8 @@ export default Vue.extend({
       return (
         \\"g-flex-col\\" +
         (this.isReversed ? \\" g-flex-reverse\\" : \\"\\") +
-        (constants[this.columnXs] !== undefined
-          ? \` \${constants[this.columnXs]}\`
+        (constants.columnXs[this.columnXs] !== undefined
+          ? \` \${constants.columnXs[this.columnXs]}\`
           : \\"\\")
       );
     }
@@ -606,8 +608,8 @@ export default Vue.extend({
   },
   computed: {
     computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
+      return constants.autoComplete[this.autoComplete] !== undefined
+        ? constants.autoComplete[this.autoComplete]
         : \\"\\";
     }
   }
@@ -660,7 +662,9 @@ export default Vue.extend({
       return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
     },
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : \\"\\";
     }
   }
 });</script
@@ -718,7 +722,9 @@ export default Vue.extend({
       return \\"g-link\\" + (this.isMuted ? \\" g-link--muted\\" : \\"\\");
     },
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : \\"\\";
     }
   }
 });</script
@@ -772,7 +778,9 @@ export default Vue.extend({
   },
   computed: {
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : \\"\\";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : \\"\\";
     }
   }
 });</script
@@ -1002,11 +1010,13 @@ export default Vue.extend({
   },
   computed: {
     computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : \\"\\";
+      return constants.type[this.type] !== undefined
+        ? constants.type[this.type]
+        : \\"\\";
     },
     computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
+      return constants.autoComplete[this.autoComplete] !== undefined
+        ? constants.autoComplete[this.autoComplete]
         : \\"\\";
     }
   }
