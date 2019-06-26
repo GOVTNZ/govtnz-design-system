@@ -1,6 +1,6 @@
 # Change log
 
-## Version 0.0.7
+## Version 0.0.8
 
 - Button and Date Picker
 - Vue improvements
