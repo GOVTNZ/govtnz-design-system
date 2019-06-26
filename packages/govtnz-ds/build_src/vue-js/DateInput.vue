@@ -516,8 +516,8 @@ export default Vue.extend({
       );
     },
     computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
+      return constants.autoComplete[this.autoComplete] !== undefined
+        ? constants.autoComplete[this.autoComplete]
         : "";
     },
     computed__class3() {
@@ -527,8 +527,8 @@ export default Vue.extend({
       );
     },
     computed__autocomplete2() {
-      return constants[this.autoComplete2] !== undefined
-        ? constants[this.autoComplete2]
+      return constants.autoComplete2[this.autoComplete2] !== undefined
+        ? constants.autoComplete2[this.autoComplete2]
         : "";
     },
     computed__class4() {
@@ -538,8 +538,8 @@ export default Vue.extend({
       );
     },
     computed__autocomplete3() {
-      return constants[this.autoComplete3] !== undefined
-        ? constants[this.autoComplete3]
+      return constants.autoComplete3[this.autoComplete3] !== undefined
+        ? constants.autoComplete3[this.autoComplete3]
         : "";
     }
   }

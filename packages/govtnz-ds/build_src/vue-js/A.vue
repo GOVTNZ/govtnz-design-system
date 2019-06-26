@@ -33,7 +33,9 @@ export default Vue.extend({
       return "g-a-link" + (this.isMuted ? " g-a-link--muted" : "");
     },
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : "";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : "";
     }
   }
 });</script

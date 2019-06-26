@@ -55,11 +55,13 @@ export default Vue.extend({
   },
   computed: {
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : "";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : "";
     },
     computed__target2() {
-      return constants[this.target2] !== undefined
-        ? constants[this.target2]
+      return constants.target2[this.target2] !== undefined
+        ? constants.target2[this.target2]
         : "";
     }
   }

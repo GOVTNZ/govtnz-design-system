@@ -169,8 +169,8 @@ export default Vue.extend({
   },
   computed: {
     computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
+      return constants.autoComplete[this.autoComplete] !== undefined
+        ? constants.autoComplete[this.autoComplete]
         : "";
     }
   }

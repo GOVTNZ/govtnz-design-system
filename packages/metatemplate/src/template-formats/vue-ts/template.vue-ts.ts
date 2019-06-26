@@ -142,10 +142,14 @@ export default class VueTs {
                 // attribute values ie `class="val1 val2"` with spacing.
                 // BUT if there's just a single dynamicKey then don't add whitespace.
 
-                return `(constants[this.${dynamicKey.key}] !== undefined ? ${
+                return `(constants.${dynamicKey.key}[this.${
+                  dynamicKey.key
+                }] !== undefined ? ${
                   shouldHavePrecedingWhitespace
-                    ? `\` \${constants[this.${dynamicKey.key}]}\``
-                    : `constants[this.${dynamicKey.key}]`
+                    ? `\` \${constants.${dynamicKey.key}[this.${
+                        dynamicKey.key
+                      }]}\``
+                    : `constants.${dynamicKey.key}[this.${dynamicKey.key}]`
                 } : '')`;
               }
 

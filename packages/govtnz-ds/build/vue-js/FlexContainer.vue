@@ -22,7 +22,9 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return constants[this.width] !== undefined ? constants[this.width] : "";
+      return constants.width[this.width] !== undefined
+        ? constants.width[this.width]
+        : "";
     }
   }
 });</script

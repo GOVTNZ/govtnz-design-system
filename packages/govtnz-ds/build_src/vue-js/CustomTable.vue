@@ -305,61 +305,63 @@ export default Vue.extend({
   },
   computed: {
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : "";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : "";
     },
     computed__target2() {
-      return constants[this.target2] !== undefined
-        ? constants[this.target2]
+      return constants.target2[this.target2] !== undefined
+        ? constants.target2[this.target2]
         : "";
     },
     computed__target3() {
-      return constants[this.target3] !== undefined
-        ? constants[this.target3]
+      return constants.target3[this.target3] !== undefined
+        ? constants.target3[this.target3]
         : "";
     },
     computed__target4() {
-      return constants[this.target4] !== undefined
-        ? constants[this.target4]
+      return constants.target4[this.target4] !== undefined
+        ? constants.target4[this.target4]
         : "";
     },
     computed__target5() {
-      return constants[this.target5] !== undefined
-        ? constants[this.target5]
+      return constants.target5[this.target5] !== undefined
+        ? constants.target5[this.target5]
         : "";
     },
     computed__target6() {
-      return constants[this.target6] !== undefined
-        ? constants[this.target6]
+      return constants.target6[this.target6] !== undefined
+        ? constants.target6[this.target6]
         : "";
     },
     computed__target7() {
-      return constants[this.target7] !== undefined
-        ? constants[this.target7]
+      return constants.target7[this.target7] !== undefined
+        ? constants.target7[this.target7]
         : "";
     },
     computed__target8() {
-      return constants[this.target8] !== undefined
-        ? constants[this.target8]
+      return constants.target8[this.target8] !== undefined
+        ? constants.target8[this.target8]
         : "";
     },
     computed__target9() {
-      return constants[this.target9] !== undefined
-        ? constants[this.target9]
+      return constants.target9[this.target9] !== undefined
+        ? constants.target9[this.target9]
         : "";
     },
     computed__target10() {
-      return constants[this.target10] !== undefined
-        ? constants[this.target10]
+      return constants.target10[this.target10] !== undefined
+        ? constants.target10[this.target10]
         : "";
     },
     computed__target11() {
-      return constants[this.target11] !== undefined
-        ? constants[this.target11]
+      return constants.target11[this.target11] !== undefined
+        ? constants.target11[this.target11]
         : "";
     },
     computed__target12() {
-      return constants[this.target12] !== undefined
-        ? constants[this.target12]
+      return constants.target12[this.target12] !== undefined
+        ? constants.target12[this.target12]
         : "";
     }
   }

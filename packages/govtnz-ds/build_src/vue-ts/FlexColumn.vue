@@ -321,21 +321,29 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-flex-col" +
-        (constants[this.xs] !== undefined ? ` ${constants[this.xs]}` : "") +
-        (constants[this.sm] !== undefined ? ` ${constants[this.sm]}` : "") +
-        (constants[this.md] !== undefined ? ` ${constants[this.md]}` : "") +
-        (constants[this.lg] !== undefined ? ` ${constants[this.lg]}` : "") +
-        (constants[this.xsOffset] !== undefined
-          ? ` ${constants[this.xsOffset]}`
+        (constants.xs[this.xs] !== undefined
+          ? ` ${constants.xs[this.xs]}`
           : "") +
-        (constants[this.smOffset] !== undefined
-          ? ` ${constants[this.smOffset]}`
+        (constants.sm[this.sm] !== undefined
+          ? ` ${constants.sm[this.sm]}`
           : "") +
-        (constants[this.mdOffset] !== undefined
-          ? ` ${constants[this.mdOffset]}`
+        (constants.md[this.md] !== undefined
+          ? ` ${constants.md[this.md]}`
           : "") +
-        (constants[this.lgOffset] !== undefined
-          ? ` ${constants[this.lgOffset]}`
+        (constants.lg[this.lg] !== undefined
+          ? ` ${constants.lg[this.lg]}`
+          : "") +
+        (constants.xsOffset[this.xsOffset] !== undefined
+          ? ` ${constants.xsOffset[this.xsOffset]}`
+          : "") +
+        (constants.smOffset[this.smOffset] !== undefined
+          ? ` ${constants.smOffset[this.smOffset]}`
+          : "") +
+        (constants.mdOffset[this.mdOffset] !== undefined
+          ? ` ${constants.mdOffset[this.mdOffset]}`
+          : "") +
+        (constants.lgOffset[this.lgOffset] !== undefined
+          ? ` ${constants.lgOffset[this.lgOffset]}`
           : "") +
         (this.isReversed ? " g-flex-reverse" : "")
       );

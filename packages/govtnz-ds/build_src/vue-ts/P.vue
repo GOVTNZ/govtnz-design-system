@@ -27,8 +27,8 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return constants[this.styleSize] !== undefined
-        ? constants[this.styleSize]
+      return constants.styleSize[this.styleSize] !== undefined
+        ? constants.styleSize[this.styleSize]
         : "";
     }
   }

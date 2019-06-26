@@ -171,16 +171,16 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-input" +
-        (constants[this.width] !== undefined
-          ? ` ${constants[this.width]}`
+        (constants.width[this.width] !== undefined
+          ? ` ${constants.width[this.width]}`
           : "") +
         (this.error ? " g-input--error" : "") +
         (this.fakeFocus ? " :focus" : "")
       );
     },
     computed__autocomplete() {
-      return constants[this.autoComplete] !== undefined
-        ? constants[this.autoComplete]
+      return constants.autoComplete[this.autoComplete] !== undefined
+        ? constants.autoComplete[this.autoComplete]
         : "";
     }
   }

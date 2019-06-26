@@ -146,21 +146,23 @@ export default Vue.extend({
   },
   computed: {
     computed__target() {
-      return constants[this.target] !== undefined ? constants[this.target] : "";
+      return constants.target[this.target] !== undefined
+        ? constants.target[this.target]
+        : "";
     },
     computed__target2() {
-      return constants[this.target2] !== undefined
-        ? constants[this.target2]
+      return constants.target2[this.target2] !== undefined
+        ? constants.target2[this.target2]
         : "";
     },
     computed__target3() {
-      return constants[this.target3] !== undefined
-        ? constants[this.target3]
+      return constants.target3[this.target3] !== undefined
+        ? constants.target3[this.target3]
         : "";
     },
     computed__target4() {
-      return constants[this.target4] !== undefined
-        ? constants[this.target4]
+      return constants.target4[this.target4] !== undefined
+        ? constants.target4[this.target4]
         : "";
     }
   }

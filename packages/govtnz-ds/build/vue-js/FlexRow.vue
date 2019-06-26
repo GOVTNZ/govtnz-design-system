@@ -49,17 +49,17 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-flex-row" +
-        (constants[this.alignXs] !== undefined
-          ? ` ${constants[this.alignXs]}`
+        (constants.alignXs[this.alignXs] !== undefined
+          ? ` ${constants.alignXs[this.alignXs]}`
           : "") +
-        (constants[this.alignSm] !== undefined
-          ? ` ${constants[this.alignSm]}`
+        (constants.alignSm[this.alignSm] !== undefined
+          ? ` ${constants.alignSm[this.alignSm]}`
           : "") +
-        (constants[this.alignMd] !== undefined
-          ? ` ${constants[this.alignMd]}`
+        (constants.alignMd[this.alignMd] !== undefined
+          ? ` ${constants.alignMd[this.alignMd]}`
           : "") +
-        (constants[this.alignLg] !== undefined
-          ? ` ${constants[this.alignLg]}`
+        (constants.alignLg[this.alignLg] !== undefined
+          ? ` ${constants.alignLg[this.alignLg]}`
           : "") +
         (this.isReversed ? " g-flex-reverse" : "")
       );

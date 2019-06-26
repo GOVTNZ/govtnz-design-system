@@ -37,8 +37,8 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        (constants[this.styleSize] !== undefined
-          ? ` ${constants[this.styleSize]}`
+        (constants.styleSize[this.styleSize] !== undefined
+          ? ` ${constants.styleSize[this.styleSize]}`
           : "") +
         (this.marginBottom8 ? " g-heading-mb-8" : "") +
         (this.marginBottom0 ? " g-heading-mb-0" : "")
