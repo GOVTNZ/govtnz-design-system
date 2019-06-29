@@ -114,12 +114,12 @@ We intend to use the [SilverStripe Components](https://github.com/symbiote/silve
 After installation, use files as
 
 ```javascript
-import H1 from "@govtnz/ds/build/vue-js/H1.js";
+import H1 from "@govtnz/ds/build/vue-js/H1.vue";
 ```
 
-You may import CSS as `import "@govtnz/ds/build/css/H1.css";`, or SCSS as `import "@govtnz/ds/build/css/H1.scss";`, or include those classes via some other SCSS or CSS preprocessor.
+These `.vue` files currently include CSS. Should they? Let us know.
 
-Read the component source code or use the TypeScript types to learn about the slots each component accepts.
+Read the component source code or use the TypeScript types to learn about the variables each component accepts.
 
 ### Mustache
 
@@ -131,7 +131,7 @@ Mustache templates can be converted into HTML by using a Mustache or Handlebars 
 
 When providing a `context` value that sets an enumeration (a multichoice option) provide the value as `"OPTION=VALUE": true, "OPTION": true` where `OPTION` is the enumerated key and `VALUE` is the enumerated value. This is required because Mustache is a "logic-less" template format that has no way of comparing values so the enumeration must be precomputed.
 
-Be careful to [encode input to avoid security issues](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md#why-cant-i-just-html-entity-encode-untrusted-data).
+Some Mustache templates use triple-bracket `{{{ variable }}}` which bypasses HTML escaping. This is necessary because some variables are expected to render HTML, not just text nodes or attribute values. Be careful to [encode input to avoid security issues](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.md#why-cant-i-just-html-entity-encode-untrusted-data) when using Mustache templates.
 
 ### Other formats?
 
