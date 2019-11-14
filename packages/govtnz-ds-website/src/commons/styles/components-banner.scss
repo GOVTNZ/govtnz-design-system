@@ -48,4 +48,8 @@
   @include small {
     display: none;
   }
+
+  @include print {
+    display: none;
+  }
 }

@@ -33,6 +33,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @include print {
+    display: none;
+  }
 }
 
 .g-footer__standard-inline-list-item {
