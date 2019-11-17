@@ -52,6 +52,9 @@ export default class Example extends Component<Props, State> {
       id: `select_${Math.random()
         .toString(36)
         .replace(/[^0-9a-fA-F]/gi, '')}`,
+      templateChooserId: `template_${Math.random()
+        .toString(36)
+        .replace(/[^0-9a-fA-F]/gi, '')}`,
       formatId: formatId,
       code: highlightCode(rawCode, formatId),
       hasClickedExpand: false,
@@ -277,7 +280,7 @@ export default class Example extends Component<Props, State> {
               </p>
             )}
 
-            <pre className="language-code example__code">
+            <pre className="language-code example__code" tabIndex="0" role="group">
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>
           </React.Fragment>
