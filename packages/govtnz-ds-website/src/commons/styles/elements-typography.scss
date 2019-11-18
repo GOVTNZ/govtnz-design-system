@@ -80,9 +80,18 @@ a {
   color: var(--color-theme-link, $color-ds-default-link);
 
   transition: color 0.2s;
+
+  @include print {
+    color: $color-core-black;
+  }
+
   &:visited {
     color: $color-ds-default-link-visited;
     color: var(--color-theme-link-visited, $color-ds-default-link-visited);
+
+    @include print {
+      color: $color-core-black;
+    }
   }
   &:hover {
     color: $color-ds-default-link-hover;

@@ -37,3 +37,9 @@ $breakpoint-xlarge: 1200px;
     @content;
   }
 }
+
+@mixin print {
+  @media print {
+    @content
+  }
+}

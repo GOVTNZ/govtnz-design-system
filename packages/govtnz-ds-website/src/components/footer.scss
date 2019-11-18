@@ -13,10 +13,14 @@
 .g-footer__standard {
   background-color: #363636;
   background-color: var(--color-theme-dark-grey, #363636);
-  color: #ffffff;
+  color: $color-core-white;
   font-size: 1rem;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
+
+  @include print {
+    background-color: $color-core-white;
+  }
 }
 
 .g-footer__standard-item {

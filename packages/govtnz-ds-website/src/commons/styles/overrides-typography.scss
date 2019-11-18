@@ -4,6 +4,8 @@
 // We are temporarily overriding the gov.uk typography styling here
 // TODO: move these into the Design System
 
+@import 'settings-global';
+
 [class^='g-heading'],
 [class^='g-body'],
 [class^='g-p-body'] {
@@ -112,8 +114,16 @@
 .g-a-link {
   color: var(--color-theme-link, #005dbb) !important;
 
+  @media print {
+    color: $color-core-black !important;
+  }
+
   &:visited {
     color: var(--color-theme-link-visited, #4c2c92) !important;
+
+    @media print {
+      color: $color-core-black !important;
+    }
   }
 
   &:hover {

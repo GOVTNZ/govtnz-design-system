@@ -38,6 +38,10 @@
 .banner--green {
   background-color: $color-ds-default-green;
   background-color: var(--color-theme-highlight, $color-ds-default-green);
+
+  @include print {
+    background-color: $color-core-white;
+  }
 }
 
 .banner__icon {
