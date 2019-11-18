@@ -23,6 +23,7 @@ type Props = {
 type State = {
   formatId: string;
   id: string;
+  templateChooserId: string,
   code: string;
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
@@ -174,6 +175,7 @@ export default class Example extends Component<Props, State> {
     const { iframeProps, codeOnly, code: allCode } = this.props;
     const {
       id,
+      templateChooserId,
       formatId,
       code,
       supportsClipboard,
@@ -188,7 +190,7 @@ export default class Example extends Component<Props, State> {
         {supportsJavaScript && (
           <React.Fragment>
             <div className="example__format">
-              <h6 style={{ margin: '0 0 24px' }}>
+              <h6 id={templateChooserId} style={{ margin: '0 0 24px' }}>
                 <label className="example__label" htmlFor={id}>
                   Template format:{' '}
                 </label>
@@ -280,7 +282,12 @@ export default class Example extends Component<Props, State> {
               </p>
             )}
 
-            <pre className="language-code example__code" tabIndex="0" role="group">
+            <pre
+              className="language-code example__code"
+              tabIndex={0}
+              role="group"
+              aria-describedby={templateChooserId}
+            >
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>
           </React.Fragment>
