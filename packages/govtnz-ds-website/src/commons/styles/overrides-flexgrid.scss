@@ -16,9 +16,9 @@
   padding-left: 0.75rem !important;
 }
 
-// Specifically applied for /basics/colours/ page
+// Specifically forcing style for /basics/colours/ page to keep the layout
 .g-flex-col-lg-3 {
   @include print {
-    flex-basis: 25% !important; 
+    flex-basis: 25% !important;
   }
 }
