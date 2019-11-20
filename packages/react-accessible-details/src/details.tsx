@@ -5,9 +5,10 @@ import Summary from "./summary";
 type Props = {
   children: React.ReactNode;
   className?: string | undefined;
+  detailsId?: string | undefined;
 };
 
-export default function Details({ children, className }: Props) {
+export default function Details({ detailsId, children, className }: Props) {
   let [isScriptingEnabled, setIsScriptingEnabled] = useState(false);
   useEffect(() => setIsScriptingEnabled(true), []);
   return (
@@ -20,22 +21,19 @@ export default function Details({ children, className }: Props) {
         const OtherChildren = kids.filter(
           kid => !kid["type"] || kid["type"].toString() !== Summary.toString()
         );
+
         return (
           <details
             open={value.isOpen}
             role="group"
             className={className || undefined}
+            id={detailsId}
           >
             {SummaryChildren}
-            <div
-              style={
-                isScriptingEnabled
-                  ? { display: value.isOpen ? "block" : "none" }
-                  : null
-              }
-            >
-              {OtherChildren}
-            </div>
+
+            {!isScriptingEnabled || value.isOpen ? (
+              <div>{OtherChildren}</div>
+            ) : null}
           </details>
         );
       }}

@@ -8,6 +8,7 @@ type Props = {
   isOpenDefault?: boolean | undefined;
   className: string | undefined;
   onChange: Function;
+  id?: string | undefined;
 };
 
 export const Context = React.createContext({
@@ -21,7 +22,8 @@ export function Details({
   isOpen,
   isOpenDefault,
   className,
-  onChange
+  onChange,
+  id: detailsId
 }: Props) {
   const [id] = useState(generateId("Details"));
   const [_isOpen, _setIsOpen] = useState(
@@ -41,9 +43,15 @@ export function Details({
 
   return (
     <Context.Provider
-      value={{ id, isOpen: isOpen !== undefined ? isOpen : _isOpen, setIsOpen }}
+      value={{
+        id,
+        isOpen: isOpen !== undefined ? isOpen : _isOpen,
+        setIsOpen
+      }}
     >
-      <BaseDetails className={className}>{children}</BaseDetails>
+      <BaseDetails className={className} detailsId={detailsId}>
+        {children}
+      </BaseDetails>
     </Context.Provider>
   );
 }
