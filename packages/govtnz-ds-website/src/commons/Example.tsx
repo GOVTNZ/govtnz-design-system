@@ -23,6 +23,7 @@ type Props = {
 type State = {
   formatId: string;
   id: string;
+  summaryId: string,
   templateChooserId: string,
   code: string;
   hasClickedExpand: boolean;
@@ -48,14 +49,14 @@ export default class Example extends Component<Props, State> {
 
     const formatId = DEFAULT_FORMAT_ID;
     const rawCode = props.code[formatId];
+    const randomId = Math.random()
+    .toString(36)
+    .replace(/[^0-9a-fA-F]/gi, '');
 
     this.state = {
-      id: `select_${Math.random()
-        .toString(36)
-        .replace(/[^0-9a-fA-F]/gi, '')}`,
-      templateChooserId: `template_${Math.random()
-        .toString(36)
-        .replace(/[^0-9a-fA-F]/gi, '')}`,
+      id: `select_${randomId}`,
+      summaryId: `summary_${randomId}`,
+      templateChooserId: `template_${randomId}`,
       formatId: formatId,
       code: highlightCode(rawCode, formatId),
       hasClickedExpand: false,
@@ -175,6 +176,7 @@ export default class Example extends Component<Props, State> {
     const { iframeProps, codeOnly, code: allCode } = this.props;
     const {
       id,
+      summaryId,
       templateChooserId,
       formatId,
       code,
@@ -286,7 +288,7 @@ export default class Example extends Component<Props, State> {
               className="language-code example__code"
               tabIndex={0}
               role="group"
-              aria-describedby={templateChooserId}
+              aria-labelledby={`${summaryId} ${templateChooserId}`}
             >
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>
