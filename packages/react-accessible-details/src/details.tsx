@@ -30,15 +30,10 @@ export default function Details({ detailsId, children, className }: Props) {
             id={detailsId}
           >
             {SummaryChildren}
-            <div
-              style={
-                isScriptingEnabled
-                  ? { display: value.isOpen ? "block" : "none" }
-                  : null
-              }
-            >
-              {OtherChildren}
-            </div>
+
+            {!isScriptingEnabled || value.isOpen ? (
+              <div>{OtherChildren}</div>
+            ) : null}
           </details>
         );
       }}
