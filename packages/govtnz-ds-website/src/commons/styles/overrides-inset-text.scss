@@ -18,8 +18,12 @@
   
   @include print {
     box-decoration-break: clone;
-    border-left-color: $color-core-black;
     background-color: $color-core-white;
+    border-color: $color-core-black;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
   }
 }
 

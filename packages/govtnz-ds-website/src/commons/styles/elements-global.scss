@@ -78,3 +78,9 @@ body {
     font-size: 20px;
   }
 }
+
+// Print CSS
+@page { 
+    /* this affects the margin in the printer settings */ 
+    margin: 15mm 15mm 15mm 15mm;
+} 
