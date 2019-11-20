@@ -321,7 +321,7 @@ export default class Example extends Component<Props, State> {
               />
             </div>
             <Details className="example__details" onChange={this.clickFormat}>
-              <Summary className="example__summary">
+              <Summary id={summaryId} className="example__summary">
                 <h5 className="example__summary-button">
                   Code
                   <Icon
