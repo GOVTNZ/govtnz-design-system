@@ -15,19 +15,3 @@
   padding-right: 0.75rem !important;
   padding-left: 0.75rem !important;
 }
-
-// Specifically forcing style for /basics/colours/ page to keep the layout
-.g-flex-col-lg-3 {
-  @include print {
-    flex-basis: 25% !important;
-    max-width: 33.33333333% !important;
-  }
-}
-
-// Specifically forcing style for home page to keep the 3-column-layout
-.g-flex-col-lg-4 {
-  @include print {
-    flex-basis: 33.33333333% !important;
-    max-width: 33.33333333% !important;
-  }
-}
