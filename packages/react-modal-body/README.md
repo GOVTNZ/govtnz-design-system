@@ -17,7 +17,9 @@ import Modal from 'react-modal';
 import ModalBody from 'react-modal-body';
 
 <ModalBody isOpen={isOpen}>
-  <Modal>
+    <Modal isOpen={isOpen}>
+        ...
+    </Modal>
 </ModalBody>
 ```
 
