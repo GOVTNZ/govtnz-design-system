@@ -17,9 +17,10 @@ export default class ReactModalBody extends Component<Props> {
     super(props);
 
     // @ts-ignore
-    if (typeof document === `undefined`) return;
+    if (typeof window === "undefined") return; // ignore SSR
     this.bodyStart = document.createElement("div");
-    this.bodyStart.style.position = "absolute"; // pull out of flow
+    this.bodyStart.style.position = "absolute"; // ensure no layout flow
+    this.bodyStart.style.opacity = "0"; // ensure invisible
     this.bodyStart.setAttribute("tabindex", "0");
     this.bodyStart.addEventListener("focus", this.onFocus);
     this.bodyEnd = this.bodyStart.cloneNode() as HTMLElement;
@@ -40,12 +41,11 @@ export default class ReactModalBody extends Component<Props> {
   }
 
   setFocusTrap() {
+    if (this.timer) clearTimeout(this.timer);
     // Place focus trap elements at start/end of <body>
     // so that users who leave react-modal via (ie) CTRL-L
     // and then tab into the page immediately fall into the
     // focus trap and then are moved to the modal.
-
-    if (this.timer) clearTimeout(this.timer);
     if (document.body.firstChild !== this.bodyStart) {
       document.body.insertBefore(this.bodyStart, document.body.firstChild);
     }
@@ -74,6 +74,14 @@ export default class ReactModalBody extends Component<Props> {
     }
     console.info("Focus moved to ", target);
     target.focus();
+  }
+
+  componentWillUnmount() {
+    this.removeFocusTrap();
+    this.bodyStart.removeEventListener("focus", this.onFocus);
+    this.bodyStart = null;
+    this.bodyEnd.removeEventListener("focus", this.onFocus);
+    this.bodyEnd = null;
   }
 
   render() {
