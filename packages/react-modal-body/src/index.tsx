@@ -16,6 +16,8 @@ export default class ReactModalBody extends Component<Props> {
   constructor(props: Props) {
     super(props);
 
+    // @ts-ignore
+    if (typeof document === `undefined`) return;
     this.bodyStart = document.createElement("div");
     this.bodyStart.style.position = "absolute"; // pull out of flow
     this.bodyStart.setAttribute("tabindex", "0");
@@ -28,6 +30,8 @@ export default class ReactModalBody extends Component<Props> {
   }
 
   componentDidUpdate() {
+    if (!this.bodyStart || !this.bodyEnd) return;
+
     if (this.props.isOpen) {
       this.setFocusTrap();
     } else {

@@ -20,6 +20,9 @@ var ReactModalBody = /** @class */ (function (_super) {
     __extends(ReactModalBody, _super);
     function ReactModalBody(props) {
         var _this = _super.call(this, props) || this;
+        // @ts-ignore
+        if (typeof document === "undefined")
+            return _this;
         _this.bodyStart = document.createElement("div");
         _this.bodyStart.style.position = "absolute"; // pull out of flow
         _this.bodyStart.setAttribute("tabindex", "0");
@@ -31,6 +34,8 @@ var ReactModalBody = /** @class */ (function (_super) {
         return _this;
     }
     ReactModalBody.prototype.componentDidUpdate = function () {
+        if (!this.bodyStart || !this.bodyEnd)
+            return;
         if (this.props.isOpen) {
             this.setFocusTrap();
         }
