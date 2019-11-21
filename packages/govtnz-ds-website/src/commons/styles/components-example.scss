@@ -51,6 +51,10 @@
   @include large {
     padding: $spacing-40 $spacing-32 $spacing-32 !important;
   }
+
+  &:focus {
+    outline: 3px solid $color-ds-default-focus;
+  }
 }
 
 .example__format {

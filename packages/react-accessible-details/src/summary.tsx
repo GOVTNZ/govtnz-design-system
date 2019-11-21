@@ -2,6 +2,7 @@ import React from "react";
 import { Context } from "./index";
 
 type Props = {
+  id?: string,
   children: React.ReactNode;
   className?: string | undefined;
 };
@@ -11,12 +12,13 @@ const KEYS = {
   SPACE: 32
 };
 
-export default function Summary({ children, className }: Props) {
+export default function Summary({ id, children, className }: Props) {
   return (
     <Context.Consumer>
       {value => {
         return (
           <summary
+            id={id}
             role="button"
             aria-expanded={value.isOpen}
             tabIndex={0}
