@@ -53,6 +53,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-modal": "^3.8.1",
+    "react-modal-body": "0.0.1",
     "typescript": "^3.5.2"
   },
   "keywords": [
