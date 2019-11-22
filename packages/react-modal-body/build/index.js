@@ -21,10 +21,11 @@ var ReactModalBody = /** @class */ (function (_super) {
     function ReactModalBody(props) {
         var _this = _super.call(this, props) || this;
         // @ts-ignore
-        if (typeof document === "undefined")
-            return _this;
+        if (typeof window === "undefined")
+            return _this; // ignore SSR
         _this.bodyStart = document.createElement("div");
-        _this.bodyStart.style.position = "absolute"; // pull out of flow
+        _this.bodyStart.style.position = "absolute"; // ensure no layout flow
+        _this.bodyStart.style.opacity = "0"; // ensure invisible
         _this.bodyStart.setAttribute("tabindex", "0");
         _this.bodyStart.addEventListener("focus", _this.onFocus);
         _this.bodyEnd = _this.bodyStart.cloneNode();
@@ -44,12 +45,12 @@ var ReactModalBody = /** @class */ (function (_super) {
         }
     };
     ReactModalBody.prototype.setFocusTrap = function () {
+        if (this.timer)
+            clearTimeout(this.timer);
         // Place focus trap elements at start/end of <body>
         // so that users who leave react-modal via (ie) CTRL-L
         // and then tab into the page immediately fall into the
         // focus trap and then are moved to the modal.
-        if (this.timer)
-            clearTimeout(this.timer);
         if (document.body.firstChild !== this.bodyStart) {
             document.body.insertBefore(this.bodyStart, document.body.firstChild);
         }
@@ -62,8 +63,16 @@ var ReactModalBody = /** @class */ (function (_super) {
     ReactModalBody.prototype.removeFocusTrap = function () {
         if (this.timer)
             clearTimeout(this.timer);
-        document.body.removeChild(this.bodyStart);
-        document.body.removeChild(this.bodyEnd);
+        if (this.bodyStart.parentElement && // if it's an attached node
+            this.bodyStart.parentElement === document.body // and if it's below the body
+        ) {
+            document.body.removeChild(this.bodyStart);
+        }
+        if (this.bodyEnd.parentElement && // if it's an attached node
+            this.bodyEnd.parentElement === document.body // and if it's below the body
+        ) {
+            document.body.removeChild(this.bodyEnd);
+        }
     };
     ReactModalBody.prototype.onFocus = function () {
         // FIXME: if this code is merged into React Modal we should move focus using their methods
@@ -74,6 +83,13 @@ var ReactModalBody = /** @class */ (function (_super) {
         }
         console.info("Focus moved to ", target);
         target.focus();
+    };
+    ReactModalBody.prototype.componentWillUnmount = function () {
+        this.removeFocusTrap();
+        this.bodyStart.removeEventListener("focus", this.onFocus);
+        this.bodyStart = null;
+        this.bodyEnd.removeEventListener("focus", this.onFocus);
+        this.bodyEnd = null;
     };
     ReactModalBody.prototype.render = function () {
         return this.props.children;

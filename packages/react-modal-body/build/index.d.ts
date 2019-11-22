@@ -13,6 +13,7 @@ export default class ReactModalBody extends Component<Props> {
     setFocusTrap(): void;
     removeFocusTrap(): void;
     onFocus(): void;
+    componentWillUnmount(): void;
     render(): ReactNode;
 }
 export {};
