@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspace css-sniff build && yarn workspace @springload/metatemplate build && yarn workspace react-accessible-details build && yarn workspace @govtnz/ds-common build && yarn workspace @govtnz/ds-upstream build && yarn workspace compilation-templates build",
+    "build": "yarn workspace css-sniff build && yarn workspace @springload/metatemplate build && yarn workspace react-accessible-details build && yarn workspace react-modal-body build && yarn workspace @govtnz/ds-common build && yarn workspace @govtnz/ds-upstream build && yarn workspace compilation-templates build",
     "build:ds:release": "yarn workspace @govtnz/ds build:release",
     "build:ds:compile": "yarn workspace @govtnz/ds build:compile",
     "build:website": "yarn workspace @govtnz/ds-website build",

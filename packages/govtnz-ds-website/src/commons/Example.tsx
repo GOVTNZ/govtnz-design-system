@@ -23,6 +23,8 @@ type Props = {
 type State = {
   formatId: string;
   id: string;
+  summaryId: string,
+  templateChooserId: string,
   code: string;
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
@@ -47,11 +49,14 @@ export default class Example extends Component<Props, State> {
 
     const formatId = DEFAULT_FORMAT_ID;
     const rawCode = props.code[formatId];
+    const randomId = Math.random()
+    .toString(36)
+    .replace(/[^0-9a-fA-F]/gi, '');
 
     this.state = {
-      id: `select_${Math.random()
-        .toString(36)
-        .replace(/[^0-9a-fA-F]/gi, '')}`,
+      id: `select_${randomId}`,
+      summaryId: `summary_${randomId}`,
+      templateChooserId: `template_${randomId}`,
       formatId: formatId,
       code: highlightCode(rawCode, formatId),
       hasClickedExpand: false,
@@ -171,6 +176,8 @@ export default class Example extends Component<Props, State> {
     const { iframeProps, codeOnly, code: allCode } = this.props;
     const {
       id,
+      summaryId,
+      templateChooserId,
       formatId,
       code,
       supportsClipboard,
@@ -185,7 +192,7 @@ export default class Example extends Component<Props, State> {
         {supportsJavaScript && (
           <React.Fragment>
             <div className="example__format">
-              <h6 style={{ margin: '0 0 24px' }}>
+              <h6 id={templateChooserId} style={{ margin: '0 0 24px' }}>
                 <label className="example__label" htmlFor={id}>
                   Template format:{' '}
                 </label>
@@ -277,7 +284,12 @@ export default class Example extends Component<Props, State> {
               </p>
             )}
 
-            <pre className="language-code example__code">
+            <pre
+              className="language-code example__code"
+              tabIndex={0}
+              role="group"
+              aria-labelledby={`${summaryId} ${templateChooserId}`}
+            >
               <code dangerouslySetInnerHTML={{ __html: code }} />
             </pre>
           </React.Fragment>
@@ -309,7 +321,7 @@ export default class Example extends Component<Props, State> {
               />
             </div>
             <Details className="example__details" onChange={this.clickFormat}>
-              <Summary className="example__summary">
+              <Summary id={summaryId} className="example__summary">
                 <h5 className="example__summary-button">
                   Code
                   <Icon

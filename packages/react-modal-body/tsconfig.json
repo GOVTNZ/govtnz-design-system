@@ -1,0 +1,9 @@
+{
+  "include": ["src/**/*.tsx"],
+  "exclude": ["build"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "build",
+    "declaration": true
+  }
+}

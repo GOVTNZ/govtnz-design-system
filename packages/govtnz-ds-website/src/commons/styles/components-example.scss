@@ -52,6 +52,10 @@
   margin: 0 !important;
   padding: $spacing-40 $spacing-24 $spacing-32 !important;
 
+  &:focus {
+    outline: 3px solid $color-ds-default-focus;
+  }
+
   @include large {
     padding: $spacing-40 $spacing-32 $spacing-32 !important;
   }
