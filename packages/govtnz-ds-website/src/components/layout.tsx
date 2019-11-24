@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import Container from '@govtnz/ds/build/react-ts/FlexContainer';
+import Row from '@govtnz/ds/build/react-ts/FlexRow';
+import Column from '@govtnz/ds/build/react-ts/FlexColumn';
+import LogoLockUp from './LogoLockUp';
 import Header from './header';
 import Footer from './footer';
 import '../commons/styles/elements-global.scss';
@@ -35,6 +39,13 @@ const Layout = ({ children }: Props) => {
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
+            <Container width="fixed">
+              <Row>
+                <Column xs="12" sm="12" md="12" lg="12">
+                  <LogoLockUp siteTitle={data.site.siteMetadata.title} />
+                </Column>
+              </Row>
+            </Container>
             {children}
           </main>
           <Footer />
