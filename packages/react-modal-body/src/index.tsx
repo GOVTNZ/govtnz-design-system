@@ -59,8 +59,18 @@ export default class ReactModalBody extends Component<Props> {
 
   removeFocusTrap() {
     if (this.timer) clearTimeout(this.timer);
-    document.body.removeChild(this.bodyStart);
-    document.body.removeChild(this.bodyEnd);
+    if (
+      this.bodyStart.parentElement && // if it's an attached node
+      this.bodyStart.parentElement === document.body // and if it's below the body
+    ) {
+      document.body.removeChild(this.bodyStart);
+    }
+    if (
+      this.bodyEnd.parentElement && // if it's an attached node
+      this.bodyEnd.parentElement === document.body // and if it's below the body
+    ) {
+      document.body.removeChild(this.bodyEnd);
+    }
   }
 
   onFocus() {
