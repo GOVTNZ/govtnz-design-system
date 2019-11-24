@@ -10,6 +10,14 @@
   min-height: 35vh;
 }
 
+.main-content__logo--show\@print {
+  display: none;
+
+  @include print {
+    display: block;
+  }
+}
+
 summary {
   display: block;
 }

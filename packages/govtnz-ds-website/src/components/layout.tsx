@@ -39,13 +39,15 @@ const Layout = ({ children }: Props) => {
         <>
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
-            <Container width="fixed">
-              <Row>
-                <Column xs="12" sm="12" md="12" lg="12">
-                  <LogoLockUp siteTitle={data.site.siteMetadata.title} />
-                </Column>
-              </Row>
-            </Container>
+            <div className="main-content__logo--show@print">
+              <Container width="fixed">
+                <Row>
+                  <Column xs="12" sm="12" md="12" lg="12">
+                    <LogoLockUp siteTitle={data.site.siteMetadata.title} />
+                  </Column>
+                </Row>
+              </Container>
+            </div>
             {children}
           </main>
           <Footer />
