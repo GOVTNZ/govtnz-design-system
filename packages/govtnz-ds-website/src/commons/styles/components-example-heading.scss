@@ -9,6 +9,10 @@
   background-color: $color-ds-default-off-white;
   background-color: var(--color-theme-off-white, $color-ds-default-off-white);
 
+  @include print {
+    background-color: $color-core-white;
+  }
+
   .example__heading-text {
     margin: 0 !important; // Override css from .g-heading-m
   }

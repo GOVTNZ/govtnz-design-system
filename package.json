@@ -11,6 +11,7 @@
     "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",
     "build:website:validate-build": "yarn workspace @govtnz/ds-website validate-build",
     "build:all": "yarn build && yarn build:ds:release && yarn build:ds:compile && yarn build:website:compile-markdown && yarn build:website",
+    "develop:website": "yarn workspace @govtnz/ds-website run build && yarn workspace @govtnz/ds-website run serve",
     "test": "yarn workspace @govtnz/ds-common test && yarn workspace @govtnz/ds test && yarn workspace @springload/metatemplate test && yarn workspace @govtnz/ds-boilerplate-mustache test",
     "test__comment": "Also the website static build itself tests parts of the React-TS integration type",
     "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md"

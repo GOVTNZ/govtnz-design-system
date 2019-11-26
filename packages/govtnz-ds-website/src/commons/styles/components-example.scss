@@ -7,6 +7,10 @@
 .example--bg-off-white {
   background-color: $color-ds-default-off-white;
   background-color: var(--color-theme-off-white, $color-ds-default-off-white);
+
+  @include print {
+    background-color: $color-core-white;
+  }
 }
 
 .example__format-heading {
@@ -48,12 +52,16 @@
   margin: 0 !important;
   padding: $spacing-40 $spacing-24 $spacing-32 !important;
 
+  &:focus {
+    outline: 3px solid $color-ds-default-focus;
+  }
+
   @include large {
     padding: $spacing-40 $spacing-32 $spacing-32 !important;
   }
 
-  &:focus {
-    outline: 3px solid $color-ds-default-focus;
+  @include print {
+    box-decoration-break: clone;
   }
 }
 
@@ -88,6 +96,10 @@
   text-decoration: underline;
   color: $color-ds-default-link;
   color: var(--color-theme-link, $color-ds-default-link);
+
+  @include print {
+    color: $color-core-black;
+  }
 }
 
 .example__summary-icon-down {
@@ -165,5 +177,9 @@
   > use {
     fill: $color-ds-default-green-mid;
     fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+
+    @include print {
+      fill: $color-core-black;
+    }
   }
 }

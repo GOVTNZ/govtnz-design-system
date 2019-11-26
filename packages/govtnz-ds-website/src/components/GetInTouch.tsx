@@ -10,11 +10,7 @@ type Props = {
 
 const GetInTouch = ({ title }: Props) => (
   <div
-    style={{
-      backgroundColor: '#f4f4f4',
-      padding: '2.5rem 2rem 1.5rem',
-      marginTop: '3rem',
-    }}
+    className="g-inset-text g-inset-text--borderless"
   >
     <H2 styleSize="medium">Get in touch</H2>
     <P styleSize="medium">

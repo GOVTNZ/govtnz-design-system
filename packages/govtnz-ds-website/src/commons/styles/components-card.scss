@@ -23,6 +23,10 @@
   background-color: $color-ds-default-light-grey;
   background-color: var(--color-theme-light-grey, $color-ds-default-light-grey);
   padding: $spacing-24;
+
+  @include print {
+    background-color: $color-core-white;
+  }
 }
 
 .card__icon {

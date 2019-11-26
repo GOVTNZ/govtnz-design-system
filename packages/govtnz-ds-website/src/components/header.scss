@@ -23,6 +23,10 @@
   vertical-align: middle;
   color: $color-core-white;
   fill: $color-core-white;
+
+  @include print {
+    fill: $color-core-black;
+  }
 }
 
 .header__logo {
@@ -53,11 +57,28 @@
   }
 }
 
+.header__logo--show\@print {
+  @include print {
+    display: inline-block;
+    max-width: 230px;
+  }
+}
+
+.header__logo--hide\@print {
+  @include print {
+    display: none;
+  }
+}
+
 .header__icon {
   max-width: 100%;
   max-height: 24px;
   > use {
     fill: $color-core-white;
+
+    @include print {
+      fill: $color-core-black;
+    }
   }
 }
 
@@ -97,6 +118,11 @@
     margin-left: $spacing-24;
     padding-left: $spacing-24;
     font-size: rem(24);
+  }
+
+  @include print {
+    color: $color-core-black;
+    border-left-color: $color-core-black;
   }
 }
 
