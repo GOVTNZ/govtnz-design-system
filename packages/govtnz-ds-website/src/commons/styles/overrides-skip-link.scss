@@ -19,6 +19,18 @@
   clip-path: inset(50%) !important;
   white-space: nowrap !important;
   display: block;
+  line-height: 1.6;
+  font-size: 20px !important;
+  font-family: National2, Arial, sans-serif !important;
+  font-family: var(
+    --g-theme-font-family,
+    National2,
+    Arial,
+    sans-serif
+  ) !important;
+  font-weight: normal !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
 
   &:focus {
     position: static !important;
