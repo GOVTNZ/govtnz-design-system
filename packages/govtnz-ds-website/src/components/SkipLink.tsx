@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './skip-link.scss';
 
 type SkipLinkProps = {
@@ -6,7 +6,7 @@ type SkipLinkProps = {
 };
 
 const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
-  const handleClick = e => {
+  const handleClick = useCallback(e => {
     e.preventDefault();
 
     const reduceMotionQuery = '(prefers-reduced-motion: reduce)';
@@ -25,7 +25,7 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
         behavior: 'smooth',
       });
     }
-  };
+  }, []);
 
   return (
     <a className="skip-link" href={href} onClick={handleClick}>
