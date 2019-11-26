@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
+import SkipLink from '@govtnz/ds/build/react-ts/SkipLink';
 import Header from './header';
 import Footer from './footer';
 import '../commons/styles/elements-global.scss';
 import '../commons/styles/elements-typography.scss';
 import '../commons/styles/overrides-typography.scss';
 import '../commons/styles/overrides-flexgrid.scss';
+import '../commons/styles/overrides-skip-link.scss';
 import './layout.scss';
 import '../commons/styles/components-sidebar.scss';
 import '../commons/styles/utilities-display.scss';
@@ -33,6 +35,7 @@ const Layout = ({ children }: Props) => {
       `}
       render={data => (
         <>
+          <SkipLink href="#main-content" />
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
             {children}
