@@ -8,13 +8,11 @@ type SkipLinkProps = {
 const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
   const handleClick = useCallback(e => {
     e.preventDefault();
-
     const reduceMotionQuery = '(prefers-reduced-motion: reduce)';
     const hasOSReducedMotion = window.matchMedia(reduceMotionQuery).matches;
-
     const href = e.target.getAttribute('href').replace(/#/g, '');
-
     const focusableElement = document.getElementById(href);
+
     if (hasOSReducedMotion) {
       focusableElement.setAttribute('tabindex', '-1');
       focusableElement.focus();
@@ -25,6 +23,8 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
         behavior: 'smooth',
       });
     }
+
+    e.target.blur();
   }, []);
 
   return (
