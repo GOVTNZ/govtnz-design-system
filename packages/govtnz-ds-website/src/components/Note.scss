@@ -18,6 +18,12 @@
     margin-top: $spacing-64;
     margin-bottom: $spacing-80;
   }
+
+  @include print {
+    border: 1px solid $color-core-black;
+    background-color: $color-core-white;
+    box-decoration-break: clone;
+  }
 }
 
 .note__strip {
@@ -35,6 +41,10 @@
     text-align: center;
     padding-top: 16px;
     padding-left: 0px;
+  }
+
+  @include print {
+    background-color: $color-core-black;
   }
 }
 

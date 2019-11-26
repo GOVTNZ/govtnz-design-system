@@ -4,6 +4,9 @@
 // We are temporarily overriding the Flexbox grid styling here
 // TODO: move these into the Design System
 
+@import './settings-global';
+@import './settings-breakpoints';
+
 .g-inset-text {
   background-color: #f4f4f4;
   background-color: var(--color-theme-off-white, #f4f4f4);
@@ -12,4 +15,26 @@
   padding: 2rem 2rem 1rem;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+  
+  @include print {
+    box-decoration-break: clone;
+    background-color: $color-core-white;
+    border-color: $color-core-black;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+  }
+}
+
+.g-inset-text--borderless {
+  padding: 2.5rem 2rem 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  border-left: none;
+  
+  @include print {
+    background-color: $color-core-white;
+    border: 1px solid $color-core-black;
+  }
 }

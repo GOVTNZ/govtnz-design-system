@@ -25,6 +25,7 @@
   > use {
     fill: $color-ds-default-green-mid;
     fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
+    fill: $color-core-black;
   }
 }
 

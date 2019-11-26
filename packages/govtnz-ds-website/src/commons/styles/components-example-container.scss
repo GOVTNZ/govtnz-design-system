@@ -9,6 +9,11 @@
   border: solid 1px var(--color-theme-mid-grey, $color-ds-default-mid-grey);
   margin-top: $spacing-64;
   margin-bottom: $spacing-40;
+
+  @include print {
+    box-decoration-break: clone;
+    border: solid 1px var(--color-theme-mid-grey, $color-core-black);
+  }
 }
 
 .example__iframe-wrapper {
@@ -38,4 +43,8 @@
   border-style: solid;
   border-color: #000;
   border-width: 0px 0px 1px 0px;
+
+  @include print {
+    box-decoration-break: clone;
+  }
 }
