@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import SkipLink from '@govtnz/ds/build/react-ts/SkipLink';
 import Header from './header';
 import Footer from './footer';
+import SkipLink from './SkipLink';
 import '../commons/styles/elements-global.scss';
 import '../commons/styles/elements-typography.scss';
 import '../commons/styles/overrides-typography.scss';
 import '../commons/styles/overrides-flexgrid.scss';
-import '../commons/styles/overrides-skip-link.scss';
 import './layout.scss';
 import '../commons/styles/components-sidebar.scss';
 import '../commons/styles/utilities-display.scss';
