@@ -14,7 +14,6 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
 
     const href = e.target.getAttribute('href').replace(/#/g, '');
 
-    console.log('hasOSReducedMotion', hasOSReducedMotion);
     const focusableElement = document.getElementById(href);
     if (hasOSReducedMotion) {
       focusableElement.setAttribute('tabindex', '-1');
