@@ -23,8 +23,13 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
       : {
           behavior: 'smooth',
         };
-    focusableElement.scrollIntoView(scrollOption);
-    e.target.blur();
+
+    try {
+      focusableElement.scrollIntoView(scrollOption);
+    } catch (error) {
+      // For all other browsers that don't support scrollIntoView options.
+      focusableElement.scrollIntoView();
+    }
   }, []);
 
   return (
