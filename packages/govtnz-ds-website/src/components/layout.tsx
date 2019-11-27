@@ -6,6 +6,7 @@ import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import LogoLockUp from './LogoLockUp';
 import Header from './header';
 import Footer from './footer';
+import SkipLink from './SkipLink';
 import '../commons/styles/elements-global.scss';
 import '../commons/styles/elements-typography.scss';
 import '../commons/styles/overrides-typography.scss';
@@ -37,6 +38,7 @@ const Layout = ({ children }: Props) => {
       `}
       render={data => (
         <>
+          <SkipLink href="#main-heading" />
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
             <div className="main-content__logo--show@print">
