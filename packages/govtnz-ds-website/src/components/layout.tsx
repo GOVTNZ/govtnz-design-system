@@ -38,7 +38,7 @@ const Layout = ({ children }: Props) => {
       `}
       render={data => (
         <>
-          <SkipLink href="#main-content" />
+          <SkipLink href="#main-heading" />
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
             <div className="main-content__logo--show@print">
