@@ -79,6 +79,10 @@ body {
   }
 }
 
+[tabindex="-1"] {
+  outline: none;
+}
+
 // Print CSS
 @page { 
     /* this affects the margin in the printer settings */ 
