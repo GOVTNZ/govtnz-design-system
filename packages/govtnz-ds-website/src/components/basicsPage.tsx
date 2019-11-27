@@ -32,7 +32,9 @@ export default function BasePage({ id, pageProps, PageContent }: Props) {
             {menuItem && (
               <>
                 <CaptionL>Basics</CaptionL>
-                <H1 styleSize="xlarge">{title}</H1>
+                <H1 styleSize="xlarge" id="main-heading">
+                  {title}
+                </H1>
               </>
             )}
             <PageContent {...pageProps} name={title} id={id} />

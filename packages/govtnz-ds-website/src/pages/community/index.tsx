@@ -16,7 +16,7 @@ import '../../commons/styles/ds/themed-Li.scss';
 import CommunityPage from '../../components/CommunityPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
-const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="community">Community</H1>
+const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Community</H1>
 <P styleSize="large">
     <a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
         Government Information Services

@@ -17,7 +17,9 @@ const NotFoundPage = () => (
     <Container width="fixed">
       <Row>
         <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
-          <H1 styleSize="xlarge">Missing Page - (HTTP 404)</H1>
+          <H1 styleSize="xlarge" id="main-heading">
+            Missing Page - (HTTP 404)
+          </H1>
           <P styleSize="large">
             Sorry, this issue has been logged and we'll look into it.
           </P>

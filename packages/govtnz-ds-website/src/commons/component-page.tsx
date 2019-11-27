@@ -38,12 +38,21 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
             <ComponentsMenu pageProps={pageProps} />
           </Column>
           <Column xs="12" sm="9" md="9" lg="8">
-            {menuItem && (
+            {menuItem ? (
               <>
                 <CaptionL>Components</CaptionL>
-                <H1 styleSize="xlarge">{title}</H1>
+                <H1 styleSize="xlarge" id="main-heading">
+                  {title}
+                </H1>
               </>
-            )}
+            ) : id !== 'index' ? (
+              <>
+                <CaptionL>Components</CaptionL>
+                <H1 styleSize="xlarge" id="main-heading">
+                  {title}
+                </H1>
+              </>
+            ) : null}
             {isStable === false && (
               <Note>
                 <H2 styleSize="medium">Note: Component coming soon</H2>

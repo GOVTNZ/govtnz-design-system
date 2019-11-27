@@ -54,7 +54,7 @@ const IndexPage = () => (
       <Container width="fixed">
         <Row>
           <Column xs="12" sm="8" md="7" lg="6" lgOffset="1">
-            <H1 styleSize="xlarge">
+            <H1 styleSize="xlarge" id="main-heading">
               Design system for NZ public sector websites
             </H1>
             <P styleSize="large">

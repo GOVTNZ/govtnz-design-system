@@ -16,7 +16,7 @@ import '../../commons/styles/ds/themed-Li.scss';
 import AboutPage from '../../components/AboutPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
-const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="about-the-design-system-alpha-website">About the Design System alpha website</H1>
+const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">About the Design System alpha website</H1>
 <P styleSize="large">
     New Zealand's all-of-government (AOG) Design System alpha website provides
     a catalogue of reusable basic elements, single components, and patterns of
