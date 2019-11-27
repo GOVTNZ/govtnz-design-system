@@ -14,6 +14,8 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
     // so getAttribute() is more appropriate here.
     const href = e.target.getAttribute('href').replace(/#/g, '');
     const focusableElement = document.getElementById(href);
+    focusableElement.setAttribute('tabindex', '-1');
+    focusableElement.focus();
     const scrollOption: boolean | Object = hasOSReducedMotion
       ? {
           behavior: 'auto',
@@ -21,8 +23,6 @@ const SkipLink = ({ href }: SkipLinkProps): JSX.Element => {
       : {
           behavior: 'smooth',
         };
-    focusableElement.setAttribute('tabindex', '-1');
-    focusableElement.focus();
     focusableElement.scrollIntoView(scrollOption);
     e.target.blur();
   }, []);
