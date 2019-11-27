@@ -34,7 +34,9 @@ const IndexPage = () => (
     <Container width="fixed">
       <Row>
         <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
-          <H1 styleSize="xlarge">Get started</H1>
+          <H1 styleSize="xlarge" id="main-heading">
+            Get started
+          </H1>
           <P styleSize="large">
             Find out how to start using the all-of-government (AOG) design
             system, whether you’re a designer, developer, content designer,

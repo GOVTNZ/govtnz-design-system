@@ -125,3 +125,37 @@ async function validateNotES6(data, filePath, errorType) {
     },
   });
 }
+
+test('Validate that HTML has a single id="main-heading"', async () => {
+  const regex = /id=["']main-heading["']/g;
+  const allHtmlPaths = await glob(
+    path.resolve(__dirname, '..', 'public', '**/*.html')
+  );
+
+  const htmlPaths = allHtmlPaths.filter(
+    anHtmlPath => !anHtmlPath.includes('__example')
+  );
+
+  jest.setTimeout(htmlPaths.length * 1000);
+
+  // basic sanity check of whether there is a build there
+  expect(htmlPaths.length).toBeGreaterThan(10);
+
+  await Promise.all(
+    htmlPaths.map(async htmlPath => {
+      const data = await fs.promises.readFile(htmlPath, {
+        encoding: 'utf-8',
+      });
+      const results = data.match(regex);
+
+      if (!results || results.length !== 1) {
+        const h1Index = data.indexOf('<h1');
+        console.log(
+          htmlPath,
+          h1Index !== -1 ? data.substring(h1Index - 5, h1Index + 100) : null
+        );
+      }
+      expect(results && results.length).toBe(1);
+    })
+  );
+});

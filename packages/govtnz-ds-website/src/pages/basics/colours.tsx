@@ -148,7 +148,9 @@ const ColoursPage = (pageProps: GatsbyPageProps) => (
         </Column>
         <Column xs="12" sm="9" md="8" lg="8">
           <CaptionL>Basics</CaptionL>
-          <H1 styleSize="xlarge">Colours</H1>
+          <H1 styleSize="xlarge" id="main-heading">
+            Colours
+          </H1>
           <P styleSize="large">
             The colour palette provides a colour structure for your website,
             which you will be able to adapt to the colours of your digital

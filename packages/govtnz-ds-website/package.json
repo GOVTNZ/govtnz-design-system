@@ -69,7 +69,7 @@
     "serve": "gatsby serve",
     "watch-prebuild": "nodemon ./prebuild/prebuild.js",
     "format": "prettier --write \"src/**/*.js\"",
-    "validate-build": "yarn jest",
+    "validate-build": "yarn jest -- --runInBand",
     "test:typescript": "exit 0",
     "rimraf": "rimraf ./public/ && rimraf ./.cache"
   },

@@ -229,6 +229,17 @@ const generatePage = async (
         '6': 'xxsmall',
       };
       importsByName.push(`H${level}`);
+      if (level === '1') {
+        return (
+          `<H1 styleSize="${levelToStyleSize[level]}" id="main-heading"` +
+          match.substring(
+            match.indexOf('>'),
+            match.length - '</h1>'.length
+          ) +
+          `</H${level}>`
+        );
+      }
+
       return (
         `<H${level} styleSize="${levelToStyleSize[level]}"` +
         match.substring(3, match.length - 5) +
