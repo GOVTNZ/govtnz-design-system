@@ -31,10 +31,11 @@ const buildComponents = async (
   noCache: boolean
 ): Promise<Object> => {
   // The 'build' script name changes so we'll try a few different things
-  const packageJSONString: string = (await fs.promises.readFile(
-    path.join(npmProjectPath, "package.json"),
-    { encoding: "utf-8" }
-  )).toString();
+  const packageJSONString: string = (
+    await fs.promises.readFile(path.join(npmProjectPath, "package.json"), {
+      encoding: "utf-8"
+    })
+  ).toString();
   const packageJSON = JSON.parse(packageJSONString);
   const scripts = Object.keys(packageJSON.scripts);
   const buildScripts = scripts.filter(
@@ -310,8 +311,8 @@ const findComponentUrlsOnWebsite = async (
   version: string,
   devServerUrl: string
 ): Promise<string[]> => {
-  const componentUrls = new Set();
-  const visitedUrls = new Set();
+  const componentUrls = new Set<string>();
+  const visitedUrls = new Set<string>();
   const urlsToScrape = [devServerUrl];
 
   const scrapePage = async (url: string): Promise<void> => {
@@ -443,9 +444,7 @@ const extractComponentsCode = async (
 
     if (!container) {
       throw new Error(
-        `Unable to find component container. URL was "${url}". HTML was ${
-          dom.window.document.innerHTML
-        }`
+        `Unable to find component container. URL was "${url}". HTML was ${dom.window.document.innerHTML}`
       );
     }
 
@@ -519,9 +518,7 @@ const extractComponentsCode = async (
 
     if (!matchedElements) {
       throw new Error(
-        `Unable to find component container. URL was "${url}" with selector ${
-          customExtraction.selector
-        }. HTML was ${dom.window.document.innerHTML}`
+        `Unable to find component container. URL was "${url}" with selector ${customExtraction.selector}. HTML was ${dom.window.document.innerHTML}`
       );
     }
 
@@ -535,13 +532,15 @@ const extractComponentsCode = async (
     // Using reorderAttributes to ensure deterministic serialization
     // so that diffs don't randomly change with different attribute
     // ordering.
-    let html = (await Promise.all(
-      containers.map(
-        async (container: Element): Promise<string> => {
-          return await reorderAttributes(container.outerHTML.trim());
-        }
+    let html = (
+      await Promise.all(
+        containers.map(
+          async (container: Element): Promise<string> => {
+            return await reorderAttributes(container.outerHTML.trim());
+          }
+        )
       )
-    )).join("\n");
+    ).join("\n");
 
     if (containers.length > 1) {
       // if there's not a single root element then we need to wrap it
@@ -703,7 +702,7 @@ const knownColours = [
   "#858688", // Button (secondary) box shadow
   "#c8cacb", // Button (secondary) focus background color
   "#47060c", // Button (warning) box shadow
-  "#8e0b18", // Button (warning) focus background color
+  "#8e0b18" // Button (warning) focus background color
 ];
 
 type Extraction = {
