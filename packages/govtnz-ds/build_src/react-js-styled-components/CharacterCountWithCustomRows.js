@@ -211,7 +211,7 @@ const CharacterCountWithCustomRows = ({
         {remainingCharacters !== undefined ? (
           remainingCharacters
         ) : (
-          <React.Fragment />
+          <React.Fragment></React.Fragment>
         )}{" "}
         characters remaining
       </StyledSpan>

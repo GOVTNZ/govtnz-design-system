@@ -215,8 +215,9 @@
         </a>
       </dd>
     </div>
-  </dl> </template
-><script lang="ts">
+  </dl>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -347,8 +348,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-summaryListCheckYourAnswers-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

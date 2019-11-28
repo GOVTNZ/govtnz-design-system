@@ -6,8 +6,9 @@
     v-bind:target="computed__target"
   >
     <slot></slot>
-  </a> </template
-><script lang="ts">
+  </a>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -38,8 +39,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-a-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

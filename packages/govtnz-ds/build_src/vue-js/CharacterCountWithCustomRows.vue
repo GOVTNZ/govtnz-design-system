@@ -28,8 +28,9 @@
         You have <slot name="remainingCharacters"></slot> characters remaining
       </span>
     </div>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -174,8 +175,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-characterCountWithCustomRows-form-group {
   margin-bottom: 20px;
 }

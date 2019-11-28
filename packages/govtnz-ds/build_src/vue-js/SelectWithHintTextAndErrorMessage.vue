@@ -33,8 +33,9 @@
       Govt.NZ frontend option 1 Govt.NZ frontend option 2 Govt.NZ frontend
       option 3
     </select>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -50,8 +51,9 @@ export default Vue.extend({
       return +this.select2Hint + +this.select2Error;
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-selectWithHintTextAndErrorMessage-form-group {
   margin-bottom: 20px;
 }

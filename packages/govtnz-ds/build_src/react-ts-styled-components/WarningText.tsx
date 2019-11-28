@@ -85,7 +85,7 @@ const StyledSpan2 = styled.span`
   margin-top: 0px;
 `;
 
-const WarningText = ({  }: Props) => (
+const WarningText = ({}: Props) => (
   <StyledDiv>
     <StyledSpan aria-hidden="true">!</StyledSpan>
     <StyledStrong>

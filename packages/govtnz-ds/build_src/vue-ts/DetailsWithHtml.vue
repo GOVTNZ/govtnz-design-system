@@ -40,8 +40,9 @@
         </li>
       </ul>
     </div>
-  </details> </template
-><script lang="ts">
+  </details>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -53,8 +54,9 @@ export default Vue.extend({
     }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-detailsWithHtml-list > li {
   margin-bottom: 0.25rem;
 }

@@ -1,15 +1,17 @@
 <template>
   <li>
     <slot></slot>
-  </li> </template
-><script>
+  </li>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: { children: { required: false, default: "Example text" } },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-li-list > li {
   margin-bottom: 0.25rem;
 }

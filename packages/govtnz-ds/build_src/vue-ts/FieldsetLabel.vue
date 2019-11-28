@@ -1,8 +1,9 @@
 <template>
   <div class="g-fieldsetLabel-hint" v-bind:id="hintId">
     <slot name="hint"></slot>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -11,8 +12,9 @@ export default Vue.extend({
     hint: { required: false, default: "Hint text" }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fieldsetLabel-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

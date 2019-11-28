@@ -2,7 +2,7 @@ import * as React from "react";
 
 type Props = {};
 
-const TableTableWithHeadAndCaption = ({  }: Props) => (
+const TableTableWithHeadAndCaption = ({}: Props) => (
   <table className="g-tableTableWithHeadAndCaption-table">
     <caption className="g-tableTableWithHeadAndCaption-table__caption g-tableTableWithHeadAndCaption-heading-m">
       Caption 1: Months and rates

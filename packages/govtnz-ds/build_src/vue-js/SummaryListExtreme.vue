@@ -851,8 +851,9 @@
         </ul>
       </dd>
     </div>
-  </dl> </template
-><script>
+  </dl>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -1883,8 +1884,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-summaryListExtreme-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

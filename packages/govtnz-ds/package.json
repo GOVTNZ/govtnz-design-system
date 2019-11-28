@@ -4,9 +4,6 @@
   "description": "Government Design System",
   "author": "New Zealand Government",
   "homepage": "https://github.com/GOVTNZ/govtnz-design-system/",
-  "engines": {
-    "node": "10.14.2"
-  },
   "scripts": {
     "build:release:debugger": "babel-node --inspect --expose-gc --max_old_space_size=8192 --extensions '.ts' ./src/index.ts",
     "build:release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",

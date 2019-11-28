@@ -26,8 +26,9 @@
         <slot></slot>
       </div>
     </fieldset>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -44,8 +45,9 @@ export default Vue.extend({
       return +this.hintId + +this.errorId;
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fieldsetBlockWithError-form-group {
   margin-bottom: 20px;
 }

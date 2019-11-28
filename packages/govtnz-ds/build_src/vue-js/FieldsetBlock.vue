@@ -13,8 +13,9 @@
         <slot></slot>
       </div>
     </fieldset>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -25,8 +26,9 @@ export default Vue.extend({
     children: { required: false, default: "Fieldset contents" }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fieldsetBlock-form-group {
   margin-bottom: 20px;
 }

@@ -1,8 +1,9 @@
 <template>
   <ul v-bind:class="computed__class">
     <slot></slot>
-  </ul> </template
-><script>
+  </ul>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -15,8 +16,9 @@ export default Vue.extend({
       return "g-ul-list" + (this.bulleted ? " g-ul-list--bullet" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-ul-list {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

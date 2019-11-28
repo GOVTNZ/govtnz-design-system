@@ -6,8 +6,9 @@
     v-bind:target="computed__target"
   >
     Skip to main content
-  </a> </template
-><script lang="ts">
+  </a>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -33,8 +34,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-skipLink-error-summary__list a {
   font-weight: 700;
 }

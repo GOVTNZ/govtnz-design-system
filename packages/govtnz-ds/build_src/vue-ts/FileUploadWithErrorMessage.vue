@@ -28,8 +28,9 @@
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
     />
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -47,8 +48,9 @@ export default Vue.extend({
       return +this.fileUpload3Hint + +this.fileUpload3Error;
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fileUploadWithErrorMessage-form-group {
   margin-bottom: 20px;
 }

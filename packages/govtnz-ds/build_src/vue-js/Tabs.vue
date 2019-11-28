@@ -201,8 +201,9 @@
         </tbody>
       </table>
     </section>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -281,8 +282,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-tabs-list > li {
   margin-bottom: 0.25rem;
 }

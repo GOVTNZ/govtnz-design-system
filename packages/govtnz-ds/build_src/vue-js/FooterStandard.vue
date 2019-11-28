@@ -146,8 +146,9 @@
         </div>
       </div>
     </div>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -254,8 +255,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-footer__standard {
   background-color: var(--color-theme-dark-grey, #363636);
   color: #ffffff;

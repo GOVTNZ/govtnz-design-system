@@ -13,8 +13,9 @@
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
     />
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -26,8 +27,9 @@ export default Vue.extend({
     autoFocus: { type: Boolean, default: false, required: false }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fileUpload-form-group {
   margin-bottom: 20px;
 }

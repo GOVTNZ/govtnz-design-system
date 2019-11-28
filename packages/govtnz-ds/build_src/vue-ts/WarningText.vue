@@ -11,15 +11,17 @@
 
       You can be fined up to $5,000 if you don’t register.
     </strong>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
   props: {},
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-warning-text {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

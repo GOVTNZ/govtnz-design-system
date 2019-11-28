@@ -12,8 +12,9 @@
     v-bind:spellcheck="spellCheck"
     v-bind:maxlength="maxLength"
     v-bind:autocomplete="computed__autocomplete"
-  /> </template
-><script lang="ts">
+  />
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -184,8 +185,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-input {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

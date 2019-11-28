@@ -28,7 +28,7 @@ const StyledSpan = styled.span`
   margin-top: 0px;
 `;
 
-const ErrorMessage = ({  }: Props) => (
+const ErrorMessage = ({}: Props) => (
   <StyledSpan>Error message about full name goes here</StyledSpan>
 );
 

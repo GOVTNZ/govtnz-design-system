@@ -20,8 +20,9 @@
     <div class="g-radios-hint g-radios__hint" v-bind:id="hintId">
       <slot name="hint"></slot>
     </div>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -43,8 +44,9 @@ export default Vue.extend({
       return "g-radios__input" + (this.fakeFocus ? " :focus" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-radios-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

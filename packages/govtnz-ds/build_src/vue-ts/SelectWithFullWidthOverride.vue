@@ -22,8 +22,9 @@
         Govt.NZ frontend option 3
       </option>
     </select>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -36,8 +37,9 @@ export default Vue.extend({
     selected3: { type: Boolean, default: false, required: false }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-selectWithFullWidthOverride-form-group {
   margin-bottom: 20px;
 }

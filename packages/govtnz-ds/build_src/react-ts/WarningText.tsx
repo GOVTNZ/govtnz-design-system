@@ -2,7 +2,7 @@ import * as React from "react";
 
 type Props = {};
 
-const WarningText = ({  }: Props) => (
+const WarningText = ({}: Props) => (
   <div className="g-warning-text">
     <span aria-hidden="true" className="g-warning-text__icon">
       !

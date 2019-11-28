@@ -1,15 +1,17 @@
 <template>
   <div class="g-radios-form-divider">
     <slot></slot>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: { children: { required: false, default: "Example Text" } },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-radios-form-divider {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

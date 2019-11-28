@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import normalizeSelector from 'normalize-selector';
 import { camelCase } from 'lodash';
 import { CSSVariablePattern } from '@springload/metatemplate';
@@ -18,6 +20,7 @@ import {
   getLocalTemplateDefinitions
 } from './utils';
 import svgToDataURL from 'svg-to-dataurl';
+import mkdirpPromise from 'mkdirp-promise';
 
 const ONE_REM_IN_PIXELS = 16; // in our DS
 
@@ -27,9 +30,7 @@ export const normalizeReleaseVersionGovUk = async (
   let components: Component[] = [];
 
   const bar = new ProgressBar(
-    `${upstreamReleaseVersion.sourceId}@${
-      upstreamReleaseVersion.version
-    } conversion to GovtNZ MetaTemplate Inputs... :bar :percent`,
+    `${upstreamReleaseVersion.sourceId}@${upstreamReleaseVersion.version} conversion to GovtNZ MetaTemplate Inputs... :bar :percent`,
     {
       total: upstreamReleaseVersion.components.length
     }
@@ -501,9 +502,7 @@ export const govukToMetaTemplateInput = async (
       message += `Note: ${oldTemplateId} renamed to ${id}.\n`;
     }
     additionalTemplates.forEach(template => {
-      message += `Note: Additional template ${
-        template.id
-      } made (probably based on ${id}).\n`;
+      message += `Note: Additional template ${template.id} made (probably based on ${id}).\n`;
     });
     // 'unshift' because it must be the first index because we're adding 'message' here
     additionalTemplates.unshift({ id, html, calculatedDynamicKeys });
@@ -513,28 +512,27 @@ export const govukToMetaTemplateInput = async (
     });
   }
 
-  return additionalTemplates.map(template => {
-    if (template.id.match(/H[1-6]/)) {
-      message += `Note: template ${
-        template.id
-      } bypassed additional namespacing of the component id (eg. g-... to g-list-...).\n`;
-      // don't namespace these headings
-      return {
+  return Promise.all(
+    additionalTemplates.map(async template => {
+      if (template.id.match(/H[1-6]/)) {
+        message += `Note: template ${template.id} bypassed additional namespacing of the component id (eg. g-... to g-list-...).\n`;
+        // don't namespace these headings
+        return {
+          ...template,
+          id: toId(template.id),
+          css,
+          message
+        };
+      }
+      return await normalizeGovUkTemplate({
         ...template,
-        id: toId(template.id),
         css,
-        message
-      };
-    }
-    return normalizeGovUkTemplate({
-      ...template,
-      css,
-      cssNamespace,
-      message,
-      additionalPrefixesToBypassNamespacing
-    });
-    ``;
-  });
+        cssNamespace,
+        message,
+        additionalPrefixesToBypassNamespacing
+      });
+    })
+  );
 };
 
 const pxToRem = (px: number): string => {
@@ -1176,7 +1174,7 @@ const govUkClassNameToGenericClassName = (
   return { replacement: `g-${namespace}-${className}` };
 };
 
-export const normalizeGovUkTemplate = ({
+export const normalizeGovUkTemplate = async ({
   id,
   html,
   css,
@@ -1187,6 +1185,19 @@ export const normalizeGovUkTemplate = ({
 }) => {
   // FIXME: Replace with a real HTML/CSS parser-based replacement
   const normalizedId = toId(id);
+
+  const baseCachePath = path.join(__dirname, 'upstream', 'govuk');
+
+  await mkdirpPromise(baseCachePath);
+
+  const cachePath = path.join(baseCachePath, normalizedId);
+  await fs.promises.writeFile(cachePath + '.html', html, {
+    encoding: 'utf-8'
+  });
+  await fs.promises.writeFile(cachePath + '.css', css, {
+    encoding: 'utf-8'
+  });
+
   const newCssNamespace = cssNamespace || camelCase(normalizedId);
   // console.log({ id, cssNamespace, newCssNamespace });
   const namespacedHTML = html.replace(/g-([A-Za-z0-9-_]+)/g, (all, p1) => {

@@ -1,15 +1,17 @@
 <template>
   <span class="g-error-message">
     Error message about full name goes here
-  </span> </template
-><script>
+  </span>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: {},
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-error-message {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -37,8 +37,9 @@
         </li>
       </ul>
     </div>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -80,8 +81,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-errorSummary-list {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

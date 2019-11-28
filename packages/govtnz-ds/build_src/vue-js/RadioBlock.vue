@@ -16,8 +16,9 @@
     <label class="g-radios-label g-radios__label" v-bind:for="radioId">
       <slot name="label"></slot>
     </label>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -38,8 +39,9 @@ export default Vue.extend({
       return "g-radios__input" + (this.fakeFocus ? " :focus" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-radios-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

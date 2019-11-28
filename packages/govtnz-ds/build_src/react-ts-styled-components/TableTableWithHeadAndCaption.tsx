@@ -97,7 +97,7 @@ const StyledTr4 = styled.tr`
   margin-top: 0px;
 `;
 
-const TableTableWithHeadAndCaption = ({  }: Props) => (
+const TableTableWithHeadAndCaption = ({}: Props) => (
   <StyledTable>
     <StyledCaption>Caption 1: Months and rates</StyledCaption>
     <StyledThead>

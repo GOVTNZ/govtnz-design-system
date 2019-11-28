@@ -10,8 +10,9 @@
     v-bind:autofocus="autoFocus"
     v-bind:value="value"
     v-bind:checked="checked"
-  /> </template
-><script>
+  />
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -31,8 +32,9 @@ export default Vue.extend({
       return "g-radios__input" + (this.fakeFocus ? " :focus" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-radios__input {
   position: absolute;
   z-index: 1;
