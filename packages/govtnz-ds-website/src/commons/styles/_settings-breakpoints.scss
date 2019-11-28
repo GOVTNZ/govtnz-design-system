@@ -40,6 +40,12 @@ $breakpoint-xlarge: 1200px;
 
 @mixin print {
   @media print {
-    @content
+    @content;
+  }
+}
+
+@mixin prefersReducedMotion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
   }
 }
