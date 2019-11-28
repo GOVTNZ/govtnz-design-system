@@ -21,7 +21,7 @@ $skip-link-height: 53px;
   height: $skip-link-height;
   top: -$skip-link-height;
   left: 0;
-  transition: top 1.5s ease;
+  transition: top 0.75s ease;
 
   &:focus {
     transition-duration: 0.2s;
