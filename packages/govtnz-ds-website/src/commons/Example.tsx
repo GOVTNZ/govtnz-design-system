@@ -322,14 +322,12 @@ export default class Example extends Component<Props, State> {
             </div>
             <Details className="example__details" onChange={this.clickFormat}>
               <Summary id={summaryId} className="example__summary">
-                <label className="example__summary-button">
-                  Code
-                  <Icon
-                    className="example__summary-icon-down icon icon--theme-highlight"
-                    role="presentation"
-                    id={iconDown.id}
-                  />
-                </label>
+                <span className="example__summary-text">Code</span>
+                <Icon
+                  className="example__summary-icon-down icon icon--theme-highlight"
+                  role="presentation"
+                  id={iconDown.id}
+                />
               </Summary>
               {codePreview}
             </Details>
