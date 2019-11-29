@@ -94,8 +94,7 @@
   }
 }
 
-.g-selectWithHintTextAndErrorMessage-fieldset__legend
-  + .g-selectWithHintTextAndErrorMessage-hint {
+.g-fieldset__legend + .g-selectWithHintTextAndErrorMessage-hint {
   margin-top: -5px;
 }
 

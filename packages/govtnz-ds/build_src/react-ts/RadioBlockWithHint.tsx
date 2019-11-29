@@ -43,14 +43,17 @@ const RadioBlockWithHint = ({
       checked={checked}
       onChange={onChange}
     />
-    <label className="g-radios-label g-radios__label" htmlFor={radioId}>
+    <label
+      className="g-radioBlockWithHint-label g-radios__label"
+      htmlFor={radioId}
+    >
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
-    <div className="g-radios-hint g-radios__hint" id={hintId}>
+    <div className="g-radioBlockWithHint-hint g-radios__hint" id={hintId}>
       {hint !== undefined ? hint : <React.Fragment>Hint text</React.Fragment>}
     </div>
   </div>

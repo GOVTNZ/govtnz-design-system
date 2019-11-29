@@ -82,7 +82,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-fileUploadWithHintText-fieldset__legend + .g-fileUploadWithHintText-hint {
+.g-fieldset__legend + .g-fileUploadWithHintText-hint {
   margin-top: -5px;
 }
 .g-fileUploadWithHintText-label {

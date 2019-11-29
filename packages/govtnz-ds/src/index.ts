@@ -27,6 +27,7 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
+import { normalizeGovUkTemplate } from './normalize-govuk';
 // import getSilverStripe4Files from './template-formats/silverstripe-4/silverstripe-4';
 
 ensureNodeVersion();
@@ -34,14 +35,14 @@ ensureNodeVersion();
 async function main(
   mode: BuildMode,
   noCache: boolean = false,
-  patternIds?: string[] | undefined,
+  componentIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
   sources?: string[] | undefined
 ) {
   console.info('Command line args:');
   console.info('  -  Cache: ', !noCache);
   console.info('  -  Sources: ', sources ? sources : 'All');
-  console.info('  -  Filter By Patterns:', patternIds ? patternIds : false);
+  console.info('  -  Filter By Patterns:', componentIds ? componentIds : false);
   console.info(
     '  -  MetaTemplate formats:',
     metaTemplateFormatIds ? metaTemplateFormatIds : false,
@@ -49,12 +50,14 @@ async function main(
   );
   console.log('\n\n\n');
 
-  const specString: string = (await fs.promises.readFile(
-    path.join(__dirname, 'build-types', `${mode}-spec.json`),
-    {
-      encoding: 'utf-8'
-    }
-  )).toString();
+  const specString: string = (
+    await fs.promises.readFile(
+      path.join(__dirname, 'build-types', `${mode}-spec.json`),
+      {
+        encoding: 'utf-8'
+      }
+    )
+  ).toString();
 
   if (noCache) {
     console.info('Building release while using NO CACHE.');
@@ -102,25 +105,28 @@ async function main(
   // and other theoretical conflicts so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
-    const validPatternIds =
-      patternIds !== null && releaseSpecItem.patternIds !== undefined
-        ? patternIds.filter(patternId =>
-            releaseSpecItem.patternIds.includes(patternId)
+    const validComponentIds =
+      componentIds !== null && releaseSpecItem.componentIds !== undefined
+        ? componentIds.filter(componentId =>
+            releaseSpecItem.componentIds.includes(componentId)
           )
         : [];
 
-    releaseSpecItem.patternIds =
-      validPatternIds.length > 0 ? validPatternIds : releaseSpecItem.patternIds;
+    releaseSpecItem.componentIds =
+      validComponentIds.length > 0
+        ? validComponentIds
+        : releaseSpecItem.componentIds;
 
     releaseSpecItem.metaTemplateFormatIds =
       metaTemplateFormatIds || releaseSpecItem.metaTemplateFormatIds;
 
     console.log(
-      `Release build step ${i + 1} ${releaseSpecItem.sourceId}@${
-        releaseSpecItem.version
-      }. Scraping ${
-        releaseSpecItem.patternIds
-          ? releaseSpecItem.patternIds.toString()
+      `Release build step ${i + 1} ${
+        releaseSpecItem.sourceId
+      }@${releaseSpecItem.version ||
+        '(fork -- see govtnz-ds/src/upstream)'}. Scraping ${
+        releaseSpecItem.componentIds
+          ? releaseSpecItem.componentIds.toString()
           : 'ALL patterns.'
       } `
     );
@@ -144,7 +150,7 @@ async function main(
     cssVariables
   });
 
-  const isCompleteRelease = !patternIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
+  const isCompleteRelease = !componentIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
 
   // Disabling compilation files until specific ticket to reenable
   // because we're unclear of the features users want.
@@ -170,19 +176,81 @@ async function main(
 }
 
 const makeReleaseSpecItem = async (
-  { sourceId, version, patternIds, metaTemplateFormatIds }: ReleaseSpecItem,
+  { sourceId, version, componentIds, metaTemplateFormatIds }: ReleaseSpecItem,
   noCache: boolean
 ): Promise<ReleaseItem> => {
-  const upstreamReleaseVersions: ReleaseVersion[] = await getUpstream(
-    sourceId,
-    version,
-    patternIds,
-    noCache
-  );
-  const releaseVersions: ReleaseVersion[] = await normalizeUpstream(
-    sourceId,
-    upstreamReleaseVersions
-  );
+  let releaseVersions: ReleaseVersion[];
+  if (version) {
+    // if there's a specific version then assume they want upstream copies
+    releaseVersions = await getUpstream(
+      sourceId,
+      version,
+      componentIds,
+      noCache
+    );
+    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+  } else {
+    if (!componentIds) {
+      throw Error(
+        `componentIds required ${JSON.stringify({
+          sourceId,
+          version,
+          componentIds,
+          metaTemplateFormatIds
+        })}`
+      );
+    }
+
+    const components = await Promise.all(
+      componentIds.map(async componentId => {
+        const base = path.join(__dirname, 'upstream', sourceId);
+        const html = (
+          await fs.promises.readFile(path.join(base, `${componentId}.html`), {
+            encoding: 'utf-8'
+          })
+        ).toString();
+        const css = (
+          await fs.promises.readFile(path.join(base, `${componentId}.css`), {
+            encoding: 'utf-8'
+          })
+        ).toString();
+
+        const componentData = await normalizeGovUkTemplate({
+          id: componentId,
+          html,
+          css,
+          cssNamespace: '',
+          message: '',
+          calculatedDynamicKeys: [],
+          additionalPrefixesToBypassNamespacing: [
+            'fieldset',
+            'radios',
+            'checkboxes',
+            'link',
+            'a'
+          ]
+        });
+
+        const component: Component = {
+          version,
+          ...componentData
+        };
+
+        return component;
+      })
+    );
+
+    const releaseVersion: ReleaseVersion = {
+      sourceId,
+      version: 'all',
+      components,
+      creditMarkdown: ''
+    };
+
+    releaseVersions = [releaseVersion];
+    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+  }
+
   let cssVariables: CSSVariablePattern[] = [];
 
   const jobs: ComponentToFilesArgs[] = [];
@@ -275,9 +343,7 @@ const makeReleaseSpecItem = async (
       await disposeMetaTemplate();
     } else {
       console.log(
-        `No 'disposeMetaTemplate' found in ${
-          jobs.length
-        } job(s). This indicates a bug that should be investigated.`
+        `No 'disposeMetaTemplate' found in ${jobs.length} job(s). This indicates a bug that should be investigated.`
       );
     }
   }
@@ -442,9 +508,11 @@ const saveRelease = async (
   );
   if (!isCompleteRelease) {
     try {
-      const data = (await fs.promises.readFile(metaTemplateInputsPath, {
-        encoding: 'utf-8'
-      })).toString();
+      const data = (
+        await fs.promises.readFile(metaTemplateInputsPath, {
+          encoding: 'utf-8'
+        })
+      ).toString();
       const oldMetaTemplateInputs = JSON.parse(data);
       metaTemplateInputsById = {
         ...oldMetaTemplateInputs,
@@ -502,9 +570,7 @@ const saveRelease = async (
   );
 
   console.log(
-    `\n\nFinished. Wrote ${
-      releaseFilePaths.length
-    } file(s) to ${mode}\n( ${specPath} )`
+    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s) to ${mode}\n( ${specPath} )`
   );
 };
 
@@ -537,8 +603,8 @@ const makeNonComponentDocs = async (allFiles: Object) => {
 
 type ReleaseSpecItem = {
   sourceId: SourceId;
-  version: string;
-  patternIds?: string[] | undefined;
+  version?: string;
+  componentIds?: string[] | undefined;
   metaTemplateFormatIds?: string[] | undefined;
 };
 

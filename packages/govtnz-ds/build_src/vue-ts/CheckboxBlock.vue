@@ -78,7 +78,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-checkboxBlock-fieldset__legend + .g-checkboxBlock-hint {
+.g-fieldset__legend + .g-checkboxBlock-hint {
   margin-top: -5px;
 }
 .g-checkboxBlock-label {

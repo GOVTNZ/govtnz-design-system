@@ -2,12 +2,10 @@
   <div v-bind:class="computed__class">
     <fieldset
       v-bind:aria-describedby="computed__ariaDescribedby"
-      class="g-dateInput-fieldset"
+      class="g-fieldset"
       role="group"
     >
-      <legend
-        class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
-      >
+      <legend class="g-fieldset__legend g-fieldset__legend--xl">
         <slot name="label"></slot>
       </legend>
 
@@ -23,11 +21,11 @@
         <slot name="error"></slot>
       </span>
 
-      <div class="g-dateInput-date-input" v-bind:id="id">
-        <div class="g-dateInput-date-input__item">
+      <div class="g-date-input" v-bind:id="id">
+        <div class="g-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-dateInput-date-input__label"
+              class="g-dateInput-label g-date-input__label"
               v-bind:for="dayId"
             >
               Day
@@ -50,10 +48,10 @@
           </div>
         </div>
 
-        <div class="g-dateInput-date-input__item">
+        <div class="g-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-dateInput-date-input__label"
+              class="g-dateInput-label g-date-input__label"
               v-bind:for="monthId"
             >
               Month
@@ -76,10 +74,10 @@
           </div>
         </div>
 
-        <div class="g-dateInput-date-input__item">
+        <div class="g-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label govuk-date-input__label"
+              class="g-dateInput-label g-date-input__label"
               v-bind:for="yearId"
             >
               Year
@@ -512,7 +510,7 @@ export default Vue.extend({
     },
     computed__class2() {
       return (
-        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
+        "g-dateInput-input g-date-input__input g-dateInput-input--width-2" +
         (this.error ? " g-dateInput-input--error" : "")
       );
     },
@@ -523,7 +521,7 @@ export default Vue.extend({
     },
     computed__class3() {
       return (
-        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" +
+        "g-dateInput-input g-date-input__input g-dateInput-input--width-2" +
         (this.error ? " g-dateInput-input--error" : "")
       );
     },
@@ -534,7 +532,7 @@ export default Vue.extend({
     },
     computed__class4() {
       return (
-        "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" +
+        "g-dateInput-input g-date-input__input g-dateInput-input--width-4" +
         (this.error ? " g-dateInput-input--error" : "")
       );
     },
@@ -600,23 +598,23 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-dateInput-fieldset {
+.g-fieldset {
   min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
 }
-.g-dateInput-fieldset:after {
+.g-fieldset:after {
   content: "";
   display: block;
   clear: both;
 }
 @media not (caret-color: auto) {
-  .g-dateInput-fieldset {
+  .g-fieldset {
     display: table-cell;
   }
 }
-.g-dateInput-fieldset__legend {
+.g-fieldset__legend {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -633,28 +631,28 @@ export default Vue.extend({
   white-space: normal;
 }
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     color: #000000;
   }
 }
-.g-dateInput-fieldset__legend--xl {
+.g-fieldset__legend--xl {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -664,18 +662,18 @@ export default Vue.extend({
   margin-bottom: 15px;
 }
 @media print {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-size: 3rem;
     line-height: 1.04167;
   }
 }
 @media print {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-size: 32pt;
     line-height: 1.15;
   }
@@ -708,7 +706,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-dateInput-fieldset__legend + .g-dateInput-hint {
+.g-fieldset__legend + .g-dateInput-hint {
   margin-top: -5px;
 }
 .g-dateInput-label {
@@ -799,25 +797,6 @@ export default Vue.extend({
 }
 .g-dateInput-input--width-2 {
   max-width: 5.4ex;
-}
-.g-dateInput-date-input {
-  font-size: 0;
-}
-.g-dateInput-date-input:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-.g-dateInput-date-input__item {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
-}
-.g-dateInput-date-input__label {
-  display: block;
-}
-.g-dateInput-date-input__input {
-  margin-bottom: 0;
 }
 .g-dateInput-visually-hidden {
   position: absolute !important;

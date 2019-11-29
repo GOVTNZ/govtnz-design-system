@@ -43,31 +43,6 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #0b0c0c;
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
-  }
-  :focus {
-    outline: 3px solid #ffbf47;
-    outline-offset: 0;
-  }
   margin-top: 0px;
 `;
 

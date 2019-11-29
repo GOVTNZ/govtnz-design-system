@@ -7,7 +7,7 @@
       Sarah Philips
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="<% if $target == "Blank" %>_blank<% else_if $target == "Top" %>_top<% else_if $target == "Self" %>_self<% else_if $target == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="<% if $target == "Blank" %>_blank<% else_if $target == "Top" %>_top<% else_if $target == "Self" %>_self<% else_if $target == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  name</span> 
       </a> 
     </dd> 
@@ -20,7 +20,7 @@
       5 January 1978
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href2 %> href="{$href2}"<% end_if %><% if $rel2 %> rel="{$rel2}"<% end_if %><% if $target2 %> target="<% if $target2 == "Blank" %>_blank<% else_if $target2 == "Top" %>_top<% else_if $target2 == "Self" %>_self<% else_if $target2 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href2 %> href="{$href2}"<% end_if %><% if $rel2 %> rel="{$rel2}"<% end_if %><% if $target2 %> target="<% if $target2 == "Blank" %>_blank<% else_if $target2 == "Top" %>_top<% else_if $target2 == "Self" %>_self<% else_if $target2 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  date of birth</span> 
       </a> 
     </dd> 
@@ -35,7 +35,7 @@
       SE23 6FH
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="<% if $target3 == "Blank" %>_blank<% else_if $target3 == "Top" %>_top<% else_if $target3 == "Self" %>_self<% else_if $target3 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="<% if $target3 == "Blank" %>_blank<% else_if $target3 == "Top" %>_top<% else_if $target3 == "Self" %>_self<% else_if $target3 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  contact information</span> 
       </a> 
     </dd> 
@@ -49,7 +49,7 @@
       sarah.phillips@example.com
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="<% if $target4 == "Blank" %>_blank<% else_if $target4 == "Top" %>_top<% else_if $target4 == "Self" %>_self<% else_if $target4 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="<% if $target4 == "Blank" %>_blank<% else_if $target4 == "Top" %>_top<% else_if $target4 == "Self" %>_self<% else_if $target4 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  contact details</span> 
       </a> 
     </dd> 
@@ -62,7 +62,7 @@
       502135326
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href5 %> href="{$href5}"<% end_if %><% if $rel5 %> rel="{$rel5}"<% end_if %><% if $target5 %> target="<% if $target5 == "Blank" %>_blank<% else_if $target5 == "Top" %>_top<% else_if $target5 == "Self" %>_self<% else_if $target5 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href5 %> href="{$href5}"<% end_if %><% if $rel5 %> rel="{$rel5}"<% end_if %><% if $target5 %> target="<% if $target5 == "Blank" %>_blank<% else_if $target5 == "Top" %>_top<% else_if $target5 == "Self" %>_self<% else_if $target5 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden"> 
           previous application number</span> 
       </a> 
@@ -76,7 +76,7 @@
       For personal use
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href6 %> href="{$href6}"<% end_if %><% if $rel6 %> rel="{$rel6}"<% end_if %><% if $target6 %> target="<% if $target6 == "Blank" %>_blank<% else_if $target6 == "Top" %>_top<% else_if $target6 == "Self" %>_self<% else_if $target6 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href6 %> href="{$href6}"<% end_if %><% if $rel6 %> rel="{$rel6}"<% end_if %><% if $target6 %> target="<% if $target6 == "Blank" %>_blank<% else_if $target6 == "Top" %>_top<% else_if $target6 == "Self" %>_self<% else_if $target6 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  licence type</span> 
       </a> 
     </dd> 
@@ -93,7 +93,7 @@
       </p> 
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href7 %> href="{$href7}"<% end_if %><% if $rel7 %> rel="{$rel7}"<% end_if %><% if $target7 %> target="<% if $target7 == "Blank" %>_blank<% else_if $target7 == "Top" %>_top<% else_if $target7 == "Self" %>_self<% else_if $target7 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href7 %> href="{$href7}"<% end_if %><% if $rel7 %> rel="{$rel7}"<% end_if %><% if $target7 %> target="<% if $target7 == "Blank" %>_blank<% else_if $target7 == "Top" %>_top<% else_if $target7 == "Self" %>_self<% else_if $target7 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  home address</span> 
       </a> 
     </dd> 
@@ -112,7 +112,7 @@
       </p> 
     </dd> 
     <dd class="g-summaryListCheckYourAnswers-summary-list__actions"> 
-      <a class="g-summaryListCheckYourAnswers-link"<% if $href8 %> href="{$href8}"<% end_if %><% if $rel8 %> rel="{$rel8}"<% end_if %><% if $target8 %> target="<% if $target8 == "Blank" %>_blank<% else_if $target8 == "Top" %>_top<% else_if $target8 == "Self" %>_self<% else_if $target8 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+      <a class="g-link"<% if $href8 %> href="{$href8}"<% end_if %><% if $rel8 %> rel="{$rel8}"<% end_if %><% if $target8 %> target="<% if $target8 == "Blank" %>_blank<% else_if $target8 == "Top" %>_top<% else_if $target8 == "Self" %>_self<% else_if $target8 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
         Change<span class="g-summaryListCheckYourAnswers-visually-hidden">  licence period</span> 
       </a> 
     </dd> 

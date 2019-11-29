@@ -50,7 +50,7 @@
   }
 }
 
-.g-textarea-fieldset__legend + .g-textarea-hint {
+.g-fieldset__legend + .g-textarea-hint {
   margin-top: -5px;
 }
 

@@ -132,8 +132,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-selectWithHintTextAndErrorMessage-fieldset__legend
-  + .g-selectWithHintTextAndErrorMessage-hint {
+.g-fieldset__legend + .g-selectWithHintTextAndErrorMessage-hint {
   margin-top: -5px;
 }
 .g-selectWithHintTextAndErrorMessage-label {

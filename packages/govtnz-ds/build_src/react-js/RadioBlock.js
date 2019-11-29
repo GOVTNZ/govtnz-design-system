@@ -27,7 +27,7 @@ const RadioBlock = ({
       checked={checked}
       onChange={onChange}
     />
-    <label className="g-radios-label g-radios__label" htmlFor={radioId}>
+    <label className="g-radioBlock-label g-radios__label" htmlFor={radioId}>
       {label !== undefined ? (
         label
       ) : (

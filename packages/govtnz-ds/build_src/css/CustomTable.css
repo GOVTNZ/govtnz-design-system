@@ -1,4 +1,4 @@
-.g-customTable-link {
+.g-link {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -6,43 +6,43 @@
 }
 
 @media print {
-  .g-customTable-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
 
-.g-customTable-link:focus {
+.g-link:focus {
   outline: 3px solid #b53cde;
   outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
 
-.g-customTable-link:link {
+.g-link:link {
   color: #005ea5;
   color: var(--g-theme-color-darkblue, #005ea5);
 }
 
-.g-customTable-link:visited {
+.g-link:visited {
   color: #4c2c92;
   color: var(--g-theme-color-dark10, #4c2c92);
 }
 
-.g-customTable-link:hover {
+.g-link:hover {
   color: #2b8cc4;
   color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
-.g-customTable-link:active {
+.g-link:active {
   color: #2b8cc4;
   color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
-.g-customTable-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 
 @media print {
-  .g-customTable-link[href^="/"]::after {
+  .g-link[href^="/"]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
     word-wrap: break-word;

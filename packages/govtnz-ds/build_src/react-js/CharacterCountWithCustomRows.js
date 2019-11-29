@@ -110,16 +110,4 @@ const CharacterCountWithCustomRows = ({
   </div>
 );
 
-const CharacterCountWithCustomRows__calculated = props =>
-  React.createElement(CharacterCountWithCustomRows, {
-    ...props,
-    remainingCharacters: (props => {
-      return props.value !== undefined && props.maxLength !== undefined
-        ? parseInt(props.maxLength.toString(), 10) - props.value.length
-        : props.maxLength;
-    })(props)
-  });
-
-export { CharacterCountWithCustomRows };
-
-export default CharacterCountWithCustomRows__calculated;
+export default CharacterCountWithCustomRows;

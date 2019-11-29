@@ -409,10 +409,10 @@ const DateInput = ({
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
           : undefined
       }
-      className="g-dateInput-fieldset"
+      className="g-fieldset"
       role="group"
     >
-      <legend className="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl">
+      <legend className="g-fieldset__legend g-fieldset__legend--xl">
         {label !== undefined ? (
           label
         ) : (
@@ -441,17 +441,17 @@ const DateInput = ({
         ""
       )}
 
-      <div className="g-dateInput-date-input" id={id}>
-        <div className="g-dateInput-date-input__item">
+      <div className="g-date-input" id={id}>
+        <div className="g-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label g-dateInput-date-input__label"
+              className="g-dateInput-label g-date-input__label"
               htmlFor={dayId}
             >
               Day
             </label>
             <input
-              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
+              className={`g-dateInput-input g-date-input__input g-dateInput-input--width-2${
                 error ? " g-dateInput-input--error" : ""
               }`}
               id={dayId}
@@ -469,16 +469,16 @@ const DateInput = ({
             />
           </div>
         </div>
-        <div className="g-dateInput-date-input__item">
+        <div className="g-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label g-dateInput-date-input__label"
+              className="g-dateInput-label g-date-input__label"
               htmlFor={monthId}
             >
               Month
             </label>
             <input
-              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2${
+              className={`g-dateInput-input g-date-input__input g-dateInput-input--width-2${
                 error ? " g-dateInput-input--error" : ""
               }`}
               id={monthId}
@@ -496,16 +496,16 @@ const DateInput = ({
             />
           </div>
         </div>
-        <div className="g-dateInput-date-input__item">
+        <div className="g-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label govuk-date-input__label"
+              className="g-dateInput-label g-date-input__label"
               htmlFor={yearId}
             >
               Year
             </label>
             <input
-              className={`g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4${
+              className={`g-dateInput-input g-date-input__input g-dateInput-input--width-4${
                 error ? " g-dateInput-input--error" : ""
               }`}
               id={yearId}

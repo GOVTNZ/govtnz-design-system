@@ -404,17 +404,13 @@ export const setCSSValues = (
       }
       case '@font-face': {
         throw Error(
-          `${__filename}: Unrecognised CSS node type "${
-            node.type
-          }". Please contribute your CSS as a test case to the project.`
+          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
         );
         break;
       }
       default: {
         throw Error(
-          `${__filename}: Unrecognised CSS node type "${
-            node.type
-          }". Please contribute your CSS as a test case to the project.`
+          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
         );
       }
     }

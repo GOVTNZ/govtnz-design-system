@@ -45,7 +45,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href}
           rel={rel}
           target={constants.target[target]}
@@ -67,7 +67,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href2}
           rel={rel2}
           target={constants.target2[target2]}
@@ -93,7 +93,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href3}
           rel={rel3}
           target={constants.target3[target3]}
@@ -117,7 +117,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href4}
           rel={rel4}
           target={constants.target4[target4]}
@@ -139,7 +139,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href5}
           rel={rel5}
           target={constants.target5[target5]}
@@ -160,7 +160,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href6}
           rel={rel6}
           target={constants.target6[target6]}
@@ -188,7 +188,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href7}
           rel={rel7}
           target={constants.target7[target7]}
@@ -216,7 +216,7 @@ const SummaryListCheckYourAnswers = ({
       </dd>
       <dd className="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          className="g-summaryListCheckYourAnswers-link"
+          className="g-link"
           href={href8}
           rel={rel8}
           target={constants.target8[target8]}

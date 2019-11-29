@@ -297,7 +297,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-inputBlock-fieldset__legend + .g-inputBlock-hint {
+.g-fieldset__legend + .g-inputBlock-hint {
   margin-top: -5px;
 }
 .g-inputBlock-label {

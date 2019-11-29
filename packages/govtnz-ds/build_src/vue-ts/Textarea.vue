@@ -217,7 +217,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-textarea-fieldset__legend + .g-textarea-hint {
+.g-fieldset__legend + .g-textarea-hint {
   margin-top: -5px;
 }
 .g-textarea-label {

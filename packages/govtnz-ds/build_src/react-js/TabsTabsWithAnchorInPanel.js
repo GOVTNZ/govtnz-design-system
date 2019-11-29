@@ -80,7 +80,7 @@ const TabsTabsWithAnchorInPanel = ({
         successfully
       </p>
       <a
-        className="g-tabsTabsWithAnchorInPanel-link"
+        className="g-link"
         href={href3}
         rel={rel3}
         target={constants.target3[target3]}

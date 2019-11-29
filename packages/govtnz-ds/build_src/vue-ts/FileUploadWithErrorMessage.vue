@@ -129,8 +129,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-fileUploadWithErrorMessage-fieldset__legend
-  + .g-fileUploadWithErrorMessage-hint {
+.g-fieldset__legend + .g-fileUploadWithErrorMessage-hint {
   margin-top: -5px;
 }
 .g-fileUploadWithErrorMessage-label {

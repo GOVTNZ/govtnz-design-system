@@ -6,7 +6,7 @@ const constants = {
 
 const A = ({ isMuted, href, rel, target, children }) => (
   <a
-    className={`g-a-link${isMuted ? " g-a-link--muted" : ""}`}
+    className={`g-link${isMuted ? " g-link--muted" : ""}`}
     href={href}
     rel={rel}
     target={constants.target[target]}

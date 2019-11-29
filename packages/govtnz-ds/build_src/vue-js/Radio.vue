@@ -49,7 +49,7 @@ export default Vue.extend({
 .g-radios__input:disabled {
   cursor: default;
 }
-.g-radios-hint > * {
+.g-radio-hint > * {
   margin-top: 0px;
 }
 </style>

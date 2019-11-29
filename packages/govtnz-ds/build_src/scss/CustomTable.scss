@@ -1,4 +1,4 @@
-.g-customTable-link {
+.g-link {
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -6,43 +6,43 @@
 }
 
 @media print {
-  .g-customTable-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
 
-.g-customTable-link:focus {
+.g-link:focus {
   outline: 3px solid $g-theme-color-brand-1;
   outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
 }
 
-.g-customTable-link:link {
+.g-link:link {
   color: $g-theme-color-darkblue;
   color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
 }
 
-.g-customTable-link:visited {
+.g-link:visited {
   color: $g-theme-color-dark10;
   color: var(--g-theme-color-dark10, $g-theme-color-dark10);
 }
 
-.g-customTable-link:hover {
+.g-link:hover {
   color: $g-theme-color-dark3;
   color: var(--g-theme-color-dark3, $g-theme-color-dark3);
 }
 
-.g-customTable-link:active {
+.g-link:active {
   color: $g-theme-color-dark3;
   color: var(--g-theme-color-dark3, $g-theme-color-dark3);
 }
 
-.g-customTable-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 
 @media print {
-  .g-customTable-link[href^="/"]::after {
+  .g-link[href^="/"]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
     word-wrap: break-word;

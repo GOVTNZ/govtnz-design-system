@@ -223,8 +223,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-characterCountWithCustomRows-fieldset__legend
-  + .g-characterCountWithCustomRows-hint {
+.g-fieldset__legend + .g-characterCountWithCustomRows-hint {
   margin-top: -5px;
 }
 .g-characterCountWithCustomRows-label {

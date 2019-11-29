@@ -12,7 +12,7 @@
           An individual
 
           <a
-            class="g-customTable-link"
+            class="g-link"
             v-bind:href="href"
             v-bind:rel="rel"
             v-bind:target="computed__target"
@@ -25,7 +25,7 @@
           A company
 
           <a
-            class="g-customTable-link"
+            class="g-link"
             v-bind:href="href2"
             v-bind:rel="rel2"
             v-bind:target="computed__target2"
@@ -38,7 +38,7 @@
           A company that issues parking or trespass charge notices
 
           <a
-            class="g-customTable-link"
+            class="g-link"
             v-bind:href="href3"
             v-bind:rel="rel3"
             v-bind:target="computed__target3"
@@ -66,7 +66,7 @@
         An individual
 
         <a
-          class="g-customTable-link"
+          class="g-link"
           v-bind:href="href4"
           v-bind:rel="rel4"
           v-bind:target="computed__target4"
@@ -79,7 +79,7 @@
         A company
 
         <a
-          class="g-customTable-link"
+          class="g-link"
           v-bind:href="href5"
           v-bind:rel="rel5"
           v-bind:target="computed__target5"
@@ -92,7 +92,7 @@
         A company that issues parking or trespass charge notices
 
         <a
-          class="g-customTable-link"
+          class="g-link"
           v-bind:href="href6"
           v-bind:rel="rel6"
           v-bind:target="computed__target6"
@@ -106,7 +106,7 @@
       An individual
 
       <a
-        class="g-customTable-link"
+        class="g-link"
         v-bind:href="href7"
         v-bind:rel="rel7"
         v-bind:target="computed__target7"
@@ -118,7 +118,7 @@
     An individual
 
     <a
-      class="g-customTable-link"
+      class="g-link"
       v-bind:href="href8"
       v-bind:rel="rel8"
       v-bind:target="computed__target8"
@@ -130,7 +130,7 @@
       A company
 
       <a
-        class="g-customTable-link"
+        class="g-link"
         v-bind:href="href9"
         v-bind:rel="rel9"
         v-bind:target="computed__target9"
@@ -142,7 +142,7 @@
     A company
 
     <a
-      class="g-customTable-link"
+      class="g-link"
       v-bind:href="href10"
       v-bind:rel="rel10"
       v-bind:target="computed__target10"
@@ -154,7 +154,7 @@
       A company that issues parking or trespass charge notices
 
       <a
-        class="g-customTable-link"
+        class="g-link"
         v-bind:href="href11"
         v-bind:rel="rel11"
         v-bind:target="computed__target11"
@@ -166,7 +166,7 @@
     A company that issues parking or trespass charge notices
 
     <a
-      class="g-customTable-link"
+      class="g-link"
       v-bind:href="href12"
       v-bind:rel="rel12"
       v-bind:target="computed__target12"
@@ -369,37 +369,37 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.g-customTable-link {
+.g-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media print {
-  .g-customTable-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
-.g-customTable-link:focus {
+.g-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-customTable-link:link {
+.g-link:link {
   color: #005ea5;
 }
-.g-customTable-link:visited {
+.g-link:visited {
   color: #4c2c92;
 }
-.g-customTable-link:hover {
+.g-link:hover {
   color: #2b8cc4;
 }
-.g-customTable-link:active {
+.g-link:active {
   color: #2b8cc4;
 }
-.g-customTable-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 @media print {
-  .g-customTable-link[href^="/"]::after {
+  .g-link[href^="/"]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
     word-wrap: break-word;

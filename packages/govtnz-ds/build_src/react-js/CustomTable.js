@@ -64,7 +64,7 @@ const CustomTable = ({
         <tr className="g-customTable-table__row">
           An individual
           <a
-            className="g-customTable-link"
+            className="g-link"
             href={href}
             rel={rel}
             target={constants.target[target]}
@@ -75,7 +75,7 @@ const CustomTable = ({
         <tr className="g-customTable-table__row">
           A company
           <a
-            className="g-customTable-link"
+            className="g-link"
             href={href2}
             rel={rel2}
             target={constants.target2[target2]}
@@ -86,7 +86,7 @@ const CustomTable = ({
         <tr className="g-customTable-table__row">
           A company that issues parking or trespass charge notices
           <a
-            className="g-customTable-link"
+            className="g-link"
             href={href3}
             rel={rel3}
             target={constants.target3[target3]}
@@ -107,7 +107,7 @@ const CustomTable = ({
       <tr className="g-customTable-table__row">
         An individual
         <a
-          className="g-customTable-link"
+          className="g-link"
           href={href4}
           rel={rel4}
           target={constants.target4[target4]}
@@ -118,7 +118,7 @@ const CustomTable = ({
       <tr className="g-customTable-table__row">
         A company
         <a
-          className="g-customTable-link"
+          className="g-link"
           href={href5}
           rel={rel5}
           target={constants.target5[target5]}
@@ -129,7 +129,7 @@ const CustomTable = ({
       <tr className="g-customTable-table__row">
         A company that issues parking or trespass charge notices
         <a
-          className="g-customTable-link"
+          className="g-link"
           href={href6}
           rel={rel6}
           target={constants.target6[target6]}
@@ -141,7 +141,7 @@ const CustomTable = ({
     <tr className="g-customTable-table__row">
       An individual
       <a
-        className="g-customTable-link"
+        className="g-link"
         href={href7}
         rel={rel7}
         target={constants.target7[target7]}
@@ -151,7 +151,7 @@ const CustomTable = ({
     </tr>
     An individual
     <a
-      className="g-customTable-link"
+      className="g-link"
       href={href8}
       rel={rel8}
       target={constants.target8[target8]}
@@ -161,7 +161,7 @@ const CustomTable = ({
     <tr className="g-customTable-table__row">
       A company
       <a
-        className="g-customTable-link"
+        className="g-link"
         href={href9}
         rel={rel9}
         target={constants.target9[target9]}
@@ -171,7 +171,7 @@ const CustomTable = ({
     </tr>
     A company
     <a
-      className="g-customTable-link"
+      className="g-link"
       href={href10}
       rel={rel10}
       target={constants.target10[target10]}
@@ -181,7 +181,7 @@ const CustomTable = ({
     <tr className="g-customTable-table__row">
       A company that issues parking or trespass charge notices
       <a
-        className="g-customTable-link"
+        className="g-link"
         href={href11}
         rel={rel11}
         target={constants.target11[target11]}
@@ -191,7 +191,7 @@ const CustomTable = ({
     </tr>
     A company that issues parking or trespass charge notices
     <a
-      className="g-customTable-link"
+      className="g-link"
       href={href12}
       rel={rel12}
       target={constants.target12[target12]}
