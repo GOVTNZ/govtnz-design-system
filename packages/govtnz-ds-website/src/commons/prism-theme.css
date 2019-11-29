@@ -49,6 +49,10 @@ code[class*='language-'] ::selection {
   pre[class*='language-'] {
     text-shadow: none;
   }
+
+  pre[class*='language-'] code {
+    white-space: pre-wrap;
+  }
 }
 
 /* Code blocks */
