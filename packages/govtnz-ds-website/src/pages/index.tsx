@@ -42,6 +42,7 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Design System - Alpha"
+      description=""
       keywords={[
         'government',
         `design system`,
@@ -49,6 +50,7 @@ const IndexPage = () => (
         'pattern library',
         'style guide',
       ]}
+      robots=""
     />
     <div className="banner banner--green">
       <Container width="fixed">
