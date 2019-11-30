@@ -13,9 +13,13 @@ const constants = {
 
 const H6 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
   <h6
-    className={`\${constants.styleSize[styleSize] !== undefined ? " " +  constants.styleSize[styleSize] : ""}${
-      marginBottom8 ? " g-h6-heading-mb-8" : ""
-    }${marginBottom0 ? " g-h6-heading-mb-0" : ""}`}
+    className={`${
+      constants.styleSize[styleSize] !== undefined
+        ? constants.styleSize[styleSize]
+        : ""
+    }${marginBottom8 ? " g-h6-heading-mb-8" : ""}${
+      marginBottom0 ? " g-h6-heading-mb-0" : ""
+    }`}
     id={id}
   >
     {children !== undefined ? (

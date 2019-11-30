@@ -1,5 +1,6 @@
 .g-checkboxBlock-hint {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -35,7 +36,8 @@
 }
 
 .g-checkboxBlock-label {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -68,12 +70,14 @@
 
 @media print {
   .g-checkboxBlock-label {
-    color: #000000;
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 .g-checkboxes__item {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -172,7 +176,8 @@
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
+  box-shadow: 0 0 0 3px $g-theme-color-brand-1;
+  box-shadow: 0 0 0 3px var(--g-theme-color-brand-1, $g-theme-color-brand-1);
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

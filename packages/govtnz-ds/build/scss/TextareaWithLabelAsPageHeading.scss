@@ -20,7 +20,8 @@
 }
 
 .g-textareaWithLabelAsPageHeading-label {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -53,7 +54,8 @@
 
 @media print {
   .g-textareaWithLabelAsPageHeading-label {
-    color: #000000;
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
@@ -67,7 +69,8 @@
 }
 
 .g-textareaWithLabelAsPageHeading-textarea {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -106,7 +109,8 @@
 }
 
 .g-textareaWithLabelAsPageHeading-textarea:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
 }
 

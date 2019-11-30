@@ -30,7 +30,8 @@
 }
 
 .g-fieldset__legend {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -68,12 +69,14 @@
 
 @media print {
   .g-fieldset__legend {
-    color: #000000;
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 .g-fieldsetBlock-hint {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;

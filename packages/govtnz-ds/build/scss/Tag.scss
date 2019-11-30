@@ -1,5 +1,6 @@
 .g-tag {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -10,8 +11,10 @@
   padding-bottom: 1px;
   outline: 2px solid transparent;
   outline-offset: -2px;
-  color: #ffffff;
-  background-color: #005ea5;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  background-color: $g-theme-color-darkblue;
+  background-color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;

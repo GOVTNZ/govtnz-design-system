@@ -6,17 +6,47 @@
 <script>
 import Vue from "vue";
 
-
-const constants = {"styleSize":{"xlarge":"g-h2-heading-xl","large":"g-h2-heading-l","medium":"g-h2-heading-m","small":"g-h2-heading-s","xsmall":"g-h2-heading-xs","xxsmall":"g-h2-heading-xxs"}};
+const constants = {
+  styleSize: {
+    xlarge: "g-h2-heading-xl",
+    large: "g-h2-heading-l",
+    medium: "g-h2-heading-m",
+    small: "g-h2-heading-s",
+    xsmall: "g-h2-heading-xs",
+    xxsmall: "g-h2-heading-xxs"
+  }
+};
 
 export default Vue.extend({
-
-        props: { styleSize: { type: String, validator: (value) => { return ["xlarge","large","medium","small","xsmall","xxsmall"].indexOf(value) !== -1;}, required: true }, marginBottom8: { type: Boolean, default: false, required: false }, marginBottom0: { type: Boolean, default: false, required: false }, id: { type: String, required: false }, children: { required: false, default: "Example text" } },
-        computed: {
-            computed__class() {
-  return "\" + (constants.styleSize[this.styleSize] !== undefined ? ` ${constants.styleSize[this.styleSize]}` : '') + (this.marginBottom8 ? " g-h2-heading-mb-8" : '') + (this.marginBottom0 ? " g-h2-heading-mb-0" : '')
-}
-        }});
+  props: {
+    styleSize: {
+      type: String,
+      validator: value => {
+        return (
+          ["xlarge", "large", "medium", "small", "xsmall", "xxsmall"].indexOf(
+            value
+          ) !== -1
+        );
+      },
+      required: true
+    },
+    marginBottom8: { type: Boolean, default: false, required: false },
+    marginBottom0: { type: Boolean, default: false, required: false },
+    id: { type: String, required: false },
+    children: { required: false, default: "Example text" }
+  },
+  computed: {
+    computed__class() {
+      return (
+        (constants.styleSize[this.styleSize] !== undefined
+          ? ` ${constants.styleSize[this.styleSize]}`
+          : "") +
+        (this.marginBottom8 ? " g-h2-heading-mb-8" : "") +
+        (this.marginBottom0 ? " g-h2-heading-mb-0" : "")
+      );
+    }
+  }
+});
 </script>
 <style scoped>
 .g-h2-heading-xl {

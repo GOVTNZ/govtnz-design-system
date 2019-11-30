@@ -27,9 +27,13 @@ const H2 = ({
   children
 }: Props) => (
   <h2
-    className={`\${constants.styleSize[styleSize] !== undefined ? " " +  constants.styleSize[styleSize] : ""}${
-      marginBottom8 ? " g-h2-heading-mb-8" : ""
-    }${marginBottom0 ? " g-h2-heading-mb-0" : ""}`}
+    className={`${
+      constants.styleSize[styleSize] !== undefined
+        ? constants.styleSize[styleSize]
+        : ""
+    }${marginBottom8 ? " g-h2-heading-mb-8" : ""}${
+      marginBottom0 ? " g-h2-heading-mb-0" : ""
+    }`}
     id={id}
   >
     {children !== undefined ? (

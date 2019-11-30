@@ -16,6 +16,7 @@
 .g-fileUploadWithErrorMessage-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
+  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-fileUploadWithErrorMessage-form-group--error
@@ -26,6 +27,7 @@
 
 .g-fileUploadWithErrorMessage-error-message {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -35,6 +37,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {
@@ -59,6 +62,7 @@
 
 .g-fileUploadWithErrorMessage-hint {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -95,6 +99,7 @@
 
 .g-fileUploadWithErrorMessage-label {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -128,6 +133,7 @@
 @media print {
   .g-fileUploadWithErrorMessage-label {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -138,6 +144,7 @@
 
 .g-fileUploadWithErrorMessage-file-upload {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -169,16 +176,19 @@
 @media print {
   .g-fileUploadWithErrorMessage-file-upload {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
 .g-fileUploadWithErrorMessage-file-upload:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
 
 .g-fileUploadWithErrorMessage-file-upload--error {
   border: 4px solid #b10e1e;
+  border: 4px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-fileUploadWithErrorMessage-hint > * {

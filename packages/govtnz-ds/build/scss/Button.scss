@@ -1,5 +1,6 @@
 .g-button {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
@@ -14,8 +15,10 @@
   padding: 16px;
   border: 2px solid transparent;
   border-radius: 4px;
-  color: #ffffff;
-  background-color: #00823b;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  background-color: $g-theme-button-color;
+  background-color: var(--g-theme-button-color, $g-theme-button-color);
   box-shadow: 0 2px 0 0 #2a2a2a;
   text-align: center;
   vertical-align: top;
@@ -44,7 +47,8 @@
 }
 
 .g-button:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
 }
 
@@ -64,7 +68,8 @@
 .g-button:visited,
 .g-button:active,
 .g-button:hover {
-  color: #ffffff;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
   text-decoration: none;
 }
 
@@ -75,7 +80,8 @@
 
 .g-button:hover,
 .g-button:focus {
-  background-color: #00692f;
+  background-color: $g-theme-color-brand-4;
+  background-color: var(--g-theme-color-brand-4, $g-theme-color-brand-4);
 }
 
 .g-button:active {
@@ -101,12 +107,14 @@
 .g-button--disabled,
 .g-button[disabled] {
   opacity: 0.5;
-  background: #00823b;
+  background: $g-theme-button-color;
+  background: var(--g-theme-button-color, $g-theme-button-color);
 }
 
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
-  background-color: #00823b;
+  background-color: $g-theme-button-color;
+  background-color: var(--g-theme-button-color, $g-theme-button-color);
   cursor: default;
 }
 
@@ -118,7 +126,8 @@
 .g-button--disabled:active,
 .g-button[disabled]:active {
   top: 0;
-  box-shadow: 0 2px 0 #003618;
+  box-shadow: 0 2px 0 $g-theme-color-brand-3;
+  box-shadow: 0 2px 0 var(--g-theme-color-brand-3, $g-theme-color-brand-3);
 }
 
 .g-button {

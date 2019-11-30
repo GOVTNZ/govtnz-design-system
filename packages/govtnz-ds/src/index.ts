@@ -27,8 +27,7 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-import { normalizeGovUkTemplate } from './normalize-govuk';
-// import getSilverStripe4Files from './template-formats/silverstripe-4/silverstripe-4';
+import { normalizeGovUkTemplate, cssVariables } from './normalize-govuk';
 
 ensureNodeVersion();
 
@@ -233,6 +232,7 @@ const makeReleaseSpecItem = async (
 
         const component: Component = {
           version,
+
           ...componentData
         };
 
@@ -618,19 +618,6 @@ type ReleaseItem = {
 const MAX_METATEMPLATE_WORKERS = 1;
 const AVERAGE_JOB_DURATION_ms = 20 * 1000;
 const LONGER_THAN_A_HUMAN_COULD_POSSIBILITY_TOLERATE_ms = 6 * 60 * 1000;
-
-type Pattern = {
-  id: string;
-  version: string;
-  html: string | undefined; // will contain HTML and <g-children> etc., no placeholder content
-  htmlWithPlaceholders: string; // contains placeholder content
-  css: string;
-};
-
-type GeneratedIdTemplate = {
-  sourceId: string;
-  files: Object; // filename: data
-};
 
 type MetaTemplateInputsById = {
   [key: string]: Component;

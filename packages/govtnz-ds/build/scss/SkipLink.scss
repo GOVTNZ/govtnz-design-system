@@ -3,7 +3,8 @@
 }
 
 .g-skipLink-error-summary__list a:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
 }
 
@@ -11,7 +12,8 @@
 .g-skipLink-error-summary__list a:visited,
 .g-skipLink-error-summary__list a:hover,
 .g-skipLink-error-summary__list a:active {
-  color: #b10e1e;
+  color: $g-theme-button-color-warning;
+  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-skipLink-error-summary__list a:focus {
@@ -19,7 +21,8 @@
 }
 
 .g-skipLink-header__navigation-item a {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -51,7 +54,8 @@
 .g-skipLink-header__navigation-item--active a:link,
 .g-skipLink-header__navigation-item--active a:hover,
 .g-skipLink-header__navigation-item--active a:visited {
-  color: #1d8feb;
+  color: $g-theme-color-dark9;
+  color: var(--g-theme-color-dark9, $g-theme-color-dark9);
 }
 
 .g-skipLink-header__navigation-item--active a:focus {

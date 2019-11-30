@@ -20,7 +20,8 @@
 }
 
 .g-selectWithFullWidthOverride-label {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -53,7 +54,8 @@
 
 @media print {
   .g-selectWithFullWidthOverride-label {
-    color: #000000;
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
@@ -63,7 +65,8 @@
 }
 
 .g-selectWithFullWidthOverride-select {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -73,7 +76,8 @@
   max-width: 100%;
   height: auto;
   padding: 0.4rem 2.5rem 0.5rem 0.6rem;
-  border: 1px solid #000000;
+  border: 1px solid $g-theme-color-black;
+  border: 1px solid var(--g-theme-color-black, $g-theme-color-black);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -105,14 +109,17 @@
 }
 
 .g-selectWithFullWidthOverride-select:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;
 }
 
 .g-selectWithFullWidthOverride-select option:active,
 .g-selectWithFullWidthOverride-select option:checked {
-  color: #ffffff;
-  background-color: #005ea5;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  background-color: $g-theme-color-darkblue;
+  background-color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
 }
 
 .g-\!-width-full {

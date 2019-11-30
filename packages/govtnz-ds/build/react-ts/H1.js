@@ -20,7 +20,9 @@ var constants = {
 };
 var H1 = function (_a) {
     var styleSize = _a.styleSize, marginBottom8 = _a.marginBottom8, marginBottom0 = _a.marginBottom0, id = _a.id, children = _a.children;
-    return (React.createElement("h1", { className: "${constants.styleSize[styleSize] !== undefined ? \" \" +  constants.styleSize[styleSize] : \"\"}" + (marginBottom8 ? " g-h1-heading-mb-8" : "") + (marginBottom0 ? " g-h1-heading-mb-0" : ""), id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    return (React.createElement("h1", { className: "" + (constants.styleSize[styleSize] !== undefined
+            ? constants.styleSize[styleSize]
+            : "") + (marginBottom8 ? " g-h1-heading-mb-8" : "") + (marginBottom0 ? " g-h1-heading-mb-0" : ""), id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
 exports.default = H1;
 //# sourceMappingURL=H1.js.map

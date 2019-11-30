@@ -1,5 +1,6 @@
 .g-selectBlock-label {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -33,11 +34,13 @@
 @media print {
   .g-selectBlock-label {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
 .g-selectBlock-select {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -48,6 +51,7 @@
   height: auto;
   padding: 0.4rem 2.5rem 0.5rem 0.6rem;
   border: 1px solid #000000;
+  border: 1px solid var(--g-theme-color-black, #000000);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -79,17 +83,21 @@
 }
 
 .g-selectBlock-select:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
 
 .g-selectBlock-select:focus::-ms-value {
   color: #ffffff;
+  color: var(--g-theme-color-white, #ffffff);
   background-color: #005ea5;
+  background-color: var(--g-theme-color-darkblue, #005ea5);
 }
 
 .g-selectBlock-select--error {
   border: 1px solid #b10e1e;
+  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-selectBlock-select::-ms-expand {

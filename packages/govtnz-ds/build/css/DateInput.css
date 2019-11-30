@@ -21,6 +21,7 @@
 .g-dateInput-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
+  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-dateInput-form-group--error .g-dateInput-form-group {
@@ -30,6 +31,7 @@
 
 .g-dateInput-error-message {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -39,6 +41,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
+  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {
@@ -82,6 +85,7 @@
 
 .g-fieldset__legend {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -120,11 +124,13 @@
 @media print {
   .g-fieldset__legend {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
 .g-fieldset__legend--xl {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -155,6 +161,7 @@
 
 .g-dateInput-hint {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -191,6 +198,7 @@
 
 .g-dateInput-label {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -224,6 +232,7 @@
 @media print {
   .g-dateInput-label {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -233,6 +242,7 @@
 
 .g-dateInput-input {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -271,7 +281,8 @@
 }
 
 .g-dateInput-input:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
 
@@ -283,6 +294,7 @@
 
 .g-dateInput-input--error {
   border: 1px solid #b10e1e;
+  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-dateInput-input--width-4 {

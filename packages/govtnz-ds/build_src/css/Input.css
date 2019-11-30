@@ -1,5 +1,6 @@
 .g-input {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -39,7 +40,8 @@
 
 .g-input:focus,
 .g-input.\:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
   outline-offset: 0;
 }
 
@@ -51,6 +53,7 @@
 
 .g-input--error {
   border: 1px solid #b10e1e;
+  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-input--width-30 {

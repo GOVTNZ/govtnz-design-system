@@ -1,5 +1,6 @@
 .g-ul-list {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -35,6 +36,7 @@
 @media print {
   .g-ul-list {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 

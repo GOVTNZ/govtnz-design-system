@@ -1,5 +1,6 @@
 .g-checkboxBlock-hint {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -36,6 +37,7 @@
 
 .g-checkboxBlock-label {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -69,11 +71,13 @@
 @media print {
   .g-checkboxBlock-label {
     color: #000000;
+    color: var(--g-theme-color-black, #000000);
   }
 }
 
 .g-checkboxes__item {
   font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -172,7 +176,8 @@
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
+  box-shadow: 0 0 0 3px #b53cde;
+  box-shadow: 0 0 0 3px var(--g-theme-color-brand-1, #b53cde);
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

@@ -15,7 +15,9 @@
 
 .g-fieldsetBlockWithError-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid #b10e1e;
+  border-left: 5px solid $g-theme-button-color-warning;
+  border-left: 5px solid
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 .g-fieldsetBlockWithError-form-group--error
@@ -25,7 +27,8 @@
 }
 
 .g-fieldsetBlockWithError-error-message {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -34,7 +37,8 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: $g-theme-button-color-warning;
+  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
 }
 
 @media print {
@@ -70,7 +74,8 @@
 }
 
 .g-fieldset__legend {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -108,12 +113,14 @@
 
 @media print {
   .g-fieldset__legend {
-    color: #000000;
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 .g-fieldsetBlockWithError-hint {
-  font-family: Arial, sans-serif;
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
