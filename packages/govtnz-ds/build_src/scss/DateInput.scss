@@ -20,9 +20,7 @@
 
 .g-dateInput-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
-  border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border-left: 5px solid #b10e1e;
 }
 
 .g-dateInput-form-group--error .g-dateInput-form-group {
@@ -31,8 +29,7 @@
 }
 
 .g-dateInput-error-message {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -41,8 +38,7 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 @media print {
@@ -85,8 +81,7 @@
 }
 
 .g-fieldset__legend {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -124,14 +119,12 @@
 
 @media print {
   .g-fieldset__legend {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
 .g-fieldset__legend--xl {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -161,8 +154,7 @@
 }
 
 .g-dateInput-hint {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -198,8 +190,7 @@
 }
 
 .g-dateInput-label {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -232,8 +223,7 @@
 
 @media print {
   .g-dateInput-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -242,8 +232,7 @@
 }
 
 .g-dateInput-input {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -282,8 +271,7 @@
 }
 
 .g-dateInput-input:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -294,9 +282,7 @@
 }
 
 .g-dateInput-input--error {
-  border: 1px solid $g-theme-button-color-warning;
-  border: 1px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border: 1px solid #b10e1e;
 }
 
 .g-dateInput-input--width-4 {

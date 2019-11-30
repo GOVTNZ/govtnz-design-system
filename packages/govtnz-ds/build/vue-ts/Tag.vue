@@ -1,15 +1,17 @@
 <template>
   <strong class="g-tag">
     alpha
-  </strong> </template
-><script lang="ts">
+  </strong>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
   props: {},
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-tag {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

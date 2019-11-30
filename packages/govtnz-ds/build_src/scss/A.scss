@@ -1,6 +1,5 @@
 .g-link {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,29 +11,24 @@
 }
 
 .g-link:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
 .g-link:link {
-  color: $g-theme-color-darkblue;
-  color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
+  color: #005ea5;
 }
 
 .g-link:visited {
-  color: $g-theme-color-dark10;
-  color: var(--g-theme-color-dark10, $g-theme-color-dark10);
+  color: #4c2c92;
 }
 
 .g-link:hover {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: #2b8cc4;
 }
 
 .g-link:active {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: #2b8cc4;
 }
 
 .g-link:focus {
@@ -45,8 +39,7 @@
 .g-link--muted:visited,
 .g-link--muted:hover,
 .g-link--muted:active {
-  color: $g-theme-color-mid-grey;
-  color: var(--g-theme-color-mid-grey, $g-theme-color-mid-grey);
+  color: #6f777b;
 }
 
 .g-link--muted:focus {
@@ -58,8 +51,7 @@
 }
 
 .g-a-error-summary__list a:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -67,8 +59,7 @@
 .g-a-error-summary__list a:visited,
 .g-a-error-summary__list a:hover,
 .g-a-error-summary__list a:active {
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 .g-a-error-summary__list a:focus {
@@ -76,8 +67,7 @@
 }
 
 .g-a-header__navigation-item a {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -109,8 +99,7 @@
 .g-a-header__navigation-item--active a:link,
 .g-a-header__navigation-item--active a:hover,
 .g-a-header__navigation-item--active a:visited {
-  color: $g-theme-color-dark9;
-  color: var(--g-theme-color-dark9, $g-theme-color-dark9);
+  color: #1d8feb;
 }
 
 .g-a-header__navigation-item--active a:focus {

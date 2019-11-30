@@ -59,7 +59,7 @@ const StyledTr4 = styled.tr`
   margin-top: 0px;
 `;
 
-const TableTableWithHead = ({  }: Props) => (
+const TableTableWithHead = ({}: Props) => (
   <StyledTable>
     <StyledThead>
       <StyledTr>Month you apply Rate for bicycles Rate for vehicles</StyledTr>

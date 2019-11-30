@@ -24,8 +24,9 @@
       v-bind:maxlength="maxLength"
       v-bind:value="value"
     />
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -170,8 +171,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-textarea-form-group {
   margin-bottom: 20px;
 }
@@ -215,7 +217,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-textarea-fieldset__legend + .g-textarea-hint {
+.g-fieldset__legend + .g-textarea-hint {
   margin-top: -5px;
 }
 .g-textarea-label {

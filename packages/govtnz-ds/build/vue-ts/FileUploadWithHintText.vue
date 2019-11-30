@@ -19,8 +19,9 @@
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
     />
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -33,8 +34,9 @@ export default Vue.extend({
     autoFocus: { type: Boolean, default: false, required: false }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fileUploadWithHintText-form-group {
   margin-bottom: 20px;
 }
@@ -80,7 +82,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-fileUploadWithHintText-fieldset__legend + .g-fileUploadWithHintText-hint {
+.g-fieldset__legend + .g-fileUploadWithHintText-hint {
   margin-top: -5px;
 }
 .g-fileUploadWithHintText-label {

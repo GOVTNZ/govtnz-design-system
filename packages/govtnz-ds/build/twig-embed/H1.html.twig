@@ -1,6 +1,10 @@
 <h1
-class="{% if styleSize == "xlarge" %}g-heading-xl{% elseif styleSize == "large" %}g-heading-l{% elseif styleSize == "medium" %}g-heading-m{% elseif styleSize == "small" %}g-heading-s{% elseif styleSize == "xsmall" %}g-heading-xs{% elseif styleSize == "xxsmall" %}g-heading-xxs{% endif %} {% if marginBottom8 %} g-heading-mb-8{% endif %} {% if marginBottom0 %} g-heading-mb-0{% endif %}"
+class="\{% if styleSize == "xlarge" %}g-h1-heading-xl{% elseif styleSize == "large" %}g-h1-heading-l{% elseif styleSize == "medium" %}g-h1-heading-m{% elseif styleSize == "small" %}g-h1-heading-s{% elseif styleSize == "xsmall" %}g-h1-heading-xs{% elseif styleSize == "xxsmall" %}g-h1-heading-xxs{% endif %} {% if marginBottom8 %} g-h1-heading-mb-8{% endif %} {% if marginBottom0 %} g-h1-heading-mb-0{% endif %}"
 id="{{ id | escape('html_attr') }}"
 >
+  
+  
 {% block children %}Example text{% endblock %}
+  
+
 </h1>

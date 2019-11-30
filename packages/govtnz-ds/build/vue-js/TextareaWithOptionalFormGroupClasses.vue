@@ -21,8 +21,9 @@
       v-bind:maxlength="maxLength"
       v-bind:value="value"
     />
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -166,8 +167,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-textareaWithOptionalFormGroupClasses-form-group {
   margin-bottom: 20px;
 }

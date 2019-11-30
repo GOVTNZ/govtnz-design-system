@@ -1,8 +1,9 @@
 <template>
   <p v-bind:class="computed__class">
     <slot></slot>
-  </p> </template
-><script>
+  </p>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -32,8 +33,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-p-body-l {
   color: #0b0c0c;
   font-family: Arial, sans-serif;

@@ -58,7 +58,7 @@ const StyledButton = styled.button`
   }
   :hover,
   :focus {
-    background-color: #00682f;
+    background-color: #00692f;
   }
   :active {
     top: 2px;
@@ -91,41 +91,7 @@ const StyledButton = styled.button`
   :active,
   :active {
     top: 0;
-    box-shadow: 0 2px 0 #003418;
-  }
-  ${props =>
-    props.level === "secondary" &&
-    styled.css`
-      background-color: #dee0e2;
-      box-shadow: 0 2px 0 #858688;
-    `}
-  :link,:visited,:active,:hover {
-    ${props =>
-      props.level === "secondary" &&
-      styled.css`
-        color: #0b0c0c;
-      `}
-  }
-  :hover,
-  :focus {
-    background-color: #c8cacb;
-  }
-  ${props =>
-    props.level === "warning" &&
-    styled.css`
-      background-color: #b10e1e;
-      box-shadow: 0 2px 0 #47060c;
-    `}
-  :link,:visited,:active,:hover {
-    ${props =>
-      props.level === "warning" &&
-      styled.css`
-        color: #ffffff;
-      `}
-  }
-  :hover,
-  :focus {
-    background-color: #8e0b18;
+    box-shadow: 0 2px 0 #003618;
   }
   padding-top: 16px;
   padding-bottom: 16px;
@@ -147,7 +113,7 @@ const Button = ({ disabled, level, name, type, onClick, children }) => (
     {children !== undefined ? (
       children
     ) : (
-      <React.Fragment>Example text</React.Fragment>
+      <React.Fragment> Example text </React.Fragment>
     )}
   </StyledButton>
 );

@@ -51,7 +51,7 @@ const StyledTr3 = styled.tr`
   margin-top: 0px;
 `;
 
-const Table = ({  }: Props) => (
+const Table = ({}: Props) => (
   <StyledTable>
     <StyledTbody>
       <StyledTr>January $85 $95</StyledTr>

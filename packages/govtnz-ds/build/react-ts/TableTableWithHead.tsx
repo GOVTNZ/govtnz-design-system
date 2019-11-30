@@ -2,7 +2,7 @@ import * as React from "react";
 
 type Props = {};
 
-const TableTableWithHead = ({  }: Props) => (
+const TableTableWithHead = ({}: Props) => (
   <table className="g-tableTableWithHead-table">
     <thead className="g-tableTableWithHead-table__head">
       <tr className="g-tableTableWithHead-table__row">

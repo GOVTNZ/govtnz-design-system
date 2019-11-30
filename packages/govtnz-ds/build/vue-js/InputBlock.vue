@@ -30,8 +30,9 @@
       v-bind:maxlength="maxLength"
       v-bind:autocomplete="computed__autocomplete"
     />
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -217,8 +218,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-inputBlock-form-group {
   margin-bottom: 20px;
 }
@@ -295,7 +297,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-inputBlock-fieldset__legend + .g-inputBlock-hint {
+.g-fieldset__legend + .g-inputBlock-hint {
   margin-top: -5px;
 }
 .g-inputBlock-label {

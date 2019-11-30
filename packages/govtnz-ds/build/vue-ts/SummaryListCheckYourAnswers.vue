@@ -11,7 +11,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href"
           v-bind:rel="rel"
           v-bind:target="computed__target"
@@ -35,7 +35,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href2"
           v-bind:rel="rel2"
           v-bind:target="computed__target2"
@@ -65,7 +65,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href3"
           v-bind:rel="rel3"
           v-bind:target="computed__target3"
@@ -92,7 +92,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href4"
           v-bind:rel="rel4"
           v-bind:target="computed__target4"
@@ -116,7 +116,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href5"
           v-bind:rel="rel5"
           v-bind:target="computed__target5"
@@ -140,7 +140,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href6"
           v-bind:rel="rel6"
           v-bind:target="computed__target6"
@@ -172,7 +172,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href7"
           v-bind:rel="rel7"
           v-bind:target="computed__target7"
@@ -203,7 +203,7 @@
 
       <dd class="g-summaryListCheckYourAnswers-summary-list__actions">
         <a
-          class="g-summaryListCheckYourAnswers-link"
+          class="g-link"
           v-bind:href="href8"
           v-bind:rel="rel8"
           v-bind:target="computed__target8"
@@ -215,8 +215,9 @@
         </a>
       </dd>
     </div>
-  </dl> </template
-><script lang="ts">
+  </dl>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -347,35 +348,36 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
-.g-summaryListCheckYourAnswers-link {
+});
+</script>
+<style scoped>
+.g-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media print {
-  .g-summaryListCheckYourAnswers-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
-.g-summaryListCheckYourAnswers-link:focus {
+.g-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-summaryListCheckYourAnswers-link:link {
+.g-link:link {
   color: #005ea5;
 }
-.g-summaryListCheckYourAnswers-link:visited {
+.g-link:visited {
   color: #4c2c92;
 }
-.g-summaryListCheckYourAnswers-link:hover {
+.g-link:hover {
   color: #2b8cc4;
 }
-.g-summaryListCheckYourAnswers-link:active {
+.g-link:active {
   color: #2b8cc4;
 }
-.g-summaryListCheckYourAnswers-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 .g-summaryListCheckYourAnswers-body {

@@ -36,7 +36,7 @@ var RadioBlock = function RadioBlock(_ref) {
     checked: checked,
     onChange: onChange
   }), _react["default"].createElement("label", {
-    className: "g-radios-label g-radios__label",
+    className: "g-radioBlock-label g-radios__label",
     htmlFor: radioId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")));
 };

@@ -25,8 +25,9 @@
       entitled to vote in. If you can’t provide your nationality, you’ll have to
       send copies of identity documents through the post.
     </div>
-  </details> </template
-><script lang="ts">
+  </details>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -39,8 +40,9 @@ export default Vue.extend({
     }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-detailsExpanded-details {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

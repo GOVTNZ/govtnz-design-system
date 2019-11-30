@@ -1,8 +1,7 @@
 import cssParser from 'postcss-safe-parser';
 import { camelCase } from 'lodash';
 import { SourceId, ReleaseVersion } from '@govtnz/ds-upstream';
-import { normalizeReleaseVersionGovUk } from './normalize-govuk';
-import { DynamicKey, CalculatedDynamicKey } from '@springload/metatemplate';
+import { DynamicKey } from '@springload/metatemplate';
 import { normalizeGeneric } from './normalize-generic';
 import { JSDOM } from 'jsdom';
 import { getCSSRules, serializeCSSRules } from 'css-sniff';
@@ -15,14 +14,8 @@ export const normalizeUpstream = async (
   let releaseVersions: ReleaseVersion[];
   switch (sourceId) {
     case 'govuk': {
-      releaseVersions = await Promise.all(
-        upstreamReleaseVersions.map(
-          async (
-            upstreamReleaseVersion: ReleaseVersion
-          ): Promise<ReleaseVersion> =>
-            await normalizeReleaseVersionGovUk(upstreamReleaseVersion)
-        )
-      );
+      // Already in a good format
+      releaseVersions = upstreamReleaseVersions;
       break;
     }
     case 'flexboxgrid':

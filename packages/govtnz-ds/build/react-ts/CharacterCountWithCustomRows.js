@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
@@ -89,13 +78,5 @@ var CharacterCountWithCustomRows = function (_a) {
                 " ",
                 "characters remaining"))));
 };
-exports.CharacterCountWithCustomRows = CharacterCountWithCustomRows;
-var CharacterCountWithCustomRows__calculated = function (props) {
-    return React.createElement(CharacterCountWithCustomRows, __assign({}, props, { remainingCharacters: (function (props) {
-            return props.value !== undefined && props.maxLength !== undefined
-                ? parseInt(props.maxLength.toString(), 10) - props.value.length
-                : props.maxLength;
-        })(props) }));
-};
-exports.default = CharacterCountWithCustomRows__calculated;
+exports.default = CharacterCountWithCustomRows;
 //# sourceMappingURL=CharacterCountWithCustomRows.js.map

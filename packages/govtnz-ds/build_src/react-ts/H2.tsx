@@ -10,12 +10,12 @@ type Props = {
 
 const constants = {
   styleSize: {
-    xlarge: "g-heading-xl",
-    large: "g-heading-l",
-    medium: "g-heading-m",
-    small: "g-heading-s",
-    xsmall: "g-heading-xs",
-    xxsmall: "g-heading-xxs"
+    xlarge: "g-h2-heading-xl",
+    large: "g-h2-heading-l",
+    medium: "g-h2-heading-m",
+    small: "g-h2-heading-s",
+    xsmall: "g-h2-heading-xs",
+    xxsmall: "g-h2-heading-xxs"
   }
 };
 
@@ -27,13 +27,9 @@ const H2 = ({
   children
 }: Props) => (
   <h2
-    className={`${
-      constants.styleSize[styleSize] !== undefined
-        ? constants.styleSize[styleSize]
-        : ""
-    }${marginBottom8 ? " g-heading-mb-8" : ""}${
-      marginBottom0 ? " g-heading-mb-0" : ""
-    }`}
+    className={`\${constants.styleSize[styleSize] !== undefined ? " " +  constants.styleSize[styleSize] : ""}${
+      marginBottom8 ? " g-h2-heading-mb-8" : ""
+    }${marginBottom0 ? " g-h2-heading-mb-0" : ""}`}
     id={id}
   >
     {children !== undefined ? (

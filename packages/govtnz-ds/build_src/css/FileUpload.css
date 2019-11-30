@@ -19,7 +19,6 @@
 
 .g-fileUpload-label {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -53,7 +52,6 @@
 @media print {
   .g-fileUpload-label {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 

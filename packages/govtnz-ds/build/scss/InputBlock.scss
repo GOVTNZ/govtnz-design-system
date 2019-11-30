@@ -14,9 +14,7 @@
 
 .g-inputBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
-  border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border-left: 5px solid #b10e1e;
 }
 
 .g-inputBlock-form-group--error .g-inputBlock-form-group {
@@ -25,8 +23,7 @@
 }
 
 .g-inputBlock-error-message {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -35,8 +32,7 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 @media print {
@@ -60,8 +56,7 @@
 }
 
 .g-inputBlock-hint {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -92,13 +87,12 @@
   }
 }
 
-.g-inputBlock-fieldset__legend + .g-inputBlock-hint {
+.g-fieldset__legend + .g-inputBlock-hint {
   margin-top: -5px;
 }
 
 .g-inputBlock-label {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -131,8 +125,7 @@
 
 @media print {
   .g-inputBlock-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -141,8 +134,7 @@
 }
 
 .g-inputBlock-input {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -181,8 +173,7 @@
 }
 
 .g-inputBlock-input:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -193,9 +184,7 @@
 }
 
 .g-inputBlock-input--error {
-  border: 1px solid $g-theme-button-color-warning;
-  border: 1px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border: 1px solid #b10e1e;
 }
 
 .g-inputBlock-input--width-30 {

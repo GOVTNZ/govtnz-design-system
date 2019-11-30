@@ -13,8 +13,9 @@
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
     />
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -26,8 +27,9 @@ export default Vue.extend({
     autoFocus: { type: Boolean, default: false, required: false }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fileUpload-form-group {
   margin-bottom: 20px;
 }
@@ -78,41 +80,6 @@ export default Vue.extend({
 }
 .g-fileUpload-character-count .g-fileUpload-form-group {
   margin-bottom: 5px;
-}
-.g-file-upload {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #0b0c0c;
-}
-@media print {
-  .g-file-upload {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-file-upload {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-file-upload {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-file-upload {
-    color: #000000;
-  }
-}
-.g-file-upload:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
 }
 .g-fileUpload-hint > * {
   margin-top: 0px;

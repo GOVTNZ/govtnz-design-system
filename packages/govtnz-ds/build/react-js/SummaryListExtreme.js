@@ -640,112 +640,112 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href,
     rel: rel,
     target: constants.target[target]
   }, " ", "Buy")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href2,
     rel: rel2,
     target: constants.target2[target2]
   }, " ", "Use")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href3,
     rel: rel3,
     target: constants.target3[target3]
   }, " ", "Break")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href4,
     rel: rel4,
     target: constants.target4[target4]
   }, " ", "Fix")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href5,
     rel: rel5,
     target: constants.target5[target5]
   }, " ", "Trash")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href6,
     rel: rel6,
     target: constants.target6[target6]
   }, " ", "Change")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href7,
     rel: rel7,
     target: constants.target7[target7]
   }, " ", "Mail")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href8,
     rel: rel8,
     target: constants.target8[target8]
   }, " ", "Upgrade")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href9,
     rel: rel9,
     target: constants.target9[target9]
   }, " ", "Charge")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href10,
     rel: rel10,
     target: constants.target10[target10]
   }, " ", "Point")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href11,
     rel: rel11,
     target: constants.target11[target11]
   }, " ", "Coom")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href12,
     rel: rel12,
     target: constants.target12[target12]
   }, " ", "Press")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href13,
     rel: rel13,
     target: constants.target13[target13]
   }, " ", "Snap")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href14,
     rel: rel14,
     target: constants.target14[target14]
   }, " ", "Work")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href15,
     rel: rel15,
     target: constants.target15[target15]
   }, " ", "Quick")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href16,
     rel: rel16,
     target: constants.target16[target16]
@@ -756,14 +756,14 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, "Long website address"), _react["default"].createElement("dd", {
     className: "g-summaryListExtreme-summary-list__value"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href17,
     rel: rel17,
     target: constants.target17[target17]
   }, "https://cs.wikipedia.org/wiki/Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch")), _react["default"].createElement("dd", {
     className: "g-summaryListExtreme-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href18,
     rel: rel18,
     target: constants.target18[target18]
@@ -776,14 +776,14 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, "Long email address"), _react["default"].createElement("dd", {
     className: "g-summaryListExtreme-summary-list__value"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href19,
     rel: rel19,
     target: constants.target19[target19]
   }, "webmaster@llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch.com")), _react["default"].createElement("dd", {
     className: "g-summaryListExtreme-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href20,
     rel: rel20,
     target: constants.target20[target20]
@@ -803,7 +803,7 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, "michelle.longish.name@example.com")), _react["default"].createElement("dd", {
     className: "g-summaryListExtreme-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href21,
     rel: rel21,
     target: constants.target21[target21]
@@ -826,140 +826,140 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href22,
     rel: rel22,
     target: constants.target22[target22]
   }, " ", "Write")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href23,
     rel: rel23,
     target: constants.target23[target23]
   }, " ", "Cut")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href24,
     rel: rel24,
     target: constants.target24[target24]
   }, " ", "Paste")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href25,
     rel: rel25,
     target: constants.target25[target25]
   }, " ", "Save")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href26,
     rel: rel26,
     target: constants.target26[target26]
   }, " ", "Load")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href27,
     rel: rel27,
     target: constants.target27[target27]
   }, " ", "Check")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href28,
     rel: rel28,
     target: constants.target28[target28]
   }, " ", "Quick")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href29,
     rel: rel29,
     target: constants.target29[target29]
   }, " ", "Rewrite")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href30,
     rel: rel30,
     target: constants.target30[target30]
   }, " ", "Plug")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href31,
     rel: rel31,
     target: constants.target31[target31]
   }, " ", "Play")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href32,
     rel: rel32,
     target: constants.target32[target32]
   }, " ", "Burn")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href33,
     rel: rel33,
     target: constants.target33[target33]
   }, " ", "Rip")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href34,
     rel: rel34,
     target: constants.target34[target34]
   }, " ", "Drag and drop")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href35,
     rel: rel35,
     target: constants.target35[target35]
   }, " ", "Zip")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href36,
     rel: rel36,
     target: constants.target36[target36]
   }, " ", "Unzip")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href37,
     rel: rel37,
     target: constants.target37[target37]
   }, " ", "Lock")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href38,
     rel: rel38,
     target: constants.target38[target38]
   }, " ", "Fill")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href39,
     rel: rel39,
     target: constants.target39[target39]
   }, " ", "Curl")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href40,
     rel: rel40,
     target: constants.target40[target40]
   }, " ", "Find")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href41,
     rel: rel41,
     target: constants.target41[target41]
@@ -976,189 +976,189 @@ var SummaryListExtreme = function SummaryListExtreme(_ref) {
   }, _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href42,
     rel: rel42,
     target: constants.target42[target42]
   }, " ", "Code")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href43,
     rel: rel43,
     target: constants.target43[target43]
   }, " ", "Jam")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href44,
     rel: rel44,
     target: constants.target44[target44]
   }, " ", "Unlock")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href45,
     rel: rel45,
     target: constants.target45[target45]
   }, " ", "Surf")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href46,
     rel: rel46,
     target: constants.target46[target46]
   }, " ", "Scroll")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href47,
     rel: rel47,
     target: constants.target47[target47]
   }, " ", "Pose")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href48,
     rel: rel48,
     target: constants.target48[target48]
   }, " ", "Click")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href49,
     rel: rel49,
     target: constants.target49[target49]
   }, " ", "Cross")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href50,
     rel: rel50,
     target: constants.target50[target50]
   }, " ", "Crack")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href51,
     rel: rel51,
     target: constants.target51[target51]
   }, " ", "Twitch")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href52,
     rel: rel52,
     target: constants.target52[target52]
   }, " ", "Update")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href53,
     rel: rel53,
     target: constants.target53[target53]
   }, " ", "Name")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href54,
     rel: rel54,
     target: constants.target54[target54]
   }, " ", "Read")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href55,
     rel: rel55,
     target: constants.target55[target55]
   }, " ", "Tune")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href56,
     rel: rel56,
     target: constants.target56[target56]
   }, " ", "Print")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href57,
     rel: rel57,
     target: constants.target57[target57]
   }, " ", "Scan")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href58,
     rel: rel58,
     target: constants.target58[target58]
   }, " ", "Send")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href59,
     rel: rel59,
     target: constants.target59[target59]
   }, " ", "Fax")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href60,
     rel: rel60,
     target: constants.target60[target60]
   }, " ", "Rename")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href61,
     rel: rel61,
     target: constants.target61[target61]
   }, " ", "Touch")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href62,
     rel: rel62,
     target: constants.target62[target62]
   }, " ", "Bring")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href63,
     rel: rel63,
     target: constants.target63[target63]
   }, " ", "Pay")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href64,
     rel: rel64,
     target: constants.target64[target64]
   }, " ", "Watch")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href65,
     rel: rel65,
     target: constants.target65[target65]
   }, " ", "Turn")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href66,
     rel: rel66,
     target: constants.target66[target66]
   }, " ", "Leave")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href67,
     rel: rel67,
     target: constants.target67[target67]
   }, " ", "Stop")), _react["default"].createElement("li", {
     className: "g-summaryListExtreme-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListExtreme-link",
+    className: "g-link",
     href: href68,
     rel: rel68,
     target: constants.target68[target68]

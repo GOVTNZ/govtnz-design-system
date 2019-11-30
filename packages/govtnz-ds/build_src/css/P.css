@@ -1,7 +1,6 @@
 .g-p-body-l {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -14,7 +13,6 @@
 @media print {
   .g-p-body-l {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -47,7 +45,6 @@
 .g-p-body-m {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -60,7 +57,6 @@
 @media print {
   .g-p-body-m {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -93,7 +89,6 @@
 .g-p-body-s {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -106,7 +101,6 @@
 @media print {
   .g-p-body-s {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -139,7 +133,6 @@
 .g-p-body-xs {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -152,7 +145,6 @@
 @media print {
   .g-p-body-xs {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 

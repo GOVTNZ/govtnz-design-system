@@ -31,7 +31,6 @@
 
 .g-fieldset__legend {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -70,13 +69,11 @@
 @media print {
   .g-fieldset__legend {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
 .g-fieldsetBlock-hint {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;

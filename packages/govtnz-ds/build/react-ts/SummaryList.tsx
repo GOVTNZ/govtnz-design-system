@@ -51,7 +51,7 @@ const SummaryList = ({
         <ul className="g-summary-list__actions-list">
           <li className="g-summary-list__actions-list-item">
             <a
-              className="g-summaryList-link"
+              className="g-link"
               href={href}
               rel={rel}
               target={constants.target[target]}
@@ -61,7 +61,7 @@ const SummaryList = ({
           </li>
           <li className="g-summary-list__actions-list-item">
             <a
-              className="g-summaryList-link"
+              className="g-link"
               href={href2}
               rel={rel2}
               target={constants.target2[target2]}
@@ -77,7 +77,7 @@ const SummaryList = ({
       <dd className="g-summary-list__value">13/08/1980</dd>
       <dd className="g-summary-list__actions">
         <a
-          className="g-summaryList-link"
+          className="g-link"
           href={href3}
           rel={rel3}
           target={constants.target3[target3]}
@@ -103,7 +103,7 @@ const SummaryList = ({
         <ul className="g-summary-list__actions-list">
           <li className="g-summary-list__actions-list-item">
             <a
-              className="g-summaryList-link"
+              className="g-link"
               href={href4}
               rel={rel4}
               target={constants.target4[target4]}
@@ -117,7 +117,7 @@ const SummaryList = ({
           </li>
           <li className="g-summary-list__actions-list-item">
             <a
-              className="g-summaryList-link"
+              className="g-link"
               href={href5}
               rel={rel5}
               target={constants.target5[target5]}

@@ -12,7 +12,7 @@ var _react = _interopRequireDefault(require("react"));
 var FormDivider = function FormDivider(_ref) {
   var children = _ref.children;
   return _react["default"].createElement("div", {
-    className: "g-radios-form-divider"
+    className: "g-form-divider"
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example Text"));
 };
 

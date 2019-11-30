@@ -16,7 +16,7 @@
         <ul class="g-summaryListExtreme-summary-list__actions-list">
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href"
               v-bind:rel="rel"
               v-bind:target="computed__target"
@@ -27,7 +27,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href2"
               v-bind:rel="rel2"
               v-bind:target="computed__target2"
@@ -38,7 +38,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href3"
               v-bind:rel="rel3"
               v-bind:target="computed__target3"
@@ -49,7 +49,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href4"
               v-bind:rel="rel4"
               v-bind:target="computed__target4"
@@ -60,7 +60,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href5"
               v-bind:rel="rel5"
               v-bind:target="computed__target5"
@@ -71,7 +71,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href6"
               v-bind:rel="rel6"
               v-bind:target="computed__target6"
@@ -82,7 +82,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href7"
               v-bind:rel="rel7"
               v-bind:target="computed__target7"
@@ -93,7 +93,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href8"
               v-bind:rel="rel8"
               v-bind:target="computed__target8"
@@ -104,7 +104,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href9"
               v-bind:rel="rel9"
               v-bind:target="computed__target9"
@@ -115,7 +115,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href10"
               v-bind:rel="rel10"
               v-bind:target="computed__target10"
@@ -126,7 +126,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href11"
               v-bind:rel="rel11"
               v-bind:target="computed__target11"
@@ -137,7 +137,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href12"
               v-bind:rel="rel12"
               v-bind:target="computed__target12"
@@ -148,7 +148,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href13"
               v-bind:rel="rel13"
               v-bind:target="computed__target13"
@@ -159,7 +159,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href14"
               v-bind:rel="rel14"
               v-bind:target="computed__target14"
@@ -170,7 +170,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href15"
               v-bind:rel="rel15"
               v-bind:target="computed__target15"
@@ -181,7 +181,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href16"
               v-bind:rel="rel16"
               v-bind:target="computed__target16"
@@ -200,7 +200,7 @@
 
       <dd class="g-summaryListExtreme-summary-list__value">
         <a
-          class="g-summaryListExtreme-link"
+          class="g-link"
           v-bind:href="href17"
           v-bind:rel="rel17"
           v-bind:target="computed__target17"
@@ -211,7 +211,7 @@
 
       <dd class="g-summaryListExtreme-summary-list__actions">
         <a
-          class="g-summaryListExtreme-link"
+          class="g-link"
           v-bind:href="href18"
           v-bind:rel="rel18"
           v-bind:target="computed__target18"
@@ -231,7 +231,7 @@
 
       <dd class="g-summaryListExtreme-summary-list__value">
         <a
-          class="g-summaryListExtreme-link"
+          class="g-link"
           v-bind:href="href19"
           v-bind:rel="rel19"
           v-bind:target="computed__target19"
@@ -242,7 +242,7 @@
 
       <dd class="g-summaryListExtreme-summary-list__actions">
         <a
-          class="g-summaryListExtreme-link"
+          class="g-link"
           v-bind:href="href20"
           v-bind:rel="rel20"
           v-bind:target="computed__target20"
@@ -268,7 +268,7 @@
 
       <dd class="g-summaryListExtreme-summary-list__actions">
         <a
-          class="g-summaryListExtreme-link"
+          class="g-link"
           v-bind:href="href21"
           v-bind:rel="rel21"
           v-bind:target="computed__target21"
@@ -314,7 +314,7 @@
         <ul class="g-summaryListExtreme-summary-list__actions-list">
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href22"
               v-bind:rel="rel22"
               v-bind:target="computed__target22"
@@ -325,7 +325,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href23"
               v-bind:rel="rel23"
               v-bind:target="computed__target23"
@@ -336,7 +336,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href24"
               v-bind:rel="rel24"
               v-bind:target="computed__target24"
@@ -347,7 +347,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href25"
               v-bind:rel="rel25"
               v-bind:target="computed__target25"
@@ -358,7 +358,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href26"
               v-bind:rel="rel26"
               v-bind:target="computed__target26"
@@ -369,7 +369,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href27"
               v-bind:rel="rel27"
               v-bind:target="computed__target27"
@@ -380,7 +380,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href28"
               v-bind:rel="rel28"
               v-bind:target="computed__target28"
@@ -391,7 +391,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href29"
               v-bind:rel="rel29"
               v-bind:target="computed__target29"
@@ -402,7 +402,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href30"
               v-bind:rel="rel30"
               v-bind:target="computed__target30"
@@ -413,7 +413,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href31"
               v-bind:rel="rel31"
               v-bind:target="computed__target31"
@@ -424,7 +424,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href32"
               v-bind:rel="rel32"
               v-bind:target="computed__target32"
@@ -435,7 +435,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href33"
               v-bind:rel="rel33"
               v-bind:target="computed__target33"
@@ -446,7 +446,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href34"
               v-bind:rel="rel34"
               v-bind:target="computed__target34"
@@ -457,7 +457,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href35"
               v-bind:rel="rel35"
               v-bind:target="computed__target35"
@@ -468,7 +468,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href36"
               v-bind:rel="rel36"
               v-bind:target="computed__target36"
@@ -479,7 +479,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href37"
               v-bind:rel="rel37"
               v-bind:target="computed__target37"
@@ -490,7 +490,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href38"
               v-bind:rel="rel38"
               v-bind:target="computed__target38"
@@ -501,7 +501,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href39"
               v-bind:rel="rel39"
               v-bind:target="computed__target39"
@@ -512,7 +512,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href40"
               v-bind:rel="rel40"
               v-bind:target="computed__target40"
@@ -523,7 +523,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href41"
               v-bind:rel="rel41"
               v-bind:target="computed__target41"
@@ -554,7 +554,7 @@
         <ul class="g-summaryListExtreme-summary-list__actions-list">
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href42"
               v-bind:rel="rel42"
               v-bind:target="computed__target42"
@@ -565,7 +565,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href43"
               v-bind:rel="rel43"
               v-bind:target="computed__target43"
@@ -576,7 +576,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href44"
               v-bind:rel="rel44"
               v-bind:target="computed__target44"
@@ -587,7 +587,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href45"
               v-bind:rel="rel45"
               v-bind:target="computed__target45"
@@ -598,7 +598,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href46"
               v-bind:rel="rel46"
               v-bind:target="computed__target46"
@@ -609,7 +609,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href47"
               v-bind:rel="rel47"
               v-bind:target="computed__target47"
@@ -620,7 +620,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href48"
               v-bind:rel="rel48"
               v-bind:target="computed__target48"
@@ -631,7 +631,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href49"
               v-bind:rel="rel49"
               v-bind:target="computed__target49"
@@ -642,7 +642,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href50"
               v-bind:rel="rel50"
               v-bind:target="computed__target50"
@@ -653,7 +653,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href51"
               v-bind:rel="rel51"
               v-bind:target="computed__target51"
@@ -664,7 +664,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href52"
               v-bind:rel="rel52"
               v-bind:target="computed__target52"
@@ -675,7 +675,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href53"
               v-bind:rel="rel53"
               v-bind:target="computed__target53"
@@ -686,7 +686,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href54"
               v-bind:rel="rel54"
               v-bind:target="computed__target54"
@@ -697,7 +697,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href55"
               v-bind:rel="rel55"
               v-bind:target="computed__target55"
@@ -708,7 +708,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href56"
               v-bind:rel="rel56"
               v-bind:target="computed__target56"
@@ -719,7 +719,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href57"
               v-bind:rel="rel57"
               v-bind:target="computed__target57"
@@ -730,7 +730,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href58"
               v-bind:rel="rel58"
               v-bind:target="computed__target58"
@@ -741,7 +741,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href59"
               v-bind:rel="rel59"
               v-bind:target="computed__target59"
@@ -752,7 +752,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href60"
               v-bind:rel="rel60"
               v-bind:target="computed__target60"
@@ -763,7 +763,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href61"
               v-bind:rel="rel61"
               v-bind:target="computed__target61"
@@ -774,7 +774,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href62"
               v-bind:rel="rel62"
               v-bind:target="computed__target62"
@@ -785,7 +785,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href63"
               v-bind:rel="rel63"
               v-bind:target="computed__target63"
@@ -796,7 +796,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href64"
               v-bind:rel="rel64"
               v-bind:target="computed__target64"
@@ -807,7 +807,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href65"
               v-bind:rel="rel65"
               v-bind:target="computed__target65"
@@ -818,7 +818,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href66"
               v-bind:rel="rel66"
               v-bind:target="computed__target66"
@@ -829,7 +829,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href67"
               v-bind:rel="rel67"
               v-bind:target="computed__target67"
@@ -840,7 +840,7 @@
 
           <li class="g-summaryListExtreme-summary-list__actions-list-item">
             <a
-              class="g-summaryListExtreme-link"
+              class="g-link"
               v-bind:href="href68"
               v-bind:rel="rel68"
               v-bind:target="computed__target68"
@@ -851,8 +851,9 @@
         </ul>
       </dd>
     </div>
-  </dl> </template
-><script>
+  </dl>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -1883,39 +1884,40 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
-.g-summaryListExtreme-link {
+});
+</script>
+<style scoped>
+.g-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media print {
-  .g-summaryListExtreme-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
-.g-summaryListExtreme-link:focus {
+.g-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-summaryListExtreme-link:link {
+.g-link:link {
   color: #005ea5;
 }
-.g-summaryListExtreme-link:visited {
+.g-link:visited {
   color: #4c2c92;
 }
-.g-summaryListExtreme-link:hover {
+.g-link:hover {
   color: #2b8cc4;
 }
-.g-summaryListExtreme-link:active {
+.g-link:active {
   color: #2b8cc4;
 }
-.g-summaryListExtreme-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 @media print {
-  .g-summaryListExtreme-link[href^="http://"]::after,.g-summaryListExtreme-link[href^="https://"]::after {
+  .g-link[href^="http://"]::after,.g-link[href^="https://"]::after {
     content: " (" attr(href) ")";
     font-size: 90%;
     word-wrap: break-word;

@@ -1,6 +1,5 @@
 .g-link {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,29 +11,24 @@
 }
 
 .g-link:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
 .g-link:link {
   color: #005ea5;
-  color: var(--g-theme-color-darkblue, #005ea5);
 }
 
 .g-link:visited {
   color: #4c2c92;
-  color: var(--g-theme-color-dark10, #4c2c92);
 }
 
 .g-link:hover {
   color: #2b8cc4;
-  color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
 .g-link:active {
   color: #2b8cc4;
-  color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
 .g-link:focus {
@@ -60,7 +54,6 @@
 .g-summaryList-body {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -73,7 +66,6 @@
 @media print {
   .g-summaryList-body {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -128,8 +120,7 @@
 }
 
 .g-summaryList-error-summary__list a:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -138,7 +129,6 @@
 .g-summaryList-error-summary__list a:hover,
 .g-summaryList-error-summary__list a:active {
   color: #b10e1e;
-  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-summaryList-error-summary__list a:focus {
@@ -147,7 +137,6 @@
 
 .g-summaryList-header__navigation-item a {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -180,7 +169,6 @@
 .g-summaryList-header__navigation-item--active a:hover,
 .g-summaryList-header__navigation-item--active a:visited {
   color: #1d8feb;
-  color: var(--g-theme-color-dark9, #1d8feb);
 }
 
 .g-summaryList-header__navigation-item--active a:focus {

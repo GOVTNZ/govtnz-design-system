@@ -23,8 +23,9 @@
     <div class="g-checkboxBlock-hint g-checkboxes__hint" v-bind:id="hintId">
       <slot name="hint"></slot>
     </div>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -46,8 +47,9 @@ export default Vue.extend({
       return "g-checkboxes__input" + (this.fakeFocus ? " :focus" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-checkboxBlock-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -76,7 +78,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-checkboxBlock-fieldset__legend + .g-checkboxBlock-hint {
+.g-fieldset__legend + .g-checkboxBlock-hint {
   margin-top: -5px;
 }
 .g-checkboxBlock-label {

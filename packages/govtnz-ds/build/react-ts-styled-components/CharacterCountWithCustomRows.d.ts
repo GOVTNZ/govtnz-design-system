@@ -15,6 +15,4 @@ declare type Props = {
     remainingCharacters?: React.ReactNode;
 };
 declare const CharacterCountWithCustomRows: ({ id, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange, remainingCharacters }: Props) => JSX.Element;
-declare const CharacterCountWithCustomRows__calculated: (props: Pick<Props, "disabled" | "id" | "spellCheck" | "onChange" | "value" | "name" | "autoFocus" | "readOnly" | "rows" | "cols" | "autoComplete" | "maxLength">) => React.FunctionComponentElement<Props>;
-export { CharacterCountWithCustomRows };
-export default CharacterCountWithCustomRows__calculated;
+export default CharacterCountWithCustomRows;

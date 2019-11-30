@@ -1,6 +1,5 @@
 .g-link {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -12,29 +11,24 @@
 }
 
 .g-link:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
 .g-link:link {
-  color: $g-theme-color-darkblue;
-  color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
+  color: #005ea5;
 }
 
 .g-link:visited {
-  color: $g-theme-color-dark10;
-  color: var(--g-theme-color-dark10, $g-theme-color-dark10);
+  color: #4c2c92;
 }
 
 .g-link:hover {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: #2b8cc4;
 }
 
 .g-link:active {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: #2b8cc4;
 }
 
 .g-link:focus {
@@ -43,8 +37,7 @@
 
 .g-summaryListCheckYourAnswers-body {
   color: #0b0c0c;
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -56,8 +49,7 @@
 
 @media print {
   .g-summaryListCheckYourAnswers-body {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -88,8 +80,7 @@
 }
 
 .g-summaryListCheckYourAnswers-summary-list {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -122,8 +113,7 @@
 
 @media print {
   .g-summaryListCheckYourAnswers-summary-list {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -143,8 +133,7 @@
 @media (max-width: 40.0525em) {
   .g-summaryListCheckYourAnswers-summary-list__row {
     margin-bottom: 15px;
-    border-bottom: 1px solid $g-theme-color-grey;
-    border-bottom: 1px solid var(--g-theme-color-grey, $g-theme-color-grey);
+    border-bottom: 1px solid #bfc1c3;
   }
 }
 
@@ -169,8 +158,7 @@
   .g-summaryListCheckYourAnswers-summary-list__actions {
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid $g-theme-color-grey;
-    border-bottom: 1px solid var(--g-theme-color-grey, $g-theme-color-grey);
+    border-bottom: 1px solid #bfc1c3;
   }
 }
 
@@ -236,8 +224,7 @@
 }
 
 .g-summaryListCheckYourAnswers-error-summary__list a:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -245,8 +232,7 @@
 .g-summaryListCheckYourAnswers-error-summary__list a:visited,
 .g-summaryListCheckYourAnswers-error-summary__list a:hover,
 .g-summaryListCheckYourAnswers-error-summary__list a:active {
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 .g-summaryListCheckYourAnswers-error-summary__list a:focus {
@@ -254,8 +240,7 @@
 }
 
 .g-summaryListCheckYourAnswers-header__navigation-item a {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -287,8 +272,7 @@
 .g-summaryListCheckYourAnswers-header__navigation-item--active a:link,
 .g-summaryListCheckYourAnswers-header__navigation-item--active a:hover,
 .g-summaryListCheckYourAnswers-header__navigation-item--active a:visited {
-  color: $g-theme-color-dark9;
-  color: var(--g-theme-color-dark9, $g-theme-color-dark9);
+  color: #1d8feb;
 }
 
 .g-summaryListCheckYourAnswers-header__navigation-item--active a:focus {

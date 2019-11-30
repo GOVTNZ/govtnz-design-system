@@ -2,7 +2,7 @@ import * as React from "react";
 
 type Props = {};
 
-const Table = ({  }: Props) => (
+const Table = ({}: Props) => (
   <table className="g-table">
     <tbody className="g-table__body">
       <tr className="g-table__row">January $85 $95</tr>

@@ -6,50 +6,20 @@
 <script>
 import Vue from "vue";
 
-const constants = {
-  styleSize: {
-    xlarge: "g-heading-xl",
-    large: "g-heading-l",
-    medium: "g-heading-m",
-    small: "g-heading-s",
-    xsmall: "g-heading-xs",
-    xxsmall: "g-heading-xxs"
-  }
-};
+
+const constants = {"styleSize":{"xlarge":"g-h1-heading-xl","large":"g-h1-heading-l","medium":"g-h1-heading-m","small":"g-h1-heading-s","xsmall":"g-h1-heading-xs","xxsmall":"g-h1-heading-xxs"}};
 
 export default Vue.extend({
-  props: {
-    styleSize: {
-      type: String,
-      validator: value => {
-        return (
-          ["xlarge", "large", "medium", "small", "xsmall", "xxsmall"].indexOf(
-            value
-          ) !== -1
-        );
-      },
-      required: true
-    },
-    marginBottom8: { type: Boolean, default: false, required: false },
-    marginBottom0: { type: Boolean, default: false, required: false },
-    id: { type: String, required: false },
-    children: { required: false, default: "Example text" }
-  },
-  computed: {
-    computed__class() {
-      return (
-        (constants.styleSize[this.styleSize] !== undefined
-          ? ` ${constants.styleSize[this.styleSize]}`
-          : "") +
-        (this.marginBottom8 ? " g-heading-mb-8" : "") +
-        (this.marginBottom0 ? " g-heading-mb-0" : "")
-      );
-    }
-  }
-});
+
+        props: { styleSize: { type: String, validator: (value) => { return ["xlarge","large","medium","small","xsmall","xxsmall"].indexOf(value) !== -1;}, required: true }, marginBottom8: { type: Boolean, default: false, required: false }, marginBottom0: { type: Boolean, default: false, required: false }, id: { type: String, required: false }, children: { required: false, default: "Example text" } },
+        computed: {
+            computed__class() {
+  return "\" + (constants.styleSize[this.styleSize] !== undefined ? ` ${constants.styleSize[this.styleSize]}` : '') + (this.marginBottom8 ? " g-h1-heading-mb-8" : '') + (this.marginBottom0 ? " g-h1-heading-mb-0" : '')
+}
+        }});
 </script>
 <style scoped>
-.g-heading-xl {
+.g-h1-heading-xl {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -62,33 +32,33 @@ export default Vue.extend({
   margin-bottom: 1rem;
 }
 @media print {
-  .g-heading-xl {
+  .g-h1-heading-xl {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-xl {
+  .g-h1-heading-xl {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xl {
+  .g-h1-heading-xl {
     font-size: 3.5rem;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-heading-xl {
+  .g-h1-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xl {
+  .g-h1-heading-xl {
     margin-bottom: 1rem;
   }
 }
-.g-heading-l {
+.g-h1-heading-l {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -101,33 +71,33 @@ export default Vue.extend({
   margin-bottom: 0.5rem;
 }
 @media print {
-  .g-heading-l {
+  .g-h1-heading-l {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-l {
+  .g-h1-heading-l {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-l {
+  .g-h1-heading-l {
     font-size: 2.5rem;
     line-height: 1.25;
   }
 }
 @media print {
-  .g-heading-l {
+  .g-h1-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-l {
+  .g-h1-heading-l {
     margin-bottom: 30px;
   }
 }
-.g-heading-m {
+.g-h1-heading-m {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -140,33 +110,33 @@ export default Vue.extend({
   margin-bottom: 0.5rem;
 }
 @media print {
-  .g-heading-m {
+  .g-h1-heading-m {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-m {
+  .g-h1-heading-m {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-m {
+  .g-h1-heading-m {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
 @media print {
-  .g-heading-m {
+  .g-h1-heading-m {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-m {
+  .g-h1-heading-m {
     margin-bottom: 0.5rem;
   }
 }
-.g-heading-s {
+.g-h1-heading-s {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -179,79 +149,79 @@ export default Vue.extend({
   margin-bottom: 0.5rem;
 }
 @media print {
-  .g-heading-s {
+  .g-h1-heading-s {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-s {
+  .g-h1-heading-s {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-s {
+  .g-h1-heading-s {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-heading-s {
+  .g-h1-heading-s {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-s {
+  .g-h1-heading-s {
     margin-bottom: 0.5rem;
   }
 }
-.g-body-l + .g-heading-l,
-.g-body-lead + .g-heading-l {
+.g-h1-body-l + .g-h1-heading-l,
+.g-h1-body-lead + .g-h1-heading-l {
   padding-top: 5px;
 }
 @media (min-width: 40.0625em) {
-  .g-body-l + .g-heading-l,
-  .g-body-lead + .g-heading-l {
+  .g-h1-body-l + .g-h1-heading-l,
+  .g-h1-body-lead + .g-h1-heading-l {
     padding-top: 10px;
   }
 }
-.g-body-m + .g-heading-l,
-.g-body + .g-heading-l,
-.g-body-s + .g-heading-l,
-.g-list + .g-heading-l {
+.g-h1-body-m + .g-h1-heading-l,
+.g-h1-body + .g-h1-heading-l,
+.g-h1-body-s + .g-h1-heading-l,
+.g-h1-list + .g-h1-heading-l {
   padding-top: 15px;
 }
 @media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-l,
-  .g-body + .g-heading-l,
-  .g-body-s + .g-heading-l,
-  .g-list + .g-heading-l {
+  .g-h1-body-m + .g-h1-heading-l,
+  .g-h1-body + .g-h1-heading-l,
+  .g-h1-body-s + .g-h1-heading-l,
+  .g-h1-list + .g-h1-heading-l {
     padding-top: 20px;
   }
 }
-.g-body-m + .g-heading-m,
-.g-body + .g-heading-m,
-.g-body-s + .g-heading-m,
-.g-list + .g-heading-m,
-.g-body-m + .g-heading-s,
-.g-body + .g-heading-s,
-.g-body-s + .g-heading-s,
-.g-list + .g-heading-s {
+.g-h1-body-m + .g-h1-heading-m,
+.g-h1-body + .g-h1-heading-m,
+.g-h1-body-s + .g-h1-heading-m,
+.g-h1-list + .g-h1-heading-m,
+.g-h1-body-m + .g-h1-heading-s,
+.g-h1-body + .g-h1-heading-s,
+.g-h1-body-s + .g-h1-heading-s,
+.g-h1-list + .g-h1-heading-s {
   padding-top: 5px;
 }
 @media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-m,
-  .g-body + .g-heading-m,
-  .g-body-s + .g-heading-m,
-  .g-list + .g-heading-m,
-  .g-body-m + .g-heading-s,
-  .g-body + .g-heading-s,
-  .g-body-s + .g-heading-s,
-  .g-list + .g-heading-s {
+  .g-h1-body-m + .g-h1-heading-m,
+  .g-h1-body + .g-h1-heading-m,
+  .g-h1-body-s + .g-h1-heading-m,
+  .g-h1-list + .g-h1-heading-m,
+  .g-h1-body-m + .g-h1-heading-s,
+  .g-h1-body + .g-h1-heading-s,
+  .g-h1-body-s + .g-h1-heading-s,
+  .g-h1-list + .g-h1-heading-s {
     padding-top: 10px;
   }
 }
-.g-heading-xs {
+.g-h1-heading-xs {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -264,47 +234,47 @@ export default Vue.extend({
   margin-bottom: 0.5rem;
 }
 @media print {
-  .g-heading-xs {
+  .g-h1-heading-xs {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-xs {
+  .g-h1-heading-xs {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xs {
+  .g-h1-heading-xs {
     font-size: 0.9375rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-heading-xs {
+  .g-h1-heading-xs {
     font-size: 13pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xs {
+  .g-h1-heading-xs {
     margin-bottom: 0.5rem;
   }
 }
-.g-body-m + .g-heading-xs,
-.g-body + .g-heading-xs,
-.g-body-s + .g-heading-xs,
-.g-list + .g-heading-xs {
+.g-h1-body-m + .g-h1-heading-xs,
+.g-h1-body + .g-h1-heading-xs,
+.g-h1-body-s + .g-h1-heading-xs,
+.g-h1-list + .g-h1-heading-xs {
   padding-top: 5px;
 }
 @media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-xs,
-  .g-body + .g-heading-xs,
-  .g-body-s + .g-heading-xs,
-  .g-list + .g-heading-xs {
+  .g-h1-body-m + .g-h1-heading-xs,
+  .g-h1-body + .g-h1-heading-xs,
+  .g-h1-body-s + .g-h1-heading-xs,
+  .g-h1-list + .g-h1-heading-xs {
     padding-top: 10px;
   }
 }
-.g-heading-xxs {
+.g-h1-heading-xxs {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -317,53 +287,53 @@ export default Vue.extend({
   margin-bottom: 15px;
 }
 @media print {
-  .g-heading-xxs {
+  .g-h1-heading-xxs {
     color: #000000;
   }
 }
 @media print {
-  .g-heading-xxs {
+  .g-h1-heading-xxs {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xxs {
+  .g-h1-heading-xxs {
     font-size: 0.875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-heading-xxs {
+  .g-h1-heading-xxs {
     font-size: 12pt;
     line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-heading-xxs {
+  .g-h1-heading-xxs {
     margin-bottom: 20px;
   }
 }
-.g-body-m + .g-heading-xxs,
-.g-body + .g-heading-xxs,
-.g-body-s + .g-heading-xxs,
-.g-list + .g-heading-xxs {
+.g-h1-body-m + .g-h1-heading-xxs,
+.g-h1-body + .g-h1-heading-xxs,
+.g-h1-body-s + .g-h1-heading-xxs,
+.g-h1-list + .g-h1-heading-xxs {
   padding-top: 5px;
 }
 @media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-xxs,
-  .g-body + .g-heading-xxs,
-  .g-body-s + .g-heading-xxs,
-  .g-list + .g-heading-xxs {
+  .g-h1-body-m + .g-h1-heading-xxs,
+  .g-h1-body + .g-h1-heading-xxs,
+  .g-h1-body-s + .g-h1-heading-xxs,
+  .g-h1-list + .g-h1-heading-xxs {
     padding-top: 10px;
   }
 }
-.g-heading-mb-8 {
+.g-h1-heading-mb-8 {
   margin-bottom: 8px;
 }
-.g-heading-mb-0 {
+.g-h1-heading-mb-0 {
   margin-bottom: 0px;
 }
-.g-hint > * {
+.g-h1-hint > * {
   margin-top: 0px;
 }
 </style>

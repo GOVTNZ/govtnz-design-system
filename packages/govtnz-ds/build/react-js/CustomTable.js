@@ -134,21 +134,21 @@ var CustomTable = function CustomTable(_ref) {
   }, _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "An individual", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href,
     rel: rel,
     target: constants.target[target]
   }, "Form V888")), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href2,
     rel: rel2,
     target: constants.target2[target2]
   }, "Form V8882")), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company that issues parking or trespass charge notices", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href3,
     rel: rel3,
     target: constants.target3[target3]
@@ -163,57 +163,57 @@ var CustomTable = function CustomTable(_ref) {
   }, _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "An individual", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href4,
     rel: rel4,
     target: constants.target4[target4]
   }, "Form V888")), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href5,
     rel: rel5,
     target: constants.target5[target5]
   }, "Form V8882")), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company that issues parking or trespass charge notices", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href6,
     rel: rel6,
     target: constants.target6[target6]
   }, "Form V8883"))), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "An individual", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href7,
     rel: rel7,
     target: constants.target7[target7]
   }, "Form V888")), "An individual", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href8,
     rel: rel8,
     target: constants.target8[target8]
   }, "Form V888"), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href9,
     rel: rel9,
     target: constants.target9[target9]
   }, "Form V8882")), "A company", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href10,
     rel: rel10,
     target: constants.target10[target10]
   }, "Form V8882"), _react["default"].createElement("tr", {
     className: "g-customTable-table__row"
   }, "A company that issues parking or trespass charge notices", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href11,
     rel: rel11,
     target: constants.target11[target11]
   }, "Form V8883")), "A company that issues parking or trespass charge notices", _react["default"].createElement("a", {
-    className: "g-customTable-link",
+    className: "g-link",
     href: href12,
     rel: rel12,
     target: constants.target12[target12]

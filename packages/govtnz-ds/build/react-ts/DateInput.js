@@ -180,26 +180,26 @@ var DateInput = function (_a) {
     return (React.createElement("div", { className: "g-dateInput-form-group" + (error ? " g-dateInput-form-group--error" : "") },
         React.createElement("fieldset", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, className: "g-dateInput-fieldset", role: "group" },
-            React.createElement("legend", { className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl" }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label"))),
+                : undefined, className: "g-fieldset", role: "group" },
+            React.createElement("legend", { className: "g-fieldset__legend g-fieldset__legend--xl" }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label"))),
             React.createElement("span", { className: "g-dateInput-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example hint"))),
             error !== undefined ? (React.createElement(React.Fragment, null,
                 React.createElement("span", { className: "g-dateInput-error-message", id: errorId },
                     React.createElement("span", { className: "g-dateInput-visually-hidden" }, "Error: "),
                     error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),
-            React.createElement("div", { className: "g-dateInput-date-input", id: id },
-                React.createElement("div", { className: "g-dateInput-date-input__item" },
+            React.createElement("div", { className: "g-date-input", id: id },
+                React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
-                        React.createElement("label", { className: "g-dateInput-label g-dateInput-date-input__label", htmlFor: dayId }, "Day"),
-                        React.createElement("input", { className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: dayId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
-                React.createElement("div", { className: "g-dateInput-date-input__item" },
+                        React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dayId }, "Day"),
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: dayId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: constants.autoComplete[autoComplete], onChange: onChange }))),
+                React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
-                        React.createElement("label", { className: "g-dateInput-label g-dateInput-date-input__label", htmlFor: monthId }, "Month"),
-                        React.createElement("input", { className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: monthId, maxLength: 2, name: name2, pattern: "[0-9]*", type: "text", disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
-                React.createElement("div", { className: "g-dateInput-date-input__item" },
+                        React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: monthId }, "Month"),
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: monthId, maxLength: 2, name: name2, pattern: "[0-9]*", type: "text", disabled: disabled2, readOnly: readOnly2, autoFocus: autoFocus2, value: value2, spellCheck: spellCheck2, autoComplete: constants.autoComplete2[autoComplete2], onChange: onChange2 }))),
+                React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
                         React.createElement("label", { className: "g-dateInput-label govuk-date-input__label", htmlFor: yearId }, "Year"),
-                        React.createElement("input", { className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4" + (error ? " g-dateInput-input--error" : ""), id: yearId, maxLength: 4, name: name3, pattern: "[0-9]*", type: "text", disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
+                        React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4" + (error ? " g-dateInput-input--error" : ""), id: yearId, maxLength: 4, name: name3, pattern: "[0-9]*", type: "text", disabled: disabled3, readOnly: readOnly3, autoFocus: autoFocus3, value: value3, spellCheck: spellCheck3, autoComplete: constants.autoComplete3[autoComplete3], onChange: onChange3 })))))));
 };
 exports.default = DateInput;
 //# sourceMappingURL=DateInput.js.map

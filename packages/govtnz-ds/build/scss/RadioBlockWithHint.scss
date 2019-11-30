@@ -1,6 +1,5 @@
-.g-radios-hint {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+.g-radioBlockWithHint-hint {
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -12,32 +11,31 @@
 }
 
 @media print {
-  .g-radios-hint {
+  .g-radioBlockWithHint-hint {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-radios-hint {
+  .g-radioBlockWithHint-hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-radios-hint {
+  .g-radioBlockWithHint-hint {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.g-radios-fieldset__legend + .g-radios-hint {
+.g-fieldset__legend + .g-radioBlockWithHint-hint {
   margin-top: -5px;
 }
 
-.g-radios-label {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+.g-radioBlockWithHint-label {
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -49,35 +47,33 @@
 }
 
 @media print {
-  .g-radios-label {
+  .g-radioBlockWithHint-label {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-radios-label {
+  .g-radioBlockWithHint-label {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-radios-label {
+  .g-radioBlockWithHint-label {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .g-radios-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+  .g-radioBlockWithHint-label {
+    color: #000000;
   }
 }
 
 .g-radios__item {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -173,8 +169,7 @@
 .g-radios__input.\:focus + .g-radios__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 4px $g-theme-color-brand-1;
-  box-shadow: 0 0 0 4px var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  box-shadow: 0 0 0 4px #ffbf47;
 }
 
 .g-radios__input:checked + .g-radios__label::after,
@@ -205,6 +200,6 @@
   float: none;
 }
 
-.g-radios-hint > * {
+.g-radioBlockWithHint-hint > * {
   margin-top: 0px;
 }

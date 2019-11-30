@@ -22,7 +22,7 @@
       Testing that when you click the anchor it moves to the anchor point
       successfully
     </p> 
-    <a class="g-tabsTabsWithAnchorInPanel-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="<% if $target3 == "Blank" %>_blank<% else_if $target3 == "Top" %>_top<% else_if $target3 == "Self" %>_self<% else_if $target3 == "Parent" %>_parent<% end_if %>"<% end_if %>> Anchor</a> 
+    <a class="g-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="<% if $target3 == "Blank" %>_blank<% else_if $target3 == "Top" %>_top<% else_if $target3 == "Self" %>_self<% else_if $target3 == "Parent" %>_parent<% end_if %>"<% end_if %>> Anchor</a> 
     <a<% if $anchor %> id="{$anchor}"<% end_if %> tabindex="0"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="<% if $target4 == "Blank" %>_blank<% else_if $target4 == "Top" %>_top<% else_if $target4 == "Self" %>_self<% else_if $target4 == "Parent" %>_parent<% end_if %>"<% end_if %>> Anchor Point</a> 
   </section> 
   <section<% if $tabTab2 %> aria-labelledby="{$tabTab2}"<% end_if %> class="g-tabsTabsWithAnchorInPanel-tabs__panel g-tabsTabsWithAnchorInPanel-tabs__panel--hidden"<% if $tab2 %> id="{$tab2}"<% end_if %> role="tabpanel"> 

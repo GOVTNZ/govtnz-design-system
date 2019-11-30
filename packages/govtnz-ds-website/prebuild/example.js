@@ -97,7 +97,7 @@ const writeExamplePage = async (
 
   const scriptImports = uniq(reactComponentNames).map(
     reactComponentName =>
-      `import ${reactComponentName} from '@govtnz/ds/build/react-ts/${reactComponentName}.tsx';`
+      `import ${reactComponentName} from '@govtnz/ds/build/react-ts/${reactComponentName}';`
   );
 
   const example = await addOnStateChanged(exampleData);

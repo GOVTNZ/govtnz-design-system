@@ -73,7 +73,7 @@ var SummaryList = function SummaryList(_ref) {
   }, _react["default"].createElement("li", {
     className: "g-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryList-link",
+    className: "g-link",
     href: href,
     rel: rel,
     target: constants.target[target]
@@ -82,7 +82,7 @@ var SummaryList = function SummaryList(_ref) {
   }, " name"))), _react["default"].createElement("li", {
     className: "g-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryList-link",
+    className: "g-link",
     href: href2,
     rel: rel2,
     target: constants.target2[target2]
@@ -97,7 +97,7 @@ var SummaryList = function SummaryList(_ref) {
   }, "13/08/1980"), _react["default"].createElement("dd", {
     className: "g-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryList-link",
+    className: "g-link",
     href: href3,
     rel: rel3,
     target: constants.target3[target3]
@@ -120,7 +120,7 @@ var SummaryList = function SummaryList(_ref) {
   }, _react["default"].createElement("li", {
     className: "g-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryList-link",
+    className: "g-link",
     href: href4,
     rel: rel4,
     target: constants.target4[target4]
@@ -129,7 +129,7 @@ var SummaryList = function SummaryList(_ref) {
   }, " ", "contact information"))), _react["default"].createElement("li", {
     className: "g-summary-list__actions-list-item"
   }, _react["default"].createElement("a", {
-    className: "g-summaryList-link",
+    className: "g-link",
     href: href5,
     rel: rel5,
     target: constants.target5[target5]

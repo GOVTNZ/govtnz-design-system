@@ -77,7 +77,7 @@
         <div class="g-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label g-date-input__label"
+              class="g-dateInput-label govuk-date-input__label"
               v-bind:for="yearId"
             >
               Year

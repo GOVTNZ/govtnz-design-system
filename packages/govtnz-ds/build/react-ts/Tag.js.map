@@ -1,1 +1,1 @@
-{"version":3,"file":"Tag.js","sourceRoot":"","sources":["../../build_src/react-ts/Tag.tsx"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA+B;AAI/B,IAAM,GAAG,GAAG,UAAC,EAAW,IAAK,OAAA,gCAAQ,SAAS,EAAC,OAAO,YAAe,EAAxC,CAAwC,CAAC;AAEtE,kBAAe,GAAG,CAAC"}
+{"version":3,"file":"Tag.js","sourceRoot":"","sources":["../../build_src/react-ts/Tag.tsx"],"names":[],"mappings":";;;;;;;;;AAAA,2CAA+B;AAI/B,IAAM,GAAG,GAAG,UAAC,EAAS,IAAK,OAAA,gCAAQ,SAAS,EAAC,OAAO,YAAe,EAAxC,CAAwC,CAAC;AAEpE,kBAAe,GAAG,CAAC"}

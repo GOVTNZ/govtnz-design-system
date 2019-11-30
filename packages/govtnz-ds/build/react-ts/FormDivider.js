@@ -10,7 +10,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var FormDivider = function (_a) {
     var children = _a.children;
-    return (React.createElement("div", { className: "g-radios-form-divider" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
+    return (React.createElement("div", { className: "g-form-divider" }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example Text"))));
 };
 exports.default = FormDivider;
 //# sourceMappingURL=FormDivider.js.map

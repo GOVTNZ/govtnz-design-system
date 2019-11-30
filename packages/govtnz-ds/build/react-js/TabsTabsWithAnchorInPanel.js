@@ -96,7 +96,7 @@ var TabsTabsWithAnchorInPanel = function TabsTabsWithAnchorInPanel(_ref) {
   }, _react["default"].createElement("h2", {
     className: "g-tabsTabsWithAnchorInPanel-heading-l"
   }, "Tab 1"), _react["default"].createElement("p", null, "Testing that when you click the anchor it moves to the anchor point successfully"), _react["default"].createElement("a", {
-    className: "g-tabsTabsWithAnchorInPanel-link",
+    className: "g-link",
     href: href3,
     rel: rel3,
     target: constants.target3[target3]

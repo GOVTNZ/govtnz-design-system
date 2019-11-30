@@ -26,7 +26,7 @@ var TabsTabsWithAnchorInPanel = function (_a) {
         React.createElement("section", { "aria-labelledby": tabTab1, className: "g-tabsTabsWithAnchorInPanel-tabs__panel", id: tab1, role: "tabpanel" },
             React.createElement("h2", { className: "g-tabsTabsWithAnchorInPanel-heading-l" }, "Tab 1"),
             React.createElement("p", null, "Testing that when you click the anchor it moves to the anchor point successfully"),
-            React.createElement("a", { className: "g-tabsTabsWithAnchorInPanel-link", href: href3, rel: rel3, target: constants.target3[target3] }, "Anchor"),
+            React.createElement("a", { className: "g-link", href: href3, rel: rel3, target: constants.target3[target3] }, "Anchor"),
             React.createElement("a", { id: anchor, tabIndex: 0, href: href4, rel: rel4, target: constants.target4[target4] }, "Anchor Point")),
         React.createElement("section", { "aria-labelledby": tabTab2, className: "g-tabsTabsWithAnchorInPanel-tabs__panel g-tabsTabsWithAnchorInPanel-tabs__panel--hidden", id: tab2, role: "tabpanel" },
             React.createElement("h2", { className: "g-tabsTabsWithAnchorInPanel-heading-l" }, "Tab 2"))));

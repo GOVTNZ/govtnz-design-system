@@ -25,7 +25,7 @@ var A = function A(_ref) {
       target = _ref.target,
       children = _ref.children;
   return _react["default"].createElement("a", {
-    className: "g-a-link".concat(isMuted ? " g-a-link--muted" : ""),
+    className: "g-link".concat(isMuted ? " g-link--muted" : ""),
     href: href,
     rel: rel,
     target: constants.target[target]

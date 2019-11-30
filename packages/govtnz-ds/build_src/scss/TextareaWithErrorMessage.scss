@@ -15,9 +15,7 @@
 
 .g-textareaWithErrorMessage-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
-  border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border-left: 5px solid #b10e1e;
 }
 
 .g-textareaWithErrorMessage-form-group--error
@@ -27,8 +25,7 @@
 }
 
 .g-textareaWithErrorMessage-error-message {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -37,8 +34,7 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 @media print {
@@ -62,8 +58,7 @@
 }
 
 .g-textareaWithErrorMessage-label {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -96,8 +91,7 @@
 
 @media print {
   .g-textareaWithErrorMessage-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -112,8 +106,7 @@
 }
 
 .g-textareaWithErrorMessage-textarea {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -152,8 +145,7 @@
 }
 
 .g-textareaWithErrorMessage-textarea:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -164,9 +156,7 @@
 }
 
 .g-textareaWithErrorMessage-textarea--error {
-  border: 4px solid $g-theme-button-color-warning;
-  border: 4px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border: 4px solid #b10e1e;
 }
 
 .g-textareaWithErrorMessage-hint > * {

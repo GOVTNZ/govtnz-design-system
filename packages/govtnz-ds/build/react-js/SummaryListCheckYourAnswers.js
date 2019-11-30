@@ -96,7 +96,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "Sarah Philips"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href,
     rel: rel,
     target: constants.target[target]
@@ -111,7 +111,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "5 January 1978"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href2,
     rel: rel2,
     target: constants.target2[target2]
@@ -126,7 +126,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "72 Guild Street", _react["default"].createElement("br", null), "London", _react["default"].createElement("br", null), "SE23 6FH"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href3,
     rel: rel3,
     target: constants.target3[target3]
@@ -141,7 +141,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "07700 900457", _react["default"].createElement("br", null), "sarah.phillips@example.com"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href4,
     rel: rel4,
     target: constants.target4[target4]
@@ -156,7 +156,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "502135326"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href5,
     rel: rel5,
     target: constants.target5[target5]
@@ -171,7 +171,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "For personal use"), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href6,
     rel: rel6,
     target: constants.target6[target6]
@@ -188,7 +188,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "72 Guild Street", _react["default"].createElement("br", null), "London", _react["default"].createElement("br", null), "SE23 6FH")), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href7,
     rel: rel7,
     target: constants.target7[target7]
@@ -207,7 +207,7 @@ var SummaryListCheckYourAnswers = function SummaryListCheckYourAnswers(_ref) {
   }, "This is a second paragraph of text provided by the user.")), _react["default"].createElement("dd", {
     className: "g-summaryListCheckYourAnswers-summary-list__actions"
   }, _react["default"].createElement("a", {
-    className: "g-summaryListCheckYourAnswers-link",
+    className: "g-link",
     href: href8,
     rel: rel8,
     target: constants.target8[target8]

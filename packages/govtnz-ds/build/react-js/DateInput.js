@@ -215,10 +215,10 @@ var DateInput = function DateInput(_ref) {
     className: "g-dateInput-form-group".concat(error ? " g-dateInput-form-group--error" : "")
   }, _react["default"].createElement("fieldset", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
-    className: "g-dateInput-fieldset",
+    className: "g-fieldset",
     role: "group"
   }, _react["default"].createElement("legend", {
-    className: "g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
+    className: "g-fieldset__legend g-fieldset__legend--xl"
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label")), _react["default"].createElement("span", {
     className: "g-dateInput-hint",
     id: hintId
@@ -228,17 +228,17 @@ var DateInput = function DateInput(_ref) {
   }, _react["default"].createElement("span", {
     className: "g-dateInput-visually-hidden"
   }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement("div", {
-    className: "g-dateInput-date-input",
+    className: "g-date-input",
     id: id
   }, _react["default"].createElement("div", {
-    className: "g-dateInput-date-input__item"
+    className: "g-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label g-dateInput-date-input__label",
+    className: "g-dateInput-label g-date-input__label",
     htmlFor: dayId
   }, "Day"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: dayId,
     maxLength: 2,
     name: name,
@@ -252,14 +252,14 @@ var DateInput = function DateInput(_ref) {
     autoComplete: constants.autoComplete[autoComplete],
     onChange: onChange
   }))), _react["default"].createElement("div", {
-    className: "g-dateInput-date-input__item"
+    className: "g-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label g-dateInput-date-input__label",
+    className: "g-dateInput-label g-date-input__label",
     htmlFor: monthId
   }, "Month"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: monthId,
     maxLength: 2,
     name: name2,
@@ -273,14 +273,14 @@ var DateInput = function DateInput(_ref) {
     autoComplete: constants.autoComplete2[autoComplete2],
     onChange: onChange2
   }))), _react["default"].createElement("div", {
-    className: "g-dateInput-date-input__item"
+    className: "g-date-input__item"
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
     className: "g-dateInput-label govuk-date-input__label",
     htmlFor: yearId
   }, "Year"), _react["default"].createElement("input", {
-    className: "g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4".concat(error ? " g-dateInput-input--error" : ""),
+    className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4".concat(error ? " g-dateInput-input--error" : ""),
     id: yearId,
     maxLength: 4,
     name: name3,

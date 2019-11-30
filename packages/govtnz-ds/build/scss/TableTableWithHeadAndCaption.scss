@@ -1,11 +1,9 @@
 .g-tableTableWithHeadAndCaption-heading-m {
   color: #0b0c0c;
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: g-heading-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -15,8 +13,7 @@
 
 @media print {
   .g-tableTableWithHeadAndCaption-heading-m {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -71,8 +68,7 @@
 }
 
 .g-tableTableWithHeadAndCaption-table {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -107,8 +103,7 @@
 
 @media print {
   .g-tableTableWithHeadAndCaption-table {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 

@@ -15,9 +15,7 @@
 
 .g-selectWithHintTextAndErrorMessage-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
-  border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border-left: 5px solid #b10e1e;
 }
 
 .g-selectWithHintTextAndErrorMessage-form-group--error
@@ -27,8 +25,7 @@
 }
 
 .g-selectWithHintTextAndErrorMessage-error-message {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -37,8 +34,7 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: #b10e1e;
 }
 
 @media print {
@@ -62,8 +58,7 @@
 }
 
 .g-selectWithHintTextAndErrorMessage-hint {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -94,14 +89,12 @@
   }
 }
 
-.g-selectWithHintTextAndErrorMessage-fieldset__legend
-  + .g-selectWithHintTextAndErrorMessage-hint {
+.g-fieldset__legend + .g-selectWithHintTextAndErrorMessage-hint {
   margin-top: -5px;
 }
 
 .g-selectWithHintTextAndErrorMessage-label {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -134,8 +127,7 @@
 
 @media print {
   .g-selectWithHintTextAndErrorMessage-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -145,8 +137,7 @@
 }
 
 .g-selectWithHintTextAndErrorMessage-select {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -156,8 +147,7 @@
   max-width: 100%;
   height: auto;
   padding: 0.4rem 2.5rem 0.5rem 0.6rem;
-  border: 1px solid $g-theme-color-black;
-  border: 1px solid var(--g-theme-color-black, $g-theme-color-black);
+  border: 1px solid #000000;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -189,22 +179,17 @@
 }
 
 .g-selectWithHintTextAndErrorMessage-select:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
 .g-selectWithHintTextAndErrorMessage-select:focus::-ms-value {
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
-  background-color: $g-theme-color-darkblue;
-  background-color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
+  color: #ffffff;
+  background-color: #005ea5;
 }
 
 .g-selectWithHintTextAndErrorMessage-select--error {
-  border: 1px solid $g-theme-button-color-warning;
-  border: 1px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  border: 1px solid #b10e1e;
 }
 
 .g-selectWithHintTextAndErrorMessage-select::-ms-expand {

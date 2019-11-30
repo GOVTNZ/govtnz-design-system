@@ -17,11 +17,9 @@
 .g-tabs-heading-l {
   color: #2a2a2a;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
+  font-weight: g-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -32,7 +30,6 @@
 @media print {
   .g-tabs-heading-l {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -95,8 +92,7 @@
 }
 
 .g-tabs-error-summary__list a:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
@@ -105,7 +101,6 @@
 .g-tabs-error-summary__list a:hover,
 .g-tabs-error-summary__list a:active {
   color: #b10e1e;
-  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-tabs-error-summary__list a:focus {
@@ -114,7 +109,6 @@
 
 .g-tabs-header__navigation-item a {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -147,7 +141,6 @@
 .g-tabs-header__navigation-item--active a:hover,
 .g-tabs-header__navigation-item--active a:visited {
   color: #1d8feb;
-  color: var(--g-theme-color-dark9, #1d8feb);
 }
 
 .g-tabs-header__navigation-item--active a:focus {
@@ -156,7 +149,6 @@
 
 .g-tabs {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -190,7 +182,6 @@
 @media print {
   .g-tabs {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -208,7 +199,6 @@
 
 .g-tabs__title {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -267,7 +257,6 @@
 
 .g-tabs__tab {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -285,31 +274,25 @@
 }
 
 .g-tabs__tab:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
-  background-color: #b53cde;
-  background-color: var(--g-theme-color-brand-1, #b53cde);
+  background-color: #ffbf47;
 }
 
 .g-tabs__tab:link {
   color: #005ea5;
-  color: var(--g-theme-color-darkblue, #005ea5);
 }
 
 .g-tabs__tab:visited {
   color: #4c2c92;
-  color: var(--g-theme-color-dark10, #4c2c92);
 }
 
 .g-tabs__tab:hover {
   color: #2b8cc4;
-  color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
 .g-tabs__tab:active {
   color: #2b8cc4;
-  color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
 .g-tabs__tab:focus {
@@ -349,7 +332,6 @@
 @media (min-width: 40.0625em) {
   .js-enabled .g-tabs__list {
     border-bottom: 1px solid #bfc1c3;
-    border-bottom: 1px solid var(--g-theme-color-grey, #bfc1c3);
   }
 
   .js-enabled .g-tabs__list:after {
@@ -377,7 +359,6 @@
     float: left;
     color: #0b0c0c;
     background-color: #f8f8f8;
-    background-color: var(--g-theme-color-light-grey, #f8f8f8);
     text-align: center;
     text-decoration: none;
   }
@@ -390,11 +371,9 @@
     padding-bottom: 16px;
     padding-left: 19px;
     border: 1px solid #bfc1c3;
-    border: 1px solid var(--g-theme-color-grey, #bfc1c3);
     border-bottom: 0;
     color: #0b0c0c;
     background-color: #ffffff;
-    background-color: var(--g-theme-color-white, #ffffff);
   }
 
   .js-enabled .g-tabs__tab--selected:focus {
@@ -408,7 +387,6 @@
     padding-bottom: 30px;
     padding-left: 20px;
     border: 1px solid #bfc1c3;
-    border: 1px solid var(--g-theme-color-grey, #bfc1c3);
     border-top: 0;
   }
 }
@@ -427,7 +405,6 @@
 
 .g-tabs-table {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -463,7 +440,6 @@
 @media print {
   .g-tabs-table {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 

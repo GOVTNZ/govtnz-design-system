@@ -16,7 +16,6 @@
 .g-selectWithHintTextAndErrorMessage-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
-  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-selectWithHintTextAndErrorMessage-form-group--error
@@ -27,7 +26,6 @@
 
 .g-selectWithHintTextAndErrorMessage-error-message {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -37,7 +35,6 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
-  color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 @media print {
@@ -62,7 +59,6 @@
 
 .g-selectWithHintTextAndErrorMessage-hint {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -99,7 +95,6 @@
 
 .g-selectWithHintTextAndErrorMessage-label {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -133,7 +128,6 @@
 @media print {
   .g-selectWithHintTextAndErrorMessage-label {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -144,7 +138,6 @@
 
 .g-selectWithHintTextAndErrorMessage-select {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -155,7 +148,6 @@
   height: auto;
   padding: 0.4rem 2.5rem 0.5rem 0.6rem;
   border: 1px solid #000000;
-  border: 1px solid var(--g-theme-color-black, #000000);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -187,21 +179,17 @@
 }
 
 .g-selectWithHintTextAndErrorMessage-select:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 
 .g-selectWithHintTextAndErrorMessage-select:focus::-ms-value {
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
   background-color: #005ea5;
-  background-color: var(--g-theme-color-darkblue, #005ea5);
 }
 
 .g-selectWithHintTextAndErrorMessage-select--error {
   border: 1px solid #b10e1e;
-  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-selectWithHintTextAndErrorMessage-select::-ms-expand {

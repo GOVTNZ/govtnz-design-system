@@ -18,7 +18,7 @@ checked="{% if checked %}checked{% endif %}"
   
         
 <label
-class="g-radios-label g-radios__label"
+class="g-radioBlockWithHint-label g-radios__label"
 for="{{ radioId | escape('html_attr') }}"
 >
 {% block label %}Label text{% endblock %}
@@ -26,7 +26,7 @@ for="{{ radioId | escape('html_attr') }}"
   
         
 <div
-class="g-radios-hint g-radios__hint"
+class="g-radioBlockWithHint-hint g-radios__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
 {% block hint %}Hint text{% endblock %}

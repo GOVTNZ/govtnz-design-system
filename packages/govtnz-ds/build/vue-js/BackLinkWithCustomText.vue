@@ -6,8 +6,9 @@
     v-bind:target="computed__target"
   >
     <slot></slot>
-  </a> </template
-><script>
+  </a>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -34,8 +35,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-backLinkWithCustomText-back-link {
   font-size: 0.875rem;
   line-height: 1.14286;

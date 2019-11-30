@@ -6,8 +6,9 @@
     v-bind:target="computed__target"
   >
     <slot></slot>
-  </a> </template
-><script>
+  </a>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -30,7 +31,7 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return "g-a-link" + (this.isMuted ? " g-a-link--muted" : "");
+      return "g-link" + (this.isMuted ? " g-link--muted" : "");
     },
     computed__target() {
       return constants.target[this.target] !== undefined
@@ -38,44 +39,45 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
-.g-a-link {
+});
+</script>
+<style scoped>
+.g-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media print {
-  .g-a-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
-.g-a-link:focus {
+.g-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-a-link:link {
+.g-link:link {
   color: #005ea5;
 }
-.g-a-link:visited {
+.g-link:visited {
   color: #4c2c92;
 }
-.g-a-link:hover {
+.g-link:hover {
   color: #2b8cc4;
 }
-.g-a-link:active {
+.g-link:active {
   color: #2b8cc4;
 }
-.g-a-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
-.g-a-link--muted:link,
-.g-a-link--muted:visited,
-.g-a-link--muted:hover,
-.g-a-link--muted:active {
+.g-link--muted:link,
+.g-link--muted:visited,
+.g-link--muted:hover,
+.g-link--muted:active {
   color: #6f777b;
 }
-.g-a-link--muted:focus {
+.g-link--muted:focus {
   color: #0b0c0c;
 }
 .g-a-error-summary__list a {

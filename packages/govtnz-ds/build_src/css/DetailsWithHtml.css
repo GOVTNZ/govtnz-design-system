@@ -16,7 +16,6 @@
 
 .g-detailsWithHtml-details {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -50,7 +49,6 @@
 @media print {
   .g-detailsWithHtml-details {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -66,7 +64,6 @@
   margin-bottom: 5px;
   padding-left: 25px;
   color: #005ea5;
-  color: var(--g-theme-color-darkblue, #005ea5);
   cursor: pointer;
 }
 
@@ -76,16 +73,13 @@
 
 .g-detailsWithHtml-details__summary:hover {
   color: #2b8cc4;
-  color: var(--g-theme-color-dark3, #2b8cc4);
 }
 
 .g-detailsWithHtml-details__summary:focus {
-  outline: 4px solid #b53cde;
-  outline: 4px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: #b53cde;
-  background: var(--g-theme-color-brand-1, #b53cde);
+  background: #ffbf47;
 }
 
 .g-detailsWithHtml-details__summary::-webkit-details-marker {
@@ -126,7 +120,6 @@
   padding: 15px;
   padding-left: 20px;
   border-left: 5px solid #bfc1c3;
-  border-left: 5px solid var(--g-theme-color-grey, #bfc1c3);
 }
 
 .g-detailsWithHtml-hint > * {

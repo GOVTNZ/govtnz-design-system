@@ -13,7 +13,7 @@ var constants = {
 };
 var A = function (_a) {
     var isMuted = _a.isMuted, href = _a.href, rel = _a.rel, target = _a.target, children = _a.children;
-    return (React.createElement("a", { className: "g-a-link" + (isMuted ? " g-a-link--muted" : ""), href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    return (React.createElement("a", { className: "g-link" + (isMuted ? " g-link--muted" : ""), href: href, rel: rel, target: constants.target[target] }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
 };
 exports.default = A;
 //# sourceMappingURL=A.js.map

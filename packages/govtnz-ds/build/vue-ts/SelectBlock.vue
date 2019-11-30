@@ -12,8 +12,9 @@
     >
       <slot></slot>
     </select>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -33,8 +34,9 @@ export default Vue.extend({
       );
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-selectBlock-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

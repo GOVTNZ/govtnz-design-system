@@ -28,8 +28,9 @@
       v-bind:maxlength="maxLength"
       v-bind:value="value"
     />
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -174,8 +175,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-textareaWithErrorMessage-form-group {
   margin-bottom: 20px;
 }

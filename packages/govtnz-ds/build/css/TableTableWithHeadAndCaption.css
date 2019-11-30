@@ -1,11 +1,9 @@
 .g-tableTableWithHeadAndCaption-heading-m {
   color: #0b0c0c;
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
+  font-weight: g-heading-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -16,7 +14,6 @@
 @media print {
   .g-tableTableWithHeadAndCaption-heading-m {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -72,7 +69,6 @@
 
 .g-tableTableWithHeadAndCaption-table {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -108,7 +104,6 @@
 @media print {
   .g-tableTableWithHeadAndCaption-table {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 

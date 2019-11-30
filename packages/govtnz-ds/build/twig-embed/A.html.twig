@@ -1,5 +1,5 @@
 <a
-class="g-a-link{% if isMuted %} g-a-link--muted{% endif %}"
+class="g-link{% if isMuted %} g-link--muted{% endif %}"
 href="{{ href | escape('html_attr') }}"
 rel="{{ rel | escape('html_attr') }}"
 target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"

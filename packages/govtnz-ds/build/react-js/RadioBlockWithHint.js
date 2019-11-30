@@ -37,10 +37,10 @@ var RadioBlockWithHint = function RadioBlockWithHint(_ref) {
     checked: checked,
     onChange: onChange
   }), _react["default"].createElement("label", {
-    className: "g-radios-label g-radios__label",
+    className: "g-radioBlockWithHint-label g-radios__label",
     htmlFor: radioId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), _react["default"].createElement("div", {
-    className: "g-radios-hint g-radios__hint",
+    className: "g-radioBlockWithHint-hint g-radios__hint",
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text")));
 };

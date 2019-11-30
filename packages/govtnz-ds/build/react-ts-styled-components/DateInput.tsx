@@ -353,19 +353,10 @@ const StyledSpan3 = styled.span`
 `;
 
 const StyledDiv2 = styled.div`
-  font-size: 0;
-  :after {
-    content: "";
-    display: block;
-    clear: both;
-  }
   margin-top: 0px;
 `;
 
 const StyledDiv3 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 
@@ -412,7 +403,6 @@ const StyledLabel = styled.label`
   @media print {
     color: #000000;
   }
-  display: block;
   margin-top: 0px;
 `;
 
@@ -459,14 +449,10 @@ const StyledInput = styled.input<Pick<Props, "error">>`
       border: 1px solid #b10e1e;
     `}
   max-width: 5.4ex;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 
 const StyledDiv5 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 
@@ -513,7 +499,6 @@ const StyledLabel2 = styled.label`
   @media print {
     color: #000000;
   }
-  display: block;
   margin-top: 0px;
 `;
 
@@ -560,14 +545,10 @@ const StyledInput2 = styled.input<Pick<Props, "error">>`
       border: 1px solid #b10e1e;
     `}
   max-width: 5.4ex;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 
 const StyledDiv7 = styled.div`
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 
@@ -660,7 +641,6 @@ const StyledInput3 = styled.input<Pick<Props, "error">>`
       border: 1px solid #b10e1e;
     `}
   max-width: 9ex;
-  margin-bottom: 0;
   margin-top: 0px;
 `;
 

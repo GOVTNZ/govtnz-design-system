@@ -5,10 +5,8 @@ type="{% if type == "Submit" %}submit{% elseif type == "Reset" %}reset{% elseif 
 name="{{ name | escape('html_attr') }}"
 >
   
-          
-{% block children %}
-            Example text
-          {% endblock %}
   
-        
+{% block children %} Example text {% endblock %}
+  
+
 </button>

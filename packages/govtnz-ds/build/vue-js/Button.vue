@@ -6,8 +6,9 @@
     v-bind:name="name"
   >
     <slot></slot>
-  </button> </template
-><script>
+  </button>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -33,28 +34,30 @@ export default Vue.extend({
       },
       required: false
     },
-    children: {
-      required: false,
-      default: "\n            Example text\n          "
-    }
+    children: { required: false, default: " Example text " }
   },
   computed: {
     computed__class() {
       return (
         "g-button" +
         (this.disabled ? " g-button--disabled" : "") +
-        (constants[this.level] !== undefined ? ` ${constants[this.level]}` : "")
+        (constants.level[this.level] !== undefined
+          ? ` ${constants.level[this.level]}`
+          : "")
       );
     },
     computed__disabled() {
       return this.disabled ? "true" : "";
     },
     computed__type() {
-      return constants[this.type] !== undefined ? constants[this.type] : "";
+      return constants.type[this.type] !== undefined
+        ? constants.type[this.type]
+        : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-button {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -123,7 +126,7 @@ export default Vue.extend({
 }
 .g-button:hover,
 .g-button:focus {
-  background-color: #00682f;
+  background-color: #00692f;
 }
 .g-button:active {
   top: 2px;
@@ -159,37 +162,7 @@ export default Vue.extend({
 .g-button--disabled:active,
 .g-button[disabled]:active {
   top: 0;
-  box-shadow: 0 2px 0 #003418;
-}
-.g-button--secondary {
-  background-color: #dee0e2;
-  box-shadow: 0 2px 0 #858688;
-}
-.g-button--secondary,
-.g-button--secondary:link,
-.g-button--secondary:visited,
-.g-button--secondary:active,
-.g-button--secondary:hover {
-  color: #0b0c0c;
-}
-.g-button--secondary:hover,
-.g-button--secondary:focus {
-  background-color: #c8cacb;
-}
-.g-button--warning {
-  background-color: #b10e1e;
-  box-shadow: 0 2px 0 #47060c;
-}
-.g-button--warning,
-.g-button--warning:link,
-.g-button--warning:visited,
-.g-button--warning:active,
-.g-button--warning:hover {
-  color: #ffffff;
-}
-.g-button--warning:hover,
-.g-button--warning:focus {
-  background-color: #8e0b18;
+  box-shadow: 0 2px 0 #003618;
 }
 .g-button {
   padding-top: 16px;

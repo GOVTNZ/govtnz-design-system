@@ -21,7 +21,6 @@
 
 .g-textareaWithLabelAsPageHeading-label {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
@@ -55,7 +54,6 @@
 @media print {
   .g-textareaWithLabelAsPageHeading-label {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
   }
 }
 
@@ -70,7 +68,6 @@
 
 .g-textareaWithLabelAsPageHeading-textarea {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -109,8 +106,7 @@
 }
 
 .g-textareaWithLabelAsPageHeading-textarea:focus {
-  outline: 3px solid #b53cde;
-  outline: 3px solid var(--g-theme-color-brand-1, #b53cde);
+  outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
 

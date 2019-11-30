@@ -1,6 +1,5 @@
 .g-tag {
   font-family: Arial, sans-serif;
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -12,9 +11,7 @@
   outline: 2px solid transparent;
   outline-offset: -2px;
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
   background-color: #005ea5;
-  background-color: var(--g-theme-color-darkblue, #005ea5);
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;

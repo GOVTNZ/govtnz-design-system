@@ -34,6 +34,6 @@ const StyledStrong = styled.strong`
   margin-top: 0px;
 `;
 
-const Tag = ({  }: Props) => <StyledStrong>alpha</StyledStrong>;
+const Tag = ({}: Props) => <StyledStrong>alpha</StyledStrong>;
 
 export default Tag;

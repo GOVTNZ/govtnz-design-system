@@ -6,8 +6,9 @@
     v-bind:target="computed__target"
   >
     Skip to main content
-  </a> </template
-><script>
+  </a>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -33,8 +34,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-skipLink-error-summary__list a {
   font-weight: 700;
 }
@@ -84,74 +86,6 @@ export default Vue.extend({
 }
 .g-skipLink-header__navigation-item--active a:focus {
   color: #0b0c0c;
-}
-.g-skip-link {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  white-space: nowrap !important;
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 0.875rem;
-  line-height: 1.14286;
-  display: block;
-  padding: 10px 15px;
-}
-.g-skip-link:active,
-.g-skip-link:focus {
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
-  margin: inherit !important;
-  overflow: visible !important;
-  clip: auto !important;
-  -webkit-clip-path: none !important;
-  clip-path: none !important;
-  white-space: inherit !important;
-}
-@media print {
-  .g-skip-link {
-    font-family: sans-serif;
-  }
-}
-.g-skip-link:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
-}
-.g-skip-link:link,
-.g-skip-link:visited,
-.g-skip-link:hover,
-.g-skip-link:active,
-.g-skip-link:focus {
-  color: #0b0c0c;
-}
-@media print {
-  .g-skip-link:link,
-  .g-skip-link:visited,
-  .g-skip-link:hover,
-  .g-skip-link:active,
-  .g-skip-link:focus {
-    color: #000000;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-skip-link {
-    font-size: 1rem;
-    line-height: 1.25;
-  }
-}
-@media print {
-  .g-skip-link {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
 }
 .g-skipLink-hint > * {
   margin-top: 0px;

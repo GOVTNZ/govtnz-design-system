@@ -27,7 +27,7 @@ const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
     {children !== undefined ? (
       children
     ) : (
-      <React.Fragment>Example text</React.Fragment>
+      <React.Fragment> Example text </React.Fragment>
     )}
   </button>
 );

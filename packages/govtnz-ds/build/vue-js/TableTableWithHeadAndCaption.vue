@@ -25,15 +25,17 @@
         March $165 $125
       </tr>
     </tbody>
-  </table> </template
-><script>
+  </table>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: {},
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-tableTableWithHeadAndCaption-heading-m {
   color: #0b0c0c;
   font-family: Arial, sans-serif;

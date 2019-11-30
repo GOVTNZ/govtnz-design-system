@@ -1,6 +1,5 @@
 .g-details {
-  font-family: $g-theme-font-family;
-  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -33,8 +32,7 @@
 
 @media print {
   .g-details {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: #000000;
   }
 }
 
@@ -49,8 +47,7 @@
   position: relative;
   margin-bottom: 5px;
   padding-left: 25px;
-  color: $g-theme-color-darkblue;
-  color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
+  color: #005ea5;
   cursor: pointer;
 }
 
@@ -59,17 +56,14 @@
 }
 
 .g-details__summary:hover {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: #2b8cc4;
 }
 
 .g-details__summary:focus {
-  outline: 4px solid $g-theme-color-brand-1;
-  outline: 4px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 4px solid #ffbf47;
   outline-offset: -1px;
   color: #0b0c0c;
-  background: $g-theme-color-brand-1;
-  background: var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  background: #ffbf47;
 }
 
 .g-details__summary::-webkit-details-marker {
@@ -109,8 +103,7 @@
 .g-details__text {
   padding: 15px;
   padding-left: 20px;
-  border-left: 5px solid $g-theme-color-grey;
-  border-left: 5px solid var(--g-theme-color-grey, $g-theme-color-grey);
+  border-left: 5px solid #bfc1c3;
 }
 
 .g-details-hint > * {

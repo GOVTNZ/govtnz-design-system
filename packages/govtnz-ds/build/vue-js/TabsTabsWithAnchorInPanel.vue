@@ -60,7 +60,7 @@
       </p>
 
       <a
-        class="g-tabsTabsWithAnchorInPanel-link"
+        class="g-link"
         v-bind:href="href3"
         v-bind:rel="rel3"
         v-bind:target="computed__target3"
@@ -89,8 +89,9 @@
         Tab 2
       </h2>
     </section>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -166,35 +167,36 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
-.g-tabsTabsWithAnchorInPanel-link {
+});
+</script>
+<style scoped>
+.g-link {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 @media print {
-  .g-tabsTabsWithAnchorInPanel-link {
+  .g-link {
     font-family: sans-serif;
   }
 }
-.g-tabsTabsWithAnchorInPanel-link:focus {
+.g-link:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-tabsTabsWithAnchorInPanel-link:link {
+.g-link:link {
   color: #005ea5;
 }
-.g-tabsTabsWithAnchorInPanel-link:visited {
+.g-link:visited {
   color: #4c2c92;
 }
-.g-tabsTabsWithAnchorInPanel-link:hover {
+.g-link:hover {
   color: #2b8cc4;
 }
-.g-tabsTabsWithAnchorInPanel-link:active {
+.g-link:active {
   color: #2b8cc4;
 }
-.g-tabsTabsWithAnchorInPanel-link:focus {
+.g-link:focus {
   color: #0b0c0c;
 }
 .g-tabsTabsWithAnchorInPanel-list > li {

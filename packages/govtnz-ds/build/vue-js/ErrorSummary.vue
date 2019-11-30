@@ -37,8 +37,9 @@
         </li>
       </ul>
     </div>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -80,8 +81,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-errorSummary-list {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -145,120 +147,29 @@ export default Vue.extend({
   margin-top: 0;
   margin-bottom: 20px;
 }
-.g-error-summary {
-  color: #0b0c0c;
-  padding: 15px;
-  margin-bottom: 30px;
-  border: 4px solid #b10e1e;
-}
-@media print {
-  .g-error-summary {
-    color: #000000;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary {
-    padding: 20px;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary {
-    margin-bottom: 50px;
-  }
-}
-.g-error-summary:focus {
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary {
-    border: 5px solid #b10e1e;
-  }
-}
-.g-error-summary__title {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 1.125rem;
-  line-height: 1.11111;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-@media print {
-  .g-error-summary__title {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary__title {
-    font-size: 1.5rem;
-    line-height: 1.25;
-  }
-}
-@media print {
-  .g-error-summary__title {
-    font-size: 18pt;
-    line-height: 1.15;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary__title {
-    margin-bottom: 20px;
-  }
-}
-.g-error-summary__body {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-}
-@media print {
-  .g-error-summary__body {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-error-summary__body {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-error-summary__body {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-.g-error-summary__body p {
+.g-errorSummary-error-summary__body p {
   margin-top: 0;
   margin-bottom: 15px;
 }
 @media (min-width: 40.0625em) {
-  .g-error-summary__body p {
+  .g-errorSummary-error-summary__body p {
     margin-bottom: 20px;
   }
 }
-.g-error-summary__list {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.g-error-summary__list a {
+.g-errorSummary-error-summary__list a {
   font-weight: 700;
 }
-.g-error-summary__list a:focus {
+.g-errorSummary-error-summary__list a:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-error-summary__list a:link,
-.g-error-summary__list a:visited,
-.g-error-summary__list a:hover,
-.g-error-summary__list a:active {
+.g-errorSummary-error-summary__list a:link,
+.g-errorSummary-error-summary__list a:visited,
+.g-errorSummary-error-summary__list a:hover,
+.g-errorSummary-error-summary__list a:active {
   color: #b10e1e;
 }
-.g-error-summary__list a:focus {
+.g-errorSummary-error-summary__list a:focus {
   color: #0b0c0c;
 }
 .g-errorSummary-header__navigation-item a {

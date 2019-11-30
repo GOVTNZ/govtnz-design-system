@@ -5,7 +5,7 @@ type Props = {
 };
 
 const FormDivider = ({ children }: Props) => (
-  <div className="g-radios-form-divider">
+  <div className="g-form-divider">
     {children !== undefined ? (
       children
     ) : (
