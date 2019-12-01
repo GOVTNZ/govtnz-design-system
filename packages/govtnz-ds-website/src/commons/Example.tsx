@@ -23,8 +23,8 @@ type Props = {
 type State = {
   formatId: string;
   id: string;
-  summaryId: string,
-  templateChooserId: string,
+  summaryId: string;
+  templateChooserId: string;
   code: string;
   hasClickedExpand: boolean;
   supportsJavaScript: boolean;
@@ -50,8 +50,8 @@ export default class Example extends Component<Props, State> {
     const formatId = DEFAULT_FORMAT_ID;
     const rawCode = props.code[formatId];
     const randomId = Math.random()
-    .toString(36)
-    .replace(/[^0-9a-fA-F]/gi, '');
+      .toString(36)
+      .replace(/[^0-9a-fA-F]/gi, '');
 
     this.state = {
       id: `select_${randomId}`,
@@ -192,7 +192,7 @@ export default class Example extends Component<Props, State> {
         {supportsJavaScript && (
           <React.Fragment>
             <div className="example__format">
-              <h6 id={templateChooserId} style={{ margin: '0 0 24px' }}>
+              <div id={templateChooserId} style={{ margin: '0 0 24px' }}>
                 <label className="example__label" htmlFor={id}>
                   Template format:{' '}
                 </label>
@@ -208,7 +208,7 @@ export default class Example extends Component<Props, State> {
                     onChange={this.changeFormatId}
                   />
                 </span>
-              </h6>
+              </div>
 
               {supportsJavaScript && supportsClipboard ? (
                 <div className="clipboard">
@@ -322,14 +322,12 @@ export default class Example extends Component<Props, State> {
             </div>
             <Details className="example__details" onChange={this.clickFormat}>
               <Summary id={summaryId} className="example__summary">
-                <h5 className="example__summary-button">
-                  Code
-                  <Icon
-                    className="example__summary-icon-down icon icon--theme-highlight"
-                    role="presentation"
-                    id={iconDown.id}
-                  />
-                </h5>
+                <span className="example__summary-text">Code</span>
+                <Icon
+                  className="example__summary-icon-down icon icon--theme-highlight"
+                  role="presentation"
+                  id={iconDown.id}
+                />
               </Summary>
               {codePreview}
             </Details>
