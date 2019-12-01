@@ -1,4 +1,4 @@
-.g-h5-heading-xl {
+.g-heading-xl {
   color: #2a2a2a;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -14,39 +14,39 @@
 }
 
 @media print {
-  .g-h5-heading-xl {
+  .g-heading-xl {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-xl {
+  .g-heading-xl {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xl {
+  .g-heading-xl {
     font-size: 3.5rem;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .g-h5-heading-xl {
+  .g-heading-xl {
     font-size: 32pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xl {
+  .g-heading-xl {
     margin-bottom: 1rem;
   }
 }
 
-.g-h5-heading-l {
+.g-heading-l {
   color: #2a2a2a;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -62,39 +62,39 @@
 }
 
 @media print {
-  .g-h5-heading-l {
+  .g-heading-l {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-l {
+  .g-heading-l {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-l {
+  .g-heading-l {
     font-size: 2.5rem;
     line-height: 1.25;
   }
 }
 
 @media print {
-  .g-h5-heading-l {
+  .g-heading-l {
     font-size: 24pt;
     line-height: 1.05;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-l {
+  .g-heading-l {
     margin-bottom: 30px;
   }
 }
 
-.g-h5-heading-m {
+.g-heading-m {
   color: #0b0c0c;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -110,39 +110,39 @@
 }
 
 @media print {
-  .g-h5-heading-m {
+  .g-heading-m {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-m {
+  .g-heading-m {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-m {
+  .g-heading-m {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
 
 @media print {
-  .g-h5-heading-m {
+  .g-heading-m {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-m {
+  .g-heading-m {
     margin-bottom: 0.5rem;
   }
 }
 
-.g-h5-heading-s {
+.g-heading-s {
   color: #2a2a2a;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -158,91 +158,91 @@
 }
 
 @media print {
-  .g-h5-heading-s {
+  .g-heading-s {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-s {
+  .g-heading-s {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-s {
+  .g-heading-s {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-h5-heading-s {
+  .g-heading-s {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-s {
+  .g-heading-s {
     margin-bottom: 0.5rem;
   }
 }
 
-.g-h5-body-l + .g-h5-heading-l,
-.g-h5-body-lead + .g-h5-heading-l {
+.g-body-l + .g-heading-l,
+.g-body-lead + .g-heading-l {
   padding-top: 5px;
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-body-l + .g-h5-heading-l,
-  .g-h5-body-lead + .g-h5-heading-l {
+  .g-body-l + .g-heading-l,
+  .g-body-lead + .g-heading-l {
     padding-top: 10px;
   }
 }
 
-.g-h5-body-m + .g-h5-heading-l,
-.g-h5-body + .g-h5-heading-l,
-.g-h5-body-s + .g-h5-heading-l,
-.g-h5-list + .g-h5-heading-l {
+.g-body-m + .g-heading-l,
+.g-body + .g-heading-l,
+.g-body-s + .g-heading-l,
+.g-list + .g-heading-l {
   padding-top: 15px;
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-body-m + .g-h5-heading-l,
-  .g-h5-body + .g-h5-heading-l,
-  .g-h5-body-s + .g-h5-heading-l,
-  .g-h5-list + .g-h5-heading-l {
+  .g-body-m + .g-heading-l,
+  .g-body + .g-heading-l,
+  .g-body-s + .g-heading-l,
+  .g-list + .g-heading-l {
     padding-top: 20px;
   }
 }
 
-.g-h5-body-m + .g-h5-heading-m,
-.g-h5-body + .g-h5-heading-m,
-.g-h5-body-s + .g-h5-heading-m,
-.g-h5-list + .g-h5-heading-m,
-.g-h5-body-m + .g-h5-heading-s,
-.g-h5-body + .g-h5-heading-s,
-.g-h5-body-s + .g-h5-heading-s,
-.g-h5-list + .g-h5-heading-s {
+.g-body-m + .g-heading-m,
+.g-body + .g-heading-m,
+.g-body-s + .g-heading-m,
+.g-list + .g-heading-m,
+.g-body-m + .g-heading-s,
+.g-body + .g-heading-s,
+.g-body-s + .g-heading-s,
+.g-list + .g-heading-s {
   padding-top: 5px;
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-body-m + .g-h5-heading-m,
-  .g-h5-body + .g-h5-heading-m,
-  .g-h5-body-s + .g-h5-heading-m,
-  .g-h5-list + .g-h5-heading-m,
-  .g-h5-body-m + .g-h5-heading-s,
-  .g-h5-body + .g-h5-heading-s,
-  .g-h5-body-s + .g-h5-heading-s,
-  .g-h5-list + .g-h5-heading-s {
+  .g-body-m + .g-heading-m,
+  .g-body + .g-heading-m,
+  .g-body-s + .g-heading-m,
+  .g-list + .g-heading-m,
+  .g-body-m + .g-heading-s,
+  .g-body + .g-heading-s,
+  .g-body-s + .g-heading-s,
+  .g-list + .g-heading-s {
     padding-top: 10px;
   }
 }
 
-.g-h5-heading-xs {
+.g-heading-xs {
   color: #2a2a2a;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -258,55 +258,55 @@
 }
 
 @media print {
-  .g-h5-heading-xs {
+  .g-heading-xs {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-xs {
+  .g-heading-xs {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xs {
+  .g-heading-xs {
     font-size: 0.9375rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-h5-heading-xs {
+  .g-heading-xs {
     font-size: 13pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xs {
+  .g-heading-xs {
     margin-bottom: 0.5rem;
   }
 }
 
-.g-h5-body-m + .g-h5-heading-xs,
-.g-h5-body + .g-h5-heading-xs,
-.g-h5-body-s + .g-h5-heading-xs,
-.g-h5-list + .g-h5-heading-xs {
+.g-body-m + .g-heading-xs,
+.g-body + .g-heading-xs,
+.g-body-s + .g-heading-xs,
+.g-list + .g-heading-xs {
   padding-top: 5px;
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-body-m + .g-h5-heading-xs,
-  .g-h5-body + .g-h5-heading-xs,
-  .g-h5-body-s + .g-h5-heading-xs,
-  .g-h5-list + .g-h5-heading-xs {
+  .g-body-m + .g-heading-xs,
+  .g-body + .g-heading-xs,
+  .g-body-s + .g-heading-xs,
+  .g-list + .g-heading-xs {
     padding-top: 10px;
   }
 }
 
-.g-h5-heading-xxs {
+.g-heading-xxs {
   color: #2a2a2a;
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -322,62 +322,62 @@
 }
 
 @media print {
-  .g-h5-heading-xxs {
+  .g-heading-xxs {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
 @media print {
-  .g-h5-heading-xxs {
+  .g-heading-xxs {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xxs {
+  .g-heading-xxs {
     font-size: 0.875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-h5-heading-xxs {
+  .g-heading-xxs {
     font-size: 12pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-heading-xxs {
+  .g-heading-xxs {
     margin-bottom: 20px;
   }
 }
 
-.g-h5-body-m + .g-h5-heading-xxs,
-.g-h5-body + .g-h5-heading-xxs,
-.g-h5-body-s + .g-h5-heading-xxs,
-.g-h5-list + .g-h5-heading-xxs {
+.g-body-m + .g-heading-xxs,
+.g-body + .g-heading-xxs,
+.g-body-s + .g-heading-xxs,
+.g-list + .g-heading-xxs {
   padding-top: 5px;
 }
 
 @media (min-width: 40.0625em) {
-  .g-h5-body-m + .g-h5-heading-xxs,
-  .g-h5-body + .g-h5-heading-xxs,
-  .g-h5-body-s + .g-h5-heading-xxs,
-  .g-h5-list + .g-h5-heading-xxs {
+  .g-body-m + .g-heading-xxs,
+  .g-body + .g-heading-xxs,
+  .g-body-s + .g-heading-xxs,
+  .g-list + .g-heading-xxs {
     padding-top: 10px;
   }
 }
 
-.g-h5-heading-mb-8 {
+.g-heading-mb-8 {
   margin-bottom: 8px;
 }
 
-.g-h5-heading-mb-0 {
+.g-heading-mb-0 {
   margin-bottom: 0px;
 }
 
-.g-h5-hint > * {
+.g-hint > * {
   margin-top: 0px;
 }

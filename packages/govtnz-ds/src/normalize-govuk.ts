@@ -41,6 +41,16 @@ export const normalizeGovUkTemplate = async ({
   calculatedDynamicKeys,
   additionalPrefixesToBypassNamespacing
 }) => {
+  if (id.match(/H[1-6]/)) {
+    return {
+      id,
+      html,
+      css,
+      message,
+      cssVariables
+    };
+  }
+
   // FIXME: Replace with a real HTML/CSS parser-based replacement
   const newCssNamespace = cssNamespace || camelCase(id);
   // console.log({ id, cssNamespace, newCssNamespace });

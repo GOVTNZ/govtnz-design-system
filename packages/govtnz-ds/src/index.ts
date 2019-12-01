@@ -214,7 +214,9 @@ const makeReleaseSpecItem = async (
           })
         ).toString();
 
-        const componentData = await normalizeGovUkTemplate({
+        let component: Partial<Component>;
+
+        component = await normalizeGovUkTemplate({
           id: componentId,
           html,
           css,
@@ -230,11 +232,10 @@ const makeReleaseSpecItem = async (
           ]
         });
 
-        const component: Component = {
+        component = {
           version,
-
-          ...componentData
-        };
+          ...component
+        } as Component;
 
         return component;
       })
