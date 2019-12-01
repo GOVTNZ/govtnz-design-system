@@ -1,4 +1,0 @@
-# Details
-
-code:Details
-## Credit

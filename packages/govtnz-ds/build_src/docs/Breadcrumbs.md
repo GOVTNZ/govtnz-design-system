@@ -1,4 +1,0 @@
-# Breadcrumbs
-
-code:Breadcrumbs
-## Credit

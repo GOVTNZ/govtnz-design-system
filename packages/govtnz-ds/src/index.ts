@@ -469,25 +469,14 @@ const saveRelease = async (
   //   'react-js/back-link.js': 'import React from \'react\';\n // etc...',
   // }
 
-  const specPaths = {
-    alpha: path.resolve(__dirname, '..', 'alpha_src'),
-    build: path.resolve(__dirname, '..', 'build_src')
-  };
-
-  const specPath = specPaths[mode];
-
-  if (!specPath)
-    throw Error(
-      `specPath doesn't recognise mode=${mode}. Valid options are ${Object.keys(
-        specPaths
-      )}`
-    );
-
   // Clean up after previous release
-  if (isCompleteRelease) {
-    await rmfr(path.join(specPath, '*'), { glob: true });
-    await mkdirp(specPath);
-  }
+  const buildPath = path.resolve(__dirname, '..', 'build');
+  await rmfr(path.join(buildPath, '*'), { glob: true });
+  await mkdirp(buildPath);
+
+  const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
+  await rmfr(path.join(buildSrcPath, '*'), { glob: true });
+  await mkdirp(buildSrcPath);
 
   let metaTemplateInputsById = allReleaseVersions.reduce(
     (
@@ -505,7 +494,7 @@ const saveRelease = async (
   );
 
   const metaTemplateInputsPath = path.join(
-    specPath,
+    buildSrcPath,
     '.metatemplate-inputs.json'
   );
   if (!isCompleteRelease) {
@@ -528,7 +517,7 @@ const saveRelease = async (
   }
 
   await fs.promises.writeFile(
-    path.join(specPath, '.metatemplate-inputs.json'),
+    path.join(buildSrcPath, '.metatemplate-inputs.json'),
     JSON.stringify(metaTemplateInputsById, null, 2),
     {
       encoding: 'utf-8'
@@ -540,9 +529,12 @@ const saveRelease = async (
   await Promise.all(
     releaseFilePaths.map(async (releaseFilePath: string) => {
       process.stdout.write('.');
-      const filePathDir = path.join(specPath, path.dirname(releaseFilePath));
+      const filePathDir = path.join(
+        buildSrcPath,
+        path.dirname(releaseFilePath)
+      );
       await mkdirp(filePathDir);
-      const filePath = path.join(specPath, releaseFilePath);
+      const filePath = path.join(buildSrcPath, releaseFilePath);
       let options;
       if (typeof files[releaseFilePath] === 'string') {
         // because we might receive Buffers of binary data
@@ -559,7 +551,7 @@ const saveRelease = async (
   );
 
   // Copy static files
-  const staticPath = path.join(specPath, 'static');
+  const staticPath = path.join(buildSrcPath, 'static');
   await mkdirp(staticPath);
   const staticFiles = await glob(path.join(__dirname, 'static/*'));
   await Promise.all(
@@ -572,7 +564,7 @@ const saveRelease = async (
   );
 
   console.log(
-    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s) to ${mode}\n( ${specPath} )`
+    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s) to ${mode}\n( ${buildSrcPath} )`
   );
 };
 

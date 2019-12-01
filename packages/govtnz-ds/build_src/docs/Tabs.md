@@ -1,4 +1,0 @@
-# Tabs
-
-code:Tabs
-## Credit

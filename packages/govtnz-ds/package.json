@@ -6,7 +6,8 @@
   "homepage": "https://github.com/GOVTNZ/govtnz-design-system/",
   "scripts": {
     "build:release:debugger": "babel-node --inspect --expose-gc --max_old_space_size=8192 --extensions '.ts' ./src/index.ts",
-    "build:release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
+    "build:release": "yarn build:source-release && yarn build:compile",
+    "build:source-release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
     "build:compile": "rimraf ./build && yarn babel build_src --out-dir build --copy-files && yarn tsc",
     "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
