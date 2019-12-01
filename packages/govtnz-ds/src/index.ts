@@ -228,7 +228,8 @@ const makeReleaseSpecItem = async (
             'radios',
             'checkboxes',
             'link',
-            'a'
+            'a',
+            'caption'
           ]
         });
 
