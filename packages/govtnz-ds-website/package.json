@@ -72,6 +72,7 @@
     "rimraf": "rimraf ./public/ && rimraf ./.cache"
   },
   "devDependencies": {
+    "@springload/metatemplate": "^0.1.2",
     "prettier": "^1.15.2"
   },
   "repository": {
