@@ -42,14 +42,14 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
               <>
                 <CaptionL>Components</CaptionL>
                 <H1 styleSize="xlarge" id="main-heading">
-                  {title} {id} 1
+                  {title}
                 </H1>
               </>
             ) : id !== 'index' ? (
               <>
                 <CaptionL>Components</CaptionL>
                 <H1 styleSize="xlarge" id="main-heading">
-                  {title} {id} 2
+                  {title}
                 </H1>
               </>
             ) : null}
