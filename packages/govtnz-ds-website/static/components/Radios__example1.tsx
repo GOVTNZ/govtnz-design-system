@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -14,12 +14,12 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Error state #1 (Radio buttons)" {...onChangeGenerator({})}>
-        <FieldsetBlockWithError legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name." {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name." {...onChangeGenerator({})}>
             <Radios inline {...onChangeGenerator({})}>
                 <RadioBlock label="Yes" radioId="anyRadioId9234" value="true" name="nameChange5" labelId="labelId9" hintId="hintId5" {...onChangeGenerator({"value":"true"})}></RadioBlock>
                 <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" hintId="hintId5" labelId="labelId10" {...onChangeGenerator({"value":"false"})}></RadioBlock>
             </Radios>
-        </FieldsetBlockWithError>
+        </FieldsetBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

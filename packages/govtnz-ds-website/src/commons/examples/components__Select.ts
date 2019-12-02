@@ -14,6 +14,7 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: SelectBlock.css\nOR in Sass (SCSS): SelectBlock.scss\n-->\n<div>\n  <label class=\"g-selectBlock-label\" for=\"select1\"> Order by </label>\n  <select class=\"g-selectBlock-select\" id=\"select1\">\n    <option value=\"published\"> Recently published </option>\n    <option value=\"updated\"> Recently updated </option>\n    <option value=\"views\"> Most views </option>\n    <option value=\"comments\"> Most comments </option>\n  </select>\n</div>\n",
     "css": "",
-    "twig-embed": "{% embed \"SelectBlock.html.twig\"  with {'selectId':'select1', 'label':'Order by'} only %}{% block children %}<option value=\"published\">Recently published</option>\n<option value=\"updated\">Recently updated</option>\n<option value=\"views\">Most views</option>\n<option value=\"comments\">Most comments</option>{% endblock %}{% endembed %}"
+    "twig-embed": "{% embed \"SelectBlock.html.twig\"  with {'selectId':'select1', 'label':'Order by'} only %}{% block children %}<option value=\"published\">Recently published</option>\n<option value=\"updated\">Recently updated</option>\n<option value=\"views\">Most views</option>\n<option value=\"comments\">Most comments</option>{% endblock %}{% endembed %}",
+    "angular": ""
   }
 ]

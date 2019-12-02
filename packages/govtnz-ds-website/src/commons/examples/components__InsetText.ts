@@ -14,6 +14,7 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: InsetText.css\nOR in Sass (SCSS): InsetText.scss\n-->\n<div class=\"g-inset-text\">\n  It can take up to 8 weeks to register a lasting power of attorney if there are\n  no mistakes in the application.\n</div>\n",
     "css": "",
-    "twig-embed": "{% embed \"InsetText.html.twig\" %}{% endembed %}"
+    "twig-embed": "{% embed \"InsetText.html.twig\" %}{% endembed %}",
+    "angular": ""
   }
 ]

@@ -14,6 +14,7 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: P.css, A.css\nOR in Sass (SCSS): P.scss, A.scss\n-->\n<p class=\"g-p-body-m\">\n  <a class=\"g-link\" href=\"http://example.com/\"> Normal link </a>\n</p>\n",
     "css": "",
-    "twig-embed": "{% embed \"P.html.twig\"  with {'styleSize':'medium'} only %}{% block children %}{% embed \"A.html.twig\"  with {'href':'http://example.com/', 'children':'Normal link'} only %}{% endembed %}{% endblock %}{% endembed %}"
+    "twig-embed": "{% embed \"P.html.twig\"  with {'styleSize':'medium'} only %}{% block children %}{% embed \"A.html.twig\"  with {'href':'http://example.com/', 'children':'Normal link'} only %}{% endembed %}{% endblock %}{% endembed %}",
+    "angular": ""
   }
 ]

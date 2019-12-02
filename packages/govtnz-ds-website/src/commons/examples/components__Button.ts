@@ -14,7 +14,8 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\">Save and continue</button>\n",
     "css": "",
-    "twig-embed": "{% embed \"Button.html.twig\"  with {'children':'Save and continue'} only %}{% endembed %}"
+    "twig-embed": "{% embed \"Button.html.twig\"  with {'children':'Save and continue'} only %}{% endembed %}",
+    "angular": ""
   },
   {
     "mustache": "// Developer note: ensure your \".mustache\" files are imported as plain text. In Webpack you might use https://github.com/webpack-contrib/raw-loader\nimport Mustache from \"mustache\";\nimport Button from \"@govtnz/ds/build/mustache/Button.mustache\";\n\n// The variables Button are all strings that are mustache templates.\n\nexport default `${Mustache.render(Button, {\n  level: `secondary`,\n  children: `Find address`\n})}`;\n",
@@ -28,7 +29,8 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--secondary\">Find address</button>\n",
     "css": "",
-    "twig-embed": "{% embed \"Button.html.twig\"  with {'level':'secondary', 'children':'Find address'} only %}{% endembed %}"
+    "twig-embed": "{% embed \"Button.html.twig\"  with {'level':'secondary', 'children':'Find address'} only %}{% endembed %}",
+    "angular": ""
   },
   {
     "mustache": "// Developer note: ensure your \".mustache\" files are imported as plain text. In Webpack you might use https://github.com/webpack-contrib/raw-loader\nimport Mustache from \"mustache\";\nimport Button from \"@govtnz/ds/build/mustache/Button.mustache\";\n\n// The variables Button are all strings that are mustache templates.\n\nexport default `${Mustache.render(Button, {\n  children: `Save and continue`\n})}${Mustache.render(Button, {\n  level: `secondary`,\n  children: `Save as draft`\n})}`;\n",
@@ -42,7 +44,8 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button\">Save and continue</button>\n<button class=\"g-button g-button--secondary\">Save as draft</button>\n",
     "css": "",
-    "twig-embed": "{% embed \"Button.html.twig\"  with {'children':'Save and continue'} only %}{% endembed %}{% embed \"Button.html.twig\"  with {'level':'secondary', 'children':'Save as draft'} only %}{% endembed %}"
+    "twig-embed": "{% embed \"Button.html.twig\"  with {'children':'Save and continue'} only %}{% endembed %}{% embed \"Button.html.twig\"  with {'level':'secondary', 'children':'Save as draft'} only %}{% endembed %}",
+    "angular": ""
   },
   {
     "mustache": "// Developer note: ensure your \".mustache\" files are imported as plain text. In Webpack you might use https://github.com/webpack-contrib/raw-loader\nimport Mustache from \"mustache\";\nimport Button from \"@govtnz/ds/build/mustache/Button.mustache\";\n\n// The variables Button are all strings that are mustache templates.\n\nexport default `${Mustache.render(Button, {\n  level: `warning`,\n  children: `Delete account`\n})}`;\n",
@@ -56,7 +59,8 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--warning\">Delete account</button>\n",
     "css": "",
-    "twig-embed": "{% embed \"Button.html.twig\"  with {'level':'warning', 'children':'Delete account'} only %}{% endembed %}"
+    "twig-embed": "{% embed \"Button.html.twig\"  with {'level':'warning', 'children':'Delete account'} only %}{% endembed %}",
+    "angular": ""
   },
   {
     "mustache": "// Developer note: ensure your \".mustache\" files are imported as plain text. In Webpack you might use https://github.com/webpack-contrib/raw-loader\nimport Mustache from \"mustache\";\nimport Button from \"@govtnz/ds/build/mustache/Button.mustache\";\n\n// The variables Button are all strings that are mustache templates.\n\nexport default `${Mustache.render(Button, {\n  disabled: true,\n  children: `Save and continue`\n})}`;\n",
@@ -70,6 +74,7 @@ export default [
     "scss": "",
     "html": "<!--\nRemember to add these styles:\nin CSS: Button.css\nOR in Sass (SCSS): Button.scss\n-->\n<button class=\"g-button g-button--disabled\" disabled>Save and continue</button>\n",
     "css": "",
-    "twig-embed": "{% embed \"Button.html.twig\"  with {'disabled':'true', 'children':'Save and continue'} only %}{% endembed %}"
+    "twig-embed": "{% embed \"Button.html.twig\"  with {'disabled':'true', 'children':'Save and continue'} only %}{% endembed %}",
+    "angular": ""
   }
 ]
