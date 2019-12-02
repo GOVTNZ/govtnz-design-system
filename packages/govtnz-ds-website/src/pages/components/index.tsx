@@ -21,17 +21,34 @@ import ExampleSection from '../../commons/ExampleSection';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Components</H1>
-<p>As key building blocks of the all-of-government (AOG) design system, our components are designed and coded to solve specific user problems.</p>
-<p>Choose what you need from our catalogue of modular components. Using them saves you the time and cost of developing and testing complex components yourself. Designed to integrate directly into existing content management systems, these components will add functionality to your website without you having to rebuild it.</p>
-<p>Browse available components via the sidebar menu if you’re on a desktop, or the main menu if you’re using a mobile.</p>
-</React.Fragment>
+const PageContent = props => (
+  <React.Fragment>
+    <H1 styleSize="xlarge" id="main-heading">
+      Components
+    </H1>
+    <p>
+      As key building blocks of the all-of-government (AOG) design system, our
+      components are designed and coded to solve specific user problems.
+    </p>
+    <p>
+      Choose what you need from our catalogue of modular components. Using them
+      saves you the time and cost of developing and testing complex components
+      yourself. Designed to integrate directly into existing content management
+      systems, these components will add functionality to your website without
+      you having to rebuild it.
+    </p>
+    <p>
+      Browse available components via the sidebar menu if you’re on a desktop,
+      or the main menu if you’re using a mobile.
+    </p>
+  </React.Fragment>
+);
 
 export default function Code(props) {
   return (
     <ComponentPage
-      title={"index"}
-      id={"index"}
+      title={'index'}
+      id={'index'}
       pageProps={props}
       PageContent={PageContent}
     />
