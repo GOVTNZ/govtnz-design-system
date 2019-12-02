@@ -12,7 +12,7 @@
     "@babel/preset-react": "^7.0.0",
     "@govtnz/ds": "0.0.9",
     "@sentry/browser": "^5.3.0",
-    "@springload/metatemplate": "0.1.0",
+    "@springload/metatemplate": "0.1.1",
     "acorn": "^6.1.1",
     "acorn-jsx": "^5.0.1",
     "babel-jest": "^24.8.0",

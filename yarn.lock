@@ -1445,10 +1445,10 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
-"@springload/metatemplate@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.1.0.tgz#0b2a669b223742f9f87a78c2c8c8abe9adac23ab"
-  integrity sha512-fpMUNlyNJsrd+dQEoTVoAgUw4vL8sYvufIqs1qQOwoYu9CpG6r/LOq7CrQQMfHLJ+zffWyUE5qcu9KRLk9wypw==
+"@springload/metatemplate@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.1.1.tgz#2280e0c64254c78faac2c8431c0d81195e2b0bf2"
+  integrity sha512-C0OolrLGIhapi668P61rYPg2ZHPfmzgoQc9RyNSp5Lr7O7Ix9C41t6uIOUBIZNBR9pswjFYUCBJBdwCyzlT+aQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.4"
     "@babel/plugin-proposal-object-rest-spread" "^7.4.4"
@@ -1461,10 +1461,11 @@
     jest "^24.8.0"
     jsdom "^14.0.0"
     jsx2json "^1.0.1"
-    lodash "^4.17.11"
+    lodash "^4.17.15"
     postcss-safe-parser "^4.0.1"
     prettier "^1.16.4"
     puppeteer "1.14.0"
+    react "^16.12.0"
     rmfr "^2.0.0"
     split-css-selector "^1.0.0"
     string-replace-async "^1.2.1"
