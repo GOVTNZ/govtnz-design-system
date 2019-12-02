@@ -1,38 +1,27 @@
 <template>
-  <div class="g-textarea-form-group">
-    <label class="g-textarea-label" v-bind:for="moreDetail">
-      Can you provide more detail?
-    </label>
-
-    <span class="g-textarea-hint" v-bind:id="moreDetailHint">
-      Don't include personal or financial information, eg your National
-      Insurance number or credit card details.
-    </span>
-
-    <textarea
-      v-bind:aria-describedby="moreDetailHint"
-      class="g-textarea"
-      v-bind:id="moreDetail"
-      v-bind:name="name"
-      v-bind:rows="rows"
-      v-bind:disabled="disabled"
-      v-bind:readonly="readOnly"
-      v-bind:cols="cols"
-      v-bind:autofocus="autoFocus"
-      v-bind:spellcheck="spellCheck"
-      v-bind:autocomplete="autoComplete"
-      v-bind:maxlength="maxLength"
-      v-bind:value="value"
-    />
-  </div>
+  <textarea
+    v-bind:aria-describedby="describedById"
+    class="g-textarea"
+    v-bind:id="id"
+    v-bind:name="name"
+    v-bind:rows="rows"
+    v-bind:disabled="disabled"
+    v-bind:readonly="readOnly"
+    v-bind:cols="cols"
+    v-bind:autofocus="autoFocus"
+    v-bind:spellcheck="spellCheck"
+    v-bind:autocomplete="autoComplete"
+    v-bind:maxlength="maxLength"
+    v-bind:value="value"
+  />
 </template>
 <script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    moreDetail: { type: String, required: false },
-    moreDetailHint: { type: String, required: false },
+    id: { type: String, required: false },
+    describedById: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -48,85 +37,6 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.g-textarea-form-group {
-  margin-bottom: 20px;
-}
-@media (min-width: 40.0625em) {
-  .g-textarea-form-group {
-    margin-bottom: 30px;
-  }
-}
-.g-textarea-form-group .g-textarea-form-group:last-of-type {
-  margin-bottom: 0;
-}
-.g-textarea-form-group--error .g-textarea-form-group {
-  padding: 0;
-  border: 0;
-}
-.g-textarea-hint {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  margin-bottom: 15px;
-  color: #595959;
-}
-@media print {
-  .g-textarea-hint {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-textarea-hint {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-textarea-hint {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-.g-fieldset__legend + .g-textarea-hint {
-  margin-top: -5px;
-}
-.g-textarea-label {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-}
-@media print {
-  .g-textarea-label {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-textarea-label {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-textarea-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-textarea-label {
-    color: #000000;
-  }
-}
 .g-textarea-character-count .g-textarea {
   margin-bottom: 5px;
 }

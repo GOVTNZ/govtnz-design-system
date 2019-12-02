@@ -1,7 +1,7 @@
 import * as React from "react";
 declare type Props = {
-    moreDetail?: string | undefined;
-    moreDetailHint?: string | undefined;
+    id?: string | undefined;
+    describedById?: string | undefined;
     name: string;
     disabled?: boolean | undefined;
     readOnly?: boolean | undefined;
@@ -14,5 +14,5 @@ declare type Props = {
     value?: string | undefined;
     onChange: any;
 };
-declare const Textarea: ({ moreDetail, moreDetailHint, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange }: Props) => JSX.Element;
+declare const Textarea: ({ id, describedById, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange }: Props) => JSX.Element;
 export default Textarea;

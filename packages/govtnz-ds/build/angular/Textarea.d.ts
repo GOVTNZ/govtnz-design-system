@@ -1,6 +1,6 @@
 export declare class AppComponent {
-    moreDetail: string | undefined;
-    moreDetailHint: string | undefined;
+    id: string | undefined;
+    describedById: string | undefined;
     name: string;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;

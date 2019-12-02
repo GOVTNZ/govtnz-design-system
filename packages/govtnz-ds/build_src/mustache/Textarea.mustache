@@ -1,41 +1,11 @@
-<div
-class="g-textarea-form-group"
->
-  
-  
-<label
-class="g-textarea-label"
-{{#moreDetail}}
-  for="{{moreDetail}}"
-{{/moreDetail}}
->
-  
-    Can you provide more detail?
-  
-</label>
-  
-  
-<span
-class="g-textarea-hint"
-{{#moreDetailHint}}
-  id="{{moreDetailHint}}"
-{{/moreDetailHint}}
->
-  
-    Don't include personal or financial information, eg your National Insurance
-    number or credit card details.
-  
-</span>
-  
-  
 <textarea
-{{#moreDetailHint}}
-  aria-describedby="{{moreDetailHint}}"
-{{/moreDetailHint}}
+{{#describedById}}
+  aria-describedby="{{describedById}}"
+{{/describedById}}
 class="g-textarea"
-{{#moreDetail}}
-  id="{{moreDetail}}"
-{{/moreDetail}}
+{{#id}}
+  id="{{id}}"
+{{/id}}
 {{#name}}
   name="{{name}}"
 {{/name}}
@@ -67,6 +37,3 @@ class="g-textarea"
   value="{{value}}"
 {{/value}}
 />
-  
-
-</div>

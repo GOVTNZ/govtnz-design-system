@@ -71,7 +71,9 @@ const importSourceGenerator = importName => {
 };
 
 const cleanUp = filesToDelete => {
-  console.log(`DS Prebuild: ${filesToDelete.length} file(s) to delete.`);
+  console.log(
+    `\n\n\n\n***********************\n\n\nDS Prebuild: ${filesToDelete.length} file(s) to delete.`
+  );
   return Promise.all(
     filesToDelete.map(async filePath => {
       await fs.promises.unlink(filePath);

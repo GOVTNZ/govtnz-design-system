@@ -13,10 +13,10 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "moreDetail", void 0);
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "moreDetailHint", void 0);
+    ], AppComponent.prototype, "describedById", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "name", void 0);
@@ -50,7 +50,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Textarea",
-            template: "\n<div class=\"g-textarea-form-group\">\n\n  \n<label class=\"g-textarea-label\" for=\"{{moreDetail}}\">\n\n    Can you provide more detail?\n  \n\n</label>\n\n\n  \n<span class=\"g-textarea-hint\" id=\"{{moreDetailHint}}\">\n\n    Don't include personal or financial information, eg your National Insurance\n    number or credit card details.\n  \n\n</span>\n\n\n  \n<textarea aria-describedby=\"{{moreDetailHint}}\" class=\"g-textarea\" id=\"{{moreDetail}}\" name=\"{{name}}\" rows=\"{{rows}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n\n\n\n</div>\n\n\n"
+            template: "\n<textarea aria-describedby=\"{{describedById}}\" class=\"g-textarea\" id=\"{{id}}\" name=\"{{name}}\" rows=\"{{rows}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n\n"
         })
     ], AppComponent);
     return AppComponent;

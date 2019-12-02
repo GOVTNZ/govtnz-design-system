@@ -1,33 +1,7 @@
-<div
-class="g-textarea-form-group"
->
-  
-  
-<label
-class="g-textarea-label"
-for="{{ moreDetail | escape('html_attr') }}"
->
-  
-    Can you provide more detail?
-  
-</label>
-  
-  
-<span
-class="g-textarea-hint"
-id="{{ moreDetailHint | escape('html_attr') }}"
->
-  
-    Don't include personal or financial information, eg your National Insurance
-    number or credit card details.
-  
-</span>
-  
-  
 <textarea
-aria-describedby="{{ moreDetailHint | escape('html_attr') }}"
+aria-describedby="{{ describedById | escape('html_attr') }}"
 class="g-textarea"
-id="{{ moreDetail | escape('html_attr') }}"
+id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 rows=""
 disabled="{% if disabled %}disabled{% endif %}"
@@ -39,6 +13,3 @@ autocomplete="{{ autoComplete | escape('html_attr') }}"
 maxlength=""
 value="{{ value | escape('html_attr') }}"
 />
-  
-
-</div>

@@ -232,10 +232,7 @@ const generatePage = async (
       if (level === '1') {
         return (
           `<H1 styleSize="${levelToStyleSize[level]}" id="main-heading"` +
-          match.substring(
-            match.indexOf('>'),
-            match.length - '</h1>'.length
-          ) +
+          match.substring(match.indexOf('>'), match.length - '</h1>'.length) +
           `</H${level}>`
         );
       }
@@ -286,9 +283,7 @@ const generatePage = async (
         }
         if (fullExamples.length !== 1) {
           throw Error(
-            `Unexpected number of examples within an example container of fullExamples.length = ${
-              fullExamples.length
-            }`
+            `Unexpected number of examples within an example container of fullExamples.length = ${fullExamples.length}`
           );
         }
 

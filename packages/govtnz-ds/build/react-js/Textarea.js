@@ -10,8 +10,8 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var Textarea = function Textarea(_ref) {
-  var moreDetail = _ref.moreDetail,
-      moreDetailHint = _ref.moreDetailHint,
+  var id = _ref.id,
+      describedById = _ref.describedById,
       name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -23,18 +23,10 @@ var Textarea = function Textarea(_ref) {
       maxLength = _ref.maxLength,
       value = _ref.value,
       onChange = _ref.onChange;
-  return _react["default"].createElement("div", {
-    className: "g-textarea-form-group"
-  }, _react["default"].createElement("label", {
-    className: "g-textarea-label",
-    htmlFor: moreDetail
-  }, "Can you provide more detail?"), _react["default"].createElement("span", {
-    className: "g-textarea-hint",
-    id: moreDetailHint
-  }, "Don't include personal or financial information, eg your National Insurance number or credit card details."), _react["default"].createElement("textarea", {
-    "aria-describedby": moreDetailHint,
+  return _react["default"].createElement("textarea", {
+    "aria-describedby": describedById,
     className: "g-textarea",
-    id: moreDetail,
+    id: id,
     name: name,
     rows: rows,
     disabled: disabled,
@@ -46,7 +38,7 @@ var Textarea = function Textarea(_ref) {
     maxLength: maxLength,
     value: value,
     onChange: onChange
-  }));
+  });
 };
 
 var _default = Textarea;

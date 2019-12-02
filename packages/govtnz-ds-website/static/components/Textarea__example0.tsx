@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import Textarea from '@govtnz/ds/build/react-ts/Textarea';import TextareaWithCustomRows from '@govtnz/ds/build/react-ts/TextareaWithCustomRows';import TextareaWithErrorMessage from '@govtnz/ds/build/react-ts/TextareaWithErrorMessage';
+import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -14,9 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Textarea" {...onChangeGenerator({})}>
-        <Textarea {...onChangeGenerator({})}></Textarea>
-        <TextareaWithCustomRows {...onChangeGenerator({})}></TextareaWithCustomRows>
-        <TextareaWithErrorMessage {...onChangeGenerator({})}></TextareaWithErrorMessage>
+        <TextareaBlock id="id" hint="Don't include personal or financial information, eg your Insurance number or credit card details." hintId="myHint" {...onChangeGenerator({})}></TextareaBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

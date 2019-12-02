@@ -1,0 +1,82 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - label,
+     - hint.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<div
+class="g-textareaBlock-form-group"
+>
+  
+  
+<label
+class="g-textareaBlock-label"
+{{#id}}
+  for="{{id}}"
+{{/id}}
+>
+  
+    
+  {{{label}}}
+  
+  
+</label>
+  
+  
+<span
+class="g-textareaBlock-hint"
+{{#hintId}}
+  id="{{hintId}}"
+{{/hintId}}
+>
+  
+    
+  {{{hint}}}
+  
+  
+</span>
+  
+  
+<textarea
+{{#hintId}}
+  aria-describedby="{{hintId}}"
+{{/hintId}}
+class="g-textareaBlock-textarea"
+{{#id}}
+  id="{{id}}"
+{{/id}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#rows}}
+  rows=""
+{{/rows}}
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#cols}}
+  cols=""
+{{/cols}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#spellCheck}}
+  spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
+{{/spellCheck}}
+{{#autoComplete}}
+  autocomplete="{{autoComplete}}"
+{{/autoComplete}}
+{{#maxLength}}
+  maxlength=""
+{{/maxLength}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+/>
+  
+
+</div>

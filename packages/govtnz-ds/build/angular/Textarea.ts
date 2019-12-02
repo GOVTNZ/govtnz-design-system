@@ -2,40 +2,13 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "g-Textarea",
   template: `
-<div class="g-textarea-form-group">
-
-  
-<label class="g-textarea-label" for="{{moreDetail}}">
-
-    Can you provide more detail?
-  
-
-</label>
-
-
-  
-<span class="g-textarea-hint" id="{{moreDetailHint}}">
-
-    Don't include personal or financial information, eg your National Insurance
-    number or credit card details.
-  
-
-</span>
-
-
-  
-<textarea aria-describedby="{{moreDetailHint}}" class="g-textarea" id="{{moreDetail}}" name="{{name}}" rows="{{rows}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
-
-
-
-</div>
-
+<textarea aria-describedby="{{describedById}}" class="g-textarea" id="{{id}}" name="{{name}}" rows="{{rows}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
 
 `
 })
 export class AppComponent {
-  @Input() moreDetail: string | undefined;
-  @Input() moreDetailHint: string | undefined;
+  @Input() id: string | undefined;
+  @Input() describedById: string | undefined;
   @Input() name: string;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
