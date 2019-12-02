@@ -1445,7 +1445,7 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
-"@springload/metatemplate@^0.1.2":
+"@springload/metatemplate@0.1.2", "@springload/metatemplate@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.1.2.tgz#11a16994b76459f8288bffad1b353b2c69968bfe"
   integrity sha512-V1Zjl0DDkY1RITDvfw99F3ffUfa3B8qVsX7lSDwDYZIX/wQRmnFn5bVLMbq58aYGMnyfQTxSuan8HHde1Y1SSw==
