@@ -98,15 +98,11 @@ const StyledButton = styled.button`
   margin-top: 0px;
 `;
 
-const constants = {
-  type: { Submit: "submit", Reset: "reset", Button: "button" }
-};
-
 const Button = ({ disabled, level, name, type, onClick, children }) => (
   <StyledButton
     disabled={disabled}
     level={level}
-    type={constants.type[type]}
+    type={type}
     name={name}
     onClick={onClick}
   >

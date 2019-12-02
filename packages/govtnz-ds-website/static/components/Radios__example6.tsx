@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import Radios from '@govtnz/ds/build/react-ts/Radios.tsx';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock.tsx';
+import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

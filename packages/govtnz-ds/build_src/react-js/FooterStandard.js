@@ -1,14 +1,5 @@
 import React from "react";
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target3: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target4: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target5: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  crossOrigin: { Anonymous: "anonymous", "Use Credentials": "use-credentials" }
-};
-
 const FooterStandard = ({
   href,
   rel,
@@ -46,7 +37,7 @@ const FooterStandard = ({
                   className="g-footer__standard-link"
                   href={href}
                   rel={rel}
-                  target={constants.target[target]}
+                  target={target}
                 >
                   {label1 !== undefined ? (
                     label1
@@ -60,7 +51,7 @@ const FooterStandard = ({
                   className="g-footer__standard-link"
                   href={href2}
                   rel={rel2}
-                  target={constants.target2[target2]}
+                  target={target2}
                 >
                   {label2 !== undefined ? (
                     label2
@@ -74,7 +65,7 @@ const FooterStandard = ({
                   className="g-footer__standard-link"
                   href={href3}
                   rel={rel3}
-                  target={constants.target3[target3]}
+                  target={target3}
                 >
                   {label3 !== undefined ? (
                     label3
@@ -93,7 +84,7 @@ const FooterStandard = ({
             className="g-footer__standard-link--plain"
             href={href4}
             rel={rel4}
-            target={constants.target4[target4]}
+            target={target4}
           >
             <span className="g-footer-visually-hidden">
               New Zealand Government
@@ -119,7 +110,7 @@ const FooterStandard = ({
                 className="g-footer__standard-link--plain"
                 href={href5}
                 rel={rel5}
-                target={constants.target5[target5]}
+                target={target5}
               >
                 <span className="g-footer-visually-hidden">
                   Creative Commons 4.0 International Licence
@@ -168,7 +159,7 @@ const FooterStandard = ({
               width={width}
               height={height}
               srcSet={srcSet}
-              crossOrigin={constants.crossOrigin[crossOrigin]}
+              crossOrigin={crossOrigin}
             />
             <p className="g-footer__standard-small-text">
               © Crown Copyright{" "}

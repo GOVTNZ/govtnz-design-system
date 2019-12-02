@@ -3,7 +3,7 @@
     class="g-skip-link"
     v-bind:href="href"
     v-bind:rel="rel"
-    v-bind:target="computed__target"
+    v-bind:target="target"
   >
     Skip to main content
   </a>
@@ -11,29 +11,13 @@
 <script>
 import Vue from "vue";
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 export default Vue.extend({
   props: {
     href: { type: String, required: true },
     rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    }
+    target: { type: String, required: false }
   },
-  computed: {
-    computed__target() {
-      return constants.target[this.target] !== undefined
-        ? constants.target[this.target]
-        : "";
-    }
-  }
+  computed: {}
 });
 </script>
 <style scoped>

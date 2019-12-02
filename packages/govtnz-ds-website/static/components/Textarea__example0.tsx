@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import Textarea from '@govtnz/ds/build/react-ts/Textarea.tsx';import TextareaWithCustomRows from '@govtnz/ds/build/react-ts/TextareaWithCustomRows.tsx';import TextareaWithErrorMessage from '@govtnz/ds/build/react-ts/TextareaWithErrorMessage.tsx';
+import Textarea from '@govtnz/ds/build/react-ts/Textarea';import TextareaWithCustomRows from '@govtnz/ds/build/react-ts/TextareaWithCustomRows';import TextareaWithErrorMessage from '@govtnz/ds/build/react-ts/TextareaWithErrorMessage';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

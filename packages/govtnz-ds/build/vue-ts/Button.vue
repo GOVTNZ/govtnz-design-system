@@ -2,7 +2,7 @@
   <button
     v-bind:class="computed__class"
     v-bind:disabled="computed__disabled"
-    v-bind:type="computed__type"
+    v-bind:type="type"
     v-bind:name="name"
   >
     <slot></slot>
@@ -12,8 +12,7 @@
 import Vue from "vue";
 
 const constants = {
-  level: { secondary: "g-button--secondary", warning: "g-button--warning" },
-  type: { Submit: "submit", Reset: "reset", Button: "button" }
+  level: { secondary: "g-button--secondary", warning: "g-button--warning" }
 };
 
 export default Vue.extend({
@@ -27,13 +26,7 @@ export default Vue.extend({
       required: true
     },
     name: { type: String, required: false },
-    type: {
-      type: String,
-      validator: value => {
-        return ["Submit", "Reset", "Button"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    type: { type: String, required: false },
     children: { required: false, default: " Example text " }
   },
   computed: {
@@ -48,11 +41,6 @@ export default Vue.extend({
     },
     computed__disabled() {
       return this.disabled ? "true" : "";
-    },
-    computed__type() {
-      return constants.type[this.type] !== undefined
-        ? constants.type[this.type]
-        : "";
     }
   }
 });

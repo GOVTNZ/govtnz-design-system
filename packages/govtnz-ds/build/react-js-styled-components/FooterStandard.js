@@ -241,43 +241,6 @@ var StyledImg = _styledComponents["default"].img(_templateObject18());
 
 var StyledP2 = _styledComponents["default"].p(_templateObject19());
 
-var constants = {
-  target: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target2: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target3: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target4: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target5: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  crossOrigin: {
-    Anonymous: "anonymous",
-    "Use Credentials": "use-credentials"
-  }
-};
-
 var FooterStandard = function FooterStandard(_ref) {
   var href = _ref.href,
       rel = _ref.rel,
@@ -306,19 +269,19 @@ var FooterStandard = function FooterStandard(_ref) {
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement("div", null, _react["default"].createElement("div", null, _react["default"].createElement("div", null, _react["default"].createElement(StyledDiv2, null, _react["default"].createElement(StyledUl, null, _react["default"].createElement(StyledLi, null, _react["default"].createElement(StyledA, {
     href: href,
     rel: rel,
-    target: constants.target[target]
+    target: target
   }, label1 !== undefined ? label1 : _react["default"].createElement(_react["default"].Fragment, null, "Contact"))), _react["default"].createElement(StyledLi2, null, _react["default"].createElement(StyledA2, {
     href: href2,
     rel: rel2,
-    target: constants.target2[target2]
+    target: target2
   }, label2 !== undefined ? label2 : _react["default"].createElement(_react["default"].Fragment, null, "Privacy"))), _react["default"].createElement(StyledLi3, null, _react["default"].createElement(StyledA3, {
     href: href3,
     rel: rel3,
-    target: constants.target3[target3]
+    target: target3
   }, label3 !== undefined ? label3 : _react["default"].createElement(_react["default"].Fragment, null, "Copyright"))))))), _react["default"].createElement("div", null, _react["default"].createElement("div", null, _react["default"].createElement(StyledA4, {
     href: href4,
     rel: rel4,
-    target: constants.target4[target4]
+    target: target4
   }, _react["default"].createElement(StyledSpan, null, "New Zealand Government"), _react["default"].createElement(StyledSvg, {
     focusable: "false",
     height: "24",
@@ -331,7 +294,7 @@ var FooterStandard = function FooterStandard(_ref) {
   }))), _react["default"].createElement(StyledDiv3, null, _react["default"].createElement("p", null, _react["default"].createElement(StyledA5, {
     href: href5,
     rel: rel5,
-    target: constants.target5[target5]
+    target: target5
   }, _react["default"].createElement(StyledSpan2, null, "Creative Commons 4.0 International Licence"), _react["default"].createElement("svg", {
     focusable: "false",
     height: "32",
@@ -356,7 +319,7 @@ var FooterStandard = function FooterStandard(_ref) {
     width: width,
     height: height,
     srcSet: srcSet,
-    crossOrigin: constants.crossOrigin[crossOrigin]
+    crossOrigin: crossOrigin
   }), _react["default"].createElement(StyledP2, null, "\xA9 Crown Copyright", " ", _react["default"].createElement("span", null, copyrightYear !== undefined ? copyrightYear : _react["default"].createElement(_react["default"].Fragment, null, "2019"))))))));
 };
 

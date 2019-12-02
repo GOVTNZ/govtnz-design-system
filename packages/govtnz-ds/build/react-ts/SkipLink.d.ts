@@ -1,8 +1,8 @@
-/// <reference types="react" />
+import * as React from "react";
 declare type Props = {
     href: string;
     rel?: string | undefined;
-    target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
 };
 declare const SkipLink: ({ href, rel, target }: Props) => JSX.Element;
 export default SkipLink;

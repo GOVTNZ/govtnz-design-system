@@ -17,6 +17,7 @@ exports.Checkbox = function () { return Promise.resolve().then(function () { ret
 exports.CheckboxBlock = function () { return Promise.resolve().then(function () { return __importStar(require("./CheckboxBlock")); }); };
 exports.DateInput = function () { return Promise.resolve().then(function () { return __importStar(require("./DateInput")); }); };
 exports.Fieldset = function () { return Promise.resolve().then(function () { return __importStar(require("./Fieldset")); }); };
+exports.FieldsetBlock = function () { return Promise.resolve().then(function () { return __importStar(require("./FieldsetBlock")); }); };
 exports.FileUpload = function () { return Promise.resolve().then(function () { return __importStar(require("./FileUpload")); }); };
 exports.H1 = function () { return Promise.resolve().then(function () { return __importStar(require("./H1")); }); };
 exports.H2 = function () { return Promise.resolve().then(function () { return __importStar(require("./H2")); }); };

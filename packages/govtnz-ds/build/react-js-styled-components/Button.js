@@ -25,14 +25,6 @@ function _templateObject() {
 
 var StyledButton = _styledComponents["default"].button(_templateObject());
 
-var constants = {
-  type: {
-    Submit: "submit",
-    Reset: "reset",
-    Button: "button"
-  }
-};
-
 var Button = function Button(_ref) {
   var disabled = _ref.disabled,
       level = _ref.level,
@@ -43,7 +35,7 @@ var Button = function Button(_ref) {
   return _react["default"].createElement(StyledButton, {
     disabled: disabled,
     level: level,
-    type: constants.type[type],
+    type: type,
     name: name,
     onClick: onClick
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " Example text "));

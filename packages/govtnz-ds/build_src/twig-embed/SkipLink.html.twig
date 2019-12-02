@@ -2,7 +2,7 @@
 class="g-skip-link"
 href="{{ href | escape('html_attr') }}"
 rel="{{ rel | escape('html_attr') }}"
-target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"
+target="{{ target | escape('html_attr') }}"
 >
   Skip to main content
 </a>

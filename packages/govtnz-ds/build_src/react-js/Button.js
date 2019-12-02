@@ -1,8 +1,7 @@
 import React from "react";
 
 const constants = {
-  level: { secondary: "g-button--secondary", warning: "g-button--warning" },
-  type: { Submit: "submit", Reset: "reset", Button: "button" }
+  level: { secondary: "g-button--secondary", warning: "g-button--warning" }
 };
 
 const Button = ({ disabled, level, name, type, onClick, children }) => (
@@ -11,7 +10,7 @@ const Button = ({ disabled, level, name, type, onClick, children }) => (
       constants.level[level] !== undefined ? " " + constants.level[level] : ""
     }`}
     disabled={disabled}
-    type={constants.type[type]}
+    type={type}
     name={name}
     onClick={onClick}
   >

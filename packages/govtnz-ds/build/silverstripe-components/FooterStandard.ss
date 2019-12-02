@@ -5,15 +5,15 @@
                 <div class="g-footer__standard-item"> 
                     <ul class="g-footer__standard-inline-list"> 
                         <li class="g-footer__standard-inline-list-item"> 
-                            <a class="g-footer__standard-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="<% if $target == "Blank" %>_blank<% else_if $target == "Top" %>_top<% else_if $target == "Self" %>_self<% else_if $target == "Parent" %>_parent<% end_if %>"<% end_if %>> {$label1}
+                            <a class="g-footer__standard-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="{$target}"<% end_if %>> {$label1}
 </a> 
                         </li> 
                         <li class="g-footer__standard-inline-list-item"> 
-                            <a class="g-footer__standard-link"<% if $href2 %> href="{$href2}"<% end_if %><% if $rel2 %> rel="{$rel2}"<% end_if %><% if $target2 %> target="<% if $target2 == "Blank" %>_blank<% else_if $target2 == "Top" %>_top<% else_if $target2 == "Self" %>_self<% else_if $target2 == "Parent" %>_parent<% end_if %>"<% end_if %>> {$label2}
+                            <a class="g-footer__standard-link"<% if $href2 %> href="{$href2}"<% end_if %><% if $rel2 %> rel="{$rel2}"<% end_if %><% if $target2 %> target="{$target2}"<% end_if %>> {$label2}
 </a> 
                         </li> 
                         <li class="g-footer__standard-inline-list-item"> 
-                            <a class="g-footer__standard-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="<% if $target3 == "Blank" %>_blank<% else_if $target3 == "Top" %>_top<% else_if $target3 == "Self" %>_self<% else_if $target3 == "Parent" %>_parent<% end_if %>"<% end_if %>> {$label3}
+                            <a class="g-footer__standard-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="{$target3}"<% end_if %>> {$label3}
 </a> 
                         </li> 
                     </ul> 
@@ -22,7 +22,7 @@
         </div> 
         <div class="g-flex-row"> 
             <div class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9"> 
-                <a class="g-footer__standard-link--plain"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="<% if $target4 == "Blank" %>_blank<% else_if $target4 == "Top" %>_top<% else_if $target4 == "Self" %>_self<% else_if $target4 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+                <a class="g-footer__standard-link--plain"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="{$target4}"<% end_if %>> 
                     <span class="g-footer-visually-hidden"> New Zealand Government</span> 
 
                     
@@ -34,7 +34,7 @@
                 </a> 
                 <div class="g-footer__standard-licence"> 
                     <p> 
-                        <a class="g-footer__standard-link--plain"<% if $href5 %> href="{$href5}"<% end_if %><% if $rel5 %> rel="{$rel5}"<% end_if %><% if $target5 %> target="<% if $target5 == "Blank" %>_blank<% else_if $target5 == "Top" %>_top<% else_if $target5 == "Self" %>_self<% else_if $target5 == "Parent" %>_parent<% end_if %>"<% end_if %>> 
+                        <a class="g-footer__standard-link--plain"<% if $href5 %> href="{$href5}"<% end_if %><% if $rel5 %> rel="{$rel5}"<% end_if %><% if $target5 %> target="{$target5}"<% end_if %>> 
                             <span class="g-footer-visually-hidden"> Creative Commons 4.0 International Licence</span> 
 
                             
@@ -54,7 +54,7 @@
             </div> 
             <div class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-4 g-flex-col-md-2 g-flex-col-lg-3"> 
                 <div class="g-footer__standard-copyright"> 
-                    <img alt="New Zealand Coat of Arms" class="g-footer__image-coat-of-arms"<% if $src %> src="{$src}"<% end_if %><% if $width %> width="{$width}"<% end_if %><% if $height %> height="{$height}"<% end_if %><% if $srcset %> srcset="{$srcset}"<% end_if %><% if $crossorigin %> crossorigin="<% if $crossorigin == "Anonymous" %>anonymous<% else_if $crossorigin == "Use Credentials" %>use-credentials<% end_if %>"<% end_if %>/>                     
+                    <img alt="New Zealand Coat of Arms" class="g-footer__image-coat-of-arms"<% if $src %> src="{$src}"<% end_if %><% if $width %> width="{$width}"<% end_if %><% if $height %> height="{$height}"<% end_if %><% if $srcset %> srcset="{$srcset}"<% end_if %><% if $crossorigin %> crossorigin="{$crossorigin}"<% end_if %>/>                     
                     <p class="g-footer__standard-small-text"> © Crown Copyright <span> {$copyrightYear}
 </span> </p> 
                 </div> 

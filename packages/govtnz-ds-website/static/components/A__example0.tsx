@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import P from '@govtnz/ds/build/react-ts/P.tsx';import A from '@govtnz/ds/build/react-ts/A.tsx';
+import P from '@govtnz/ds/build/react-ts/P';import A from '@govtnz/ds/build/react-ts/A';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

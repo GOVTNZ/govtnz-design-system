@@ -5,7 +5,7 @@ type Props = {
   isMuted?: boolean | undefined;
   href: string;
   rel?: string | undefined;
-  target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
   children?: React.ReactNode;
 };
 
@@ -87,17 +87,8 @@ const StyledA = styled.a`
   margin-top: 0px;
 `;
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 const A = ({ isMuted, href, rel, target, children }: Props) => (
-  <StyledA
-    isMuted={isMuted}
-    href={href}
-    rel={rel}
-    target={constants.target[target]}
-  >
+  <StyledA isMuted={isMuted} href={href} rel={rel} target={target}>
     {children !== undefined ? (
       children
     ) : (

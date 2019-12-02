@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FileUpload from '@govtnz/ds/build/react-ts/FileUpload.tsx';import FileUploadWithErrorMessage from '@govtnz/ds/build/react-ts/FileUploadWithErrorMessage.tsx';
+import FileUpload from '@govtnz/ds/build/react-ts/FileUpload';import FileUploadWithErrorMessage from '@govtnz/ds/build/react-ts/FileUploadWithErrorMessage';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

@@ -6,10 +6,10 @@
   "scripts": {
     "build": "yarn workspace css-sniff build && yarn workspace react-accessible-details build && yarn workspace react-modal-body build && yarn workspace @govtnz/ds-common build && yarn workspace @govtnz/ds-upstream build && yarn workspace compilation-templates build",
     "build:release": "yarn workspace @govtnz/ds build:release && yarn workspace @govtnz/ds build:compile",
-    "build:website": "yarn workspace @govtnz/ds-website build",
+    "build:website": "yarn workspace @govtnz/ds-website compile-markdown && yarn workspace @govtnz/ds-website build",
     "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",
     "build:website:validate-build": "yarn workspace @govtnz/ds-website validate-build",
-    "build:all": "yarn build && yarn build:ds:release && yarn build:ds:compile && yarn build:website:compile-markdown && yarn build:website",
+    "build:all": "yarn build && yarn build:release && yarn build:website && yarn build:website:compile-markdown",
     "develop:website": "yarn workspace @govtnz/ds-website run build && yarn workspace @govtnz/ds-website run serve",
     "test": "yarn workspace @govtnz/ds-common test && yarn workspace @govtnz/ds test && yarn workspace @govtnz/ds-boilerplate-mustache test",
     "test__comment": "Also the website static build itself tests parts of the React-TS integration type",

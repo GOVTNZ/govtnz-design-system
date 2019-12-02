@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import BackLinkWithCustomText from '@govtnz/ds/build/react-ts/BackLinkWithCustomText.tsx';
+import BackLinkWithCustomText from '@govtnz/ds/build/react-ts/BackLinkWithCustomText';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

@@ -13,11 +13,6 @@ var constants = {
   level: {
     secondary: "g-button--secondary",
     warning: "g-button--warning"
-  },
-  type: {
-    Submit: "submit",
-    Reset: "reset",
-    Button: "button"
   }
 };
 
@@ -31,7 +26,7 @@ var Button = function Button(_ref) {
   return _react["default"].createElement("button", {
     className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
     disabled: disabled,
-    type: constants.type[type],
+    type: type,
     name: name,
     onClick: onClick
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " Example text "));

@@ -5,7 +5,7 @@ type Props = {
   disabled?: boolean | undefined;
   level: "secondary" | "warning";
   name?: string | undefined;
-  type?: "Submit" | "Reset" | "Button" | undefined;
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"] | undefined;
   onClick: any;
   children?: React.ReactNode;
 };
@@ -107,15 +107,11 @@ const StyledButton = styled.button`
   margin-top: 0px;
 `;
 
-const constants = {
-  type: { Submit: "submit", Reset: "reset", Button: "button" }
-};
-
 const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
   <StyledButton
     disabled={disabled}
     level={level}
-    type={constants.type[type] as any}
+    type={type}
     name={name}
     onClick={onClick}
   >

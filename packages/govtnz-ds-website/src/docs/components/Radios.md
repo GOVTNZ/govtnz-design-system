@@ -19,13 +19,13 @@ Interact with each example to see how it works.
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
     <Example title="Example: Error state #1 (Radio buttons)">
-        <FieldsetBlockWithError legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9234" 
                 value="true" name="nameChange5" labelId="labelId9" hintId="hintId5" />
                 <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" hintId="hintId5" labelId="labelId10" />
             </Radios>
-        </FieldsetBlockWithError>
+        </FieldsetBlock>
     </Example>
 </ExampleContainer>
 
@@ -125,13 +125,13 @@ Make sure error messages follow the guidance below, and that you have specific e
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
     <Example title="Example: Error state #2 (Radio buttons)">
-        <FieldsetBlockWithError legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name.">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name.">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9" 
                 value="true" name="nameChange5" labelId="labelId9" />
                 <RadioBlock label="No" radioId="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" />
             </Radios>
-        </FieldsetBlockWithError>
+        </FieldsetBlock>
     </Example>
 </ExampleContainer>
 

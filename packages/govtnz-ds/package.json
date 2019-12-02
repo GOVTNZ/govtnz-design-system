@@ -15,6 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@angular/core": "^8.2.14",
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
     "@babel/node": "^7.4.5",
@@ -28,6 +29,7 @@
     "@govtnz/ds-upstream": "0.0.1",
     "@springload/metatemplate": "0.1.0",
     "@types/node": "^10.12.19",
+    "@vue/cli-service": "^3.8.4",
     "argparse": "^1.0.10",
     "compilation-templates": "0.0.1",
     "css-sniff": "2.0.0",
@@ -38,6 +40,7 @@
     "glob-promise": "^3.4.0",
     "jest": "^24.8.0",
     "jsdom": "^14.0.0",
+    "lodash": "^4.17.11",
     "mkdirp-promise": "^5.0.1",
     "normalize-selector": "^0.2.0",
     "postcss": "^7.0.14",
@@ -48,9 +51,6 @@
     "rmfr": "^2.0.0",
     "styled-components": "^4.2.0",
     "svg-to-dataurl": "^1.0.0",
-    "typescript": "^3.2.4",
-    "@vue/cli-service": "^3.8.4",
-    "lodash": "^4.17.11"
-  },
-  "postcss": {}
+    "typescript": "^3.2.4"
+  }
 }

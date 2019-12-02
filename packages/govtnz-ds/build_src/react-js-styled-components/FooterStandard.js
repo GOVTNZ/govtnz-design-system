@@ -161,15 +161,6 @@ const StyledP2 = styled.p`
   color: #ffffff;
 `;
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target3: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target4: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target5: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  crossOrigin: { Anonymous: "anonymous", "Use Credentials": "use-credentials" }
-};
-
 const FooterStandard = ({
   href,
   rel,
@@ -203,11 +194,7 @@ const FooterStandard = ({
           <StyledDiv2>
             <StyledUl>
               <StyledLi>
-                <StyledA
-                  href={href}
-                  rel={rel}
-                  target={constants.target[target]}
-                >
+                <StyledA href={href} rel={rel} target={target}>
                   {label1 !== undefined ? (
                     label1
                   ) : (
@@ -216,11 +203,7 @@ const FooterStandard = ({
                 </StyledA>
               </StyledLi>
               <StyledLi2>
-                <StyledA2
-                  href={href2}
-                  rel={rel2}
-                  target={constants.target2[target2]}
-                >
+                <StyledA2 href={href2} rel={rel2} target={target2}>
                   {label2 !== undefined ? (
                     label2
                   ) : (
@@ -229,11 +212,7 @@ const FooterStandard = ({
                 </StyledA2>
               </StyledLi2>
               <StyledLi3>
-                <StyledA3
-                  href={href3}
-                  rel={rel3}
-                  target={constants.target3[target3]}
-                >
+                <StyledA3 href={href3} rel={rel3} target={target3}>
                   {label3 !== undefined ? (
                     label3
                   ) : (
@@ -247,7 +226,7 @@ const FooterStandard = ({
       </div>
       <div>
         <div>
-          <StyledA4 href={href4} rel={rel4} target={constants.target4[target4]}>
+          <StyledA4 href={href4} rel={rel4} target={target4}>
             <StyledSpan>New Zealand Government</StyledSpan>
 
             <StyledSvg
@@ -265,11 +244,7 @@ const FooterStandard = ({
           </StyledA4>
           <StyledDiv3>
             <p>
-              <StyledA5
-                href={href5}
-                rel={rel5}
-                target={constants.target5[target5]}
-              >
+              <StyledA5 href={href5} rel={rel5} target={target5}>
                 <StyledSpan2>
                   Creative Commons 4.0 International Licence
                 </StyledSpan2>
@@ -314,7 +289,7 @@ const FooterStandard = ({
               width={width}
               height={height}
               srcSet={srcSet}
-              crossOrigin={constants.crossOrigin[crossOrigin]}
+              crossOrigin={crossOrigin}
             />
             <StyledP2>
               © Crown Copyright{" "}

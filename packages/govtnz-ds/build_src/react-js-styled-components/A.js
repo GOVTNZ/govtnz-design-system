@@ -79,17 +79,8 @@ const StyledA = styled.a`
   margin-top: 0px;
 `;
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 const A = ({ isMuted, href, rel, target, children }) => (
-  <StyledA
-    isMuted={isMuted}
-    href={href}
-    rel={rel}
-    target={constants.target[target]}
-  >
+  <StyledA isMuted={isMuted} href={href} rel={rel} target={target}>
     {children !== undefined ? (
       children
     ) : (

@@ -9,43 +9,6 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var constants = {
-  target: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target2: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target3: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target4: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  target5: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  },
-  crossOrigin: {
-    Anonymous: "anonymous",
-    "Use Credentials": "use-credentials"
-  }
-};
-
 var FooterStandard = function FooterStandard(_ref) {
   var href = _ref.href,
       rel = _ref.rel,
@@ -89,21 +52,21 @@ var FooterStandard = function FooterStandard(_ref) {
     className: "g-footer__standard-link",
     href: href,
     rel: rel,
-    target: constants.target[target]
+    target: target
   }, label1 !== undefined ? label1 : _react["default"].createElement(_react["default"].Fragment, null, "Contact"))), _react["default"].createElement("li", {
     className: "g-footer__standard-inline-list-item"
   }, _react["default"].createElement("a", {
     className: "g-footer__standard-link",
     href: href2,
     rel: rel2,
-    target: constants.target2[target2]
+    target: target2
   }, label2 !== undefined ? label2 : _react["default"].createElement(_react["default"].Fragment, null, "Privacy"))), _react["default"].createElement("li", {
     className: "g-footer__standard-inline-list-item"
   }, _react["default"].createElement("a", {
     className: "g-footer__standard-link",
     href: href3,
     rel: rel3,
-    target: constants.target3[target3]
+    target: target3
   }, label3 !== undefined ? label3 : _react["default"].createElement(_react["default"].Fragment, null, "Copyright"))))))), _react["default"].createElement("div", {
     className: "g-flex-row"
   }, _react["default"].createElement("div", {
@@ -112,7 +75,7 @@ var FooterStandard = function FooterStandard(_ref) {
     className: "g-footer__standard-link--plain",
     href: href4,
     rel: rel4,
-    target: constants.target4[target4]
+    target: target4
   }, _react["default"].createElement("span", {
     className: "g-footer-visually-hidden"
   }, "New Zealand Government"), _react["default"].createElement("svg", {
@@ -131,7 +94,7 @@ var FooterStandard = function FooterStandard(_ref) {
     className: "g-footer__standard-link--plain",
     href: href5,
     rel: rel5,
-    target: constants.target5[target5]
+    target: target5
   }, _react["default"].createElement("span", {
     className: "g-footer-visually-hidden"
   }, "Creative Commons 4.0 International Licence"), _react["default"].createElement("svg", {
@@ -167,7 +130,7 @@ var FooterStandard = function FooterStandard(_ref) {
     width: width,
     height: height,
     srcSet: srcSet,
-    crossOrigin: constants.crossOrigin[crossOrigin]
+    crossOrigin: crossOrigin
   }), _react["default"].createElement("p", {
     className: "g-footer__standard-small-text"
   }, "\xA9 Crown Copyright", " ", _react["default"].createElement("span", null, copyrightYear !== undefined ? copyrightYear : _react["default"].createElement(_react["default"].Fragment, null, "2019"))))))));

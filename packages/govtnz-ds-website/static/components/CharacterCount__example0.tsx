@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import CharacterCountWithCustomRows from '@govtnz/ds/build/react-ts/CharacterCountWithCustomRows.tsx';
+import CharacterCountWithCustomRows from '@govtnz/ds/build/react-ts/CharacterCountWithCustomRows';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

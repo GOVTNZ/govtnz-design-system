@@ -4,14 +4,13 @@ type Props = {
   disabled?: boolean | undefined;
   level: "secondary" | "warning";
   name?: string | undefined;
-  type?: "Submit" | "Reset" | "Button" | undefined;
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"] | undefined;
   onClick: any;
   children?: React.ReactNode;
 };
 
 const constants = {
-  level: { secondary: "g-button--secondary", warning: "g-button--warning" },
-  type: { Submit: "submit", Reset: "reset", Button: "button" }
+  level: { secondary: "g-button--secondary", warning: "g-button--warning" }
 };
 
 const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
@@ -20,7 +19,7 @@ const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
       constants.level[level] !== undefined ? " " + constants.level[level] : ""
     }`}
     disabled={disabled}
-    type={constants.type[type] as any}
+    type={type}
     name={name}
     onClick={onClick}
   >

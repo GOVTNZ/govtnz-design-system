@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import CaptionXl from '@govtnz/ds/build/react-ts/CaptionXl.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import CaptionL from '@govtnz/ds/build/react-ts/CaptionL.tsx';import H2 from '@govtnz/ds/build/react-ts/H2.tsx';import CaptionM from '@govtnz/ds/build/react-ts/CaptionM.tsx';import H3 from '@govtnz/ds/build/react-ts/H3.tsx';
+import CaptionXl from '@govtnz/ds/build/react-ts/CaptionXl';import H1 from '@govtnz/ds/build/react-ts/H1';import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';import H2 from '@govtnz/ds/build/react-ts/H2';import CaptionM from '@govtnz/ds/build/react-ts/CaptionM';import H3 from '@govtnz/ds/build/react-ts/H3';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

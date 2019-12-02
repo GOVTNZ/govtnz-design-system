@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import DateInput from '@govtnz/ds/build/react-ts/DateInput.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
+import DateInput from '@govtnz/ds/build/react-ts/DateInput';import H1 from '@govtnz/ds/build/react-ts/H1';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

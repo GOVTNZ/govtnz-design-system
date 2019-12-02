@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock.tsx';
+import FieldsetBlockWithError from '@govtnz/ds/build/react-ts/FieldsetBlockWithError';import H1 from '@govtnz/ds/build/react-ts/H1';import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

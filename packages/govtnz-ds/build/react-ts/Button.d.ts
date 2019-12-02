@@ -3,7 +3,7 @@ declare type Props = {
     disabled?: boolean | undefined;
     level: "secondary" | "warning";
     name?: string | undefined;
-    type?: "Submit" | "Reset" | "Button" | undefined;
+    type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"] | undefined;
     onClick: any;
     children?: React.ReactNode;
 };

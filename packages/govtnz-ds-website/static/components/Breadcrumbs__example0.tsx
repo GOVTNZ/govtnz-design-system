@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import Breadcrumbs from '@govtnz/ds/build/react-ts/Breadcrumbs.tsx';
+import Breadcrumbs from '@govtnz/ds/build/react-ts/Breadcrumbs';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

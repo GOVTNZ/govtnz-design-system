@@ -9,6 +9,7 @@ export const Checkbox = () => import("./Checkbox");
 export const CheckboxBlock = () => import("./CheckboxBlock");
 export const DateInput = () => import("./DateInput");
 export const Fieldset = () => import("./Fieldset");
+export const FieldsetBlock = () => import("./FieldsetBlock");
 export const FileUpload = () => import("./FileUpload");
 export const H1 = () => import("./H1");
 export const H2 = () => import("./H2");

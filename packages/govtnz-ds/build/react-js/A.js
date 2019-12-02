@@ -9,15 +9,6 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var constants = {
-  target: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  }
-};
-
 var A = function A(_ref) {
   var isMuted = _ref.isMuted,
       href = _ref.href,
@@ -28,7 +19,7 @@ var A = function A(_ref) {
     className: "g-link".concat(isMuted ? " g-link--muted" : ""),
     href: href,
     rel: rel,
-    target: constants.target[target]
+    target: target
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

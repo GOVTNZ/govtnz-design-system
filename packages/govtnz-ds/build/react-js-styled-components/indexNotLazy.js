@@ -59,6 +59,12 @@ Object.defineProperty(exports, "fieldset", {
     return _Fieldset["default"];
   }
 });
+Object.defineProperty(exports, "fieldsetBlock", {
+  enumerable: true,
+  get: function get() {
+    return _FieldsetBlock["default"];
+  }
+});
 Object.defineProperty(exports, "fileUpload", {
   enumerable: true,
   get: function get() {
@@ -239,6 +245,8 @@ var _CheckboxBlock = _interopRequireDefault(require("./CheckboxBlock"));
 var _DateInput = _interopRequireDefault(require("./DateInput"));
 
 var _Fieldset = _interopRequireDefault(require("./Fieldset"));
+
+var _FieldsetBlock = _interopRequireDefault(require("./FieldsetBlock"));
 
 var _FileUpload = _interopRequireDefault(require("./FileUpload"));
 

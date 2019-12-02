@@ -3,7 +3,7 @@
     v-bind:class="computed__class"
     v-bind:href="href"
     v-bind:rel="rel"
-    v-bind:target="computed__target"
+    v-bind:target="target"
   >
     <slot></slot>
   </a>
@@ -11,32 +11,17 @@
 <script>
 import Vue from "vue";
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 export default Vue.extend({
   props: {
     isMuted: { type: Boolean, default: false, required: false },
     href: { type: String, required: true },
     rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target: { type: String, required: false },
     children: { required: false, default: "Example text" }
   },
   computed: {
     computed__class() {
       return "g-link" + (this.isMuted ? " g-link--muted" : "");
-    },
-    computed__target() {
-      return constants.target[this.target] !== undefined
-        ? constants.target[this.target]
-        : "";
     }
   }
 });

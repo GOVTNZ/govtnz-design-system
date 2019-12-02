@@ -7,6 +7,7 @@ export declare const Checkbox: () => Promise<typeof import("./Checkbox")>;
 export declare const CheckboxBlock: () => Promise<typeof import("./CheckboxBlock")>;
 export declare const DateInput: () => Promise<typeof import("./DateInput")>;
 export declare const Fieldset: () => Promise<typeof import("./Fieldset")>;
+export declare const FieldsetBlock: () => Promise<typeof import("./FieldsetBlock")>;
 export declare const FileUpload: () => Promise<typeof import("./FileUpload")>;
 export declare const H1: () => Promise<typeof import("./H1")>;
 export declare const H2: () => Promise<typeof import("./H2")>;

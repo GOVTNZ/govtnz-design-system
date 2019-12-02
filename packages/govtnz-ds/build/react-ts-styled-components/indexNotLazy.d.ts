@@ -7,6 +7,7 @@ export { default as checkbox } from "./Checkbox";
 export { default as checkboxBlock } from "./CheckboxBlock";
 export { default as dateInput } from "./DateInput";
 export { default as fieldset } from "./Fieldset";
+export { default as fieldsetBlock } from "./FieldsetBlock";
 export { default as fileUpload } from "./FileUpload";
 export { default as h1 } from "./H1";
 export { default as h2 } from "./H2";

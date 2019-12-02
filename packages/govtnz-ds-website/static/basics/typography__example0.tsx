@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import H2 from '@govtnz/ds/build/react-ts/H2.tsx';import H3 from '@govtnz/ds/build/react-ts/H3.tsx';import H4 from '@govtnz/ds/build/react-ts/H4.tsx';import H5 from '@govtnz/ds/build/react-ts/H5.tsx';import H6 from '@govtnz/ds/build/react-ts/H6.tsx';
+import H1 from '@govtnz/ds/build/react-ts/H1';import H2 from '@govtnz/ds/build/react-ts/H2';import H3 from '@govtnz/ds/build/react-ts/H3';import H4 from '@govtnz/ds/build/react-ts/H4';import H5 from '@govtnz/ds/build/react-ts/H5';import H6 from '@govtnz/ds/build/react-ts/H6';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

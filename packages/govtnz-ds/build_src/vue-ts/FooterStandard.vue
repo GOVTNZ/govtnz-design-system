@@ -12,7 +12,7 @@
                   class="g-footer__standard-link"
                   v-bind:href="href"
                   v-bind:rel="rel"
-                  v-bind:target="computed__target"
+                  v-bind:target="target"
                 >
                   <slot name="label1"></slot>
                 </a>
@@ -23,7 +23,7 @@
                   class="g-footer__standard-link"
                   v-bind:href="href2"
                   v-bind:rel="rel2"
-                  v-bind:target="computed__target2"
+                  v-bind:target="target2"
                 >
                   <slot name="label2"></slot>
                 </a>
@@ -34,7 +34,7 @@
                   class="g-footer__standard-link"
                   v-bind:href="href3"
                   v-bind:rel="rel3"
-                  v-bind:target="computed__target3"
+                  v-bind:target="target3"
                 >
                   <slot name="label3"></slot>
                 </a>
@@ -52,7 +52,7 @@
             class="g-footer__standard-link--plain"
             v-bind:href="href4"
             v-bind:rel="rel4"
-            v-bind:target="computed__target4"
+            v-bind:target="target4"
           >
             <span class="g-footer-visually-hidden">
               New Zealand Government
@@ -79,7 +79,7 @@
                 class="g-footer__standard-link--plain"
                 v-bind:href="href5"
                 v-bind:rel="rel5"
-                v-bind:target="computed__target5"
+                v-bind:target="target5"
               >
                 <span class="g-footer-visually-hidden">
                   Creative Commons 4.0 International Licence
@@ -133,7 +133,7 @@
               v-bind:width="width"
               v-bind:height="height"
               v-bind:srcset="srcset"
-              v-bind:crossorigin="computed__crossorigin"
+              v-bind:crossorigin="crossorigin"
             />
 
             <p class="g-footer__standard-small-text">
@@ -151,110 +151,34 @@
 <script lang="ts">
 import Vue from "vue";
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target2: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target3: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target4: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  target5: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" },
-  crossorigin: { Anonymous: "anonymous", "Use Credentials": "use-credentials" }
-};
-
 export default Vue.extend({
   props: {
     href: { type: String, required: true },
     rel: { type: String, required: false },
-    target: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target: { type: String, required: false },
     label1: { required: false, default: "Contact" },
     href2: { type: String, required: true },
     rel2: { type: String, required: false },
-    target2: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target2: { type: String, required: false },
     label2: { required: false, default: "Privacy" },
     href3: { type: String, required: true },
     rel3: { type: String, required: false },
-    target3: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target3: { type: String, required: false },
     label3: { required: false, default: "Copyright" },
     href4: { type: String, required: true },
     rel4: { type: String, required: false },
-    target4: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target4: { type: String, required: false },
     href5: { type: String, required: true },
     rel5: { type: String, required: false },
-    target5: {
-      type: String,
-      validator: value => {
-        return ["Blank", "Top", "Self", "Parent"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    target5: { type: String, required: false },
     src: { type: String, required: true },
     width: { type: String, required: false },
     height: { type: String, required: false },
     srcset: { type: String, required: false },
-    crossorigin: {
-      type: String,
-      validator: value => {
-        return ["Anonymous", "Use Credentials"].indexOf(value) !== -1;
-      },
-      required: false
-    },
+    crossorigin: { type: String, required: false },
     copyrightYear: { required: false, default: "2019" }
   },
-  computed: {
-    computed__target() {
-      return constants.target[this.target] !== undefined
-        ? constants.target[this.target]
-        : "";
-    },
-    computed__target2() {
-      return constants.target2[this.target2] !== undefined
-        ? constants.target2[this.target2]
-        : "";
-    },
-    computed__target3() {
-      return constants.target3[this.target3] !== undefined
-        ? constants.target3[this.target3]
-        : "";
-    },
-    computed__target4() {
-      return constants.target4[this.target4] !== undefined
-        ? constants.target4[this.target4]
-        : "";
-    },
-    computed__target5() {
-      return constants.target5[this.target5] !== undefined
-        ? constants.target5[this.target5]
-        : "";
-    },
-    computed__crossorigin() {
-      return constants.crossorigin[this.crossorigin] !== undefined
-        ? constants.crossorigin[this.crossorigin]
-        : "";
-    }
-  }
+  computed: {}
 });
 </script>
 <style scoped>

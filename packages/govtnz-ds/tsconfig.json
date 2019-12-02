@@ -6,6 +6,7 @@
     "rootDir": "build_src",
     "outDir": "build",
     "declaration": true,
-    "target": "es5"
+    "target": "es5",
+    "experimentalDecorators": true
   }
 }
