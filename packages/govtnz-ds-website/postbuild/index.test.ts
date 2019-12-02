@@ -157,7 +157,8 @@ test('Validate that HTML has a single id="main-heading"', async () => {
         const h1Index = data.indexOf('<h1');
         console.log(
           htmlPath,
-          h1Index !== -1 ? data.substring(h1Index - 5, h1Index + 100) : null
+          h1Index !== -1 ? data.substring(h1Index - 50, h1Index + 100) : null,
+          results
         );
       }
       expect(results && results.length).toBe(1);
