@@ -4,7 +4,7 @@ const path = require('path');
 const pathExists = async thePath => {
   let pathExists = false;
   try {
-    // testing if CSS file exists
+    // testing if file exists
     await fs.promises.readFile(thePath);
     pathExists = true;
   } catch (e) {

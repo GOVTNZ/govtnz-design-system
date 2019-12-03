@@ -125,7 +125,7 @@ Make sure error messages follow the guidance below, and that you have specific e
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
     <Example title="Example: Error state #2 (Radio buttons)">
-        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name.">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9" 
                 value="true" name="nameChange5" labelId="labelId9" />
