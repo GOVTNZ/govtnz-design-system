@@ -22,8 +22,8 @@ Interact with each example to see how it works.
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9234" 
-                value="true" name="nameChange5" labelId="labelId9" hintId="hintId5" />
-                <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" hintId="hintId5" labelId="labelId10" />
+                value="true" name="nameChange5" labelId="labelId9" />
+                <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
             </Radios>
         </FieldsetBlock>
     </Example>
@@ -82,8 +82,8 @@ When there are more than 2 options, radio buttons should be stacked.
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId6">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId2221">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId55" 
-                value="true" name="nameChange1" labelId="labelId1" hintId="hintId2221" />
-                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" hintId="hintId2221" />
+                value="true" name="nameChange1" labelId="labelId1" />
+                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2"  />
             </Radios>
         </FieldsetBlock>
     </Example>

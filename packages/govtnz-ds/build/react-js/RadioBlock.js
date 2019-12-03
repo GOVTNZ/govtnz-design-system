@@ -19,7 +19,8 @@ var RadioBlock = function RadioBlock(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
-      label = _ref.label;
+      label = _ref.label,
+      hint = _ref.hint;
   return _react["default"].createElement("div", {
     className: "g-radios__item"
   }, _react["default"].createElement("input", {
@@ -37,7 +38,10 @@ var RadioBlock = function RadioBlock(_ref) {
   }), _react["default"].createElement("label", {
     className: "g-radioBlock-label g-radios__label",
     htmlFor: radioId
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")));
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+    className: "g-radioBlock-hint g-checkboxes__hint",
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
 var _default = RadioBlock;

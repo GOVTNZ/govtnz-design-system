@@ -16,6 +16,10 @@
     <label class="g-radioBlock-label g-radios__label" v-bind:for="radioId">
       <slot name="label"></slot>
     </label>
+
+    <div class="g-radioBlock-hint g-checkboxes__hint" v-bind:id="hintId">
+      <slot name="hint"></slot>
+    </div>
   </div>
 </template>
 <script>
@@ -31,12 +35,44 @@ export default Vue.extend({
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false },
-    label: { required: false, default: "Label text" }
+    label: { required: false, default: "Label text" },
+    hint: { required: false, default: "Hint text" }
   },
   computed: {}
 });
 </script>
 <style scoped>
+.g-radioBlock-hint {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+}
+@media print {
+  .g-radioBlock-hint {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .g-radioBlock-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+@media print {
+  .g-radioBlock-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+.g-fieldset__legend + .g-radioBlock-hint {
+  margin-top: -5px;
+}
 .g-radioBlock-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -69,6 +105,11 @@ export default Vue.extend({
   .g-radioBlock-label {
     color: #000000;
   }
+}
+.g-checkboxes__hint {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .g-radios__item {
   font-family: Arial, sans-serif;

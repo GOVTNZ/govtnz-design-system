@@ -38,10 +38,13 @@ var AppComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "label", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "hint", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-RadioBlock",
-            template: "\n    <div class=\"g-radios__item\">\n      <input\n        aria-describedby=\"{{ hintId }}\"\n        class=\"g-radios__input\"\n        id=\"{{ radioId }}\"\n        name=\"{{ name }}\"\n        type=\"radio\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n        value=\"{{ value }}\"\n        checked=\"{{ checked }}\"\n      />\n\n      <label class=\"g-radioBlock-label g-radios__label\" for=\"{{ radioId }}\">\n        <slot name=\"label\"></slot>\n      </label>\n    </div>\n  "
+            template: "\n    <div class=\"g-radios__item\">\n      <input\n        aria-describedby=\"{{ hintId }}\"\n        class=\"g-radios__input\"\n        id=\"{{ radioId }}\"\n        name=\"{{ name }}\"\n        type=\"radio\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n        value=\"{{ value }}\"\n        checked=\"{{ checked }}\"\n      />\n\n      <label class=\"g-radioBlock-label g-radios__label\" for=\"{{ radioId }}\">\n        <slot name=\"label\"></slot>\n      </label>\n\n      <div class=\"g-radioBlock-hint g-checkboxes__hint\" id=\"{{ hintId }}\">\n        <slot name=\"hint\"></slot>\n      </div>\n    </div>\n  "
         })
     ], AppComponent);
     return AppComponent;

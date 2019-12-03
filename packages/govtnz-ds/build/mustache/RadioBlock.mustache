@@ -1,7 +1,8 @@
 {{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
-     - label.
+     - label,
+     - hint.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
@@ -51,6 +52,24 @@ class="g-radioBlock-label g-radios__label"
   
   
 </label>
+  
+  
+  
+    
+<div
+class="g-radioBlock-hint g-checkboxes__hint"
+{{#hintId}}
+  id="{{hintId}}"
+{{/hintId}}
+>
+  
+      
+  {{{hint}}}
+  
+    
+</div>
+  
+  
   
 
 </div>

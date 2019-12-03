@@ -10,6 +10,7 @@ declare type Props = {
     checked?: boolean | undefined;
     onChange: any;
     label?: React.ReactNode;
+    hint?: React.ReactNode;
 };
-declare const RadioBlock: ({ radioId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange, label }: Props) => JSX.Element;
+declare const RadioBlock: ({ radioId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange, label, hint }: Props) => JSX.Element;
 export default RadioBlock;

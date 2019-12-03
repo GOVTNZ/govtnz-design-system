@@ -4,4 +4,10 @@
     {$label}
 
   </label> 
+  
+    <div class="g-radioBlock-hint g-checkboxes__hint"<% if $hintId %> id="{$hintId}"<% end_if %>> 
+      {$hint}
+
+    </div> 
+  
 </div>

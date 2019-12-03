@@ -1,3 +1,40 @@
+.g-radioBlock-hint {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+}
+
+@media print {
+  .g-radioBlock-hint {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-radioBlock-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-radioBlock-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-fieldset__legend + .g-radioBlock-hint {
+  margin-top: -5px;
+}
+
 .g-radioBlock-label {
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -36,6 +73,12 @@
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
+}
+
+.g-checkboxes__hint {
+  display: block;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .g-radios__item {
