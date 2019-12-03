@@ -3,13 +3,18 @@ import { Component, Input } from "@angular/core";
   selector: "g-CheckboxBlock",
   template: `
     <div class="g-checkboxes__item">
-      <input aria-describedby="{{ hintId }}" class="g-checkboxes__input{{
-        fakeFocus ? " :focus" : ""
-      }}" id="{{ checkboxId }}" type="checkbox" name="{{ name }}" disabled="{{
-        disabled
-      }}" readonly="{{ readOnly }}" autofocus="{{ autoFocus }}" value="{{
-        value
-      }}" checked="{{ checked }}"/>
+      <input
+        aria-describedby="{{ hintId }}"
+        class="g-checkboxes__input"
+        id="{{ checkboxId }}"
+        type="checkbox"
+        name="{{ name }}"
+        disabled="{{ disabled }}"
+        readonly="{{ readOnly }}"
+        autofocus="{{ autoFocus }}"
+        value="{{ value }}"
+        checked="{{ checked }}"
+      />
 
       <label
         class="g-checkboxBlock-label g-checkboxes__label"
@@ -25,7 +30,6 @@ import { Component, Input } from "@angular/core";
   `
 })
 export class AppComponent {
-  @Input() fakeFocus: boolean | undefined;
   @Input() checkboxId: string | undefined;
   @Input() hintId: string | undefined;
   @Input() name: string;

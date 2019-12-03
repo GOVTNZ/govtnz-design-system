@@ -15,8 +15,7 @@ const constants = {
 const Input = ({
   width,
   error,
-  fakeFocus,
-  inputId,
+  id,
   describedBy,
   name,
   disabled,
@@ -32,8 +31,8 @@ const Input = ({
     aria-describedby={describedBy}
     className={`g-input${
       constants.width[width] !== undefined ? " " + constants.width[width] : ""
-    }${error ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`}
-    id={inputId}
+    }${error ? " g-input--error" : ""}`}
+    id={id}
     name={name}
     type="text"
     disabled={disabled}

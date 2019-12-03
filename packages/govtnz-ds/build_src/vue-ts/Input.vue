@@ -2,7 +2,7 @@
   <input
     v-bind:aria-describedby="describedBy"
     v-bind:class="computed__class"
-    v-bind:id="inputId"
+    v-bind:id="id"
     v-bind:name="name"
     type="text"
     v-bind:disabled="disabled"
@@ -39,8 +39,7 @@ export default Vue.extend({
       required: false
     },
     error: { type: Boolean, default: false, required: false },
-    fakeFocus: { type: Boolean, default: false, required: false },
-    inputId: { type: String, required: false },
+    id: { type: String, required: false },
     describedBy: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
@@ -58,8 +57,7 @@ export default Vue.extend({
         (constants.width[this.width] !== undefined
           ? ` ${constants.width[this.width]}`
           : "") +
-        (this.error ? " g-input--error" : "") +
-        (this.fakeFocus ? " :focus" : "")
+        (this.error ? " g-input--error" : "")
       );
     }
   }
@@ -101,8 +99,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-input:focus,
-.g-input.\:focus {
+.g-input:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }

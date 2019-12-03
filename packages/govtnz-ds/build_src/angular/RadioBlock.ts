@@ -3,22 +3,30 @@ import { Component, Input } from "@angular/core";
   selector: "g-RadioBlock",
   template: `
     <div class="g-radios__item">
-      <input aria-describedby="{{ hintId }}" class="g-radios__input{{
-        fakeFocus ? " :focus" : ""
-      }}" id="{{ radioId }}" name="{{ name }}" type="radio" disabled="{{
-        disabled
-      }}" readonly="{{ readOnly }}" autofocus="{{ autoFocus }}" value="{{
-        value
-      }}" checked="{{ checked }}"/>
+      <input
+        aria-describedby="{{ hintId }}"
+        class="g-radios__input"
+        id="{{ radioId }}"
+        name="{{ name }}"
+        type="radio"
+        disabled="{{ disabled }}"
+        readonly="{{ readOnly }}"
+        autofocus="{{ autoFocus }}"
+        value="{{ value }}"
+        checked="{{ checked }}"
+      />
 
       <label class="g-radioBlock-label g-radios__label" for="{{ radioId }}">
         <slot name="label"></slot>
       </label>
+
+      <div class="g-radioBlock-hint g-checkboxes__hint" id="{{ hintId }}">
+        <slot name="hint"></slot>
+      </div>
     </div>
   `
 })
 export class AppComponent {
-  @Input() fakeFocus: boolean | undefined;
   @Input() radioId: string | undefined;
   @Input() hintId: string | undefined;
   @Input() name: string;
@@ -28,5 +36,6 @@ export class AppComponent {
   @Input() value: string | undefined;
   @Input() checked: boolean | undefined;
   @Input() label: React.ReactNode;
+  @Input() hint: React.ReactNode;
   title = "RadioBlock";
 }

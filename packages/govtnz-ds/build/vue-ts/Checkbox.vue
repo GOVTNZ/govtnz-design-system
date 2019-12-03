@@ -1,7 +1,7 @@
 <template>
   <input
     v-bind:aria-describedby="hintId"
-    v-bind:class="computed__class"
+    class="g-checkboxes__input"
     v-bind:id="checkboxId"
     type="checkbox"
     v-bind:name="name"
@@ -17,7 +17,6 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    fakeFocus: { type: Boolean, default: false, required: false },
     checkboxId: { type: String, required: false },
     hintId: { type: String, required: false },
     name: { type: String, required: true },
@@ -27,11 +26,7 @@ export default Vue.extend({
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false }
   },
-  computed: {
-    computed__class() {
-      return "g-checkboxes__input" + (this.fakeFocus ? " :focus" : "");
-    }
-  }
+  computed: {}
 });
 </script>
 <style scoped>

@@ -9,10 +9,12 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var RadioBlock = function (_a) {
-    var fakeFocus = _a.fakeFocus, radioId = _a.radioId, hintId = _a.hintId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, checked = _a.checked, onChange = _a.onChange, label = _a.label;
+    var radioId = _a.radioId, hintId = _a.hintId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, checked = _a.checked, onChange = _a.onChange, label = _a.label, hint = _a.hint;
     return (React.createElement("div", { className: "g-radios__item" },
-        React.createElement("input", { "aria-describedby": hintId, className: "g-radios__input" + (fakeFocus ? " :focus" : ""), id: radioId, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }),
-        React.createElement("label", { className: "g-radioBlock-label g-radios__label", htmlFor: radioId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Label text")))));
+        React.createElement("input", { "aria-describedby": hintId, className: "g-radios__input", id: radioId, name: name, type: "radio", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange }),
+        React.createElement("label", { className: "g-radioBlock-label g-radios__label", htmlFor: radioId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Label text"))),
+        hintId !== undefined ? (React.createElement(React.Fragment, null,
+            React.createElement("div", { className: "g-radioBlock-hint g-checkboxes__hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Hint text"))))) : ("")));
 };
 exports.default = RadioBlock;
 //# sourceMappingURL=RadioBlock.js.map

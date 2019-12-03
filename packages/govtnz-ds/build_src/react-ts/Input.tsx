@@ -3,8 +3,7 @@ import * as React from "react";
 type Props = {
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
   error?: boolean | undefined;
-  fakeFocus?: boolean | undefined;
-  inputId?: string | undefined;
+  id?: string | undefined;
   describedBy?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
@@ -32,8 +31,7 @@ const constants = {
 const Input = ({
   width,
   error,
-  fakeFocus,
-  inputId,
+  id,
   describedBy,
   name,
   disabled,
@@ -49,8 +47,8 @@ const Input = ({
     aria-describedby={describedBy}
     className={`g-input${
       constants.width[width] !== undefined ? " " + constants.width[width] : ""
-    }${error ? " g-input--error" : ""}${fakeFocus ? " :focus" : ""}`}
-    id={inputId}
+    }${error ? " g-input--error" : ""}`}
+    id={id}
     name={name}
     type="text"
     disabled={disabled}

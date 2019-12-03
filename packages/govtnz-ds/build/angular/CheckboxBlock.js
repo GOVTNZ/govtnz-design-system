@@ -13,9 +13,6 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "fakeFocus", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "checkboxId", void 0);
     __decorate([
         core_1.Input()
@@ -47,7 +44,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-CheckboxBlock",
-            template: "\n    <div class=\"g-checkboxes__item\">\n      <input aria-describedby=\"{{ hintId }}\" class=\"g-checkboxes__input{{\n        fakeFocus ? \" :focus\" : \"\"\n      }}\" id=\"{{ checkboxId }}\" type=\"checkbox\" name=\"{{ name }}\" disabled=\"{{\n        disabled\n      }}\" readonly=\"{{ readOnly }}\" autofocus=\"{{ autoFocus }}\" value=\"{{\n        value\n      }}\" checked=\"{{ checked }}\"/>\n\n      <label\n        class=\"g-checkboxBlock-label g-checkboxes__label\"\n        for=\"{{ checkboxId }}\"\n      >\n        <slot name=\"label\"></slot>\n      </label>\n\n      <div class=\"g-checkboxBlock-hint g-checkboxes__hint\" id=\"{{ hintId }}\">\n        <slot name=\"hint\"></slot>\n      </div>\n    </div>\n  "
+            template: "\n    <div class=\"g-checkboxes__item\">\n      <input\n        aria-describedby=\"{{ hintId }}\"\n        class=\"g-checkboxes__input\"\n        id=\"{{ checkboxId }}\"\n        type=\"checkbox\"\n        name=\"{{ name }}\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n        value=\"{{ value }}\"\n        checked=\"{{ checked }}\"\n      />\n\n      <label\n        class=\"g-checkboxBlock-label g-checkboxes__label\"\n        for=\"{{ checkboxId }}\"\n      >\n        <slot name=\"label\"></slot>\n      </label>\n\n      <div class=\"g-checkboxBlock-hint g-checkboxes__hint\" id=\"{{ hintId }}\">\n        <slot name=\"hint\"></slot>\n      </div>\n    </div>\n  "
         })
     ], AppComponent);
     return AppComponent;

@@ -1,7 +1,6 @@
 import * as React from "react";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
   checkboxId?: string | undefined;
   hintId?: string | undefined;
   name: string;
@@ -16,7 +15,6 @@ type Props = {
 };
 
 const CheckboxBlock = ({
-  fakeFocus,
   checkboxId,
   hintId,
   name,
@@ -32,7 +30,7 @@ const CheckboxBlock = ({
   <div className="g-checkboxes__item">
     <input
       aria-describedby={hintId}
-      className={`g-checkboxes__input${fakeFocus ? " :focus" : ""}`}
+      className="g-checkboxes__input"
       id={checkboxId}
       type="checkbox"
       name={name}

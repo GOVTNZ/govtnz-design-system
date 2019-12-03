@@ -13,6 +13,16 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject4() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n  display: block;\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-top: 0px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
   var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: inline-block;\n  margin-bottom: 0;\n  padding: 8px 15px 5px;\n  cursor: pointer;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  ::before {\n    content: \"\";\n    box-sizing: border-box;\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 40px;\n    height: 40px;\n    border: 2px solid currentColor;\n    border-radius: 50%;\n    background: transparent;\n  }\n  ::after {\n    content: \"\";\n    position: absolute;\n    top: 10px;\n    left: 10px;\n    width: 0;\n    height: 0;\n    border: 10px solid currentColor;\n    border-radius: 50%;\n    opacity: 0;\n    background: currentColor;\n  }\n  :focus + .g-radios__label::before,\n  :focus + .g-radios__label::before {\n    outline: 3px solid transparent;\n    outline-offset: 3px;\n    box-shadow: 0 0 0 4px #ffbf47;\n  }\n  :checked + .g-radios__label::after,\n  :checked + .g-radios__label::after {\n    opacity: 1;\n  }\n  :disabled + .g-radios__label,\n  :disabled + .g-radios__label {\n    cursor: default;\n  }\n  :disabled + .g-radios__label,\n  :disabled + .g-radios__label {\n    opacity: 0.5;\n  }\n  margin-top: 0px;\n"]);
 
@@ -49,9 +59,10 @@ var StyledInput = _styledComponents["default"].input(_templateObject2());
 
 var StyledLabel = _styledComponents["default"].label(_templateObject3());
 
+var StyledDiv2 = _styledComponents["default"].div(_templateObject4());
+
 var RadioBlock = function RadioBlock(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      radioId = _ref.radioId,
+  var radioId = _ref.radioId,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -60,9 +71,9 @@ var RadioBlock = function RadioBlock(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
-      label = _ref.label;
+      label = _ref.label,
+      hint = _ref.hint;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledInput, {
-    fakeFocus: fakeFocus,
     "aria-describedby": hintId,
     id: radioId,
     name: name,
@@ -75,7 +86,9 @@ var RadioBlock = function RadioBlock(_ref) {
     onChange: onChange
   }), _react["default"].createElement(StyledLabel, {
     htmlFor: radioId
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")));
+  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
+    id: hintId
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
 var _default = RadioBlock;

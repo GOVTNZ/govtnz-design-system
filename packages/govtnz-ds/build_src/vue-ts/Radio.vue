@@ -1,8 +1,8 @@
 <template>
   <input
     v-bind:aria-describedby="hintId"
-    v-bind:class="computed__class"
-    v-bind:id="gov1"
+    class="g-radios__input"
+    v-bind:id="id"
     v-bind:name="name"
     type="radio"
     v-bind:disabled="disabled"
@@ -17,8 +17,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    fakeFocus: { type: Boolean, default: false, required: false },
-    gov1: { type: String, required: false },
+    id: { type: String, required: false },
     hintId: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
@@ -27,11 +26,7 @@ export default Vue.extend({
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false }
   },
-  computed: {
-    computed__class() {
-      return "g-radios__input" + (this.fakeFocus ? " :focus" : "");
-    }
-  }
+  computed: {}
 });
 </script>
 <style scoped>

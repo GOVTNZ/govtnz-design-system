@@ -10,8 +10,7 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var CheckboxBlock = function CheckboxBlock(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      checkboxId = _ref.checkboxId,
+  var checkboxId = _ref.checkboxId,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -26,7 +25,7 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     className: "g-checkboxes__item"
   }, _react["default"].createElement("input", {
     "aria-describedby": hintId,
-    className: "g-checkboxes__input".concat(fakeFocus ? " :focus" : ""),
+    className: "g-checkboxes__input",
     id: checkboxId,
     type: "checkbox",
     name: name,

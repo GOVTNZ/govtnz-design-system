@@ -13,10 +13,7 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "fakeFocus", void 0);
-    __decorate([
-        core_1.Input()
-    ], AppComponent.prototype, "gov1", void 0);
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "hintId", void 0);
@@ -41,7 +38,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Radio",
-            template: "\n    <input aria-describedby=\"{{ hintId }}\" class=\"g-radios__input{{\n      fakeFocus ? \" :focus\" : \"\"\n    }}\" id=\"{{ gov1 }}\" name=\"{{ name }}\" type=\"radio\" disabled=\"{{ disabled }}\"\n    readonly=\"{{ readOnly }}\" autofocus=\"{{ autoFocus }}\" value=\"{{ value }}\"\n    checked=\"{{ checked }}\"/>\n  "
+            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-radios__input\"\n      id=\"{{ id }}\"\n      name=\"{{ name }}\"\n      type=\"radio\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
         })
     ], AppComponent);
     return AppComponent;

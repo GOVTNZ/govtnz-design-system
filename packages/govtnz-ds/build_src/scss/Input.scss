@@ -38,8 +38,7 @@
   }
 }
 
-.g-input:focus,
-.g-input.\:focus {
+.g-input:focus {
   outline: 3px solid $g-theme-color-brand-1;
   outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
   outline-offset: 0;

@@ -24,8 +24,7 @@ var constants = {
 var Input = function Input(_ref) {
   var width = _ref.width,
       error = _ref.error,
-      fakeFocus = _ref.fakeFocus,
-      inputId = _ref.inputId,
+      id = _ref.id,
       describedBy = _ref.describedBy,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -38,8 +37,8 @@ var Input = function Input(_ref) {
       onChange = _ref.onChange;
   return _react["default"].createElement("input", {
     "aria-describedby": describedBy,
-    className: "g-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-input--error" : "").concat(fakeFocus ? " :focus" : ""),
-    id: inputId,
+    className: "g-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-input--error" : ""),
+    id: id,
     name: name,
     type: "text",
     disabled: disabled,

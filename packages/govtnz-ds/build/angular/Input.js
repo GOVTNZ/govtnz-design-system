@@ -19,10 +19,7 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "error", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "fakeFocus", void 0);
-    __decorate([
-        core_1.Input()
-    ], AppComponent.prototype, "inputId", void 0);
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "describedBy", void 0);
@@ -53,7 +50,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Input",
-            template: "\n    <input aria-describedby=\"{{ describedBy }}\" class=\"g-input{{\n      constants.width[width] !== undefined ? \" \" + constants.width[width] : \"\"\n    }}{{ error ? \" g-input--error\" : \"\" }}{{ fakeFocus ? \" :focus\" : \"\" }}\"\n    id=\"{{ inputId }}\" name=\"{{ name }}\" type=\"text\" disabled=\"{{ disabled }}\"\n    readonly=\"{{ readOnly }}\" autofocus=\"{{ autoFocus }}\" value=\"{{ value }}\"\n    spellcheck=\"{{ spellCheck }}\" maxlength=\"{{ maxLength }}\" autocomplete=\"{{\n      autoComplete\n    }}\"/>\n  "
+            template: "\n    <input aria-describedby=\"{{ describedBy }}\" class=\"g-input{{\n      constants.width[width] !== undefined ? \" \" + constants.width[width] : \"\"\n    }}{{ error ? \" g-input--error\" : \"\" }}\" id=\"{{ id }}\" name=\"{{ name }}\"\n    type=\"text\" disabled=\"{{ disabled }}\" readonly=\"{{ readOnly }}\"\n    autofocus=\"{{ autoFocus }}\" value=\"{{ value }}\" spellcheck=\"{{\n      spellCheck\n    }}\" maxlength=\"{{ maxLength }}\" autocomplete=\"{{ autoComplete }}\"/>\n  "
         })
     ], AppComponent);
     return AppComponent;

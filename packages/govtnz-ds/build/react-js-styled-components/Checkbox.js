@@ -26,8 +26,7 @@ function _templateObject() {
 var StyledInput = _styledComponents["default"].input(_templateObject());
 
 var Checkbox = function Checkbox(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      checkboxId = _ref.checkboxId,
+  var checkboxId = _ref.checkboxId,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -37,7 +36,6 @@ var Checkbox = function Checkbox(_ref) {
       checked = _ref.checked,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledInput, {
-    fakeFocus: fakeFocus,
     "aria-describedby": hintId,
     id: checkboxId,
     type: "checkbox",

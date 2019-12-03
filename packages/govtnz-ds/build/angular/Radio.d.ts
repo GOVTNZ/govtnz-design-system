@@ -1,6 +1,5 @@
 export declare class AppComponent {
-    fakeFocus: boolean | undefined;
-    gov1: string | undefined;
+    id: string | undefined;
     hintId: string | undefined;
     name: string;
     disabled: boolean | undefined;

@@ -2,7 +2,6 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
   checkboxId?: string | undefined;
   hintId?: string | undefined;
   name: string;
@@ -31,7 +30,6 @@ const StyledInput = styled.input`
 `;
 
 const Checkbox = ({
-  fakeFocus,
   checkboxId,
   hintId,
   name,
@@ -43,7 +41,6 @@ const Checkbox = ({
   onChange
 }: Props) => (
   <StyledInput
-    fakeFocus={fakeFocus}
     aria-describedby={hintId}
     id={checkboxId}
     type="checkbox"

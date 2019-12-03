@@ -1,7 +1,6 @@
 import * as React from "react";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
   radioId?: string | undefined;
   hintId?: string | undefined;
   name: string;
@@ -12,10 +11,10 @@ type Props = {
   checked?: boolean | undefined;
   onChange: any;
   label?: React.ReactNode;
+  hint?: React.ReactNode;
 };
 
 const RadioBlock = ({
-  fakeFocus,
   radioId,
   hintId,
   name,
@@ -25,12 +24,13 @@ const RadioBlock = ({
   value,
   checked,
   onChange,
-  label
+  label,
+  hint
 }: Props) => (
   <div className="g-radios__item">
     <input
       aria-describedby={hintId}
-      className={`g-radios__input${fakeFocus ? " :focus" : ""}`}
+      className="g-radios__input"
       id={radioId}
       name={name}
       type="radio"
@@ -48,6 +48,19 @@ const RadioBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
+    {hintId !== undefined ? (
+      <React.Fragment>
+        <div className="g-radioBlock-hint g-checkboxes__hint" id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Hint text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
   </div>
 );
 

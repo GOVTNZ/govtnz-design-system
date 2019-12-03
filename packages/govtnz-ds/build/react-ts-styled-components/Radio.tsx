@@ -2,8 +2,7 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
-  gov1?: string | undefined;
+  id?: string | undefined;
   hintId?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
@@ -31,8 +30,7 @@ const StyledInput = styled.input`
 `;
 
 const Radio = ({
-  fakeFocus,
-  gov1,
+  id,
   hintId,
   name,
   disabled,
@@ -43,9 +41,8 @@ const Radio = ({
   onChange
 }: Props) => (
   <StyledInput
-    fakeFocus={fakeFocus}
     aria-describedby={hintId}
-    id={gov1}
+    id={id}
     name={name}
     type="radio"
     disabled={disabled}

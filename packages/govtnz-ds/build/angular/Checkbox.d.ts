@@ -1,5 +1,4 @@
 export declare class AppComponent {
-    fakeFocus: boolean | undefined;
     checkboxId: string | undefined;
     hintId: string | undefined;
     name: string;

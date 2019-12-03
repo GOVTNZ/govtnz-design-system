@@ -26,8 +26,7 @@ function _templateObject() {
 var StyledInput = _styledComponents["default"].input(_templateObject());
 
 var Radio = function Radio(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      gov1 = _ref.gov1,
+  var id = _ref.id,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -37,9 +36,8 @@ var Radio = function Radio(_ref) {
       checked = _ref.checked,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledInput, {
-    fakeFocus: fakeFocus,
     "aria-describedby": hintId,
-    id: gov1,
+    id: id,
     name: name,
     type: "radio",
     disabled: disabled,

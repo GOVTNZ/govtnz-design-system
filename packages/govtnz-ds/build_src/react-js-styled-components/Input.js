@@ -28,7 +28,7 @@ line-height: 1.31579;;
 font-size: 14pt;
 line-height: 1.15;;
 }
-:focus,:focus{
+:focus{
 outline: 3px solid #ffbf47;
 outline-offset: 0;
 }
@@ -81,8 +81,7 @@ margin-top: 0px;`;
 const Input = ({
   width,
   error,
-  fakeFocus,
-  inputId,
+  id,
   describedBy,
   name,
   disabled,
@@ -97,9 +96,8 @@ const Input = ({
   <StyledInput
     width={width}
     error={error}
-    fakeFocus={fakeFocus}
     aria-describedby={describedBy}
-    id={inputId}
+    id={id}
     name={name}
     type="text"
     disabled={disabled}

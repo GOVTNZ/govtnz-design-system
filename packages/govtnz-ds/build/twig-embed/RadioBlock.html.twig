@@ -2,10 +2,10 @@
 class="g-radios__item"
 >
   
-               
+  
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
-class="g-radios__input{% if fakeFocus %} :focus{% endif %}"
+class="g-radios__input"
 id="{{ radioId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 type="radio"
@@ -16,13 +16,33 @@ value="{{ value | escape('html_attr') }}"
 checked="{% if checked %}checked{% endif %}"
 />
   
-               
+  
 <label
 class="g-radioBlock-label g-radios__label"
 for="{{ radioId | escape('html_attr') }}"
 >
+  
+    
 {% block label %}Label text{% endblock %}
+  
+  
 </label>
   
-             
+  
+  
+    
+<div
+class="g-radioBlock-hint g-checkboxes__hint"
+id="{{ hintId | escape('html_attr') }}"
+>
+  
+      
+{% block hint %}Hint text{% endblock %}
+  
+    
+</div>
+  
+  
+  
+
 </div>

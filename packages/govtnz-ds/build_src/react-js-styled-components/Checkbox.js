@@ -18,7 +18,6 @@ const StyledInput = styled.input`
 `;
 
 const Checkbox = ({
-  fakeFocus,
   checkboxId,
   hintId,
   name,
@@ -30,7 +29,6 @@ const Checkbox = ({
   onChange
 }) => (
   <StyledInput
-    fakeFocus={fakeFocus}
     aria-describedby={hintId}
     id={checkboxId}
     type="checkbox"

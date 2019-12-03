@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 type Props = {
   errorId?: string | undefined;
@@ -19,13 +19,13 @@ const FieldsetBlock = ({
 }: Props) => (
   <div
     className={`g-fieldsetBlock-form-group${
-      errorId ? ' g-fieldsetBlock-form-group--error' : ''
+      errorId ? " g-fieldsetBlock-form-group--error" : ""
     }`}
   >
     <fieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
-          ? `${hintId ? hintId : ''}${errorId ? ' ' + errorId : ''}`
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
           : undefined
       }
       className="g-fieldset"
@@ -48,7 +48,7 @@ const FieldsetBlock = ({
           </div>
         </React.Fragment>
       ) : (
-        ''
+        ""
       )}
       {errorId !== undefined ? (
         <React.Fragment>
@@ -62,7 +62,7 @@ const FieldsetBlock = ({
           </div>
         </React.Fragment>
       ) : (
-        ''
+        ""
       )}
       <div>
         {children !== undefined ? (

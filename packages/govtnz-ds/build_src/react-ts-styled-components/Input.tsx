@@ -4,8 +4,7 @@ import * as styled from "styled-components";
 type Props = {
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
   error?: boolean | undefined;
-  fakeFocus?: boolean | undefined;
-  inputId?: string | undefined;
+  id?: string | undefined;
   describedBy?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
@@ -47,7 +46,7 @@ line-height: 1.31579;;
 font-size: 14pt;
 line-height: 1.15;;
 }
-:focus,:focus{
+:focus{
 outline: 3px solid #ffbf47;
 outline-offset: 0;
 }
@@ -100,8 +99,7 @@ margin-top: 0px;`;
 const Input = ({
   width,
   error,
-  fakeFocus,
-  inputId,
+  id,
   describedBy,
   name,
   disabled,
@@ -116,9 +114,8 @@ const Input = ({
   <StyledInput
     width={width}
     error={error}
-    fakeFocus={fakeFocus}
     aria-describedby={describedBy}
-    id={inputId}
+    id={id}
     name={name}
     type="text"
     disabled={disabled}

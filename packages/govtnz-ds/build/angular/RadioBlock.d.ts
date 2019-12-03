@@ -1,6 +1,5 @@
 /// <reference types="react" />
 export declare class AppComponent {
-    fakeFocus: boolean | undefined;
     radioId: string | undefined;
     hintId: string | undefined;
     name: string;
@@ -10,5 +9,6 @@ export declare class AppComponent {
     value: string | undefined;
     checked: boolean | undefined;
     label: React.ReactNode;
+    hint: React.ReactNode;
     title: string;
 }

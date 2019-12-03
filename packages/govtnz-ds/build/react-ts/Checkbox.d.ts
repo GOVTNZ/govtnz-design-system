@@ -1,6 +1,5 @@
 /// <reference types="react" />
 declare type Props = {
-    fakeFocus?: boolean | undefined;
     checkboxId?: string | undefined;
     hintId?: string | undefined;
     name: string;
@@ -11,5 +10,5 @@ declare type Props = {
     checked?: boolean | undefined;
     onChange: any;
 };
-declare const Checkbox: ({ fakeFocus, checkboxId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }: Props) => JSX.Element;
+declare const Checkbox: ({ checkboxId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange }: Props) => JSX.Element;
 export default Checkbox;

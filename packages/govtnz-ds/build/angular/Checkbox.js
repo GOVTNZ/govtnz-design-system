@@ -13,9 +13,6 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "fakeFocus", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "checkboxId", void 0);
     __decorate([
         core_1.Input()
@@ -41,7 +38,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Checkbox",
-            template: "\n    <input aria-describedby=\"{{ hintId }}\" class=\"g-checkboxes__input{{\n      fakeFocus ? \" :focus\" : \"\"\n    }}\" id=\"{{ checkboxId }}\" type=\"checkbox\" name=\"{{ name }}\" disabled=\"{{\n      disabled\n    }}\" readonly=\"{{ readOnly }}\" autofocus=\"{{ autoFocus }}\" value=\"{{\n      value\n    }}\" checked=\"{{ checked }}\"/>\n  "
+            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-checkboxes__input\"\n      id=\"{{ checkboxId }}\"\n      type=\"checkbox\"\n      name=\"{{ name }}\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
         })
     ], AppComponent);
     return AppComponent;
