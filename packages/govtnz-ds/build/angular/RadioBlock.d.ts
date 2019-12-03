@@ -9,6 +9,5 @@ export declare class AppComponent {
     value: string | undefined;
     checked: boolean | undefined;
     label: React.ReactNode;
-    hint: React.ReactNode;
     title: string;
 }

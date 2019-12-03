@@ -10,8 +10,7 @@ const RadioBlock = ({
   value,
   checked,
   onChange,
-  label,
-  hint
+  label
 }) => (
   <div className="g-radios__item">
     <input
@@ -34,19 +33,6 @@ const RadioBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
-    {hintId !== undefined ? (
-      <React.Fragment>
-        <div className="g-radioBlock-hint g-checkboxes__hint" id={hintId}>
-          {hint !== undefined ? (
-            hint
-          ) : (
-            <React.Fragment>Hint text</React.Fragment>
-          )}
-        </div>
-      </React.Fragment>
-    ) : (
-      ""
-    )}
   </div>
 );
 

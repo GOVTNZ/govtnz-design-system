@@ -19,10 +19,6 @@ import { Component, Input } from "@angular/core";
       <label class="g-radioBlock-label g-radios__label" for="{{ radioId }}">
         <slot name="label"></slot>
       </label>
-
-      <div class="g-radioBlock-hint g-checkboxes__hint" id="{{ hintId }}">
-        <slot name="hint"></slot>
-      </div>
     </div>
   `
 })
@@ -36,6 +32,5 @@ export class AppComponent {
   @Input() value: string | undefined;
   @Input() checked: boolean | undefined;
   @Input() label: React.ReactNode;
-  @Input() hint: React.ReactNode;
   title = "RadioBlock";
 }
