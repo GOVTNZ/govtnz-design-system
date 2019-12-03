@@ -1,25 +1,27 @@
 import * as React from "react";
 
 type Props = {
-  hintId?: string | undefined;
   errorId?: string | undefined;
+  hintId?: string | undefined;
   legend?: React.ReactNode;
   hint?: React.ReactNode;
-  errorId2?: React.ReactNode;
   error?: React.ReactNode;
   children?: React.ReactNode;
 };
 
 const FieldsetBlock = ({
-  hintId,
   errorId,
+  hintId,
   legend,
   hint,
-  errorId2,
   error,
   children
 }: Props) => (
-  <div className="g-fieldsetBlock-form-group">
+  <div
+    className={`g-fieldsetBlock-form-group${
+      errorId ? " g-fieldsetBlock-form-group--error" : ""
+    }`}
+  >
     <fieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -48,7 +50,7 @@ const FieldsetBlock = ({
       ) : (
         ""
       )}
-      {errorId2 !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <div className="g-fieldsetBlock-error-message" id={errorId}>
             <span className="g-fieldsetBlock-visually-hidden">Error:</span>

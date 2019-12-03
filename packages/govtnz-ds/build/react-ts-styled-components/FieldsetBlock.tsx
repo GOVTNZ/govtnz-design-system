@@ -2,16 +2,15 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  hintId?: string | undefined;
   errorId?: string | undefined;
+  hintId?: string | undefined;
   legend?: React.ReactNode;
   hint?: React.ReactNode;
-  errorId2?: React.ReactNode;
   error?: React.ReactNode;
   children?: React.ReactNode;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
   margin-bottom: 20px;
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
@@ -19,6 +18,12 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   padding: 0;
   border: 0;
   margin-bottom: 5px;
@@ -139,15 +144,14 @@ const StyledDiv4 = styled.div`
 `;
 
 const FieldsetBlock = ({
-  hintId,
   errorId,
+  hintId,
   legend,
   hint,
-  errorId2,
   error,
   children
 }: Props) => (
-  <StyledDiv>
+  <StyledDiv errorId={errorId}>
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -175,7 +179,7 @@ const FieldsetBlock = ({
       ) : (
         ""
       )}
-      {errorId2 !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <StyledDiv3 id={errorId}>
             <StyledSpan>Error:</StyledSpan>

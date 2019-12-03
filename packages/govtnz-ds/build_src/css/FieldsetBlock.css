@@ -12,6 +12,12 @@
   margin-bottom: 0;
 }
 
+.g-fieldsetBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
+}
+
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
   padding: 0;
   border: 0;

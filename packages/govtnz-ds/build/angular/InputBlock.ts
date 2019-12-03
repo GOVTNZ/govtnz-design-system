@@ -4,39 +4,44 @@ import { Component, Input } from "@angular/core";
   template: `
 <div class="g-inputBlock-form-group{{error ? " g-inputBlock-form-group--error" : ""}}">
 
-      
+  
 <label class="g-inputBlock-label" for="{{inputId}}">
 <slot name="label"></slot>
 
 </label>
 
 
-      
+  
 <div class="g-inputBlock-hint" id="{{hintId}}">
-<slot name="hint"></slot>
+
+      <slot name="hint"></slot>
+    
 
 </div>
 
 
-      
+  
 <div class="g-inputBlock-error-message" id="{{errorId}}">
 
+      
 <span class="g-inputBlock-visually-hidden">
 Error: 
 
 </span>
 
 <slot name="error"></slot>
-
-</div>
-
-
-      
-<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{inputId}}" name="{{name}}" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
-
     
 
 </div>
+
+
+  
+<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{inputId}}" name="{{name}}" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
+
+
+
+</div>
+
 
 `
 })

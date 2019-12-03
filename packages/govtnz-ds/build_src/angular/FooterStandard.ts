@@ -24,9 +24,9 @@ import { Component, Input } from "@angular/core";
                 <li class="g-footer__standard-inline-list-item">
                   <a
                     class="g-footer__standard-link"
-                    href="{{ href2 }}"
-                    rel="{{ rel2 }}"
-                    target="{{ target2 }}"
+                    href="{{ href }}"
+                    rel="{{ rel }}"
+                    target="{{ target }}"
                   >
                     <slot name="label2"></slot>
                   </a>
@@ -35,9 +35,9 @@ import { Component, Input } from "@angular/core";
                 <li class="g-footer__standard-inline-list-item">
                   <a
                     class="g-footer__standard-link"
-                    href="{{ href3 }}"
-                    rel="{{ rel3 }}"
-                    target="{{ target3 }}"
+                    href="{{ href }}"
+                    rel="{{ rel }}"
+                    target="{{ target }}"
                   >
                     <slot name="label3"></slot>
                   </a>
@@ -53,9 +53,9 @@ import { Component, Input } from "@angular/core";
           >
             <a
               class="g-footer__standard-link--plain"
-              href="{{ href4 }}"
-              rel="{{ rel4 }}"
-              target="{{ target4 }}"
+              href="{{ href }}"
+              rel="{{ rel }}"
+              target="{{ target }}"
             >
               <span class="g-footer-visually-hidden">
                 New Zealand Government
@@ -80,9 +80,9 @@ import { Component, Input } from "@angular/core";
               <p>
                 <a
                   class="g-footer__standard-link--plain"
-                  href="{{ href5 }}"
-                  rel="{{ rel5 }}"
-                  target="{{ target5 }}"
+                  href="{{ href }}"
+                  rel="{{ rel }}"
+                  target="{{ target }}"
                 >
                   <span class="g-footer-visually-hidden">
                     Creative Commons 4.0 International Licence
@@ -157,20 +157,8 @@ export class AppComponent {
   @Input() rel: string | undefined;
   @Input() target: any | undefined;
   @Input() label1: React.ReactNode;
-  @Input() href2: string;
-  @Input() rel2: string | undefined;
-  @Input() target2: any | undefined;
   @Input() label2: React.ReactNode;
-  @Input() href3: string;
-  @Input() rel3: string | undefined;
-  @Input() target3: any | undefined;
   @Input() label3: React.ReactNode;
-  @Input() href4: string;
-  @Input() rel4: string | undefined;
-  @Input() target4: any | undefined;
-  @Input() href5: string;
-  @Input() rel5: string | undefined;
-  @Input() target5: any | undefined;
   @Input() src: string;
   @Input() width: string | undefined;
   @Input() height: string | undefined;

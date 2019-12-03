@@ -1,5 +1,5 @@
 <template>
-  <div class="g-fieldsetBlock-form-group">
+  <div v-bind:class="computed__class">
     <fieldset
       v-bind:aria-describedby="computed__ariaDescribedby"
       class="g-fieldset"
@@ -31,15 +31,20 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    hintId: { type: String, required: false },
     errorId: { type: String, required: false },
+    hintId: { type: String, required: false },
     legend: { required: false, default: "Legend text" },
     hint: { required: false, default: "Hint text" },
-    errorId2: { required: false },
     error: { required: false, default: "Error text" },
     children: { required: false, default: "Fieldset contents" }
   },
   computed: {
+    computed__class() {
+      return (
+        "g-fieldsetBlock-form-group" +
+        (this.errorId ? " g-fieldsetBlock-form-group--error" : "")
+      );
+    },
     computed__ariaDescribedby() {
       return +this.hintId + +this.errorId;
     }
@@ -57,6 +62,10 @@ export default Vue.extend({
 }
 .g-fieldsetBlock-form-group .g-fieldsetBlock-form-group:last-of-type {
   margin-bottom: 0;
+}
+.g-fieldsetBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
 }
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
   padding: 0;

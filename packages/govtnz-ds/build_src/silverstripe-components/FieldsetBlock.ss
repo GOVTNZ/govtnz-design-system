@@ -1,4 +1,4 @@
-<div class="g-fieldsetBlock-form-group"> 
+<div class="g-fieldsetBlock-form-group<% if $errorId %>  g-fieldsetBlock-form-group--error<% end_if %>"> 
   <fieldset<% if $hintId && $errorId %> aria-describedby="{$hintId} {$errorId}"<% end_if %> class="g-fieldset"> 
     <legend class="g-fieldset__legend"> 
       {$legend}

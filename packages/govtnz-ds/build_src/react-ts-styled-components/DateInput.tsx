@@ -18,23 +18,7 @@ type Props = {
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
   onChange: any;
   monthId?: string | undefined;
-  name2: string;
-  disabled2?: boolean | undefined;
-  readOnly2?: boolean | undefined;
-  autoFocus2?: boolean | undefined;
-  value2?: string | undefined;
-  spellCheck2?: boolean | undefined;
-  autoComplete2: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-  onChange2: any;
   yearId?: string | undefined;
-  name3: string;
-  disabled3?: boolean | undefined;
-  readOnly3?: boolean | undefined;
-  autoFocus3?: boolean | undefined;
-  value3?: string | undefined;
-  spellCheck3?: boolean | undefined;
-  autoComplete3: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-  onChange3: any;
 };
 
 const StyledDiv = styled.div<Pick<Props, "error">>`
@@ -502,23 +486,7 @@ const DateInput = ({
   autoComplete,
   onChange,
   monthId,
-  name2,
-  disabled2,
-  readOnly2,
-  autoFocus2,
-  value2,
-  spellCheck2,
-  autoComplete2,
-  onChange2,
-  yearId,
-  name3,
-  disabled3,
-  readOnly3,
-  autoFocus3,
-  value3,
-  spellCheck3,
-  autoComplete3,
-  onChange3
+  yearId
 }: Props) => (
   <StyledDiv error={error}>
     <StyledFieldset
@@ -586,16 +554,16 @@ const DateInput = ({
               error={error}
               id={monthId}
               maxLength={2}
-              name={name2}
+              name={name}
               pattern="[0-9]*"
               type="text"
-              disabled={disabled2}
-              readOnly={readOnly2}
-              autoFocus={autoFocus2}
-              value={value2}
-              spellCheck={spellCheck2}
-              autoComplete={autoComplete2}
-              onChange={onChange2}
+              disabled={disabled}
+              readOnly={readOnly}
+              autoFocus={autoFocus}
+              value={value}
+              spellCheck={spellCheck}
+              autoComplete={autoComplete}
+              onChange={onChange}
             />
           </StyledDiv6>
         </StyledDiv5>
@@ -606,16 +574,16 @@ const DateInput = ({
               error={error}
               id={yearId}
               maxLength={4}
-              name={name3}
+              name={name}
               pattern="[0-9]*"
               type="text"
-              disabled={disabled3}
-              readOnly={readOnly3}
-              autoFocus={autoFocus3}
-              value={value3}
-              spellCheck={spellCheck3}
-              autoComplete={autoComplete3}
-              onChange={onChange3}
+              disabled={disabled}
+              readOnly={readOnly}
+              autoFocus={autoFocus}
+              value={value}
+              spellCheck={spellCheck}
+              autoComplete={autoComplete}
+              onChange={onChange}
             />
           </StyledDiv8>
         </StyledDiv7>

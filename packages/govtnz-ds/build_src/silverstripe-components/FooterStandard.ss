@@ -9,11 +9,11 @@
 </a> 
                         </li> 
                         <li class="g-footer__standard-inline-list-item"> 
-                            <a class="g-footer__standard-link"<% if $href2 %> href="{$href2}"<% end_if %><% if $rel2 %> rel="{$rel2}"<% end_if %><% if $target2 %> target="{$target2}"<% end_if %>> {$label2}
+                            <a class="g-footer__standard-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="{$target}"<% end_if %>> {$label2}
 </a> 
                         </li> 
                         <li class="g-footer__standard-inline-list-item"> 
-                            <a class="g-footer__standard-link"<% if $href3 %> href="{$href3}"<% end_if %><% if $rel3 %> rel="{$rel3}"<% end_if %><% if $target3 %> target="{$target3}"<% end_if %>> {$label3}
+                            <a class="g-footer__standard-link"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="{$target}"<% end_if %>> {$label3}
 </a> 
                         </li> 
                     </ul> 
@@ -22,7 +22,7 @@
         </div> 
         <div class="g-flex-row"> 
             <div class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9"> 
-                <a class="g-footer__standard-link--plain"<% if $href4 %> href="{$href4}"<% end_if %><% if $rel4 %> rel="{$rel4}"<% end_if %><% if $target4 %> target="{$target4}"<% end_if %>> 
+                <a class="g-footer__standard-link--plain"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="{$target}"<% end_if %>> 
                     <span class="g-footer-visually-hidden"> New Zealand Government</span> 
 
                     
@@ -34,7 +34,7 @@
                 </a> 
                 <div class="g-footer__standard-licence"> 
                     <p> 
-                        <a class="g-footer__standard-link--plain"<% if $href5 %> href="{$href5}"<% end_if %><% if $rel5 %> rel="{$rel5}"<% end_if %><% if $target5 %> target="{$target5}"<% end_if %>> 
+                        <a class="g-footer__standard-link--plain"<% if $href %> href="{$href}"<% end_if %><% if $rel %> rel="{$rel}"<% end_if %><% if $target %> target="{$target}"<% end_if %>> 
                             <span class="g-footer-visually-hidden"> Creative Commons 4.0 International Licence</span> 
 
                             

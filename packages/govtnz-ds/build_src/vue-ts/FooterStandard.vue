@@ -21,9 +21,9 @@
               <li class="g-footer__standard-inline-list-item">
                 <a
                   class="g-footer__standard-link"
-                  v-bind:href="href2"
-                  v-bind:rel="rel2"
-                  v-bind:target="target2"
+                  v-bind:href="href"
+                  v-bind:rel="rel"
+                  v-bind:target="target"
                 >
                   <slot name="label2"></slot>
                 </a>
@@ -32,9 +32,9 @@
               <li class="g-footer__standard-inline-list-item">
                 <a
                   class="g-footer__standard-link"
-                  v-bind:href="href3"
-                  v-bind:rel="rel3"
-                  v-bind:target="target3"
+                  v-bind:href="href"
+                  v-bind:rel="rel"
+                  v-bind:target="target"
                 >
                   <slot name="label3"></slot>
                 </a>
@@ -50,9 +50,9 @@
         >
           <a
             class="g-footer__standard-link--plain"
-            v-bind:href="href4"
-            v-bind:rel="rel4"
-            v-bind:target="target4"
+            v-bind:href="href"
+            v-bind:rel="rel"
+            v-bind:target="target"
           >
             <span class="g-footer-visually-hidden">
               New Zealand Government
@@ -77,9 +77,9 @@
             <p>
               <a
                 class="g-footer__standard-link--plain"
-                v-bind:href="href5"
-                v-bind:rel="rel5"
-                v-bind:target="target5"
+                v-bind:href="href"
+                v-bind:rel="rel"
+                v-bind:target="target"
               >
                 <span class="g-footer-visually-hidden">
                   Creative Commons 4.0 International Licence
@@ -157,20 +157,8 @@ export default Vue.extend({
     rel: { type: String, required: false },
     target: { type: String, required: false },
     label1: { required: false, default: "Contact" },
-    href2: { type: String, required: true },
-    rel2: { type: String, required: false },
-    target2: { type: String, required: false },
     label2: { required: false, default: "Privacy" },
-    href3: { type: String, required: true },
-    rel3: { type: String, required: false },
-    target3: { type: String, required: false },
     label3: { required: false, default: "Copyright" },
-    href4: { type: String, required: true },
-    rel4: { type: String, required: false },
-    target4: { type: String, required: false },
-    href5: { type: String, required: true },
-    rel5: { type: String, required: false },
-    target5: { type: String, required: false },
     src: { type: String, required: true },
     width: { type: String, required: false },
     height: { type: String, required: false },

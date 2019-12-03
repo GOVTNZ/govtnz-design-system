@@ -9,6 +9,12 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   padding: 0;
   border: 0;
   margin-bottom: 5px;
@@ -128,16 +134,8 @@ const StyledDiv4 = styled.div`
   margin-top: 0px;
 `;
 
-const FieldsetBlock = ({
-  hintId,
-  errorId,
-  legend,
-  hint,
-  errorId2,
-  error,
-  children
-}) => (
-  <StyledDiv>
+const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
+  <StyledDiv errorId={errorId}>
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -165,7 +163,7 @@ const FieldsetBlock = ({
       ) : (
         ""
       )}
-      {errorId2 !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <StyledDiv3 id={errorId}>
             <StyledSpan>Error:</StyledSpan>

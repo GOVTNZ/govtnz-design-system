@@ -306,23 +306,7 @@ var DateInput = function DateInput(_ref) {
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange,
       monthId = _ref.monthId,
-      name2 = _ref.name2,
-      disabled2 = _ref.disabled2,
-      readOnly2 = _ref.readOnly2,
-      autoFocus2 = _ref.autoFocus2,
-      value2 = _ref.value2,
-      spellCheck2 = _ref.spellCheck2,
-      autoComplete2 = _ref.autoComplete2,
-      onChange2 = _ref.onChange2,
-      yearId = _ref.yearId,
-      name3 = _ref.name3,
-      disabled3 = _ref.disabled3,
-      readOnly3 = _ref.readOnly3,
-      autoFocus3 = _ref.autoFocus3,
-      value3 = _ref.value3,
-      spellCheck3 = _ref.spellCheck3,
-      autoComplete3 = _ref.autoComplete3,
-      onChange3 = _ref.onChange3;
+      yearId = _ref.yearId;
   return _react["default"].createElement(StyledDiv, {
     error: error
   }, _react["default"].createElement(StyledFieldset, {
@@ -356,32 +340,32 @@ var DateInput = function DateInput(_ref) {
     error: error,
     id: monthId,
     maxLength: 2,
-    name: name2,
+    name: name,
     pattern: "[0-9]*",
     type: "text",
-    disabled: disabled2,
-    readOnly: readOnly2,
-    autoFocus: autoFocus2,
-    value: value2,
-    spellCheck: spellCheck2,
-    autoComplete: autoComplete2,
-    onChange: onChange2
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: autoComplete,
+    onChange: onChange
   }))), _react["default"].createElement(StyledDiv7, null, _react["default"].createElement(StyledDiv8, null, _react["default"].createElement(StyledLabel3, {
     htmlFor: yearId
   }, "Year"), _react["default"].createElement(StyledInput3, {
     error: error,
     id: yearId,
     maxLength: 4,
-    name: name3,
+    name: name,
     pattern: "[0-9]*",
     type: "text",
-    disabled: disabled3,
-    readOnly: readOnly3,
-    autoFocus: autoFocus3,
-    value: value3,
-    spellCheck: spellCheck3,
-    autoComplete: autoComplete3,
-    onChange: onChange3
+    disabled: disabled,
+    readOnly: readOnly,
+    autoFocus: autoFocus,
+    value: value,
+    spellCheck: spellCheck,
+    autoComplete: autoComplete,
+    onChange: onChange
   }))))));
 };
 

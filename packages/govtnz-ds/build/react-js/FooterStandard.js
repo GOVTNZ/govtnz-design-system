@@ -14,25 +14,13 @@ var FooterStandard = function FooterStandard(_ref) {
       rel = _ref.rel,
       target = _ref.target,
       label1 = _ref.label1,
-      href2 = _ref.href2,
-      rel2 = _ref.rel2,
-      target2 = _ref.target2,
       label2 = _ref.label2,
-      href3 = _ref.href3,
-      rel3 = _ref.rel3,
-      target3 = _ref.target3,
       label3 = _ref.label3,
-      href4 = _ref.href4,
-      rel4 = _ref.rel4,
-      target4 = _ref.target4,
-      href5 = _ref.href5,
-      rel5 = _ref.rel5,
-      target5 = _ref.target5,
       src = _ref.src,
       width = _ref.width,
       height = _ref.height,
-      srcSet = _ref.srcSet,
-      crossOrigin = _ref.crossOrigin,
+      srcset = _ref.srcset,
+      crossorigin = _ref.crossorigin,
       copyrightYear = _ref.copyrightYear;
   return _react["default"].createElement("div", {
     className: "g-footer__standard"
@@ -57,25 +45,25 @@ var FooterStandard = function FooterStandard(_ref) {
     className: "g-footer__standard-inline-list-item"
   }, _react["default"].createElement("a", {
     className: "g-footer__standard-link",
-    href: href2,
-    rel: rel2,
-    target: target2
+    href: href,
+    rel: rel,
+    target: target
   }, label2 !== undefined ? label2 : _react["default"].createElement(_react["default"].Fragment, null, "Privacy"))), _react["default"].createElement("li", {
     className: "g-footer__standard-inline-list-item"
   }, _react["default"].createElement("a", {
     className: "g-footer__standard-link",
-    href: href3,
-    rel: rel3,
-    target: target3
+    href: href,
+    rel: rel,
+    target: target
   }, label3 !== undefined ? label3 : _react["default"].createElement(_react["default"].Fragment, null, "Copyright"))))))), _react["default"].createElement("div", {
     className: "g-flex-row"
   }, _react["default"].createElement("div", {
     className: "g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9"
   }, _react["default"].createElement("a", {
     className: "g-footer__standard-link--plain",
-    href: href4,
-    rel: rel4,
-    target: target4
+    href: href,
+    rel: rel,
+    target: target
   }, _react["default"].createElement("span", {
     className: "g-footer-visually-hidden"
   }, "New Zealand Government"), _react["default"].createElement("svg", {
@@ -92,9 +80,9 @@ var FooterStandard = function FooterStandard(_ref) {
     className: "g-footer__standard-licence"
   }, _react["default"].createElement("p", null, _react["default"].createElement("a", {
     className: "g-footer__standard-link--plain",
-    href: href5,
-    rel: rel5,
-    target: target5
+    href: href,
+    rel: rel,
+    target: target
   }, _react["default"].createElement("span", {
     className: "g-footer-visually-hidden"
   }, "Creative Commons 4.0 International Licence"), _react["default"].createElement("svg", {
@@ -129,8 +117,8 @@ var FooterStandard = function FooterStandard(_ref) {
     src: src,
     width: width,
     height: height,
-    srcSet: srcSet,
-    crossOrigin: crossOrigin
+    srcSet: srcset,
+    crossOrigin: crossorigin
   }), _react["default"].createElement("p", {
     className: "g-footer__standard-small-text"
   }, "\xA9 Crown Copyright", " ", _react["default"].createElement("span", null, copyrightYear !== undefined ? copyrightYear : _react["default"].createElement(_react["default"].Fragment, null, "2019"))))))));

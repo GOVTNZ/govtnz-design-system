@@ -166,25 +166,13 @@ const FooterStandard = ({
   rel,
   target,
   label1,
-  href2,
-  rel2,
-  target2,
   label2,
-  href3,
-  rel3,
-  target3,
   label3,
-  href4,
-  rel4,
-  target4,
-  href5,
-  rel5,
-  target5,
   src,
   width,
   height,
-  srcSet,
-  crossOrigin,
+  srcset,
+  crossorigin,
   copyrightYear
 }) => (
   <StyledDiv>
@@ -203,7 +191,7 @@ const FooterStandard = ({
                 </StyledA>
               </StyledLi>
               <StyledLi2>
-                <StyledA2 href={href2} rel={rel2} target={target2}>
+                <StyledA2 href={href} rel={rel} target={target}>
                   {label2 !== undefined ? (
                     label2
                   ) : (
@@ -212,7 +200,7 @@ const FooterStandard = ({
                 </StyledA2>
               </StyledLi2>
               <StyledLi3>
-                <StyledA3 href={href3} rel={rel3} target={target3}>
+                <StyledA3 href={href} rel={rel} target={target}>
                   {label3 !== undefined ? (
                     label3
                   ) : (
@@ -226,7 +214,7 @@ const FooterStandard = ({
       </div>
       <div>
         <div>
-          <StyledA4 href={href4} rel={rel4} target={target4}>
+          <StyledA4 href={href} rel={rel} target={target}>
             <StyledSpan>New Zealand Government</StyledSpan>
 
             <StyledSvg
@@ -244,7 +232,7 @@ const FooterStandard = ({
           </StyledA4>
           <StyledDiv3>
             <p>
-              <StyledA5 href={href5} rel={rel5} target={target5}>
+              <StyledA5 href={href} rel={rel} target={target}>
                 <StyledSpan2>
                   Creative Commons 4.0 International Licence
                 </StyledSpan2>
@@ -288,8 +276,8 @@ const FooterStandard = ({
               src={src}
               width={width}
               height={height}
-              srcSet={srcSet}
-              crossOrigin={crossOrigin}
+              srcSet={srcset}
+              crossOrigin={crossorigin}
             />
             <StyledP2>
               © Crown Copyright{" "}

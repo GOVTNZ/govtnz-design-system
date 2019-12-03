@@ -15,20 +15,6 @@ export declare class AppComponent {
     spellCheck: boolean | undefined;
     autoComplete: any;
     monthId: string | undefined;
-    name2: string;
-    disabled2: boolean | undefined;
-    readOnly2: boolean | undefined;
-    autoFocus2: boolean | undefined;
-    value2: string | undefined;
-    spellCheck2: boolean | undefined;
-    autoComplete2: any;
     yearId: string | undefined;
-    name3: string;
-    disabled3: boolean | undefined;
-    readOnly3: boolean | undefined;
-    autoFocus3: boolean | undefined;
-    value3: string | undefined;
-    spellCheck3: boolean | undefined;
-    autoComplete3: any;
     title: string;
 }

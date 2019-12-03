@@ -1,15 +1,11 @@
 import React from "react";
 
-const FieldsetBlock = ({
-  hintId,
-  errorId,
-  legend,
-  hint,
-  errorId2,
-  error,
-  children
-}) => (
-  <div className="g-fieldsetBlock-form-group">
+const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
+  <div
+    className={`g-fieldsetBlock-form-group${
+      errorId ? " g-fieldsetBlock-form-group--error" : ""
+    }`}
+  >
     <fieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -38,7 +34,7 @@ const FieldsetBlock = ({
       ) : (
         ""
       )}
-      {errorId2 !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <div className="g-fieldsetBlock-error-message" id={errorId}>
             <span className="g-fieldsetBlock-visually-hidden">Error:</span>

@@ -1,5 +1,5 @@
 
-        <div class="g-form-group {{ error!?: g-form-group--error }}">
+        <div class="g-form-group {{ error?: g-form-group--error }}">
           <fieldset
             class="g-fieldset"
             aria-describedby="hintId errorId"
@@ -14,13 +14,13 @@
             >
               <mt-variable key="hint">Example hint</mt-variable>
             </span>
-            <mt-if key="!?error">
+            <mt-if key="?error">
               <span
                 id="errorId"
                 class="g-error-message"
               >
                 <span class="g-visually-hidden">Error: </span>
-                <mt-variable key="!?error">Example error</mt-variable>
+                <mt-variable key="?error">Example error</mt-variable>
             </mt-if>
             </span>
             <div
@@ -37,7 +37,7 @@
                   </label>
                   <input
                     id="dayId"
-                    class="g-input g-date-input__input g-input--width-2 {{ error!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
                     name="dayId"
                     type="text"
                     maxlength="2"
@@ -55,7 +55,7 @@
                   </label>
                   <input
                     id="monthId"
-                    class="g-input g-date-input__input g-input--width-2 {{ error!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
                     name="monthId"
                     type="text"
                     maxlength="2"
@@ -73,7 +73,7 @@
                   </label>
                   <input
                     id="yearId"
-                    class="g-input g-date-input__input g-input--width-4 {{ error!?: g-input--error }}"
+                    class="g-input g-date-input__input g-input--width-4 {{ error?: g-input--error }}"
                     name="yearId"
                     type="text"
                     maxlength="4"

@@ -5,25 +5,13 @@ const FooterStandard = ({
   rel,
   target,
   label1,
-  href2,
-  rel2,
-  target2,
   label2,
-  href3,
-  rel3,
-  target3,
   label3,
-  href4,
-  rel4,
-  target4,
-  href5,
-  rel5,
-  target5,
   src,
   width,
   height,
-  srcSet,
-  crossOrigin,
+  srcset,
+  crossorigin,
   copyrightYear
 }) => (
   <div className="g-footer__standard">
@@ -49,9 +37,9 @@ const FooterStandard = ({
               <li className="g-footer__standard-inline-list-item">
                 <a
                   className="g-footer__standard-link"
-                  href={href2}
-                  rel={rel2}
-                  target={target2}
+                  href={href}
+                  rel={rel}
+                  target={target}
                 >
                   {label2 !== undefined ? (
                     label2
@@ -63,9 +51,9 @@ const FooterStandard = ({
               <li className="g-footer__standard-inline-list-item">
                 <a
                   className="g-footer__standard-link"
-                  href={href3}
-                  rel={rel3}
-                  target={target3}
+                  href={href}
+                  rel={rel}
+                  target={target}
                 >
                   {label3 !== undefined ? (
                     label3
@@ -82,9 +70,9 @@ const FooterStandard = ({
         <div className="g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9">
           <a
             className="g-footer__standard-link--plain"
-            href={href4}
-            rel={rel4}
-            target={target4}
+            href={href}
+            rel={rel}
+            target={target}
           >
             <span className="g-footer-visually-hidden">
               New Zealand Government
@@ -108,9 +96,9 @@ const FooterStandard = ({
             <p>
               <a
                 className="g-footer__standard-link--plain"
-                href={href5}
-                rel={rel5}
-                target={target5}
+                href={href}
+                rel={rel}
+                target={target}
               >
                 <span className="g-footer-visually-hidden">
                   Creative Commons 4.0 International Licence
@@ -158,8 +146,8 @@ const FooterStandard = ({
               src={src}
               width={width}
               height={height}
-              srcSet={srcSet}
-              crossOrigin={crossOrigin}
+              srcSet={srcset}
+              crossOrigin={crossorigin}
             />
             <p className="g-footer__standard-small-text">
               © Crown Copyright{" "}

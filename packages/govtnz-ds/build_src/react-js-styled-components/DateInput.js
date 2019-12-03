@@ -466,23 +466,7 @@ const DateInput = ({
   autoComplete,
   onChange,
   monthId,
-  name2,
-  disabled2,
-  readOnly2,
-  autoFocus2,
-  value2,
-  spellCheck2,
-  autoComplete2,
-  onChange2,
-  yearId,
-  name3,
-  disabled3,
-  readOnly3,
-  autoFocus3,
-  value3,
-  spellCheck3,
-  autoComplete3,
-  onChange3
+  yearId
 }) => (
   <StyledDiv error={error}>
     <StyledFieldset
@@ -550,16 +534,16 @@ const DateInput = ({
               error={error}
               id={monthId}
               maxLength={2}
-              name={name2}
+              name={name}
               pattern="[0-9]*"
               type="text"
-              disabled={disabled2}
-              readOnly={readOnly2}
-              autoFocus={autoFocus2}
-              value={value2}
-              spellCheck={spellCheck2}
-              autoComplete={autoComplete2}
-              onChange={onChange2}
+              disabled={disabled}
+              readOnly={readOnly}
+              autoFocus={autoFocus}
+              value={value}
+              spellCheck={spellCheck}
+              autoComplete={autoComplete}
+              onChange={onChange}
             />
           </StyledDiv6>
         </StyledDiv5>
@@ -570,16 +554,16 @@ const DateInput = ({
               error={error}
               id={yearId}
               maxLength={4}
-              name={name3}
+              name={name}
               pattern="[0-9]*"
               type="text"
-              disabled={disabled3}
-              readOnly={readOnly3}
-              autoFocus={autoFocus3}
-              value={value3}
-              spellCheck={spellCheck3}
-              autoComplete={autoComplete3}
-              onChange={onChange3}
+              disabled={disabled}
+              readOnly={readOnly}
+              autoFocus={autoFocus}
+              value={value}
+              spellCheck={spellCheck}
+              autoComplete={autoComplete}
+              onChange={onChange}
             />
           </StyledDiv8>
         </StyledDiv7>

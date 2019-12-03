@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "g-FieldsetBlock",
   template: `
-<div class="g-fieldsetBlock-form-group">
+<div class="g-fieldsetBlock-form-group{{errorId ? " g-fieldsetBlock-form-group--error" : ""}}">
 
   
 <fieldset aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-fieldset">
@@ -67,11 +67,10 @@ import { Component, Input } from "@angular/core";
 `
 })
 export class AppComponent {
-  @Input() hintId: string | undefined;
   @Input() errorId: string | undefined;
+  @Input() hintId: string | undefined;
   @Input() legend: React.ReactNode;
   @Input() hint: React.ReactNode;
-  @Input() errorId2: React.ReactNode;
   @Input() error: React.ReactNode;
   @Input() children: React.ReactNode;
   title = "FieldsetBlock";

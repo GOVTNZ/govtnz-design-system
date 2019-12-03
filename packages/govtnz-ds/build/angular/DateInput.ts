@@ -91,7 +91,7 @@ Error:
 
 
                   
-<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{name2}}" pattern="[0-9]*" type="text" disabled="{{disabled2}}" readonly="{{readOnly2}}" autofocus="{{autoFocus2}}" value="{{value2}}" spellcheck="{{spellCheck2}}" autocomplete="{{autoComplete2}}"/>
+<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{name}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
                 
 
@@ -119,7 +119,7 @@ Error:
 
 
                   
-<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{name3}}" pattern="[0-9]*" type="text" disabled="{{disabled3}}" readonly="{{readOnly3}}" autofocus="{{autoFocus3}}" value="{{value3}}" spellcheck="{{spellCheck3}}" autocomplete="{{autoComplete3}}"/>
+<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{name}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
                 
 
@@ -164,20 +164,6 @@ export class AppComponent {
   @Input() spellCheck: boolean | undefined;
   @Input() autoComplete: any;
   @Input() monthId: string | undefined;
-  @Input() name2: string;
-  @Input() disabled2: boolean | undefined;
-  @Input() readOnly2: boolean | undefined;
-  @Input() autoFocus2: boolean | undefined;
-  @Input() value2: string | undefined;
-  @Input() spellCheck2: boolean | undefined;
-  @Input() autoComplete2: any;
   @Input() yearId: string | undefined;
-  @Input() name3: string;
-  @Input() disabled3: boolean | undefined;
-  @Input() readOnly3: boolean | undefined;
-  @Input() autoFocus3: boolean | undefined;
-  @Input() value3: string | undefined;
-  @Input() spellCheck3: boolean | undefined;
-  @Input() autoComplete3: any;
   title = "DateInput";
 }

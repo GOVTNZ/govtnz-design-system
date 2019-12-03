@@ -1,9 +1,9 @@
-<div class="g-form-group">
+<div class="g-form-group {{ errorId?: g-form-group--error }}">
   <fieldset class="g-fieldset" aria-describedby="hintId errorId">
     <legend class="g-fieldset__legend">
       <mt-variable key="legend">Legend text</mt-variable>
     </legend>
-    <mt-if key="!hintId">
+    <mt-if key="hintId">
       <div class="g-hint" id="hintId">
         <mt-variable key="hint">Hint text</mt-variable>
       </div>

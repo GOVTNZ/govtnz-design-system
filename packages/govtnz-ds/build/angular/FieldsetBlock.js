@@ -13,19 +13,16 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "hintId", void 0);
+    ], AppComponent.prototype, "errorId", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "errorId", void 0);
+    ], AppComponent.prototype, "hintId", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "legend", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "hint", void 0);
-    __decorate([
-        core_1.Input()
-    ], AppComponent.prototype, "errorId2", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "error", void 0);
@@ -35,7 +32,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FieldsetBlock",
-            template: "\n<div class=\"g-fieldsetBlock-form-group\">\n\n  \n<fieldset aria-describedby=\"{{hintId ?  hintId : \"\"}}{{errorId ? \" \" +  errorId : \"\"}}\" class=\"g-fieldset\">\n\n    \n<legend class=\"g-fieldset__legend\">\n\n      <slot name=\"legend\"></slot>\n    \n\n</legend>\n\n\n    \n      \n<div class=\"g-fieldsetBlock-hint\" id=\"{{hintId}}\">\n\n        <slot name=\"hint\"></slot>\n      \n\n</div>\n\n\n    \n    \n      \n<div class=\"g-fieldsetBlock-error-message\" id=\"{{errorId}}\">\n\n        \n<span class=\"g-fieldsetBlock-visually-hidden\">\n\n          Error:\n        \n\n</span>\n\n\n        <slot name=\"error\"></slot>\n      \n\n</div>\n\n\n    \n    \n<div>\n<slot></slot>\n\n</div>\n\n\n  \n\n</fieldset>\n\n\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-fieldsetBlock-form-group{{errorId ? \" g-fieldsetBlock-form-group--error\" : \"\"}}\">\n\n  \n<fieldset aria-describedby=\"{{hintId ?  hintId : \"\"}}{{errorId ? \" \" +  errorId : \"\"}}\" class=\"g-fieldset\">\n\n    \n<legend class=\"g-fieldset__legend\">\n\n      <slot name=\"legend\"></slot>\n    \n\n</legend>\n\n\n    \n      \n<div class=\"g-fieldsetBlock-hint\" id=\"{{hintId}}\">\n\n        <slot name=\"hint\"></slot>\n      \n\n</div>\n\n\n    \n    \n      \n<div class=\"g-fieldsetBlock-error-message\" id=\"{{errorId}}\">\n\n        \n<span class=\"g-fieldsetBlock-visually-hidden\">\n\n          Error:\n        \n\n</span>\n\n\n        <slot name=\"error\"></slot>\n      \n\n</div>\n\n\n    \n    \n<div>\n<slot></slot>\n\n</div>\n\n\n  \n\n</fieldset>\n\n\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

@@ -9,7 +9,7 @@
 class="g-checkboxes__item"
 >
   
-        
+  
 <input
 {{#hintId}}
   aria-describedby="{{hintId}}"
@@ -39,7 +39,7 @@ type="checkbox"
 {{/checked}}
 />
   
-        
+  
 <label
 class="g-checkboxBlock-label g-checkboxes__label"
 {{#checkboxId}}
@@ -49,19 +49,23 @@ class="g-checkboxBlock-label g-checkboxes__label"
   {{{label}}}
 </label>
   
-        
   
-          
+  
+    
 <div
 class="g-checkboxBlock-hint g-checkboxes__hint"
 {{#hintId}}
   id="{{hintId}}"
 {{/hintId}}
 >
-  {{{hint}}}
-</div>
-  
-        
   
       
+  {{{hint}}}
+  
+    
+</div>
+  
+  
+  
+
 </div>

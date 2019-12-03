@@ -61,15 +61,15 @@
               v-bind:class="computed__class3"
               v-bind:id="monthId"
               maxlength="2"
-              v-bind:name="name2"
+              v-bind:name="name"
               pattern="[0-9]*"
               type="text"
-              v-bind:disabled="disabled2"
-              v-bind:readonly="readOnly2"
-              v-bind:autofocus="autoFocus2"
-              v-bind:value="value2"
-              v-bind:spellcheck="spellCheck2"
-              v-bind:autocomplete="autoComplete2"
+              v-bind:disabled="disabled"
+              v-bind:readonly="readOnly"
+              v-bind:autofocus="autoFocus"
+              v-bind:value="value"
+              v-bind:spellcheck="spellCheck"
+              v-bind:autocomplete="autoComplete"
             />
           </div>
         </div>
@@ -87,15 +87,15 @@
               v-bind:class="computed__class4"
               v-bind:id="yearId"
               maxlength="4"
-              v-bind:name="name3"
+              v-bind:name="name"
               pattern="[0-9]*"
               type="text"
-              v-bind:disabled="disabled3"
-              v-bind:readonly="readOnly3"
-              v-bind:autofocus="autoFocus3"
-              v-bind:value="value3"
-              v-bind:spellcheck="spellCheck3"
-              v-bind:autocomplete="autoComplete3"
+              v-bind:disabled="disabled"
+              v-bind:readonly="readOnly"
+              v-bind:autofocus="autoFocus"
+              v-bind:value="value"
+              v-bind:spellcheck="spellCheck"
+              v-bind:autocomplete="autoComplete"
             />
           </div>
         </div>
@@ -128,21 +128,7 @@ export default Vue.extend({
     spellCheck: { type: Boolean, default: false, required: false },
     autoComplete: { type: String, required: true },
     monthId: { type: String, required: false },
-    name2: { type: String, required: true },
-    disabled2: { type: Boolean, default: false, required: false },
-    readOnly2: { type: Boolean, default: false, required: false },
-    autoFocus2: { type: Boolean, default: false, required: false },
-    value2: { type: String, required: false },
-    spellCheck2: { type: Boolean, default: false, required: false },
-    autoComplete2: { type: String, required: true },
-    yearId: { type: String, required: false },
-    name3: { type: String, required: true },
-    disabled3: { type: Boolean, default: false, required: false },
-    readOnly3: { type: Boolean, default: false, required: false },
-    autoFocus3: { type: Boolean, default: false, required: false },
-    value3: { type: String, required: false },
-    spellCheck3: { type: Boolean, default: false, required: false },
-    autoComplete3: { type: String, required: true }
+    yearId: { type: String, required: false }
   },
   computed: {
     computed__class() {
