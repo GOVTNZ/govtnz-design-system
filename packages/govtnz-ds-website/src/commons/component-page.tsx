@@ -52,7 +52,11 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
                   {title}
                 </H1>
               </>
-            ) : null}
+            ) : (
+              <H1 styleSize="xlarge" id="main-heading">
+                {title}
+              </H1>
+            )}
             {isStable === false && (
               <Note>
                 <H2 styleSize="medium">Note: Component coming soon</H2>
