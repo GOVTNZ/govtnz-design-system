@@ -20,7 +20,6 @@ type Props = { children: React.ReactNode; path: string } & PageRendererProps;
 const Layout = (props: Props) => {
   const { children, path } = props;
 
-  console.log({ location, path });
   useEffect(() => {
     if (document.body.classList) {
       document.documentElement.classList.add('theme-default');
