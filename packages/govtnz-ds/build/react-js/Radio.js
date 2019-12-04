@@ -10,8 +10,7 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var Radio = function Radio(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      gov1 = _ref.gov1,
+  var id = _ref.id,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -22,8 +21,8 @@ var Radio = function Radio(_ref) {
       onChange = _ref.onChange;
   return _react["default"].createElement("input", {
     "aria-describedby": hintId,
-    className: "g-radios__input".concat(fakeFocus ? " :focus" : ""),
-    id: gov1,
+    className: "g-radios__input",
+    id: id,
     name: name,
     type: "radio",
     disabled: disabled,

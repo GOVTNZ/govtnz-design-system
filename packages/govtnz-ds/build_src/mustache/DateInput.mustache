@@ -6,31 +6,29 @@
      - error.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
-  
-        
 <div
 class="g-dateInput-form-group{{#error}} g-dateInput-form-group--error{{/error}}"
 >
   
-          
+  
 <fieldset
 aria-describedby="{{hintId}} {{errorId}}"
-class="g-dateInput-fieldset"
+class="g-fieldset"
 role="group"
 >
   
-            
+    
 <legend
-class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
+class="g-fieldset__legend g-fieldset__legend--xl"
 >
   
-              
+      
   {{{label}}}
   
-            
+    
 </legend>
   
-            
+    
 <span
 class="g-dateInput-hint"
 {{#hintId}}
@@ -38,15 +36,15 @@ class="g-dateInput-hint"
 {{/hintId}}
 >
   
-              
+      
   {{{hint}}}
   
-            
+    
 </span>
   
-            
+    
   
-              
+      
 <span
 class="g-dateInput-error-message"
 {{#errorId}}
@@ -54,53 +52,54 @@ class="g-dateInput-error-message"
 {{/errorId}}
 >
   
-                
+        
 <span
 class="g-dateInput-visually-hidden"
 >
   Error: 
 </span>
   
-                
+        
   {{{error}}}
   
-            
+      
 </span>
   
-            
-            
+    
+  
+    
 <div
-class="g-dateInput-date-input"
+class="g-date-input"
 {{#id}}
   id="{{id}}"
 {{/id}}
 >
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label g-dateInput-date-input__label"
+class="g-dateInput-label g-date-input__label"
 {{#dayId}}
   for="{{dayId}}"
 {{/dayId}}
 >
   
-                    Day
-                  
+            Day
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2{{#error}} g-dateInput-input--error{{/error}}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{#error}} g-dateInput-input--error{{/error}}"
 {{#dayId}}
   id="{{dayId}}"
 {{/dayId}}
@@ -126,141 +125,141 @@ type="text"
   spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
 {{/spellCheck}}
 {{#autoComplete}}
-  autocomplete="{{#autoComplete=Off}}off{{/autoComplete=Off}}{{#autoComplete=On}}on{{/autoComplete=On}}{{#autoComplete=Name}}name{{/autoComplete=Name}}{{#autoComplete=Honorific: Prefix}}honorific-prefix{{/autoComplete=Honorific: Prefix}}{{#autoComplete=Given Name}}given-name{{/autoComplete=Given Name}}{{#autoComplete=Additional Name}}additional-name{{/autoComplete=Additional Name}}{{#autoComplete=Family Name}}family-name{{/autoComplete=Family Name}}{{#autoComplete=Honorific: Suffix}}honorific-suffix{{/autoComplete=Honorific: Suffix}}{{#autoComplete=Nickname}}nickname{{/autoComplete=Nickname}}{{#autoComplete=Email}}email{{/autoComplete=Email}}{{#autoComplete=Username}}username{{/autoComplete=Username}}{{#autoComplete=New Password}}new-password{{/autoComplete=New Password}}{{#autoComplete=Current Password}}current-password{{/autoComplete=Current Password}}{{#autoComplete=Organization Title}}organization-title{{/autoComplete=Organization Title}}{{#autoComplete=Organization}}organization{{/autoComplete=Organization}}{{#autoComplete=Street Address}}street-address{{/autoComplete=Street Address}}{{#autoComplete=Address Line 1}}address-line1{{/autoComplete=Address Line 1}}{{#autoComplete=Address Line 2}}address-line2{{/autoComplete=Address Line 2}}{{#autoComplete=Address Line 3}}address-line3{{/autoComplete=Address Line 3}}{{#autoComplete=Address Level 4}}address-level4{{/autoComplete=Address Level 4}}{{#autoComplete=Address Level 3}}address-level3{{/autoComplete=Address Level 3}}{{#autoComplete=Address Level 2}}address-level2{{/autoComplete=Address Level 2}}{{#autoComplete=Address Level 1}}address-level1{{/autoComplete=Address Level 1}}{{#autoComplete=Country}}country{{/autoComplete=Country}}{{#autoComplete=Country Name}}country-name{{/autoComplete=Country Name}}{{#autoComplete=Postal Code}}postal-code{{/autoComplete=Postal Code}}{{#autoComplete=Credit Card: Name}}cc-name{{/autoComplete=Credit Card: Name}}{{#autoComplete=Credit Card: Given Name}}cc-given-name{{/autoComplete=Credit Card: Given Name}}{{#autoComplete=Credit Card: Additional Name}}cc-additional-name{{/autoComplete=Credit Card: Additional Name}}{{#autoComplete=Credit Card: Family Name}}cc-family-name{{/autoComplete=Credit Card: Family Name}}{{#autoComplete=Credit Card: Number}}cc-number{{/autoComplete=Credit Card: Number}}{{#autoComplete=Credit Card: Expiry}}cc-exp{{/autoComplete=Credit Card: Expiry}}{{#autoComplete=Credit Card: Expiry Month}}cc-exp-month{{/autoComplete=Credit Card: Expiry Month}}{{#autoComplete=Credit Card: Expiry Year}}cc-exp-year{{/autoComplete=Credit Card: Expiry Year}}{{#autoComplete=Credit Card: CSC}}cc-csc{{/autoComplete=Credit Card: CSC}}{{#autoComplete=Credit Card: Type}}cc-type{{/autoComplete=Credit Card: Type}}{{#autoComplete=Transaction: Currency}}transaction-currency{{/autoComplete=Transaction: Currency}}{{#autoComplete=Transaction: Amount}}transaction-amount{{/autoComplete=Transaction: Amount}}{{#autoComplete=Language}}language{{/autoComplete=Language}}{{#autoComplete=Birthday}}bday{{/autoComplete=Birthday}}{{#autoComplete=Birthday: Day}}bday-day{{/autoComplete=Birthday: Day}}{{#autoComplete=Birthday: Month}}bday-month{{/autoComplete=Birthday: Month}}{{#autoComplete=Birthday: Year}}bday-year{{/autoComplete=Birthday: Year}}{{#autoComplete=Sex}}sex{{/autoComplete=Sex}}{{#autoComplete=Telephone}}tel{{/autoComplete=Telephone}}{{#autoComplete=Telephone: Country Code}}tel-country-code{{/autoComplete=Telephone: Country Code}}{{#autoComplete=Telephone: National}}tel-national{{/autoComplete=Telephone: National}}{{#autoComplete=Telephone: Area Code}}tel-area-code{{/autoComplete=Telephone: Area Code}}{{#autoComplete=Telephone: Local}}tel-local{{/autoComplete=Telephone: Local}}{{#autoComplete=Telephone: Extension}}tel-extension{{/autoComplete=Telephone: Extension}}{{#autoComplete=IMPP}}impp{{/autoComplete=IMPP}}{{#autoComplete=URL}}url{{/autoComplete=URL}}{{#autoComplete=Photo}}photo{{/autoComplete=Photo}}"
+  autocomplete="{{autoComplete}}"
 {{/autoComplete}}
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label g-dateInput-date-input__label"
+class="g-dateInput-label g-date-input__label"
 {{#monthId}}
   for="{{monthId}}"
 {{/monthId}}
 >
   
-                    Month
-                  
+            Month
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2{{#error}} g-dateInput-input--error{{/error}}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{#error}} g-dateInput-input--error{{/error}}"
 {{#monthId}}
   id="{{monthId}}"
 {{/monthId}}
 maxlength="2"
-{{#name2}}
-  name="{{name2}}"
-{{/name2}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
 pattern="[0-9]*"
 type="text"
-{{#disabled2}}
-  disabled="{{#disabled2}}disabled2{{/disabled2}}"
-{{/disabled2}}
-{{#readOnly2}}
-  readonly="{{#readOnly2}}readOnly2{{/readOnly2}}"
-{{/readOnly2}}
-{{#autoFocus2}}
-  autofocus="{{#autoFocus2}}autoFocus2{{/autoFocus2}}"
-{{/autoFocus2}}
-{{#value2}}
-  value="{{value2}}"
-{{/value2}}
-{{#spellCheck2}}
-  spellcheck="{{#spellCheck2}}spellCheck2{{/spellCheck2}}"
-{{/spellCheck2}}
-{{#autoComplete2}}
-  autocomplete="{{#autoComplete2=Off}}off{{/autoComplete2=Off}}{{#autoComplete2=On}}on{{/autoComplete2=On}}{{#autoComplete2=Name}}name{{/autoComplete2=Name}}{{#autoComplete2=Honorific: Prefix}}honorific-prefix{{/autoComplete2=Honorific: Prefix}}{{#autoComplete2=Given Name}}given-name{{/autoComplete2=Given Name}}{{#autoComplete2=Additional Name}}additional-name{{/autoComplete2=Additional Name}}{{#autoComplete2=Family Name}}family-name{{/autoComplete2=Family Name}}{{#autoComplete2=Honorific: Suffix}}honorific-suffix{{/autoComplete2=Honorific: Suffix}}{{#autoComplete2=Nickname}}nickname{{/autoComplete2=Nickname}}{{#autoComplete2=Email}}email{{/autoComplete2=Email}}{{#autoComplete2=Username}}username{{/autoComplete2=Username}}{{#autoComplete2=New Password}}new-password{{/autoComplete2=New Password}}{{#autoComplete2=Current Password}}current-password{{/autoComplete2=Current Password}}{{#autoComplete2=Organization Title}}organization-title{{/autoComplete2=Organization Title}}{{#autoComplete2=Organization}}organization{{/autoComplete2=Organization}}{{#autoComplete2=Street Address}}street-address{{/autoComplete2=Street Address}}{{#autoComplete2=Address Line 1}}address-line1{{/autoComplete2=Address Line 1}}{{#autoComplete2=Address Line 2}}address-line2{{/autoComplete2=Address Line 2}}{{#autoComplete2=Address Line 3}}address-line3{{/autoComplete2=Address Line 3}}{{#autoComplete2=Address Level 4}}address-level4{{/autoComplete2=Address Level 4}}{{#autoComplete2=Address Level 3}}address-level3{{/autoComplete2=Address Level 3}}{{#autoComplete2=Address Level 2}}address-level2{{/autoComplete2=Address Level 2}}{{#autoComplete2=Address Level 1}}address-level1{{/autoComplete2=Address Level 1}}{{#autoComplete2=Country}}country{{/autoComplete2=Country}}{{#autoComplete2=Country Name}}country-name{{/autoComplete2=Country Name}}{{#autoComplete2=Postal Code}}postal-code{{/autoComplete2=Postal Code}}{{#autoComplete2=Credit Card: Name}}cc-name{{/autoComplete2=Credit Card: Name}}{{#autoComplete2=Credit Card: Given Name}}cc-given-name{{/autoComplete2=Credit Card: Given Name}}{{#autoComplete2=Credit Card: Additional Name}}cc-additional-name{{/autoComplete2=Credit Card: Additional Name}}{{#autoComplete2=Credit Card: Family Name}}cc-family-name{{/autoComplete2=Credit Card: Family Name}}{{#autoComplete2=Credit Card: Number}}cc-number{{/autoComplete2=Credit Card: Number}}{{#autoComplete2=Credit Card: Expiry}}cc-exp{{/autoComplete2=Credit Card: Expiry}}{{#autoComplete2=Credit Card: Expiry Month}}cc-exp-month{{/autoComplete2=Credit Card: Expiry Month}}{{#autoComplete2=Credit Card: Expiry Year}}cc-exp-year{{/autoComplete2=Credit Card: Expiry Year}}{{#autoComplete2=Credit Card: CSC}}cc-csc{{/autoComplete2=Credit Card: CSC}}{{#autoComplete2=Credit Card: Type}}cc-type{{/autoComplete2=Credit Card: Type}}{{#autoComplete2=Transaction: Currency}}transaction-currency{{/autoComplete2=Transaction: Currency}}{{#autoComplete2=Transaction: Amount}}transaction-amount{{/autoComplete2=Transaction: Amount}}{{#autoComplete2=Language}}language{{/autoComplete2=Language}}{{#autoComplete2=Birthday}}bday{{/autoComplete2=Birthday}}{{#autoComplete2=Birthday: Day}}bday-day{{/autoComplete2=Birthday: Day}}{{#autoComplete2=Birthday: Month}}bday-month{{/autoComplete2=Birthday: Month}}{{#autoComplete2=Birthday: Year}}bday-year{{/autoComplete2=Birthday: Year}}{{#autoComplete2=Sex}}sex{{/autoComplete2=Sex}}{{#autoComplete2=Telephone}}tel{{/autoComplete2=Telephone}}{{#autoComplete2=Telephone: Country Code}}tel-country-code{{/autoComplete2=Telephone: Country Code}}{{#autoComplete2=Telephone: National}}tel-national{{/autoComplete2=Telephone: National}}{{#autoComplete2=Telephone: Area Code}}tel-area-code{{/autoComplete2=Telephone: Area Code}}{{#autoComplete2=Telephone: Local}}tel-local{{/autoComplete2=Telephone: Local}}{{#autoComplete2=Telephone: Extension}}tel-extension{{/autoComplete2=Telephone: Extension}}{{#autoComplete2=IMPP}}impp{{/autoComplete2=IMPP}}{{#autoComplete2=URL}}url{{/autoComplete2=URL}}{{#autoComplete2=Photo}}photo{{/autoComplete2=Photo}}"
-{{/autoComplete2}}
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+{{#spellCheck}}
+  spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
+{{/spellCheck}}
+{{#autoComplete}}
+  autocomplete="{{autoComplete}}"
+{{/autoComplete}}
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label govuk-date-input__label"
+class="g-dateInput-label g-date-input__label"
 {{#yearId}}
   for="{{yearId}}"
 {{/yearId}}
 >
   
-                    Year
-                  
+            Year
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4{{#error}} g-dateInput-input--error{{/error}}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{{#error}} g-dateInput-input--error{{/error}}"
 {{#yearId}}
   id="{{yearId}}"
 {{/yearId}}
 maxlength="4"
-{{#name3}}
-  name="{{name3}}"
-{{/name3}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
 pattern="[0-9]*"
 type="text"
-{{#disabled3}}
-  disabled="{{#disabled3}}disabled3{{/disabled3}}"
-{{/disabled3}}
-{{#readOnly3}}
-  readonly="{{#readOnly3}}readOnly3{{/readOnly3}}"
-{{/readOnly3}}
-{{#autoFocus3}}
-  autofocus="{{#autoFocus3}}autoFocus3{{/autoFocus3}}"
-{{/autoFocus3}}
-{{#value3}}
-  value="{{value3}}"
-{{/value3}}
-{{#spellCheck3}}
-  spellcheck="{{#spellCheck3}}spellCheck3{{/spellCheck3}}"
-{{/spellCheck3}}
-{{#autoComplete3}}
-  autocomplete="{{#autoComplete3=Off}}off{{/autoComplete3=Off}}{{#autoComplete3=On}}on{{/autoComplete3=On}}{{#autoComplete3=Name}}name{{/autoComplete3=Name}}{{#autoComplete3=Honorific: Prefix}}honorific-prefix{{/autoComplete3=Honorific: Prefix}}{{#autoComplete3=Given Name}}given-name{{/autoComplete3=Given Name}}{{#autoComplete3=Additional Name}}additional-name{{/autoComplete3=Additional Name}}{{#autoComplete3=Family Name}}family-name{{/autoComplete3=Family Name}}{{#autoComplete3=Honorific: Suffix}}honorific-suffix{{/autoComplete3=Honorific: Suffix}}{{#autoComplete3=Nickname}}nickname{{/autoComplete3=Nickname}}{{#autoComplete3=Email}}email{{/autoComplete3=Email}}{{#autoComplete3=Username}}username{{/autoComplete3=Username}}{{#autoComplete3=New Password}}new-password{{/autoComplete3=New Password}}{{#autoComplete3=Current Password}}current-password{{/autoComplete3=Current Password}}{{#autoComplete3=Organization Title}}organization-title{{/autoComplete3=Organization Title}}{{#autoComplete3=Organization}}organization{{/autoComplete3=Organization}}{{#autoComplete3=Street Address}}street-address{{/autoComplete3=Street Address}}{{#autoComplete3=Address Line 1}}address-line1{{/autoComplete3=Address Line 1}}{{#autoComplete3=Address Line 2}}address-line2{{/autoComplete3=Address Line 2}}{{#autoComplete3=Address Line 3}}address-line3{{/autoComplete3=Address Line 3}}{{#autoComplete3=Address Level 4}}address-level4{{/autoComplete3=Address Level 4}}{{#autoComplete3=Address Level 3}}address-level3{{/autoComplete3=Address Level 3}}{{#autoComplete3=Address Level 2}}address-level2{{/autoComplete3=Address Level 2}}{{#autoComplete3=Address Level 1}}address-level1{{/autoComplete3=Address Level 1}}{{#autoComplete3=Country}}country{{/autoComplete3=Country}}{{#autoComplete3=Country Name}}country-name{{/autoComplete3=Country Name}}{{#autoComplete3=Postal Code}}postal-code{{/autoComplete3=Postal Code}}{{#autoComplete3=Credit Card: Name}}cc-name{{/autoComplete3=Credit Card: Name}}{{#autoComplete3=Credit Card: Given Name}}cc-given-name{{/autoComplete3=Credit Card: Given Name}}{{#autoComplete3=Credit Card: Additional Name}}cc-additional-name{{/autoComplete3=Credit Card: Additional Name}}{{#autoComplete3=Credit Card: Family Name}}cc-family-name{{/autoComplete3=Credit Card: Family Name}}{{#autoComplete3=Credit Card: Number}}cc-number{{/autoComplete3=Credit Card: Number}}{{#autoComplete3=Credit Card: Expiry}}cc-exp{{/autoComplete3=Credit Card: Expiry}}{{#autoComplete3=Credit Card: Expiry Month}}cc-exp-month{{/autoComplete3=Credit Card: Expiry Month}}{{#autoComplete3=Credit Card: Expiry Year}}cc-exp-year{{/autoComplete3=Credit Card: Expiry Year}}{{#autoComplete3=Credit Card: CSC}}cc-csc{{/autoComplete3=Credit Card: CSC}}{{#autoComplete3=Credit Card: Type}}cc-type{{/autoComplete3=Credit Card: Type}}{{#autoComplete3=Transaction: Currency}}transaction-currency{{/autoComplete3=Transaction: Currency}}{{#autoComplete3=Transaction: Amount}}transaction-amount{{/autoComplete3=Transaction: Amount}}{{#autoComplete3=Language}}language{{/autoComplete3=Language}}{{#autoComplete3=Birthday}}bday{{/autoComplete3=Birthday}}{{#autoComplete3=Birthday: Day}}bday-day{{/autoComplete3=Birthday: Day}}{{#autoComplete3=Birthday: Month}}bday-month{{/autoComplete3=Birthday: Month}}{{#autoComplete3=Birthday: Year}}bday-year{{/autoComplete3=Birthday: Year}}{{#autoComplete3=Sex}}sex{{/autoComplete3=Sex}}{{#autoComplete3=Telephone}}tel{{/autoComplete3=Telephone}}{{#autoComplete3=Telephone: Country Code}}tel-country-code{{/autoComplete3=Telephone: Country Code}}{{#autoComplete3=Telephone: National}}tel-national{{/autoComplete3=Telephone: National}}{{#autoComplete3=Telephone: Area Code}}tel-area-code{{/autoComplete3=Telephone: Area Code}}{{#autoComplete3=Telephone: Local}}tel-local{{/autoComplete3=Telephone: Local}}{{#autoComplete3=Telephone: Extension}}tel-extension{{/autoComplete3=Telephone: Extension}}{{#autoComplete3=IMPP}}impp{{/autoComplete3=IMPP}}{{#autoComplete3=URL}}url{{/autoComplete3=URL}}{{#autoComplete3=Photo}}photo{{/autoComplete3=Photo}}"
-{{/autoComplete3}}
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+{{#spellCheck}}
+  spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
+{{/spellCheck}}
+{{#autoComplete}}
+  autocomplete="{{autoComplete}}"
+{{/autoComplete}}
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-            
+    
 </div>
   
-          
+  
 </fieldset>
   
-        
+
 </div>

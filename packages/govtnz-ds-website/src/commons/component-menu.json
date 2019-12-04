@@ -17,10 +17,7 @@
     "stable": false,
     "items": [
       { "id": "Textarea", "name": "Textarea", "stable": false },
-      { "id": "Breadcrumbs", "name": "Breadcrumbs", "stable": false },
-      { "id": "CharacterCount", "name": "Character count", "stable": false },
       { "id": "InsetText", "name": "Inset text", "stable": false },
-      { "id": "BackLink", "name": "Back link", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }
     ]
   }

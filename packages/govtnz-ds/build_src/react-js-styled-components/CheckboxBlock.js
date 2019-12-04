@@ -155,7 +155,6 @@ const StyledDiv2 = styled.div`
 `;
 
 const CheckboxBlock = ({
-  fakeFocus,
   checkboxId,
   hintId,
   name,
@@ -170,7 +169,6 @@ const CheckboxBlock = ({
 }) => (
   <StyledDiv>
     <StyledInput
-      fakeFocus={fakeFocus}
       aria-describedby={hintId}
       id={checkboxId}
       type="checkbox"

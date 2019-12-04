@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import InputBlock from '@govtnz/ds/build/react-ts/InputBlock.tsx';
+import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

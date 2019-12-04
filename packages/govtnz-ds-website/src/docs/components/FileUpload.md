@@ -2,7 +2,6 @@
     <ExampleHeading>Example of File Upload</ExampleHeading>
     <Example title="Example: File upload">
         <FileUpload />
-        <FileUploadWithErrorMessage />
     </Example>
 </ExampleContainer>
 

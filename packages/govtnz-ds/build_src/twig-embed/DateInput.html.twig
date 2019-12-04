@@ -2,87 +2,88 @@
 class="g-dateInput-form-group{% if error %} g-dateInput-form-group--error{% endif %}"
 >
   
-          
+  
 <fieldset
 aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
-class="g-dateInput-fieldset"
+class="g-fieldset"
 role="group"
 >
   
-            
+    
 <legend
-class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"
+class="g-fieldset__legend g-fieldset__legend--xl"
 >
   
-              
+      
 {% block label %}Example label{% endblock %}
   
-            
+    
 </legend>
   
-            
+    
 <span
 class="g-dateInput-hint"
 id="{{ hintId | escape('html_attr') }}"
 >
   
-              
+      
 {% block hint %}Example hint{% endblock %}
   
-            
+    
 </span>
   
-            
+    
   
-              
+      
 <span
 class="g-dateInput-error-message"
 id="{{ errorId | escape('html_attr') }}"
 >
   
-                
+        
 <span
 class="g-dateInput-visually-hidden"
 >
   Error: 
 </span>
   
-                
+        
 {% block error %}Example error{% endblock %}
   
-            
+      
 </span>
   
-            
-            
+    
+  
+    
 <div
-class="g-dateInput-date-input"
+class="g-date-input"
 id="{{ id | escape('html_attr') }}"
 >
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label g-dateInput-date-input__label"
+class="g-dateInput-label g-date-input__label"
 for="{{ dayId | escape('html_attr') }}"
 >
   
-                    Day
-                  
+            Day
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ dayId | escape('html_attr') }}"
 maxlength="2"
 name="{{ name | escape('html_attr') }}"
@@ -93,104 +94,104 @@ readonly="{% if readOnly %}readOnly{% endif %}"
 autofocus="{% if autoFocus %}autoFocus{% endif %}"
 value="{{ value | escape('html_attr') }}"
 spellcheck="{% if spellCheck %}spellCheck{% endif %}"
-autocomplete="{% if autoComplete == "Off" %}off{% elseif autoComplete == "On" %}on{% elseif autoComplete == "Name" %}name{% elseif autoComplete == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete == "Given Name" %}given-name{% elseif autoComplete == "Additional Name" %}additional-name{% elseif autoComplete == "Family Name" %}family-name{% elseif autoComplete == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete == "Nickname" %}nickname{% elseif autoComplete == "Email" %}email{% elseif autoComplete == "Username" %}username{% elseif autoComplete == "New Password" %}new-password{% elseif autoComplete == "Current Password" %}current-password{% elseif autoComplete == "Organization Title" %}organization-title{% elseif autoComplete == "Organization" %}organization{% elseif autoComplete == "Street Address" %}street-address{% elseif autoComplete == "Address Line 1" %}address-line1{% elseif autoComplete == "Address Line 2" %}address-line2{% elseif autoComplete == "Address Line 3" %}address-line3{% elseif autoComplete == "Address Level 4" %}address-level4{% elseif autoComplete == "Address Level 3" %}address-level3{% elseif autoComplete == "Address Level 2" %}address-level2{% elseif autoComplete == "Address Level 1" %}address-level1{% elseif autoComplete == "Country" %}country{% elseif autoComplete == "Country Name" %}country-name{% elseif autoComplete == "Postal Code" %}postal-code{% elseif autoComplete == "Credit Card: Name" %}cc-name{% elseif autoComplete == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete == "Credit Card: Number" %}cc-number{% elseif autoComplete == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete == "Credit Card: CSC" %}cc-csc{% elseif autoComplete == "Credit Card: Type" %}cc-type{% elseif autoComplete == "Transaction: Currency" %}transaction-currency{% elseif autoComplete == "Transaction: Amount" %}transaction-amount{% elseif autoComplete == "Language" %}language{% elseif autoComplete == "Birthday" %}bday{% elseif autoComplete == "Birthday: Day" %}bday-day{% elseif autoComplete == "Birthday: Month" %}bday-month{% elseif autoComplete == "Birthday: Year" %}bday-year{% elseif autoComplete == "Sex" %}sex{% elseif autoComplete == "Telephone" %}tel{% elseif autoComplete == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete == "Telephone: National" %}tel-national{% elseif autoComplete == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete == "Telephone: Local" %}tel-local{% elseif autoComplete == "Telephone: Extension" %}tel-extension{% elseif autoComplete == "IMPP" %}impp{% elseif autoComplete == "URL" %}url{% elseif autoComplete == "Photo" %}photo{% endif %}"
+autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label g-dateInput-date-input__label"
+class="g-dateInput-label g-date-input__label"
 for="{{ monthId | escape('html_attr') }}"
 >
   
-                    Month
-                  
+            Month
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ monthId | escape('html_attr') }}"
 maxlength="2"
-name="{{ name2 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 pattern="[0-9]*"
 type="text"
-disabled="{% if disabled2 %}disabled2{% endif %}"
-readonly="{% if readOnly2 %}readOnly2{% endif %}"
-autofocus="{% if autoFocus2 %}autoFocus2{% endif %}"
-value="{{ value2 | escape('html_attr') }}"
-spellcheck="{% if spellCheck2 %}spellCheck2{% endif %}"
-autocomplete="{% if autoComplete2 == "Off" %}off{% elseif autoComplete2 == "On" %}on{% elseif autoComplete2 == "Name" %}name{% elseif autoComplete2 == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete2 == "Given Name" %}given-name{% elseif autoComplete2 == "Additional Name" %}additional-name{% elseif autoComplete2 == "Family Name" %}family-name{% elseif autoComplete2 == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete2 == "Nickname" %}nickname{% elseif autoComplete2 == "Email" %}email{% elseif autoComplete2 == "Username" %}username{% elseif autoComplete2 == "New Password" %}new-password{% elseif autoComplete2 == "Current Password" %}current-password{% elseif autoComplete2 == "Organization Title" %}organization-title{% elseif autoComplete2 == "Organization" %}organization{% elseif autoComplete2 == "Street Address" %}street-address{% elseif autoComplete2 == "Address Line 1" %}address-line1{% elseif autoComplete2 == "Address Line 2" %}address-line2{% elseif autoComplete2 == "Address Line 3" %}address-line3{% elseif autoComplete2 == "Address Level 4" %}address-level4{% elseif autoComplete2 == "Address Level 3" %}address-level3{% elseif autoComplete2 == "Address Level 2" %}address-level2{% elseif autoComplete2 == "Address Level 1" %}address-level1{% elseif autoComplete2 == "Country" %}country{% elseif autoComplete2 == "Country Name" %}country-name{% elseif autoComplete2 == "Postal Code" %}postal-code{% elseif autoComplete2 == "Credit Card: Name" %}cc-name{% elseif autoComplete2 == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete2 == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete2 == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete2 == "Credit Card: Number" %}cc-number{% elseif autoComplete2 == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete2 == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete2 == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete2 == "Credit Card: CSC" %}cc-csc{% elseif autoComplete2 == "Credit Card: Type" %}cc-type{% elseif autoComplete2 == "Transaction: Currency" %}transaction-currency{% elseif autoComplete2 == "Transaction: Amount" %}transaction-amount{% elseif autoComplete2 == "Language" %}language{% elseif autoComplete2 == "Birthday" %}bday{% elseif autoComplete2 == "Birthday: Day" %}bday-day{% elseif autoComplete2 == "Birthday: Month" %}bday-month{% elseif autoComplete2 == "Birthday: Year" %}bday-year{% elseif autoComplete2 == "Sex" %}sex{% elseif autoComplete2 == "Telephone" %}tel{% elseif autoComplete2 == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete2 == "Telephone: National" %}tel-national{% elseif autoComplete2 == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete2 == "Telephone: Local" %}tel-local{% elseif autoComplete2 == "Telephone: Extension" %}tel-extension{% elseif autoComplete2 == "IMPP" %}impp{% elseif autoComplete2 == "URL" %}url{% elseif autoComplete2 == "Photo" %}photo{% endif %}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
+value="{{ value | escape('html_attr') }}"
+spellcheck="{% if spellCheck %}spellCheck{% endif %}"
+autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
-class="g-dateInput-date-input__item"
+class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label govuk-date-input__label"
+class="g-dateInput-label g-date-input__label"
 for="{{ yearId | escape('html_attr') }}"
 >
   
-                    Year
-                  
+            Year
+          
 </label>
   
-                  
+          
 <input
-class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4{% if error %} g-dateInput-input--error{% endif %}"
+class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ yearId | escape('html_attr') }}"
 maxlength="4"
-name="{{ name3 | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
 pattern="[0-9]*"
 type="text"
-disabled="{% if disabled3 %}disabled3{% endif %}"
-readonly="{% if readOnly3 %}readOnly3{% endif %}"
-autofocus="{% if autoFocus3 %}autoFocus3{% endif %}"
-value="{{ value3 | escape('html_attr') }}"
-spellcheck="{% if spellCheck3 %}spellCheck3{% endif %}"
-autocomplete="{% if autoComplete3 == "Off" %}off{% elseif autoComplete3 == "On" %}on{% elseif autoComplete3 == "Name" %}name{% elseif autoComplete3 == "Honorific: Prefix" %}honorific-prefix{% elseif autoComplete3 == "Given Name" %}given-name{% elseif autoComplete3 == "Additional Name" %}additional-name{% elseif autoComplete3 == "Family Name" %}family-name{% elseif autoComplete3 == "Honorific: Suffix" %}honorific-suffix{% elseif autoComplete3 == "Nickname" %}nickname{% elseif autoComplete3 == "Email" %}email{% elseif autoComplete3 == "Username" %}username{% elseif autoComplete3 == "New Password" %}new-password{% elseif autoComplete3 == "Current Password" %}current-password{% elseif autoComplete3 == "Organization Title" %}organization-title{% elseif autoComplete3 == "Organization" %}organization{% elseif autoComplete3 == "Street Address" %}street-address{% elseif autoComplete3 == "Address Line 1" %}address-line1{% elseif autoComplete3 == "Address Line 2" %}address-line2{% elseif autoComplete3 == "Address Line 3" %}address-line3{% elseif autoComplete3 == "Address Level 4" %}address-level4{% elseif autoComplete3 == "Address Level 3" %}address-level3{% elseif autoComplete3 == "Address Level 2" %}address-level2{% elseif autoComplete3 == "Address Level 1" %}address-level1{% elseif autoComplete3 == "Country" %}country{% elseif autoComplete3 == "Country Name" %}country-name{% elseif autoComplete3 == "Postal Code" %}postal-code{% elseif autoComplete3 == "Credit Card: Name" %}cc-name{% elseif autoComplete3 == "Credit Card: Given Name" %}cc-given-name{% elseif autoComplete3 == "Credit Card: Additional Name" %}cc-additional-name{% elseif autoComplete3 == "Credit Card: Family Name" %}cc-family-name{% elseif autoComplete3 == "Credit Card: Number" %}cc-number{% elseif autoComplete3 == "Credit Card: Expiry" %}cc-exp{% elseif autoComplete3 == "Credit Card: Expiry Month" %}cc-exp-month{% elseif autoComplete3 == "Credit Card: Expiry Year" %}cc-exp-year{% elseif autoComplete3 == "Credit Card: CSC" %}cc-csc{% elseif autoComplete3 == "Credit Card: Type" %}cc-type{% elseif autoComplete3 == "Transaction: Currency" %}transaction-currency{% elseif autoComplete3 == "Transaction: Amount" %}transaction-amount{% elseif autoComplete3 == "Language" %}language{% elseif autoComplete3 == "Birthday" %}bday{% elseif autoComplete3 == "Birthday: Day" %}bday-day{% elseif autoComplete3 == "Birthday: Month" %}bday-month{% elseif autoComplete3 == "Birthday: Year" %}bday-year{% elseif autoComplete3 == "Sex" %}sex{% elseif autoComplete3 == "Telephone" %}tel{% elseif autoComplete3 == "Telephone: Country Code" %}tel-country-code{% elseif autoComplete3 == "Telephone: National" %}tel-national{% elseif autoComplete3 == "Telephone: Area Code" %}tel-area-code{% elseif autoComplete3 == "Telephone: Local" %}tel-local{% elseif autoComplete3 == "Telephone: Extension" %}tel-extension{% elseif autoComplete3 == "IMPP" %}impp{% elseif autoComplete3 == "URL" %}url{% elseif autoComplete3 == "Photo" %}photo{% endif %}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
+value="{{ value | escape('html_attr') }}"
+spellcheck="{% if spellCheck %}spellCheck{% endif %}"
+autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-            
+    
 </div>
   
-          
+  
 </fieldset>
   
-        
+
 </div>

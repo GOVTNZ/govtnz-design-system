@@ -2,10 +2,10 @@
 class="g-checkboxes__item"
 >
   
-        
+  
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
-class="g-checkboxes__input{% if fakeFocus %} :focus{% endif %}"
+class="g-checkboxes__input"
 id="{{ checkboxId | escape('html_attr') }}"
 type="checkbox"
 name="{{ name | escape('html_attr') }}"
@@ -16,7 +16,7 @@ value="{{ value | escape('html_attr') }}"
 checked="{% if checked %}checked{% endif %}"
 />
   
-        
+  
 <label
 class="g-checkboxBlock-label g-checkboxes__label"
 for="{{ checkboxId | escape('html_attr') }}"
@@ -24,17 +24,21 @@ for="{{ checkboxId | escape('html_attr') }}"
 {% block label %}Label text{% endblock %}
 </label>
   
-        
   
-          
+  
+    
 <div
 class="g-checkboxBlock-hint g-checkboxes__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-{% block hint %}Hint text{% endblock %}
-</div>
-  
-        
   
       
+{% block hint %}Hint text{% endblock %}
+  
+    
+</div>
+  
+  
+  
+
 </div>

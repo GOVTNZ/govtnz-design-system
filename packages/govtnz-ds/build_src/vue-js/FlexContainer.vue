@@ -1,8 +1,9 @@
 <template>
   <div v-bind:class="computed__class">
     <slot></slot>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -27,8 +28,9 @@ export default Vue.extend({
         : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-flex-container,
 .g-flex-container-fluid {
   margin-right: auto;

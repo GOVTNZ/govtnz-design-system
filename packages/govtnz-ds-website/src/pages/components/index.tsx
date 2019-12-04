@@ -8,8 +8,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
-import '../../commons/styles/ds/themed-H1.scss';
 
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -21,8 +19,7 @@ import ExampleSection from '../../commons/ExampleSection';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Components</H1>
-<p>As key building blocks of the all-of-government (AOG) design system, our components are designed and coded to solve specific user problems.</p>
+const PageContent = (props) => <React.Fragment><p>As key building blocks of the all-of-government (AOG) design system, our components are designed and coded to solve specific user problems.</p>
 <p>Choose what you need from our catalogue of modular components. Using them saves you the time and cost of developing and testing complex components yourself. Designed to integrate directly into existing content management systems, these components will add functionality to your website without you having to rebuild it.</p>
 <p>Browse available components via the sidebar menu if you’re on a desktop, or the main menu if you’re using a mobile.</p>
 </React.Fragment>

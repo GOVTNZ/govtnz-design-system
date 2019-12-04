@@ -25,15 +25,6 @@ function _templateObject() {
 
 var StyledA = _styledComponents["default"].a(_templateObject());
 
-var constants = {
-  target: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  }
-};
-
 var SkipLink = function SkipLink(_ref) {
   var href = _ref.href,
       rel = _ref.rel,
@@ -41,7 +32,7 @@ var SkipLink = function SkipLink(_ref) {
   return _react["default"].createElement(StyledA, {
     href: href,
     rel: rel,
-    target: constants.target[target]
+    target: target
   }, "Skip to main content");
 };
 

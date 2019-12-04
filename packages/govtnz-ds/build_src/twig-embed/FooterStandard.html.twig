@@ -37,7 +37,7 @@ class="g-footer__standard-inline-list-item"
 class="g-footer__standard-link"
 href="{{ href | escape('html_attr') }}"
 rel="{{ rel | escape('html_attr') }}"
-target="{% if target == "Blank" %}_blank{% elseif target == "Top" %}_top{% elseif target == "Self" %}_self{% elseif target == "Parent" %}_parent{% endif %}"
+target="{{ target | escape('html_attr') }}"
 >
 {% block label1 %}Contact{% endblock %}
 </a>
@@ -53,9 +53,9 @@ class="g-footer__standard-inline-list-item"
                             
 <a
 class="g-footer__standard-link"
-href="{{ href2 | escape('html_attr') }}"
-rel="{{ rel2 | escape('html_attr') }}"
-target="{% if target2 == "Blank" %}_blank{% elseif target2 == "Top" %}_top{% elseif target2 == "Self" %}_self{% elseif target2 == "Parent" %}_parent{% endif %}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
+target="{{ target | escape('html_attr') }}"
 >
 {% block label2 %}Privacy{% endblock %}
 </a>
@@ -71,9 +71,9 @@ class="g-footer__standard-inline-list-item"
                             
 <a
 class="g-footer__standard-link"
-href="{{ href3 | escape('html_attr') }}"
-rel="{{ rel3 | escape('html_attr') }}"
-target="{% if target3 == "Blank" %}_blank{% elseif target3 == "Top" %}_top{% elseif target3 == "Self" %}_self{% elseif target3 == "Parent" %}_parent{% endif %}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
+target="{{ target | escape('html_attr') }}"
 >
 {% block label3 %}Copyright{% endblock %}
 </a>
@@ -106,9 +106,9 @@ class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-l
                 
 <a
 class="g-footer__standard-link--plain"
-href="{{ href4 | escape('html_attr') }}"
-rel="{{ rel4 | escape('html_attr') }}"
-target="{% if target4 == "Blank" %}_blank{% elseif target4 == "Top" %}_top{% elseif target4 == "Self" %}_self{% elseif target4 == "Parent" %}_parent{% endif %}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
+target="{{ target | escape('html_attr') }}"
 >
   
                     
@@ -158,9 +158,9 @@ class="g-footer__standard-licence"
                         
 <a
 class="g-footer__standard-link--plain"
-href="{{ href5 | escape('html_attr') }}"
-rel="{{ rel5 | escape('html_attr') }}"
-target="{% if target5 == "Blank" %}_blank{% elseif target5 == "Top" %}_top{% elseif target5 == "Self" %}_self{% elseif target5 == "Parent" %}_parent{% endif %}"
+href="{{ href | escape('html_attr') }}"
+rel="{{ rel | escape('html_attr') }}"
+target="{{ target | escape('html_attr') }}"
 >
   
                             
@@ -252,7 +252,7 @@ src="{{ src | escape('html_attr') }}"
 width="{{ width | escape('html_attr') }}"
 height="{{ height | escape('html_attr') }}"
 srcset="{{ srcset | escape('html_attr') }}"
-crossorigin="{% if crossorigin == "Anonymous" %}anonymous{% elseif crossorigin == "Use Credentials" %}use-credentials{% endif %}"
+crossorigin="{{ crossorigin | escape('html_attr') }}"
 />
                       
                     

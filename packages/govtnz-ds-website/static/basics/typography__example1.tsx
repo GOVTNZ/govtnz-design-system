@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import H3 from '@govtnz/ds/build/react-ts/H3.tsx';
+import H3 from '@govtnz/ds/build/react-ts/H3';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

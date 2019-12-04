@@ -256,9 +256,7 @@ const nvmVersion = fs
 
 if (nvmVersion !== process.version.replace('v', '')) {
   console.error(
-    `You're running Node version ${
-      process.version
-    } but we require ${nvmVersion}. Please install NVM and run \`nvm use\` to switch Node versions.`
+    `You're running Node version ${process.version} but we require ${nvmVersion}. Please install NVM and run \`nvm use\` to switch Node versions.`
   );
   process.exit(1);
 }

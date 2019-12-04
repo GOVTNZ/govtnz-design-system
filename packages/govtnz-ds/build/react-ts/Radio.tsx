@@ -1,8 +1,7 @@
 import * as React from "react";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
-  gov1?: string | undefined;
+  id?: string | undefined;
   hintId?: string | undefined;
   name: string;
   disabled?: boolean | undefined;
@@ -14,8 +13,7 @@ type Props = {
 };
 
 const Radio = ({
-  fakeFocus,
-  gov1,
+  id,
   hintId,
   name,
   disabled,
@@ -27,8 +25,8 @@ const Radio = ({
 }: Props) => (
   <input
     aria-describedby={hintId}
-    className={`g-radios__input${fakeFocus ? " :focus" : ""}`}
-    id={gov1}
+    className="g-radios__input"
+    id={id}
     name={name}
     type="radio"
     disabled={disabled}

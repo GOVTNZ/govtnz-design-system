@@ -1,15 +1,17 @@
 <template>
   <span class="g-caption-xl">
     <slot></slot>
-  </span> </template
-><script>
+  </span>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: { children: { required: false, default: "Example text" } },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-caption-xl {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

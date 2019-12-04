@@ -8,12 +8,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
-var constants = {
-    target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
 var SkipLink = function (_a) {
     var href = _a.href, rel = _a.rel, target = _a.target;
-    return (React.createElement("a", { className: "g-skip-link", href: href, rel: rel, target: constants.target[target] }, "Skip to main content"));
+    return (React.createElement("a", { className: "g-skip-link", href: href, rel: rel, target: target }, "Skip to main content"));
 };
 exports.default = SkipLink;
 //# sourceMappingURL=SkipLink.js.map

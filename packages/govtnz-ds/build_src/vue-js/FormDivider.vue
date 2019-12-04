@@ -1,16 +1,18 @@
 <template>
-  <div class="g-radios-form-divider">
+  <div class="g-form-divider">
     <slot></slot>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
-  props: { children: { required: false, default: "Example Text" } },
+  props: { children: { required: false, default: "Contents..." } },
   computed: {}
-});</script
-><style scoped>
-.g-radios-form-divider {
+});
+</script>
+<style scoped>
+.g-form-divider {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,28 +25,28 @@ export default Vue.extend({
   text-align: center;
 }
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     color: #000000;
   }
 }
-.g-radios-hint > * {
+.g-formDivider-hint > * {
   margin-top: 0px;
 }
 </style>

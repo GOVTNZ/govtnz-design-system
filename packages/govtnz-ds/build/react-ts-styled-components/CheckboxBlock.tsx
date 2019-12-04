@@ -2,7 +2,6 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  fakeFocus?: boolean | undefined;
   checkboxId?: string | undefined;
   hintId?: string | undefined;
   name: string;
@@ -170,7 +169,6 @@ const StyledDiv2 = styled.div`
 `;
 
 const CheckboxBlock = ({
-  fakeFocus,
   checkboxId,
   hintId,
   name,
@@ -185,7 +183,6 @@ const CheckboxBlock = ({
 }: Props) => (
   <StyledDiv>
     <StyledInput
-      fakeFocus={fakeFocus}
       aria-describedby={hintId}
       id={checkboxId}
       type="checkbox"

@@ -12,8 +12,8 @@ function getImportPath(importPath) {
   );
 }
 
-const TemplateFieldsetBlockWithError = fs.readFileSync(
-  getImportPath("@govtnz/ds/build/mustache/FieldsetBlockWithError.mustache"),
+const TemplateFieldsetBlock = fs.readFileSync(
+  getImportPath("@govtnz/ds/build/mustache/FieldsetBlock.mustache"),
   { encoding: "utf-8" }
 );
 const TemplateH1 = fs.readFileSync(
@@ -31,7 +31,7 @@ const TemplateRadioBlock = fs.readFileSync(
   { encoding: "utf-8" }
 );
 
-const rawHTML = `${Mustache.render(TemplateFieldsetBlockWithError, {
+const rawHTML = `${Mustache.render(TemplateFieldsetBlock, {
   legend: `${Mustache.render(TemplateH1, {
     "styleSize=large": true,
     styleSize: true,
@@ -70,7 +70,7 @@ describe("HTML Snapshot", () => {
   });
 
   it("Rendered templates", async () => {
-    expect(TemplateFieldsetBlockWithError).toMatchSnapshot();
+    expect(TemplateFieldsetBlock).toMatchSnapshot();
     expect(TemplateH1).toMatchSnapshot();
     expect(TemplateRadios).toMatchSnapshot();
     expect(TemplateRadioBlock).toMatchSnapshot();

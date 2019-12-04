@@ -1,8 +1,9 @@
 <template>
   <div v-bind:class="computed__class">
     <slot></slot>
-  </div> </template
-><script lang="ts">
+  </div>
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
@@ -15,8 +16,9 @@ export default Vue.extend({
       return "g-radios" + (this.inline ? " g-radios--inline" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 @media (min-width: 40.0625em) {
   .g-radios--inline:after {
     content: "";

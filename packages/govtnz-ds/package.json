@@ -1,15 +1,13 @@
 {
   "name": "@govtnz/ds",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Government Design System",
   "author": "New Zealand Government",
   "homepage": "https://github.com/GOVTNZ/govtnz-design-system/",
-  "engines": {
-    "node": "10.14.2"
-  },
   "scripts": {
     "build:release:debugger": "babel-node --inspect --expose-gc --max_old_space_size=8192 --extensions '.ts' ./src/index.ts",
-    "build:release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
+    "build:release": "yarn build:source-release && yarn build:compile",
+    "build:source-release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
     "build:compile": "rimraf ./build && yarn babel build_src --out-dir build --copy-files && yarn tsc",
     "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
@@ -17,6 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@angular/core": "^8.2.14",
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
     "@babel/node": "^7.4.5",
@@ -28,11 +27,11 @@
     "@babel/preset-typescript": "^7.3.3",
     "@govtnz/ds-common": "0.0.1",
     "@govtnz/ds-upstream": "0.0.1",
-    "@springload/metatemplate": "0.1.0",
+    "@springload/metatemplate": "^0.2.3",
     "@types/node": "^10.12.19",
+    "@vue/cli-service": "^3.8.4",
     "argparse": "^1.0.10",
     "compilation-templates": "0.0.1",
-    "css-sniff": "2.0.0",
     "es6-promise-pool": "^2.5.0",
     "filesize": "^4.1.2",
     "format-duration": "^1.3.1",
@@ -40,6 +39,7 @@
     "glob-promise": "^3.4.0",
     "jest": "^24.8.0",
     "jsdom": "^14.0.0",
+    "lodash": "^4.17.11",
     "mkdirp-promise": "^5.0.1",
     "normalize-selector": "^0.2.0",
     "postcss": "^7.0.14",
@@ -50,9 +50,6 @@
     "rmfr": "^2.0.0",
     "styled-components": "^4.2.0",
     "svg-to-dataurl": "^1.0.0",
-    "typescript": "^3.2.4",
-    "@vue/cli-service": "^3.8.4",
-    "lodash": "^4.17.11"
-  },
-  "postcss": {}
+    "typescript": "^3.2.4"
+  }
 }

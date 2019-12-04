@@ -25,15 +25,6 @@ function _templateObject() {
 
 var StyledA = _styledComponents["default"].a(_templateObject());
 
-var constants = {
-  target: {
-    Blank: "_blank",
-    Top: "_top",
-    Self: "_self",
-    Parent: "_parent"
-  }
-};
-
 var A = function A(_ref) {
   var isMuted = _ref.isMuted,
       href = _ref.href,
@@ -44,7 +35,7 @@ var A = function A(_ref) {
     isMuted: isMuted,
     href: href,
     rel: rel,
-    target: constants.target[target]
+    target: target
   }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

@@ -1,8 +1,9 @@
 <template>
   <h6 v-bind:class="computed__class" v-bind:id="id">
     <slot></slot>
-  </h6> </template
-><script>
+  </h6>
+</template>
+<script>
 import Vue from "vue";
 
 const constants = {
@@ -45,8 +46,9 @@ export default Vue.extend({
       );
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-heading-xl {
   color: #2a2a2a;
   font-family: Arial, sans-serif;

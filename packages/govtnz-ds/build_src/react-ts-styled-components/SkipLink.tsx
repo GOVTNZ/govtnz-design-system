@@ -4,7 +4,7 @@ import * as styled from "styled-components";
 type Props = {
   href: string;
   rel?: string | undefined;
-  target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
 };
 
 const StyledA = styled.a`
@@ -111,12 +111,8 @@ const StyledA = styled.a`
   margin-top: 0px;
 `;
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 const SkipLink = ({ href, rel, target }: Props) => (
-  <StyledA href={href} rel={rel} target={constants.target[target]}>
+  <StyledA href={href} rel={rel} target={target}>
     Skip to main content
   </StyledA>
 );

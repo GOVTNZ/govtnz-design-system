@@ -1,15 +1,35 @@
 import * as React from "react";
 
 type Props = {
+  errorId?: string | undefined;
   hintId?: string | undefined;
   legend?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: React.ReactNode;
   children?: React.ReactNode;
 };
 
-const FieldsetBlock = ({ hintId, legend, hint, children }: Props) => (
-  <div className="g-fieldsetBlock-form-group">
-    <fieldset aria-describedby={hintId} className="g-fieldset">
+const FieldsetBlock = ({
+  errorId,
+  hintId,
+  legend,
+  hint,
+  error,
+  children
+}: Props) => (
+  <div
+    className={`g-fieldsetBlock-form-group${
+      errorId ? " g-fieldsetBlock-form-group--error" : ""
+    }`}
+  >
+    <fieldset
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
+      className="g-fieldset"
+    >
       <legend className="g-fieldset__legend">
         {legend !== undefined ? (
           legend
@@ -24,6 +44,20 @@ const FieldsetBlock = ({ hintId, legend, hint, children }: Props) => (
               hint
             ) : (
               <React.Fragment>Hint text</React.Fragment>
+            )}
+          </div>
+        </React.Fragment>
+      ) : (
+        ""
+      )}
+      {errorId !== undefined ? (
+        <React.Fragment>
+          <div className="g-fieldsetBlock-error-message" id={errorId}>
+            <span className="g-fieldsetBlock-visually-hidden">Error:</span>
+            {error !== undefined ? (
+              error
+            ) : (
+              <React.Fragment>Error text</React.Fragment>
             )}
           </div>
         </React.Fragment>

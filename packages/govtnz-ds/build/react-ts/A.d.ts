@@ -3,7 +3,7 @@ declare type Props = {
     isMuted?: boolean | undefined;
     href: string;
     rel?: string | undefined;
-    target?: "Blank" | "Top" | "Self" | "Parent" | undefined;
+    target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
     children?: React.ReactNode;
 };
 declare const A: ({ isMuted, href, rel, target, children }: Props) => JSX.Element;

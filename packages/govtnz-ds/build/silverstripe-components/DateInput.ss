@@ -1,45 +1,45 @@
 <div class="g-dateInput-form-group<% if $error %>  g-dateInput-form-group--error<% end_if %>"> 
-          <fieldset<% if $hintId && $errorId %> aria-describedby="{$hintId} {$errorId}"<% end_if %> class="g-dateInput-fieldset" role="group"> 
-            <legend class="g-dateInput-fieldset__legend g-dateInput-fieldset__legend--xl"> 
-              {$label}
+  <fieldset<% if $hintId && $errorId %> aria-describedby="{$hintId} {$errorId}"<% end_if %> class="g-fieldset" role="group"> 
+    <legend class="g-fieldset__legend g-fieldset__legend--xl"> 
+      {$label}
 
-            </legend> 
-            <span class="g-dateInput-hint"<% if $hintId %> id="{$hintId}"<% end_if %>> 
-              {$hint}
+    </legend> 
+    <span class="g-dateInput-hint"<% if $hintId %> id="{$hintId}"<% end_if %>> 
+      {$hint}
 
-            </span> 
-            
-              <span class="g-dateInput-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> 
-                <span class="g-dateInput-visually-hidden"> Error: </span> 
-                {$error}
+    </span> 
+    
+      <span class="g-dateInput-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> 
+        <span class="g-dateInput-visually-hidden"> Error: </span> 
+        {$error}
 
-            </span> 
-            
-            <div class="g-dateInput-date-input"<% if $id %> id="{$id}"<% end_if %>> 
-              <div class="g-dateInput-date-input__item"> 
-                <div class="g-dateInput-form-group"> 
-                  <label class="g-dateInput-label g-dateInput-date-input__label"<% if $dayId %> for="{$dayId}"<% end_if %>> 
-                    Day
-                  </label> 
-                  <input class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $dayId %> id="{$dayId}"<% end_if %><% if  %> maxlength="2"<% end_if %><% if $name %> name="{$name}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $spellCheck %> spellcheck="<% if $spellCheck %>undefined<% end_if %>"<% end_if %><% if $autoComplete %> autocomplete="<% if $autoComplete == "Off" %>off<% else_if $autoComplete == "On" %>on<% else_if $autoComplete == "Name" %>name<% else_if $autoComplete == "Honorific: Prefix" %>honorific-prefix<% else_if $autoComplete == "Given Name" %>given-name<% else_if $autoComplete == "Additional Name" %>additional-name<% else_if $autoComplete == "Family Name" %>family-name<% else_if $autoComplete == "Honorific: Suffix" %>honorific-suffix<% else_if $autoComplete == "Nickname" %>nickname<% else_if $autoComplete == "Email" %>email<% else_if $autoComplete == "Username" %>username<% else_if $autoComplete == "New Password" %>new-password<% else_if $autoComplete == "Current Password" %>current-password<% else_if $autoComplete == "Organization Title" %>organization-title<% else_if $autoComplete == "Organization" %>organization<% else_if $autoComplete == "Street Address" %>street-address<% else_if $autoComplete == "Address Line 1" %>address-line1<% else_if $autoComplete == "Address Line 2" %>address-line2<% else_if $autoComplete == "Address Line 3" %>address-line3<% else_if $autoComplete == "Address Level 4" %>address-level4<% else_if $autoComplete == "Address Level 3" %>address-level3<% else_if $autoComplete == "Address Level 2" %>address-level2<% else_if $autoComplete == "Address Level 1" %>address-level1<% else_if $autoComplete == "Country" %>country<% else_if $autoComplete == "Country Name" %>country-name<% else_if $autoComplete == "Postal Code" %>postal-code<% else_if $autoComplete == "Credit Card: Name" %>cc-name<% else_if $autoComplete == "Credit Card: Given Name" %>cc-given-name<% else_if $autoComplete == "Credit Card: Additional Name" %>cc-additional-name<% else_if $autoComplete == "Credit Card: Family Name" %>cc-family-name<% else_if $autoComplete == "Credit Card: Number" %>cc-number<% else_if $autoComplete == "Credit Card: Expiry" %>cc-exp<% else_if $autoComplete == "Credit Card: Expiry Month" %>cc-exp-month<% else_if $autoComplete == "Credit Card: Expiry Year" %>cc-exp-year<% else_if $autoComplete == "Credit Card: CSC" %>cc-csc<% else_if $autoComplete == "Credit Card: Type" %>cc-type<% else_if $autoComplete == "Transaction: Currency" %>transaction-currency<% else_if $autoComplete == "Transaction: Amount" %>transaction-amount<% else_if $autoComplete == "Language" %>language<% else_if $autoComplete == "Birthday" %>bday<% else_if $autoComplete == "Birthday: Day" %>bday-day<% else_if $autoComplete == "Birthday: Month" %>bday-month<% else_if $autoComplete == "Birthday: Year" %>bday-year<% else_if $autoComplete == "Sex" %>sex<% else_if $autoComplete == "Telephone" %>tel<% else_if $autoComplete == "Telephone: Country Code" %>tel-country-code<% else_if $autoComplete == "Telephone: National" %>tel-national<% else_if $autoComplete == "Telephone: Area Code" %>tel-area-code<% else_if $autoComplete == "Telephone: Local" %>tel-local<% else_if $autoComplete == "Telephone: Extension" %>tel-extension<% else_if $autoComplete == "IMPP" %>impp<% else_if $autoComplete == "URL" %>url<% else_if $autoComplete == "Photo" %>photo<% end_if %>"<% end_if %>/> 
-                </div> 
-              </div> 
-              <div class="g-dateInput-date-input__item"> 
-                <div class="g-dateInput-form-group"> 
-                  <label class="g-dateInput-label g-dateInput-date-input__label"<% if $monthId %> for="{$monthId}"<% end_if %>> 
-                    Month
-                  </label> 
-                  <input class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-2<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $monthId %> id="{$monthId}"<% end_if %><% if  %> maxlength="2"<% end_if %><% if $name2 %> name="{$name2}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled2 %> disabled="<% if $disabled2 %>undefined<% end_if %>"<% end_if %><% if $readOnly2 %> readonly="<% if $readOnly2 %>undefined<% end_if %>"<% end_if %><% if $autoFocus2 %> autofocus="<% if $autoFocus2 %>undefined<% end_if %>"<% end_if %><% if $value2 %> value="{$value2}"<% end_if %><% if $spellCheck2 %> spellcheck="<% if $spellCheck2 %>undefined<% end_if %>"<% end_if %><% if $autoComplete2 %> autocomplete="<% if $autoComplete2 == "Off" %>off<% else_if $autoComplete2 == "On" %>on<% else_if $autoComplete2 == "Name" %>name<% else_if $autoComplete2 == "Honorific: Prefix" %>honorific-prefix<% else_if $autoComplete2 == "Given Name" %>given-name<% else_if $autoComplete2 == "Additional Name" %>additional-name<% else_if $autoComplete2 == "Family Name" %>family-name<% else_if $autoComplete2 == "Honorific: Suffix" %>honorific-suffix<% else_if $autoComplete2 == "Nickname" %>nickname<% else_if $autoComplete2 == "Email" %>email<% else_if $autoComplete2 == "Username" %>username<% else_if $autoComplete2 == "New Password" %>new-password<% else_if $autoComplete2 == "Current Password" %>current-password<% else_if $autoComplete2 == "Organization Title" %>organization-title<% else_if $autoComplete2 == "Organization" %>organization<% else_if $autoComplete2 == "Street Address" %>street-address<% else_if $autoComplete2 == "Address Line 1" %>address-line1<% else_if $autoComplete2 == "Address Line 2" %>address-line2<% else_if $autoComplete2 == "Address Line 3" %>address-line3<% else_if $autoComplete2 == "Address Level 4" %>address-level4<% else_if $autoComplete2 == "Address Level 3" %>address-level3<% else_if $autoComplete2 == "Address Level 2" %>address-level2<% else_if $autoComplete2 == "Address Level 1" %>address-level1<% else_if $autoComplete2 == "Country" %>country<% else_if $autoComplete2 == "Country Name" %>country-name<% else_if $autoComplete2 == "Postal Code" %>postal-code<% else_if $autoComplete2 == "Credit Card: Name" %>cc-name<% else_if $autoComplete2 == "Credit Card: Given Name" %>cc-given-name<% else_if $autoComplete2 == "Credit Card: Additional Name" %>cc-additional-name<% else_if $autoComplete2 == "Credit Card: Family Name" %>cc-family-name<% else_if $autoComplete2 == "Credit Card: Number" %>cc-number<% else_if $autoComplete2 == "Credit Card: Expiry" %>cc-exp<% else_if $autoComplete2 == "Credit Card: Expiry Month" %>cc-exp-month<% else_if $autoComplete2 == "Credit Card: Expiry Year" %>cc-exp-year<% else_if $autoComplete2 == "Credit Card: CSC" %>cc-csc<% else_if $autoComplete2 == "Credit Card: Type" %>cc-type<% else_if $autoComplete2 == "Transaction: Currency" %>transaction-currency<% else_if $autoComplete2 == "Transaction: Amount" %>transaction-amount<% else_if $autoComplete2 == "Language" %>language<% else_if $autoComplete2 == "Birthday" %>bday<% else_if $autoComplete2 == "Birthday: Day" %>bday-day<% else_if $autoComplete2 == "Birthday: Month" %>bday-month<% else_if $autoComplete2 == "Birthday: Year" %>bday-year<% else_if $autoComplete2 == "Sex" %>sex<% else_if $autoComplete2 == "Telephone" %>tel<% else_if $autoComplete2 == "Telephone: Country Code" %>tel-country-code<% else_if $autoComplete2 == "Telephone: National" %>tel-national<% else_if $autoComplete2 == "Telephone: Area Code" %>tel-area-code<% else_if $autoComplete2 == "Telephone: Local" %>tel-local<% else_if $autoComplete2 == "Telephone: Extension" %>tel-extension<% else_if $autoComplete2 == "IMPP" %>impp<% else_if $autoComplete2 == "URL" %>url<% else_if $autoComplete2 == "Photo" %>photo<% end_if %>"<% end_if %>/> 
-                </div> 
-              </div> 
-              <div class="g-dateInput-date-input__item"> 
-                <div class="g-dateInput-form-group"> 
-                  <label class="g-dateInput-label govuk-date-input__label"<% if $yearId %> for="{$yearId}"<% end_if %>> 
-                    Year
-                  </label> 
-                  <input class="g-dateInput-input g-dateInput-date-input__input g-dateInput-input--width-4<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $yearId %> id="{$yearId}"<% end_if %><% if  %> maxlength="4"<% end_if %><% if $name3 %> name="{$name3}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled3 %> disabled="<% if $disabled3 %>undefined<% end_if %>"<% end_if %><% if $readOnly3 %> readonly="<% if $readOnly3 %>undefined<% end_if %>"<% end_if %><% if $autoFocus3 %> autofocus="<% if $autoFocus3 %>undefined<% end_if %>"<% end_if %><% if $value3 %> value="{$value3}"<% end_if %><% if $spellCheck3 %> spellcheck="<% if $spellCheck3 %>undefined<% end_if %>"<% end_if %><% if $autoComplete3 %> autocomplete="<% if $autoComplete3 == "Off" %>off<% else_if $autoComplete3 == "On" %>on<% else_if $autoComplete3 == "Name" %>name<% else_if $autoComplete3 == "Honorific: Prefix" %>honorific-prefix<% else_if $autoComplete3 == "Given Name" %>given-name<% else_if $autoComplete3 == "Additional Name" %>additional-name<% else_if $autoComplete3 == "Family Name" %>family-name<% else_if $autoComplete3 == "Honorific: Suffix" %>honorific-suffix<% else_if $autoComplete3 == "Nickname" %>nickname<% else_if $autoComplete3 == "Email" %>email<% else_if $autoComplete3 == "Username" %>username<% else_if $autoComplete3 == "New Password" %>new-password<% else_if $autoComplete3 == "Current Password" %>current-password<% else_if $autoComplete3 == "Organization Title" %>organization-title<% else_if $autoComplete3 == "Organization" %>organization<% else_if $autoComplete3 == "Street Address" %>street-address<% else_if $autoComplete3 == "Address Line 1" %>address-line1<% else_if $autoComplete3 == "Address Line 2" %>address-line2<% else_if $autoComplete3 == "Address Line 3" %>address-line3<% else_if $autoComplete3 == "Address Level 4" %>address-level4<% else_if $autoComplete3 == "Address Level 3" %>address-level3<% else_if $autoComplete3 == "Address Level 2" %>address-level2<% else_if $autoComplete3 == "Address Level 1" %>address-level1<% else_if $autoComplete3 == "Country" %>country<% else_if $autoComplete3 == "Country Name" %>country-name<% else_if $autoComplete3 == "Postal Code" %>postal-code<% else_if $autoComplete3 == "Credit Card: Name" %>cc-name<% else_if $autoComplete3 == "Credit Card: Given Name" %>cc-given-name<% else_if $autoComplete3 == "Credit Card: Additional Name" %>cc-additional-name<% else_if $autoComplete3 == "Credit Card: Family Name" %>cc-family-name<% else_if $autoComplete3 == "Credit Card: Number" %>cc-number<% else_if $autoComplete3 == "Credit Card: Expiry" %>cc-exp<% else_if $autoComplete3 == "Credit Card: Expiry Month" %>cc-exp-month<% else_if $autoComplete3 == "Credit Card: Expiry Year" %>cc-exp-year<% else_if $autoComplete3 == "Credit Card: CSC" %>cc-csc<% else_if $autoComplete3 == "Credit Card: Type" %>cc-type<% else_if $autoComplete3 == "Transaction: Currency" %>transaction-currency<% else_if $autoComplete3 == "Transaction: Amount" %>transaction-amount<% else_if $autoComplete3 == "Language" %>language<% else_if $autoComplete3 == "Birthday" %>bday<% else_if $autoComplete3 == "Birthday: Day" %>bday-day<% else_if $autoComplete3 == "Birthday: Month" %>bday-month<% else_if $autoComplete3 == "Birthday: Year" %>bday-year<% else_if $autoComplete3 == "Sex" %>sex<% else_if $autoComplete3 == "Telephone" %>tel<% else_if $autoComplete3 == "Telephone: Country Code" %>tel-country-code<% else_if $autoComplete3 == "Telephone: National" %>tel-national<% else_if $autoComplete3 == "Telephone: Area Code" %>tel-area-code<% else_if $autoComplete3 == "Telephone: Local" %>tel-local<% else_if $autoComplete3 == "Telephone: Extension" %>tel-extension<% else_if $autoComplete3 == "IMPP" %>impp<% else_if $autoComplete3 == "URL" %>url<% else_if $autoComplete3 == "Photo" %>photo<% end_if %>"<% end_if %>/> 
-                </div> 
-              </div> 
-            </div> 
-          </fieldset> 
-        </div>
+      </span> 
+    
+    <div class="g-date-input"<% if $id %> id="{$id}"<% end_if %>> 
+      <div class="g-date-input__item"> 
+        <div class="g-dateInput-form-group"> 
+          <label class="g-dateInput-label g-date-input__label"<% if $dayId %> for="{$dayId}"<% end_if %>> 
+            Day
+          </label> 
+          <input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $dayId %> id="{$dayId}"<% end_if %><% if  %> maxlength="2"<% end_if %><% if $name %> name="{$name}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $spellCheck %> spellcheck="<% if $spellCheck %>undefined<% end_if %>"<% end_if %><% if $autoComplete %> autocomplete="{$autoComplete}"<% end_if %>/> 
+        </div> 
+      </div> 
+      <div class="g-date-input__item"> 
+        <div class="g-dateInput-form-group"> 
+          <label class="g-dateInput-label g-date-input__label"<% if $monthId %> for="{$monthId}"<% end_if %>> 
+            Month
+          </label> 
+          <input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $monthId %> id="{$monthId}"<% end_if %><% if  %> maxlength="2"<% end_if %><% if $name %> name="{$name}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $spellCheck %> spellcheck="<% if $spellCheck %>undefined<% end_if %>"<% end_if %><% if $autoComplete %> autocomplete="{$autoComplete}"<% end_if %>/> 
+        </div> 
+      </div> 
+      <div class="g-date-input__item"> 
+        <div class="g-dateInput-form-group"> 
+          <label class="g-dateInput-label g-date-input__label"<% if $yearId %> for="{$yearId}"<% end_if %>> 
+            Year
+          </label> 
+          <input class="g-dateInput-input g-date-input__input g-dateInput-input--width-4<% if $error %>  g-dateInput-input--error<% end_if %>"<% if $yearId %> id="{$yearId}"<% end_if %><% if  %> maxlength="4"<% end_if %><% if $name %> name="{$name}"<% end_if %> pattern="[0-9]*" type="text"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $spellCheck %> spellcheck="<% if $spellCheck %>undefined<% end_if %>"<% end_if %><% if $autoComplete %> autocomplete="{$autoComplete}"<% end_if %>/> 
+        </div> 
+      </div> 
+    </div> 
+  </fieldset> 
+</div>

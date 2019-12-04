@@ -7,12 +7,12 @@ const socialThumbnail =
   'https://design-system-alpha.digital.govt.nz/social-thumbnail.png';
 
 type Props = {
+  title: string;
   description: string;
   lang: string;
   meta: any; // FIXME: improve typing
-  robots: any;
+  robots: boolean;
   keywords?: string[];
-  title: string;
 };
 
 function SEO({ description, meta, keywords, title, robots }: Props) {

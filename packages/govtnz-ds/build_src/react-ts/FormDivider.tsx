@@ -5,11 +5,11 @@ type Props = {
 };
 
 const FormDivider = ({ children }: Props) => (
-  <div className="g-radios-form-divider">
+  <div className="g-form-divider">
     {children !== undefined ? (
       children
     ) : (
-      <React.Fragment>Example Text</React.Fragment>
+      <React.Fragment>Contents...</React.Fragment>
     )}
   </div>
 );

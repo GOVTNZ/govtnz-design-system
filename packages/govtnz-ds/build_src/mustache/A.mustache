@@ -5,7 +5,7 @@
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <a
-class="g-a-link{{#isMuted}} g-a-link--muted{{/isMuted}}"
+class="g-link{{#isMuted}} g-link--muted{{/isMuted}}"
 {{#href}}
   href="{{href}}"
 {{/href}}
@@ -13,7 +13,7 @@ class="g-a-link{{#isMuted}} g-a-link--muted{{/isMuted}}"
   rel="{{rel}}"
 {{/rel}}
 {{#target}}
-  target="{{#target=Blank}}_blank{{/target=Blank}}{{#target=Top}}_top{{/target=Top}}{{#target=Self}}_self{{/target=Self}}{{#target=Parent}}_parent{{/target=Parent}}"
+  target="{{target}}"
 {{/target}}
 >
   {{{children}}}

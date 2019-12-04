@@ -64,26 +64,26 @@
   }
 }
 
-.g-dateInput-fieldset {
+.g-fieldset {
   min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-.g-dateInput-fieldset:after {
+.g-fieldset:after {
   content: "";
   display: block;
   clear: both;
 }
 
 @media not (caret-color: auto) {
-  .g-dateInput-fieldset {
+  .g-fieldset {
     display: table-cell;
   }
 }
 
-.g-dateInput-fieldset__legend {
+.g-fieldset__legend {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -102,33 +102,33 @@
 }
 
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .g-dateInput-fieldset__legend {
+  .g-fieldset__legend {
     color: #000000;
     color: var(--g-theme-color-black, #000000);
   }
 }
 
-.g-dateInput-fieldset__legend--xl {
+.g-fieldset__legend--xl {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -140,20 +140,20 @@
 }
 
 @media print {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-size: 3rem;
     line-height: 1.04167;
   }
 }
 
 @media print {
-  .g-dateInput-fieldset__legend--xl {
+  .g-fieldset__legend--xl {
     font-size: 32pt;
     line-height: 1.15;
   }
@@ -192,7 +192,12 @@
   }
 }
 
-.g-dateInput-fieldset__legend + .g-dateInput-hint {
+.g-dateInput-label:not(.g-dateInput-label--m):not(.g-dateInput-label--l):not(.g-dateInput-label--xl)
+  + .g-dateInput-hint {
+  margin-bottom: 10px;
+}
+
+.g-fieldset__legend + .g-dateInput-hint {
   margin-top: -5px;
 }
 
@@ -305,27 +310,27 @@
   max-width: 5.4ex;
 }
 
-.g-dateInput-date-input {
+.g-date-input {
   font-size: 0;
 }
 
-.g-dateInput-date-input:after {
+.g-date-input:after {
   content: "";
   display: block;
   clear: both;
 }
 
-.g-dateInput-date-input__item {
+.g-date-input__item {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
 }
 
-.g-dateInput-date-input__label {
+.g-date-input__label {
   display: block;
 }
 
-.g-dateInput-date-input__input {
+.g-date-input__input {
   margin-bottom: 0;
 }
 

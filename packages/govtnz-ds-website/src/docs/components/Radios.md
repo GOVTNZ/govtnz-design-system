@@ -19,13 +19,13 @@ Interact with each example to see how it works.
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
     <Example title="Example: Error state #1 (Radio buttons)">
-        <FieldsetBlockWithError legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9234" 
-                value="true" name="nameChange5" labelId="labelId9" hintId="hintId5" />
-                <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" hintId="hintId5" labelId="labelId10" />
+                value="true" name="nameChange5" labelId="labelId9" />
+                <RadioBlock label="No" radioId="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
             </Radios>
-        </FieldsetBlockWithError>
+        </FieldsetBlock>
     </Example>
 </ExampleContainer>
 
@@ -82,8 +82,8 @@ When there are more than 2 options, radio buttons should be stacked.
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId6">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId2221">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId55" 
-                value="true" name="nameChange1" labelId="labelId1" hintId="hintId2221" />
-                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" hintId="hintId2221" />
+                value="true" name="nameChange1" labelId="labelId1" />
+                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2"  />
             </Radios>
         </FieldsetBlock>
     </Example>
@@ -95,9 +95,9 @@ If there are only 2 options, you can either stack the radio buttons or display t
     <ExampleHeading>Radio button items with hints</ExampleHeading>
     <Example title="Example: Radio button items with hints">
             <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId">
-                <RadioBlockWithHint label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" radioId="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" />
-                <RadioBlockWithHint label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" radioId="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" />
-                <RadioBlockWithHint label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" radioId="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" />
+                <RadioBlock label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" radioId="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" />
+                <RadioBlock label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" radioId="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" />
+                <RadioBlock label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" radioId="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" />
         </FieldsetBlock>
     </Example>
 </ExampleContainer>
@@ -108,10 +108,10 @@ You can add hints to radio button items to provide more information about the op
     <ExampleHeading>Radio button items with a text divider</ExampleHeading>
     <Example title="Example: Radio button items with a text divider">
             <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle2">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId234">
-                <RadioBlockWithHint label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" />
-                <RadioBlockWithHint label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" />
+                <RadioBlock label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" />
+                <RadioBlock label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" />
                 <FormDivider><p>-or-</p></FormDivider>
-                <RadioBlockWithHint label="Sign in with Eel Services" hint="Non-New Zealand residents only" hintId="someHintId7234444" radioId="anyRadioId3459" name="providerChoice3" value="provider3" labelId="labelId9" />
+                <RadioBlock label="Sign in with Eel Services" hint="Non-New Zealand residents only" hintId="someHintId7234444" radioId="anyRadioId3459" name="providerChoice3" value="provider3" labelId="labelId9" />
         </FieldsetBlock>
     </Example>
 </ExampleContainer>
@@ -125,13 +125,13 @@ Make sure error messages follow the guidance below, and that you have specific e
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
     <Example title="Example: Error state #2 (Radio buttons)">
-        <FieldsetBlockWithError legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name.">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name">
             <Radios inline>
                 <RadioBlock label="Yes" radioId="anyRadioId9" 
                 value="true" name="nameChange5" labelId="labelId9" />
                 <RadioBlock label="No" radioId="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" />
             </Radios>
-        </FieldsetBlockWithError>
+        </FieldsetBlock>
     </Example>
 </ExampleContainer>
 

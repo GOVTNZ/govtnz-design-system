@@ -1,2 +1,4 @@
-<div class="g-radios-form-divider"> {$children}
+<div class="g-form-divider"> 
+  {$children}
+
 </div>

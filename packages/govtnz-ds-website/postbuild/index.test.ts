@@ -83,7 +83,7 @@ async function validateHTMLErrors(data, fileId) {
   try {
     result = await validator(options);
   } catch (e) {
-    console.error(e);
+    console.error(fileId, e);
   }
 
   const errors =
@@ -100,7 +100,7 @@ async function validateHTMLErrors(data, fileId) {
   if (errors === undefined) {
     console.error('Unable to get any result from validation');
   } else if (errors && errors.length > 0) {
-    console.error(errors, fileId);
+    console.error(fileId, errors);
   }
 
   expect(errors && errors.length).toBe(0);
@@ -114,9 +114,7 @@ async function validateNotES6(data, filePath, errorType) {
         if (errorType === 'jest') {
           expect(path.type).not.toBe('ArrowFunctionExpression');
         } else {
-          const message = `Expected no Arrow Functions within JavaScript build (to ensure IE11 support) but found ${
-            path.type
-          } at ${filePath}. Was given: ${data}`;
+          const message = `Expected no Arrow Functions within JavaScript build (to ensure IE11 support) but found ${path.type} at ${filePath}. Was given: ${data}`;
           console.log(message);
           throw new Error(message);
         }
@@ -129,7 +127,8 @@ async function validateNotES6(data, filePath, errorType) {
 test('Validate that HTML has a single id="main-heading"', async () => {
   const regex = /id=["']main-heading["']/g;
   const allHtmlPaths = await glob(
-    path.resolve(__dirname, '..', 'public', '**/*.html')
+    path.resolve(__dirname, '..', 'public', '**/*.html'),
+    { nodir: true }
   );
 
   const htmlPaths = allHtmlPaths.filter(
@@ -143,16 +142,23 @@ test('Validate that HTML has a single id="main-heading"', async () => {
 
   await Promise.all(
     htmlPaths.map(async htmlPath => {
-      const data = await fs.promises.readFile(htmlPath, {
-        encoding: 'utf-8',
-      });
+      let data;
+      try {
+        data = await fs.promises.readFile(htmlPath, {
+          encoding: 'utf-8',
+        });
+      } catch (e) {
+        console.log(htmlPath);
+        throw e;
+      }
       const results = data.match(regex);
 
       if (!results || results.length !== 1) {
         const h1Index = data.indexOf('<h1');
         console.log(
           htmlPath,
-          h1Index !== -1 ? data.substring(h1Index - 5, h1Index + 100) : null
+          h1Index !== -1 ? data.substring(h1Index - 100, h1Index + 300) : null,
+          results
         );
       }
       expect(results && results.length).toBe(1);

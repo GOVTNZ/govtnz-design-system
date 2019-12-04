@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@govtnz/ds": "0.0.1",
+    "@govtnz/ds": "0.1.0",
     "jest": "^24.8.0",
     "mustache": "^3.0.1",
     "prettier": "^1.17.1"

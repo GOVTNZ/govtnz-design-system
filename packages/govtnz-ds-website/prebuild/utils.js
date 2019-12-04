@@ -4,7 +4,7 @@ const path = require('path');
 const pathExists = async thePath => {
   let pathExists = false;
   try {
-    // testing if CSS file exists
+    // testing if file exists
     await fs.promises.readFile(thePath);
     pathExists = true;
   } catch (e) {
@@ -71,7 +71,9 @@ const importSourceGenerator = importName => {
 };
 
 const cleanUp = filesToDelete => {
-  console.log(`DS Prebuild: ${filesToDelete.length} file(s) to delete.`);
+  console.log(
+    `\n\n\n\n***********************\n\n\nDS Prebuild: ${filesToDelete.length} file(s) to delete.`
+  );
   return Promise.all(
     filesToDelete.map(async filePath => {
       await fs.promises.unlink(filePath);

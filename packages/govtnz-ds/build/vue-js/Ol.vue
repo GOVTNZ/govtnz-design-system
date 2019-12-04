@@ -1,8 +1,9 @@
 <template>
   <ol v-bind:class="computed__class">
     <slot></slot>
-  </ol> </template
-><script>
+  </ol>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -15,8 +16,9 @@ export default Vue.extend({
       return "g-ol-list" + (this.numbered ? " g-ol-list--number" : "");
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-ol-list {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -2,13 +2,15 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
+  errorId?: string | undefined;
   hintId?: string | undefined;
   legend?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: React.ReactNode;
   children?: React.ReactNode;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
   margin-bottom: 20px;
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
@@ -16,6 +18,12 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   padding: 0;
   border: 0;
   margin-bottom: 5px;
@@ -92,12 +100,65 @@ const StyledDiv2 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+  @media print {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
   margin-top: 0px;
 `;
 
-const FieldsetBlock = ({ hintId, legend, hint, children }: Props) => (
-  <StyledDiv>
-    <StyledFieldset aria-describedby={hintId}>
+const StyledSpan = styled.span`
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+  margin-top: 0px;
+`;
+
+const StyledDiv4 = styled.div`
+  margin-top: 0px;
+`;
+
+const FieldsetBlock = ({
+  errorId,
+  hintId,
+  legend,
+  hint,
+  error,
+  children
+}: Props) => (
+  <StyledDiv errorId={errorId}>
+    <StyledFieldset
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
+    >
       <StyledLegend>
         {legend !== undefined ? (
           legend
@@ -118,13 +179,27 @@ const FieldsetBlock = ({ hintId, legend, hint, children }: Props) => (
       ) : (
         ""
       )}
-      <StyledDiv3>
+      {errorId !== undefined ? (
+        <React.Fragment>
+          <StyledDiv3 id={errorId}>
+            <StyledSpan>Error:</StyledSpan>
+            {error !== undefined ? (
+              error
+            ) : (
+              <React.Fragment>Error text</React.Fragment>
+            )}
+          </StyledDiv3>
+        </React.Fragment>
+      ) : (
+        ""
+      )}
+      <StyledDiv4>
         {children !== undefined ? (
           children
         ) : (
           <React.Fragment>Fieldset contents</React.Fragment>
         )}
-      </StyledDiv3>
+      </StyledDiv4>
     </StyledFieldset>
   </StyledDiv>
 );

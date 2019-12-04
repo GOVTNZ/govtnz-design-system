@@ -6,8 +6,9 @@
     v-bind:multiple="multiple"
   >
     <slot></slot>
-  </select> </template
-><script>
+  </select>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -18,8 +19,9 @@ export default Vue.extend({
     children: { required: false, default: "<option>Options</option>" }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-select {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

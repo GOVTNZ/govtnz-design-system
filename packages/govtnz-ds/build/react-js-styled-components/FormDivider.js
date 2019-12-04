@@ -27,7 +27,7 @@ var StyledDiv = _styledComponents["default"].div(_templateObject());
 
 var FormDivider = function FormDivider(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement(StyledDiv, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example Text"));
+  return _react["default"].createElement(StyledDiv, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Contents..."));
 };
 
 var _default = FormDivider;

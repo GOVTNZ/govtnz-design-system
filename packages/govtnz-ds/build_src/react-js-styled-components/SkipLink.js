@@ -105,12 +105,8 @@ const StyledA = styled.a`
   margin-top: 0px;
 `;
 
-const constants = {
-  target: { Blank: "_blank", Top: "_top", Self: "_self", Parent: "_parent" }
-};
-
 const SkipLink = ({ href, rel, target }) => (
-  <StyledA href={href} rel={rel} target={constants.target[target]}>
+  <StyledA href={href} rel={rel} target={target}>
     Skip to main content
   </StyledA>
 );

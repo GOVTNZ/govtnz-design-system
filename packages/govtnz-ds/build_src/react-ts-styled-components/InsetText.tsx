@@ -40,7 +40,7 @@ const StyledDiv = styled.div`
   margin-top: 0px;
 `;
 
-const InsetText = ({  }: Props) => (
+const InsetText = ({}: Props) => (
   <StyledDiv>
     It can take up to 8 weeks to register a lasting power of attorney if there
     are no mistakes in the application.

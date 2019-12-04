@@ -1,14 +1,12 @@
 <button
 class="g-button{% if disabled %} g-button--disabled{% endif %} {% if level == "secondary" %}g-button--secondary{% elseif level == "warning" %}g-button--warning{% endif %}"
 disabled="{% if disabled %}true{% endif %}"
-type="{% if type == "Submit" %}submit{% elseif type == "Reset" %}reset{% elseif type == "Button" %}button{% endif %}"
+type="{{ type | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 >
   
-          
-{% block children %}
-            Example text
-          {% endblock %}
   
-        
+{% block children %} Example text {% endblock %}
+  
+
 </button>

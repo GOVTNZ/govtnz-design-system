@@ -1,0 +1,47 @@
+<div
+class="g-textareaBlock-form-group"
+>
+  
+  
+<label
+class="g-textareaBlock-label"
+for="{{ id | escape('html_attr') }}"
+>
+  
+    
+{% block label %}{% endblock %}
+  
+  
+</label>
+  
+  
+<span
+class="g-textareaBlock-hint"
+id="{{ hintId | escape('html_attr') }}"
+>
+  
+    
+{% block hint %}{% endblock %}
+  
+  
+</span>
+  
+  
+<textarea
+aria-describedby="{{ hintId | escape('html_attr') }}"
+class="g-textareaBlock-textarea"
+id="{{ id | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+rows=""
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+cols=""
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
+spellcheck="{% if spellCheck %}spellCheck{% endif %}"
+autocomplete="{{ autoComplete | escape('html_attr') }}"
+maxlength=""
+value="{{ value | escape('html_attr') }}"
+/>
+  
+
+</div>

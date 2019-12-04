@@ -1,4 +1,4 @@
-.g-radios-form-divider {
+.g-form-divider {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -13,32 +13,32 @@
 }
 
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .g-radios-form-divider {
+  .g-form-divider {
     color: #000000;
     color: var(--g-theme-color-black, #000000);
   }
 }
 
-.g-radios-hint > * {
+.g-formDivider-hint > * {
   margin-top: 0px;
 }

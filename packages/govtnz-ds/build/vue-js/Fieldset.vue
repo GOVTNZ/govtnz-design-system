@@ -3,8 +3,9 @@
     <fieldset v-bind:aria-describedby="hintId" class="g-fieldset">
       <slot></slot>
     </fieldset>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
@@ -16,8 +17,9 @@ export default Vue.extend({
     }
   },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fieldset-form-group {
   margin-bottom: 20px;
 }

@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer.tsx';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow.tsx';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn.tsx';
+import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (

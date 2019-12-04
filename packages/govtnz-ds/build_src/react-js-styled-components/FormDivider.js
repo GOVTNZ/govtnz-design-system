@@ -34,7 +34,7 @@ const FormDivider = ({ children }) => (
     {children !== undefined ? (
       children
     ) : (
-      <React.Fragment>Example Text</React.Fragment>
+      <React.Fragment>Contents...</React.Fragment>
     )}
   </StyledDiv>
 );

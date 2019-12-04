@@ -21,6 +21,7 @@ const {
   ALL_FORMATS,
 } = require('@springload/metatemplate');
 const jsxtojson = require('jsx2json');
+const rmfr = require('rmfr');
 
 const { writeExamplePage, getExampleHeight } = require('./example');
 
@@ -30,6 +31,7 @@ const generateContentPages = async (
   filesToDelete,
   metaTemplateInputsById
 ) => {
+  await rmfr(path.resolve(__dirname, 'static', sectionId));
   const sectionDocsPath = path.resolve(
     __dirname,
     '..',
@@ -52,17 +54,24 @@ const generateContentPages = async (
   await Promise.all(
     pageIds.map(async pageId => {
       let imports = [];
+      let result;
+      try {
+        result = await generatePage(
+          sectionId,
+          pageId,
+          metaTemplateInputsById,
+          templateFormatsById
+        );
+      } catch (e) {
+        console.error(e);
+        throw e;
+      }
 
       const [
         componentImports,
         generatedComponentPage,
         filesToNotDelete,
-      ] = await generatePage(
-        sectionId,
-        pageId,
-        metaTemplateInputsById,
-        templateFormatsById
-      );
+      ] = result;
 
       imports = uniq(imports.concat(componentImports));
 
@@ -142,9 +151,9 @@ const generatePage = async (
         console.log('\n\n');
         console.trace();
         console.log('\n\n');
-        throw new Error(
-          `In "${sectionId}" with "${pageId}" can't find doc at "${docPath}" or DS "${dsDocPath}".`
-        );
+        const message = `In "${sectionId}" with "${pageId}" can't find doc at "${docPath}" or DS "${dsDocPath}".`;
+        console.error(message);
+        throw new Error(message);
       }
       docPath = componentDocPath;
     }
@@ -232,10 +241,7 @@ const generatePage = async (
       if (level === '1') {
         return (
           `<H1 styleSize="${levelToStyleSize[level]}" id="main-heading"` +
-          match.substring(
-            match.indexOf('>'),
-            match.length - '</h1>'.length
-          ) +
+          match.substring(match.indexOf('>'), match.length - '</h1>'.length) +
           `</H${level}>`
         );
       }
@@ -275,88 +281,86 @@ const generatePage = async (
     const exampleHeights = new Array(matches.length);
     const exampleIds = new Array(matches.length);
 
-    const exampleCodes = await Promise.all(
-      matches.map(async (match, counter) => {
-        const fullExamples = match.match(exampleRegex);
-        const headings = match.match(exampleHeadingRegex);
-        if (!fullExamples) {
-          throw Error(
-            `Unexpected lack of <Example> within an <ExampleContainer>. Code was: ${match}`
-          );
-        }
-        if (fullExamples.length !== 1) {
-          throw Error(
-            `Unexpected number of examples within an example container of fullExamples.length = ${
-              fullExamples.length
-            }`
-          );
-        }
+    const exampleCodes = [];
 
-        const fullExample = fullExamples[0];
-
-        const exampleAsJS = jsxtojson(fullExample);
-
-        let heading = exampleAsJS.props && exampleAsJS.props.title;
-
-        if (!heading) {
-          heading =
-            (headings &&
-              headings[0] &&
-              headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
-            `Example ${counter + 1}`;
-          if (!heading.match(/example/i)) {
-            heading = `${heading} (${pageId} example)`;
-          }
-        }
-
-        const exampleRelativePath = `${pageId}__example${counter}`;
-        exampleRelativePaths[
-          counter
-        ] = `/${sectionId}/${exampleRelativePath}.html`;
-        exampleTitles[counter] = heading;
-        exampleIds[counter] = `iframe_${sectionId}${pageId}${counter}`.replace(
-          /[^a-zA-Z0-9_]/g,
-          ''
+    for (let i = 0; i < matches.length; i++) {
+      const match = matches[i];
+      const counter = i;
+      const fullExamples = match.match(exampleRegex);
+      const headings = match.match(exampleHeadingRegex);
+      if (!fullExamples) {
+        throw Error(
+          `Unexpected lack of <Example> within an <ExampleContainer>. Code was: ${match}`
         );
-
-        const exampleSrcPath = await writeExamplePage(
-          `${sectionId}/${exampleRelativePath}`,
-          fullExample,
-          exampleTitles[counter],
-          exampleIds[counter],
-          `./${pageId}`,
-          linkBackPageName
+      }
+      if (fullExamples.length !== 1) {
+        throw Error(
+          `Unexpected number of examples within an example container of fullExamples.length = ${fullExamples.length}`
         );
+      }
 
-        const exampleHeight = await getExampleHeight(exampleSrcPath);
+      const fullExample = fullExamples[0];
 
-        exampleHeights[counter] = exampleHeight;
+      const exampleAsJS = jsxtojson(fullExample);
 
-        filesToNotDelete.push(
-          path.resolve(__dirname, '../src', exampleSrcPath)
-        );
+      let heading = exampleAsJS.props && exampleAsJS.props.title;
 
-        const example = fullExample
-          .replace(/<ExampleSection>/g, '')
-          .replace(/<\/ExampleSection>/g, '')
-          .replace(/<ExampleHeading>/g, '')
-          .replace(/<\/ExampleHeading>/g, '')
-          .replace(/<Example( [\s\S]*?>|>)/g, '')
-          .replace(/<\/Example>/g, '');
-
-        try {
-          const code = await jsxToUsageCode(example);
-          const files = await makeUsage(code, metaTemplateInputsById, [
-            ALL_FORMATS,
-          ]);
-          return files;
-        } catch (e) {
-          console.log(`Problem with ${sectionId}/${pageId}: ${example}`);
-          console.log(e);
-          throw e;
+      if (!heading) {
+        heading =
+          (headings &&
+            headings[0] &&
+            headings[0].replace(/<[\s\S]*?>/gi, '')) || // remove all tags
+          `Example ${counter + 1}`;
+        if (!heading.match(/example/i)) {
+          heading = `${heading} (${pageId} example)`;
         }
-      })
-    );
+      }
+
+      const exampleRelativePath = `${pageId}__example${counter}`;
+      exampleRelativePaths[
+        counter
+      ] = `/${sectionId}/${exampleRelativePath}.html`;
+      exampleTitles[counter] = heading;
+      exampleIds[counter] = `iframe_${sectionId}${pageId}${counter}`.replace(
+        /[^a-zA-Z0-9_]/g,
+        ''
+      );
+
+      const exampleSrcPath = await writeExamplePage(
+        `${sectionId}/${exampleRelativePath}`,
+        fullExample,
+        exampleTitles[counter],
+        exampleIds[counter],
+        `./${pageId}`,
+        linkBackPageName
+      );
+
+      const exampleHeight = await getExampleHeight(exampleSrcPath);
+
+      exampleHeights[counter] = exampleHeight;
+
+      filesToNotDelete.push(path.resolve(__dirname, '../src', exampleSrcPath));
+
+      const example = fullExample
+        .replace(/<ExampleSection>/g, '')
+        .replace(/<\/ExampleSection>/g, '')
+        .replace(/<ExampleHeading>/g, '')
+        .replace(/<\/ExampleHeading>/g, '')
+        .replace(/<Example( [\s\S]*?>|>)/g, '')
+        .replace(/<\/Example>/g, '');
+
+      try {
+        const code = await jsxToUsageCode(example);
+        const files = await makeUsage(code, metaTemplateInputsById, [
+          ALL_FORMATS,
+        ]);
+        exampleCodes.push(files);
+      } catch (e) {
+        console.log(`Problem with ${sectionId}/${pageId}: ${example}`);
+        console.log(e);
+        throw e;
+      }
+    }
 
     const importName = `${sectionId}__${pageId}`;
     const srcCodePath = path.join('commons', 'examples', importName);

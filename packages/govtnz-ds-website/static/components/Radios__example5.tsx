@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import RadioBlockWithHint from '@govtnz/ds/build/react-ts/RadioBlockWithHint.tsx';import FormDivider from '@govtnz/ds/build/react-ts/FormDivider.tsx';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import FormDivider from '@govtnz/ds/build/react-ts/FormDivider';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -15,10 +15,10 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Radio button items with a text divider" {...onChangeGenerator({})}>
             <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle2">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId234" {...onChangeGenerator({})}>
-                <RadioBlockWithHint label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlockWithHint>
-                <RadioBlockWithHint label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlockWithHint>
+                <RadioBlock label="Sign in with Aardvark Services" hint="North Island only" hintId="someHintId72344" radioId="anyRadioId7345" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlock>
+                <RadioBlock label="Sign in with Dandelion Services" hint="South and Stewart Islands only" hintId="someHintId8533" radioId="anyRadioId8345" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlock>
                 <FormDivider {...onChangeGenerator({})}><p>-or-</p></FormDivider>
-                <RadioBlockWithHint label="Sign in with Eel Services" hint="Non-New Zealand residents only" hintId="someHintId7234444" radioId="anyRadioId3459" name="providerChoice3" value="provider3" labelId="labelId9" {...onChangeGenerator({"value":"provider3"})}></RadioBlockWithHint>
+                <RadioBlock label="Sign in with Eel Services" hint="Non-New Zealand residents only" hintId="someHintId7234444" radioId="anyRadioId3459" name="providerChoice3" value="provider3" labelId="labelId9" {...onChangeGenerator({"value":"provider3"})}></RadioBlock>
         </FieldsetBlock>
     </Example>);
 

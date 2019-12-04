@@ -5,36 +5,34 @@
   "version": "0.0.1",
   "author": "Matthew Holloway <matthew@springload.co.nz>",
   "dependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/parser": "^7.4.5",
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/parser": "^7.7.4",
     "@babel/plugin-transform-eval": "^7.0.0-beta.38",
-    "@babel/preset-react": "^7.0.0",
-    "@govtnz/ds": "0.0.9",
+    "@babel/preset-react": "^7.7.4",
+    "@govtnz/ds": "0.1.0",
     "@sentry/browser": "^5.3.0",
-    "@springload/metatemplate": "0.1.0",
+    "@springload/metatemplate": "0.2.3",
     "acorn": "^6.1.1",
     "acorn-jsx": "^5.0.1",
     "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
     "babel-preset-gatsby": "^0.1.11",
     "babel-preset-gatsby-package": "^0.1.4",
     "copy-text-to-clipboard": "^2.1.0",
-    "core-js": "2",
-    "css-sniff": "2.0.0",
-    "gatsby": "2.7.2",
-    "gatsby-image": "^2.0.20",
-    "gatsby-plugin-compile-es6-packages": "^1.1.0",
-    "gatsby-plugin-google-gtag": "^1.0.17",
-    "gatsby-plugin-google-tagmanager": "^2.0.15",
-    "gatsby-plugin-manifest": "2.1.1",
-    "gatsby-plugin-react-helmet": "3.0.12",
-    "gatsby-plugin-sass": "2.0.11",
-    "gatsby-plugin-sentry": "1.0.1",
-    "gatsby-plugin-sharp": "2.1.1",
-    "gatsby-plugin-svg-sprite": "2.0.1",
-    "gatsby-plugin-typescript": "2.0.15",
-    "gatsby-source-filesystem": "2.0.37",
-    "gatsby-transformer-sharp": "2.1.19",
+    "core-js": "^3.4.7",
+    "gatsby": "^2.18.5",
+    "gatsby-image": "^2.2.34",
+    "gatsby-plugin-compile-es6-packages": "^2.1.0",
+    "gatsby-plugin-google-gtag": "^1.1.17",
+    "gatsby-plugin-google-tagmanager": "^2.1.18",
+    "gatsby-plugin-manifest": "^2.2.30",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sass": "^2.1.24",
+    "gatsby-plugin-sentry": "^1.0.1",
+    "gatsby-plugin-svg-sprite": "^2.0.1",
+    "gatsby-plugin-typescript": "^2.1.20",
+    "gatsby-source-filesystem": "^2.1.39",
     "glob-promise": "^3.4.0",
     "html-validator": "^4.0.3",
     "jest": "^24.8.0",
@@ -45,6 +43,7 @@
     "mkdirp-promise": "^5.0.1",
     "node-sass": "^4.11.0",
     "nodemon": "^1.18.10",
+    "prettier": "^1.15.2",
     "prismjs-mt": "1.15.0",
     "query-string": "5",
     "raf": "^3.4.1",
@@ -54,6 +53,7 @@
     "react-helmet": "^5.2.0",
     "react-modal": "^3.8.1",
     "react-modal-body": "0.0.1",
+    "rmfr": "^2.0.0",
     "typescript": "^3.5.2"
   },
   "keywords": [
@@ -73,9 +73,6 @@
     "test:typescript": "exit 0",
     "rimraf": "rimraf ./public/ && rimraf ./.cache"
   },
-  "devDependencies": {
-    "prettier": "^1.15.2"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
@@ -83,12 +80,6 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "browserslist": [
-    "last 3 versions",
-    "> 1%",
-    "not dead",
-    "ie 11"
-  ],
   "nodemonConfig": {
     "ext": "tsx ts html css",
     "watch": [

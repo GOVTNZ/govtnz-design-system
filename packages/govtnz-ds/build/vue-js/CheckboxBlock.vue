@@ -2,7 +2,7 @@
   <div class="g-checkboxes__item">
     <input
       v-bind:aria-describedby="hintId"
-      v-bind:class="computed__class"
+      class="g-checkboxes__input"
       v-bind:id="checkboxId"
       type="checkbox"
       v-bind:name="name"
@@ -23,13 +23,13 @@
     <div class="g-checkboxBlock-hint g-checkboxes__hint" v-bind:id="hintId">
       <slot name="hint"></slot>
     </div>
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    fakeFocus: { type: Boolean, default: false, required: false },
     checkboxId: { type: String, required: false },
     hintId: { type: String, required: false },
     name: { type: String, required: true },
@@ -41,13 +41,10 @@ export default Vue.extend({
     label: { required: false, default: "Label text" },
     hint: { required: false, default: "Hint text" }
   },
-  computed: {
-    computed__class() {
-      return "g-checkboxes__input" + (this.fakeFocus ? " :focus" : "");
-    }
-  }
-});</script
-><style scoped>
+  computed: {}
+});
+</script>
+<style scoped>
 .g-checkboxBlock-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -76,7 +73,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-checkboxBlock-fieldset__legend + .g-checkboxBlock-hint {
+.g-fieldset__legend + .g-checkboxBlock-hint {
   margin-top: -5px;
 }
 .g-checkboxBlock-label {

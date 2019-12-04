@@ -1,15 +1,17 @@
 <template>
   <legend class="g-fieldset__legend">
     <slot></slot>
-  </legend> </template
-><script>
+  </legend>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: { children: { required: false, default: "Legend text" } },
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-fieldset__legend {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

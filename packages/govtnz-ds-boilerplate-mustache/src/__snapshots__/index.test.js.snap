@@ -11,53 +11,81 @@ exports[`HTML Snapshot Rendered templates 1`] = `
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
 
 <div
-class=\\"g-fieldsetBlockWithError-form-group g-fieldsetBlockWithError-form-group--error\\"
+class=\\"g-fieldsetBlock-form-group{{#errorId}} g-fieldsetBlock-form-group--error{{/errorId}}\\"
 >
   
-        
+  
 <fieldset
 aria-describedby=\\"{{hintId}} {{errorId}}\\"
 class=\\"g-fieldset\\"
 >
   
-          
+    
 <legend
 class=\\"g-fieldset__legend\\"
 >
+  
+      
   {{{legend}}}
+  
+    
 </legend>
   
-          
+    
+  
+      
 <div
-class=\\"g-fieldsetBlockWithError-hint\\"
+class=\\"g-fieldsetBlock-hint\\"
 {{#hintId}}
   id=\\"{{hintId}}\\"
 {{/hintId}}
 >
+  
+        
   {{{hint}}}
+  
+      
 </div>
   
-          
+    
+  
+    
+  
+      
 <div
-class=\\"g-fieldsetBlockWithError-error-message\\"
+class=\\"g-fieldsetBlock-error-message\\"
 {{#errorId}}
   id=\\"{{errorId}}\\"
 {{/errorId}}
 >
+  
+        
+<span
+class=\\"g-fieldsetBlock-visually-hidden\\"
+>
+  
+          Error:
+        
+</span>
+  
+        
   {{{error}}}
+  
+      
 </div>
   
-          
+    
+  
+    
 <div
-class=\\"g-fieldsetBlockWithError-children\\"
 >
   {{{children}}}
 </div>
   
-        
+  
 </fieldset>
   
-      
+
 </div>"
 `;
 
@@ -69,12 +97,16 @@ exports[`HTML Snapshot Rendered templates 2`] = `
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
 
 <h1
-class=\\"{{#styleSize=xlarge}} g-heading-xl{{/styleSize=xlarge}}{{#styleSize=large}} g-heading-l{{/styleSize=large}}{{#styleSize=medium}} g-heading-m{{/styleSize=medium}}{{#styleSize=small}} g-heading-s{{/styleSize=small}}{{#styleSize=xsmall}} g-heading-xs{{/styleSize=xsmall}}{{#styleSize=xxsmall}} g-heading-xxs{{/styleSize=xxsmall}} {{#marginBottom8}} g-heading-mb-8{{/marginBottom8}}\\"
+class=\\"{{#styleSize=xlarge}} g-heading-xl{{/styleSize=xlarge}}{{#styleSize=large}} g-heading-l{{/styleSize=large}}{{#styleSize=medium}} g-heading-m{{/styleSize=medium}}{{#styleSize=small}} g-heading-s{{/styleSize=small}}{{#styleSize=xsmall}} g-heading-xs{{/styleSize=xsmall}}{{#styleSize=xxsmall}} g-heading-xxs{{/styleSize=xxsmall}} {{#marginBottom8}} g-heading-mb-8{{/marginBottom8}} {{#marginBottom0}} g-heading-mb-0{{/marginBottom0}}\\"
 {{#id}}
   id=\\"{{id}}\\"
 {{/id}}
 >
+  
+  
   {{{children}}}
+  
+
 </h1>"
 `;
 
@@ -88,7 +120,11 @@ exports[`HTML Snapshot Rendered templates 3`] = `
 <div
 class=\\"g-radios{{#inline}} g-radios--inline{{/inline}}\\"
 >
+  
+  
   {{{children}}}
+  
+
 </div>"
 `;
 
@@ -96,19 +132,20 @@ exports[`HTML Snapshot Rendered templates 4`] = `
 "{{! DEVELOPER NOTE: This template uses triple-bracket \\"{{{\\"
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
-     - label.
+     - label,
+     - hint.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
 
 <div
 class=\\"g-radios__item\\"
 >
   
-               
+  
 <input
 {{#hintId}}
   aria-describedby=\\"{{hintId}}\\"
 {{/hintId}}
-class=\\"g-radios__input{{#fakeFocus}} :focus{{/fakeFocus}}\\"
+class=\\"g-radios__input\\"
 {{#radioId}}
   id=\\"{{radioId}}\\"
 {{/radioId}}
@@ -133,42 +170,66 @@ type=\\"radio\\"
 {{/checked}}
 />
   
-               
+  
 <label
-class=\\"g-radios-label g-radios__label\\"
+class=\\"g-radioBlock-label g-radios__label\\"
 {{#radioId}}
   for=\\"{{radioId}}\\"
 {{/radioId}}
 >
+  
+    
   {{{label}}}
+  
+  
 </label>
   
-             
+  
+  
+    
+<div
+class=\\"g-radioBlock-hint g-checkboxes__hint\\"
+{{#hintId}}
+  id=\\"{{hintId}}\\"
+{{/hintId}}
+>
+  
+      
+  {{{hint}}}
+  
+    
+</div>
+  
+  
+  
+
 </div>"
 `;
 
 exports[`HTML Snapshot Simple global rules 1`] = `
-"<div
-  class=\\"g-fieldsetBlockWithError-form-group g-fieldsetBlockWithError-form-group--error\\"
->
+"<div class=\\"g-fieldsetBlock-form-group g-fieldsetBlock-form-group--error\\">
   <fieldset aria-describedby=\\"hintId5 errorId5\\" class=\\"g-fieldset\\">
     <legend class=\\"g-fieldset__legend\\">
-      <h1 class=\\" g-heading-l \\" id=\\"nameChangeId5\\">
+      <h1 class=\\" g-heading-l  \\" id=\\"nameChangeId5\\">
         Have you changed your name?
       </h1>
     </legend>
 
-    <div class=\\"g-fieldsetBlockWithError-hint\\" id=\\"hintId5\\">
+    <div class=\\"g-fieldsetBlock-hint\\" id=\\"hintId5\\">
       <p>
         This includes changing your last name or spelling your name differently.
       </p>
     </div>
 
-    <div class=\\"g-fieldsetBlockWithError-error-message\\" id=\\"errorId5\\">
+    <div class=\\"g-fieldsetBlock-error-message\\" id=\\"errorId5\\">
+      <span class=\\"g-fieldsetBlock-visually-hidden\\">
+        Error:
+      </span>
+
       Select 'yes' if you have changed your name.
     </div>
 
-    <div class=\\"g-fieldsetBlockWithError-children\\">
+    <div>
       <div class=\\"g-radios g-radios--inline\\">
         <div class=\\"g-radios__item\\">
           <input
@@ -180,9 +241,14 @@ exports[`HTML Snapshot Simple global rules 1`] = `
             value=\\"true\\"
           />
 
-          <label class=\\"g-radios-label g-radios__label\\" for=\\"anyRadioId9234\\">
+          <label
+            class=\\"g-radioBlock-label g-radios__label\\"
+            for=\\"anyRadioId9234\\"
+          >
             Yes
           </label>
+
+          <div class=\\"g-radioBlock-hint g-checkboxes__hint\\" id=\\"hintId5\\"></div>
         </div>
         <div class=\\"g-radios__item\\">
           <input
@@ -194,9 +260,11 @@ exports[`HTML Snapshot Simple global rules 1`] = `
             value=\\"false\\"
           />
 
-          <label class=\\"g-radios-label g-radios__label\\" for=\\"anyRadioId10\\">
+          <label class=\\"g-radioBlock-label g-radios__label\\" for=\\"anyRadioId10\\">
             No
           </label>
+
+          <div class=\\"g-radioBlock-hint g-checkboxes__hint\\" id=\\"hintId5\\"></div>
         </div>
       </div>
     </div>

@@ -28,7 +28,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         className: "example__iframe",
         src:"/components/Textarea__example0.html",
         title:"Example: Textarea",
-        height: 549
+        height: 240
       }}></Example>
 </ExampleContainer>
 

@@ -1,19 +1,20 @@
 {{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
-     - label.
+     - label,
+     - hint.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
 class="g-radios__item"
 >
   
-               
+  
 <input
 {{#hintId}}
   aria-describedby="{{hintId}}"
 {{/hintId}}
-class="g-radios__input{{#fakeFocus}} :focus{{/fakeFocus}}"
+class="g-radios__input"
 {{#radioId}}
   id="{{radioId}}"
 {{/radioId}}
@@ -38,15 +39,37 @@ type="radio"
 {{/checked}}
 />
   
-               
+  
 <label
-class="g-radios-label g-radios__label"
+class="g-radioBlock-label g-radios__label"
 {{#radioId}}
   for="{{radioId}}"
 {{/radioId}}
 >
+  
+    
   {{{label}}}
+  
+  
 </label>
   
-             
+  
+  
+    
+<div
+class="g-radioBlock-hint g-checkboxes__hint"
+{{#hintId}}
+  id="{{hintId}}"
+{{/hintId}}
+>
+  
+      
+  {{{hint}}}
+  
+    
+</div>
+  
+  
+  
+
 </div>

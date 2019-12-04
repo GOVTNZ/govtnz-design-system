@@ -18,8 +18,7 @@ const StyledInput = styled.input`
 `;
 
 const Radio = ({
-  fakeFocus,
-  gov1,
+  id,
   hintId,
   name,
   disabled,
@@ -30,9 +29,8 @@ const Radio = ({
   onChange
 }) => (
   <StyledInput
-    fakeFocus={fakeFocus}
     aria-describedby={hintId}
-    id={gov1}
+    id={id}
     name={name}
     type="radio"
     disabled={disabled}

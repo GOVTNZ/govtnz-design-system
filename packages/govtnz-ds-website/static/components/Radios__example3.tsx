@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock.tsx';import H1 from '@govtnz/ds/build/react-ts/H1.tsx';import Radios from '@govtnz/ds/build/react-ts/Radios.tsx';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock.tsx';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -16,8 +16,8 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 var PageContent = (props) => (<Example title="Example: Inline radio buttons" {...onChangeGenerator({})}>
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId6">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId2221" {...onChangeGenerator({})}>
             <Radios inline {...onChangeGenerator({})}>
-                <RadioBlock label="Yes" radioId="anyRadioId55" value="true" name="nameChange1" labelId="labelId1" hintId="hintId2221" {...onChangeGenerator({"value":"true"})}></RadioBlock>
-                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" hintId="hintId2221" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+                <RadioBlock label="Yes" radioId="anyRadioId55" value="true" name="nameChange1" labelId="labelId1" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" radioId="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" {...onChangeGenerator({"value":"false"})}></RadioBlock>
             </Radios>
         </FieldsetBlock>
     </Example>);

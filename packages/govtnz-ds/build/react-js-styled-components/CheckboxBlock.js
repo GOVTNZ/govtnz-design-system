@@ -62,8 +62,7 @@ var StyledLabel = _styledComponents["default"].label(_templateObject3());
 var StyledDiv2 = _styledComponents["default"].div(_templateObject4());
 
 var CheckboxBlock = function CheckboxBlock(_ref) {
-  var fakeFocus = _ref.fakeFocus,
-      checkboxId = _ref.checkboxId,
+  var checkboxId = _ref.checkboxId,
       hintId = _ref.hintId,
       name = _ref.name,
       disabled = _ref.disabled,
@@ -75,7 +74,6 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
       label = _ref.label,
       hint = _ref.hint;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledInput, {
-    fakeFocus: fakeFocus,
     "aria-describedby": hintId,
     id: checkboxId,
     type: "checkbox",

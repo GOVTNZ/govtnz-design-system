@@ -2,15 +2,17 @@
   <div class="g-inset-text">
     It can take up to 8 weeks to register a lasting power of attorney if there
     are no mistakes in the application.
-  </div> </template
-><script>
+  </div>
+</template>
+<script>
 import Vue from "vue";
 
 export default Vue.extend({
   props: {},
   computed: {}
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-inset-text {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

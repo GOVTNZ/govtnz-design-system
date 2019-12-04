@@ -1,11 +1,9 @@
 import cssParser from 'postcss-safe-parser';
 import { camelCase } from 'lodash';
 import { SourceId, ReleaseVersion } from '@govtnz/ds-upstream';
-import { normalizeReleaseVersionGovUk } from './normalize-govuk';
-import { DynamicKey, CalculatedDynamicKey } from '@springload/metatemplate';
+import { DynamicKey } from '@springload/metatemplate';
 import { normalizeGeneric } from './normalize-generic';
 import { JSDOM } from 'jsdom';
-import { getCSSRules, serializeCSSRules } from 'css-sniff';
 import { gc, splitSelectors } from './utils';
 
 export const normalizeUpstream = async (
@@ -15,14 +13,8 @@ export const normalizeUpstream = async (
   let releaseVersions: ReleaseVersion[];
   switch (sourceId) {
     case 'govuk': {
-      releaseVersions = await Promise.all(
-        upstreamReleaseVersions.map(
-          async (
-            upstreamReleaseVersion: ReleaseVersion
-          ): Promise<ReleaseVersion> =>
-            await normalizeReleaseVersionGovUk(upstreamReleaseVersion)
-        )
-      );
+      // Already in a good format
+      releaseVersions = upstreamReleaseVersions;
       break;
     }
     case 'flexboxgrid':
@@ -229,35 +221,6 @@ export const toId = (id: string): string => {
   return id.substring(0, 1).toUpperCase() + camelCase(id.substring(1));
 };
 
-export const filterCSSByClassName = async (
-  className: string,
-  css: string
-): Promise<string> => {
-  const html = `<html><head><style>${css}</style></head><body><div class="${className}">text that doesn't matter</div></body></html>`;
-  const dom = new JSDOM(html, {
-    resources: 'usable',
-    pretendToBeVisual: true
-  });
-
-  const document = dom.window.document;
-
-  // Wait for subresources (external CSS) to load so
-  // that CSS detection will work
-  await new Promise(resolve => {
-    document.addEventListener('load', resolve);
-  });
-
-  const elements = document.querySelector('div');
-
-  const matchedCSS = await getCSSRules([elements], {
-    document
-  });
-
-  dom.window.close();
-  gc();
-  return serializeCSSRules(matchedCSS);
-};
-
 type PropertyMatchProps = {
   atRule: string;
   selector: string;
@@ -404,17 +367,13 @@ export const setCSSValues = (
       }
       case '@font-face': {
         throw Error(
-          `${__filename}: Unrecognised CSS node type "${
-            node.type
-          }". Please contribute your CSS as a test case to the project.`
+          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
         );
         break;
       }
       default: {
         throw Error(
-          `${__filename}: Unrecognised CSS node type "${
-            node.type
-          }". Please contribute your CSS as a test case to the project.`
+          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
         );
       }
     }

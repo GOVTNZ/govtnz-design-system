@@ -27,21 +27,21 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-// import getSilverStripe4Files from './template-formats/silverstripe-4/silverstripe-4';
+import { normalizeGovUkTemplate } from './normalize-govuk';
 
 ensureNodeVersion();
 
 async function main(
   mode: BuildMode,
   noCache: boolean = false,
-  patternIds?: string[] | undefined,
+  componentIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
   sources?: string[] | undefined
 ) {
   console.info('Command line args:');
   console.info('  -  Cache: ', !noCache);
   console.info('  -  Sources: ', sources ? sources : 'All');
-  console.info('  -  Filter By Patterns:', patternIds ? patternIds : false);
+  console.info('  -  Filter By Patterns:', componentIds ? componentIds : false);
   console.info(
     '  -  MetaTemplate formats:',
     metaTemplateFormatIds ? metaTemplateFormatIds : false,
@@ -49,12 +49,14 @@ async function main(
   );
   console.log('\n\n\n');
 
-  const specString: string = (await fs.promises.readFile(
-    path.join(__dirname, 'build-types', `${mode}-spec.json`),
-    {
-      encoding: 'utf-8'
-    }
-  )).toString();
+  const specString: string = (
+    await fs.promises.readFile(
+      path.join(__dirname, 'build-types', `${mode}-spec.json`),
+      {
+        encoding: 'utf-8'
+      }
+    )
+  ).toString();
 
   if (noCache) {
     console.info('Building release while using NO CACHE.');
@@ -102,25 +104,28 @@ async function main(
   // and other theoretical conflicts so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
-    const validPatternIds =
-      patternIds !== null && releaseSpecItem.patternIds !== undefined
-        ? patternIds.filter(patternId =>
-            releaseSpecItem.patternIds.includes(patternId)
+    const validComponentIds =
+      componentIds !== null && releaseSpecItem.componentIds !== undefined
+        ? componentIds.filter(componentId =>
+            releaseSpecItem.componentIds.includes(componentId)
           )
         : [];
 
-    releaseSpecItem.patternIds =
-      validPatternIds.length > 0 ? validPatternIds : releaseSpecItem.patternIds;
+    releaseSpecItem.componentIds =
+      validComponentIds.length > 0
+        ? validComponentIds
+        : releaseSpecItem.componentIds;
 
     releaseSpecItem.metaTemplateFormatIds =
       metaTemplateFormatIds || releaseSpecItem.metaTemplateFormatIds;
 
     console.log(
-      `Release build step ${i + 1} ${releaseSpecItem.sourceId}@${
-        releaseSpecItem.version
-      }. Scraping ${
-        releaseSpecItem.patternIds
-          ? releaseSpecItem.patternIds.toString()
+      `Release build step ${i + 1} ${
+        releaseSpecItem.sourceId
+      }@${releaseSpecItem.version ||
+        '(fork -- see govtnz-ds/src/upstream)'}. Scraping ${
+        releaseSpecItem.componentIds
+          ? releaseSpecItem.componentIds.toString()
           : 'ALL patterns.'
       } `
     );
@@ -144,7 +149,7 @@ async function main(
     cssVariables
   });
 
-  const isCompleteRelease = !patternIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
+  const isCompleteRelease = !componentIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
 
   // Disabling compilation files until specific ticket to reenable
   // because we're unclear of the features users want.
@@ -170,19 +175,84 @@ async function main(
 }
 
 const makeReleaseSpecItem = async (
-  { sourceId, version, patternIds, metaTemplateFormatIds }: ReleaseSpecItem,
+  { sourceId, version, componentIds, metaTemplateFormatIds }: ReleaseSpecItem,
   noCache: boolean
 ): Promise<ReleaseItem> => {
-  const upstreamReleaseVersions: ReleaseVersion[] = await getUpstream(
-    sourceId,
-    version,
-    patternIds,
-    noCache
-  );
-  const releaseVersions: ReleaseVersion[] = await normalizeUpstream(
-    sourceId,
-    upstreamReleaseVersions
-  );
+  let releaseVersions: ReleaseVersion[];
+  if (version) {
+    // if there's a specific version then assume they want upstream copies
+    releaseVersions = await getUpstream(
+      sourceId,
+      version,
+      componentIds,
+      noCache
+    );
+    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+  } else {
+    if (!componentIds) {
+      throw Error(
+        `componentIds required ${JSON.stringify({
+          sourceId,
+          version,
+          componentIds,
+          metaTemplateFormatIds
+        })}`
+      );
+    }
+
+    const components = await Promise.all(
+      componentIds.map(async componentId => {
+        const base = path.join(__dirname, 'upstream', sourceId);
+        const html = (
+          await fs.promises.readFile(path.join(base, `${componentId}.html`), {
+            encoding: 'utf-8'
+          })
+        ).toString();
+        const css = (
+          await fs.promises.readFile(path.join(base, `${componentId}.css`), {
+            encoding: 'utf-8'
+          })
+        ).toString();
+
+        let component: Partial<Component>;
+
+        component = await normalizeGovUkTemplate({
+          id: componentId,
+          html,
+          css,
+          cssNamespace: '',
+          message: '',
+          calculatedDynamicKeys: [],
+          additionalPrefixesToBypassNamespacing: [
+            'fieldset',
+            'radios',
+            'checkboxes',
+            'link',
+            'a',
+            'caption'
+          ]
+        });
+
+        component = {
+          version,
+          ...component
+        } as Component;
+
+        return component;
+      })
+    );
+
+    const releaseVersion: ReleaseVersion = {
+      sourceId,
+      version: 'all',
+      components,
+      creditMarkdown: ''
+    };
+
+    releaseVersions = [releaseVersion];
+    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+  }
+
   let cssVariables: CSSVariablePattern[] = [];
 
   const jobs: ComponentToFilesArgs[] = [];
@@ -275,9 +345,7 @@ const makeReleaseSpecItem = async (
       await disposeMetaTemplate();
     } else {
       console.log(
-        `No 'disposeMetaTemplate' found in ${
-          jobs.length
-        } job(s). This indicates a bug that should be investigated.`
+        `No 'disposeMetaTemplate' found in ${jobs.length} job(s). This indicates a bug that should be investigated.`
       );
     }
   }
@@ -401,25 +469,14 @@ const saveRelease = async (
   //   'react-js/back-link.js': 'import React from \'react\';\n // etc...',
   // }
 
-  const specPaths = {
-    alpha: path.resolve(__dirname, '..', 'alpha_src'),
-    build: path.resolve(__dirname, '..', 'build_src')
-  };
-
-  const specPath = specPaths[mode];
-
-  if (!specPath)
-    throw Error(
-      `specPath doesn't recognise mode=${mode}. Valid options are ${Object.keys(
-        specPaths
-      )}`
-    );
-
   // Clean up after previous release
-  if (isCompleteRelease) {
-    await rmfr(path.join(specPath, '*'), { glob: true });
-    await mkdirp(specPath);
-  }
+  const buildPath = path.resolve(__dirname, '..', 'build');
+  await rmfr(path.join(buildPath, '*'), { glob: true });
+  await mkdirp(buildPath);
+
+  const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
+  await rmfr(path.join(buildSrcPath, '*'), { glob: true });
+  await mkdirp(buildSrcPath);
 
   let metaTemplateInputsById = allReleaseVersions.reduce(
     (
@@ -437,14 +494,16 @@ const saveRelease = async (
   );
 
   const metaTemplateInputsPath = path.join(
-    specPath,
+    buildSrcPath,
     '.metatemplate-inputs.json'
   );
   if (!isCompleteRelease) {
     try {
-      const data = (await fs.promises.readFile(metaTemplateInputsPath, {
-        encoding: 'utf-8'
-      })).toString();
+      const data = (
+        await fs.promises.readFile(metaTemplateInputsPath, {
+          encoding: 'utf-8'
+        })
+      ).toString();
       const oldMetaTemplateInputs = JSON.parse(data);
       metaTemplateInputsById = {
         ...oldMetaTemplateInputs,
@@ -458,7 +517,7 @@ const saveRelease = async (
   }
 
   await fs.promises.writeFile(
-    path.join(specPath, '.metatemplate-inputs.json'),
+    path.join(buildSrcPath, '.metatemplate-inputs.json'),
     JSON.stringify(metaTemplateInputsById, null, 2),
     {
       encoding: 'utf-8'
@@ -470,9 +529,12 @@ const saveRelease = async (
   await Promise.all(
     releaseFilePaths.map(async (releaseFilePath: string) => {
       process.stdout.write('.');
-      const filePathDir = path.join(specPath, path.dirname(releaseFilePath));
+      const filePathDir = path.join(
+        buildSrcPath,
+        path.dirname(releaseFilePath)
+      );
       await mkdirp(filePathDir);
-      const filePath = path.join(specPath, releaseFilePath);
+      const filePath = path.join(buildSrcPath, releaseFilePath);
       let options;
       if (typeof files[releaseFilePath] === 'string') {
         // because we might receive Buffers of binary data
@@ -489,7 +551,7 @@ const saveRelease = async (
   );
 
   // Copy static files
-  const staticPath = path.join(specPath, 'static');
+  const staticPath = path.join(buildSrcPath, 'static');
   await mkdirp(staticPath);
   const staticFiles = await glob(path.join(__dirname, 'static/*'));
   await Promise.all(
@@ -502,9 +564,7 @@ const saveRelease = async (
   );
 
   console.log(
-    `\n\nFinished. Wrote ${
-      releaseFilePaths.length
-    } file(s) to ${mode}\n( ${specPath} )`
+    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s) to ${mode}\n( ${buildSrcPath} )`
   );
 };
 
@@ -537,8 +597,8 @@ const makeNonComponentDocs = async (allFiles: Object) => {
 
 type ReleaseSpecItem = {
   sourceId: SourceId;
-  version: string;
-  patternIds?: string[] | undefined;
+  version?: string;
+  componentIds?: string[] | undefined;
   metaTemplateFormatIds?: string[] | undefined;
 };
 
@@ -552,19 +612,6 @@ type ReleaseItem = {
 const MAX_METATEMPLATE_WORKERS = 1;
 const AVERAGE_JOB_DURATION_ms = 20 * 1000;
 const LONGER_THAN_A_HUMAN_COULD_POSSIBILITY_TOLERATE_ms = 6 * 60 * 1000;
-
-type Pattern = {
-  id: string;
-  version: string;
-  html: string | undefined; // will contain HTML and <g-children> etc., no placeholder content
-  htmlWithPlaceholders: string; // contains placeholder content
-  css: string;
-};
-
-type GeneratedIdTemplate = {
-  sourceId: string;
-  files: Object; // filename: data
-};
 
 type MetaTemplateInputsById = {
   [key: string]: Component;

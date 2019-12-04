@@ -2,7 +2,7 @@
   <input
     v-bind:aria-describedby="describedBy"
     v-bind:class="computed__class"
-    v-bind:id="inputId"
+    v-bind:id="id"
     v-bind:name="name"
     type="text"
     v-bind:disabled="disabled"
@@ -11,9 +11,10 @@
     v-bind:value="value"
     v-bind:spellcheck="spellCheck"
     v-bind:maxlength="maxLength"
-    v-bind:autocomplete="computed__autocomplete"
-  /> </template
-><script lang="ts">
+    v-bind:autocomplete="autoComplete"
+  />
+</template>
+<script lang="ts">
 import Vue from "vue";
 
 const constants = {
@@ -25,61 +26,6 @@ const constants = {
     "10": "g-input--width-10",
     "20": "g-input--width-20",
     "30": "g-input--width-30"
-  },
-  autoComplete: {
-    Off: "off",
-    On: "on",
-    Name: "name",
-    "Honorific: Prefix": "honorific-prefix",
-    "Given Name": "given-name",
-    "Additional Name": "additional-name",
-    "Family Name": "family-name",
-    "Honorific: Suffix": "honorific-suffix",
-    Nickname: "nickname",
-    Email: "email",
-    Username: "username",
-    "New Password": "new-password",
-    "Current Password": "current-password",
-    "Organization Title": "organization-title",
-    Organization: "organization",
-    "Street Address": "street-address",
-    "Address Line 1": "address-line1",
-    "Address Line 2": "address-line2",
-    "Address Line 3": "address-line3",
-    "Address Level 4": "address-level4",
-    "Address Level 3": "address-level3",
-    "Address Level 2": "address-level2",
-    "Address Level 1": "address-level1",
-    Country: "country",
-    "Country Name": "country-name",
-    "Postal Code": "postal-code",
-    "Credit Card: Name": "cc-name",
-    "Credit Card: Given Name": "cc-given-name",
-    "Credit Card: Additional Name": "cc-additional-name",
-    "Credit Card: Family Name": "cc-family-name",
-    "Credit Card: Number": "cc-number",
-    "Credit Card: Expiry": "cc-exp",
-    "Credit Card: Expiry Month": "cc-exp-month",
-    "Credit Card: Expiry Year": "cc-exp-year",
-    "Credit Card: CSC": "cc-csc",
-    "Credit Card: Type": "cc-type",
-    "Transaction: Currency": "transaction-currency",
-    "Transaction: Amount": "transaction-amount",
-    Language: "language",
-    Birthday: "bday",
-    "Birthday: Day": "bday-day",
-    "Birthday: Month": "bday-month",
-    "Birthday: Year": "bday-year",
-    Sex: "sex",
-    Telephone: "tel",
-    "Telephone: Country Code": "tel-country-code",
-    "Telephone: National": "tel-national",
-    "Telephone: Area Code": "tel-area-code",
-    "Telephone: Local": "tel-local",
-    "Telephone: Extension": "tel-extension",
-    IMPP: "impp",
-    URL: "url",
-    Photo: "photo"
   }
 };
 
@@ -93,8 +39,7 @@ export default Vue.extend({
       required: false
     },
     error: { type: Boolean, default: false, required: false },
-    fakeFocus: { type: Boolean, default: false, required: false },
-    inputId: { type: String, required: false },
+    id: { type: String, required: false },
     describedBy: { type: String, required: false },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
@@ -103,69 +48,7 @@ export default Vue.extend({
     value: { type: String, required: false },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
-    autoComplete: {
-      type: String,
-      validator: value => {
-        return (
-          [
-            "Off",
-            "On",
-            "Name",
-            "Honorific: Prefix",
-            "Given Name",
-            "Additional Name",
-            "Family Name",
-            "Honorific: Suffix",
-            "Nickname",
-            "Email",
-            "Username",
-            "New Password",
-            "Current Password",
-            "Organization Title",
-            "Organization",
-            "Street Address",
-            "Address Line 1",
-            "Address Line 2",
-            "Address Line 3",
-            "Address Level 4",
-            "Address Level 3",
-            "Address Level 2",
-            "Address Level 1",
-            "Country",
-            "Country Name",
-            "Postal Code",
-            "Credit Card: Name",
-            "Credit Card: Given Name",
-            "Credit Card: Additional Name",
-            "Credit Card: Family Name",
-            "Credit Card: Number",
-            "Credit Card: Expiry",
-            "Credit Card: Expiry Month",
-            "Credit Card: Expiry Year",
-            "Credit Card: CSC",
-            "Credit Card: Type",
-            "Transaction: Currency",
-            "Transaction: Amount",
-            "Language",
-            "Birthday",
-            "Birthday: Day",
-            "Birthday: Month",
-            "Birthday: Year",
-            "Sex",
-            "Telephone",
-            "Telephone: Country Code",
-            "Telephone: National",
-            "Telephone: Area Code",
-            "Telephone: Local",
-            "Telephone: Extension",
-            "IMPP",
-            "URL",
-            "Photo"
-          ].indexOf(value) !== -1
-        );
-      },
-      required: true
-    }
+    autoComplete: { type: String, required: true }
   },
   computed: {
     computed__class() {
@@ -174,18 +57,13 @@ export default Vue.extend({
         (constants.width[this.width] !== undefined
           ? ` ${constants.width[this.width]}`
           : "") +
-        (this.error ? " g-input--error" : "") +
-        (this.fakeFocus ? " :focus" : "")
+        (this.error ? " g-input--error" : "")
       );
-    },
-    computed__autocomplete() {
-      return constants.autoComplete[this.autoComplete] !== undefined
-        ? constants.autoComplete[this.autoComplete]
-        : "";
     }
   }
-});</script
-><style scoped>
+});
+</script>
+<style scoped>
 .g-input {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -221,8 +99,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-input:focus,
-.g-input.\:focus {
+.g-input:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
