@@ -1,15 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Note from '../components/Note';
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
 import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import H2 from '@govtnz/ds/build/react-ts/H2';
-import H3 from '@govtnz/ds/build/react-ts/H3';
 import P from '@govtnz/ds/build/react-ts/P';
 import A from '@govtnz/ds/build/react-ts/A';
 import Ul from '@govtnz/ds/build/react-ts/Ul';
@@ -19,8 +15,8 @@ import GetInTouch from '../components/GetInTouch';
 
 // import { Details, Summary } from 'react-accessible-details'
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = props => (
+  <Layout {...props}>
     <SEO
       title="Get started | Design System - Alpha"
       keywords={[

@@ -40,7 +40,7 @@ import PatternsIcon from '../commons/svgs/icon-home-patterns.svg';
 
 const IndexPage = props => {
   return (
-    <Layout path={props.path}>
+    <Layout {...props}>
       <SEO
         title="Design System - Alpha"
         description=""
