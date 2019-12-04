@@ -422,45 +422,6 @@ const componentToFiles = async ({
     metaTemplateFormatIds
   );
 
-  if (
-    metaTemplateInput.html &&
-    metaTemplateInput.html.includes('input__item')
-  ) {
-    const css = response.metaTemplates.find(item => item.formatId === 'css');
-    const reactTs = response.metaTemplates.find(
-      item => item.formatId === 'react-ts'
-    );
-    const cssString = JSON.stringify(css.files);
-    const reactTsString = JSON.stringify(reactTs.files);
-
-    await fs.promises.writeFile('/tmp/in.html', metaTemplateInput.html, {
-      encoding: 'utf-8'
-    });
-    await fs.promises.writeFile('/tmp/in.css', metaTemplateInput.css, {
-      encoding: 'utf-8'
-    });
-
-    await fs.promises.writeFile('/tmp/out.html', reactTsString, {
-      encoding: 'utf-8'
-    });
-    await fs.promises.writeFile('/tmp/out.css', cssString, {
-      encoding: 'utf-8'
-    });
-
-    console.log(
-      metaTemplateInput.html.includes('g-date-input__item'),
-      metaTemplateInput.css.includes('g-date-input__item'),
-      '\n\n=============\n\n',
-      metaTemplateInput.html,
-      '\n\n=============\n\n',
-      cssString.includes('input__item'),
-      '\n\n=============\n\n',
-      metaTemplateInput.css,
-      '\n\n=============\n\n',
-      cssString
-    );
-  }
-
   const markdownFileName = `${component.id}.md`;
   const relativeMarkdownPath = path.join('docs', markdownFileName);
   let md: string = '';
