@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, PageRendererProps } from 'gatsby';
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
 import Column from '@govtnz/ds/build/react-ts/FlexColumn';
@@ -15,16 +15,18 @@ import './layout.scss';
 import '../commons/styles/components-sidebar.scss';
 import '../commons/styles/utilities-display.scss';
 
-type Props = {
-  children: React.ReactNode;
-};
+type Props = { children: React.ReactNode; path: string } & PageRendererProps;
 
-const Layout = ({ children }: Props) => {
+const Layout = (props: Props) => {
+  const { children, path } = props;
+
+  console.log({ location, path });
   useEffect(() => {
     if (document.body.classList) {
       document.documentElement.classList.add('theme-default');
     }
   }, []);
+
   return (
     <StaticQuery
       query={graphql`
@@ -38,7 +40,7 @@ const Layout = ({ children }: Props) => {
       `}
       render={data => (
         <>
-          <SkipLink href="#main-heading" />
+          <SkipLink href="#main-heading" key={path} />
           <Header siteTitle={data.site.siteMetadata.title} />
           <main role="main" id="main-content" className="main-content">
             <div className="main-content__logo--show@print">
@@ -60,16 +62,3 @@ const Layout = ({ children }: Props) => {
 };
 
 export default Layout;
-
-export type GatsbyPageProps = {
-  // FIXME: Replace with proper Gatsby typing
-  uri: string;
-  location: {
-    pathname: string;
-    search: string;
-    hash: string;
-  };
-  children: React.ReactNode;
-  pageContext: Object;
-  pathContext: Object;
-};

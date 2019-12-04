@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Layout, { GatsbyPageProps } from '../components/layout';
+import { Link, PageRendererProps } from 'gatsby';
+import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
@@ -27,7 +27,7 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
   const title = (menuItem && menuItem.name) || 'Components';
 
   return (
-    <Layout>
+    <Layout {...pageProps}>
       <SEO
         title={title}
         keywords={[title, id, `design system`, `new zealand government`]}
@@ -76,7 +76,7 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
 }
 
 type ComponentsMenuProps = {
-  pageProps: GatsbyPageProps;
+  pageProps: PageRendererProps;
 };
 
 export const ComponentsMenu = ({ pageProps }: ComponentsMenuProps) => (
@@ -129,6 +129,6 @@ export type TemplateIds = TemplateId[];
 type Props = {
   title: string;
   id?: string | undefined;
-  pageProps: GatsbyPageProps;
+  pageProps: PageRendererProps;
   PageContent: Function;
 };

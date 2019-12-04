@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Layout, { GatsbyPageProps } from './layout';
+import { Link, PageRendererProps } from 'gatsby';
+import Layout from './layout';
 import SEO from './seo';
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
@@ -8,17 +8,15 @@ import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import BasicsMenu from './basicsMenu';
 import GetInTouch from './GetInTouch';
 import H1 from '@govtnz/ds/build/react-ts/H1';
-import H2 from '@govtnz/ds/build/react-ts/H2';
-import P from '@govtnz/ds/build/react-ts/P';
-import A from '@govtnz/ds/build/react-ts/A';
 import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import basicsMenuItems from './basics.json';
 
 export default function BasePage({ id, pageProps, PageContent }: Props) {
   const menuItem = basicsMenuItems.find(item => item.id === id);
   const title = (menuItem && menuItem.name) || 'Basics';
+
   return (
-    <Layout>
+    <Layout {...pageProps}>
       <SEO
         title={title}
         keywords={[title, id, `design system`, `new zealand government`]}
@@ -47,13 +45,13 @@ export default function BasePage({ id, pageProps, PageContent }: Props) {
 }
 
 type ComponentsMenuProps = {
-  pageProps: GatsbyPageProps;
+  pageProps: PageRendererProps;
 };
 
 export const ComponentsMenu = ({ pageProps }: ComponentsMenuProps) => (
   <nav className="sidebar" aria-label="Design System Components">
     <ul className="sidebar__navigation">
-      {componentsMenu.map(item => {
+      {basicsMenuItems.map(item => {
         const currentTo =
           pageProps && pageProps.location && pageProps.location.pathname;
         const to = `/components/${item.id}/`;
@@ -89,6 +87,6 @@ export type TemplateIds = TemplateId[];
 type Props = {
   title: string;
   id?: string | undefined;
-  pageProps: GatsbyPageProps;
+  pageProps: PageRendererProps;
   PageContent: Function;
 };

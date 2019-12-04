@@ -8,10 +8,10 @@ const socialThumbnail =
 
 type Props = {
   title: string;
-  description: string;
-  lang: string;
-  meta: any; // FIXME: improve typing
-  robots: boolean;
+  description?: string;
+  lang?: string;
+  meta?: any; // FIXME: improve typing
+  robots?: boolean;
   keywords?: string[];
 };
 

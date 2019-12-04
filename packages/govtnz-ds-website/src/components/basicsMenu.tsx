@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, PageRendererProps } from 'gatsby';
 import basicsMenuItems from './basics.json';
-import { GatsbyPageProps } from './layout';
 
 const BasicsMenu = ({ pageProps }: BasicsMenuProps) => (
   <nav className="sidebar" aria-label="Design System Basics">
@@ -31,7 +30,7 @@ const BasicsMenu = ({ pageProps }: BasicsMenuProps) => (
 );
 
 type BasicsMenuProps = {
-  pageProps: GatsbyPageProps;
+  pageProps: PageRendererProps;
 };
 
 export default BasicsMenu;

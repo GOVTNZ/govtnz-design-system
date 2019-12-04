@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Layout, { GatsbyPageProps } from '../../components/layout';
+import { PageRendererProps } from 'gatsby';
+import Layout from '../../components/layout';
 import BasicsMenu from '../../components/basicsMenu';
 import ColorSwatch from '../../components/ColorSwatch';
 import TextColorSwatch from '../../components/TextColorSwatch';
@@ -129,8 +129,8 @@ const swatches = [
   ],
 ];
 
-const ColoursPage = (pageProps: GatsbyPageProps) => (
-  <Layout>
+const ColoursPage = (pageProps: PageRendererProps) => (
+  <Layout {...pageProps}>
     <SEO
       title="Colours | Design System - Alpha"
       keywords={[
