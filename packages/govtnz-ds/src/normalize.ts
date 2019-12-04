@@ -4,7 +4,6 @@ import { SourceId, ReleaseVersion } from '@govtnz/ds-upstream';
 import { DynamicKey } from '@springload/metatemplate';
 import { normalizeGeneric } from './normalize-generic';
 import { JSDOM } from 'jsdom';
-import { getCSSRules, serializeCSSRules } from 'css-sniff';
 import { gc, splitSelectors } from './utils';
 
 export const normalizeUpstream = async (
@@ -220,35 +219,6 @@ export const toId = (id: string): string => {
   // Normalise component id to be camelCase except with the first
   // letter being a capital letter ie CamelCase.
   return id.substring(0, 1).toUpperCase() + camelCase(id.substring(1));
-};
-
-export const filterCSSByClassName = async (
-  className: string,
-  css: string
-): Promise<string> => {
-  const html = `<html><head><style>${css}</style></head><body><div class="${className}">text that doesn't matter</div></body></html>`;
-  const dom = new JSDOM(html, {
-    resources: 'usable',
-    pretendToBeVisual: true
-  });
-
-  const document = dom.window.document;
-
-  // Wait for subresources (external CSS) to load so
-  // that CSS detection will work
-  await new Promise(resolve => {
-    document.addEventListener('load', resolve);
-  });
-
-  const elements = document.querySelector('div');
-
-  const matchedCSS = await getCSSRules([elements], {
-    document
-  });
-
-  dom.window.close();
-  gc();
-  return serializeCSSRules(matchedCSS);
 };
 
 type PropertyMatchProps = {

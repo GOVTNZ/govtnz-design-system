@@ -54,19 +54,22 @@ export const normalizeGovUkTemplate = async ({
   // FIXME: Replace with a real HTML/CSS parser-based replacement
   const newCssNamespace = cssNamespace || camelCase(id);
   // console.log({ id, cssNamespace, newCssNamespace });
+
+  const prefixes = [
+    id,
+    camelCase(id),
+    kebabCase(id),
+    newCssNamespace,
+    ...additionalPrefixesToBypassNamespacing
+  ];
+
   const namespacedHTML = html.replace(/g-([A-Za-z0-9-_]+)/g, (all, p1) => {
     // The regex ^^ doesn't need to encompass the whole class name, just the g-something part
     // that we're using to test
     const { newMessage, replacement } = govUkClassNameToGenericClassName(
       newCssNamespace,
       p1,
-      [
-        id,
-        camelCase(id),
-        kebabCase(id),
-        newCssNamespace,
-        ...additionalPrefixesToBypassNamespacing
-      ],
+      prefixes,
       all
     );
     if (newMessage) {
@@ -85,7 +88,7 @@ export const normalizeGovUkTemplate = async ({
     const { newMessage, replacement } = govUkClassNameToGenericClassName(
       newCssNamespace,
       p1,
-      [id, newCssNamespace, ...additionalPrefixesToBypassNamespacing],
+      prefixes,
       all
     );
     if (newMessage) {

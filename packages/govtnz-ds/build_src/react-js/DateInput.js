@@ -61,7 +61,6 @@ const DateInput = ({
       ) : (
         ""
       )}
-
       <div className="g-date-input" id={id}>
         <div className="g-date-input__item">
           <div className="g-dateInput-form-group">
@@ -120,7 +119,7 @@ const DateInput = ({
         <div className="g-date-input__item">
           <div className="g-dateInput-form-group">
             <label
-              className="g-dateInput-label govuk-date-input__label"
+              className="g-dateInput-label g-date-input__label"
               htmlFor={yearId}
             >
               Year

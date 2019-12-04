@@ -6,9 +6,6 @@
   "author": "Matthew Holloway <matthew@springload.co.nz>",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "engines": {
-    "node": "10.14.2"
-  },
   "scripts": {
     "build": "yarn rimraf && tsc",
     "test:typescript": "tsc --project ./ --noEmit",

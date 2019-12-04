@@ -77,7 +77,7 @@
         <div class="g-date-input__item">
           <div class="g-dateInput-form-group">
             <label
-              class="g-dateInput-label govuk-date-input__label"
+              class="g-dateInput-label g-date-input__label"
               v-bind:for="yearId"
             >
               Year
@@ -323,6 +323,10 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
+.g-dateInput-label:not(.g-dateInput-label--m):not(.g-dateInput-label--l):not(.g-dateInput-label--xl)
+  + .g-dateInput-hint {
+  margin-bottom: 10px;
+}
 .g-fieldset__legend + .g-dateInput-hint {
   margin-top: -5px;
 }
@@ -414,6 +418,25 @@ export default Vue.extend({
 }
 .g-dateInput-input--width-2 {
   max-width: 5.4ex;
+}
+.g-date-input {
+  font-size: 0;
+}
+.g-date-input:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.g-date-input__item {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.g-date-input__label {
+  display: block;
+}
+.g-date-input__input {
+  margin-bottom: 0;
 }
 .g-dateInput-visually-hidden {
   position: absolute !important;

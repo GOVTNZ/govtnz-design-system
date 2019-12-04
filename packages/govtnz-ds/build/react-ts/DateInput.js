@@ -31,7 +31,7 @@ var DateInput = function (_a) {
                         React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: monthId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange }))),
                 React.createElement("div", { className: "g-date-input__item" },
                     React.createElement("div", { className: "g-dateInput-form-group" },
-                        React.createElement("label", { className: "g-dateInput-label govuk-date-input__label", htmlFor: yearId }, "Year"),
+                        React.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: yearId }, "Year"),
                         React.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4" + (error ? " g-dateInput-input--error" : ""), id: yearId, maxLength: 4, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange })))))));
 };
 exports.default = DateInput;

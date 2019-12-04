@@ -34,7 +34,6 @@ module.exports = {
           // `prismjs-mt`,
           // `marked`,
           // `lodash-es`,
-          // `css-sniff`,
           `copy-text-to-clipboard`,
         ],
       },

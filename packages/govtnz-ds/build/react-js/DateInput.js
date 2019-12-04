@@ -93,7 +93,7 @@ var DateInput = function DateInput(_ref) {
   }, _react["default"].createElement("div", {
     className: "g-dateInput-form-group"
   }, _react["default"].createElement("label", {
-    className: "g-dateInput-label govuk-date-input__label",
+    className: "g-dateInput-label g-date-input__label",
     htmlFor: yearId
   }, "Year"), _react["default"].createElement("input", {
     className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4".concat(error ? " g-dateInput-input--error" : ""),

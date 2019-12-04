@@ -1,87 +1,63 @@
-
-        <div class="g-form-group {{ error?: g-form-group--error }}">
-          <fieldset
-            class="g-fieldset"
-            aria-describedby="hintId errorId"
-            role="group"
-          >
-            <legend class="g-fieldset__legend g-fieldset__legend--xl">
-              <mt-variable key="label">Example label</mt-variable>
-            </legend>
-            <span
-              id="hintId"
-              class="g-hint"
-            >
-              <mt-variable key="hint">Example hint</mt-variable>
-            </span>
-            <mt-if key="?error">
-              <span
-                id="errorId"
-                class="g-error-message"
-              >
-                <span class="g-visually-hidden">Error: </span>
-                <mt-variable key="?error">Example error</mt-variable>
-            </mt-if>
-            </span>
-            <div
-              id="id"
-              class="g-date-input"
-            >
-              <div class="g-date-input__item">
-                <div class="g-form-group">
-                  <label
-                    class="g-label g-date-input__label"
-                    for="dayId"
-                  >
-                    Day
-                  </label>
-                  <input
-                    id="dayId"
-                    class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
-                    name="dayId"
-                    type="text"
-                    maxlength="2"
-                    pattern="[0-9]*"
-                  />
-                </div>
-              </div>
-              <div class="g-date-input__item">
-                <div class="g-form-group">
-                  <label
-                    class="g-label g-date-input__label"
-                    for="monthId"
-                  >
-                    Month
-                  </label>
-                  <input
-                    id="monthId"
-                    class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
-                    name="monthId"
-                    type="text"
-                    maxlength="2"
-                    pattern="[0-9]*"
-                  />
-                </div>
-              </div>
-              <div class="g-date-input__item">
-                <div class="g-form-group">
-                  <label
-                    class="g-label govuk-date-input__label"
-                    for="yearId"
-                  >
-                    Year
-                  </label>
-                  <input
-                    id="yearId"
-                    class="g-input g-date-input__input g-input--width-4 {{ error?: g-input--error }}"
-                    name="yearId"
-                    type="text"
-                    maxlength="4"
-                    pattern="[0-9]*"
-                  />
-                </div>
-              </div>
-            </div>
-          </fieldset>
+<div class="g-form-group {{ error?: g-form-group--error }}">
+  <fieldset class="g-fieldset" aria-describedby="hintId errorId" role="group">
+    <legend class="g-fieldset__legend g-fieldset__legend--xl">
+      <mt-variable key="label">Example label</mt-variable>
+    </legend>
+    <span id="hintId" class="g-hint">
+      <mt-variable key="hint">Example hint</mt-variable>
+    </span>
+    <mt-if key="?error">
+      <span id="errorId" class="g-error-message">
+        <span class="g-visually-hidden">Error: </span>
+        <mt-variable key="?error">Example error</mt-variable>
+      </span>
+    </mt-if>
+    <div id="id" class="g-date-input">
+      <div class="g-date-input__item">
+        <div class="g-form-group">
+          <label class="g-label g-date-input__label" for="dayId">
+            Day
+          </label>
+          <input
+            id="dayId"
+            class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
+            name="dayId"
+            type="text"
+            maxlength="2"
+            pattern="[0-9]*"
+          />
         </div>
-      
+      </div>
+      <div class="g-date-input__item">
+        <div class="g-form-group">
+          <label class="g-label g-date-input__label" for="monthId">
+            Month
+          </label>
+          <input
+            id="monthId"
+            class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
+            name="monthId"
+            type="text"
+            maxlength="2"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+      <div class="g-date-input__item">
+        <div class="g-form-group">
+          <label class="g-label g-date-input__label" for="yearId">
+            Year
+          </label>
+          <input
+            id="yearId"
+            class="g-input g-date-input__input g-input--width-4 {{ error?: g-input--error }}"
+            name="yearId"
+            type="text"
+            maxlength="4"
+            pattern="[0-9]*"
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>

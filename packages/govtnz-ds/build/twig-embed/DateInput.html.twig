@@ -2,85 +2,86 @@
 class="g-dateInput-form-group{% if error %} g-dateInput-form-group--error{% endif %}"
 >
   
-          
+  
 <fieldset
 aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
 class="g-fieldset"
 role="group"
 >
   
-            
+    
 <legend
 class="g-fieldset__legend g-fieldset__legend--xl"
 >
   
-              
+      
 {% block label %}Example label{% endblock %}
   
-            
+    
 </legend>
   
-            
+    
 <span
 class="g-dateInput-hint"
 id="{{ hintId | escape('html_attr') }}"
 >
   
-              
+      
 {% block hint %}Example hint{% endblock %}
   
-            
+    
 </span>
   
-            
+    
   
-              
+      
 <span
 class="g-dateInput-error-message"
 id="{{ errorId | escape('html_attr') }}"
 >
   
-                
+        
 <span
 class="g-dateInput-visually-hidden"
 >
   Error: 
 </span>
   
-                
+        
 {% block error %}Example error{% endblock %}
   
-            
+      
 </span>
   
-            
-            
+    
+  
+    
 <div
 class="g-date-input"
 id="{{ id | escape('html_attr') }}"
 >
   
-              
+      
 <div
 class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
 class="g-dateInput-label g-date-input__label"
 for="{{ dayId | escape('html_attr') }}"
 >
   
-                    Day
-                  
+            Day
+          
 </label>
   
-                  
+          
 <input
 class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ dayId | escape('html_attr') }}"
@@ -96,33 +97,33 @@ spellcheck="{% if spellCheck %}spellCheck{% endif %}"
 autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
 class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
 class="g-dateInput-label g-date-input__label"
 for="{{ monthId | escape('html_attr') }}"
 >
   
-                    Month
-                  
+            Month
+          
 </label>
   
-                  
+          
 <input
 class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ monthId | escape('html_attr') }}"
@@ -138,33 +139,33 @@ spellcheck="{% if spellCheck %}spellCheck{% endif %}"
 autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-              
+      
 <div
 class="g-date-input__item"
 >
   
-                
+        
 <div
 class="g-dateInput-form-group"
 >
   
-                  
+          
 <label
-class="g-dateInput-label govuk-date-input__label"
+class="g-dateInput-label g-date-input__label"
 for="{{ yearId | escape('html_attr') }}"
 >
   
-                    Year
-                  
+            Year
+          
 </label>
   
-                  
+          
 <input
 class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{% if error %} g-dateInput-input--error{% endif %}"
 id="{{ yearId | escape('html_attr') }}"
@@ -180,17 +181,17 @@ spellcheck="{% if spellCheck %}spellCheck{% endif %}"
 autocomplete="{{ autoComplete | escape('html_attr') }}"
 />
   
-                
+        
 </div>
   
-              
+      
 </div>
   
-            
+    
 </div>
   
-          
+  
 </fieldset>
   
-        
+
 </div>
