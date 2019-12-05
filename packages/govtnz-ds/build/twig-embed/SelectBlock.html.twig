@@ -1,27 +1,33 @@
 <div
 >
   
-        
+  
 <label
 class="g-selectBlock-label"
 for="{{ selectId | escape('html_attr') }}"
 >
   
-          
+    
 {% block label %}Example label text{% endblock %}
   
-        
+  
 </label>
   
-        
+  
 <select
 class="g-selectBlock-select{% if error %} g-selectBlock-select--error{% endif %}"
 id="{{ selectId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 multiple="{% if multiple %}multiple{% endif %}"
 >
-{% block children %}<option>Options</option>{% endblock %}
+  
+    
+{% block children %}
+      <option>Options</option>
+    {% endblock %}
+  
+  
 </select>
   
-      
+
 </div>

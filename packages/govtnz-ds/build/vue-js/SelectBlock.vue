@@ -24,7 +24,10 @@ export default Vue.extend({
     error: { type: Boolean, default: false, required: true },
     name: { type: String, required: true },
     multiple: { type: Boolean, default: false, required: false },
-    children: { required: false, default: "<option>Options</option>" }
+    children: {
+      required: false,
+      default: "\n      <option>Options</option>\n    "
+    }
   },
   computed: {
     computed__class() {

@@ -3,10 +3,10 @@ export declare class AppComponent {
     error: boolean | undefined;
     id: string | undefined;
     describedBy: string | undefined;
-    name: string;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
+    name: string;
     value: string | undefined;
     spellCheck: boolean | undefined;
     maxLength: number | undefined;

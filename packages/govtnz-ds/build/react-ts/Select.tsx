@@ -1,9 +1,9 @@
 import * as React from "react";
 
 type Props = {
-  selectId?: string | undefined;
+  selectId?: string;
   name: string;
-  multiple?: boolean | undefined;
+  multiple?: boolean;
   onChange: any;
   children?: React.ReactNode;
 };

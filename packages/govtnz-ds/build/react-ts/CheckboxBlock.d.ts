@@ -1,16 +1,16 @@
 import * as React from "react";
 declare type Props = {
-    checkboxId?: string | undefined;
-    hintId?: string | undefined;
+    checkboxId?: string;
+    hintId?: string;
+    disabled?: boolean;
+    readOnly?: boolean;
+    autoFocus?: boolean;
     name: string;
-    disabled?: boolean | undefined;
-    readOnly?: boolean | undefined;
-    autoFocus?: boolean | undefined;
-    value?: string | undefined;
-    checked?: boolean | undefined;
+    value?: string;
+    checked?: boolean;
     onChange: any;
     label?: React.ReactNode;
     hint?: React.ReactNode;
 };
-declare const CheckboxBlock: ({ checkboxId, hintId, name, disabled, readOnly, autoFocus, value, checked, onChange, label, hint }: Props) => JSX.Element;
+declare const CheckboxBlock: ({ checkboxId, hintId, disabled, readOnly, autoFocus, name, value, checked, onChange, label, hint }: Props) => JSX.Element;
 export default CheckboxBlock;

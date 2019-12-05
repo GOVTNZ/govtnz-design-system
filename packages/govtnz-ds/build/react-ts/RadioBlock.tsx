@@ -1,14 +1,14 @@
 import * as React from "react";
 
 type Props = {
-  radioId?: string | undefined;
-  hintId?: string | undefined;
-  name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  checked?: boolean | undefined;
+  radioId?: string;
+  hintId?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
+  gov: string;
+  value?: string;
+  checked?: boolean;
   onChange: any;
   label?: React.ReactNode;
   hint?: React.ReactNode;
@@ -17,10 +17,10 @@ type Props = {
 const RadioBlock = ({
   radioId,
   hintId,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  gov,
   value,
   checked,
   onChange,
@@ -32,7 +32,7 @@ const RadioBlock = ({
       aria-describedby={hintId}
       className="g-radios__input"
       id={radioId}
-      name={name}
+      name={gov}
       type="radio"
       disabled={disabled}
       readOnly={readOnly}

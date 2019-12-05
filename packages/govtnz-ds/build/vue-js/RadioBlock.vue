@@ -4,7 +4,7 @@
       v-bind:aria-describedby="hintId"
       class="g-radios__input"
       v-bind:id="radioId"
-      v-bind:name="name"
+      v-bind:name="gov"
       type="radio"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
@@ -29,10 +29,10 @@ export default Vue.extend({
   props: {
     radioId: { type: String, required: false },
     hintId: { type: String, required: false },
-    name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
+    gov: { type: String, required: true },
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false },
     label: { required: false, default: "Label text" },

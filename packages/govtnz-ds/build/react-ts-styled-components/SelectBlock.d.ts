@@ -1,10 +1,10 @@
 import * as React from "react";
 declare type Props = {
-    selectId?: string | undefined;
+    selectId?: string;
     label?: React.ReactNode;
     error: boolean;
     name: string;
-    multiple?: boolean | undefined;
+    multiple?: boolean;
     onChange: any;
     children?: React.ReactNode;
 };

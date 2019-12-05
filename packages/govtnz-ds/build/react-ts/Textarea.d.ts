@@ -1,17 +1,17 @@
 import * as React from "react";
 declare type Props = {
-    id?: string | undefined;
-    describedById?: string | undefined;
+    id?: string;
+    describedById?: string;
     name: string;
-    disabled?: boolean | undefined;
-    readOnly?: boolean | undefined;
-    rows?: number | undefined;
-    cols?: number | undefined;
-    autoFocus?: boolean | undefined;
-    spellCheck?: boolean | undefined;
+    disabled?: boolean;
+    readOnly?: boolean;
+    rows?: number;
+    cols?: number;
+    autoFocus?: boolean;
+    spellCheck?: boolean;
     autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-    maxLength?: number | undefined;
-    value?: string | undefined;
+    maxLength?: number;
+    value?: string;
     onChange: any;
 };
 declare const Textarea: ({ id, describedById, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange }: Props) => JSX.Element;

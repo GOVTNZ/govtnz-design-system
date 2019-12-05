@@ -1,10 +1,10 @@
 import * as React from "react";
 
 type Props = {
-  isMuted?: boolean | undefined;
+  isMuted?: boolean;
   href: string;
-  rel?: string | undefined;
-  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
+  rel?: string;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
   children?: React.ReactNode;
 };
 

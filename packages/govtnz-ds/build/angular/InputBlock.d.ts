@@ -7,10 +7,10 @@ export declare class AppComponent {
     hintId: string | undefined;
     errorId: string | undefined;
     width: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-    name: string;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
+    name: string;
     value: string | undefined;
     min: number | undefined;
     max: number | undefined;

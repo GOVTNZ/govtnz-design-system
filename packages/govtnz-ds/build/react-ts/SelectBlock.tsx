@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from "react";
 
 type Props = {
-  selectId?: string | undefined;
+  selectId?: string;
   label?: React.ReactNode;
   error: boolean;
   name: string;
-  multiple?: boolean | undefined;
+  multiple?: boolean;
   onChange: any;
   children?: React.ReactNode;
 };
@@ -29,7 +29,7 @@ const SelectBlock = ({
     </label>
     <select
       className={`g-selectBlock-select${
-        error ? ' g-selectBlock-select--error' : ''
+        error ? " g-selectBlock-select--error" : ""
       }`}
       id={selectId}
       name={name}

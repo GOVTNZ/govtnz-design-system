@@ -1,23 +1,24 @@
 import * as React from "react";
 
 type Props = {
-  error?: boolean | undefined;
-  hintId?: string | undefined;
-  errorId?: string | undefined;
+  error?: boolean;
+  hintId?: string;
+  errorId?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
-  id?: string | undefined;
-  dayId?: string | undefined;
-  name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  spellCheck?: boolean | undefined;
+  id?: string;
+  dayId?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
+  dayName: string;
+  value?: string;
+  spellCheck?: boolean;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
   onChange: any;
-  monthId?: string | undefined;
-  yearId?: string | undefined;
+  monthId?: string;
+  yearName: string;
+  yearId?: string;
 };
 
 const DateInput = ({
@@ -28,15 +29,16 @@ const DateInput = ({
   hint,
   id,
   dayId,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  dayName,
   value,
   spellCheck,
   autoComplete,
   onChange,
   monthId,
+  yearName,
   yearId
 }: Props) => (
   <div
@@ -96,7 +98,7 @@ const DateInput = ({
               }`}
               id={dayId}
               maxLength={2}
-              name={name}
+              name={dayName}
               pattern="[0-9]*"
               type="text"
               disabled={disabled}
@@ -123,7 +125,7 @@ const DateInput = ({
               }`}
               id={monthId}
               maxLength={2}
-              name={name}
+              name={yearName}
               pattern="[0-9]*"
               type="text"
               disabled={disabled}
@@ -150,7 +152,7 @@ const DateInput = ({
               }`}
               id={yearId}
               maxLength={4}
-              name={name}
+              name={yearName}
               pattern="[0-9]*"
               type="text"
               disabled={disabled}

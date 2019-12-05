@@ -19,9 +19,6 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "hintId", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "name", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -31,6 +28,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "autoFocus", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "name", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "value", void 0);
     __decorate([
         core_1.Input()
@@ -38,7 +38,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Checkbox",
-            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-checkboxes__input\"\n      id=\"{{ checkboxId }}\"\n      type=\"checkbox\"\n      name=\"{{ name }}\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
+            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-checkboxes__input\"\n      id=\"{{ checkboxId }}\"\n      type=\"checkbox\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      name=\"{{ name }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
         })
     ], AppComponent);
     return AppComponent;

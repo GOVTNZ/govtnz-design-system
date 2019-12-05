@@ -1,27 +1,21 @@
 import * as React from "react";
 
 type Props = {
-  fileUpload1?: string | undefined;
+  id?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
 };
 
-const FileUpload = ({
-  fileUpload1,
-  name,
-  disabled,
-  readOnly,
-  autoFocus
-}: Props) => (
+const FileUpload = ({ id, disabled, readOnly, autoFocus, name }: Props) => (
   <div className="g-fileUpload-form-group">
-    <label className="g-fileUpload-label" htmlFor={fileUpload1}>
+    <label className="g-fileUpload-label" htmlFor={id}>
       Upload a file
     </label>
     <input
       className="g-file-upload"
-      id={fileUpload1}
+      id={id}
       name={name}
       type="file"
       disabled={disabled}

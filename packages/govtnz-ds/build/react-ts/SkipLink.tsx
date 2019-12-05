@@ -2,8 +2,8 @@ import * as React from "react";
 
 type Props = {
   href: string;
-  rel?: string | undefined;
-  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
+  rel?: string;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
 };
 
 const SkipLink = ({ href, rel, target }: Props) => (

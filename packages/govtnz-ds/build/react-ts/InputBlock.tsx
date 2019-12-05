@@ -1,23 +1,23 @@
 import * as React from "react";
 
 type Props = {
-  error?: boolean | undefined;
-  inputId?: string | undefined;
+  error?: boolean;
+  inputId?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
-  hintId?: string | undefined;
-  errorId?: string | undefined;
-  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
+  hintId?: string;
+  errorId?: string;
+  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  min?: number | undefined;
-  max?: number | undefined;
+  value?: string;
+  min?: number;
+  max?: number;
   type: React.InputHTMLAttributes<HTMLInputElement>["type"];
-  spellCheck?: boolean | undefined;
-  maxLength?: number | undefined;
+  spellCheck?: boolean;
+  maxLength?: number;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
   onChange: any;
 };
@@ -42,10 +42,10 @@ const InputBlock = ({
   hintId,
   errorId,
   width,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  name,
   value,
   min,
   max,

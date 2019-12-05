@@ -2,17 +2,17 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  error?: boolean | undefined;
-  id?: string | undefined;
-  describedBy?: string | undefined;
+  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
+  error?: boolean;
+  id?: string;
+  describedBy?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  spellCheck?: boolean | undefined;
-  maxLength?: number | undefined;
+  value?: string;
+  spellCheck?: boolean;
+  maxLength?: number;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
   onChange: any;
 };
@@ -101,10 +101,10 @@ const Input = ({
   error,
   id,
   describedBy,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  name,
   value,
   spellCheck,
   maxLength,

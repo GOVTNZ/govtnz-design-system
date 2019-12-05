@@ -1,14 +1,14 @@
 import * as React from "react";
 
 type Props = {
-  checkboxId?: string | undefined;
-  hintId?: string | undefined;
+  checkboxId?: string;
+  hintId?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  checked?: boolean | undefined;
+  value?: string;
+  checked?: boolean;
   onChange: any;
   label?: React.ReactNode;
   hint?: React.ReactNode;
@@ -17,10 +17,10 @@ type Props = {
 const CheckboxBlock = ({
   checkboxId,
   hintId,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  name,
   value,
   checked,
   onChange,
@@ -33,10 +33,10 @@ const CheckboxBlock = ({
       className="g-checkboxes__input"
       id={checkboxId}
       type="checkbox"
-      name={name}
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}
+      name={name}
       value={value}
       checked={checked}
       onChange={onChange}

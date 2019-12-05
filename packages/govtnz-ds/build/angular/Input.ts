@@ -16,10 +16,10 @@ export class AppComponent {
   @Input() error: boolean | undefined;
   @Input() id: string | undefined;
   @Input() describedBy: string | undefined;
-  @Input() name: string;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
+  @Input() name: string;
   @Input() value: string | undefined;
   @Input() spellCheck: boolean | undefined;
   @Input() maxLength: number | undefined;

@@ -69,10 +69,10 @@ export default Vue.extend({
       },
       required: false
     },
-    name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
+    name: { type: String, required: true },
     value: { type: String, required: false },
     min: { type: String, required: false },
     max: { type: String, required: false },

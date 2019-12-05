@@ -1,9 +1,9 @@
 import * as React from "react";
 declare type Props = {
-    isMuted?: boolean | undefined;
+    isMuted?: boolean;
     href: string;
-    rel?: string | undefined;
-    target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
+    rel?: string;
+    target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
     children?: React.ReactNode;
 };
 declare const A: ({ isMuted, href, rel, target, children }: Props) => JSX.Element;

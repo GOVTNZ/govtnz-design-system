@@ -50,15 +50,15 @@ var StyledLabel = _styledComponents["default"].label(_templateObject2());
 var StyledInput = _styledComponents["default"].input(_templateObject3());
 
 var FileUpload = function FileUpload(_ref) {
-  var fileUpload1 = _ref.fileUpload1,
-      name = _ref.name,
+  var id = _ref.id,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
-      autoFocus = _ref.autoFocus;
+      autoFocus = _ref.autoFocus,
+      name = _ref.name;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledLabel, {
-    htmlFor: fileUpload1
+    htmlFor: id
   }, "Upload a file"), _react["default"].createElement(StyledInput, {
-    id: fileUpload1,
+    id: id,
     name: name,
     type: "file",
     disabled: disabled,

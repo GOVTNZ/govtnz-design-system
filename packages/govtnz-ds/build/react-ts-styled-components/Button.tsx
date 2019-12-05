@@ -2,10 +2,10 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  disabled?: boolean | undefined;
+  disabled?: boolean;
   level: "secondary" | "warning";
-  name?: string | undefined;
-  type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"] | undefined;
+  name?: string;
+  type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"];
   onClick: any;
   children?: React.ReactNode;
 };

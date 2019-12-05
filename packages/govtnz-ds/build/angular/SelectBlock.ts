@@ -4,25 +4,28 @@ import { Component, Input } from "@angular/core";
   template: `
 <div>
 
-        
+  
 <label class="g-selectBlock-label" for="{{selectId}}">
 
-          <slot name="label"></slot>
-        
+    <slot name="label"></slot>
+  
 
 </label>
 
 
-        
+  
 <select class="g-selectBlock-select{{error ? " g-selectBlock-select--error" : ""}}" id="{{selectId}}" name="{{name}}" multiple="{{multiple}}">
-<slot></slot>
+
+    <slot></slot>
+  
 
 </select>
 
 
-      
+
 
 </div>
+
 
 `
 })

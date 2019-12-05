@@ -1,8 +1,8 @@
 import * as React from "react";
 
 type Props = {
-  errorId?: string | undefined;
-  hintId?: string | undefined;
+  errorId?: string;
+  hintId?: string;
   legend?: React.ReactNode;
   hint?: React.ReactNode;
   error?: React.ReactNode;

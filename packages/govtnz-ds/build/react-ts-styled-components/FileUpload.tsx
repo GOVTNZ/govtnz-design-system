@@ -2,11 +2,11 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  fileUpload1?: string | undefined;
+  id?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
 };
 
 const StyledDiv = styled.div`
@@ -79,17 +79,11 @@ const StyledInput = styled.input`
   margin-top: 0px;
 `;
 
-const FileUpload = ({
-  fileUpload1,
-  name,
-  disabled,
-  readOnly,
-  autoFocus
-}: Props) => (
+const FileUpload = ({ id, disabled, readOnly, autoFocus, name }: Props) => (
   <StyledDiv>
-    <StyledLabel htmlFor={fileUpload1}>Upload a file</StyledLabel>
+    <StyledLabel htmlFor={id}>Upload a file</StyledLabel>
     <StyledInput
-      id={fileUpload1}
+      id={id}
       name={name}
       type="file"
       disabled={disabled}

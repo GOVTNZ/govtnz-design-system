@@ -19,9 +19,6 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "hintId", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "name", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -29,6 +26,9 @@ var AppComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "autoFocus", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "name", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "value", void 0);

@@ -1,8 +1,8 @@
 export declare class AppComponent {
-    fileUpload1: string | undefined;
-    name: string;
+    id: string | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
+    name: string;
     title: string;
 }

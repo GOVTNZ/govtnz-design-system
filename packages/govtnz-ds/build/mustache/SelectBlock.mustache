@@ -8,7 +8,7 @@
 <div
 >
   
-        
+  
 <label
 class="g-selectBlock-label"
 {{#selectId}}
@@ -16,13 +16,13 @@ class="g-selectBlock-label"
 {{/selectId}}
 >
   
-          
+    
   {{{label}}}
   
-        
+  
 </label>
   
-        
+  
 <select
 class="g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}"
 {{#selectId}}
@@ -35,8 +35,12 @@ class="g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}"
   multiple="{{#multiple}}multiple{{/multiple}}"
 {{/multiple}}
 >
+  
+    
   {{{children}}}
+  
+  
 </select>
   
-      
+
 </div>

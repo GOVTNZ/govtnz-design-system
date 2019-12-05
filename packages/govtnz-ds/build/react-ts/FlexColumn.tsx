@@ -70,8 +70,7 @@ type Props = {
     | "9"
     | "10"
     | "11"
-    | "12"
-    | undefined;
+    | "12";
   smOffset?:
     | "0"
     | "1"
@@ -85,8 +84,7 @@ type Props = {
     | "9"
     | "10"
     | "11"
-    | "12"
-    | undefined;
+    | "12";
   mdOffset?:
     | "0"
     | "1"
@@ -100,8 +98,7 @@ type Props = {
     | "9"
     | "10"
     | "11"
-    | "12"
-    | undefined;
+    | "12";
   lgOffset?:
     | "0"
     | "1"
@@ -115,9 +112,8 @@ type Props = {
     | "9"
     | "10"
     | "11"
-    | "12"
-    | undefined;
-  isReversed?: boolean | undefined;
+    | "12";
+  isReversed?: boolean;
   children?: React.ReactNode;
 };
 

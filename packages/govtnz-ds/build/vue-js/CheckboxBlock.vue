@@ -5,10 +5,10 @@
       class="g-checkboxes__input"
       v-bind:id="checkboxId"
       type="checkbox"
-      v-bind:name="name"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
+      v-bind:name="name"
       v-bind:value="value"
       v-bind:checked="checked"
     />
@@ -32,10 +32,10 @@ export default Vue.extend({
   props: {
     checkboxId: { type: String, required: false },
     hintId: { type: String, required: false },
-    name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
+    name: { type: String, required: true },
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false },
     label: { required: false, default: "Label text" },

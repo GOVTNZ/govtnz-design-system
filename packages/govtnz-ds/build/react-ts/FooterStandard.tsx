@@ -2,18 +2,16 @@ import * as React from "react";
 
 type Props = {
   href: string;
-  rel?: string | undefined;
-  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
+  rel?: string;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
   label1?: React.ReactNode;
   label2?: React.ReactNode;
   label3?: React.ReactNode;
   src: string;
-  width?: string | undefined;
-  height?: string | undefined;
-  srcset?: string | undefined;
-  crossorigin?:
-    | React.ImgHTMLAttributes<HTMLImageElement>["crossOrigin"]
-    | undefined;
+  width?: string;
+  height?: string;
+  srcset?: string;
+  crossorigin?: React.ImgHTMLAttributes<HTMLImageElement>["crossOrigin"];
   copyrightYear?: React.ReactNode;
 };
 

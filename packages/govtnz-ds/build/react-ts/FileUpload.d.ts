@@ -1,10 +1,10 @@
 /// <reference types="react" />
 declare type Props = {
-    fileUpload1?: string | undefined;
+    id?: string;
+    disabled?: boolean;
+    readOnly?: boolean;
+    autoFocus?: boolean;
     name: string;
-    disabled?: boolean | undefined;
-    readOnly?: boolean | undefined;
-    autoFocus?: boolean | undefined;
 };
-declare const FileUpload: ({ fileUpload1, name, disabled, readOnly, autoFocus }: Props) => JSX.Element;
+declare const FileUpload: ({ id, disabled, readOnly, autoFocus, name }: Props) => JSX.Element;
 export default FileUpload;

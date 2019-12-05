@@ -19,10 +19,10 @@ export default Vue.extend({
   props: {
     id: { type: String, required: false },
     hintId: { type: String, required: false },
-    name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
+    name: { type: String, required: true },
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false }
   },

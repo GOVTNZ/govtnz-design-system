@@ -60,10 +60,10 @@ export class AppComponent {
   @Input() hintId: string | undefined;
   @Input() errorId: string | undefined;
   @Input() width: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
-  @Input() name: string;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
+  @Input() name: string;
   @Input() value: string | undefined;
   @Input() min: number | undefined;
   @Input() max: number | undefined;

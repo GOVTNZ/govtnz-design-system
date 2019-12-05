@@ -12,10 +12,10 @@ var _react = _interopRequireDefault(require("react"));
 var CheckboxBlock = function CheckboxBlock(_ref) {
   var checkboxId = _ref.checkboxId,
       hintId = _ref.hintId,
-      name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
+      name = _ref.name,
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
@@ -28,10 +28,10 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     className: "g-checkboxes__input",
     id: checkboxId,
     type: "checkbox",
-    name: name,
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
+    name: name,
     value: value,
     checked: checked,
     onChange: onChange

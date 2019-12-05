@@ -19,9 +19,6 @@ class="g-checkboxes__input"
   id="{{checkboxId}}"
 {{/checkboxId}}
 type="checkbox"
-{{#name}}
-  name="{{name}}"
-{{/name}}
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}
@@ -31,6 +28,9 @@ type="checkbox"
 {{#autoFocus}}
   autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
 {{/autoFocus}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
 {{#value}}
   value="{{value}}"
 {{/value}}

@@ -35,7 +35,7 @@
               v-bind:class="computed__class2"
               v-bind:id="dayId"
               maxlength="2"
-              v-bind:name="name"
+              v-bind:name="dayName"
               pattern="[0-9]*"
               type="text"
               v-bind:disabled="disabled"
@@ -61,7 +61,7 @@
               v-bind:class="computed__class3"
               v-bind:id="monthId"
               maxlength="2"
-              v-bind:name="name"
+              v-bind:name="yearName"
               pattern="[0-9]*"
               type="text"
               v-bind:disabled="disabled"
@@ -87,7 +87,7 @@
               v-bind:class="computed__class4"
               v-bind:id="yearId"
               maxlength="4"
-              v-bind:name="name"
+              v-bind:name="yearName"
               pattern="[0-9]*"
               type="text"
               v-bind:disabled="disabled"
@@ -120,14 +120,15 @@ export default Vue.extend({
     hint: { required: false, default: "Example hint" },
     id: { type: String, required: false },
     dayId: { type: String, required: false },
-    name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
+    dayName: { type: String, required: true },
     value: { type: String, required: false },
     spellCheck: { type: Boolean, default: false, required: false },
     autoComplete: { type: String, required: true },
     monthId: { type: String, required: false },
+    yearName: { type: String, required: true },
     yearId: { type: String, required: false }
   },
   computed: {

@@ -2,7 +2,7 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  hintId?: string | undefined;
+  hintId?: string;
   children?: React.ReactNode;
 };
 

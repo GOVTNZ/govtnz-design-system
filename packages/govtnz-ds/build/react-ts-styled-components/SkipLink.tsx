@@ -3,8 +3,8 @@ import * as styled from "styled-components";
 
 type Props = {
   href: string;
-  rel?: string | undefined;
-  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"] | undefined;
+  rel?: string;
+  target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
 };
 
 const StyledA = styled.a`

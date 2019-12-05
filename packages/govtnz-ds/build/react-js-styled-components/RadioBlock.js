@@ -64,10 +64,10 @@ var StyledDiv2 = _styledComponents["default"].div(_templateObject4());
 var RadioBlock = function RadioBlock(_ref) {
   var radioId = _ref.radioId,
       hintId = _ref.hintId,
-      name = _ref.name,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
+      gov = _ref.gov,
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
@@ -76,7 +76,7 @@ var RadioBlock = function RadioBlock(_ref) {
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledInput, {
     "aria-describedby": hintId,
     id: radioId,
-    name: name,
+    name: gov,
     type: "radio",
     disabled: disabled,
     readOnly: readOnly,

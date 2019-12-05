@@ -1,12 +1,12 @@
 <template>
   <div class="g-fileUpload-form-group">
-    <label class="g-fileUpload-label" v-bind:for="fileUpload1">
+    <label class="g-fileUpload-label" v-bind:for="id">
       Upload a file
     </label>
 
     <input
       class="g-file-upload"
-      v-bind:id="fileUpload1"
+      v-bind:id="id"
       v-bind:name="name"
       type="file"
       v-bind:disabled="disabled"
@@ -20,11 +20,11 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    fileUpload1: { type: String, required: false },
-    name: { type: String, required: true },
+    id: { type: String, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
-    autoFocus: { type: Boolean, default: false, required: false }
+    autoFocus: { type: Boolean, default: false, required: false },
+    name: { type: String, required: true }
   },
   computed: {}
 });

@@ -1,20 +1,20 @@
 import * as React from "react";
 
 type Props = {
-  id?: string | undefined;
+  id?: string;
   label?: React.ReactNode;
-  hintId?: string | undefined;
+  hintId?: string;
   hint?: React.ReactNode;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  rows?: number | undefined;
-  cols?: number | undefined;
-  autoFocus?: boolean | undefined;
-  spellCheck?: boolean | undefined;
+  disabled?: boolean;
+  readOnly?: boolean;
+  rows?: number;
+  cols?: number;
+  autoFocus?: boolean;
+  spellCheck?: boolean;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-  maxLength?: number | undefined;
-  value?: string | undefined;
+  maxLength?: number;
+  value?: string;
   onChange: any;
 };
 

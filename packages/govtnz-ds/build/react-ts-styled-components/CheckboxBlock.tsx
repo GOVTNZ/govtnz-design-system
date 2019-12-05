@@ -2,14 +2,14 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  checkboxId?: string | undefined;
-  hintId?: string | undefined;
+  checkboxId?: string;
+  hintId?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  checked?: boolean | undefined;
+  value?: string;
+  checked?: boolean;
   onChange: any;
   label?: React.ReactNode;
   hint?: React.ReactNode;
@@ -171,10 +171,10 @@ const StyledDiv2 = styled.div`
 const CheckboxBlock = ({
   checkboxId,
   hintId,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  name,
   value,
   checked,
   onChange,
@@ -186,10 +186,10 @@ const CheckboxBlock = ({
       aria-describedby={hintId}
       id={checkboxId}
       type="checkbox"
-      name={name}
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}
+      name={name}
       value={value}
       checked={checked}
       onChange={onChange}

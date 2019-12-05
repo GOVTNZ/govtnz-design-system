@@ -7,14 +7,15 @@ export declare class AppComponent {
     hint: React.ReactNode;
     id: string | undefined;
     dayId: string | undefined;
-    name: string;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
+    dayName: string;
     value: string | undefined;
     spellCheck: boolean | undefined;
     autoComplete: any;
     monthId: string | undefined;
+    yearName: string;
     yearId: string | undefined;
     title: string;
 }

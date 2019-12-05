@@ -62,7 +62,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{dayId}}" maxlength="2" name="{{name}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{dayId}}" maxlength="2" name="{{dayName}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -90,7 +90,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{name}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{yearName}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -118,7 +118,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{name}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-date-input__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{yearName}}" pattern="[0-9]*" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -155,14 +155,15 @@ export class AppComponent {
   @Input() hint: React.ReactNode;
   @Input() id: string | undefined;
   @Input() dayId: string | undefined;
-  @Input() name: string;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
+  @Input() dayName: string;
   @Input() value: string | undefined;
   @Input() spellCheck: boolean | undefined;
   @Input() autoComplete: any;
   @Input() monthId: string | undefined;
+  @Input() yearName: string;
   @Input() yearId: string | undefined;
   title = "DateInput";
 }

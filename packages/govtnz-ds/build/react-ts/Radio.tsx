@@ -1,24 +1,24 @@
 import * as React from "react";
 
 type Props = {
-  id?: string | undefined;
-  hintId?: string | undefined;
+  id?: string;
+  hintId?: string;
+  disabled?: boolean;
+  readOnly?: boolean;
+  autoFocus?: boolean;
   name: string;
-  disabled?: boolean | undefined;
-  readOnly?: boolean | undefined;
-  autoFocus?: boolean | undefined;
-  value?: string | undefined;
-  checked?: boolean | undefined;
+  value?: string;
+  checked?: boolean;
   onChange: any;
 };
 
 const Radio = ({
   id,
   hintId,
-  name,
   disabled,
   readOnly,
   autoFocus,
+  name,
   value,
   checked,
   onChange

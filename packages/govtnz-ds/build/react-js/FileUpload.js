@@ -10,19 +10,19 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var FileUpload = function FileUpload(_ref) {
-  var fileUpload1 = _ref.fileUpload1,
-      name = _ref.name,
+  var id = _ref.id,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
-      autoFocus = _ref.autoFocus;
+      autoFocus = _ref.autoFocus,
+      name = _ref.name;
   return _react["default"].createElement("div", {
     className: "g-fileUpload-form-group"
   }, _react["default"].createElement("label", {
     className: "g-fileUpload-label",
-    htmlFor: fileUpload1
+    htmlFor: id
   }, "Upload a file"), _react["default"].createElement("input", {
     className: "g-file-upload",
-    id: fileUpload1,
+    id: id,
     name: name,
     type: "file",
     disabled: disabled,

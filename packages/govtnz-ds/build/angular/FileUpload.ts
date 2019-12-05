@@ -3,13 +3,13 @@ import { Component, Input } from "@angular/core";
   selector: "g-FileUpload",
   template: `
     <div class="g-fileUpload-form-group">
-      <label class="g-fileUpload-label" for="{{ fileUpload1 }}">
+      <label class="g-fileUpload-label" for="{{ id }}">
         Upload a file
       </label>
 
       <input
         class="g-file-upload"
-        id="{{ fileUpload1 }}"
+        id="{{ id }}"
         name="{{ name }}"
         type="file"
         disabled="{{ disabled }}"
@@ -20,10 +20,10 @@ import { Component, Input } from "@angular/core";
   `
 })
 export class AppComponent {
-  @Input() fileUpload1: string | undefined;
-  @Input() name: string;
+  @Input() id: string | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
+  @Input() name: string;
   title = "FileUpload";
 }

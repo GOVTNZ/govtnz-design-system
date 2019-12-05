@@ -1,7 +1,7 @@
 import * as React from "react";
 
 type Props = {
-  numbered?: boolean | undefined;
+  numbered?: boolean;
   children?: React.ReactNode;
 };
 

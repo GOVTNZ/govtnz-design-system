@@ -45,7 +45,7 @@ var StyledInput3 = styled.input(templateObject_23 || (templateObject_23 = __make
     return props.error && styled.css(templateObject_22 || (templateObject_22 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
 });
 var DateInput = function (_a) {
-    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, id = _a.id, dayId = _a.dayId, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, yearId = _a.yearId;
+    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, yearName = _a.yearName, yearId = _a.yearId;
     return (React.createElement(StyledDiv, { error: error },
         React.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
@@ -60,15 +60,15 @@ var DateInput = function (_a) {
                 React.createElement(StyledDiv3, null,
                     React.createElement(StyledDiv4, null,
                         React.createElement(StyledLabel, { htmlFor: dayId }, "Day"),
-                        React.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange }))),
+                        React.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange }))),
                 React.createElement(StyledDiv5, null,
                     React.createElement(StyledDiv6, null,
                         React.createElement(StyledLabel2, { htmlFor: monthId }, "Month"),
-                        React.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange }))),
+                        React.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange }))),
                 React.createElement(StyledDiv7, null,
                     React.createElement(StyledDiv8, null,
                         React.createElement(StyledLabel3, { htmlFor: yearId }, "Year"),
-                        React.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: name, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange })))))));
+                        React.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange })))))));
 };
 exports.default = DateInput;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23;
