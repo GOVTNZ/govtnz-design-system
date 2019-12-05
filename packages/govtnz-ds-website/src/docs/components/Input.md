@@ -98,7 +98,7 @@ See how to do this in the following example.
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
     <Example codeOnly>
-        <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="Postal Code" />
+        <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="postal-code" />
     </Example>
 </ExampleContainer>
 

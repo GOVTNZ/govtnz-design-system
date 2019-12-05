@@ -15,9 +15,9 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Fieldset address" {...onChangeGenerator({})}>
         <FieldsetBlock id="addressId" legend={<H1 styleSize="large">What is your address?</H1>} {...onChangeGenerator({})}>
-            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" {...onChangeGenerator({})}></InputBlock>
-            <InputBlock type="text" label="Town or city" name="town" inputId="townId" {...onChangeGenerator({})}></InputBlock>
-            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" autoComplete="street-address" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Town or city" name="town" inputId="townId" autoComplete="address-level2" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" autoComplete="postal-code" {...onChangeGenerator({})}></InputBlock>
         </FieldsetBlock>
     </Example>);
 

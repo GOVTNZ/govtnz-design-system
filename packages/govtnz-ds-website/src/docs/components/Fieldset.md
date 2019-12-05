@@ -12,9 +12,9 @@ Interact with the example to see how it works.
             id="addressId"            
             legend={<H1 styleSize="large">What is your address?</H1>}
         >
-            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" />
-            <InputBlock type="text" label="Town or city" name="town" inputId="townId" />
-            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" />
+            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" autoComplete="street-address" />
+            <InputBlock type="text" label="Town or city" name="town" inputId="townId" autoComplete="address-level2" />
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" autoComplete="postal-code" />
         </FieldsetBlock>
     </Example>
 </ExampleContainer>
