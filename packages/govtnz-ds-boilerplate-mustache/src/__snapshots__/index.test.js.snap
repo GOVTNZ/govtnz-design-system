@@ -137,7 +137,7 @@ exports[`HTML Snapshot Rendered templates 4`] = `
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
 
 <div
-class=\\"g-radios__item\\"
+class=\\"g-radios__item{{#errorId}} g-radioBlock-form-group--error{{/errorId}}\\"
 >
   
   
@@ -146,9 +146,9 @@ class=\\"g-radios__item\\"
   aria-describedby=\\"{{hintId}}\\"
 {{/hintId}}
 class=\\"g-radios__input\\"
-{{#radioId}}
-  id=\\"{{radioId}}\\"
-{{/radioId}}
+{{#id}}
+  id=\\"{{id}}\\"
+{{/id}}
 {{#name}}
   name=\\"{{name}}\\"
 {{/name}}
@@ -173,9 +173,9 @@ type=\\"radio\\"
   
 <label
 class=\\"g-radioBlock-label g-radios__label\\"
-{{#radioId}}
-  for=\\"{{radioId}}\\"
-{{/radioId}}
+{{#id}}
+  for=\\"{{id}}\\"
+{{/id}}
 >
   
     
@@ -235,16 +235,12 @@ exports[`HTML Snapshot Simple global rules 1`] = `
           <input
             aria-describedby=\\"hintId5\\"
             class=\\"g-radios__input\\"
-            id=\\"anyRadioId9234\\"
             name=\\"nameChange5\\"
             type=\\"radio\\"
             value=\\"true\\"
           />
 
-          <label
-            class=\\"g-radioBlock-label g-radios__label\\"
-            for=\\"anyRadioId9234\\"
-          >
+          <label class=\\"g-radioBlock-label g-radios__label\\">
             Yes
           </label>
 
@@ -254,13 +250,12 @@ exports[`HTML Snapshot Simple global rules 1`] = `
           <input
             aria-describedby=\\"hintId5\\"
             class=\\"g-radios__input\\"
-            id=\\"anyRadioId10\\"
             name=\\"nameChange5\\"
             type=\\"radio\\"
             value=\\"false\\"
           />
 
-          <label class=\\"g-radioBlock-label g-radios__label\\" for=\\"anyRadioId10\\">
+          <label class=\\"g-radioBlock-label g-radios__label\\">
             No
           </label>
 
