@@ -43,7 +43,7 @@ If you’re asking just one question per page as recommended, you can set the co
 
 On question pages containing a group of inputs, including the question as the legend helps users of screen readers to understand that the inputs are all related to that question.
 
-Include any general help text which is important for filling in the form and cannot be written as hint text in the legend, but try to keep it as concise as possible.
+Include in the legend any general help text which is important for filling in the form and cannot be written as hint text, but try to keep it as concise as possible.
 
 ## Credit
 

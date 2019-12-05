@@ -56,7 +56,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <p>On question pages containing a group of inputs, including the question as the legend helps users of screen readers to understand that the inputs are all related to that question.</p>
-<p>Include any general help text which is important for filling in the form and cannot be written as hint text in the legend, but try to keep it as concise as possible.</p>
+<p>Include in the legend any general help text which is important for filling in the form and cannot be written as hint text, but try to keep it as concise as possible.</p>
 <h2 id="credit">Credit</h2>
 <p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
