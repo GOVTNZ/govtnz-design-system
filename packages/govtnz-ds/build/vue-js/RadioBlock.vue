@@ -3,8 +3,8 @@
     <input
       v-bind:aria-describedby="hintId"
       class="g-radios__input"
-      v-bind:id="radioId"
-      v-bind:name="gov"
+      v-bind:id="id"
+      v-bind:name="name"
       type="radio"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
@@ -13,7 +13,7 @@
       v-bind:checked="checked"
     />
 
-    <label class="g-radioBlock-label g-radios__label" v-bind:for="radioId">
+    <label class="g-radioBlock-label g-radios__label" v-bind:for="id">
       <slot name="label"></slot>
     </label>
 
@@ -27,12 +27,12 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    radioId: { type: String, required: false },
+    id: { type: String, required: false },
     hintId: { type: String, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
-    gov: { type: String, required: true },
+    name: { type: String, required: true },
     value: { type: String, required: false },
     checked: { type: Boolean, default: false, required: false },
     label: { required: false, default: "Label text" },

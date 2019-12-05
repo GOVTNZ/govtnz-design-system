@@ -62,12 +62,12 @@ var StyledLabel = _styledComponents["default"].label(_templateObject3());
 var StyledDiv2 = _styledComponents["default"].div(_templateObject4());
 
 var RadioBlock = function RadioBlock(_ref) {
-  var radioId = _ref.radioId,
+  var id = _ref.id,
       hintId = _ref.hintId,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
-      gov = _ref.gov,
+      name = _ref.name,
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
@@ -75,8 +75,8 @@ var RadioBlock = function RadioBlock(_ref) {
       hint = _ref.hint;
   return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledInput, {
     "aria-describedby": hintId,
-    id: radioId,
-    name: gov,
+    id: id,
+    name: name,
     type: "radio",
     disabled: disabled,
     readOnly: readOnly,
@@ -85,7 +85,7 @@ var RadioBlock = function RadioBlock(_ref) {
     checked: checked,
     onChange: onChange
   }), _react["default"].createElement(StyledLabel, {
-    htmlFor: radioId
+    htmlFor: id
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");

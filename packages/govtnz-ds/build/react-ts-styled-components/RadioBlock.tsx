@@ -2,12 +2,12 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  radioId?: string;
+  id?: string;
   hintId?: string;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
-  gov: string;
+  name: string;
   value?: string;
   checked?: boolean;
   onChange: any;
@@ -173,12 +173,12 @@ const StyledDiv2 = styled.div`
 `;
 
 const RadioBlock = ({
-  radioId,
+  id,
   hintId,
   disabled,
   readOnly,
   autoFocus,
-  gov,
+  name,
   value,
   checked,
   onChange,
@@ -188,8 +188,8 @@ const RadioBlock = ({
   <StyledDiv>
     <StyledInput
       aria-describedby={hintId}
-      id={radioId}
-      name={gov}
+      id={id}
+      name={name}
       type="radio"
       disabled={disabled}
       readOnly={readOnly}
@@ -198,7 +198,7 @@ const RadioBlock = ({
       checked={checked}
       onChange={onChange}
     />
-    <StyledLabel htmlFor={radioId}>
+    <StyledLabel htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (

@@ -1,11 +1,11 @@
 /// <reference types="react" />
 export declare class AppComponent {
-    radioId: string | undefined;
+    id: string | undefined;
     hintId: string | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
-    gov: string;
+    name: string;
     value: string | undefined;
     checked: boolean | undefined;
     label: React.ReactNode;

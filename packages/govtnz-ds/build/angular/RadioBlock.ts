@@ -6,8 +6,8 @@ import { Component, Input } from "@angular/core";
       <input
         aria-describedby="{{ hintId }}"
         class="g-radios__input"
-        id="{{ radioId }}"
-        name="{{ gov }}"
+        id="{{ id }}"
+        name="{{ name }}"
         type="radio"
         disabled="{{ disabled }}"
         readonly="{{ readOnly }}"
@@ -16,7 +16,7 @@ import { Component, Input } from "@angular/core";
         checked="{{ checked }}"
       />
 
-      <label class="g-radioBlock-label g-radios__label" for="{{ radioId }}">
+      <label class="g-radioBlock-label g-radios__label" for="{{ id }}">
         <slot name="label"></slot>
       </label>
 
@@ -27,12 +27,12 @@ import { Component, Input } from "@angular/core";
   `
 })
 export class AppComponent {
-  @Input() radioId: string | undefined;
+  @Input() id: string | undefined;
   @Input() hintId: string | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
-  @Input() gov: string;
+  @Input() name: string;
   @Input() value: string | undefined;
   @Input() checked: boolean | undefined;
   @Input() label: React.ReactNode;

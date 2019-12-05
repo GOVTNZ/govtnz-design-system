@@ -15,12 +15,12 @@ class="g-radios__item"
   aria-describedby="{{hintId}}"
 {{/hintId}}
 class="g-radios__input"
-{{#radioId}}
-  id="{{radioId}}"
-{{/radioId}}
-{{#gov}}
-  name="{{gov}}"
-{{/gov}}
+{{#id}}
+  id="{{id}}"
+{{/id}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
 type="radio"
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
@@ -42,9 +42,9 @@ type="radio"
   
 <label
 class="g-radioBlock-label g-radios__label"
-{{#radioId}}
-  for="{{radioId}}"
-{{/radioId}}
+{{#id}}
+  for="{{id}}"
+{{/id}}
 >
   
     

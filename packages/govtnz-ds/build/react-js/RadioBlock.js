@@ -10,12 +10,12 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var RadioBlock = function RadioBlock(_ref) {
-  var radioId = _ref.radioId,
+  var id = _ref.id,
       hintId = _ref.hintId,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
-      gov = _ref.gov,
+      name = _ref.name,
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
@@ -26,8 +26,8 @@ var RadioBlock = function RadioBlock(_ref) {
   }, _react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-radios__input",
-    id: radioId,
-    name: gov,
+    id: id,
+    name: name,
     type: "radio",
     disabled: disabled,
     readOnly: readOnly,
@@ -37,7 +37,7 @@ var RadioBlock = function RadioBlock(_ref) {
     onChange: onChange
   }), _react["default"].createElement("label", {
     className: "g-radioBlock-label g-radios__label",
-    htmlFor: radioId
+    htmlFor: id
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-radioBlock-hint g-checkboxes__hint",
     id: hintId
