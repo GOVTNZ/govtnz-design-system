@@ -1,4 +1,0 @@
-# Ol
-
-code:Ol
-## Credit

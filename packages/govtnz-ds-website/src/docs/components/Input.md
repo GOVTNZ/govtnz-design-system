@@ -1,4 +1,6 @@
-<P styleSize="large">Text inputs allow users to enter any combination of letters, numbers, or symbols to answer questions and provide data.</P>
+<P styleSize="large">
+    Text inputs allow users to enter any combination of letters, numbers, or symbols to answer questions and provide data.
+</P>
 
 ## Examples
 

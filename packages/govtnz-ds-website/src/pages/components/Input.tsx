@@ -23,7 +23,9 @@ import ExampleSection from '../../commons/ExampleSection';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><P styleSize="large">Text inputs allow users to enter any combination of letters, numbers, or symbols to answer questions and provide data.</P>
+const PageContent = (props) => <React.Fragment><P styleSize="large">
+    Text inputs allow users to enter any combination of letters, numbers, or symbols to answer questions and provide data.
+</P>
 
 <H2 styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>

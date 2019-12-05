@@ -1,4 +1,0 @@
-# Button
-
-code:Button
-## Credit

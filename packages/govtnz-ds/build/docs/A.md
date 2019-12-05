@@ -1,4 +1,0 @@
-# A
-
-code:A
-## Credit

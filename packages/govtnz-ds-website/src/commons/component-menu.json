@@ -16,6 +16,7 @@
     "title": "Coming soon",
     "stable": false,
     "items": [
+      { "id": "Fieldset", "name": "Fieldset", "stable": false },
       { "id": "Textarea", "name": "Textarea", "stable": false },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }

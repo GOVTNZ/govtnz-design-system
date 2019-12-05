@@ -1,4 +1,0 @@
-# P
-
-code:P
-## Credit

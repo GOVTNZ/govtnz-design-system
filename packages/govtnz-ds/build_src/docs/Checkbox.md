@@ -1,4 +1,0 @@
-# Checkbox
-
-code:Checkbox
-## Credit

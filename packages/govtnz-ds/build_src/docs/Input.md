@@ -1,4 +1,0 @@
-# Input
-
-code:Input
-## Credit

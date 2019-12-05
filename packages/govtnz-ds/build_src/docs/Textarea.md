@@ -1,4 +1,0 @@
-# Textarea
-
-code:Textarea
-## Credit

@@ -17,7 +17,6 @@ import getUpstream, {
   Component
 } from '@govtnz/ds-upstream';
 import { normalizeUpstream } from './normalize';
-import { startCase } from 'lodash';
 import {
   safeMergeCssVariables,
   AnyObject,
@@ -32,7 +31,6 @@ import { normalizeGovUkTemplate } from './normalize-govuk';
 ensureNodeVersion();
 
 async function main(
-  mode: BuildMode,
   noCache: boolean = false,
   componentIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
@@ -51,7 +49,7 @@ async function main(
 
   const specString: string = (
     await fs.promises.readFile(
-      path.join(__dirname, 'build-types', `${mode}-spec.json`),
+      path.join(__dirname, 'build-types', `build-spec.json`),
       {
         encoding: 'utf-8'
       }
@@ -139,7 +137,7 @@ async function main(
     );
   }
 
-  const allFiles = safeMerge(...release.map(releaseItem => releaseItem.files));
+  let allFiles = safeMerge(...release.map(releaseItem => releaseItem.files));
   const allReleaseVersions = release.map(
     releaseItem => releaseItem.releaseVersions
   );
@@ -149,27 +147,9 @@ async function main(
     cssVariables
   });
 
-  const isCompleteRelease = !componentIds && !metaTemplateFormatIds; // if they're filtering or choosing templates then we'll assume they're merging with an existing release and don't want to rimRaf
+  allFiles = safeMerge(allFiles, indexImports);
 
-  // Disabling compilation files until specific ticket to reenable
-  // because we're unclear of the features users want.
-  // const compilationFiles = await makeCompilation(release);
-
-  const nonComponentDocs = await makeNonComponentDocs(allFiles);
-  let files = safeMerge(
-    allFiles,
-    indexImports,
-    nonComponentDocs
-    // silverStripe4Files
-  );
-
-  await saveRelease(
-    mode,
-    isCompleteRelease,
-    files,
-    nonComponentDocs,
-    allReleaseVersions
-  );
+  await saveRelease(allFiles, allReleaseVersions);
 
   console.log('Release updated.');
 }
@@ -245,7 +225,7 @@ const makeReleaseSpecItem = async (
     const releaseVersion: ReleaseVersion = {
       sourceId,
       version: 'all',
-      components,
+      components: components as Component[],
       creditMarkdown: ''
     };
 
@@ -422,17 +402,6 @@ const componentToFiles = async ({
     metaTemplateFormatIds
   );
 
-  const markdownFileName = `${component.id}.md`;
-  const relativeMarkdownPath = path.join('docs', markdownFileName);
-  let md: string = '';
-  try {
-    const markdownPath = path.resolve(__dirname, relativeMarkdownPath);
-    md = (await fs.promises.readFile(markdownPath)).toString();
-  } catch (e) {
-    md += `# ${startCase(component.id)}\n\ncode:${component.id}\n`;
-  }
-  md += `## Credit\n${creditMarkdown}`;
-
   gc();
 
   const metaTemplateFiles = response.metaTemplates.map(
@@ -442,8 +411,7 @@ const componentToFiles = async ({
   // merge all metatemplates together
   return {
     files: safeMerge(...metaTemplateFiles, {
-      ['css/README.md']: cssReadme,
-      [`docs/${markdownFileName}`]: md
+      ['css/README.md']: cssReadme
     }),
     cssVariables,
     disposeMetaTemplate: response.disposeAll
@@ -451,10 +419,7 @@ const componentToFiles = async ({
 };
 
 const saveRelease = async (
-  mode: BuildMode,
-  isCompleteRelease: boolean,
   files: Object,
-  additionalStableFiles?: Object | undefined,
   allReleaseVersions?: ReleaseVersion[][] | undefined
 ) => {
   // Expects an Object that acts as a pseudo-filesystem.
@@ -492,29 +457,6 @@ const saveRelease = async (
     },
     {}
   );
-
-  const metaTemplateInputsPath = path.join(
-    buildSrcPath,
-    '.metatemplate-inputs.json'
-  );
-  if (!isCompleteRelease) {
-    try {
-      const data = (
-        await fs.promises.readFile(metaTemplateInputsPath, {
-          encoding: 'utf-8'
-        })
-      ).toString();
-      const oldMetaTemplateInputs = JSON.parse(data);
-      metaTemplateInputsById = {
-        ...oldMetaTemplateInputs,
-        ...metaTemplateInputsById
-      };
-    } catch (e) {
-      // Recoverable, so print error and continue...
-      console.log(e);
-      metaTemplateInputsById = {};
-    }
-  }
 
   await fs.promises.writeFile(
     path.join(buildSrcPath, '.metatemplate-inputs.json'),
@@ -564,35 +506,8 @@ const saveRelease = async (
   );
 
   console.log(
-    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s) to ${mode}\n( ${buildSrcPath} )`
+    `\n\nFinished. Wrote ${releaseFilePaths.length} file(s)\n( ${buildSrcPath} )`
   );
-};
-
-const makeNonComponentDocs = async (allFiles: Object) => {
-  const usedDocs = Object.keys(allFiles)
-    .filter(aFile => aFile.startsWith('docs/'))
-    .map(aFile => path.basename(aFile));
-
-  let docFiles: Object = {};
-  // Now copy over any markdown files that weren't related to components
-  const docsPath = path.resolve(__dirname, 'docs');
-  const allDocs = (await glob(path.join(docsPath, '*.md'))).map(docPath =>
-    path.basename(docPath)
-  );
-  const unusedDocs = allDocs.filter(filename => {
-    return usedDocs.indexOf(filename) === -1;
-  });
-
-  await Promise.all(
-    unusedDocs.map(async unusedDoc => {
-      const markdown = await fs.promises.readFile(
-        path.join(docsPath, unusedDoc)
-      );
-      docFiles[`docs/${unusedDoc}`] = markdown;
-    })
-  );
-
-  return docFiles;
 };
 
 type ReleaseSpecItem = {
@@ -616,8 +531,6 @@ const LONGER_THAN_A_HUMAN_COULD_POSSIBILITY_TOLERATE_ms = 6 * 60 * 1000;
 type MetaTemplateInputsById = {
   [key: string]: Component;
 };
-
-type BuildMode = 'build' | 'alpha';
 
 var ArgumentParser = ArgParse.ArgumentParser;
 var parser = new ArgumentParser({
@@ -647,7 +560,6 @@ const argMt =
   undefined;
 
 main(
-  'build',
   !!args.noCache,
   args.filter && args.filter.split(','),
   argMt && argMt.length > 0 ? argMt : undefined,

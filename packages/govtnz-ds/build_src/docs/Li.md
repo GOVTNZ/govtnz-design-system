@@ -1,4 +1,0 @@
-# Li
-
-code:Li
-## Credit

@@ -1,4 +1,0 @@
-# Select
-
-code:Select
-## Credit

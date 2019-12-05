@@ -1,4 +1,0 @@
-# Legend
-
-code:Legend
-## Credit
