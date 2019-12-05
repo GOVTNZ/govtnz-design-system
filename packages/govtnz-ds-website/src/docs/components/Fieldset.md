@@ -14,7 +14,7 @@ Interact with the example to see how it works.
         >
             <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" />
             <InputBlock type="text" label="Town or city" name="town" inputId="townId" />
-            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" />
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" />
         </FieldsetBlock>
     </Example>
 </ExampleContainer>

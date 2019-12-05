@@ -17,7 +17,7 @@ var PageContent = (props) => (<Example title="Example: Fieldset address" {...onC
         <FieldsetBlock id="addressId" legend={<H1 styleSize="large">What is your address?</H1>} {...onChangeGenerator({})}>
             <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" {...onChangeGenerator({})}></InputBlock>
             <InputBlock type="text" label="Town or city" name="town" inputId="townId" {...onChangeGenerator({})}></InputBlock>
-            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" width="5" {...onChangeGenerator({})}></InputBlock>
         </FieldsetBlock>
     </Example>);
 
