@@ -1,4 +1,0 @@
-<div class="g-flex-row<% if $alignXs == "start" %> start-xs<% else_if $alignXs == "center" %> center-xs<% else_if $alignXs == "end" %> end-xs<% end_if %><% if $alignSm == "start" %> start-sm<% else_if $alignSm == "center" %> center-sm<% else_if $alignSm == "end" %> end-sm<% end_if %><% if $alignMd == "start" %> start-md<% else_if $alignMd == "center" %> center-md<% else_if $alignMd == "end" %> end-md<% end_if %><% if $alignLg == "start" %> start-lg<% else_if $alignLg == "center" %> center-lg<% else_if $alignLg == "end" %> end-lg<% end_if %><% if $isReversed %>  g-flex-reverse<% end_if %>"> 
-  {$children}
-
-</div>
