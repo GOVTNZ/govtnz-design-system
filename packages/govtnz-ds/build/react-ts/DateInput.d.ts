@@ -1,10 +1,10 @@
 import * as React from "react";
 declare type Props = {
-    error?: boolean;
-    hintId?: string;
     errorId?: string;
+    hintId?: string;
     label?: React.ReactNode;
     hint?: React.ReactNode;
+    error?: boolean;
     id?: string;
     dayId?: string;
     disabled?: boolean;
@@ -19,5 +19,5 @@ declare type Props = {
     yearName: string;
     yearId?: string;
 };
-declare const DateInput: ({ error, hintId, errorId, label, hint, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, monthId, yearName, yearId }: Props) => JSX.Element;
+declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, monthId, yearName, yearId }: Props) => JSX.Element;
 export default DateInput;

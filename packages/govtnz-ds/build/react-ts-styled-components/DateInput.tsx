@@ -2,11 +2,11 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  error?: boolean;
-  hintId?: string;
   errorId?: string;
+  hintId?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: boolean;
   id?: string;
   dayId?: string;
   disabled?: boolean;
@@ -22,7 +22,7 @@ type Props = {
   yearId?: string;
 };
 
-const StyledDiv = styled.div<Pick<Props, "error">>`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
   margin-bottom: 20px;
   :after {
     content: "";
@@ -36,7 +36,7 @@ const StyledDiv = styled.div<Pick<Props, "error">>`
     margin-bottom: 0;
   }
   ${props =>
-    props.error &&
+    props.errorId &&
     styled.css`
       padding-left: 15px;
       border-left: 5px solid #b10e1e;
@@ -493,11 +493,11 @@ const StyledInput3 = styled.input<Pick<Props, "error">>`
 `;
 
 const DateInput = ({
-  error,
-  hintId,
   errorId,
+  hintId,
   label,
   hint,
+  error,
   id,
   dayId,
   disabled,
@@ -512,7 +512,7 @@ const DateInput = ({
   yearName,
   yearId
 }: Props) => (
-  <StyledDiv error={error}>
+  <StyledDiv errorId={errorId}>
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -535,7 +535,7 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </StyledSpan>
-      {error !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <StyledSpan2 id={errorId}>
             <StyledSpan3>Error: </StyledSpan3>

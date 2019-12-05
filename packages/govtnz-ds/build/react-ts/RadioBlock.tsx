@@ -1,6 +1,7 @@
 import * as React from "react";
 
 type Props = {
+  errorId?: boolean;
   id?: string;
   hintId?: string;
   disabled?: boolean;
@@ -15,6 +16,7 @@ type Props = {
 };
 
 const RadioBlock = ({
+  errorId,
   id,
   hintId,
   disabled,
@@ -27,7 +29,11 @@ const RadioBlock = ({
   label,
   hint
 }: Props) => (
-  <div className="g-radios__item">
+  <div
+    className={`g-radios__item${
+      errorId ? " g-radioBlock-form-group--error" : ""
+    }`}
+  >
     <input
       aria-describedby={hintId}
       className="g-radios__input"

@@ -15,9 +15,9 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Checkboxes with hints" {...onChangeGenerator({})}>
         <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle3" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId3" {...onChangeGenerator({})}>
-            <CheckboxBlock label="Aardvark Access" checkboxId="anyCheckboxId31" value="provider1" name="providerChoice3" labelId="labelId31" hintId="hintId31" hint="Aardvark Access provides internet" {...onChangeGenerator({"value":"provider1"})}></CheckboxBlock>
-            <CheckboxBlock label="Bumblebee Business" checkboxId="anyCheckboxId32" value="provider2" name="providerChoice3" labelId="labelId32" hintId="hintId32" hint="Bumblebee Business provides electricity" {...onChangeGenerator({"value":"provider2"})}></CheckboxBlock>
-            <CheckboxBlock label="Caterpillar Company" checkboxId="anyCheckboxId33" value="provider3" name="providerChoice3" labelId="labelId33" hintId="hintId33" hint="Caterpillar Company provides telephone" {...onChangeGenerator({"value":"provider3"})}></CheckboxBlock>
+            <CheckboxBlock label="Aardvark Access" id="anyCheckboxId31" value="provider1" name="providerChoice3" labelId="labelId31" hintId="hintId31" hint="Aardvark Access provides internet" {...onChangeGenerator({"value":"provider1"})}></CheckboxBlock>
+            <CheckboxBlock label="Bumblebee Business" id="anyCheckboxId32" value="provider2" name="providerChoice3" labelId="labelId32" hintId="hintId32" hint="Bumblebee Business provides electricity" {...onChangeGenerator({"value":"provider2"})}></CheckboxBlock>
+            <CheckboxBlock label="Caterpillar Company" id="anyCheckboxId33" value="provider3" name="providerChoice3" labelId="labelId33" hintId="hintId33" hint="Caterpillar Company provides telephone" {...onChangeGenerator({"value":"provider3"})}></CheckboxBlock>
         </FieldsetBlock>
     </Example>);
 

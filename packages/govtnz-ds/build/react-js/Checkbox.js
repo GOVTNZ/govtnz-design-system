@@ -10,7 +10,7 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var Checkbox = function Checkbox(_ref) {
-  var checkboxId = _ref.checkboxId,
+  var id = _ref.id,
       hintId = _ref.hintId,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -22,7 +22,7 @@ var Checkbox = function Checkbox(_ref) {
   return _react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-checkboxes__input",
-    id: checkboxId,
+    id: id,
     type: "checkbox",
     disabled: disabled,
     readOnly: readOnly,

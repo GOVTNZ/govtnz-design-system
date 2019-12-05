@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "g-DateInput",
   template: `
-<div class="g-dateInput-form-group{{error ? " g-dateInput-form-group--error" : ""}}">
+<div class="g-dateInput-form-group{{errorId ? " g-dateInput-form-group--error" : ""}}">
 
   
 <fieldset aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-fieldset" role="group">
@@ -148,11 +148,11 @@ Error:
 `
 })
 export class AppComponent {
-  @Input() error: boolean | undefined;
-  @Input() hintId: string | undefined;
   @Input() errorId: string | undefined;
+  @Input() hintId: string | undefined;
   @Input() label: React.ReactNode;
   @Input() hint: React.ReactNode;
+  @Input() error: boolean | undefined;
   @Input() id: string | undefined;
   @Input() dayId: string | undefined;
   @Input() disabled: boolean | undefined;

@@ -10,11 +10,11 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var DateInput = function DateInput(_ref) {
-  var error = _ref.error,
+  var errorId = _ref.errorId,
       hintId = _ref.hintId,
-      errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
+      error = _ref.error,
       id = _ref.id,
       dayId = _ref.dayId,
       disabled = _ref.disabled,
@@ -29,7 +29,7 @@ var DateInput = function DateInput(_ref) {
       yearName = _ref.yearName,
       yearId = _ref.yearId;
   return _react["default"].createElement("div", {
-    className: "g-dateInput-form-group".concat(error ? " g-dateInput-form-group--error" : "")
+    className: "g-dateInput-form-group".concat(errorId ? " g-dateInput-form-group--error" : "")
   }, _react["default"].createElement("fieldset", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-fieldset",
@@ -39,7 +39,7 @@ var DateInput = function DateInput(_ref) {
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label")), _react["default"].createElement("span", {
     className: "g-dateInput-hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("span", {
     className: "g-dateInput-error-message",
     id: errorId
   }, _react["default"].createElement("span", {

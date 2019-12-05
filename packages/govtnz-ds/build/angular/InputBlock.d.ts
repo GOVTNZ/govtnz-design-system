@@ -1,11 +1,11 @@
 /// <reference types="react" />
 export declare class AppComponent {
-    error: boolean | undefined;
-    inputId: string | undefined;
+    errorId: string | undefined;
+    id: string | undefined;
     label: React.ReactNode;
     hint: React.ReactNode;
     hintId: string | undefined;
-    errorId: string | undefined;
+    error: boolean | undefined;
     width: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;

@@ -1,5 +1,6 @@
 import * as React from "react";
 declare type Props = {
+    errorId?: boolean;
     selectId?: string;
     label?: React.ReactNode;
     error: boolean;
@@ -8,5 +9,5 @@ declare type Props = {
     onChange: any;
     children?: React.ReactNode;
 };
-declare const SelectBlock: ({ selectId, label, error, name, multiple, onChange, children }: Props) => JSX.Element;
+declare const SelectBlock: ({ errorId, selectId, label, error, name, multiple, onChange, children }: Props) => JSX.Element;
 export default SelectBlock;

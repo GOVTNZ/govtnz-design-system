@@ -6,7 +6,7 @@ Interact with this example to see how it works.
 
 <ExampleContainer>
     <Example title="Example: Select">
-        <SelectBlock selectId="select1" label="Order by">
+        <SelectBlock id="select1" label="Order by">
             <option value="published">Recently published</option>
             <option value="updated">Recently updated</option>
             <option value="views">Most views</option>

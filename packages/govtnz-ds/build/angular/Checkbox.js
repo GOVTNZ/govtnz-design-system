@@ -13,7 +13,7 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "checkboxId", void 0);
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "hintId", void 0);
@@ -38,7 +38,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Checkbox",
-            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-checkboxes__input\"\n      id=\"{{ checkboxId }}\"\n      type=\"checkbox\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      name=\"{{ name }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
+            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-checkboxes__input\"\n      id=\"{{ id }}\"\n      type=\"checkbox\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      name=\"{{ name }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
         })
     ], AppComponent);
     return AppComponent;

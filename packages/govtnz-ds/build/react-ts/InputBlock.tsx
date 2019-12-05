@@ -1,12 +1,12 @@
 import * as React from "react";
 
 type Props = {
-  error?: boolean;
-  inputId?: string;
+  errorId?: string;
+  id?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
   hintId?: string;
-  errorId?: string;
+  error?: boolean;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
   disabled?: boolean;
   readOnly?: boolean;
@@ -35,12 +35,12 @@ const constants = {
 };
 
 const InputBlock = ({
-  error,
-  inputId,
+  errorId,
+  id,
   label,
   hint,
   hintId,
-  errorId,
+  error,
   width,
   disabled,
   readOnly,
@@ -57,10 +57,10 @@ const InputBlock = ({
 }: Props) => (
   <div
     className={`g-inputBlock-form-group${
-      error ? " g-inputBlock-form-group--error" : ""
+      errorId ? " g-inputBlock-form-group--error" : ""
     }`}
   >
-    <label className="g-inputBlock-label" htmlFor={inputId}>
+    <label className="g-inputBlock-label" htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
@@ -103,7 +103,7 @@ const InputBlock = ({
       className={`g-inputBlock-input${
         constants.width[width] !== undefined ? " " + constants.width[width] : ""
       }${error ? " g-inputBlock-input--error" : ""}`}
-      id={inputId}
+      id={id}
       name={name}
       disabled={disabled}
       readOnly={readOnly}

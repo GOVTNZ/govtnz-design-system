@@ -164,7 +164,7 @@ function _templateObject() {
 }
 
 var StyledDiv = _styledComponents["default"].div(_templateObject(), function (props) {
-  return props.error && _styledComponents["default"].css(_templateObject2());
+  return props.errorId && _styledComponents["default"].css(_templateObject2());
 });
 
 var StyledLabel = _styledComponents["default"].label(_templateObject3());
@@ -194,12 +194,12 @@ var StyledInput = _styledComponents["default"].input(_templateObject7(), functio
 });
 
 var InputBlock = function InputBlock(_ref) {
-  var error = _ref.error,
-      inputId = _ref.inputId,
+  var errorId = _ref.errorId,
+      id = _ref.id,
       label = _ref.label,
       hint = _ref.hint,
       hintId = _ref.hintId,
-      errorId = _ref.errorId,
+      error = _ref.error,
       width = _ref.width,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -214,9 +214,9 @@ var InputBlock = function InputBlock(_ref) {
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement(StyledDiv, {
-    error: error
+    errorId: errorId
   }, _react["default"].createElement(StyledLabel, {
-    htmlFor: inputId
+    htmlFor: id
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
     id: hintId
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
@@ -225,7 +225,7 @@ var InputBlock = function InputBlock(_ref) {
     width: width,
     error: error,
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
-    id: inputId,
+    id: id,
     name: name,
     disabled: disabled,
     readOnly: readOnly,

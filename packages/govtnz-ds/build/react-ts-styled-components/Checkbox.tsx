@@ -2,7 +2,7 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  checkboxId?: string;
+  id?: string;
   hintId?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -30,7 +30,7 @@ const StyledInput = styled.input`
 `;
 
 const Checkbox = ({
-  checkboxId,
+  id,
   hintId,
   disabled,
   readOnly,
@@ -42,7 +42,7 @@ const Checkbox = ({
 }: Props) => (
   <StyledInput
     aria-describedby={hintId}
-    id={checkboxId}
+    id={id}
     type="checkbox"
     disabled={disabled}
     readOnly={readOnly}

@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div v-bind:class="computed__class">
     <label class="g-selectBlock-label" v-bind:for="selectId">
       <slot name="label"></slot>
     </label>
 
     <select
-      v-bind:class="computed__class"
+      v-bind:class="computed__class2"
       v-bind:id="selectId"
       v-bind:name="name"
       v-bind:multiple="multiple"
@@ -19,6 +19,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
+    errorId: { type: Boolean, default: false, required: false },
     selectId: { type: String, required: false },
     label: { required: false, default: "Example label text" },
     error: { type: Boolean, default: false, required: true },
@@ -31,6 +32,9 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
+      return this.errorId ? "g-selectBlock-form-group--error" : "";
+    },
+    computed__class2() {
       return (
         "g-selectBlock-select" +
         (this.error ? " g-selectBlock-select--error" : "")
@@ -40,6 +44,10 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
+.g-selectBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+}
 .g-selectBlock-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

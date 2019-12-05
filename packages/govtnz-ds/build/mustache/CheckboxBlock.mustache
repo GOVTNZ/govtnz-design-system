@@ -2,11 +2,12 @@
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
      - label,
-     - hint.
+     - hint,
+     - error.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
-class="g-checkboxes__item"
+class="g-checkboxes__item{{#errorId}} g-checkboxBlock-form-group--error{{/errorId}}"
 >
   
   
@@ -15,9 +16,9 @@ class="g-checkboxes__item"
   aria-describedby="{{hintId}}"
 {{/hintId}}
 class="g-checkboxes__input"
-{{#checkboxId}}
-  id="{{checkboxId}}"
-{{/checkboxId}}
+{{#id}}
+  id="{{id}}"
+{{/id}}
 type="checkbox"
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
@@ -42,9 +43,9 @@ type="checkbox"
   
 <label
 class="g-checkboxBlock-label g-checkboxes__label"
-{{#checkboxId}}
-  for="{{checkboxId}}"
-{{/checkboxId}}
+{{#id}}
+  for="{{id}}"
+{{/id}}
 >
   {{{label}}}
 </label>
@@ -61,6 +62,33 @@ class="g-checkboxBlock-hint g-checkboxes__hint"
   
       
   {{{hint}}}
+  
+    
+</div>
+  
+  
+  
+  
+  
+    
+<div
+class="g-checkboxBlock-error-message"
+{{#errorId}}
+  id="{{errorId}}"
+{{/errorId}}
+>
+  
+      
+<span
+class="g-checkboxBlock-visually-hidden"
+>
+  
+        Error:
+      
+</span>
+  
+      
+  {{{error}}}
   
     
 </div>

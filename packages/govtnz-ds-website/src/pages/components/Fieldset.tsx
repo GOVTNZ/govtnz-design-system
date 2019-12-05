@@ -41,7 +41,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 
 <h2 id="when-to-use-this-component">When to use this component</h2>
 <p>Use the fieldset component when you need to show a relationship between multiple form inputs. For example, you may need to group a set of text inputs into a single fieldset when asking for an address.</p>
-<p>If you’re using the <Link to="./Radios">radio buttons</Link>, <Link to="./Checkboxes">checkboxes</Link> or <Link to="./Date">date input</Link> components, the fieldset component will already be included.</p>
+<p>If you’re using the <Link to="./components/Radios/">radio buttons</Link>, <Link to="./components/Checkboxes/">checkboxes</Link> or <Link to="./components/Date/">date input</Link> components, the fieldset component will already be included.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>The first element inside a <code>&lt;fieldset&gt;</code> must be a <code>&lt;legend&gt;</code> which describes the group of inputs. This could be a question, such as ‘What is your current address?’ or a statement like ‘Personal details’.</p>
 <p>If you’re asking just one question per page as recommended, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading, as shown in the example below. This is good practice as it means that users of screen readers will only hear the contents once.</p>

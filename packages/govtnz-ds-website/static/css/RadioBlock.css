@@ -1,3 +1,9 @@
+.g-radioBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
+}
+
 .g-radioBlock-hint {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);

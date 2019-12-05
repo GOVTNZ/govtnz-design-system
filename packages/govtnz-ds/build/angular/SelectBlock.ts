@@ -2,7 +2,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "g-SelectBlock",
   template: `
-<div>
+<div class="{{errorId ? "g-selectBlock-form-group--error" : ""}}">
 
   
 <label class="g-selectBlock-label" for="{{selectId}}">
@@ -30,6 +30,7 @@ import { Component, Input } from "@angular/core";
 `
 })
 export class AppComponent {
+  @Input() errorId: boolean | undefined;
   @Input() selectId: string | undefined;
   @Input() label: React.ReactNode;
   @Input() error: boolean;

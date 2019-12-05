@@ -22,12 +22,12 @@ var constants = {
 };
 
 var InputBlock = function InputBlock(_ref) {
-  var error = _ref.error,
-      inputId = _ref.inputId,
+  var errorId = _ref.errorId,
+      id = _ref.id,
       label = _ref.label,
       hint = _ref.hint,
       hintId = _ref.hintId,
-      errorId = _ref.errorId,
+      error = _ref.error,
       width = _ref.width,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -42,10 +42,10 @@ var InputBlock = function InputBlock(_ref) {
       autoComplete = _ref.autoComplete,
       onChange = _ref.onChange;
   return _react["default"].createElement("div", {
-    className: "g-inputBlock-form-group".concat(error ? " g-inputBlock-form-group--error" : "")
+    className: "g-inputBlock-form-group".concat(errorId ? " g-inputBlock-form-group--error" : "")
   }, _react["default"].createElement("label", {
     className: "g-inputBlock-label",
-    htmlFor: inputId
+    htmlFor: id
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-hint",
     id: hintId
@@ -57,7 +57,7 @@ var InputBlock = function InputBlock(_ref) {
   }, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement("input", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-inputBlock-input--error" : ""),
-    id: inputId,
+    id: id,
     name: name,
     disabled: disabled,
     readOnly: readOnly,

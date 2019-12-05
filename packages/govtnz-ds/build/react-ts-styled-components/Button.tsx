@@ -10,7 +10,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<Pick<Props, "level">>`
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -105,6 +105,61 @@ const StyledButton = styled.button`
   padding-top: 16px;
   padding-bottom: 16px;
   margin-top: 0px;
+  opacity: 0.5;
+  background: var(--g-theme-button-color, #078766);
+  :hover,
+  :hover {
+    background-color: var(--g-theme-button-color, #078766);
+    cursor: default;
+  }
+  :focus,
+  :focus {
+    outline: none;
+  }
+  :active,
+  :active {
+    top: 0;
+    box-shadow: 0 2px 0 #003418;
+  }
+  ${props =>
+    props.level === "secondary" &&
+    styled.css`
+      background-color: var(--g-theme-button-color-secondary, #d3d3d3);
+      box-shadow: 0 2px 0
+        var(--g-theme-button-color-secondary-box-shadow, #2a2a2a);
+    `}
+  :link,:visited,:active,:hover {
+    ${props =>
+      props.level === "secondary" &&
+      styled.css`
+        color: #0b0c0c;
+      `}
+  }
+  :hover,
+  :focus {
+    background-color: var(
+      --g-theme-button-color-secondary-hover-focus,
+      #b2b2b2
+    );
+  }
+  ${props =>
+    props.level === "warning" &&
+    styled.css`
+      background-color: var(--g-theme-button-color-warning, #b10e1e);
+      box-shadow: 0 2px 0
+        var(--g-theme-button-color-warning-box-shadow, #2a2a2a);
+    `}
+  :link,:visited,:active,:hover {
+    ${props =>
+      props.level === "warning" &&
+      styled.css`
+        color: var(--g-theme-color-white, #ffffff);
+      `}
+  }
+  :hover,
+  :focus {
+    background-color: var(--g-theme-button-color-warning-hover-focus, #900815);
+  }
 `;
 
 const Button = ({ disabled, level, name, type, onClick, children }: Props) => (

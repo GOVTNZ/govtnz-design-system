@@ -1,6 +1,7 @@
 import * as React from "react";
 
 type Props = {
+  errorId?: boolean;
   selectId?: string;
   label?: React.ReactNode;
   error: boolean;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 const SelectBlock = ({
+  errorId,
   selectId,
   label,
   error,
@@ -19,7 +21,7 @@ const SelectBlock = ({
   onChange,
   children
 }: Props) => (
-  <div>
+  <div className={errorId ? "g-selectBlock-form-group--error" : ""}>
     <label className="g-selectBlock-label" htmlFor={selectId}>
       {label !== undefined ? (
         label

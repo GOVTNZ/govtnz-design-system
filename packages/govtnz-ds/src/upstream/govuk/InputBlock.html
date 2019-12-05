@@ -1,5 +1,5 @@
-<div class="g-form-group {{ error?: g-form-group--error }}">
-  <label class="g-label" for="inputId">
+<div class="g-form-group {{ errorId?: g-form-group--error }}">
+  <label class="g-label" for="id">
     <mt-variable key="label">Example text</mt-variable>
   </label>
   <mt-if key="hint">
@@ -15,7 +15,7 @@
   </mt-if>
   <input
     class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ error?: g-input--error }}"
-    id="inputId"
+    id="id"
     name="name"
     aria-describedby="hintId errorId"
   />

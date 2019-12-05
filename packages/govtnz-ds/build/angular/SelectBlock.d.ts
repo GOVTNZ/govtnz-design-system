@@ -1,5 +1,6 @@
 /// <reference types="react" />
 export declare class AppComponent {
+    errorId: boolean | undefined;
     selectId: string | undefined;
     label: React.ReactNode;
     error: boolean;

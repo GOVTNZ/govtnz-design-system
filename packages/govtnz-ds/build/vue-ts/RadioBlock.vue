@@ -1,5 +1,5 @@
 <template>
-  <div class="g-radios__item">
+  <div v-bind:class="computed__class">
     <input
       v-bind:aria-describedby="hintId"
       class="g-radios__input"
@@ -27,6 +27,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
+    errorId: { type: Boolean, default: false, required: false },
     id: { type: String, required: false },
     hintId: { type: String, required: false },
     disabled: { type: Boolean, default: false, required: false },
@@ -38,10 +39,21 @@ export default Vue.extend({
     label: { required: false, default: "Label text" },
     hint: { required: false, default: "Hint text" }
   },
-  computed: {}
+  computed: {
+    computed__class() {
+      return (
+        "g-radios__item" +
+        (this.errorId ? " g-radioBlock-form-group--error" : "")
+      );
+    }
+  }
 });
 </script>
 <style scoped>
+.g-radioBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+}
 .g-radioBlock-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

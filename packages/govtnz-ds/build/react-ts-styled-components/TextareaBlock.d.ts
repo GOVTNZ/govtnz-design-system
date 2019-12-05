@@ -1,9 +1,11 @@
 import * as React from "react";
 declare type Props = {
+    errorId?: string;
     id?: string;
     label?: React.ReactNode;
     hintId?: string;
     hint?: React.ReactNode;
+    error?: React.ReactNode;
     name: string;
     disabled?: boolean;
     readOnly?: boolean;
@@ -16,5 +18,5 @@ declare type Props = {
     value?: string;
     onChange: any;
 };
-declare const TextareaBlock: ({ id, label, hintId, hint, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange }: Props) => JSX.Element;
+declare const TextareaBlock: ({ errorId, id, label, hintId, hint, error, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange }: Props) => JSX.Element;
 export default TextareaBlock;

@@ -15,25 +15,25 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Fixed-width text input" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" id="anyId3" maxLength={30} hintId="anyHintId3" {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock type="email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" id="anyId4" hintId="anyHintId4" maxLength={20} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" maxLength={10} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" id="anyId5" hintId="anyHintId5" maxLength={10} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="5" label="5 character width" hint="Fits a post code." name="anyNameWidth5" inputId="anyId6" hintId="anyHintId6" maxLength={5} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="5" label="5 character width" hint="Fits a post code." name="anyNameWidth5" id="anyId6" hintId="anyHintId6" maxLength={5} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="4" label="4 character width" hint="Fits a 4-digit group of a credit card number." name="anyNameWidth4" inputId="anyId7" hintId="anyHintId7" maxLength={4} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="4" label="4 character width" hint="Fits a 4-digit group of a credit card number." name="anyNameWidth4" id="anyId7" hintId="anyHintId7" maxLength={4} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="3" label="3 character width" hint="Fits a prefix for a mobile number." name="anyNameWidth3" inputId="anyId8" hintId="anyHintId8" maxLength={3} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="3" label="3 character width" hint="Fits a prefix for a mobile number." name="anyNameWidth3" id="anyId8" hintId="anyHintId8" maxLength={3} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock width="2" label="2 character width" hint="Fits the 2-digit part of a bank account number." name="anyNameWidth2" inputId="anyId9" hintId="anyHintId9" maxLength={2} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock width="2" label="2 character width" hint="Fits the 2-digit part of a bank account number." name="anyNameWidth2" id="anyId9" hintId="anyHintId9" maxLength={2} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
     </Example>);
 

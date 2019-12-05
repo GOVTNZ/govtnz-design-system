@@ -1,7 +1,8 @@
 import * as React from "react";
 
 type Props = {
-  checkboxId?: string;
+  errorId?: string;
+  id?: string;
   hintId?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -12,10 +13,12 @@ type Props = {
   onChange: any;
   label?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: React.ReactNode;
 };
 
 const CheckboxBlock = ({
-  checkboxId,
+  errorId,
+  id,
   hintId,
   disabled,
   readOnly,
@@ -25,13 +28,18 @@ const CheckboxBlock = ({
   checked,
   onChange,
   label,
-  hint
+  hint,
+  error
 }: Props) => (
-  <div className="g-checkboxes__item">
+  <div
+    className={`g-checkboxes__item${
+      errorId ? " g-checkboxBlock-form-group--error" : ""
+    }`}
+  >
     <input
       aria-describedby={hintId}
       className="g-checkboxes__input"
-      id={checkboxId}
+      id={id}
       type="checkbox"
       disabled={disabled}
       readOnly={readOnly}
@@ -41,10 +49,7 @@ const CheckboxBlock = ({
       checked={checked}
       onChange={onChange}
     />
-    <label
-      className="g-checkboxBlock-label g-checkboxes__label"
-      htmlFor={checkboxId}
-    >
+    <label className="g-checkboxBlock-label g-checkboxes__label" htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
@@ -58,6 +63,20 @@ const CheckboxBlock = ({
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {errorId !== undefined ? (
+      <React.Fragment>
+        <div className="g-checkboxBlock-error-message" id={errorId}>
+          <span className="g-checkboxBlock-visually-hidden">Error:</span>
+          {error !== undefined ? (
+            error
+          ) : (
+            <React.Fragment>Error text</React.Fragment>
           )}
         </div>
       </React.Fragment>

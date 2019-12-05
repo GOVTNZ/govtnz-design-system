@@ -2,7 +2,8 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  checkboxId?: string;
+  errorId?: string;
+  id?: string;
   hintId?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -13,9 +14,16 @@ type Props = {
   onChange: any;
   label?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: React.ReactNode;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -168,8 +176,49 @@ const StyledDiv2 = styled.div`
   margin-top: 0px;
 `;
 
+const StyledDiv3 = styled.div`
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+  @media print {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+  margin-top: 0px;
+`;
+
+const StyledSpan = styled.span`
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+  margin-top: 0px;
+`;
+
 const CheckboxBlock = ({
-  checkboxId,
+  errorId,
+  id,
   hintId,
   disabled,
   readOnly,
@@ -179,12 +228,13 @@ const CheckboxBlock = ({
   checked,
   onChange,
   label,
-  hint
+  hint,
+  error
 }: Props) => (
-  <StyledDiv>
+  <StyledDiv errorId={errorId}>
     <StyledInput
       aria-describedby={hintId}
-      id={checkboxId}
+      id={id}
       type="checkbox"
       disabled={disabled}
       readOnly={readOnly}
@@ -194,7 +244,7 @@ const CheckboxBlock = ({
       checked={checked}
       onChange={onChange}
     />
-    <StyledLabel htmlFor={checkboxId}>
+    <StyledLabel htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
@@ -210,6 +260,20 @@ const CheckboxBlock = ({
             <React.Fragment>Hint text</React.Fragment>
           )}
         </StyledDiv2>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {errorId !== undefined ? (
+      <React.Fragment>
+        <StyledDiv3 id={errorId}>
+          <StyledSpan>Error:</StyledSpan>
+          {error !== undefined ? (
+            error
+          ) : (
+            <React.Fragment>Error text</React.Fragment>
+          )}
+        </StyledDiv3>
       </React.Fragment>
     ) : (
       ""

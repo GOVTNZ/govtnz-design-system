@@ -1,10 +1,12 @@
 import * as React from "react";
 
 type Props = {
+  errorId?: string;
   id?: string;
   label?: React.ReactNode;
   hintId?: string;
   hint?: React.ReactNode;
+  error?: React.ReactNode;
   name: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -19,10 +21,12 @@ type Props = {
 };
 
 const TextareaBlock = ({
+  errorId,
   id,
   label,
   hintId,
   hint,
+  error,
   name,
   disabled,
   readOnly,
@@ -35,13 +39,45 @@ const TextareaBlock = ({
   value,
   onChange
 }: Props) => (
-  <div className="g-textareaBlock-form-group">
+  <div
+    className={`g-textareaBlock-form-group${
+      errorId ? " g-textareaBlock-form-group--error" : ""
+    }`}
+  >
     <label className="g-textareaBlock-label" htmlFor={id}>
-      {label !== undefined ? label : <React.Fragment></React.Fragment>}
+      {label !== undefined ? (
+        label
+      ) : (
+        <React.Fragment>Label text</React.Fragment>
+      )}
     </label>
-    <span className="g-textareaBlock-hint" id={hintId}>
-      {hint !== undefined ? hint : <React.Fragment></React.Fragment>}
-    </span>
+    {hintId !== undefined ? (
+      <React.Fragment>
+        <div className="g-textareaBlock-hint" id={hintId}>
+          {hint !== undefined ? (
+            hint
+          ) : (
+            <React.Fragment>Hint text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
+    {errorId !== undefined ? (
+      <React.Fragment>
+        <div className="g-textareaBlock-error-message" id={errorId}>
+          <span className="g-textareaBlock-visually-hidden">Error:</span>
+          {error !== undefined ? (
+            error
+          ) : (
+            <React.Fragment>Error text</React.Fragment>
+          )}
+        </div>
+      </React.Fragment>
+    ) : (
+      ""
+    )}
     <textarea
       aria-describedby={hintId}
       className="g-textareaBlock-textarea"

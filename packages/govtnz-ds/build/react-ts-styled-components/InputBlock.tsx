@@ -2,12 +2,12 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
-  error?: boolean;
-  inputId?: string;
+  errorId?: string;
+  id?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
   hintId?: string;
-  errorId?: string;
+  error?: boolean;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
   disabled?: boolean;
   readOnly?: boolean;
@@ -23,7 +23,7 @@ type Props = {
   onChange: any;
 };
 
-const StyledDiv = styled.div<Pick<Props, "error">>`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
   margin-bottom: 20px;
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
@@ -32,7 +32,7 @@ const StyledDiv = styled.div<Pick<Props, "error">>`
     margin-bottom: 0;
   }
   ${props =>
-    props.error &&
+    props.errorId &&
     styled.css`
       padding-left: 15px;
       border-left: 5px solid #b10e1e;
@@ -215,12 +215,12 @@ ${props =>
 margin-top: 0px;`;
 
 const InputBlock = ({
-  error,
-  inputId,
+  errorId,
+  id,
   label,
   hint,
   hintId,
-  errorId,
+  error,
   width,
   disabled,
   readOnly,
@@ -235,8 +235,8 @@ const InputBlock = ({
   autoComplete,
   onChange
 }: Props) => (
-  <StyledDiv error={error}>
-    <StyledLabel htmlFor={inputId}>
+  <StyledDiv errorId={errorId}>
+    <StyledLabel htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
@@ -278,7 +278,7 @@ const InputBlock = ({
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
           : undefined
       }
-      id={inputId}
+      id={id}
       name={name}
       disabled={disabled}
       readOnly={readOnly}

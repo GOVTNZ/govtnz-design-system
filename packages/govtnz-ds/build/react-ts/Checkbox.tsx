@@ -1,7 +1,7 @@
 import * as React from "react";
 
 type Props = {
-  checkboxId?: string;
+  id?: string;
   hintId?: string;
   disabled?: boolean;
   readOnly?: boolean;
@@ -13,7 +13,7 @@ type Props = {
 };
 
 const Checkbox = ({
-  checkboxId,
+  id,
   hintId,
   disabled,
   readOnly,
@@ -26,7 +26,7 @@ const Checkbox = ({
   <input
     aria-describedby={hintId}
     className="g-checkboxes__input"
-    id={checkboxId}
+    id={id}
     type="checkbox"
     disabled={disabled}
     readOnly={readOnly}

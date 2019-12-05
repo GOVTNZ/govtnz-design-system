@@ -2,6 +2,7 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
+  errorId?: boolean;
   id?: string;
   hintId?: string;
   disabled?: boolean;
@@ -15,7 +16,13 @@ type Props = {
   hint?: React.ReactNode;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,6 +180,7 @@ const StyledDiv2 = styled.div`
 `;
 
 const RadioBlock = ({
+  errorId,
   id,
   hintId,
   disabled,
@@ -185,7 +193,7 @@ const RadioBlock = ({
   label,
   hint
 }: Props) => (
-  <StyledDiv>
+  <StyledDiv errorId={errorId}>
     <StyledInput
       aria-describedby={hintId}
       id={id}

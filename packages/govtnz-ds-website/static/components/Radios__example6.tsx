@@ -16,8 +16,8 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 var PageContent = (props) => (<Example title="Example: Error state #2 (Radio buttons)" {...onChangeGenerator({})}>
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name" {...onChangeGenerator({})}>
             <Radios inline {...onChangeGenerator({})}>
-                <RadioBlock label="Yes" radioId="anyRadioId9" value="true" name="nameChange5" labelId="labelId9" {...onChangeGenerator({"value":"true"})}></RadioBlock>
-                <RadioBlock label="No" radioId="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+                <RadioBlock label="Yes" id="anyRadioId9" value="true" name="nameChange5" labelId="labelId9" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" id="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" {...onChangeGenerator({"value":"false"})}></RadioBlock>
             </Radios>
         </FieldsetBlock>
     </Example>);

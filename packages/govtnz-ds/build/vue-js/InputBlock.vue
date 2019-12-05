@@ -1,6 +1,6 @@
 <template>
   <div v-bind:class="computed__class">
-    <label class="g-inputBlock-label" v-bind:for="inputId">
+    <label class="g-inputBlock-label" v-bind:for="id">
       <slot name="label"></slot>
     </label>
 
@@ -19,7 +19,7 @@
     <input
       v-bind:aria-describedby="computed__ariaDescribedby"
       v-bind:class="computed__class2"
-      v-bind:id="inputId"
+      v-bind:id="id"
       v-bind:name="name"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
@@ -51,17 +51,17 @@ const constants = {
 
 export default Vue.extend({
   props: {
+    errorId: { type: String, required: false },
+    id: { type: String, required: false },
+    label: { required: false, default: "Example text" },
+    hint: { required: false, default: "Example text" },
+    hintId: { type: String, required: false },
     error: {
       type: Boolean,
       default: false,
       required: false,
       default: "Example text"
     },
-    inputId: { type: String, required: false },
-    label: { required: false, default: "Example text" },
-    hint: { required: false, default: "Example text" },
-    hintId: { type: String, required: false },
-    errorId: { type: String, required: false },
     width: {
       type: String,
       validator: value => {
@@ -85,7 +85,7 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-inputBlock-form-group" +
-        (this.error ? " g-inputBlock-form-group--error" : "")
+        (this.errorId ? " g-inputBlock-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {

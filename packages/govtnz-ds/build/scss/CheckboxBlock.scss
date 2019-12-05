@@ -1,3 +1,45 @@
+.g-checkboxBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid $g-theme-button-color-warning;
+  border-left: 5px solid
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+}
+
+.g-checkboxBlock-error-message {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: $g-theme-button-color-warning;
+  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+}
+
+@media print {
+  .g-checkboxBlock-error-message {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-checkboxBlock-error-message {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-checkboxBlock-error-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
 .g-checkboxBlock-hint {
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -193,6 +235,20 @@
 .g-checkboxes__input:disabled + .g-checkboxes__label,
 .g-checkboxes__input.\:disabled + .g-checkboxes__label {
   opacity: 0.5;
+}
+
+.g-checkboxBlock-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 
 .g-checkboxBlock-hint > * {

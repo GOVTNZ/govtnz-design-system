@@ -10,14 +10,17 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var SelectBlock = function SelectBlock(_ref) {
-  var selectId = _ref.selectId,
+  var errorId = _ref.errorId,
+      selectId = _ref.selectId,
       label = _ref.label,
       error = _ref.error,
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
       children = _ref.children;
-  return _react["default"].createElement("div", null, _react["default"].createElement("label", {
+  return _react["default"].createElement("div", {
+    className: errorId ? "g-selectBlock-form-group--error" : ""
+  }, _react["default"].createElement("label", {
     className: "g-selectBlock-label",
     htmlFor: selectId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label text")), _react["default"].createElement("select", {

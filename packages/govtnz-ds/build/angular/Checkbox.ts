@@ -5,7 +5,7 @@ import { Component, Input } from "@angular/core";
     <input
       aria-describedby="{{ hintId }}"
       class="g-checkboxes__input"
-      id="{{ checkboxId }}"
+      id="{{ id }}"
       type="checkbox"
       disabled="{{ disabled }}"
       readonly="{{ readOnly }}"
@@ -17,7 +17,7 @@ import { Component, Input } from "@angular/core";
   `
 })
 export class AppComponent {
-  @Input() checkboxId: string | undefined;
+  @Input() id: string | undefined;
   @Input() hintId: string | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;

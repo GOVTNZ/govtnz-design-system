@@ -13,7 +13,10 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "checkboxId", void 0);
+    ], AppComponent.prototype, "errorId", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "hintId", void 0);
@@ -41,10 +44,13 @@ var AppComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "hint", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "error", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-CheckboxBlock",
-            template: "\n    <div class=\"g-checkboxes__item\">\n      <input\n        aria-describedby=\"{{ hintId }}\"\n        class=\"g-checkboxes__input\"\n        id=\"{{ checkboxId }}\"\n        type=\"checkbox\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n        name=\"{{ name }}\"\n        value=\"{{ value }}\"\n        checked=\"{{ checked }}\"\n      />\n\n      <label\n        class=\"g-checkboxBlock-label g-checkboxes__label\"\n        for=\"{{ checkboxId }}\"\n      >\n        <slot name=\"label\"></slot>\n      </label>\n\n      <div class=\"g-checkboxBlock-hint g-checkboxes__hint\" id=\"{{ hintId }}\">\n        <slot name=\"hint\"></slot>\n      </div>\n    </div>\n  "
+            template: "\n<div class=\"g-checkboxes__item{{errorId ? \" g-checkboxBlock-form-group--error\" : \"\"}}\">\n\n  \n<input aria-describedby=\"{{hintId}}\" class=\"g-checkboxes__input\" id=\"{{id}}\" type=\"checkbox\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" autofocus=\"{{autoFocus}}\" name=\"{{name}}\" value=\"{{value}}\" checked=\"{{checked}}\"/>\n\n  \n<label class=\"g-checkboxBlock-label g-checkboxes__label\" for=\"{{id}}\">\n<slot name=\"label\"></slot>\n\n</label>\n\n\n  \n    \n<div class=\"g-checkboxBlock-hint g-checkboxes__hint\" id=\"{{hintId}}\">\n\n      <slot name=\"hint\"></slot>\n    \n\n</div>\n\n\n  \n  \n    \n<div class=\"g-checkboxBlock-error-message\" id=\"{{errorId}}\">\n\n      \n<span class=\"g-checkboxBlock-visually-hidden\">\n\n        Error:\n      \n\n</span>\n\n\n      <slot name=\"error\"></slot>\n    \n\n</div>\n\n\n  \n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

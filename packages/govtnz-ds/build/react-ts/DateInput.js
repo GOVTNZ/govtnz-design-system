@@ -9,14 +9,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var DateInput = function (_a) {
-    var error = _a.error, hintId = _a.hintId, errorId = _a.errorId, label = _a.label, hint = _a.hint, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, yearName = _a.yearName, yearId = _a.yearId;
-    return (React.createElement("div", { className: "g-dateInput-form-group" + (error ? " g-dateInput-form-group--error" : "") },
+    var errorId = _a.errorId, hintId = _a.hintId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, monthId = _a.monthId, yearName = _a.yearName, yearId = _a.yearId;
+    return (React.createElement("div", { className: "g-dateInput-form-group" + (errorId ? " g-dateInput-form-group--error" : "") },
         React.createElement("fieldset", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, className: "g-fieldset", role: "group" },
             React.createElement("legend", { className: "g-fieldset__legend g-fieldset__legend--xl" }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example label"))),
             React.createElement("span", { className: "g-dateInput-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example hint"))),
-            error !== undefined ? (React.createElement(React.Fragment, null,
+            errorId !== undefined ? (React.createElement(React.Fragment, null,
                 React.createElement("span", { className: "g-dateInput-error-message", id: errorId },
                     React.createElement("span", { className: "g-dateInput-visually-hidden" }, "Error: "),
                     error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example error"))))) : (""),

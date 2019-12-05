@@ -2,11 +2,12 @@
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
      - label,
-     - hint.
+     - hint,
+     - error.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
-class="g-textareaBlock-form-group"
+class="g-textareaBlock-form-group{{#errorId}} g-textareaBlock-form-group--error{{/errorId}}"
 >
   
   
@@ -24,18 +25,49 @@ class="g-textareaBlock-label"
 </label>
   
   
-<span
+  
+    
+<div
 class="g-textareaBlock-hint"
 {{#hintId}}
   id="{{hintId}}"
 {{/hintId}}
 >
   
-    
+      
   {{{hint}}}
   
+    
+</div>
   
+  
+  
+  
+  
+    
+<div
+class="g-textareaBlock-error-message"
+{{#errorId}}
+  id="{{errorId}}"
+{{/errorId}}
+>
+  
+      
+<span
+class="g-textareaBlock-visually-hidden"
+>
+  
+        Error:
+      
 </span>
+  
+      
+  {{{error}}}
+  
+    
+</div>
+  
+  
   
   
 <textarea

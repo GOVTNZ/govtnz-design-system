@@ -15,9 +15,9 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Checkboxes" {...onChangeGenerator({})}>
         <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId1" {...onChangeGenerator({})}>
-            <CheckboxBlock label="Aardvark Access" checkboxId="anyCheckboxId1" value="provider1" name="providerChoice1" labelId="labelId1" {...onChangeGenerator({"value":"provider1"})}></CheckboxBlock>
-            <CheckboxBlock label="Bumblebee Business" checkboxId="anyCheckboxId2" value="provider2" name="providerChoice1" labelId="labelId2" {...onChangeGenerator({"value":"provider2"})}></CheckboxBlock>
-    <CheckboxBlock label="Caterpillar Company" checkboxId="anyCheckboxId3" value="provider3" name="providerChoice1" labelId="labelId3" {...onChangeGenerator({"value":"provider3"})}></CheckboxBlock>
+            <CheckboxBlock label="Aardvark Access" id="anyCheckboxId1" value="provider1" name="providerChoice1" {...onChangeGenerator({"value":"provider1"})}></CheckboxBlock>
+            <CheckboxBlock label="Bumblebee Business" id="anyCheckboxId2" value="provider2" name="providerChoice1" {...onChangeGenerator({"value":"provider2"})}></CheckboxBlock>
+            <CheckboxBlock label="Caterpillar Company" id="anyCheckboxId3" value="provider3" name="providerChoice1" {...onChangeGenerator({"value":"provider3"})}></CheckboxBlock>
         </FieldsetBlock>
     </Example>);
 

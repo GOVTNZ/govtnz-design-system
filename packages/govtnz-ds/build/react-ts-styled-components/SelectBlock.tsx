@@ -2,6 +2,7 @@ import * as React from "react";
 import * as styled from "styled-components";
 
 type Props = {
+  errorId?: boolean;
   selectId?: string;
   label?: React.ReactNode;
   error: boolean;
@@ -11,7 +12,13 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const StyledDiv = styled.div`
+const StyledDiv = styled.div<Pick<Props, "errorId">>`
+  ${props =>
+    props.errorId &&
+    styled.css`
+      padding-left: 15px;
+      border-left: 5px solid #b10e1e;
+    `}
   margin-top: 0px;
 `;
 
@@ -93,6 +100,7 @@ const StyledSelect = styled.select<Pick<Props, "error">>`
 `;
 
 const SelectBlock = ({
+  errorId,
   selectId,
   label,
   error,
@@ -101,7 +109,7 @@ const SelectBlock = ({
   onChange,
   children
 }: Props) => (
-  <StyledDiv>
+  <StyledDiv errorId={errorId}>
     <StyledLabel htmlFor={selectId}>
       {label !== undefined ? (
         label

@@ -1,4 +1,4 @@
-<div> 
+<div class="<% if $errorId %>g-selectBlock-form-group--error<% end_if %>"> 
   <label class="g-selectBlock-label"<% if $selectId %> for="{$selectId}"<% end_if %>> 
     {$label}
 

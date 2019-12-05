@@ -6,7 +6,17 @@
 
 Interact with the example to see how it works.
 
-[Insert textarea EXAMPLE 1: DEFAULT]
+<ExampleContainer>
+    <Example title="Example: Textarea">
+        <TextareaBlock
+            id="detail"
+            name="detail"
+            label="Can you provide more detail?"
+            hintId="hint1"
+            hint="Do not include personal or financial information, like your IRD number or credit card details."
+        />
+    </Example>
+</ExampleContainer>
 
 ## When to use this component
 
@@ -18,11 +28,11 @@ Users can find open-ended questions difficult to answer. It might be better to b
 
 ### Ask a simple closed question
 
-If you need to let users select a single answer from a list of options, use [radio buttons](./Radios). For selecting one or more options, or to toggle a single option on or off, use [checkboxes](./Checkboxes).
+If you need to let users select a single answer from a list of options, use [radio buttons](./components/Radios). For selecting one or more options, or to toggle a single option on or off, use [checkboxes](./components/Checkboxes).
 
 ### Ask a simple open question
 
-If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the [text input](./Input) component.
+If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the [text input](./components/Input) component.
 
 ## How it works
 
@@ -44,13 +54,25 @@ Users will often need to copy and paste information into a textarea, so do not s
 
 ## Limiting the number of characters
 
-If there’s a good reason to limit the number of characters users can enter, you can use the [character count](./CharacterCount) component.
+If there’s a good reason to limit the number of characters users can enter, you can use the [character count](./components/CharacterCount) component.
 
 ## Error messages
 
 Error messages should be styled like this:
 
-[Insert textarea EXAMPLE 2: ERROR]
+<ExampleContainer>
+    <Example title="Example: Textarea error">
+        <TextareaBlock
+            id="detail"
+            name="detail"
+            label="Can you provide more detail?"
+            hintId="hint1"
+            hint="Do not include personal or financial information, like your IRD number or credit card details."
+            errorId="errorId"
+            error="Enter more detail"
+        />
+    </Example>
+</ExampleContainer>
 
 Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.
 

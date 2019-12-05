@@ -1,4 +1,4 @@
-<div class="g-form-group {{ error?: g-form-group--error }}">
+<div class="g-form-group {{ errorId?: g-form-group--error }}">
   <fieldset class="g-fieldset" aria-describedby="hintId errorId" role="group">
     <legend class="g-fieldset__legend g-fieldset__legend--xl">
       <mt-variable key="label">Example label</mt-variable>
@@ -6,10 +6,10 @@
     <span id="hintId" class="g-hint">
       <mt-variable key="hint">Example hint</mt-variable>
     </span>
-    <mt-if key="?error">
+    <mt-if key="errorId">
       <span id="errorId" class="g-error-message">
         <span class="g-visually-hidden">Error: </span>
-        <mt-variable key="?error">Example error</mt-variable>
+        <mt-variable key="error">Example error</mt-variable>
       </span>
     </mt-if>
     <div id="id" class="g-date-input">

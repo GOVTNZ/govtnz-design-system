@@ -1,11 +1,11 @@
 import * as React from "react";
 
 type Props = {
-  error?: boolean;
-  hintId?: string;
   errorId?: string;
+  hintId?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
+  error?: boolean;
   id?: string;
   dayId?: string;
   disabled?: boolean;
@@ -22,11 +22,11 @@ type Props = {
 };
 
 const DateInput = ({
-  error,
-  hintId,
   errorId,
+  hintId,
   label,
   hint,
+  error,
   id,
   dayId,
   disabled,
@@ -43,7 +43,7 @@ const DateInput = ({
 }: Props) => (
   <div
     className={`g-dateInput-form-group${
-      error ? " g-dateInput-form-group--error" : ""
+      errorId ? " g-dateInput-form-group--error" : ""
     }`}
   >
     <fieldset
@@ -69,7 +69,7 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </span>
-      {error !== undefined ? (
+      {errorId !== undefined ? (
         <React.Fragment>
           <span className="g-dateInput-error-message" id={errorId}>
             <span className="g-dateInput-visually-hidden">Error: </span>

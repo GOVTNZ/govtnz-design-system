@@ -1,12 +1,20 @@
 <template>
-  <div class="g-textareaBlock-form-group">
+  <div v-bind:class="computed__class">
     <label class="g-textareaBlock-label" v-bind:for="id">
       <slot name="label"></slot>
     </label>
 
-    <span class="g-textareaBlock-hint" v-bind:id="hintId">
+    <div class="g-textareaBlock-hint" v-bind:id="hintId">
       <slot name="hint"></slot>
-    </span>
+    </div>
+
+    <div class="g-textareaBlock-error-message" v-bind:id="errorId">
+      <span class="g-textareaBlock-visually-hidden">
+        Error:
+      </span>
+
+      <slot name="error"></slot>
+    </div>
 
     <textarea
       v-bind:aria-describedby="hintId"
@@ -30,10 +38,12 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
+    errorId: { type: String, required: false },
     id: { type: String, required: false },
-    label: { required: false },
+    label: { required: false, default: "Label text" },
     hintId: { type: String, required: false },
-    hint: { required: false },
+    hint: { required: false, default: "Hint text" },
+    error: { required: false, default: "Error text" },
     name: { type: String, required: true },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
@@ -45,7 +55,14 @@ export default Vue.extend({
     maxLength: { type: String, required: false },
     value: { type: String, required: false }
   },
-  computed: {}
+  computed: {
+    computed__class() {
+      return (
+        "g-textareaBlock-form-group" +
+        (this.errorId ? " g-textareaBlock-form-group--error" : "")
+      );
+    }
+  }
 });
 </script>
 <style scoped>
@@ -60,9 +77,42 @@ export default Vue.extend({
 .g-textareaBlock-form-group .g-textareaBlock-form-group:last-of-type {
   margin-bottom: 0;
 }
+.g-textareaBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid #b10e1e;
+}
 .g-textareaBlock-form-group--error .g-textareaBlock-form-group {
   padding: 0;
   border: 0;
+}
+.g-textareaBlock-error-message {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: #b10e1e;
+}
+@media print {
+  .g-textareaBlock-error-message {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .g-textareaBlock-error-message {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+@media print {
+  .g-textareaBlock-error-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
 }
 .g-textareaBlock-hint {
   font-family: Arial, sans-serif;
@@ -174,6 +224,19 @@ export default Vue.extend({
   .g-textareaBlock-textarea {
     margin-bottom: 30px;
   }
+}
+.g-textareaBlock-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
 }
 .g-textareaBlock-hint > * {
   margin-top: 0px;

@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Textarea" {...onChangeGenerator({})}>
-        <TextareaBlock id="id" hint="Don't include personal or financial information, eg your Insurance number or credit card details." hintId="myHint" {...onChangeGenerator({})}></TextareaBlock>
+        <TextareaBlock id="detail" name="detail" label="Can you provide more detail?" hintId="hint1" hint="Do not include personal or financial information, like your IRD number or credit card details." {...onChangeGenerator({})}></TextareaBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

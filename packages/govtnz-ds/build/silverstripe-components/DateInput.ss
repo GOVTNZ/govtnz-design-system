@@ -1,4 +1,4 @@
-<div class="g-dateInput-form-group<% if $error %>  g-dateInput-form-group--error<% end_if %>"> 
+<div class="g-dateInput-form-group<% if $errorId %>  g-dateInput-form-group--error<% end_if %>"> 
   <fieldset<% if $hintId && $errorId %> aria-describedby="{$hintId} {$errorId}"<% end_if %> class="g-fieldset" role="group"> 
     <legend class="g-fieldset__legend g-fieldset__legend--xl"> 
       {$label}

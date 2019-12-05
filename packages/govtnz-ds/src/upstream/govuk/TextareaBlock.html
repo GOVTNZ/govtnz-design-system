@@ -1,10 +1,20 @@
-<div class="g-form-group">
+<div class="g-form-group {{ errorId?: g-form-group--error }}">
   <label class="g-label" for="id">
-    <mt-variable key="label"></mt-variable>
+    <mt-variable key="label">Label text</mt-variable>
   </label>
-  <span class="g-hint" id="hintId">
-    <mt-variable key="hint"></mt-variable>
-  </span>
+  <mt-if key="hintId">
+    <div class="g-hint" id="hintId">
+      <mt-variable key="hint">Hint text</mt-variable>
+    </div>
+  </mt-if>
+  <mt-if key="errorId">
+    <div class="g-error-message" id="errorId">
+      <span class="g-visually-hidden">
+        Error:
+      </span>
+      <mt-variable key="error">Error text</mt-variable>
+    </div>
+  </mt-if>
   <textarea
     class="g-textarea"
     id="id"

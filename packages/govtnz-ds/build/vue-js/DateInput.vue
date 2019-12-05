@@ -108,16 +108,16 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
+    errorId: { type: String, required: false },
+    hintId: { type: String, required: false },
+    label: { required: false, default: "Example label" },
+    hint: { required: false, default: "Example hint" },
     error: {
       type: Boolean,
       default: false,
       required: false,
       default: "Example error"
     },
-    hintId: { type: String, required: false },
-    errorId: { type: String, required: false },
-    label: { required: false, default: "Example label" },
-    hint: { required: false, default: "Example hint" },
     id: { type: String, required: false },
     dayId: { type: String, required: false },
     disabled: { type: Boolean, default: false, required: false },
@@ -135,7 +135,7 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-dateInput-form-group" +
-        (this.error ? " g-dateInput-form-group--error" : "")
+        (this.errorId ? " g-dateInput-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {

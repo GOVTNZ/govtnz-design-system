@@ -10,7 +10,8 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var RadioBlock = function RadioBlock(_ref) {
-  var id = _ref.id,
+  var errorId = _ref.errorId,
+      id = _ref.id,
       hintId = _ref.hintId,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
@@ -22,7 +23,7 @@ var RadioBlock = function RadioBlock(_ref) {
       label = _ref.label,
       hint = _ref.hint;
   return _react["default"].createElement("div", {
-    className: "g-radios__item"
+    className: "g-radios__item".concat(errorId ? " g-radioBlock-form-group--error" : "")
   }, _react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-radios__input",

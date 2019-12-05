@@ -1,16 +1,24 @@
-<div class="g-checkboxes__item">
+<div class="g-checkboxes__item  {{ errorId?: g-form-group--error }}">
   <input
     class="g-checkboxes__input"
-    id="checkboxId"
+    id="id"
     type="checkbox"
     aria-describedby="hintId"
   />
-  <label class="g-label g-checkboxes__label" for="checkboxId"
+  <label class="g-label g-checkboxes__label" for="id"
     ><mt-variable key="label">Label text</mt-variable></label
   >
   <mt-if key="hintId">
     <div class="g-hint g-checkboxes__hint" id="hintId">
       <mt-variable key="hint">Hint text</mt-variable>
+    </div>
+  </mt-if>
+  <mt-if key="errorId">
+    <div class="g-error-message" id="errorId">
+      <span class="g-visually-hidden">
+        Error:
+      </span>
+      <mt-variable key="error">Error text</mt-variable>
     </div>
   </mt-if>
 </div>

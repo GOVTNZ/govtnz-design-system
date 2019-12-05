@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example codeOnly {...onChangeGenerator({})}>
-        <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" inputId="postalId" hintId="postalHintId" autoComplete="postal-code" {...onChangeGenerator({})}></InputBlock>
+        <InputBlock label="Your postal code" hint="Your postal code will be a four digit number." name="postalCode" id="postalId" hintId="postalHintId" autoComplete="postal-code" {...onChangeGenerator({})}></InputBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

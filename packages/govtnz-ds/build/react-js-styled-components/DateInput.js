@@ -244,7 +244,7 @@ function _templateObject() {
 }
 
 var StyledDiv = _styledComponents["default"].div(_templateObject(), function (props) {
-  return props.error && _styledComponents["default"].css(_templateObject2());
+  return props.errorId && _styledComponents["default"].css(_templateObject2());
 });
 
 var StyledFieldset = _styledComponents["default"].fieldset(_templateObject3());
@@ -290,11 +290,11 @@ var StyledInput3 = _styledComponents["default"].input(_templateObject22(), funct
 });
 
 var DateInput = function DateInput(_ref) {
-  var error = _ref.error,
+  var errorId = _ref.errorId,
       hintId = _ref.hintId,
-      errorId = _ref.errorId,
       label = _ref.label,
       hint = _ref.hint,
+      error = _ref.error,
       id = _ref.id,
       dayId = _ref.dayId,
       disabled = _ref.disabled,
@@ -309,13 +309,13 @@ var DateInput = function DateInput(_ref) {
       yearName = _ref.yearName,
       yearId = _ref.yearId;
   return _react["default"].createElement(StyledDiv, {
-    error: error
+    errorId: errorId
   }, _react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     role: "group"
   }, _react["default"].createElement(StyledLegend, null, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label")), _react["default"].createElement(StyledSpan, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledSpan2, {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example hint")), errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledSpan2, {
     id: errorId
   }, _react["default"].createElement(StyledSpan3, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", _react["default"].createElement(StyledDiv2, {
     id: id

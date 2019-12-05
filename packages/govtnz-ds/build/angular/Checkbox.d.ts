@@ -1,5 +1,5 @@
 export declare class AppComponent {
-    checkboxId: string | undefined;
+    id: string | undefined;
     hintId: string | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;

@@ -1,6 +1,7 @@
 /// <reference types="react" />
 export declare class AppComponent {
-    checkboxId: string | undefined;
+    errorId: string | undefined;
+    id: string | undefined;
     hintId: string | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
@@ -10,5 +11,6 @@ export declare class AppComponent {
     checked: boolean | undefined;
     label: React.ReactNode;
     hint: React.ReactNode;
+    error: React.ReactNode;
     title: string;
 }
