@@ -7,7 +7,6 @@
 
 import React from 'react';
 import { Link } from 'gatsby';
-import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P.tsx';
 import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
