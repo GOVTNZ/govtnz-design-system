@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Fieldset address" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Fieldset" {...onChangeGenerator({})}>
         <FieldsetBlock id="addressId" legend={<H1 styleSize="large">What is your address?</H1>} {...onChangeGenerator({})}>
             <InputBlock type="text" label="Street address" name="streetAddress" id="streetAddressId" autoComplete="street-address" {...onChangeGenerator({})}></InputBlock>
             <InputBlock type="text" label="Town or city" name="town" id="townId" autoComplete="address-level2" {...onChangeGenerator({})}></InputBlock>

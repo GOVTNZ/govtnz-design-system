@@ -1,5 +1,5 @@
 <P styleSize="large">
-    The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
+    Use the fieldset component to group related form fields and labels within a form.
 </P>
 
 ## Examples
@@ -7,7 +7,7 @@
 Interact with the example to see how it works.
 
 <ExampleContainer>
-    <Example title="Example: Fieldset address">
+    <Example title="Example: Fieldset">
         <FieldsetBlock
             id="addressId"            
             legend={<H1 styleSize="large">What is your address?</H1>}
@@ -32,7 +32,7 @@ The first element inside a `<fieldset>` must be a `<legend>` which describes the
 If you’re asking just one question per page as recommended, you can set the contents of the `<legend>` as the page heading, as shown in the example below. This is good practice as it means that users of screen readers will only hear the contents once.
 
 <ExampleContainer>
-    <Example title="Example: Fieldset address as page heading">
+    <Example title="Example: Fieldset legend as page heading">
         <FieldsetBlock
             id="addressId"            
             legend={<H1 styleSize="large">What is your address?</H1>}

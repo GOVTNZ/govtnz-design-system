@@ -24,7 +24,7 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><P styleSize="large">
-    The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
+    Use the fieldset component to group related form fields and labels within a form.
 </P>
 
 <H2 styleSize="large" id="examples">Examples</H2>
@@ -34,7 +34,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         id:"iframe_componentsFieldset0",
         className: "example__iframe",
         src:"/components/Fieldset__example0.html",
-        title:"Example: Fieldset address",
+        title:"Example: Fieldset",
         height: 490
       }}></Example>
 </ExampleContainer>
@@ -50,7 +50,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         id:"iframe_componentsFieldset1",
         className: "example__iframe",
         src:"/components/Fieldset__example1.html",
-        title:"Example: Fieldset address as page heading",
+        title:"Example: Fieldset legend as page heading",
         height: 208
       }}></Example>
 </ExampleContainer>

@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Fieldset address as page heading" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Fieldset legend as page heading" {...onChangeGenerator({})}>
         <FieldsetBlock id="addressId" legend={<H1 styleSize="large">What is your address?</H1>} {...onChangeGenerator({})}>
         </FieldsetBlock>
     </Example>);
