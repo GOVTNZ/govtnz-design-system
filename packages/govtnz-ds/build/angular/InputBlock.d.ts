@@ -12,6 +12,9 @@ export declare class AppComponent {
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;
     value: string | undefined;
+    min: number | undefined;
+    max: number | undefined;
+    type: any;
     spellCheck: boolean | undefined;
     maxLength: number | undefined;
     autoComplete: any;

@@ -23,9 +23,7 @@ import ExampleSection from '../../commons/ExampleSection';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><p>Fieldset
-[INTRO]</p>
-<P styleSize="large">
+const PageContent = (props) => <React.Fragment><P styleSize="large">
     The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
 </P>
 

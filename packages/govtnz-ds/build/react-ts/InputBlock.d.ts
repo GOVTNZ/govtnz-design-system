@@ -12,10 +12,13 @@ declare type Props = {
     readOnly?: boolean | undefined;
     autoFocus?: boolean | undefined;
     value?: string | undefined;
+    min?: number | undefined;
+    max?: number | undefined;
+    type: React.InputHTMLAttributes<HTMLInputElement>["type"];
     spellCheck?: boolean | undefined;
     maxLength?: number | undefined;
     autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
     onChange: any;
 };
-declare const InputBlock: ({ error, inputId, label, hint, hintId, errorId, width, name, disabled, readOnly, autoFocus, value, spellCheck, maxLength, autoComplete, onChange }: Props) => JSX.Element;
+declare const InputBlock: ({ error, inputId, label, hint, hintId, errorId, width, name, disabled, readOnly, autoFocus, value, min, max, type, spellCheck, maxLength, autoComplete, onChange }: Props) => JSX.Element;
 export default InputBlock;

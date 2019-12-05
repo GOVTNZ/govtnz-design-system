@@ -34,6 +34,9 @@ var InputBlock = function InputBlock(_ref) {
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
+      min = _ref.min,
+      max = _ref.max,
+      type = _ref.type,
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
@@ -46,7 +49,7 @@ var InputBlock = function InputBlock(_ref) {
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
     className: "g-inputBlock-error-message",
     id: errorId
   }, _react["default"].createElement("span", {
@@ -56,11 +59,13 @@ var InputBlock = function InputBlock(_ref) {
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-inputBlock-input--error" : ""),
     id: inputId,
     name: name,
-    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,
+    min: min,
+    max: max,
+    type: type,
     spellCheck: spellCheck,
     maxLength: maxLength,
     autoComplete: autoComplete,

@@ -1,6 +1,3 @@
-Fieldset
-[INTRO]
-
 <P styleSize="large">
     The date input component consists of three grouped text fields that invite users to enter a day, a month, and a year.  This is the easiest way for users to enter dates they know well.
 </P>
@@ -13,8 +10,11 @@ Interact with the example to see how it works.
     <Example title="Example: Fieldset address">
         <FieldsetBlock
             id="addressId"            
-            legend="Legend"
+            legend={<H1 styleSize="large">What is your address?</H1>}
         >
+            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" />
+            <InputBlock type="text" label="Town or city" name="town" inputId="townId" />
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" />
         </FieldsetBlock>
     </Example>
 </ExampleContainer>
@@ -35,7 +35,7 @@ If you’re asking just one question per page as recommended, you can set the co
     <Example title="Example: Fieldset address as page heading">
         <FieldsetBlock
             id="addressId"            
-            legend={<H1 styleSize="large">Page heading</H1>}
+            legend={<H1 styleSize="large">What is your address?</H1>}
         >
         </FieldsetBlock>
     </Example>

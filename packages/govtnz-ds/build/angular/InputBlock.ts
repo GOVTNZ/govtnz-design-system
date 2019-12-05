@@ -6,12 +6,15 @@ import { Component, Input } from "@angular/core";
 
   
 <label class="g-inputBlock-label" for="{{inputId}}">
-<slot name="label"></slot>
+
+    <slot name="label"></slot>
+  
 
 </label>
 
 
   
+    
 <div class="g-inputBlock-hint" id="{{hintId}}">
 
       <slot name="hint"></slot>
@@ -21,6 +24,8 @@ import { Component, Input } from "@angular/core";
 
 
   
+  
+    
 <div class="g-inputBlock-error-message" id="{{errorId}}">
 
       
@@ -29,14 +34,16 @@ Error:
 
 </span>
 
-<slot name="error"></slot>
+
+      <slot name="error"></slot>
     
 
 </div>
 
 
   
-<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{inputId}}" name="{{name}}" type="text" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
+  
+<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{inputId}}" name="{{name}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" min="{{min}}" max="{{max}}" type="{{type}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
 
 
 
@@ -58,6 +65,9 @@ export class AppComponent {
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;
   @Input() value: string | undefined;
+  @Input() min: number | undefined;
+  @Input() max: number | undefined;
+  @Input() type: any;
   @Input() spellCheck: boolean | undefined;
   @Input() maxLength: number | undefined;
   @Input() autoComplete: any;

@@ -13,6 +13,9 @@ type Props = {
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
+  min?: number | undefined;
+  max?: number | undefined;
+  type: React.InputHTMLAttributes<HTMLInputElement>["type"];
   spellCheck?: boolean | undefined;
   maxLength?: number | undefined;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
@@ -44,6 +47,9 @@ const InputBlock = ({
   readOnly,
   autoFocus,
   value,
+  min,
+  max,
+  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -74,7 +80,7 @@ const InputBlock = ({
     ) : (
       ""
     )}
-    {error !== undefined ? (
+    {errorId !== undefined ? (
       <React.Fragment>
         <div className="g-inputBlock-error-message" id={errorId}>
           <span className="g-inputBlock-visually-hidden">Error: </span>
@@ -99,11 +105,13 @@ const InputBlock = ({
       }${error ? " g-inputBlock-input--error" : ""}`}
       id={inputId}
       name={name}
-      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}
       value={value}
+      min={min}
+      max={max}
+      type={type}
       spellCheck={spellCheck}
       maxLength={maxLength}
       autoComplete={autoComplete}

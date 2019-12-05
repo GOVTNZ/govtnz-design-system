@@ -20,18 +20,18 @@ var constants = {
     }
 };
 var InputBlock = function (_a) {
-    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, min = _a.min, max = _a.max, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
     return (React.createElement("div", { className: "g-inputBlock-form-group" + (error ? " g-inputBlock-form-group--error" : "") },
         React.createElement("label", { className: "g-inputBlock-label", htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
         hint !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "g-inputBlock-hint", id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
-        error !== undefined ? (React.createElement(React.Fragment, null,
+        errorId !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement("div", { className: "g-inputBlock-error-message", id: errorId },
                 React.createElement("span", { className: "g-inputBlock-visually-hidden" }, "Error: "),
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
         React.createElement("input", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: inputId, name: name, type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange })));
+                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: inputId, name: name, disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange })));
 };
 exports.default = InputBlock;
 //# sourceMappingURL=InputBlock.js.map

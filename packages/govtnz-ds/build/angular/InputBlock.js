@@ -49,6 +49,15 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "value", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "min", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "max", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "type", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "spellCheck", void 0);
     __decorate([
         core_1.Input()
@@ -59,7 +68,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-InputBlock",
-            template: "\n<div class=\"g-inputBlock-form-group{{error ? \" g-inputBlock-form-group--error\" : \"\"}}\">\n\n  \n<label class=\"g-inputBlock-label\" for=\"{{inputId}}\">\n<slot name=\"label\"></slot>\n\n</label>\n\n\n  \n<div class=\"g-inputBlock-hint\" id=\"{{hintId}}\">\n\n      <slot name=\"hint\"></slot>\n    \n\n</div>\n\n\n  \n<div class=\"g-inputBlock-error-message\" id=\"{{errorId}}\">\n\n      \n<span class=\"g-inputBlock-visually-hidden\">\nError: \n\n</span>\n\n<slot name=\"error\"></slot>\n    \n\n</div>\n\n\n  \n<input aria-describedby=\"{{hintId ?  hintId : \"\"}}{{errorId ? \" \" +  errorId : \"\"}}\" class=\"g-inputBlock-input{{constants.width[width] !== undefined ? \" \" +  constants.width[width] : \"\"}}{{error ? \" g-inputBlock-input--error\" : \"\"}}\" id=\"{{inputId}}\" name=\"{{name}}\" type=\"text\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" autofocus=\"{{autoFocus}}\" value=\"{{value}}\" spellcheck=\"{{spellCheck}}\" maxlength=\"{{maxLength}}\" autocomplete=\"{{autoComplete}}\"/>\n\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-inputBlock-form-group{{error ? \" g-inputBlock-form-group--error\" : \"\"}}\">\n\n  \n<label class=\"g-inputBlock-label\" for=\"{{inputId}}\">\n\n    <slot name=\"label\"></slot>\n  \n\n</label>\n\n\n  \n    \n<div class=\"g-inputBlock-hint\" id=\"{{hintId}}\">\n\n      <slot name=\"hint\"></slot>\n    \n\n</div>\n\n\n  \n  \n    \n<div class=\"g-inputBlock-error-message\" id=\"{{errorId}}\">\n\n      \n<span class=\"g-inputBlock-visually-hidden\">\nError: \n\n</span>\n\n\n      <slot name=\"error\"></slot>\n    \n\n</div>\n\n\n  \n  \n<input aria-describedby=\"{{hintId ?  hintId : \"\"}}{{errorId ? \" \" +  errorId : \"\"}}\" class=\"g-inputBlock-input{{constants.width[width] !== undefined ? \" \" +  constants.width[width] : \"\"}}{{error ? \" g-inputBlock-input--error\" : \"\"}}\" id=\"{{inputId}}\" name=\"{{name}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" autofocus=\"{{autoFocus}}\" value=\"{{value}}\" min=\"{{min}}\" max=\"{{max}}\" type=\"{{type}}\" spellcheck=\"{{spellCheck}}\" maxlength=\"{{maxLength}}\" autocomplete=\"{{autoComplete}}\"/>\n\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

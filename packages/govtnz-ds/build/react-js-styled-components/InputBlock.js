@@ -206,6 +206,9 @@ var InputBlock = function InputBlock(_ref) {
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
       value = _ref.value,
+      min = _ref.min,
+      max = _ref.max,
+      type = _ref.type,
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
@@ -216,7 +219,7 @@ var InputBlock = function InputBlock(_ref) {
     htmlFor: inputId
   }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", error !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
     id: errorId
   }, _react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", _react["default"].createElement(StyledInput, {
     width: width,
@@ -224,11 +227,13 @@ var InputBlock = function InputBlock(_ref) {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: inputId,
     name: name,
-    type: "text",
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,
+    min: min,
+    max: max,
+    type: type,
     spellCheck: spellCheck,
     maxLength: maxLength,
     autoComplete: autoComplete,

@@ -21,11 +21,13 @@
       v-bind:class="computed__class2"
       v-bind:id="inputId"
       v-bind:name="name"
-      type="text"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
       v-bind:value="value"
+      v-bind:min="min"
+      v-bind:max="max"
+      v-bind:type="type"
       v-bind:spellcheck="spellCheck"
       v-bind:maxlength="maxLength"
       v-bind:autocomplete="autoComplete"
@@ -72,6 +74,9 @@ export default Vue.extend({
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },
     value: { type: String, required: false },
+    min: { type: String, required: false },
+    max: { type: String, required: false },
+    type: { type: String, required: true },
     spellCheck: { type: Boolean, default: false, required: false },
     maxLength: { type: String, required: false },
     autoComplete: { type: String, required: true }

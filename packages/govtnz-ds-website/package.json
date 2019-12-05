@@ -87,5 +87,8 @@
       "../govt-ds/releases/"
     ],
     "delay": "2500"
+  },
+  "devDependencies": {
+    "@springload/metatemplate": "^0.2.5"
   }
 }

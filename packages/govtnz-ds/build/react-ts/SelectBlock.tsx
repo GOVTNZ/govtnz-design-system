@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 
 type Props = {
   selectId?: string | undefined;
@@ -29,7 +29,7 @@ const SelectBlock = ({
     </label>
     <select
       className={`g-selectBlock-select${
-        error ? " g-selectBlock-select--error" : ""
+        error ? ' g-selectBlock-select--error' : ''
       }`}
       id={selectId}
       name={name}

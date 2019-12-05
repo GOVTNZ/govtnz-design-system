@@ -47,18 +47,18 @@ var StyledInput = styled.input(templateObject_15 || (templateObject_15 = __makeT
     return props.width === "2" && styled.css(templateObject_14 || (templateObject_14 = __makeTemplateObject(["\n    max-width: 5.4ex;\n  "], ["\n    max-width: 5.4ex;\n  "])));
 });
 var InputBlock = function (_a) {
-    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
+    var error = _a.error, inputId = _a.inputId, label = _a.label, hint = _a.hint, hintId = _a.hintId, errorId = _a.errorId, width = _a.width, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, value = _a.value, min = _a.min, max = _a.max, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange;
     return (React.createElement(StyledDiv, { error: error },
         React.createElement(StyledLabel, { htmlFor: inputId }, label !== undefined ? (label) : (React.createElement(React.Fragment, null, "Example text"))),
         hint !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
-        error !== undefined ? (React.createElement(React.Fragment, null,
+        errorId !== undefined ? (React.createElement(React.Fragment, null,
             React.createElement(StyledDiv3, { id: errorId },
                 React.createElement(StyledSpan, null, "Error: "),
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Example text"))))) : (""),
         React.createElement(StyledInput, { width: width, error: error, "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, id: inputId, name: name, type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange })));
+                : undefined, id: inputId, name: name, disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange })));
 };
 exports.default = InputBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15;

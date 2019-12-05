@@ -14,6 +14,9 @@ type Props = {
   readOnly?: boolean | undefined;
   autoFocus?: boolean | undefined;
   value?: string | undefined;
+  min?: number | undefined;
+  max?: number | undefined;
+  type: React.InputHTMLAttributes<HTMLInputElement>["type"];
   spellCheck?: boolean | undefined;
   maxLength?: number | undefined;
   autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
@@ -224,6 +227,9 @@ const InputBlock = ({
   readOnly,
   autoFocus,
   value,
+  min,
+  max,
+  type,
   spellCheck,
   maxLength,
   autoComplete,
@@ -250,7 +256,7 @@ const InputBlock = ({
     ) : (
       ""
     )}
-    {error !== undefined ? (
+    {errorId !== undefined ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
           <StyledSpan>Error: </StyledSpan>
@@ -274,11 +280,13 @@ const InputBlock = ({
       }
       id={inputId}
       name={name}
-      type="text"
       disabled={disabled}
       readOnly={readOnly}
       autoFocus={autoFocus}
       value={value}
+      min={min}
+      max={max}
+      type={type}
       spellCheck={spellCheck}
       maxLength={maxLength}
       autoComplete={autoComplete}

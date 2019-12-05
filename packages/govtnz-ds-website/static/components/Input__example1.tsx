@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Error state #1 (Text input)" {...onChangeGenerator({})}>
-        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" {...onChangeGenerator({})}></InputBlock>
+        <InputBlock type="text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" {...onChangeGenerator({})}></InputBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

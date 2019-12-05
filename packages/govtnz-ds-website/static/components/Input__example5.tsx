@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example codeOnly {...onChangeGenerator({})}>
-        <InputBlock type="Email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" {...onChangeGenerator({})}></InputBlock>
+        <InputBlock type="email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" {...onChangeGenerator({})}></InputBlock>
     </Example>);
 
       const onChangeGenerator = (props) => {

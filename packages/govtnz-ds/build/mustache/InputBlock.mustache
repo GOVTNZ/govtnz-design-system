@@ -17,10 +17,16 @@ class="g-inputBlock-label"
   for="{{inputId}}"
 {{/inputId}}
 >
+  
+    
   {{{label}}}
+  
+  
 </label>
   
   
+  
+    
 <div
 class="g-inputBlock-hint"
 {{#hintId}}
@@ -35,6 +41,10 @@ class="g-inputBlock-hint"
 </div>
   
   
+  
+  
+  
+    
 <div
 class="g-inputBlock-error-message"
 {{#errorId}}
@@ -48,10 +58,14 @@ class="g-inputBlock-visually-hidden"
 >
   Error: 
 </span>
+  
+      
   {{{error}}}
   
     
 </div>
+  
+  
   
   
 <input
@@ -63,7 +77,6 @@ class="g-inputBlock-input{{#width=30}} g-inputBlock-input--width-30{{/width=30}}
 {{#name}}
   name="{{name}}"
 {{/name}}
-type="text"
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}
@@ -76,6 +89,15 @@ type="text"
 {{#value}}
   value="{{value}}"
 {{/value}}
+{{#min}}
+  min=""
+{{/min}}
+{{#max}}
+  max=""
+{{/max}}
+{{#type}}
+  type="{{type}}"
+{{/type}}
 {{#spellCheck}}
   spellcheck="{{#spellCheck}}spellCheck{{/spellCheck}}"
 {{/spellCheck}}

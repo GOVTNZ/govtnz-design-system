@@ -18,7 +18,7 @@ var PageContent = (props) => (<Example title="Example: Fixed-width text input" {
             <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
-            <InputBlock type="Email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} {...onChangeGenerator({})}></InputBlock>
         </ExampleSection>
         <ExampleSection {...onChangeGenerator({})}>
             <InputBlock width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" maxLength={10} {...onChangeGenerator({})}></InputBlock>

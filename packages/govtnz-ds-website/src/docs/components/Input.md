@@ -8,14 +8,14 @@ Interact with each example to see how it works.
 
 <ExampleContainer>
     <Example title="Example: Text input">
-        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId" />
+        <InputBlock type="text" label="Event name" name="anyName" inputId="anyId" />
     </Example>
 </ExampleContainer>
 
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example title="Example: Error state #1 (Text input)">
-        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" />
+        <InputBlock type="text" label="Event name" name="anyName" inputId="anyId2f" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 
@@ -54,7 +54,7 @@ If you want to make the input smaller, you can either use a fixed-width input, o
             <InputBlock width="30" label="30 character width" hint="Fits a short sentence answer or a long address line." name="anyNameWidth30" inputId="anyId3" maxLength={30} hintId="anyHintId3" />
         </ExampleSection>
         <ExampleSection>
-            <InputBlock type="Email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} />
+            <InputBlock type="email" width="20" label="20 character width" hint="Fits an email address." name="anyNameWidth20" inputId="anyId4" hintId="anyHintId4" maxLength={20} />
         </ExampleSection>
         <ExampleSection>
             <InputBlock width="10" label="10 character width" hint="Fits a name." name="anyNameWidth10" inputId="anyId5" hintId="anyHintId5" maxLength={10} />
@@ -81,7 +81,7 @@ On fixed-width inputs, the width will remain fixed on all screens unless it is w
 <ExampleContainer>
     <ExampleHeading>Hint text</ExampleHeading>
     <Example title="Example: Hint text (Text input)">
-        <InputBlock type="Text" label="Event name" name="anyName" inputId="anyId10" hint="The name you'll use on promotional material" hintId="anyHintId10" />
+        <InputBlock type="text" label="Event name" name="anyName" inputId="anyId10" hint="The name you'll use on promotional material" hintId="anyHintId10" />
     </Example>
 </ExampleContainer>
 
@@ -117,7 +117,7 @@ To disable spellcheck, set `spellcheck="false"`.
 <ExampleContainer>
     <ExampleHeading white>Code</ExampleHeading>
     <Example codeOnly>
-        <InputBlock type="Email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" />
+        <InputBlock type="email" label="Your email address" hint="Please provide your personal email address that we'll contact you on." name="someEmail" inputId="anyId122" hintId="anyHintId122" spellCheck="false" />
     </Example>
 </ExampleContainer>
 
@@ -136,7 +136,7 @@ Style error messages as shown in the following example.
 <ExampleContainer>
     <ExampleHeading>Error state</ExampleHeading>
     <Example title="Example: Error state #2 (Text input)">
-        <InputBlock type="Text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" error="Enter a known event name" />
+        <InputBlock type="text" label="Event name" hint="The name you'll use on promotional material" name="anyName" inputId="anyId2f" hintId="anyHintId2" errorId="anyErrorId2Error" error="Enter a known event name" />
     </Example>
 </ExampleContainer>
 

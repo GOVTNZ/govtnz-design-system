@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -14,7 +14,10 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Fieldset address" {...onChangeGenerator({})}>
-        <FieldsetBlock id="addressId" legend="Legend" {...onChangeGenerator({})}>
+        <FieldsetBlock id="addressId" legend={<H1 styleSize="large">What is your address?</H1>} {...onChangeGenerator({})}>
+            <InputBlock type="text" label="Street address" name="streetAddress" inputId="streetAddressId" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Town or city" name="town" inputId="townId" {...onChangeGenerator({})}></InputBlock>
+            <InputBlock type="text" label="Postcode" name="postcode" inputId="postcodeId" {...onChangeGenerator({})}></InputBlock>
         </FieldsetBlock>
     </Example>);
 
