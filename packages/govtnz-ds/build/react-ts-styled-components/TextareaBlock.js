@@ -32,7 +32,9 @@ var TextareaBlock = function (_a) {
             React.createElement(StyledDiv3, { id: errorId },
                 React.createElement(StyledSpan, null, "Error:"),
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))))) : (""),
-        React.createElement(StyledTextarea, { "aria-describedby": hintId, id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange })));
+        React.createElement(StyledTextarea, { "aria-describedby": hintId !== undefined || errorId !== undefined
+                ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
+                : undefined, id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange })));
 };
 exports.default = TextareaBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;

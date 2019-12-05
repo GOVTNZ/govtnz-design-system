@@ -17,7 +17,7 @@
     </div>
 
     <textarea
-      v-bind:aria-describedby="hintId"
+      v-bind:aria-describedby="computed__ariaDescribedby"
       class="g-textareaBlock-textarea"
       v-bind:id="id"
       v-bind:name="name"
@@ -61,6 +61,9 @@ export default Vue.extend({
         "g-textareaBlock-form-group" +
         (this.errorId ? " g-textareaBlock-form-group--error" : "")
       );
+    },
+    computed__ariaDescribedby() {
+      return +this.hintId + +this.errorId;
     }
   }
 });

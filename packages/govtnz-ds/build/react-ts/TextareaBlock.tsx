@@ -79,7 +79,11 @@ const TextareaBlock = ({
       ""
     )}
     <textarea
-      aria-describedby={hintId}
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
       className="g-textareaBlock-textarea"
       id={id}
       name={name}

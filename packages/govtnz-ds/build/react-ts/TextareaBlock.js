@@ -18,7 +18,9 @@ var TextareaBlock = function (_a) {
             React.createElement("div", { className: "g-textareaBlock-error-message", id: errorId },
                 React.createElement("span", { className: "g-textareaBlock-visually-hidden" }, "Error:"),
                 error !== undefined ? (error) : (React.createElement(React.Fragment, null, "Error text"))))) : (""),
-        React.createElement("textarea", { "aria-describedby": hintId, className: "g-textareaBlock-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange })));
+        React.createElement("textarea", { "aria-describedby": hintId !== undefined || errorId !== undefined
+                ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
+                : undefined, className: "g-textareaBlock-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange })));
 };
 exports.default = TextareaBlock;
 //# sourceMappingURL=TextareaBlock.js.map

@@ -124,7 +124,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
   }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
     id: errorId
   }, _react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", _react["default"].createElement(StyledTextarea, {
-    "aria-describedby": hintId,
+    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: id,
     name: name,
     rows: rows,

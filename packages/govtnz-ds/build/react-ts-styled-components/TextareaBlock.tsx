@@ -227,7 +227,11 @@ const TextareaBlock = ({
       ""
     )}
     <StyledTextarea
-      aria-describedby={hintId}
+      aria-describedby={
+        hintId !== undefined || errorId !== undefined
+          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          : undefined
+      }
       id={id}
       name={name}
       rows={rows}

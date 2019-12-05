@@ -41,7 +41,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
   }, _react["default"].createElement("span", {
     className: "g-textareaBlock-visually-hidden"
   }, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", _react["default"].createElement("textarea", {
-    "aria-describedby": hintId,
+    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-textareaBlock-textarea",
     id: id,
     name: name,

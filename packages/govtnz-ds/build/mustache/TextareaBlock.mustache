@@ -71,9 +71,7 @@ class="g-textareaBlock-visually-hidden"
   
   
 <textarea
-{{#hintId}}
-  aria-describedby="{{hintId}}"
-{{/hintId}}
+aria-describedby="{{hintId}} {{errorId}}"
 class="g-textareaBlock-textarea"
 {{#id}}
   id="{{id}}"

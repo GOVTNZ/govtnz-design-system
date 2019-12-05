@@ -57,7 +57,7 @@ class="g-textareaBlock-visually-hidden"
   
   
 <textarea
-aria-describedby="{{ hintId | escape('html_attr') }}"
+aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
 class="g-textareaBlock-textarea"
 id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
