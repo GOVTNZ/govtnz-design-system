@@ -12,7 +12,7 @@
     "@babel/preset-react": "^7.7.4",
     "@govtnz/ds": "0.1.0",
     "@sentry/browser": "^5.3.0",
-    "@springload/metatemplate": "0.2.3",
+    "@springload/metatemplate": "^0.2.5",
     "acorn": "^6.1.1",
     "acorn-jsx": "^5.0.1",
     "babel-jest": "^24.8.0",
@@ -87,8 +87,5 @@
       "../govt-ds/releases/"
     ],
     "delay": "2500"
-  },
-  "devDependencies": {
-    "@springload/metatemplate": "^0.2.5"
   }
 }
