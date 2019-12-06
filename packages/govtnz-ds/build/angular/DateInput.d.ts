@@ -16,6 +16,8 @@ export declare class AppComponent {
     autoComplete: any;
     monthId: string | undefined;
     yearName: string;
+    value2: string | undefined;
     yearId: string | undefined;
+    value3: string | undefined;
     title: string;
 }

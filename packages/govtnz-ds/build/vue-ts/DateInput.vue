@@ -38,10 +38,10 @@
               v-bind:name="dayName"
               pattern="[0-9]*"
               type="text"
+              v-bind:value="value"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
-              v-bind:value="value"
               v-bind:spellcheck="spellCheck"
               v-bind:autocomplete="autoComplete"
             />
@@ -64,10 +64,10 @@
               v-bind:name="yearName"
               pattern="[0-9]*"
               type="text"
+              v-bind:value="value2"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
-              v-bind:value="value"
               v-bind:spellcheck="spellCheck"
               v-bind:autocomplete="autoComplete"
             />
@@ -90,10 +90,10 @@
               v-bind:name="yearName"
               pattern="[0-9]*"
               type="text"
+              v-bind:value="value3"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
-              v-bind:value="value"
               v-bind:spellcheck="spellCheck"
               v-bind:autocomplete="autoComplete"
             />
@@ -129,7 +129,9 @@ export default Vue.extend({
     autoComplete: { type: String, required: true },
     monthId: { type: String, required: false },
     yearName: { type: String, required: true },
-    yearId: { type: String, required: false }
+    value2: { type: String, required: false },
+    yearId: { type: String, required: false },
+    value3: { type: String, required: false }
   },
   computed: {
     computed__class() {

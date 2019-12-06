@@ -307,7 +307,11 @@ var DateInput = function DateInput(_ref) {
       onChange = _ref.onChange,
       monthId = _ref.monthId,
       yearName = _ref.yearName,
-      yearId = _ref.yearId;
+      value2 = _ref.value2,
+      onChange2 = _ref.onChange2,
+      yearId = _ref.yearId,
+      value3 = _ref.value3,
+      onChange3 = _ref.onChange3;
   return _react["default"].createElement(StyledDiv, {
     errorId: errorId
   }, _react["default"].createElement(StyledFieldset, {
@@ -328,10 +332,10 @@ var DateInput = function DateInput(_ref) {
     name: dayName,
     pattern: "[0-9]*",
     type: "text",
+    value: value,
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
-    value: value,
     spellCheck: spellCheck,
     autoComplete: autoComplete,
     onChange: onChange
@@ -344,13 +348,13 @@ var DateInput = function DateInput(_ref) {
     name: yearName,
     pattern: "[0-9]*",
     type: "text",
+    value: value2,
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
-    value: value,
     spellCheck: spellCheck,
     autoComplete: autoComplete,
-    onChange: onChange
+    onChange: onChange2
   }))), _react["default"].createElement(StyledDiv7, null, _react["default"].createElement(StyledDiv8, null, _react["default"].createElement(StyledLabel3, {
     htmlFor: yearId
   }, "Year"), _react["default"].createElement(StyledInput3, {
@@ -360,13 +364,13 @@ var DateInput = function DateInput(_ref) {
     name: yearName,
     pattern: "[0-9]*",
     type: "text",
+    value: value3,
     disabled: disabled,
     readOnly: readOnly,
     autoFocus: autoFocus,
-    value: value,
     spellCheck: spellCheck,
     autoComplete: autoComplete,
-    onChange: onChange
+    onChange: onChange3
   }))))));
 };
 

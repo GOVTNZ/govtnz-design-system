@@ -17,7 +17,11 @@ declare type Props = {
     onChange: any;
     monthId?: string;
     yearName: string;
+    value2?: string;
+    onChange2: any;
     yearId?: string;
+    value3?: string;
+    onChange3: any;
 };
-declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, monthId, yearName, yearId }: Props) => JSX.Element;
+declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, monthId, yearName, value2, onChange2, yearId, value3, onChange3 }: Props) => JSX.Element;
 export default DateInput;
