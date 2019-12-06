@@ -9,15 +9,15 @@
       { "id": "Checkboxes", "name": "Checkboxes", "stable": true },
       { "id": "Select", "name": "Select", "stable": true },
       { "id": "Date", "name": "Date input", "stable": true },
-      { "id": "Button", "name": "Button", "stable": true }
+      { "id": "Button", "name": "Button", "stable": true },
+      { "id": "Fieldset", "name": "Fieldset", "stable": true },
+      { "id": "Textarea", "name": "Textarea", "stable": true }
     ]
   },
   {
     "title": "Coming soon",
     "stable": false,
     "items": [
-      { "id": "Fieldset", "name": "Fieldset", "stable": false },
-      { "id": "Textarea", "name": "Textarea", "stable": false },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }
     ]

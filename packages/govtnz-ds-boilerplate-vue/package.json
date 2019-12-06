@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@govtnz/ds": "0.1.1",
+    "@govtnz/ds": "0.1.2",
     "@vue/cli-service": "3.5.3",
     "postcss-load-config": "^2.1.0",
     "postcss-loader": "^3.0.0",
