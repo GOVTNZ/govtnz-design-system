@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import H1 from '@govtnz/ds/build/react-ts/H1.tsx';
+import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 
 import PatternsPage from '../../components/PatternsPage';

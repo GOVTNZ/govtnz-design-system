@@ -8,11 +8,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
-import H2 from '@govtnz/ds/build/react-ts/H2.tsx';
+import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
-import Ul from '@govtnz/ds/build/react-ts/Ul.tsx';
+import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
-import Li from '@govtnz/ds/build/react-ts/Li.tsx';
+import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
 import components__Checkboxes from '../../commons/examples/components__Checkboxes';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.

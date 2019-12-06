@@ -27,13 +27,10 @@ const getDsPath = async dsPath => {
   const stablePath = path.join(dsRoot, stableDsPath);
   const hasStable = await pathExists(stablePath);
   if (hasStable) {
+    if (stableDsPath.endsWith('.js')) {
+      return stableDsPath.substring(0, stableDsPath.length - '.js'.length);
+    }
     return stableDsPath;
-  }
-  const alphaDsPath = path.join('alpha', dsPath);
-  const alphaPath = path.join(dsRoot, alphaDsPath);
-  const hasAlpha = await pathExists(alphaPath);
-  if (hasAlpha) {
-    return alphaDsPath;
   }
 };
 
@@ -41,7 +38,7 @@ const importGenerator = async (importName, errorOnMissingImports) => {
   if (['ExampleHeading', 'ExampleContainer'].includes(importName)) {
     throw Error(importName);
   }
-  const reactTs = await getDsPath(`react-ts/${importName}.tsx`);
+  const reactTs = await getDsPath(`react-ts/${importName}.js`);
   const css = `commons/styles/ds/themed-${importName}.scss`;
 
   let importString = '';
