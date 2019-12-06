@@ -2,6 +2,8 @@
 
 ## Version 0.1.2
 
+- New: FieldsetBlock component
+- New: TextAreaBlock component
 - Fix: TextAreaBlock's error id added to `aria-describedby`.
 
 ## Version 0.1.1
