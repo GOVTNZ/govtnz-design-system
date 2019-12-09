@@ -1440,6 +1440,33 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
+"@springload/metatemplate@^0.2.8":
+  version "0.2.8"
+  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.2.8.tgz#50882ee8a0fcc2189c502d7486525d073b3b5834"
+  integrity sha512-1pL9WtPKG6Sthi8Guxif/m8dW3NTknU1KUotgEql4nAyuTg0v0Ux0HiLptmg5vA3nnJJI6DhVNkTFgVPfgroFQ==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.4.4"
+    "@babel/plugin-proposal-object-rest-spread" "^7.4.4"
+    "@babel/plugin-transform-runtime" "^7.4.4"
+    "@babel/preset-env" "^7.4.4"
+    "@babel/preset-react" "^7.0.0"
+    "@babel/preset-typescript" "^7.3.3"
+    "@babel/runtime" "^7.4.4"
+    jest "^24.8.0"
+    jsdom "^15.2.1"
+    jsx2json "^1.0.1"
+    lodash "^4.17.15"
+    postcss-safe-parser "^4.0.1"
+    prettier "^1.16.4"
+    puppeteer "1.14.0"
+    react "^16.12.0"
+    rmfr "^2.0.0"
+    split-css-selector "^1.0.0"
+    string-replace-async "^1.2.1"
+    typescript "^3.4.5"
+    vue "^2.6.10"
+    vue-template-compiler "^2.6.10"
+
 "@springload/metatemplate@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.3.0.tgz#4297ae4b2a25ba30087f778153b2753c29486f94"
@@ -1584,13 +1611,6 @@
   dependencies:
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
-
-"@types/jest@^24.0.6":
-  version "24.0.23"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.23.tgz#046f8e2ade026fe831623e361a36b6fb9a4463e4"
-  integrity sha512-L7MBvwfNpe7yVPTXLn32df/EK+AMBFAFvZrRuArGs7npEWnlziUXK+5GMIUTI4NIuwok3XibsjXCs5HxviYXjg==
-  dependencies:
-    jest-diff "^24.3.0"
 
 "@types/jsdom@^12.2.1":
   version "12.2.4"
@@ -9375,7 +9395,7 @@ jest-config@^24.9.0:
     pretty-format "^24.9.0"
     realpath-native "^1.1.0"
 
-jest-diff@^24.3.0, jest-diff@^24.9.0:
+jest-diff@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-24.9.0.tgz#931b7d0d5778a1baf7452cb816e325e3724055da"
   integrity sha512-qMfrTs8AdJE2iqrTp0hzh7kTd2PQWrsFyj9tORoKmu32xjPjeE4NyjVRDz8ybYwqS2ik8N4hsIpiVTyFeo2lBQ==
@@ -13307,6 +13327,11 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-accessible-details@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/react-accessible-details/-/react-accessible-details-3.0.4.tgz#3b89b50c8e7fe61bbffd2d37d22278af2308d852"
+  integrity sha512-fiRFNFT976Sd8vPYRy0u2u5XTd8YSm3URVi3xGyNYDW4u2cBydlQx9Rnl5hqpbkLVHAt1iAm+s6XosU9DGEmJQ==
+
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -15875,7 +15900,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.0.0, typescript@^3.2.4, typescript@^3.3.4000, typescript@^3.4.5, typescript@^3.5.2, typescript@^3.7.2:
+typescript@^3.0.0, typescript@^3.2.4, typescript@^3.4.5, typescript@^3.5.2, typescript@^3.7.2:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
   integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
