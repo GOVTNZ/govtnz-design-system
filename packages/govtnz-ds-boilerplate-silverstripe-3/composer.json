@@ -4,7 +4,7 @@
     "require": {
         "php": ">=5.3.3",
         "silverstripe/cms": "3.7.3@stable",
-        "silverstripe/framework": "3.7.3@stable",
+        "silverstripe/framework": "3.7.4@stable",
         "silverstripe/reports": "3.7.3@stable",
         "silverstripe/siteconfig": "3.7.3@stable",
         "silverstripe-themes/simple": "3.1.*",
