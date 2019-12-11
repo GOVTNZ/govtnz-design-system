@@ -3,6 +3,7 @@
 // ============================================================================
 @import './settings-global';
 @import './settings-breakpoints';
+@import './settings-mixins';
 
 .example__container {
   border: solid 1px $color-ds-default-mid-grey;
@@ -20,6 +21,10 @@
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
+
+  @include print {
+    display: flex;
+  }
 }
 
 .example__container--padded {
@@ -46,5 +51,7 @@
 
   @include print {
     box-decoration-break: clone;
+    overflow-y: hidden;
+    flex: 1;
   }
 }

@@ -457,7 +457,13 @@ const ColoursPage = (pageProps: PageRendererProps) => (
           </P>
           <Row>
             {swatches[0].map(swatch => (
-              <Column xs="12" sm="6" md="3" lg="3">
+              <Column
+                xs="12"
+                sm="6"
+                md="3"
+                lg="3"
+                key={`0-${swatch.colorCode}`}
+              >
                 <ColorSwatch
                   colorCode={swatch.colorCode}
                   colorName={swatch.colorName}
