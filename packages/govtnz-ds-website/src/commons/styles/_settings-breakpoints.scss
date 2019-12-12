@@ -37,13 +37,6 @@ $breakpoint-xlarge: 1200px;
     @content;
   }
 }
-
-@mixin print {
-  @media print {
-    @content;
-  }
-}
-
 @mixin prefersReducedMotion {
   @media (prefers-reduced-motion: reduce) {
     @content;

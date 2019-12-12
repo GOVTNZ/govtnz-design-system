@@ -2,6 +2,7 @@
 // Icon styles
 // ============================================================================
 @import '../commons/styles/settings-global';
+@import '../commons/styles/settings-mixins';
 
 .icon {
   display: inline-block;
@@ -25,7 +26,10 @@
   > use {
     fill: $color-ds-default-green-mid;
     fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
-    fill: $color-core-black;
+
+    @include print {
+      fill: $color-core-black;
+    }
   }
 }
 

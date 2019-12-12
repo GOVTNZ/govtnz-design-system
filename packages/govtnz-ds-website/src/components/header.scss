@@ -57,14 +57,14 @@
   }
 }
 
-.header__logo--show\@print {
+.header__logo--show-print {
   @include print {
     display: inline-block;
     max-width: 230px;
   }
 }
 
-.header__logo--hide\@print {
+.header__logo--hide-print {
   @include print {
     display: none;
   }
@@ -122,7 +122,7 @@
 
   @include print {
     color: $color-core-black;
-    border-left-color: $color-core-black;
+    border-left: 1px solid $color-core-black;
   }
 }
 
