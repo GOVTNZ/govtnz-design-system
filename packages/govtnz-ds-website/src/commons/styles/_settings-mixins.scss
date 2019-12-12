@@ -43,3 +43,9 @@
     @content;
   }
 }
+
+@mixin prefersReducedMotion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
