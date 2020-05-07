@@ -37,3 +37,5 @@ export { default as flexContainer } from "./FlexContainer";
 export { default as flexRow } from "./FlexRow";
 export { default as footerStandard } from "./FooterStandard";
 export { default as footerWrapper } from "./FooterWrapper";
+export { default as mainNavItem } from "./MainNavItem";
+export { default as mainNav } from "./MainNav";

@@ -1,0 +1,8 @@
+.g-main-nav__item {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.g-main-nav__item:last-child {
+  margin-right: 0px;
+}

@@ -1,0 +1,32 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<li
+class="g-main-nav__item"
+>
+  
+  
+<a
+aria-current="{{ariaCurrent}}"
+{{#href}}
+  href="{{href}}"
+{{/href}}
+{{#rel}}
+  rel="{{rel}}"
+{{/rel}}
+{{#target}}
+  target="{{target}}"
+{{/target}}
+>
+  
+    
+  {{{children}}}
+  
+  
+</a>
+  
+
+</li>
