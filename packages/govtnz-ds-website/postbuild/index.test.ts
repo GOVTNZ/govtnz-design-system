@@ -12,6 +12,9 @@ const falsePositives = [
     message:
       'Element “h1” not allowed as child of element “legend” in this context.',
   },
+  {
+    message: 'Bad value “presentation” for attribute “role” on element “svg”',
+  },
 ];
 
 const indexPage = readFileSync(
