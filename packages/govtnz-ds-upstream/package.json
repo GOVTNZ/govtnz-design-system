@@ -27,7 +27,7 @@
     "glob-promise": "^3.4.0",
     "jest": "^24.1.0",
     "jsdom": "^13.2.0",
-    "mkdirp-promise": "^5.0.1",
+    "mkdirp": "^1.0.4",
     "node-fetch": "^2.3.0",
     "posthtml": "^0.11.3",
     "posthtml-attrs-sorter": "^1.1.0",

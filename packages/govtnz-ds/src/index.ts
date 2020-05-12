@@ -440,27 +440,18 @@ const saveRelease = async (
   if (numberOfFiles === 0) {
     throw Error('Excepted some files to save. Received 0.');
   }
-  console.log(`Writing ${numberOfFiles} files`);
 
   // Clean up after previous release
   const buildPath = path.resolve(__dirname, '..', 'build');
 
-  console.log('Step1');
   await rmfr(path.join(buildPath, '*'), { glob: true });
 
-  console.log('Step2');
-
   await mkdirp(buildPath);
-
-  console.log('Step3');
 
   const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
   await rmfr(path.join(buildSrcPath, '*'), { glob: true });
 
-  console.log('Step4');
   await mkdirp(buildSrcPath);
-
-  console.log('Step5');
 
   let metaTemplateInputsById = allReleaseVersions.reduce(
     (

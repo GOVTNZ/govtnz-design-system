@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import glob from "glob-promise";
 import rmfr from "rmfr";
-import mkdirpPromise from "mkdirp-promise";
+import mkdirpPromise from "mkdirp";
 import { uniq } from "lodash";
 import syncGovUk from "./govuk";
 import syncGeneric from "./generic";
@@ -46,9 +46,11 @@ export default async (
 
   // Combine all valid Ids
   let validPatternIds: string[] = [];
-  releaseVersions.forEach(releaseVersion => {
+  releaseVersions.forEach((releaseVersion) => {
     releaseVersion.validComponentIds &&
-      releaseVersion.validComponentIds.forEach(id => validPatternIds.push(id));
+      releaseVersion.validComponentIds.forEach((id) =>
+        validPatternIds.push(id)
+      );
   });
   validPatternIds = uniq(validPatternIds);
 
@@ -65,12 +67,12 @@ const ensurePatternIds = (
   sourceId: SourceId,
   semVer: string
 ): void => {
-  const matchingPatternIds = validPatternIds.filter(validPatternId =>
+  const matchingPatternIds = validPatternIds.filter((validPatternId) =>
     patternIds.includes(validPatternId)
   );
 
   const unfoundPatternIds = patternIds.filter(
-    patternId => !validPatternIds.includes(patternId)
+    (patternId) => !validPatternIds.includes(patternId)
   );
 
   if (unfoundPatternIds.length > 0) {
@@ -95,9 +97,9 @@ export const saveComponents = async (
   // Note that __dirname might be in the dist directory so we need to move up then back into src
   const sourcePath = path.resolve(__dirname, "..", "src", "upstream", sourceId);
 
-  const versions = components.map(component => component.version);
+  const versions = components.map((component) => component.version);
   await Promise.all(
-    versions.map(async version => {
+    versions.map(async (version) => {
       await rmfr(path.join(sourcePath, version, "*"), { glob: true });
     })
   );
@@ -149,11 +151,13 @@ export const getCache = async (
   // because our use of GovUK CSS is identical across components we will
   // reuse CSS
   let cssCache: string | undefined;
-  const cssPath = filePaths.find(filePath => filePath.endsWith(".css"));
+  const cssPath = filePaths.find((filePath) => filePath.endsWith(".css"));
   if (cssPath) {
-    cssCache = (await fs.promises.readFile(cssPath, {
-      encoding: "utf-8"
-    }))
+    cssCache = (
+      await fs.promises.readFile(cssPath, {
+        encoding: "utf-8",
+      })
+    )
       .toString()
       .replace(/@charset.*?;/g, ""); // for our usage we assume utf-8, so charset is irrelevant.
   }
@@ -165,9 +169,11 @@ export const getCache = async (
       if (isCSS && cssCache) {
         data = cssCache;
       } else {
-        data = (await fs.promises.readFile(filePath, {
-          encoding: "utf-8"
-        })).toString();
+        data = (
+          await fs.promises.readFile(filePath, {
+            encoding: "utf-8",
+          })
+        ).toString();
       }
       const fileCache: FileCache = { filePath, data };
       return fileCache;
@@ -182,7 +188,7 @@ export const getCache = async (
       const id = basename.substring(0, firstDot);
       const extMap = {
         ".html": "html",
-        ".css": "css"
+        ".css": "css",
       };
       const key = extMap[extname];
       if (!key)
@@ -192,7 +198,7 @@ export const getCache = async (
         id,
         version,
         ...componentsById[id],
-        [key]: fileCache.data
+        [key]: fileCache.data,
       };
       componentsById[id] = component;
 
@@ -203,9 +209,11 @@ export const getCache = async (
 
   let creditMarkdown: string;
   try {
-    creditMarkdown = (await fs.promises.readFile(path.join(base, "credit.md"), {
-      encoding: "utf-8"
-    })).toString();
+    creditMarkdown = (
+      await fs.promises.readFile(path.join(base, "credit.md"), {
+        encoding: "utf-8",
+      })
+    ).toString();
   } catch (e) {
     console.log(`${__filename}:getCache() Couldn't find ${base} + credit.md`);
     throw e;
@@ -221,10 +229,10 @@ export const getCache = async (
     sourceId,
     version,
     components,
-    validComponentIds: allFilePaths.map(filePath =>
+    validComponentIds: allFilePaths.map((filePath) =>
       path.basename(filePath, path.extname(filePath))
     ),
-    creditMarkdown: creditMarkdown.toString()
+    creditMarkdown: creditMarkdown.toString(),
   };
 
   return releaseVersion;
