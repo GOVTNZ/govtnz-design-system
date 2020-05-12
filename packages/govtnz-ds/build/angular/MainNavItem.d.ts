@@ -1,6 +1,6 @@
 /// <reference types="react" />
 export declare class AppComponent {
-    ariaCurrent: any;
+    ariaCurrent: any | undefined;
     href: string;
     rel: string | undefined;
     target: any | undefined;

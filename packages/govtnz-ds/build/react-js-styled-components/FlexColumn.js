@@ -1248,7 +1248,7 @@ var FlexColumn = function FlexColumn(_ref) {
       lgOffset = _ref.lgOffset,
       isReversed = _ref.isReversed,
       children = _ref.children;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     xs: xs,
     sm: sm,
     md: md,
@@ -1258,7 +1258,7 @@ var FlexColumn = function FlexColumn(_ref) {
     mdOffset: mdOffset,
     lgOffset: lgOffset,
     isReversed: isReversed
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Content..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."));
 };
 
 var _default = FlexColumn;

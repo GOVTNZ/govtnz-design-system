@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 declare type Props = {
     styleSize: "xlarge" | "large" | "medium" | "small" | "xsmall" | "xxsmall";
     marginBottom8?: boolean;

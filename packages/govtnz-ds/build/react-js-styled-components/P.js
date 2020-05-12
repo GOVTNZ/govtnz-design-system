@@ -316,9 +316,9 @@ var StyledP = _styledComponents["default"].p(_templateObject(), function (props)
 var P = function P(_ref) {
   var styleSize = _ref.styleSize,
       children = _ref.children;
-  return _react["default"].createElement(StyledP, {
+  return /*#__PURE__*/_react["default"].createElement(StyledP, {
     styleSize: styleSize
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = P;

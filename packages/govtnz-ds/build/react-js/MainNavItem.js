@@ -14,15 +14,18 @@ var MainNavItem = function MainNavItem(_ref) {
       href = _ref.href,
       rel = _ref.rel,
       target = _ref.target,
+      onClick = _ref.onClick,
       children = _ref.children;
-  return _react["default"].createElement("li", {
+  return /*#__PURE__*/_react["default"].createElement("li", {
     className: "g-main-nav__item"
-  }, _react["default"].createElement("a", {
-    "aria-current": ariaCurrent ? ariaCurrent : "",
+  }, /*#__PURE__*/_react["default"].createElement("a", {
+    "aria-current": ariaCurrent,
+    className: "g-main-nav__item__link",
     href: href,
     rel: rel,
-    target: target
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " Example item text ")));
+    target: target,
+    onClick: onClick
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example item text ")));
 };
 
 var _default = MainNavItem;

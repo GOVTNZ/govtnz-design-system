@@ -84,11 +84,12 @@ var RadioBlock = function RadioBlock(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
+      ref = _ref.ref,
       label = _ref.label,
       hint = _ref.hint;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, _react["default"].createElement(StyledInput, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledInput, {
     "aria-describedby": hintId,
     id: id,
     name: name,
@@ -98,12 +99,13 @@ var RadioBlock = function RadioBlock(_ref) {
     autoFocus: autoFocus,
     value: value,
     checked: checked,
-    onChange: onChange
-  }), _react["default"].createElement(StyledLabel, {
+    onChange: onChange,
+    ref: ref
+  }), /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
 var _default = RadioBlock;

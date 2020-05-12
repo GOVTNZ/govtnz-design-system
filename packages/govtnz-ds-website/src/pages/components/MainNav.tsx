@@ -34,13 +34,10 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
         id:"iframe_componentsMainNav0",
         className: "example__iframe",
         src:"/components/MainNav__example0.html",
-        title:"Example: MainNav",
-        height: 130
+        title:"Example: MainNav in a Header",
+        height: 140
       }}></Example>
 </ExampleContainer>
-
-<h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="http://flexboxgrid.com/">FlexboxGrid</a> version 6.3.2. Licensed under <a href="https://github.com/kristoferjoseph/flexboxgrid">the Apache Licence version 2.0</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

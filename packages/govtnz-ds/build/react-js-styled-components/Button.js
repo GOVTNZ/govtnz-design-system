@@ -80,13 +80,13 @@ var Button = function Button(_ref) {
       type = _ref.type,
       onClick = _ref.onClick,
       children = _ref.children;
-  return _react["default"].createElement(StyledButton, {
+  return /*#__PURE__*/_react["default"].createElement(StyledButton, {
     disabled: disabled,
     level: level,
     type: type,
     name: name,
     onClick: onClick
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " Example text "));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example text "));
 };
 
 var _default = Button;

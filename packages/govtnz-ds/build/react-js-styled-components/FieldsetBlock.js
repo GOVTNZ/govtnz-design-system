@@ -116,15 +116,15 @@ var FieldsetBlock = function FieldsetBlock(_ref) {
       hint = _ref.hint,
       error = _ref.error,
       children = _ref.children;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, _react["default"].createElement(StyledFieldset, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined
-  }, _react["default"].createElement(StyledLegend, null, legend !== undefined ? legend : _react["default"].createElement(_react["default"].Fragment, null, "Legend text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledLegend, null, legend !== undefined ? legend : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, _react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", _react["default"].createElement(StyledDiv4, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
+  }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };
 
 var _default = FieldsetBlock;

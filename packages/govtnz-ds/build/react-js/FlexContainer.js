@@ -19,9 +19,9 @@ var constants = {
 var FlexContainer = function FlexContainer(_ref) {
   var width = _ref.width,
       children = _ref.children;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: constants.width[width] !== undefined ? constants.width[width] : ""
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
 };
 
 var _default = FlexContainer;

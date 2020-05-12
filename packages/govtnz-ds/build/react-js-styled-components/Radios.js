@@ -28,9 +28,9 @@ var StyledDiv = _styledComponents["default"].div(_templateObject());
 var Radios = function Radios(_ref) {
   var inline = _ref.inline,
       children = _ref.children;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     inline: inline
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
 };
 
 var _default = Radios;

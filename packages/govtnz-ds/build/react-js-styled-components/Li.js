@@ -27,7 +27,7 @@ var StyledLi = _styledComponents["default"].li(_templateObject());
 
 var Li = function Li(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement(StyledLi, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  return /*#__PURE__*/_react["default"].createElement(StyledLi, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = Li;

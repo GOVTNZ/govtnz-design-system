@@ -108,12 +108,13 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
+      ref = _ref.ref,
       label = _ref.label,
       hint = _ref.hint,
       error = _ref.error;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, _react["default"].createElement(StyledInput, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledInput, {
     "aria-describedby": hintId,
     id: id,
     type: "checkbox",
@@ -123,14 +124,15 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     name: name,
     value: value,
     checked: checked,
-    onChange: onChange
-  }), _react["default"].createElement(StyledLabel, {
+    onChange: onChange,
+    ref: ref
+  }), /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, _react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "");
+  }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "");
 };
 
 var _default = CheckboxBlock;

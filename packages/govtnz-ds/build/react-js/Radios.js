@@ -12,9 +12,9 @@ var _react = _interopRequireDefault(require("react"));
 var Radios = function Radios(_ref) {
   var inline = _ref.inline,
       children = _ref.children;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radios".concat(inline ? " g-radios--inline" : "")
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
 };
 
 var _default = Radios;

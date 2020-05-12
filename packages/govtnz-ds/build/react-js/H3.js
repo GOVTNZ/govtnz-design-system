@@ -26,10 +26,10 @@ var H3 = function H3(_ref) {
       marginBottom0 = _ref.marginBottom0,
       id = _ref.id,
       children = _ref.children;
-  return _react["default"].createElement("h3", {
+  return /*#__PURE__*/_react["default"].createElement("h3", {
     className: "".concat(constants.styleSize[styleSize] !== undefined ? constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : "").concat(marginBottom0 ? " g-heading-mb-0" : ""),
     id: id
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = H3;

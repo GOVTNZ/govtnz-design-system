@@ -47,6 +47,7 @@ exports.FlexContainer = function () { return Promise.resolve().then(function () 
 exports.FlexRow = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexRow")); }); };
 exports.FooterStandard = function () { return Promise.resolve().then(function () { return __importStar(require("./FooterStandard")); }); };
 exports.FooterWrapper = function () { return Promise.resolve().then(function () { return __importStar(require("./FooterWrapper")); }); };
+exports.Header = function () { return Promise.resolve().then(function () { return __importStar(require("./Header")); }); };
 exports.MainNavItem = function () { return Promise.resolve().then(function () { return __importStar(require("./MainNavItem")); }); };
 exports.MainNav = function () { return Promise.resolve().then(function () { return __importStar(require("./MainNav")); }); };
 //# sourceMappingURL=index.js.map

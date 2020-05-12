@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 declare type Props = {
     errorId?: string;
     id?: string;
@@ -18,7 +18,8 @@ declare type Props = {
     spellCheck?: boolean;
     maxLength?: number;
     autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-    onChange: any;
+    onChange?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
+    ref?: React.RefObject<HTMLInputElement>;
 };
-declare const InputBlock: ({ errorId, id, label, hint, hintId, error, width, disabled, readOnly, autoFocus, name, value, min, max, type, spellCheck, maxLength, autoComplete, onChange }: Props) => JSX.Element;
+declare const InputBlock: ({ errorId, id, label, hint, hintId, error, width, disabled, readOnly, autoFocus, name, value, min, max, type, spellCheck, maxLength, autoComplete, onChange, ref }: Props) => JSX.Element;
 export default InputBlock;

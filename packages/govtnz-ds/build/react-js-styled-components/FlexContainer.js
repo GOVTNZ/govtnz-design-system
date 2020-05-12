@@ -76,9 +76,9 @@ var StyledDiv = _styledComponents["default"].div(_templateObject(), function (pr
 var FlexContainer = function FlexContainer(_ref) {
   var width = _ref.width,
       children = _ref.children;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     width: width
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
 };
 
 var _default = FlexContainer;

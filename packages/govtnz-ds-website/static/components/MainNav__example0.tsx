@@ -5,7 +5,7 @@
 import React, { Fragment, useState } from 'react';
 import ReactDOM from 'react-dom';
 
-import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavItem from '@govtnz/ds/build/react-ts/MainNavItem';
+import Header from '@govtnz/ds/build/react-ts/Header';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavItem from '@govtnz/ds/build/react-ts/MainNavItem';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,12 +13,14 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: MainNav" {...onChangeGenerator({})}>
-        <MainNav {...onChangeGenerator({})}>
-            <MainNavItem href="/" {...onChangeGenerator({})}>Home</MainNavItem>
-            <MainNavItem href="/about" {...onChangeGenerator({})}>About</MainNavItem>
-            <MainNavItem href="/contact" {...onChangeGenerator({})}>Contact</MainNavItem>
-        </MainNav>
+var PageContent = (props) => (<Example title="Example: MainNav in a Header" {...onChangeGenerator({})}>
+        <Header {...onChangeGenerator({})}>
+            <MainNav {...onChangeGenerator({})}>
+                <MainNavItem href="/" {...onChangeGenerator({})}>Home</MainNavItem>
+                <MainNavItem href="/about" {...onChangeGenerator({})}>About</MainNavItem>
+                <MainNavItem href="/contact" {...onChangeGenerator({})}>Contact</MainNavItem>
+            </MainNav>
+        </Header>
     </Example>);
 
       const onChangeGenerator = (props) => {

@@ -17,7 +17,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-MainNav",
-            template: "\n    <nav aria-label=\"Main\" class=\"g-main-nav\" role=\"navigation\">\n      <ul>\n        <slot></slot>\n      </ul>\n    </nav>\n  "
+            template: "\n    <nav aria-label=\"Main\" class=\"g-main-nav\" role=\"navigation\">\n      <ul class=\"g-main-nav__ul\">\n        <slot></slot>\n      </ul>\n    </nav>\n  "
         })
     ], AppComponent);
     return AppComponent;

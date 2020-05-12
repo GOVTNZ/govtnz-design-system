@@ -54,16 +54,20 @@ var FileUpload = function FileUpload(_ref) {
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
-      name = _ref.name;
-  return _react["default"].createElement(StyledDiv, null, _react["default"].createElement(StyledLabel, {
+      name = _ref.name,
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, "Upload a file"), _react["default"].createElement(StyledInput, {
+  }, "Upload a file"), /*#__PURE__*/_react["default"].createElement(StyledInput, {
     id: id,
     name: name,
     type: "file",
     disabled: disabled,
     readOnly: readOnly,
-    autoFocus: autoFocus
+    autoFocus: autoFocus,
+    onChange: onChange,
+    ref: ref
   }));
 };
 

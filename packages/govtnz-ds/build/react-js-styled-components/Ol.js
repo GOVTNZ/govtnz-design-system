@@ -40,9 +40,9 @@ var StyledOl = _styledComponents["default"].ol(_templateObject(), function (prop
 var Ol = function Ol(_ref) {
   var numbered = _ref.numbered,
       children = _ref.children;
-  return _react["default"].createElement(StyledOl, {
+  return /*#__PURE__*/_react["default"].createElement(StyledOl, {
     numbered: numbered
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = Ol;

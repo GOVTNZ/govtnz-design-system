@@ -1,13 +1,9 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(require("react"));
+var react_1 = __importDefault(require("react"));
 var constants = {
     styleSize: {
         xlarge: "g-heading-xl",
@@ -20,9 +16,9 @@ var constants = {
 };
 var H4 = function (_a) {
     var styleSize = _a.styleSize, marginBottom8 = _a.marginBottom8, marginBottom0 = _a.marginBottom0, id = _a.id, children = _a.children;
-    return (React.createElement("h4", { className: "" + (constants.styleSize[styleSize] !== undefined
+    return (react_1.default.createElement("h4", { className: "" + (constants.styleSize[styleSize] !== undefined
             ? constants.styleSize[styleSize]
-            : "") + (marginBottom8 ? " g-heading-mb-8" : "") + (marginBottom0 ? " g-heading-mb-0" : ""), id: id }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+            : "") + (marginBottom8 ? " g-heading-mb-8" : "") + (marginBottom0 ? " g-heading-mb-0" : ""), id: id }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = H4;
 //# sourceMappingURL=H4.js.map

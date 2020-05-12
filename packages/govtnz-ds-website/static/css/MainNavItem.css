@@ -6,3 +6,11 @@
 .g-main-nav__item:last-child {
   margin-right: 0px;
 }
+
+.g-main-nav__item__link {
+  display: inline-block;
+  padding: 0.3em;
+  color: var(--g-theme-inverted-color, #ffffff);
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -23,13 +23,13 @@ var Button = function Button(_ref) {
       type = _ref.type,
       onClick = _ref.onClick,
       children = _ref.children;
-  return _react["default"].createElement("button", {
+  return /*#__PURE__*/_react["default"].createElement("button", {
     className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
     disabled: disabled,
     type: type,
     name: name,
     onClick: onClick
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " Example text "));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example text "));
 };
 
 var _default = Button;

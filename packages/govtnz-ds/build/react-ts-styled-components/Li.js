@@ -3,20 +3,16 @@ var __makeTemplateObject = (this && this.__makeTemplateObject) || function (cook
     if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
     return cooked;
 };
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(require("react"));
-var styled = __importStar(require("styled-components"));
-var StyledLi = styled.li(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"], ["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"])));
+var react_1 = __importDefault(require("react"));
+var styled_components_1 = __importDefault(require("styled-components"));
+var StyledLi = styled_components_1.default.li(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"], ["\n  margin-bottom: 0.25rem;\n  margin-bottom: 0;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 5px;\n  }\n  margin-top: 0px;\n"])));
 var Li = function (_a) {
     var children = _a.children;
-    return (React.createElement(StyledLi, null, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Example text"))));
+    return (react_1.default.createElement(StyledLi, null, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = Li;
 var templateObject_1;

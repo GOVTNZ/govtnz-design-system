@@ -13,8 +13,18 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject2() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  list-style: none;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -25,12 +35,14 @@ function _templateObject() {
 
 var StyledNav = _styledComponents["default"].nav(_templateObject());
 
+var StyledUl = _styledComponents["default"].ul(_templateObject2());
+
 var MainNav = function MainNav(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement(StyledNav, {
+  return /*#__PURE__*/_react["default"].createElement(StyledNav, {
     "aria-label": "Main",
     role: "navigation"
-  }, _react["default"].createElement("ul", null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, " MainNavItem components go here ")));
+  }, /*#__PURE__*/_react["default"].createElement(StyledUl, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " MainNavItem components go here ")));
 };
 
 var _default = MainNav;

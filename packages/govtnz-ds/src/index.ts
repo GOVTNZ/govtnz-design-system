@@ -9,7 +9,7 @@ import {
 } from '@springload/metatemplate';
 import ProgressBar from 'progress';
 import rmfr from 'rmfr';
-import mkdirp from 'mkdirp-promise';
+import mkdirp from 'mkdirp';
 import { ensureNodeVersion, safeMerge } from '@govtnz/ds-common';
 import getUpstream, {
   SourceId,
@@ -31,7 +31,7 @@ import { normalizeGovUkTemplate } from './normalize-govuk';
 ensureNodeVersion();
 
 async function main(
-  noCache: boolean = false,
+  noCache: boolean,
   componentIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
   sources?: string[] | undefined
@@ -136,6 +136,8 @@ async function main(
       releaseItem.cssVariables
     );
   }
+
+  console.log('++++++++++++ ALL FILES +++++++++++++++ ');
 
   let allFiles = safeMerge(...release.map(releaseItem => releaseItem.files));
   const allReleaseVersions = release.map(
@@ -434,14 +436,31 @@ const saveRelease = async (
   //   'react-js/back-link.js': 'import React from \'react\';\n // etc...',
   // }
 
+  const numberOfFiles = Object.keys(files).length;
+  if (numberOfFiles === 0) {
+    throw Error('Excepted some files to save. Received 0.');
+  }
+  console.log(`Writing ${numberOfFiles} files`);
+
   // Clean up after previous release
   const buildPath = path.resolve(__dirname, '..', 'build');
+
+  console.log('Step1');
   await rmfr(path.join(buildPath, '*'), { glob: true });
+
+  console.log('Step2');
+
   await mkdirp(buildPath);
+
+  console.log('Step3');
 
   const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
   await rmfr(path.join(buildSrcPath, '*'), { glob: true });
+
+  console.log('Step4');
   await mkdirp(buildSrcPath);
+
+  console.log('Step5');
 
   let metaTemplateInputsById = allReleaseVersions.reduce(
     (
@@ -465,6 +484,8 @@ const saveRelease = async (
       encoding: 'utf-8'
     }
   );
+
+  console.log('Step5');
 
   // Write the new release
   const releaseFilePaths = Object.keys(files);
@@ -560,7 +581,7 @@ const argMt =
   undefined;
 
 main(
-  !!args.noCache,
+  false,
   args.filter && args.filter.split(','),
   argMt && argMt.length > 0 ? argMt : undefined,
   args.sources && args.sources.split(',')

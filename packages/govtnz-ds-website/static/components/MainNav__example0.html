@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-nz">
   <head>
-    <title>Example: MainNav | Design System - Alpha | NZ Government</title>
+    <title>Example: MainNav in a Header | Design System - Alpha | NZ Government</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
@@ -11,7 +11,7 @@
     <script src="../react-16.8.6.production.min.js"></script>
     <script src="../react-dom-16.8.6.production.min.js"></script>
     <script src="./MainNav__example0.js"></script>
-    <link rel="stylesheet" href="../css/MainNav.css"><link rel="stylesheet" href="../css/MainNavItem.css">
+    <link rel="stylesheet" href="../css/Header.css"><link rel="stylesheet" href="../css/MainNav.css"><link rel="stylesheet" href="../css/MainNavItem.css">
     <link rel="stylesheet" href="../IframePage.css" />
   </head>
   <body>
@@ -32,7 +32,7 @@
       <a href="/">New Zealand Government design system</a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      <nav aria-label="Main" class="g-main-nav" role="navigation"><ul><li class="g-main-nav__item"><a aria-current="" href="/">Home</a></li><li class="g-main-nav__item"><a aria-current="" href="/about">About</a></li><li class="g-main-nav__item"><a aria-current="" href="/contact">Contact</a></li></ul></nav>
+      <header class="g-header" role="header"><nav aria-label="Main" class="g-main-nav" role="navigation"><ul class="g-main-nav__ul"><li class="g-main-nav__item"><a aria-current="" class="g-main-nav__item__link" href="/">Home</a></li><li class="g-main-nav__item"><a aria-current="" class="g-main-nav__item__link" href="/about">About</a></li><li class="g-main-nav__item"><a aria-current="" class="g-main-nav__item__link" href="/contact">Contact</a></li></ul></nav></header>
     </div>
     <script>
       function afterRender() {

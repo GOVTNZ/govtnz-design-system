@@ -22,8 +22,9 @@ var Textarea = function Textarea(_ref) {
       autoComplete = _ref.autoComplete,
       maxLength = _ref.maxLength,
       value = _ref.value,
-      onChange = _ref.onChange;
-  return _react["default"].createElement("textarea", {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement("textarea", {
     "aria-describedby": describedById,
     className: "g-textarea",
     id: id,
@@ -37,7 +38,8 @@ var Textarea = function Textarea(_ref) {
     autoComplete: autoComplete,
     maxLength: maxLength,
     value: value,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   });
 };
 

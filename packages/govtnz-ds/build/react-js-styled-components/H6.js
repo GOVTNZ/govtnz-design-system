@@ -487,12 +487,12 @@ var H6 = function H6(_ref) {
       marginBottom0 = _ref.marginBottom0,
       id = _ref.id,
       children = _ref.children;
-  return _react["default"].createElement(StyledH6, {
+  return /*#__PURE__*/_react["default"].createElement(StyledH6, {
     styleSize: styleSize,
     marginBottom8: marginBottom8,
     marginBottom0: marginBottom0,
     id: id
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = H6;

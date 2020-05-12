@@ -26,21 +26,22 @@ var TextareaBlock = function TextareaBlock(_ref) {
       autoComplete = _ref.autoComplete,
       maxLength = _ref.maxLength,
       value = _ref.value,
-      onChange = _ref.onChange;
-  return _react["default"].createElement("div", {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-form-group".concat(errorId ? " g-textareaBlock-form-group--error" : "")
-  }, _react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-textareaBlock-label",
     htmlFor: id
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-error-message",
     id: errorId
-  }, _react["default"].createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-textareaBlock-visually-hidden"
-  }, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", _react["default"].createElement("textarea", {
+  }, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement("textarea", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-textareaBlock-textarea",
     id: id,
@@ -54,7 +55,8 @@ var TextareaBlock = function TextareaBlock(_ref) {
     autoComplete: autoComplete,
     maxLength: maxLength,
     value: value,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   }));
 };
 

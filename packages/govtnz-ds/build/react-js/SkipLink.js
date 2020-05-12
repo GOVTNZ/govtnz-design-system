@@ -12,12 +12,14 @@ var _react = _interopRequireDefault(require("react"));
 var SkipLink = function SkipLink(_ref) {
   var href = _ref.href,
       rel = _ref.rel,
-      target = _ref.target;
-  return _react["default"].createElement("a", {
+      target = _ref.target,
+      onClick = _ref.onClick;
+  return /*#__PURE__*/_react["default"].createElement("a", {
     className: "g-skip-link",
     href: href,
     rel: rel,
-    target: target
+    target: target,
+    onClick: onClick
   }, "Skip to main content");
 };
 

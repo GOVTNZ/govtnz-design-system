@@ -143,9 +143,9 @@ var FlexColumn = function FlexColumn(_ref) {
       lgOffset = _ref.lgOffset,
       isReversed = _ref.isReversed,
       children = _ref.children;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(isReversed ? " g-flex-reverse" : "")
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Content..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."));
 };
 
 var _default = FlexColumn;

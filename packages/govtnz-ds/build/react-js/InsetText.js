@@ -13,7 +13,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var InsetText = function InsetText(_ref) {
   (0, _objectDestructuringEmpty2["default"])(_ref);
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-inset-text"
   }, "It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.");
 };

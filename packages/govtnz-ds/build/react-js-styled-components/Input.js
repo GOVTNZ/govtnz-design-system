@@ -134,8 +134,9 @@ var Input = function Input(_ref) {
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
-      onChange = _ref.onChange;
-  return _react["default"].createElement(StyledInput, {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement(StyledInput, {
     width: width,
     error: error,
     "aria-describedby": describedBy,
@@ -149,7 +150,8 @@ var Input = function Input(_ref) {
     spellCheck: spellCheck,
     maxLength: maxLength,
     autoComplete: autoComplete,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   });
 };
 

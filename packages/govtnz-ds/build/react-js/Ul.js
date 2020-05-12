@@ -12,9 +12,9 @@ var _react = _interopRequireDefault(require("react"));
 var Ul = function Ul(_ref) {
   var bulleted = _ref.bulleted,
       children = _ref.children;
-  return _react["default"].createElement("ul", {
+  return /*#__PURE__*/_react["default"].createElement("ul", {
     className: "g-ul-list".concat(bulleted ? " g-ul-list--bullet" : "")
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = Ul;

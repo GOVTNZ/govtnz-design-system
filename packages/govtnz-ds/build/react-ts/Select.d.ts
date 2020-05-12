@@ -1,10 +1,11 @@
-import * as React from "react";
+import React from "react";
 declare type Props = {
     selectId?: string;
     name: string;
     multiple?: boolean;
-    onChange: any;
+    onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
+    ref?: React.RefObject<HTMLSelectElement>;
     children?: React.ReactNode;
 };
-declare const Select: ({ selectId, name, multiple, onChange, children }: Props) => JSX.Element;
+declare const Select: ({ selectId, name, multiple, onChange, ref, children }: Props) => JSX.Element;
 export default Select;

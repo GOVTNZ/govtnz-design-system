@@ -1,6 +1,6 @@
 <template>
   <nav aria-label="Main" class="g-main-nav" role="navigation">
-    <ul>
+    <ul class="g-main-nav__ul">
       <slot></slot>
     </ul>
   </nav>
@@ -18,6 +18,12 @@ export default Vue.extend({
 <style scoped>
 .g-main-nav {
   display: block;
+  padding: 0px;
+  margin: 0px;
+}
+.g-main-nav__ul {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 </style>

@@ -30,13 +30,15 @@ var Select = function Select(_ref) {
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
+      ref = _ref.ref,
       children = _ref.children;
-  return _react["default"].createElement(StyledSelect, {
+  return /*#__PURE__*/_react["default"].createElement(StyledSelect, {
     id: selectId,
     name: name,
     multiple: multiple,
-    onChange: onChange
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("option", null, "Options")));
+    onChange: onChange,
+    ref: ref
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options")));
 };
 
 var _default = Select;

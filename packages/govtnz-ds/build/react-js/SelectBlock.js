@@ -17,19 +17,21 @@ var SelectBlock = function SelectBlock(_ref) {
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
+      ref = _ref.ref,
       children = _ref.children;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: errorId ? "g-selectBlock-form-group--error" : ""
-  }, _react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-selectBlock-label",
     htmlFor: selectId
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Example label text")), _react["default"].createElement("select", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label text")), /*#__PURE__*/_react["default"].createElement("select", {
     className: "g-selectBlock-select".concat(error ? " g-selectBlock-select--error" : ""),
     id: selectId,
     name: name,
     multiple: multiple,
-    onChange: onChange
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("option", null, "Options"))));
+    onChange: onChange,
+    ref: ref
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options"))));
 };
 
 var _default = SelectBlock;

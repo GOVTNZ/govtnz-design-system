@@ -34,8 +34,9 @@ var Checkbox = function Checkbox(_ref) {
       name = _ref.name,
       value = _ref.value,
       checked = _ref.checked,
-      onChange = _ref.onChange;
-  return _react["default"].createElement(StyledInput, {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement(StyledInput, {
     "aria-describedby": hintId,
     id: id,
     type: "checkbox",
@@ -45,7 +46,8 @@ var Checkbox = function Checkbox(_ref) {
     name: name,
     value: value,
     checked: checked,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   });
 };
 

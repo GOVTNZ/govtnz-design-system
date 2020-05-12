@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 declare type Props = {
     errorId?: string;
     hintId?: string;
@@ -14,14 +14,17 @@ declare type Props = {
     value?: string;
     spellCheck?: boolean;
     autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-    onChange: any;
+    onChange?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
+    ref?: React.RefObject<HTMLInputElement>;
     monthId?: string;
     yearName: string;
     value2?: string;
-    onChange2: any;
+    onChange2?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
+    ref2?: React.RefObject<HTMLInputElement>;
     yearId?: string;
     value3?: string;
-    onChange3: any;
+    onChange3?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
+    ref3?: React.RefObject<HTMLInputElement>;
 };
-declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, monthId, yearName, value2, onChange2, yearId, value3, onChange3 }: Props) => JSX.Element;
+declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, ref, monthId, yearName, value2, onChange2, ref2, yearId, value3, onChange3, ref3 }: Props) => JSX.Element;
 export default DateInput;

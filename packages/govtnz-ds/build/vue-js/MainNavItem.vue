@@ -2,6 +2,7 @@
   <li class="g-main-nav__item">
     <a
       v-bind:aria-current="ariaCurrent"
+      class="g-main-nav__item__link"
       v-bind:href="href"
       v-bind:rel="rel"
       v-bind:target="target"
@@ -15,7 +16,7 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    ariaCurrent: { type: String, required: true },
+    ariaCurrent: { type: String, required: false },
     href: { type: String, required: true },
     rel: { type: String, required: false },
     target: { type: String, required: false },
@@ -31,5 +32,12 @@ export default Vue.extend({
 }
 .g-main-nav__item:last-child {
   margin-right: 0px;
+}
+.g-main-nav__item__link {
+  display: inline-block;
+  padding: 0.6em 1em;
+  color: var(--g-theme-inverted-color, #ffffff);
+  font-weight: bold;
+  text-decoration: none;
 }
 </style>

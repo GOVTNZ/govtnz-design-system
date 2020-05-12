@@ -20,11 +20,12 @@ var RadioBlock = function RadioBlock(_ref) {
       value = _ref.value,
       checked = _ref.checked,
       onChange = _ref.onChange,
+      ref = _ref.ref,
       label = _ref.label,
       hint = _ref.hint;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radios__item".concat(errorId ? " g-radioBlock-form-group--error" : "")
-  }, _react["default"].createElement("input", {
+  }, /*#__PURE__*/_react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-radios__input",
     id: id,
@@ -35,14 +36,15 @@ var RadioBlock = function RadioBlock(_ref) {
     autoFocus: autoFocus,
     value: value,
     checked: checked,
-    onChange: onChange
-  }), _react["default"].createElement("label", {
+    onChange: onChange,
+    ref: ref
+  }), /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-radioBlock-label g-radios__label",
     htmlFor: id
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement("div", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radioBlock-hint g-checkboxes__hint",
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
 var _default = RadioBlock;

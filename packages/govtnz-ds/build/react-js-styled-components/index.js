@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MainNav = exports.MainNavItem = exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = void 0;
+exports.MainNav = exports.MainNavItem = exports.Header = exports.FooterWrapper = exports.FooterStandard = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = void 0;
 
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 var A = function A() {
@@ -239,6 +239,12 @@ var FooterWrapper = function FooterWrapper() {
 };
 
 exports.FooterWrapper = FooterWrapper;
+
+var Header = function Header() {
+  return import("./Header");
+};
+
+exports.Header = Header;
 
 var MainNavItem = function MainNavItem() {
   return import("./MainNavItem");

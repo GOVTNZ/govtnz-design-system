@@ -11,9 +11,9 @@ var _react = _interopRequireDefault(require("react"));
 
 var Legend = function Legend(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement("legend", {
+  return /*#__PURE__*/_react["default"].createElement("legend", {
     className: "g-fieldset__legend"
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
 };
 
 var _default = Legend;

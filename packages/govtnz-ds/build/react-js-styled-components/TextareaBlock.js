@@ -114,16 +114,17 @@ var TextareaBlock = function TextareaBlock(_ref) {
       autoComplete = _ref.autoComplete,
       maxLength = _ref.maxLength,
       value = _ref.value,
-      onChange = _ref.onChange;
-  return _react["default"].createElement(StyledDiv, {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, _react["default"].createElement(StyledLabel, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, label !== undefined ? label : _react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv2, {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : _react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? _react["default"].createElement(_react["default"].Fragment, null, _react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, _react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : _react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", _react["default"].createElement(StyledTextarea, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledTextarea, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: id,
     name: name,
@@ -136,7 +137,8 @@ var TextareaBlock = function TextareaBlock(_ref) {
     autoComplete: autoComplete,
     maxLength: maxLength,
     value: value,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   }));
 };
 

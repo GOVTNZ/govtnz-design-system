@@ -11,9 +11,9 @@ var _react = _interopRequireDefault(require("react"));
 
 var FormDivider = function FormDivider(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-form-divider"
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Contents..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Contents..."));
 };
 
 var _default = FormDivider;

@@ -32,13 +32,13 @@ var FlexRow = function FlexRow(_ref) {
       alignLg = _ref.alignLg,
       isReversed = _ref.isReversed,
       children = _ref.children;
-  return _react["default"].createElement(StyledDiv, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     alignXs: alignXs,
     alignSm: alignSm,
     alignMd: alignMd,
     alignLg: alignLg,
     isReversed: isReversed
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
 };
 
 var _default = FlexRow;

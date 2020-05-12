@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 declare type Props = {
     bulleted?: boolean;
     children?: React.ReactNode;

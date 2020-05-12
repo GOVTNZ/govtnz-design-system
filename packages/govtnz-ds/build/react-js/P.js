@@ -21,9 +21,9 @@ var constants = {
 var P = function P(_ref) {
   var styleSize = _ref.styleSize,
       children = _ref.children;
-  return _react["default"].createElement("p", {
+  return /*#__PURE__*/_react["default"].createElement("p", {
     className: constants.styleSize[styleSize] !== undefined ? constants.styleSize[styleSize] : ""
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = P;

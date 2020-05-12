@@ -27,7 +27,7 @@ var StyledLegend = _styledComponents["default"].legend(_templateObject());
 
 var Legend = function Legend(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement(StyledLegend, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
+  return /*#__PURE__*/_react["default"].createElement(StyledLegend, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text"));
 };
 
 var _default = Legend;

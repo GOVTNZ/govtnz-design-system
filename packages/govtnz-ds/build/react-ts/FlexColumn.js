@@ -1,13 +1,9 @@
 "use strict";
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result["default"] = mod;
-    return result;
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __importStar(require("react"));
+var react_1 = __importDefault(require("react"));
 var constants = {
     xs: {
         "1": "g-flex-col-xs-1",
@@ -132,7 +128,7 @@ var constants = {
 };
 var FlexColumn = function (_a) {
     var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xsOffset = _a.xsOffset, smOffset = _a.smOffset, mdOffset = _a.mdOffset, lgOffset = _a.lgOffset, isReversed = _a.isReversed, children = _a.children;
-    return (React.createElement("div", { className: "g-flex-col" + (constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "") + (constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "") + (constants.md[md] !== undefined ? " " + constants.md[md] : "") + (constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "") + (constants.xsOffset[xsOffset] !== undefined
+    return (react_1.default.createElement("div", { className: "g-flex-col" + (constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "") + (constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "") + (constants.md[md] !== undefined ? " " + constants.md[md] : "") + (constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "") + (constants.xsOffset[xsOffset] !== undefined
             ? " " + constants.xsOffset[xsOffset]
             : "") + (constants.smOffset[smOffset] !== undefined
             ? " " + constants.smOffset[smOffset]
@@ -140,7 +136,7 @@ var FlexColumn = function (_a) {
             ? " " + constants.mdOffset[mdOffset]
             : "") + (constants.lgOffset[lgOffset] !== undefined
             ? " " + constants.lgOffset[lgOffset]
-            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (React.createElement(React.Fragment, null, "Content..."))));
+            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content..."))));
 };
 exports.default = FlexColumn;
 //# sourceMappingURL=FlexColumn.js.map

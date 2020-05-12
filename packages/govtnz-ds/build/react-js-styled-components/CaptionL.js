@@ -27,7 +27,7 @@ var StyledSpan = _styledComponents["default"].span(_templateObject());
 
 var CaptionL = function CaptionL(_ref) {
   var children = _ref.children;
-  return _react["default"].createElement(StyledSpan, null, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  return /*#__PURE__*/_react["default"].createElement(StyledSpan, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = CaptionL;

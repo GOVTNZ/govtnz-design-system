@@ -40,9 +40,9 @@ var StyledUl = _styledComponents["default"].ul(_templateObject(), function (prop
 var Ul = function Ul(_ref) {
   var bulleted = _ref.bulleted,
       children = _ref.children;
-  return _react["default"].createElement(StyledUl, {
+  return /*#__PURE__*/_react["default"].createElement(StyledUl, {
     bulleted: bulleted
-  }, children !== undefined ? children : _react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = Ul;

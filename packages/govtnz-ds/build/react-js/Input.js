@@ -34,8 +34,9 @@ var Input = function Input(_ref) {
       spellCheck = _ref.spellCheck,
       maxLength = _ref.maxLength,
       autoComplete = _ref.autoComplete,
-      onChange = _ref.onChange;
-  return _react["default"].createElement("input", {
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement("input", {
     "aria-describedby": describedBy,
     className: "g-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-input--error" : ""),
     id: id,
@@ -48,7 +49,8 @@ var Input = function Input(_ref) {
     spellCheck: spellCheck,
     maxLength: maxLength,
     autoComplete: autoComplete,
-    onChange: onChange
+    onChange: onChange,
+    ref: ref
   });
 };
 

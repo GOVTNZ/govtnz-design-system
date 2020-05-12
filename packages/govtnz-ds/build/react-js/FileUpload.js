@@ -14,20 +14,24 @@ var FileUpload = function FileUpload(_ref) {
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
-      name = _ref.name;
-  return _react["default"].createElement("div", {
+      name = _ref.name,
+      onChange = _ref.onChange,
+      ref = _ref.ref;
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-fileUpload-form-group"
-  }, _react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-fileUpload-label",
     htmlFor: id
-  }, "Upload a file"), _react["default"].createElement("input", {
+  }, "Upload a file"), /*#__PURE__*/_react["default"].createElement("input", {
     className: "g-file-upload",
     id: id,
     name: name,
     type: "file",
     disabled: disabled,
     readOnly: readOnly,
-    autoFocus: autoFocus
+    autoFocus: autoFocus,
+    onChange: onChange,
+    ref: ref
   }));
 };
 
