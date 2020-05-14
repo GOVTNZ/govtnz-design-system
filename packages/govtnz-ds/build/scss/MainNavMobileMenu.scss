@@ -1,0 +1,20 @@
+.g-main-nav-mobile-menu {
+  background: red;
+  color: white;
+  display: none;
+}
+
+.g-main-nav-mobile-menu--open,
+.g-main-nav-mobile-menu--closed {
+  display: inline-block;
+}
+
+.g-main-nav-mobile-menu--open::after {
+  display: inline;
+  content: "(open)";
+}
+
+.g-main-nav-mobile-menu--closed::after {
+  display: inline;
+  content: "(close)";
+}

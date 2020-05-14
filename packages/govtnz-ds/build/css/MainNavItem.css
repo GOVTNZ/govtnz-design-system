@@ -1,16 +1,34 @@
 .g-main-nav__item {
-  display: inline-block;
+  display: block;
   margin-right: 1em;
-}
-
-.g-main-nav__item:last-child {
-  margin-right: 0px;
+  margin-left: -1em;
 }
 
 .g-main-nav__item__link {
-  display: inline-block;
+  display: block;
   padding: 0.6em 1em;
   color: var(--g-theme-inverted-color, #ffffff);
   font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 64em) {
+  .g-main-nav__item {
+    display: inline-block;
+    margin-right: 1em;
+    margin-left: 0px;
+  }
+
+  .g-main-nav__item:first-child {
+    margin-left: -1em;
+  }
+
+  .g-main-nav__item:last-child {
+    margin-right: 0px;
+  }
+
+  .g-main-nav__item__link {
+    display: inline-block;
+    padding: 0.6em 1em;
+  }
 }

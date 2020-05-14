@@ -253,19 +253,19 @@ const generatePage = async (
       );
     })
     .replace(/<ul>/g, () => {
-      // Convert markdown <ul> to <Ul> DS Components
+      // Convert markdown to DS Component
       return '<Ul bulleted>';
     })
     .replace(/<\/ul>/g, () => {
-      // Convert markdown <ul> to <Ul> DS Components
+      // Convert markdown to DS Component
       return '</Ul>';
     })
     .replace(/<li>/g, () => {
-      // Convert markdown <ul> to <Ul> DS Components
+      // Convert markdown to DS Component
       return '<Li>';
     })
     .replace(/<\/li>/g, () => {
-      // Convert markdown <ul> to <Ul> DS Components
+      // Convert markdown to DS Component
       return '</Li>';
     });
 
@@ -290,12 +290,12 @@ const generatePage = async (
       const headings = match.match(exampleHeadingRegex);
       if (!fullExamples) {
         throw Error(
-          `Unexpected lack of <Example> within an <ExampleContainer>. Code was: ${match}`
+          `Unexpected lack of <Example> within an <ExampleContainer>. Code was: ${match}. ${sectionId} . ${pageId}`
         );
       }
       if (fullExamples.length !== 1) {
         throw Error(
-          `Unexpected number of examples within an example container of fullExamples.length = ${fullExamples.length}`
+          `Unexpected number of examples within an example container of fullExamples.length = ${fullExamples.length}.  ${sectionId} . ${pageId}`
         );
       }
 
@@ -347,7 +347,9 @@ const generatePage = async (
         .replace(/<ExampleHeading>/g, '')
         .replace(/<\/ExampleHeading>/g, '')
         .replace(/<Example( [\s\S]*?>|>)/g, '')
-        .replace(/<\/Example>/g, '');
+        .replace(/<\/Example>/g, '')
+        .replace(/<MainNavMobileMenuContext>/g, '')
+        .replace(/<\/MainNavMobileMenuContext>/g, '');
 
       try {
         const code = await jsxToUsageCode(example);
@@ -409,6 +411,7 @@ const generatePage = async (
     'ExampleHeading',
     'ExampleContainer',
     'ComponentCode',
+    'MainNavMobileMenuContext',
   ];
 
   const reactComponentNames =

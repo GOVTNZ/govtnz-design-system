@@ -36,7 +36,7 @@ var StyledInput = styled_components_1.default.input(templateObject_9 || (templat
 });
 var Input = function (_a) {
     var width = _a.width, error = _a.error, id = _a.id, describedBy = _a.describedBy, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, name = _a.name, value = _a.value, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref;
-    return (react_1.default.createElement(StyledInput, { width: width, error: error, "aria-describedby": describedBy, id: id, name: name, type: "text", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref }));
+    return (react_1.default.createElement(StyledInput, { width: width, error: error, "aria-describedby": describedBy, id: id, name: name, type: "text", disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, value: value, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref }));
 };
 exports.default = Input;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9;

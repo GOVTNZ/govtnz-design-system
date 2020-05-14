@@ -118,7 +118,7 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     "aria-describedby": hintId,
     id: id,
     type: "checkbox",
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     autoFocus: autoFocus,
     name: name,

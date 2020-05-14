@@ -31,7 +31,7 @@ var RadioBlock = function RadioBlock(_ref) {
     id: id,
     name: name,
     type: "radio",
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,

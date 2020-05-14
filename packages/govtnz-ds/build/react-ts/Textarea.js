@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var Textarea = function (_a) {
     var id = _a.id, describedById = _a.describedById, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange, ref = _a.ref;
-    return (react_1.default.createElement("textarea", { "aria-describedby": describedById, className: "g-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref }));
+    return (react_1.default.createElement("textarea", { "aria-describedby": describedById, className: "g-textarea", id: id, name: name, rows: rows, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref }));
 };
 exports.default = Textarea;
 //# sourceMappingURL=Textarea.js.map

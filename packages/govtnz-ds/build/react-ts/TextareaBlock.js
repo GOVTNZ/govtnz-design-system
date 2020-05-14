@@ -16,7 +16,7 @@ var TextareaBlock = function (_a) {
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : (""),
         react_1.default.createElement("textarea", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, className: "g-textareaBlock-textarea", id: id, name: name, rows: rows, disabled: disabled, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref })));
+                : undefined, className: "g-textareaBlock-textarea", id: id, name: name, rows: rows, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref })));
 };
 exports.default = TextareaBlock;
 //# sourceMappingURL=TextareaBlock.js.map

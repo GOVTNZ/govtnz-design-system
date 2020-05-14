@@ -1,0 +1,21 @@
+.g-main-nav-mobile-menu {
+  background: red;
+  color: white;
+
+  display: none; /* Because the menu requires JavaScript this button is hidden by default and revealed in JS */
+}
+
+.g-main-nav-mobile-menu--open,
+.g-main-nav-mobile-menu--closed {
+  display: inline-block;
+}
+
+.g-main-nav-mobile-menu--open::after {
+  display: inline;
+  content: "(open)";
+}
+
+.g-main-nav-mobile-menu--closed::after {
+  display: inline;
+  content: "(close)";
+}

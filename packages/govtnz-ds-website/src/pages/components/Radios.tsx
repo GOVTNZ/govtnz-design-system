@@ -24,6 +24,7 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
@@ -37,7 +38,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example0.html",
         title:"Example: Radio buttons",
-        height: 279
+        height: 80
       }}></Example>
 </ExampleContainer>
 

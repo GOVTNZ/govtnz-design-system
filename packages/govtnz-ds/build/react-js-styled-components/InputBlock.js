@@ -228,7 +228,7 @@ var InputBlock = function InputBlock(_ref) {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: id,
     name: name,
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,

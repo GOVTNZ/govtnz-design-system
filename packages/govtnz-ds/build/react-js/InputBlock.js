@@ -60,7 +60,7 @@ var InputBlock = function InputBlock(_ref) {
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-inputBlock-input--error" : ""),
     id: id,
     name: name,
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,

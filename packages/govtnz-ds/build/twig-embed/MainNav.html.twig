@@ -1,6 +1,7 @@
 <nav
 aria-label="Main"
-class="g-main-nav"
+class="g-main-nav{% if isOpen == "true" %}g-main-nav--open{% elseif isOpen == "false" %}g-main-nav--closed{% endif %}"
+id="{{ menuContainer | escape('html_attr') }}"
 role="navigation"
 >
   

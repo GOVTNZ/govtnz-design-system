@@ -1,8 +1,15 @@
 .g-main-nav {
   display: block;
-
   padding: 0px;
   margin: 0px;
+}
+
+.g-main-nav--open {
+  display: block;
+}
+
+.g-main-nav--closed {
+  display: none;
 }
 
 .g-main-nav__ul {

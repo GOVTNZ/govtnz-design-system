@@ -21,7 +21,7 @@ var StyledSpan = styled_components_1.default.span(templateObject_7 || (templateO
 var CheckboxBlock = function (_a) {
     var errorId = _a.errorId, id = _a.id, hintId = _a.hintId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, name = _a.name, value = _a.value, checked = _a.checked, onChange = _a.onChange, ref = _a.ref, label = _a.label, hint = _a.hint, error = _a.error;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
-        react_1.default.createElement(StyledInput, { "aria-describedby": hintId, id: id, type: "checkbox", disabled: disabled, readOnly: readOnly, autoFocus: autoFocus, name: name, value: value, checked: checked, onChange: onChange, ref: ref }),
+        react_1.default.createElement(StyledInput, { "aria-describedby": hintId, id: id, type: "checkbox", disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, name: name, value: value, checked: checked, onChange: onChange, ref: ref }),
         react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
         hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),

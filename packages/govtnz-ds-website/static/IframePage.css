@@ -17,7 +17,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.css-changes-for-example-only .g-flex-col {
+.css-changes-for-example-only > .g-flex-container > .g-flex-row > .g-flex-col {
   background: #eeeeee;
   outline: solid 1px black;
   text-align: center;

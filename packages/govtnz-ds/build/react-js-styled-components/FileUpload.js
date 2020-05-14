@@ -63,7 +63,7 @@ var FileUpload = function FileUpload(_ref) {
     id: id,
     name: name,
     type: "file",
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     autoFocus: autoFocus,
     onChange: onChange,

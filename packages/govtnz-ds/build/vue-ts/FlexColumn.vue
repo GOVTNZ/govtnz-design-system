@@ -20,6 +20,7 @@ const constants = {
     "10": "g-flex-col-xs-10",
     "11": "g-flex-col-xs-11",
     "12": "g-flex-col-xs-12",
+    hidden: "g-flex-col-xs-hidden",
     auto: "g-flex-col-xs"
   },
   sm: {
@@ -35,6 +36,7 @@ const constants = {
     "10": "g-flex-col-sm-10",
     "11": "g-flex-col-sm-11",
     "12": "g-flex-col-sm-12",
+    hidden: "g-flex-col-sm-hidden",
     auto: "g-flex-col-sm"
   },
   md: {
@@ -50,6 +52,7 @@ const constants = {
     "10": "g-flex-col-md-10",
     "11": "g-flex-col-md-11",
     "12": "g-flex-col-md-12",
+    hidden: "g-flex-col-md-hidden",
     auto: "g-flex-col-md"
   },
   lg: {
@@ -65,6 +68,7 @@ const constants = {
     "10": "g-flex-col-lg-10",
     "11": "g-flex-col-lg-11",
     "12": "g-flex-col-lg-12",
+    hidden: "g-flex-col-lg-hidden",
     auto: "g-flex-col-md"
   },
   xsOffset: {
@@ -136,6 +140,7 @@ export default Vue.extend({
       validator: value => {
         return (
           [
+            "hidden",
             "1",
             "2",
             "3",
@@ -159,6 +164,7 @@ export default Vue.extend({
       validator: value => {
         return (
           [
+            "hidden",
             "1",
             "2",
             "3",
@@ -182,6 +188,7 @@ export default Vue.extend({
       validator: value => {
         return (
           [
+            "hidden",
             "1",
             "2",
             "3",
@@ -205,6 +212,7 @@ export default Vue.extend({
       validator: value => {
         return (
           [
+            "hidden",
             "1",
             "2",
             "3",
@@ -400,6 +408,9 @@ export default Vue.extend({
   flex-basis: 0;
   max-width: 100%;
 }
+.g-flex-col-xs-hidden {
+  display: none;
+}
 .g-flex-col-xs-1 {
   -ms-flex-preferred-size: 8.33333333%;
   flex-basis: 8.33333333%;
@@ -526,6 +537,9 @@ export default Vue.extend({
     flex: 0 0 auto;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+  }
+  .g-flex-col-sm-hidden {
+    display: none;
   }
   .g-flex-col-sm {
     -webkit-box-flex: 1;
@@ -666,6 +680,9 @@ export default Vue.extend({
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
+  .g-flex-col-md-hidden {
+    display: none;
+  }
   .g-flex-col-md {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
@@ -803,6 +820,9 @@ export default Vue.extend({
     flex: 0 0 auto;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
+  }
+  .g-flex-col-lg-hidden {
+    display: none;
   }
   .g-flex-col-lg-1 {
     -ms-flex-preferred-size: 8.33333333%;

@@ -1,0 +1,25 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<button
+{{#menuContainer}}
+  aria-controls="{{menuContainer}}"
+{{/menuContainer}}
+aria-expanded="{{ariaExpanded}}"
+class="g-main-nav-mobile-menu{{#isOpen=true}} g-main-nav-mobile-menu--open{{/isOpen=true}}{{#isOpen=false}} g-main-nav-mobile-menu--closed{{/isOpen=false}}"
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#type}}
+  type="{{type}}"
+{{/type}}
+>
+  
+  
+  {{{children}}}
+  
+
+</button>

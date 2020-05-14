@@ -18,7 +18,11 @@
     "title": "Coming soon",
     "stable": false,
     "items": [
-      { "id": "MainNav", "name": "Main navigation", "stable": false },
+      {
+        "id": "Header",
+        "name": "Header",
+        "stable": false
+      },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }
     ]

@@ -45,7 +45,7 @@ var Textarea = function Textarea(_ref) {
     id: id,
     name: name,
     rows: rows,
-    disabled: disabled,
+    disabled: disabled !== undefined && disabled.toString() === "true",
     readOnly: readOnly,
     cols: cols,
     autoFocus: autoFocus,

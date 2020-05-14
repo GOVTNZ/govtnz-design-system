@@ -18,6 +18,7 @@ var constants = {
         "10": "g-flex-col-xs-10",
         "11": "g-flex-col-xs-11",
         "12": "g-flex-col-xs-12",
+        hidden: "g-flex-col-xs-hidden",
         auto: "g-flex-col-xs"
     },
     sm: {
@@ -33,6 +34,7 @@ var constants = {
         "10": "g-flex-col-sm-10",
         "11": "g-flex-col-sm-11",
         "12": "g-flex-col-sm-12",
+        hidden: "g-flex-col-sm-hidden",
         auto: "g-flex-col-sm"
     },
     md: {
@@ -48,6 +50,7 @@ var constants = {
         "10": "g-flex-col-md-10",
         "11": "g-flex-col-md-11",
         "12": "g-flex-col-md-12",
+        hidden: "g-flex-col-md-hidden",
         auto: "g-flex-col-md"
     },
     lg: {
@@ -63,6 +66,7 @@ var constants = {
         "10": "g-flex-col-lg-10",
         "11": "g-flex-col-lg-11",
         "12": "g-flex-col-lg-12",
+        hidden: "g-flex-col-lg-hidden",
         auto: "g-flex-col-md"
     },
     xsOffset: {

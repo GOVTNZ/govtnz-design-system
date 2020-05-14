@@ -9,11 +9,21 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var constants = {
+  isOpen: {
+    "true": "g-main-nav--open",
+    "false": "g-main-nav--closed"
+  }
+};
+
 var MainNav = function MainNav(_ref) {
-  var children = _ref.children;
+  var isOpen = _ref.isOpen,
+      menuContainer = _ref.menuContainer,
+      children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("nav", {
     "aria-label": "Main",
-    className: "g-main-nav",
+    className: "g-main-nav".concat(constants.isOpen[isOpen] !== undefined ? " " + constants.isOpen[isOpen] : ""),
+    id: menuContainer,
     role: "navigation"
   }, /*#__PURE__*/_react["default"].createElement("ul", {
     className: "g-main-nav__ul"

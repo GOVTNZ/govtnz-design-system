@@ -35,8 +35,12 @@ const getDsPath = async dsPath => {
 };
 
 const importGenerator = async (importName, errorOnMissingImports) => {
-  if (['ExampleHeading', 'ExampleContainer'].includes(importName)) {
-    throw Error(importName);
+  if (
+    ['ExampleHeading', 'ExampleContainer', 'MainNavMobileMenuContext'].includes(
+      importName
+    )
+  ) {
+    throw Error(`Should not be importing "${importName}".`);
   }
   const reactTs = await getDsPath(`react-ts/${importName}.js`);
   const css = `commons/styles/ds/themed-${importName}.scss`;

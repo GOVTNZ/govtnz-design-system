@@ -22,6 +22,7 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
@@ -34,7 +35,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
         className: "example__iframe",
         src:"/components/Checkboxes__example0.html",
         title:"Example: Checkboxes",
-        height: 359
+        height: 80
       }}></Example>
 </ExampleContainer>
 

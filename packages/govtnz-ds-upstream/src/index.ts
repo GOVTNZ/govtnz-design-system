@@ -105,11 +105,13 @@ export const saveComponents = async (
   );
   // clean directory so we don't retain old files
 
+  // @ts-ignore
   await mkdirpPromise(sourcePath);
   const savedIds = await Promise.all(
     components.map(
       async (component: Component): Promise<string> => {
         const versionPath = path.join(sourcePath, component.version);
+        // @ts-ignore
         await mkdirpPromise(versionPath);
 
         await fs.promises.writeFile(

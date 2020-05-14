@@ -20,23 +20,25 @@ import Example from '../../commons/Example';
 import ExampleContainer from '../../commons/ExampleContainer';
 import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
+import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><P styleSize="large">This is the header of your site.</P>
+const PageContent = (props) => <React.Fragment><P styleSize="large">This is the header and main navigation of your site.</P>
 
 <H2 styleSize="large" id="how-it-works">How it works</H2>
 <p><code>Header</code> is a simple container component.</p>
-<p>It must include your site&#39;s primary navigation. See <Link to="./MainNav">MainNav</Link> for an example of this.</p>
+<p>It must include your site&#39;s primary navigation. The <code>MainNav</code> component is an example of this.</p>
 <h2 id="examples">Examples</h2>
 <p>Interact with each example to see how it works.</p>
+<p>Please note that only the <code>Header</code>, <code>MainNav</code> and <code>MainNavItem</code> components are specific to this page. The other components are for example purposes only and are optional.</p>
 <ExampleContainer>
     <Example  code={components__Header[0]} iframeProps={{
         id:"iframe_componentsHeader0",
         className: "example__iframe",
         src:"/components/Header__example0.html",
         title:"Example: Header containing a MainNav",
-        height: 108
+        height: 80
       }}></Example>
 </ExampleContainer>
 </React.Fragment>

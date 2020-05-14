@@ -6,7 +6,10 @@
 
 <nav
 aria-label="Main"
-class="g-main-nav"
+class="g-main-nav{{#isOpen=true}} g-main-nav--open{{/isOpen=true}}{{#isOpen=false}} g-main-nav--closed{{/isOpen=false}}"
+{{#menuContainer}}
+  id="{{menuContainer}}"
+{{/menuContainer}}
 role="navigation"
 >
   

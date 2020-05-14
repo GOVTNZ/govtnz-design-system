@@ -1,0 +1,13 @@
+<button
+aria-controls="{{ menuContainer | escape('html_attr') }}"
+aria-expanded="{{ ariaExpanded | escape('html_attr') }}"
+class="g-main-nav-mobile-menu{% if isOpen == "true" %}g-main-nav-mobile-menu--open{% elseif isOpen == "false" %}g-main-nav-mobile-menu--closed{% endif %}"
+name="{{ name | escape('html_attr') }}"
+type="{{ type | escape('html_attr') }}"
+>
+  
+  
+{% block children %} Menu (example text) {% endblock %}
+  
+
+</button>

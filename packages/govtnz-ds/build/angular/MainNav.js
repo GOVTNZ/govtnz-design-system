@@ -6,6 +6,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
@@ -13,11 +14,17 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "isOpen", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "menuContainer", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-MainNav",
-            template: "\n    <nav aria-label=\"Main\" class=\"g-main-nav\" role=\"navigation\">\n      <ul class=\"g-main-nav__ul\">\n        <slot></slot>\n      </ul>\n    </nav>\n  "
+            template: "\n<nav aria-label=\"Main\" class=\"g-main-nav{{constants.isOpen[isOpen] !== undefined ? \" \" +  constants.isOpen[isOpen] : \"\"}}\" id=\"{{menuContainer}}\" role=\"navigation\">\n\n  \n<ul class=\"g-main-nav__ul\">\n\n    <slot></slot>\n  \n\n</ul>\n\n\n\n\n</nav>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;
