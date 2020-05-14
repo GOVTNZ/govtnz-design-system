@@ -31,7 +31,7 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     className: "g-checkboxes__input",
     id: id,
     type: "checkbox",
-    disabled: disabled !== undefined && disabled.toString() === "true",
+    disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,
     name: name,

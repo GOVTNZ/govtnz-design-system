@@ -27,7 +27,7 @@ var InputBlock = function (_a) {
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))))) : (""),
         react_1.default.createElement("input", { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: id, name: name, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref })));
+                : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: id, name: name, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref })));
 };
 exports.default = InputBlock;
 //# sourceMappingURL=InputBlock.js.map

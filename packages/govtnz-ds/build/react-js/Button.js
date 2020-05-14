@@ -25,7 +25,7 @@ var Button = function Button(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("button", {
     className: "g-button".concat(disabled ? " g-button--disabled" : "").concat(constants.level[level] !== undefined ? " " + constants.level[level] : ""),
-    disabled: disabled !== undefined && disabled.toString() === "true",
+    disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     type: type,
     name: name,
     onClick: onClick

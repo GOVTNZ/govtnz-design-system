@@ -20,15 +20,21 @@ var DateInput = function (_a) {
                 react_1.default.createElement("div", { className: "g-date-input__item" },
                     react_1.default.createElement("div", { className: "g-dateInput-form-group" },
                         react_1.default.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: dayId }, "Day"),
-                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }))),
+                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, disabled: disabled !== undefined
+                                ? disabled.toString() === "true"
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }))),
                 react_1.default.createElement("div", { className: "g-date-input__item" },
                     react_1.default.createElement("div", { className: "g-dateInput-form-group" },
                         react_1.default.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: monthId }, "Month"),
-                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }))),
+                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-2" + (error ? " g-dateInput-input--error" : ""), id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, disabled: disabled !== undefined
+                                ? disabled.toString() === "true"
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }))),
                 react_1.default.createElement("div", { className: "g-date-input__item" },
                     react_1.default.createElement("div", { className: "g-dateInput-form-group" },
                         react_1.default.createElement("label", { className: "g-dateInput-label g-date-input__label", htmlFor: yearId }, "Year"),
-                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4" + (error ? " g-dateInput-input--error" : ""), id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 })))))));
+                        react_1.default.createElement("input", { className: "g-dateInput-input g-date-input__input g-dateInput-input--width-4" + (error ? " g-dateInput-input--error" : ""), id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, disabled: disabled !== undefined
+                                ? disabled.toString() === "true"
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 })))))));
 };
 exports.default = DateInput;
 //# sourceMappingURL=DateInput.js.map

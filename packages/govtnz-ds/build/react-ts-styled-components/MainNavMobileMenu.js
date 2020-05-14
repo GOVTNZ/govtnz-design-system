@@ -14,8 +14,8 @@ var StyledButton = styled_components_1.default.button(templateObject_2 || (templ
     return ["true", "false"].indexOf(props.isOpen) !== -1 && styled_components_1.default.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n        display: inline-block;\n      "], ["\n        display: inline-block;\n      "])));
 });
 var MainNavMobileMenu = function (_a) {
-    var ariaExpanded = _a.ariaExpanded, isOpen = _a.isOpen, menuContainer = _a.menuContainer, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
-    return (react_1.default.createElement(StyledButton, { isOpen: isOpen, "aria-controls": menuContainer, "aria-expanded": ariaExpanded !== undefined && ariaExpanded.toString() === "true", name: name, type: type, onClick: onClick }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Menu (example text) "))));
+    var isOpen = _a.isOpen, navId = _a.navId, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
+    return (react_1.default.createElement(StyledButton, { isOpen: isOpen, "aria-controls": navId, "aria-expanded": isOpen !== undefined ? isOpen.toString() === "true" : undefined, name: name, type: type, onClick: onClick }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Menu (example text) "))));
 };
 exports.default = MainNavMobileMenu;
 var templateObject_1, templateObject_2;

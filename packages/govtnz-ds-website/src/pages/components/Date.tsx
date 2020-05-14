@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example0.html",
         title:"Example: Date input",
-        height: 80
+        height: 280
       }}></Example>
 </ExampleContainer>
 

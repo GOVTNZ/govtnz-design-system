@@ -17,16 +17,15 @@ var constants = {
 };
 
 var MainNavMobileMenu = function MainNavMobileMenu(_ref) {
-  var ariaExpanded = _ref.ariaExpanded,
-      isOpen = _ref.isOpen,
-      menuContainer = _ref.menuContainer,
+  var isOpen = _ref.isOpen,
+      navId = _ref.navId,
       name = _ref.name,
       type = _ref.type,
       onClick = _ref.onClick,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("button", {
-    "aria-controls": menuContainer,
-    "aria-expanded": ariaExpanded !== undefined && ariaExpanded.toString() === "true",
+    "aria-controls": navId,
+    "aria-expanded": isOpen !== undefined ? isOpen.toString() === "true" : undefined,
     className: "g-main-nav-mobile-menu".concat(constants.isOpen[isOpen] !== undefined ? " " + constants.isOpen[isOpen] : ""),
     name: name,
     type: type,

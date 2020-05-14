@@ -18,8 +18,8 @@ var StyledNav = styled_components_1.default.nav(templateObject_3 || (templateObj
 });
 var StyledUl = styled_components_1.default.ul(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n"], ["\n  list-style: none;\n  padding: 0px;\n  margin: 0px;\n"])));
 var MainNav = function (_a) {
-    var isOpen = _a.isOpen, menuContainer = _a.menuContainer, children = _a.children;
-    return (react_1.default.createElement(StyledNav, { isOpen: isOpen, "aria-label": "Main", id: menuContainer, role: "navigation" },
+    var isOpen = _a.isOpen, id = _a.id, children = _a.children;
+    return (react_1.default.createElement(StyledNav, { isOpen: isOpen, "aria-label": "Main", id: id, role: "navigation" },
         react_1.default.createElement(StyledUl, null, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " MainNavItem components go here ")))));
 };
 exports.default = MainNav;

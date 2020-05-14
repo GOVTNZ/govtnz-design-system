@@ -17,14 +17,14 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "isOpen", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "menuContainer", void 0);
+    ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-MainNav",
-            template: "\n<nav aria-label=\"Main\" class=\"g-main-nav{{constants.isOpen[isOpen] !== undefined ? \" \" +  constants.isOpen[isOpen] : \"\"}}\" id=\"{{menuContainer}}\" role=\"navigation\">\n\n  \n<ul class=\"g-main-nav__ul\">\n\n    <slot></slot>\n  \n\n</ul>\n\n\n\n\n</nav>\n\n\n"
+            template: "\n<nav aria-label=\"Main\" class=\"g-main-nav{{constants.isOpen[isOpen] !== undefined ? \" \" +  constants.isOpen[isOpen] : \"\"}}\" id=\"{{id}}\" role=\"navigation\">\n\n  \n<ul class=\"g-main-nav__ul\">\n\n    <slot></slot>\n  \n\n</ul>\n\n\n\n\n</nav>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

@@ -42,7 +42,7 @@ var Input = function Input(_ref) {
     id: id,
     name: name,
     type: "text",
-    disabled: disabled !== undefined && disabled.toString() === "true",
+    disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,

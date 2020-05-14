@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
         className: "example__iframe",
         src:"/components/Checkboxes__example0.html",
         title:"Example: Checkboxes",
-        height: 80
+        height: 359
       }}></Example>
 </ExampleContainer>
 

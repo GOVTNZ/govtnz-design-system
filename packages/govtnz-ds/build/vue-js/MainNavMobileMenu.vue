@@ -1,7 +1,7 @@
 <template>
   <button
-    v-bind:aria-controls="menuContainer"
-    v-bind:aria-expanded="ariaExpanded"
+    v-bind:aria-controls="navId"
+    v-bind:aria-expanded="isOpen"
     v-bind:class="computed__class"
     v-bind:name="name"
     v-bind:type="type"
@@ -21,7 +21,6 @@ const constants = {
 
 export default Vue.extend({
   props: {
-    ariaExpanded: { type: String, required: true },
     isOpen: {
       type: String,
       validator: value => {
@@ -29,7 +28,7 @@ export default Vue.extend({
       },
       required: false
     },
-    menuContainer: { type: String, required: false },
+    navId: { type: String, required: false },
     name: { type: String, required: false },
     type: { type: String, required: false },
     children: { required: false, default: " Menu (example text) " }

@@ -18,12 +18,12 @@ var constants = {
 
 var MainNav = function MainNav(_ref) {
   var isOpen = _ref.isOpen,
-      menuContainer = _ref.menuContainer,
+      id = _ref.id,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("nav", {
     "aria-label": "Main",
     className: "g-main-nav".concat(constants.isOpen[isOpen] !== undefined ? " " + constants.isOpen[isOpen] : ""),
-    id: menuContainer,
+    id: id,
     role: "navigation"
   }, /*#__PURE__*/_react["default"].createElement("ul", {
     className: "g-main-nav__ul"

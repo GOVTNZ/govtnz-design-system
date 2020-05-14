@@ -63,12 +63,12 @@ var StyledUl = _styledComponents["default"].ul(_templateObject4());
 
 var MainNav = function MainNav(_ref) {
   var isOpen = _ref.isOpen,
-      menuContainer = _ref.menuContainer,
+      id = _ref.id,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledNav, {
     isOpen: isOpen,
     "aria-label": "Main",
-    id: menuContainer,
+    id: id,
     role: "navigation"
   }, /*#__PURE__*/_react["default"].createElement(StyledUl, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " MainNavItem components go here ")));
 };

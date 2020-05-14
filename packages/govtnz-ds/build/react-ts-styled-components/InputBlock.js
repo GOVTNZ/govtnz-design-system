@@ -54,7 +54,7 @@ var InputBlock = function (_a) {
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))))) : (""),
         react_1.default.createElement(StyledInput, { width: width, error: error, "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, id: id, name: name, disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref })));
+                : undefined, id: id, name: name, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref })));
 };
 exports.default = InputBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15;

@@ -16,7 +16,7 @@ var FileUpload = function (_a) {
     var id = _a.id, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, name = _a.name, onChange = _a.onChange, ref = _a.ref;
     return (react_1.default.createElement(StyledDiv, null,
         react_1.default.createElement(StyledLabel, { htmlFor: id }, "Upload a file"),
-        react_1.default.createElement(StyledInput, { id: id, name: name, type: "file", disabled: disabled !== undefined && disabled.toString() === "true", readOnly: readOnly, autoFocus: autoFocus, onChange: onChange, ref: ref })));
+        react_1.default.createElement(StyledInput, { id: id, name: name, type: "file", disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, onChange: onChange, ref: ref })));
 };
 exports.default = FileUpload;
 var templateObject_1, templateObject_2, templateObject_3;

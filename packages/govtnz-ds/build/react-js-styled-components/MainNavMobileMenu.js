@@ -38,17 +38,16 @@ var StyledButton = _styledComponents["default"].button(_templateObject(), functi
 });
 
 var MainNavMobileMenu = function MainNavMobileMenu(_ref) {
-  var ariaExpanded = _ref.ariaExpanded,
-      isOpen = _ref.isOpen,
-      menuContainer = _ref.menuContainer,
+  var isOpen = _ref.isOpen,
+      navId = _ref.navId,
       name = _ref.name,
       type = _ref.type,
       onClick = _ref.onClick,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledButton, {
     isOpen: isOpen,
-    "aria-controls": menuContainer,
-    "aria-expanded": ariaExpanded !== undefined && ariaExpanded.toString() === "true",
+    "aria-controls": navId,
+    "aria-expanded": isOpen !== undefined ? isOpen.toString() === "true" : undefined,
     name: name,
     type: type,
     onClick: onClick

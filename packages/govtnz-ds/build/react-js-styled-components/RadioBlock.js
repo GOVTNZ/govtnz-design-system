@@ -94,7 +94,7 @@ var RadioBlock = function RadioBlock(_ref) {
     id: id,
     name: name,
     type: "radio",
-    disabled: disabled !== undefined && disabled.toString() === "true",
+    disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,
     value: value,

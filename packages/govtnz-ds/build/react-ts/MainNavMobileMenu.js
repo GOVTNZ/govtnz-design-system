@@ -11,8 +11,8 @@ var constants = {
     }
 };
 var MainNavMobileMenu = function (_a) {
-    var ariaExpanded = _a.ariaExpanded, isOpen = _a.isOpen, menuContainer = _a.menuContainer, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
-    return (react_1.default.createElement("button", { "aria-controls": menuContainer, "aria-expanded": ariaExpanded !== undefined && ariaExpanded.toString() === "true", className: "g-main-nav-mobile-menu" + (constants.isOpen[isOpen] !== undefined
+    var isOpen = _a.isOpen, navId = _a.navId, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
+    return (react_1.default.createElement("button", { "aria-controls": navId, "aria-expanded": isOpen !== undefined ? isOpen.toString() === "true" : undefined, className: "g-main-nav-mobile-menu" + (constants.isOpen[isOpen] !== undefined
             ? " " + constants.isOpen[isOpen]
             : ""), name: name, type: type, onClick: onClick }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Menu (example text) "))));
 };

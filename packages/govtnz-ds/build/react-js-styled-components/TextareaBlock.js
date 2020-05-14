@@ -129,7 +129,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
     id: id,
     name: name,
     rows: rows,
-    disabled: disabled !== undefined && disabled.toString() === "true",
+    disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     cols: cols,
     autoFocus: autoFocus,

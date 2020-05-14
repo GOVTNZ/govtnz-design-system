@@ -14,13 +14,10 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "ariaExpanded", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "isOpen", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "menuContainer", void 0);
+    ], AppComponent.prototype, "navId", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "name", void 0);
@@ -33,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-MainNavMobileMenu",
-            template: "\n<button aria-controls=\"{{menuContainer}}\" aria-expanded=\"{{ariaExpanded ?  ariaExpanded : \"\"}}\" class=\"g-main-nav-mobile-menu{{constants.isOpen[isOpen] !== undefined ? \" \" +  constants.isOpen[isOpen] : \"\"}}\" name=\"{{name}}\" type=\"{{type}}\">\n\n  <slot></slot>\n\n\n</button>\n\n\n"
+            template: "\n<button aria-controls=\"{{navId}}\" aria-expanded=\"{{isOpen ?  isOpen : \"\"}}\" class=\"g-main-nav-mobile-menu{{constants.isOpen[isOpen] !== undefined ? \" \" +  constants.isOpen[isOpen] : \"\"}}\" name=\"{{name}}\" type=\"{{type}}\">\n\n  <slot></slot>\n\n\n</button>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

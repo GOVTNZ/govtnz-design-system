@@ -2,7 +2,7 @@
   <nav
     aria-label="Main"
     v-bind:class="computed__class"
-    v-bind:id="menuContainer"
+    v-bind:id="id"
     role="navigation"
   >
     <ul class="g-main-nav__ul">
@@ -26,7 +26,7 @@ export default Vue.extend({
       },
       required: false
     },
-    menuContainer: { type: String, required: false },
+    id: { type: String, required: false },
     children: { required: false, default: " MainNavItem components go here " }
   },
   computed: {
