@@ -35,3 +35,11 @@ body {
 .css-changes-for-example-only .g-ul-list li {
   margin-bottom: 0.25rem;
 }
+
+.css-changes-for-example-only .example-agency-logo {
+  margin: 10px 10px 10px 0;
+}
+
+.css-changes-for-example-only .example-hidden {
+  display: none;
+}
