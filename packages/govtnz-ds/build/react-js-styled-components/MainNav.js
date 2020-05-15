@@ -44,7 +44,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  ", "\n  ", "\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n  ", "\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;

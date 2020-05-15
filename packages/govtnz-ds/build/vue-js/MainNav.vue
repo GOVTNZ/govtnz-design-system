@@ -46,6 +46,7 @@ export default Vue.extend({
   display: block;
   padding: 0px;
   margin: 0px;
+  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
 }
 .g-main-nav--open {
   display: block;

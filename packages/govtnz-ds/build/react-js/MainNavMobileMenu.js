@@ -30,7 +30,15 @@ var MainNavMobileMenu = function MainNavMobileMenu(_ref) {
     name: name,
     type: type,
     onClick: onClick
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Menu (example text) "));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Menu (example text) "), /*#__PURE__*/_react["default"].createElement("svg", {
+    className: "g-main-nav-mobile-menu__icon",
+    viewBox: "0 0 16 16",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/_react["default"].createElement("path", {
+    d: "M7.992 9.55l5.6-5.6a1 1 0 0 1 1.415 0l.688.689a1 1 0 0 1 0 1.414L8.7 13.049a1 1 0 0 1-1.414 0L.29 6.053a1 1 0 0 1 0-1.414l.689-.689a1 1 0 0 1 1.414 0l5.6 5.6z",
+    fill: "currentColor",
+    fillRule: "nonzero"
+  })));
 };
 
 var _default = MainNavMobileMenu;

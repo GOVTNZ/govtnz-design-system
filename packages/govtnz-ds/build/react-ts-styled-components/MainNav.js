@@ -9,7 +9,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var styled_components_1 = __importDefault(require("styled-components"));
-var StyledNav = styled_components_1.default.nav(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  ", "\n  ", "\n"], ["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  ",
+var StyledNav = styled_components_1.default.nav(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n  ", "\n  ", "\n"], ["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n  ",
     "\n  ",
     "\n"])), function (props) {
     return props.isOpen === "true" && styled_components_1.default.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      display: block;\n    "], ["\n      display: block;\n    "])));
