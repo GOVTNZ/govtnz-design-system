@@ -251,12 +251,6 @@ Object.defineProperty(exports, "mainNavItem", {
     return _MainNavItem["default"];
   }
 });
-Object.defineProperty(exports, "mainNavMobileMenu", {
-  enumerable: true,
-  get: function get() {
-    return _MainNavMobileMenu["default"];
-  }
-});
 Object.defineProperty(exports, "mainNav", {
   enumerable: true,
   get: function get() {
@@ -345,7 +339,5 @@ var _FooterWrapper = _interopRequireDefault(require("./FooterWrapper"));
 var _Header = _interopRequireDefault(require("./Header"));
 
 var _MainNavItem = _interopRequireDefault(require("./MainNavItem"));
-
-var _MainNavMobileMenu = _interopRequireDefault(require("./MainNavMobileMenu"));
 
 var _MainNav = _interopRequireDefault(require("./MainNav"));

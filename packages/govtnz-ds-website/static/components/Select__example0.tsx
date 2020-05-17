@@ -80,37 +80,21 @@ class MainNavMobileMenuContext extends Component<
   }
 }
 
-function WrappedMainNavMobileMenu(props) {
-  return (
-    <MobileMenuContext.Consumer>
-      {value => {
-        const Component = props.Component;
-        return (
-          <Component
-            {...props}
-            isOpen={value.isOpen.toString()}
-            onClick={() => {
-              console.log('click handler!');
-              value.setIsOpen(!value.isOpen);
-            }}
-          />
-        );
-      }}
-    </MobileMenuContext.Consumer>
-  );
-}
-
 function WrappedMainNav(props) {
   return (
     <MobileMenuContext.Consumer>
       {value => {
         const Component = props.Component;
-        console.log(
-          'Wrapped mainnav component being given',
-          props,
-          value.isOpen.toString()
-        );
-        return <Component {...props} isOpen={value.isOpen.toString()} />;
+        const newProps = {
+          ...props,
+          isOpen: value.isOpen.toString(),
+          onClick: () => {
+            console.log('click handler!');
+            value.setIsOpen(!value.isOpen);
+          },
+        };
+        console.log('Wrapped mainnav component being given', newProps);
+        return <Component {...newProps} />;
       }}
     </MobileMenuContext.Consumer>
   );

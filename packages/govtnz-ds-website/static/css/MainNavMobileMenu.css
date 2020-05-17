@@ -12,12 +12,12 @@
 }
 
 .g-main-nav-mobile-menu--open {
+  display: block;
   background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
 }
 
-.g-main-nav-mobile-menu--open,
 .g-main-nav-mobile-menu--closed {
-  display: inline-block;
+  display: block;
 }
 
 .g-main-nav-mobile-menu > .g-main-nav-mobile-menu__icon {
@@ -30,6 +30,6 @@
   height: 16px;
 }
 
-.g-main-nav-mobile-menu--closed > .g-main-nav-mobile-menu__icon {
+.g-main-nav-mobile-menu--open > .g-main-nav-mobile-menu__icon {
   transform: rotate(180deg);
 }

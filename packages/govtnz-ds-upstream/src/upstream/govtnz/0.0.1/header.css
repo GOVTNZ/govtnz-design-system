@@ -1,4 +1,5 @@
 .g-header {
+  position: relative; /* so that MainNav's button that's position:absolute will be contained */
   background-color: #363636;
   background-color: var(--g-theme-inverted-background, #363636);
 

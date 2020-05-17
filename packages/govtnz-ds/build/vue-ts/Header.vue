@@ -13,6 +13,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-header {
+  position: relative;
   background-color: var(--g-theme-inverted-background, #363636);
   color: var(--g-theme-inverted-color, #ffffff);
   fill: var(--g-theme-inverted-color, #ffffff);

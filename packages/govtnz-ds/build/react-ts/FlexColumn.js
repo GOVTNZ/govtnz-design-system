@@ -140,7 +140,7 @@ var FlexColumn = function (_a) {
             ? " " + constants.mdOffset[mdOffset]
             : "") + (constants.lgOffset[lgOffset] !== undefined
             ? " " + constants.lgOffset[lgOffset]
-            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content..."))));
+            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? children : react_1.default.createElement(react_1.default.Fragment, null)));
 };
 exports.default = FlexColumn;
 //# sourceMappingURL=FlexColumn.js.map

@@ -1306,7 +1306,7 @@ var FlexColumn = function FlexColumn(_ref) {
     mdOffset: mdOffset,
     lgOffset: lgOffset,
     isReversed: isReversed
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null));
 };
 
 var _default = FlexColumn;

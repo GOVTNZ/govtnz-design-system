@@ -105,7 +105,7 @@ const writeExamplePage = async (
 
   let example = await addOnStateChanged(exampleData);
 
-  const wrappedComponents = ['MainNavMobileMenu', 'MainNav']; // components that we need to inject props into
+  const wrappedComponents = ['MainNav']; // components that we need to replace with state management
   example = example.replace(/<\/?([a-zA-Z]+)/gi, (match, p1) => {
     if (wrappedComponents.includes(p1)) {
       if (match.startsWith('</')) {

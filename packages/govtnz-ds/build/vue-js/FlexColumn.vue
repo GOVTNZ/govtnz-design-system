@@ -324,7 +324,7 @@ export default Vue.extend({
       required: false
     },
     isReversed: { type: Boolean, default: false, required: false },
-    children: { required: false, default: "Content..." }
+    children: { required: false }
   },
   computed: {
     computed__class() {

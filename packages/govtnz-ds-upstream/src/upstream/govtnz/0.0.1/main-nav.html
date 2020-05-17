@@ -1,10 +1,27 @@
-<nav
-  role="navigation"
-  aria-label="Main"
-  class="g-main-nav {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }}"
-  id="id"
->
-  <ul class="g-main-nav__ul">
+<nav role="navigation" aria-label="Main" class="g-main-nav">
+  <button
+    class="g-main-nav__button {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }}"
+    aria-controls="navId"
+    aria-expanded="{{ isOpen }}"
+    id="id"
+  >
+    <mt-variable key="button"> Menu </mt-variable>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      class="g-main-nav__button__icon"
+    >
+      <path
+        fill="currentColor"
+        fill-rule="nonzero"
+        d="M7.992 9.55l5.6-5.6a1 1 0 0 1 1.415 0l.688.689a1 1 0 0 1 0 1.414L8.7 13.049a1 1 0 0 1-1.414 0L.29 6.053a1 1 0 0 1 0-1.414l.689-.689a1 1 0 0 1 1.414 0l5.6 5.6z"
+      ></path>
+    </svg>
+  </button>
+
+  <ul
+    class="g-main-nav__ul {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }} "
+  >
     <mt-variable key="children"> MainNavItem components go here </mt-variable>
   </ul>
 </nav>
