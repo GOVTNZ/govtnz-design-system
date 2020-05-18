@@ -13,7 +13,7 @@ var Footer = function Footer(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("footer", {
     className: "g-footer",
-    role: "footer"
+    role: "contentinfo"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "));
 };
 

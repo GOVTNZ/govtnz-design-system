@@ -1,4 +1,4 @@
-<footer class="g-footer" role="footer"> 
+<footer class="g-footer" role="contentinfo"> 
   {$children}
 
 </footer>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="g-footer" role="footer">
+  <footer class="g-footer" role="contentinfo">
     <slot></slot>
   </footer>
 </template>

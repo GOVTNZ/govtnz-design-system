@@ -12,7 +12,7 @@ export default [
     "vue-js": "<template>\n  <c-footer>\n    <p>\n      Footer content goes here.\n    </p>\n  </c-footer>\n</template>\n<script>\nimport Vue from \"vue\";\nimport Footer from \"@govtnz/ds/build/vue-js/Footer.vue\";\n\nexport default { components: { \"c-footer\": Footer } };\n</script>\n",
     "vue-ts": "<template>\n  <c-footer>\n    <p>\n      Footer content goes here.\n    </p>\n  </c-footer>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport Footer from \"@govtnz/ds/build/vue-ts/Footer.vue\";\n\nexport default { components: { \"c-footer\": Footer } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: Footer.css\nOR in Sass (SCSS): Footer.scss\n-->\n<footer role=\"footer\" class=\"g-footer\"><p>Footer content goes here.</p></footer>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: Footer.css\nOR in Sass (SCSS): Footer.scss\n-->\n<footer role=\"contentinfo\" class=\"g-footer\">\n  <p>Footer content goes here.</p>\n</footer>\n",
     "css": "",
     "twig-embed": "{% embed \"Footer.html.twig\" %}{% block children %}<p >Footer content goes here.</p>{% endblock %}{% endembed %}",
     "angular": ""
