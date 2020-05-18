@@ -23,11 +23,11 @@ function _templateObject() {
   return data;
 }
 
-var StyledHeader = _styledComponents["default"].header(_templateObject());
+var StyledFooter = _styledComponents["default"].footer(_templateObject());
 
 var Footer = function Footer(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledHeader, {
+  return /*#__PURE__*/_react["default"].createElement(StyledFooter, {
     role: "footer"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "));
 };

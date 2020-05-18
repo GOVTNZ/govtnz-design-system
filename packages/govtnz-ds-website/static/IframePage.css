@@ -43,3 +43,7 @@ body {
 .css-changes-for-example-only .example-hidden {
   display: none;
 }
+
+.css-changes-for-example-only footer p {
+  padding: 0.8em 1em;
+}

@@ -1,7 +1,7 @@
 <template>
-  <header class="g-footer" role="footer">
+  <footer class="g-footer" role="footer">
     <slot></slot>
-  </header>
+  </footer>
 </template>
 <script>
 import Vue from "vue";

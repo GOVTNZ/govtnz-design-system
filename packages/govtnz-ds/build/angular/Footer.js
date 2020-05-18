@@ -18,7 +18,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Footer",
-            template: "\n    <header class=\"g-footer\" role=\"footer\">\n      <slot></slot>\n    </header>\n  "
+            template: "\n    <footer class=\"g-footer\" role=\"footer\">\n      <slot></slot>\n    </footer>\n  "
         })
     ], AppComponent);
     return AppComponent;

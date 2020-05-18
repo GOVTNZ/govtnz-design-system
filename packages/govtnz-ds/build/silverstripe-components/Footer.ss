@@ -1,4 +1,4 @@
-<header class="g-footer" role="footer"> 
+<footer class="g-footer" role="footer"> 
   {$children}
 
-</header>
+</footer>

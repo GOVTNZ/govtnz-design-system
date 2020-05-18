@@ -9,10 +9,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var styled_components_1 = __importDefault(require("styled-components"));
-var StyledHeader = styled_components_1.default.header(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: var(--g-theme-inverted-background, #363636);\n  color: var(--g-theme-inverted-color, #ffffff);\n  fill: var(--g-theme-inverted-color, #ffffff);\n"], ["\n  background-color: var(--g-theme-inverted-background, #363636);\n  color: var(--g-theme-inverted-color, #ffffff);\n  fill: var(--g-theme-inverted-color, #ffffff);\n"])));
+var StyledFooter = styled_components_1.default.footer(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  background-color: var(--g-theme-inverted-background, #363636);\n  color: var(--g-theme-inverted-color, #ffffff);\n  fill: var(--g-theme-inverted-color, #ffffff);\n"], ["\n  background-color: var(--g-theme-inverted-background, #363636);\n  color: var(--g-theme-inverted-color, #ffffff);\n  fill: var(--g-theme-inverted-color, #ffffff);\n"])));
 var Footer = function (_a) {
     var children = _a.children;
-    return (react_1.default.createElement(StyledHeader, { role: "footer" }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example footer content "))));
+    return (react_1.default.createElement(StyledFooter, { role: "footer" }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example footer content "))));
 };
 exports.default = Footer;
 var templateObject_1;
