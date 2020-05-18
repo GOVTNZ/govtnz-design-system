@@ -24,12 +24,12 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
             <MainNavMobileMenuContext {...onChangeGenerator({})}>
                 <FlexContainer width="fixed" {...onChangeGenerator({})}>
                     <FlexRow {...onChangeGenerator({})}>
-                        <FlexColumn xs="8" sm="8" md="3" lg="3" {...onChangeGenerator({})}>
+                        <FlexColumn xs="8" sm="5" md="4" lg="3" {...onChangeGenerator({})}>
                             <svg role="presentation" focusable="false" width="230" height="24" className="example-agency-logo"><use xlinkHref="#agency-logo"></use></svg>
                         </FlexColumn>
-                        <FlexColumn xs="4" sm="4" md="hidden" lg="hidden" {...onChangeGenerator({})}>
+                        <FlexColumn xs="4" sm="hidden" md="hidden" lg="hidden" {...onChangeGenerator({})}>
                         </FlexColumn>
-                        <FlexColumn xs="12" sm="12" md="9" lg="9" {...onChangeGenerator({})}>
+                        <FlexColumn xs="12" sm="7" md="8" lg="9" {...onChangeGenerator({})}>
                             <WrappedMainNav Component={MainNav} id="menuContainer" button="Menu" {...onChangeGenerator({})}>
                                 <MainNavItem href="/" ariaCurrent="page" {...onChangeGenerator({})}>Home</MainNavItem>
                                 <MainNavItem href="/about" {...onChangeGenerator({})}>About</MainNavItem>

@@ -75,8 +75,22 @@ export default Vue.extend({
 .g-main-nav {
   display: block;
   padding: 0px;
-  margin: 0px -2rem;
+  margin: 0px;
   background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
+}
+.g-flex-container .g-main-nav,
+.g-flex-container-fluid .g-main-nav {
+  margin: 0px -1rem;
+}
+@media only screen and (min-width: 48em) {
+  .g-main-nav {
+    margin: 0px;
+    background-color: transparent;
+  }
+  .g-flex-container .g-main-nav,
+  .g-flex-container-fluid .g-main-nav {
+    margin: 0px -2rem;
+  }
 }
 .g-main-nav__button {
   position: absolute;
@@ -92,6 +106,12 @@ export default Vue.extend({
 .g-main-nav__button.g-main-nav--open,
 .g-main-nav__button.g-main-nav--closed {
   display: inline-block;
+}
+@media only screen and (min-width: 48em) {
+  .g-main-nav__button.g-main-nav--open,
+  .g-main-nav__button.g-main-nav--closed {
+    display: none;
+  }
 }
 .g-main-nav__button:focus {
   outline: 3px solid var(--color-theme-focus, #b53cde);
@@ -114,12 +134,22 @@ export default Vue.extend({
 .g-main-nav__ul {
   list-style: none;
   padding: 0px;
-  margin: 0px 2rem;
+  margin: 0px 0px 0px 1rem;
+}
+@media only screen and (min-width: 48em) {
+  .g-main-nav__ul {
+    margin: 0px 2rem;
+  }
 }
 .g-main-nav__ul.g-main-nav--open {
   display: block;
 }
 .g-main-nav__ul.g-main-nav--closed {
   display: none;
+}
+@media only screen and (min-width: 48em) {
+  .g-main-nav__ul.g-main-nav--closed {
+    display: block;
+  }
 }
 </style>

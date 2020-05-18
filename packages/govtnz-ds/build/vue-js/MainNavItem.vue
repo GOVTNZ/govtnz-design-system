@@ -28,7 +28,7 @@ export default Vue.extend({
 <style scoped>
 .g-main-nav__item {
   display: block;
-  margin-right: 1em;
+  margin-right: 0em;
   margin-left: -1em;
 }
 .g-main-nav__item__link {
@@ -38,7 +38,10 @@ export default Vue.extend({
   font-weight: bold;
   text-decoration: none;
 }
-@media only screen and (min-width: 64em) {
+.g-main-nav__item__link:focus {
+  outline: 3px solid var(--color-theme-focus, #b53cde);
+}
+@media only screen and (min-width: 48em) {
   .g-main-nav__item {
     display: inline-block;
     margin-right: 1em;

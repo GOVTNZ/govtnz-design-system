@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0.6em 1em;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-weight: bold;\n  text-decoration: none;\n  @media only screen and (min-width: 64em) {\n    display: inline-block;\n    padding: 0.6em 1em;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0.6em 1em;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-weight: bold;\n  text-decoration: none;\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  @media only screen and (min-width: 48em) {\n    display: inline-block;\n    padding: 0.6em 1em;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  margin-right: 1em;\n  margin-left: -1em;\n  @media only screen and (min-width: 64em) {\n    display: inline-block;\n    margin-right: 1em;\n    margin-left: 0px;\n    :first-child {\n      margin-left: -1em;\n    }\n    :last-child {\n      margin-right: 0px;\n    }\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  margin-right: 0em;\n  margin-left: -1em;\n  @media only screen and (min-width: 48em) {\n    display: inline-block;\n    margin-right: 1em;\n    margin-left: 0px;\n    :first-child {\n      margin-left: -1em;\n    }\n    :last-child {\n      margin-right: 0px;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

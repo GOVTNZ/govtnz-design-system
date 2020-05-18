@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px 2rem;\n  display: block;\n  display: none;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px 0px 0px 1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px 2rem;\n  }\n  display: block;\n  display: none;\n  @media only screen and (min-width: 48em) {\n    display: block;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px -2rem;\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n  margin: 0px -1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px;\n    background-color: transparent;\n    margin: 0px -2rem;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
