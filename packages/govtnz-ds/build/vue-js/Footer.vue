@@ -15,5 +15,6 @@ export default Vue.extend({
 .g-footer {
   background-color: var(--g-theme-inverted-background, #363636);
   color: var(--g-theme-inverted-color, #ffffff);
+  fill: var(--g-theme-inverted-color, #ffffff);
 }
 </style>

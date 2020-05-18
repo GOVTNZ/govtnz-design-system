@@ -4,4 +4,7 @@
 
   color: #ffffff;
   color: var(--g-theme-inverted-color, #ffffff);
+
+  fill: #ffffff;
+  fill: var(--g-theme-inverted-color, #ffffff);
 }
