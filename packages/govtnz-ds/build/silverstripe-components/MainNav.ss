@@ -1,5 +1,5 @@
 <nav aria-label="Main" class="g-main-nav" role="navigation"> 
-  <button<% if $navId %> aria-controls="{$navId}"<% end_if %> aria-expanded="{$isOpen}" class="g-main-nav__button<% if $isOpen == "true" %> g-main-nav--open<% else_if $isOpen == "false" %> g-main-nav--closed<% end_if %>"<% if $id %> id="{$id}"<% end_if %><% if $name %> name="{$name}"<% end_if %><% if $type %> type="{$type}"<% end_if %>> 
+  <button<% if $id %> aria-controls="{$id}"<% end_if %> aria-expanded="{$isOpen}" class="g-main-nav__button<% if $isOpen == "true" %> g-main-nav--open<% else_if $isOpen == "false" %> g-main-nav--closed<% end_if %>"<% if $name %> name="{$name}"<% end_if %><% if $type %> type="{$type}"<% end_if %>> 
     {$button}
 
     <svg class="g-main-nav__button__icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"> 
@@ -7,8 +7,10 @@
     </svg> 
   </button> 
 
-  <ul class="g-main-nav__ul<% if $isOpen == "true" %> g-main-nav--open<% else_if $isOpen == "false" %> g-main-nav--closed<% end_if %>"> 
-    {$children}
+  <div<% if $id %> id="{$id}"<% end_if %>> 
+    <ul class="g-main-nav__ul<% if $isOpen == "true" %> g-main-nav--open<% else_if $isOpen == "false" %> g-main-nav--closed<% end_if %>"> 
+      {$children}
 
-  </ul> 
+    </ul> 
+  </div> 
 </nav>

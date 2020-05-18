@@ -6,10 +6,9 @@ role="navigation"
   
   
 <button
-aria-controls="{{ navId | escape('html_attr') }}"
+aria-controls="{{ id | escape('html_attr') }}"
 aria-expanded="{{ isOpen | escape('html_attr') }}"
 class="g-main-nav__button{% if isOpen == "true" %}g-main-nav--open{% elseif isOpen == "false" %}g-main-nav--closed{% endif %}"
-id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 type="{{ type | escape('html_attr') }}"
 >
@@ -39,15 +38,23 @@ fill-rule="nonzero"
   
 
   
+<div
+id="{{ id | escape('html_attr') }}"
+>
+  
+    
 <ul
 class="g-main-nav__ul{% if isOpen == "true" %}g-main-nav--open{% elseif isOpen == "false" %}g-main-nav--closed{% endif %}"
 >
   
-    
+      
 {% block children %} MainNavItem components go here {% endblock %}
   
-  
+    
 </ul>
+  
+  
+</div>
   
 
 </nav>

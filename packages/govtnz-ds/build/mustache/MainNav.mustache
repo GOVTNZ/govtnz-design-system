@@ -13,14 +13,11 @@ role="navigation"
   
   
 <button
-{{#navId}}
-  aria-controls="{{navId}}"
-{{/navId}}
+{{#id}}
+  aria-controls="{{id}}"
+{{/id}}
 aria-expanded="{{isOpen}}"
 class="g-main-nav__button{{#isOpen=true}} g-main-nav--open{{/isOpen=true}}{{#isOpen=false}} g-main-nav--closed{{/isOpen=false}}"
-{{#id}}
-  id="{{id}}"
-{{/id}}
 {{#name}}
   name="{{name}}"
 {{/name}}
@@ -54,15 +51,25 @@ fill-rule="nonzero"
   
 
   
+<div
+{{#id}}
+  id="{{id}}"
+{{/id}}
+>
+  
+    
 <ul
 class="g-main-nav__ul{{#isOpen=true}} g-main-nav--open{{/isOpen=true}}{{#isOpen=false}} g-main-nav--closed{{/isOpen=false}}"
 >
   
-    
+      
   {{{children}}}
   
-  
+    
 </ul>
+  
+  
+</div>
   
 
 </nav>

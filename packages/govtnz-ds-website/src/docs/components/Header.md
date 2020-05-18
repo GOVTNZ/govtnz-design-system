@@ -25,7 +25,7 @@ Please note that only the `Header`, `MainNav` and `MainNavItem` components are s
                         </FlexColumn>
                         <FlexColumn xs="12" sm="12" md="9" lg="9">
                             <MainNav id="menuContainer" button="Menu">
-                                <MainNavItem href="/">Home</MainNavItem>
+                                <MainNavItem href="/" ariaCurrent="page">Home</MainNavItem>
                                 <MainNavItem href="/about">About</MainNavItem>
                                 <MainNavItem href="/contact">Contact</MainNavItem>
                             </MainNav>

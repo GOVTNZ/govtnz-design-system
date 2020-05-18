@@ -1,9 +1,8 @@
 <nav role="navigation" aria-label="Main" class="g-main-nav">
   <button
     class="g-main-nav__button {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }}"
-    aria-controls="navId"
+    aria-controls="id"
     aria-expanded="{{ isOpen }}"
-    id="id"
   >
     <mt-variable key="button"> Menu </mt-variable>
     <svg
@@ -19,9 +18,11 @@
     </svg>
   </button>
 
-  <ul
-    class="g-main-nav__ul {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }} "
-  >
-    <mt-variable key="children"> MainNavItem components go here </mt-variable>
-  </ul>
+  <div id="id">
+    <ul
+      class="g-main-nav__ul {{ isOpen?: g-main-nav--open as true | g-main-nav--closed as false }} "
+    >
+      <mt-variable key="children"> MainNavItem components go here </mt-variable>
+    </ul>
+  </div>
 </nav>

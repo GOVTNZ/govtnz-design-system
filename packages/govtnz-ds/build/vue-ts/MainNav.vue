@@ -1,10 +1,9 @@
 <template>
   <nav aria-label="Main" class="g-main-nav" role="navigation">
     <button
-      v-bind:aria-controls="navId"
+      v-bind:aria-controls="id"
       v-bind:aria-expanded="isOpen"
       v-bind:class="computed__class"
-      v-bind:id="id"
       v-bind:name="name"
       v-bind:type="type"
     >
@@ -23,9 +22,11 @@
       </svg>
     </button>
 
-    <ul v-bind:class="computed__class2">
-      <slot></slot>
-    </ul>
+    <div v-bind:id="id">
+      <ul v-bind:class="computed__class2">
+        <slot></slot>
+      </ul>
+    </div>
   </nav>
 </template>
 <script lang="ts">
@@ -45,7 +46,6 @@ export default Vue.extend({
       required: false
     },
     id: { type: String, required: false },
-    navId: { type: String, required: false },
     name: { type: String, required: false },
     type: { type: String, required: false },
     button: { required: false, default: " Menu " },
