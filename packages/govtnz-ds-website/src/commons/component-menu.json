@@ -23,6 +23,11 @@
         "name": "Header",
         "stable": false
       },
+      {
+        "id": "Footer",
+        "name": "Footer",
+        "stable": false
+      },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }
     ]

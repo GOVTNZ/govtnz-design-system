@@ -79,6 +79,8 @@ var FooterStandard_1 = require("./FooterStandard");
 Object.defineProperty(exports, "footerStandard", { enumerable: true, get: function () { return FooterStandard_1.default; } });
 var FooterWrapper_1 = require("./FooterWrapper");
 Object.defineProperty(exports, "footerWrapper", { enumerable: true, get: function () { return FooterWrapper_1.default; } });
+var Footer_1 = require("./Footer");
+Object.defineProperty(exports, "footer", { enumerable: true, get: function () { return Footer_1.default; } });
 var Header_1 = require("./Header");
 Object.defineProperty(exports, "header", { enumerable: true, get: function () { return Header_1.default; } });
 var MainNavItem_1 = require("./MainNavItem");

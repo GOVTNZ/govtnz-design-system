@@ -239,6 +239,12 @@ Object.defineProperty(exports, "footerWrapper", {
     return _FooterWrapper["default"];
   }
 });
+Object.defineProperty(exports, "footer", {
+  enumerable: true,
+  get: function get() {
+    return _Footer["default"];
+  }
+});
 Object.defineProperty(exports, "header", {
   enumerable: true,
   get: function get() {
@@ -335,6 +341,8 @@ var _FlexRow = _interopRequireDefault(require("./FlexRow"));
 var _FooterStandard = _interopRequireDefault(require("./FooterStandard"));
 
 var _FooterWrapper = _interopRequireDefault(require("./FooterWrapper"));
+
+var _Footer = _interopRequireDefault(require("./Footer"));
 
 var _Header = _interopRequireDefault(require("./Header"));
 

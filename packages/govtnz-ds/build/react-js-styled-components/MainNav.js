@@ -24,7 +24,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  fill: var(--g-theme-inverted-color, #ffffff);\n  transition: transform 0.15s;\n  vertical-align: middle;\n  padding-left: 0.2em;\n  width: 16px;\n  height: 16px;\n  transform: rotate(180deg);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  fill: var(--g-theme-inverted-color, #ffffff);\n  transition: transform 0.15s;\n  vertical-align: middle;\n  margin-left: 0.2em;\n  width: 16px;\n  height: 16px;\n  transform: rotate(180deg);\n  transform: rotate(0deg);\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;

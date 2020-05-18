@@ -124,12 +124,13 @@ export default Vue.extend({
   fill: var(--g-theme-inverted-color, #ffffff);
   transition: transform 0.15s;
   vertical-align: middle;
-  padding-left: 0.2em;
+  margin-left: 0.2em;
   width: 16px;
   height: 16px;
+  transform: rotate(180deg);
 }
 .g-main-nav__button.g-main-nav--closed > .g-main-nav__button__icon {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 .g-main-nav__ul {
   list-style: none;
