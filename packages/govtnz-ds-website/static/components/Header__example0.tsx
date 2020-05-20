@@ -31,7 +31,7 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" {...onChangeGenerator({})}>
                             <WrappedMainNav Component={MainNav} id="menuContainer" button="Menu" {...onChangeGenerator({})}>
-                                <MainNavItem href="/" {...onChangeGenerator({})}>About us</MainNavItem>
+                                <MainNavItem href="/" ariaCurrent="page" {...onChangeGenerator({})}>About us</MainNavItem>
                                 <MainNavItem href="/" {...onChangeGenerator({})}>Our work</MainNavItem>
                                 <MainNavItem href="/" {...onChangeGenerator({})}>Resources</MainNavItem>
                                 <MainNavItem href="/" {...onChangeGenerator({})}>News</MainNavItem>
@@ -160,6 +160,7 @@ class WrappedMainNav extends React.Component<
                   console.log('is current page', index, activeIndex);
                   props['ariaCurrent'] = 'page';
                 } else {
+                  props['ariaCurrent'] = undefined;
                   console.log('is NOT current page', index, activeIndex);
                 }
 

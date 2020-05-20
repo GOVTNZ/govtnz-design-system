@@ -25,7 +25,7 @@ Please note that only the `Header`, `MainNav` and `MainNavItem` components are p
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" >
                             <MainNav id="menuContainer" button="Menu">
-                                <MainNavItem href="/">About us</MainNavItem>
+                                <MainNavItem href="/" ariaCurrent="page">About us</MainNavItem>
                                 <MainNavItem href="/">Our work</MainNavItem>
                                 <MainNavItem href="/">Resources</MainNavItem>
                                 <MainNavItem href="/">News</MainNavItem>

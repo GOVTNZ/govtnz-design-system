@@ -135,6 +135,7 @@ class WrappedMainNav extends React.Component<
                   console.log('is current page', index, activeIndex);
                   props['ariaCurrent'] = 'page';
                 } else {
+                  props['ariaCurrent'] = undefined;
                   console.log('is NOT current page', index, activeIndex);
                 }
 
