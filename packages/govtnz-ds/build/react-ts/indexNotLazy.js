@@ -83,8 +83,8 @@ var Footer_1 = require("./Footer");
 Object.defineProperty(exports, "footer", { enumerable: true, get: function () { return Footer_1.default; } });
 var Header_1 = require("./Header");
 Object.defineProperty(exports, "header", { enumerable: true, get: function () { return Header_1.default; } });
-var MainNavItem_1 = require("./MainNavItem");
-Object.defineProperty(exports, "mainNavItem", { enumerable: true, get: function () { return MainNavItem_1.default; } });
+var MainNavLink_1 = require("./MainNavLink");
+Object.defineProperty(exports, "mainNavLink", { enumerable: true, get: function () { return MainNavLink_1.default; } });
 var MainNav_1 = require("./MainNav");
 Object.defineProperty(exports, "mainNav", { enumerable: true, get: function () { return MainNav_1.default; } });
 //# sourceMappingURL=indexNotLazy.js.map

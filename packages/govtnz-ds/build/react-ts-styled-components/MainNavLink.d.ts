@@ -7,5 +7,5 @@ declare type Props = {
     onClick?: React.AnchorHTMLAttributes<HTMLAnchorElement>["onClick"];
     children?: React.ReactNode;
 };
-declare const MainNavItem: ({ ariaCurrent, href, rel, target, onClick, children }: Props) => JSX.Element;
-export default MainNavItem;
+declare const MainNavLink: ({ ariaCurrent, href, rel, target, onClick, children }: Props) => JSX.Element;
+export default MainNavLink;

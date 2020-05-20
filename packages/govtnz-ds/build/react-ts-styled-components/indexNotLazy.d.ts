@@ -39,5 +39,5 @@ export { default as footerStandard } from "./FooterStandard";
 export { default as footerWrapper } from "./FooterWrapper";
 export { default as footer } from "./Footer";
 export { default as header } from "./Header";
-export { default as mainNavItem } from "./MainNavItem";
+export { default as mainNavLink } from "./MainNavLink";
 export { default as mainNav } from "./MainNav";

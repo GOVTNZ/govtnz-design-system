@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom';
 //   return value;
 // };
 
-import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavItem from '@govtnz/ds/build/react-ts/MainNavItem';
+import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -31,11 +31,11 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" {...onChangeGenerator({})}>
                             <WrappedMainNav Component={MainNav} id="menuContainer" button="Menu" {...onChangeGenerator({})}>
-                                <MainNavItem href="/" ariaCurrent="page" {...onChangeGenerator({})}>About us</MainNavItem>
-                                <MainNavItem href="/" {...onChangeGenerator({})}>Our work</MainNavItem>
-                                <MainNavItem href="/" {...onChangeGenerator({})}>Resources</MainNavItem>
-                                <MainNavItem href="/" {...onChangeGenerator({})}>News</MainNavItem>
-                                <MainNavItem href="/" {...onChangeGenerator({})}>Contact</MainNavItem>
+                                <MainNavLink href="/" ariaCurrent="page" {...onChangeGenerator({})}>About us</MainNavLink>
+                                <MainNavLink href="/" {...onChangeGenerator({})}>Our work</MainNavLink>
+                                <MainNavLink href="/" {...onChangeGenerator({})}>Resources</MainNavLink>
+                                <MainNavLink href="/" {...onChangeGenerator({})}>News</MainNavLink>
+                                <MainNavLink href="/" {...onChangeGenerator({})}>Contact</MainNavLink>
                             </WrappedMainNav>
                         </FlexColumn>
                     </FlexRow>

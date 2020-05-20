@@ -31,7 +31,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
 <p>It must include your site&#39;s primary navigation. The <code>MainNav</code> component is an example of this.</p>
 <h2 id="examples">Examples</h2>
 <p>Interact with each example to see how it works.</p>
-<p>Please note that only the <code>Header</code>, <code>MainNav</code> and <code>MainNavItem</code> components are part of the example. The other HTML/components are for example purposes only and are optional.</p>
+<p>Please note that only the <code>Header</code>, <code>MainNav</code> and <code>MainNavLink</code> components are part of the example. The other HTML/components are for example purposes only and are optional.</p>
 <ExampleContainer>
     <Example  code={components__Header[0]} iframeProps={{
         id:"iframe_componentsHeader0",

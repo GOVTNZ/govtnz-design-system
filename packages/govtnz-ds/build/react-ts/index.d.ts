@@ -39,5 +39,5 @@ export declare const FooterStandard: () => Promise<typeof import("./FooterStanda
 export declare const FooterWrapper: () => Promise<typeof import("./FooterWrapper")>;
 export declare const Footer: () => Promise<typeof import("./Footer")>;
 export declare const Header: () => Promise<typeof import("./Header")>;
-export declare const MainNavItem: () => Promise<typeof import("./MainNavItem")>;
+export declare const MainNavLink: () => Promise<typeof import("./MainNavLink")>;
 export declare const MainNav: () => Promise<typeof import("./MainNav")>;

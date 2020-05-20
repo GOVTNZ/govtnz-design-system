@@ -1,5 +1,5 @@
 <template>
-  <li class="g-main-nav__item">
+  <li class="g-main-nav__link">
     <a
       v-bind:aria-current="ariaCurrent"
       v-bind:class="computed__class"
@@ -25,15 +25,15 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-main-nav__item__link" +
-        (this.ariaCurrent ? " g-main-nav__item__link--active" : "")
+        "g-main-nav__link__a" +
+        (this.ariaCurrent ? " g-main-nav__link__a--active" : "")
       );
     }
   }
 });
 </script>
 <style scoped>
-.g-main-nav__item {
+.g-main-nav__link {
   display: block;
   margin-right: 0em;
   margin-left: -0.9em;
@@ -43,41 +43,41 @@ export default Vue.extend({
   letter-spacing: 0;
   line-height: 20px;
 }
-.g-main-nav__item__link {
+.g-main-nav__link__a {
   display: block;
   padding: 0.6em 1em;
   color: var(--g-theme-inverted-color, #ffffff);
   font-weight: bold;
   text-decoration: none;
 }
-.g-main-nav__item__link--active {
+.g-main-nav__link__a--active {
   border-left: solid 0.2em var(--g-theme-inverted-brand, #24a882);
   padding-left: 0.8em;
 }
-.g-main-nav__item__link:focus {
+.g-main-nav__link__a:focus {
   outline: 3px solid var(--color-theme-focus, #b53cde);
 }
 @media only screen and (min-width: 48em) {
-  .g-main-nav__item {
+  .g-main-nav__link {
     display: inline-block;
     margin-right: 1em;
     margin-left: 0px;
   }
-  .g-main-nav__item:first-child {
+  .g-main-nav__link:first-child {
     margin-left: 0em;
   }
-  .g-main-nav__item:last-child {
+  .g-main-nav__link:last-child {
     margin-right: 0px;
   }
-  .g-main-nav__item__link {
+  .g-main-nav__link__a {
     position: relative;
     display: inline-block;
     padding: 0.6em 1em;
   }
-  .g-main-nav__item__link--active {
+  .g-main-nav__link__a--active {
     border-left: none;
   }
-  .g-main-nav__item__link--active::after {
+  .g-main-nav__link__a--active::after {
     content: "";
     position: absolute;
     clear: both;

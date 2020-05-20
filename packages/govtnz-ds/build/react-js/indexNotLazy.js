@@ -251,10 +251,10 @@ Object.defineProperty(exports, "header", {
     return _Header["default"];
   }
 });
-Object.defineProperty(exports, "mainNavItem", {
+Object.defineProperty(exports, "mainNavLink", {
   enumerable: true,
   get: function get() {
-    return _MainNavItem["default"];
+    return _MainNavLink["default"];
   }
 });
 Object.defineProperty(exports, "mainNav", {
@@ -346,6 +346,6 @@ var _Footer = _interopRequireDefault(require("./Footer"));
 
 var _Header = _interopRequireDefault(require("./Header"));
 
-var _MainNavItem = _interopRequireDefault(require("./MainNavItem"));
+var _MainNavLink = _interopRequireDefault(require("./MainNavLink"));
 
 var _MainNav = _interopRequireDefault(require("./MainNav"));

@@ -9,7 +9,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var MainNavItem = function MainNavItem(_ref) {
+var MainNavLink = function MainNavLink(_ref) {
   var ariaCurrent = _ref.ariaCurrent,
       href = _ref.href,
       rel = _ref.rel,
@@ -17,10 +17,10 @@ var MainNavItem = function MainNavItem(_ref) {
       onClick = _ref.onClick,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("li", {
-    className: "g-main-nav__item"
+    className: "g-main-nav__link"
   }, /*#__PURE__*/_react["default"].createElement("a", {
     "aria-current": ariaCurrent,
-    className: "g-main-nav__item__link".concat(ariaCurrent ? " g-main-nav__item__link--active" : ""),
+    className: "g-main-nav__link__a".concat(ariaCurrent ? " g-main-nav__link__a--active" : ""),
     href: href,
     rel: rel,
     target: target,
@@ -28,5 +28,5 @@ var MainNavItem = function MainNavItem(_ref) {
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example item text ")));
 };
 
-var _default = MainNavItem;
+var _default = MainNavLink;
 exports["default"] = _default;

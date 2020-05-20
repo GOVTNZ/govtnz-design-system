@@ -10,7 +10,7 @@ It must include your site's primary navigation. The `MainNav` component is an ex
 
 Interact with each example to see how it works.
 
-Please note that only the `Header`, `MainNav` and `MainNavItem` components are part of the example. The other HTML/components are for example purposes only and are optional.
+Please note that only the `Header`, `MainNav` and `MainNavLink` components are part of the example. The other HTML/components are for example purposes only and are optional.
 
 <ExampleContainer>
     <Example title="Example: Header containing a MainNav">
@@ -25,11 +25,11 @@ Please note that only the `Header`, `MainNav` and `MainNavItem` components are p
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" >
                             <MainNav id="menuContainer" button="Menu">
-                                <MainNavItem href="/" ariaCurrent="page">About us</MainNavItem>
-                                <MainNavItem href="/">Our work</MainNavItem>
-                                <MainNavItem href="/">Resources</MainNavItem>
-                                <MainNavItem href="/">News</MainNavItem>
-                                <MainNavItem href="/">Contact</MainNavItem>
+                                <MainNavLink href="/" ariaCurrent="page">About us</MainNavLink>
+                                <MainNavLink href="/">Our work</MainNavLink>
+                                <MainNavLink href="/">Resources</MainNavLink>
+                                <MainNavLink href="/">News</MainNavLink>
+                                <MainNavLink href="/">Contact</MainNavLink>
                             </MainNav>
                         </FlexColumn>
                     </FlexRow>

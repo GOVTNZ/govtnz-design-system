@@ -61,7 +61,7 @@ var StyledA = _styledComponents["default"].a(_templateObject2(), function (props
   return props.ariaCurrent && _styledComponents["default"].css(_templateObject4());
 });
 
-var MainNavItem = function MainNavItem(_ref) {
+var MainNavLink = function MainNavLink(_ref) {
   var ariaCurrent = _ref.ariaCurrent,
       href = _ref.href,
       rel = _ref.rel,
@@ -78,5 +78,5 @@ var MainNavItem = function MainNavItem(_ref) {
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example item text ")));
 };
 
-var _default = MainNavItem;
+var _default = MainNavLink;
 exports["default"] = _default;
