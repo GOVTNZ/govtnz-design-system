@@ -17,6 +17,27 @@
   }
 }
 
+.example__iframe-link-container {
+  border-bottom: solid 1px $color-ds-default-mid-grey;
+  border-bottom: solid 1px
+    var(--color-theme-mid-grey, $color-ds-default-mid-grey);
+
+  a,
+  .g-link,
+  .g-link:visited {
+    /* override :visited style too because of course the iframe has been visited by browsing the components page */
+    display: inline-block;
+    padding: 0.2em 1em 0.4em 2em;
+    font-size: 1rem;
+    color: $color-ds-default-link;
+    color: var(--color-theme-link, $color-ds-default-link);
+  }
+
+  @include print {
+    display: none;
+  }
+}
+
 .example__iframe-wrapper {
   overflow-x: hidden;
   padding: 0px;

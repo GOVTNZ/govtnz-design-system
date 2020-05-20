@@ -1,8 +1,8 @@
 <li class="g-main-nav__item">
   <a
     href="{{ href }}"
-    class="g-main-nav__item__link"
-    aria-current="{{ ariaCurrent }}"
+    class="g-main-nav__item__link {{ ariaCurrent?: g-main-nav__item__link--active as page }}"
+    aria-current="{{ ariaCurrent? }}"
   >
     <mt-variable key="children"> Example item text </mt-variable>
   </a>

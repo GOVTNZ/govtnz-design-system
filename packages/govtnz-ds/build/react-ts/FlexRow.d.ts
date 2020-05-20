@@ -1,11 +1,11 @@
 import React from "react";
 declare type Props = {
-    alignXs?: "start" | "center" | "end";
-    alignSm?: "start" | "center" | "end";
-    alignMd?: "start" | "center" | "end";
-    alignLg?: "start" | "center" | "end";
+    xsVerticalAlign?: "top" | "middle" | "bottom";
+    smVerticalAlign?: "top" | "middle" | "bottom";
+    mdVerticalAlign?: "top" | "middle" | "bottom";
+    lgVerticalAlign?: "top" | "middle" | "bottom";
     isReversed?: boolean;
     children?: React.ReactNode;
 };
-declare const FlexRow: ({ alignXs, alignSm, alignMd, alignLg, isReversed, children }: Props) => JSX.Element;
+declare const FlexRow: ({ xsVerticalAlign, smVerticalAlign, mdVerticalAlign, lgVerticalAlign, isReversed, children }: Props) => JSX.Element;
 export default FlexRow;

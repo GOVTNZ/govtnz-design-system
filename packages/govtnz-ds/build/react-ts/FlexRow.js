@@ -5,21 +5,37 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var constants = {
-    alignXs: { start: "start-xs", center: "center-xs", end: "end-xs" },
-    alignSm: { start: "start-sm", center: "center-sm", end: "end-sm" },
-    alignMd: { start: "start-md", center: "center-md", end: "end-md" },
-    alignLg: { start: "start-lg", center: "center-lg", end: "end-lg" }
+    xsVerticalAlign: {
+        top: "g-flex-top-xs",
+        middle: "g-flex-middle-xs",
+        bottom: "g-flex-bottom-xs"
+    },
+    smVerticalAlign: {
+        top: "g-flex-top-sm",
+        middle: "g-flex-middle-sm",
+        bottom: "g-flex-bottom-sm"
+    },
+    mdVerticalAlign: {
+        top: "g-flex-top-md",
+        middle: "g-flex-middle-md",
+        bottom: "g-flex-bottom-md"
+    },
+    lgVerticalAlign: {
+        top: "g-flex-top-lg",
+        middle: "g-flex-middle-lg",
+        bottom: "g-flex-bottom-lg"
+    }
 };
 var FlexRow = function (_a) {
-    var alignXs = _a.alignXs, alignSm = _a.alignSm, alignMd = _a.alignMd, alignLg = _a.alignLg, isReversed = _a.isReversed, children = _a.children;
-    return (react_1.default.createElement("div", { className: "g-flex-row" + (constants.alignXs[alignXs] !== undefined
-            ? " " + constants.alignXs[alignXs]
-            : "") + (constants.alignSm[alignSm] !== undefined
-            ? " " + constants.alignSm[alignSm]
-            : "") + (constants.alignMd[alignMd] !== undefined
-            ? " " + constants.alignMd[alignMd]
-            : "") + (constants.alignLg[alignLg] !== undefined
-            ? " " + constants.alignLg[alignLg]
+    var xsVerticalAlign = _a.xsVerticalAlign, smVerticalAlign = _a.smVerticalAlign, mdVerticalAlign = _a.mdVerticalAlign, lgVerticalAlign = _a.lgVerticalAlign, isReversed = _a.isReversed, children = _a.children;
+    return (react_1.default.createElement("div", { className: "g-flex-row" + (constants.xsVerticalAlign[xsVerticalAlign] !== undefined
+            ? " " + constants.xsVerticalAlign[xsVerticalAlign]
+            : "") + (constants.smVerticalAlign[smVerticalAlign] !== undefined
+            ? " " + constants.smVerticalAlign[smVerticalAlign]
+            : "") + (constants.mdVerticalAlign[mdVerticalAlign] !== undefined
+            ? " " + constants.mdVerticalAlign[mdVerticalAlign]
+            : "") + (constants.lgVerticalAlign[lgVerticalAlign] !== undefined
+            ? " " + constants.lgVerticalAlign[lgVerticalAlign]
             : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns..."))));
 };
 exports.default = FlexRow;

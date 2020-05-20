@@ -1,7 +1,12 @@
 .g-main-nav__item {
   display: block;
   margin-right: 0em;
-  margin-left: -1em;
+  margin-left: -0.9em;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 20px;
 }
 
 .g-main-nav__item__link {
@@ -10,6 +15,11 @@
   color: var(--g-theme-inverted-color, #ffffff);
   font-weight: bold;
   text-decoration: none;
+}
+
+.g-main-nav__item__link--active {
+  border-left: solid 0.2em var(--g-theme-inverted-brand, #24a882);
+  padding-left: 0.8em;
 }
 
 .g-main-nav__item__link:focus {
@@ -24,7 +34,7 @@
   }
 
   .g-main-nav__item:first-child {
-    margin-left: -1em;
+    margin-left: 0em;
   }
 
   .g-main-nav__item:last-child {
@@ -32,7 +42,25 @@
   }
 
   .g-main-nav__item__link {
+    position: relative;
     display: inline-block;
     padding: 0.6em 1em;
+  }
+
+  .g-main-nav__item__link--active {
+    border-left: none;
+  }
+
+  .g-main-nav__item__link--active::after {
+    content: "";
+    position: absolute;
+    clear: both;
+    display: block;
+    bottom: 0px;
+    left: 1em;
+    right: 1em;
+    height: 5px;
+    background: #24a882;
+    background-color: var(--g-theme-inverted-brand, #24a882);
   }
 }

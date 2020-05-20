@@ -24,7 +24,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  fill: var(--g-theme-inverted-color, #ffffff);\n  transition: transform 0.15s;\n  vertical-align: middle;\n  margin-left: 0.2em;\n  width: 16px;\n  height: 16px;\n  transform: rotate(180deg);\n  transform: rotate(0deg);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  fill: var(--g-theme-inverted-brand, #24a882);\n  transition: transform 0.15s;\n  vertical-align: middle;\n  margin-left: 0.2em;\n  width: 12px;\n  height: 12px;\n  transform: rotate(180deg);\n  transform: rotate(0deg);\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

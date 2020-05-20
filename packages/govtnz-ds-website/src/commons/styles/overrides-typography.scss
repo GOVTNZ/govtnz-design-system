@@ -18,46 +18,66 @@
 // }
 
 .g-heading-xl {
-//   margin-top: 4rem;
-//   margin-bottom: 1rem !important;
-//   font-size: 3.5rem !important;
-//   line-height: 1.15 !important;
+  //   margin-top: 4rem;
+  //   margin-bottom: 1rem !important;
+  //   font-size: 3.5rem !important;
+  //   line-height: 1.15 !important;
 
-//   @media (min-width: 40.0625em) {
-//     margin-top: 5rem;
-//   }
+  //   @media (min-width: 40.0625em) {
+  //     margin-top: 5rem;
+  //   }
   @media print {
-    font-family: var(--g-theme-font-family, National2, Arial, sans-serif) !important;
+    font-family: var(
+      --g-theme-font-family,
+      National2,
+      Arial,
+      sans-serif
+    ) !important;
   }
 }
 
 .g-heading-l {
-//   margin-top: 3rem !important;
-//   margin-bottom: 0.5rem !important;
-//   font-size: 2.5rem !important;
-//   line-height: 1.2 !important;
+  //   margin-top: 3rem !important;
+  //   margin-bottom: 0.5rem !important;
+  //   font-size: 2.5rem !important;
+  //   line-height: 1.2 !important;
   @media print {
-    font-family: var(--g-theme-font-family, National2, Arial, sans-serif) !important;
+    font-family: var(
+      --g-theme-font-family,
+      National2,
+      Arial,
+      sans-serif
+    ) !important;
   }
 }
 
 .g-heading-m {
-//   margin-top: 2.5rem !important;
-//   margin-bottom: 0.5rem !important;
-//   font-size: 1.5rem !important;
-//   line-height: 1.25 !important;
+  //   margin-top: 2.5rem !important;
+  //   margin-bottom: 0.5rem !important;
+  //   font-size: 1.5rem !important;
+  //   line-height: 1.25 !important;
   @media print {
-    font-family: var(--g-theme-font-family, National2, Arial, sans-serif) !important;
+    font-family: var(
+      --g-theme-font-family,
+      National2,
+      Arial,
+      sans-serif
+    ) !important;
   }
 }
 
 .g-heading-s {
-//   margin-top: 2.5rem !important;
-//   margin-bottom: 0.5rem !important;
-//   line-height: 1.5 !important;
-//   font-size: 1.25rem !important;
+  //   margin-top: 2.5rem !important;
+  //   margin-bottom: 0.5rem !important;
+  //   line-height: 1.5 !important;
+  //   font-size: 1.25rem !important;
   @media print {
-    font-family: var(--g-theme-font-family, National2, Arial, sans-serif) !important;
+    font-family: var(
+      --g-theme-font-family,
+      National2,
+      Arial,
+      sans-serif
+    ) !important;
   }
 }
 
@@ -70,7 +90,12 @@
   color: $color-core-black !important;
 
   @media print {
-    font-family: var(--g-theme-font-family, National2, Arial, sans-serif) !important;
+    font-family: var(
+      --g-theme-font-family,
+      National2,
+      Arial,
+      sans-serif
+    ) !important;
   }
 }
 
@@ -147,7 +172,7 @@
   }
 
   &:visited {
-    color: var(--color-theme-link-visited, #4c2c92) !important;
+    color: var(--color-theme-link-visited, #4c2c92);
 
     @media print {
       color: $color-core-black !important;

@@ -30,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-MainNavItem",
-            template: "\n    <li class=\"g-main-nav__item\">\n      <a\n        aria-current=\"{{ ariaCurrent }}\"\n        class=\"g-main-nav__item__link\"\n        href=\"{{ href }}\"\n        rel=\"{{ rel }}\"\n        target=\"{{ target }}\"\n      >\n        <slot></slot>\n      </a>\n    </li>\n  "
+            template: "\n<li class=\"g-main-nav__item\">\n\n  \n<a aria-current=\"{{ariaCurrent}}\" class=\"g-main-nav__item__link{{ariaCurrent ? \" g-main-nav__item__link--active\" : \"\"}}\" href=\"{{href}}\" rel=\"{{rel}}\" target=\"{{target}}\">\n\n    <slot></slot>\n  \n\n</a>\n\n\n\n\n</li>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

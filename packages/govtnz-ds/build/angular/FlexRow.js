@@ -14,16 +14,16 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "alignXs", void 0);
+    ], AppComponent.prototype, "xsVerticalAlign", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "alignSm", void 0);
+    ], AppComponent.prototype, "smVerticalAlign", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "alignMd", void 0);
+    ], AppComponent.prototype, "mdVerticalAlign", void 0);
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "alignLg", void 0);
+    ], AppComponent.prototype, "lgVerticalAlign", void 0);
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "isReversed", void 0);
@@ -33,7 +33,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexRow",
-            template: "\n<div class=\"g-flex-row{{constants.alignXs[alignXs] !== undefined ? \" \" +  constants.alignXs[alignXs] : \"\"}}{{constants.alignSm[alignSm] !== undefined ? \" \" +  constants.alignSm[alignSm] : \"\"}}{{constants.alignMd[alignMd] !== undefined ? \" \" +  constants.alignMd[alignMd] : \"\"}}{{constants.alignLg[alignLg] !== undefined ? \" \" +  constants.alignLg[alignLg] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? \" \" +  constants.xsVerticalAlign[xsVerticalAlign] : \"\"}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? \" \" +  constants.smVerticalAlign[smVerticalAlign] : \"\"}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? \" \" +  constants.mdVerticalAlign[mdVerticalAlign] : \"\"}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? \" \" +  constants.lgVerticalAlign[lgVerticalAlign] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

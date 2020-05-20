@@ -7,39 +7,55 @@
 import Vue from "vue";
 
 const constants = {
-  alignXs: { start: "start-xs", center: "center-xs", end: "end-xs" },
-  alignSm: { start: "start-sm", center: "center-sm", end: "end-sm" },
-  alignMd: { start: "start-md", center: "center-md", end: "end-md" },
-  alignLg: { start: "start-lg", center: "center-lg", end: "end-lg" }
+  xsVerticalAlign: {
+    top: "g-flex-top-xs",
+    middle: "g-flex-middle-xs",
+    bottom: "g-flex-bottom-xs"
+  },
+  smVerticalAlign: {
+    top: "g-flex-top-sm",
+    middle: "g-flex-middle-sm",
+    bottom: "g-flex-bottom-sm"
+  },
+  mdVerticalAlign: {
+    top: "g-flex-top-md",
+    middle: "g-flex-middle-md",
+    bottom: "g-flex-bottom-md"
+  },
+  lgVerticalAlign: {
+    top: "g-flex-top-lg",
+    middle: "g-flex-middle-lg",
+    bottom: "g-flex-bottom-lg"
+  }
 };
 
 export default Vue.extend({
   props: {
-    alignXs: {
+    xsVerticalAlign: {
       type: String,
       validator: value => {
-        return ["start", "center", "end"].indexOf(value) !== -1;
+        return ["top", "middle", "bottom"].indexOf(value) !== -1;
       },
       required: false
     },
-    alignSm: {
+    smVerticalAlign: {
       type: String,
       validator: value => {
-        return ["start", "center", "end"].indexOf(value) !== -1;
+        return ["top", "middle", "bottom"].indexOf(value) !== -1;
       },
       required: false
     },
-    alignMd: {
+    mdVerticalAlign: {
       type: String,
       validator: value => {
-        return ["start", "center", "end"].indexOf(value) !== -1;
+        return ["top", "middle", "bottom"].indexOf(value) !== -1;
       },
       required: false
     },
-    alignLg: {
+    lgVerticalAlign: {
       type: String,
       validator: value => {
-        return ["start", "center", "end"].indexOf(value) !== -1;
+        return ["top", "middle", "bottom"].indexOf(value) !== -1;
       },
       required: false
     },
@@ -50,17 +66,17 @@ export default Vue.extend({
     computed__class() {
       return (
         "g-flex-row" +
-        (constants.alignXs[this.alignXs] !== undefined
-          ? ` ${constants.alignXs[this.alignXs]}`
+        (constants.xsVerticalAlign[this.xsVerticalAlign] !== undefined
+          ? ` ${constants.xsVerticalAlign[this.xsVerticalAlign]}`
           : "") +
-        (constants.alignSm[this.alignSm] !== undefined
-          ? ` ${constants.alignSm[this.alignSm]}`
+        (constants.smVerticalAlign[this.smVerticalAlign] !== undefined
+          ? ` ${constants.smVerticalAlign[this.smVerticalAlign]}`
           : "") +
-        (constants.alignMd[this.alignMd] !== undefined
-          ? ` ${constants.alignMd[this.alignMd]}`
+        (constants.mdVerticalAlign[this.mdVerticalAlign] !== undefined
+          ? ` ${constants.mdVerticalAlign[this.mdVerticalAlign]}`
           : "") +
-        (constants.alignLg[this.alignLg] !== undefined
-          ? ` ${constants.alignLg[this.alignLg]}`
+        (constants.lgVerticalAlign[this.lgVerticalAlign] !== undefined
+          ? ` ${constants.lgVerticalAlign[this.lgVerticalAlign]}`
           : "") +
         (this.isReversed ? " g-flex-reverse" : "")
       );
@@ -89,5 +105,66 @@ export default Vue.extend({
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+}
+.g-flex-top-xs {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.g-flex-bottom-xs {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@media only screen and (min-width: 48em) {
+  .g-flex-top-sm {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .g-flex-middle-sm {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .g-flex-bottom-sm {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .g-flex-top-md {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .g-flex-middle-md {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .g-flex-bottom-md {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .g-flex-top-lg {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .g-flex-middle-lg {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .g-flex-bottom-lg {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
 }
 </style>

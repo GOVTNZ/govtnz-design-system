@@ -20,7 +20,7 @@ var MainNavItem = function MainNavItem(_ref) {
     className: "g-main-nav__item"
   }, /*#__PURE__*/_react["default"].createElement("a", {
     "aria-current": ariaCurrent,
-    className: "g-main-nav__item__link",
+    className: "g-main-nav__item__link".concat(ariaCurrent ? " g-main-nav__item__link--active" : ""),
     href: href,
     rel: rel,
     target: target,

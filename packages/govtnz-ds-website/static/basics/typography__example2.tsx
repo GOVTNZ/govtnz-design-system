@@ -86,24 +86,80 @@ class MainNavMobileMenuContext extends Component<
   }
 }
 
-function WrappedMainNav(props) {
-  return (
-    <MobileMenuContext.Consumer>
-      {value => {
-        const Component = props.Component;
-        const newProps = {
-          ...props,
-          isOpen: value.isOpen.toString(),
-          onClick: () => {
-            console.log('click handler!');
-            value.setIsOpen(!value.isOpen);
-          },
-        };
-        console.log('Wrapped mainnav component being given', newProps);
-        return <Component {...newProps} />;
-      }}
-    </MobileMenuContext.Consumer>
-  );
+type WrappedMainNavProps = {
+  Component: React.Component;
+};
+
+type WrappedMainNavState = {
+  activeIndex: number;
+};
+
+class WrappedMainNav extends React.Component<
+  WrappedMainNavProps,
+  WrappedMainNavState
+> {
+  constructor(props: WrappedMainNavProps) {
+    super(props);
+
+    this.state = {
+      activeIndex: 0,
+    };
+
+    this.setActiveIndex = this.setActiveIndex.bind(this);
+  }
+
+  setActiveIndex(activeIndex: number) {
+    this.setState({ activeIndex });
+  }
+
+  render() {
+    const props = this.props;
+    const { activeIndex } = this.state;
+
+    const that = this;
+
+    return (
+      <MobileMenuContext.Consumer>
+        {value => {
+          const Component = props.Component;
+          const newProps = {
+            ...props,
+            isOpen: value.isOpen.toString(),
+            onClick: () => {
+              console.log('click handler!');
+              value.setIsOpen(!value.isOpen);
+            },
+            children: React.Children.map(
+              props.children,
+              (child: React.ReactChild, index: number) => {
+                console.log({ child });
+                const props = {
+                  onClick: (e: React.MouseEvent<HTMLElement>) => {
+                    console.log('click handler:', index);
+                    e.preventDefault();
+                    that.setActiveIndex(index);
+                  },
+                };
+
+                if (index === activeIndex) {
+                  console.log('is current page', index, activeIndex);
+                  props['ariaCurrent'] = 'page';
+                } else {
+                  console.log('is NOT current page', index, activeIndex);
+                }
+
+                const newChild = React.cloneElement(child, props);
+
+                return newChild;
+              }
+            ),
+          };
+          console.log('Wrapped mainnav component being given', newProps);
+          return <Component {...newProps} />;
+        }}
+      </MobileMenuContext.Consumer>
+    );
+  }
 }
 
       const onChangeGenerator = (props) => {

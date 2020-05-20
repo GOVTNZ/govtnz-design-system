@@ -13,9 +13,10 @@ import {
   trackFormat,
 } from './code-previews';
 import Icon from '../components/Icon';
+import P from '@govtnz/ds/build/react-ts/P';
 
 type Props = {
-  iframeProps: AnyObject;
+  iframeProps: React.IframeHTMLAttributes<HTMLIFrameElement>;
   code: AnyObject;
   codeOnly?: boolean | undefined;
 };
@@ -312,6 +313,19 @@ export default class Example extends Component<Props, State> {
       <div className="example">
         {!codeOnly && (
           <Fragment>
+            <div className="example__iframe-link-container">
+              <A
+                href={iframeProps.src}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Open this{' '}
+                <span className="visually-hidden">
+                  {iframeProps.title.replace(/Example:/gi, '')}
+                </span>{' '}
+                example in a new window
+              </A>
+            </div>
             <div className="example__iframe-wrapper">
               <iframe
                 {...iframeProps}

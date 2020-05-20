@@ -116,17 +116,14 @@ export default Vue.extend({
 .g-main-nav__button:focus {
   outline: 3px solid var(--color-theme-focus, #b53cde);
 }
-.g-main-nav__button.g-main-nav--open {
-  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
-}
-.g-main-nav__button > .g-main-nav__button__icon {
+.g-main-nav__button__icon {
   display: inline-block;
-  fill: var(--g-theme-inverted-color, #ffffff);
+  fill: var(--g-theme-inverted-brand, #24a882);
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   transform: rotate(180deg);
 }
 .g-main-nav__button.g-main-nav--closed > .g-main-nav__button__icon {
