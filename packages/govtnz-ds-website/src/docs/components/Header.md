@@ -18,12 +18,12 @@ Please note that only the `Header`, `MainNav` and `MainNavItem` components are p
             <MainNavMobileMenuContext>
                 <FlexContainer width="fluid">
                     <FlexRow xsVerticalAlign="middle" smVerticalAlign="middle" mdVerticalAlign="middle" lgVerticalAlign="middle">
-                        <FlexColumn xs="8" sm="5" md="4" lg="3">
+                        <FlexColumn xs="8" sm="5" md="5" lg="5">
                             <svg role="presentation" focusable="false" width="223" height="64" className="example-agency-logo"><use xlinkHref="#example-agency-logo"></use></svg>
                         </FlexColumn>
                         <FlexColumn xs="4" sm="hidden" md="hidden" lg="hidden">
                         </FlexColumn>
-                        <FlexColumn xs="12" sm="7" md="8" lg="9" >
+                        <FlexColumn xs="12" sm="7" md="7" lg="7" >
                             <MainNav id="menuContainer" button="Menu">
                                 <MainNavItem href="/">About us</MainNavItem>
                                 <MainNavItem href="/">Our work</MainNavItem>
