@@ -45,10 +45,12 @@ export default Vue.extend({
 }
 .g-main-nav__link__a {
   display: block;
-  padding: 0.6em 1em;
+  padding: 1em;
   color: var(--g-theme-inverted-color, #ffffff);
-  font-weight: bold;
   text-decoration: none;
+}
+.g-main-nav__link__a:hover {
+  text-decoration: underline;
 }
 .g-main-nav__link__a--active {
   border-left: solid 0.2em var(--g-theme-inverted-brand, #24a882);

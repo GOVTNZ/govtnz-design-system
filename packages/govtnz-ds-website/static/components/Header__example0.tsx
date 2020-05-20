@@ -24,12 +24,12 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
             <MainNavMobileMenuContext {...onChangeGenerator({})}>
                 <FlexContainer width="fluid" {...onChangeGenerator({})}>
                     <FlexRow xsVerticalAlign="middle" smVerticalAlign="middle" mdVerticalAlign="middle" lgVerticalAlign="middle" {...onChangeGenerator({})}>
-                        <FlexColumn xs="8" sm="5" md="5" lg="5" {...onChangeGenerator({})}>
+                        <FlexColumn xs="8" sm="5" md="4" lg="3" {...onChangeGenerator({})}>
                             <svg role="presentation" focusable="false" width="223" height="64" className="example-agency-logo"><use xlinkHref="#example-agency-logo"></use></svg>
                         </FlexColumn>
                         <FlexColumn xs="4" sm="hidden" md="hidden" lg="hidden" {...onChangeGenerator({})}>
                         </FlexColumn>
-                        <FlexColumn xs="12" sm="7" md="7" lg="7" {...onChangeGenerator({})}>
+                        <FlexColumn xs="12" sm="7" md="8" lg="9" {...onChangeGenerator({})}>
                             <WrappedMainNav Component={MainNav} id="menuContainer" button="Menu" {...onChangeGenerator({})}>
                                 <MainNavLink href="/" ariaCurrent="page" {...onChangeGenerator({})}>About us</MainNavLink>
                                 <MainNavLink href="/" {...onChangeGenerator({})}>Our work</MainNavLink>
