@@ -52,7 +52,7 @@
 
 .g-main-nav__button__icon {
   display: inline-block;
-  fill: var(--g-theme-inverted-brand, #24a882);
+  color: var(--g-theme-inverted-brand, #24a882);
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;
