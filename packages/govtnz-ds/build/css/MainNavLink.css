@@ -62,7 +62,7 @@
     bottom: 0px;
     left: 1em;
     right: 1em;
-    height: 5px;
+    height: 4px;
     background: #24a882;
     background-color: var(--g-theme-inverted-brand, #24a882);
   }

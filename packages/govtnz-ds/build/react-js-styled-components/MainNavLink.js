@@ -34,7 +34,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 1em;\n  color: var(--g-theme-inverted-color, #ffffff);\n  text-decoration: none;\n  :hover {\n    text-decoration: underline;\n  }\n  ", "\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  @media only screen and (min-width: 48em) {\n    position: relative;\n    display: inline-block;\n    padding: 0.6em 1em;\n    ", ";\n    ::after {\n      content: \"\";\n      position: absolute;\n      clear: both;\n      display: block;\n      bottom: 0px;\n      left: 1em;\n      right: 1em;\n      height: 5px;\n      background: #24a882;\n      background-color: var(--g-theme-inverted-brand, #24a882);\n    }\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 1em;\n  color: var(--g-theme-inverted-color, #ffffff);\n  text-decoration: none;\n  :hover {\n    text-decoration: underline;\n  }\n  ", "\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n  @media only screen and (min-width: 48em) {\n    position: relative;\n    display: inline-block;\n    padding: 0.6em 1em;\n    ", ";\n    ::after {\n      content: \"\";\n      position: absolute;\n      clear: both;\n      display: block;\n      bottom: 0px;\n      left: 1em;\n      right: 1em;\n      height: 4px;\n      background: #24a882;\n      background-color: var(--g-theme-inverted-brand, #24a882);\n    }\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
