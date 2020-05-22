@@ -150,11 +150,11 @@ Say ‘Enter [whatever it is]’. For example, ‘Enter your first name’.
 
 Say ‘[whatever it is] must be [number] characters or less’. For example, ‘Address line 1 must have 35 characters or less’.
 
-#### If the input is too short [H4]
+#### If the input is too short
 
 Say ‘[whatever it is] must be [number] characters or more’. For example, ‘Full name must be 2 characters or more’.
 
-#### If the input can be either too short or too long [H4]
+#### If the input can be either too short or too long
 
 Say ‘[whatever it is] must be between [number] and [number] characters’. For example, ‘Last name must be between 2 and 35 characters’.
 
