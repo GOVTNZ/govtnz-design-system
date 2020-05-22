@@ -28,7 +28,7 @@ var StyledHeader = _styledComponents["default"].header(_templateObject());
 var Header = function Header(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledHeader, {
-    role: "header"
+    role: "banner"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "));
 };
 

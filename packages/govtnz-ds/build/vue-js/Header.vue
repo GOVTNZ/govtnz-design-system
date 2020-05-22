@@ -1,5 +1,5 @@
 <template>
-  <header class="g-header" role="header">
+  <header class="g-header" role="banner">
     <slot></slot>
   </header>
 </template>

@@ -13,7 +13,7 @@ var Header = function Header(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("header", {
     className: "g-header",
-    role: "header"
+    role: "banner"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "));
 };
 

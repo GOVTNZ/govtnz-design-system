@@ -18,7 +18,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Header",
-            template: "\n    <header class=\"g-header\" role=\"header\">\n      <slot></slot>\n    </header>\n  "
+            template: "\n    <header class=\"g-header\" role=\"banner\">\n      <slot></slot>\n    </header>\n  "
         })
     ], AppComponent);
     return AppComponent;
