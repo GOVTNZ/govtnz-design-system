@@ -36,11 +36,25 @@ body {
   margin-bottom: 0.25rem;
 }
 
+a:focus {
+  outline: #b53cde;
+  outline: 3px solid var(--color-theme-focus, #b53cde);
+}
+
 .css-changes-for-example-only .example-agency-logo {
+  display: inline-block;
+}
+
+.css-changes-for-example-only .example-agency-logo__image {
+  fill: white;
+  color: white;
   margin: 10px 10px 10px 0;
 }
 
-.css-changes-for-example-only .example-hidden {
+.css-changes-for-example-only
+  .example-agency-logo__image
+  .css-changes-for-example-only
+  .example-hidden {
   display: none;
 }
 
