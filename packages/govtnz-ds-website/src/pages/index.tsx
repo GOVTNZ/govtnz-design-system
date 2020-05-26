@@ -80,10 +80,10 @@ const IndexPage = props => {
         <Row>
           <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
             <P styleSize="medium">
-              The all-of-government (AOG) design system alpha is a catalogue of
-              reusable basic elements, components, and patterns for building
-              websites and applications, along with guidance on how and when to
-              use them.
+              The New Zealand Government Design System (NZGDS) alpha is a
+              catalogue of reusable basic elements, components, and patterns for
+              building websites and applications, along with guidance on how and
+              when to use them.
             </P>
             <P styleSize="medium">
               <A href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
@@ -102,9 +102,7 @@ const IndexPage = props => {
               You get a play box of building blocks from which you can construct
               new websites or improve existing ones.
             </P>
-            <P styleSize="medium">
-              With the AOG design system, you will soon be able to:
-            </P>
+            <P styleSize="medium">With the NZGDS, you will soon be able to:</P>
             <Ul bulleted>
               <Li>
                 prototype, design, and develop websites quickly and efficiently
@@ -135,7 +133,7 @@ const IndexPage = props => {
               <A href="https://designsystem.gov.au/">
                 Australian Government Design System
               </A>
-              , plus some cutting-edge Kiwi innovations. By choosing the AOG
+              , plus some cutting-edge Kiwi innovations. By choosing the NZGDS
               design system, you can be confident you are at the forefront of
               international best practice.
             </P>
@@ -208,9 +206,9 @@ const IndexPage = props => {
             <span className="hr hr--large" />
             <H2 styleSize="large">Get involved</H2>
             <P styleSize="medium">
-              Since the AOG design system will be for everyone to use, we want a
-              strong cross-government community backing it. Our overall aim is
-              to improve digital service delivery across the New Zealand public
+              Since the NZGDS will be for everyone to use, we want a strong
+              cross-government community backing it. Our overall aim is to
+              improve digital service delivery across the New Zealand public
               service.
             </P>
             <P styleSize="medium">You can contribute by:</P>

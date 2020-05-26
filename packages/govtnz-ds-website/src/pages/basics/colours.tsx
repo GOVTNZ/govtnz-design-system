@@ -154,8 +154,9 @@ const ColoursPage = (pageProps: PageRendererProps) => (
           <P styleSize="large">
             The colour palette provides a colour structure for your website,
             which you will be able to adapt to the colours of your digital
-            brand. Theming for the all-of-government (AOG) palette is being
-            worked on now, and will be available in the near future.
+            brand. Theming for the New Zealand Government Design System (NZGDS)
+            palette is being worked on now, and will be available in the near
+            future.
           </P>
           <P styleSize="medium">
             Colour choice for the design system was based on a survey of the
@@ -182,8 +183,8 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             <A href="https://www.w3.org/TR/WCAG21/">
               Web Content Accessibility Guidelines ( WCAG) 2.1
             </A>{' '}
-            to level AA. The AOG design system has been built to meet these
-            standards.
+            to level AA. The New Zealand Government Design System (NZGDS) has
+            been built to meet these standards.
           </P>
           <P styleSize="medium">
             To ensure compliance, only use the variables in the context they are

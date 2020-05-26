@@ -34,8 +34,8 @@ const IndexPage = props => (
             Get started
           </H1>
           <P styleSize="large">
-            Find out how to start using the all-of-government (AOG) design
-            system, whether you’re a designer, developer, content designer,
+            Find out how to start using the New Zealand Government Design System
+            (NZGDS), whether you’re a designer, developer, content designer,
             product owner or project manager.
           </P>
           <H2 styleSize="large">Designer</H2>

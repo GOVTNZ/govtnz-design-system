@@ -18,14 +18,14 @@ import onChangeGenerator from '../../commons/onChangeGenerator';
 
 const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">About the Design System alpha website</H1>
 <P styleSize="large">
-    New Zealand's all-of-government (AOG) Design System alpha website provides
+    The New Zealand Government Design System (NZGDS) alpha website provides
     a catalogue of reusable basic elements, single components, and patterns of
     components for building websites and applications, along with guidance on
     how and when to use them. 
 </P>
 
 <p><a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">Government Information Services</a>&nbsp;
-is creating the AOG Design System now. Our overall aim is to improve digital
+is creating the NZGDS Design System now. Our overall aim is to improve digital
 service delivery across the New Zealand public service.</p>
 <p><a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</a>.</p>
 <p>This alpha website shows you what we have built so far, what we&#39;re working on,
