@@ -94,8 +94,8 @@ export default Vue.extend({
 }
 .g-main-nav__button {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 3px;
+  right: 3px;
   background: transparent;
   color: var(--g-theme-inverted-color, #ffffff);
   font-size: 16px;

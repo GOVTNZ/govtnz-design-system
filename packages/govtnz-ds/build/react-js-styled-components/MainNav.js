@@ -34,7 +34,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 0px;\n  right: 0px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 3px;\n  right: 3px;\n  background: transparent;\n  color: var(--g-theme-inverted-color, #ffffff);\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid var(--color-theme-focus, #b53cde);\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
