@@ -9,7 +9,7 @@
     public service.
 </P>
 
-Since the AOG Design System will be available for everyone in central and local
+Since the NZGDS will be available for everyone in central and local
 government — and beyond — to use, we want a strong cross-government community
 backing it.
 
