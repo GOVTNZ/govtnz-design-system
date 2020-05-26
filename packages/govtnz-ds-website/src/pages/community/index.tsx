@@ -21,13 +21,14 @@ const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-h
     <a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
         Government Information Services
     </a>&nbsp;
-    is creating the New Zealand Government Design System (NZGDS) now. Our
+    is creating New Zealand’s New Zealand Government Design System (NZGDS) now. Our
     overall aim is to improve digital service delivery across the New Zealand
     public service.
 </P>
 
-<p>Since the New Zealand Government Design System (NZGDS) will be available for everyone in central and local
-government — and beyond — to use, we want a strong cross-government community backing it.</p>
+<p>Since the NZGDS will be available for everyone in central and local
+government — and beyond — to use, we want a strong cross-government community
+backing it.</p>
 <p>You can contribute by:</p>
 <Ul bulleted>
 <Li>testing our components and patterns</Li>
@@ -36,14 +37,14 @@ government — and beyond — to use, we want a strong cross-government communit
 </Ul>
 <p>This alpha website shows you what we have built so far, what we&#39;re working on,
 and how you can get involved.&nbsp;
-<a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using the New Zealand Government Design System (NZGDS), and how we are building it, on the homepage</a>.</p>
+<a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using the NZGDS, and how we are building it, on the homepage</a>.</p>
 <h2 id="keep-updated">Keep updated</h2>
 <p>The input and feedback we received from the initial user research, meetups,
 workshop, and user testing has been invaluable in shaping the alpha Design
 System.</p>
 <p>To keep updated with what we are doing now, what we are planning to do next,
 and how you can get involved,&nbsp;
-<a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the NZGDS Design System newsletter</a>.</p>
+<a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the NZGDS newsletter</a>.</p>
 </React.Fragment>
 
 const template = (props) => {

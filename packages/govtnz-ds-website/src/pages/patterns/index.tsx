@@ -16,7 +16,7 @@ Typical examples include collecting users&#39; address and contact details, and
 guiding users through a step-by-step application form.</p>
 <p>We&#39;ll be inviting you to co-design some patterns with us soon. To keep updated
 with what we are doing now, what we are planning to do next, and how you can
-get involved, <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the NZGDS newsletter</a>.</p>
+get involved, <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the New Zealand Government Design System (NZGDS) newsletter</a>.</p>
 </React.Fragment>
 
 const template = (props) => {

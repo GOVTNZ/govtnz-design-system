@@ -144,9 +144,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <p>Say ‘Enter [whatever it is]’. For example, ‘Enter your first name’.</p>
 <h4 id="if-the-input-is-too-long">If the input is too long</h4>
 <p>Say ‘[whatever it is] must be [number] characters or less’. For example, ‘Address line 1 must have 35 characters or less’.</p>
-<h4 id="if-the-input-is-too-short-h4">If the input is too short [H4]</h4>
+<h4 id="if-the-input-is-too-short">If the input is too short</h4>
 <p>Say ‘[whatever it is] must be [number] characters or more’. For example, ‘Full name must be 2 characters or more’.</p>
-<h4 id="if-the-input-can-be-either-too-short-or-too-long-h4">If the input can be either too short or too long [H4]</h4>
+<h4 id="if-the-input-can-be-either-too-short-or-too-long">If the input can be either too short or too long</h4>
 <p>Say ‘[whatever it is] must be between [number] and [number] characters’. For example, ‘Last name must be between 2 and 35 characters’.</p>
 <h4 id="if-the-input-accepts-non-allowed-characters-that-you-can-predict">If the input accepts non-allowed characters that you can predict</h4>
 <p>Say ‘[whatever it is] must not include [characters]’. For example, ‘Town or city must not include è and $’.</p>
