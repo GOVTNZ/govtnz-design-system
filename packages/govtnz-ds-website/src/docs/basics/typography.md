@@ -122,7 +122,7 @@ Only use one lead paragraph per page.
     <Example title="Example: Medium size for standard body text (Typography)">
         <ExampleSection>
             <P styleSize="medium">
-                The New Zealand Government Design System (NZGDS) alpha is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
+                The New Zealand Government Design System (NZGDS) is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
         </ExampleSection>
     </Example>
 </ExampleContainer>
