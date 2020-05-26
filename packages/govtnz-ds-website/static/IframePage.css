@@ -42,6 +42,7 @@ a:focus {
 }
 
 .css-changes-for-example-only .example-agency-logo {
+  margin: 3px;
   display: inline-block;
 }
 
