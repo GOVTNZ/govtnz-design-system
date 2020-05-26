@@ -4,7 +4,7 @@
     <a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
         Government Information Services
     </a>&nbsp;
-    is creating New Zealand’s all-of-government (AOG) Design System now. Our
+    is creating New Zealand’s New Zealand Government Design System (NZGDS) now. Our
     overall aim is to improve digital service delivery across the New Zealand
     public service.
 </P>
@@ -21,7 +21,7 @@ You can contribute by:
 
 This alpha website shows you what we have built so far, what we're working on,
 and how you can get involved.&nbsp;
-[Read about the benefits of using the AOG Design System, and how we are building it, on the homepage](https://design-system-alpha.digital.govt.nz/).
+[Read about the benefits of using the NZGDS, and how we are building it, on the homepage](https://design-system-alpha.digital.govt.nz/).
 
 ## Keep updated
 
@@ -31,4 +31,4 @@ System.
 
 To keep updated with what we are doing now, what we are planning to do next,
 and how you can get involved,&nbsp;
-[subscribe to the AOG Design System newsletter](https://confirmsubscription.com/h/j/712F84D0A3086D2B).
+[subscribe to the NZGDS newsletter](https://confirmsubscription.com/h/j/712F84D0A3086D2B).
