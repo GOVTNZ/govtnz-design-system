@@ -134,11 +134,6 @@ export default Vue.extend({
   padding: 0px;
   margin: 0px 0px 0px 1rem;
 }
-@media only screen and (min-width: 48em) {
-  .g-main-nav__ul {
-    margin: 0px 2rem;
-  }
-}
 .g-main-nav__ul.g-main-nav--open {
   display: block;
 }
@@ -146,6 +141,9 @@ export default Vue.extend({
   display: none;
 }
 @media only screen and (min-width: 48em) {
+  .g-main-nav__ul {
+    margin: -4px 2rem 0px 2rem;
+  }
   .g-main-nav__ul.g-main-nav--closed {
     display: block;
   }

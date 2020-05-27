@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px 0px 0px 1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px 2rem;\n  }\n  display: block;\n  display: none;\n  @media only screen and (min-width: 48em) {\n    display: block;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  list-style: none;\n  padding: 0px;\n  margin: 0px 0px 0px 1rem;\n  display: block;\n  display: none;\n  @media only screen and (min-width: 48em) {\n    margin: -4px 2rem 0px 2rem;\n    display: block;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
