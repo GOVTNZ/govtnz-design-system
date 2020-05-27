@@ -33,6 +33,10 @@
 }
 
 @media only screen and (min-width: 48em) {
+  .g-main-nav__link::first-line {
+    margin-top: 0px;
+  }
+
   .g-main-nav__link {
     display: inline-block;
     margin-right: 1em;

@@ -60,6 +60,9 @@ export default Vue.extend({
   outline: 3px solid var(--color-theme-focus, #b53cde);
 }
 @media only screen and (min-width: 48em) {
+  .g-main-nav__link::first-line {
+    margin-top: 0px;
+  }
   .g-main-nav__link {
     display: inline-block;
     margin-right: 1em;
