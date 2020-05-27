@@ -42,7 +42,6 @@ export default Vue.extend({
   color: #ffffff;
   letter-spacing: 0;
   line-height: 20px;
-  margin-top: 4px;
 }
 .g-main-nav__link__a {
   display: block;
@@ -65,6 +64,7 @@ export default Vue.extend({
     display: inline-block;
     margin-right: 1em;
     margin-left: 0px;
+    margin-top: 4px;
   }
   .g-main-nav__link:first-child {
     margin-left: 0em;

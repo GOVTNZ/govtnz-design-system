@@ -7,7 +7,6 @@
   color: #ffffff;
   letter-spacing: 0;
   line-height: 20px;
-  margin-top: 4px; /* to account for focus outline when wrapping */
 }
 
 .g-main-nav__link__a {
@@ -38,6 +37,7 @@
     display: inline-block;
     margin-right: 1em;
     margin-left: 0px;
+    margin-top: 4px; /* on Desktop we wrap links, so when they're on 2+ lines we need a margin to separate (1) active underline from (2) focus outline */
   }
 
   .g-main-nav__link:first-child {

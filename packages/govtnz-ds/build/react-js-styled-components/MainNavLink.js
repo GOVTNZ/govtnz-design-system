@@ -44,7 +44,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  margin-right: 0em;\n  margin-left: -0.9em;\n  font-family: sans-serif;\n  font-size: 18px;\n  color: #ffffff;\n  letter-spacing: 0;\n  line-height: 20px;\n  margin-top: 4px;\n  @media only screen and (min-width: 48em) {\n    display: inline-block;\n    margin-right: 1em;\n    margin-left: 0px;\n    :first-child {\n      margin-left: 0em;\n    }\n    :last-child {\n      margin-right: 0px;\n    }\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  margin-right: 0em;\n  margin-left: -0.9em;\n  font-family: sans-serif;\n  font-size: 18px;\n  color: #ffffff;\n  letter-spacing: 0;\n  line-height: 20px;\n  @media only screen and (min-width: 48em) {\n    display: inline-block;\n    margin-right: 1em;\n    margin-left: 0px;\n    margin-top: 4px;\n    :first-child {\n      margin-left: 0em;\n    }\n    :last-child {\n      margin-right: 0px;\n    }\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
