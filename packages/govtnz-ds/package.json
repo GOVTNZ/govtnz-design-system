@@ -8,7 +8,7 @@
     "build:release:debugger": "babel-node --inspect --expose-gc --max_old_space_size=8192 --extensions '.ts' ./src/index.ts",
     "build:release": "yarn build:source-release && yarn build:compile",
     "build:source-release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
-    "build:compile": "rimraf ./build && yarn babel build_src --out-dir build && yarn tsc && cp build_src/css build/css -r && yarn tsc && cp build_src/scss build/scss -r && cp build_src/html build/html -r && cp build_src/mustache build/mustache -r && cp build_src/silverstripe-components build/silverstripe-components -r  && cp build_src/static build/static -r && cp build_src/twig-embed build/twig-embed -r && cp build_src/vue-js build/vue-js -r && cp build_src/vue-ts build/vue-ts -r",
+    "build:compile": "yarn babel build_src --out-dir build && yarn tsc",
     "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
     "rimraf": "exit 0"
@@ -32,6 +32,7 @@
     "@vue/cli-service": "^3.8.4",
     "argparse": "^1.0.10",
     "compilation-templates": "0.0.1",
+    "copy-dir": "^1.3.0",
     "es6-promise-pool": "^2.5.0",
     "filesize": "^4.1.2",
     "format-duration": "^1.3.1",

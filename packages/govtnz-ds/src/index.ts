@@ -1,6 +1,7 @@
 import ArgParse from 'argparse';
 import fs from 'fs';
 import path from 'path';
+import copydir from 'copy-dir';
 import formatDuration from 'format-duration';
 import {
   makeTemplates,
@@ -152,6 +153,8 @@ async function main(
   allFiles = safeMerge(allFiles, indexImports);
 
   await saveRelease(allFiles, allReleaseVersions);
+
+  await buildRelease();
 
   console.log('Release updated.');
 }
@@ -442,15 +445,15 @@ const saveRelease = async (
   }
 
   // Clean up after previous release
-  const buildPath = path.resolve(__dirname, '..', 'build');
 
   await rmfr(path.join(buildPath, '*'), { glob: true });
 
+  // @ts-ignore
   await mkdirp(buildPath);
 
-  const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
   await rmfr(path.join(buildSrcPath, '*'), { glob: true });
 
+  // @ts-ignore
   await mkdirp(buildSrcPath);
 
   let metaTemplateInputsById = allReleaseVersions.reduce(
@@ -487,6 +490,7 @@ const saveRelease = async (
         buildSrcPath,
         path.dirname(releaseFilePath)
       );
+      // @ts-ignore
       await mkdirp(filePathDir);
       const filePath = path.join(buildSrcPath, releaseFilePath);
       let options;
@@ -506,6 +510,7 @@ const saveRelease = async (
 
   // Copy static files
   const staticPath = path.join(buildSrcPath, 'static');
+  // @ts-ignore
   await mkdirp(staticPath);
   const staticFiles = await glob(path.join(__dirname, 'static/*'));
   await Promise.all(
@@ -521,6 +526,30 @@ const saveRelease = async (
     `\n\nFinished. Wrote ${releaseFilePaths.length} file(s)\n( ${buildSrcPath} )`
   );
 };
+
+async function buildRelease() {
+  const dirsToCopy = [
+    'html',
+    'css',
+    'scss',
+    'mustache',
+    'static',
+    'twig-embed',
+    'vue-js',
+    'vue-ts'
+  ];
+  await Promise.all(
+    dirsToCopy.map(async dir => {
+      const from = path.join(buildSrcPath, dir);
+      const to = path.join(buildPath, dir);
+      console.log('copying', from, to);
+      copydir.sync(from, to);
+    })
+  );
+}
+
+const buildPath = path.resolve(__dirname, '..', 'build');
+const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
 
 type ReleaseSpecItem = {
   sourceId: SourceId;
