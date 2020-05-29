@@ -353,6 +353,16 @@ const generatePage = async (
 
       try {
         const code = await jsxToUsageCode(example);
+        if (docPath.includes('Alerts')) {
+          console.log('========================');
+          console.log(JSON.stringify(code, null, 2).substring(0, 5000));
+          console.log('========================');
+          console.log(
+            JSON.stringify(metaTemplateInputsById, null, 2).substring(0, 5000)
+          );
+
+          console.log('========================');
+        }
         const files = await makeUsage(code, metaTemplateInputsById, [
           ALL_FORMATS,
         ]);
