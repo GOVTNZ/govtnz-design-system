@@ -24,6 +24,11 @@
         "stable": false
       },
       {
+        "id": "Alerts",
+        "name": "Alerts",
+        "stable": false
+      },
+      {
         "id": "Footer",
         "name": "Footer",
         "stable": false

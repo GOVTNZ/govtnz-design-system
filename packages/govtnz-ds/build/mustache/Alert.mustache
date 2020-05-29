@@ -1,0 +1,55 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children,
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+  
+  
+<div
+aria-atomic="true"
+aria-live="polite"
+role="note"
+>
+  
+    
+<div
+class="g-alert{{#level=info}} g-alert--info{{/level=info}}{{#level=warning}} g-alert--warning{{/level=warning}}{{#level=success}} g-alert--success{{/level=success}}{{#level=error}} g-alert--error{{/level=error}}"
+>
+  
+      
+  {{{children}}}
+  
+    
+</div>
+  
+  
+</div>
+  
+
+  
+
+  
+  
+<div
+{{#headingId}}
+  aria-labelledby="{{headingId}}"
+{{/headingId}}
+role="note"
+tabindex="-1"
+>
+  
+    
+<div
+class="g-alert{{#level=info}} g-alert--info{{/level=info}}{{#level=warning}} g-alert--warning{{/level=warning}}{{#level=success}} g-alert--success{{/level=success}}{{#level=error}} g-alert--error{{/level=error}}"
+>
+  
+      
+  {{{children}}}
+  
+    
+</div>
+  
+  
+</div>

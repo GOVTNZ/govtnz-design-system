@@ -27,7 +27,7 @@ var H1 = function H1(_ref) {
       id = _ref.id,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("h1", {
-    className: "".concat(constants.styleSize[styleSize] !== undefined ? constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : "").concat(marginBottom0 ? " g-heading-mb-0" : ""),
+    className: "g-heading".concat(constants.styleSize[styleSize] !== undefined ? " " + constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : "").concat(marginBottom0 ? " g-heading-mb-0" : ""),
     id: id
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };

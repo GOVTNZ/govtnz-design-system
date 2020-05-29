@@ -38,6 +38,7 @@
 @import "./FlexColumn";
 @import "./FlexContainer";
 @import "./FlexRow";
+@import "./Alert";
 @import "./Base";
 @import "./FooterStandard";
 @import "./FooterWrapper";

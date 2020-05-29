@@ -1,0 +1,29 @@
+.g-alert {
+  border-radius: 5px;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+.g-alert--info {
+  border: solid 1px blue;
+  border-color: var(--g-theme-info, blue);
+  border-left-width: 1em;
+}
+
+.g-alert--warning {
+  border: 1px solid orange;
+  border-color: var(--g-theme-warning, orange);
+  border-left-width: 1em;
+}
+
+.g-alert--success {
+  border: solid 1px green;
+  border-color: var(--g-theme-success, green);
+  border-left-width: 1em;
+}
+
+.g-alert--error {
+  border: solid 1px red;
+  border-color: var(--g-theme-error, red);
+  border-left-width: 1em;
+}

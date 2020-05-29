@@ -1,0 +1,44 @@
+<div
+aria-atomic="true"
+aria-live="polite"
+role="note"
+>
+  
+    
+<div
+class="g-alert{% if level == "info" %}g-alert--info{% elseif level == "warning" %}g-alert--warning{% elseif level == "success" %}g-alert--success{% elseif level == "error" %}g-alert--error{% endif %}"
+>
+  
+      
+{% block children %} Example alert content {% endblock %}
+  
+    
+</div>
+  
+  
+</div>
+  
+
+  
+
+  
+  
+<div
+aria-labelledby="{{ headingId | escape('html_attr') }}"
+role="note"
+tabindex="-1"
+>
+  
+    
+<div
+class="g-alert{% if level == "info" %}g-alert--info{% elseif level == "warning" %}g-alert--warning{% elseif level == "success" %}g-alert--success{% elseif level == "error" %}g-alert--error{% endif %}"
+>
+  
+      
+{% block children %} Example alert content {% endblock %}
+  
+    
+</div>
+  
+  
+</div>

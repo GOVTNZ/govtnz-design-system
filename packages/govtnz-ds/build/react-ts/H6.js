@@ -16,8 +16,8 @@ var constants = {
 };
 var H6 = function (_a) {
     var styleSize = _a.styleSize, marginBottom8 = _a.marginBottom8, marginBottom0 = _a.marginBottom0, id = _a.id, children = _a.children;
-    return (react_1.default.createElement("h6", { className: "" + (constants.styleSize[styleSize] !== undefined
-            ? constants.styleSize[styleSize]
+    return (react_1.default.createElement("h6", { className: "g-heading" + (constants.styleSize[styleSize] !== undefined
+            ? " " + constants.styleSize[styleSize]
             : "") + (marginBottom8 ? " g-heading-mb-8" : "") + (marginBottom0 ? " g-heading-mb-0" : ""), id: id }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = H6;

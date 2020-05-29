@@ -1,0 +1,18 @@
+<mt-if key="mode?=live">
+  <div role="note" aria-live="polite" aria-atomic="true">
+    <div
+      class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
+    >
+      <mt-variable key="children"> Example alert content </mt-variable>
+    </div>
+  </div>
+</mt-if>
+<mt-if key="mode?!=live">
+  <div role="note" tabindex="-1" aria-labelledby="headingId">
+    <div
+      class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
+    >
+      <mt-variable key="children"> Example alert content </mt-variable>
+    </div>
+  </div>
+</mt-if>
