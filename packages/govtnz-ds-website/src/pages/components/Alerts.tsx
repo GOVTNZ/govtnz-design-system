@@ -40,13 +40,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
       }}></Example>
 </ExampleContainer>
 
-<p>test</p>
+<p>Live examples that can be dynamically updated by JavaScript to give live feedback (while informing screenreaders).</p>
 <ExampleContainer>
     <Example  code={components__Alerts[1]} iframeProps={{
         id:"iframe_componentsAlerts1",
         className: "example__iframe",
         src:"/components/Alerts__example1.html",
-        title:"Example: Alerts (static)",
+        title:"Example: Alerts (live)",
         height: 679
       }}></Example>
 </ExampleContainer>

@@ -31,10 +31,10 @@ Interact with each example to see how it works.
     </Example>
 </ExampleContainer>
 
-test
+Live examples that can be dynamically updated by JavaScript to give live feedback (while informing screenreaders).
 
 <ExampleContainer>
-    <Example title="Example: Alerts (static)">
+    <Example title="Example: Alerts (live)">
         <Alert level="info" headingId="heading5" mode="live">
             <H2 id="heading5">Info: You are alive</H2>
             <P>Some text describing what's going on 5.</P>

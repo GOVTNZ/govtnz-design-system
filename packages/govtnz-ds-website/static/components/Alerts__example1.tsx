@@ -19,7 +19,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Alerts (live)" {...onChangeGenerator({})}>
         <Alert level="info" headingId="heading5" mode="live" {...onChangeGenerator({})}>
             <H2 id="heading5" {...onChangeGenerator({})}>Info: You are alive</H2>
             <P {...onChangeGenerator({})}>Some text describing what's going on 5.</P>
