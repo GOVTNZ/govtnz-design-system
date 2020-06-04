@@ -19,7 +19,7 @@ var MainNav = function (_a) {
         react_1.default.createElement("div", { id: id },
             react_1.default.createElement("ul", { className: "g-main-nav__ul" + (constants.isOpen[isOpen] !== undefined
                     ? " " + constants.isOpen[isOpen]
-                    : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " MainNavItem components go here "))))));
+                    : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " MainNavLink components go here "))))));
 };
 exports.default = MainNav;
 //# sourceMappingURL=MainNav.js.map

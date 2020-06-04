@@ -90,7 +90,7 @@ var MainNav = function MainNav(_ref) {
     id: id
   }, /*#__PURE__*/_react["default"].createElement(StyledUl, {
     isOpen: isOpen
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " MainNavItem components go here "))));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " MainNavLink components go here "))));
 };
 
 var _default = MainNav;

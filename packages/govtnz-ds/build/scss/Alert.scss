@@ -1,29 +1,42 @@
 .g-alert {
-  border-radius: 5px;
+  position: relative;
+  border-radius: 4px;
   margin-bottom: 1em;
-  padding: 0.5em 1em;
+  padding: 24px 32px 24px 96px;
+  border: solid 1px var(--g-theme-alert-border, #d3d3d3);
 }
 
-.g-alert--info {
-  border: solid 1px blue;
-  border-color: var(--g-theme-info, blue);
-  border-left-width: 1em;
+.g-alert::before {
+  content: "";
+  display: block;
+  width: 64px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
-.g-alert--warning {
-  border: 1px solid orange;
-  border-color: var(--g-theme-warning, orange);
-  border-left-width: 1em;
+.g-alert--info::before {
+  background-color: var(--g-theme-info, #1f1bfb);
 }
 
-.g-alert--success {
-  border: solid 1px green;
-  border-color: var(--g-theme-success, green);
-  border-left-width: 1em;
+.g-alert--warning::before {
+  background-color: var(--g-theme-warning, #d47500);
 }
 
-.g-alert--error {
-  border: solid 1px red;
-  border-color: var(--g-theme-error, red);
-  border-left-width: 1em;
+.g-alert--success::before {
+  background-color: var(--g-theme-success, #088a20);
+}
+
+.g-alert--error::before {
+  background-color: var(--g-theme-error, #b10e1e);
+}
+
+.g-alert__icon {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  fill: var(--g-theme-alert-icon, #ffffff);
 }

@@ -49,7 +49,7 @@ export default Vue.extend({
     name: { type: String, required: false },
     type: { type: String, required: false },
     button: { required: false, default: " Menu " },
-    children: { required: false, default: " MainNavItem components go here " }
+    children: { required: false, default: " MainNavLink components go here " }
   },
   computed: {
     computed__class() {

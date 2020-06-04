@@ -322,7 +322,7 @@ const generatePage = async (
       ] = `/${sectionId}/${exampleRelativePath}.html`;
       exampleTitles[counter] = heading;
       exampleIds[counter] = `iframe_${sectionId}${pageId}${counter}`.replace(
-        /[^a-zA-Z0-9_]/g,
+        /[^a-zA-Z0-9_\-]/g,
         ''
       );
 
@@ -412,7 +412,7 @@ const generatePage = async (
     });
   }
 
-  const tagNames = html.match(/<([a-zA-Z0-9]+)/g);
+  const tagNames = html.match(/<([a-zA-Z0-9_\-]+)/g);
 
   // because we import these in the template already
   const ComponentIdsThatDontNeedImports = [

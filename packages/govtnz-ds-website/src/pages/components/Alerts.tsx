@@ -36,18 +36,18 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
         className: "example__iframe",
         src:"/components/Alerts__example0.html",
         title:"Example: Alerts (static)",
-        height: 585
+        height: 758
       }}></Example>
 </ExampleContainer>
 
-<h2 id="dynamic-examples">Dynamic examples</h2>
+<p>test</p>
 <ExampleContainer>
     <Example  code={components__Alerts[1]} iframeProps={{
         id:"iframe_componentsAlerts1",
         className: "example__iframe",
         src:"/components/Alerts__example1.html",
-        title:"Example: Alerts (dynamic)",
-        height: 585
+        title:"Example: Alerts (static)",
+        height: 758
       }}></Example>
 </ExampleContainer>
 </React.Fragment>

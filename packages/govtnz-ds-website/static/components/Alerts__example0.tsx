@@ -22,21 +22,20 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
         <Alert level="info" headingId="heading1" {...onChangeGenerator({})}>
             <H2 id="heading1" {...onChangeGenerator({})}>Info: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 1.</P>
         </Alert>
-        <Alert level="warning" headingId="heading2" {...onChangeGenerator({})}>
+         <Alert level="warning" headingId="heading2" {...onChangeGenerator({})}>
             <H2 id="heading2" {...onChangeGenerator({})}>Warning: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 2.</P>
         </Alert>
-        <Alert level="success" headingId="heading3" {...onChangeGenerator({})}>
+         <Alert level="success" headingId="heading3" {...onChangeGenerator({})}>
             <H2 id="heading3" {...onChangeGenerator({})}>Success: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 3.</P>
         </Alert>
-        <Alert level="error" headingId="heading4" {...onChangeGenerator({})}>
+         <Alert level="error" headingId="heading4" {...onChangeGenerator({})}>
             <H2 id="heading4" {...onChangeGenerator({})}>Error: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
             <Ul bulleted {...onChangeGenerator({})}>
-                <Li {...onChangeGenerator({})}><a href="#form">Form error</a></Li>
+                <Li {...onChangeGenerator({})}><a href="#">Error in this field 4</a></Li>
             </Ul>
         </Alert>
     </Example>);

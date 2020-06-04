@@ -19,24 +19,23 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Alerts (dynamic)" {...onChangeGenerator({})}>
-        <Alert mode="live" level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Info: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
+        <Alert level="info" headingId="heading5" mode="live" {...onChangeGenerator({})}>
+            <H2 id="heading5" {...onChangeGenerator({})}>Info: You are alive</H2>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 5.</P>
         </Alert>
-        <Alert mode="live" level="warning" headingId="heading2" {...onChangeGenerator({})}>
-            <H2 id="heading2" {...onChangeGenerator({})}>Warning: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+         <Alert level="warning" headingId="heading6" mode="live" {...onChangeGenerator({})}>
+            <H2 id="heading6" {...onChangeGenerator({})}>Warning: You are alive </H2>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 6.</P>
         </Alert>
-        <Alert mode="live" level="success" headingId="heading3" {...onChangeGenerator({})}>
-            <H2 id="heading3" {...onChangeGenerator({})}>Success: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+         <Alert level="success" headingId="heading7" mode="live" {...onChangeGenerator({})}>
+            <H2 id="heading7" {...onChangeGenerator({})}>Success: You are alive</H2>
+            <P {...onChangeGenerator({})}>Some text describing what's going on 7.</P>
         </Alert>
-        <Alert mode="live" level="error" headingId="heading4" {...onChangeGenerator({})}>
-            <H2 id="heading4" {...onChangeGenerator({})}>Error: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on.</P>
+         <Alert level="error" headingId="heading8" mode="live" {...onChangeGenerator({})}>
+            <H2 id="heading8" {...onChangeGenerator({})}>Error: You are alive</H2>
             <Ul bulleted {...onChangeGenerator({})}>
-                <Li {...onChangeGenerator({})}><a href="#form">Form error</a></Li>
+                <Li {...onChangeGenerator({})}><a href="#">Error in this field 8.</a></Li>
             </Ul>
         </Alert>
     </Example>);
