@@ -33,10 +33,10 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="8" lg="9" {...onChangeGenerator({})}>
                             <WrappedMainNav Component={MainNav} id="menuContainer" button="Menu" {...onChangeGenerator({})}>
-                                <MainNavLink href="/" ariaCurrent="page" {...onChangeGenerator({})}>About us</MainNavLink>
-                                <MainNavLink href="/" {...onChangeGenerator({})}>Our work</MainNavLink>
+                                <MainNavLink href="/" ariaCurrent="page" {...onChangeGenerator({})}>Services</MainNavLink>
                                 <MainNavLink href="/" {...onChangeGenerator({})}>Resources</MainNavLink>
                                 <MainNavLink href="/" {...onChangeGenerator({})}>News</MainNavLink>
+                                <MainNavLink href="/" {...onChangeGenerator({})}>About</MainNavLink>
                                 <MainNavLink href="/" {...onChangeGenerator({})}>Contact</MainNavLink>
                             </WrappedMainNav>
                         </FlexColumn>
