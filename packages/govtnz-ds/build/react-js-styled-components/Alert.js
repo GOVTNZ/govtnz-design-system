@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -64,7 +64,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -74,7 +74,7 @@ function _templateObject5() {
 }
 
 function _templateObject4() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -84,7 +84,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -94,7 +94,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 24px;\n  top: 24px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  left: 16px;\n  top: 16px;\n  fill: var(--g-theme-alert-icon, #ffffff);\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

@@ -137,8 +137,8 @@ export default Vue.extend({
 }
 .g-alert__icon {
   position: absolute;
-  left: 24px;
-  top: 24px;
+  left: 16px;
+  top: 16px;
   fill: var(--g-theme-alert-icon, #ffffff);
 }
 </style>
