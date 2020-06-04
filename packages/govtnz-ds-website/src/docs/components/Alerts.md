@@ -25,7 +25,7 @@ Interact with each example to see how it works.
          <Alert level="error" headingId="heading4">
             <H2 id="heading4">Error: You are alive</H2>
             <Ul bulleted>
-                <li><a href="#">Error in this field 4</a></li>
+                <Li><A href="#">Error in this field 4</A></Li>
             </Ul>
         </Alert>
     </Example>
@@ -50,7 +50,7 @@ Live examples that can be dynamically updated by JavaScript to give live feedbac
          <Alert level="error" headingId="heading8" mode="live">
             <H2 id="heading8">Error: You are alive</H2>
             <Ul bulleted>
-                <li><a href="#">Error in this field 8.</a></li>
+                <Li><A href="#">Error in this field 4</A></Li>
             </Ul>
         </Alert>
     </Example>

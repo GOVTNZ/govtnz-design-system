@@ -107,10 +107,11 @@ export default Vue.extend({
 <style scoped>
 .g-alert {
   position: relative;
-  border-radius: 4px;
+  background: #f4f4f4;
+  border: solid 1px var(--g-theme-alert-border, #d3d3d3);
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
-  border: solid 1px var(--g-theme-alert-border, #d3d3d3);
+  border-radius: 4px;
 }
 .g-alert::before {
   content: "";
@@ -138,7 +139,7 @@ export default Vue.extend({
 .g-alert__icon {
   position: absolute;
   left: 16px;
-  top: 16px;
+  top: 24px;
   fill: var(--g-theme-alert-icon, #ffffff);
 }
 </style>

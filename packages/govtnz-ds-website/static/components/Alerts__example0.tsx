@@ -11,7 +11,7 @@ import ReactDOM from 'react-dom';
 //   return value;
 // };
 
-import Alert from '@govtnz/ds/build/react-ts/Alert';import H2 from '@govtnz/ds/build/react-ts/H2';import P from '@govtnz/ds/build/react-ts/P';import Ul from '@govtnz/ds/build/react-ts/Ul';import Li from '@govtnz/ds/build/react-ts/Li';
+import Alert from '@govtnz/ds/build/react-ts/Alert';import H2 from '@govtnz/ds/build/react-ts/H2';import P from '@govtnz/ds/build/react-ts/P';import Ul from '@govtnz/ds/build/react-ts/Ul';import Li from '@govtnz/ds/build/react-ts/Li';import A from '@govtnz/ds/build/react-ts/A';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -35,7 +35,7 @@ var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onCh
          <Alert level="error" headingId="heading4" {...onChangeGenerator({})}>
             <H2 id="heading4" {...onChangeGenerator({})}>Error: You are alive</H2>
             <Ul bulleted {...onChangeGenerator({})}>
-                <Li {...onChangeGenerator({})}><a href="#">Error in this field 4</a></Li>
+                <Li {...onChangeGenerator({})}><A href="#" {...onChangeGenerator({})}>Error in this field 4</A></Li>
             </Ul>
         </Alert>
     </Example>);
