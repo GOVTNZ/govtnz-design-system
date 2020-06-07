@@ -12,7 +12,7 @@
       { "id": "Button", "name": "Button", "stable": true },
       { "id": "Fieldset", "name": "Fieldset", "stable": true },
       { "id": "Textarea", "name": "Textarea", "stable": true },
-      { "id": "Header", "name": "Header", "stable": false }
+      { "id": "Header", "name": "Header", "stable": true }
     ]
   },
   {
