@@ -11,7 +11,8 @@
       { "id": "Date", "name": "Date input", "stable": true },
       { "id": "Button", "name": "Button", "stable": true },
       { "id": "Fieldset", "name": "Fieldset", "stable": true },
-      { "id": "Textarea", "name": "Textarea", "stable": true }
+      { "id": "Textarea", "name": "Textarea", "stable": true },
+      { "id": "Alerts", "name": "Alerts", "stable": true }
     ]
   },
   {
@@ -23,11 +24,7 @@
         "name": "Header",
         "stable": false
       },
-      {
-        "id": "Alerts",
-        "name": "Alerts",
-        "stable": false
-      },
+
       {
         "id": "Footer",
         "name": "Footer",
