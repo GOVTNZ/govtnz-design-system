@@ -33,8 +33,8 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </P>
 
 <H2 styleSize="large" id="example">Example</H2>
-<p>Interact with each example to see how it works.</p>
-<p>Please note that only the <code>Header</code>, <code>MainNav</code> and <code>MainNavLink</code> components are part of the example. The other HTML/components, such as the logo and grid components, are for example purposes only and are optional.</p>
+<p>Interact with the example to see how it works.</p>
+<p>Note that the logo and <a href="https://design-system-alpha.digital.govt.nz/components/FlexGrid/">flexbox grid component </a> , are for example purposes only and are optional.</p>
 <ExampleContainer>
     <Example  code={components__Header[0]} iframeProps={{
         id:"iframe_componentsHeader0",
@@ -45,6 +45,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
       }}></Example>
 </ExampleContainer>
 
+<p>This component is responsive. Click the ‘open in new window’ to see how it behaves.</p>
 <h2 id="when-to-use-it">When to use it</h2>
 <p>A header is required on all government websites. When this header component is used, it must include:</p>
 <Ul bulleted>
@@ -68,29 +69,29 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h3 id="main-navigation">Main navigation</h3>
 <p>Your site&#39;s main navigation helps users to find the information they need. It typically includes the top level of the information architecture. It is intended as the primary way for users to navigate your site.</p>
 <p>Use the main navigation component to provide a horizontal list of links to key areas on your site.</p>
-<h2 id="highlight-the-current-section">Highlight the current section</h2>
+<h3 id="highlight-the-current-section">Highlight the current section</h3>
 <p>To show users where they are within your site, the link to the current page or section is automatically set with aria-current=”page”. This allows assistive technology like screen reader software to tell the user that it’s the link for the current page. It also causes a visual underline to be added to the link.</p>
-<h2 id="avoid-using-hover-to-expand-drop-down-lists">Avoid using hover to expand drop-down lists</h2>
+<h3 id="avoid-using-hover-to-expand-drop-down-lists">Avoid using hover to expand drop-down lists</h3>
 <p>Some users find it difficult to pause their cursor on an interactive element. Also, hover doesn’t work on touch screens.</p>
-<h2 id="avoid-organisational-structure-navigation">Avoid organisational structure navigation</h2>
+<h3 id="avoid-organisational-structure-navigation">Avoid organisational structure navigation</h3>
 <p>You shouldn’t model your navigation on your organisation’s structure. Instead, structure it according to the tasks and information your users most frequently need to access.</p>
-<h2 id="research-your-navigation">Research your navigation</h2>
+<h3 id="research-your-navigation">Research your navigation</h3>
 <p>Conduct research with your users. Base decisions about your site’s menu labels and navigation structure on your findings. Continue researching to confirm that changes meet your users’ needs.</p>
-<h2 id="for-large-websites-use-drop-down-menus-to-let-users-preview-lower-level-content">For large websites, use drop-down menus to let users preview lower-level content</h2>
+<h3 id="for-large-websites-use-drop-down-menus-to-let-users-preview-lower-level-content">For large websites, use drop-down menus to let users preview lower-level content</h3>
 <p>Drop-down menus help to preview lower-level content. They can save users time by letting them skip a level in the navigation.</p>
 <p>Drop-down menus will be developed during the Design System’s beta phase.</p>
 <h3 id="links">Links</h3>
 <p>We recommend using a horizontal list of 2–9 links to key tasks and information on your site. This is one of the most visible and familiar ways of helping users to navigate a site.</p>
-<h2 id="use-short-descriptive-and-recognisable-link-labels">Use short, descriptive, and recognisable link labels</h2>
+<h3 id="use-short-descriptive-and-recognisable-link-labels">Use short, descriptive, and recognisable link labels</h3>
 <p>Link labels should clearly describe your content. They should be familiar and relevant to your users.</p>
 <p>You shouldn’t label links with jargon or unfamiliar terms.</p>
-<h2 id="left-justify-links">Left-justify links</h2>
+<h3 id="left-justify-links">Left-justify links</h3>
 <p>Left-justified link labels are easier to scan.</p>
-<h2 id="front-load-key-terms">Front-load key terms</h2>
+<h3 id="front-load-key-terms">Front-load key terms</h3>
 <p>Front-loading meaningful words at the beginning of labels reduces the amount of time users need to spend reading menus. For example, instead of ‘Our research’ use ‘Research’.</p>
-<h2 id="use-sentence-case">Use sentence case</h2>
+<h3 id="use-sentence-case">Use sentence case</h3>
 <p>Sentence case is easier to scan. Labels tied to a recognisable brand name are an exception.</p>
-<h2 id="present-links-in-priority-order">Present links in priority order</h2>
+<h3 id="present-links-in-priority-order">Present links in priority order</h3>
 <p>Higher-demand links should appear closer to the left, and lower-demand links should appear farther to the right.</p>
 <h3 id="small-screen-devices">Small-screen devices</h3>
 <p>The main navigation should adapt to small-screen devices. Most of this is taken care of by the main navigation component itself. This includes hiding the main navigation by default, and adding a button for users to open and close it.
@@ -103,7 +104,7 @@ Design System users are responsible for:</p>
 </Ul>
 <h3 id="3-bar-icon-the-hamburger">3 bar icon (the ‘hamburger’)</h3>
 <p>Another common way to indicate the main navigation on small-screen devices is the 3 bar icon (often referred to as the ‘hamburger’). However, the 3 bar icon does not clearly indicate an opened or closed state and some users might not know what the icon means on its own. For these reasons, the Design System uses the chevron icon, alongside a clear text label.</p>
-<h3 id="credit">Credit</h3>
+<h2 id="credit">Credit</h2>
 <p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 <p>Guidance for the MainNav component derived from the <a href="https://designsystem.gov.au/components/main-nav/rationale">Australian Government Design System</a>.</p>
 </React.Fragment>
