@@ -47,7 +47,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
         className: "example__iframe",
         src:"/components/Alerts__example1.html",
         title:"Example: Alerts (live)",
-        height: 1030
+        height: 428
       }}></Example>
 </ExampleContainer>
 </React.Fragment>
