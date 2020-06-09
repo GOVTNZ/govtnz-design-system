@@ -30,7 +30,9 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -43,7 +45,9 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "30",
     viewBox: "0 0 32 30",
     width: "32"
@@ -56,7 +60,9 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -69,7 +75,9 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -81,7 +89,9 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -93,7 +103,9 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "30",
     viewBox: "0 0 32 30",
     width: "32"
@@ -106,7 +118,9 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -119,7 +133,9 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert".concat(constants.level[level] !== undefined ? " " + constants.level[level] : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement("svg", {
+    "aria-hidden": "true",
     className: "g-alert__icon",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"

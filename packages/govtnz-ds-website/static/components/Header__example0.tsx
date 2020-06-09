@@ -192,7 +192,7 @@ class WrappedAlert extends React.Component<
   constructor(props: WrappedAlertProps) {
     super(props);
     this.state = {
-      isChecked: true,
+      isChecked: false,
       id: `id${Math.random()
         .toString()
         .replace(/[^0-9]/g, '')}`,
@@ -202,7 +202,6 @@ class WrappedAlert extends React.Component<
   }
 
   toggle() {
-    console.log('toggle');
     const { isChecked } = this.state;
 
     this.setState({
@@ -213,8 +212,6 @@ class WrappedAlert extends React.Component<
   render() {
     const { mode, level, Component } = this.props;
     const { isChecked, id } = this.state;
-
-    console.log({ Component });
 
     if (mode === 'live') {
       return (

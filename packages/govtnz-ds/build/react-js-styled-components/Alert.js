@@ -217,6 +217,8 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -229,6 +231,8 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg2, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "30",
     viewBox: "0 0 32 30",
     width: "32"
@@ -241,6 +245,8 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg3, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -253,6 +259,8 @@ var Alert = function Alert(_ref) {
   }, children !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv4, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg4, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -264,6 +272,8 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(StyledDiv5, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg5, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -275,6 +285,8 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(StyledDiv6, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg6, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "30",
     viewBox: "0 0 32 30",
     width: "32"
@@ -287,6 +299,8 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(StyledDiv7, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg7, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
@@ -299,6 +313,8 @@ var Alert = function Alert(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(StyledDiv8, {
     level: level
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example alert content "), /*#__PURE__*/_react["default"].createElement(StyledSvg8, {
+    "aria-hidden": "true",
+    focusable: "false",
     height: "32",
     viewBox: "0 0 32 32",
     width: "32"
