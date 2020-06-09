@@ -4,9 +4,9 @@
 
 ## Example
 
-Interact with each example to see how it works.
+Interact with the example to see how it works.
 
-Please note that only the `Header`, `MainNav` and `MainNavLink` components are part of the example. The other HTML/components, such as the logo and grid components, are for example purposes only and are optional.
+Note that the logo and [flexbox grid component ](https://design-system-alpha.digital.govt.nz/components/FlexGrid/) , are for example purposes only and are optional.
 
 <ExampleContainer>
     <Example title="Example: Header containing a MainNav">
@@ -41,6 +41,8 @@ Please note that only the `Header`, `MainNav` and `MainNavLink` components are p
         </svg>
     </Example>
 </ExampleContainer>
+
+This component is responsive. Click the ‘open in new window’ to see how it behaves.
 
 ## When to use it
 
@@ -78,23 +80,23 @@ Your site's main navigation helps users to find the information they need. It ty
 
 Use the main navigation component to provide a horizontal list of links to key areas on your site.
 
-## Highlight the current section
+### Highlight the current section
 
 To show users where they are within your site, the link to the current page or section is automatically set with aria-current=”page”. This allows assistive technology like screen reader software to tell the user that it’s the link for the current page. It also causes a visual underline to be added to the link.
 
-## Avoid using hover to expand drop-down lists
+### Avoid using hover to expand drop-down lists
 
 Some users find it difficult to pause their cursor on an interactive element. Also, hover doesn’t work on touch screens.
 
-## Avoid organisational structure navigation
+### Avoid organisational structure navigation
 
 You shouldn’t model your navigation on your organisation’s structure. Instead, structure it according to the tasks and information your users most frequently need to access.
 
-## Research your navigation
+### Research your navigation
 
 Conduct research with your users. Base decisions about your site’s menu labels and navigation structure on your findings. Continue researching to confirm that changes meet your users’ needs.
 
-## For large websites, use drop-down menus to let users preview lower-level content
+### For large websites, use drop-down menus to let users preview lower-level content
 
 Drop-down menus help to preview lower-level content. They can save users time by letting them skip a level in the navigation.
 
@@ -104,25 +106,25 @@ Drop-down menus will be developed during the Design System’s beta phase.
 
 We recommend using a horizontal list of 2–9 links to key tasks and information on your site. This is one of the most visible and familiar ways of helping users to navigate a site.
 
-## Use short, descriptive, and recognisable link labels
+### Use short, descriptive, and recognisable link labels
 
 Link labels should clearly describe your content. They should be familiar and relevant to your users.
 
 You shouldn’t label links with jargon or unfamiliar terms.
 
-## Left-justify links
+### Left-justify links
 
 Left-justified link labels are easier to scan.
 
-## Front-load key terms
+### Front-load key terms
 
 Front-loading meaningful words at the beginning of labels reduces the amount of time users need to spend reading menus. For example, instead of ‘Our research’ use ‘Research’.
 
-## Use sentence case
+### Use sentence case
 
 Sentence case is easier to scan. Labels tied to a recognisable brand name are an exception.
 
-## Present links in priority order
+### Present links in priority order
 
 Higher-demand links should appear closer to the left, and lower-demand links should appear farther to the right.
 
@@ -140,7 +142,7 @@ Design System users are responsible for:
 
 Another common way to indicate the main navigation on small-screen devices is the 3 bar icon (often referred to as the ‘hamburger’). However, the 3 bar icon does not clearly indicate an opened or closed state and some users might not know what the icon means on its own. For these reasons, the Design System uses the chevron icon, alongside a clear text label.
 
-### Credit
+## Credit
 
 Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
 
