@@ -212,9 +212,13 @@ class WrappedAlert extends React.Component<
           </button>
           <div id={id}>
             {isChecked ? (
-              <Component key={id} {...this.props} />
+              <Component key={`${id}_alert`} {...this.props} />
             ) : (
-              <Component key={id} {...this.props} children={undefined} />
+              <Component
+                key={`${id}_alert`}
+                {...this.props}
+                children={undefined}
+              />
             )}
           </div>
         </Fragment>

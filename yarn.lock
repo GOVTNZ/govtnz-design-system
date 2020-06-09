@@ -1603,10 +1603,10 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
-"@springload/metatemplate@^0.5.6":
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.5.6.tgz#e8eb5648fd1f32bd4303c3b1164d8338d9e78be5"
-  integrity sha512-ybfq6KA4hs2Y/EpbBL6HNyPIWibTF6scfWsdcPsG/FkBoGVaRkLNiQSZGm/8EOBiZIEcxYDCV7sC9fjf8iTI2w==
+"@springload/metatemplate@^0.5.7":
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.5.7.tgz#756108ec992e405ec035818dab8da2fa17fc006c"
+  integrity sha512-/fO6by4s/uqDQfrfQXujSYLUuOFMKerZ2AeNa4SivY0ifohJCCKHtfgtgOxc56OgMveKKjMHqH7pUxwBYhZibg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.4"
     "@babel/plugin-proposal-object-rest-spread" "^7.4.4"

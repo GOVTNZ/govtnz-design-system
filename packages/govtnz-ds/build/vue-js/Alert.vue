@@ -47,7 +47,7 @@
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
+  <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class5">
       <slot></slot>
 
@@ -59,7 +59,7 @@
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
+  <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class6">
       <slot></slot>
 
