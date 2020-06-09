@@ -5,12 +5,6 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// export const useMobileMenuContext = (): MobileMenuContextValue => {
-//   const value = React.useContext(MobileMenuContext);
-//   if (!value) throw Error(`Mobile menu used outside context`);
-//   return value;
-// };
-
 import Alert from '@govtnz/ds/build/react-ts/Alert';import H2 from '@govtnz/ds/build/react-ts/H2';import P from '@govtnz/ds/build/react-ts/P';import Ul from '@govtnz/ds/build/react-ts/Ul';import Li from '@govtnz/ds/build/react-ts/Li';import A from '@govtnz/ds/build/react-ts/A';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
@@ -20,24 +14,24 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Alerts (live)" {...onChangeGenerator({})}>
-        <Alert level="info" headingId="heading5" mode="live" {...onChangeGenerator({})}>
+        <WrappedAlert Component={Alert} level="info" headingId="heading5" mode="live" {...onChangeGenerator({})}>
             <H2 id="heading5" {...onChangeGenerator({})}>Info: You are alive</H2>
             <P {...onChangeGenerator({})}>Some text describing what's going on 5.</P>
-        </Alert>
-         <Alert level="warning" headingId="heading6" mode="live" {...onChangeGenerator({})}>
+        </WrappedAlert>
+         <WrappedAlert Component={Alert} level="warning" headingId="heading6" mode="live" {...onChangeGenerator({})}>
             <H2 id="heading6" {...onChangeGenerator({})}>Warning: You are alive </H2>
             <P {...onChangeGenerator({})}>Some text describing what's going on 6.</P>
-        </Alert>
-         <Alert level="success" headingId="heading7" mode="live" {...onChangeGenerator({})}>
+        </WrappedAlert>
+         <WrappedAlert Component={Alert} level="success" headingId="heading7" mode="live" {...onChangeGenerator({})}>
             <H2 id="heading7" {...onChangeGenerator({})}>Success: You are alive</H2>
             <P {...onChangeGenerator({})}>Some text describing what's going on 7.</P>
-        </Alert>
-         <Alert level="error" headingId="heading8" mode="live" {...onChangeGenerator({})}>
+        </WrappedAlert>
+         <WrappedAlert Component={Alert} level="error" headingId="heading8" mode="live" {...onChangeGenerator({})}>
             <H2 id="heading8" {...onChangeGenerator({})}>Error: You are alive</H2>
             <Ul bulleted {...onChangeGenerator({})}>
-                <Li {...onChangeGenerator({})}><A href="#" {...onChangeGenerator({})}>Error in this field 4</A></Li>
+                <Li {...onChangeGenerator({})}><P {...onChangeGenerator({})}><A href="#" {...onChangeGenerator({})}>Error in this field 4</A></P></Li>
             </Ul>
-        </Alert>
+        </WrappedAlert>
     </Example>);
 
 type MainNavMobileMenuContextProps = {
@@ -166,6 +160,74 @@ class WrappedMainNav extends React.Component<
         }}
       </MobileMenuContext.Consumer>
     );
+  }
+}
+
+type WrappedAlertProps = {
+  mode?: 'live' | 'static';
+  level: string;
+  Component: any;
+};
+
+type WrappedAlertState = {
+  isChecked: boolean;
+  id: string;
+};
+
+class WrappedAlert extends React.Component<
+  WrappedAlertProps,
+  WrappedAlertState
+> {
+  constructor(props: WrappedAlertProps) {
+    super(props);
+    this.state = {
+      isChecked: true,
+      id: `id${Math.random()
+        .toString()
+        .replace(/[^0-9]/g, '')}`,
+    };
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    console.log('toggle');
+    const { isChecked } = this.state;
+
+    this.setState({
+      isChecked: !isChecked,
+    });
+  }
+
+  render() {
+    const { mode, level, Component } = this.props;
+    const { isChecked, id } = this.state;
+
+    console.log({ Component });
+
+    if (mode === 'live') {
+      return (
+        <Fragment>
+          <button
+            type="button"
+            aria-controls={id}
+            aria-expanded={isChecked}
+            onClick={this.toggle}
+            className="g-button g-button--secondary"
+          >
+            Toggle live {level} alert
+          </button>
+          <div id={id}>
+            {isChecked ? (
+              <Component key={id} {...this.props} />
+            ) : (
+              <Component key={id} {...this.props} children={undefined} />
+            )}
+          </div>
+        </Fragment>
+      );
+    }
+    return <Component {...this.props} />;
   }
 }
 

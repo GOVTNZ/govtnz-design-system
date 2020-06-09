@@ -5,12 +5,6 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-// export const useMobileMenuContext = (): MobileMenuContextValue => {
-//   const value = React.useContext(MobileMenuContext);
-//   if (!value) throw Error(`Mobile menu used outside context`);
-//   return value;
-// };
-
 import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
@@ -155,6 +149,74 @@ class WrappedMainNav extends React.Component<
         }}
       </MobileMenuContext.Consumer>
     );
+  }
+}
+
+type WrappedAlertProps = {
+  mode?: 'live' | 'static';
+  level: string;
+  Component: any;
+};
+
+type WrappedAlertState = {
+  isChecked: boolean;
+  id: string;
+};
+
+class WrappedAlert extends React.Component<
+  WrappedAlertProps,
+  WrappedAlertState
+> {
+  constructor(props: WrappedAlertProps) {
+    super(props);
+    this.state = {
+      isChecked: true,
+      id: `id${Math.random()
+        .toString()
+        .replace(/[^0-9]/g, '')}`,
+    };
+
+    this.toggle = this.toggle.bind(this);
+  }
+
+  toggle() {
+    console.log('toggle');
+    const { isChecked } = this.state;
+
+    this.setState({
+      isChecked: !isChecked,
+    });
+  }
+
+  render() {
+    const { mode, level, Component } = this.props;
+    const { isChecked, id } = this.state;
+
+    console.log({ Component });
+
+    if (mode === 'live') {
+      return (
+        <Fragment>
+          <button
+            type="button"
+            aria-controls={id}
+            aria-expanded={isChecked}
+            onClick={this.toggle}
+            className="g-button g-button--secondary"
+          >
+            Toggle live {level} alert
+          </button>
+          <div id={id}>
+            {isChecked ? (
+              <Component key={id} {...this.props} />
+            ) : (
+              <Component key={id} {...this.props} children={undefined} />
+            )}
+          </div>
+        </Fragment>
+      );
+    }
+    return <Component {...this.props} />;
   }
 }
 
