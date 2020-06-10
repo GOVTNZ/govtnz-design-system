@@ -44,8 +44,6 @@ Note that the logo and [flexbox grid component ](https://design-system-alpha.dig
 
 This component is responsive. Click the ‘open in new window’ to see how it behaves.
 
-Design System users should avoid wrapping main navigation links over two or more lines. Instead, present links in an unbroken horizontal list. Choose a suitable break point to switch to the mobile menu as the screen width changes.
-
 ## When to use it
 
 A header is required on all government websites. When this header component is used, it must include:

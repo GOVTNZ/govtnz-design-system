@@ -46,7 +46,6 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <p>This component is responsive. Click the ‘open in new window’ to see how it behaves.</p>
-<p>Design System users should avoid wrapping main navigation links over two or more lines. Instead, present links in an unbroken horizontal list. Choose a suitable break point to switch to the mobile menu as the screen width changes.</p>
 <h2 id="when-to-use-it">When to use it</h2>
 <p>A header is required on all government websites. When this header component is used, it must include:</p>
 <Ul bulleted>
