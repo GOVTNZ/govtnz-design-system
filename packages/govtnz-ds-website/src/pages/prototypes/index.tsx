@@ -7,6 +7,9 @@ import React from 'react';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 
+import H2 from '@govtnz/ds/build/react-ts/H2';
+import '../../commons/styles/ds/themed-H2.scss';
+
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
@@ -16,20 +19,17 @@ const PageContent = props => (
       Prototypes
     </H1>
     <p>
-      Help users by using our patterns which provide easy action flows for
-      specific tasks, as well as templates for common forms. Typical examples
-      include collecting users&#39; address and contact details, and guiding
-      users through a step-by-step application form.
+      Intorduction paragraph tp tell users that they can fiond prototypes of DS
+      here. More cotent content goes here.
     </p>
+    <H2 styleSize="large" id="main-heading">
+      Contact us form prototype
+    </H2>
     <p>
-      We&#39;ll be inviting you to co-design some patterns with us soon. To keep
-      updated with what we are doing now, what we are planning to do next, and
-      how you can get involved,{' '}
-      <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">
-        subscribe to the New Zealand Government Design System (NZGDS) newsletter
-      </a>
-      .
+      Intro copy i.e here you can see how we use DS for elements to assemble
+      example of a comtact us for <a href="/">Link to source code</a>.
     </p>
+    <p>This is purely for demonstration purpose. Not an advice</p>
   </React.Fragment>
 );
 
