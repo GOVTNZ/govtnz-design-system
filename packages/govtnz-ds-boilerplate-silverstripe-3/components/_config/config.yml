@@ -1,6 +1,0 @@
----
-Name: components
----
-Injector:
-  SSTemplateParser:
-    class: Symbiote\Components\ComponentTemplateParser
