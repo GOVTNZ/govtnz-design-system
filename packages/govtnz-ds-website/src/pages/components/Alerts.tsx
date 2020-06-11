@@ -119,7 +119,7 @@ Success alerts are always static, as they are included as part of a new page or 
         className: "example__iframe",
         src:"/components/Alerts__example4.html",
         title:"Example: Alerts (static)",
-        height: 585
+        height: 196
       }}></Example>
 </ExampleContainer>
 
@@ -143,7 +143,7 @@ To orient screen reader users and others to the alert, the Design System user mu
         className: "example__iframe",
         src:"/components/Alerts__example5.html",
         title:"Example title: Error summary alert",
-        height: 295
+        height: 261
       }}></Example>
 </ExampleContainer>
 
