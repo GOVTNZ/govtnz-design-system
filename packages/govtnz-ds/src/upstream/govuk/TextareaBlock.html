@@ -1,22 +1,24 @@
-<div class="g-form-group {{ errorId?: g-form-group--error }}">
-  <label class="g-label" for="id">
+<div
+  class="g-textareaBlock-form-group {{ errorId?: g-textareaBlock-form-group--error }}"
+>
+  <label class="g-textareaBlock-label" for="id">
     <mt-variable key="label">Label text</mt-variable>
   </label>
   <mt-if key="hintId">
-    <div class="g-hint" id="hintId">
+    <div class="g-textareaBlock-hint" id="hintId">
       <mt-variable key="hint">Hint text</mt-variable>
     </div>
   </mt-if>
   <mt-if key="errorId">
-    <div class="g-error-message" id="errorId">
-      <span class="g-visually-hidden">
+    <div class="g-textareaBlock-error-message" id="errorId">
+      <span class="g-textareaBlock-visually-hidden">
         Error:
       </span>
       <mt-variable key="error">Error text</mt-variable>
     </div>
   </mt-if>
   <textarea
-    class="g-textarea"
+    class="g-textareaBlock-textarea"
     id="id"
     name="name"
     aria-describedby="hintId errorId"

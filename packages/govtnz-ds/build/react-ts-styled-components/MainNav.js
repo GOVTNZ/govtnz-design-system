@@ -16,12 +16,25 @@ var StyledUl = styled_components_1.default.ul(templateObject_4 || (templateObjec
 var MainNav = function (_a) {
     var isOpen = _a.isOpen, id = _a.id, name = _a.name, type = _a.type, onClick = _a.onClick, button = _a.button, children = _a.children;
     return (react_1.default.createElement(StyledNav, { "aria-label": "Main", role: "navigation" },
+        " ",
         react_1.default.createElement(StyledButton, { isOpen: isOpen, "aria-controls": id, "aria-expanded": isOpen !== undefined ? isOpen.toString() === "true" : undefined, name: name, type: type, onClick: onClick },
-            button !== undefined ? button : react_1.default.createElement(react_1.default.Fragment, null, " Menu "),
+            " ",
+            button !== undefined ? (button) : (react_1.default.createElement(react_1.default.Fragment, null, " Menu ")),
+            " ",
             react_1.default.createElement(StyledSvg, { viewBox: "0 0 16 16", xmlns: "http://www.w3.org/2000/svg" },
-                react_1.default.createElement("path", { d: "M7.992 9.55l5.6-5.6a1 1 0 0 1 1.415 0l.688.689a1 1 0 0 1 0 1.414L8.7 13.049a1 1 0 0 1-1.414 0L.29 6.053a1 1 0 0 1 0-1.414l.689-.689a1 1 0 0 1 1.414 0l5.6 5.6z", fill: "currentColor", fillRule: "nonzero" }))),
+                " ",
+                react_1.default.createElement("path", { d: "M7.992 9.55l5.6-5.6a1 1 0 0 1 1.415 0l.688.689a1 1 0 0 1 0 1.414L8.7 13.049a1 1 0 0 1-1.414 0L.29 6.053a1 1 0 0 1 0-1.414l.689-.689a1 1 0 0 1 1.414 0l5.6 5.6z", fill: "currentColor", fillRule: "nonzero" }),
+                " "),
+            " "),
+        " ",
         react_1.default.createElement("div", { id: id },
-            react_1.default.createElement(StyledUl, { isOpen: isOpen }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " MainNavLink components go here "))))));
+            " ",
+            react_1.default.createElement(StyledUl, { isOpen: isOpen },
+                " ",
+                children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " MainNavLink components go here ")),
+                " "),
+            " "),
+        " "));
 };
 exports.default = MainNav;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;

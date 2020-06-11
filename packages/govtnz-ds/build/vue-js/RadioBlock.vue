@@ -13,11 +13,11 @@
       v-bind:checked="checked"
     />
 
-    <label class="g-radioBlock-label g-radios__label" v-bind:for="id">
+    <label class="g-label g-radios__label" v-bind:for="id">
       <slot name="label"></slot>
     </label>
 
-    <div class="g-radioBlock-hint g-checkboxes__hint" v-bind:id="hintId">
+    <div class="g-hint g-checkboxes__hint" v-bind:id="hintId">
       <slot name="hint"></slot>
     </div>
   </div>
@@ -41,83 +41,12 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return (
-        "g-radios__item" +
-        (this.errorId ? " g-radioBlock-form-group--error" : "")
-      );
+      return "g-radios__item" + (this.errorId ? " g-form-group--error" : "");
     }
   }
 });
 </script>
 <style scoped>
-.g-radioBlock-form-group--error {
-  padding-left: 15px;
-  border-left: 5px solid #b10e1e;
-}
-.g-radioBlock-hint {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  margin-bottom: 15px;
-  color: #595959;
-}
-@media print {
-  .g-radioBlock-hint {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-radioBlock-hint {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-radioBlock-hint {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-.g-fieldset__legend + .g-radioBlock-hint {
-  margin-top: -5px;
-}
-.g-radioBlock-label {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-}
-@media print {
-  .g-radioBlock-label {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-radioBlock-label {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-radioBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-radioBlock-label {
-    color: #000000;
-  }
-}
 .g-checkboxes__hint {
   display: block;
   padding-right: 15px;

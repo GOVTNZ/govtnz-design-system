@@ -30,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FileUpload",
-            template: "\n    <div class=\"g-fileUpload-form-group\">\n      <label class=\"g-fileUpload-label\" for=\"{{ id }}\">\n        Upload a file\n      </label>\n\n      <input\n        class=\"g-file-upload\"\n        id=\"{{ id }}\"\n        name=\"{{ name }}\"\n        type=\"file\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n      />\n    </div>\n  "
+            template: "\n    <div class=\"g-form-group\">\n      <label class=\"g-label\" for=\"{{ id }}\">\n        Upload a file\n      </label>\n\n      <input\n        class=\"g-file-upload\"\n        id=\"{{ id }}\"\n        name=\"{{ name }}\"\n        type=\"file\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n      />\n    </div>\n  "
         })
     ], AppComponent);
     return AppComponent;

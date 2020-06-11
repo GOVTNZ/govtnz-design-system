@@ -44,18 +44,18 @@ var InputBlock = function InputBlock(_ref) {
       ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-inputBlock-form-group".concat(errorId ? " g-inputBlock-form-group--error" : "")
-  }, /*#__PURE__*/_react["default"].createElement("label", {
+  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-inputBlock-label",
     htmlFor: id
-  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
+  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ", hint !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-inputBlock-hint",
     id: hintId
-  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
+  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-inputBlock-error-message",
     id: errorId
-  }, /*#__PURE__*/_react["default"].createElement("span", {
+  }, " ", /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-inputBlock-visually-hidden"
-  }, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", /*#__PURE__*/_react["default"].createElement("input", {
+  }, "Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement("input", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-inputBlock-input--error" : ""),
     id: id,
@@ -72,7 +72,7 @@ var InputBlock = function InputBlock(_ref) {
     autoComplete: autoComplete,
     onChange: onChange,
     ref: ref
-  }));
+  }), " ");
 };
 
 var _default = InputBlock;

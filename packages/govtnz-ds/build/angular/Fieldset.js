@@ -21,7 +21,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Fieldset",
-            template: "\n    <div class=\"g-fieldset-form-group\">\n      <fieldset aria-describedby=\"{{ hintId }}\" class=\"g-fieldset\">\n        <slot></slot>\n      </fieldset>\n    </div>\n  "
+            template: "\n    <div class=\"g-form-group\">\n      <fieldset aria-describedby=\"{{ hintId }}\" class=\"g-fieldset\">\n        <slot></slot>\n      </fieldset>\n    </div>\n  "
         })
     ], AppComponent);
     return AppComponent;

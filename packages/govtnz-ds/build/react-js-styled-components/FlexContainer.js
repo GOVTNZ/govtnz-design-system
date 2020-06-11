@@ -78,7 +78,7 @@ var FlexContainer = function FlexContainer(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     width: width
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Rows..."));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Rows..."), " ");
 };
 
 var _default = FlexContainer;

@@ -1,10 +1,10 @@
 <div class="{{ errorId?: g-form-group--error }}">
-  <label class="g-label" for="selectId">
+  <label class="g-selectBlock-label" for="selectId">
     <mt-variable key="label">Example label text</mt-variable>
   </label>
-  <select class="g-select {{ error: g-select--error }}" id="selectId">
-    <mt-variable key="children">
-      <option>Options</option>
-    </mt-variable>
-  </select>
+  <select
+    class="g-selectBlock-select {{ error: g-selectBlock-select--error }}"
+    id="selectId"
+    ><mt-variable key="children"><option>Options</option></mt-variable></select
+  >
 </div>

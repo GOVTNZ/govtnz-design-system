@@ -216,9 +216,6 @@ export default Vue.extend({
     color: #000000;
   }
 }
-.g-inputBlock-character-count .g-inputBlock-form-group {
-  margin-bottom: 5px;
-}
 .g-inputBlock-input {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

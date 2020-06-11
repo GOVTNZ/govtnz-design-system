@@ -48,7 +48,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-RadioBlock",
-            template: "\n<div class=\"g-radios__item{{errorId ? \" g-radioBlock-form-group--error\" : \"\"}}\">\n\n  \n<input aria-describedby=\"{{hintId}}\" class=\"g-radios__input\" id=\"{{id}}\" name=\"{{name}}\" type=\"radio\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" autofocus=\"{{autoFocus}}\" value=\"{{value}}\" checked=\"{{checked}}\"/>\n\n  \n<label class=\"g-radioBlock-label g-radios__label\" for=\"{{id}}\">\n\n    <slot name=\"label\"></slot>\n  \n\n</label>\n\n\n  \n    \n<div class=\"g-radioBlock-hint g-checkboxes__hint\" id=\"{{hintId}}\">\n\n      <slot name=\"hint\"></slot>\n    \n\n</div>\n\n\n  \n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-radios__item{{errorId ? \" g-form-group--error\" : \"\"}}\">\n   \n<input aria-describedby=\"{{hintId}}\" class=\"g-radios__input\" id=\"{{id}}\" name=\"{{name}}\" type=\"radio\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" autofocus=\"{{autoFocus}}\" value=\"{{value}}\" checked=\"{{checked}}\"/>\n   \n<label class=\"g-label g-radios__label\" for=\"{{id}}\">\n     <slot name=\"label\"></slot>   \n\n</label>\n\n        \n<div class=\"g-hint g-checkboxes__hint\" id=\"{{hintId}}\">\n       <slot name=\"hint\"></slot>     \n\n</div>\n\n    \n\n</div>\n\n "
         })
     ], AppComponent);
     return AppComponent;

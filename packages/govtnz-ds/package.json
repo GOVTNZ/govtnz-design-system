@@ -26,7 +26,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@govtnz/ds-common": "0.0.1",
-    "@springload/metatemplate": "^0.5.8",
+    "@springload/metatemplate": "^0.5.9",
     "@types/node": "^10.12.19",
     "@vue/cli-service": "^3.8.4",
     "argparse": "^1.0.10",

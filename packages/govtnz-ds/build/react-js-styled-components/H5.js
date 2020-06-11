@@ -492,7 +492,7 @@ var H5 = function H5(_ref) {
     marginBottom8: marginBottom8,
     marginBottom0: marginBottom0,
     id: id
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " ");
 };
 
 var _default = H5;

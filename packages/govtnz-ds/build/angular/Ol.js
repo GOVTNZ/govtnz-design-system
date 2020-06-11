@@ -21,7 +21,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Ol",
-            template: "\n<ol class=\"g-ol-list{{numbered ? \" g-ol-list--number\" : \"\"}}\">\n<slot></slot>\n\n</ol>\n\n"
+            template: "\n<ol class=\"g-list{{numbered ? \" g-list--number\" : \"\"}}\">\n<slot></slot>\n\n</ol>\n\n"
         })
     ], AppComponent);
     return AppComponent;

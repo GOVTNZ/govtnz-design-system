@@ -8,7 +8,6 @@
       v-bind:type="type"
     >
       <slot name="button"></slot>
-
       <svg
         class="g-main-nav__button__icon"
         viewBox="0 0 16 16"
@@ -78,8 +77,8 @@ export default Vue.extend({
   margin: 0px;
   background-color: #2a2a2a;
 }
-.g-mainNav-flex-container .g-main-nav,
-.g-mainNav-flex-container-fluid .g-main-nav {
+.g-flex-container .g-main-nav,
+.g-flex-container-fluid .g-main-nav {
   margin: 0px -1rem;
 }
 @media only screen and (min-width: 48em) {
@@ -87,8 +86,8 @@ export default Vue.extend({
     margin: 0px;
     background-color: transparent;
   }
-  .g-mainNav-flex-container .g-main-nav,
-  .g-mainNav-flex-container-fluid .g-main-nav {
+  .g-flex-container .g-main-nav,
+  .g-flex-container-fluid .g-main-nav {
     margin: 0px -2rem;
   }
 }

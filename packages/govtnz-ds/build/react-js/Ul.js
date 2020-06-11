@@ -13,8 +13,8 @@ var Ul = function Ul(_ref) {
   var bulleted = _ref.bulleted,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("ul", {
-    className: "g-ul-list".concat(bulleted ? " g-ul-list--bullet" : "")
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+    className: "g-list".concat(bulleted ? " g-list--bullet" : "")
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " ");
 };
 
 var _default = Ul;

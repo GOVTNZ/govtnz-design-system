@@ -6,7 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var FooterWrapper = function (_a) {
     var children = _a.children;
-    return (react_1.default.createElement("footer", { className: "g-footer-wrapper" }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content..."))));
+    return (react_1.default.createElement("footer", { className: "g-footer-wrapper" },
+        " ",
+        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content...")),
+        " "));
 };
 exports.default = FooterWrapper;
 //# sourceMappingURL=FooterWrapper.js.map

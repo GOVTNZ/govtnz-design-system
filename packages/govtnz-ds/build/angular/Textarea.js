@@ -51,7 +51,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Textarea",
-            template: "\n<textarea aria-describedby=\"{{describedById}}\" class=\"g-textarea\" id=\"{{id}}\" name=\"{{name}}\" rows=\"{{rows}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n\n"
+            template: "\n<textarea aria-describedby=\"{{describedById}}\" class=\"g-textarea\" id=\"{{id}}\" name=\"{{name}}\" rows=\"{{rows}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n "
         })
     ], AppComponent);
     return AppComponent;

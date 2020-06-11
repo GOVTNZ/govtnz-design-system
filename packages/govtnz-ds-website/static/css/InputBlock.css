@@ -135,10 +135,6 @@
   }
 }
 
-.g-inputBlock-character-count .g-inputBlock-form-group {
-  margin-bottom: 5px;
-}
-
 .g-inputBlock-input {
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);

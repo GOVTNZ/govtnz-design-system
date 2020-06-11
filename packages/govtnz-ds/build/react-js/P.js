@@ -11,10 +11,10 @@ var _react = _interopRequireDefault(require("react"));
 
 var constants = {
   styleSize: {
-    large: "g-p-body-l",
-    medium: "g-p-body-m",
-    small: "g-p-body-s",
-    "x-small": "g-p-body-xs"
+    large: "g-body-l",
+    medium: "g-body-m",
+    small: "g-body-s",
+    "x-small": "g-body-xs"
   }
 };
 

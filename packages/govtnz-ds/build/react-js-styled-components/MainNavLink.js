@@ -68,14 +68,14 @@ var MainNavLink = function MainNavLink(_ref) {
       target = _ref.target,
       onClick = _ref.onClick,
       children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledLi, null, /*#__PURE__*/_react["default"].createElement(StyledA, {
+  return /*#__PURE__*/_react["default"].createElement(StyledLi, null, " ", /*#__PURE__*/_react["default"].createElement(StyledA, {
     ariaCurrent: ariaCurrent,
     "aria-current": ariaCurrent,
     href: href,
     rel: rel,
     target: target,
     onClick: onClick
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example item text ")));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example item text "), " "), " ");
 };
 
 var _default = MainNavLink;

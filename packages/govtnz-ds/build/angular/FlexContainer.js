@@ -21,7 +21,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexContainer",
-            template: "\n<div class=\"{{constants.width[width] !== undefined ?  constants.width[width] : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"{{constants.width[width] !== undefined ?  constants.width[width] : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
         })
     ], AppComponent);
     return AppComponent;

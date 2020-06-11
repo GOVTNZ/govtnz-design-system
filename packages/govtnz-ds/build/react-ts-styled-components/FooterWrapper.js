@@ -12,7 +12,10 @@ var styled_components_1 = __importDefault(require("styled-components"));
 var StyledFooter = styled_components_1.default.footer(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n"], ["\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n"])));
 var FooterWrapper = function (_a) {
     var children = _a.children;
-    return (react_1.default.createElement(StyledFooter, null, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content..."))));
+    return (react_1.default.createElement(StyledFooter, null,
+        " ",
+        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Content...")),
+        " "));
 };
 exports.default = FooterWrapper;
 var templateObject_1;

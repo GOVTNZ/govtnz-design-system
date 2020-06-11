@@ -14,11 +14,11 @@ var StyledDiv = styled_components_1.default.div(templateObject_2 || (templateObj
     return props.errorId && styled_components_1.default.css(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "], ["\n      padding-left: 15px;\n      border-left: 5px solid #b10e1e;\n    "])));
 });
 var StyledFieldset = styled_components_1.default.fieldset(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  min-width: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media not (caret-color: auto) {\n    display: table-cell;\n  }\n  margin-top: 0px;\n"], ["\n  min-width: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media not (caret-color: auto) {\n    display: table-cell;\n  }\n  margin-top: 0px;\n"])));
-var StyledLegend = styled_components_1.default.legend(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 2rem;\n  line-height: 1.09375;\n  margin-bottom: 15px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 3rem;\n    line-height: 1.04167;\n  }\n  @media print {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  color: #0b0c0c;\n  box-sizing: border-box;\n  display: table;\n  max-width: 100%;\n  margin-bottom: 0px;\n  padding: 0;\n  overflow: hidden;\n  white-space: normal;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 2rem;\n  line-height: 1.09375;\n  margin-bottom: 15px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 3rem;\n    line-height: 1.04167;\n  }\n  @media print {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"])));
+var StyledLegend = styled_components_1.default.legend(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  margin-top: 0px;\n"], ["\n  margin-top: 0px;\n"])));
 var StyledSpan = styled_components_1.default.span(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: -5px;\n  margin-top: 0px;\n"])));
 var StyledSpan2 = styled_components_1.default.span(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  margin-top: 0px;\n"])));
 var StyledSpan3 = styled_components_1.default.span(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n  margin-top: 0px;\n"], ["\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n  margin-top: 0px;\n"])));
-var StyledDiv2 = styled_components_1.default.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  font-size: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  margin-top: 0px;\n"], ["\n  font-size: 0;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  margin-top: 0px;\n"])));
+var StyledDiv2 = styled_components_1.default.div(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  margin-top: 0px;\n"], ["\n  margin-top: 0px;\n"])));
 var StyledDiv3 = styled_components_1.default.div(templateObject_9 || (templateObject_9 = __makeTemplateObject(["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"], ["\n  display: inline-block;\n  margin-right: 20px;\n  margin-bottom: 0;\n  margin-top: 0px;\n"])));
 var StyledDiv4 = styled_components_1.default.div(templateObject_10 || (templateObject_10 = __makeTemplateObject(["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"], ["\n  margin-bottom: 20px;\n  :after {\n    content: \"\";\n    display: block;\n    clear: both;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"])));
 var StyledLabel = styled_components_1.default.label(templateObject_11 || (templateObject_11 = __makeTemplateObject(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"], ["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  display: block;\n  margin-top: 0px;\n"])));
@@ -43,34 +43,71 @@ var StyledInput3 = styled_components_1.default.input(templateObject_23 || (templ
 var DateInput = function (_a) {
     var errorId = _a.errorId, hintId = _a.hintId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref, monthId = _a.monthId, yearName = _a.yearName, value2 = _a.value2, onChange2 = _a.onChange2, ref2 = _a.ref2, yearId = _a.yearId, value3 = _a.value3, onChange3 = _a.onChange3, ref3 = _a.ref3;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
+        " ",
         react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, role: "group" },
-            react_1.default.createElement(StyledLegend, null, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label"))),
-            react_1.default.createElement(StyledSpan, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint"))),
+            " ",
+            react_1.default.createElement(StyledLegend, null,
+                " ",
+                label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label")),
+                " "),
+            " ",
+            react_1.default.createElement(StyledSpan, { id: hintId },
+                " ",
+                hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint")),
+                " "),
+            " ",
             errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+                " ",
                 react_1.default.createElement(StyledSpan2, { id: errorId },
+                    " ",
                     react_1.default.createElement(StyledSpan3, null, "Error: "),
-                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error"))))) : (""),
+                    " ",
+                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error")),
+                    " "),
+                " ")) : (""),
+            " ",
             react_1.default.createElement(StyledDiv2, { id: id },
+                " ",
                 react_1.default.createElement(StyledDiv3, null,
+                    " ",
                     react_1.default.createElement(StyledDiv4, null,
-                        react_1.default.createElement(StyledLabel, { htmlFor: dayId }, "Day"),
+                        " ",
+                        react_1.default.createElement(StyledLabel, { htmlFor: dayId }, " Day "),
+                        " ",
                         react_1.default.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }))),
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }),
+                        " "),
+                    " "),
+                " ",
                 react_1.default.createElement(StyledDiv5, null,
+                    " ",
                     react_1.default.createElement(StyledDiv6, null,
-                        react_1.default.createElement(StyledLabel2, { htmlFor: monthId }, "Month"),
+                        " ",
+                        react_1.default.createElement(StyledLabel2, { htmlFor: monthId }, " Month "),
+                        " ",
                         react_1.default.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }))),
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }),
+                        " "),
+                    " "),
+                " ",
                 react_1.default.createElement(StyledDiv7, null,
+                    " ",
                     react_1.default.createElement(StyledDiv8, null,
-                        react_1.default.createElement(StyledLabel3, { htmlFor: yearId }, "Year"),
+                        " ",
+                        react_1.default.createElement(StyledLabel3, { htmlFor: yearId }, " Year "),
+                        " ",
                         react_1.default.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 })))))));
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 }),
+                        " "),
+                    " "),
+                " "),
+            " "),
+        " "));
 };
 exports.default = DateInput;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23;

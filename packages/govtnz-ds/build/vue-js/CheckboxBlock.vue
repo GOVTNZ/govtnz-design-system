@@ -13,16 +13,16 @@
       v-bind:checked="checked"
     />
 
-    <label class="g-checkboxBlock-label g-checkboxes__label" v-bind:for="id">
+    <label class="g-checkboxes__label" v-bind:for="id">
       <slot name="label"></slot>
     </label>
 
-    <div class="g-checkboxBlock-hint g-checkboxes__hint" v-bind:id="hintId">
+    <div class="g-checkboxes__hint" v-bind:id="hintId">
       <slot name="hint"></slot>
     </div>
 
-    <div class="g-checkboxBlock-error-message" v-bind:id="errorId">
-      <span class="g-checkboxBlock-visually-hidden">
+    <div class="g-error-message" v-bind:id="errorId">
+      <span class="g-visually-hidden">
         Error:
       </span>
 
@@ -51,48 +51,14 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-checkboxes__item" +
-        (this.errorId ? " g-checkboxBlock-form-group--error" : "")
+        "g-checkboxes__item" + (this.errorId ? " g-form-group--error" : "")
       );
     }
   }
 });
 </script>
 <style scoped>
-.g-checkboxBlock-form-group--error {
-  padding-left: 15px;
-  border-left: 5px solid #b10e1e;
-}
-.g-checkboxBlock-error-message {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25;
-  display: block;
-  margin-bottom: 15px;
-  clear: both;
-  color: #b10e1e;
-}
-@media print {
-  .g-checkboxBlock-error-message {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-checkboxBlock-error-message {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-checkboxBlock-error-message {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-.g-checkboxBlock-hint {
+.g-checkboxes__hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,26 +70,26 @@ export default Vue.extend({
   color: #595959;
 }
 @media print {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
-.g-fieldset__legend + .g-checkboxBlock-hint {
+.g-fieldset__legend + .g-checkboxes__hint {
   margin-top: -5px;
 }
-.g-checkboxBlock-label {
+.g-checkboxes__label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -135,24 +101,7 @@ export default Vue.extend({
   margin-bottom: 5px;
 }
 @media print {
-  .g-checkboxBlock-label {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-checkboxBlock-label {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-checkboxBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-checkboxBlock-label {
+  .g-checkboxes__label {
     color: #000000;
   }
 }
@@ -260,20 +209,7 @@ export default Vue.extend({
 .g-checkboxes__input.\:disabled + .g-checkboxes__label {
   opacity: 0.5;
 }
-.g-checkboxBlock-visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  -webkit-clip-path: inset(50%) !important;
-  clip-path: inset(50%) !important;
-  border: 0 !important;
-  white-space: nowrap !important;
-}
-.g-checkboxBlock-hint > * {
+.g-checkboxes__hint > * {
   margin-top: 0px;
 }
 </style>

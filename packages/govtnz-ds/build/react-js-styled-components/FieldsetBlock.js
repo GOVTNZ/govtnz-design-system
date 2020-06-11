@@ -118,13 +118,13 @@ var FieldsetBlock = function FieldsetBlock(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
+  }, " ", /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined
-  }, /*#__PURE__*/_react["default"].createElement(StyledLegend, null, legend !== undefined ? legend : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
+  }, " ", /*#__PURE__*/_react["default"].createElement(StyledLegend, null, " ", legend !== undefined ? legend : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text"), " "), " ", hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
+  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
+  }, " ", /*#__PURE__*/_react["default"].createElement(StyledSpan, null, " Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents")), " "), " ");
 };
 
 var _default = FieldsetBlock;

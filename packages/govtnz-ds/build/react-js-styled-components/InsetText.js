@@ -29,7 +29,7 @@ var StyledDiv = _styledComponents["default"].div(_templateObject());
 
 var InsetText = function InsetText(_ref) {
   (0, _objectDestructuringEmpty2["default"])(_ref);
-  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, "It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.");
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, " ", "It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.", " ");
 };
 
 var _default = InsetText;

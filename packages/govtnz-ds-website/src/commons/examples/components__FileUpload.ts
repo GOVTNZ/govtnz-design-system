@@ -12,7 +12,7 @@ export default [
     "vue-js": "<template>\n  <file-upload />\n</template>\n<script>\nimport Vue from \"vue\";\nimport FileUpload from \"@govtnz/ds/build/vue-js/FileUpload.vue\";\n\nexport default { components: { \"file-upload\": FileUpload } };\n</script>\n",
     "vue-ts": "<template>\n  <file-upload />\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport FileUpload from \"@govtnz/ds/build/vue-ts/FileUpload.vue\";\n\nexport default { components: { \"file-upload\": FileUpload } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: FileUpload.css\nOR in Sass (SCSS): FileUpload.scss\n-->\n<div class=\"g-fileUpload-form-group\">\n  <label class=\"g-fileUpload-label\"> Upload a file </label>\n  <input class=\"g-file-upload\" type=\"file\" />\n</div>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: FileUpload.css\nOR in Sass (SCSS): FileUpload.scss\n-->\n<div class=\"g-form-group\">\n  <label class=\"g-label\"> Upload a file </label>\n  <input class=\"g-file-upload\" type=\"file\" />\n</div>\n",
     "css": "",
     "twig-embed": "{% embed \"FileUpload.html.twig\" %}{% endembed %}",
     "angular": ""

@@ -1,16 +1,18 @@
-<div class="g-form-group {{ errorId?: g-form-group--error }}">
-  <fieldset class="g-fieldset" aria-describedby="hintId errorId">
-    <legend class="g-fieldset__legend">
+<div
+  class="g-fieldsetBlock-form-group {{ errorId?: g-fieldsetBlock-form-group--error }}"
+>
+  <fieldset class="g-fieldsetBlock-fieldset" aria-describedby="hintId errorId">
+    <legend class="g-fieldsetBlock-fieldset__legend">
       <mt-variable key="legend">Legend text</mt-variable>
     </legend>
     <mt-if key="hintId">
-      <div class="g-hint" id="hintId">
+      <div class="g-fieldsetBlock-hint" id="hintId">
         <mt-variable key="hint">Hint text</mt-variable>
       </div>
     </mt-if>
     <mt-if key="errorId">
-      <div class="g-error-message" id="errorId">
-        <span class="g-visually-hidden">
+      <div class="g-fieldsetBlock-error-message" id="errorId">
+        <span class="g-fieldsetBlock-visually-hidden">
           Error:
         </span>
         <mt-variable key="error">Error text</mt-variable>

@@ -45,7 +45,10 @@ var StyledDiv = styled_components_1.default.div(templateObject_12 || (templateOb
 });
 var FlexRow = function (_a) {
     var xsVerticalAlign = _a.xsVerticalAlign, smVerticalAlign = _a.smVerticalAlign, mdVerticalAlign = _a.mdVerticalAlign, lgVerticalAlign = _a.lgVerticalAlign, isReversed = _a.isReversed, children = _a.children;
-    return (react_1.default.createElement(StyledDiv, { xsVerticalAlign: xsVerticalAlign, smVerticalAlign: smVerticalAlign, mdVerticalAlign: mdVerticalAlign, lgVerticalAlign: lgVerticalAlign, isReversed: isReversed }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns..."))));
+    return (react_1.default.createElement(StyledDiv, { xsVerticalAlign: xsVerticalAlign, smVerticalAlign: smVerticalAlign, mdVerticalAlign: mdVerticalAlign, lgVerticalAlign: lgVerticalAlign, isReversed: isReversed },
+        " ",
+        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns...")),
+        " "));
 };
 exports.default = FlexRow;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12;

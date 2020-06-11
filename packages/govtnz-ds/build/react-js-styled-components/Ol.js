@@ -13,18 +13,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n      padding-left: 20px;\n      list-style-type: decimal;\n    "]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1.25rem;\n  line-height: 1.625;\n  color: #2a2a2a;\n  margin-top: 0;\n  margin-bottom: 1rem;\n  padding-left: 0;\n  list-style-type: none;\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n  @media print {\n    color: #000000;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 1rem;\n  }\n  margin-top: 10px;\n  ", "\n  margin-top: 0px;\n  margin-top: 0.5rem;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-top: 0px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -33,9 +23,7 @@ function _templateObject() {
   return data;
 }
 
-var StyledOl = _styledComponents["default"].ol(_templateObject(), function (props) {
-  return props.numbered && _styledComponents["default"].css(_templateObject2());
-});
+var StyledOl = _styledComponents["default"].ol(_templateObject());
 
 var Ol = function Ol(_ref) {
   var numbered = _ref.numbered,

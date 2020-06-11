@@ -5,8 +5,8 @@
   background-color: #2a2a2a;
 }
 
-.g-mainNav-flex-container .g-main-nav,
-.g-mainNav-flex-container-fluid .g-main-nav {
+.g-flex-container .g-main-nav,
+.g-flex-container-fluid .g-main-nav {
   margin: 0px -1rem;
 }
 
@@ -16,8 +16,8 @@
     background-color: transparent;
   }
 
-  .g-mainNav-flex-container .g-main-nav,
-  .g-mainNav-flex-container-fluid .g-main-nav {
+  .g-flex-container .g-main-nav,
+  .g-flex-container-fluid .g-main-nav {
     margin: 0px -2rem;
   }
 }

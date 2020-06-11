@@ -7,10 +7,9 @@
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
-class="g-checkboxes__item{{#errorId}} g-checkboxBlock-form-group--error{{/errorId}}"
+class="g-checkboxes__item{{#errorId}} g-form-group--error{{/errorId}}"
 >
-  
-  
+     
 <input
 {{#hintId}}
   aria-describedby="{{hintId}}"
@@ -39,61 +38,46 @@ type="checkbox"
   checked="{{#checked}}checked{{/checked}}"
 {{/checked}}
 />
-  
-  
+     
 <label
-class="g-checkboxBlock-label g-checkboxes__label"
+class="g-checkboxes__label"
 {{#id}}
   for="{{id}}"
 {{/id}}
 >
   {{{label}}}
 </label>
-  
-  
-  
-    
+     
+       
 <div
-class="g-checkboxBlock-hint g-checkboxes__hint"
+class="g-checkboxes__hint"
 {{#hintId}}
   id="{{hintId}}"
 {{/hintId}}
 >
-  
-      
+         
   {{{hint}}}
-  
-    
+       
 </div>
-  
-  
-  
-  
-  
-    
+     
+     
+       
 <div
-class="g-checkboxBlock-error-message"
+class="g-error-message"
 {{#errorId}}
   id="{{errorId}}"
 {{/errorId}}
 >
-  
-      
+         
 <span
-class="g-checkboxBlock-visually-hidden"
+class="g-visually-hidden"
 >
-  
-        Error:
-      
+           Error:       
 </span>
-  
-      
+         
   {{{error}}}
-  
-    
+       
 </div>
-  
-  
-  
-
+     
+   
 </div>

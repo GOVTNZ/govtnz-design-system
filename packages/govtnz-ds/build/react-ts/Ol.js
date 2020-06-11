@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var react_1 = __importDefault(require("react"));
 var Ol = function (_a) {
     var numbered = _a.numbered, children = _a.children;
-    return (react_1.default.createElement("ol", { className: "g-ol-list" + (numbered ? " g-ol-list--number" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
+    return (react_1.default.createElement("ol", { className: "g-list" + (numbered ? " g-list--number" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = Ol;
 //# sourceMappingURL=Ol.js.map

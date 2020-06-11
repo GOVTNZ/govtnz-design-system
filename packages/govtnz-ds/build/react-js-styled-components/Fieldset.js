@@ -24,7 +24,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 20px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  :last-of-type {\n    margin-bottom: 0;\n  }\n  padding: 0;\n  border: 0;\n  margin-bottom: 5px;\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-top: 0px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -40,9 +40,9 @@ var StyledFieldset = _styledComponents["default"].fieldset(_templateObject2());
 var Fieldset = function Fieldset(_ref) {
   var hintId = _ref.hintId,
       children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, " ", /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents...")));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents..."), " "), " ");
 };
 
 var _default = Fieldset;

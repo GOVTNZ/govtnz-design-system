@@ -183,18 +183,15 @@ const makeReleaseSpecItem = async ({
       component = await normalizeGovUkTemplate({
         id: componentId,
         html,
-        css,
-        cssNamespace: '',
-        message: '',
-        calculatedDynamicKeys: [],
-        additionalPrefixesToBypassNamespacing: [
-          'fieldset',
-          'radios',
-          'checkboxes',
-          'link',
-          'a',
-          'caption'
-        ]
+        css
+        // additionalPrefixesToBypassNamespacing: [
+        //   'fieldset',
+        //   'radios',
+        //   'checkboxes',
+        //   'link',
+        //   'a',
+        //   'caption'
+        // ]
       });
 
       component = {

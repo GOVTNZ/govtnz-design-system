@@ -23,7 +23,7 @@ var Select = function Select(_ref) {
     multiple: multiple,
     onChange: onChange,
     ref: ref
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options")));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options")), " ");
 };
 
 var _default = Select;

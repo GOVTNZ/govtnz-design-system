@@ -492,7 +492,7 @@ var H1 = function H1(_ref) {
     marginBottom8: marginBottom8,
     marginBottom0: marginBottom0,
     id: id
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " ");
 };
 
 var _default = H1;

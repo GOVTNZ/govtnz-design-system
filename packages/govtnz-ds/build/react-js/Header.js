@@ -14,7 +14,7 @@ var Header = function Header(_ref) {
   return /*#__PURE__*/_react["default"].createElement("header", {
     className: "g-header",
     role: "banner"
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "), " ");
 };
 
 var _default = Header;

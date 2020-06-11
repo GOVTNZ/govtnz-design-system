@@ -25,8 +25,8 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
       hint = _ref.hint,
       error = _ref.error;
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-checkboxes__item".concat(errorId ? " g-checkboxBlock-form-group--error" : "")
-  }, /*#__PURE__*/_react["default"].createElement("input", {
+    className: "g-checkboxes__item".concat(errorId ? " g-form-group--error" : "")
+  }, " ", /*#__PURE__*/_react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-checkboxes__input",
     id: id,
@@ -39,18 +39,18 @@ var CheckboxBlock = function CheckboxBlock(_ref) {
     checked: checked,
     onChange: onChange,
     ref: ref
-  }), /*#__PURE__*/_react["default"].createElement("label", {
-    className: "g-checkboxBlock-label g-checkboxes__label",
+  }), " ", /*#__PURE__*/_react["default"].createElement("label", {
+    className: "g-checkboxes__label",
     htmlFor: id
-  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-checkboxBlock-hint g-checkboxes__hint",
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), " ", hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+    className: "g-checkboxes__hint",
     id: hintId
-  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-checkboxBlock-error-message",
+  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+    className: "g-error-message",
     id: errorId
-  }, /*#__PURE__*/_react["default"].createElement("span", {
-    className: "g-checkboxBlock-visually-hidden"
-  }, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "");
+  }, " ", /*#__PURE__*/_react["default"].createElement("span", {
+    className: "g-visually-hidden"
+  }, " Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"), " "), " ") : "", " ");
 };
 
 var _default = CheckboxBlock;

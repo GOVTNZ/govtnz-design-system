@@ -3,7 +3,7 @@
 }
 
 .g-dateInput-form-group:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -61,21 +61,21 @@
   }
 }
 
-.g-fieldset {
+.g-dateInput-fieldset {
   min-width: 0;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-.g-fieldset:after {
-  content: "";
+.g-dateInput-fieldset:after {
+  content: '';
   display: block;
   clear: both;
 }
 
 @media not (caret-color: auto) {
-  .g-fieldset {
+  .g-dateInput-fieldset {
     display: table-cell;
   }
 }
@@ -298,27 +298,23 @@
   max-width: 5.4ex;
 }
 
-.g-date-input {
-  font-size: 0;
-}
-
-.g-date-input:after {
-  content: "";
+.g-dateInput-date-input:after {
+  content: '';
   display: block;
   clear: both;
 }
 
-.g-date-input__item {
+.g-dateInput__item {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 0;
 }
 
-.g-date-input__label {
+.g-dateInput__label {
   display: block;
 }
 
-.g-date-input__input {
+.g-dateInput__input {
   margin-bottom: 0;
 }
 

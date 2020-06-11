@@ -1,8 +1,7 @@
 <div
-class="g-radios__item{% if errorId %} g-radioBlock-form-group--error{% endif %}"
+class="g-radios__item{% if errorId %} g-form-group--error{% endif %}"
 >
-  
-  
+     
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-radios__input"
@@ -15,34 +14,25 @@ autofocus="{% if autoFocus %}autoFocus{% endif %}"
 value="{{ value | escape('html_attr') }}"
 checked="{% if checked %}checked{% endif %}"
 />
-  
-  
+     
 <label
-class="g-radioBlock-label g-radios__label"
+class="g-label g-radios__label"
 for="{{ id | escape('html_attr') }}"
 >
-  
-    
+       
 {% block label %}Label text{% endblock %}
-  
-  
+     
 </label>
-  
-  
-  
-    
+     
+       
 <div
-class="g-radioBlock-hint g-checkboxes__hint"
+class="g-hint g-checkboxes__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-  
-      
+         
 {% block hint %}Hint text{% endblock %}
-  
-    
+       
 </div>
-  
-  
-  
-
+     
+   
 </div>

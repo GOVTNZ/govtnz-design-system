@@ -27,7 +27,7 @@ var StyledFooter = _styledComponents["default"].footer(_templateObject());
 
 var FooterWrapper = function FooterWrapper(_ref) {
   var children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledFooter, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."));
+  return /*#__PURE__*/_react["default"].createElement(StyledFooter, null, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."), " ");
 };
 
 var _default = FooterWrapper;

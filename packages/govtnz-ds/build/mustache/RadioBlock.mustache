@@ -6,10 +6,9 @@
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
-class="g-radios__item{{#errorId}} g-radioBlock-form-group--error{{/errorId}}"
+class="g-radios__item{{#errorId}} g-form-group--error{{/errorId}}"
 >
-  
-  
+     
 <input
 {{#hintId}}
   aria-describedby="{{hintId}}"
@@ -38,38 +37,29 @@ type="radio"
   checked="{{#checked}}checked{{/checked}}"
 {{/checked}}
 />
-  
-  
+     
 <label
-class="g-radioBlock-label g-radios__label"
+class="g-label g-radios__label"
 {{#id}}
   for="{{id}}"
 {{/id}}
 >
-  
-    
+       
   {{{label}}}
-  
-  
+     
 </label>
-  
-  
-  
-    
+     
+       
 <div
-class="g-radioBlock-hint g-checkboxes__hint"
+class="g-hint g-checkboxes__hint"
 {{#hintId}}
   id="{{hintId}}"
 {{/hintId}}
 >
-  
-      
+         
   {{{hint}}}
-  
-    
+       
 </div>
-  
-  
-  
-
+     
+   
 </div>

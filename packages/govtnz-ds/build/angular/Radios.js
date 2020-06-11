@@ -21,7 +21,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Radios",
-            template: "\n<div class=\"g-radios{{inline ? \" g-radios--inline\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-radios{{inline ? \" g-radios--inline\" : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
         })
     ], AppComponent);
     return AppComponent;

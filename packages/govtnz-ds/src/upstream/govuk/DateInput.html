@@ -1,26 +1,32 @@
-<div class="g-form-group {{ errorId?: g-form-group--error }}">
-  <fieldset class="g-fieldset" aria-describedby="hintId errorId" role="group">
-    <legend class="g-fieldset__legend g-fieldset__legend--xl">
+<div
+  class="g-dateInput-form-group {{ errorId?: g-dateInput-form-group--error }}"
+>
+  <fieldset
+    class="g-dateInput-fieldset"
+    aria-describedby="hintId errorId"
+    role="group"
+  >
+    <legend class="g-dateInput-fieldset__legend">
       <mt-variable key="label">Example label</mt-variable>
     </legend>
-    <span id="hintId" class="g-hint">
+    <span id="hintId" class="g-dateInput-hint">
       <mt-variable key="hint">Example hint</mt-variable>
     </span>
     <mt-if key="errorId">
-      <span id="errorId" class="g-error-message">
-        <span class="g-visually-hidden">Error: </span>
+      <span id="errorId" class="g-dateInput-error-message">
+        <span class="g-dateInput-visually-hidden">Error: </span>
         <mt-variable key="error">Example error</mt-variable>
       </span>
     </mt-if>
-    <div id="id" class="g-date-input">
-      <div class="g-date-input__item">
-        <div class="g-form-group">
-          <label class="g-label g-date-input__label" for="dayId">
+    <div id="id" class="g-dateInput">
+      <div class="g-dateInput__item">
+        <div class="g-dateInput-form-group">
+          <label class="g-dateInput-label g-dateInput__label" for="dayId">
             Day
           </label>
           <input
             id="dayId"
-            class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
+            class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2 {{ error?: g-dateInput-input--error }}"
             name="dayName"
             type="text"
             value="value"
@@ -29,14 +35,14 @@
           />
         </div>
       </div>
-      <div class="g-date-input__item">
-        <div class="g-form-group">
-          <label class="g-label g-date-input__label" for="monthId">
+      <div class="g-dateInput__item">
+        <div class="g-dateInput-form-group">
+          <label class="g-dateInput-label g-dateInput__label" for="monthId">
             Month
           </label>
           <input
             id="monthId"
-            class="g-input g-date-input__input g-input--width-2 {{ error?: g-input--error }}"
+            class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2 {{ error?: g-dateInput-input--error }}"
             name="yearName"
             type="text"
             value="value2"
@@ -45,14 +51,14 @@
           />
         </div>
       </div>
-      <div class="g-date-input__item">
-        <div class="g-form-group">
-          <label class="g-label g-date-input__label" for="yearId">
+      <div class="g-dateInput__item">
+        <div class="g-dateInput-form-group">
+          <label class="g-dateInput-label g-dateInput__label" for="yearId">
             Year
           </label>
           <input
             id="yearId"
-            class="g-input g-date-input__input g-input--width-4 {{ error?: g-input--error }}"
+            class="g-dateInput-input g-dateInput__input g-dateInput-input--width-4 {{ error?: g-dateInput-input--error }}"
             name="yearName"
             value="value3"
             type="text"

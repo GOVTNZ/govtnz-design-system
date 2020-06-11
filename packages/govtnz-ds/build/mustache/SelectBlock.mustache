@@ -6,24 +6,20 @@
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
-class="{{#errorId}}g-selectBlock-form-group--error{{/errorId}}"
+class="{{#errorId}}g-form-group--error{{/errorId}}"
 >
-  
-  
+     
 <label
 class="g-selectBlock-label"
 {{#selectId}}
   for="{{selectId}}"
 {{/selectId}}
 >
-  
-    
+       
   {{{label}}}
-  
-  
+     
 </label>
-  
-  
+     
 <select
 class="g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}"
 {{#selectId}}
@@ -36,12 +32,7 @@ class="g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}"
   multiple="{{#multiple}}multiple{{/multiple}}"
 {{/multiple}}
 >
-  
-    
   {{{children}}}
-  
-  
 </select>
-  
-
+   
 </div>

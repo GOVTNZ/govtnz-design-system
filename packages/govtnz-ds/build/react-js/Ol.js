@@ -13,7 +13,7 @@ var Ol = function Ol(_ref) {
   var numbered = _ref.numbered,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("ol", {
-    className: "g-ol-list".concat(numbered ? " g-ol-list--number" : "")
+    className: "g-list".concat(numbered ? " g-list--number" : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

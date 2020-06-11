@@ -25,14 +25,11 @@ export default Vue.extend({
     error: { type: Boolean, default: false, required: true },
     name: { type: String, required: true },
     multiple: { type: Boolean, default: false, required: false },
-    children: {
-      required: false,
-      default: "\n      <option>Options</option>\n    "
-    }
+    children: { required: false, default: "<option>Options</option>" }
   },
   computed: {
     computed__class() {
-      return this.errorId ? "g-selectBlock-form-group--error" : "";
+      return this.errorId ? "g-form-group--error" : "";
     },
     computed__class2() {
       return (
@@ -44,10 +41,6 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.g-selectBlock-form-group--error {
-  padding-left: 15px;
-  border-left: 5px solid #b10e1e;
-}
 .g-selectBlock-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

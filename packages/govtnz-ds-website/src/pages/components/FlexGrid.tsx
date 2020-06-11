@@ -41,7 +41,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
         className: "example__iframe",
         src:"/components/FlexGrid__example0.html",
         title:"Example: 3-column Flexbox grid",
-        height: 98
+        height: 102
       }}></Example>
 </ExampleContainer>
 </div>
@@ -70,7 +70,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
         className: "example__iframe",
         src:"/components/FlexGrid__example1.html",
         title:"Example: Flexgrid column variants (Flexbox grid)",
-        height: 332
+        height: 388
       }}></Example>
 </ExampleContainer>
 </div>

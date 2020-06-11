@@ -36,7 +36,7 @@
   }
 }
 
-.g-checkboxBlock-hint {
+.g-checkboxes__hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -49,30 +49,30 @@
 }
 
 @media print {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-checkboxBlock-hint {
+  .g-checkboxes__hint {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
-.g-fieldset__legend + .g-checkboxBlock-hint {
+.g-fieldset__legend + .g-checkboxes__hint {
   margin-top: -5px;
 }
 
-.g-checkboxBlock-label {
+.g-checkboxes__label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -85,27 +85,7 @@
 }
 
 @media print {
-  .g-checkboxBlock-label {
-    font-family: sans-serif;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .g-checkboxBlock-label {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-
-@media print {
-  .g-checkboxBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-@media print {
-  .g-checkboxBlock-label {
+  .g-checkboxes__label {
     color: #000000;
   }
 }
@@ -178,7 +158,7 @@
 }
 
 .g-checkboxes__input + .g-checkboxes__label::before {
-  content: "";
+  content: '';
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -190,7 +170,7 @@
 }
 
 .g-checkboxes__input + .g-checkboxes__label::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: 9px;
@@ -242,6 +222,6 @@
   white-space: nowrap !important;
 }
 
-.g-checkboxBlock-hint > * {
+.g-checkboxes__hint > * {
   margin-top: 0px;
 }

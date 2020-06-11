@@ -2,9 +2,9 @@
   <div v-bind:class="computed__class">
     <fieldset
       v-bind:aria-describedby="computed__ariaDescribedby"
-      class="g-fieldset"
+      class="g-fieldsetBlock-fieldset"
     >
-      <legend class="g-fieldset__legend">
+      <legend class="g-fieldsetBlock-fieldset__legend">
         <slot name="legend"></slot>
       </legend>
 
@@ -100,17 +100,17 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-fieldset {
+.g-fieldsetBlock-fieldset {
   margin: 0;
   padding: 0;
   border: 0;
 }
-.g-fieldset:after {
+.g-fieldsetBlock-fieldset:after {
   content: "";
   display: block;
   clear: both;
 }
-.g-fieldset__legend {
+.g-fieldsetBlock-fieldset__legend {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -127,24 +127,24 @@ export default Vue.extend({
   white-space: normal;
 }
 @media print {
-  .g-fieldset__legend {
+  .g-fieldsetBlock-fieldset__legend {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-fieldset__legend {
+  .g-fieldsetBlock-fieldset__legend {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-fieldset__legend {
+  .g-fieldsetBlock-fieldset__legend {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-fieldset__legend {
+  .g-fieldsetBlock-fieldset__legend {
     color: #000000;
   }
 }
@@ -176,7 +176,7 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-fieldset__legend + .g-fieldsetBlock-hint {
+.g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
   margin-top: -5px;
 }
 .g-fieldsetBlock-character-count .g-fieldsetBlock-form-group {

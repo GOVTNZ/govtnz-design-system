@@ -1,20 +1,22 @@
-<div class="g-form-group {{ errorId?: g-form-group--error }}">
-  <label class="g-label" for="id">
+<div
+  class="g-inputBlock-form-group {{ errorId?: g-inputBlock-form-group--error }}"
+>
+  <label class="g-inputBlock-label " for="id">
     <mt-variable key="label">Example text</mt-variable>
   </label>
   <mt-if key="hint">
-    <div class="g-hint" id="hintId">
+    <div class="g-inputBlock-hint" id="hintId">
       <mt-variable key="hint">Example text</mt-variable>
     </div>
   </mt-if>
   <mt-if key="errorId">
-    <div class="g-error-message" id="errorId">
-      <span class="g-visually-hidden">Error: </span>
+    <div class="g-inputBlock-error-message" id="errorId">
+      <span class="g-inputBlock-visually-hidden">Error: </span>
       <mt-variable key="error">Example text</mt-variable>
     </div>
   </mt-if>
   <input
-    class="g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ error?: g-input--error }}"
+    class="g-inputBlock-input {{ width?: g-inputBlock-input--width-30 as 30 | g-inputBlock-input--width-20 as 20 | g-inputBlock-input--width-10 as 10 | g-inputBlock-input--width-5 as 5 | g-inputBlock-input--width-4 as 4 | g-inputBlock-input--width-3 as 3 | g-inputBlock-input--width-2 as 2 }} {{ error?: g-inputBlock-input--error }}"
     id="id"
     name="name"
     aria-describedby="hintId errorId"

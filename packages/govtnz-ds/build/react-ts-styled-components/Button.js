@@ -24,7 +24,10 @@ var StyledButton = styled_components_1.default.button(templateObject_5 || (templ
 });
 var Button = function (_a) {
     var disabled = _a.disabled, level = _a.level, name = _a.name, type = _a.type, onClick = _a.onClick, children = _a.children;
-    return (react_1.default.createElement(StyledButton, { disabled: disabled, level: level, type: type, name: name, onClick: onClick }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example text "))));
+    return (react_1.default.createElement(StyledButton, { disabled: disabled, level: level, type: type, name: name, onClick: onClick },
+        " ",
+        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example text ")),
+        " "));
 };
 exports.default = Button;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;

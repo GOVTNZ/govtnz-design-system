@@ -33,7 +33,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexRow",
-            template: "\n<div class=\"g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? \" \" +  constants.xsVerticalAlign[xsVerticalAlign] : \"\"}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? \" \" +  constants.smVerticalAlign[smVerticalAlign] : \"\"}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? \" \" +  constants.mdVerticalAlign[mdVerticalAlign] : \"\"}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? \" \" +  constants.lgVerticalAlign[lgVerticalAlign] : \"\"}}{{isReversed ? \" g-flexRow-flex-reverse\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? \" \" +  constants.xsVerticalAlign[xsVerticalAlign] : \"\"}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? \" \" +  constants.smVerticalAlign[smVerticalAlign] : \"\"}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? \" \" +  constants.mdVerticalAlign[mdVerticalAlign] : \"\"}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? \" \" +  constants.lgVerticalAlign[lgVerticalAlign] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
         })
     ], AppComponent);
     return AppComponent;

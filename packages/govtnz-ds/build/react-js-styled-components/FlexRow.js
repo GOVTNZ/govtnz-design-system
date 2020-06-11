@@ -170,7 +170,7 @@ var FlexRow = function FlexRow(_ref) {
     mdVerticalAlign: mdVerticalAlign,
     lgVerticalAlign: lgVerticalAlign,
     isReversed: isReversed
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
+  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."), " ");
 };
 
 var _default = FlexRow;

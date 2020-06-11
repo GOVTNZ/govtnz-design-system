@@ -2,7 +2,6 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -21,7 +20,6 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class2">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -40,7 +38,6 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class3">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -59,7 +56,6 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class4">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -78,7 +74,6 @@
   <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class5">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -97,7 +92,6 @@
   <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class6">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -116,7 +110,6 @@
   <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div v-bind:class="computed__class7">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -135,7 +128,6 @@
   <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div v-bind:class="computed__class8">
       <slot></slot>
-
       <svg
         aria-hidden="true"
         class="g-alert__icon"

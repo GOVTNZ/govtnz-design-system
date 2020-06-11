@@ -1,6 +1,6 @@
 <template>
-  <div class="g-fileUpload-form-group">
-    <label class="g-fileUpload-label" v-bind:for="id">
+  <div class="g-form-group">
+    <label class="g-label" v-bind:for="id">
       Upload a file
     </label>
 
@@ -30,57 +30,6 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.g-fileUpload-form-group {
-  margin-bottom: 20px;
-}
-@media (min-width: 40.0625em) {
-  .g-fileUpload-form-group {
-    margin-bottom: 30px;
-  }
-}
-.g-fileUpload-form-group .g-fileUpload-form-group:last-of-type {
-  margin-bottom: 0;
-}
-.g-fileUpload-form-group--error .g-fileUpload-form-group {
-  padding: 0;
-  border: 0;
-}
-.g-fileUpload-label {
-  font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
-  font-size: 1.25rem;
-  line-height: 1.25;
-  color: #2a2a2a;
-  display: block;
-  margin-bottom: 5px;
-}
-@media print {
-  .g-fileUpload-label {
-    font-family: sans-serif;
-  }
-}
-@media (min-width: 40.0625em) {
-  .g-fileUpload-label {
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-@media print {
-  .g-fileUpload-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-fileUpload-label {
-    color: #000000;
-  }
-}
-.g-fileUpload-character-count .g-fileUpload-form-group {
-  margin-bottom: 5px;
-}
 .g-file-upload {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
