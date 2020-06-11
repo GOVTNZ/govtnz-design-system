@@ -1,11 +1,11 @@
 <template>
-  <div class="g-form-group">
-    <label class="g-label" v-bind:for="id">
+  <div class="g-fileUpload__form-group">
+    <label class="g-fileUpload__label" v-bind:for="id">
       Upload a file
     </label>
 
     <input
-      class="g-file-upload"
+      class="g-fileUpload__input"
       v-bind:id="id"
       v-bind:name="name"
       type="file"
@@ -30,7 +30,55 @@ export default Vue.extend({
 });
 </script>
 <style scoped>
-.g-file-upload {
+.g-fileUpload__form-group {
+  margin-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+  .g-fileUpload__form-group {
+    margin-bottom: 30px;
+  }
+}
+.g-fileUpload__form-group .g-fileUpload__form-group:last-of-type {
+  margin-bottom: 0;
+}
+.g-fileUpload__form-group--error .g-fileUpload__form-group {
+  padding: 0;
+  border: 0;
+}
+.g-fileUpload__input {
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+@media print {
+  .g-fileUpload__input {
+    font-family: sans-serif;
+  }
+}
+@media (min-width: 40.0625em) {
+  .g-fileUpload__input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+@media print {
+  .g-fileUpload__input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+@media print {
+  .g-fileUpload__input {
+    color: #000000;
+  }
+}
+.g-fileUpload__input {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -40,32 +88,46 @@ export default Vue.extend({
   color: #0b0c0c;
 }
 @media print {
-  .g-file-upload {
+  .g-fileUpload__input {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-file-upload {
+  .g-fileUpload__input {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-file-upload {
+  .g-fileUpload__input {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-file-upload {
+  .g-fileUpload__input {
     color: #000000;
   }
 }
-.g-file-upload:focus {
+.g-fileUpload__input:focus {
   outline: 3px solid #ffbf47;
   outline-offset: 0;
 }
-.g-fileUpload-hint > * {
-  margin-top: 0px;
+.g-fileUpload__label {
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+@media (min-width: 40.0625em) {
+  .g-fileUpload__label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
 }
 </style>

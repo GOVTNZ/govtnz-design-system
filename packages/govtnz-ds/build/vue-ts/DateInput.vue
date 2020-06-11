@@ -229,11 +229,6 @@ export default Vue.extend({
   display: block;
   clear: both;
 }
-@media not (caret-color: auto) {
-  .g-dateInput-fieldset {
-    display: table-cell;
-  }
-}
 .g-dateInput-hint {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -265,7 +260,7 @@ export default Vue.extend({
 .g-fieldset__legend + .g-dateInput-hint {
   margin-top: -5px;
 }
-.g-dateInput-label {
+.g-dateInput__label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -277,24 +272,24 @@ export default Vue.extend({
   margin-bottom: 5px;
 }
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-family: sans-serif;
   }
 }
 @media (min-width: 40.0625em) {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     color: #000000;
   }
 }

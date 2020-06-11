@@ -18,12 +18,12 @@ var FileUpload = function FileUpload(_ref) {
       onChange = _ref.onChange,
       ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-form-group"
+    className: "g-fileUpload__form-group"
   }, " ", /*#__PURE__*/_react["default"].createElement("label", {
-    className: "g-label",
+    className: "g-fileUpload__label",
     htmlFor: id
   }, " ", "Upload a file", " "), " ", /*#__PURE__*/_react["default"].createElement("input", {
-    className: "g-file-upload",
+    className: "g-fileUpload__input",
     id: id,
     name: name,
     type: "file",

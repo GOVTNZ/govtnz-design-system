@@ -78,12 +78,6 @@
   clear: both;
 }
 
-@media not (caret-color: auto) {
-  .g-dateInput-fieldset {
-    display: table-cell;
-  }
-}
-
 .g-dateInput-hint {
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
@@ -121,7 +115,7 @@
   margin-top: -5px;
 }
 
-.g-dateInput-label {
+.g-dateInput__label {
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -135,27 +129,27 @@
 }
 
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media print {
-  .g-dateInput-label {
+  .g-dateInput__label {
     color: $g-theme-color-black;
     color: var(--g-theme-color-black, $g-theme-color-black);
   }
