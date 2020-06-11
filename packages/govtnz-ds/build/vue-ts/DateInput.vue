@@ -326,10 +326,6 @@ export default Vue.extend({
     line-height: 1.15;
   }
 }
-.g-dateInput-label:not(.g-dateInput-label--m):not(.g-dateInput-label--l):not(.g-dateInput-label--xl)
-  + .g-dateInput-hint {
-  margin-bottom: 10px;
-}
 .g-fieldset__legend + .g-dateInput-hint {
   margin-top: -5px;
 }
