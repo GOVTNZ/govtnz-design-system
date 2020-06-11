@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from 'react-modal';
-import ModalBody from 'react-modal-body';
 // import 'inert-polyfill'
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
@@ -64,68 +63,57 @@ class NavigationSmall extends React.Component<Props, State> {
           </button>
         </nav>
 
-        <ModalBody isOpen={showModal}>
-          <Modal
-            closeTimeoutMS={460}
-            isOpen={showModal}
-            onRequestClose={this.handleCloseModal}
-            contentLabel="Main menu"
-            className="navigation-small__modal"
-            overlayClassName="navigation-small__modal-overlay"
-          >
-            <div className="navigation-modal__header header">
-              <Container width="fixed">
-                <Row>
-                  <Column
-                    xs="2"
-                    sm="2"
-                    md="4"
-                    lg="4"
-                    xsOffset="10"
-                    mdOffset="8"
+        <Modal
+          closeTimeoutMS={460}
+          isOpen={showModal}
+          onRequestClose={this.handleCloseModal}
+          contentLabel="Main menu"
+          className="navigation-small__modal"
+          overlayClassName="navigation-small__modal-overlay"
+        >
+          <div className="navigation-modal__header header">
+            <Container width="fixed">
+              <Row>
+                <Column xs="2" sm="2" md="4" lg="4" xsOffset="10" mdOffset="8">
+                  <button
+                    onClick={this.handleCloseModal}
+                    className="navigation-small__button"
                   >
-                    <button
-                      onClick={this.handleCloseModal}
-                      className="navigation-small__button"
-                    >
-                      <Icon
-                        className="navigation-small__button-icon icon"
-                        role="presentation"
-                        id={iconClose.id}
-                      />
-                      <span className="navigation-small__button-span">
-                        Close
-                      </span>
-                    </button>
-                  </Column>
-                </Row>
-              </Container>
-              <div className="navigation-modal__heading">
-                <LogoLockUp siteTitle={this.props.siteTitle} />
-              </div>
+                    <Icon
+                      className="navigation-small__button-icon icon"
+                      role="presentation"
+                      id={iconClose.id}
+                    />
+                    <span className="navigation-small__button-span">Close</span>
+                  </button>
+                </Column>
+              </Row>
+            </Container>
+            <div className="navigation-modal__heading">
+              <LogoLockUp />
             </div>
-            <div className="navigation-modal__content">
-              <div className="navigation-modal__scroll">
-                <ul className="navigation-modal__list">
-                  <NavigationItem to="/get-started/" label="Get started" />
-                  <NavigationItem
-                    to="/basics/"
-                    label="Basics"
-                    childMenu={basicsMenuItems}
-                  />
-                  <NavigationItem
-                    to="/components/"
-                    label="Components"
-                    childMenu={componentMenu}
-                  />
-                  <NavigationItem to="/patterns/" label="Patterns" />
-                  <NavigationItem to="/community/" label="Community" />
-                  <NavigationItem to="/about/" label="About" />
-                </ul>
-              </div>
+          </div>
+          <div className="navigation-modal__content">
+            <div className="navigation-modal__scroll">
+              <ul className="navigation-modal__list">
+                <NavigationItem to="/get-started/" label="Get started" />
+                <NavigationItem
+                  to="/basics/"
+                  label="Basics"
+                  childMenu={basicsMenuItems}
+                />
+                <NavigationItem
+                  to="/components/"
+                  label="Components"
+                  childMenu={componentMenu}
+                />
+                <NavigationItem to="/patterns/" label="Patterns" />
+                <NavigationItem to="/community/" label="Community" />
+                <NavigationItem to="/about/" label="About" />
+              </ul>
             </div>
-          </Modal>
-        </ModalBody>
+          </div>
+        </Modal>
       </div>
     );
   }

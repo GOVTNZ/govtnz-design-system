@@ -50,8 +50,7 @@
     "react-accessible-details": "^3.0.4",
     "react-dom": "16.13.1",
     "react-helmet": "^5.2.0",
-    "react-modal": "^3.8.1",
-    "react-modal-body": "0.0.1",
+    "react-modal": "^3.11.2",
     "rmfr": "^2.0.0",
     "typescript": "^3.5.2"
   },
