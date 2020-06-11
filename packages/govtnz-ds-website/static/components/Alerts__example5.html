@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-nz">
   <head>
-    <title>Example title: Information alert - Live | Design System - Alpha | NZ Government</title>
+    <title>Example title: Error summary alert | Design System - Alpha | NZ Government</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
@@ -10,8 +10,8 @@
     />
     <script src="../react-16.13.1.production.min.js"></script>
     <script src="../react-dom-16.13.1.production.min.js"></script>
-    <script src="./Alerts__example1.js"></script>
-    <link rel="stylesheet" href="../css/Alert.css"><link rel="stylesheet" href="../css/H2.css"><link rel="stylesheet" href="../css/P.css">
+    <script src="./Alerts__example5.js"></script>
+    <link rel="stylesheet" href="../css/Alert.css"><link rel="stylesheet" href="../css/H2.css"><link rel="stylesheet" href="../css/Ul.css"><link rel="stylesheet" href="../css/Li.css">
     <link rel="stylesheet" href="../IframePage.css" />
   </head>
   <body>
@@ -32,7 +32,7 @@
       <a href="/">New Zealand Government design system</a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      <div aria-atomic="true" aria-live="polite" role="note"><div class="g-alert g-alert--info"><h2 class="g-heading" id="heading1">Note: There are only 3 spaces remaining</h2><p class="">Complete your order to reserve your place on the course.</p></div></div>
+      <div aria-labelledby="heading4" role="note" tabindex="-1"><div class="g-alert g-alert--error"><h2 class="g-heading" id="heading4">Error: There’s a problem with the following responses</h2><ul class="g-ul-list g-ul-list--bullet"><li><a href="#form">First name must not be empty</a></li><li><a href="#form">Last name must only include letters a to z, hyphens, spaces and apostrophes</a></li><li><a href="#form">Hours worked a week must be between 16 and 99</a></li></ul></div></div>
     </div>
     <script>
       function afterRender() {
@@ -76,7 +76,7 @@
           return;
         }
         var data = {
-          resizeById: "iframe_componentsAlerts1",
+          resizeById: "iframe_componentsAlerts5",
           width: document.body.offsetWidth,
           height: exampleVisual && exampleVisual.offsetHeight,
         };

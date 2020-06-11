@@ -20,9 +20,9 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example title: Warning alert - Static" {...onChangeGenerator({})}>
-        <Alert level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Note: Nominations are currently closed</H2>
-            <P {...onChangeGenerator({})}>You can nominate a new provider at the start of the next financial year.</P>
+        <Alert level="warning" headingId="heading2" {...onChangeGenerator({})}>
+            <H2 id="heading2" {...onChangeGenerator({})}>Warning: Your subscription will expire soon</H2>
+            <P {...onChangeGenerator({})}>You’ll need to renew your subscription to keep using the service.</P>
         </Alert>
     </Example>);
 

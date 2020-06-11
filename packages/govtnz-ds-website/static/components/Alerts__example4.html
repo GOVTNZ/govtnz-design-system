@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-nz">
   <head>
-    <title>Example title: Information alert - Live | Design System - Alpha | NZ Government</title>
+    <title>Example: Alerts (static) | Design System - Alpha | NZ Government</title>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta
@@ -10,7 +10,7 @@
     />
     <script src="../react-16.13.1.production.min.js"></script>
     <script src="../react-dom-16.13.1.production.min.js"></script>
-    <script src="./Alerts__example1.js"></script>
+    <script src="./Alerts__example4.js"></script>
     <link rel="stylesheet" href="../css/Alert.css"><link rel="stylesheet" href="../css/H2.css"><link rel="stylesheet" href="../css/P.css">
     <link rel="stylesheet" href="../IframePage.css" />
   </head>
@@ -32,7 +32,7 @@
       <a href="/">New Zealand Government design system</a>.
     </div>
     <div id="root" class="css-changes-for-example-only">
-      <div aria-atomic="true" aria-live="polite" role="note"><div class="g-alert g-alert--info"><h2 class="g-heading" id="heading1">Note: There are only 3 spaces remaining</h2><p class="">Complete your order to reserve your place on the course.</p></div></div>
+      <div aria-labelledby="heading3" role="note" tabindex="-1"><div class="g-alert g-alert--success"><h2 class="g-heading" id="heading3">Success: Your account has been activated</h2><p class="">You can now access all features of the service.</p></div></div>
     </div>
     <script>
       function afterRender() {
@@ -76,7 +76,7 @@
           return;
         }
         var data = {
-          resizeById: "iframe_componentsAlerts1",
+          resizeById: "iframe_componentsAlerts4",
           width: document.body.offsetWidth,
           height: exampleVisual && exampleVisual.offsetHeight,
         };

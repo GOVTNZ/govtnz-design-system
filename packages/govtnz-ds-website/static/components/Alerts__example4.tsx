@@ -19,10 +19,10 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example title: Warning alert - Static" {...onChangeGenerator({})}>
-        <Alert level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Note: Nominations are currently closed</H2>
-            <P {...onChangeGenerator({})}>You can nominate a new provider at the start of the next financial year.</P>
+var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
+        <Alert level="success" headingId="heading3" {...onChangeGenerator({})}>
+            <H2 id="heading3" {...onChangeGenerator({})}>Success: Your account has been activated</H2>
+            <P {...onChangeGenerator({})}>You can now access all features of the service.</P>
         </Alert>
     </Example>);
 
