@@ -46,18 +46,18 @@ export default Vue.extend({
 .g-main-nav__link__a {
   display: block;
   padding: 1em;
-  color: var(--g-theme-inverted-color, #ffffff);
+  color: #ffffff;
   text-decoration: none;
 }
 .g-main-nav__link__a:hover {
   text-decoration: underline;
 }
 .g-main-nav__link__a--active {
-  border-left: solid 0.2em var(--g-theme-inverted-brand, #24a882);
+  border-left: solid 0.2em #24a882;
   padding-left: 0.8em;
 }
 .g-main-nav__link__a:focus {
-  outline: 3px solid var(--color-theme-focus, #b53cde);
+  outline: 3px solid #b53cde;
 }
 @media only screen and (min-width: 48em) {
   .g-main-nav__link {
@@ -90,7 +90,6 @@ export default Vue.extend({
     right: 1em;
     height: 4px;
     background: #24a882;
-    background-color: var(--g-theme-inverted-brand, #24a882);
   }
 }
 </style>

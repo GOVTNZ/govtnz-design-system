@@ -162,11 +162,11 @@ export default Vue.extend({
 .g-button--disabled,
 .g-button[disabled] {
   opacity: 0.5;
-  background: var(--g-theme-button-color, #078766);
+  background: #078766;
 }
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
-  background-color: var(--g-theme-button-color, #078766);
+  background-color: #078766;
   cursor: default;
 }
 .g-button--disabled:focus,
@@ -179,8 +179,8 @@ export default Vue.extend({
   box-shadow: 0 2px 0 #003418;
 }
 .g-button--secondary {
-  background-color: var(--g-theme-button-color-secondary, #d3d3d3);
-  box-shadow: 0 2px 0 var(--g-theme-button-color-secondary-box-shadow, #2a2a2a);
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 0 #2a2a2a;
 }
 .g-button--secondary,
 .g-button--secondary:link,
@@ -191,21 +191,21 @@ export default Vue.extend({
 }
 .g-button--secondary:hover,
 .g-button--secondary:focus {
-  background-color: var(--g-theme-button-color-secondary-hover-focus, #b2b2b2);
+  background-color: #b2b2b2;
 }
 .g-button--warning {
-  background-color: var(--g-theme-button-color-warning, #b10e1e);
-  box-shadow: 0 2px 0 var(--g-theme-button-color-warning-box-shadow, #2a2a2a);
+  background-color: #b10e1e;
+  box-shadow: 0 2px 0 #2a2a2a;
 }
 .g-button--warning,
 .g-button--warning:link,
 .g-button--warning:visited,
 .g-button--warning:active,
 .g-button--warning:hover {
-  color: var(--g-theme-color-white, #ffffff);
+  color: #ffffff;
 }
 .g-button--warning:hover,
 .g-button--warning:focus {
-  background-color: var(--g-theme-button-color-warning-hover-focus, #900815);
+  background-color: #900815;
 }
 </style>

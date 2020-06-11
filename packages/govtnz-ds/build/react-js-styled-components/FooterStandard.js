@@ -64,7 +64,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #ffffff;\n  text-decoration: none;\n  :hover {\n    color: var(--color-theme-off-white, #f4f4f4);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #ffffff;\n  text-decoration: none;\n  :hover {\n    color: #f4f4f4;\n  }\n"]);
 
   _templateObject14 = function _templateObject14() {
     return data;
@@ -104,7 +104,7 @@ function _templateObject11() {
 }
 
 function _templateObject10() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #ffffff;\n  text-decoration: none;\n  :hover {\n    color: var(--color-theme-off-white, #f4f4f4);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #ffffff;\n  text-decoration: none;\n  :hover {\n    color: #f4f4f4;\n  }\n"]);
 
   _templateObject10 = function _templateObject10() {
     return data;
@@ -114,7 +114,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: var(--color-theme-light-grey, #d3d3d3);\n  text-decoration: underline;\n  :hover {\n    color: var(--color-theme-off-white, #f4f4f4);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #d3d3d3;\n  text-decoration: underline;\n  :hover {\n    color: #f4f4f4;\n  }\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -134,7 +134,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: var(--color-theme-light-grey, #d3d3d3);\n  text-decoration: underline;\n  :hover {\n    color: var(--color-theme-off-white, #f4f4f4);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #d3d3d3;\n  text-decoration: underline;\n  :hover {\n    color: #f4f4f4;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -154,7 +154,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: var(--color-theme-light-grey, #d3d3d3);\n  text-decoration: underline;\n  :hover {\n    color: var(--color-theme-off-white, #f4f4f4);\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: #d3d3d3;\n  text-decoration: underline;\n  :hover {\n    color: #f4f4f4;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -194,7 +194,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: var(--color-theme-dark-grey, #363636);\n  color: #ffffff;\n  font-size: 1rem;\n  padding-top: 2.5rem;\n  padding-bottom: 1.5rem;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: #363636;\n  color: #ffffff;\n  font-size: 1rem;\n  padding-top: 2.5rem;\n  padding-bottom: 1.5rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

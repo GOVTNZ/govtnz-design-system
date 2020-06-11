@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: var(--g-theme-inverted-background, #363636);\n  color: var(--g-theme-inverted-color, #ffffff);\n  fill: var(--g-theme-inverted-color, #ffffff);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: #363636;\n  color: #ffffff;\n  fill: #ffffff;\n"]);
 
   _templateObject = function _templateObject() {
     return data;

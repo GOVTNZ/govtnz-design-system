@@ -171,7 +171,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-footer__standard {
-  background-color: var(--color-theme-dark-grey, #363636);
+  background-color: #363636;
   color: #ffffff;
   font-size: 1rem;
   padding-top: 2.5rem;
@@ -204,18 +204,18 @@ export default Vue.extend({
   margin-right: 0;
 }
 .g-footer__standard-link {
-  color: var(--color-theme-light-grey, #d3d3d3);
+  color: #d3d3d3;
   text-decoration: underline;
 }
 .g-footer__standard-link:hover {
-  color: var(--color-theme-off-white, #f4f4f4);
+  color: #f4f4f4;
 }
 .g-footer__standard-link--plain {
   color: #ffffff;
   text-decoration: none;
 }
 .g-footer__standard-link--plain:hover {
-  color: var(--color-theme-off-white, #f4f4f4);
+  color: #f4f4f4;
 }
 .g-footer__standard-licence {
   padding-top: 1.5rem;

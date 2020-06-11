@@ -1,10 +1,10 @@
 .g-alert {
   position: relative;
   background: #f4f4f4;
-  border: solid 1px var(--g-theme-alert-border, #d3d3d3);
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
+  border: solid 1px #d3d3d3;
 }
 
 .g-alert::before {
@@ -20,29 +20,25 @@
 }
 
 .g-alert--info::before {
-  background-color: var(--g-theme-info, #1f1bfb);
+  background-color: #1f1bfb;
 }
 
 .g-alert--warning::before {
-  background-color: var(--g-theme-warning, #d47500);
+  background-color: #d47500;
 }
 
 .g-alert--success::before {
-  background-color: var(--g-theme-success, #088a20);
+  background-color: #088a20;
 }
 
 .g-alert--error::before {
-  background-color: var(--g-theme-error, #b10e1e);
-  background-color: var(
-    --g-theme-error,
-    var(--g-theme-button-color-warning, #b10e1e)
-  );
+  background-color: #b10e1e;
+  background-color: var(--g-theme-button-color-warning, #b10e1e);
 }
 
 .g-alert__icon {
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: var(--g-theme-alert-icon, #ffffff);
-  fill: var(--g-theme-alert-icon, var(--g-theme-color-white, #ffffff));
+  fill: white;
 }

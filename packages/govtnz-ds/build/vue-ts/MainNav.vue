@@ -76,7 +76,7 @@ export default Vue.extend({
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
+  background-color: #2a2a2a;
 }
 .g-mainNav-flex-container .g-main-nav,
 .g-mainNav-flex-container-fluid .g-main-nav {
@@ -97,7 +97,7 @@ export default Vue.extend({
   top: 3px;
   right: 3px;
   background: transparent;
-  color: var(--g-theme-inverted-color, #ffffff);
+  color: #ffffff;
   font-size: 16px;
   display: none;
   padding: 1em;
@@ -114,11 +114,11 @@ export default Vue.extend({
   }
 }
 .g-main-nav__button:focus {
-  outline: 3px solid var(--color-theme-focus, #b53cde);
+  outline: 3px solid #b53cde;
 }
 .g-main-nav__button__icon {
   display: inline-block;
-  color: var(--g-theme-inverted-brand, #24a882);
+  color: #24a882;
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;

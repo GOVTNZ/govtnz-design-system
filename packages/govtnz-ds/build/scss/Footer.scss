@@ -1,13 +1,7 @@
 .g-footer {
-  background-color: var(--g-theme-inverted-background, #363636);
-  color: var(--g-theme-inverted-color, $g-theme-color-white);
-  color: var(
-    --g-theme-inverted-color,
-    var(--g-theme-color-white, $g-theme-color-white)
-  );
-  fill: var(--g-theme-inverted-color, $g-theme-color-white);
-  fill: var(
-    --g-theme-inverted-color,
-    var(--g-theme-color-white, $g-theme-color-white)
-  );
+  background-color: #363636;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  fill: $g-theme-color-white;
+  fill: var(--g-theme-color-white, $g-theme-color-white);
 }
