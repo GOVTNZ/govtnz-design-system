@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspace react-modal-body build && yarn workspace @govtnz/ds-common build && yarn workspace @govtnz/ds-upstream build && yarn workspace compilation-templates build",
+    "build": "yarn workspace react-modal-body build && yarn workspace @govtnz/ds-common build && yarn workspace compilation-templates build",
     "build:release": "yarn workspace @govtnz/ds build:release && yarn workspace @govtnz/ds build:compile",
     "build:website": "yarn workspace @govtnz/ds-website compile-markdown && yarn workspace @govtnz/ds-website build",
     "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",

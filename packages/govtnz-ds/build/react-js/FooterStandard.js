@@ -26,11 +26,11 @@ var FooterStandard = function FooterStandard(_ref) {
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-footer__standard"
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-container"
+    className: "g-footerStandard-flex-container"
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-row"
+    className: "g-footerStandard-flex-row"
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-col g-flex-col-xs-12 g-flex-col-sm-10 g-flex-col-md-10 g-flex-col-lg-10"
+    className: "g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-10 g-footerStandard-flex-col-md-10 g-footerStandard-flex-col-lg-10"
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-footer__standard-item"
   }, /*#__PURE__*/_react["default"].createElement("ul", {
@@ -60,9 +60,9 @@ var FooterStandard = function FooterStandard(_ref) {
     target: target,
     onClick: onClick
   }, label3 !== undefined ? label3 : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Copyright"))))))), /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-row"
+    className: "g-footerStandard-flex-row"
   }, /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9"
+    className: "g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-8 g-footerStandard-flex-col-md-10 g-footerStandard-flex-col-lg-9"
   }, /*#__PURE__*/_react["default"].createElement("a", {
     className: "g-footer__standard-link--plain",
     href: href,
@@ -70,9 +70,9 @@ var FooterStandard = function FooterStandard(_ref) {
     target: target,
     onClick: onClick
   }, /*#__PURE__*/_react["default"].createElement("span", {
-    className: "g-footer-visually-hidden"
+    className: "g-footerStandard-footer-visually-hidden"
   }, "New Zealand Government"), /*#__PURE__*/_react["default"].createElement("svg", {
-    className: "g-footer__icon-govt-logo",
+    className: "g-footerStandard-footer__icon-govt-logo",
     focusable: "false",
     height: "24",
     role: "presentation",
@@ -90,9 +90,9 @@ var FooterStandard = function FooterStandard(_ref) {
     target: target,
     onClick: onClick
   }, /*#__PURE__*/_react["default"].createElement("span", {
-    className: "g-footer-visually-hidden"
+    className: "g-footerStandard-footer-visually-hidden"
   }, "Creative Commons 4.0 International Licence"), /*#__PURE__*/_react["default"].createElement("svg", {
-    className: "g-footer__icon-cc",
+    className: "g-footerStandard-footer__icon-cc",
     focusable: "false",
     height: "32",
     role: "presentation",
@@ -102,7 +102,7 @@ var FooterStandard = function FooterStandard(_ref) {
     d: "M16 0c4.4 0 8.3 1.6 11.4 4.7a15.4 15.4 0 0 1 3.4 5.1 16.3 16.3 0 0 1 0 12.4 14.7 14.7 0 0 1-3.4 5 16.4 16.4 0 0 1-5.3 3.6A16 16 0 0 1 16 32a15.6 15.6 0 0 1-6.1-1.2A16.1 16.1 0 0 1 4.7 4.7C7.7 1.6 11.5 0 16 0zm0 2.9c-3.6 0-6.7 1.3-9.2 3.8A13.8 13.8 0 0 0 3.9 11a12.6 12.6 0 0 0-1 5c0 1.7.3 3.4 1 5a13.3 13.3 0 0 0 2.9 4.2 13.2 13.2 0 0 0 4.3 2.9 12.8 12.8 0 0 0 10 0 13.8 13.8 0 0 0 4.3-3c2.5-2.4 3.7-5.4 3.7-9.1 0-1.8-.3-3.4-1-5a12.8 12.8 0 0 0-2.8-4.3A12.7 12.7 0 0 0 16 3zm-.2 10.4l-2.1 1.2c-.2-.5-.5-.9-.9-1l-.9-.3c-1.4 0-2.1 1-2.1 2.8 0 .9.2 1.5.5 2 .4.6 1 .8 1.6.8 1 0 1.6-.4 2-1.3l2 1a4.7 4.7 0 0 1-1.8 1.8 4.7 4.7 0 0 1-2.4.7c-1.5 0-2.6-.5-3.5-1.3A5 5 0 0 1 6.9 16a5 5 0 0 1 1.3-3.6c.9-1 2-1.4 3.4-1.4 2 0 3.4.8 4.2 2.3zm9.3 0l-2.2 1.2c-.2-.5-.5-.9-.8-1a2 2 0 0 0-1-.3c-1.4 0-2.1 1-2.1 2.8 0 .9.2 1.5.5 2 .4.6 1 .8 1.6.8 1 0 1.6-.4 2-1.3l2 1a5 5 0 0 1-1.8 1.8 4.6 4.6 0 0 1-2.4.7c-1.4 0-2.6-.5-3.5-1.3a5 5 0 0 1-1.3-3.7 5 5 0 0 1 1.4-3.6c.9-1 2-1.4 3.3-1.4 2 0 3.4.8 4.3 2.3z",
     fill: "currentColor"
   })), "\xA0", /*#__PURE__*/_react["default"].createElement("svg", {
-    className: "g-footer__icon-cc",
+    className: "g-footerStandard-footer__icon-cc",
     focusable: "false",
     height: "32",
     role: "presentation",
@@ -114,12 +114,12 @@ var FooterStandard = function FooterStandard(_ref) {
   })))), /*#__PURE__*/_react["default"].createElement("p", {
     className: "g-footer__standard-small-text"
   }, "Unless indicated otherwise, all content on Govt.nz is licensed for re-use under a Creative Commons 4.0 International Licence"))), /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-col g-flex-col-xs-12 g-flex-col-sm-4 g-flex-col-md-2 g-flex-col-lg-3"
+    className: "g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-4 g-footerStandard-flex-col-md-2 g-footerStandard-flex-col-lg-3"
   }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-footer__standard-copyright"
   }, /*#__PURE__*/_react["default"].createElement("img", {
     alt: "New Zealand Coat of Arms",
-    className: "g-footer__image-coat-of-arms",
+    className: "g-footerStandard-footer__image-coat-of-arms",
     src: src,
     width: width,
     height: height,

@@ -18,6 +18,14 @@ exports.onCreateWebpackConfig = ({
           ? [config.entry.app]
           : config.entry.app;
 
+      const miniCssExtractPlugin = config.plugins.find(
+        plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
+      );
+
+      if (miniCssExtractPlugin) {
+        miniCssExtractPlugin.options.ignoreOrder = true;
+      }
+
       config.entry.app = ['@babel/polyfill', ...app];
       replaceWebpackConfig(config);
   }

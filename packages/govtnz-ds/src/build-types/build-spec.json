@@ -1,5 +1,11 @@
 [
   {
+    "sourceId": "flexboxgrid"
+  },
+  {
+    "sourceId": "govtnz"
+  },
+  {
     "sourceId": "govuk",
     "componentIds": [
       "A",
@@ -37,13 +43,5 @@
       "TextareaBlock",
       "Ul"
     ]
-  },
-  {
-    "sourceId": "flexboxgrid",
-    "version": "0.0.1"
-  },
-  {
-    "sourceId": "govtnz",
-    "version": "0.0.1"
   }
 ]

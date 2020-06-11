@@ -5,6 +5,7 @@
   font-family: sans-serif;
   font-size: 18px;
   color: #ffffff;
+  color: var(--g-theme-color-white, #ffffff);
   letter-spacing: 0;
   line-height: 20px;
 }
@@ -13,6 +14,7 @@
   display: block;
   padding: 1em;
   color: var(--g-theme-inverted-color, #ffffff);
+  color: var(--g-theme-inverted-color, var(--g-theme-color-white, #ffffff));
   text-decoration: none;
 }
 

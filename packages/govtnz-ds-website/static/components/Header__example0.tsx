@@ -137,27 +137,22 @@ class WrappedMainNav extends React.Component<
             ...props,
             isOpen: value.isOpen.toString(),
             onClick: () => {
-              console.log('click handler!');
               value.setIsOpen(!value.isOpen);
             },
             children: React.Children.map(
               props.children,
               (child: React.ReactChild, index: number) => {
-                console.log({ child });
                 const props = {
                   onClick: (e: React.MouseEvent<HTMLElement>) => {
-                    console.log('click handler:', index);
                     e.preventDefault();
                     that.setActiveIndex(index);
                   },
                 };
 
                 if (index === activeIndex) {
-                  console.log('is current page', index, activeIndex);
                   props['ariaCurrent'] = 'page';
                 } else {
                   props['ariaCurrent'] = undefined;
-                  console.log('is NOT current page', index, activeIndex);
                 }
 
                 const newChild = React.cloneElement(child, props);
@@ -166,7 +161,6 @@ class WrappedMainNav extends React.Component<
               }
             ),
           };
-          console.log('Wrapped mainnav component being given', newProps);
           return <Component {...newProps} />;
         }}
       </MobileMenuContext.Consumer>

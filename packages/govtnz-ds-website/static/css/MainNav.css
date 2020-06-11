@@ -5,8 +5,8 @@
   background-color: var(--g-theme-inverted-background-color2, #2a2a2a);
 }
 
-.g-flex-container .g-main-nav,
-.g-flex-container-fluid .g-main-nav {
+.g-mainNav-flex-container .g-main-nav,
+.g-mainNav-flex-container-fluid .g-main-nav {
   margin: 0px -1rem;
 }
 
@@ -16,8 +16,8 @@
     background-color: transparent;
   }
 
-  .g-flex-container .g-main-nav,
-  .g-flex-container-fluid .g-main-nav {
+  .g-mainNav-flex-container .g-main-nav,
+  .g-mainNav-flex-container-fluid .g-main-nav {
     margin: 0px -2rem;
   }
 }
@@ -28,6 +28,7 @@
   right: 3px;
   background: transparent;
   color: var(--g-theme-inverted-color, #ffffff);
+  color: var(--g-theme-inverted-color, var(--g-theme-color-white, #ffffff));
   font-size: 16px;
   display: none;
   padding: 1em;

@@ -1,5 +1,7 @@
 .g-footer {
   background-color: var(--g-theme-inverted-background, #363636);
   color: var(--g-theme-inverted-color, #ffffff);
+  color: var(--g-theme-inverted-color, var(--g-theme-color-white, #ffffff));
   fill: var(--g-theme-inverted-color, #ffffff);
+  fill: var(--g-theme-inverted-color, var(--g-theme-color-white, #ffffff));
 }

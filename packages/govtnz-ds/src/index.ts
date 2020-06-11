@@ -12,11 +12,7 @@ import ProgressBar from 'progress';
 import rmfr from 'rmfr';
 import mkdirp from 'mkdirp';
 import { ensureNodeVersion, safeMerge } from '@govtnz/ds-common';
-import getUpstream, {
-  SourceId,
-  ReleaseVersion,
-  Component
-} from '@govtnz/ds-upstream';
+import { SourceId, ReleaseVersion, Component } from './types';
 import { normalizeUpstream } from './normalize';
 import {
   safeMergeCssVariables,
@@ -32,13 +28,11 @@ import { normalizeGovUkTemplate } from './normalize-govuk';
 ensureNodeVersion();
 
 async function main(
-  noCache: boolean,
   componentIds?: string[] | undefined,
   metaTemplateFormatIds: string[] | undefined = ['*'],
   sources?: string[] | undefined
 ) {
   console.info('Command line args:');
-  console.info('  -  Cache: ', !noCache);
   console.info('  -  Sources: ', sources ? sources : 'All');
   console.info('  -  Filter By Patterns:', componentIds ? componentIds : false);
   console.info(
@@ -56,14 +50,6 @@ async function main(
       }
     )
   ).toString();
-
-  if (noCache) {
-    console.info('Building release while using NO CACHE.');
-  } else {
-    console.log(
-      'Building release with cache. Use `--no-cache` to disable cache.'
-    );
-  }
 
   // const silverStripe4Files = await getSilverStripe4Files();
 
@@ -129,7 +115,7 @@ async function main(
       } `
     );
 
-    const releaseItem = await makeReleaseSpecItem(releaseSpecItem, noCache);
+    const releaseItem = await makeReleaseSpecItem(releaseSpecItem);
     release.push(releaseItem);
 
     cssVariables = safeMergeCssVariables(
@@ -159,84 +145,76 @@ async function main(
   console.log('Release updated.');
 }
 
-const makeReleaseSpecItem = async (
-  { sourceId, version, componentIds, metaTemplateFormatIds }: ReleaseSpecItem,
-  noCache: boolean
-): Promise<ReleaseItem> => {
+const makeReleaseSpecItem = async ({
+  sourceId,
+  version,
+  componentIds,
+  metaTemplateFormatIds
+}: ReleaseSpecItem): Promise<ReleaseItem> => {
+  const base = path.join(__dirname, 'upstream', sourceId);
   let releaseVersions: ReleaseVersion[];
-  if (version) {
-    // if there's a specific version then assume they want upstream copies
-    releaseVersions = await getUpstream(
-      sourceId,
-      version,
-      componentIds,
-      noCache
-    );
-    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
-  } else {
-    if (!componentIds) {
-      throw Error(
-        `componentIds required ${JSON.stringify({
-          sourceId,
-          version,
-          componentIds,
-          metaTemplateFormatIds
-        })}`
-      );
-    }
 
-    const components = await Promise.all(
-      componentIds.map(async componentId => {
-        const base = path.join(__dirname, 'upstream', sourceId);
-        const html = (
-          await fs.promises.readFile(path.join(base, `${componentId}.html`), {
-            encoding: 'utf-8'
-          })
-        ).toString();
-        const css = (
-          await fs.promises.readFile(path.join(base, `${componentId}.css`), {
-            encoding: 'utf-8'
-          })
-        ).toString();
+  if (!componentIds) {
+    const files = await glob(path.join(base, '*.html'));
 
-        let component: Partial<Component>;
-
-        component = await normalizeGovUkTemplate({
-          id: componentId,
-          html,
-          css,
-          cssNamespace: '',
-          message: '',
-          calculatedDynamicKeys: [],
-          additionalPrefixesToBypassNamespacing: [
-            'fieldset',
-            'radios',
-            'checkboxes',
-            'link',
-            'a',
-            'caption'
-          ]
-        });
-
-        component = {
-          version,
-          ...component
-        } as Component;
-
-        return component;
-      })
+    componentIds = files.map(aFile =>
+      aFile.substring(base.length + 1).replace(/\.html$/, '')
     );
 
-    const releaseVersion: ReleaseVersion = {
-      sourceId,
-      version: 'all',
-      components: components as Component[],
-      creditMarkdown: ''
-    };
-
-    releaseVersions = [releaseVersion];
-    releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+    console.log(`Found these component Ids in ${sourceId}`, componentIds);
   }
+
+  const components = await Promise.all(
+    componentIds.map(async componentId => {
+      const base = path.join(__dirname, 'upstream', sourceId);
+      const html = (
+        await fs.promises.readFile(path.join(base, `${componentId}.html`), {
+          encoding: 'utf-8'
+        })
+      ).toString();
+      const css = (
+        await fs.promises.readFile(path.join(base, `${componentId}.css`), {
+          encoding: 'utf-8'
+        })
+      ).toString();
+
+      let component: Partial<Component>;
+
+      component = await normalizeGovUkTemplate({
+        id: componentId,
+        html,
+        css,
+        cssNamespace: '',
+        message: '',
+        calculatedDynamicKeys: [],
+        additionalPrefixesToBypassNamespacing: [
+          'fieldset',
+          'radios',
+          'checkboxes',
+          'link',
+          'a',
+          'caption'
+        ]
+      });
+
+      component = {
+        version,
+        ...component
+      } as Component;
+
+      return component;
+    })
+  );
+
+  const releaseVersion: ReleaseVersion = {
+    sourceId,
+    version: 'all',
+    components: components as Component[],
+    creditMarkdown: ''
+  };
+
+  releaseVersions = [releaseVersion];
+  releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
 
   let cssVariables: CSSVariablePattern[] = [];
 
@@ -579,9 +557,6 @@ var parser = new ArgumentParser({
   addHelp: true,
   description: 'Govt NZ Design System builder'
 });
-parser.addArgument(['-n', '--no-cache'], {
-  help: 'No Cache'
-});
 parser.addArgument(['-f', '--filter'], {
   help: 'Filter by template Ids (comma separated)'
 });
@@ -601,7 +576,6 @@ const argMt =
   undefined;
 
 main(
-  false,
   args.filter && args.filter.split(','),
   argMt && argMt.length > 0 ? argMt : undefined,
   args.sources && args.sources.split(',')

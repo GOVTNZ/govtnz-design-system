@@ -1,6 +1,16 @@
 // This file imports every CSS file.
 // Feel free to fork and modify this file to activate/deactivate particular components.
 
+@import "./FlexColumn";
+@import "./FlexContainer";
+@import "./FlexRow";
+@import "./Alert";
+@import "./FooterStandard";
+@import "./FooterWrapper";
+@import "./Footer";
+@import "./Header";
+@import "./MainNavLink";
+@import "./MainNav";
 @import "./A";
 @import "./Button";
 @import "./CaptionL";
@@ -35,14 +45,3 @@
 @import "./Textarea";
 @import "./TextareaBlock";
 @import "./Ul";
-@import "./FlexColumn";
-@import "./FlexContainer";
-@import "./FlexRow";
-@import "./Alert";
-@import "./Base";
-@import "./FooterStandard";
-@import "./FooterWrapper";
-@import "./Footer";
-@import "./Header";
-@import "./MainNavLink";
-@import "./MainNav";

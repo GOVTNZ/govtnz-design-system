@@ -32,12 +32,20 @@
 }
 
 .g-alert--error::before {
-  background-color: var(--g-theme-error, #b10e1e);
+  background-color: var(--g-theme-error, $g-theme-button-color-warning);
+  background-color: var(
+    --g-theme-error,
+    var(--g-theme-button-color-warning, $g-theme-button-color-warning)
+  );
 }
 
 .g-alert__icon {
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: var(--g-theme-alert-icon, #ffffff);
+  fill: var(--g-theme-alert-icon, $g-theme-color-white);
+  fill: var(
+    --g-theme-alert-icon,
+    var(--g-theme-color-white, $g-theme-color-white)
+  );
 }

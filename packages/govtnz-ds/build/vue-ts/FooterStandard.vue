@@ -1,9 +1,9 @@
 <template>
   <div class="g-footer__standard">
-    <div class="g-flex-container">
-      <div class="g-flex-row">
+    <div class="g-footerStandard-flex-container">
+      <div class="g-footerStandard-flex-row">
         <div
-          class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-10 g-flex-col-md-10 g-flex-col-lg-10"
+          class="g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-10 g-footerStandard-flex-col-md-10 g-footerStandard-flex-col-lg-10"
         >
           <div class="g-footer__standard-item">
             <ul class="g-footer__standard-inline-list">
@@ -44,9 +44,9 @@
         </div>
       </div>
 
-      <div class="g-flex-row">
+      <div class="g-footerStandard-flex-row">
         <div
-          class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-8 g-flex-col-md-10 g-flex-col-lg-9"
+          class="g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-8 g-footerStandard-flex-col-md-10 g-footerStandard-flex-col-lg-9"
         >
           <a
             class="g-footer__standard-link--plain"
@@ -54,12 +54,12 @@
             v-bind:rel="rel"
             v-bind:target="target"
           >
-            <span class="g-footer-visually-hidden">
+            <span class="g-footerStandard-footer-visually-hidden">
               New Zealand Government
             </span>
 
             <svg
-              class="g-footer__icon-govt-logo"
+              class="g-footerStandard-footer__icon-govt-logo"
               focusable="false"
               height="24"
               role="presentation"
@@ -81,12 +81,12 @@
                 v-bind:rel="rel"
                 v-bind:target="target"
               >
-                <span class="g-footer-visually-hidden">
+                <span class="g-footerStandard-footer-visually-hidden">
                   Creative Commons 4.0 International Licence
                 </span>
 
                 <svg
-                  class="g-footer__icon-cc"
+                  class="g-footerStandard-footer__icon-cc"
                   focusable="false"
                   height="32"
                   role="presentation"
@@ -100,7 +100,7 @@
                 </svg>
 
                 <svg
-                  class="g-footer__icon-cc"
+                  class="g-footerStandard-footer__icon-cc"
                   focusable="false"
                   height="32"
                   role="presentation"
@@ -123,12 +123,12 @@
         </div>
 
         <div
-          class="g-flex-col g-flex-col-xs-12 g-flex-col-sm-4 g-flex-col-md-2 g-flex-col-lg-3"
+          class="g-footerStandard-flex-col g-footerStandard-flex-col-xs-12 g-footerStandard-flex-col-sm-4 g-footerStandard-flex-col-md-2 g-footerStandard-flex-col-lg-3"
         >
           <div class="g-footer__standard-copyright">
             <img
               alt="New Zealand Coat of Arms"
-              class="g-footer__image-coat-of-arms"
+              class="g-footerStandard-footer__image-coat-of-arms"
               v-bind:src="src"
               v-bind:width="width"
               v-bind:height="height"
@@ -233,20 +233,20 @@ export default Vue.extend({
   font-size: 12px;
   color: #ffffff;
 }
-.g-footer__icon-govt-logo {
+.g-footerStandard-footer__icon-govt-logo {
   width: 230px;
   height: 26px;
 }
-.g-footer__image-coat-of-arms {
+.g-footerStandard-footer__image-coat-of-arms {
   width: 80px;
   height: auto;
 }
 @media only screen and (min-width: 48em) {
-  .g-footer__image-coat-of-arms {
+  .g-footerStandard-footer__image-coat-of-arms {
     margin-bottom: 28px;
   }
 }
-.g-footer-visually-hidden {
+.g-footerStandard-footer-visually-hidden {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;

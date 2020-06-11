@@ -33,6 +33,10 @@
 
 .g-alert--error::before {
   background-color: var(--g-theme-error, #b10e1e);
+  background-color: var(
+    --g-theme-error,
+    var(--g-theme-button-color-warning, #b10e1e)
+  );
 }
 
 .g-alert__icon {
@@ -40,4 +44,5 @@
   left: 16px;
   top: 24px;
   fill: var(--g-theme-alert-icon, #ffffff);
+  fill: var(--g-theme-alert-icon, var(--g-theme-color-white, #ffffff));
 }
