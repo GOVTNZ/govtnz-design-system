@@ -10,6 +10,19 @@ import '../../commons/styles/ds/themed-H1.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
 
+import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
+import '@govtnz/ds/build/css/inputBlock';
+
+// import Input from '@govtnz/ds/build/react-ts/input';
+
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';
+import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
+import Radios from '@govtnz/ds/build/react-ts/Radios';
+
+import Example from '../../commons/Example';
+import ExampleContainer from '../../commons/ExampleContainer';
+import ExampleHeading from '../../commons/ExampleHeading';
+
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
@@ -25,11 +38,162 @@ const PageContent = props => (
     <H2 styleSize="large" id="main-heading">
       Contact us form prototype
     </H2>
+
+    <InputBlock
+      width="30"
+      label="30 character width"
+      hint="Fits a short sentence answer or a long address line."
+      name="Name"
+      id="anyId3"
+      maxLength={30}
+      hintId="anyHintId3"
+      {...onChangeGenerator({})}
+    ></InputBlock>
     <p>
       Intro copy i.e here you can see how we use DS for elements to assemble
       example of a comtact us for <a href="/">Link to source code</a>.
     </p>
     <p>This is purely for demonstration purpose. Not an advice</p>
+
+    <ExampleContainer>
+      <div id="root" class="css-changes-for-example-only">
+        {/* <Input /> */}
+        <InputBlock
+          width="30"
+          label="30 character width"
+          hint="Fits a short sentence answer or a long address line."
+          name="Name"
+          id="anyId3"
+          maxLength={30}
+          hintId="anyHintId3"
+          {...onChangeGenerator({})}
+        ></InputBlock>
+
+        <InputBlock
+          width="30"
+          label="30 character width"
+          hint="Fits a short sentence answer or a long address line."
+          name="email address"
+          id="anyId3"
+          maxLength={30}
+          hintId="anyHintId3"
+          {...onChangeGenerator({})}
+        ></InputBlock>
+        <FieldsetBlock
+          legend={
+            <H1 styleSize="large" id="providerChoiceTitle1">
+              Choose one provider
+            </H1>
+          }
+          hint={<p>Select one provider.</p>}
+          hintId="hintId"
+          {...onChangeGenerator({})}
+        >
+          <RadioBlock
+            label="Sign in with Aardvark services"
+            hint="North Island only"
+            hintId="someHintId7"
+            id="anyRadioId7234"
+            name="providerChoice3"
+            value="provider1"
+            labelId="labelId5"
+            {...onChangeGenerator({ value: 'provider1' })}
+          ></RadioBlock>
+          <RadioBlock
+            label="Sign in with Bumblebee services"
+            hint="North and South Island"
+            hintId="someHintId8"
+            id="anyRadioId8234"
+            name="providerChoice3"
+            value="provider2"
+            labelId="labelId8"
+            {...onChangeGenerator({ value: 'provider2' })}
+          ></RadioBlock>
+          <RadioBlock
+            label="Sign in with Caterpillar company"
+            hint="All new Zealand territories"
+            hintId="someHintId7234"
+            id="anyRadioId9f"
+            name="providerChoice3"
+            value="provider3"
+            labelId="labelId9"
+            {...onChangeGenerator({ value: 'provider3' })}
+          ></RadioBlock>
+        </FieldsetBlock>
+        <FieldsetBlock
+          legend={
+            <H1 styleSize="large" id="nameChangeId5">
+              Have you changed your name?
+            </H1>
+          }
+          hint={
+            <p>
+              This includes changing your last name or spelling your name
+              differently.
+            </p>
+          }
+          hintId="hintId5"
+          errorId="errorId5"
+          error="Select 'yes' if you have changed your name."
+          {...onChangeGenerator({})}
+        >
+          <Radios inline {...onChangeGenerator({})}>
+            <RadioBlock
+              label="Yes"
+              id="anyRadioId9234"
+              value="true"
+              name="nameChange5"
+              labelId="labelId9"
+              {...onChangeGenerator({ value: 'true' })}
+            ></RadioBlock>
+            <RadioBlock
+              label="No"
+              id="anyRadioId10"
+              value="false"
+              name="nameChange5"
+              labelId="labelId10"
+              {...onChangeGenerator({ value: 'false' })}
+            ></RadioBlock>
+          </Radios>
+        </FieldsetBlock>
+        <FieldsetBlock
+          legend={
+            <H1 styleSize="large" id="nameChangeId8">
+              Have you changed your name?
+            </H1>
+          }
+          hint={
+            <p>
+              This includes changing your last name or spelling your name
+              differently.
+            </p>
+          }
+          hintId="hintId5344"
+          errorId="errorId525"
+          error="Select 'yes' if you have changed your name"
+          {...onChangeGenerator({})}
+        >
+          <Radios inline {...onChangeGenerator({})}>
+            <RadioBlock
+              label="Yes"
+              id="anyRadioId9"
+              value="true"
+              name="nameChange5"
+              labelId="labelId9"
+              {...onChangeGenerator({ value: 'true' })}
+            ></RadioBlock>
+            <RadioBlock
+              label="No"
+              id="anyRadioId10234"
+              value="false"
+              name="nameChange5"
+              labelId="labelId10"
+              {...onChangeGenerator({ value: 'false' })}
+            ></RadioBlock>
+          </Radios>
+        </FieldsetBlock>
+      </div>
+    </ExampleContainer>
   </React.Fragment>
 );
 
