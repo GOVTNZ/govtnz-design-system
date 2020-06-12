@@ -193,7 +193,7 @@ const PageContent = props => (
           </Radios>
         </FieldsetBlock>
       </div>
-    </ExampleContainer>
+    </Container>
   </React.Fragment>
 );
 
