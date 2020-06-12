@@ -11,7 +11,8 @@
     "build:compile": "yarn babel build_src --out-dir build && yarn tsc",
     "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
-    "cache-clear": "rimraf ./node_modules"
+    "node-modules-clear": "rimraf ./node_modules",
+    "cache-clear": "rimraf ./yarn-error.log"
   },
   "license": "MIT",
   "devDependencies": {

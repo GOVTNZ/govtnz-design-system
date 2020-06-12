@@ -14,7 +14,8 @@
     "serve": "yarn workspace @govtnz/ds-website serve",
     "test__comment": "DEVELOPER_NOTE: The website static build tests itself see pre/post build directory scripts in pacakge govtnz website",
     "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md",
-    "cache-clear": "yarn workspace @govtnz/ds clear-cache && yarn workspace @govtnz/ds-website clear-cache && rimraf ./node_modules"
+    "node-modules-clear": "yarn workspace @govtnz/ds node-modules-clear && yarn workspace @govtnz/ds-website node-modules-clear && rimraf ./node_modules",
+    "cache-clear": "yarn workspace @govtnz/ds clear-cache && yarn workspace @govtnz/ds-website clear-cache"
   },
   "devDependencies": {
     "rimraf": "^2.6.3"

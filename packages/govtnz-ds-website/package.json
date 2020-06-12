@@ -10,7 +10,7 @@
     "@babel/parser": "^7.10.2",
     "@babel/plugin-transform-eval": "^7.0.0-beta.38",
     "@babel/preset-react": "^7.10.1",
-    "@govtnz/ds": "^0.1.2",
+    "@govtnz/ds": "^0.2.0",
     "@sentry/browser": "^5.17.0",
     "@springload/metatemplate": "^0.5.9",
     "@types/react": "^16.9.36",
@@ -74,7 +74,8 @@
     "format": "prettier --write \"src/**/*.js\"",
     "validate-build": "yarn jest -- --runInBand",
     "test:typescript": "exit 0",
-    "cache-clear": "rimraf ./public/ && rimraf ./.cache"
+    "node-modules-clear": "rimraf ./node_modules",
+    "cache-clear": "rimraf ./public/ && rimraf ./.cache && rimraf .tmp && rimraf static/basics && rimraf static/components && rimraf static/css"
   },
   "repository": {
     "type": "git",
