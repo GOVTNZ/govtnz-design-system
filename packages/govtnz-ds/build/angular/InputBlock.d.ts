@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     errorId: string | undefined;
     id: string | undefined;

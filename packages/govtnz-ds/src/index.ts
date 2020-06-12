@@ -1,7 +1,7 @@
 import ArgParse from 'argparse';
 import fs from 'fs';
 import path from 'path';
-import copydir from 'copy-dir';
+import fsExtra from 'fs-extra';
 import formatDuration from 'format-duration';
 import {
   makeTemplates,
@@ -9,9 +9,8 @@ import {
   CSSVariablePattern
 } from '@springload/metatemplate';
 import ProgressBar from 'progress';
-import rmfr from 'rmfr';
 import mkdirp from 'mkdirp';
-import { ensureNodeVersion, safeMerge } from '@govtnz/ds-common';
+import { ensureNodeVersion, safeMerge } from './common';
 import { SourceId, ReleaseVersion, Component } from './types';
 import { normalizeUpstream } from './normalize';
 import {
@@ -421,13 +420,25 @@ const saveRelease = async (
 
   // Clean up after previous release
 
-  await rmfr(path.join(buildPath, '*'), { glob: true });
+  try {
+    await fsExtra.rmdir(path.join(buildPath, '*'), { glob: true });
+  } catch (e) {
+    const message = e.toString();
+    if (!message.includes('no such')) {
+      throw e;
+    }
+  }
 
   // @ts-ignore
   await mkdirp(buildPath);
-
-  await rmfr(path.join(buildSrcPath, '*'), { glob: true });
-
+  try {
+    await fsExtra.rmdir(path.join(buildSrcPath, '*'), { glob: true });
+  } catch (e) {
+    const message = e.toString();
+    if (!message.includes('no such')) {
+      throw e;
+    }
+  }
   // @ts-ignore
   await mkdirp(buildSrcPath);
 
@@ -518,7 +529,7 @@ async function buildRelease() {
       const from = path.join(buildSrcPath, dir);
       const to = path.join(buildPath, dir);
       console.log('copying', from, to);
-      copydir.sync(from, to);
+      return fsExtra.copy(from, to);
     })
   );
 }

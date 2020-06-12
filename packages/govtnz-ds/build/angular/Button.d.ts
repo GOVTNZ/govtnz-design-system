@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     disabled: boolean | undefined;
     level: "secondary" | "warning";

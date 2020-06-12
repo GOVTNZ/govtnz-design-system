@@ -1,0 +1,8 @@
+.g-header {
+  position: relative;
+  background-color: #363636;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  fill: $g-theme-color-white;
+  fill: var(--g-theme-color-white, $g-theme-color-white);
+}

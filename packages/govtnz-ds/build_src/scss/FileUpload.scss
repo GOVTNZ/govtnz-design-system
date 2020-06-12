@@ -1,0 +1,125 @@
+.g-fileUpload__form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-fileUpload__form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.g-fileUpload__form-group .g-fileUpload__form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.g-fileUpload__form-group--error .g-fileUpload__form-group {
+  padding: 0;
+  border: 0;
+}
+
+.g-fileUpload__input {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .g-fileUpload__input {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-fileUpload__input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-fileUpload__input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-fileUpload__input {
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
+  }
+}
+
+.g-fileUpload__input {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #0b0c0c;
+}
+
+@media print {
+  .g-fileUpload__input {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-fileUpload__input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-fileUpload__input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-fileUpload__input {
+    color: $g-theme-color-black;
+    color: var(--g-theme-color-black, $g-theme-color-black);
+  }
+}
+
+.g-fileUpload__input:focus {
+  outline: 3px solid $g-theme-color-brand-1;
+  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline-offset: 0;
+}
+
+.g-fileUpload__label {
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  font-family: var(
+    --g-theme-font-family,
+    var(--g-theme-font-family, $g-theme-font-family)
+  );
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-fileUpload__label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}

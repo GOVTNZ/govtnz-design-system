@@ -1,0 +1,7 @@
+.g-footer {
+  background-color: #363636;
+  color: #ffffff;
+  color: var(--g-theme-color-white, #ffffff);
+  fill: #ffffff;
+  fill: var(--g-theme-color-white, #ffffff);
+}

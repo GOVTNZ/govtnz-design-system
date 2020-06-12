@@ -1,0 +1,22 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<select
+class="g-select"
+{{#selectId}}
+  id="{{selectId}}"
+{{/selectId}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#multiple}}
+  multiple="{{#multiple}}multiple{{/multiple}}"
+{{/multiple}}
+>
+     
+  {{{children}}}
+   
+</select>

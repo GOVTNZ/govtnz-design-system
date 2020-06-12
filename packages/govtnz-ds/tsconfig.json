@@ -1,5 +1,4 @@
 {
-  "extends": "../govtnz-ds-common/tsconfig-common.json",
   "include": ["build_src"],
   "exclude": ["build", "src/**/*.test.ts", "src/**/*.test.tsx"],
   "compilerOptions": {
@@ -7,6 +6,15 @@
     "outDir": "build",
     "declaration": true,
     "target": "es5",
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "strict": false,
+    "module": "commonjs",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "es2016", "es2017", "dom"],
+    "types": []
   }
 }

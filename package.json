@@ -4,16 +4,16 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "yarn workspace @govtnz/ds-common build",
     "build:release": "yarn workspace @govtnz/ds build:release && yarn workspace @govtnz/ds build:compile",
     "build:website": "yarn workspace @govtnz/ds-website compile-markdown && yarn workspace @govtnz/ds-website build",
     "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",
     "build:website:validate-build": "yarn workspace @govtnz/ds-website validate-build",
-    "build:all": "yarn build && yarn build:release && yarn build:website && yarn build:website:compile-markdown",
+    "build": "yarn build:release && yarn build:website:compile-markdown && yarn build:website",
     "develop:website": "yarn workspace @govtnz/ds-website run build && yarn workspace @govtnz/ds-website run serve",
-    "test": "yarn workspace @govtnz/ds-common test && yarn workspace @govtnz/ds test",
-    "test__comment": "Also the website static build itself tests parts of the React-TS integration type",
-    "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md"
+    "test": "yarn workspace @govtnz/ds test",
+    "test__comment": "DEVELOPER_NOTE: The website static build tests itself see pre/post build directory scripts in pacakge govtnz website",
+    "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md",
+    "clear-cache": "yarn workspace @govtnz/ds clear-cache && yarn workspace @govtnz/ds-website clear-cache && rimraf ./node_modules"
   },
   "devDependencies": {
     "rimraf": "^2.6.3"

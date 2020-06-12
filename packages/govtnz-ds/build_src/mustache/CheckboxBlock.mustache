@@ -1,0 +1,83 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - label,
+     - hint,
+     - error.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<div
+class="g-checkboxes__item{{#errorId}} g-form-group--error{{/errorId}}"
+>
+     
+<input
+{{#hintId}}
+  aria-describedby="{{hintId}}"
+{{/hintId}}
+class="g-checkboxes__input"
+{{#id}}
+  id="{{id}}"
+{{/id}}
+type="checkbox"
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+{{#value}}
+  value="{{value}}"
+{{/value}}
+{{#checked}}
+  checked="{{#checked}}checked{{/checked}}"
+{{/checked}}
+/>
+     
+<label
+class="g-checkboxes__label"
+{{#id}}
+  for="{{id}}"
+{{/id}}
+>
+  {{{label}}}
+</label>
+     
+       
+<div
+class="g-checkboxes__hint"
+{{#hintId}}
+  id="{{hintId}}"
+{{/hintId}}
+>
+         
+  {{{hint}}}
+       
+</div>
+     
+     
+       
+<div
+class="g-error-message"
+{{#errorId}}
+  id="{{errorId}}"
+{{/errorId}}
+>
+         
+<span
+class="g-visually-hidden"
+>
+           Error:       
+</span>
+         
+  {{{error}}}
+       
+</div>
+     
+   
+</div>

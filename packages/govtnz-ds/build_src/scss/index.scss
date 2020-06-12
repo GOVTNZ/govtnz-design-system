@@ -1,0 +1,50 @@
+// This file imports every Sass (SCSS) file.
+// Feel free to fork and modify this file to activate/deactivate particular components.
+
+// Configure settings
+@import "./settings";
+
+@import "./FlexColumn";
+@import "./FlexContainer";
+@import "./FlexRow";
+@import "./Alert";
+@import "./FooterStandard";
+@import "./FooterWrapper";
+@import "./Footer";
+@import "./Header";
+@import "./MainNavLink";
+@import "./MainNav";
+@import "./A";
+@import "./Button";
+@import "./CaptionL";
+@import "./CaptionM";
+@import "./CaptionXl";
+@import "./Checkbox";
+@import "./CheckboxBlock";
+@import "./DateInput";
+@import "./Fieldset";
+@import "./FieldsetBlock";
+@import "./FileUpload";
+@import "./FormDivider";
+@import "./H1";
+@import "./H2";
+@import "./H3";
+@import "./H4";
+@import "./H5";
+@import "./H6";
+@import "./Input";
+@import "./InputBlock";
+@import "./InsetText";
+@import "./Legend";
+@import "./Li";
+@import "./Ol";
+@import "./P";
+@import "./Radio";
+@import "./RadioBlock";
+@import "./Radios";
+@import "./Select";
+@import "./SelectBlock";
+@import "./SkipLink";
+@import "./Textarea";
+@import "./TextareaBlock";
+@import "./Ul";

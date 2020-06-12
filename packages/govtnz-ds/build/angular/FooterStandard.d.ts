@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     href: string;
     rel: string | undefined;

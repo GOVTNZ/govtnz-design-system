@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     xsVerticalAlign: "top" | "middle" | "bottom" | undefined;
     smVerticalAlign: "top" | "middle" | "bottom" | undefined;

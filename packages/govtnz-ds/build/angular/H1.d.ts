@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     styleSize: "xlarge" | "large" | "medium" | "small" | "xsmall" | "xxsmall";
     marginBottom8: boolean | undefined;

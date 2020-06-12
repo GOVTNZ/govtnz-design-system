@@ -1,0 +1,23 @@
+.g-p-summary-list__value > p {
+  margin-bottom: 10px;
+}
+
+.g-p-details__text p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.g-p-error-summary__body p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-p-error-summary__body p {
+    margin-bottom: 20px;
+  }
+}
+
+.g-p-hint > * {
+  margin-top: 0px;
+}

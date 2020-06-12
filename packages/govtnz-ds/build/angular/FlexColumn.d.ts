@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     xs: "hidden" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "auto";
     sm: "hidden" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | "auto";

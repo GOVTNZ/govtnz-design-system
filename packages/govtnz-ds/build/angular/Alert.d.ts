@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export declare class AppComponent {
     mode: "live" | undefined;
     level: "info" | "warning" | "success" | "error";

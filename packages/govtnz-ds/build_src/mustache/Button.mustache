@@ -1,0 +1,20 @@
+{{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - children.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
+
+<button
+class="g-button{{#disabled}} g-button--disabled{{/disabled}} {{#level=secondary}} g-button--secondary{{/level=secondary}}{{#level=warning}} g-button--warning{{/level=warning}}"
+disabled="{{#disabled}}true{{/disabled}}"
+{{#type}}
+  type="{{type}}"
+{{/type}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+>
+     
+  {{{children}}}
+   
+</button>

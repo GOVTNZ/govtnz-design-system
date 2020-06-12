@@ -1,0 +1,47 @@
+.g-alert {
+  position: relative;
+  background: #f4f4f4;
+  margin-bottom: 1em;
+  padding: 24px 32px 24px 96px;
+  border-radius: 4px;
+  border: solid 1px #d3d3d3;
+}
+
+.g-alert::before {
+  content: "";
+  display: block;
+  width: 64px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.g-alert--info::before {
+  background-color: #1f1bfb;
+}
+
+.g-alert--warning::before {
+  background-color: #d47500;
+}
+
+.g-alert--success::before {
+  background-color: #088a20;
+}
+
+.g-alert--error::before {
+  background-color: $g-theme-button-color-warning;
+  background-color: var(
+    --g-theme-button-color-warning,
+    $g-theme-button-color-warning
+  );
+}
+
+.g-alert__icon {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+  fill: white;
+}

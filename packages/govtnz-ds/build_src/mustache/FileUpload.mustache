@@ -1,0 +1,34 @@
+<div
+class="g-fileUpload__form-group"
+>
+     
+<label
+class="g-fileUpload__label"
+{{#id}}
+  for="{{id}}"
+{{/id}}
+>
+       Upload a file   
+</label>
+     
+<input
+class="g-fileUpload__input"
+{{#id}}
+  id="{{id}}"
+{{/id}}
+{{#name}}
+  name="{{name}}"
+{{/name}}
+type="file"
+{{#disabled}}
+  disabled="{{#disabled}}disabled{{/disabled}}"
+{{/disabled}}
+{{#readOnly}}
+  readonly="{{#readOnly}}readOnly{{/readOnly}}"
+{{/readOnly}}
+{{#autoFocus}}
+  autofocus="{{#autoFocus}}autoFocus{{/autoFocus}}"
+{{/autoFocus}}
+/>
+   
+</div>
