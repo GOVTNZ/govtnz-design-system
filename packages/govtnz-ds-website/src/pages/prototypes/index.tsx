@@ -26,26 +26,6 @@ import Radios from '@govtnz/ds/build/react-ts/Radios';
 
 import PatternsPage from '../../components/PatternsPage';
 
-class ErrorMessage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { key: 0 };
-  }
-
-  componentDidMount = state => {
-    this.setState({
-      key: ++state.key,
-    });
-  };
-
-  render() {
-    const { key } = this.state;
-    const { text } = this.props;
-
-    return <div key={key}>{text}</div>;
-  }
-}
-
 class ContactusForm extends React.Component {
   constructor(props) {
     super(props);
@@ -142,7 +122,7 @@ class ContactusForm extends React.Component {
         </form>
 
         <div className="res-block">
-          {invalid && <ErrorMessage text="Error, incorrect details" />}
+          {invalid && <div> Error, incorrect details</div>}
 
           {!invalid && response && <div>Data {response}</div>}
 
