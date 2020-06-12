@@ -12,7 +12,7 @@ export default [
     "vue-js": "<template>\n  <c-p styleSize=\"medium\">\n    <c-a href=\"http://example.com/\">\n      Normal link\n    </c-a>\n  </c-p>\n</template>\n<script>\nimport Vue from \"vue\";\nimport P from \"@govtnz/ds/build/vue-js/P.vue\";\nimport A from \"@govtnz/ds/build/vue-js/A.vue\";\n\nexport default { components: { \"c-p\": P, \"c-a\": A } };\n</script>\n",
     "vue-ts": "<template>\n  <c-p styleSize=\"medium\">\n    <c-a href=\"http://example.com/\">\n      Normal link\n    </c-a>\n  </c-p>\n</template>\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport P from \"@govtnz/ds/build/vue-ts/P.vue\";\nimport A from \"@govtnz/ds/build/vue-ts/A.vue\";\n\nexport default { components: { \"c-p\": P, \"c-a\": A } };\n</script>\n",
     "scss": "",
-    "html": "<!--\nRemember to add these styles:\nin CSS: P.css, A.css\nOR in Sass (SCSS): P.scss, A.scss\n-->\n<p class=\"g-body-m\">\n  <a class=\"g-link\" href=\"http://example.com/\"> Normal link </a>\n</p>\n",
+    "html": "<!--\nRemember to add these styles:\nin CSS: P.css, A.css\nOR in Sass (SCSS): P.scss, A.scss\n-->\n<p class=\"g-p-body-m\">\n  <a class=\"g-link\" href=\"http://example.com/\"> Normal link </a>\n</p>\n",
     "css": "",
     "twig-embed": "{% embed \"P.html.twig\"  with {'styleSize':'medium'} only %}{% block children %}{% embed \"A.html.twig\"  with {'href':'http://example.com/', 'children':'Normal link'} only %}{% endembed %}{% endblock %}{% endembed %}",
     "angular": ""
