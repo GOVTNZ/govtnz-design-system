@@ -38,7 +38,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example0.html",
         title:"Example: Radio buttons",
-        height: 279
+        height: 269
       }}></Example>
 </ExampleContainer>
 
@@ -48,6 +48,49 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         id:"iframe_componentsRadios1",
         className: "example__iframe",
         src:"/components/Radios__example1.html",
+        title:"Example: Error state #1 (Radio buttons)",
+        height: 309
+      }}></Example>
+</ExampleContainer>
+
+<h2 id="bigger-radios">Bigger radios</h2>
+<ExampleContainer>
+    <Example  code={components__Radios[2]} iframeProps={{
+        id:"iframe_componentsRadios2",
+        className: "example__iframe",
+        src:"/components/Radios__example2.html",
+        title:"Example: Radio buttons",
+        height: 279
+      }}></Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <ExampleHeading>Error</ExampleHeading>
+    <Example  code={components__Radios[3]} iframeProps={{
+        id:"iframe_componentsRadios3",
+        className: "example__iframe",
+        src:"/components/Radios__example3.html",
+        title:"Example: Error state #1 (Radio buttons)",
+        height: 359
+      }}></Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <Example  code={components__Radios[4]} iframeProps={{
+        id:"iframe_componentsRadios4",
+        className: "example__iframe",
+        src:"/components/Radios__example4.html",
+        title:"Example: Radio buttons",
+        height: 319
+      }}></Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <ExampleHeading>Error</ExampleHeading>
+    <Example  code={components__Radios[5]} iframeProps={{
+        id:"iframe_componentsRadios5",
+        className: "example__iframe",
+        src:"/components/Radios__example5.html",
         title:"Example: Error state #1 (Radio buttons)",
         height: 319
       }}></Example>
@@ -74,48 +117,48 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</p>
 <ExampleContainer>
     <ExampleHeading>Stacked radio buttons</ExampleHeading>
-    <Example  code={components__Radios[2]} iframeProps={{
-        id:"iframe_componentsRadios2",
+    <Example  code={components__Radios[6]} iframeProps={{
+        id:"iframe_componentsRadios6",
         className: "example__iframe",
-        src:"/components/Radios__example2.html",
+        src:"/components/Radios__example6.html",
         title:"Example: Stacked radio buttons",
-        height: 380
+        height: 340
       }}></Example>
 </ExampleContainer>
 
 <p>When there are more than 2 options, radio buttons should be stacked.</p>
 <ExampleContainer>
     <ExampleHeading>Inline radio buttons</ExampleHeading>
-    <Example  code={components__Radios[3]} iframeProps={{
-        id:"iframe_componentsRadios3",
+    <Example  code={components__Radios[7]} iframeProps={{
+        id:"iframe_componentsRadios7",
         className: "example__iframe",
-        src:"/components/Radios__example3.html",
+        src:"/components/Radios__example7.html",
         title:"Example: Inline radio buttons",
-        height: 279
+        height: 269
       }}></Example>
 </ExampleContainer>
 
 <p>If there are only 2 options, you can either stack the radio buttons or display them inline.</p>
 <ExampleContainer>
     <ExampleHeading>Radio button items with hints</ExampleHeading>
-    <Example  code={components__Radios[4]} iframeProps={{
-        id:"iframe_componentsRadios4",
+    <Example  code={components__Radios[8]} iframeProps={{
+        id:"iframe_componentsRadios8",
         className: "example__iframe",
-        src:"/components/Radios__example4.html",
+        src:"/components/Radios__example8.html",
         title:"Example: Radio button items with hints",
-        height: 438
+        height: 439
       }}></Example>
 </ExampleContainer>
 
 <p>You can add hints to radio button items to provide more information about the options.</p>
 <ExampleContainer>
     <ExampleHeading>Radio button items with a text divider</ExampleHeading>
-    <Example  code={components__Radios[5]} iframeProps={{
-        id:"iframe_componentsRadios5",
+    <Example  code={components__Radios[9]} iframeProps={{
+        id:"iframe_componentsRadios9",
         className: "example__iframe",
-        src:"/components/Radios__example5.html",
+        src:"/components/Radios__example9.html",
         title:"Example: Radio button items with a text divider",
-        height: 491
+        height: 487
       }}></Example>
 </ExampleContainer>
 
@@ -124,12 +167,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
 <ExampleContainer>
     <ExampleHeading>Error</ExampleHeading>
-    <Example  code={components__Radios[6]} iframeProps={{
-        id:"iframe_componentsRadios6",
+    <Example  code={components__Radios[10]} iframeProps={{
+        id:"iframe_componentsRadios10",
         className: "example__iframe",
-        src:"/components/Radios__example6.html",
+        src:"/components/Radios__example10.html",
         title:"Example: Error state #2 (Radio buttons)",
-        height: 319
+        height: 309
       }}></Example>
 </ExampleContainer>
 

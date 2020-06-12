@@ -27,9 +27,11 @@ var StyledDiv = _styledComponents["default"].div(_templateObject());
 
 var Radios = function Radios(_ref) {
   var inline = _ref.inline,
+      big = _ref.big,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
-    inline: inline
+    inline: inline,
+    big: big
   }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"), " ");
 };
 

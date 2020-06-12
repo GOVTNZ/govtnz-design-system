@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 type Props = {
-  errorId?: boolean;
   id?: string;
   hintId?: string;
   disabled?: boolean;
@@ -26,10 +25,12 @@ const StyledDiv = styled.div`
   line-height: 1.25;
   display: block;
   position: relative;
-  min-height: 40px;
+  min-height: 30px;
   margin-bottom: 10px;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 30px;
   clear: left;
+  min-height: 40px;
+  padding: 0 0 0 40px;
   @media print {
     font-family: sans-serif;
   }
@@ -45,14 +46,11 @@ const StyledDiv = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+  margin-right: 0;
+  display: inline-block;
   @media (min-width: 40.0625em) {
     margin-right: 20px;
-    float: left;
-    clear: none;
   }
-  margin-right: 0;
-  float: none;
-  margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
@@ -60,50 +58,84 @@ const StyledInput = styled.input`
   z-index: 1;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   margin: 0;
   opacity: 0;
-  margin-top: 0px;
+  width: 40px;
+  height: 40px;
 `;
 
 const StyledLabel = styled.label`
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #2a2a2a;
+  display: block;
+  margin-bottom: 5px;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+  @media print {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+  @media print {
+    color: #000000;
+  }
   display: inline-block;
   margin-bottom: 0;
-  padding: 8px 15px 5px;
+  padding: 0px 10px 5px 5px;
   cursor: pointer;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+  padding: 8px 15px 5px 15px;
   ::before {
     content: "";
     box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     border: 2px solid currentColor;
     border-radius: 50%;
     background: transparent;
   }
+  ::before {
+    width: 40px;
+    height: 40px;
+  }
   ::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 5px;
+    left: 5px;
     width: 0;
     height: 0;
-    border: 10px solid currentColor;
+    border: 7px solid currentColor;
     border-radius: 50%;
     opacity: 0;
     background: currentColor;
+  }
+  ::after {
+    top: 10px;
+    left: 10px;
+    border-width: 10px;
   }
   :focus + .g-radios__label::before,
   :focus + .g-radios__label::before {
     outline: 3px solid transparent;
     outline-offset: 3px;
-    box-shadow: 0 0 0 4px #ffbf47;
+    box-shadow: 0 0 0 4px #b53cde;
   }
   :checked + .g-radios__label::after,
   :checked + .g-radios__label::after {
@@ -113,22 +145,38 @@ const StyledLabel = styled.label`
   :disabled + .g-radios__label {
     cursor: default;
   }
-  :disabled + .g-radios__label,
-  :disabled + .g-radios__label {
-    opacity: 0.5;
-  }
-  margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: #595959;
+  @media print {
+    font-family: sans-serif;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+  @media print {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+  margin-top: -5px;
   display: block;
   padding-right: 15px;
+  padding-left: 7px;
+  padding-right: 15px;
   padding-left: 15px;
-  margin-top: 0px;
 `;
 
 const RadioBlock = ({
-  errorId,
   id,
   hintId,
   disabled,
@@ -142,7 +190,7 @@ const RadioBlock = ({
   label,
   hint
 }: Props) => (
-  <StyledDiv errorId={errorId}>
+  <StyledDiv>
     {" "}
     <StyledInput
       aria-describedby={hintId}

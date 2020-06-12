@@ -13,11 +13,11 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Inline radio buttons" {...onChangeGenerator({})}>
-        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId6">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId2221" {...onChangeGenerator({})}>
-            <Radios inline {...onChangeGenerator({})}>
-                <RadioBlock label="Yes" id="anyRadioId55" value="true" name="nameChange1" labelId="labelId1" {...onChangeGenerator({"value":"true"})}></RadioBlock>
-                <RadioBlock label="No" id="anyRadioId2551" value="false" name="nameChange1" labelId="labelId2" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+var PageContent = (props) => (<Example title="Example: Error state #1 (Radio buttons)" {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name." {...onChangeGenerator({})}>
+            <Radios big {...onChangeGenerator({})}>
+                <RadioBlock label="Yes" id="anyRadioId9234" value="true" name="nameChange5" labelId="labelId9" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" {...onChangeGenerator({"value":"false"})}></RadioBlock>
             </Radios>
         </FieldsetBlock>
     </Example>);

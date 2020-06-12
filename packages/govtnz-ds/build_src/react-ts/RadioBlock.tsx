@@ -1,7 +1,6 @@
 import React from "react";
 
 type Props = {
-  errorId?: boolean;
   id?: string;
   hintId?: string;
   disabled?: boolean;
@@ -17,7 +16,6 @@ type Props = {
 };
 
 const RadioBlock = ({
-  errorId,
   id,
   hintId,
   disabled,
@@ -31,7 +29,7 @@ const RadioBlock = ({
   label,
   hint
 }: Props) => (
-  <div className={`g-radios__item${errorId ? " g-form-group--error" : ""}`}>
+  <div className="g-radios__item">
     {" "}
     <input
       aria-describedby={hintId}
@@ -49,7 +47,7 @@ const RadioBlock = ({
       onChange={onChange}
       ref={ref}
     />{" "}
-    <label className="g-label g-radios__label" htmlFor={id}>
+    <label className="g-radios__label" htmlFor={id}>
       {" "}
       {label !== undefined ? (
         label
@@ -60,7 +58,7 @@ const RadioBlock = ({
     {hintId !== undefined ? (
       <React.Fragment>
         {" "}
-        <div className="g-hint g-checkboxes__hint" id={hintId}>
+        <div className="g-radios__hint" id={hintId}>
           {" "}
           {hint !== undefined ? (
             hint

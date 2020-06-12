@@ -38,7 +38,7 @@ export default Vue.extend({
   }
 }
 .g-link:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 .g-link:link {

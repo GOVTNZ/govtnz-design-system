@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,11 +13,12 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Radio button items with hints" {...onChangeGenerator({})}>
-            <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId" {...onChangeGenerator({})}>
-                <RadioBlock label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" id="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlock>
-                <RadioBlock label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" id="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlock>
-                <RadioBlock label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" id="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" {...onChangeGenerator({"value":"provider3"})}></RadioBlock>
+var PageContent = (props) => (<Example title="Example: Radio buttons" {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1" {...onChangeGenerator({})}>
+            <Radios big {...onChangeGenerator({})}>
+                <RadioBlock label="Yes" id="anyRadioId" value="true" name="nameChange1" labelId="labelId1" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" id="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+            </Radios>
         </FieldsetBlock>
     </Example>);
 

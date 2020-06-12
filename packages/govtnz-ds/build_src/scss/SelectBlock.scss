@@ -83,8 +83,7 @@
 }
 
 .g-selectBlock-select:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 

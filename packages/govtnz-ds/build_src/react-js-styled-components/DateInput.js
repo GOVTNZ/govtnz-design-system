@@ -195,7 +195,7 @@ const StyledInput = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,
@@ -296,7 +296,7 @@ const StyledInput2 = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,
@@ -397,7 +397,7 @@ const StyledInput3 = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,

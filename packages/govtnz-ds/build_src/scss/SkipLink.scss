@@ -3,8 +3,7 @@
 }
 
 .g-skipLink-error-summary__list a:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 
@@ -102,11 +101,9 @@
 }
 
 .g-skip-link:focus {
-  outline: 3px solid $g-theme-color-brand-1;
-  outline: 3px solid var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  outline: 3px solid #b53cde;
   outline-offset: 0;
-  background-color: $g-theme-color-brand-1;
-  background-color: var(--g-theme-color-brand-1, $g-theme-color-brand-1);
+  background-color: #b53cde;
 }
 
 .g-skip-link:link,

@@ -11,7 +11,7 @@ type Props = {
 const StyledA = styled.a`
   font-weight: 700;
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   :link,
@@ -81,9 +81,9 @@ const StyledA = styled.a`
     font-family: sans-serif;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
-    background-color: #ffbf47;
+    background-color: #b53cde;
   }
   :link,
   :visited,

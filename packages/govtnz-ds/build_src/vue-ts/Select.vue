@@ -61,7 +61,7 @@ export default Vue.extend({
   }
 }
 .g-select:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 .g-select:focus::-ms-value {

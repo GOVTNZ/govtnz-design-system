@@ -110,7 +110,7 @@ export default Vue.extend({
   }
 }
 .g-fileUpload__input:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 .g-fileUpload__label {

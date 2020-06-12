@@ -17,11 +17,14 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "inline", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "big", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Radios",
-            template: "\n<div class=\"g-radios{{inline ? \" g-radios--inline\" : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
+            template: "\n<div class=\"g-radios{{inline ? \" g-radios--inline\" : \"\"}}{{big ? \" g-radios--big\" : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
         })
     ], AppComponent);
     return AppComponent;

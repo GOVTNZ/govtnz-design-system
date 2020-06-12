@@ -220,7 +220,7 @@ export default Vue.extend({
   }
 }
 .g-textareaBlock-textarea:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 @media (min-width: 40.0625em) {

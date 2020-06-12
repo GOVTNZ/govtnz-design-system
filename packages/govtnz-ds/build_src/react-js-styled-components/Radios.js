@@ -12,8 +12,8 @@ const StyledDiv = styled.div`
   margin-top: 0px;
 `;
 
-const Radios = ({ inline, children }) => (
-  <StyledDiv inline={inline}>
+const Radios = ({ inline, big, children }) => (
+  <StyledDiv inline={inline} big={big}>
     {" "}
     {children !== undefined ? (
       children

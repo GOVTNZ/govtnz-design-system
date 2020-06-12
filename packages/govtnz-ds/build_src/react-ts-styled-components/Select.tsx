@@ -42,7 +42,7 @@ const StyledSelect = styled.select`
     line-height: 1.25;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   :focus::-ms-value {

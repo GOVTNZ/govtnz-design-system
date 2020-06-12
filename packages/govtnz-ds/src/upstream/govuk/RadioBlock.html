@@ -1,4 +1,4 @@
-<div class="g-radios__item {{ errorId?: g-form-group--error }}">
+<div class="g-radios__item">
   <input
     class="g-radios__input"
     id="id"
@@ -6,11 +6,11 @@
     type="radio"
     aria-describedby="hintId"
   />
-  <label class="g-label g-radios__label" for="id">
+  <label class="g-radios__label" for="id">
     <mt-variable key="label">Label text</mt-variable>
   </label>
   <mt-if key="hintId">
-    <div class="g-hint g-checkboxes__hint" id="hintId">
+    <div class="g-radios__hint" id="hintId">
       <mt-variable key="hint">Hint text</mt-variable>
     </div>
   </mt-if>

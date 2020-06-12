@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,12 +13,12 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Stacked radio buttons" {...onChangeGenerator({})}>
-        <FieldsetBlock legend={<H1 styleSize="large" id="whereLiveTitle">Where do you live?</H1>} {...onChangeGenerator({})}>
-            <RadioBlock label="North Island" id="anyRadioId3334" name="where" value="north" labelId="labelId3" {...onChangeGenerator({"value":"north"})}></RadioBlock>
-            <RadioBlock label="South Island" id="anyRadioId42344" name="where" value="south" labelId="labelId4" {...onChangeGenerator({"value":"south"})}></RadioBlock>
-            <RadioBlock label="Stewart Island" id="anyRadioId5234" name="where" value="stewart" labelId="labelId5" {...onChangeGenerator({"value":"stewart"})}></RadioBlock>
-            <RadioBlock label="Chatham Islands" id="anyRadioId6234" name="where" value="chatham" labelId="labelId6" {...onChangeGenerator({"value":"chatham"})}></RadioBlock>
+var PageContent = (props) => (<Example title="Example: Radio buttons" {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1" {...onChangeGenerator({})}>
+            <Radios inline big {...onChangeGenerator({})}>
+                <RadioBlock label="Yes" id="anyRadioId" value="true" name="nameChange1" labelId="labelId1" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" id="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+            </Radios>
         </FieldsetBlock>
     </Example>);
 

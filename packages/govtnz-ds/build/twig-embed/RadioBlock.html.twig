@@ -1,5 +1,5 @@
 <div
-class="g-radios__item{% if errorId %} g-form-group--error{% endif %}"
+class="g-radios__item"
 >
      
 <input
@@ -16,7 +16,7 @@ checked="{% if checked %}checked{% endif %}"
 />
      
 <label
-class="g-label g-radios__label"
+class="g-radios__label"
 for="{{ id | escape('html_attr') }}"
 >
        
@@ -26,7 +26,7 @@ for="{{ id | escape('html_attr') }}"
      
        
 <div
-class="g-hint g-checkboxes__hint"
+class="g-radios__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
          

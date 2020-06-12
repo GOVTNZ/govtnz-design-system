@@ -1,7 +1,11 @@
 import React from "react";
 
-const Radios = ({ inline, children }) => (
-  <div className={`g-radios${inline ? " g-radios--inline" : ""}`}>
+const Radios = ({ inline, big, children }) => (
+  <div
+    className={`g-radios${inline ? " g-radios--inline" : ""}${
+      big ? " g-radios--big" : ""
+    }`}
+  >
     {" "}
     {children !== undefined ? (
       children

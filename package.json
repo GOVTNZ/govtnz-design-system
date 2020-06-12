@@ -11,9 +11,10 @@
     "build": "yarn build:release && yarn build:website:compile-markdown && yarn build:website",
     "develop:website": "yarn workspace @govtnz/ds-website run build && yarn workspace @govtnz/ds-website run serve",
     "test": "yarn workspace @govtnz/ds test",
+    "serve": "yarn workspace @govtnz/ds-website serve",
     "test__comment": "DEVELOPER_NOTE: The website static build tests itself see pre/post build directory scripts in pacakge govtnz website",
     "sync-docs": "cp ./README.md ./packages/govtnz-ds/README.md && cp ./CONTRIBUTING.md ./packages/govtnz-ds/CONTRIBUTING.md && cp ./CHANGELOG.md ./packages/govtnz-ds/CHANGELOG.md",
-    "clear-cache": "yarn workspace @govtnz/ds clear-cache && yarn workspace @govtnz/ds-website clear-cache && rimraf ./node_modules"
+    "cache-clear": "yarn workspace @govtnz/ds clear-cache && yarn workspace @govtnz/ds-website clear-cache && rimraf ./node_modules"
   },
   "devDependencies": {
     "rimraf": "^2.6.3"

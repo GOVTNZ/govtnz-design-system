@@ -74,7 +74,7 @@
     "format": "prettier --write \"src/**/*.js\"",
     "validate-build": "yarn jest -- --runInBand",
     "test:typescript": "exit 0",
-    "clear-cache": "rimraf ./public/ && rimraf ./.cache"
+    "cache-clear": "rimraf ./public/ && rimraf ./.cache"
   },
   "repository": {
     "type": "git",

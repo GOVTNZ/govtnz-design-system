@@ -157,7 +157,6 @@
   outline: 3px solid transparent;
   outline-offset: 3px;
   box-shadow: 0 0 0 3px #b53cde;
-  box-shadow: 0 0 0 3px var(--g-theme-color-brand-1, #b53cde);
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

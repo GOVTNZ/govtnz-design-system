@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #ffbf47;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #6f777b;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  @media print {\n    font-family: sans-serif;\n  }\n  :focus {\n    outline: 3px solid #b53cde;\n    outline-offset: 0;\n  }\n  :link {\n    color: #005ea5;\n  }\n  :visited {\n    color: #4c2c92;\n  }\n  :hover {\n    color: #2b8cc4;\n  }\n  :active {\n    color: #2b8cc4;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n  :link,\n  :visited,\n  :hover,\n  :active {\n    color: #6f777b;\n  }\n  :focus {\n    color: #0b0c0c;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

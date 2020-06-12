@@ -9,11 +9,16 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     inline: { type: Boolean, default: false, required: false },
+    big: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Radio components" }
   },
   computed: {
     computed__class() {
-      return "g-radios" + (this.inline ? " g-radios--inline" : "");
+      return (
+        "g-radios" +
+        (this.inline ? " g-radios--inline" : "") +
+        (this.big ? " g-radios--big" : "")
+      );
     }
   }
 });

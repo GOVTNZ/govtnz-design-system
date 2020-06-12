@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+  <head>
+    <title>Example: Error state #2 (Radio buttons) | Design System - Alpha | NZ Government</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="../react-16.13.1.production.min.js"></script>
+    <script src="../react-dom-16.13.1.production.min.js"></script>
+    <script src="./Radios__example10.js"></script>
+    <link rel="stylesheet" href="../css/Button.css" />
+    <link rel="stylesheet" href="../IframePage.css" />
+    <link rel="stylesheet" href="../css/FieldsetBlock.css"><link rel="stylesheet" href="../css/H1.css"><link rel="stylesheet" href="../css/Radios.css"><link rel="stylesheet" href="../css/RadioBlock.css">
+  </head>
+  <body>
+    <noscript>
+      This example originates from the
+      <a href="./Radios"
+        >Radio buttons components page</a
+      >
+      of the
+      <a href="/">New Zealand Government design system</a>.
+    </noscript>
+    <div id="iframed-message" style="display:none">
+      This example originates from the
+      <a href="./Radios"
+        >Radio buttons components page</a
+      >
+      of the
+      <a href="/">New Zealand Government design system</a>.
+    </div>
+    <div id="root" class="css-changes-for-example-only">
+      <div class="g-fieldsetBlock-form-group g-fieldsetBlock-form-group--error"> <fieldset aria-describedby="hintId5344 errorId525" class="g-fieldsetBlock-fieldset"> <legend class="g-fieldsetBlock-fieldset__legend"> <h1 class="g-heading g-heading-l" id="nameChangeId8"> <!-- -->Have you changed your name?<!-- --> </h1> </legend> <!-- --> <div class="g-fieldsetBlock-hint" id="hintId5344"> <p>This includes changing your last name or spelling your name differently.</p> </div> <!-- --> <!-- --> <div class="g-fieldsetBlock-error-message" id="errorId525"> <span class="g-fieldsetBlock-visually-hidden"> <!-- -->Error:<!-- --> </span> <!-- -->Select &#x27;yes&#x27; if you have changed your name<!-- --> </div> <!-- --> <div><div class="g-radios g-radios--inline"> <div class="g-radios__item"> <input type="radio" class="g-radios__input" id="anyRadioId9" name="nameChange5" value="true"/> <label class="g-radios__label" for="anyRadioId9"> <!-- -->Yes<!-- --> </label> <!-- --> </div><div class="g-radios__item"> <input type="radio" class="g-radios__input" id="anyRadioId10234" name="nameChange5" value="false"/> <label class="g-radios__label" for="anyRadioId10234"> <!-- -->No<!-- --> </label> <!-- --> </div> </div></div> </fieldset> </div>
+    </div>
+    <script>
+      function afterRender() {
+        updateParentPageLink();
+        var isIframed = window.self !== window.top;
+        if (!isIframed) {
+          console.log('Iframe has no parent');
+          // then this page is not currently iframed
+          return;
+        }
+
+        // When the page is iframed it should not have '| NZ Government',
+        // but when viewed directly it should retain it.
+        // If it's made it this far then it's iframed.
+        const titleSuffix = ' | NZ Government';
+        if (window.document.title.indexOf(titleSuffix) === -1) {
+          console.error(
+            'Could not find window.document.title with ',
+            titleSuffix
+          );
+          return;
+        }
+        window.document.title = window.document.title.replace(titleSuffix, '');
+
+        window.addEventListener('resize', updateIframeSize, false);
+        window.addEventListener('orientationchange', updateIframeSize, false);
+        [50, 100].forEach(function(ms) {
+          // temporary workaround to prevent race condition where the parent
+          // hasn't yet registered addEventListener('message')
+          // FIXME
+          setTimeout(updateIframeSize, ms);
+        });
+        updateIframeSize();
+      }
+
+      function updateIframeSize() {
+        var selector = '#root';
+        var exampleVisual = document.querySelector(selector);
+        if (!exampleVisual) {
+          console.error('Problem finding ', selector);
+          return;
+        }
+        var data = {
+          resizeById: "iframe_componentsRadios10",
+          width: document.body.offsetWidth,
+          height: exampleVisual && exampleVisual.offsetHeight,
+        };
+        window.parent.postMessage(data, window.location.origin);
+      }
+
+      function updateParentPageLink() {
+        var isIframed = window.self !== window.top;
+        var selector = '#iframed-message';
+        var iframedMessage = document.querySelector(selector);
+        if (!iframedMessage) {
+          console.error('Problem finding ', selector);
+          return;
+        }
+        iframedMessage.style.display = isIframed ? 'none' : 'block';
+      }
+    </script>
+  </body>
+</html>

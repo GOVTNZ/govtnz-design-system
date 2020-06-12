@@ -195,7 +195,7 @@ export default Vue.extend({
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #ffbf47;
+  box-shadow: 0 0 0 3px #b53cde;
 }
 .g-checkboxes__input:checked + .g-checkboxes__label::after,
 .g-checkboxes__input.\:checked + .g-checkboxes__label::after {

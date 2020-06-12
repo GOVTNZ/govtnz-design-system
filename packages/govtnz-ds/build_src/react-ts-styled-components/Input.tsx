@@ -48,7 +48,7 @@ font-size: 14pt;
 line-height: 1.15;;
 }
 :focus{
-outline: 3px solid #ffbf47;
+outline: 3px solid #b53cde;
 outline-offset: 0;
 }
 ::-webkit-outer-spin-button,::-webkit-inner-spin-button{

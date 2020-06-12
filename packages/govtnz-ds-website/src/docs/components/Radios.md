@@ -29,6 +29,58 @@ Interact with each example to see how it works.
     </Example>
 </ExampleContainer>
 
+## Bigger radios
+
+<ExampleContainer>
+    <Example title="Example: Radio buttons">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
+            <Radios inline big>
+                <RadioBlock label="Yes" id="anyRadioId" 
+                value="true" name="nameChange1" labelId="labelId1" />
+                <RadioBlock label="No" id="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" />
+            </Radios>
+        </FieldsetBlock>
+    </Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <ExampleHeading>Error</ExampleHeading>
+    <Example title="Example: Error state #1 (Radio buttons)">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
+            <Radios big>
+                <RadioBlock label="Yes" id="anyRadioId9234" 
+                value="true" name="nameChange5" labelId="labelId9" />
+                <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
+            </Radios>
+        </FieldsetBlock>
+    </Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <Example title="Example: Radio buttons">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
+            <Radios big>
+                <RadioBlock label="Yes" id="anyRadioId" 
+                value="true" name="nameChange1" labelId="labelId1" />
+                <RadioBlock label="No" id="anyRadioId255" value="false" name="nameChange1" labelId="labelId255" />
+            </Radios>
+        </FieldsetBlock>
+    </Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <ExampleHeading>Error</ExampleHeading>
+    <Example title="Example: Error state #1 (Radio buttons)">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
+            <Radios inline big>
+                <RadioBlock label="Yes" id="anyRadioId9234" 
+                value="true" name="nameChange5" labelId="labelId9" />
+                <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
+            </Radios>
+        </FieldsetBlock>
+    </Example>
+</ExampleContainer>
+
 ## When to use it
 
 Use the radio buttons component when users can only select one option from a list.

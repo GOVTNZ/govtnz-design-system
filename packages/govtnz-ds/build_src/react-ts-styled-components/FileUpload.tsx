@@ -85,7 +85,7 @@ const StyledInput = styled.input`
     color: #000000;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
 `;

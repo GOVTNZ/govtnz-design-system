@@ -25,7 +25,7 @@ export default Vue.extend({
   font-weight: 700;
 }
 .g-skipLink-error-summary__list a:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 .g-skipLink-error-summary__list a:link,
@@ -107,9 +107,9 @@ export default Vue.extend({
   }
 }
 .g-skip-link:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #b53cde;
 }
 .g-skip-link:link,
 .g-skip-link:visited,

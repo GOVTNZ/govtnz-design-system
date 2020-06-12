@@ -11,8 +11,8 @@ var react_1 = __importDefault(require("react"));
 var styled_components_1 = __importDefault(require("styled-components"));
 var StyledDiv = styled_components_1.default.div(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n  margin-top: 0px;\n"], ["\n  @media (min-width: 40.0625em) {\n    :after {\n      content: \"\";\n      display: block;\n      clear: both;\n    }\n  }\n  margin-top: 0px;\n"])));
 var Radios = function (_a) {
-    var inline = _a.inline, children = _a.children;
-    return (react_1.default.createElement(StyledDiv, { inline: inline },
+    var inline = _a.inline, big = _a.big, children = _a.children;
+    return (react_1.default.createElement(StyledDiv, { inline: inline, big: big },
         " ",
         children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Radio components")),
         " "));

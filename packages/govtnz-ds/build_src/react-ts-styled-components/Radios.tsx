@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 type Props = {
   inline?: boolean;
+  big?: boolean;
   children?: React.ReactNode;
 };
 
@@ -17,8 +18,8 @@ const StyledDiv = styled.div`
   margin-top: 0px;
 `;
 
-const Radios = ({ inline, children }: Props) => (
-  <StyledDiv inline={inline}>
+const Radios = ({ inline, big, children }: Props) => (
+  <StyledDiv inline={inline} big={big}>
     {" "}
     {children !== undefined ? (
       children

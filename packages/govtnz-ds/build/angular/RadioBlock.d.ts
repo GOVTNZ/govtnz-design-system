@@ -1,5 +1,4 @@
 export declare class AppComponent {
-    errorId: boolean | undefined;
     id: string | undefined;
     hintId: string | undefined;
     disabled: boolean | undefined;

@@ -2,11 +2,16 @@ import React from "react";
 
 type Props = {
   inline?: boolean;
+  big?: boolean;
   children?: React.ReactNode;
 };
 
-const Radios = ({ inline, children }: Props) => (
-  <div className={`g-radios${inline ? " g-radios--inline" : ""}`}>
+const Radios = ({ inline, big, children }: Props) => (
+  <div
+    className={`g-radios${inline ? " g-radios--inline" : ""}${
+      big ? " g-radios--big" : ""
+    }`}
+  >
     {" "}
     {children !== undefined ? (
       children

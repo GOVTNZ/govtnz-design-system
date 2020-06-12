@@ -9,7 +9,7 @@ const StyledA = styled.a`
     font-family: sans-serif;
   }
   :focus {
-    outline: 3px solid #ffbf47;
+    outline: 3px solid #b53cde;
     outline-offset: 0;
   }
   :link {

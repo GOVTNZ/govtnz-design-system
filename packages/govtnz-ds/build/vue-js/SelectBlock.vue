@@ -113,7 +113,7 @@ export default Vue.extend({
   }
 }
 .g-selectBlock-select:focus {
-  outline: 3px solid #ffbf47;
+  outline: 3px solid #b53cde;
   outline-offset: 0;
 }
 .g-selectBlock-select:focus::-ms-value {
