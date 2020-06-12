@@ -29,7 +29,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
         className: "example__iframe",
         src:"/components/FileUpload__example0.html",
         title:"Example: File upload",
-        height: 165
+        height: 200
       }}></Example>
 </ExampleContainer>
 
