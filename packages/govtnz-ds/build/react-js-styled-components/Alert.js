@@ -24,7 +24,7 @@ function _templateObject16() {
 }
 
 function _templateObject15() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject15 = function _templateObject15() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject14() {
 }
 
 function _templateObject13() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject13 = function _templateObject13() {
     return data;
@@ -64,7 +64,7 @@ function _templateObject12() {
 }
 
 function _templateObject11() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject11 = function _templateObject11() {
     return data;
@@ -84,7 +84,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -104,7 +104,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -124,7 +124,7 @@ function _templateObject6() {
 }
 
 function _templateObject5() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject5 = function _templateObject5() {
     return data;
@@ -144,7 +144,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -164,7 +164,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: relative;\n  background: #f4f4f4;\n  color: #2a2a2a;\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n  border-radius: 4px;\n  border: solid 1px #d3d3d3;\n  ::before {\n    content: \"\";\n    display: block;\n    width: 64px;\n    position: absolute;\n    top: 0px;\n    bottom: 0px;\n    left: 0px;\n    border-top-left-radius: 4px;\n    border-bottom-left-radius: 4px;\n  }\n  ::before {\n    background-color: #1f1bfb;\n  }\n  ::before {\n    background-color: #d47500;\n  }\n  ::before {\n    background-color: #088a20;\n  }\n  ::before {\n    background-color: #b10e1e;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

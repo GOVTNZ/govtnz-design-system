@@ -41,7 +41,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Header__example0.html",
         title:"Example: Header containing a MainNav",
-        height: 200
+        height: 328
       }}></Example>
 </ExampleContainer>
 

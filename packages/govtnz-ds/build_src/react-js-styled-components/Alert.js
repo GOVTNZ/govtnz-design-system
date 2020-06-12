@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -43,6 +44,7 @@ const StyledSvg = styled.svg`
 const StyledDiv2 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -82,6 +84,7 @@ const StyledSvg2 = styled.svg`
 const StyledDiv3 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -121,6 +124,7 @@ const StyledSvg3 = styled.svg`
 const StyledDiv4 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -160,6 +164,7 @@ const StyledSvg4 = styled.svg`
 const StyledDiv5 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -199,6 +204,7 @@ const StyledSvg5 = styled.svg`
 const StyledDiv6 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -238,6 +244,7 @@ const StyledSvg6 = styled.svg`
 const StyledDiv7 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
@@ -277,6 +284,7 @@ const StyledSvg7 = styled.svg`
 const StyledDiv8 = styled.div`
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;

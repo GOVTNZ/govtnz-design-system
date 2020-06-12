@@ -240,6 +240,7 @@ export default Vue.extend({
 .g-alert {
   position: relative;
   background: #f4f4f4;
+  color: #2a2a2a;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;

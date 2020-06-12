@@ -31,7 +31,7 @@ const PageContent = (props) => <React.Fragment><p>The select component (sometime
         className: "example__iframe",
         src:"/components/Select__example0.html",
         title:"Example: Select",
-        height: 200
+        height: 149
       }}></Example>
 </ExampleContainer>
 
