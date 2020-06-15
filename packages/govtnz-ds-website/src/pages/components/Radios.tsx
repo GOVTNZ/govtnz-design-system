@@ -163,6 +163,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 </ExampleContainer>
 
 <p>If one or more of your radio button options is different from the others, it can help users if you separate them using a text divider. The text is usually the word ‘or’.</p>
+<h2 id="large-radio-buttons">Large radio buttons</h2>
+<p>The default radio button size should be used in nearly all cases. However, larger versions work well on pages where it’s helpful to make them more visually prominent.</p>
+<p>For example if you are asking users a single question on a page, larger buttons are easier to see and interact with.</p>
 <h2 id="error-messages">Error messages</h2>
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
 <ExampleContainer>

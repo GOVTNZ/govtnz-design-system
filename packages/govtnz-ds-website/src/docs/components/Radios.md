@@ -170,6 +170,12 @@ You can add hints to radio button items to provide more information about the op
 
 If one or more of your radio button options is different from the others, it can help users if you separate them using a text divider. The text is usually the word ‘or’.
 
+## Large radio buttons
+
+The default radio button size should be used in nearly all cases. However, larger versions work well on pages where it’s helpful to make them more visually prominent.
+
+For example if you are asking users a single question on a page, larger buttons are easier to see and interact with.
+
 ## Error messages
 
 Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.
