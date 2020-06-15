@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Alert from '@govtnz/ds/build/react-ts/Alert';import H2 from '@govtnz/ds/build/react-ts/H2';import P from '@govtnz/ds/build/react-ts/P';import Ul from '@govtnz/ds/build/react-ts/Ul';import Li from '@govtnz/ds/build/react-ts/Li';import A from '@govtnz/ds/build/react-ts/A';
+import Alert from '@govtnz/ds/build/react-ts/Alert';import H2 from '@govtnz/ds/build/react-ts/H2';import P from '@govtnz/ds/build/react-ts/P';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,24 +13,10 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example title: Warning alert - Static" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Info: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on 1.</P>
-        </WrappedAlert>
-         <WrappedAlert Component={Alert} level="warning" headingId="heading2" {...onChangeGenerator({})}>
-            <H2 id="heading2" {...onChangeGenerator({})}>Warning: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on 2.</P>
-        </WrappedAlert>
-         <WrappedAlert Component={Alert} level="success" headingId="heading3" {...onChangeGenerator({})}>
-            <H2 id="heading3" {...onChangeGenerator({})}>Success: You are alive</H2>
-            <P {...onChangeGenerator({})}>Some text describing what's going on 3.</P>
-        </WrappedAlert>
-         <WrappedAlert Component={Alert} level="error" headingId="heading4" {...onChangeGenerator({})}>
-            <H2 id="heading4" {...onChangeGenerator({})}>Error: You are alive</H2>
-            <Ul bulleted {...onChangeGenerator({})}>
-                <Li {...onChangeGenerator({})}><P {...onChangeGenerator({})}><A href="#" {...onChangeGenerator({})}>Error in this field 4</A></P></Li>
-            </Ul>
+            <H2 id="heading1" {...onChangeGenerator({})}>Note: Nominations are currently closed</H2>
+            <P {...onChangeGenerator({})}>You can nominate a new provider at the start of the next financial year.</P>
         </WrappedAlert>
     </Example>);
 
