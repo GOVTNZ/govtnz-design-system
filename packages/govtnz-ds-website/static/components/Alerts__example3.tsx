@@ -13,10 +13,10 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example title: Information alert - Live" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example title: Warning alert - Live" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} mode="live" level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Note: There are only 3 spaces remaining</H2>
-            <P {...onChangeGenerator({})}>Complete your order to reserve your place on the course.</P>
+            <H2 id="heading1" {...onChangeGenerator({})}>Warning: The option you’ve selected is for people aged 65 or over only</H2>
+            <P {...onChangeGenerator({})}>You’ll need to provide evidence of your date of birth when you submit your application.</P>
         </WrappedAlert>
     </Example>);
 

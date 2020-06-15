@@ -13,10 +13,10 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example title: Information alert - Live" {...onChangeGenerator({})}>
-        <WrappedAlert Component={Alert} mode="live" level="info" headingId="heading1" {...onChangeGenerator({})}>
-            <H2 id="heading1" {...onChangeGenerator({})}>Note: There are only 3 spaces remaining</H2>
-            <P {...onChangeGenerator({})}>Complete your order to reserve your place on the course.</P>
+var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
+        <WrappedAlert Component={Alert} level="success" headingId="heading3" {...onChangeGenerator({})}>
+            <H2 id="heading3" {...onChangeGenerator({})}>Success: Your account has been activated</H2>
+            <P {...onChangeGenerator({})}>You can now access all features of the service.</P>
         </WrappedAlert>
     </Example>);
 

@@ -12,18 +12,18 @@
       { "id": "Button", "name": "Button", "stable": true },
       { "id": "Fieldset", "name": "Fieldset", "stable": true },
       { "id": "Textarea", "name": "Textarea", "stable": true },
-      { "id": "Header", "name": "Header", "stable": true }
+      { "id": "Header", "name": "Header", "stable": true },
+      {
+        "id": "Alerts",
+        "name": "Page alerts",
+        "stable": true
+      }
     ]
   },
   {
     "title": "Coming soon",
     "stable": false,
     "items": [
-      {
-        "id": "Alerts",
-        "name": "Alerts",
-        "stable": false
-      },
       {
         "id": "Footer",
         "name": "Footer",
