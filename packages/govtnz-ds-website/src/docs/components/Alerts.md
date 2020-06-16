@@ -39,7 +39,7 @@ Information and warning alerts can be used in a wide range of scenarios. Success
 
 Additionally, when the new page or view is first loaded, the Design System user must ensure that focus is moved to the success or error summary alert. This will cause it to be announced automatically by screen reader software, letting the user know the status of their form submission and what, if anything, they need to do to continue.
 
-The Design System user should also update the `title` element to start with “Success:” or “Error:” so that the feedback is provided in the page’s name.
+The Design System user should also update the `title` element to start with "Success:" or "Error:" so that the feedback is provided in the page’s name.
 
 ### Live alerts
 
@@ -103,7 +103,7 @@ Success alerts are always static, as they are included as part of a new page or 
 To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:
 
 - focus is moved to the alert (the alert container is preset with `tabindex=”-1”` to make it programmatically focusable)
-- the document’s `title` starts with “Success:”.
+- the document’s `title` starts with "Success:".
 
 <ExampleContainer>
     <Example title="Example: Alerts (static)">
@@ -124,12 +124,12 @@ Form errors must be presented using:
 - individual error messages next to each form field with an error.
 
 The error summary should be added at the top of the page above the form and link to each form field that has an error.
-Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.
+Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a [change of context](https://www.w3.org/TR/WCAG21/#dfn-change-of-context) .
 
 To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:
 
 - focus is moved to the alert (the alert container is preset with `tabindex=”-1”` to make it programmatically focusable)
-- the document’s `title` starts with the word, “Error: “.
+- the document’s `title` starts with the word, "Error:".
 
 <ExampleContainer>
     <Example title="Example title: Error summary alert">
@@ -149,9 +149,9 @@ To orient screen reader users and others to the alert, the Design System user mu
 
 Specific error messages must be provided for specific error states. Style error messages as shown in the ‘Error messages’ sections of the guidance for the following form components:
 
-- Text input
-- Radio buttons
-- Date input
+- [Text input](https://design-system-alpha.digital.govt.nz/components/Input/)
+- [Radio buttons](https://design-system-alpha.digital.govt.nz/components/Radios/)
+- [Date input](https://design-system-alpha.digital.govt.nz/components/Date/)
 
 ## Credit
 

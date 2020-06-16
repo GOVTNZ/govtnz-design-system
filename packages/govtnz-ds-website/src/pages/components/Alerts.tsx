@@ -55,7 +55,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <p>Static alerts are added as part of a new page or view after a change of context, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.</p>
 <p>Information and warning alerts can be used in a wide range of scenarios. Success and error summary alerts are only ever used following a form submission, which is a change of context for the user. These alerts will always be static and part of a new page or view when it is loaded.</p>
 <p>Additionally, when the new page or view is first loaded, the Design System user must ensure that focus is moved to the success or error summary alert. This will cause it to be announced automatically by screen reader software, letting the user know the status of their form submission and what, if anything, they need to do to continue.</p>
-<p>The Design System user should also update the <code>title</code> element to start with “Success:” or “Error:” so that the feedback is provided in the page’s name.</p>
+<p>The Design System user should also update the <code>title</code> element to start with &quot;Success:&quot; or &quot;Error:&quot; so that the feedback is provided in the page’s name.</p>
 <h3 id="live-alerts">Live alerts</h3>
 <p>Live alerts are dynamically inserted into an existing page or view as an immediate response to a user’s action, such as checking a checkbox. They’re used where the change to the page’s content is not significant enough to constitute a change of context.</p>
 <p>When implemented as a live alert, the alert container needs to be empty and present in the document object model (DOM) when the page or view is first loaded. The actual alert message is then dynamically inserted into the container following whatever user action triggers the alert.</p>
@@ -69,7 +69,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example0.html",
         title:"Example title: Warning alert - Static",
-        height: 228
+        height: 198
       }}></Example>
 </ExampleContainer>
 
@@ -79,7 +79,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example1.html",
         title:"Example title: Information alert - Live",
-        height: 167
+        height: 99
       }}></Example>
 </ExampleContainer>
 
@@ -91,7 +91,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example2.html",
         title:"Example title: Warning alert - Static",
-        height: 228
+        height: 196
       }}></Example>
 </ExampleContainer>
 
@@ -101,7 +101,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example3.html",
         title:"Example title: Warning alert - Live",
-        height: 167
+        height: 99
       }}></Example>
 </ExampleContainer>
 
@@ -111,7 +111,7 @@ Success alerts are always static, as they are included as part of a new page or 
 <p>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</p>
 <Ul bulleted>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
-<Li>the document’s <code>title</code> starts with “Success:”.</Li>
+<Li>the document’s <code>title</code> starts with &quot;Success:&quot;.</Li>
 </Ul>
 <ExampleContainer>
     <Example  code={components__Alerts[4]} iframeProps={{
@@ -119,7 +119,7 @@ Success alerts are always static, as they are included as part of a new page or 
         className: "example__iframe",
         src:"/components/Alerts__example4.html",
         title:"Example: Alerts (static)",
-        height: 228
+        height: 198
       }}></Example>
 </ExampleContainer>
 
@@ -131,11 +131,11 @@ Success alerts are always static, as they are included as part of a new page or 
 <Li>individual error messages next to each form field with an error.</Li>
 </Ul>
 <p>The error summary should be added at the top of the page above the form and link to each form field that has an error.
-Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
+Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a <a href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">change of context</a> .</p>
 <p>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</p>
 <Ul bulleted>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
-<Li>the document’s <code>title</code> starts with the word, “Error: “.</Li>
+<Li>the document’s <code>title</code> starts with the word, &quot;Error:&quot;.</Li>
 </Ul>
 <ExampleContainer>
     <Example  code={components__Alerts[5]} iframeProps={{
@@ -143,16 +143,16 @@ Error summary alerts are always static, as they are included as part of a new pa
         className: "example__iframe",
         src:"/components/Alerts__example5.html",
         title:"Example title: Error summary alert",
-        height: 292
+        height: 234
       }}></Example>
 </ExampleContainer>
 
 <h2 id="error-messages">Error messages</h2>
 <p>Specific error messages must be provided for specific error states. Style error messages as shown in the ‘Error messages’ sections of the guidance for the following form components:</p>
 <Ul bulleted>
-<Li>Text input</Li>
-<Li>Radio buttons</Li>
-<Li>Date input</Li>
+<Li><a href="https://design-system-alpha.digital.govt.nz/components/Input/">Text input</a></Li>
+<Li><a href="https://design-system-alpha.digital.govt.nz/components/Radios/">Radio buttons</a></Li>
+<Li><a href="https://design-system-alpha.digital.govt.nz/components/Date/">Date input</a></Li>
 </Ul>
 <h2 id="credit">Credit</h2>
 <p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a> .</p>
