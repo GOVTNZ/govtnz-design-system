@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Textarea__example0.html",
         title:"Example: Textarea",
-        height: 152
+        height: 265
       }}></Example>
 </ExampleContainer>
 
@@ -67,7 +67,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Textarea__example1.html",
         title:"Example: Textarea error",
-        height: 170
+        height: 305
       }}></Example>
 </ExampleContainer>
 
