@@ -68,7 +68,7 @@ const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to sel
 <Li>toggle a single option on or off.</Li>
 </Ul>
 <h2 id="when-not-to-use-it">When not to use it</h2>
-<p>Do not use the checkboxes component if users can only choose one option from a selection. In this case, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
+<p>Do not use the <a href="https://design-system-alpha.digital.govt.nz/components/Checkboxes/">checkboxes component</a> if users can only choose one option from a selection. In this case, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>Checkboxes are grouped together in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> that describes them, as shown in the examples on this page. This is usually a question, like ‘Who are your providers?’.</p>
 <p>If you are asking just one question per page, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading. This is good practice because users of screen readers will only hear the contents once.</p>
