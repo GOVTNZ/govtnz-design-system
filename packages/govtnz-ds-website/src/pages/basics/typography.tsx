@@ -73,7 +73,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example3.html",
         title:"Example: Headings with captions inside the h1 (Typography)",
-        height: 194
+        height: 172
       }}></Example>
 </ExampleContainer>
 

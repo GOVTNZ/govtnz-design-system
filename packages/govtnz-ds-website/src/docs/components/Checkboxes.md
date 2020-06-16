@@ -45,7 +45,7 @@ Use the checkboxes component when you need to help users:
 
 ## When not to use it
 
-Do not use the checkboxes component if users can only choose one option from a selection. In this case, use [radio buttons](/components/Radios) instead.
+Do not use the [checkboxes component](https://design-system-alpha.digital.govt.nz/components/Checkboxes/) if users can only choose one option from a selection. In this case, use [radio buttons](/components/Radios) instead.
 
 ## How it works
 
