@@ -47,7 +47,7 @@ test('Validate not ES6 (IE11 needs ES5)', async () => {
   expect(jsPaths.length).toBeGreaterThan(10);
 
   await Promise.all(
-    jsPaths.map(async jsPath => {
+    jsPaths.map(async (jsPath) => {
       const data = await fs.promises.readFile(jsPath, { encoding: 'utf-8' });
       try {
         await validateNotES6(data, jsPath, 'jest');
@@ -92,10 +92,10 @@ async function validateHTMLErrors(data, fileId) {
   const errors =
     result &&
     result.messages
-      .filter(item => item.type === 'error')
+      .filter((item) => item.type === 'error')
       .filter(
-        item =>
-          !falsePositives.some(falsePositive => {
+        (item) =>
+          !falsePositives.some((falsePositive) => {
             return item.message.trim().startsWith(falsePositive.message.trim());
           })
       );
@@ -134,9 +134,9 @@ test('Validate that HTML has a single id="main-heading"', async () => {
     { nodir: true }
   );
 
-  const htmlPaths = allHtmlPaths.filter(
-    anHtmlPath => !anHtmlPath.includes('__example')
-  );
+  const htmlPaths = allHtmlPaths
+    .filter((anHtmlPath) => !anHtmlPath.includes('__example'))
+    .filter((anHtmlPath) => !anHtmlPath.includes('__examples')); // for custom TSX pages that want markdown
 
   jest.setTimeout(htmlPaths.length * 1000);
 
@@ -144,7 +144,7 @@ test('Validate that HTML has a single id="main-heading"', async () => {
   expect(htmlPaths.length).toBeGreaterThan(10);
 
   await Promise.all(
-    htmlPaths.map(async htmlPath => {
+    htmlPaths.map(async (htmlPath) => {
       let data;
       try {
         data = await fs.promises.readFile(htmlPath, {
