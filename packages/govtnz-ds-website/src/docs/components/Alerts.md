@@ -33,7 +33,7 @@ Information and warning alert messages can appear at the top of the page or in t
 
 ### Static alerts
 
-Static alerts are added as part of a new page or view after a change of context, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.
+Static alerts are added as part of a new page or view after a [change of context](https://www.w3.org/TR/WCAG21/#dfn-change-of-context), such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.
 
 Information and warning alerts can be used in a wide range of scenarios. Success and error summary alerts are only ever used following a form submission, which is a change of context for the user. These alerts will always be static and part of a new page or view when it is loaded.
 
@@ -124,7 +124,7 @@ Form errors must be presented using:
 - individual error messages next to each form field with an error.
 
 The error summary should be added at the top of the page above the form and link to each form field that has an error.
-Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a [change of context](https://www.w3.org/TR/WCAG21/#dfn-change-of-context) .
+Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.
 
 To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:
 

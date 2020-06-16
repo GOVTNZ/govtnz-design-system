@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <p>Success and error summary alert messages appear at the top of a page following a submit action. They should give users clear, descriptive next steps.</p>
 <p>Information and warning alert messages can appear at the top of the page or in the body of the content. If used in the body, alert messages should appear next to the content they relate to.</p>
 <h3 id="static-alerts">Static alerts</h3>
-<p>Static alerts are added as part of a new page or view after a change of context, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.</p>
+<p>Static alerts are added as part of a new page or view after a <a href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">change of context</a>, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.</p>
 <p>Information and warning alerts can be used in a wide range of scenarios. Success and error summary alerts are only ever used following a form submission, which is a change of context for the user. These alerts will always be static and part of a new page or view when it is loaded.</p>
 <p>Additionally, when the new page or view is first loaded, the Design System user must ensure that focus is moved to the success or error summary alert. This will cause it to be announced automatically by screen reader software, letting the user know the status of their form submission and what, if anything, they need to do to continue.</p>
 <p>The Design System user should also update the <code>title</code> element to start with &quot;Success:&quot; or &quot;Error:&quot; so that the feedback is provided in the page’s name.</p>
@@ -131,7 +131,7 @@ Success alerts are always static, as they are included as part of a new page or 
 <Li>individual error messages next to each form field with an error.</Li>
 </Ul>
 <p>The error summary should be added at the top of the page above the form and link to each form field that has an error.
-Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a <a href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">change of context</a> .</p>
+Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
 <p>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</p>
 <Ul bulleted>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
