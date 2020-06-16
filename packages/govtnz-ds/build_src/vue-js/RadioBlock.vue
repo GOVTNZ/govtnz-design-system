@@ -125,13 +125,14 @@ export default Vue.extend({
   display: block;
   position: relative;
   min-height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding: 0 0 0 30px;
   clear: left;
 }
 .g-radios--big .g-radios__item {
   min-height: 40px;
   padding: 0 0 0 40px;
+  margin-bottom: 10px;
 }
 @media print {
   .g-radios__item {
@@ -199,11 +200,11 @@ export default Vue.extend({
 .g-radios__input + .g-radios__label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 6px;
+  left: 6px;
   width: 0;
   height: 0;
-  border: 7px solid currentColor;
+  border: 6px solid currentColor;
   border-radius: 50%;
   opacity: 0;
   background: currentColor;
