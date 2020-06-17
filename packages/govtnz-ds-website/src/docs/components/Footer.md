@@ -24,11 +24,11 @@ Please note that only the `Footer` component is part of the example. The other H
             </FlexContainer>
             <Subfooter>
                 <FlexContainer width="fixed">
-                    <FlexRow xsReversed="true" smReversed="true" mdReversed="false" lgReversed="false"
-                        <FlexColumn xs="12" sm="12" md="5" lg="5" className="example-subfooter-column example-subfooter-copyright">
+                    <FlexRow xsReversed="true" smReversed="false" mdReversed="false" lgReversed="false"  xsVerticalAlign="middle" smVerticalAlign="middle" mdVerticalAlign="middle" lgVerticalAlign="middle" className="example-subfooter-row">
+                        <FlexColumn xs="12" sm="5" md="5" lg="5" className="example-subfooter-copyright">
                             &copy; Crown Copyright 2020
                         </FlexColumn>
-                        <FlexColumn xs="12" sm="12" md="7" lg="7" className="example-subfooter-column example-align-right">
+                        <FlexColumn xs="12" sm="7" md="7" lg="7" xsHorizontalAlign="start" smHorizontalAlign="end" mdHorizontalAlign="end" lgHorizontalAlign="end">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="230"
