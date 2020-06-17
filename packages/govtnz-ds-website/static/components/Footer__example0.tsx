@@ -127,7 +127,7 @@ class WrappedMainNav extends React.Component<
 
     return (
       <MobileMenuContext.Consumer>
-        {value => {
+        {(value) => {
           const Component = props.Component;
           const newProps = {
             ...props,
@@ -183,9 +183,7 @@ class WrappedAlert extends React.Component<
     super(props);
     this.state = {
       isChecked: false,
-      id: `id${Math.random()
-        .toString()
-        .replace(/[^0-9]/g, '')}`,
+      id: `id${props.headingId.replace(/[^a-zA-Z0-9]/g, '')}`,
     };
 
     this.toggle = this.toggle.bind(this);
