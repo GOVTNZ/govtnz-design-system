@@ -17,7 +17,7 @@ import P from '@govtnz/ds/build/react-js/P';
 import '@govtnz/ds/build/css/P.css';
 
 import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
-import '@govtnz/ds/build/css/inputBlock.css';
+import '@govtnz/ds/build/scss/InputBlock.scss';
 
 import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';
 import '@govtnz/ds/build/css/TextareaBlock.css';
