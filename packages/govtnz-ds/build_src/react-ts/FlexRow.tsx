@@ -5,6 +5,10 @@ type Props = {
   smVerticalAlign?: "top" | "middle" | "bottom";
   mdVerticalAlign?: "top" | "middle" | "bottom";
   lgVerticalAlign?: "top" | "middle" | "bottom";
+  xsReversed?: "true" | "false";
+  smReversed?: "true" | "false";
+  mdReversed?: "true" | "false";
+  lgReversed?: "true" | "false";
   isReversed?: boolean;
   children?: React.ReactNode;
 };
@@ -29,7 +33,11 @@ const constants = {
     top: "g-flex-top-lg",
     middle: "g-flex-middle-lg",
     bottom: "g-flex-bottom-lg"
-  }
+  },
+  xsReversed: { true: "g-flex-reversed-xs", false: "g-flex-not-reversed-xs" },
+  smReversed: { true: "g-flex-reversed-sm", false: "g-flex-not-reversed-sm" },
+  mdReversed: { true: "g-flex-reversed-md", false: "g-flex-not-reversed-md" },
+  lgReversed: { true: "g-flex-reversed-lg", false: "g-flex-not-reversed-lg" }
 };
 
 const FlexRow = ({
@@ -37,6 +45,10 @@ const FlexRow = ({
   smVerticalAlign,
   mdVerticalAlign,
   lgVerticalAlign,
+  xsReversed,
+  smReversed,
+  mdReversed,
+  lgReversed,
   isReversed,
   children
 }: Props) => (
@@ -56,6 +68,22 @@ const FlexRow = ({
     }${
       constants.lgVerticalAlign[lgVerticalAlign] !== undefined
         ? " " + constants.lgVerticalAlign[lgVerticalAlign]
+        : ""
+    }${
+      constants.xsReversed[xsReversed] !== undefined
+        ? " " + constants.xsReversed[xsReversed]
+        : ""
+    }${
+      constants.smReversed[smReversed] !== undefined
+        ? " " + constants.smReversed[smReversed]
+        : ""
+    }${
+      constants.mdReversed[mdReversed] !== undefined
+        ? " " + constants.mdReversed[mdReversed]
+        : ""
+    }${
+      constants.lgReversed[lgReversed] !== undefined
+        ? " " + constants.lgReversed[lgReversed]
         : ""
     }${isReversed ? " g-flex-reverse" : ""}`}
   >

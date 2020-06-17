@@ -12,8 +12,8 @@ const StyledDiv = styled.div`
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  flex-direction: row;
   ${props =>
     props.xsVerticalAlign === "top" &&
     styled.css`
@@ -50,6 +50,9 @@ const StyledDiv = styled.div`
         -ms-flex-align: end;
         align-items: flex-end;
       `};
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
   }
   @media only screen and (min-width: 64em) {
     ${props =>
@@ -73,6 +76,9 @@ const StyledDiv = styled.div`
         -ms-flex-align: end;
         align-items: flex-end;
       `};
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
   }
   @media only screen and (min-width: 75em) {
     ${props =>
@@ -96,6 +102,9 @@ const StyledDiv = styled.div`
         -ms-flex-align: end;
         align-items: flex-end;
       `};
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    flex-direction: row;
   }
 `;
 
@@ -104,6 +113,10 @@ const FlexRow = ({
   smVerticalAlign,
   mdVerticalAlign,
   lgVerticalAlign,
+  xsReversed,
+  smReversed,
+  mdReversed,
+  lgReversed,
   isReversed,
   children
 }) => (
@@ -112,6 +125,10 @@ const FlexRow = ({
     smVerticalAlign={smVerticalAlign}
     mdVerticalAlign={mdVerticalAlign}
     lgVerticalAlign={lgVerticalAlign}
+    xsReversed={xsReversed}
+    smReversed={smReversed}
+    mdReversed={mdReversed}
+    lgReversed={lgReversed}
     isReversed={isReversed}
   >
     {children !== undefined ? (

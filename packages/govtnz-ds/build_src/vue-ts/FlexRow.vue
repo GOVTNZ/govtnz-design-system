@@ -26,7 +26,11 @@ const constants = {
     top: "g-flex-top-lg",
     middle: "g-flex-middle-lg",
     bottom: "g-flex-bottom-lg"
-  }
+  },
+  xsReversed: { true: "g-flex-reversed-xs", false: "g-flex-not-reversed-xs" },
+  smReversed: { true: "g-flex-reversed-sm", false: "g-flex-not-reversed-sm" },
+  mdReversed: { true: "g-flex-reversed-md", false: "g-flex-not-reversed-md" },
+  lgReversed: { true: "g-flex-reversed-lg", false: "g-flex-not-reversed-lg" }
 };
 
 export default Vue.extend({
@@ -59,6 +63,34 @@ export default Vue.extend({
       },
       required: false
     },
+    xsReversed: {
+      type: String,
+      validator: value => {
+        return ["true", "false"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    smReversed: {
+      type: String,
+      validator: value => {
+        return ["true", "false"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    mdReversed: {
+      type: String,
+      validator: value => {
+        return ["true", "false"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    lgReversed: {
+      type: String,
+      validator: value => {
+        return ["true", "false"].indexOf(value) !== -1;
+      },
+      required: false
+    },
     isReversed: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Columns..." }
   },
@@ -77,6 +109,18 @@ export default Vue.extend({
           : "") +
         (constants.lgVerticalAlign[this.lgVerticalAlign] !== undefined
           ? ` ${constants.lgVerticalAlign[this.lgVerticalAlign]}`
+          : "") +
+        (constants.xsReversed[this.xsReversed] !== undefined
+          ? ` ${constants.xsReversed[this.xsReversed]}`
+          : "") +
+        (constants.smReversed[this.smReversed] !== undefined
+          ? ` ${constants.smReversed[this.smReversed]}`
+          : "") +
+        (constants.mdReversed[this.mdReversed] !== undefined
+          ? ` ${constants.mdReversed[this.mdReversed]}`
+          : "") +
+        (constants.lgReversed[this.lgReversed] !== undefined
+          ? ` ${constants.lgReversed[this.lgReversed]}`
           : "") +
         (this.isReversed ? " g-flex-reverse" : "")
       );
@@ -100,11 +144,12 @@ export default Vue.extend({
   margin-right: -0.5rem;
   margin-left: -0.5rem;
 }
+.g-flex-row.g-flex-reversed-xs,
 .g-flex-row.g-flex-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+}
+.g-flex-row.g-flex-not-reversed-xs {
+  flex-direction: row;
 }
 .g-flex-top-xs {
   -webkit-box-align: start;
@@ -132,6 +177,13 @@ export default Vue.extend({
     -ms-flex-align: end;
     align-items: flex-end;
   }
+  .g-flex-row.g-flex-reversed-sm {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .g-flex-row.g-flex-not-reversed-sm {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 64em) {
   .g-flex-top-md {
@@ -149,6 +201,13 @@ export default Vue.extend({
     -ms-flex-align: end;
     align-items: flex-end;
   }
+  .g-flex-row.g-flex-reversed-md {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .g-flex-row.g-flex-not-reversed-md {
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 75em) {
   .g-flex-top-lg {
@@ -165,6 +224,15 @@ export default Vue.extend({
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+  }
+  .g-flex-row.g-flex-reversed-lg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .g-flex-row.g-flex-not-reversed-lg {
+    flex-direction: row;
   }
 }
 </style>

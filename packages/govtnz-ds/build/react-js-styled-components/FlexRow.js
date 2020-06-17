@@ -124,7 +124,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  box-sizing: border-box;\n  display: flex;\n  -ms-flex: 0 1 auto;\n  flex: 0 1 auto;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  margin-right: -0.5rem;\n  margin-left: -0.5rem;\n  -ms-flex-direction: row-reverse;\n  flex-direction: row-reverse;\n  ", "\n  ", "\n@media only screen and (min-width: 48em) {\n    ", ";\n    ", ";\n    ", ";\n  }\n  @media only screen and (min-width: 64em) {\n    ", ";\n    ", ";\n    ", ";\n  }\n  @media only screen and (min-width: 75em) {\n    ", ";\n    ", ";\n    ", ";\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  box-sizing: border-box;\n  display: flex;\n  -ms-flex: 0 1 auto;\n  flex: 0 1 auto;\n  -ms-flex-direction: row;\n  flex-direction: row;\n  -ms-flex-wrap: wrap;\n  flex-wrap: wrap;\n  margin-right: -0.5rem;\n  margin-left: -0.5rem;\n  flex-direction: row-reverse;\n  flex-direction: row;\n  ", "\n  ", "\n@media only screen and (min-width: 48em) {\n    ", ";\n    ", ";\n    ", ";\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse;\n    flex-direction: row;\n  }\n  @media only screen and (min-width: 64em) {\n    ", ";\n    ", ";\n    ", ";\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse;\n    flex-direction: row;\n  }\n  @media only screen and (min-width: 75em) {\n    ", ";\n    ", ";\n    ", ";\n    -ms-flex-direction: row-reverse;\n    flex-direction: row-reverse;\n    flex-direction: row;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -162,6 +162,10 @@ var FlexRow = function FlexRow(_ref) {
       smVerticalAlign = _ref.smVerticalAlign,
       mdVerticalAlign = _ref.mdVerticalAlign,
       lgVerticalAlign = _ref.lgVerticalAlign,
+      xsReversed = _ref.xsReversed,
+      smReversed = _ref.smReversed,
+      mdReversed = _ref.mdReversed,
+      lgReversed = _ref.lgReversed,
       isReversed = _ref.isReversed,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
@@ -169,6 +173,10 @@ var FlexRow = function FlexRow(_ref) {
     smVerticalAlign: smVerticalAlign,
     mdVerticalAlign: mdVerticalAlign,
     lgVerticalAlign: lgVerticalAlign,
+    xsReversed: xsReversed,
+    smReversed: smReversed,
+    mdReversed: mdReversed,
+    lgReversed: lgReversed,
     isReversed: isReversed
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
 };
