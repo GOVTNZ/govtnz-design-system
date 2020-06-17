@@ -8,13 +8,13 @@ import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 
 import Alert from '@govtnz/ds/build/react-js/Alert';
-import '@govtnz/ds/build/css/Alert.css'; // or @govtnz/ds/build/scss/Alert.scss
+import '@govtnz/ds/build/css/Alert.css';
 
 import H2 from '@govtnz/ds/build/react-js/H2';
-import '@govtnz/ds/build/css/H2.css'; // or @govtnz/ds/build/scss/H2.scss
+import '@govtnz/ds/build/css/H2.css';
 
 import P from '@govtnz/ds/build/react-js/P';
-import '@govtnz/ds/build/css/P.css'; // or @govtnz/ds/build/scss/P.scss
+import '@govtnz/ds/build/css/P.css';
 
 import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
 import '@govtnz/ds/build/css/inputBlock.css';
@@ -27,7 +27,7 @@ import '@govtnz/ds/build/css/RadioBlock.css';
 
 import Radios from '@govtnz/ds/build/react-ts/Radios';
 
-import PatternsPage from '../../components/PatternsPage';
+import PrototypesPage from '../../components/PrototypesPage';
 
 const fieldState = {
   value: '',
@@ -43,7 +43,7 @@ const ErrorMessage = ({ label }) => (
 
 class ContactusForm extends React.Component {
   state = {
-    firstname: {
+    username: {
       ...fieldState,
       errorMessage: 'Enter your name',
     },
@@ -104,7 +104,6 @@ class ContactusForm extends React.Component {
     event.preventDefault();
 
     const form = event.target;
-
     const formValues = this.getformFieldvalues(form.elements);
 
     const isFieldsValid = !Object.keys(formValues)
@@ -115,7 +114,7 @@ class ContactusForm extends React.Component {
   };
 
   render() {
-    const { email, firstname, textarea, radio, isFieldsValid } = this.state;
+    const { email, username, textarea, radio, isFieldsValid } = this.state;
     const successMessage = isFieldsValid ? 'block' : 'none';
 
     return (
@@ -128,22 +127,22 @@ class ContactusForm extends React.Component {
           <H2 styleSize="large">Contact form</H2>
           <div
             className={
-              firstname.valid
+              username.valid
                 ? 'g-inputBlock-form-group'
                 : 'g-inputBlock-form-group--error'
             }
           >
-            {firstname.valid ? (
+            {username.valid ? (
               ''
             ) : (
-              <ErrorMessage label={firstname.errorMessage} />
+              <ErrorMessage label={username.errorMessage} />
             )}
             <InputBlock
               width="30"
               maxLength={30}
               label="What is your name?"
               id="username"
-              name="firstname"
+              name="username"
               type="text"
               autoComplete="autoComplete"
               required
@@ -284,8 +283,8 @@ const PrototypePageContent = () => (
 
 const template = (props) => {
   return (
-    <PatternsPage
-      title="Patterns"
+    <PrototypesPage
+      title="Prototypes"
       pageProps={props}
       PageContent={PrototypePageContent}
     />
