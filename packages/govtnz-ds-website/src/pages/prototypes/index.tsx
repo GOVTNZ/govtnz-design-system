@@ -100,8 +100,9 @@ class ContactusForm extends React.Component {
     return formfieldValues;
   };
 
-  onSubmit = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
+
     const form = event.target;
 
     const formValues = this.getformFieldvalues(form.elements);
@@ -119,7 +120,11 @@ class ContactusForm extends React.Component {
 
     return (
       <>
-        <form style={{ padding: '20px' }} onSubmit={this.onSubmit} noValidate>
+        <form
+          style={{ padding: '20px' }}
+          onSubmit={this.handleSubmit}
+          noValidate
+        >
           <H2 styleSize="large">Contact form</H2>
           <div
             className={
