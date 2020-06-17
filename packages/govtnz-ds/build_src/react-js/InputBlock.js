@@ -20,6 +20,7 @@ const InputBlock = ({
   hintId,
   error,
   width,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -84,6 +85,7 @@ const InputBlock = ({
       }${error ? " g-inputBlock-input--error" : ""}`}
       id={id}
       name={name}
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

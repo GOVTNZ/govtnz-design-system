@@ -3,6 +3,7 @@ import React from "react";
 const Checkbox = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -17,6 +18,7 @@ const Checkbox = ({
     className="g-checkboxes__input"
     id={id}
     type="checkbox"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

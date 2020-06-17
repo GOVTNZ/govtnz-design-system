@@ -14,7 +14,7 @@ import { Component, Input } from "@angular/core";
 
 
   
-<select class="g-selectBlock-select{{error ? " g-selectBlock-select--error" : ""}}" id="{{selectId}}" name="{{name}}" multiple="{{multiple}}">
+<select class="g-selectBlock-select{{error ? " g-selectBlock-select--error" : ""}}" id="{{selectId}}" name="{{name}}" required="{{required}}" multiple="{{multiple}}">
 Options
 
 </select>
@@ -33,6 +33,7 @@ export class AppComponent {
   @Input() label: React.ReactNode;
   @Input() error: boolean;
   @Input() name: string;
+  @Input() required: boolean | undefined;
   @Input() multiple: boolean | undefined;
   title = "SelectBlock";
 }

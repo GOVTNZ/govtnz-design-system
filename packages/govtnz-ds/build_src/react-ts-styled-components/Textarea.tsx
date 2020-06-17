@@ -5,6 +5,7 @@ type Props = {
   id?: string;
   describedById?: string;
   name: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   rows?: number;
@@ -61,6 +62,7 @@ const Textarea = ({
   id,
   describedById,
   name,
+  required,
   disabled,
   readOnly,
   rows,
@@ -78,6 +80,7 @@ const Textarea = ({
     id={id}
     name={name}
     rows={rows}
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

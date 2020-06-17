@@ -20,6 +20,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "name", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "required", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "multiple", void 0);
     __decorate([
         core_1.Input()
@@ -27,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Select",
-            template: "\n    <select\n      class=\"g-select\"\n      id=\"{{ selectId }}\"\n      name=\"{{ name }}\"\n      multiple=\"{{ multiple }}\"\n    >\n      <slot></slot>\n    </select>\n  "
+            template: "\n    <select\n      class=\"g-select\"\n      id=\"{{ selectId }}\"\n      name=\"{{ name }}\"\n      required=\"{{ required }}\"\n      multiple=\"{{ multiple }}\"\n    >\n      <slot></slot>\n    </select>\n  "
         })
     ], AppComponent);
     return AppComponent;

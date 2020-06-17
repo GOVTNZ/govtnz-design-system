@@ -20,6 +20,7 @@ const StyledInput = styled.input`
 const Checkbox = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -33,6 +34,7 @@ const Checkbox = ({
     aria-describedby={hintId}
     id={id}
     type="checkbox"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

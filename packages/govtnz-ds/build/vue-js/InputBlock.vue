@@ -21,6 +21,7 @@
       v-bind:class="computed__class2"
       v-bind:id="id"
       v-bind:name="name"
+      v-bind:required="required"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
@@ -69,6 +70,7 @@ export default Vue.extend({
       },
       required: false
     },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },

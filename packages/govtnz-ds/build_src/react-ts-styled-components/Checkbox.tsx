@@ -4,6 +4,7 @@ import styled from "styled-components";
 type Props = {
   id?: string;
   hintId?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -33,6 +34,7 @@ const StyledInput = styled.input`
 const Checkbox = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -46,6 +48,7 @@ const Checkbox = ({
     aria-describedby={hintId}
     id={id}
     type="checkbox"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

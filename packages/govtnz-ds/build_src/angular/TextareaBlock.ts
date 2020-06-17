@@ -45,7 +45,7 @@ import { Component, Input } from "@angular/core";
 
   
   
-<textarea aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-textareaBlock-textarea" id="{{id}}" name="{{name}}" rows="{{rows}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
+<textarea aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-textareaBlock-textarea" id="{{id}}" name="{{name}}" rows="{{rows}}" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
 
 
 
@@ -62,6 +62,7 @@ export class AppComponent {
   @Input() hint: React.ReactNode;
   @Input() error: React.ReactNode;
   @Input() name: string;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() rows: number | undefined;

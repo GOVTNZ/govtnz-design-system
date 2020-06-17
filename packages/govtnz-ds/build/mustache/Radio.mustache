@@ -10,6 +10,9 @@ class="g-radios__input"
   name="{{name}}"
 {{/name}}
 type="radio"
+{{#required}}
+  required="{{#required}}required{{/required}}"
+{{/required}}
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}

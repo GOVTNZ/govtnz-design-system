@@ -7,6 +7,7 @@ declare type Props = {
     error?: boolean;
     id?: string;
     dayId?: string;
+    required?: boolean;
     disabled?: boolean;
     readOnly?: boolean;
     autoFocus?: boolean;
@@ -26,5 +27,5 @@ declare type Props = {
     onChange3?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
     ref3?: React.RefObject<HTMLInputElement>;
 };
-declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, ref, monthId, yearName, value2, onChange2, ref2, yearId, value3, onChange3, ref3 }: Props) => JSX.Element;
+declare const DateInput: ({ errorId, hintId, label, hint, error, id, dayId, required, disabled, readOnly, autoFocus, dayName, value, spellCheck, autoComplete, onChange, ref, monthId, yearName, value2, onChange2, ref2, yearId, value3, onChange3, ref3 }: Props) => JSX.Element;
 export default DateInput;

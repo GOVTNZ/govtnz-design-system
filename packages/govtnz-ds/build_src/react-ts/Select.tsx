@@ -3,6 +3,7 @@ import React from "react";
 type Props = {
   selectId?: string;
   name: string;
+  required?: boolean;
   multiple?: boolean;
   onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
   ref?: React.RefObject<HTMLSelectElement>;
@@ -12,6 +13,7 @@ type Props = {
 const Select = ({
   selectId,
   name,
+  required,
   multiple,
   onChange,
   ref,
@@ -21,6 +23,7 @@ const Select = ({
     className="g-select"
     id={selectId}
     name={name}
+    required={required}
     multiple={multiple}
     onChange={onChange}
     ref={ref}

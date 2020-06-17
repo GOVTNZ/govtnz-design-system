@@ -7,6 +7,9 @@ class="g-checkboxes__input"
   id="{{id}}"
 {{/id}}
 type="checkbox"
+{{#required}}
+  required="{{#required}}required{{/required}}"
+{{/required}}
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}

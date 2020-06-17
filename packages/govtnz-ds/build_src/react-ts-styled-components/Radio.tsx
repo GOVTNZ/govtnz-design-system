@@ -4,6 +4,7 @@ import styled from "styled-components";
 type Props = {
   id?: string;
   hintId?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -33,6 +34,7 @@ const StyledInput = styled.input`
 const Radio = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -47,6 +49,7 @@ const Radio = ({
     id={id}
     name={name}
     type="radio"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

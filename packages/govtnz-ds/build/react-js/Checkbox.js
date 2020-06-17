@@ -12,6 +12,7 @@ var _react = _interopRequireDefault(require("react"));
 var Checkbox = function Checkbox(_ref) {
   var id = _ref.id,
       hintId = _ref.hintId,
+      required = _ref.required,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
@@ -25,6 +26,7 @@ var Checkbox = function Checkbox(_ref) {
     className: "g-checkboxes__input",
     id: id,
     type: "checkbox",
+    required: required,
     disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,

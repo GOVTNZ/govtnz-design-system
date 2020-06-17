@@ -88,6 +88,7 @@ const SelectBlock = ({
   label,
   error,
   name,
+  required,
   multiple,
   onChange,
   ref
@@ -104,6 +105,7 @@ const SelectBlock = ({
       error={error}
       id={selectId}
       name={name}
+      required={required}
       multiple={multiple}
       onChange={onChange}
       ref={ref}

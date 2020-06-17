@@ -5,6 +5,7 @@ type Props = {
   error?: boolean;
   id?: string;
   describedBy?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -34,6 +35,7 @@ const Input = ({
   error,
   id,
   describedBy,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -53,6 +55,7 @@ const Input = ({
     id={id}
     name={name}
     type="text"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

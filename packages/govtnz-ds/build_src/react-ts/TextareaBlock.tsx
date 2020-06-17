@@ -8,6 +8,7 @@ type Props = {
   hint?: React.ReactNode;
   error?: React.ReactNode;
   name: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   rows?: number;
@@ -29,6 +30,7 @@ const TextareaBlock = ({
   hint,
   error,
   name,
+  required,
   disabled,
   readOnly,
   rows,
@@ -90,6 +92,7 @@ const TextareaBlock = ({
       id={id}
       name={name}
       rows={rows}
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

@@ -28,6 +28,7 @@ var StyledSelect = _styledComponents["default"].select(_templateObject());
 var Select = function Select(_ref) {
   var selectId = _ref.selectId,
       name = _ref.name,
+      required = _ref.required,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
       ref = _ref.ref,
@@ -35,6 +36,7 @@ var Select = function Select(_ref) {
   return /*#__PURE__*/_react["default"].createElement(StyledSelect, {
     id: selectId,
     name: name,
+    required: required,
     multiple: multiple,
     onChange: onChange,
     ref: ref

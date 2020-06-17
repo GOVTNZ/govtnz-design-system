@@ -2,6 +2,7 @@ export declare class AppComponent {
     errorId: string | undefined;
     id: string | undefined;
     hintId: string | undefined;
+    required: boolean | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;

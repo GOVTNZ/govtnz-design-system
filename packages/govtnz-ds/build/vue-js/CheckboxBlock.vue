@@ -5,6 +5,7 @@
       class="g-checkboxes__input"
       v-bind:id="id"
       type="checkbox"
+      v-bind:required="required"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
@@ -38,6 +39,7 @@ export default Vue.extend({
     errorId: { type: String, required: false },
     id: { type: String, required: false },
     hintId: { type: String, required: false },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },

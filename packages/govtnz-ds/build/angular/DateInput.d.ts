@@ -6,6 +6,7 @@ export declare class AppComponent {
     error: boolean | undefined;
     id: string | undefined;
     dayId: string | undefined;
+    required: boolean | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;

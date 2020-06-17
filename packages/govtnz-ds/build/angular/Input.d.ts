@@ -3,6 +3,7 @@ export declare class AppComponent {
     error: boolean | undefined;
     id: string | undefined;
     describedBy: string | undefined;
+    required: boolean | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     autoFocus: boolean | undefined;

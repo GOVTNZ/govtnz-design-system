@@ -15,6 +15,7 @@ var SelectBlock = function SelectBlock(_ref) {
       label = _ref.label,
       error = _ref.error,
       name = _ref.name,
+      required = _ref.required,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
       ref = _ref.ref;
@@ -27,6 +28,7 @@ var SelectBlock = function SelectBlock(_ref) {
     className: "g-selectBlock-select".concat(error ? " g-selectBlock-select--error" : ""),
     id: selectId,
     name: name,
+    required: required,
     multiple: multiple,
     onChange: onChange,
     ref: ref

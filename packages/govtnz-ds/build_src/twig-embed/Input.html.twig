@@ -4,6 +4,7 @@ class="g-input{% if width == "30" %}g-input--width-30{% elseif width == "20" %}g
 id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 type="text"
+required="{% if required %}required{% endif %}"
 disabled="{% if disabled %}disabled{% endif %}"
 readonly="{% if readOnly %}readOnly{% endif %}"
 autofocus="{% if autoFocus %}autoFocus{% endif %}"

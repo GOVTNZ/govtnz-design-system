@@ -5,6 +5,7 @@
     v-bind:id="id"
     v-bind:name="name"
     type="text"
+    v-bind:required="required"
     v-bind:disabled="disabled"
     v-bind:readonly="readOnly"
     v-bind:autofocus="autoFocus"
@@ -41,6 +42,7 @@ export default Vue.extend({
     error: { type: Boolean, default: false, required: false },
     id: { type: String, required: false },
     describedBy: { type: String, required: false },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },

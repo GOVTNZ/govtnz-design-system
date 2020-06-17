@@ -8,6 +8,7 @@ const TextareaBlock = ({
   hint,
   error,
   name,
+  required,
   disabled,
   readOnly,
   rows,
@@ -69,6 +70,7 @@ const TextareaBlock = ({
       id={id}
       name={name}
       rows={rows}
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

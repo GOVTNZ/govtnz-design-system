@@ -26,6 +26,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "describedBy", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "required", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -51,7 +54,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Input",
-            template: "\n    <input aria-describedby=\"{{ describedBy }}\" class=\"g-input{{\n      constants.width[width] !== undefined ? \" \" + constants.width[width] : \"\"\n    }}{{ error ? \" g-input--error\" : \"\" }}\" id=\"{{ id }}\" name=\"{{ name }}\"\n    type=\"text\" disabled=\"{{ disabled }}\" readonly=\"{{ readOnly }}\"\n    autofocus=\"{{ autoFocus }}\" value=\"{{ value }}\" spellcheck=\"{{\n      spellCheck\n    }}\" maxlength=\"{{ maxLength }}\" autocomplete=\"{{ autoComplete }}\"/>\n  "
+            template: "\n    <input aria-describedby=\"{{ describedBy }}\" class=\"g-input{{\n      constants.width[width] !== undefined ? \" \" + constants.width[width] : \"\"\n    }}{{ error ? \" g-input--error\" : \"\" }}\" id=\"{{ id }}\" name=\"{{ name }}\"\n    type=\"text\" required=\"{{ required }}\" disabled=\"{{ disabled }}\" readonly=\"{{\n      readOnly\n    }}\" autofocus=\"{{ autoFocus }}\" value=\"{{ value }}\" spellcheck=\"{{\n      spellCheck\n    }}\" maxlength=\"{{ maxLength }}\" autocomplete=\"{{ autoComplete }}\"/>\n  "
         })
     ], AppComponent);
     return AppComponent;

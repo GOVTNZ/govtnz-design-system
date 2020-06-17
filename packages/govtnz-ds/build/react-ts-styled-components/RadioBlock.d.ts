@@ -2,6 +2,7 @@ import React from "react";
 declare type Props = {
     id?: string;
     hintId?: string;
+    required?: boolean;
     disabled?: boolean;
     readOnly?: boolean;
     autoFocus?: boolean;
@@ -13,5 +14,5 @@ declare type Props = {
     label?: React.ReactNode;
     hint?: React.ReactNode;
 };
-declare const RadioBlock: ({ id, hintId, disabled, readOnly, autoFocus, name, value, checked, onChange, ref, label, hint }: Props) => JSX.Element;
+declare const RadioBlock: ({ id, hintId, required, disabled, readOnly, autoFocus, name, value, checked, onChange, ref, label, hint }: Props) => JSX.Element;
 export default RadioBlock;

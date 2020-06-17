@@ -7,6 +7,7 @@ type Props = {
   label?: React.ReactNode;
   error: boolean;
   name: string;
+  required?: boolean;
   multiple?: boolean;
   onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
   ref?: React.RefObject<HTMLSelectElement>;
@@ -99,6 +100,7 @@ const SelectBlock = ({
   label,
   error,
   name,
+  required,
   multiple,
   onChange,
   ref
@@ -115,6 +117,7 @@ const SelectBlock = ({
       error={error}
       id={selectId}
       name={name}
+      required={required}
       multiple={multiple}
       onChange={onChange}
       ref={ref}

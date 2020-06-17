@@ -3,6 +3,7 @@ declare type Props = {
     errorId?: string;
     id?: string;
     hintId?: string;
+    required?: boolean;
     disabled?: boolean;
     readOnly?: boolean;
     autoFocus?: boolean;
@@ -15,5 +16,5 @@ declare type Props = {
     hint?: React.ReactNode;
     error?: React.ReactNode;
 };
-declare const CheckboxBlock: ({ errorId, id, hintId, disabled, readOnly, autoFocus, name, value, checked, onChange, ref, label, hint, error }: Props) => JSX.Element;
+declare const CheckboxBlock: ({ errorId, id, hintId, required, disabled, readOnly, autoFocus, name, value, checked, onChange, ref, label, hint, error }: Props) => JSX.Element;
 export default CheckboxBlock;

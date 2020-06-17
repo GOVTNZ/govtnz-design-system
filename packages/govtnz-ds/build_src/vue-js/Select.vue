@@ -3,6 +3,7 @@
     class="g-select"
     v-bind:id="selectId"
     v-bind:name="name"
+    v-bind:required="required"
     v-bind:multiple="multiple"
   >
     <slot></slot>
@@ -15,6 +16,7 @@ export default Vue.extend({
   props: {
     selectId: { type: String, required: false },
     name: { type: String, required: true },
+    required: { type: Boolean, default: false, required: false },
     multiple: { type: Boolean, default: false, required: false },
     children: { required: false, default: "<option>Options</option>" }
   },

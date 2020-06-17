@@ -6,6 +6,7 @@ export declare class AppComponent {
     hint: React.ReactNode;
     error: React.ReactNode;
     name: string;
+    required: boolean | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     rows: number | undefined;

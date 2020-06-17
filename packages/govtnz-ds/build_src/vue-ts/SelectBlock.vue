@@ -8,6 +8,7 @@
       v-bind:class="computed__class2"
       v-bind:id="selectId"
       v-bind:name="name"
+      v-bind:required="required"
       v-bind:multiple="multiple"
     >
       Options
@@ -24,6 +25,7 @@ export default Vue.extend({
     label: { required: false, default: "Example label text" },
     error: { type: Boolean, default: false, required: true },
     name: { type: String, required: true },
+    required: { type: Boolean, default: false, required: false },
     multiple: { type: Boolean, default: false, required: false }
   },
   computed: {

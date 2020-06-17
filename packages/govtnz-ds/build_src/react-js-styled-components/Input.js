@@ -83,6 +83,7 @@ const Input = ({
   error,
   id,
   describedBy,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -101,6 +102,7 @@ const Input = ({
     id={id}
     name={name}
     type="text"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

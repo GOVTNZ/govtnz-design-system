@@ -3,6 +3,7 @@ import React from "react";
 type Props = {
   id?: string;
   hintId?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -16,6 +17,7 @@ type Props = {
 const Checkbox = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -30,6 +32,7 @@ const Checkbox = ({
     className="g-checkboxes__input"
     id={id}
     type="checkbox"
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }

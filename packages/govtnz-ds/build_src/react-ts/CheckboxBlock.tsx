@@ -4,6 +4,7 @@ type Props = {
   errorId?: string;
   id?: string;
   hintId?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -21,6 +22,7 @@ const CheckboxBlock = ({
   errorId,
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -39,6 +41,7 @@ const CheckboxBlock = ({
       className="g-checkboxes__input"
       id={id}
       type="checkbox"
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

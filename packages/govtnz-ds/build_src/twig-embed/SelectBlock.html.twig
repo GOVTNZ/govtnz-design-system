@@ -19,6 +19,7 @@ for="{{ selectId | escape('html_attr') }}"
 class="g-selectBlock-select{% if error %} g-selectBlock-select--error{% endif %}"
 id="{{ selectId | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
+required="{% if required %}required{% endif %}"
 multiple="{% if multiple %}multiple{% endif %}"
 >
   Options

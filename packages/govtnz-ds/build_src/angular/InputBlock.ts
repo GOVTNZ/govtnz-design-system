@@ -43,7 +43,7 @@ Error:
 
   
   
-<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{id}}" name="{{name}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" min="{{min}}" max="{{max}}" type="{{type}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
+<input aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-inputBlock-input{{constants.width[width] !== undefined ? " " +  constants.width[width] : ""}}{{error ? " g-inputBlock-input--error" : ""}}" id="{{id}}" name="{{name}}" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" value="{{value}}" min="{{min}}" max="{{max}}" type="{{type}}" spellcheck="{{spellCheck}}" maxlength="{{maxLength}}" autocomplete="{{autoComplete}}"/>
 
 
 
@@ -60,6 +60,7 @@ export class AppComponent {
   @Input() hintId: string | undefined;
   @Input() error: boolean | undefined;
   @Input() width: "30" | "20" | "10" | "5" | "4" | "3" | "2" | undefined;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;

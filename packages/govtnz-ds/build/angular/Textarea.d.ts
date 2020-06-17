@@ -2,6 +2,7 @@ export declare class AppComponent {
     id: string | undefined;
     describedById: string | undefined;
     name: string;
+    required: boolean | undefined;
     disabled: boolean | undefined;
     readOnly: boolean | undefined;
     rows: number | undefined;

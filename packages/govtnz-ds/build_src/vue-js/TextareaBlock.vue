@@ -22,6 +22,7 @@
       v-bind:id="id"
       v-bind:name="name"
       v-bind:rows="rows"
+      v-bind:required="required"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:cols="cols"
@@ -45,6 +46,7 @@ export default Vue.extend({
     hint: { required: false, default: "Hint text" },
     error: { required: false, default: "Error text" },
     name: { type: String, required: true },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     rows: { type: String, required: false },

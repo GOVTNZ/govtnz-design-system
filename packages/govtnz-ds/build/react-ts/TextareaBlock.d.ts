@@ -7,6 +7,7 @@ declare type Props = {
     hint?: React.ReactNode;
     error?: React.ReactNode;
     name: string;
+    required?: boolean;
     disabled?: boolean;
     readOnly?: boolean;
     rows?: number;
@@ -19,5 +20,5 @@ declare type Props = {
     onChange?: React.TextareaHTMLAttributes<HTMLTextAreaElement>["onChange"];
     ref?: React.RefObject<HTMLTextAreaElement>;
 };
-declare const TextareaBlock: ({ errorId, id, label, hintId, hint, error, name, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange, ref }: Props) => JSX.Element;
+declare const TextareaBlock: ({ errorId, id, label, hintId, hint, error, name, required, disabled, readOnly, rows, cols, autoFocus, spellCheck, autoComplete, maxLength, value, onChange, ref }: Props) => JSX.Element;
 export default TextareaBlock;

@@ -41,7 +41,7 @@ var StyledInput3 = styled_components_1.default.input(templateObject_23 || (templ
     return props.error && styled_components_1.default.css(templateObject_22 || (templateObject_22 = __makeTemplateObject(["\n      border: 1px solid #b10e1e;\n    "], ["\n      border: 1px solid #b10e1e;\n    "])));
 });
 var DateInput = function (_a) {
-    var errorId = _a.errorId, hintId = _a.hintId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref, monthId = _a.monthId, yearName = _a.yearName, value2 = _a.value2, onChange2 = _a.onChange2, ref2 = _a.ref2, yearId = _a.yearId, value3 = _a.value3, onChange3 = _a.onChange3, ref3 = _a.ref3;
+    var errorId = _a.errorId, hintId = _a.hintId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, required = _a.required, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref, monthId = _a.monthId, yearName = _a.yearName, value2 = _a.value2, onChange2 = _a.onChange2, ref2 = _a.ref2, yearId = _a.yearId, value3 = _a.value3, onChange3 = _a.onChange3, ref3 = _a.ref3;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
         react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
@@ -56,19 +56,19 @@ var DateInput = function (_a) {
                 react_1.default.createElement(StyledDiv3, null,
                     react_1.default.createElement(StyledDiv4, null,
                         react_1.default.createElement(StyledLabel, { htmlFor: dayId }, "Day"),
-                        react_1.default.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, disabled: disabled !== undefined
+                        react_1.default.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, required: required, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
                                 : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }))),
                 react_1.default.createElement(StyledDiv5, null,
                     react_1.default.createElement(StyledDiv6, null,
                         react_1.default.createElement(StyledLabel2, { htmlFor: monthId }, "Month"),
-                        react_1.default.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, disabled: disabled !== undefined
+                        react_1.default.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, required: required, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
                                 : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }))),
                 react_1.default.createElement(StyledDiv7, null,
                     react_1.default.createElement(StyledDiv8, null,
                         react_1.default.createElement(StyledLabel3, { htmlFor: yearId }, "Year"),
-                        react_1.default.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, disabled: disabled !== undefined
+                        react_1.default.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, required: required, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
                                 : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 })))))));
 };

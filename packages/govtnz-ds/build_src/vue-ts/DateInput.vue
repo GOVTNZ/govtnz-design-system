@@ -39,6 +39,7 @@
               pattern="[0-9]*"
               type="text"
               v-bind:value="value"
+              v-bind:required="required"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
@@ -65,6 +66,7 @@
               pattern="[0-9]*"
               type="text"
               v-bind:value="value2"
+              v-bind:required="required"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
@@ -91,6 +93,7 @@
               pattern="[0-9]*"
               type="text"
               v-bind:value="value3"
+              v-bind:required="required"
               v-bind:disabled="disabled"
               v-bind:readonly="readOnly"
               v-bind:autofocus="autoFocus"
@@ -120,6 +123,7 @@ export default Vue.extend({
     },
     id: { type: String, required: false },
     dayId: { type: String, required: false },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },

@@ -4,6 +4,7 @@ export declare class AppComponent {
     label: React.ReactNode;
     error: boolean;
     name: string;
+    required: boolean | undefined;
     multiple: boolean | undefined;
     title: string;
 }

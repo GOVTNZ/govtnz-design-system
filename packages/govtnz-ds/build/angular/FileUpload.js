@@ -17,6 +17,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "required", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -30,7 +33,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FileUpload",
-            template: "\n    <div class=\"g-fileUpload__form-group\">\n      <label class=\"g-fileUpload__label\" for=\"{{ id }}\">\n        Upload a file\n      </label>\n\n      <input\n        class=\"g-fileUpload__input\"\n        id=\"{{ id }}\"\n        name=\"{{ name }}\"\n        type=\"file\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n      />\n    </div>\n  "
+            template: "\n    <div class=\"g-fileUpload__form-group\">\n      <label class=\"g-fileUpload__label\" for=\"{{ id }}\">\n        Upload a file\n      </label>\n\n      <input\n        class=\"g-fileUpload__input\"\n        id=\"{{ id }}\"\n        name=\"{{ name }}\"\n        type=\"file\"\n        required=\"{{ required }}\"\n        disabled=\"{{ disabled }}\"\n        readonly=\"{{ readOnly }}\"\n        autofocus=\"{{ autoFocus }}\"\n      />\n    </div>\n  "
         })
     ], AppComponent);
     return AppComponent;

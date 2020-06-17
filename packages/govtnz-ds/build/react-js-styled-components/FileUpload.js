@@ -51,6 +51,7 @@ var StyledInput = _styledComponents["default"].input(_templateObject3());
 
 var FileUpload = function FileUpload(_ref) {
   var id = _ref.id,
+      required = _ref.required,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
@@ -63,6 +64,7 @@ var FileUpload = function FileUpload(_ref) {
     id: id,
     name: name,
     type: "file",
+    required: required,
     disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,

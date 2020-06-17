@@ -8,6 +8,7 @@ import { Component, Input } from "@angular/core";
       id="{{ id }}"
       name="{{ name }}"
       type="radio"
+      required="{{ required }}"
       disabled="{{ disabled }}"
       readonly="{{ readOnly }}"
       autofocus="{{ autoFocus }}"
@@ -19,6 +20,7 @@ import { Component, Input } from "@angular/core";
 export class AppComponent {
   @Input() id: string | undefined;
   @Input() hintId: string | undefined;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;

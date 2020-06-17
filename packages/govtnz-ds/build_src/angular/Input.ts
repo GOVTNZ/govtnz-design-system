@@ -5,8 +5,9 @@ import { Component, Input } from "@angular/core";
     <input aria-describedby="{{ describedBy }}" class="g-input{{
       constants.width[width] !== undefined ? " " + constants.width[width] : ""
     }}{{ error ? " g-input--error" : "" }}" id="{{ id }}" name="{{ name }}"
-    type="text" disabled="{{ disabled }}" readonly="{{ readOnly }}"
-    autofocus="{{ autoFocus }}" value="{{ value }}" spellcheck="{{
+    type="text" required="{{ required }}" disabled="{{ disabled }}" readonly="{{
+      readOnly
+    }}" autofocus="{{ autoFocus }}" value="{{ value }}" spellcheck="{{
       spellCheck
     }}" maxlength="{{ maxLength }}" autocomplete="{{ autoComplete }}"/>
   `
@@ -16,6 +17,7 @@ export class AppComponent {
   @Input() error: boolean | undefined;
   @Input() id: string | undefined;
   @Input() describedBy: string | undefined;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;

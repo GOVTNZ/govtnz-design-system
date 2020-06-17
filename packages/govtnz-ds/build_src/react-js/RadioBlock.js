@@ -3,6 +3,7 @@ import React from "react";
 const RadioBlock = ({
   id,
   hintId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -21,6 +22,7 @@ const RadioBlock = ({
       id={id}
       name={name}
       type="radio"
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

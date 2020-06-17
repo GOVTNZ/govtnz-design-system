@@ -24,6 +24,9 @@ class="g-fileUpload__input"
   name="{{name}}"
 {{/name}}
 type="file"
+{{#required}}
+  required="{{#required}}required{{/required}}"
+{{/required}}
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}

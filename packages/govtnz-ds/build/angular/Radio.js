@@ -20,6 +20,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "hintId", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "required", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -39,7 +42,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Radio",
-            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-radios__input\"\n      id=\"{{ id }}\"\n      name=\"{{ name }}\"\n      type=\"radio\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
+            template: "\n    <input\n      aria-describedby=\"{{ hintId }}\"\n      class=\"g-radios__input\"\n      id=\"{{ id }}\"\n      name=\"{{ name }}\"\n      type=\"radio\"\n      required=\"{{ required }}\"\n      disabled=\"{{ disabled }}\"\n      readonly=\"{{ readOnly }}\"\n      autofocus=\"{{ autoFocus }}\"\n      value=\"{{ value }}\"\n      checked=\"{{ checked }}\"\n    />\n  "
         })
     ], AppComponent);
     return AppComponent;

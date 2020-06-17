@@ -7,6 +7,7 @@ declare type Props = {
     hintId?: string;
     error?: boolean;
     width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
+    required?: boolean;
     disabled?: boolean;
     readOnly?: boolean;
     autoFocus?: boolean;
@@ -21,5 +22,5 @@ declare type Props = {
     onChange?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
     ref?: React.RefObject<HTMLInputElement>;
 };
-declare const InputBlock: ({ errorId, id, label, hint, hintId, error, width, disabled, readOnly, autoFocus, name, value, min, max, type, spellCheck, maxLength, autoComplete, onChange, ref }: Props) => JSX.Element;
+declare const InputBlock: ({ errorId, id, label, hint, hintId, error, width, required, disabled, readOnly, autoFocus, name, value, min, max, type, spellCheck, maxLength, autoComplete, onChange, ref }: Props) => JSX.Element;
 export default InputBlock;

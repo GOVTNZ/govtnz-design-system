@@ -5,7 +5,7 @@ import { Component, Input } from "@angular/core";
 <div class="g-checkboxes__item{{errorId ? " g-form-group--error" : ""}}">
 
   
-<input aria-describedby="{{hintId}}" class="g-checkboxes__input" id="{{id}}" type="checkbox" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" name="{{name}}" value="{{value}}" checked="{{checked}}"/>
+<input aria-describedby="{{hintId}}" class="g-checkboxes__input" id="{{id}}" type="checkbox" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" name="{{name}}" value="{{value}}" checked="{{checked}}"/>
 
   
 <label class="g-checkboxes__label" for="{{id}}">
@@ -56,6 +56,7 @@ export class AppComponent {
   @Input() errorId: string | undefined;
   @Input() id: string | undefined;
   @Input() hintId: string | undefined;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;

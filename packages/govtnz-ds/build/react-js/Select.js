@@ -12,6 +12,7 @@ var _react = _interopRequireDefault(require("react"));
 var Select = function Select(_ref) {
   var selectId = _ref.selectId,
       name = _ref.name,
+      required = _ref.required,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
       ref = _ref.ref,
@@ -20,6 +21,7 @@ var Select = function Select(_ref) {
     className: "g-select",
     id: selectId,
     name: name,
+    required: required,
     multiple: multiple,
     onChange: onChange,
     ref: ref

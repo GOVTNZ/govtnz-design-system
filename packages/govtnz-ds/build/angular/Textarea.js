@@ -23,6 +23,9 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "name", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "required", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "disabled", void 0);
     __decorate([
         core_1.Input()
@@ -51,7 +54,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Textarea",
-            template: "\n<textarea aria-describedby=\"{{describedById}}\" class=\"g-textarea\" id=\"{{id}}\" name=\"{{name}}\" rows=\"{{rows}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n\n"
+            template: "\n<textarea aria-describedby=\"{{describedById}}\" class=\"g-textarea\" id=\"{{id}}\" name=\"{{name}}\" rows=\"{{rows}}\" required=\"{{required}}\" disabled=\"{{disabled}}\" readonly=\"{{readOnly}}\" cols=\"{{cols}}\" autofocus=\"{{autoFocus}}\" spellcheck=\"{{spellCheck}}\" autocomplete=\"{{autoComplete}}\" maxlength=\"{{maxLength}}\" value=\"{{value}}\"/>\n\n"
         })
     ], AppComponent);
     return AppComponent;

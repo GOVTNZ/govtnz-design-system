@@ -9,6 +9,7 @@ type Props = {
   hintId?: string;
   error?: boolean;
   width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -222,6 +223,7 @@ const InputBlock = ({
   hintId,
   error,
   width,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -281,6 +283,7 @@ const InputBlock = ({
       }
       id={id}
       name={name}
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

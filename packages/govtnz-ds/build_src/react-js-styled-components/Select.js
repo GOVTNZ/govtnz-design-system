@@ -46,10 +46,19 @@ const StyledSelect = styled.select`
   margin-top: 0px;
 `;
 
-const Select = ({ selectId, name, multiple, onChange, ref, children }) => (
+const Select = ({
+  selectId,
+  name,
+  required,
+  multiple,
+  onChange,
+  ref,
+  children
+}) => (
   <StyledSelect
     id={selectId}
     name={name}
+    required={required}
     multiple={multiple}
     onChange={onChange}
     ref={ref}

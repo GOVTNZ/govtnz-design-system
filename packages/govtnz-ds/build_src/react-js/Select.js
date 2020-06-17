@@ -1,10 +1,19 @@
 import React from "react";
 
-const Select = ({ selectId, name, multiple, onChange, ref, children }) => (
+const Select = ({
+  selectId,
+  name,
+  required,
+  multiple,
+  onChange,
+  ref,
+  children
+}) => (
   <select
     className="g-select"
     id={selectId}
     name={name}
+    required={required}
     multiple={multiple}
     onChange={onChange}
     ref={ref}

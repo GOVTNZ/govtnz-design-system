@@ -62,7 +62,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{dayId}}" maxlength="2" name="{{dayName}}" pattern="[0-9]*" type="text" value="{{value}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{dayId}}" maxlength="2" name="{{dayName}}" pattern="[0-9]*" type="text" value="{{value}}" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -90,7 +90,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{yearName}}" pattern="[0-9]*" type="text" value="{{value2}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2{{error ? " g-dateInput-input--error" : ""}}" id="{{monthId}}" maxlength="2" name="{{yearName}}" pattern="[0-9]*" type="text" value="{{value2}}" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -118,7 +118,7 @@ Error:
 
 
           
-<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{yearName}}" pattern="[0-9]*" type="text" value="{{value3}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
+<input class="g-dateInput-input g-dateInput__input g-dateInput-input--width-4{{error ? " g-dateInput-input--error" : ""}}" id="{{yearId}}" maxlength="4" name="{{yearName}}" pattern="[0-9]*" type="text" value="{{value3}}" required="{{required}}" disabled="{{disabled}}" readonly="{{readOnly}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}"/>
 
         
 
@@ -155,6 +155,7 @@ export class AppComponent {
   @Input() error: boolean | undefined;
   @Input() id: string | undefined;
   @Input() dayId: string | undefined;
+  @Input() required: boolean | undefined;
   @Input() disabled: boolean | undefined;
   @Input() readOnly: boolean | undefined;
   @Input() autoFocus: boolean | undefined;

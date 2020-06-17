@@ -2,6 +2,7 @@ import React from "react";
 
 type Props = {
   id?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -12,6 +13,7 @@ type Props = {
 
 const FileUpload = ({
   id,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -28,6 +30,7 @@ const FileUpload = ({
       id={id}
       name={name}
       type="file"
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

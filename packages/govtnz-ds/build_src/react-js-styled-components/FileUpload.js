@@ -82,6 +82,7 @@ const StyledInput = styled.input`
 
 const FileUpload = ({
   id,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -95,6 +96,7 @@ const FileUpload = ({
       id={id}
       name={name}
       type="file"
+      required={required}
       disabled={
         disabled !== undefined ? disabled.toString() === "true" : undefined
       }

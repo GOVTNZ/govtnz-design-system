@@ -10,6 +10,9 @@ class="g-input{{#width=30}} g-input--width-30{{/width=30}}{{#width=20}} g-input-
   name="{{name}}"
 {{/name}}
 type="text"
+{{#required}}
+  required="{{#required}}required{{/required}}"
+{{/required}}
 {{#disabled}}
   disabled="{{#disabled}}disabled{{/disabled}}"
 {{/disabled}}

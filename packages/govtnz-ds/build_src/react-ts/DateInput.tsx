@@ -8,6 +8,7 @@ type Props = {
   error?: boolean;
   id?: string;
   dayId?: string;
+  required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
   autoFocus?: boolean;
@@ -36,6 +37,7 @@ const DateInput = ({
   error,
   id,
   dayId,
+  required,
   disabled,
   readOnly,
   autoFocus,
@@ -116,6 +118,7 @@ const DateInput = ({
               pattern="[0-9]*"
               type="text"
               value={value}
+              required={required}
               disabled={
                 disabled !== undefined
                   ? disabled.toString() === "true"
@@ -148,6 +151,7 @@ const DateInput = ({
               pattern="[0-9]*"
               type="text"
               value={value2}
+              required={required}
               disabled={
                 disabled !== undefined
                   ? disabled.toString() === "true"
@@ -180,6 +184,7 @@ const DateInput = ({
               pattern="[0-9]*"
               type="text"
               value={value3}
+              required={required}
               disabled={
                 disabled !== undefined
                   ? disabled.toString() === "true"

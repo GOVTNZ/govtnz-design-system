@@ -28,6 +28,7 @@ var StyledInput = _styledComponents["default"].input(_templateObject());
 var Radio = function Radio(_ref) {
   var id = _ref.id,
       hintId = _ref.hintId,
+      required = _ref.required,
       disabled = _ref.disabled,
       readOnly = _ref.readOnly,
       autoFocus = _ref.autoFocus,
@@ -41,6 +42,7 @@ var Radio = function Radio(_ref) {
     id: id,
     name: name,
     type: "radio",
+    required: required,
     disabled: disabled !== undefined ? disabled.toString() === "true" : undefined,
     readOnly: readOnly,
     autoFocus: autoFocus,

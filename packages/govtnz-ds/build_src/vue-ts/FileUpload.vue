@@ -9,6 +9,7 @@
       v-bind:id="id"
       v-bind:name="name"
       type="file"
+      v-bind:required="required"
       v-bind:disabled="disabled"
       v-bind:readonly="readOnly"
       v-bind:autofocus="autoFocus"
@@ -21,6 +22,7 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     id: { type: String, required: false },
+    required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
     readOnly: { type: Boolean, default: false, required: false },
     autoFocus: { type: Boolean, default: false, required: false },

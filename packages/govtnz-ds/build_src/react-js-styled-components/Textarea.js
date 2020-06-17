@@ -44,6 +44,7 @@ const Textarea = ({
   id,
   describedById,
   name,
+  required,
   disabled,
   readOnly,
   rows,
@@ -61,6 +62,7 @@ const Textarea = ({
     id={id}
     name={name}
     rows={rows}
+    required={required}
     disabled={
       disabled !== undefined ? disabled.toString() === "true" : undefined
     }
