@@ -134,12 +134,11 @@ The header component adapts the main navigation to small-screen devices. The bre
 
 By default, the header component hides the main navigation and adds a button for users to open and close it.
 
-The button has an aria-expanded attribute. The value (true or false) signals to screen reader users whether the main navigation is open or closed.
+The button has an `aria-expanded` attribute. The value (true or false) signals to screen reader users whether the main navigation is open or closed.
 
 The button also includes a chevron icon. The chevron’s orientation helps to visually indicate the main navigation’s state. A downward-pointing chevron indicates that the main navigation is closed and an upward-pointing chevron indicates that it is open.
 
 - choosing the right text for the button—using the word ‘Menu’ (or its equivalent in the page’s main language if that is not English) is strongly recommended
-- ensuring that the main navigation is completely hidden by default[??}
 - implementing the JavaScript to manage the main navigation’s open and closed states as triggered by the ‘Menu’ button.
 
 #### 3 bar icon (the ‘hamburger’)

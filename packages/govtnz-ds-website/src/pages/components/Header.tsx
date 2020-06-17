@@ -96,11 +96,10 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h3 id="small-screen-devices">Small-screen devices</h3>
 <p>The header component adapts the main navigation to small-screen devices. The breakpoint for displaying the mobile menu is 768px.</p>
 <p>By default, the header component hides the main navigation and adds a button for users to open and close it.</p>
-<p>The button has an aria-expanded attribute. The value (true or false) signals to screen reader users whether the main navigation is open or closed.</p>
+<p>The button has an <code>aria-expanded</code> attribute. The value (true or false) signals to screen reader users whether the main navigation is open or closed.</p>
 <p>The button also includes a chevron icon. The chevron’s orientation helps to visually indicate the main navigation’s state. A downward-pointing chevron indicates that the main navigation is closed and an upward-pointing chevron indicates that it is open.</p>
 <Ul bulleted>
 <Li>choosing the right text for the button—using the word ‘Menu’ (or its equivalent in the page’s main language if that is not English) is strongly recommended</Li>
-<Li>ensuring that the main navigation is completely hidden by default[??}</Li>
 <Li>implementing the JavaScript to manage the main navigation’s open and closed states as triggered by the ‘Menu’ button.</Li>
 </Ul>
 <h4 id="3-bar-icon-the-hamburger">3 bar icon (the ‘hamburger’)</h4>
