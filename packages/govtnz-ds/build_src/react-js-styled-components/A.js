@@ -37,7 +37,7 @@ const StyledA = styled.a`
     color: #0b0c0c;
   }
   display: block;
-  padding: 0.6em 1em;
+  padding: 0.7em 1em;
   color: #d3d3d3;
   margin-left: -1em;
   margin-right: -1em;
