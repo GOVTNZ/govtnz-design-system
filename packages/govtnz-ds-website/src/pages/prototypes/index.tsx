@@ -270,7 +270,6 @@ const PrototypePageContent = () => (
       the example to see how it works.
     </p>
     <p>This is purely for demonstration purpose. Not an advice</p>
-
     <ExampleContainer>
       <Row>
         <Column className="" xs="12" sm="12" md="9" lg="12">
