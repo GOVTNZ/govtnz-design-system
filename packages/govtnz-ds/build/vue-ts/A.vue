@@ -68,7 +68,7 @@ export default Vue.extend({
 }
 .g-footer .g-link {
   display: block;
-  padding: 1em;
+  padding: 0.6em 1em;
   color: #d3d3d3;
   margin-left: -1em;
   margin-right: -1em;
