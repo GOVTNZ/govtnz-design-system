@@ -36,10 +36,7 @@ var FlexRow = function (_a) {
             ? " " + constants.mdVerticalAlign[mdVerticalAlign]
             : "") + (constants.lgVerticalAlign[lgVerticalAlign] !== undefined
             ? " " + constants.lgVerticalAlign[lgVerticalAlign]
-            : "") + (isReversed ? " g-flex-reverse" : "") },
-        " ",
-        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns...")),
-        " "));
+            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns..."))));
 };
 exports.default = FlexRow;
 //# sourceMappingURL=FlexRow.js.map

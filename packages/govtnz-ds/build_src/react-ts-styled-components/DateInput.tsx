@@ -471,7 +471,6 @@ const DateInput = ({
   ref3
 }: Props) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -480,46 +479,38 @@ const DateInput = ({
       }
       role="group"
     >
-      {" "}
       <StyledLegend>
-        {" "}
         {label !== undefined ? (
           label
         ) : (
           <React.Fragment>Example label</React.Fragment>
-        )}{" "}
-      </StyledLegend>{" "}
+        )}
+      </StyledLegend>
       <StyledSpan id={hintId}>
-        {" "}
         {hint !== undefined ? (
           hint
         ) : (
           <React.Fragment>Example hint</React.Fragment>
-        )}{" "}
-      </StyledSpan>{" "}
+        )}
+      </StyledSpan>
       {errorId !== undefined ? (
         <React.Fragment>
-          {" "}
           <StyledSpan2 id={errorId}>
-            {" "}
-            <StyledSpan3>Error: </StyledSpan3>{" "}
+            <StyledSpan3>Error: </StyledSpan3>
             {error !== undefined ? (
               error
             ) : (
               <React.Fragment>Example error</React.Fragment>
-            )}{" "}
-          </StyledSpan2>{" "}
+            )}
+          </StyledSpan2>
         </React.Fragment>
       ) : (
         ""
-      )}{" "}
+      )}
       <StyledDiv2 id={id}>
-        {" "}
         <StyledDiv3>
-          {" "}
           <StyledDiv4>
-            {" "}
-            <StyledLabel htmlFor={dayId}> Day </StyledLabel>{" "}
+            <StyledLabel htmlFor={dayId}>Day</StyledLabel>
             <StyledInput
               error={error}
               id={dayId}
@@ -539,14 +530,12 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange}
               ref={ref}
-            />{" "}
-          </StyledDiv4>{" "}
-        </StyledDiv3>{" "}
+            />
+          </StyledDiv4>
+        </StyledDiv3>
         <StyledDiv5>
-          {" "}
           <StyledDiv6>
-            {" "}
-            <StyledLabel2 htmlFor={monthId}> Month </StyledLabel2>{" "}
+            <StyledLabel2 htmlFor={monthId}>Month</StyledLabel2>
             <StyledInput2
               error={error}
               id={monthId}
@@ -566,14 +555,12 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange2}
               ref={ref2}
-            />{" "}
-          </StyledDiv6>{" "}
-        </StyledDiv5>{" "}
+            />
+          </StyledDiv6>
+        </StyledDiv5>
         <StyledDiv7>
-          {" "}
           <StyledDiv8>
-            {" "}
-            <StyledLabel3 htmlFor={yearId}> Year </StyledLabel3>{" "}
+            <StyledLabel3 htmlFor={yearId}>Year</StyledLabel3>
             <StyledInput3
               error={error}
               id={yearId}
@@ -593,11 +580,11 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange3}
               ref={ref3}
-            />{" "}
-          </StyledDiv8>{" "}
-        </StyledDiv7>{" "}
-      </StyledDiv2>{" "}
-    </StyledFieldset>{" "}
+            />
+          </StyledDiv8>
+        </StyledDiv7>
+      </StyledDiv2>
+    </StyledFieldset>
   </StyledDiv>
 );
 

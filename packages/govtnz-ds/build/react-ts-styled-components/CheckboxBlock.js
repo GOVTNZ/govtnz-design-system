@@ -18,29 +18,14 @@ var StyledSpan = styled_components_1.default.span(templateObject_6 || (templateO
 var CheckboxBlock = function (_a) {
     var errorId = _a.errorId, id = _a.id, hintId = _a.hintId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, name = _a.name, value = _a.value, checked = _a.checked, onChange = _a.onChange, ref = _a.ref, label = _a.label, hint = _a.hint, error = _a.error;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
-        " ",
         react_1.default.createElement(StyledInput, { "aria-describedby": hintId, id: id, type: "checkbox", disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, name: name, value: value, checked: checked, onChange: onChange, ref: ref }),
-        " ",
         react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
-        " ",
         hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-            " ",
-            react_1.default.createElement(StyledDiv2, { id: hintId },
-                " ",
-                hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text")),
-                " "),
-            " ")) : (""),
-        " ",
+            react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
         errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-            " ",
             react_1.default.createElement(StyledDiv3, { id: errorId },
-                " ",
-                react_1.default.createElement(StyledSpan, null, " Error: "),
-                " ",
-                error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text")),
-                " "),
-            " ")) : (""),
-        " "));
+                react_1.default.createElement(StyledSpan, null, "Error:"),
+                error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : ("")));
 };
 exports.default = CheckboxBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6;

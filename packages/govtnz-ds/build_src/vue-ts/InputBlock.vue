@@ -84,16 +84,16 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-inputBlock-form-group" +
+        "g-inputBlock-form-group " +
         (this.errorId ? " g-inputBlock-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {
-      return +this.hintId + +this.errorId;
+      return this.hintId + this.errorId;
     },
     computed__class2() {
       return (
-        "g-inputBlock-input" +
+        "g-inputBlock-input " +
         (constants.width[this.width] !== undefined
           ? ` ${constants.width[this.width]}`
           : "") +

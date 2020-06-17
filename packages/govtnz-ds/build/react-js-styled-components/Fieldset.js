@@ -40,9 +40,9 @@ var StyledFieldset = _styledComponents["default"].fieldset(_templateObject2());
 var Fieldset = function Fieldset(_ref) {
   var hintId = _ref.hintId,
       children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, " ", /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents..."), " "), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend and other fieldset contents...")));
 };
 
 var _default = Fieldset;

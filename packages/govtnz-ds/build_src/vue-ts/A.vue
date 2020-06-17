@@ -14,6 +14,7 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     isMuted: { type: Boolean, default: false, required: false },
+    class: { type: String, required: false },
     href: { type: String, required: true },
     rel: { type: String, required: false },
     target: { type: String, required: false },
@@ -21,7 +22,7 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return "g-link" + (this.isMuted ? " g-link--muted" : "");
+      return "g-link " + (this.isMuted ? " g-link--muted" : "") + this.class;
     }
   }
 });
@@ -64,5 +65,19 @@ export default Vue.extend({
 }
 .g-link--muted:focus {
   color: #0b0c0c;
+}
+.g-footer .g-link:first-child {
+  margin-left: -1em;
+}
+.g-footer .g-link {
+  display: inline-block;
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #d3d3d3;
+}
+.g-footer .g-link:hover {
+  color: #fff;
 }
 </style>

@@ -65,7 +65,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-flex-row" +
+        "g-flex-row " +
         (constants.xsVerticalAlign[this.xsVerticalAlign] !== undefined
           ? ` ${constants.xsVerticalAlign[this.xsVerticalAlign]}`
           : "") +

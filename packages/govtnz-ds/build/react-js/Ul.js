@@ -14,7 +14,7 @@ var Ul = function Ul(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("ul", {
     className: "g-list".concat(bulleted ? " g-list--bullet" : "")
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 
 var _default = Ul;

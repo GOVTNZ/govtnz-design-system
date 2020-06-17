@@ -90,19 +90,16 @@ const SelectBlock = ({
   name,
   multiple,
   onChange,
-  ref,
-  children
+  ref
 }) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledLabel htmlFor={selectId}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Example label text</React.Fragment>
-      )}{" "}
-    </StyledLabel>{" "}
+      )}
+    </StyledLabel>
     <StyledSelect
       error={error}
       id={selectId}
@@ -111,14 +108,8 @@ const SelectBlock = ({
       onChange={onChange}
       ref={ref}
     >
-      {children !== undefined ? (
-        children
-      ) : (
-        <React.Fragment>
-          <option>Options</option>
-        </React.Fragment>
-      )}
-    </StyledSelect>{" "}
+      Options
+    </StyledSelect>
   </StyledDiv>
 );
 

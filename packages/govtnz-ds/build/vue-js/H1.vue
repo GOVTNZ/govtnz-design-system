@@ -38,7 +38,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-heading" +
+        "g-heading " +
         (constants.styleSize[this.styleSize] !== undefined
           ? ` ${constants.styleSize[this.styleSize]}`
           : "") +

@@ -51,7 +51,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-checkboxes__item" + (this.errorId ? " g-form-group--error" : "")
+        "g-checkboxes__item " + (this.errorId ? " g-form-group--error" : "")
       );
     }
   }

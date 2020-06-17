@@ -3,37 +3,56 @@ import { Component, Input } from "@angular/core";
   selector: "g-TextareaBlock",
   template: `
 <div class="g-textareaBlock-form-group{{errorId ? " g-textareaBlock-form-group--error" : ""}}">
-   
+
+  
 <label class="g-textareaBlock-label" for="{{id}}">
-     <slot name="label"></slot>   
+
+    <slot name="label"></slot>
+  
 
 </label>
 
-        
+
+  
+    
 <div class="g-textareaBlock-hint" id="{{hintId}}">
-       <slot name="hint"></slot>     
+
+      <slot name="hint"></slot>
+    
 
 </div>
 
-           
+
+  
+  
+    
 <div class="g-textareaBlock-error-message" id="{{errorId}}">
-       
+
+      
 <span class="g-textareaBlock-visually-hidden">
-         Error:       
+
+        Error:
+      
 
 </span>
 
-       <slot name="error"></slot>     
+
+      <slot name="error"></slot>
+    
 
 </div>
 
-      
+
+  
+  
 <textarea aria-describedby="{{hintId ?  hintId : ""}}{{errorId ? " " +  errorId : ""}}" class="g-textareaBlock-textarea" id="{{id}}" name="{{name}}" rows="{{rows}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
- 
+
+
 
 </div>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() errorId: string | undefined;

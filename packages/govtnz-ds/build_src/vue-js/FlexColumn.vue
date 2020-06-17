@@ -324,12 +324,13 @@ export default Vue.extend({
       required: false
     },
     isReversed: { type: Boolean, default: false, required: false },
+    class: { type: String, required: true },
     children: { required: false }
   },
   computed: {
     computed__class() {
       return (
-        "g-flex-col" +
+        "g-flex-col " +
         (constants.xs[this.xs] !== undefined
           ? ` ${constants.xs[this.xs]}`
           : "") +
@@ -354,7 +355,8 @@ export default Vue.extend({
         (constants.lgOffset[this.lgOffset] !== undefined
           ? ` ${constants.lgOffset[this.lgOffset]}`
           : "") +
-        (this.isReversed ? " g-flex-reverse" : "")
+        (this.isReversed ? " g-flex-reverse" : "") +
+        this.class
       );
     }
   }

@@ -24,10 +24,7 @@ var StyledDiv = styled_components_1.default.div(templateObject_5 || (templateObj
 });
 var FlexContainer = function (_a) {
     var width = _a.width, children = _a.children;
-    return (react_1.default.createElement(StyledDiv, { width: width },
-        " ",
-        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Rows...")),
-        " "));
+    return (react_1.default.createElement(StyledDiv, { width: width }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Rows..."))));
 };
 exports.default = FlexContainer;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5;

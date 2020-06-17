@@ -1,2 +1,4 @@
-<footer class="g-footer-wrapper">      {$children}
- </footer>
+<footer class="g-footer-wrapper"> 
+    {$children}
+
+</footer>

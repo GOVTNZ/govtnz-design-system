@@ -3,7 +3,8 @@ import { Component, Input } from "@angular/core";
   selector: "g-Textarea",
   template: `
 <textarea aria-describedby="{{describedById}}" class="g-textarea" id="{{id}}" name="{{name}}" rows="{{rows}}" disabled="{{disabled}}" readonly="{{readOnly}}" cols="{{cols}}" autofocus="{{autoFocus}}" spellcheck="{{spellCheck}}" autocomplete="{{autoComplete}}" maxlength="{{maxLength}}" value="{{value}}"/>
- `
+
+`
 })
 export class AppComponent {
   @Input() id: string | undefined;

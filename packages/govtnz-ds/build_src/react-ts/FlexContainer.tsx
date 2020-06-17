@@ -15,12 +15,11 @@ const FlexContainer = ({ width, children }: Props) => (
       constants.width[width] !== undefined ? constants.width[width] : ""
     }
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Rows...</React.Fragment>
-    )}{" "}
+    )}
   </div>
 );
 

@@ -165,12 +165,11 @@ const Button = ({ disabled, level, name, type, onClick, children }: Props) => (
     name={name}
     onClick={onClick}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment> Example text </React.Fragment>
-    )}{" "}
+    )}
   </StyledButton>
 );
 

@@ -1,2 +1,4 @@
-<header class="g-header" role="banner">    {$children}
- </header>
+<header class="g-header" role="banner"> 
+  {$children}
+
+</header>

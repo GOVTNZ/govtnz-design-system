@@ -36,12 +36,11 @@ const H1 = ({
     }`}
     id={id}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </h1>
 );
 

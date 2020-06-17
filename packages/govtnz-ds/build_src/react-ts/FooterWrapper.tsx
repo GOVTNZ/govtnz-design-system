@@ -6,12 +6,11 @@ type Props = {
 
 const FooterWrapper = ({ children }: Props) => (
   <footer className="g-footer-wrapper">
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Content...</React.Fragment>
-    )}{" "}
+    )}
   </footer>
 );
 

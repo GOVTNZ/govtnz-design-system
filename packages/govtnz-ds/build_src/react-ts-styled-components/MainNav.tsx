@@ -77,7 +77,6 @@ const MainNav = ({
   children
 }: Props) => (
   <StyledNav aria-label="Main" role="navigation">
-    {" "}
     <StyledButton
       isOpen={isOpen}
       aria-controls={id}
@@ -88,32 +87,25 @@ const MainNav = ({
       type={type}
       onClick={onClick}
     >
-      {" "}
-      {button !== undefined ? (
-        button
-      ) : (
-        <React.Fragment> Menu </React.Fragment>
-      )}{" "}
+      {button !== undefined ? button : <React.Fragment> Menu </React.Fragment>}
       <StyledSvg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-        {" "}
         <path
           d="M7.992 9.55l5.6-5.6a1 1 0 0 1 1.415 0l.688.689a1 1 0 0 1 0 1.414L8.7 13.049a1 1 0 0 1-1.414 0L.29 6.053a1 1 0 0 1 0-1.414l.689-.689a1 1 0 0 1 1.414 0l5.6 5.6z"
           fill="currentColor"
           fillRule="nonzero"
-        />{" "}
-      </StyledSvg>{" "}
-    </StyledButton>{" "}
+        />
+      </StyledSvg>
+    </StyledButton>
+
     <div id={id}>
-      {" "}
       <StyledUl isOpen={isOpen}>
-        {" "}
         {children !== undefined ? (
           children
         ) : (
           <React.Fragment> MainNavLink components go here </React.Fragment>
-        )}{" "}
-      </StyledUl>{" "}
-    </div>{" "}
+        )}
+      </StyledUl>
+    </div>
   </StyledNav>
 );
 

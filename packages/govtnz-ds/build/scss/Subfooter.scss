@@ -1,0 +1,8 @@
+.g-subfooter {
+  background-color: #2a2a2a;
+  color: $g-theme-color-white;
+  color: var(--g-theme-color-white, $g-theme-color-white);
+  fill: $g-theme-color-white;
+  fill: var(--g-theme-color-white, $g-theme-color-white);
+  min-height: 104px;
+}

@@ -5,6 +5,5 @@ export declare class AppComponent {
     error: boolean;
     name: string;
     multiple: boolean | undefined;
-    children: React.ReactNode;
     title: string;
 }

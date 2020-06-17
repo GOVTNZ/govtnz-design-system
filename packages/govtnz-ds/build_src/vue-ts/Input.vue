@@ -53,7 +53,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-input" +
+        "g-input " +
         (constants.width[this.width] !== undefined
           ? ` ${constants.width[this.width]}`
           : "") +

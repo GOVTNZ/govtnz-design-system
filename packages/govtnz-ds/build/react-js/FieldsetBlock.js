@@ -18,20 +18,20 @@ var FieldsetBlock = function FieldsetBlock(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-fieldsetBlock-form-group".concat(errorId ? " g-fieldsetBlock-form-group--error" : "")
-  }, " ", /*#__PURE__*/_react["default"].createElement("fieldset", {
+  }, /*#__PURE__*/_react["default"].createElement("fieldset", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-fieldsetBlock-fieldset"
-  }, " ", /*#__PURE__*/_react["default"].createElement("legend", {
+  }, /*#__PURE__*/_react["default"].createElement("legend", {
     className: "g-fieldsetBlock-fieldset__legend"
-  }, " ", legend !== undefined ? legend : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text"), " "), " ", hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, legend !== undefined ? legend : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Legend text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-fieldsetBlock-hint",
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-fieldsetBlock-error-message",
     id: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-fieldsetBlock-visually-hidden"
-  }, " ", "Error:", " "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement("div", null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents")), " "), " ");
+  }, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement("div", null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Fieldset contents"))));
 };
 
 var _default = FieldsetBlock;

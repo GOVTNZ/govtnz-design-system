@@ -36,11 +36,24 @@ const StyledA = styled.a`
   :focus {
     color: #0b0c0c;
   }
+  :first-child {
+    margin-left: -1em;
+  }
+  display: inline-block;
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  color: #d3d3d3;
+  :hover {
+    color: #fff;
+  }
 `;
 
-const A = ({ isMuted, href, rel, target, onClick, children }) => (
+const A = ({ isMuted, className, href, rel, target, onClick, children }) => (
   <StyledA
     isMuted={isMuted}
+    className={className}
     href={href}
     rel={rel}
     target={target}

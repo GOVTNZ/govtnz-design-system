@@ -15,7 +15,7 @@ var Radios = function Radios(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radios".concat(inline ? " g-radios--inline" : "").concat(big ? " g-radios--big" : "")
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
 };
 
 var _default = Radios;

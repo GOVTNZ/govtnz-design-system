@@ -13,7 +13,7 @@ var FooterWrapper = function FooterWrapper(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("footer", {
     className: "g-footer-wrapper"
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Content..."));
 };
 
 var _default = FooterWrapper;

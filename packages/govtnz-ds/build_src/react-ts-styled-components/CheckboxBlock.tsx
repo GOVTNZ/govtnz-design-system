@@ -182,7 +182,6 @@ const CheckboxBlock = ({
   error
 }: Props) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledInput
       aria-describedby={hintId}
       id={id}
@@ -197,45 +196,41 @@ const CheckboxBlock = ({
       checked={checked}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
     <StyledLabel htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
       )}
-    </StyledLabel>{" "}
+    </StyledLabel>
     {hintId !== undefined ? (
       <React.Fragment>
-        {" "}
         <StyledDiv2 id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
-          )}{" "}
-        </StyledDiv2>{" "}
+          )}
+        </StyledDiv2>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     {errorId !== undefined ? (
       <React.Fragment>
-        {" "}
         <StyledDiv3 id={errorId}>
-          {" "}
-          <StyledSpan> Error: </StyledSpan>{" "}
+          <StyledSpan>Error:</StyledSpan>
           {error !== undefined ? (
             error
           ) : (
             <React.Fragment>Error text</React.Fragment>
-          )}{" "}
-        </StyledDiv3>{" "}
+          )}
+        </StyledDiv3>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

@@ -10,6 +10,7 @@ export const Footer = () => import("./Footer");
 export const Header = () => import("./Header");
 export const MainNavLink = () => import("./MainNavLink");
 export const MainNav = () => import("./MainNav");
+export const Subfooter = () => import("./Subfooter");
 export const A = () => import("./A");
 export const Button = () => import("./Button");
 export const CaptionL = () => import("./CaptionL");

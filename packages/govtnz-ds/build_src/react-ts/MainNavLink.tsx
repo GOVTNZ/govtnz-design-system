@@ -18,7 +18,6 @@ const MainNavLink = ({
   children
 }: Props) => (
   <li className="g-main-nav__link">
-    {" "}
     <a
       aria-current={ariaCurrent}
       className={`g-main-nav__link__a${
@@ -29,13 +28,12 @@ const MainNavLink = ({
       target={target}
       onClick={onClick}
     >
-      {" "}
       {children !== undefined ? (
         children
       ) : (
         <React.Fragment> Example item text </React.Fragment>
-      )}{" "}
-    </a>{" "}
+      )}
+    </a>
   </li>
 );
 

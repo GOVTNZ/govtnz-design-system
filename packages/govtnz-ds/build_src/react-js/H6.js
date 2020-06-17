@@ -22,12 +22,11 @@ const H6 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
     }`}
     id={id}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </h6>
 );
 

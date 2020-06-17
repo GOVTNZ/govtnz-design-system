@@ -136,7 +136,6 @@ const StyledDiv4 = styled.div`
 
 const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledFieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -144,54 +143,48 @@ const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
           : undefined
       }
     >
-      {" "}
       <StyledLegend>
-        {" "}
         {legend !== undefined ? (
           legend
         ) : (
           <React.Fragment>Legend text</React.Fragment>
-        )}{" "}
-      </StyledLegend>{" "}
+        )}
+      </StyledLegend>
       {hintId !== undefined ? (
         <React.Fragment>
-          {" "}
           <StyledDiv2 id={hintId}>
-            {" "}
             {hint !== undefined ? (
               hint
             ) : (
               <React.Fragment>Hint text</React.Fragment>
-            )}{" "}
-          </StyledDiv2>{" "}
+            )}
+          </StyledDiv2>
         </React.Fragment>
       ) : (
         ""
-      )}{" "}
+      )}
       {errorId !== undefined ? (
         <React.Fragment>
-          {" "}
           <StyledDiv3 id={errorId}>
-            {" "}
-            <StyledSpan> Error: </StyledSpan>{" "}
+            <StyledSpan>Error:</StyledSpan>
             {error !== undefined ? (
               error
             ) : (
               <React.Fragment>Error text</React.Fragment>
-            )}{" "}
-          </StyledDiv3>{" "}
+            )}
+          </StyledDiv3>
         </React.Fragment>
       ) : (
         ""
-      )}{" "}
+      )}
       <StyledDiv4>
         {children !== undefined ? (
           children
         ) : (
           <React.Fragment>Fieldset contents</React.Fragment>
         )}
-      </StyledDiv4>{" "}
-    </StyledFieldset>{" "}
+      </StyledDiv4>
+    </StyledFieldset>
   </StyledDiv>
 );
 

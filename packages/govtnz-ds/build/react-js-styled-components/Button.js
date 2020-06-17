@@ -86,7 +86,7 @@ var Button = function Button(_ref) {
     type: type,
     name: name,
     onClick: onClick
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example text "), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example text "));
 };
 
 var _default = Button;

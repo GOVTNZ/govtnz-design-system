@@ -3,11 +3,14 @@ import { Component, Input } from "@angular/core";
   selector: "g-H1",
   template: `
 <h1 class="g-heading{{constants.styleSize[styleSize] !== undefined ? " " +  constants.styleSize[styleSize] : ""}}{{marginBottom8 ? " g-heading-mb-8" : ""}}{{marginBottom0 ? " g-heading-mb-0" : ""}}" id="{{id}}">
-   <slot></slot> 
+
+  <slot></slot>
+
 
 </h1>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() styleSize:

@@ -32,7 +32,7 @@ var Radios = function Radios(_ref) {
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     inline: inline,
     big: big
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Radio components"));
 };
 
 var _default = Radios;

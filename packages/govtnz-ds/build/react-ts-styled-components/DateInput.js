@@ -43,71 +43,34 @@ var StyledInput3 = styled_components_1.default.input(templateObject_23 || (templ
 var DateInput = function (_a) {
     var errorId = _a.errorId, hintId = _a.hintId, label = _a.label, hint = _a.hint, error = _a.error, id = _a.id, dayId = _a.dayId, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, dayName = _a.dayName, value = _a.value, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref, monthId = _a.monthId, yearName = _a.yearName, value2 = _a.value2, onChange2 = _a.onChange2, ref2 = _a.ref2, yearId = _a.yearId, value3 = _a.value3, onChange3 = _a.onChange3, ref3 = _a.ref3;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
-        " ",
         react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, role: "group" },
-            " ",
-            react_1.default.createElement(StyledLegend, null,
-                " ",
-                label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label")),
-                " "),
-            " ",
-            react_1.default.createElement(StyledSpan, { id: hintId },
-                " ",
-                hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint")),
-                " "),
-            " ",
+            react_1.default.createElement(StyledLegend, null, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label"))),
+            react_1.default.createElement(StyledSpan, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint"))),
             errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-                " ",
                 react_1.default.createElement(StyledSpan2, { id: errorId },
-                    " ",
                     react_1.default.createElement(StyledSpan3, null, "Error: "),
-                    " ",
-                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error")),
-                    " "),
-                " ")) : (""),
-            " ",
+                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error"))))) : (""),
             react_1.default.createElement(StyledDiv2, { id: id },
-                " ",
                 react_1.default.createElement(StyledDiv3, null,
-                    " ",
                     react_1.default.createElement(StyledDiv4, null,
-                        " ",
-                        react_1.default.createElement(StyledLabel, { htmlFor: dayId }, " Day "),
-                        " ",
+                        react_1.default.createElement(StyledLabel, { htmlFor: dayId }, "Day"),
                         react_1.default.createElement(StyledInput, { error: error, id: dayId, maxLength: 2, name: dayName, pattern: "[0-9]*", type: "text", value: value, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }),
-                        " "),
-                    " "),
-                " ",
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange, ref: ref }))),
                 react_1.default.createElement(StyledDiv5, null,
-                    " ",
                     react_1.default.createElement(StyledDiv6, null,
-                        " ",
-                        react_1.default.createElement(StyledLabel2, { htmlFor: monthId }, " Month "),
-                        " ",
+                        react_1.default.createElement(StyledLabel2, { htmlFor: monthId }, "Month"),
                         react_1.default.createElement(StyledInput2, { error: error, id: monthId, maxLength: 2, name: yearName, pattern: "[0-9]*", type: "text", value: value2, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }),
-                        " "),
-                    " "),
-                " ",
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange2, ref: ref2 }))),
                 react_1.default.createElement(StyledDiv7, null,
-                    " ",
                     react_1.default.createElement(StyledDiv8, null,
-                        " ",
-                        react_1.default.createElement(StyledLabel3, { htmlFor: yearId }, " Year "),
-                        " ",
+                        react_1.default.createElement(StyledLabel3, { htmlFor: yearId }, "Year"),
                         react_1.default.createElement(StyledInput3, { error: error, id: yearId, maxLength: 4, name: yearName, pattern: "[0-9]*", type: "text", value: value3, disabled: disabled !== undefined
                                 ? disabled.toString() === "true"
-                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 }),
-                        " "),
-                    " "),
-                " "),
-            " "),
-        " "));
+                                : undefined, readOnly: readOnly, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, onChange: onChange3, ref: ref3 })))))));
 };
 exports.default = DateInput;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23;

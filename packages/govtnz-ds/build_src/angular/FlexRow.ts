@@ -3,11 +3,14 @@ import { Component, Input } from "@angular/core";
   selector: "g-FlexRow",
   template: `
 <div class="g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? " " +  constants.xsVerticalAlign[xsVerticalAlign] : ""}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? " " +  constants.smVerticalAlign[smVerticalAlign] : ""}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? " " +  constants.mdVerticalAlign[mdVerticalAlign] : ""}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? " " +  constants.lgVerticalAlign[lgVerticalAlign] : ""}}{{isReversed ? " g-flex-reverse" : ""}}">
-   <slot></slot> 
+
+  <slot></slot>
+
 
 </div>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() xsVerticalAlign: "top" | "middle" | "bottom" | undefined;

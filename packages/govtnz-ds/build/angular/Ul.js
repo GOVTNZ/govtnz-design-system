@@ -21,7 +21,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Ul",
-            template: "\n<ul class=\"g-list{{bulleted ? \" g-list--bullet\" : \"\"}}\">\n   <slot></slot> \n\n</ul>\n\n "
+            template: "\n<ul class=\"g-list{{bulleted ? \" g-list--bullet\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</ul>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

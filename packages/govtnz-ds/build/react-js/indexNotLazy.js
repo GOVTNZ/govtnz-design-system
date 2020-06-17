@@ -65,6 +65,12 @@ Object.defineProperty(exports, "mainNav", {
     return _MainNav["default"];
   }
 });
+Object.defineProperty(exports, "subfooter", {
+  enumerable: true,
+  get: function get() {
+    return _Subfooter["default"];
+  }
+});
 Object.defineProperty(exports, "a", {
   enumerable: true,
   get: function get() {
@@ -289,6 +295,8 @@ var _Header = _interopRequireDefault(require("./Header"));
 var _MainNavLink = _interopRequireDefault(require("./MainNavLink"));
 
 var _MainNav = _interopRequireDefault(require("./MainNav"));
+
+var _Subfooter = _interopRequireDefault(require("./Subfooter"));
 
 var _A = _interopRequireDefault(require("./A"));
 

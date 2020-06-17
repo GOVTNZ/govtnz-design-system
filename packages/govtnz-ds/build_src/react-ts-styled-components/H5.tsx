@@ -364,12 +364,11 @@ const H5 = ({
     marginBottom0={marginBottom0}
     id={id}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </StyledH5>
 );
 

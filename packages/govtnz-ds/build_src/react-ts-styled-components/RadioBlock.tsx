@@ -192,7 +192,6 @@ const RadioBlock = ({
   hint
 }: Props) => (
   <StyledDiv>
-    {" "}
     <StyledInput
       aria-describedby={hintId}
       id={id}
@@ -207,30 +206,27 @@ const RadioBlock = ({
       checked={checked}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
     <StyledLabel htmlFor={id}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
-      )}{" "}
-    </StyledLabel>{" "}
+      )}
+    </StyledLabel>
     {hintId !== undefined ? (
       <React.Fragment>
-        {" "}
         <StyledDiv2 id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
-          )}{" "}
-        </StyledDiv2>{" "}
+          )}
+        </StyledDiv2>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

@@ -131,7 +131,7 @@ var constants = {
     }
 };
 var FlexColumn = function (_a) {
-    var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xsOffset = _a.xsOffset, smOffset = _a.smOffset, mdOffset = _a.mdOffset, lgOffset = _a.lgOffset, isReversed = _a.isReversed, children = _a.children;
+    var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xsOffset = _a.xsOffset, smOffset = _a.smOffset, mdOffset = _a.mdOffset, lgOffset = _a.lgOffset, isReversed = _a.isReversed, className = _a.className, children = _a.children;
     return (react_1.default.createElement("div", { className: "g-flex-col" + (constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "") + (constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "") + (constants.md[md] !== undefined ? " " + constants.md[md] : "") + (constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "") + (constants.xsOffset[xsOffset] !== undefined
             ? " " + constants.xsOffset[xsOffset]
             : "") + (constants.smOffset[smOffset] !== undefined
@@ -140,10 +140,7 @@ var FlexColumn = function (_a) {
             ? " " + constants.mdOffset[mdOffset]
             : "") + (constants.lgOffset[lgOffset] !== undefined
             ? " " + constants.lgOffset[lgOffset]
-            : "") + (isReversed ? " g-flex-reverse" : "") },
-        " ",
-        children !== undefined ? children : react_1.default.createElement(react_1.default.Fragment, null),
-        " "));
+            : "") + (isReversed ? " g-flex-reverse" : "") + (className ? " " + className : "") }, children !== undefined ? children : react_1.default.createElement(react_1.default.Fragment, null)));
 };
 exports.default = FlexColumn;
 //# sourceMappingURL=FlexColumn.js.map

@@ -1,7 +1,8 @@
 <div
 class="g-checkboxes__item{% if errorId %} g-form-group--error{% endif %}"
 >
-     
+  
+  
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-checkboxes__input"
@@ -14,40 +15,55 @@ name="{{ name | escape('html_attr') }}"
 value="{{ value | escape('html_attr') }}"
 checked="{% if checked %}checked{% endif %}"
 />
-     
+  
+  
 <label
 class="g-checkboxes__label"
 for="{{ id | escape('html_attr') }}"
 >
 {% block label %}Label text{% endblock %}
 </label>
-     
-       
+  
+  
+  
+    
 <div
 class="g-checkboxes__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-         
+  
+      
 {% block hint %}Hint text{% endblock %}
-       
+  
+    
 </div>
-     
-     
-       
+  
+  
+  
+  
+  
+    
 <div
 class="g-error-message"
 id="{{ errorId | escape('html_attr') }}"
 >
-         
+  
+      
 <span
 class="g-visually-hidden"
 >
-           Error:       
+  
+        Error:
+      
 </span>
-         
+  
+      
 {% block error %}Error text{% endblock %}
-       
+  
+    
 </div>
-     
-   
+  
+  
+  
+
 </div>

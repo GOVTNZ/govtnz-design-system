@@ -1,4 +1,20 @@
-<div class="g-checkboxes__item<% if $errorId %>  g-form-group--error<% end_if %>">    <input<% if $hintId %> aria-describedby="{$hintId}"<% end_if %> class="g-checkboxes__input"<% if $id %> id="{$id}"<% end_if %> type="checkbox"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $name %> name="{$name}"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $checked %> checked="<% if $checked %>undefined<% end_if %>"<% end_if %>/>    <label class="g-checkboxes__label"<% if $id %> for="{$id}"<% end_if %>> {$label}
-</label>         <div class="g-checkboxes__hint"<% if $hintId %> id="{$hintId}"<% end_if %>>        {$hint}
-     </div>            <div class="g-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>>        <span class="g-visually-hidden">          Error:       </span>        {$error}
-     </div>     </div>
+<div class="g-checkboxes__item<% if $errorId %>  g-form-group--error<% end_if %>"> 
+  <input<% if $hintId %> aria-describedby="{$hintId}"<% end_if %> class="g-checkboxes__input"<% if $id %> id="{$id}"<% end_if %> type="checkbox"<% if $disabled %> disabled="<% if $disabled %>undefined<% end_if %>"<% end_if %><% if $readOnly %> readonly="<% if $readOnly %>undefined<% end_if %>"<% end_if %><% if $autoFocus %> autofocus="<% if $autoFocus %>undefined<% end_if %>"<% end_if %><% if $name %> name="{$name}"<% end_if %><% if $value %> value="{$value}"<% end_if %><% if $checked %> checked="<% if $checked %>undefined<% end_if %>"<% end_if %>/> 
+  <label class="g-checkboxes__label"<% if $id %> for="{$id}"<% end_if %>> {$label}
+</label> 
+  
+    <div class="g-checkboxes__hint"<% if $hintId %> id="{$hintId}"<% end_if %>> 
+      {$hint}
+
+    </div> 
+  
+  
+    <div class="g-error-message"<% if $errorId %> id="{$errorId}"<% end_if %>> 
+      <span class="g-visually-hidden"> 
+        Error:
+      </span> 
+      {$error}
+
+    </div> 
+  
+</div>

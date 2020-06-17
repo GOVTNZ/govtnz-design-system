@@ -66,7 +66,6 @@ const StyledA = styled.a`
 
 const MainNavLink = ({ ariaCurrent, href, rel, target, onClick, children }) => (
   <StyledLi>
-    {" "}
     <StyledA
       ariaCurrent={ariaCurrent}
       aria-current={ariaCurrent}
@@ -75,13 +74,12 @@ const MainNavLink = ({ ariaCurrent, href, rel, target, onClick, children }) => (
       target={target}
       onClick={onClick}
     >
-      {" "}
       {children !== undefined ? (
         children
       ) : (
         <React.Fragment> Example item text </React.Fragment>
-      )}{" "}
-    </StyledA>{" "}
+      )}
+    </StyledA>
   </StyledLi>
 );
 

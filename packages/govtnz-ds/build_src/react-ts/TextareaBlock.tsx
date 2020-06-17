@@ -46,46 +46,40 @@ const TextareaBlock = ({
       errorId ? " g-textareaBlock-form-group--error" : ""
     }`}
   >
-    {" "}
     <label className="g-textareaBlock-label" htmlFor={id}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
-      )}{" "}
-    </label>{" "}
+      )}
+    </label>
     {hintId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-textareaBlock-hint" id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     {errorId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-textareaBlock-error-message" id={errorId}>
-          {" "}
-          <span className="g-textareaBlock-visually-hidden"> Error: </span>{" "}
+          <span className="g-textareaBlock-visually-hidden">Error:</span>
           {error !== undefined ? (
             error
           ) : (
             <React.Fragment>Error text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     <textarea
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -108,7 +102,7 @@ const TextareaBlock = ({
       value={value}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
   </div>
 );
 

@@ -10,7 +10,7 @@
       v-bind:name="name"
       v-bind:multiple="multiple"
     >
-      <slot></slot>
+      Options
     </select>
   </div>
 </template>
@@ -24,8 +24,7 @@ export default Vue.extend({
     label: { required: false, default: "Example label text" },
     error: { type: Boolean, default: false, required: true },
     name: { type: String, required: true },
-    multiple: { type: Boolean, default: false, required: false },
-    children: { required: false, default: "<option>Options</option>" }
+    multiple: { type: Boolean, default: false, required: false }
   },
   computed: {
     computed__class() {
@@ -33,7 +32,7 @@ export default Vue.extend({
     },
     computed__class2() {
       return (
-        "g-selectBlock-select" +
+        "g-selectBlock-select " +
         (this.error ? " g-selectBlock-select--error" : "")
       );
     }

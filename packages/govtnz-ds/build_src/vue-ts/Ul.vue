@@ -13,7 +13,7 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return "g-list" + (this.bulleted ? " g-list--bullet" : "");
+      return "g-list " + (this.bulleted ? " g-list--bullet" : "");
     }
   }
 });

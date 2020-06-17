@@ -24,7 +24,7 @@ var RadioBlock = function RadioBlock(_ref) {
       hint = _ref.hint;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radios__item"
-  }, " ", /*#__PURE__*/_react["default"].createElement("input", {
+  }, /*#__PURE__*/_react["default"].createElement("input", {
     "aria-describedby": hintId,
     className: "g-radios__input",
     id: id,
@@ -37,13 +37,13 @@ var RadioBlock = function RadioBlock(_ref) {
     checked: checked,
     onChange: onChange,
     ref: ref
-  }), " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }), /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-radios__label",
     htmlFor: id
-  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text"), " "), " ", hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-radios__hint",
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"), " "), " ") : "", " ");
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "");
 };
 
 var _default = RadioBlock;

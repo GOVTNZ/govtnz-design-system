@@ -1,14 +1,18 @@
 <div
 class="g-fileUpload__form-group"
 >
-     
+  
+  
 <label
 class="g-fileUpload__label"
 for="{{ id | escape('html_attr') }}"
 >
-       Upload a file   
+  
+    Upload a file
+  
 </label>
-     
+  
+  
 <input
 class="g-fileUpload__input"
 id="{{ id | escape('html_attr') }}"
@@ -18,5 +22,6 @@ disabled="{% if disabled %}disabled{% endif %}"
 readonly="{% if readOnly %}readOnly{% endif %}"
 autofocus="{% if autoFocus %}autoFocus{% endif %}"
 />
-   
+  
+
 </div>

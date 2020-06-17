@@ -15,7 +15,6 @@ const RadioBlock = ({
   hint
 }) => (
   <div className="g-radios__item">
-    {" "}
     <input
       aria-describedby={hintId}
       className="g-radios__input"
@@ -31,30 +30,27 @@ const RadioBlock = ({
       checked={checked}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
     <label className="g-radios__label" htmlFor={id}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
-      )}{" "}
-    </label>{" "}
+      )}
+    </label>
     {hintId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-radios__hint" id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
   </div>
 );
 

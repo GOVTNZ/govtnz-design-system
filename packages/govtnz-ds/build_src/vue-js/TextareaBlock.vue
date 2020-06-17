@@ -58,12 +58,12 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-textareaBlock-form-group" +
+        "g-textareaBlock-form-group " +
         (this.errorId ? " g-textareaBlock-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {
-      return +this.hintId + +this.errorId;
+      return this.hintId + this.errorId;
     }
   }
 });

@@ -50,12 +50,11 @@ const FlexRow = ({
         : ""
     }${isReversed ? " g-flex-reverse" : ""}`}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Columns...</React.Fragment>
-    )}{" "}
+    )}
   </div>
 );
 

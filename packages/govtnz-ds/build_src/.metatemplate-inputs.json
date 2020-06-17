@@ -1,7 +1,7 @@
 {
   "FlexColumn": {
     "id": "FlexColumn",
-    "html": "<div\n  class=\"g-flex-col\n    {{ xs: g-flex-col-xs-hidden as hidden | g-flex-col-xs-1 as 1 | g-flex-col-xs-2 as 2 | g-flex-col-xs-3 as 3 | g-flex-col-xs-4 as 4 | g-flex-col-xs-5 as 5 | g-flex-col-xs-6 as 6 | g-flex-col-xs-7 as 7 | g-flex-col-xs-8 as 8 | g-flex-col-xs-9 as 9 | g-flex-col-xs-10 as 10 | g-flex-col-xs-11 as 11 | g-flex-col-xs-12 as 12 | g-flex-col-xs as auto }}\n    {{ sm: g-flex-col-sm-hidden as hidden | g-flex-col-sm-1 as 1 | g-flex-col-sm-2 as 2 | g-flex-col-sm-3 as 3 | g-flex-col-sm-4 as 4 | g-flex-col-sm-5 as 5 | g-flex-col-sm-6 as 6 | g-flex-col-sm-7 as 7 | g-flex-col-sm-8 as 8 | g-flex-col-sm-9 as 9 | g-flex-col-sm-10 as 10 | g-flex-col-sm-11 as 11 | g-flex-col-sm-12 as 12 | g-flex-col-sm as auto }}\n    {{ md: g-flex-col-md-hidden as hidden | g-flex-col-md-1 as 1 | g-flex-col-md-2 as 2 | g-flex-col-md-3 as 3 | g-flex-col-md-4 as 4 | g-flex-col-md-5 as 5 | g-flex-col-md-6 as 6 | g-flex-col-md-7 as 7 | g-flex-col-md-8 as 8 | g-flex-col-md-9 as 9 | g-flex-col-md-10 as 10 | g-flex-col-md-11 as 11 | g-flex-col-md-12 as 12 | g-flex-col-md as auto }}\n    {{ lg: g-flex-col-lg-hidden as hidden | g-flex-col-lg-1 as 1 | g-flex-col-lg-2 as 2 | g-flex-col-lg-3 as 3 | g-flex-col-lg-4 as 4 | g-flex-col-lg-5 as 5 | g-flex-col-lg-6 as 6 | g-flex-col-lg-7 as 7 | g-flex-col-lg-8 as 8 | g-flex-col-lg-9 as 9 | g-flex-col-lg-10 as 10 | g-flex-col-lg-11 as 11 | g-flex-col-lg-12 as 12 | g-flex-col-md as auto }}\n    {{ xsOffset?: g-flex-col-xs-offset-0 as 0 | g-flex-col-xs-offset-1 as 1 | g-flex-col-xs-offset-2 as 2 | g-flex-col-xs-offset-3 as 3 | g-flex-col-xs-offset-4 as 4 | g-flex-col-xs-offset-5 as 5 | g-flex-col-xs-offset-6 as 6 | g-flex-col-xs-offset-7 as 7 | g-flex-col-xs-offset-8 as 8 | g-flex-col-xs-offset-9 as 9 | g-flex-col-xs-offset-10 as 10 | g-flex-col-xs-offset-11 as 11 | g-flex-col-xs-offset-12 as 12 }}\n    {{ smOffset?: g-flex-col-sm-offset-0 as 0 | g-flex-col-sm-offset-1 as 1 | g-flex-col-sm-offset-2 as 2 | g-flex-col-sm-offset-3 as 3 | g-flex-col-sm-offset-4 as 4 | g-flex-col-sm-offset-5 as 5 | g-flex-col-sm-offset-6 as 6 | g-flex-col-sm-offset-7 as 7 | g-flex-col-sm-offset-8 as 8 | g-flex-col-sm-offset-9 as 9 | g-flex-col-sm-offset-10 as 10 | g-flex-col-sm-offset-11 as 11 | g-flex-col-sm-offset-12 as 12 }}\n    {{ mdOffset?: g-flex-col-md-offset-0 as 0 | g-flex-col-md-offset-1 as 1 | g-flex-col-md-offset-2 as 2 | g-flex-col-md-offset-3 as 3 | g-flex-col-md-offset-4 as 4 | g-flex-col-md-offset-5 as 5 | g-flex-col-md-offset-6 as 6 | g-flex-col-md-offset-7 as 7 | g-flex-col-md-offset-8 as 8 | g-flex-col-md-offset-9 as 9 | g-flex-col-md-offset-10 as 10 | g-flex-col-md-offset-11 as 11 | g-flex-col-md-offset-12 as 12 }}\n    {{ lgOffset?: g-flex-col-lg-offset-0 as 0 | g-flex-col-lg-offset-1 as 1 | g-flex-col-lg-offset-2 as 2 | g-flex-col-lg-offset-3 as 3 | g-flex-col-lg-offset-4 as 4 | g-flex-col-lg-offset-5 as 5 | g-flex-col-lg-offset-6 as 6 | g-flex-col-lg-offset-7 as 7 | g-flex-col-lg-offset-8 as 8 | g-flex-col-lg-offset-9 as 9 | g-flex-col-lg-offset-10 as 10 | g-flex-col-lg-offset-11 as 11 | g-flex-col-lg-offset-12 as 12 }}\n    {{ isReversed?: g-flex-reverse }}\n  \"\n>\n  <mt-variable key=\"children\"></mt-variable>\n</div>\n",
+    "html": "<div\n  class=\"g-flex-col\n    {{ xs: g-flex-col-xs-hidden as hidden | g-flex-col-xs-1 as 1 | g-flex-col-xs-2 as 2 | g-flex-col-xs-3 as 3 | g-flex-col-xs-4 as 4 | g-flex-col-xs-5 as 5 | g-flex-col-xs-6 as 6 | g-flex-col-xs-7 as 7 | g-flex-col-xs-8 as 8 | g-flex-col-xs-9 as 9 | g-flex-col-xs-10 as 10 | g-flex-col-xs-11 as 11 | g-flex-col-xs-12 as 12 | g-flex-col-xs as auto }}\n    {{ sm: g-flex-col-sm-hidden as hidden | g-flex-col-sm-1 as 1 | g-flex-col-sm-2 as 2 | g-flex-col-sm-3 as 3 | g-flex-col-sm-4 as 4 | g-flex-col-sm-5 as 5 | g-flex-col-sm-6 as 6 | g-flex-col-sm-7 as 7 | g-flex-col-sm-8 as 8 | g-flex-col-sm-9 as 9 | g-flex-col-sm-10 as 10 | g-flex-col-sm-11 as 11 | g-flex-col-sm-12 as 12 | g-flex-col-sm as auto }}\n    {{ md: g-flex-col-md-hidden as hidden | g-flex-col-md-1 as 1 | g-flex-col-md-2 as 2 | g-flex-col-md-3 as 3 | g-flex-col-md-4 as 4 | g-flex-col-md-5 as 5 | g-flex-col-md-6 as 6 | g-flex-col-md-7 as 7 | g-flex-col-md-8 as 8 | g-flex-col-md-9 as 9 | g-flex-col-md-10 as 10 | g-flex-col-md-11 as 11 | g-flex-col-md-12 as 12 | g-flex-col-md as auto }}\n    {{ lg: g-flex-col-lg-hidden as hidden | g-flex-col-lg-1 as 1 | g-flex-col-lg-2 as 2 | g-flex-col-lg-3 as 3 | g-flex-col-lg-4 as 4 | g-flex-col-lg-5 as 5 | g-flex-col-lg-6 as 6 | g-flex-col-lg-7 as 7 | g-flex-col-lg-8 as 8 | g-flex-col-lg-9 as 9 | g-flex-col-lg-10 as 10 | g-flex-col-lg-11 as 11 | g-flex-col-lg-12 as 12 | g-flex-col-md as auto }}\n    {{ xsOffset?: g-flex-col-xs-offset-0 as 0 | g-flex-col-xs-offset-1 as 1 | g-flex-col-xs-offset-2 as 2 | g-flex-col-xs-offset-3 as 3 | g-flex-col-xs-offset-4 as 4 | g-flex-col-xs-offset-5 as 5 | g-flex-col-xs-offset-6 as 6 | g-flex-col-xs-offset-7 as 7 | g-flex-col-xs-offset-8 as 8 | g-flex-col-xs-offset-9 as 9 | g-flex-col-xs-offset-10 as 10 | g-flex-col-xs-offset-11 as 11 | g-flex-col-xs-offset-12 as 12 }}\n    {{ smOffset?: g-flex-col-sm-offset-0 as 0 | g-flex-col-sm-offset-1 as 1 | g-flex-col-sm-offset-2 as 2 | g-flex-col-sm-offset-3 as 3 | g-flex-col-sm-offset-4 as 4 | g-flex-col-sm-offset-5 as 5 | g-flex-col-sm-offset-6 as 6 | g-flex-col-sm-offset-7 as 7 | g-flex-col-sm-offset-8 as 8 | g-flex-col-sm-offset-9 as 9 | g-flex-col-sm-offset-10 as 10 | g-flex-col-sm-offset-11 as 11 | g-flex-col-sm-offset-12 as 12 }}\n    {{ mdOffset?: g-flex-col-md-offset-0 as 0 | g-flex-col-md-offset-1 as 1 | g-flex-col-md-offset-2 as 2 | g-flex-col-md-offset-3 as 3 | g-flex-col-md-offset-4 as 4 | g-flex-col-md-offset-5 as 5 | g-flex-col-md-offset-6 as 6 | g-flex-col-md-offset-7 as 7 | g-flex-col-md-offset-8 as 8 | g-flex-col-md-offset-9 as 9 | g-flex-col-md-offset-10 as 10 | g-flex-col-md-offset-11 as 11 | g-flex-col-md-offset-12 as 12 }}\n    {{ lgOffset?: g-flex-col-lg-offset-0 as 0 | g-flex-col-lg-offset-1 as 1 | g-flex-col-lg-offset-2 as 2 | g-flex-col-lg-offset-3 as 3 | g-flex-col-lg-offset-4 as 4 | g-flex-col-lg-offset-5 as 5 | g-flex-col-lg-offset-6 as 6 | g-flex-col-lg-offset-7 as 7 | g-flex-col-lg-offset-8 as 8 | g-flex-col-lg-offset-9 as 9 | g-flex-col-lg-offset-10 as 10 | g-flex-col-lg-offset-11 as 11 | g-flex-col-lg-offset-12 as 12 }}\n    {{ isReversed?: g-flex-reverse }}\n    {{ class }}\n  \"\n>\n  <mt-variable key=\"children\"></mt-variable>\n</div>\n",
     "css": ".g-flex-col.g-flex-reverse {\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: reverse;\n  -ms-flex-direction: column-reverse;\n  flex-direction: column-reverse;\n}\n\n.g-flex-col-xs,\n.g-flex-col-xs-1,\n.g-flex-col-xs-10,\n.g-flex-col-xs-11,\n.g-flex-col-xs-12,\n.g-flex-col-xs-2,\n.g-flex-col-xs-3,\n.g-flex-col-xs-4,\n.g-flex-col-xs-5,\n.g-flex-col-xs-6,\n.g-flex-col-xs-7,\n.g-flex-col-xs-8,\n.g-flex-col-xs-9,\n.g-flex-col-xs-offset-0,\n.g-flex-col-xs-offset-1,\n.g-flex-col-xs-offset-10,\n.g-flex-col-xs-offset-11,\n.g-flex-col-xs-offset-12,\n.g-flex-col-xs-offset-2,\n.g-flex-col-xs-offset-3,\n.g-flex-col-xs-offset-4,\n.g-flex-col-xs-offset-5,\n.g-flex-col-xs-offset-6,\n.g-flex-col-xs-offset-7,\n.g-flex-col-xs-offset-8,\n.g-flex-col-xs-offset-9 {\n  box-sizing: border-box;\n  -webkit-box-flex: 0;\n  -ms-flex: 0 0 auto;\n  flex: 0 0 auto;\n  padding-right: 0.5rem;\n  padding-left: 0.5rem;\n}\n.g-flex-col-xs {\n  -webkit-box-flex: 1;\n  -ms-flex-positive: 1;\n  flex-grow: 1;\n  -ms-flex-preferred-size: 0;\n  flex-basis: 0;\n  max-width: 100%;\n}\n\n.g-flex-col-xs-hidden {\n  display: none;\n}\n\n.g-flex-col-xs-1 {\n  -ms-flex-preferred-size: 8.33333333%;\n  flex-basis: 8.33333333%;\n  max-width: 8.33333333%;\n}\n.g-flex-col-xs-2 {\n  -ms-flex-preferred-size: 16.66666667%;\n  flex-basis: 16.66666667%;\n  max-width: 16.66666667%;\n}\n.g-flex-col-xs-3 {\n  -ms-flex-preferred-size: 25%;\n  flex-basis: 25%;\n  max-width: 25%;\n}\n.g-flex-col-xs-4 {\n  -ms-flex-preferred-size: 33.33333333%;\n  flex-basis: 33.33333333%;\n  max-width: 33.33333333%;\n}\n.g-flex-col-xs-5 {\n  -ms-flex-preferred-size: 41.66666667%;\n  flex-basis: 41.66666667%;\n  max-width: 41.66666667%;\n}\n.g-flex-col-xs-6 {\n  -ms-flex-preferred-size: 50%;\n  flex-basis: 50%;\n  max-width: 50%;\n}\n.g-flex-col-xs-7 {\n  -ms-flex-preferred-size: 58.33333333%;\n  flex-basis: 58.33333333%;\n  max-width: 58.33333333%;\n}\n.g-flex-col-xs-8 {\n  -ms-flex-preferred-size: 66.66666667%;\n  flex-basis: 66.66666667%;\n  max-width: 66.66666667%;\n}\n.g-flex-col-xs-9 {\n  -ms-flex-preferred-size: 75%;\n  flex-basis: 75%;\n  max-width: 75%;\n}\n.g-flex-col-xs-10 {\n  -ms-flex-preferred-size: 83.33333333%;\n  flex-basis: 83.33333333%;\n  max-width: 83.33333333%;\n}\n.g-flex-col-xs-11 {\n  -ms-flex-preferred-size: 91.66666667%;\n  flex-basis: 91.66666667%;\n  max-width: 91.66666667%;\n}\n.g-flex-col-xs-12 {\n  -ms-flex-preferred-size: 100%;\n  flex-basis: 100%;\n  max-width: 100%;\n}\n.g-flex-col-xs-offset-0 {\n  margin-left: 0;\n}\n.g-flex-col-xs-offset-1 {\n  margin-left: 8.33333333%;\n}\n.g-flex-col-xs-offset-2 {\n  margin-left: 16.66666667%;\n}\n.g-flex-col-xs-offset-3 {\n  margin-left: 25%;\n}\n.g-flex-col-xs-offset-4 {\n  margin-left: 33.33333333%;\n}\n.g-flex-col-xs-offset-5 {\n  margin-left: 41.66666667%;\n}\n.g-flex-col-xs-offset-6 {\n  margin-left: 50%;\n}\n.col-xs-offset-7 {\n  margin-left: 58.33333333%;\n}\n.g-flex-col-xs-offset-8 {\n  margin-left: 66.66666667%;\n}\n.g-flex-col-xs-offset-9 {\n  margin-left: 75%;\n}\n.g-flex-col-xs-offset-10 {\n  margin-left: 83.33333333%;\n}\n.g-flex-col-xs-offset-11 {\n  margin-left: 91.66666667%;\n}\n.g-flex-start-xs {\n  -webkit-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  text-align: start;\n}\n.g-flex-center-xs {\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  text-align: center;\n}\n.g-flex-end-xs {\n  -webkit-box-pack: end;\n  -ms-flex-pack: end;\n  justify-content: flex-end;\n  text-align: end;\n}\n.g-flex-top-xs {\n  -webkit-box-align: start;\n  -ms-flex-align: start;\n  align-items: flex-start;\n}\n.g-flex-g-flex-middle-xs {\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n.g-flex-bottom-xs {\n  -webkit-box-align: end;\n  -ms-flex-align: end;\n  align-items: flex-end;\n}\n.g-flex-around-xs {\n  -ms-flex-pack: distribute;\n  justify-content: space-around;\n}\n.g-flex-between-xs {\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  justify-content: space-between;\n}\n.g-flex-first-xs {\n  -webkit-box-ordinal-group: 0;\n  -ms-flex-order: -1;\n  order: -1;\n}\n.g-flex-last-xs {\n  -webkit-box-ordinal-group: 2;\n  -ms-flex-order: 1;\n  order: 1;\n}\n\n@media only screen and (min-width: 48em) {\n  .g-flex-col-sm,\n  .g-flex-col-sm-1,\n  .g-flex-col-sm-2,\n  .g-flex-col-sm-3,\n  .g-flex-col-sm-4,\n  .g-flex-col-sm-5,\n  .g-flex-col-sm-6,\n  .g-flex-col-sm-7,\n  .g-flex-col-sm-8,\n  .g-flex-col-sm-9,\n  .g-flex-col-sm-10,\n  .g-flex-col-sm-11,\n  .g-flex-col-sm-12,\n  .g-flex-col-sm-offset-0,\n  .g-flex-col-sm-offset-1,\n  .g-flex-col-sm-offset-10,\n  .g-flex-col-sm-offset-11,\n  .g-flex-col-sm-offset-12,\n  .g-flex-col-sm-offset-2,\n  .g-flex-col-sm-offset-3,\n  .g-flex-col-sm-offset-4,\n  .g-flex-col-sm-offset-5,\n  .g-flex-col-sm-offset-6,\n  .g-flex-col-sm-offset-7,\n  .g-flex-col-sm-offset-8,\n  .g-flex-col-sm-offset-9 {\n    box-sizing: border-box;\n    -webkit-box-flex: 0;\n    -ms-flex: 0 0 auto;\n    flex: 0 0 auto;\n    padding-right: 0.5rem;\n    padding-left: 0.5rem;\n  }\n\n  .g-flex-col-sm-hidden {\n    display: none;\n  }\n\n  .g-flex-col-sm {\n    -webkit-box-flex: 1;\n    -ms-flex-positive: 1;\n    flex-grow: 1;\n    -ms-flex-preferred-size: 0;\n    flex-basis: 0;\n    max-width: 100%;\n  }\n  .g-flex-col-sm-1 {\n    -ms-flex-preferred-size: 8.33333333%;\n    flex-basis: 8.33333333%;\n    max-width: 8.33333333%;\n  }\n  .g-flex-col-sm-2 {\n    -ms-flex-preferred-size: 16.66666667%;\n    flex-basis: 16.66666667%;\n    max-width: 16.66666667%;\n  }\n  .g-flex-col-sm-3 {\n    -ms-flex-preferred-size: 25%;\n    flex-basis: 25%;\n    max-width: 25%;\n  }\n  .g-flex-col-sm-4 {\n    -ms-flex-preferred-size: 33.33333333%;\n    flex-basis: 33.33333333%;\n    max-width: 33.33333333%;\n  }\n  .g-flex-col-sm-5 {\n    -ms-flex-preferred-size: 41.66666667%;\n    flex-basis: 41.66666667%;\n    max-width: 41.66666667%;\n  }\n  .g-flex-col-sm-6 {\n    -ms-flex-preferred-size: 50%;\n    flex-basis: 50%;\n    max-width: 50%;\n  }\n  .g-flex-col-sm-7 {\n    -ms-flex-preferred-size: 58.33333333%;\n    flex-basis: 58.33333333%;\n    max-width: 58.33333333%;\n  }\n  .g-flex-col-sm-8 {\n    -ms-flex-preferred-size: 66.66666667%;\n    flex-basis: 66.66666667%;\n    max-width: 66.66666667%;\n  }\n  .g-flex-col-sm-9 {\n    -ms-flex-preferred-size: 75%;\n    flex-basis: 75%;\n    max-width: 75%;\n  }\n  .g-flex-col-sm-10 {\n    -ms-flex-preferred-size: 83.33333333%;\n    flex-basis: 83.33333333%;\n    max-width: 83.33333333%;\n  }\n  .g-flex-col-sm-11 {\n    -ms-flex-preferred-size: 91.66666667%;\n    flex-basis: 91.66666667%;\n    max-width: 91.66666667%;\n  }\n  .g-flex-col-sm-12 {\n    -ms-flex-preferred-size: 100%;\n    flex-basis: 100%;\n    max-width: 100%;\n  }\n  .g-flex-col-sm-offset-0 {\n    margin-left: 0;\n  }\n  .g-flex-col-sm-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .g-flex-col-sm-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .g-flex-col-sm-offset-3 {\n    margin-left: 25%;\n  }\n  .g-flex-col-sm-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .g-flex-col-sm-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .g-flex-col-sm-offset-6 {\n    margin-left: 50%;\n  }\n  .g-flex-col-sm-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .g-flex-col-sm-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .g-flex-col-sm-offset-9 {\n    margin-left: 75%;\n  }\n  .g-flex-col-sm-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .g-flex-col-sm-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .g-flex-start-sm {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start;\n    text-align: start;\n  }\n  .g-flex-center-sm {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    text-align: center;\n  }\n  .g-flex-end-sm {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    text-align: end;\n  }\n  .g-flex-top-sm {\n    -webkit-box-align: start;\n    -ms-flex-align: start;\n    align-items: flex-start;\n  }\n  .g-flex-middle-sm {\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n  }\n  .g-flex-bottom-sm {\n    -webkit-box-align: end;\n    -ms-flex-align: end;\n    align-items: flex-end;\n  }\n  .g-flex-around-sm {\n    -ms-flex-pack: distribute;\n    justify-content: space-around;\n  }\n  .g-flex-between-sm {\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n  }\n  .g-flex-first-sm {\n    -webkit-box-ordinal-group: 0;\n    -ms-flex-order: -1;\n    order: -1;\n  }\n  .g-flex-last-sm {\n    -webkit-box-ordinal-group: 2;\n    -ms-flex-order: 1;\n    order: 1;\n  }\n}\n\n@media only screen and (min-width: 64em) {\n  .g-flex-col-md,\n  .g-flex-col-md-1,\n  .g-flex-col-md-10,\n  .g-flex-col-md-11,\n  .g-flex-col-md-12,\n  .g-flex-col-md-2,\n  .g-flex-col-md-3,\n  .g-flex-col-md-4,\n  .g-flex-col-md-5,\n  .g-flex-col-md-6,\n  .g-flex-col-md-7,\n  .g-flex-col-md-8,\n  .g-flex-col-md-9,\n  .g-flex-col-md-offset-0,\n  .g-flex-col-md-offset-1,\n  .g-flex-col-md-offset-10,\n  .g-flex-col-md-offset-11,\n  .g-flex-col-md-offset-12,\n  .g-flex-col-md-offset-2,\n  .g-flex-col-md-offset-3,\n  .g-flex-col-md-offset-4,\n  .g-flex-col-md-offset-5,\n  .g-flex-col-md-offset-6,\n  .g-flex-col-md-offset-7,\n  .g-flex-col-md-offset-8,\n  .g-flex-col-md-offset-9 {\n    box-sizing: border-box;\n    -webkit-box-flex: 0;\n    -ms-flex: 0 0 auto;\n    flex: 0 0 auto;\n    padding-right: 0.5rem;\n    padding-left: 0.5rem;\n  }\n\n  .g-flex-col-md-hidden {\n    display: none;\n  }\n\n  .g-flex-col-md {\n    -webkit-box-flex: 1;\n    -ms-flex-positive: 1;\n    flex-grow: 1;\n    -ms-flex-preferred-size: 0;\n    flex-basis: 0;\n    max-width: 100%;\n  }\n  .g-flex-col-md-1 {\n    -ms-flex-preferred-size: 8.33333333%;\n    flex-basis: 8.33333333%;\n    max-width: 8.33333333%;\n  }\n  .g-flex-col-md-2 {\n    -ms-flex-preferred-size: 16.66666667%;\n    flex-basis: 16.66666667%;\n    max-width: 16.66666667%;\n  }\n  .g-flex-col-md-3 {\n    -ms-flex-preferred-size: 25%;\n    flex-basis: 25%;\n    max-width: 25%;\n  }\n  .g-flex-col-md-4 {\n    -ms-flex-preferred-size: 33.33333333%;\n    flex-basis: 33.33333333%;\n    max-width: 33.33333333%;\n  }\n  .g-flex-col-md-5 {\n    -ms-flex-preferred-size: 41.66666667%;\n    flex-basis: 41.66666667%;\n    max-width: 41.66666667%;\n  }\n  .g-flex-col-md-6 {\n    -ms-flex-preferred-size: 50%;\n    flex-basis: 50%;\n    max-width: 50%;\n  }\n  .g-flex-col-md-7 {\n    -ms-flex-preferred-size: 58.33333333%;\n    flex-basis: 58.33333333%;\n    max-width: 58.33333333%;\n  }\n  .g-flex-col-md-8 {\n    -ms-flex-preferred-size: 66.66666667%;\n    flex-basis: 66.66666667%;\n    max-width: 66.66666667%;\n  }\n  .g-flex-col-md-9 {\n    -ms-flex-preferred-size: 75%;\n    flex-basis: 75%;\n    max-width: 75%;\n  }\n  .g-flex-col-md-10 {\n    -ms-flex-preferred-size: 83.33333333%;\n    flex-basis: 83.33333333%;\n    max-width: 83.33333333%;\n  }\n  .g-flex-col-md-11 {\n    -ms-flex-preferred-size: 91.66666667%;\n    flex-basis: 91.66666667%;\n    max-width: 91.66666667%;\n  }\n  .g-flex-col-md-12 {\n    -ms-flex-preferred-size: 100%;\n    flex-basis: 100%;\n    max-width: 100%;\n  }\n  .g-flex-col-md-offset-0 {\n    margin-left: 0;\n  }\n  .g-flex-col-md-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .g-flex-col-md-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .g-flex-col-md-offset-3 {\n    margin-left: 25%;\n  }\n  .g-flex-col-md-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .g-flex-col-md-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .g-flex-col-md-offset-6 {\n    margin-left: 50%;\n  }\n  .g-flex-col-md-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .g-flex-col-md-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .g-flex-col-md-offset-9 {\n    margin-left: 75%;\n  }\n  .g-flex-col-md-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .g-flex-col-md-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .g-flex-start-md {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start;\n    text-align: start;\n  }\n  .g-flex-center-md {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    text-align: center;\n  }\n  .g-flex-end-md {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    text-align: end;\n  }\n  .g-flex-top-md {\n    -webkit-box-align: start;\n    -ms-flex-align: start;\n    align-items: flex-start;\n  }\n  .g-flex-middle-md {\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n  }\n  .g-flex-bottom-md {\n    -webkit-box-align: end;\n    -ms-flex-align: end;\n    align-items: flex-end;\n  }\n  .g-flex-around-md {\n    -ms-flex-pack: distribute;\n    justify-content: space-around;\n  }\n  .between-md {\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n  }\n  .g-flex-first-md {\n    -webkit-box-ordinal-group: 0;\n    -ms-flex-order: -1;\n    order: -1;\n  }\n  .g-flex-last-md {\n    -webkit-box-ordinal-group: 2;\n    -ms-flex-order: 1;\n    order: 1;\n  }\n}\n\n@media only screen and (min-width: 75em) {\n  .g-flex-col-lg,\n  .g-flex-col-lg-1,\n  .g-flex-col-lg-10,\n  .g-flex-col-lg-11,\n  .g-flex-col-lg-12,\n  .g-flex-col-lg-2,\n  .g-flex-col-lg-3,\n  .g-flex-col-lg-4,\n  .g-flex-col-lg-5,\n  .g-flex-col-lg-6,\n  .g-flex-col-lg-7,\n  .g-flex-col-lg-8,\n  .g-flex-col-lg-9,\n  .g-flex-col-lg-offset-0,\n  .g-flex-col-lg-offset-1,\n  .g-flex-col-lg-offset-10,\n  .g-flex-col-lg-offset-11,\n  .g-flex-col-lg-offset-12,\n  .g-flex-col-lg-offset-2,\n  .g-flex-col-lg-offset-3,\n  .g-flex-col-lg-offset-4,\n  .g-flex-col-lg-offset-5,\n  .g-flex-col-lg-offset-6,\n  .g-flex-col-lg-offset-7,\n  .g-flex-col-lg-offset-8,\n  .g-flex-col-lg-offset-9 {\n    box-sizing: border-box;\n    -webkit-box-flex: 0;\n    -ms-flex: 0 0 auto;\n    flex: 0 0 auto;\n    padding-right: 0.5rem;\n    padding-left: 0.5rem;\n  }\n\n  .g-flex-col-lg-hidden {\n    display: none;\n  }\n\n  .g-flex-col-lg {\n    -webkit-box-flex: 1;\n    -ms-flex-positive: 1;\n    flex-grow: 1;\n    -ms-flex-preferred-size: 0;\n    flex-basis: 0;\n    max-width: 100%;\n  }\n  .g-flex-col-lg-1 {\n    -ms-flex-preferred-size: 8.33333333%;\n    flex-basis: 8.33333333%;\n    max-width: 8.33333333%;\n  }\n  .g-flex-col-lg-2 {\n    -ms-flex-preferred-size: 16.66666667%;\n    flex-basis: 16.66666667%;\n    max-width: 16.66666667%;\n  }\n  .g-flex-col-lg-3 {\n    -ms-flex-preferred-size: 25%;\n    flex-basis: 25%;\n    max-width: 25%;\n  }\n  .g-flex-col-lg-4 {\n    -ms-flex-preferred-size: 33.33333333%;\n    flex-basis: 33.33333333%;\n    max-width: 33.33333333%;\n  }\n  .g-flex-col-lg-5 {\n    -ms-flex-preferred-size: 41.66666667%;\n    flex-basis: 41.66666667%;\n    max-width: 41.66666667%;\n  }\n  .g-flex-col-lg-6 {\n    -ms-flex-preferred-size: 50%;\n    flex-basis: 50%;\n    max-width: 50%;\n  }\n  .g-flex-col-lg-7 {\n    -ms-flex-preferred-size: 58.33333333%;\n    flex-basis: 58.33333333%;\n    max-width: 58.33333333%;\n  }\n  .g-flex-col-lg-8 {\n    -ms-flex-preferred-size: 66.66666667%;\n    flex-basis: 66.66666667%;\n    max-width: 66.66666667%;\n  }\n  .g-flex-col-lg-9 {\n    -ms-flex-preferred-size: 75%;\n    flex-basis: 75%;\n    max-width: 75%;\n  }\n  .g-flex-col-lg-10 {\n    -ms-flex-preferred-size: 83.33333333%;\n    flex-basis: 83.33333333%;\n    max-width: 83.33333333%;\n  }\n  .g-flex-col-lg-11 {\n    -ms-flex-preferred-size: 91.66666667%;\n    flex-basis: 91.66666667%;\n    max-width: 91.66666667%;\n  }\n  .g-flex-col-lg-12 {\n    -ms-flex-preferred-size: 100%;\n    flex-basis: 100%;\n    max-width: 100%;\n  }\n  .g-flex-col-lg-offset-0 {\n    margin-left: 0;\n  }\n  .g-flex-col-lg-offset-1 {\n    margin-left: 8.33333333%;\n  }\n  .g-flex-col-lg-offset-2 {\n    margin-left: 16.66666667%;\n  }\n  .g-flex-col-lg-offset-3 {\n    margin-left: 25%;\n  }\n  .g-flex-col-lg-offset-4 {\n    margin-left: 33.33333333%;\n  }\n  .g-flex-col-lg-offset-5 {\n    margin-left: 41.66666667%;\n  }\n  .g-flex-col-lg-offset-6 {\n    margin-left: 50%;\n  }\n  .g-flex-col-lg-offset-7 {\n    margin-left: 58.33333333%;\n  }\n  .g-flex-col-lg-offset-8 {\n    margin-left: 66.66666667%;\n  }\n  .g-flex-col-lg-offset-9 {\n    margin-left: 75%;\n  }\n  .g-flex-col-lg-offset-10 {\n    margin-left: 83.33333333%;\n  }\n  .col-lg-offset-11 {\n    margin-left: 91.66666667%;\n  }\n  .g-flex-start-lg {\n    -webkit-box-pack: start;\n    -ms-flex-pack: start;\n    justify-content: flex-start;\n    text-align: start;\n  }\n  .g-flex-center-lg {\n    -webkit-box-pack: center;\n    -ms-flex-pack: center;\n    justify-content: center;\n    text-align: center;\n  }\n  .g-flex-end-lg {\n    -webkit-box-pack: end;\n    -ms-flex-pack: end;\n    justify-content: flex-end;\n    text-align: end;\n  }\n  .g-flex-top-lg {\n    -webkit-box-align: start;\n    -ms-flex-align: start;\n    align-items: flex-start;\n  }\n  .g-flex-middle-lg {\n    -webkit-box-align: center;\n    -ms-flex-align: center;\n    align-items: center;\n  }\n  .g-flex-bottom-lg {\n    -webkit-box-align: end;\n    -ms-flex-align: end;\n    align-items: flex-end;\n  }\n  .g-flex-around-lg {\n    -ms-flex-pack: distribute;\n    justify-content: space-around;\n  }\n  .g-flex-between-lg {\n    -webkit-box-pack: justify;\n    -ms-flex-pack: justify;\n    justify-content: space-between;\n  }\n  .g-flex-first-lg {\n    -webkit-box-ordinal-group: 0;\n    -ms-flex-order: -1;\n    order: -1;\n  }\n  .g-flex-last-lg {\n    -webkit-box-ordinal-group: 2;\n    -ms-flex-order: 1;\n    order: 1;\n  }\n}\n",
     "cssVariables": [
       {
@@ -1669,10 +1669,177 @@
       }
     ]
   },
+  "Subfooter": {
+    "id": "Subfooter",
+    "html": "<div class=\"g-subfooter\">\n  <mt-variable key=\"children\"> Example subfooter content </mt-variable>\n</div>\n",
+    "css": ".g-subfooter {\n  background-color: #2a2a2a;\n  color: #ffffff;\n  fill: #ffffff;\n  min-height: 104px;\n}\n",
+    "cssVariables": [
+      {
+        "id": "g-theme-font-family",
+        "valueSubstringMatch": "Arial, sans-serif",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
+        "id": "g-theme-color-heading",
+        "valueSubstringMatch": "#ff0000",
+        "defaultValue": "#0b0c0c"
+      },
+      {
+        "id": "g-theme-color-link",
+        "valueSubstringMatch": "#ff0000",
+        "defaultValue": "#0000ff"
+      },
+      {
+        "id": "g-theme-color-black",
+        "valueSubstringMatch": "#000000",
+        "defaultValue": "#000000"
+      },
+      {
+        "id": "g-theme-color-grey",
+        "valueSubstringMatch": "#bfc1c3",
+        "defaultValue": "#bfc1c3"
+      },
+      {
+        "id": "g-theme-color-darkblue",
+        "valueSubstringMatch": "#005ea5",
+        "defaultValue": "#005ea5"
+      },
+      {
+        "id": "g-theme-color-brand-1",
+        "valueSubstringMatch": "#ffbf47",
+        "defaultValue": "#b53cde"
+      },
+      {
+        "id": "g-theme-color-light-grey",
+        "valueSubstringMatch": "#f8f8f8",
+        "defaultValue": "#f8f8f8"
+      },
+      {
+        "id": "g-theme-color-mid-grey",
+        "valueSubstringMatch": "#6f777b",
+        "defaultValue": "#6f777b"
+      },
+      {
+        "id": "g-theme-color-white",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-color-brand-2",
+        "valueSubstringMatch": "#00823b",
+        "defaultValue": "#00823b"
+      },
+      {
+        "id": "g-theme-color-brand-3",
+        "valueSubstringMatch": "#003618",
+        "defaultValue": "#003618"
+      },
+      {
+        "id": "g-theme-color-brand-4",
+        "valueSubstringMatch": "#00692f",
+        "defaultValue": "#00692f"
+      },
+      {
+        "id": "g-theme-color-dark2",
+        "valueSubstringMatch": "#b10e1e",
+        "defaultValue": "#b10e1e"
+      },
+      {
+        "id": "g-theme-color-dark3",
+        "valueSubstringMatch": "#2b8cc4",
+        "defaultValue": "#2b8cc4"
+      },
+      {
+        "id": "g-theme-color-dark4",
+        "valueSubstringMatch": "#a1acb2",
+        "defaultValue": "#a1acb2"
+      },
+      {
+        "id": "g-theme-color-dark5",
+        "valueSubstringMatch": "#454a4c",
+        "defaultValue": "#454a4c"
+      },
+      {
+        "id": "g-theme-color-dark6",
+        "valueSubstringMatch": "#dee0e2",
+        "defaultValue": "#dee0e2"
+      },
+      {
+        "id": "g-theme-color-dark7",
+        "valueSubstringMatch": "#171819",
+        "defaultValue": "#171819"
+      },
+      {
+        "id": "g-theme-color-dark8",
+        "valueSubstringMatch": "#2e3133",
+        "defaultValue": "#2e3133"
+      },
+      {
+        "id": "g-theme-color-dark9",
+        "valueSubstringMatch": "#1d8feb",
+        "defaultValue": "#1d8feb"
+      },
+      {
+        "id": "g-theme-color-dark10",
+        "valueSubstringMatch": "#4c2c92",
+        "defaultValue": "#4c2c92"
+      },
+      {
+        "id": "g-theme-color-dark11",
+        "valueSubstringMatch": "#28a197",
+        "defaultValue": "#28a197"
+      },
+      {
+        "id": "g-theme-button-color",
+        "valueSubstringMatch": "#00823b",
+        "defaultValue": "#078766"
+      },
+      {
+        "id": "g-theme-button-color-hover-focus",
+        "valueSubstringMatch": "#00682f",
+        "defaultValue": "#0c6c53"
+      },
+      {
+        "id": "g-theme-button-color-secondary",
+        "valueSubstringMatch": "#dee0e2",
+        "defaultValue": "#d3d3d3"
+      },
+      {
+        "id": "g-theme-button-color-secondary-hover-focus",
+        "valueSubstringMatch": "#c8cacb",
+        "defaultValue": "#b2b2b2"
+      },
+      {
+        "id": "g-theme-button-color-secondary-box-shadow",
+        "valueSubstringMatch": "#858688",
+        "defaultValue": "#2a2a2a"
+      },
+      {
+        "id": "g-theme-button-color-warning",
+        "valueSubstringMatch": "#b10e1e",
+        "defaultValue": "#b10e1e"
+      },
+      {
+        "id": "g-theme-button-color-warning-hover-focus",
+        "valueSubstringMatch": "#8e0b18",
+        "defaultValue": "#900815"
+      },
+      {
+        "id": "g-theme-button-color-warning-box-shadow",
+        "valueSubstringMatch": "#47060c",
+        "defaultValue": "#2a2a2a"
+      },
+      {
+        "id": "g-theme-heading-font-weight",
+        "valueSubstringMatch": "g-heading-font-weight",
+        "defaultValue": "bold"
+      }
+    ]
+  },
   "A": {
     "id": "A",
-    "html": "<a class=\"g-link {{ isMuted?: g-link--muted }}\" href=\"#\"><mt-variable key=\"children\">Example text</mt-variable></a>",
-    "css": ".g-link {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n@media print {\n  .g-link {\n    font-family: sans-serif;\n  }\n}\n\n.g-link:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n.g-link:link {\n  color: #005ea5;\n}\n\n.g-link:visited {\n  color: #4c2c92;\n}\n\n.g-link:hover {\n  color: #2b8cc4;\n}\n\n.g-link:active {\n  color: #2b8cc4;\n}\n\n.g-link:focus {\n  color: #0b0c0c;\n}\n\n.g-link--muted:link,\n.g-link--muted:visited,\n.g-link--muted:hover,\n.g-link--muted:active {\n  color: #6f777b;\n}\n\n.g-link--muted:focus {\n  color: #0b0c0c;\n}\n",
+    "html": "<a class=\"g-link {{ isMuted?: g-link--muted }} {{ class? }}\" href=\"#\"\n  ><mt-variable key=\"children\">Example text</mt-variable></a\n>\n",
+    "css": ".g-link {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n@media print {\n  .g-link {\n    font-family: sans-serif;\n  }\n}\n\n.g-link:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n.g-link:link {\n  color: #005ea5;\n}\n\n.g-link:visited {\n  color: #4c2c92;\n}\n\n.g-link:hover {\n  color: #2b8cc4;\n}\n\n.g-link:active {\n  color: #2b8cc4;\n}\n\n.g-link:focus {\n  color: #0b0c0c;\n}\n\n.g-link--muted:link,\n.g-link--muted:visited,\n.g-link--muted:hover,\n.g-link--muted:active {\n  color: #6f777b;\n}\n\n.g-link--muted:focus {\n  color: #0b0c0c;\n}\n\n.g-footer .g-link:first-child {\n  margin-left: -1em;\n}\n\n.g-footer .g-link {\n  display: inline-block;\n  padding: 1em;\n  margin-right: 1em;\n  margin-top: 1.5em;\n  margin-bottom: 1.5em;\n  color: #d3d3d3;\n}\n\n.g-footer .g-link:hover {\n  color: #fff;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",

@@ -1,2 +1,4 @@
-<div class="g-form-divider">    {$children}
- </div>
+<div class="g-form-divider"> 
+  {$children}
+
+</div>

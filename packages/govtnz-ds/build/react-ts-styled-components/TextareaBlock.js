@@ -21,34 +21,16 @@ var StyledTextarea = styled_components_1.default.textarea(templateObject_7 || (t
 var TextareaBlock = function (_a) {
     var errorId = _a.errorId, id = _a.id, label = _a.label, hintId = _a.hintId, hint = _a.hint, error = _a.error, name = _a.name, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange, ref = _a.ref;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
-        " ",
-        react_1.default.createElement(StyledLabel, { htmlFor: id },
-            " ",
-            label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text")),
-            " "),
-        " ",
+        react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
         hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-            " ",
-            react_1.default.createElement(StyledDiv2, { id: hintId },
-                " ",
-                hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text")),
-                " "),
-            " ")) : (""),
-        " ",
+            react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
         errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-            " ",
             react_1.default.createElement(StyledDiv3, { id: errorId },
-                " ",
-                react_1.default.createElement(StyledSpan, null, " Error: "),
-                " ",
-                error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text")),
-                " "),
-            " ")) : (""),
-        " ",
+                react_1.default.createElement(StyledSpan, null, "Error:"),
+                error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : (""),
         react_1.default.createElement(StyledTextarea, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
-                : undefined, id: id, name: name, rows: rows, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref }),
-        " "));
+                : undefined, id: id, name: name, rows: rows, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, cols: cols, autoFocus: autoFocus, spellCheck: spellCheck, autoComplete: autoComplete, maxLength: maxLength, value: value, onChange: onChange, ref: ref })));
 };
 exports.default = TextareaBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;

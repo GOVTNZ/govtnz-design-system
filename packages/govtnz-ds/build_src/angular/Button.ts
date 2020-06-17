@@ -3,11 +3,14 @@ import { Component, Input } from "@angular/core";
   selector: "g-Button",
   template: `
 <button class="g-button{{disabled ? " g-button--disabled" : ""}}{{constants.level[level] !== undefined ? " " +  constants.level[level] : ""}}" disabled="{{disabled}}" type="{{type}}" name="{{name}}">
-   <slot></slot> 
+
+  <slot></slot>
+
 
 </button>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() disabled: boolean | undefined;

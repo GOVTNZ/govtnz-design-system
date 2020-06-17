@@ -2,7 +2,6 @@ import React from "react";
 
 const MainNavLink = ({ ariaCurrent, href, rel, target, onClick, children }) => (
   <li className="g-main-nav__link">
-    {" "}
     <a
       aria-current={ariaCurrent}
       className={`g-main-nav__link__a${
@@ -13,13 +12,12 @@ const MainNavLink = ({ ariaCurrent, href, rel, target, onClick, children }) => (
       target={target}
       onClick={onClick}
     >
-      {" "}
       {children !== undefined ? (
         children
       ) : (
         <React.Fragment> Example item text </React.Fragment>
-      )}{" "}
-    </a>{" "}
+      )}
+    </a>
   </li>
 );
 

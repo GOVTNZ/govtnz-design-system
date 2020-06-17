@@ -8,6 +8,7 @@ export { default as footer } from "./Footer";
 export { default as header } from "./Header";
 export { default as mainNavLink } from "./MainNavLink";
 export { default as mainNav } from "./MainNav";
+export { default as subfooter } from "./Subfooter";
 export { default as a } from "./A";
 export { default as button } from "./Button";
 export { default as captionL } from "./CaptionL";

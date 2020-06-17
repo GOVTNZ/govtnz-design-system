@@ -32,7 +32,6 @@ const DateInput = ({
       errorId ? " g-dateInput-form-group--error" : ""
     }`}
   >
-    {" "}
     <fieldset
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -42,52 +41,43 @@ const DateInput = ({
       className="g-dateInput-fieldset"
       role="group"
     >
-      {" "}
       <legend className="g-dateInput-fieldset__legend">
-        {" "}
         {label !== undefined ? (
           label
         ) : (
           <React.Fragment>Example label</React.Fragment>
-        )}{" "}
-      </legend>{" "}
+        )}
+      </legend>
       <span className="g-dateInput-hint" id={hintId}>
-        {" "}
         {hint !== undefined ? (
           hint
         ) : (
           <React.Fragment>Example hint</React.Fragment>
-        )}{" "}
-      </span>{" "}
+        )}
+      </span>
       {errorId !== undefined ? (
         <React.Fragment>
-          {" "}
           <span className="g-dateInput-error-message" id={errorId}>
-            {" "}
-            <span className="g-dateInput-visually-hidden">Error: </span>{" "}
+            <span className="g-dateInput-visually-hidden">Error: </span>
             {error !== undefined ? (
               error
             ) : (
               <React.Fragment>Example error</React.Fragment>
-            )}{" "}
-          </span>{" "}
+            )}
+          </span>
         </React.Fragment>
       ) : (
         ""
-      )}{" "}
+      )}
       <div className="g-dateInput" id={id}>
-        {" "}
         <div className="g-dateInput__item">
-          {" "}
           <div className="g-dateInput-form-group">
-            {" "}
             <label
               className="g-dateInput-label g-dateInput__label"
               htmlFor={dayId}
             >
-              {" "}
-              Day{" "}
-            </label>{" "}
+              Day
+            </label>
             <input
               className={`g-dateInput-input g-dateInput__input g-dateInput-input--width-2${
                 error ? " g-dateInput-input--error" : ""
@@ -109,20 +99,17 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange}
               ref={ref}
-            />{" "}
-          </div>{" "}
-        </div>{" "}
+            />
+          </div>
+        </div>
         <div className="g-dateInput__item">
-          {" "}
           <div className="g-dateInput-form-group">
-            {" "}
             <label
               className="g-dateInput-label g-dateInput__label"
               htmlFor={monthId}
             >
-              {" "}
-              Month{" "}
-            </label>{" "}
+              Month
+            </label>
             <input
               className={`g-dateInput-input g-dateInput__input g-dateInput-input--width-2${
                 error ? " g-dateInput-input--error" : ""
@@ -144,20 +131,17 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange2}
               ref={ref2}
-            />{" "}
-          </div>{" "}
-        </div>{" "}
+            />
+          </div>
+        </div>
         <div className="g-dateInput__item">
-          {" "}
           <div className="g-dateInput-form-group">
-            {" "}
             <label
               className="g-dateInput-label g-dateInput__label"
               htmlFor={yearId}
             >
-              {" "}
-              Year{" "}
-            </label>{" "}
+              Year
+            </label>
             <input
               className={`g-dateInput-input g-dateInput__input g-dateInput-input--width-4${
                 error ? " g-dateInput-input--error" : ""
@@ -179,11 +163,11 @@ const DateInput = ({
               autoComplete={autoComplete}
               onChange={onChange3}
               ref={ref3}
-            />{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
-    </fieldset>{" "}
+            />
+          </div>
+        </div>
+      </div>
+    </fieldset>
   </div>
 );
 
