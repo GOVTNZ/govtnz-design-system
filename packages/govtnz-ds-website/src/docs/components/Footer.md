@@ -25,10 +25,10 @@ Please note that only the `Footer` component is part of the example. The other H
             <Subfooter>
                 <FlexContainer width="fixed">
                     <FlexRow>
-                        <FlexColumn xs="6" sm="6" md="6" lg="6" className="example-subfooter-column example-subfooter-copyright">
+                        <FlexColumn xs="5" sm="5" md="5" lg="5" className="example-subfooter-column example-subfooter-copyright">
                             &copy; Crown Copyright 2020
                         </FlexColumn>
-                        <FlexColumn xs="6" sm="6" md="6" lg="6" className="example-subfooter-column example-align-right">
+                        <FlexColumn xs="7" sm="7" md="7" lg="7" className="example-subfooter-column example-align-right">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="230"

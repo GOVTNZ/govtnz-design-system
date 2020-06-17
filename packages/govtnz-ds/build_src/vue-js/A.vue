@@ -66,16 +66,25 @@ export default Vue.extend({
 .g-link--muted:focus {
   color: #0b0c0c;
 }
-.g-footer .g-link:first-child {
-  margin-left: -1em;
-}
 .g-footer .g-link {
-  display: inline-block;
+  display: block;
   padding: 1em;
-  margin-right: 1em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
   color: #d3d3d3;
+  margin-left: -1em;
+  margin-right: -1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 40.0625em) {
+  .g-footer .g-link:first-child {
+    margin-left: -1em;
+  }
+  .g-footer .g-link {
+    display: inline-block;
+    margin-right: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
 }
 .g-footer .g-link:hover {
   color: #fff;
