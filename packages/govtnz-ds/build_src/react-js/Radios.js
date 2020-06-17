@@ -6,12 +6,11 @@ const Radios = ({ inline, big, children }) => (
       big ? " g-radios--big" : ""
     }`}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Radio components</React.Fragment>
-    )}{" "}
+    )}
   </div>
 );
 

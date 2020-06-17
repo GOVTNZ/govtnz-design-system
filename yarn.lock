@@ -2117,10 +2117,10 @@
   resolved "https://registry.yarnpkg.com/@soda/get-current-script/-/get-current-script-1.0.1.tgz#f4afffcb36e069a801d5339c90499601c47a2516"
   integrity sha512-zeOomWIE52M9JpYXlsR3iOf7TXTTmNQHnSbqjMsQZ5phzfAenHzL/1+vQ0ZoJfagocK11LNf8vnn2JG0ufRMUQ==
 
-"@springload/metatemplate@^0.5.9":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.5.9.tgz#34343a6926e81ecd8cc4071dc2d532ace1f8ceff"
-  integrity sha512-Z4kUg9Ute7YOmSzUJKkRUTGHvyfB8f97ZnexpoaehfDG7wWQyb9FiNiSqVJhY/AQfoFN3Db3r8YlTN8mPI913A==
+"@springload/metatemplate@^0.6.5":
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/@springload/metatemplate/-/metatemplate-0.6.5.tgz#2c9ff5824a2145374eaab9276d461cd7eba83814"
+  integrity sha512-VSEPX1hGt134mn7gnP5/svbagxxCE1fouUhQlQ0xETgl444ZjyxLBjxEtOQMxPgOpXLMl9/G7byp6Cj+ZT79sw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.4"
     "@babel/plugin-proposal-object-rest-spread" "^7.4.4"

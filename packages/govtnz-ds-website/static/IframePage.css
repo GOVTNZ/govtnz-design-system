@@ -59,6 +59,17 @@ a:focus {
   display: none;
 }
 
-.css-changes-for-example-only footer p {
-  padding: 0.8em 1em;
+.css-changes-for-example-only .example-align-right {
+  justify-content: flex-end;
+}
+
+.css-changes-for-example-only .example-subfooter-column {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  min-height: 104px;
+}
+
+.css-changes-for-example-only .example-subfooter-copyright {
+  font-size: 14px;
 }

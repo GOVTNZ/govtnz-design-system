@@ -21,6 +21,8 @@ var MainNavLink_1 = require("./MainNavLink");
 Object.defineProperty(exports, "mainNavLink", { enumerable: true, get: function () { return MainNavLink_1.default; } });
 var MainNav_1 = require("./MainNav");
 Object.defineProperty(exports, "mainNav", { enumerable: true, get: function () { return MainNav_1.default; } });
+var Subfooter_1 = require("./Subfooter");
+Object.defineProperty(exports, "subfooter", { enumerable: true, get: function () { return Subfooter_1.default; } });
 var A_1 = require("./A");
 Object.defineProperty(exports, "a", { enumerable: true, get: function () { return A_1.default; } });
 var Button_1 = require("./Button");

@@ -8,12 +8,11 @@ const StyledFooter = styled.footer`
 
 const FooterWrapper = ({ children }) => (
   <StyledFooter>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Content...</React.Fragment>
-    )}{" "}
+    )}
   </StyledFooter>
 );
 

@@ -3,11 +3,14 @@ import { Component, Input } from "@angular/core";
   selector: "g-Radios",
   template: `
 <div class="g-radios{{inline ? " g-radios--inline" : ""}}{{big ? " g-radios--big" : ""}}">
-   <slot></slot> 
+
+  <slot></slot>
+
 
 </div>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() inline: boolean | undefined;

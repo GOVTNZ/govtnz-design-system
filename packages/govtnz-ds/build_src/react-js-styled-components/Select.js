@@ -54,14 +54,13 @@ const Select = ({ selectId, name, multiple, onChange, ref, children }) => (
     onChange={onChange}
     ref={ref}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>
         <option>Options</option>
       </React.Fragment>
-    )}{" "}
+    )}
   </StyledSelect>
 );
 

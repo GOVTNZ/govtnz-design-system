@@ -14,12 +14,7 @@ var StyledFieldset = styled_components_1.default.fieldset(templateObject_2 || (t
 var Fieldset = function (_a) {
     var hintId = _a.hintId, children = _a.children;
     return (react_1.default.createElement(StyledDiv, null,
-        " ",
-        react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId },
-            " ",
-            children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Legend and other fieldset contents...")),
-            " "),
-        " "));
+        react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Legend and other fieldset contents...")))));
 };
 exports.default = Fieldset;
 var templateObject_1, templateObject_2;

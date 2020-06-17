@@ -36,12 +36,11 @@ const StyledDiv = styled.div`
 
 const FlexContainer = ({ width, children }) => (
   <StyledDiv width={width}>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Rows...</React.Fragment>
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

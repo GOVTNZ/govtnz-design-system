@@ -35,12 +35,11 @@ const StyledDiv = styled.div`
 
 const FormDivider = ({ children }: Props) => (
   <StyledDiv>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Contents...</React.Fragment>
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

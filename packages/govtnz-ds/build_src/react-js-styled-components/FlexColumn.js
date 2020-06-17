@@ -774,6 +774,7 @@ const FlexColumn = ({
   mdOffset,
   lgOffset,
   isReversed,
+  className,
   children
 }) => (
   <StyledDiv
@@ -786,9 +787,9 @@ const FlexColumn = ({
     mdOffset={mdOffset}
     lgOffset={lgOffset}
     isReversed={isReversed}
+    className={className}
   >
-    {" "}
-    {children !== undefined ? children : <React.Fragment></React.Fragment>}{" "}
+    {children !== undefined ? children : <React.Fragment></React.Fragment>}
   </StyledDiv>
 );
 

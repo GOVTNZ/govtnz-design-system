@@ -29,7 +29,7 @@ var Footer = function Footer(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledFooter, {
     role: "contentinfo"
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "));
 };
 
 var _default = Footer;

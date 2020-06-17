@@ -25,7 +25,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-main-nav__link__a" +
+        "g-main-nav__link__a " +
         (this.ariaCurrent ? " g-main-nav__link__a--active" : "")
       );
     }

@@ -8,6 +8,7 @@
       v-bind:type="type"
     >
       <slot name="button"></slot>
+
       <svg
         class="g-main-nav__button__icon"
         viewBox="0 0 16 16"
@@ -53,7 +54,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-main-nav__button" +
+        "g-main-nav__button " +
         (constants.isOpen[this.isOpen] !== undefined
           ? ` ${constants.isOpen[this.isOpen]}`
           : "")
@@ -61,7 +62,7 @@ export default Vue.extend({
     },
     computed__class2() {
       return (
-        "g-main-nav__ul" +
+        "g-main-nav__ul " +
         (constants.isOpen[this.isOpen] !== undefined
           ? ` ${constants.isOpen[this.isOpen]}`
           : "")

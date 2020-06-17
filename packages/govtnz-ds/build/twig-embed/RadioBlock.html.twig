@@ -1,7 +1,8 @@
 <div
 class="g-radios__item"
 >
-     
+  
+  
 <input
 aria-describedby="{{ hintId | escape('html_attr') }}"
 class="g-radios__input"
@@ -14,25 +15,34 @@ autofocus="{% if autoFocus %}autoFocus{% endif %}"
 value="{{ value | escape('html_attr') }}"
 checked="{% if checked %}checked{% endif %}"
 />
-     
+  
+  
 <label
 class="g-radios__label"
 for="{{ id | escape('html_attr') }}"
 >
-       
+  
+    
 {% block label %}Label text{% endblock %}
-     
+  
+  
 </label>
-     
-       
+  
+  
+  
+    
 <div
 class="g-radios__hint"
 id="{{ hintId | escape('html_attr') }}"
 >
-         
+  
+      
 {% block hint %}Hint text{% endblock %}
-       
+  
+    
 </div>
-     
-   
+  
+  
+  
+
 </div>

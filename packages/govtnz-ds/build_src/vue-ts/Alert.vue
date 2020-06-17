@@ -2,6 +2,7 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -20,6 +21,7 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class2">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -38,6 +40,7 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class3">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -56,6 +59,7 @@
   <div aria-atomic="true" aria-live="polite" role="note">
     <div v-bind:class="computed__class4">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -74,6 +78,7 @@
   <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class5">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -92,6 +97,7 @@
   <div v-bind:aria-labelledby="headingId" role="note">
     <div v-bind:class="computed__class6">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -110,6 +116,7 @@
   <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div v-bind:class="computed__class7">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -128,6 +135,7 @@
   <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div v-bind:class="computed__class8">
       <slot></slot>
+
       <svg
         aria-hidden="true"
         class="g-alert__icon"
@@ -171,7 +179,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -179,7 +187,7 @@ export default Vue.extend({
     },
     computed__class2() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -187,7 +195,7 @@ export default Vue.extend({
     },
     computed__class3() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -195,7 +203,7 @@ export default Vue.extend({
     },
     computed__class4() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -203,7 +211,7 @@ export default Vue.extend({
     },
     computed__class5() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -211,7 +219,7 @@ export default Vue.extend({
     },
     computed__class6() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -219,7 +227,7 @@ export default Vue.extend({
     },
     computed__class7() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")
@@ -227,7 +235,7 @@ export default Vue.extend({
     },
     computed__class8() {
       return (
-        "g-alert" +
+        "g-alert " +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`
           : "")

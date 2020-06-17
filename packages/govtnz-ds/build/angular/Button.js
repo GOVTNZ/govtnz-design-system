@@ -30,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Button",
-            template: "\n<button class=\"g-button{{disabled ? \" g-button--disabled\" : \"\"}}{{constants.level[level] !== undefined ? \" \" +  constants.level[level] : \"\"}}\" disabled=\"{{disabled}}\" type=\"{{type}}\" name=\"{{name}}\">\n   <slot></slot> \n\n</button>\n\n "
+            template: "\n<button class=\"g-button{{disabled ? \" g-button--disabled\" : \"\"}}{{constants.level[level] !== undefined ? \" \" +  constants.level[level] : \"\"}}\" disabled=\"{{disabled}}\" type=\"{{type}}\" name=\"{{name}}\">\n\n  <slot></slot>\n\n\n</button>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

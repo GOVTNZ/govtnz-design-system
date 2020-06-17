@@ -9,10 +9,7 @@ var constants = {
 };
 var FlexContainer = function (_a) {
     var width = _a.width, children = _a.children;
-    return (react_1.default.createElement("div", { className: constants.width[width] !== undefined ? constants.width[width] : "" },
-        " ",
-        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Rows...")),
-        " "));
+    return (react_1.default.createElement("div", { className: constants.width[width] !== undefined ? constants.width[width] : "" }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Rows..."))));
 };
 exports.default = FlexContainer;
 //# sourceMappingURL=FlexContainer.js.map

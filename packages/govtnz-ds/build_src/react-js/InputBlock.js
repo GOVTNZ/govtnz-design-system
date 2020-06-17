@@ -39,46 +39,40 @@ const InputBlock = ({
       errorId ? " g-inputBlock-form-group--error" : ""
     }`}
   >
-    {" "}
     <label className="g-inputBlock-label" htmlFor={id}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Example text</React.Fragment>
-      )}{" "}
-    </label>{" "}
+      )}
+    </label>
     {hint !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-inputBlock-hint" id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Example text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     {errorId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-inputBlock-error-message" id={errorId}>
-          {" "}
-          <span className="g-inputBlock-visually-hidden">Error: </span>{" "}
+          <span className="g-inputBlock-visually-hidden">Error: </span>
           {error !== undefined ? (
             error
           ) : (
             <React.Fragment>Example text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     <input
       aria-describedby={
         hintId !== undefined || errorId !== undefined
@@ -104,7 +98,7 @@ const InputBlock = ({
       autoComplete={autoComplete}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
   </div>
 );
 

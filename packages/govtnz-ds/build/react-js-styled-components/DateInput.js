@@ -317,18 +317,18 @@ var DateInput = function DateInput(_ref) {
       ref3 = _ref.ref3;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledFieldset, {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     role: "group"
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledLegend, null, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label"), " "), " ", /*#__PURE__*/_react["default"].createElement(StyledSpan, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledLegend, null, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label")), /*#__PURE__*/_react["default"].createElement(StyledSpan, {
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example hint"), " "), " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement(StyledSpan2, {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example hint")), errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledSpan2, {
     id: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledSpan3, null, "Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example error"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledSpan3, null, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: id
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv3, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledDiv3, null, /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: dayId
-  }, " Day "), " ", /*#__PURE__*/_react["default"].createElement(StyledInput, {
+  }, "Day"), /*#__PURE__*/_react["default"].createElement(StyledInput, {
     error: error,
     id: dayId,
     maxLength: 2,
@@ -343,9 +343,9 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange,
     ref: ref
-  }), " "), " "), " ", /*#__PURE__*/_react["default"].createElement(StyledDiv5, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv6, null, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel2, {
+  }))), /*#__PURE__*/_react["default"].createElement(StyledDiv5, null, /*#__PURE__*/_react["default"].createElement(StyledDiv6, null, /*#__PURE__*/_react["default"].createElement(StyledLabel2, {
     htmlFor: monthId
-  }, " Month "), " ", /*#__PURE__*/_react["default"].createElement(StyledInput2, {
+  }, "Month"), /*#__PURE__*/_react["default"].createElement(StyledInput2, {
     error: error,
     id: monthId,
     maxLength: 2,
@@ -360,9 +360,9 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange2,
     ref: ref2
-  }), " "), " "), " ", /*#__PURE__*/_react["default"].createElement(StyledDiv7, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv8, null, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel3, {
+  }))), /*#__PURE__*/_react["default"].createElement(StyledDiv7, null, /*#__PURE__*/_react["default"].createElement(StyledDiv8, null, /*#__PURE__*/_react["default"].createElement(StyledLabel3, {
     htmlFor: yearId
-  }, " Year "), " ", /*#__PURE__*/_react["default"].createElement(StyledInput3, {
+  }, "Year"), /*#__PURE__*/_react["default"].createElement(StyledInput3, {
     error: error,
     id: yearId,
     maxLength: 4,
@@ -377,7 +377,7 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange3,
     ref: ref3
-  }), " "), " "), " "), " "), " ");
+  }))))));
 };
 
 var _default = DateInput;

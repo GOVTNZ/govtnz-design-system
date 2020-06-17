@@ -20,12 +20,11 @@ const StyledDiv = styled.div`
 
 const Radios = ({ inline, big, children }: Props) => (
   <StyledDiv inline={inline} big={big}>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Radio components</React.Fragment>
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

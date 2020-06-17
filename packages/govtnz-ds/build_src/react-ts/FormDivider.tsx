@@ -6,12 +6,11 @@ type Props = {
 
 const FormDivider = ({ children }: Props) => (
   <div className="g-form-divider">
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Contents...</React.Fragment>
-    )}{" "}
+    )}
   </div>
 );
 

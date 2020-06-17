@@ -114,12 +114,11 @@ const FlexRow = ({
     lgVerticalAlign={lgVerticalAlign}
     isReversed={isReversed}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Columns...</React.Fragment>
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

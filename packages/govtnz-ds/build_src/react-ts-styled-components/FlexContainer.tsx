@@ -41,12 +41,11 @@ const StyledDiv = styled.div<Pick<Props, "width">>`
 
 const FlexContainer = ({ width, children }: Props) => (
   <StyledDiv width={width}>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Rows...</React.Fragment>
-    )}{" "}
+    )}
   </StyledDiv>
 );
 

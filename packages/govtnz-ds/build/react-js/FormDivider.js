@@ -13,7 +13,7 @@ var FormDivider = function FormDivider(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-form-divider"
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Contents..."), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Contents..."));
 };
 
 var _default = FormDivider;

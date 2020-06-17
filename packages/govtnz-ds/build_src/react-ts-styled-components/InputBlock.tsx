@@ -237,46 +237,40 @@ const InputBlock = ({
   ref
 }: Props) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledLabel htmlFor={id}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Example text</React.Fragment>
-      )}{" "}
-    </StyledLabel>{" "}
+      )}
+    </StyledLabel>
     {hint !== undefined ? (
       <React.Fragment>
-        {" "}
         <StyledDiv2 id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Example text</React.Fragment>
-          )}{" "}
-        </StyledDiv2>{" "}
+          )}
+        </StyledDiv2>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     {errorId !== undefined ? (
       <React.Fragment>
-        {" "}
         <StyledDiv3 id={errorId}>
-          {" "}
-          <StyledSpan>Error: </StyledSpan>{" "}
+          <StyledSpan>Error: </StyledSpan>
           {error !== undefined ? (
             error
           ) : (
             <React.Fragment>Example text</React.Fragment>
-          )}{" "}
-        </StyledDiv3>{" "}
+          )}
+        </StyledDiv3>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     <StyledInput
       width={width}
       error={error}
@@ -301,7 +295,7 @@ const InputBlock = ({
       autoComplete={autoComplete}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
   </StyledDiv>
 );
 

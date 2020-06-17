@@ -41,7 +41,7 @@ var FlexRow = function FlexRow(_ref) {
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-flex-row".concat(constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? " " + constants.xsVerticalAlign[xsVerticalAlign] : "").concat(constants.smVerticalAlign[smVerticalAlign] !== undefined ? " " + constants.smVerticalAlign[smVerticalAlign] : "").concat(constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? " " + constants.mdVerticalAlign[mdVerticalAlign] : "").concat(constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? " " + constants.lgVerticalAlign[lgVerticalAlign] : "").concat(isReversed ? " g-flex-reverse" : "")
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Columns..."));
 };
 
 var _default = FlexRow;

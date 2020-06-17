@@ -3,17 +3,22 @@ import { Component, Input } from "@angular/core";
   selector: "g-MainNavLink",
   template: `
 <li class="g-main-nav__link">
-   
+
+  
 <a aria-current="{{ariaCurrent}}" class="g-main-nav__link__a{{ariaCurrent ? " g-main-nav__link__a--active" : ""}}" href="{{href}}" rel="{{rel}}" target="{{target}}">
-     <slot></slot>   
+
+    <slot></slot>
+  
 
 </a>
 
- 
+
+
 
 </li>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() ariaCurrent: any | undefined;

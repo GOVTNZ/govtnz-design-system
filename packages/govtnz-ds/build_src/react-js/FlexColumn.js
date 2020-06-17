@@ -137,6 +137,7 @@ const FlexColumn = ({
   mdOffset,
   lgOffset,
   isReversed,
+  className,
   children
 }) => (
   <div
@@ -160,10 +161,9 @@ const FlexColumn = ({
       constants.lgOffset[lgOffset] !== undefined
         ? " " + constants.lgOffset[lgOffset]
         : ""
-    }${isReversed ? " g-flex-reverse" : ""}`}
+    }${isReversed ? " g-flex-reverse" : ""}${className ? " " + className : ""}`}
   >
-    {" "}
-    {children !== undefined ? children : <React.Fragment></React.Fragment>}{" "}
+    {children !== undefined ? children : <React.Fragment></React.Fragment>}
   </div>
 );
 

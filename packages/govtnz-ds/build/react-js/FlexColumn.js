@@ -146,10 +146,11 @@ var FlexColumn = function FlexColumn(_ref) {
       mdOffset = _ref.mdOffset,
       lgOffset = _ref.lgOffset,
       isReversed = _ref.isReversed,
+      className = _ref.className,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(isReversed ? " g-flex-reverse" : "")
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null), " ");
+    className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(isReversed ? " g-flex-reverse" : "").concat(className ? " " + className : "")
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null));
 };
 
 var _default = FlexColumn;

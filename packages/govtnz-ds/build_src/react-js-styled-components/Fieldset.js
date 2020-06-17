@@ -19,15 +19,13 @@ const StyledFieldset = styled.fieldset`
 
 const Fieldset = ({ hintId, children }) => (
   <StyledDiv>
-    {" "}
     <StyledFieldset aria-describedby={hintId}>
-      {" "}
       {children !== undefined ? (
         children
       ) : (
         <React.Fragment>Legend and other fieldset contents...</React.Fragment>
-      )}{" "}
-    </StyledFieldset>{" "}
+      )}
+    </StyledFieldset>
   </StyledDiv>
 );
 

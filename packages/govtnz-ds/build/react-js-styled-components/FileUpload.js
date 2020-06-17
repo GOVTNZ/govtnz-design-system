@@ -57,9 +57,9 @@ var FileUpload = function FileUpload(_ref) {
       name = _ref.name,
       onChange = _ref.onChange,
       ref = _ref.ref;
-  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel, {
+  return /*#__PURE__*/_react["default"].createElement(StyledDiv, null, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, " Upload a file "), " ", /*#__PURE__*/_react["default"].createElement(StyledInput, {
+  }, "Upload a file"), /*#__PURE__*/_react["default"].createElement(StyledInput, {
     id: id,
     name: name,
     type: "file",
@@ -68,7 +68,7 @@ var FileUpload = function FileUpload(_ref) {
     autoFocus: autoFocus,
     onChange: onChange,
     ref: ref
-  }), " ");
+  }));
 };
 
 var _default = FileUpload;

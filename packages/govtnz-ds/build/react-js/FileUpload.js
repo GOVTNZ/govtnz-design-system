@@ -19,10 +19,10 @@ var FileUpload = function FileUpload(_ref) {
       ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-fileUpload__form-group"
-  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-fileUpload__label",
     htmlFor: id
-  }, " ", "Upload a file", " "), " ", /*#__PURE__*/_react["default"].createElement("input", {
+  }, "Upload a file"), /*#__PURE__*/_react["default"].createElement("input", {
     className: "g-fileUpload__input",
     id: id,
     name: name,
@@ -32,7 +32,7 @@ var FileUpload = function FileUpload(_ref) {
     autoFocus: autoFocus,
     onChange: onChange,
     ref: ref
-  }), " ");
+  }));
 };
 
 var _default = FileUpload;

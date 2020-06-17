@@ -30,13 +30,10 @@ var AppComponent = /** @class */ (function () {
     __decorate([
         core_1.Input()
     ], AppComponent.prototype, "multiple", void 0);
-    __decorate([
-        core_1.Input()
-    ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-SelectBlock",
-            template: "\n<div class=\"{{errorId ? \"g-form-group--error\" : \"\"}}\">\n   \n<label class=\"g-selectBlock-label\" for=\"{{selectId}}\">\n     <slot name=\"label\"></slot>   \n\n</label>\n\n   \n<select class=\"g-selectBlock-select{{error ? \" g-selectBlock-select--error\" : \"\"}}\" id=\"{{selectId}}\" name=\"{{name}}\" multiple=\"{{multiple}}\">\n<slot></slot>\n\n</select>\n\n \n\n</div>\n\n "
+            template: "\n<div class=\"{{errorId ? \"g-form-group--error\" : \"\"}}\">\n\n  \n<label class=\"g-selectBlock-label\" for=\"{{selectId}}\">\n\n    <slot name=\"label\"></slot>\n  \n\n</label>\n\n\n  \n<select class=\"g-selectBlock-select{{error ? \" g-selectBlock-select--error\" : \"\"}}\" id=\"{{selectId}}\" name=\"{{name}}\" multiple=\"{{multiple}}\">\nOptions\n\n</select>\n\n\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

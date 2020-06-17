@@ -37,31 +37,31 @@ var DateInput = function DateInput(_ref) {
       ref3 = _ref.ref3;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput-form-group".concat(errorId ? " g-dateInput-form-group--error" : "")
-  }, " ", /*#__PURE__*/_react["default"].createElement("fieldset", {
+  }, /*#__PURE__*/_react["default"].createElement("fieldset", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-dateInput-fieldset",
     role: "group"
-  }, " ", /*#__PURE__*/_react["default"].createElement("legend", {
+  }, /*#__PURE__*/_react["default"].createElement("legend", {
     className: "g-dateInput-fieldset__legend"
-  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label"), " "), " ", /*#__PURE__*/_react["default"].createElement("span", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label")), /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-dateInput-hint",
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example hint"), " "), " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("span", {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example hint")), errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-dateInput-error-message",
     id: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-dateInput-visually-hidden"
-  }, "Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example error"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example error"))) : "", /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput",
     id: id
-  }, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput__item"
-  }, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput-form-group"
-  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-dateInput-label g-dateInput__label",
     htmlFor: dayId
-  }, " ", "Day", " "), " ", /*#__PURE__*/_react["default"].createElement("input", {
+  }, "Day"), /*#__PURE__*/_react["default"].createElement("input", {
     className: "g-dateInput-input g-dateInput__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: dayId,
     maxLength: 2,
@@ -76,14 +76,14 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange,
     ref: ref
-  }), " "), " "), " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput__item"
-  }, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput-form-group"
-  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-dateInput-label g-dateInput__label",
     htmlFor: monthId
-  }, " ", "Month", " "), " ", /*#__PURE__*/_react["default"].createElement("input", {
+  }, "Month"), /*#__PURE__*/_react["default"].createElement("input", {
     className: "g-dateInput-input g-dateInput__input g-dateInput-input--width-2".concat(error ? " g-dateInput-input--error" : ""),
     id: monthId,
     maxLength: 2,
@@ -98,14 +98,14 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange2,
     ref: ref2
-  }), " "), " "), " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }))), /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput__item"
-  }, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-dateInput-form-group"
-  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-dateInput-label g-dateInput__label",
     htmlFor: yearId
-  }, " ", "Year", " "), " ", /*#__PURE__*/_react["default"].createElement("input", {
+  }, "Year"), /*#__PURE__*/_react["default"].createElement("input", {
     className: "g-dateInput-input g-dateInput__input g-dateInput-input--width-4".concat(error ? " g-dateInput-input--error" : ""),
     id: yearId,
     maxLength: 4,
@@ -120,7 +120,7 @@ var DateInput = function DateInput(_ref) {
     autoComplete: autoComplete,
     onChange: onChange3,
     ref: ref3
-  }), " "), " "), " "), " "), " ");
+  }))))));
 };
 
 var _default = DateInput;

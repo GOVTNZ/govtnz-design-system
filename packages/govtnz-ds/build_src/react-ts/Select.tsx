@@ -25,14 +25,13 @@ const Select = ({
     onChange={onChange}
     ref={ref}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>
         <option>Options</option>
       </React.Fragment>
-    )}{" "}
+    )}
   </select>
 );
 

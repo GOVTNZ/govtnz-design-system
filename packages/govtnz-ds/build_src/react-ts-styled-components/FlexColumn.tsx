@@ -119,6 +119,7 @@ type Props = {
     | "11"
     | "12";
   isReversed?: boolean;
+  className: any;
   children?: React.ReactNode;
 };
 
@@ -907,6 +908,7 @@ const FlexColumn = ({
   mdOffset,
   lgOffset,
   isReversed,
+  className,
   children
 }: Props) => (
   <StyledDiv
@@ -919,9 +921,9 @@ const FlexColumn = ({
     mdOffset={mdOffset}
     lgOffset={lgOffset}
     isReversed={isReversed}
+    className={className}
   >
-    {" "}
-    {children !== undefined ? children : <React.Fragment></React.Fragment>}{" "}
+    {children !== undefined ? children : <React.Fragment></React.Fragment>}
   </StyledDiv>
 );
 

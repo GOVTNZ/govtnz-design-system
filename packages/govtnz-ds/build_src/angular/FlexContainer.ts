@@ -3,11 +3,14 @@ import { Component, Input } from "@angular/core";
   selector: "g-FlexContainer",
   template: `
 <div class="{{constants.width[width] !== undefined ?  constants.width[width] : ""}}">
-   <slot></slot> 
+
+  <slot></slot>
+
 
 </div>
 
- `
+
+`
 })
 export class AppComponent {
   @Input() width: "fixed" | "fluid";

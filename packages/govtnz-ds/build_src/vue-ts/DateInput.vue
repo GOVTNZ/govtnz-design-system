@@ -136,28 +136,28 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-dateInput-form-group" +
+        "g-dateInput-form-group " +
         (this.errorId ? " g-dateInput-form-group--error" : "")
       );
     },
     computed__ariaDescribedby() {
-      return +this.hintId + +this.errorId;
+      return this.hintId + this.errorId;
     },
     computed__class2() {
       return (
-        "g-dateInput-input g-dateInput__input g-dateInput-input--width-2" +
+        "g-dateInput-input g-dateInput__input g-dateInput-input--width-2 " +
         (this.error ? " g-dateInput-input--error" : "")
       );
     },
     computed__class3() {
       return (
-        "g-dateInput-input g-dateInput__input g-dateInput-input--width-2" +
+        "g-dateInput-input g-dateInput__input g-dateInput-input--width-2 " +
         (this.error ? " g-dateInput-input--error" : "")
       );
     },
     computed__class4() {
       return (
-        "g-dateInput-input g-dateInput__input g-dateInput-input--width-4" +
+        "g-dateInput-input g-dateInput__input g-dateInput-input--width-4 " +
         (this.error ? " g-dateInput-input--error" : "")
       );
     }

@@ -216,13 +216,13 @@ var InputBlock = function InputBlock(_ref) {
       ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: id
-  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ", hint !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text")), hint !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, {
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement(StyledInput, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledInput, {
     width: width,
     error: error,
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
@@ -240,7 +240,7 @@ var InputBlock = function InputBlock(_ref) {
     autoComplete: autoComplete,
     onChange: onChange,
     ref: ref
-  }), " ");
+  }));
 };
 
 var _default = InputBlock;

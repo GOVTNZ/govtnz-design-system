@@ -126,10 +126,7 @@ var StyledH6 = styled_components_1.default.h6(templateObject_39 || (templateObje
 });
 var H6 = function (_a) {
     var styleSize = _a.styleSize, marginBottom8 = _a.marginBottom8, marginBottom0 = _a.marginBottom0, id = _a.id, children = _a.children;
-    return (react_1.default.createElement(StyledH6, { styleSize: styleSize, marginBottom8: marginBottom8, marginBottom0: marginBottom0, id: id },
-        " ",
-        children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text")),
-        " "));
+    return (react_1.default.createElement(StyledH6, { styleSize: styleSize, marginBottom8: marginBottom8, marginBottom0: marginBottom0, id: id }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = H6;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8, templateObject_9, templateObject_10, templateObject_11, templateObject_12, templateObject_13, templateObject_14, templateObject_15, templateObject_16, templateObject_17, templateObject_18, templateObject_19, templateObject_20, templateObject_21, templateObject_22, templateObject_23, templateObject_24, templateObject_25, templateObject_26, templateObject_27, templateObject_28, templateObject_29, templateObject_30, templateObject_31, templateObject_32, templateObject_33, templateObject_34, templateObject_35, templateObject_36, templateObject_37, templateObject_38, templateObject_39;

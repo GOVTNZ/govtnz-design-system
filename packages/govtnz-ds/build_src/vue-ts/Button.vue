@@ -32,7 +32,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-button" +
+        "g-button " +
         (this.disabled ? " g-button--disabled" : "") +
         (constants.level[this.level] !== undefined
           ? ` ${constants.level[this.level]}`

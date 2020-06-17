@@ -22,37 +22,17 @@ var StyledDiv4 = styled_components_1.default.div(templateObject_8 || (templateOb
 var FieldsetBlock = function (_a) {
     var errorId = _a.errorId, hintId = _a.hintId, legend = _a.legend, hint = _a.hint, error = _a.error, children = _a.children;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
-        " ",
         react_1.default.createElement(StyledFieldset, { "aria-describedby": hintId !== undefined || errorId !== undefined
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined },
-            " ",
-            react_1.default.createElement(StyledLegend, null,
-                " ",
-                legend !== undefined ? (legend) : (react_1.default.createElement(react_1.default.Fragment, null, "Legend text")),
-                " "),
-            " ",
+            react_1.default.createElement(StyledLegend, null, legend !== undefined ? (legend) : (react_1.default.createElement(react_1.default.Fragment, null, "Legend text"))),
             hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-                " ",
-                react_1.default.createElement(StyledDiv2, { id: hintId },
-                    " ",
-                    hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text")),
-                    " "),
-                " ")) : (""),
-            " ",
+                react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
             errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
-                " ",
                 react_1.default.createElement(StyledDiv3, { id: errorId },
-                    " ",
-                    react_1.default.createElement(StyledSpan, null, " Error: "),
-                    " ",
-                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text")),
-                    " "),
-                " ")) : (""),
-            " ",
-            react_1.default.createElement(StyledDiv4, null, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Fieldset contents"))),
-            " "),
-        " "));
+                    react_1.default.createElement(StyledSpan, null, "Error:"),
+                    error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : (""),
+            react_1.default.createElement(StyledDiv4, null, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Fieldset contents"))))));
 };
 exports.default = FieldsetBlock;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8;

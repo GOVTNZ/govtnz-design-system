@@ -14,7 +14,7 @@ var Footer = function Footer(_ref) {
   return /*#__PURE__*/_react["default"].createElement("footer", {
     className: "g-footer",
     role: "contentinfo"
-  }, " ", children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "), " ");
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example footer content "));
 };
 
 var _default = Footer;

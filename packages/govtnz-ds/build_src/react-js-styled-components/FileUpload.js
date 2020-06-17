@@ -90,8 +90,7 @@ const FileUpload = ({
   ref
 }) => (
   <StyledDiv>
-    {" "}
-    <StyledLabel htmlFor={id}> Upload a file </StyledLabel>{" "}
+    <StyledLabel htmlFor={id}>Upload a file</StyledLabel>
     <StyledInput
       id={id}
       name={name}
@@ -103,7 +102,7 @@ const FileUpload = ({
       autoFocus={autoFocus}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
   </StyledDiv>
 );
 

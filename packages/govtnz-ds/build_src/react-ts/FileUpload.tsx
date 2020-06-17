@@ -20,11 +20,9 @@ const FileUpload = ({
   ref
 }: Props) => (
   <div className="g-fileUpload__form-group">
-    {" "}
     <label className="g-fileUpload__label" htmlFor={id}>
-      {" "}
-      Upload a file{" "}
-    </label>{" "}
+      Upload a file
+    </label>
     <input
       className="g-fileUpload__input"
       id={id}
@@ -37,7 +35,7 @@ const FileUpload = ({
       autoFocus={autoFocus}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
   </div>
 );
 

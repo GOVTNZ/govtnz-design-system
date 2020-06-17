@@ -20,12 +20,7 @@ var StyledA = styled_components_1.default.a(templateObject_4 || (templateObject_
 var MainNavLink = function (_a) {
     var ariaCurrent = _a.ariaCurrent, href = _a.href, rel = _a.rel, target = _a.target, onClick = _a.onClick, children = _a.children;
     return (react_1.default.createElement(StyledLi, null,
-        " ",
-        react_1.default.createElement(StyledA, { ariaCurrent: ariaCurrent, "aria-current": ariaCurrent, href: href, rel: rel, target: target, onClick: onClick },
-            " ",
-            children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example item text ")),
-            " "),
-        " "));
+        react_1.default.createElement(StyledA, { ariaCurrent: ariaCurrent, "aria-current": ariaCurrent, href: href, rel: rel, target: target, onClick: onClick }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, " Example item text ")))));
 };
 exports.default = MainNavLink;
 var templateObject_1, templateObject_2, templateObject_3, templateObject_4;

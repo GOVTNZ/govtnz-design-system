@@ -10,7 +10,6 @@ type Props = {
   multiple?: boolean;
   onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
   ref?: React.RefObject<HTMLSelectElement>;
-  children?: React.ReactNode;
 };
 
 const StyledDiv = styled.div`
@@ -102,19 +101,16 @@ const SelectBlock = ({
   name,
   multiple,
   onChange,
-  ref,
-  children
+  ref
 }: Props) => (
   <StyledDiv errorId={errorId}>
-    {" "}
     <StyledLabel htmlFor={selectId}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Example label text</React.Fragment>
-      )}{" "}
-    </StyledLabel>{" "}
+      )}
+    </StyledLabel>
     <StyledSelect
       error={error}
       id={selectId}
@@ -123,14 +119,8 @@ const SelectBlock = ({
       onChange={onChange}
       ref={ref}
     >
-      {children !== undefined ? (
-        children
-      ) : (
-        <React.Fragment>
-          <option>Options</option>
-        </React.Fragment>
-      )}
-    </StyledSelect>{" "}
+      Options
+    </StyledSelect>
   </StyledDiv>
 );
 

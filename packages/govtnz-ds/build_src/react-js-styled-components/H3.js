@@ -348,12 +348,11 @@ const H3 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
     marginBottom0={marginBottom0}
     id={id}
   >
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </StyledH3>
 );
 

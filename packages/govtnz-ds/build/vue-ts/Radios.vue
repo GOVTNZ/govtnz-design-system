@@ -15,7 +15,7 @@ export default Vue.extend({
   computed: {
     computed__class() {
       return (
-        "g-radios" +
+        "g-radios " +
         (this.inline ? " g-radios--inline" : "") +
         (this.big ? " g-radios--big" : "")
       );

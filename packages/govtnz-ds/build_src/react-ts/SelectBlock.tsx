@@ -9,7 +9,6 @@ type Props = {
   multiple?: boolean;
   onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
   ref?: React.RefObject<HTMLSelectElement>;
-  children?: React.ReactNode;
 };
 
 const SelectBlock = ({
@@ -20,19 +19,16 @@ const SelectBlock = ({
   name,
   multiple,
   onChange,
-  ref,
-  children
+  ref
 }: Props) => (
   <div className={errorId ? "g-form-group--error" : ""}>
-    {" "}
     <label className="g-selectBlock-label" htmlFor={selectId}>
-      {" "}
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Example label text</React.Fragment>
-      )}{" "}
-    </label>{" "}
+      )}
+    </label>
     <select
       className={`g-selectBlock-select${
         error ? " g-selectBlock-select--error" : ""
@@ -43,14 +39,8 @@ const SelectBlock = ({
       onChange={onChange}
       ref={ref}
     >
-      {children !== undefined ? (
-        children
-      ) : (
-        <React.Fragment>
-          <option>Options</option>
-        </React.Fragment>
-      )}
-    </select>{" "}
+      Options
+    </select>
   </div>
 );
 

@@ -30,18 +30,18 @@ var TextareaBlock = function TextareaBlock(_ref) {
       ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-form-group".concat(errorId ? " g-textareaBlock-form-group--error" : "")
-  }, " ", /*#__PURE__*/_react["default"].createElement("label", {
+  }, /*#__PURE__*/_react["default"].createElement("label", {
     className: "g-textareaBlock-label",
     htmlFor: id
-  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text"), " "), " ", hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Label text")), hintId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-hint",
     id: hintId
-  }, " ", hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"), " "), " ") : "", " ", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", /*#__PURE__*/_react["default"].createElement("div", {
+  }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-textareaBlock-error-message",
     id: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement("span", {
+  }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-textareaBlock-visually-hidden"
-  }, " Error: "), " ", error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"), " "), " ") : "", " ", /*#__PURE__*/_react["default"].createElement("textarea", {
+  }, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement("textarea", {
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     className: "g-textareaBlock-textarea",
     id: id,
@@ -57,7 +57,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
     value: value,
     onChange: onChange,
     ref: ref
-  }), " ");
+  }));
 };
 
 var _default = TextareaBlock;

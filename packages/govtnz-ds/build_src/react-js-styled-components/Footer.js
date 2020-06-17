@@ -9,12 +9,11 @@ const StyledFooter = styled.footer`
 
 const Footer = ({ children }) => (
   <StyledFooter role="contentinfo">
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment> Example footer content </React.Fragment>
-    )}{" "}
+    )}
   </StyledFooter>
 );
 

@@ -7,12 +7,11 @@ type Props = {
 
 const Ul = ({ bulleted, children }: Props) => (
   <ul className={`g-list${bulleted ? " g-list--bullet" : ""}`}>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </ul>
 );
 

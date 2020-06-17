@@ -41,11 +41,14 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "isReversed", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "class", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexColumn",
-            template: "\n<div class=\"g-flex-col{{constants.xs[xs] !== undefined ? \" \" +  constants.xs[xs] : \"\"}}{{constants.sm[sm] !== undefined ? \" \" +  constants.sm[sm] : \"\"}}{{constants.md[md] !== undefined ? \" \" +  constants.md[md] : \"\"}}{{constants.lg[lg] !== undefined ? \" \" +  constants.lg[lg] : \"\"}}{{constants.xsOffset[xsOffset] !== undefined ? \" \" +  constants.xsOffset[xsOffset] : \"\"}}{{constants.smOffset[smOffset] !== undefined ? \" \" +  constants.smOffset[smOffset] : \"\"}}{{constants.mdOffset[mdOffset] !== undefined ? \" \" +  constants.mdOffset[mdOffset] : \"\"}}{{constants.lgOffset[lgOffset] !== undefined ? \" \" +  constants.lgOffset[lgOffset] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}\">\n   <slot></slot> \n\n</div>\n\n "
+            template: "\n<div class=\"g-flex-col{{constants.xs[xs] !== undefined ? \" \" +  constants.xs[xs] : \"\"}}{{constants.sm[sm] !== undefined ? \" \" +  constants.sm[sm] : \"\"}}{{constants.md[md] !== undefined ? \" \" +  constants.md[md] : \"\"}}{{constants.lg[lg] !== undefined ? \" \" +  constants.lg[lg] : \"\"}}{{constants.xsOffset[xsOffset] !== undefined ? \" \" +  constants.xsOffset[xsOffset] : \"\"}}{{constants.smOffset[smOffset] !== undefined ? \" \" +  constants.smOffset[smOffset] : \"\"}}{{constants.mdOffset[mdOffset] !== undefined ? \" \" +  constants.mdOffset[mdOffset] : \"\"}}{{constants.lgOffset[lgOffset] !== undefined ? \" \" +  constants.lgOffset[lgOffset] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}{{class ? \" \" +  class : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

@@ -7,12 +7,11 @@ const StyledUl = styled.ul`
 
 const Ul = ({ bulleted, children }) => (
   <StyledUl bulleted={bulleted}>
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment>Example text</React.Fragment>
-    )}{" "}
+    )}
   </StyledUl>
 );
 

@@ -17,7 +17,6 @@ const CheckboxBlock = ({
   error
 }) => (
   <div className={`g-checkboxes__item${errorId ? " g-form-group--error" : ""}`}>
-    {" "}
     <input
       aria-describedby={hintId}
       className="g-checkboxes__input"
@@ -33,45 +32,41 @@ const CheckboxBlock = ({
       checked={checked}
       onChange={onChange}
       ref={ref}
-    />{" "}
+    />
     <label className="g-checkboxes__label" htmlFor={id}>
       {label !== undefined ? (
         label
       ) : (
         <React.Fragment>Label text</React.Fragment>
       )}
-    </label>{" "}
+    </label>
     {hintId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-checkboxes__hint" id={hintId}>
-          {" "}
           {hint !== undefined ? (
             hint
           ) : (
             <React.Fragment>Hint text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
     {errorId !== undefined ? (
       <React.Fragment>
-        {" "}
         <div className="g-error-message" id={errorId}>
-          {" "}
-          <span className="g-visually-hidden"> Error: </span>{" "}
+          <span className="g-visually-hidden">Error:</span>
           {error !== undefined ? (
             error
           ) : (
             <React.Fragment>Error text</React.Fragment>
-          )}{" "}
-        </div>{" "}
+          )}
+        </div>
       </React.Fragment>
     ) : (
       ""
-    )}{" "}
+    )}
   </div>
 );
 

@@ -14,12 +14,11 @@ const StyledHeader = styled.header`
 
 const Header = ({ children }: Props) => (
   <StyledHeader role="banner">
-    {" "}
     {children !== undefined ? (
       children
     ) : (
       <React.Fragment> Example header content </React.Fragment>
-    )}{" "}
+    )}
   </StyledHeader>
 );
 

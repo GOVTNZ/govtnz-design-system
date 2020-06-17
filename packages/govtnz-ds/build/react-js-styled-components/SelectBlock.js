@@ -69,20 +69,19 @@ var SelectBlock = function SelectBlock(_ref) {
       name = _ref.name,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
-      ref = _ref.ref,
-      children = _ref.children;
+      ref = _ref.ref;
   return /*#__PURE__*/_react["default"].createElement(StyledDiv, {
     errorId: errorId
-  }, " ", /*#__PURE__*/_react["default"].createElement(StyledLabel, {
+  }, /*#__PURE__*/_react["default"].createElement(StyledLabel, {
     htmlFor: selectId
-  }, " ", label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label text"), " "), " ", /*#__PURE__*/_react["default"].createElement(StyledSelect, {
+  }, label !== undefined ? label : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example label text")), /*#__PURE__*/_react["default"].createElement(StyledSelect, {
     error: error,
     id: selectId,
     name: name,
     multiple: multiple,
     onChange: onChange,
     ref: ref
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options"))), " ");
+  }, "Options"));
 };
 
 var _default = SelectBlock;
