@@ -34,10 +34,10 @@ const fieldState = {
   valid: true,
 };
 
-const ErrorMessage = ({ label }) => (
+const ErrorMessage = ({ message }) => (
   <div className="g-inputBlock-error-message">
     <span className="g-fieldsetBlock-visually-hidden">Error:</span>
-    <label htmlFor="">{label}</label>
+    <label htmlFor="">{message}</label>
   </div>
 );
 
@@ -135,7 +135,7 @@ class ContactusForm extends React.Component {
             {username.valid ? (
               ''
             ) : (
-              <ErrorMessage label={username.errorMessage} />
+              <ErrorMessage message={username.errorMessage} />
             )}
             <InputBlock
               width="30"
@@ -159,7 +159,7 @@ class ContactusForm extends React.Component {
               ''
             ) : (
               <ErrorMessage
-                label={
+                message={
                   email.typeMismatch
                     ? email.emailFormatError
                     : email.errorMessage
@@ -188,12 +188,13 @@ class ContactusForm extends React.Component {
             {textarea.valid ? (
               ''
             ) : (
-              <ErrorMessage label={textarea.errorMessage} />
+              <ErrorMessage message={textarea.errorMessage} />
             )}
 
             <TextareaBlock
               autoComplete="autoComplete"
               name="textarea"
+              label="What is your message?"
               error={textarea.valid}
               required
             />
@@ -206,7 +207,7 @@ class ContactusForm extends React.Component {
                 : 'g-fieldsetBlock-form-group--error'
             }
           >
-            {radio.valid ? '' : <ErrorMessage label={radio.errorMessage} />}
+            {radio.valid ? '' : <ErrorMessage message={radio.errorMessage} />}
 
             <Radios inline>
               <RadioBlock
@@ -247,6 +248,19 @@ class ContactusForm extends React.Component {
               </H2>
               <P>We will reply to your email within 1-3 working days</P>
             </Alert>
+          </div>
+
+          <div>
+            {username.valid && email.valid && radio.valid && textarea.valid ? (
+              ''
+            ) : (
+              <Alert level="warning" headingId="heading3">
+                <H2 id="heading3">
+                  Error: There’s a problem with the following responses
+                </H2>
+                <P>We will reply to your email within 1-3 working days</P>
+              </Alert>
+            )}
           </div>
         </form>
       </>
