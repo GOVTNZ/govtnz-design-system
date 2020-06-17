@@ -1,7 +1,15 @@
 import React, { Component, Fragment } from 'react';
 
+import ExampleContainer from '../../commons/ExampleContainer';
+// import Example from '../../commons/Example';
+import Row from '@govtnz/ds/build/react-ts/FlexRow';
+import Column from '@govtnz/ds/build/react-ts/FlexColumn';
+
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
+
+import H3 from '@govtnz/ds/build/react-ts/H3';
+import '../../commons/styles/ds/themed-H3.scss';
 
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
@@ -34,119 +42,170 @@ class ContactusForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
 
     if (!event.target.checkValidity()) {
       this.setState({
         invalid: true,
-        displayErrors: true,
       });
       return;
     }
 
-    const data = new FormData(event.target);
+    const form = event.target;
+    const data = new FormData(form);
 
     this.setState({
-      response: stringifyFormData(data),
+      response: data,
       invalid: false,
-      displayErrors: false,
     });
-  }
+  };
 
   render() {
-    const { response, invalid, displayErrors } = this.state;
+    const { response, invalid } = this.state;
 
     return (
-      <div>
-        <form
-          onSubmit={this.handleSubmit}
-          noValidate
-          className={displayErrors ? 'displayErrors' : ''}
-        >
-          <InputBlock
-            width="30"
-            maxLength={30}
-            hintId="anyHintId3"
-            label="Name"
-            id="username"
-            name="username"
-            type="text"
-            required
-          ></InputBlock>
-          <InputBlock
-            width="30"
-            label="Email address"
-            name="email address"
-            maxLength={30}
-            hintId="anyHintId3"
-            id="email"
-            type="email"
-            required
-          ></InputBlock>
-          <Radios inline>
-            <RadioBlock
-              label="Our website"
-              id="anyRadioId9234"
-              value="true"
-              name="nameChange5"
-              labelId="labelId9"
-              required
-            ></RadioBlock>
-            <RadioBlock
-              label="One of our services"
-              id="anyRadioId10"
-              value="false"
-              name="nameChange5"
-              labelId="labelId10"
-              required
-            ></RadioBlock>
-            <RadioBlock
-              label="Something else"
-              id="anyRadioId10"
-              value="false"
-              name="nameChange5"
-              labelId="labelId10"
-              required
-            ></RadioBlock>
-          </Radios>
-          <TextareaBlock
-            id="textarea"
-            name="textarea"
-            label="Can you provide more detail?"
-            hintId="hint1"
-            hint="Do not include personal or financial information, like your IRD number or credit card details."
-            required
-          ></TextareaBlock>{' '}
-          <Button aria-label="Submit">Submit</Button>
-        </form>
-
-        <div className="res-block">
-          {invalid && <div> Error, incorrect details</div>}
-
-          {!invalid && response && <div>Data {response}</div>}
-
-          {!invalid && response && (
+      <ExampleContainer>
+        <Row>
+          <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
             <H2 styleSize="large" id="main-heading">
-              Thanks for contacting us. We will reply to your email within 1-3
-              working days.
+              Contact us form prototype
             </H2>
-          )}
-        </div>
-      </div>
+
+            <p>
+              Intro copy i.e here you can see how we use DS for elements to
+              assemble example of a comtact us for{' '}
+              <a href="/">Link to source code</a>.
+            </p>
+            <p>This is purely for demonstration purpose. Not an advice</p>
+            <form onSubmit={this.handleSubmit}>
+              <label htmlFor="username" className="g-inputBlock-label">
+                User name
+              </label>
+              <input
+                maxLength={30}
+                id="username"
+                className="g-inputBlock-input g-inputBlock-input--width-30"
+                hasLabel
+                htmlFor="textInput"
+                label="Text input"
+                required
+                type="text"
+              />
+
+              <InputBlock
+                width="30"
+                maxLength={30}
+                hintId="anyHintId3"
+                label="Name"
+                id="username"
+                name="username"
+                type="text"
+                autocomplete="example"
+                required
+              ></InputBlock>
+
+              <label className="g-inputBlock-label">Email address</label>
+              <input
+                id="email address"
+                maxLength={30}
+                className="g-inputBlock-input g-inputBlock-input--width-30"
+                hasLabel="true"
+                htmlFor="emailInput"
+                label="Email input"
+                required
+                type="email"
+              />
+
+              <label className="g-inputBlock-label">Text Area</label>
+              <textarea
+                className="g-textareaBlock-textarea"
+                hasLabel="true"
+                htmlFor="textarea"
+                label="Textarea"
+                required
+              ></textarea>
+
+              <label htmlFor="" label="">
+                <input
+                  hasLabel="true"
+                  htmlFor="radioOne"
+                  label="Radio one"
+                  name="radios"
+                  required
+                  className="g-radios__input"
+                  type="radio"
+                />
+                <input
+                  hasLabel="true"
+                  htmlFor="radioOne"
+                  label="Radio one"
+                  name="radios"
+                  required
+                  className="g-radios__input"
+                  type="radio"
+                />
+              </label>
+
+              <Radios inline></Radios>
+
+              <Radios inline>
+                <label htmlFor="" label="">
+                  <input
+                    hasLabel="true"
+                    htmlFor="radioOne"
+                    label="Radio one"
+                    name="radios"
+                    required
+                    className="g-radios__input"
+                    type="radio"
+                  />
+                </label>
+                <RadioBlock
+                  htmlFor="radioOne"
+                  label="Radio one"
+                  name="radios"
+                  required
+                  type="radio"
+                ></RadioBlock>
+                <RadioBlock
+                  hasLabel="true"
+                  htmlFor="radioOne"
+                  label="Radio one"
+                  name="radios"
+                  required
+                  type="radio"
+                ></RadioBlock>
+                <RadioBlock
+                  hasLabel="true"
+                  htmlFor="radioOne"
+                  label="Radio one"
+                  name="radios"
+                  required
+                  type="radio"
+                ></RadioBlock>
+              </Radios>
+              {/* </FieldsetBlock> */}
+
+              <Button type="submit" aria-label="Submit">
+                Submit
+              </Button>
+            </form>
+
+            {!invalid && response && (
+              <H3 styleSize="large" id="main-heading">
+                Thanks for contacting us. We will reply to your email within 1-3
+                working days.
+              </H3>
+            )}
+          </Column>
+        </Row>
+      </ExampleContainer>
     );
   }
 }
 
-function stringifyFormData(fd) {
-  const data = {};
-  for (let key of fd.keys()) {
-    data[key] = fd.get(key);
-  }
-  return JSON.stringify(data, null, 2);
-}
-
-const PageContent = props => (
+const PageContent = () => (
   <React.Fragment>
     <H1 styleSize="xlarge" id="main-heading">
       Prototypes
@@ -155,24 +214,11 @@ const PageContent = props => (
       Intorduction paragraph tp tell users that they can fiond prototypes of DS
       here. More cotent content goes here.
     </p>
-    <H2 styleSize="large" id="main-heading">
-      Contact us form prototype
-    </H2>
-
-    <p>
-      Intro copy i.e here you can see how we use DS for elements to assemble
-      example of a comtact us for <a href="/">Link to source code</a>.
-    </p>
-    <p>This is purely for demonstration purpose. Not an advice</p>
     <ContactusForm />
-
-    {/* 
-
-    {/* <Button aria-label="Submit">Submit</Button> */}
   </React.Fragment>
 );
 
-const template = props => {
+const template = (props) => {
   return (
     <PatternsPage
       title="Patterns"
