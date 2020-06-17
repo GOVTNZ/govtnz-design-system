@@ -194,6 +194,22 @@ ${props =>
   styled.css`
     margin-left: 91.66666667%;
   `}
+${props =>
+  props.xsHorizontalAlign === "start" &&
+  styled.css`
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  `}
+${props =>
+  props.xsHorizontalAlign === "center" &&
+  styled.css`
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  `}
 @media only screen and (min-width: 48em){
 ${props =>
   ([
@@ -390,6 +406,30 @@ ${props =>
   props.smOffset === "11" &&
   styled.css`
     margin-left: 91.66666667%;
+  `};
+${props =>
+  props.smHorizontalAlign === "start" &&
+  styled.css`
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  `};
+${props =>
+  props.smHorizontalAlign === "center" &&
+  styled.css`
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  `};
+${props =>
+  props.smHorizontalAlign === "end" &&
+  styled.css`
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
   `};
 }
 @media only screen and (min-width: 64em){
@@ -590,6 +630,30 @@ ${props =>
   styled.css`
     margin-left: 91.66666667%;
   `};
+${props =>
+  props.mdHorizontalAlign === "start" &&
+  styled.css`
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  `};
+${props =>
+  props.mdHorizontalAlign === "center" &&
+  styled.css`
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  `};
+${props =>
+  props.mdHorizontalAlign === "end" &&
+  styled.css`
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  `};
 }
 @media only screen and (min-width: 75em){
 ${props =>
@@ -762,6 +826,30 @@ ${props =>
   styled.css`
     margin-left: 83.33333333%;
   `};
+${props =>
+  props.lgHorizontalAlign === "start" &&
+  styled.css`
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  `};
+${props =>
+  props.lgHorizontalAlign === "center" &&
+  styled.css`
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  `};
+${props =>
+  props.lgHorizontalAlign === "end" &&
+  styled.css`
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  `};
 }`;
 
 const FlexColumn = ({
@@ -773,6 +861,10 @@ const FlexColumn = ({
   smOffset,
   mdOffset,
   lgOffset,
+  xsHorizontalAlign,
+  smHorizontalAlign,
+  mdHorizontalAlign,
+  lgHorizontalAlign,
   isReversed,
   className,
   children
@@ -786,6 +878,10 @@ const FlexColumn = ({
     smOffset={smOffset}
     mdOffset={mdOffset}
     lgOffset={lgOffset}
+    xsHorizontalAlign={xsHorizontalAlign}
+    smHorizontalAlign={smHorizontalAlign}
+    mdHorizontalAlign={mdHorizontalAlign}
+    lgHorizontalAlign={lgHorizontalAlign}
     isReversed={isReversed}
     className={className}
   >

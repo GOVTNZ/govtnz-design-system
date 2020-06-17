@@ -124,6 +124,26 @@ const constants = {
     "10": "g-flex-col-lg-offset-10",
     "11": "g-flex-col-lg-offset-11",
     "12": "g-flex-col-lg-offset-12"
+  },
+  xsHorizontalAlign: {
+    start: "g-flex-start-xs",
+    center: "g-flex-center-xs",
+    right: "g-flex-right-xs"
+  },
+  smHorizontalAlign: {
+    start: "g-flex-start-sm",
+    center: "g-flex-center-sm",
+    end: "g-flex-end-sm"
+  },
+  mdHorizontalAlign: {
+    start: "g-flex-start-md",
+    center: "g-flex-center-md",
+    end: "g-flex-end-md"
+  },
+  lgHorizontalAlign: {
+    start: "g-flex-start-lg",
+    center: "g-flex-center-lg",
+    end: "g-flex-end-lg"
   }
 };
 
@@ -136,6 +156,10 @@ const FlexColumn = ({
   smOffset,
   mdOffset,
   lgOffset,
+  xsHorizontalAlign,
+  smHorizontalAlign,
+  mdHorizontalAlign,
+  lgHorizontalAlign,
   isReversed,
   className,
   children
@@ -160,6 +184,22 @@ const FlexColumn = ({
     }${
       constants.lgOffset[lgOffset] !== undefined
         ? " " + constants.lgOffset[lgOffset]
+        : ""
+    }${
+      constants.xsHorizontalAlign[xsHorizontalAlign] !== undefined
+        ? " " + constants.xsHorizontalAlign[xsHorizontalAlign]
+        : ""
+    }${
+      constants.smHorizontalAlign[smHorizontalAlign] !== undefined
+        ? " " + constants.smHorizontalAlign[smHorizontalAlign]
+        : ""
+    }${
+      constants.mdHorizontalAlign[mdHorizontalAlign] !== undefined
+        ? " " + constants.mdHorizontalAlign[mdHorizontalAlign]
+        : ""
+    }${
+      constants.lgHorizontalAlign[lgHorizontalAlign] !== undefined
+        ? " " + constants.lgHorizontalAlign[lgHorizontalAlign]
         : ""
     }${isReversed ? " g-flex-reverse" : ""}${className ? " " + className : ""}`}
   >

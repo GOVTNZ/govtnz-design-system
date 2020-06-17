@@ -8,6 +8,7 @@ export declare class AppComponent {
     mdReversed: "true" | "false" | undefined;
     lgReversed: "true" | "false" | undefined;
     isReversed: boolean | undefined;
+    class: any;
     children: React.ReactNode;
     title: string;
 }

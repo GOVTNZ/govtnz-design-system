@@ -130,6 +130,26 @@ const constants = {
     "10": "g-flex-col-lg-offset-10",
     "11": "g-flex-col-lg-offset-11",
     "12": "g-flex-col-lg-offset-12"
+  },
+  xsHorizontalAlign: {
+    start: "g-flex-start-xs",
+    center: "g-flex-center-xs",
+    right: "g-flex-right-xs"
+  },
+  smHorizontalAlign: {
+    start: "g-flex-start-sm",
+    center: "g-flex-center-sm",
+    end: "g-flex-end-sm"
+  },
+  mdHorizontalAlign: {
+    start: "g-flex-start-md",
+    center: "g-flex-center-md",
+    end: "g-flex-end-md"
+  },
+  lgHorizontalAlign: {
+    start: "g-flex-start-lg",
+    center: "g-flex-center-lg",
+    end: "g-flex-end-lg"
   }
 };
 
@@ -323,6 +343,34 @@ export default Vue.extend({
       },
       required: false
     },
+    xsHorizontalAlign: {
+      type: String,
+      validator: value => {
+        return ["start", "center", "right"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    smHorizontalAlign: {
+      type: String,
+      validator: value => {
+        return ["start", "center", "end"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    mdHorizontalAlign: {
+      type: String,
+      validator: value => {
+        return ["start", "center", "end"].indexOf(value) !== -1;
+      },
+      required: false
+    },
+    lgHorizontalAlign: {
+      type: String,
+      validator: value => {
+        return ["start", "center", "end"].indexOf(value) !== -1;
+      },
+      required: false
+    },
     isReversed: { type: Boolean, default: false, required: false },
     class: { type: String, required: true },
     children: { required: false }
@@ -354,6 +402,18 @@ export default Vue.extend({
           : "") +
         (constants.lgOffset[this.lgOffset] !== undefined
           ? ` ${constants.lgOffset[this.lgOffset]}`
+          : "") +
+        (constants.xsHorizontalAlign[this.xsHorizontalAlign] !== undefined
+          ? ` ${constants.xsHorizontalAlign[this.xsHorizontalAlign]}`
+          : "") +
+        (constants.smHorizontalAlign[this.smHorizontalAlign] !== undefined
+          ? ` ${constants.smHorizontalAlign[this.smHorizontalAlign]}`
+          : "") +
+        (constants.mdHorizontalAlign[this.mdHorizontalAlign] !== undefined
+          ? ` ${constants.mdHorizontalAlign[this.mdHorizontalAlign]}`
+          : "") +
+        (constants.lgHorizontalAlign[this.lgHorizontalAlign] !== undefined
+          ? ` ${constants.lgHorizontalAlign[this.lgHorizontalAlign]}`
           : "") +
         (this.isReversed ? " g-flex-reverse" : "") +
         this.class
@@ -506,6 +566,18 @@ export default Vue.extend({
 .g-flex-col-xs-offset-11 {
   margin-left: 91.66666667%;
 }
+.g-flex-start-xs {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  text-align: start;
+}
+.g-flex-center-xs {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
 @media only screen and (min-width: 48em) {
   .g-flex-col-sm,
   .g-flex-col-sm-1,
@@ -646,6 +718,24 @@ export default Vue.extend({
   }
   .g-flex-col-sm-offset-11 {
     margin-left: 91.66666667%;
+  }
+  .g-flex-start-sm {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .g-flex-center-sm {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .g-flex-end-sm {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
   }
 }
 @media only screen and (min-width: 64em) {
@@ -789,6 +879,24 @@ export default Vue.extend({
   .g-flex-col-md-offset-11 {
     margin-left: 91.66666667%;
   }
+  .g-flex-start-md {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .g-flex-center-md {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .g-flex-end-md {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
+  }
 }
 @media only screen and (min-width: 75em) {
   .g-flex-col-lg-1,
@@ -918,6 +1026,24 @@ export default Vue.extend({
   }
   .g-flex-col-lg-offset-10 {
     margin-left: 83.33333333%;
+  }
+  .g-flex-start-lg {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    text-align: start;
+  }
+  .g-flex-center-lg {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .g-flex-end-lg {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    text-align: end;
   }
 }
 </style>

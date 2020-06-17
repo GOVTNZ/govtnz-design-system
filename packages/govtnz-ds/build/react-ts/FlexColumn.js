@@ -128,10 +128,30 @@ var constants = {
         "10": "g-flex-col-lg-offset-10",
         "11": "g-flex-col-lg-offset-11",
         "12": "g-flex-col-lg-offset-12"
+    },
+    xsHorizontalAlign: {
+        start: "g-flex-start-xs",
+        center: "g-flex-center-xs",
+        right: "g-flex-right-xs"
+    },
+    smHorizontalAlign: {
+        start: "g-flex-start-sm",
+        center: "g-flex-center-sm",
+        end: "g-flex-end-sm"
+    },
+    mdHorizontalAlign: {
+        start: "g-flex-start-md",
+        center: "g-flex-center-md",
+        end: "g-flex-end-md"
+    },
+    lgHorizontalAlign: {
+        start: "g-flex-start-lg",
+        center: "g-flex-center-lg",
+        end: "g-flex-end-lg"
     }
 };
 var FlexColumn = function (_a) {
-    var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xsOffset = _a.xsOffset, smOffset = _a.smOffset, mdOffset = _a.mdOffset, lgOffset = _a.lgOffset, isReversed = _a.isReversed, className = _a.className, children = _a.children;
+    var xs = _a.xs, sm = _a.sm, md = _a.md, lg = _a.lg, xsOffset = _a.xsOffset, smOffset = _a.smOffset, mdOffset = _a.mdOffset, lgOffset = _a.lgOffset, xsHorizontalAlign = _a.xsHorizontalAlign, smHorizontalAlign = _a.smHorizontalAlign, mdHorizontalAlign = _a.mdHorizontalAlign, lgHorizontalAlign = _a.lgHorizontalAlign, isReversed = _a.isReversed, className = _a.className, children = _a.children;
     return (react_1.default.createElement("div", { className: "g-flex-col" + (constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "") + (constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "") + (constants.md[md] !== undefined ? " " + constants.md[md] : "") + (constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "") + (constants.xsOffset[xsOffset] !== undefined
             ? " " + constants.xsOffset[xsOffset]
             : "") + (constants.smOffset[smOffset] !== undefined
@@ -140,6 +160,14 @@ var FlexColumn = function (_a) {
             ? " " + constants.mdOffset[mdOffset]
             : "") + (constants.lgOffset[lgOffset] !== undefined
             ? " " + constants.lgOffset[lgOffset]
+            : "") + (constants.xsHorizontalAlign[xsHorizontalAlign] !== undefined
+            ? " " + constants.xsHorizontalAlign[xsHorizontalAlign]
+            : "") + (constants.smHorizontalAlign[smHorizontalAlign] !== undefined
+            ? " " + constants.smHorizontalAlign[smHorizontalAlign]
+            : "") + (constants.mdHorizontalAlign[mdHorizontalAlign] !== undefined
+            ? " " + constants.mdHorizontalAlign[mdHorizontalAlign]
+            : "") + (constants.lgHorizontalAlign[lgHorizontalAlign] !== undefined
+            ? " " + constants.lgHorizontalAlign[lgHorizontalAlign]
             : "") + (isReversed ? " g-flex-reverse" : "") + (className ? " " + className : "") }, children !== undefined ? children : react_1.default.createElement(react_1.default.Fragment, null)));
 };
 exports.default = FlexColumn;

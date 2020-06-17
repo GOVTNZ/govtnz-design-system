@@ -41,11 +41,14 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "isReversed", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "class", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexRow",
-            template: "\n<div class=\"g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? \" \" +  constants.xsVerticalAlign[xsVerticalAlign] : \"\"}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? \" \" +  constants.smVerticalAlign[smVerticalAlign] : \"\"}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? \" \" +  constants.mdVerticalAlign[mdVerticalAlign] : \"\"}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? \" \" +  constants.lgVerticalAlign[lgVerticalAlign] : \"\"}}{{constants.xsReversed[xsReversed] !== undefined ? \" \" +  constants.xsReversed[xsReversed] : \"\"}}{{constants.smReversed[smReversed] !== undefined ? \" \" +  constants.smReversed[smReversed] : \"\"}}{{constants.mdReversed[mdReversed] !== undefined ? \" \" +  constants.mdReversed[mdReversed] : \"\"}}{{constants.lgReversed[lgReversed] !== undefined ? \" \" +  constants.lgReversed[lgReversed] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-flex-row{{constants.xsVerticalAlign[xsVerticalAlign] !== undefined ? \" \" +  constants.xsVerticalAlign[xsVerticalAlign] : \"\"}}{{constants.smVerticalAlign[smVerticalAlign] !== undefined ? \" \" +  constants.smVerticalAlign[smVerticalAlign] : \"\"}}{{constants.mdVerticalAlign[mdVerticalAlign] !== undefined ? \" \" +  constants.mdVerticalAlign[mdVerticalAlign] : \"\"}}{{constants.lgVerticalAlign[lgVerticalAlign] !== undefined ? \" \" +  constants.lgVerticalAlign[lgVerticalAlign] : \"\"}}{{constants.xsReversed[xsReversed] !== undefined ? \" \" +  constants.xsReversed[xsReversed] : \"\"}}{{constants.smReversed[smReversed] !== undefined ? \" \" +  constants.smReversed[smReversed] : \"\"}}{{constants.mdReversed[mdReversed] !== undefined ? \" \" +  constants.mdReversed[mdReversed] : \"\"}}{{constants.lgReversed[lgReversed] !== undefined ? \" \" +  constants.lgReversed[lgReversed] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}{{class ? \" \" +  class : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

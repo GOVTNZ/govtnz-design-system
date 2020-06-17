@@ -37,6 +37,7 @@ const FlexRow = ({
   mdReversed,
   lgReversed,
   isReversed,
+  className,
   children
 }) => (
   <div
@@ -72,7 +73,7 @@ const FlexRow = ({
       constants.lgReversed[lgReversed] !== undefined
         ? " " + constants.lgReversed[lgReversed]
         : ""
-    }${isReversed ? " g-flex-reverse" : ""}`}
+    }${isReversed ? " g-flex-reverse" : ""}${className ? " " + className : ""}`}
   >
     {children !== undefined ? (
       children

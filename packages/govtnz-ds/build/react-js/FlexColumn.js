@@ -133,6 +133,26 @@ var constants = {
     "10": "g-flex-col-lg-offset-10",
     "11": "g-flex-col-lg-offset-11",
     "12": "g-flex-col-lg-offset-12"
+  },
+  xsHorizontalAlign: {
+    start: "g-flex-start-xs",
+    center: "g-flex-center-xs",
+    right: "g-flex-right-xs"
+  },
+  smHorizontalAlign: {
+    start: "g-flex-start-sm",
+    center: "g-flex-center-sm",
+    end: "g-flex-end-sm"
+  },
+  mdHorizontalAlign: {
+    start: "g-flex-start-md",
+    center: "g-flex-center-md",
+    end: "g-flex-end-md"
+  },
+  lgHorizontalAlign: {
+    start: "g-flex-start-lg",
+    center: "g-flex-center-lg",
+    end: "g-flex-end-lg"
   }
 };
 
@@ -145,11 +165,15 @@ var FlexColumn = function FlexColumn(_ref) {
       smOffset = _ref.smOffset,
       mdOffset = _ref.mdOffset,
       lgOffset = _ref.lgOffset,
+      xsHorizontalAlign = _ref.xsHorizontalAlign,
+      smHorizontalAlign = _ref.smHorizontalAlign,
+      mdHorizontalAlign = _ref.mdHorizontalAlign,
+      lgHorizontalAlign = _ref.lgHorizontalAlign,
       isReversed = _ref.isReversed,
       className = _ref.className,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(isReversed ? " g-flex-reverse" : "").concat(className ? " " + className : "")
+    className: "g-flex-col".concat(constants.xs[xs] !== undefined ? " " + constants.xs[xs] : "").concat(constants.sm[sm] !== undefined ? " " + constants.sm[sm] : "").concat(constants.md[md] !== undefined ? " " + constants.md[md] : "").concat(constants.lg[lg] !== undefined ? " " + constants.lg[lg] : "").concat(constants.xsOffset[xsOffset] !== undefined ? " " + constants.xsOffset[xsOffset] : "").concat(constants.smOffset[smOffset] !== undefined ? " " + constants.smOffset[smOffset] : "").concat(constants.mdOffset[mdOffset] !== undefined ? " " + constants.mdOffset[mdOffset] : "").concat(constants.lgOffset[lgOffset] !== undefined ? " " + constants.lgOffset[lgOffset] : "").concat(constants.xsHorizontalAlign[xsHorizontalAlign] !== undefined ? " " + constants.xsHorizontalAlign[xsHorizontalAlign] : "").concat(constants.smHorizontalAlign[smHorizontalAlign] !== undefined ? " " + constants.smHorizontalAlign[smHorizontalAlign] : "").concat(constants.mdHorizontalAlign[mdHorizontalAlign] !== undefined ? " " + constants.mdHorizontalAlign[mdHorizontalAlign] : "").concat(constants.lgHorizontalAlign[lgHorizontalAlign] !== undefined ? " " + constants.lgHorizontalAlign[lgHorizontalAlign] : "").concat(isReversed ? " g-flex-reverse" : "").concat(className ? " " + className : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null));
 };
 

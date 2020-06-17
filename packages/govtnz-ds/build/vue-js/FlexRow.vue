@@ -92,6 +92,7 @@ export default Vue.extend({
       required: false
     },
     isReversed: { type: Boolean, default: false, required: false },
+    class: { type: String, required: true },
     children: { required: false, default: "Columns..." }
   },
   computed: {
@@ -122,7 +123,8 @@ export default Vue.extend({
         (constants.lgReversed[this.lgReversed] !== undefined
           ? ` ${constants.lgReversed[this.lgReversed]}`
           : "") +
-        (this.isReversed ? " g-flex-reverse" : "")
+        (this.isReversed ? " g-flex-reverse" : "") +
+        this.class
       );
     }
   }
@@ -146,7 +148,7 @@ export default Vue.extend({
 }
 .g-flex-row.g-flex-reversed-xs,
 .g-flex-row.g-flex-reverse {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 .g-flex-row.g-flex-not-reversed-xs {
   flex-direction: row;
@@ -178,8 +180,8 @@ export default Vue.extend({
     align-items: flex-end;
   }
   .g-flex-row.g-flex-reversed-sm {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .g-flex-row.g-flex-not-reversed-sm {
     flex-direction: row;
@@ -202,8 +204,8 @@ export default Vue.extend({
     align-items: flex-end;
   }
   .g-flex-row.g-flex-reversed-md {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .g-flex-row.g-flex-not-reversed-md {
     flex-direction: row;
@@ -226,10 +228,8 @@ export default Vue.extend({
     align-items: flex-end;
   }
   .g-flex-row.g-flex-reversed-lg {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .g-flex-row.g-flex-not-reversed-lg {
     flex-direction: row;

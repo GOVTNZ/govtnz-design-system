@@ -31,7 +31,7 @@ var constants = {
     lgReversed: { true: "g-flex-reversed-lg", false: "g-flex-not-reversed-lg" }
 };
 var FlexRow = function (_a) {
-    var xsVerticalAlign = _a.xsVerticalAlign, smVerticalAlign = _a.smVerticalAlign, mdVerticalAlign = _a.mdVerticalAlign, lgVerticalAlign = _a.lgVerticalAlign, xsReversed = _a.xsReversed, smReversed = _a.smReversed, mdReversed = _a.mdReversed, lgReversed = _a.lgReversed, isReversed = _a.isReversed, children = _a.children;
+    var xsVerticalAlign = _a.xsVerticalAlign, smVerticalAlign = _a.smVerticalAlign, mdVerticalAlign = _a.mdVerticalAlign, lgVerticalAlign = _a.lgVerticalAlign, xsReversed = _a.xsReversed, smReversed = _a.smReversed, mdReversed = _a.mdReversed, lgReversed = _a.lgReversed, isReversed = _a.isReversed, className = _a.className, children = _a.children;
     return (react_1.default.createElement("div", { className: "g-flex-row" + (constants.xsVerticalAlign[xsVerticalAlign] !== undefined
             ? " " + constants.xsVerticalAlign[xsVerticalAlign]
             : "") + (constants.smVerticalAlign[smVerticalAlign] !== undefined
@@ -48,7 +48,7 @@ var FlexRow = function (_a) {
             ? " " + constants.mdReversed[mdReversed]
             : "") + (constants.lgReversed[lgReversed] !== undefined
             ? " " + constants.lgReversed[lgReversed]
-            : "") + (isReversed ? " g-flex-reverse" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns..."))));
+            : "") + (isReversed ? " g-flex-reverse" : "") + (className ? " " + className : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Columns..."))));
 };
 exports.default = FlexRow;
 //# sourceMappingURL=FlexRow.js.map

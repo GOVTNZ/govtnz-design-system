@@ -10,6 +10,7 @@ type Props = {
   mdReversed?: "true" | "false";
   lgReversed?: "true" | "false";
   isReversed?: boolean;
+  className: any;
   children?: React.ReactNode;
 };
 
@@ -50,6 +51,7 @@ const FlexRow = ({
   mdReversed,
   lgReversed,
   isReversed,
+  className,
   children
 }: Props) => (
   <div
@@ -85,7 +87,7 @@ const FlexRow = ({
       constants.lgReversed[lgReversed] !== undefined
         ? " " + constants.lgReversed[lgReversed]
         : ""
-    }${isReversed ? " g-flex-reverse" : ""}`}
+    }${isReversed ? " g-flex-reverse" : ""}${className ? " " + className : ""}`}
   >
     {children !== undefined ? (
       children

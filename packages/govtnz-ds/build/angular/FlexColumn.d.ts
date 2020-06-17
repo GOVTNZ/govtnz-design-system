@@ -7,6 +7,10 @@ export declare class AppComponent {
     smOffset: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | undefined;
     mdOffset: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | undefined;
     lgOffset: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12" | undefined;
+    xsHorizontalAlign: "start" | "center" | "right" | undefined;
+    smHorizontalAlign: "start" | "center" | "end" | undefined;
+    mdHorizontalAlign: "start" | "center" | "end" | undefined;
+    lgHorizontalAlign: "start" | "center" | "end" | undefined;
     isReversed: boolean | undefined;
     class: any;
     children: React.ReactNode;

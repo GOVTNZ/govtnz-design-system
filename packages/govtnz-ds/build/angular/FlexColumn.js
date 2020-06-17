@@ -38,6 +38,18 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "lgOffset", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "xsHorizontalAlign", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "smHorizontalAlign", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "mdHorizontalAlign", void 0);
+    __decorate([
+        core_1.Input()
+    ], AppComponent.prototype, "lgHorizontalAlign", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "isReversed", void 0);
     __decorate([
         core_1.Input()
@@ -48,7 +60,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FlexColumn",
-            template: "\n<div class=\"g-flex-col{{constants.xs[xs] !== undefined ? \" \" +  constants.xs[xs] : \"\"}}{{constants.sm[sm] !== undefined ? \" \" +  constants.sm[sm] : \"\"}}{{constants.md[md] !== undefined ? \" \" +  constants.md[md] : \"\"}}{{constants.lg[lg] !== undefined ? \" \" +  constants.lg[lg] : \"\"}}{{constants.xsOffset[xsOffset] !== undefined ? \" \" +  constants.xsOffset[xsOffset] : \"\"}}{{constants.smOffset[smOffset] !== undefined ? \" \" +  constants.smOffset[smOffset] : \"\"}}{{constants.mdOffset[mdOffset] !== undefined ? \" \" +  constants.mdOffset[mdOffset] : \"\"}}{{constants.lgOffset[lgOffset] !== undefined ? \" \" +  constants.lgOffset[lgOffset] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}{{class ? \" \" +  class : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
+            template: "\n<div class=\"g-flex-col{{constants.xs[xs] !== undefined ? \" \" +  constants.xs[xs] : \"\"}}{{constants.sm[sm] !== undefined ? \" \" +  constants.sm[sm] : \"\"}}{{constants.md[md] !== undefined ? \" \" +  constants.md[md] : \"\"}}{{constants.lg[lg] !== undefined ? \" \" +  constants.lg[lg] : \"\"}}{{constants.xsOffset[xsOffset] !== undefined ? \" \" +  constants.xsOffset[xsOffset] : \"\"}}{{constants.smOffset[smOffset] !== undefined ? \" \" +  constants.smOffset[smOffset] : \"\"}}{{constants.mdOffset[mdOffset] !== undefined ? \" \" +  constants.mdOffset[mdOffset] : \"\"}}{{constants.lgOffset[lgOffset] !== undefined ? \" \" +  constants.lgOffset[lgOffset] : \"\"}}{{constants.xsHorizontalAlign[xsHorizontalAlign] !== undefined ? \" \" +  constants.xsHorizontalAlign[xsHorizontalAlign] : \"\"}}{{constants.smHorizontalAlign[smHorizontalAlign] !== undefined ? \" \" +  constants.smHorizontalAlign[smHorizontalAlign] : \"\"}}{{constants.mdHorizontalAlign[mdHorizontalAlign] !== undefined ? \" \" +  constants.mdHorizontalAlign[mdHorizontalAlign] : \"\"}}{{constants.lgHorizontalAlign[lgHorizontalAlign] !== undefined ? \" \" +  constants.lgHorizontalAlign[lgHorizontalAlign] : \"\"}}{{isReversed ? \" g-flex-reverse\" : \"\"}}{{class ? \" \" +  class : \"\"}}\">\n\n  <slot></slot>\n\n\n</div>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

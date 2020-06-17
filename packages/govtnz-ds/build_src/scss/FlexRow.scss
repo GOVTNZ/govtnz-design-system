@@ -16,7 +16,7 @@
 
 .g-flex-row.g-flex-reversed-xs,
 .g-flex-row.g-flex-reverse {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
 }
 
 .g-flex-row.g-flex-not-reversed-xs {
@@ -55,8 +55,8 @@
   }
 
   .g-flex-row.g-flex-reversed-sm {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .g-flex-row.g-flex-not-reversed-sm {
@@ -84,8 +84,8 @@
   }
 
   .g-flex-row.g-flex-reversed-md {
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .g-flex-row.g-flex-not-reversed-md {
@@ -113,10 +113,8 @@
   }
 
   .g-flex-row.g-flex-reversed-lg {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .g-flex-row.g-flex-not-reversed-lg {

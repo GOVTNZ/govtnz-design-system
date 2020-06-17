@@ -4,5 +4,11 @@
   color: var(--g-theme-color-white, $g-theme-color-white);
   fill: $g-theme-color-white;
   fill: var(--g-theme-color-white, $g-theme-color-white);
-  min-height: 104px;
+  min-height: 146px;
+}
+
+@media only screen and (min-width: 48em) {
+  .g-subfooter {
+    min-height: 104px;
+  }
 }

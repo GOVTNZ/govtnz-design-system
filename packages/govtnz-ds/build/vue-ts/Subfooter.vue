@@ -18,6 +18,11 @@ export default Vue.extend({
   background-color: #2a2a2a;
   color: #ffffff;
   fill: #ffffff;
-  min-height: 104px;
+  min-height: 146px;
+}
+@media only screen and (min-width: 48em) {
+  .g-subfooter {
+    min-height: 104px;
+  }
 }
 </style>

@@ -53,7 +53,7 @@ const StyledA = styled.a`
   margin-right: -1em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  @media (min-width: 40.0625em) {
+  @media only screen and (min-width: 48em) {
     :first-child {
       margin-left: -1em;
     }

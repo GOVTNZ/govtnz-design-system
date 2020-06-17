@@ -9,7 +9,10 @@ const StyledDiv = styled.div`
   background-color: #2a2a2a;
   color: #ffffff;
   fill: #ffffff;
-  min-height: 104px;
+  min-height: 146px;
+  @media only screen and (min-width: 48em) {
+    min-height: 104px;
+  }
 `;
 
 const Subfooter = ({ children }: Props) => (

@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: #2a2a2a;\n  color: #ffffff;\n  fill: #ffffff;\n  min-height: 104px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  background-color: #2a2a2a;\n  color: #ffffff;\n  fill: #ffffff;\n  min-height: 146px;\n  @media only screen and (min-width: 48em) {\n    min-height: 104px;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

@@ -11,6 +11,7 @@ type Props = {
   mdReversed?: "true" | "false";
   lgReversed?: "true" | "false";
   isReversed?: boolean;
+  className: any;
   children?: React.ReactNode;
 };
 
@@ -33,7 +34,7 @@ const StyledDiv = styled.div<
   flex-wrap: wrap;
   margin-right: -0.5rem;
   margin-left: -0.5rem;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
   flex-direction: row;
   ${props =>
     props.xsVerticalAlign === "top" &&
@@ -71,8 +72,8 @@ const StyledDiv = styled.div<
         -ms-flex-align: end;
         align-items: flex-end;
       `};
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     flex-direction: row;
   }
   @media only screen and (min-width: 64em) {
@@ -97,8 +98,8 @@ const StyledDiv = styled.div<
         -ms-flex-align: end;
         align-items: flex-end;
       `};
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     flex-direction: row;
   }
   @media only screen and (min-width: 75em) {
@@ -123,8 +124,8 @@ const StyledDiv = styled.div<
         -ms-flex-align: end;
         align-items: flex-end;
       `};
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     flex-direction: row;
   }
 `;
@@ -139,6 +140,7 @@ const FlexRow = ({
   mdReversed,
   lgReversed,
   isReversed,
+  className,
   children
 }: Props) => (
   <StyledDiv
@@ -151,6 +153,7 @@ const FlexRow = ({
     mdReversed={mdReversed}
     lgReversed={lgReversed}
     isReversed={isReversed}
+    className={className}
   >
     {children !== undefined ? (
       children
