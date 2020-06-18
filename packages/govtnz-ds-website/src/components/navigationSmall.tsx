@@ -92,25 +92,26 @@ class NavigationSmall extends React.Component<Props, State> {
             <div className="navigation-modal__heading">
               <LogoLockUp />
             </div>
-          </div>
-          <div className="navigation-modal__content">
-            <div className="navigation-modal__scroll">
-              <ul className="navigation-modal__list">
-                <NavigationItem to="/get-started/" label="Get started" />
-                <NavigationItem
-                  to="/basics/"
-                  label="Basics"
-                  childMenu={basicsMenuItems}
-                />
-                <NavigationItem
-                  to="/components/"
-                  label="Components"
-                  childMenu={componentMenu}
-                />
-                <NavigationItem to="/patterns/" label="Patterns" />
-                <NavigationItem to="/community/" label="Community" />
-                <NavigationItem to="/about/" label="About" />
-              </ul>
+            <div className="navigation-modal__content">
+              <div className="navigation-modal__scroll">
+                <ul className="navigation-modal__list">
+                  <NavigationItem to="/get-started/" label="Get started" />
+                  <NavigationItem
+                    to="/basics/"
+                    label="Basics"
+                    childMenu={basicsMenuItems}
+                  />
+                  <NavigationItem
+                    to="/components/"
+                    label="Components"
+                    childMenu={componentMenu}
+                  />
+                  <NavigationItem to="/patterns/" label="Patterns" />
+                  <NavigationItem to="/prototypes/" label="Prototypes" />
+                  <NavigationItem to="/community/" label="Community" />
+                  <NavigationItem to="/about/" label="About" />
+                </ul>
+              </div>
             </div>
           </div>
         </Modal>
