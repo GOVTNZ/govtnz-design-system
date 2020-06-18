@@ -79,7 +79,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example1.html",
         title:"Example title: Information alert - Live",
-        height: 99
+        height: 167
       }}></Example>
 </ExampleContainer>
 
@@ -91,7 +91,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example2.html",
         title:"Example title: Warning alert - Static",
-        height: 196
+        height: 228
       }}></Example>
 </ExampleContainer>
 
@@ -101,7 +101,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example3.html",
         title:"Example title: Warning alert - Live",
-        height: 99
+        height: 167
       }}></Example>
 </ExampleContainer>
 
@@ -119,7 +119,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example4.html",
         title:"Example: Alerts (static)",
-        height: 198
+        height: 228
       }}></Example>
 </ExampleContainer>
 
@@ -143,7 +143,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
         className: "example__iframe",
         src:"/components/Alerts__example5.html",
         title:"Example title: Error summary alert",
-        height: 234
+        height: 292
       }}></Example>
 </ExampleContainer>
 
