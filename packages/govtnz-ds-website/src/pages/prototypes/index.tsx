@@ -174,7 +174,6 @@ class ContactusForm extends React.Component {
             maxLength={30}
             hintId="anyHintId3"
             label="What’s your email address?"
-            autoComplete="autoComplete"
             errorId={email.valid ? '' : 'anyErrorId2Error'}
             error={email.valid ? '' : isInvalidEmail}
             type="email"
@@ -216,7 +215,7 @@ class ContactusForm extends React.Component {
           </FieldsetBlock>
 
           <TextareaBlock
-            autoComplete="autoComplete"
+            autoComplete="example"
             name="textarea"
             label="What’s your message?"
             errorId={textarea.valid ? '' : 'anyErrorId2Error'}
