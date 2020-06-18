@@ -159,4 +159,4 @@ Specific error messages must be provided for specific error states. Style error 
 
 Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
 
-Guidance for the page alerts component derived from the [Australian Government Design System](https://github.com/alphagov/govuk-frontend).
+Guidance for the page alerts component derived from the [Australian Government Design System](https://designsystem.gov.au/components/main-nav/rationale/).
