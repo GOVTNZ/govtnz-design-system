@@ -10,6 +10,7 @@ export declare const FooterLinks: () => Promise<typeof import("./FooterLinks")>;
 export declare const Header: () => Promise<typeof import("./Header")>;
 export declare const MainNavLink: () => Promise<typeof import("./MainNavLink")>;
 export declare const MainNav: () => Promise<typeof import("./MainNav")>;
+export declare const NzgLogo: () => Promise<typeof import("./NzgLogo")>;
 export declare const Subfooter: () => Promise<typeof import("./Subfooter")>;
 export declare const A: () => Promise<typeof import("./A")>;
 export declare const Button: () => Promise<typeof import("./Button")>;

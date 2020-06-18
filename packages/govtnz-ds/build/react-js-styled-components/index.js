@@ -5,7 +5,7 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = exports.Subfooter = exports.MainNav = exports.MainNavLink = exports.Header = exports.FooterLinks = exports.FooterLink = exports.Footer = exports.FooterWrapper = exports.FooterStandard = exports.Alert = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = void 0;
+exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = exports.Subfooter = exports.NzgLogo = exports.MainNav = exports.MainNavLink = exports.Header = exports.FooterLinks = exports.FooterLink = exports.Footer = exports.FooterWrapper = exports.FooterStandard = exports.Alert = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = void 0;
 
 var _interopRequireWildcard2 = _interopRequireDefault(require("@babel/runtime/helpers/interopRequireWildcard"));
 
@@ -105,6 +105,14 @@ var MainNav = function MainNav() {
 };
 
 exports.MainNav = MainNav;
+
+var NzgLogo = function NzgLogo() {
+  return Promise.resolve().then(function () {
+    return (0, _interopRequireWildcard2["default"])(require("./NzgLogo"));
+  });
+};
+
+exports.NzgLogo = NzgLogo;
 
 var Subfooter = function Subfooter() {
   return Promise.resolve().then(function () {

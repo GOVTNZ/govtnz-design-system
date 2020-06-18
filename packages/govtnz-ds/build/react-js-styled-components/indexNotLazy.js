@@ -77,6 +77,12 @@ Object.defineProperty(exports, "mainNav", {
     return _MainNav["default"];
   }
 });
+Object.defineProperty(exports, "nzgLogo", {
+  enumerable: true,
+  get: function get() {
+    return _NzgLogo["default"];
+  }
+});
 Object.defineProperty(exports, "subfooter", {
   enumerable: true,
   get: function get() {
@@ -311,6 +317,8 @@ var _Header = _interopRequireDefault(require("./Header"));
 var _MainNavLink = _interopRequireDefault(require("./MainNavLink"));
 
 var _MainNav = _interopRequireDefault(require("./MainNav"));
+
+var _NzgLogo = _interopRequireDefault(require("./NzgLogo"));
 
 var _Subfooter = _interopRequireDefault(require("./Subfooter"));
 

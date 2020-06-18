@@ -20,7 +20,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = exports.Subfooter = exports.MainNav = exports.MainNavLink = exports.Header = exports.FooterLinks = exports.FooterLink = exports.Footer = exports.FooterWrapper = exports.FooterStandard = exports.Alert = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = void 0;
+exports.Ul = exports.TextareaBlock = exports.Textarea = exports.SkipLink = exports.SelectBlock = exports.Select = exports.Radios = exports.RadioBlock = exports.Radio = exports.P = exports.Ol = exports.Li = exports.Legend = exports.InsetText = exports.InputBlock = exports.Input = exports.H6 = exports.H5 = exports.H4 = exports.H3 = exports.H2 = exports.H1 = exports.FormDivider = exports.FileUpload = exports.FieldsetBlock = exports.Fieldset = exports.DateInput = exports.CheckboxBlock = exports.Checkbox = exports.CaptionXl = exports.CaptionM = exports.CaptionL = exports.Button = exports.A = exports.Subfooter = exports.NzgLogo = exports.MainNav = exports.MainNavLink = exports.Header = exports.FooterLinks = exports.FooterLink = exports.Footer = exports.FooterWrapper = exports.FooterStandard = exports.Alert = exports.FlexRow = exports.FlexContainer = exports.FlexColumn = void 0;
 exports.FlexColumn = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexColumn")); }); };
 exports.FlexContainer = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexContainer")); }); };
 exports.FlexRow = function () { return Promise.resolve().then(function () { return __importStar(require("./FlexRow")); }); };
@@ -33,6 +33,7 @@ exports.FooterLinks = function () { return Promise.resolve().then(function () { 
 exports.Header = function () { return Promise.resolve().then(function () { return __importStar(require("./Header")); }); };
 exports.MainNavLink = function () { return Promise.resolve().then(function () { return __importStar(require("./MainNavLink")); }); };
 exports.MainNav = function () { return Promise.resolve().then(function () { return __importStar(require("./MainNav")); }); };
+exports.NzgLogo = function () { return Promise.resolve().then(function () { return __importStar(require("./NzgLogo")); }); };
 exports.Subfooter = function () { return Promise.resolve().then(function () { return __importStar(require("./Subfooter")); }); };
 exports.A = function () { return Promise.resolve().then(function () { return __importStar(require("./A")); }); };
 exports.Button = function () { return Promise.resolve().then(function () { return __importStar(require("./Button")); }); };

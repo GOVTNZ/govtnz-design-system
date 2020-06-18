@@ -12,6 +12,7 @@ export const FooterLinks = () => import("./FooterLinks");
 export const Header = () => import("./Header");
 export const MainNavLink = () => import("./MainNavLink");
 export const MainNav = () => import("./MainNav");
+export const NzgLogo = () => import("./NzgLogo");
 export const Subfooter = () => import("./Subfooter");
 export const A = () => import("./A");
 export const Button = () => import("./Button");
