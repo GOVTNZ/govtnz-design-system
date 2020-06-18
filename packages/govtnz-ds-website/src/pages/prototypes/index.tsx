@@ -124,7 +124,9 @@ class ContactusForm extends React.Component {
           onSubmit={this.handleSubmit}
           noValidate
         >
-          <H2 styleSize="large">Contact form</H2>
+          <H1 styleSize="xlarge" id="main-heading">
+            Contact form
+          </H1>
           <div
             className={
               username.valid
