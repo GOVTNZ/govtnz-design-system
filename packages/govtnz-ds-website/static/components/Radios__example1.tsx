@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Stacked radio buttons" {...onChangeGenerator({})}>
-        <FieldsetBlock legend={<H1 styleSize="large" id="whereLiveTitle">Where do you live?</H1>} {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="medium" id="whereLiveTitle">Where do you live?</H1>} {...onChangeGenerator({})}>
             <RadioBlock label="North Island" id="anyRadioId3334" name="where" value="north" labelId="labelId3" {...onChangeGenerator({"value":"north"})}></RadioBlock>
             <RadioBlock label="South Island" id="anyRadioId42344" name="where" value="south" labelId="labelId4" {...onChangeGenerator({"value":"south"})}></RadioBlock>
             <RadioBlock label="Stewart Island" id="anyRadioId5234" name="where" value="stewart" labelId="labelId5" {...onChangeGenerator({"value":"stewart"})}></RadioBlock>

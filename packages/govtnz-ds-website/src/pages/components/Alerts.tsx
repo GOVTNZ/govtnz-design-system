@@ -106,8 +106,8 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 </ExampleContainer>
 
 <h2 id="success">Success</h2>
-<p>Use success alerts to notify users that a form submission has completed successfully.
-Success alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
+<p>Use success alerts to notify users that a form submission has completed successfully.</p>
+<p>Success alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
 <p>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</p>
 <Ul bulleted>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
@@ -130,12 +130,12 @@ Success alerts are always static, as they are included as part of a new page or 
 <Li>the error summary alert</Li>
 <Li>individual error messages next to each form field with an error.</Li>
 </Ul>
-<p>The error summary should be added at the top of the page above the form and link to each form field that has an error.
-Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
+<p>The error summary should be added at the top of the page above the form and link to each form field that has an error.</p>
+<p>Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</p>
 <p>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</p>
 <Ul bulleted>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
-<Li>the document’s <code>title</code> starts with the word, &quot;Error:&quot;.</Li>
+<Li>the document’s <code>title</code> starts with &quot;Error:&quot;.</Li>
 </Ul>
 <ExampleContainer>
     <Example  code={components__Alerts[5]} iframeProps={{
@@ -155,7 +155,8 @@ Error summary alerts are always static, as they are included as part of a new pa
 <Li><a href="https://design-system-alpha.digital.govt.nz/components/Date/">Date input</a></Li>
 </Ul>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a> .</p>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<p>Guidance for the page alerts component derived from the <a href="https://designsystem.gov.au/components/main-nav/rationale/">Australian Government Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

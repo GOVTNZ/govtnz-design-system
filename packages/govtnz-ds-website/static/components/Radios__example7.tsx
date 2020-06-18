@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import Radios from '@govtnz/ds/build/react-ts/Radios';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,11 +13,12 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Radio button items with hints" {...onChangeGenerator({})}>
-            <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1">Choose one provider</H1>} hint={<p>Select one provider.</p>} hintId="hintId" {...onChangeGenerator({})}>
-                <RadioBlock label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" id="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlock>
-                <RadioBlock label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" id="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlock>
-                <RadioBlock label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" id="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" {...onChangeGenerator({"value":"provider3"})}></RadioBlock>
+var PageContent = (props) => (<Example title="Example: Error state #1 (Radio buttons)" {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name." {...onChangeGenerator({})}>
+            <Radios inline {...onChangeGenerator({})}>
+                <RadioBlock label="Yes" id="anyRadioId9234" value="true" name="nameChange5" labelId="labelId9" {...onChangeGenerator({"value":"true"})}></RadioBlock>
+                <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" {...onChangeGenerator({"value":"false"})}></RadioBlock>
+            </Radios>
         </FieldsetBlock>
     </Example>);
 
@@ -107,7 +108,7 @@ class WrappedMainNav extends React.Component<
 
     return (
       <MobileMenuContext.Consumer>
-        {value => {
+        {(value) => {
           const Component = props.Component;
           const newProps = {
             ...props,
@@ -163,9 +164,7 @@ class WrappedAlert extends React.Component<
     super(props);
     this.state = {
       isChecked: false,
-      id: `id${Math.random()
-        .toString()
-        .replace(/[^0-9]/g, '')}`,
+      id: `id${props.headingId.replace(/[^a-zA-Z0-9]/g, '')}`,
     };
 
     this.toggle = this.toggle.bind(this);
