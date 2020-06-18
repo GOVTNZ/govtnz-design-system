@@ -128,13 +128,26 @@ For example if you are asking users a single question on a page, larger buttons 
 Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.
 
 <ExampleContainer>
-    <ExampleHeading>Error</ExampleHeading>
+    <ExampleHeading>Default error</ExampleHeading>
     <Example title="Example: Error state #2 (Radio buttons)">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name">
             <Radios inline>
                 <RadioBlock label="Yes" id="anyRadioId9" 
                 value="true" name="nameChange5" labelId="labelId9" />
                 <RadioBlock label="No" id="anyRadioId10234" value="false" name="nameChange5" labelId="labelId10" />
+            </Radios>
+        </FieldsetBlock>
+    </Example>
+</ExampleContainer>
+
+<ExampleContainer>
+    <ExampleHeading>Large radio error</ExampleHeading>
+    <Example title="Example: Error state #1 (Radio buttons)">
+        <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
+            <Radios inline>
+                <RadioBlock label="Yes" id="anyRadioId9234"
+                value="true" name="nameChange5" labelId="labelId9" />
+                <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
             </Radios>
         </FieldsetBlock>
     </Example>
