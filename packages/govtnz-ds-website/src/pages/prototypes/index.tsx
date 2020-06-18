@@ -148,15 +148,6 @@ class ContactusForm extends React.Component {
             </Alert>
           )}
 
-          <div style={{ display: successMessage }}>
-            <Alert level="success" headingId="heading3">
-              <H2 id="heading3">
-                Success: Your message has been sent Thanks for contacting us.
-              </H2>
-              <P>We will reply to your email within 1-3 working days</P>
-            </Alert>
-          </div>
-
           <InputBlock
             width="30"
             maxLength={30}
@@ -223,7 +214,14 @@ class ContactusForm extends React.Component {
             error={textarea.valid ? '' : 'Enter your message'}
             required
           />
-
+          <div style={{ display: successMessage }}>
+            <Alert level="success" headingId="heading3">
+              <H2 id="heading3">
+                Success: Your message has been sent Thanks for contacting us.
+              </H2>
+              <P>We will reply to your email within 1-3 working days</P>
+            </Alert>
+          </div>
           <button
             style={{ marginTop: '20px' }}
             className="g-button"
