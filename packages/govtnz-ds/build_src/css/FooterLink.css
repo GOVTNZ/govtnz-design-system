@@ -1,4 +1,8 @@
 .g-footer-link {
+  display: inline-block;
+}
+
+.g-footer-link__a {
   display: block;
   padding: 0.7em 1em;
   color: #d3d3d3;
@@ -9,11 +13,11 @@
 }
 
 @media only screen and (min-width: 48em) {
-  .g-footer-link:first-child {
+  .g-footer-link__a:first-child {
     margin-left: -1em;
   }
 
-  .g-footer-link {
+  .g-footer-link__a {
     display: inline-block;
     margin-right: 1em;
     margin-top: 1.5em;
@@ -21,6 +25,6 @@
   }
 }
 
-.g-footer-link:hover {
+.g-footer-link__a:hover {
   color: #fff;
 }

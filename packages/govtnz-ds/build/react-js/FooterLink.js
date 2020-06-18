@@ -15,13 +15,15 @@ var FooterLink = function FooterLink(_ref) {
       target = _ref.target,
       onClick = _ref.onClick,
       children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement("a", {
-    className: "g-footer-link",
+  return /*#__PURE__*/_react["default"].createElement("li", {
+    className: "g-footer-link"
+  }, /*#__PURE__*/_react["default"].createElement("a", {
+    className: "g-footer-link__a",
     href: href,
     rel: rel,
     target: target,
     onClick: onClick
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content ")));
 };
 
 var _default = FooterLink;

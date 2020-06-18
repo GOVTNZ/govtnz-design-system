@@ -4,8 +4,13 @@
      - children.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
-<a
+<li
 class="g-footer-link"
+>
+  
+  
+<a
+class="g-footer-link__a"
 {{#href}}
   href="{{href}}"
 {{/href}}
@@ -17,8 +22,11 @@ class="g-footer-link"
 {{/target}}
 >
   
-  
+    
   {{{children}}}
   
-
+  
 </a>
+  
+
+</li>

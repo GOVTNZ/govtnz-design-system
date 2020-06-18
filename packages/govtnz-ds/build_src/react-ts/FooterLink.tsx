@@ -9,19 +9,21 @@ type Props = {
 };
 
 const FooterLink = ({ href, rel, target, onClick, children }: Props) => (
-  <a
-    className="g-footer-link"
-    href={href}
-    rel={rel}
-    target={target}
-    onClick={onClick}
-  >
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment> Example header content </React.Fragment>
-    )}
-  </a>
+  <li className="g-footer-link">
+    <a
+      className="g-footer-link__a"
+      href={href}
+      rel={rel}
+      target={target}
+      onClick={onClick}
+    >
+      {children !== undefined ? (
+        children
+      ) : (
+        <React.Fragment> Example header content </React.Fragment>
+      )}
+    </a>
+  </li>
 );
 
 export default FooterLink;

@@ -13,8 +13,18 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
-function _templateObject() {
+function _templateObject2() {
   var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0.7em 1em;\n  color: #d3d3d3;\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n  @media only screen and (min-width: 48em) {\n    :first-child {\n      margin-left: -1em;\n    }\n    display: inline-block;\n    margin-right: 1em;\n    margin-top: 1.5em;\n    margin-bottom: 1.5em;\n  }\n  :hover {\n    color: #fff;\n  }\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -23,7 +33,9 @@ function _templateObject() {
   return data;
 }
 
-var StyledA = _styledComponents["default"].a(_templateObject());
+var StyledLi = _styledComponents["default"].li(_templateObject());
+
+var StyledA = _styledComponents["default"].a(_templateObject2());
 
 var FooterLink = function FooterLink(_ref) {
   var href = _ref.href,
@@ -31,12 +43,12 @@ var FooterLink = function FooterLink(_ref) {
       target = _ref.target,
       onClick = _ref.onClick,
       children = _ref.children;
-  return /*#__PURE__*/_react["default"].createElement(StyledA, {
+  return /*#__PURE__*/_react["default"].createElement(StyledLi, null, /*#__PURE__*/_react["default"].createElement(StyledA, {
     href: href,
     rel: rel,
     target: target,
     onClick: onClick
-  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content "));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " Example header content ")));
 };
 
 var _default = FooterLink;

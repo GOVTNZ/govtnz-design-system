@@ -27,7 +27,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-FooterLink",
-            template: "\n    <a\n      class=\"g-footer-link\"\n      href=\"{{ href }}\"\n      rel=\"{{ rel }}\"\n      target=\"{{ target }}\"\n    >\n      <slot></slot>\n    </a>\n  "
+            template: "\n    <li class=\"g-footer-link\">\n      <a\n        class=\"g-footer-link__a\"\n        href=\"{{ href }}\"\n        rel=\"{{ rel }}\"\n        target=\"{{ target }}\"\n      >\n        <slot></slot>\n      </a>\n    </li>\n  "
         })
     ], AppComponent);
     return AppComponent;

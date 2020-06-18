@@ -2,14 +2,16 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "g-FooterLink",
   template: `
-    <a
-      class="g-footer-link"
-      href="{{ href }}"
-      rel="{{ rel }}"
-      target="{{ target }}"
-    >
-      <slot></slot>
-    </a>
+    <li class="g-footer-link">
+      <a
+        class="g-footer-link__a"
+        href="{{ href }}"
+        rel="{{ rel }}"
+        target="{{ target }}"
+      >
+        <slot></slot>
+      </a>
+    </li>
   `
 })
 export class AppComponent {

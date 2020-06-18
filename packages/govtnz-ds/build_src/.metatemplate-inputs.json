@@ -1170,8 +1170,8 @@
   },
   "FooterLink": {
     "id": "FooterLink",
-    "html": "<a class=\"g-footer-link\">\n  <mt-variable key=\"children\"> Example header content </mt-variable>\n</a>\n",
-    "css": ".g-footer-link {\n  display: block;\n  padding: 0.7em 1em;\n  color: #d3d3d3;\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n}\n\n@media only screen and (min-width: 48em) {\n  .g-footer-link:first-child {\n    margin-left: -1em;\n  }\n\n  .g-footer-link {\n    display: inline-block;\n    margin-right: 1em;\n    margin-top: 1.5em;\n    margin-bottom: 1.5em;\n  }\n}\n\n.g-footer-link:hover {\n  color: #fff;\n}\n",
+    "html": "<li class=\"g-footer-link\">\n  <a class=\"g-footer-link__a\">\n    <mt-variable key=\"children\"> Example header content </mt-variable>\n  </a>\n</li>\n",
+    "css": ".g-footer-link {\n  display: inline-block;\n}\n\n.g-footer-link__a {\n  display: block;\n  padding: 0.7em 1em;\n  color: #d3d3d3;\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n}\n\n@media only screen and (min-width: 48em) {\n  .g-footer-link__a:first-child {\n    margin-left: -1em;\n  }\n\n  .g-footer-link__a {\n    display: inline-block;\n    margin-right: 1em;\n    margin-top: 1.5em;\n    margin-bottom: 1.5em;\n  }\n}\n\n.g-footer-link__a:hover {\n  color: #fff;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",

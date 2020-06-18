@@ -9,6 +9,10 @@ type Props = {
   children?: React.ReactNode;
 };
 
+const StyledLi = styled.li`
+  display: inline-block;
+`;
+
 const StyledA = styled.a`
   display: block;
   padding: 0.7em 1em;
@@ -32,13 +36,15 @@ const StyledA = styled.a`
 `;
 
 const FooterLink = ({ href, rel, target, onClick, children }: Props) => (
-  <StyledA href={href} rel={rel} target={target} onClick={onClick}>
-    {children !== undefined ? (
-      children
-    ) : (
-      <React.Fragment> Example header content </React.Fragment>
-    )}
-  </StyledA>
+  <StyledLi>
+    <StyledA href={href} rel={rel} target={target} onClick={onClick}>
+      {children !== undefined ? (
+        children
+      ) : (
+        <React.Fragment> Example header content </React.Fragment>
+      )}
+    </StyledA>
+  </StyledLi>
 );
 
 export default FooterLink;
