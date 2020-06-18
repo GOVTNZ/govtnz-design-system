@@ -73,3 +73,7 @@ a:focus {
     min-height: 104px;
   }
 }
+
+.css-changes-for-example-only .example-subfooter-logo {
+  fill: white;
+}

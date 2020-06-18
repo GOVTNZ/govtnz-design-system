@@ -47,6 +47,18 @@ Object.defineProperty(exports, "footer", {
     return _Footer["default"];
   }
 });
+Object.defineProperty(exports, "footerLink", {
+  enumerable: true,
+  get: function get() {
+    return _FooterLink["default"];
+  }
+});
+Object.defineProperty(exports, "footerLinks", {
+  enumerable: true,
+  get: function get() {
+    return _FooterLinks["default"];
+  }
+});
 Object.defineProperty(exports, "header", {
   enumerable: true,
   get: function get() {
@@ -289,6 +301,10 @@ var _FooterStandard = _interopRequireDefault(require("./FooterStandard"));
 var _FooterWrapper = _interopRequireDefault(require("./FooterWrapper"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
+
+var _FooterLink = _interopRequireDefault(require("./FooterLink"));
+
+var _FooterLinks = _interopRequireDefault(require("./FooterLinks"));
 
 var _Header = _interopRequireDefault(require("./Header"));
 

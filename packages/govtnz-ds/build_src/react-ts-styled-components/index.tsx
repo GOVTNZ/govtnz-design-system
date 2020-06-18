@@ -7,6 +7,8 @@ export const Alert = () => import("./Alert");
 export const FooterStandard = () => import("./FooterStandard");
 export const FooterWrapper = () => import("./FooterWrapper");
 export const Footer = () => import("./Footer");
+export const FooterLink = () => import("./FooterLink");
+export const FooterLinks = () => import("./FooterLinks");
 export const Header = () => import("./Header");
 export const MainNavLink = () => import("./MainNavLink");
 export const MainNav = () => import("./MainNav");

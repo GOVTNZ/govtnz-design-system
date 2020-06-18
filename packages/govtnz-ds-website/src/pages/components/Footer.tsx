@@ -39,6 +39,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
         title:"Example: Footer",
         height: 272
       }}></Example>
+
 </ExampleContainer>
 </React.Fragment>
 

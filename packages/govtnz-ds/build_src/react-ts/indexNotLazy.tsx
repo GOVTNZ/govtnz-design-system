@@ -7,6 +7,8 @@ export { default as alert } from "./Alert";
 export { default as footerStandard } from "./FooterStandard";
 export { default as footerWrapper } from "./FooterWrapper";
 export { default as footer } from "./Footer";
+export { default as footerLink } from "./FooterLink";
+export { default as footerLinks } from "./FooterLinks";
 export { default as header } from "./Header";
 export { default as mainNavLink } from "./MainNavLink";
 export { default as mainNav } from "./MainNav";
