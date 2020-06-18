@@ -51,11 +51,9 @@ class ContactusForm extends React.Component {
     email: {
       ...fieldState,
       typeMismatch: false,
-      emailFormatError: 'Check your email address',
     },
     radio: {
       ...fieldState,
-      errorMessage: 'Select where you live',
     },
     textarea: {
       ...fieldState,
