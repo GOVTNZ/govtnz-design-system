@@ -140,11 +140,19 @@ class ContactusForm extends React.Component {
               <H2 id="heading3">
                 Error: There’s a problem with the following responses
               </H2>
-              {errorMessageFields.map((message) => (
-                <>
-                  <Ul bulleted>{message ? <Li>{message} </Li> : ''}</Ul>
-                </>
-              ))}
+              <Ul bulleted>
+                {errorMessageFields.map((message) => (
+                  <>
+                    {message ? (
+                      <Li>
+                        <a href="#form">{message}</a>
+                      </Li>
+                    ) : (
+                      ''
+                    )}
+                  </>
+                ))}
+              </Ul>
             </Alert>
           )}
 
