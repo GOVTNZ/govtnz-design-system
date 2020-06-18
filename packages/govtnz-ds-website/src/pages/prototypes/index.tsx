@@ -81,13 +81,11 @@ class ContactusForm extends React.Component {
 
       .reduce((acc, currentVal) => {
         const { value, valid, typeMismatch } = currentVal;
-        const { emailFormatError } = this.state[currentVal.name];
 
         acc[currentVal.name] = {
           value,
           valid,
           typeMismatch,
-          emailFormatError,
         };
 
         return acc;
@@ -115,11 +113,13 @@ class ContactusForm extends React.Component {
 
     const isInvalidEmail = email.typeMismatch
       ? 'Check your email address'
-      : 'Enter your email';
+      : 'Enter your email address';
 
     const errorMessageFields = [
       username.valid ? '' : 'Enter your name',
-      'Enter your email',
+      email.valid ? '' : isInvalidEmail,
+      textarea.valid ? '' : 'Enter your message',
+      radio.valid ? '' : 'Select where you live',
     ];
 
     return (
@@ -140,12 +140,9 @@ class ContactusForm extends React.Component {
               <H2 id="heading3">
                 Error: There’s a problem with the following responses
               </H2>
-
-              {errorMessageFields.map((field) => (
+              {errorMessageFields.map((message) => (
                 <>
-                  <Ul bulleted>
-                    <Li>{field}</Li>
-                  </Ul>
+                  <Ul bulleted>{message ? <Li>{message} </Li> : ''}</Ul>
                 </>
               ))}
             </Alert>
@@ -164,7 +161,7 @@ class ContactusForm extends React.Component {
             width="30"
             maxLength={30}
             type="text"
-            label="What is your name?"
+            label="What’s your name?"
             name="username"
             id="anyId2f"
             errorId={username.valid ? '' : 'anyErrorId2Error'}
@@ -176,21 +173,12 @@ class ContactusForm extends React.Component {
             width="30"
             maxLength={30}
             hintId="anyHintId3"
-            label="What is your email?"
+            label="What’s your email address?"
             autoComplete="autoComplete"
             errorId={email.valid ? '' : 'anyErrorId2Error'}
             error={email.valid ? '' : isInvalidEmail}
             type="email"
             name="email"
-            required
-          />
-
-          <TextareaBlock
-            autoComplete="autoComplete"
-            name="textarea"
-            label="What is your message?"
-            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
-            error={textarea.valid ? '' : 'Enter your message'}
             required
           />
 
@@ -226,6 +214,15 @@ class ContactusForm extends React.Component {
               ></RadioBlock>
             </Radios>
           </FieldsetBlock>
+
+          <TextareaBlock
+            autoComplete="autoComplete"
+            name="textarea"
+            label="What’s your message?"
+            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
+            error={textarea.valid ? '' : 'Enter your message'}
+            required
+          />
 
           <button
             style={{ marginTop: '20px' }}
