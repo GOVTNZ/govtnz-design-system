@@ -16,6 +16,12 @@ import '@govtnz/ds/build/css/H2.css';
 import P from '@govtnz/ds/build/react-js/P';
 import '@govtnz/ds/build/css/P.css';
 
+import Ul from '@govtnz/ds/build/react-ts/Ul';
+import '../../commons/styles/ds/themed-Ul.scss';
+
+import Li from '@govtnz/ds/build/react-ts/Li';
+import '../../commons/styles/ds/themed-Li.scss';
+
 import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';
 import '@govtnz/ds/build/css/InputBlock.css';
 
@@ -24,6 +30,9 @@ import '@govtnz/ds/build/css/TextareaBlock.css';
 
 import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 import '@govtnz/ds/build/css/RadioBlock.css';
+
+import FieldsetBlock from '@govtnz/ds/build/react-js/FieldsetBlock';
+import '@govtnz/ds/build/css/FieldsetBlock.css';
 
 import Radios from '@govtnz/ds/build/react-ts/Radios';
 
@@ -34,32 +43,20 @@ const fieldState = {
   valid: true,
 };
 
-const ErrorMessage = ({ message }) => (
-  <div className="g-inputBlock-error-message">
-    <span className="g-fieldsetBlock-visually-hidden">Error:</span>
-    <label htmlFor="">{message}</label>
-  </div>
-);
-
 class ContactusForm extends React.Component {
   state = {
     username: {
       ...fieldState,
-      errorMessage: 'Enter your name',
     },
     email: {
       ...fieldState,
       typeMismatch: false,
-      errorMessage: 'Enter your email',
-      emailFormatError: 'Check your email address',
     },
     radio: {
       ...fieldState,
-      errorMessage: 'Select where you live',
     },
     textarea: {
       ...fieldState,
-      errorMessage: 'Enter your message',
     },
     isFieldsValid: false,
   };
@@ -84,14 +81,11 @@ class ContactusForm extends React.Component {
 
       .reduce((acc, currentVal) => {
         const { value, valid, typeMismatch } = currentVal;
-        const { errorMessage, emailFormatError } = this.state[currentVal.name];
 
         acc[currentVal.name] = {
           value,
           valid,
           typeMismatch,
-          errorMessage,
-          emailFormatError,
         };
 
         return acc;
@@ -117,6 +111,17 @@ class ContactusForm extends React.Component {
     const { email, username, textarea, radio, isFieldsValid } = this.state;
     const successMessage = isFieldsValid ? 'block' : 'none';
 
+    const isInvalidEmail = email.typeMismatch
+      ? 'Check your email address'
+      : 'Enter your email address';
+
+    const errorMessageFields = [
+      username.valid ? '' : 'Enter your name',
+      email.valid ? '' : isInvalidEmail,
+      textarea.valid ? '' : 'Enter your message',
+      radio.valid ? '' : 'Select where you live',
+    ];
+
     return (
       <>
         <form
@@ -127,91 +132,73 @@ class ContactusForm extends React.Component {
           <H1 styleSize="xlarge" id="main-heading">
             Contact form
           </H1>
-          <div
-            className={
-              username.valid
-                ? 'g-inputBlock-form-group'
-                : 'g-inputBlock-form-group--error'
-            }
-          >
-            {username.valid ? (
-              ''
-            ) : (
-              <ErrorMessage message={username.errorMessage} />
-            )}
-            <InputBlock
-              width="30"
-              maxLength={30}
-              label="What is your name?"
-              id="username"
-              name="username"
-              type="text"
-              autoComplete="autoComplete"
-              required
-            />
-          </div>
-          <div
-            className={
-              email.valid
-                ? 'g-inputBlock-form-group'
-                : 'g-inputBlock-form-group--error'
-            }
-          >
-            {email.valid ? (
-              ''
-            ) : (
-              <ErrorMessage
-                message={
-                  email.typeMismatch
-                    ? email.emailFormatError
-                    : email.errorMessage
-                }
-              />
-            )}
 
-            <InputBlock
-              width="30"
-              maxLength={30}
-              hintId="anyHintId3"
-              label="What is your email?"
-              autoComplete="autoComplete"
-              type="email"
-              name="email"
-              required
-            />
-          </div>
-          <div
-            className={
-              textarea.valid
-                ? 'g-inputBlock-form-group'
-                : 'g-textareaBlock-form-group--error'
-            }
-          >
-            {textarea.valid ? (
-              ''
-            ) : (
-              <ErrorMessage message={textarea.errorMessage} />
-            )}
+          {username.valid && email.valid && radio.valid && textarea.valid ? (
+            ''
+          ) : (
+            <Alert level="error" headingId="heading3">
+              <H2 id="heading3">
+                Error: There’s a problem with the following responses
+              </H2>
+              <Ul bulleted>
+                {errorMessageFields.map((message) => (
+                  <>
+                    {message ? (
+                      <Li>
+                        <a href="#form">{message}</a>
+                      </Li>
+                    ) : (
+                      ''
+                    )}
+                  </>
+                ))}
+              </Ul>
+            </Alert>
+          )}
 
-            <TextareaBlock
-              autoComplete="autoComplete"
-              name="textarea"
-              label="What is your message?"
-              error={textarea.valid}
-              required
-            />
+          <div style={{ display: successMessage }}>
+            <Alert level="success" headingId="heading3">
+              <H2 id="heading3">
+                Success: Your message has been sent Thanks for contacting us.
+              </H2>
+              <P>We will reply to your email within 1-3 working days</P>
+            </Alert>
           </div>
 
-          <div
-            className={
-              radio.valid
-                ? 'g-fieldsetBlock-form-group'
-                : 'g-fieldsetBlock-form-group--error'
-            }
-          >
-            {radio.valid ? '' : <ErrorMessage message={radio.errorMessage} />}
+          <InputBlock
+            width="30"
+            maxLength={30}
+            type="text"
+            label="What’s your name?"
+            name="username"
+            id="anyId2f"
+            errorId={username.valid ? '' : 'anyErrorId2Error'}
+            error={username.valid ? '' : 'Enter your name'}
+            required
+          />
 
-            <Radios inline>
+          <InputBlock
+            width="30"
+            maxLength={30}
+            hintId="anyHintId3"
+            label="What’s your email address?"
+            errorId={email.valid ? '' : 'anyErrorId2Error'}
+            error={email.valid ? '' : isInvalidEmail}
+            type="email"
+            name="email"
+            required
+          />
+
+          <FieldsetBlock
+            legend={
+              <H1 styleSize="medium" id="nameChangeId5">
+                Where do you live?
+              </H1>
+            }
+            errorId={radio.valid ? '' : 'errorId5'}
+            error={radio.valid ? '' : 'Select where you live'}
+          >
+            <Radios>
               <RadioBlock
                 label="North Island"
                 name="radio"
@@ -233,7 +220,16 @@ class ContactusForm extends React.Component {
                 required
               ></RadioBlock>
             </Radios>
-          </div>
+          </FieldsetBlock>
+
+          <TextareaBlock
+            autoComplete="example"
+            name="textarea"
+            label="What’s your message?"
+            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
+            error={textarea.valid ? '' : 'Enter your message'}
+            required
+          />
 
           <button
             style={{ marginTop: '20px' }}
@@ -242,28 +238,6 @@ class ContactusForm extends React.Component {
           >
             Submit
           </button>
-
-          <div style={{ display: successMessage }}>
-            <Alert level="success" headingId="heading3">
-              <H2 id="heading3">
-                Success: Your message has been sent Thanks for contacting us.
-              </H2>
-              <P>We will reply to your email within 1-3 working days</P>
-            </Alert>
-          </div>
-
-          <div>
-            {username.valid && email.valid && radio.valid && textarea.valid ? (
-              ''
-            ) : (
-              <Alert level="warning" headingId="heading3">
-                <H2 id="heading3">
-                  Error: There’s a problem with the following responses
-                </H2>
-                <P>We will reply to your email within 1-3 working days</P>
-              </Alert>
-            )}
-          </div>
         </form>
       </>
     );

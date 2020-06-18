@@ -144,7 +144,7 @@ Make sure error messages follow the guidance below, and that you have specific e
     <ExampleHeading>Large radio error</ExampleHeading>
     <Example title="Example: Error state #1 (Radio buttons)">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
-            <Radios inline>
+            <Radios inline big>
                 <RadioBlock label="Yes" id="anyRadioId9234"
                 value="true" name="nameChange5" labelId="labelId9" />
                 <RadioBlock label="No" id="anyRadioId10" value="false" name="nameChange5" labelId="labelId10" />
