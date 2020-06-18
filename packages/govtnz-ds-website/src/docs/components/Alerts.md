@@ -88,7 +88,7 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
 
 <ExampleContainer>
     <Example title="Example title: Warning alert - Live">
-        <Alert mode="live" level="info" headingId="heading1">
+        <Alert mode="live" level="warning" headingId="heading1">
             <H2 id="heading1">Warning: The option you’ve selected is for people aged 65 or over only</H2>
             <P>You’ll need to provide evidence of your date of birth when you submit your application.</P>
         </Alert>
@@ -98,6 +98,7 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
 ## Success
 
 Use success alerts to notify users that a form submission has completed successfully.
+
 Success alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.
 
 To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:
@@ -124,12 +125,13 @@ Form errors must be presented using:
 - individual error messages next to each form field with an error.
 
 The error summary should be added at the top of the page above the form and link to each form field that has an error.
+
 Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.
 
 To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:
 
 - focus is moved to the alert (the alert container is preset with `tabindex=”-1”` to make it programmatically focusable)
-- the document’s `title` starts with the word, "Error:".
+- the document’s `title` starts with "Error:".
 
 <ExampleContainer>
     <Example title="Example title: Error summary alert">
@@ -155,4 +157,6 @@ Specific error messages must be provided for specific error states. Style error 
 
 ## Credit
 
-Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend) .
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).
+
+Guidance for the page alerts component derived from the [Australian Government Design System](https://github.com/alphagov/govuk-frontend).
