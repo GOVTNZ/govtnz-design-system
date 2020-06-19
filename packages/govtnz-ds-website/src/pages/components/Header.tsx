@@ -83,8 +83,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h3 id="links">Links</h3>
 <p>We recommend using a horizontal list of 2–9 links to key tasks and information on your site. This is one of the most visible and familiar ways of helping users to navigate a site.</p>
 <h4 id="use-short-descriptive-and-recognisable-link-labels">Use short, descriptive, and recognisable link labels</h4>
-<p>Link labels should clearly describe your content. They should be familiar and relevant to your users.</p>
-<p>You shouldn’t label links with jargon or unfamiliar terms.</p>
+<p>Link labels should clearly describe your content. They should be familiar and relevant to your users. You shouldn’t label links with jargon or unfamiliar terms.</p>
 <h4 id="left-justify-links">Left-justify links</h4>
 <p>Left-justified link labels are easier to scan.</p>
 <h4 id="front-load-key-terms">Front-load key terms</h4>

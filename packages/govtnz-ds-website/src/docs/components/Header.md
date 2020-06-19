@@ -108,9 +108,7 @@ We recommend using a horizontal list of 2–9 links to key tasks and information
 
 #### Use short, descriptive, and recognisable link labels
 
-Link labels should clearly describe your content. They should be familiar and relevant to your users.
-
-You shouldn’t label links with jargon or unfamiliar terms.
+Link labels should clearly describe your content. They should be familiar and relevant to your users. You shouldn’t label links with jargon or unfamiliar terms.
 
 #### Left-justify links
 
