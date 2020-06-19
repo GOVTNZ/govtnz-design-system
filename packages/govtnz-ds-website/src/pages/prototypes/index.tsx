@@ -61,9 +61,6 @@ class ContactusForm extends React.Component {
     isFieldsValid: false,
   };
 
-  refA = React.createRef();
-  refB = React.createRef();
-
   getformFieldvalues = (formElements) => {
     const elements = Array.prototype.slice.call(formElements);
 
