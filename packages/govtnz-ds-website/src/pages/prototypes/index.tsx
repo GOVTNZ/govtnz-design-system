@@ -61,6 +61,9 @@ class ContactusForm extends React.Component {
     isFieldsValid: false,
   };
 
+  refA = React.createRef();
+  refB = React.createRef();
+
   getformFieldvalues = (formElements) => {
     const elements = Array.prototype.slice.call(formElements);
 
@@ -92,6 +95,14 @@ class ContactusForm extends React.Component {
       }, {});
 
     return formfieldValues;
+  };
+
+  scrollToElement = () => {
+    const scrollElement: Element | null = document.getElementById('field');
+
+    if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   handleSubmit = (event) => {
@@ -145,7 +156,14 @@ class ContactusForm extends React.Component {
                   <>
                     {message ? (
                       <Li>
-                        <a href="#form">{message}</a>
+                        <a
+                          href="#scroll-field"
+                          onClick={() => {
+                            this.scrollToElement();
+                          }}
+                        >
+                          {message}
+                        </a>
                       </Li>
                     ) : (
                       ''
@@ -171,13 +189,14 @@ class ContactusForm extends React.Component {
             type="text"
             label="What’s your name?"
             name="username"
-            id="anyId2f"
+            id="field"
             errorId={username.valid ? '' : 'anyErrorId2Error'}
             error={username.valid ? '' : 'Enter your name'}
             required
           />
 
           <InputBlock
+            id="scroll-field"
             width="30"
             maxLength={30}
             hintId="anyHintId3"
@@ -190,6 +209,7 @@ class ContactusForm extends React.Component {
           />
 
           <FieldsetBlock
+            id="scroll-field"
             legend={
               <H1 styleSize="medium" id="nameChangeId5">
                 Where do you live?
@@ -224,6 +244,7 @@ class ContactusForm extends React.Component {
 
           <TextareaBlock
             autoComplete="example"
+            id="scroll-field"
             name="textarea"
             label="What’s your message?"
             errorId={textarea.valid ? '' : 'anyErrorId2Error'}
