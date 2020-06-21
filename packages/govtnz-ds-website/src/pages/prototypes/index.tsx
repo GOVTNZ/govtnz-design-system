@@ -94,6 +94,16 @@ class ContactusForm extends React.Component {
     return formfieldValues;
   };
 
+  scrollToElement = () => {
+    const scrollElement: Element | null = document.getElementById(
+      'scroll-field'
+    );
+
+    if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
 
@@ -145,7 +155,9 @@ class ContactusForm extends React.Component {
                   <>
                     {message ? (
                       <Li>
-                        <a href="#form">{message}</a>
+                        <a href="#scroll-field" onClick={this.scrollToElement}>
+                          {message}
+                        </a>
                       </Li>
                     ) : (
                       ''
@@ -166,12 +178,12 @@ class ContactusForm extends React.Component {
           </div>
 
           <InputBlock
+            id="scroll-field"
             width="30"
             maxLength={30}
             type="text"
             label="What’s your name?"
             name="username"
-            id="anyId2f"
             errorId={username.valid ? '' : 'anyErrorId2Error'}
             error={username.valid ? '' : 'Enter your name'}
             required
@@ -223,7 +235,7 @@ class ContactusForm extends React.Component {
           </FieldsetBlock>
 
           <TextareaBlock
-            autoComplete="example"
+            autoComplete="off"
             name="textarea"
             label="What’s your message?"
             errorId={textarea.valid ? '' : 'anyErrorId2Error'}
