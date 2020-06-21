@@ -183,19 +183,18 @@ class ContactusForm extends React.Component {
           </div>
 
           <InputBlock
+            id="scroll-field"
             width="30"
             maxLength={30}
             type="text"
             label="What’s your name?"
             name="username"
-            id="field"
             errorId={username.valid ? '' : 'anyErrorId2Error'}
             error={username.valid ? '' : 'Enter your name'}
             required
           />
 
           <InputBlock
-            id="scroll-field"
             width="30"
             maxLength={30}
             hintId="anyHintId3"
@@ -208,7 +207,6 @@ class ContactusForm extends React.Component {
           />
 
           <FieldsetBlock
-            id="scroll-field"
             legend={
               <H1 styleSize="medium" id="nameChangeId5">
                 Where do you live?
@@ -242,8 +240,7 @@ class ContactusForm extends React.Component {
           </FieldsetBlock>
 
           <TextareaBlock
-            autoComplete="example"
-            id="scroll-field"
+            autoComplete="on"
             name="textarea"
             label="What’s your message?"
             errorId={textarea.valid ? '' : 'anyErrorId2Error'}
