@@ -155,12 +155,7 @@ class ContactusForm extends React.Component {
                   <>
                     {message ? (
                       <Li>
-                        <a
-                          href="#scroll-field"
-                          onClick={() => {
-                            this.scrollToElement();
-                          }}
-                        >
+                        <a href="#scroll-field" onClick={this.scrollToElement}>
                           {message}
                         </a>
                       </Li>
@@ -240,7 +235,7 @@ class ContactusForm extends React.Component {
           </FieldsetBlock>
 
           <TextareaBlock
-            autoComplete="on"
+            autoComplete="off"
             name="textarea"
             label="What’s your message?"
             errorId={textarea.valid ? '' : 'anyErrorId2Error'}
