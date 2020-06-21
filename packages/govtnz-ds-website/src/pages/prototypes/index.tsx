@@ -95,7 +95,9 @@ class ContactusForm extends React.Component {
   };
 
   scrollToElement = () => {
-    const scrollElement: Element | null = document.getElementById('field');
+    const scrollElement: Element | null = document.getElementById(
+      'scroll-field'
+    );
 
     if (scrollElement) {
       scrollElement.scrollIntoView({ behavior: 'smooth' });
