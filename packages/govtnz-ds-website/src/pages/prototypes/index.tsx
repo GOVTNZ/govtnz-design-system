@@ -128,8 +128,8 @@ class ContactusForm extends React.Component {
     const errorMessageFields = [
       username.valid ? '' : 'Enter your name',
       email.valid ? '' : isInvalidEmail,
-      textarea.valid ? '' : 'Enter your message',
       radio.valid ? '' : 'Select where you live',
+      textarea.valid ? '' : 'Enter your message',
     ];
 
     return (
@@ -170,86 +170,87 @@ class ContactusForm extends React.Component {
 
           <div style={{ display: successMessage }}>
             <Alert level="success" headingId="heading3">
-              <H2 id="heading3">
-                Success: Your message has been sent Thanks for contacting us.
-              </H2>
-              <P>We will reply to your email within 1-3 working days</P>
+              <H2 id="heading3">Success: Your message has been sent.</H2>
+              <P>
+                Thanks for contacting us. We will reply to your email within 1-3
+                working days
+              </P>
             </Alert>
           </div>
+          <div id="scroll-field">
+            <InputBlock
+              width="30"
+              maxLength={30}
+              type="text"
+              label="What’s your name?"
+              name="username"
+              errorId={username.valid ? '' : 'anyErrorId2Error'}
+              error={username.valid ? '' : 'Enter your name'}
+              required
+            />
 
-          <InputBlock
-            id="scroll-field"
-            width="30"
-            maxLength={30}
-            type="text"
-            label="What’s your name?"
-            name="username"
-            errorId={username.valid ? '' : 'anyErrorId2Error'}
-            error={username.valid ? '' : 'Enter your name'}
-            required
-          />
+            <InputBlock
+              width="30"
+              maxLength={30}
+              hintId="anyHintId3"
+              label="What’s your email address?"
+              errorId={email.valid ? '' : 'anyErrorId2Error'}
+              error={email.valid ? '' : isInvalidEmail}
+              type="email"
+              name="email"
+              required
+            />
 
-          <InputBlock
-            width="30"
-            maxLength={30}
-            hintId="anyHintId3"
-            label="What’s your email address?"
-            errorId={email.valid ? '' : 'anyErrorId2Error'}
-            error={email.valid ? '' : isInvalidEmail}
-            type="email"
-            name="email"
-            required
-          />
+            <FieldsetBlock
+              legend={
+                <H1 styleSize="medium" id="nameChangeId5">
+                  Where do you live?
+                </H1>
+              }
+              errorId={radio.valid ? '' : 'errorId5'}
+              error={radio.valid ? '' : 'Select where you live'}
+            >
+              <Radios>
+                <RadioBlock
+                  label="North Island"
+                  name="radio"
+                  required
+                ></RadioBlock>
+                <RadioBlock
+                  label="South Island"
+                  name="radio"
+                  required
+                ></RadioBlock>
+                <RadioBlock
+                  label="Stewart Island"
+                  name="radio"
+                  required
+                ></RadioBlock>
+                <RadioBlock
+                  label="Chatham Islands"
+                  name="radio"
+                  required
+                ></RadioBlock>
+              </Radios>
+            </FieldsetBlock>
 
-          <FieldsetBlock
-            legend={
-              <H1 styleSize="medium" id="nameChangeId5">
-                Where do you live?
-              </H1>
-            }
-            errorId={radio.valid ? '' : 'errorId5'}
-            error={radio.valid ? '' : 'Select where you live'}
-          >
-            <Radios>
-              <RadioBlock
-                label="North Island"
-                name="radio"
-                required
-              ></RadioBlock>
-              <RadioBlock
-                label="South Island"
-                name="radio"
-                required
-              ></RadioBlock>
-              <RadioBlock
-                label="Stewart Island"
-                name="radio"
-                required
-              ></RadioBlock>
-              <RadioBlock
-                label="Chatham Islands"
-                name="radio"
-                required
-              ></RadioBlock>
-            </Radios>
-          </FieldsetBlock>
+            <TextareaBlock
+              autoComplete="off"
+              name="textarea"
+              label="What’s your message?"
+              errorId={textarea.valid ? '' : 'anyErrorId2Error'}
+              error={textarea.valid ? '' : 'Enter your message'}
+              required
+            />
 
-          <TextareaBlock
-            autoComplete="off"
-            name="textarea"
-            label="What’s your message?"
-            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
-            error={textarea.valid ? '' : 'Enter your message'}
-            required
-          />
-
-          <button
-            style={{ marginTop: '20px' }}
-            className="g-button"
-            type="submit"
-          >
-            Submit
-          </button>
+            <button
+              style={{ marginTop: '20px' }}
+              className="g-button"
+              type="submit"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </>
     );
@@ -260,18 +261,23 @@ const PrototypePageContent = () => (
   <React.Fragment>
     <H1 styleSize="xlarge">Prototypes</H1>
     <p>
-      See examples of web pages built using Design System components. These
-      prototypes show you how components work alongside each other, and can help
-      you to demonstrate your product vision to stakeholders.
+      See example prototypes built using Design System components. We’ll
+      continue to update this page with prototypes that show you and
+      stakeholders how components look and work when used together.
     </p>
     <H2 styleSize="large">Contact form</H2>
     <p>
       A contact form gives visitors to your site an easy way to send you a
-      message. This example demonstrates how form components can be used
-      together. It is not guidance for creating a contact form. Interact with
-      the example to see how it works.
+      message.
     </p>
-    <p>This is purely for demonstration purpose. Not an advice</p>
+    <p>
+      This example demonstrates how form components can be used together. It is
+      not guidance for creating a contact form.
+    </p>
+    <p>
+      Interact with the example to see how it works. No information is sent if
+      you select the ‘Submit’ button.
+    </p>
     <ExampleContainer>
       <Row>
         <Column className="" xs="12" sm="12" md="9" lg="12">
@@ -279,6 +285,15 @@ const PrototypePageContent = () => (
         </Column>
       </Row>
     </ExampleContainer>
+
+    <h2 id="credit">Credit</h2>
+    <p>
+      Guidance, original HTML and CSS derived from{' '}
+      <a href="https://github.com/alphagov/govuk-frontend">
+        GOV.UK Design System
+      </a>
+      .
+    </p>
   </React.Fragment>
 );
 
