@@ -56,6 +56,7 @@ Success and error summary alerts are not intended to be used as live alerts. Sin
 Use information alerts to inform users of important information or changes on a page only. They should be used sparingly.
 
 <ExampleContainer>
+    <ExampleHeading>Information alert - Static</ExampleHeading>
     <Example title="Example title: Warning alert - Static">
         <Alert level="info" headingId="heading1">
             <H2 id="heading1">Note: Nominations are currently closed</H2>
@@ -65,6 +66,7 @@ Use information alerts to inform users of important information or changes on a 
 </ExampleContainer>
 
 <ExampleContainer>
+    <ExampleHeading>Information alert - Live</ExampleHeading>
     <Example title="Example title: Information alert - Live">
         <Alert mode="live" level="info" headingId="heading1">
             <H2 id="heading1">Note: There are only 3 spaces remaining</H2>
@@ -78,6 +80,7 @@ Use information alerts to inform users of important information or changes on a 
 Use warning alerts to tell users something urgent. Only use this alert if the information will help users avoid a problem.
 
 <ExampleContainer>
+    <ExampleHeading>Warning alert - Static</ExampleHeading>
     <Example title="Example title: Warning alert - Static">
         <Alert level="warning" headingId="heading2">
             <H2 id="heading2">Warning: Your subscription will expire soon</H2>
@@ -87,6 +90,7 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
 </ExampleContainer>
 
 <ExampleContainer>
+    <ExampleHeading>Warning alert - Live</ExampleHeading>
     <Example title="Example title: Warning alert - Live">
         <Alert mode="live" level="warning" headingId="heading1">
             <H2 id="heading1">Warning: The option you’ve selected is for people aged 65 or over only</H2>
@@ -107,6 +111,7 @@ To orient screen reader users and others to the alert, the Design System user mu
 - the document’s `title` starts with "Success:".
 
 <ExampleContainer>
+    <ExampleHeading>Success alert</ExampleHeading>
     <Example title="Example: Alerts (static)">
         <Alert level="success" headingId="heading3">
             <H2 id="heading3">Success: Your account has been activated</H2>
@@ -134,6 +139,7 @@ To orient screen reader users and others to the alert, the Design System user mu
 - the document’s `title` starts with "Error:".
 
 <ExampleContainer>
+    <ExampleHeading>Error summary alert</ExampleHeading>
     <Example title="Example title: Error summary alert">
         <Alert level="error" headingId="heading4">
             <H2 id="heading4">Error: There’s a problem with the following responses

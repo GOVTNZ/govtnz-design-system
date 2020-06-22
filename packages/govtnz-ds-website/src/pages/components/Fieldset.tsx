@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Fieldset__example1.html",
         title:"Example: Fieldset legend as page heading",
-        height: 208
+        height: 174
       }}></Example>
 </ExampleContainer>
 
