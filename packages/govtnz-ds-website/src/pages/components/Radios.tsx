@@ -80,7 +80,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example2.html",
         title:"Example: Inline radio buttons",
-        height: 233
+        height: 244
       }}></Example>
 </ExampleContainer>
 
@@ -92,7 +92,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example3.html",
         title:"Example: Radio button items with hints",
-        height: 399
+        height: 317
       }}></Example>
 </ExampleContainer>
 
@@ -104,7 +104,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         className: "example__iframe",
         src:"/components/Radios__example4.html",
         title:"Example: Radio button items with a text divider",
-        height: 446
+        height: 380
       }}></Example>
 </ExampleContainer>
 
@@ -113,36 +113,37 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <p>The default radio button size should be used in nearly all cases. However, larger versions work well on pages where it’s helpful to make them more visually prominent.</p>
 <p>For example if you are asking users a single question on a page, larger buttons are easier to see and interact with.</p>
 <ExampleContainer>
+    <ExampleHeading>Large radio buttons</ExampleHeading>
     <Example  code={components__Radios[5]} iframeProps={{
         id:"iframe_componentsRadios5",
         className: "example__iframe",
         src:"/components/Radios__example5.html",
         title:"Example: Radio buttons",
-        height: 279
+        height: 244
       }}></Example>
 </ExampleContainer>
 
 <h2 id="error-messages">Error messages</h2>
 <p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
 <ExampleContainer>
-    <ExampleHeading>Default error</ExampleHeading>
+    <ExampleHeading>Default radio buttons with error</ExampleHeading>
     <Example  code={components__Radios[6]} iframeProps={{
         id:"iframe_componentsRadios6",
         className: "example__iframe",
         src:"/components/Radios__example6.html",
         title:"Example: Error state #2 (Radio buttons)",
-        height: 273
+        height: 262
       }}></Example>
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Large radio error</ExampleHeading>
+    <ExampleHeading>Large radio buttons with error</ExampleHeading>
     <Example  code={components__Radios[7]} iframeProps={{
         id:"iframe_componentsRadios7",
         className: "example__iframe",
         src:"/components/Radios__example7.html",
         title:"Example: Error state #1 (Radio buttons)",
-        height: 319
+        height: 262
       }}></Example>
 </ExampleContainer>
 
