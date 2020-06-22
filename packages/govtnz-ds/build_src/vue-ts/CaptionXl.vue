@@ -21,7 +21,7 @@ export default Vue.extend({
   line-height: 1.11111;
   display: block;
   margin-bottom: 5px;
-  color: #6f777b;
+  color: #6f777c;
 }
 @media print {
   .g-caption-xl {

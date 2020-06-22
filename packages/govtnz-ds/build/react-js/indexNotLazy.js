@@ -29,18 +29,6 @@ Object.defineProperty(exports, "alert", {
     return _Alert["default"];
   }
 });
-Object.defineProperty(exports, "footerStandard", {
-  enumerable: true,
-  get: function get() {
-    return _FooterStandard["default"];
-  }
-});
-Object.defineProperty(exports, "footerWrapper", {
-  enumerable: true,
-  get: function get() {
-    return _FooterWrapper["default"];
-  }
-});
 Object.defineProperty(exports, "footer", {
   enumerable: true,
   get: function get() {
@@ -301,10 +289,6 @@ var _FlexContainer = _interopRequireDefault(require("./FlexContainer"));
 var _FlexRow = _interopRequireDefault(require("./FlexRow"));
 
 var _Alert = _interopRequireDefault(require("./Alert"));
-
-var _FooterStandard = _interopRequireDefault(require("./FooterStandard"));
-
-var _FooterWrapper = _interopRequireDefault(require("./FooterWrapper"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
 

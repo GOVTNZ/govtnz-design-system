@@ -9,7 +9,7 @@ const StyledSpan = styled.span`
   font-size: 1rem;
   line-height: 1.25;
   display: block;
-  color: #6f777b;
+  color: #6f777c;
   @media print {
     font-family: sans-serif;
   }

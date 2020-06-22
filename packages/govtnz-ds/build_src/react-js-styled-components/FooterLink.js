@@ -8,7 +8,7 @@ const StyledLi = styled.li`
 const StyledA = styled.a`
   display: block;
   padding: 0.7em 1em;
-  color: #d3d3d3;
+  color: #d2d2d2;
   margin-left: -1em;
   margin-right: -1em;
   margin-top: 0.5em;
@@ -23,7 +23,7 @@ const StyledA = styled.a`
     margin-bottom: 1.5em;
   }
   :hover {
-    color: #fff;
+    color: #ffffff;
   }
 `;
 

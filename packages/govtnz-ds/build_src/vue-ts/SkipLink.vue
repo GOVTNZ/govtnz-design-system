@@ -63,11 +63,6 @@ export default Vue.extend({
     line-height: 1.2;
   }
 }
-.g-skipLink-header__navigation-item--active a:link,
-.g-skipLink-header__navigation-item--active a:hover,
-.g-skipLink-header__navigation-item--active a:visited {
-  color: #1d8feb;
-}
 .g-skipLink-header__navigation-item--active a:focus {
   color: #0b0c0c;
 }

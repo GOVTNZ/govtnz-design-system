@@ -7,6 +7,7 @@
   font-size: 1rem;
   line-height: 1.25;
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -39,7 +40,7 @@
 @media print {
   .g-fieldset__legend {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 

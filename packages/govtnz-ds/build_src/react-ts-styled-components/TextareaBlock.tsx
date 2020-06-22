@@ -54,17 +54,13 @@ const StyledLabel = styled.label`
   margin-bottom: 5px;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: #000000;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: #000000;
   }
   margin-top: 0px;
 `;
@@ -81,14 +77,12 @@ const StyledDiv2 = styled.div`
   color: #595959;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
   }
   margin-top: -5px;
   margin-top: 0px;
@@ -107,14 +101,12 @@ const StyledDiv3 = styled.div`
   color: #b10e1e;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
   }
   margin-top: 0px;
 `;

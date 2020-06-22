@@ -41,11 +41,6 @@ const StyledA = styled.a`
     font-size: 14pt;
     line-height: 1.2;
   }
-  :link,
-  :hover,
-  :visited {
-    color: #1d8feb;
-  }
   :focus {
     color: #0b0c0c;
   }

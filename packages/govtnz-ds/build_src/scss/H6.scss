@@ -1,11 +1,11 @@
 .g-heading-xl {
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -15,8 +15,8 @@
 
 @media print {
   .g-heading-xl {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -47,13 +47,13 @@
 }
 
 .g-heading-l {
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -63,8 +63,8 @@
 
 @media print {
   .g-heading-l {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -95,13 +95,13 @@
 }
 
 .g-heading-m {
-  color: #0b0c0c;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -111,8 +111,8 @@
 
 @media print {
   .g-heading-m {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -143,13 +143,13 @@
 }
 
 .g-heading-s {
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -159,8 +159,8 @@
 
 @media print {
   .g-heading-s {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -243,13 +243,13 @@
 }
 
 .g-heading-xs {
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -259,8 +259,8 @@
 
 @media print {
   .g-heading-xs {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -307,13 +307,13 @@
 }
 
 .g-heading-xxs {
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: $g-theme-heading-font-weight;
-  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
+  font-weight: bold;
   font-size: 1rem;
   line-height: 1.25;
   display: block;
@@ -323,8 +323,8 @@
 
 @media print {
   .g-heading-xxs {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 

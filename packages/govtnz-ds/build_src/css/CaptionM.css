@@ -7,8 +7,8 @@
   font-size: 1rem;
   line-height: 1.25;
   display: block;
-  color: #6f777b;
-  color: var(--g-theme-color-mid-grey, #6f777b);
+  color: #6f777c;
+  color: var(--g-theme-caption-color, #6f777c);
 }
 
 @media print {

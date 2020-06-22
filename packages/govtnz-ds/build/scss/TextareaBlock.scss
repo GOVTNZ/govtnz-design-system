@@ -14,9 +14,9 @@
 
 .g-textareaBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
+  border-left: 5px solid $g-theme-alert-error-border-color;
   border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
 }
 
 .g-textareaBlock-form-group--error .g-textareaBlock-form-group {
@@ -35,13 +35,18 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: $g-theme-alert-error-border-color;
+  color: var(
+    --g-theme-alert-error-border-color,
+    $g-theme-alert-error-border-color
+  );
 }
 
 @media print {
   .g-textareaBlock-error-message {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 
@@ -49,13 +54,6 @@
   .g-textareaBlock-error-message {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-
-@media print {
-  .g-textareaBlock-error-message {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 
@@ -69,12 +67,15 @@
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: $g-theme-hint-color;
+  color: var(--g-theme-hint-color, $g-theme-hint-color);
 }
 
 @media print {
   .g-textareaBlock-hint {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 
@@ -82,13 +83,6 @@
   .g-textareaBlock-hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-
-@media print {
-  .g-textareaBlock-hint {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 
@@ -104,7 +98,8 @@
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   display: block;
   margin-bottom: 5px;
 }
@@ -112,6 +107,10 @@
 @media print {
   .g-textareaBlock-label {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -119,20 +118,6 @@
   .g-textareaBlock-label {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-
-@media print {
-  .g-textareaBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-@media print {
-  .g-textareaBlock-label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
   }
 }
 
@@ -155,7 +140,8 @@
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 2px solid #0b0c0c;
+  border: 2px solid $g-theme-link-focus-color;
+  border: 2px solid var(--g-theme-link-focus-color, $g-theme-link-focus-color);
   border-radius: 0;
   -webkit-appearance: none;
 }
@@ -181,7 +167,8 @@
 }
 
 .g-textareaBlock-textarea:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
   outline-offset: 0;
 }
 

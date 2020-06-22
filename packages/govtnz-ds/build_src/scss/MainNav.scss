@@ -2,7 +2,8 @@
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: #2a2a2a;
+  background-color: $g-theme-text-color;
+  background-color: var(--g-theme-text-color, $g-theme-text-color);
 }
 
 .g-flex-container .g-main-nav,
@@ -27,8 +28,8 @@
   top: 3px;
   right: 3px;
   background: transparent;
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
   font-size: 16px;
   display: none;
   padding: 1em;
@@ -48,12 +49,14 @@
 }
 
 .g-main-nav__button:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
 }
 
 .g-main-nav__button__icon {
   display: inline-block;
-  color: #24a882;
+  color: $g-theme-inverted-nav-active;
+  color: var(--g-theme-inverted-nav-active, $g-theme-inverted-nav-active);
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;

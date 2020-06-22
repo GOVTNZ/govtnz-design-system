@@ -19,7 +19,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 3rem;
       line-height: 1.125;
       display: block;
@@ -70,7 +70,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 2rem;
       line-height: 1.2;
       display: block;
@@ -121,7 +121,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 1.5rem;
       line-height: 1.25;
       display: block;
@@ -172,7 +172,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 1.25rem;
       line-height: 1.25;
       display: block;
@@ -235,7 +235,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 1.125rem;
       line-height: 1.25;
       display: block;
@@ -290,7 +290,7 @@ const StyledH5 = styled.h5<
       font-family: Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: g-heading-font-weight;
+      font-weight: bold;
       font-size: 1rem;
       line-height: 1.25;
       display: block;

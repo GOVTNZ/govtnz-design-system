@@ -14,7 +14,7 @@ const StyledSpan = styled.span`
   line-height: 1.11111;
   display: block;
   margin-bottom: 5px;
-  color: #6f777b;
+  color: #6f777c;
   @media print {
     font-family: sans-serif;
   }

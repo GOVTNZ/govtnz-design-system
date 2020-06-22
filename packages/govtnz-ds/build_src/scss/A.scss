@@ -12,69 +12,45 @@
 }
 
 .g-link:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
   outline-offset: 0;
 }
 
 .g-link:link {
-  color: $g-theme-color-darkblue;
-  color: var(--g-theme-color-darkblue, $g-theme-color-darkblue);
+  color: $g-theme-link-color;
+  color: var(--g-theme-link-color, $g-theme-link-color);
 }
 
 .g-link:visited {
-  color: $g-theme-color-dark10;
-  color: var(--g-theme-color-dark10, $g-theme-color-dark10);
+  color: $g-theme-link-visited-color;
+  color: var(--g-theme-link-visited-color, $g-theme-link-visited-color);
 }
 
 .g-link:hover {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: $g-theme-link-hover-color;
+  color: var(--g-theme-link-hover-color, $g-theme-link-hover-color);
 }
 
 .g-link:active {
-  color: $g-theme-color-dark3;
-  color: var(--g-theme-color-dark3, $g-theme-color-dark3);
+  color: $g-theme-link-hover-color;
+  color: var(--g-theme-link-hover-color, $g-theme-link-hover-color);
 }
 
 .g-link:focus {
-  color: #0b0c0c;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }
 
 .g-link--muted:link,
 .g-link--muted:visited,
 .g-link--muted:hover,
 .g-link--muted:active {
-  color: $g-theme-color-mid-grey;
-  color: var(--g-theme-color-mid-grey, $g-theme-color-mid-grey);
+  color: $g-theme-alert-color;
+  color: var(--g-theme-alert-color, $g-theme-alert-color);
 }
 
 .g-link--muted:focus {
-  color: #0b0c0c;
-}
-
-.g-footer .g-link {
-  display: block;
-  padding: 0.7em 1em;
-  color: #d3d3d3;
-  margin-left: -1em;
-  margin-right: -1em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-@media only screen and (min-width: 48em) {
-  .g-footer .g-link:first-child {
-    margin-left: -1em;
-  }
-
-  .g-footer .g-link {
-    display: inline-block;
-    margin-right: 1em;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-  }
-}
-
-.g-footer .g-link:hover {
-  color: #fff;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }

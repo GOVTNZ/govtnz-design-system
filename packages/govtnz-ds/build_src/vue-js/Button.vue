@@ -147,11 +147,6 @@ export default Vue.extend({
 .g-button[disabled]:focus {
   outline: none;
 }
-.g-button--disabled:active,
-.g-button[disabled]:active {
-  top: 0;
-  box-shadow: 0 2px 0 #003618;
-}
 .g-button {
   padding-top: 16px;
   padding-bottom: 16px;

@@ -8,7 +8,8 @@
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: $g-theme-hint-color;
+  color: var(--g-theme-hint-color, $g-theme-hint-color);
 }
 
 @media print {
@@ -43,15 +44,16 @@
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   display: block;
   margin-bottom: 5px;
 }
 
 @media print {
   .g-checkboxes__label {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -156,7 +158,9 @@
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #b53cde;
+  box-shadow: 0 0 0 3px $g-theme-focus-ring-color;
+  box-shadow: 0 0 0 3px
+    var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

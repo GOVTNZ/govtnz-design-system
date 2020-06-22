@@ -82,9 +82,7 @@ export const cssPropertiesToObject = (propertiesString: string): AnyObject => {
   cssRoot.nodes.forEach(node => {
     if (node.type !== 'decl')
       throw Error(
-        `replaceCSS given unknown CSS replacement string that was parsed as node type of "${
-          node.type
-        }" from "${propertiesString}"`
+        `replaceCSS given unknown CSS replacement string that was parsed as node type of "${node.type}" from "${propertiesString}"`
       );
     properties[node.prop] = node.value;
   });
@@ -114,9 +112,11 @@ const mTTimingPath = path.join(os.tmpdir(), 'metatemplate-timings.json');
 export const getTimingBenchmarks = async (): Promise<TimingsData> => {
   let timings: TimingsData | undefined;
   try {
-    const timingsData: string = (await fs.promises.readFile(mTTimingPath, {
-      encoding: 'utf-8'
-    })).toString();
+    const timingsData: string = (
+      await fs.promises.readFile(mTTimingPath, {
+        encoding: 'utf-8'
+      })
+    ).toString();
     if (timingsData && timingsData.includes('{')) {
       timings = JSON.parse(timingsData);
     } else {
@@ -147,9 +147,11 @@ const getLocalTemplateDefinitionData = async (
   );
   let data;
   try {
-    data = (await fs.promises.readFile(defPath, {
-      encoding: 'utf-8'
-    })).toString();
+    data = (
+      await fs.promises.readFile(defPath, {
+        encoding: 'utf-8'
+      })
+    ).toString();
   } catch (e) {
     // pass
   }
@@ -173,12 +175,12 @@ export const getLocalTemplateDefinitions = async (
   if (def === undefined) {
     return;
   }
-  def.path = `${__dirname}/template-definitions/${source}/${versionUsed}/${
-    def.filename
-  }`;
-  def.html = (await fs.promises.readFile(def.path as string, {
-    encoding: 'utf-8'
-  })).toString();
+  def.path = `${__dirname}/template-definitions/${source}/${versionUsed}/${def.filename}`;
+  def.html = (
+    await fs.promises.readFile(def.path as string, {
+      encoding: 'utf-8'
+    })
+  ).toString();
   return def;
 };
 

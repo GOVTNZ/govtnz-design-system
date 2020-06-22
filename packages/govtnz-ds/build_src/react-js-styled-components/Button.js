@@ -88,11 +88,6 @@ const StyledButton = styled.button`
   :focus {
     outline: none;
   }
-  :active,
-  :active {
-    top: 0;
-    box-shadow: 0 2px 0 #003618;
-  }
   padding-top: 16px;
   padding-bottom: 16px;
   margin-top: 0px;

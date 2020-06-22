@@ -1,7 +1,11 @@
 .g-footer__standard {
-  background-color: #363636;
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  background-color: $g-theme-inverted-background-color;
+  background-color: var(
+    --g-theme-inverted-background-color,
+    $g-theme-inverted-background-color
+  );
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
   font-size: 1rem;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
@@ -49,8 +53,8 @@
 }
 
 .g-footer__standard-link--plain {
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
   text-decoration: none;
 }
 
@@ -75,8 +79,8 @@
 
 .g-footer__standard-small-text {
   font-size: 12px;
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
 }
 
 .g-footer__icon-govt-logo {

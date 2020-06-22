@@ -20,7 +20,7 @@ export default Vue.extend({
   font-size: 1rem;
   line-height: 1.25;
   display: block;
-  color: #6f777b;
+  color: #6f777c;
 }
 @media print {
   .g-caption-m {

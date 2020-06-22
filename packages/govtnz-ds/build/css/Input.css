@@ -12,6 +12,7 @@
   margin-top: 0;
   padding: 0.5rem;
   border: 1px solid #2a2a2a;
+  border: 1px solid var(--g-theme-text-color, #2a2a2a);
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -40,6 +41,7 @@
 
 .g-input:focus {
   outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
   outline-offset: 0;
 }
 
@@ -51,7 +53,7 @@
 
 .g-input--error {
   border: 1px solid #b10e1e;
-  border: 1px solid var(--g-theme-button-color-warning, #b10e1e);
+  border: 1px solid var(--g-theme-alert-error-border-color, #b10e1e);
 }
 
 .g-input--width-30 {

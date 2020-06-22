@@ -30,7 +30,7 @@ export default Vue.extend({
 .g-footer-link__a {
   display: block;
   padding: 0.7em 1em;
-  color: #d3d3d3;
+  color: #d2d2d2;
   margin-left: -1em;
   margin-right: -1em;
   margin-top: 0.5em;
@@ -48,6 +48,6 @@ export default Vue.extend({
   }
 }
 .g-footer-link__a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 </style>

@@ -8,8 +8,8 @@
   line-height: 1.11111;
   display: block;
   margin-bottom: 5px;
-  color: #6f777b;
-  color: var(--g-theme-color-mid-grey, #6f777b);
+  color: #6f777c;
+  color: var(--g-theme-caption-color, #6f777c);
 }
 
 @media print {

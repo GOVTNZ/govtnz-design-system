@@ -1,3 +1,4 @@
+import { uniq } from 'lodash';
 import ArgParse from 'argparse';
 import fs from 'fs';
 import path from 'path';
@@ -11,8 +12,14 @@ import {
 import ProgressBar from 'progress';
 import mkdirp from 'mkdirp';
 import { ensureNodeVersion, safeMerge } from './common';
-import { SourceId, ReleaseVersion, Component } from './types';
-// import { normalizeUpstream } from './normalize';
+import {
+  ReleaseVersion,
+  Component,
+  ReleaseSpecItem,
+  ReleaseItem,
+  ComponentToFilesArgs,
+  ComponentToFilesResponse
+} from './types';
 import {
   safeMergeCssVariables,
   AnyObject,
@@ -22,7 +29,7 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-import { normalize } from './normalize';
+import { normalize, isColourMatch } from './normalize';
 
 ensureNodeVersion();
 
@@ -49,8 +56,6 @@ async function main(
       }
     )
   ).toString();
-
-  // const silverStripe4Files = await getSilverStripe4Files();
 
   let releaseSpecItems: ReleaseSpecItem[] = JSON.parse(specString);
   const release: ReleaseItem[] = [];
@@ -82,10 +87,10 @@ async function main(
     }, []);
   }
 
-  // Sequentially run because may result in a full scrape (downloading
-  // a repo, and installing it, starting webserver, scraping, etc.)
-  // may have localhost port conflicts, resource contention issues...
-  // and other theoretical conflicts so this is intentionally sequential.
+  let allCss = '';
+
+  // Sequentially run because may result in jsdom and resource contention
+  // issues...so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
     const validComponentIds =
@@ -117,13 +122,18 @@ async function main(
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem);
     release.push(releaseItem);
 
+    allCss += releaseItem.css;
+
     cssVariables = safeMergeCssVariables(
       cssVariables,
       releaseItem.cssVariables
     );
   }
 
-  console.log('++++++++++++ ALL FILES +++++++++++++++ ');
+  const coloursWithoutVariables = uniq(allCss.match(/#[0-9A-F]{3,6}/gi))
+    .sort()
+    .filter(colour => !isColourMatch(colour));
+  console.log(coloursWithoutVariables);
 
   let allFiles = safeMerge(...release.map(releaseItem => releaseItem.files));
   const allReleaseVersions = release.map(
@@ -163,6 +173,8 @@ const makeReleaseSpecItem = async ({
     console.log(`Found these component Ids in ${sourceId}`, componentIds);
   }
 
+  let allCss = '';
+
   const components = await Promise.all(
     componentIds.map(async componentId => {
       const base = path.join(__dirname, 'upstream', sourceId);
@@ -185,6 +197,8 @@ const makeReleaseSpecItem = async ({
         css
       });
 
+      allCss += css;
+
       component = {
         version,
         ...component
@@ -202,7 +216,6 @@ const makeReleaseSpecItem = async ({
   };
 
   releaseVersions = [releaseVersion];
-  // releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
 
   let cssVariables: CSSVariablePattern[] = [];
 
@@ -323,21 +336,9 @@ const makeReleaseSpecItem = async ({
     releaseVersions,
     files,
     creditMarkdown: releaseVersions[0].creditMarkdown,
-    cssVariables
+    cssVariables,
+    css: allCss
   };
-};
-
-type ComponentToFilesArgs = {
-  component: Component;
-  creditMarkdown: string;
-  cssVariables: CSSVariablePattern[];
-  metaTemplateFormatIds?: string[] | undefined;
-};
-
-type ComponentToFilesResponse = {
-  files: AnyObject;
-  cssVariables: CSSVariablePattern[];
-  disposeMetaTemplate: Function;
 };
 
 const componentToFiles = async ({
@@ -457,8 +458,6 @@ const saveRelease = async (
     }
   );
 
-  console.log('Step5');
-
   // Write the new release
   const releaseFilePaths = Object.keys(files);
   await Promise.all(
@@ -528,20 +527,6 @@ async function buildRelease() {
 
 const buildPath = path.resolve(__dirname, '..', 'build');
 const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
-
-type ReleaseSpecItem = {
-  sourceId: SourceId;
-  version?: string;
-  componentIds?: string[] | undefined;
-  metaTemplateFormatIds?: string[] | undefined;
-};
-
-type ReleaseItem = {
-  files: Object;
-  releaseVersions: ReleaseVersion[];
-  creditMarkdown: string;
-  cssVariables?: CSSVariablePattern[];
-};
 
 const MAX_METATEMPLATE_WORKERS = 1;
 const AVERAGE_JOB_DURATION_ms = 20 * 1000;

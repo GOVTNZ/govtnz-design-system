@@ -6,7 +6,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -38,8 +39,8 @@
 
 @media print {
   .g-fieldset__legend {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 

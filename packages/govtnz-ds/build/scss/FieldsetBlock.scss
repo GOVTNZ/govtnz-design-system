@@ -14,9 +14,9 @@
 
 .g-fieldsetBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-button-color-warning;
+  border-left: 5px solid $g-theme-alert-error-border-color;
   border-left: 5px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
 }
 
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
@@ -35,8 +35,11 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-button-color-warning;
-  color: var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+  color: $g-theme-alert-error-border-color;
+  color: var(
+    --g-theme-alert-error-border-color,
+    $g-theme-alert-error-border-color
+  );
 }
 
 @media print {
@@ -79,7 +82,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -111,8 +115,8 @@
 
 @media print {
   .g-fieldsetBlock-fieldset__legend {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -126,7 +130,8 @@
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: $g-theme-hint-color;
+  color: var(--g-theme-hint-color, $g-theme-hint-color);
 }
 
 @media print {

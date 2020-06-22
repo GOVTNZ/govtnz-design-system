@@ -105,18 +105,14 @@ export default Vue.extend({
 @media print {
   .g-textareaBlock-error-message {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .g-textareaBlock-error-message {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-textareaBlock-error-message {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 .g-textareaBlock-hint {
@@ -133,18 +129,14 @@ export default Vue.extend({
 @media print {
   .g-textareaBlock-hint {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .g-textareaBlock-hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-textareaBlock-hint {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 .g-fieldset__legend + .g-textareaBlock-hint {
@@ -164,23 +156,15 @@ export default Vue.extend({
 @media print {
   .g-textareaBlock-label {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: #000000;
   }
 }
 @media (min-width: 40.0625em) {
   .g-textareaBlock-label {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-textareaBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-textareaBlock-label {
-    color: #000000;
   }
 }
 .g-textareaBlock-character-count .g-textareaBlock-textarea {

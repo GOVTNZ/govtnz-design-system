@@ -7,8 +7,8 @@
   font-size: 1rem;
   line-height: 1.25;
   display: block;
-  color: $g-theme-color-mid-grey;
-  color: var(--g-theme-color-mid-grey, $g-theme-color-mid-grey);
+  color: $g-theme-caption-color;
+  color: var(--g-theme-caption-color, $g-theme-caption-color);
 }
 
 @media print {

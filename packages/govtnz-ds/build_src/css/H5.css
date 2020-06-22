@@ -1,11 +1,11 @@
 .g-heading-xl {
   color: #2a2a2a;
+  color: var(--g-theme-text-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -16,7 +16,7 @@
 @media print {
   .g-heading-xl {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -48,12 +48,12 @@
 
 .g-heading-l {
   color: #2a2a2a;
+  color: var(--g-theme-text-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -64,7 +64,7 @@
 @media print {
   .g-heading-l {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -96,12 +96,12 @@
 
 .g-heading-m {
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -112,7 +112,7 @@
 @media print {
   .g-heading-m {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -144,12 +144,12 @@
 
 .g-heading-s {
   color: #2a2a2a;
+  color: var(--g-theme-text-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -160,7 +160,7 @@
 @media print {
   .g-heading-s {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -244,12 +244,12 @@
 
 .g-heading-xs {
   color: #2a2a2a;
+  color: var(--g-theme-text-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -260,7 +260,7 @@
 @media print {
   .g-heading-xs {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -308,12 +308,12 @@
 
 .g-heading-xxs {
   color: #2a2a2a;
+  color: var(--g-theme-text-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
-  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1rem;
   line-height: 1.25;
   display: block;
@@ -324,7 +324,7 @@
 @media print {
   .g-heading-xxs {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 

@@ -22,6 +22,7 @@
   .g-ul-list {
     font-size: 1.1875rem;
     line-height: 1.31579;
+    margin-bottom: 1rem;
   }
 }
 
@@ -29,18 +30,7 @@
   .g-ul-list {
     font-size: 14pt;
     line-height: 1.15;
-  }
-}
-
-@media print {
-  .g-ul-list {
     color: #000000;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .g-ul-list {
-    margin-bottom: 1rem;
   }
 }
 

@@ -11,7 +11,8 @@
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid $g-theme-text-color;
+  border: 1px solid var(--g-theme-text-color, $g-theme-text-color);
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -39,7 +40,8 @@
 }
 
 .g-input:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
   outline-offset: 0;
 }
 
@@ -50,9 +52,9 @@
 }
 
 .g-input--error {
-  border: 1px solid $g-theme-button-color-warning;
+  border: 1px solid $g-theme-alert-error-border-color;
   border: 1px solid
-    var(--g-theme-button-color-warning, $g-theme-button-color-warning);
+    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
 }
 
 .g-input--width-30 {

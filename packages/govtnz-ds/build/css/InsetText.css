@@ -7,12 +7,15 @@
   font-size: 1rem;
   line-height: 1.25;
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   clear: both;
   border-left: 8px solid #23cba5;
+  border-left: 8px solid var(--g-theme-inset-border-color, #23cba5);
   background: #f4f4f4;
+  background: var(--g-theme-alert-background-color, #f4f4f4);
 }
 
 @media print {
@@ -38,7 +41,7 @@
 @media print {
   .g-inset-text {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 

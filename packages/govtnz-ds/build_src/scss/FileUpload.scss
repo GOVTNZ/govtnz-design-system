@@ -25,7 +25,8 @@
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   display: block;
   margin-bottom: 5px;
 }
@@ -52,8 +53,8 @@
 
 @media print {
   .g-fileUpload__input {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
@@ -65,7 +66,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }
 
 @media print {
@@ -90,13 +92,14 @@
 
 @media print {
   .g-fileUpload__input {
-    color: $g-theme-color-black;
-    color: var(--g-theme-color-black, $g-theme-color-black);
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
   }
 }
 
 .g-fileUpload__input:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
   outline-offset: 0;
 }
 
@@ -111,7 +114,8 @@
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   display: block;
   margin-bottom: 5px;
 }

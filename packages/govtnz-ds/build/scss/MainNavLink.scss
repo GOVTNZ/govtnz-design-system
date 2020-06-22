@@ -4,8 +4,8 @@
   margin-left: -0.9em;
   font-family: sans-serif;
   font-size: 18px;
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
   letter-spacing: 0;
   line-height: 20px;
 }
@@ -13,8 +13,8 @@
 .g-main-nav__link__a {
   display: block;
   padding: 1em;
-  color: $g-theme-color-white;
-  color: var(--g-theme-color-white, $g-theme-color-white);
+  color: $g-theme-inverted-color;
+  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
   text-decoration: none;
 }
 
@@ -23,12 +23,15 @@
 }
 
 .g-main-nav__link__a--active {
-  border-left: solid 0.2em #24a882;
+  border-left: solid 0.2em $g-theme-inverted-nav-active;
+  border-left: solid 0.2em
+    var(--g-theme-inverted-nav-active, $g-theme-inverted-nav-active);
   padding-left: 0.8em;
 }
 
 .g-main-nav__link__a:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
 }
 
 @media only screen and (min-width: 48em) {
@@ -66,6 +69,10 @@
     left: 1em;
     right: 1em;
     height: 4px;
-    background: #24a882;
+    background: $g-theme-inverted-nav-active;
+    background: var(
+      --g-theme-inverted-nav-active,
+      $g-theme-inverted-nav-active
+    );
   }
 }

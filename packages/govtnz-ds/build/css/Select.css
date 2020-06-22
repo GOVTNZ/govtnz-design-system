@@ -11,7 +11,7 @@
   height: auto;
   padding: 0.4rem 2.5rem 0.5rem 0.6rem;
   border: 1px solid #000000;
-  border: 1px solid var(--g-theme-color-black, #000000);
+  border: 1px solid var(--g-theme-print-color, #000000);
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -44,14 +44,15 @@
 
 .g-select:focus {
   outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
   outline-offset: 0;
 }
 
 .g-select:focus::-ms-value {
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
   background-color: #005ea5;
-  background-color: var(--g-theme-color-darkblue, #005ea5);
+  background-color: var(--g-theme-link-color, #005ea5);
 }
 
 .g-select::-ms-expand {

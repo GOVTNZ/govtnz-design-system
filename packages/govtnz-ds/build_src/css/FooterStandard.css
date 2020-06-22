@@ -1,7 +1,8 @@
 .g-footer__standard {
   background-color: #363636;
+  background-color: var(--g-theme-inverted-background-color, #363636);
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
   font-size: 1rem;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
@@ -50,7 +51,7 @@
 
 .g-footer__standard-link--plain {
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
   text-decoration: none;
 }
 
@@ -76,7 +77,7 @@
 .g-footer__standard-small-text {
   font-size: 12px;
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
 }
 
 .g-footer__icon-govt-logo {

@@ -1,11 +1,18 @@
 .g-alert {
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: $g-theme-alert-background-color;
+  background: var(
+    --g-theme-alert-background-color,
+    $g-theme-alert-background-color
+  );
+  color: $g-theme-text-color;
+  color: var(--g-theme-text-color, $g-theme-text-color);
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px $g-theme-alert-border-color;
+  border: solid 1px
+    var(--g-theme-alert-border-color, $g-theme-alert-border-color);
 }
 
 .g-alert::before {
@@ -21,22 +28,34 @@
 }
 
 .g-alert--info::before {
-  background-color: #1f1bfb;
+  background-color: $g-theme-alert-info-border-color;
+  background-color: var(
+    --g-theme-alert-info-border-color,
+    $g-theme-alert-info-border-color
+  );
 }
 
 .g-alert--warning::before {
-  background-color: #d47500;
+  background-color: $g-theme-alert-warning-border-color;
+  background-color: var(
+    --g-theme-alert-warning-border-color,
+    $g-theme-alert-warning-border-color
+  );
 }
 
 .g-alert--success::before {
-  background-color: #088a20;
+  background-color: $g-theme-alert-success-border-color;
+  background-color: var(
+    --g-theme-alert-success-border-color,
+    $g-theme-alert-success-border-color
+  );
 }
 
 .g-alert--error::before {
-  background-color: $g-theme-button-color-warning;
+  background-color: $g-theme-alert-error-border-color;
   background-color: var(
-    --g-theme-button-color-warning,
-    $g-theme-button-color-warning
+    --g-theme-alert-error-border-color,
+    $g-theme-alert-error-border-color
   );
 }
 
