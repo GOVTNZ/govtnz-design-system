@@ -2,8 +2,8 @@
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: $g-theme-text-color;
-  background-color: var(--g-theme-text-color, $g-theme-text-color);
+  background-color: $g-theme-color;
+  background-color: var(--g-theme-color, $g-theme-color);
 }
 
 .g-flex-container .g-main-nav,

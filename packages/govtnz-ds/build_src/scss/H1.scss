@@ -1,6 +1,6 @@
 .g-heading-xl {
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -47,8 +47,8 @@
 }
 
 .g-heading-l {
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -143,8 +143,8 @@
 }
 
 .g-heading-s {
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -243,8 +243,8 @@
 }
 
 .g-heading-xs {
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
@@ -307,8 +307,8 @@
 }
 
 .g-heading-xxs {
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;

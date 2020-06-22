@@ -9,6 +9,7 @@
   display: block;
   margin-bottom: 15px;
   color: #595959;
+  color: var(--g-theme-hint-color, #595959);
 }
 
 @media print {
@@ -44,6 +45,7 @@
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
   display: block;
   margin-bottom: 5px;
 }
@@ -51,7 +53,7 @@
 @media print {
   .g-checkboxes__label {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -157,6 +159,7 @@
   outline: 3px solid transparent;
   outline-offset: 3px;
   box-shadow: 0 0 0 3px #b53cde;
+  box-shadow: 0 0 0 3px var(--g-theme-focus-ring-color, #b53cde);
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

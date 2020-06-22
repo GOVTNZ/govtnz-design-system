@@ -15,7 +15,7 @@
 .g-fieldsetBlock-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
-  border-left: 5px solid var(--g-theme-button-color-warning, #b10e1e);
+  border-left: 5px solid var(--g-theme-alert-error-border-color, #b10e1e);
 }
 
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
@@ -35,7 +35,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
-  color: var(--g-theme-button-color-warning, #b10e1e);
+  color: var(--g-theme-alert-error-border-color, #b10e1e);
 }
 
 @media print {
@@ -79,6 +79,7 @@
   font-size: 1rem;
   line-height: 1.25;
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -111,7 +112,7 @@
 @media print {
   .g-fieldsetBlock-fieldset__legend {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -126,6 +127,7 @@
   display: block;
   margin-bottom: 15px;
   color: #595959;
+  color: var(--g-theme-hint-color, #595959);
 }
 
 @media print {

@@ -1,6 +1,6 @@
 .g-heading-xl {
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -48,7 +48,7 @@
 
 .g-heading-l {
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -144,7 +144,7 @@
 
 .g-heading-s {
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -244,7 +244,7 @@
 
 .g-heading-xs {
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
@@ -308,7 +308,7 @@
 
 .g-heading-xxs {
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;

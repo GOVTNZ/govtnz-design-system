@@ -20,8 +20,9 @@ const cssVariables: CSSVariablePattern[] = [
     id: 'g-theme-font-family',
     valueSubstringMatch: 'Arial, sans-serif'
   },
+  { id: 'g-theme-background-color', valueSubstringMatch: '#ffffff' },
   {
-    id: 'g-theme-text-color',
+    id: 'g-theme-color',
     valueSubstringMatch: '#2a2a2a'
   },
   {
@@ -59,7 +60,7 @@ const cssVariables: CSSVariablePattern[] = [
     defaultValue: '#d3d3d3'
   },
   {
-    id: 'g-theme-inverted-nav-active',
+    id: 'g-theme-inverted-nav-active-color',
     valueSubstringMatch: '#24a882'
   },
 

@@ -1,6 +1,6 @@
 .g-subfooter {
   background-color: #2a2a2a;
-  background-color: var(--g-theme-text-color, #2a2a2a);
+  background-color: var(--g-theme-color, #2a2a2a);
   color: #ffffff;
   color: var(--g-theme-inverted-color, #ffffff);
   fill: #ffffff;

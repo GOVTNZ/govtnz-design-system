@@ -105,7 +105,7 @@
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
-  color: var(--g-theme-text-color, #2a2a2a);
+  color: var(--g-theme-color, #2a2a2a);
   display: block;
   margin-bottom: 5px;
 }
@@ -151,7 +151,7 @@
   margin-top: 0;
   padding: 0.5rem;
   border: 1px solid #2a2a2a;
-  border: 1px solid var(--g-theme-text-color, #2a2a2a);
+  border: 1px solid var(--g-theme-color, #2a2a2a);
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;

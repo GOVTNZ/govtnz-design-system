@@ -26,6 +26,7 @@
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
   display: block;
   margin-bottom: 5px;
 }
@@ -53,7 +54,7 @@
 @media print {
   .g-fileUpload__input {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
@@ -66,6 +67,7 @@
   font-size: 1rem;
   line-height: 1.25;
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
 }
 
 @media print {
@@ -91,12 +93,13 @@
 @media print {
   .g-fileUpload__input {
     color: #000000;
-    color: var(--g-theme-color-black, #000000);
+    color: var(--g-theme-print-color, #000000);
   }
 }
 
 .g-fileUpload__input:focus {
   outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
   outline-offset: 0;
 }
 
@@ -112,6 +115,7 @@
   font-size: 1.25rem;
   line-height: 1.25;
   color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
   display: block;
   margin-bottom: 5px;
 }

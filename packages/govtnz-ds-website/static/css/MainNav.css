@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   background-color: #2a2a2a;
+  background-color: var(--g-theme-color, #2a2a2a);
 }
 
 .g-flex-container .g-main-nav,
@@ -28,7 +29,7 @@
   right: 3px;
   background: transparent;
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
   font-size: 16px;
   display: none;
   padding: 1em;
@@ -49,11 +50,13 @@
 
 .g-main-nav__button:focus {
   outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
 }
 
 .g-main-nav__button__icon {
   display: inline-block;
   color: #24a882;
+  color: var(--g-theme-inverted-nav-active, #24a882);
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;

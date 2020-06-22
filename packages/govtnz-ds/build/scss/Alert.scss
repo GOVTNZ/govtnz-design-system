@@ -5,8 +5,8 @@
     --g-theme-alert-background-color,
     $g-theme-alert-background-color
   );
-  color: $g-theme-text-color;
-  color: var(--g-theme-text-color, $g-theme-text-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;

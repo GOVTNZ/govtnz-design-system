@@ -22,8 +22,8 @@
     --g-theme-button-background-color,
     $g-theme-button-background-color
   );
-  box-shadow: 0 2px 0 0 $g-theme-text-color;
-  box-shadow: 0 2px 0 0 var(--g-theme-text-color, $g-theme-text-color);
+  box-shadow: 0 2px 0 0 $g-theme-color;
+  box-shadow: 0 2px 0 0 var(--g-theme-color, $g-theme-color);
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -184,8 +184,8 @@
     --g-theme-alert-border-color,
     $g-theme-alert-border-color
   );
-  box-shadow: 0 2px 0 $g-theme-text-color;
-  box-shadow: 0 2px 0 var(--g-theme-text-color, $g-theme-text-color);
+  box-shadow: 0 2px 0 $g-theme-color;
+  box-shadow: 0 2px 0 var(--g-theme-color, $g-theme-color);
 }
 
 .g-button--secondary,
@@ -212,8 +212,8 @@
     --g-theme-alert-error-border-color,
     $g-theme-alert-error-border-color
   );
-  box-shadow: 0 2px 0 $g-theme-text-color;
-  box-shadow: 0 2px 0 var(--g-theme-text-color, $g-theme-text-color);
+  box-shadow: 0 2px 0 $g-theme-color;
+  box-shadow: 0 2px 0 var(--g-theme-color, $g-theme-color);
 }
 
 .g-button--warning,

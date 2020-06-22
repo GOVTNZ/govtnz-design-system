@@ -16,10 +16,11 @@
   border: 2px solid transparent;
   border-radius: 4px;
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
-  background-color: #078766;
-  background-color: var(--g-theme-button-color, #078766);
+  color: var(--g-theme-inverted-color, #ffffff);
+  background-color: #00823b;
+  background-color: var(--g-theme-button-background-color, #00823b);
   box-shadow: 0 2px 0 0 #2a2a2a;
+  box-shadow: 0 2px 0 0 var(--g-theme-color, #2a2a2a);
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -48,6 +49,7 @@
 
 .g-button:focus {
   outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
   outline-offset: 0;
 }
 
@@ -68,7 +70,7 @@
 .g-button:active,
 .g-button:hover {
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
   text-decoration: none;
 }
 
@@ -80,7 +82,7 @@
 .g-button:hover,
 .g-button:focus {
   background-color: #00692f;
-  background-color: var(--g-theme-color-brand-4, #00692f);
+  background-color: var(--g-theme-button-hover-background-color, #00692f);
 }
 
 .g-button:active {
@@ -106,27 +108,20 @@
 .g-button--disabled,
 .g-button[disabled] {
   opacity: 0.5;
-  background: #078766;
-  background: var(--g-theme-button-color, #078766);
+  background: #00823b;
+  background: var(--g-theme-button-background-color, #00823b);
 }
 
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
-  background-color: #078766;
-  background-color: var(--g-theme-button-color, #078766);
+  background-color: #00823b;
+  background-color: var(--g-theme-button-background-color, #00823b);
   cursor: default;
 }
 
 .g-button--disabled:focus,
 .g-button[disabled]:focus {
   outline: none;
-}
-
-.g-button--disabled:active,
-.g-button[disabled]:active {
-  top: 0;
-  box-shadow: 0 2px 0 #003618;
-  box-shadow: 0 2px 0 var(--g-theme-color-brand-3, #003618);
 }
 
 .g-button {
@@ -142,11 +137,13 @@
 .g-button[disabled] {
   opacity: 0.5;
   background: #078766;
+  background: var(--g-theme-button-disabled-background-color, #078766);
 }
 
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
   background-color: #078766;
+  background-color: var(--g-theme-button-disabled-background-color, #078766);
   cursor: default;
 }
 
@@ -159,11 +156,14 @@
 .g-button[disabled]:active {
   top: 0;
   box-shadow: 0 2px 0 #003418;
+  box-shadow: 0 2px 0 var(--g-theme-button-active-box-shadow, #003418);
 }
 
 .g-button--secondary {
   background-color: #d3d3d3;
+  background-color: var(--g-theme-alert-border-color, #d3d3d3);
   box-shadow: 0 2px 0 #2a2a2a;
+  box-shadow: 0 2px 0 var(--g-theme-color, #2a2a2a);
 }
 
 .g-button--secondary,
@@ -172,17 +172,20 @@
 .g-button--secondary:active,
 .g-button--secondary:hover {
   color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
 }
 
 .g-button--secondary:hover,
 .g-button--secondary:focus {
   background-color: #b2b2b2;
+  background-color: var(--g-theme-button-secondary-background-color, #b2b2b2);
 }
 
 .g-button--warning {
   background-color: #b10e1e;
-  background-color: var(--g-theme-button-color-warning, #b10e1e);
+  background-color: var(--g-theme-alert-error-border-color, #b10e1e);
   box-shadow: 0 2px 0 #2a2a2a;
+  box-shadow: 0 2px 0 var(--g-theme-color, #2a2a2a);
 }
 
 .g-button--warning,
@@ -191,10 +194,11 @@
 .g-button--warning:active,
 .g-button--warning:hover {
   color: #ffffff;
-  color: var(--g-theme-color-white, #ffffff);
+  color: var(--g-theme-inverted-color, #ffffff);
 }
 
 .g-button--warning:hover,
 .g-button--warning:focus {
   background-color: #900815;
+  background-color: var(--g-theme-button-warning-background-color, #900815);
 }

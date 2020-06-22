@@ -10,7 +10,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -172,7 +172,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -334,7 +334,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -496,7 +496,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -658,7 +658,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -820,7 +820,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -982,7 +982,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1144,7 +1144,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1306,7 +1306,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1468,7 +1468,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1630,7 +1630,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1792,7 +1792,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -1954,7 +1954,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2116,7 +2116,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2278,7 +2278,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2440,7 +2440,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2602,7 +2602,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2764,7 +2764,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -2926,7 +2926,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3088,7 +3088,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3250,7 +3250,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3412,7 +3412,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3574,7 +3574,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3736,7 +3736,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -3898,7 +3898,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4060,7 +4060,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4222,7 +4222,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4384,7 +4384,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4546,7 +4546,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4708,7 +4708,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -4870,7 +4870,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5032,7 +5032,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5194,7 +5194,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5356,7 +5356,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5518,7 +5518,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5680,7 +5680,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -5842,7 +5842,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6004,7 +6004,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6166,7 +6166,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6328,7 +6328,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6490,7 +6490,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6652,7 +6652,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6814,7 +6814,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -6976,7 +6976,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -7138,7 +7138,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },
@@ -7300,7 +7300,7 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
-        "id": "g-theme-text-color",
+        "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
       },

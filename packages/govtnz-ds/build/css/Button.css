@@ -20,7 +20,7 @@
   background-color: #00823b;
   background-color: var(--g-theme-button-background-color, #00823b);
   box-shadow: 0 2px 0 0 #2a2a2a;
-  box-shadow: 0 2px 0 0 var(--g-theme-text-color, #2a2a2a);
+  box-shadow: 0 2px 0 0 var(--g-theme-color, #2a2a2a);
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -163,7 +163,7 @@
   background-color: #d3d3d3;
   background-color: var(--g-theme-alert-border-color, #d3d3d3);
   box-shadow: 0 2px 0 #2a2a2a;
-  box-shadow: 0 2px 0 var(--g-theme-text-color, #2a2a2a);
+  box-shadow: 0 2px 0 var(--g-theme-color, #2a2a2a);
 }
 
 .g-button--secondary,
@@ -185,7 +185,7 @@
   background-color: #b10e1e;
   background-color: var(--g-theme-alert-error-border-color, #b10e1e);
   box-shadow: 0 2px 0 #2a2a2a;
-  box-shadow: 0 2px 0 var(--g-theme-text-color, #2a2a2a);
+  box-shadow: 0 2px 0 var(--g-theme-color, #2a2a2a);
 }
 
 .g-button--warning,
