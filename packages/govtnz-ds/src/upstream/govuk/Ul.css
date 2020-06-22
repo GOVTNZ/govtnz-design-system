@@ -1,4 +1,4 @@
-.g-ul-list {
+.g-list {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,13 +13,13 @@
 }
 
 @media print {
-  .g-ul-list {
+  .g-list {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-ul-list {
+  .g-list {
     font-size: 1.1875rem;
     line-height: 1.31579;
     margin-bottom: 1rem;
@@ -27,26 +27,26 @@
 }
 
 @media print {
-  .g-ul-list {
+  .g-list {
     font-size: 14pt;
     line-height: 1.15;
     color: #000000;
   }
 }
 
-.g-ul-list .g-ul-list {
+.g-list .g-list {
   margin-top: 10px;
 }
 
-.g-ul-list--bullet {
+.g-list--bullet {
   padding-left: 20px;
   list-style-type: disc;
 }
 
-.g-ul-hint > * {
+.g-hint > * {
   margin-top: 0px;
 }
 
-.g-ul-list li .g-ul-list {
+.g-list li .g-list {
   margin-top: 0.5rem;
 }
