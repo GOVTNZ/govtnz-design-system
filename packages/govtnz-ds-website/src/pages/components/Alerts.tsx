@@ -64,6 +64,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <h2 id="information">Information</h2>
 <p>Use information alerts to inform users of important information or changes on a page only. They should be used sparingly.</p>
 <ExampleContainer>
+    <ExampleHeading>Information alert - Static</ExampleHeading>
     <Example  code={components__Alerts[0]} iframeProps={{
         id:"iframe_componentsAlerts0",
         className: "example__iframe",
@@ -74,6 +75,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 </ExampleContainer>
 
 <ExampleContainer>
+    <ExampleHeading>Information alert - Live</ExampleHeading>
     <Example  code={components__Alerts[1]} iframeProps={{
         id:"iframe_componentsAlerts1",
         className: "example__iframe",
@@ -86,6 +88,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <h2 id="warning">Warning</h2>
 <p>Use warning alerts to tell users something urgent. Only use this alert if the information will help users avoid a problem.</p>
 <ExampleContainer>
+    <ExampleHeading>Warning alert - Static</ExampleHeading>
     <Example  code={components__Alerts[2]} iframeProps={{
         id:"iframe_componentsAlerts2",
         className: "example__iframe",
@@ -96,6 +99,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 </ExampleContainer>
 
 <ExampleContainer>
+    <ExampleHeading>Warning alert - Live</ExampleHeading>
     <Example  code={components__Alerts[3]} iframeProps={{
         id:"iframe_componentsAlerts3",
         className: "example__iframe",
@@ -114,6 +118,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <Li>the document’s <code>title</code> starts with &quot;Success:&quot;.</Li>
 </Ul>
 <ExampleContainer>
+    <ExampleHeading>Success alert</ExampleHeading>
     <Example  code={components__Alerts[4]} iframeProps={{
         id:"iframe_componentsAlerts4",
         className: "example__iframe",
@@ -138,6 +143,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <Li>the document’s <code>title</code> starts with &quot;Error:&quot;.</Li>
 </Ul>
 <ExampleContainer>
+    <ExampleHeading>Error summary alert</ExampleHeading>
     <Example  code={components__Alerts[5]} iframeProps={{
         id:"iframe_componentsAlerts5",
         className: "example__iframe",
