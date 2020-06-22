@@ -112,6 +112,7 @@ The default radio button size should be used in nearly all cases. However, large
 For example if you are asking users a single question on a page, larger buttons are easier to see and interact with.
 
 <ExampleContainer>
+    <ExampleHeading>Large radio buttons</ExampleHeading>
     <Example title="Example: Radio buttons">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
             <Radios inline big>
@@ -128,7 +129,7 @@ For example if you are asking users a single question on a page, larger buttons 
 Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.
 
 <ExampleContainer>
-    <ExampleHeading>Default error</ExampleHeading>
+    <ExampleHeading>Default radio buttons with error</ExampleHeading>
     <Example title="Example: Error state #2 (Radio buttons)">
         <FieldsetBlock legend={<H1 styleSize="medium" id="nameChangeId8">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5344" errorId="errorId525" error="Select 'yes' if you have changed your name">
             <Radios inline>
@@ -141,7 +142,7 @@ Make sure error messages follow the guidance below, and that you have specific e
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Large radio error</ExampleHeading>
+    <ExampleHeading>Large radio buttons with error</ExampleHeading>
     <Example title="Example: Error state #1 (Radio buttons)">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId5" errorId="errorId5" error="Select 'yes' if you have changed your name.">
             <Radios inline big>
