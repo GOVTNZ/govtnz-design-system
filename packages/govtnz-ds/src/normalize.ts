@@ -1,420 +1,180 @@
-import cssParser from 'postcss-safe-parser';
+import { CSSVariablePattern } from '@springload/metatemplate';
 import { camelCase } from 'lodash';
-import { SourceId, ReleaseVersion } from '@govtnz/ds-upstream';
-import { DynamicKey } from '@springload/metatemplate';
-import { normalizeGeneric } from './normalize-generic';
-import { JSDOM } from 'jsdom';
-import { gc, splitSelectors } from './utils';
 
-export const normalizeUpstream = async (
-  sourceId: SourceId,
-  upstreamReleaseVersions: ReleaseVersion[]
-): Promise<ReleaseVersion[]> => {
-  let releaseVersions: ReleaseVersion[];
-  switch (sourceId) {
-    case 'govuk': {
-      // Already in a good format
-      releaseVersions = upstreamReleaseVersions;
-      break;
-    }
-    case 'flexboxgrid':
-    case 'govtnz': {
-      // already in metatemplate format, but need to camelCase names
-      releaseVersions = await Promise.all(
-        upstreamReleaseVersions.map(
-          async (
-            upstreamReleaseVersion: ReleaseVersion
-          ): Promise<ReleaseVersion> =>
-            await normalizeGeneric(upstreamReleaseVersion)
-        )
-      );
-      break;
-    }
-    default: {
-      throw Error(`Unknown ${sourceId}`);
-    }
-  }
-
-  releaseVersions.forEach(releaseVersion => {
-    releaseVersion.components.forEach(component => {
-      if (component.id !== toId(component.id)) {
-        throw new Error(
-          `${__filename}: Component Id name check failure: "${
-            component.id
-          }" !== "${toId(component.id)}"`
-        );
-      }
-    });
-  });
-
-  return releaseVersions;
-};
-
-function wrapBody(bodyHTML: string) {
-  return `<!DOCTYPE html><html><body>${bodyHTML}</body></html>`;
-}
-
-export const insertVariableBySelector = async (
-  html: string,
-  selector: string,
-  key: string,
-  defaultValue: string = 'Example text'
-): Promise<string> => {
-  // Selector may be a CSS selector (just one, no comma-separated selectors),
-  // but it may also include an XPath-like "/node()" suffix to select text nodes
-  // because CSS Selectors can't select such nodes. ie "a/node()" will match text nodes
-  // within "a" elements.
-  const metaTemplateVariable = `<mt-variable key="${key}">${defaultValue}</mt-variable>`; // Note that JSDOM doesn't understand self-closing custom elements
-  const dom = new JSDOM(wrapBody(html));
-  const body = dom.window.document.body;
-  let lastParentNode;
-  let removeTags;
-  if (selector.includes('/node()')) {
-    const newSelector = selector.replace(/\/node\(\)$/gi, '');
-    const containers = body.querySelectorAll(newSelector);
-    removeTags = [];
-    [...containers].forEach(container => {
-      removeTags = removeTags.concat([...container.childNodes]);
-    });
-  } else {
-    removeTags = body.querySelectorAll(selector);
-  }
-  if (removeTags.length === 0) {
-    throw Error(`Unable to find "${selector}" in ${html}`);
-  }
-  [...removeTags].forEach(removeTag => {
-    lastParentNode = removeTag.parentNode;
-    lastParentNode.removeChild(removeTag);
-  });
-  lastParentNode.innerHTML = metaTemplateVariable;
-  const result = [...body.childNodes]
-    .map(childNode => childNode.outerHTML)
-    .join('');
-  setTimeout(() => {
-    dom.window.close();
-    gc();
-  }, 10);
-  return result;
-};
-
-export const setAttributeBySelector = (
-  html: string,
-  selector: string,
-  attributeName: string,
-  defaultValue: string | undefined,
-  dynamicKeys?: DynamicKey[] | undefined
-): string => {
-  // Selector may be a CSS selector
-  const dom = new JSDOM(wrapBody(html));
-  const body = dom.window.document.body;
-  const target = body.querySelector(selector);
-  if (!target) {
-    throw Error(`Unable to select node with "${selector}" in ${html}.`);
-  }
-  let value: string =
-    defaultValue === undefined
-      ? target.getAttribute(attributeName) || ''
-      : defaultValue;
-
-  if (dynamicKeys && dynamicKeys.length) {
-    if (value.length > 0) {
-      value += ' ';
-    }
-    value += dynamicKeys
-      .map(dynamicKey => {
-        let dk = '{{ ';
-
-        dk += dynamicKey.key;
-        if (dynamicKey.stableKey) {
-          dk += '!';
-        }
-        if (Array.isArray(dynamicKey.type)) {
-          dk += `${dynamicKey.optional ? '?' : ''}: `;
-          dk += dynamicKey.type
-            .map(anEnum => `${anEnum.value} as ${anEnum.name}`)
-            .join(' | ');
-        } else if (dynamicKey.type === 'boolean') {
-          // "?" because all booleans are optional ie, not provided=false, provided=true
-          dk += `?: ${dynamicKey.ifTrueValue}`;
-        }
-        dk += ' }}';
-        return dk;
-      })
-      .join(' ');
-  }
-
-  target.setAttribute(attributeName, value);
-
-  const result = [...body.childNodes]
-    .map(childNode => childNode.outerHTML)
-    .join('');
-  dom.window.close();
-  gc();
-  return result;
-};
-
-export const removeAttribute = (
-  html: string,
-  selector: string,
-  attributeName: string
-) => {
-  const dom = new JSDOM(wrapBody(html));
-  const body = dom.window.document.body;
-  const target = body.querySelector(selector);
-  if (!target) {
-    throw Error(`Unable to select node with "${selector}" in ${html}.`);
-  }
-  target.removeAttribute(attributeName);
-  const result = Array.from(body.childNodes)
-    .map(childNode => childNode.outerHTML)
-    .join('');
-  dom.window.close();
-  gc();
-  return result;
-};
-
-export const removeElement = (html: string, selector: string) => {
-  const dom = new JSDOM(wrapBody(html));
-  const body = dom.window.document.body;
-  const target = body.querySelector(selector);
-  if (!target) {
-    throw Error(`Unable to select node with "${selector}" in ${html}.`);
-  }
-  target.parentNode.removeChild(target);
-  const result = Array.from(body.childNodes)
-    .map(childNode => childNode.outerHTML)
-    .join('');
-  dom.window.close();
-  gc();
-  return result;
-};
-
-export const select = (html: string, selector: string): string => {
-  // Selector may be a CSS selector
-  const dom = new JSDOM(wrapBody(html));
-  const body = dom.window.document.body;
-  const resultNode = body.querySelector(selector);
-  if (!resultNode) {
-    throw Error(`Couldn't find "${selector}" in: ${html}`);
-  }
-  const result = resultNode.outerHTML;
-  dom.window.close();
-  gc();
-  return result;
-};
-
-export const replaceClass = (
-  html: string,
-  className: string,
-  withValue: string
-): string => {
-  // TODO: Use a CSS Parser to rename the class
-  if (html.indexOf(className) === -1) {
-    throw Error(`Unable to find "${className}" in "${html}".`);
-  }
-  return html.replace(className, withValue);
+export const normalize = async ({ id, html, css }) => {
+  return {
+    id: toId(id),
+    html,
+    css,
+    cssVariables
+  };
 };
 
 export const toId = (id: string): string => {
-  // Normalise component id to be camelCase except with the first
-  // letter being a capital letter ie CamelCase.
+  // Normalise component id to be PascalCase
   return id.substring(0, 1).toUpperCase() + camelCase(id.substring(1));
 };
 
-type PropertyMatchProps = {
-  atRule: string;
-  selector: string;
-  name: string;
-  value: string;
-  isImportant: boolean;
-};
+const cssVariables: CSSVariablePattern[] = [
+  {
+    id: 'g-theme-font-family',
+    valueSubstringMatch: 'Arial, sans-serif',
+    defaultValue: 'Arial, sans-serif'
+  },
+  {
+    id: 'g-theme-color-heading',
+    valueSubstringMatch: '#ff0000',
+    defaultValue: '#0b0c0c'
+  },
+  {
+    id: 'g-theme-color-link',
+    valueSubstringMatch: '#ff0000',
+    defaultValue: '#0000ff'
+  },
 
-type ValueReplacer = (props: PropertyMatchProps) => string | undefined;
-
-type SelectorReplacerProps = {
-  selector: string;
-};
-
-type SelectorReplacer = (props: SelectorReplacerProps) => string | undefined;
-
-type AddProps = {
-  atRule: string;
-  selector: string;
-};
-
-type AddCallback = (props: AddProps) => string | undefined;
-
-type RemoveCallback = (props: PropertyMatchProps) => boolean;
-
-export const setCSSValues = (
-  css: string,
-  valueReplacer?: ValueReplacer | undefined,
-  selectorReplacer?: SelectorReplacer | undefined,
-  addCallback?: AddCallback | undefined,
-  removeCallback?: RemoveCallback | undefined
-): string => {
-  // Prettier maintains single and double but not triple linebreaks,
-  // so to compare CSS files we need to increase spacing between CSS rules
-  // and then use Prettier to standardise it again... hence closeCSSRule
-  // being 3 linebreaks "}\n\n\n"
-  const closeCSSRule = '} ';
-
-  let lastAtRule: string = '';
-
-  let lastSelector: string = '';
-
-  const renderCSS = node => {
-    let response: string = '';
-    switch (
-      node.type.trim() // strangely .trim() is required because node.type can be "@font-face " with a trailing space!
-    ) {
-      case 'rule': {
-        lastSelector = node.selector;
-        let callbackResponse: string | undefined;
-        if (selectorReplacer) {
-          callbackResponse = selectorReplacer({ selector: node.selector });
-        }
-        response +=
-          callbackResponse !== undefined ? callbackResponse : node.selector;
-        response += '{';
-        response += node.nodes ? node.nodes.map(renderCSS).join('\n') : '';
-        if (addCallback) {
-          const selectors = splitSelectors(lastSelector);
-          for (let i = 0; i < selectors.length; i++) {
-            const newVal = addCallback({
-              atRule: lastAtRule,
-              selector: selectors[i]
-            });
-            if (newVal) {
-              response += `${newVal};`;
-            }
-          }
-        }
-
-        response += closeCSSRule;
-        lastSelector = '';
-        break;
-      }
-      case 'atrule': {
-        lastAtRule = `@${node.name} ${node.params}`;
-        response += `@${node.name} ${node.params} `;
-        if (node.nodes) {
-          response += ' {';
-          response += node.nodes.map(renderCSS).join('\n');
-          response += closeCSSRule;
-        } else {
-          response += ';';
-        }
-        lastAtRule = '';
-        break;
-      }
-      case 'decl': {
-        const defaultResponse = node.value;
-        let callbackResponse: string | undefined;
-        if (valueReplacer) {
-          const selectors = splitSelectors(lastSelector);
-          for (let i = 0; i < selectors.length; i++) {
-            const newVal = valueReplacer({
-              atRule: lastAtRule,
-              selector: selectors[i],
-              name: node.prop,
-              value: node.value,
-              isImportant: !!node.important
-            });
-            if (callbackResponse && newVal) {
-              // two competing replacement values for this particular CSS property
-              throw Error(
-                `replaceCSSValues error: two competing selectors replaced the value ${lastSelector}`
-              );
-            }
-            callbackResponse = newVal;
-          }
-        }
-        let shouldBeRemoved = false;
-        if (removeCallback) {
-          const selectors = splitSelectors(lastSelector);
-          for (let i = 0; i < selectors.length; i++) {
-            if (
-              removeCallback({
-                atRule: lastAtRule,
-                selector: selectors[i],
-                name: node.prop,
-                value: node.value,
-                isImportant: !!node.important
-              })
-            ) {
-              // In an 'if' block so that once set `true` it can't
-              // be unset.
-              shouldBeRemoved = true;
-            }
-          }
-        }
-        if (shouldBeRemoved === false) {
-          response +=
-            node.prop +
-            node.raws.between +
-            (callbackResponse !== undefined
-              ? callbackResponse
-              : defaultResponse) +
-            (node.important ? ' !important' : '') +
-            ';';
-        }
-        break;
-      }
-      case 'comment': {
-        // ignore
-        break;
-      }
-      case '@font-face': {
-        throw Error(
-          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
-        );
-        break;
-      }
-      default: {
-        throw Error(
-          `${__filename}: Unrecognised CSS node type "${node.type}". Please contribute your CSS as a test case to the project.`
-        );
-      }
-    }
-    return response;
-  };
-  const cssNodes = [...cssParser(css).nodes];
-  return cssNodes.map(node => renderCSS(node)).join('\n');
-};
-
-export const wrapIfBySelector = (
-  html: string,
-  selector: string,
-  key: string
-): string => {
-  const dom = new JSDOM(wrapBody(html), {
-    resources: 'usable',
-    pretendToBeVisual: true
-  });
-  const document = dom.window.document;
-
-  const mtIf = document.createElement('mt-if');
-  mtIf.setAttribute('key', key);
-  const element = document.querySelector(selector);
-  element.parentNode.insertBefore(mtIf, element);
-  mtIf.appendChild(element);
-  const result = [...document.body.childNodes]
-    .map(childNode => childNode.outerHTML)
-    .join('');
-  dom.window.close();
-  gc();
-  return result;
-};
-
-export type CalculatedDynamicKeys = {
-  [key: string]: string;
-};
-
-export type MetaTemplateDef = {
-  id: string;
-  html: string;
-  css: string;
-  message?: string;
-  calculatedDynamicKeys?: CalculatedDynamicKeys;
-};
+  {
+    id: 'g-theme-color-black',
+    valueSubstringMatch: '#000000',
+    defaultValue: '#000000'
+  },
+  {
+    id: 'g-theme-color-grey',
+    valueSubstringMatch: '#bfc1c3',
+    defaultValue: '#bfc1c3'
+  },
+  {
+    id: 'g-theme-color-darkblue',
+    valueSubstringMatch: '#005ea5',
+    defaultValue: '#005ea5'
+  },
+  {
+    id: 'g-theme-color-brand-1', // focus
+    valueSubstringMatch: '#ffbf47',
+    defaultValue: '#b53cde'
+  },
+  {
+    id: 'g-theme-color-light-grey',
+    valueSubstringMatch: '#f8f8f8',
+    defaultValue: '#f8f8f8'
+  },
+  {
+    id: 'g-theme-color-mid-grey',
+    valueSubstringMatch: '#6f777b',
+    defaultValue: '#6f777b'
+  },
+  {
+    id: 'g-theme-color-white',
+    valueSubstringMatch: '#ffffff',
+    defaultValue: '#ffffff'
+  },
+  {
+    id: 'g-theme-color-brand-2',
+    valueSubstringMatch: '#00823b',
+    defaultValue: '#00823b'
+  },
+  {
+    id: 'g-theme-color-brand-3',
+    valueSubstringMatch: '#003618',
+    defaultValue: '#003618'
+  },
+  {
+    id: 'g-theme-color-brand-4',
+    valueSubstringMatch: '#00692f',
+    defaultValue: '#00692f'
+  },
+  {
+    id: 'g-theme-color-dark2',
+    valueSubstringMatch: '#b10e1e',
+    defaultValue: '#b10e1e'
+  },
+  {
+    id: 'g-theme-color-dark3',
+    valueSubstringMatch: '#2b8cc4',
+    defaultValue: '#2b8cc4'
+  },
+  {
+    id: 'g-theme-color-dark4',
+    valueSubstringMatch: '#a1acb2',
+    defaultValue: '#a1acb2'
+  },
+  {
+    id: 'g-theme-color-dark5',
+    valueSubstringMatch: '#454a4c',
+    defaultValue: '#454a4c'
+  },
+  {
+    id: 'g-theme-color-dark6',
+    valueSubstringMatch: '#dee0e2',
+    defaultValue: '#dee0e2'
+  },
+  {
+    id: 'g-theme-color-dark7',
+    valueSubstringMatch: '#171819',
+    defaultValue: '#171819'
+  },
+  {
+    id: 'g-theme-color-dark8',
+    valueSubstringMatch: '#2e3133',
+    defaultValue: '#2e3133'
+  },
+  {
+    id: 'g-theme-color-dark9',
+    valueSubstringMatch: '#1d8feb',
+    defaultValue: '#1d8feb'
+  },
+  {
+    id: 'g-theme-color-dark10',
+    valueSubstringMatch: '#4c2c92',
+    defaultValue: '#4c2c92'
+  },
+  {
+    id: 'g-theme-color-dark11',
+    valueSubstringMatch: '#28a197',
+    defaultValue: '#28a197'
+  },
+  {
+    id: 'g-theme-button-color',
+    valueSubstringMatch: '#00823b',
+    defaultValue: '#078766'
+  },
+  {
+    id: 'g-theme-button-color-hover-focus',
+    valueSubstringMatch: '#00682f',
+    defaultValue: '#0c6c53'
+  },
+  {
+    id: 'g-theme-button-color-secondary',
+    valueSubstringMatch: '#dee0e2',
+    defaultValue: '#d3d3d3'
+  },
+  {
+    id: 'g-theme-button-color-secondary-hover-focus',
+    valueSubstringMatch: '#c8cacb',
+    defaultValue: '#b2b2b2'
+  },
+  {
+    id: 'g-theme-button-color-secondary-box-shadow',
+    valueSubstringMatch: '#858688',
+    defaultValue: '#2a2a2a'
+  },
+  {
+    id: 'g-theme-button-color-warning',
+    valueSubstringMatch: '#b10e1e',
+    defaultValue: '#b10e1e'
+  },
+  {
+    id: 'g-theme-button-color-warning-hover-focus',
+    valueSubstringMatch: '#8e0b18',
+    defaultValue: '#900815'
+  },
+  {
+    id: 'g-theme-button-color-warning-box-shadow',
+    valueSubstringMatch: '#47060c',
+    defaultValue: '#2a2a2a'
+  },
+  {
+    id: 'g-theme-heading-font-weight',
+    valueSubstringMatch: 'g-heading-font-weight',
+    defaultValue: 'bold'
+  }
+];

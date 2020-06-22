@@ -12,7 +12,7 @@ import ProgressBar from 'progress';
 import mkdirp from 'mkdirp';
 import { ensureNodeVersion, safeMerge } from './common';
 import { SourceId, ReleaseVersion, Component } from './types';
-import { normalizeUpstream } from './normalize';
+// import { normalizeUpstream } from './normalize';
 import {
   safeMergeCssVariables,
   AnyObject,
@@ -22,7 +22,7 @@ import {
 } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-import { normalizeGovUkTemplate } from './normalize-govuk';
+import { normalize } from './normalize';
 
 ensureNodeVersion();
 
@@ -179,18 +179,10 @@ const makeReleaseSpecItem = async ({
 
       let component: Partial<Component>;
 
-      component = await normalizeGovUkTemplate({
+      component = await normalize({
         id: componentId,
         html,
         css
-        // additionalPrefixesToBypassNamespacing: [
-        //   'fieldset',
-        //   'radios',
-        //   'checkboxes',
-        //   'link',
-        //   'a',
-        //   'caption'
-        // ]
       });
 
       component = {
@@ -210,7 +202,7 @@ const makeReleaseSpecItem = async ({
   };
 
   releaseVersions = [releaseVersion];
-  releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
+  // releaseVersions = await normalizeUpstream(sourceId, releaseVersions);
 
   let cssVariables: CSSVariablePattern[] = [];
 

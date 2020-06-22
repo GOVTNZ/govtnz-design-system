@@ -52,5 +52,8 @@
     "styled-components": "^5.1.1",
     "svg-to-dataurl": "^1.0.0",
     "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/jest": "^26.0.0"
   }
 }
