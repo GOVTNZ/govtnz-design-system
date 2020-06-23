@@ -24,7 +24,7 @@
 
 .g-main-nav__link__a--active {
   border-left: solid 0.2em #24a882;
-  border-left: solid 0.2em var(--g-theme-inverted-nav-active, #24a882);
+  border-left: solid 0.2em var(--g-theme-inverted-nav-active-color, #24a882);
   padding-left: 0.8em;
 }
 
@@ -69,6 +69,6 @@
     right: 1em;
     height: 4px;
     background: #24a882;
-    background: var(--g-theme-inverted-nav-active, #24a882);
+    background: var(--g-theme-inverted-nav-active-color, #24a882);
   }
 }
