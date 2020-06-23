@@ -133,7 +133,7 @@ class ContactusForm extends React.Component {
     ];
 
     return (
-      <>
+      <div className="theme-font-arial">
         <form
           style={{ padding: '20px' }}
           onSubmit={this.handleSubmit}
@@ -177,8 +177,10 @@ class ContactusForm extends React.Component {
               </P>
             </Alert>
           </div>
-          <div id="scroll-field">
+
+          <div style={{ marginTop: '40px' }}>
             <InputBlock
+              id="scroll-field"
               width="30"
               maxLength={30}
               type="text"
@@ -188,7 +190,9 @@ class ContactusForm extends React.Component {
               error={username.valid ? '' : 'Enter your name'}
               required
             />
+          </div>
 
+          <div style={{ marginTop: '40px' }}>
             <InputBlock
               width="30"
               maxLength={30}
@@ -200,7 +204,9 @@ class ContactusForm extends React.Component {
               name="email"
               required
             />
+          </div>
 
+          <div style={{ marginTop: '20px' }}>
             <FieldsetBlock
               legend={
                 <H1 styleSize="medium" id="nameChangeId5">
@@ -233,7 +239,8 @@ class ContactusForm extends React.Component {
                 ></RadioBlock>
               </Radios>
             </FieldsetBlock>
-
+          </div>
+          <div style={{ marginTop: '40px' }}>
             <TextareaBlock
               autoComplete="off"
               name="textarea"
@@ -242,17 +249,17 @@ class ContactusForm extends React.Component {
               error={textarea.valid ? '' : 'Enter your message'}
               required
             />
-
-            <button
-              style={{ marginTop: '20px' }}
-              className="g-button"
-              type="submit"
-            >
-              Submit
-            </button>
           </div>
+
+          <button
+            style={{ marginTop: '40px' }}
+            className="g-button"
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
-      </>
+      </div>
     );
   }
 }

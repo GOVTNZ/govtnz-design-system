@@ -24,6 +24,10 @@ html.theme-default {
   --g-theme-font-family: National2, Arial, sans-serif;
 }
 
+.theme-font-arial {
+  --g-theme-font-family: Arial, sans-serif;
+}
+
 // ::selection {
 //   background: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
 // }
@@ -84,7 +88,7 @@ body {
 }
 
 // Print CSS
-@page { 
-    /* this affects the margin in the printer settings */ 
-    margin: 15mm 15mm 15mm 15mm;
-} 
+@page {
+  /* this affects the margin in the printer settings */
+  margin: 15mm 15mm 15mm 15mm;
+}
