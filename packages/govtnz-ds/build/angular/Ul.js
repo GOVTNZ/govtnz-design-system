@@ -17,11 +17,14 @@ var AppComponent = /** @class */ (function () {
     ], AppComponent.prototype, "bulleted", void 0);
     __decorate([
         core_1.Input()
+    ], AppComponent.prototype, "spacing", void 0);
+    __decorate([
+        core_1.Input()
     ], AppComponent.prototype, "children", void 0);
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-Ul",
-            template: "\n<ul class=\"g-list{{bulleted ? \" g-list--bullet\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</ul>\n\n\n"
+            template: "\n<ul class=\"g-list{{bulleted ? \" g-list--bullet\" : \"\"}}{{spacing ? \" g-list--spacing\" : \"\"}}\">\n\n  <slot></slot>\n\n\n</ul>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

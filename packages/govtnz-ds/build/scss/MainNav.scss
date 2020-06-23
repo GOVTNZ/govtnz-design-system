@@ -55,8 +55,11 @@
 
 .g-main-nav__button__icon {
   display: inline-block;
-  color: $g-theme-inverted-nav-active;
-  color: var(--g-theme-inverted-nav-active, $g-theme-inverted-nav-active);
+  color: $g-theme-inverted-nav-active-color;
+  color: var(
+    --g-theme-inverted-nav-active-color,
+    $g-theme-inverted-nav-active-color
+  );
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;

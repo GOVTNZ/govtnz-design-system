@@ -140,8 +140,8 @@
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 2px solid $g-theme-link-focus-color;
-  border: 2px solid var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  border: 1px solid $g-theme-link-focus-color;
+  border: 1px solid var(--g-theme-link-focus-color, $g-theme-link-focus-color);
   border-radius: 0;
   -webkit-appearance: none;
 }
