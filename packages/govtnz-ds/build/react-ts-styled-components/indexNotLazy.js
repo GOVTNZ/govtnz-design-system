@@ -3,6 +3,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Alert_1 = require("./Alert");
 Object.defineProperty(exports, "alert", { enumerable: true, get: function () { return Alert_1.default; } });
+var DiaLogo_1 = require("./DiaLogo");
+Object.defineProperty(exports, "diaLogo", { enumerable: true, get: function () { return DiaLogo_1.default; } });
 var Footer_1 = require("./Footer");
 Object.defineProperty(exports, "footer", { enumerable: true, get: function () { return Footer_1.default; } });
 var FooterLink_1 = require("./FooterLink");

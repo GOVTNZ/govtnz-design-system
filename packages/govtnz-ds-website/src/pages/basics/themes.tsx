@@ -15,7 +15,7 @@ import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import GetInTouch from '../../components/GetInTouch';
 
 const ThemesPage = (pageProps: PageRendererProps) => {
-  const [theme, setTheme] = useState('black');
+  const [theme, setTheme] = useState('theme-default');
   const iframeRef = useRef<HTMLIFrameElement>();
   const updateTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTheme(e.target.value);
@@ -79,7 +79,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               Themes
             </H1>
 
-            <div style={{ '--g-theme-font-family': 'Arial,sans-serif' }}>
+            <div className="g-ds-font">
               <FieldsetBlock
                 legend={
                   <H1 styleSize="large" id="whereLiveTitle">
@@ -92,6 +92,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   id="radio1"
                   name="theme"
                   value="theme-default"
+                  checked={theme === 'theme-default'}
                   onChange={updateTheme}
                 />
                 <RadioBlock
@@ -99,6 +100,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   id="radio2"
                   name="theme"
                   value="theme-light"
+                  checked={theme === 'theme-light'}
                   onChange={updateTheme}
                 />
                 <RadioBlock
@@ -106,13 +108,17 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   id="radio3"
                   name="theme"
                   value="theme-dark"
+                  checked={theme === 'theme-dark'}
                   onChange={updateTheme}
                 />
               </FieldsetBlock>
             </div>
 
+            <a href="/basics/themes__examples__example0.html" target="_blank">
+              open in new{' '}
+            </a>
             <iframe
-              src="/basics/themes-example__example0.html"
+              src="/basics/themes__examples__example0.html"
               title=""
               style={{ width: '100%', height: '400px' }}
               ref={iframeRef}

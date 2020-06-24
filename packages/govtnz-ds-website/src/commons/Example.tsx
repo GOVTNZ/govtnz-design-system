@@ -215,7 +215,7 @@ export default class Example extends Component<Props, State> {
                 <div className="clipboard">
                   <button
                     key="clipboard-button"
-                    className="g-button g-button--secondary g-dswebsite-font"
+                    className="g-button g-button--secondary g-dswebsite-font g-button--small"
                     onClick={this.copyToClipboard}
                     type="button"
                   >

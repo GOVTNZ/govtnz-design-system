@@ -1,4 +1,5 @@
 export { default as alert } from "./Alert";
+export { default as diaLogo } from "./DiaLogo";
 export { default as footer } from "./Footer";
 export { default as footerLink } from "./FooterLink";
 export { default as footerLinks } from "./FooterLinks";

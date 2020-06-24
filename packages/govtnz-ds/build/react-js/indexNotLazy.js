@@ -11,6 +11,12 @@ Object.defineProperty(exports, "alert", {
     return _Alert["default"];
   }
 });
+Object.defineProperty(exports, "diaLogo", {
+  enumerable: true,
+  get: function get() {
+    return _DiaLogo["default"];
+  }
+});
 Object.defineProperty(exports, "footer", {
   enumerable: true,
   get: function get() {
@@ -283,6 +289,8 @@ Object.defineProperty(exports, "ul", {
 });
 
 var _Alert = _interopRequireDefault(require("./Alert"));
+
+var _DiaLogo = _interopRequireDefault(require("./DiaLogo"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
 

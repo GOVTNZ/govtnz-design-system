@@ -33,7 +33,6 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <H2 styleSize="large" id="how-it-works">How it works</H2>
 <p>The grid system uses a series of containers, rows, and columns to lay out and align content.</p>
 <p>The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.</p>
-<div className="flexgrid-preview">
 <ExampleContainer>
     <ExampleHeading>3-column Flexbox grid</ExampleHeading>
     <Example  code={components__FlexGrid[0]} iframeProps={{
@@ -44,7 +43,6 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
         height: 102
       }}></Example>
 </ExampleContainer>
-</div>
 
 <h3 id="containers">Containers</h3>
 <p>Flex container width can be fixed or fluid. The fixed container fills the available width until it reaches the maximum of 1366 pixels.</p>
@@ -62,7 +60,6 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 </Ul>
 <p>We also support offsets to allow flexibility of design, essentially allowing blank columns to assist aesthetics in layout.</p>
 <p>The following example shows all the possible variants of column widths.</p>
-<div className="flexgrid-preview">
 <ExampleContainer>
     <ExampleHeading>Flexgrid column variants</ExampleHeading>
     <Example  code={components__FlexGrid[1]} iframeProps={{
@@ -73,7 +70,6 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
         height: 388
       }}></Example>
 </ExampleContainer>
-</div>
 
 <h2 id="why-use-a-flexbox-grid">Why use a Flexbox grid?</h2>
 <p>We chose Flexbox because it&#39;s implemented by our supported browsers. We have labelled this grid type &quot;Flex&quot; so that we can add other grid types later. We&#39;re considering adding support for CSS Grid.</p>

@@ -1,6 +1,7 @@
 // DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
 
 export { default as alert } from "./Alert";
+export { default as diaLogo } from "./DiaLogo";
 export { default as footer } from "./Footer";
 export { default as footerLink } from "./FooterLink";
 export { default as footerLinks } from "./FooterLinks";

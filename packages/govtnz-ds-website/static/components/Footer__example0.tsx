@@ -33,8 +33,8 @@ var PageContent = (props) => (<Example title="Example: Footer" {...onChangeGener
                             &copy; Crown Copyright 2020
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" xsHorizontalAlign="start" smHorizontalAlign="end" mdHorizontalAlign="end" lgHorizontalAlign="end" {...onChangeGenerator({})}>
-                            <a href="https://www.govt.nz/">
-                                <NzgLogo id="nzg-logo" className="example-subfooter-logo" {...onChangeGenerator({})}></NzgLogo>
+                            <a href="https://www.govt.nz/" className="example-invert-logo">
+                                <NzgLogo id="nzg-logo" {...onChangeGenerator({})}></NzgLogo>
                             </a>
                         </FlexColumn>
                     </FlexRow>

@@ -91,15 +91,15 @@ const writeExamplePage = async (
   const reactComponentNames =
     tagNames &&
     tagNames
-      .map(tag => tag.replace(/^</gi, ''))
-      .filter(tag => {
+      .map((tag) => tag.replace(/^</gi, ''))
+      .filter((tag) => {
         // All React components in our DS have a capital letter in their name
         return !!tag.match(/[A-Z]/);
       })
-      .filter(tag => ComponentIdsThatDontNeedImports.indexOf(tag) === -1);
+      .filter((tag) => ComponentIdsThatDontNeedImports.indexOf(tag) === -1);
 
   const scriptImports = uniq(reactComponentNames).map(
-    reactComponentName =>
+    (reactComponentName) =>
       `import ${reactComponentName} from '@govtnz/ds/build/react-ts/${reactComponentName}';`
   );
 
@@ -265,14 +265,15 @@ const writeExamplePage = async (
 
   const cssImports = uniq(reactComponentNames)
     .map(
-      cssFileName => `<link rel="stylesheet" href="../css/${cssFileName}.css">`
+      (cssFileName) =>
+        `<link rel="stylesheet" href="../css/${cssFileName}.css">`
     )
     .join('');
 
   const cssDirectoryPath = path.resolve(__dirname, '..', 'static', 'css');
   mkdirp.sync(cssDirectoryPath);
   await Promise.all(
-    uniq(reactComponentNames).map(cssFileName =>
+    uniq(reactComponentNames).map((cssFileName) =>
       fs.promises.copyFile(
         path.resolve(
           __dirname,
@@ -292,6 +293,7 @@ const writeExamplePage = async (
   `;
 
   const tmpDir = path.resolve(__dirname, '..', '.tmp', 'components');
+
   const tmpFile = path.basename(tsxFullPath);
   await mkdirp(tmpDir);
   const tmpPath = path.join(tmpDir, tmpFile);
@@ -373,7 +375,7 @@ const writeExamplePage = async (
   return htmlRelativePath;
 };
 
-const addOnStateChanged = async html => {
+const addOnStateChanged = async (html) => {
   // React Managed Components (as distinct from
   // unmanaged components) need a way to set a value
   // and have an onChange handler, but we don't want
@@ -392,7 +394,7 @@ const addOnStateChanged = async html => {
   wrappedHTML = `<>${html}</>`;
   const ast = acorn.Parser.extend(acornJSX()).parse(wrappedHTML);
 
-  const walk = node => {
+  const walk = (node) => {
     let newHTML = '';
 
     switch (node.type) {
@@ -498,7 +500,7 @@ const addOnStateChanged = async html => {
   return newHTML;
 };
 
-const getExampleHeight = async srcPath => {
+const getExampleHeight = async (srcPath) => {
   // This function starts up Chromium and measures the
   // height of examples so that the <iframe> can be given
   // a specific height, and this is done to reduce onscreen jank.
@@ -563,11 +565,14 @@ const getExampleHeight = async srcPath => {
 
   // Ensure this element which is only displayed when viewing the iframe
   // directly doesn't affect the height of the page.
-  await page.$eval('#iframed-message', element =>
+  await page.$eval('#iframed-message', (element) =>
     element.parentNode.removeChild(element)
   );
 
-  const newHeight = await page.$eval('#root', element => element.offsetHeight);
+  const newHeight = await page.$eval(
+    '#root',
+    (element) => element.offsetHeight
+  );
 
   if (
     newHeight.toString().length > 0 &&

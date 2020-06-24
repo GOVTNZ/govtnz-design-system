@@ -55,8 +55,13 @@
 
 .example__container .g-heading-m,
 .example__container .g-heading-s,
+.g-dswebsite-font,
 .example__container .g-dswebsite-font {
   --g-theme-font-family: National2, Arial, sans-serif;
+}
+
+.g-ds-font {
+  --g-theme-font-family: Arial, sans-serif;
 }
 
 .example__container .g-heading-m,

@@ -10,7 +10,10 @@ type Props = {
 };
 
 const StyledLi = styled.li`
-  display: inline-block;
+  display: block;
+  @media only screen and (min-width: 48em) {
+    display: inline-block;
+  }
 `;
 
 const StyledA = styled.a`

@@ -25,7 +25,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-footer-link {
-  display: inline-block;
+  display: block;
 }
 .g-footer-link__a {
   display: block;
@@ -37,6 +37,9 @@ export default Vue.extend({
   margin-bottom: 0.5em;
 }
 @media only screen and (min-width: 48em) {
+  .g-footer-link {
+    display: inline-block;
+  }
   .g-footer-link__a:first-child {
     margin-left: -1em;
   }

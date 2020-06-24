@@ -1,5 +1,5 @@
 .g-footer-link {
-  display: inline-block;
+  display: block;
 }
 
 .g-footer-link__a {
@@ -14,6 +14,10 @@
 }
 
 @media only screen and (min-width: 48em) {
+  .g-footer-link {
+    display: inline-block;
+  }
+
   .g-footer-link__a:first-child {
     margin-left: -1em;
   }

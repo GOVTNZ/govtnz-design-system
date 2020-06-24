@@ -1,4 +1,5 @@
 export declare const Alert: () => Promise<typeof import("./Alert")>;
+export declare const DiaLogo: () => Promise<typeof import("./DiaLogo")>;
 export declare const Footer: () => Promise<typeof import("./Footer")>;
 export declare const FooterLink: () => Promise<typeof import("./FooterLink")>;
 export declare const FooterLinks: () => Promise<typeof import("./FooterLinks")>;

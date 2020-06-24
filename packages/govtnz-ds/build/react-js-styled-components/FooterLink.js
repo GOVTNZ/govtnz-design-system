@@ -24,7 +24,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  @media only screen and (min-width: 48em) {\n    display: inline-block;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

@@ -6,7 +6,6 @@ The grid system uses a series of containers, rows, and columns to lay out and al
 
 The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.
 
-<div class="flexgrid-preview">
 <ExampleContainer>
     <ExampleHeading>3-column Flexbox grid</ExampleHeading>
     <Example title="Example: 3-column Flexbox grid">
@@ -19,7 +18,6 @@ The following layout (non-responsive) example creates three equal-width columns 
         </FlexContainer>
     </Example>
 </ExampleContainer>
-</div>
 
 ### Containers
 
@@ -46,7 +44,6 @@ We also support offsets to allow flexibility of design, essentially allowing bla
 
 The following example shows all the possible variants of column widths.
 
-<div class="flexgrid-preview">
 <ExampleContainer>
     <ExampleHeading>Flexgrid column variants</ExampleHeading>
     <Example title="Example: Flexgrid column variants (Flexbox grid)">
@@ -84,7 +81,6 @@ The following example shows all the possible variants of column widths.
         </FlexContainer>
     </Example>
 </ExampleContainer>
-</div>
 
 ## Why use a Flexbox grid?
 

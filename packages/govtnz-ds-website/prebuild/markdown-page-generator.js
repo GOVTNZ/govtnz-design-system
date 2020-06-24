@@ -38,7 +38,7 @@ const generateContentPages = async (
     `src/docs/${sectionId}`
   );
   const pageIdPattern = path.join(sectionDocsPath, '**.md');
-  const pageIds = (await glob(pageIdPattern)).map(docPath =>
+  const pageIds = (await glob(pageIdPattern)).map((docPath) =>
     path.basename(docPath, '.md')
   );
 
@@ -52,7 +52,7 @@ const generateContentPages = async (
   });
 
   await Promise.all(
-    pageIds.map(async pageId => {
+    pageIds.map(async (pageId) => {
       let imports = [];
       let result;
       try {
@@ -75,7 +75,7 @@ const generateContentPages = async (
 
       imports = uniq(imports.concat(componentImports));
 
-      filesToNotDelete.forEach(fileToNotDelete => {
+      filesToNotDelete.forEach((fileToNotDelete) => {
         filesToDelete = removeMatch(filesToDelete, fileToNotDelete);
       });
 
@@ -125,8 +125,8 @@ const generatePage = async (
 
   let linkBackPageName = pageId;
   if (sectionId === 'components') {
-    componentsJson.forEach(menuSection => {
-      menuSection.items.forEach(item => {
+    componentsJson.forEach((menuSection) => {
+      menuSection.items.forEach((item) => {
         if (pageId === item.id) {
           linkBackPageName = `${item.name} components`;
         }
@@ -187,6 +187,10 @@ const generatePage = async (
     );
     // use default page
     md = `# ${startCase(templateIdFriendlyNames[pageId] || pageId)}\n`;
+  }
+
+  if (md.match('class=')) {
+    throw Error(`${pageId} Markdown had class= rather than className=`);
   }
 
   let html = Marked(md, {
@@ -384,20 +388,23 @@ const generatePage = async (
     fullImports.push(`import ${importName} from '../../${srcCodePath}';`);
 
     let counter = 0;
-    html = html.replace(/<Example( [\s\S]*?>|>)[\s\S]*?<\/Example>/g, match => {
-      const isCodeOnly = match.includes('codeOnly');
-      counter++;
+    html = html.replace(
+      /<Example( [\s\S]*?>|>)[\s\S]*?<\/Example>/g,
+      (match) => {
+        const isCodeOnly = match.includes('codeOnly');
+        counter++;
 
-      return `<Example ${
-        isCodeOnly ? 'codeOnly' : ''
-      } code={${importName}[${counter - 1}]} iframeProps={{
+        return `<Example ${isCodeOnly ? 'codeOnly' : ''} code={${importName}[${
+          counter - 1
+        }]} iframeProps={{
         id:"${exampleIds[counter - 1]}",
         className: "example__iframe",
         src:"${exampleRelativePaths[counter - 1]}",
         title:"${exampleTitles[counter - 1]}",
         height: ${exampleHeights[counter - 1]}
       }}></Example>`;
-    });
+      }
+    );
   }
 
   const tagNames = html.match(/<([a-zA-Z0-9_\-]+)/g);
@@ -415,18 +422,18 @@ const generatePage = async (
   const reactComponentNames =
     tagNames &&
     tagNames
-      .map(tag => tag.replace(/^</gi, ''))
-      .filter(tag => {
+      .map((tag) => tag.replace(/^</gi, ''))
+      .filter((tag) => {
         // All React components in our DS have a capital letter in their name
         return !!tag.match(/[A-Z]/);
       })
-      .filter(tag => ComponentIdsThatDontNeedImports.indexOf(tag) === -1);
+      .filter((tag) => ComponentIdsThatDontNeedImports.indexOf(tag) === -1);
 
   const uniqueReactComponentNames = uniq(reactComponentNames);
   let imports = await Promise.all(
     [...uniqueReactComponentNames, ...importsByName]
-      .filter(name => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
-      .map(name => {
+      .filter((name) => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
+      .map((name) => {
         // Dev note: importGenerator returns a promise so we're intentionally
         // not awaiting it so that we can pass it to Promise.all()
         const code = importGenerator(name);
@@ -517,8 +524,8 @@ module.exports.generateComponentPages = async (
 
   await Promise.all(
     keys
-      .filter(name => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
-      .map(async templateId => {
+      .filter((name) => ComponentIdsThatDontNeedImports.indexOf(name) === -1)
+      .map(async (templateId) => {
         const templateFormats = templateFormatsById[templateId];
         // if (!templateFormats.html) {
         //   console.log(`Component without HTML. Template id = "${templateId}"`)
@@ -537,7 +544,7 @@ module.exports.generateComponentPages = async (
         );
         imports = uniq(imports.concat(componentImports));
 
-        filesToNotDelete.forEach(fileToNotDelete => {
+        filesToNotDelete.forEach((fileToNotDelete) => {
           filesToDelete = removeMatch(filesToDelete, fileToNotDelete);
         });
 

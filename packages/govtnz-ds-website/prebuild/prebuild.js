@@ -1,4 +1,5 @@
 const fs = require('fs');
+const rmfr = require('rmfr');
 const path = require('path');
 const { startCase, uniq } = require('lodash');
 const glob = require('glob-promise');
@@ -85,6 +86,8 @@ const main = async () => {
       }
     })
   );
+  const tmpDir = path.resolve(__dirname, '..', '.tmp');
+  await rmfr(tmpDir);
 
   // Step 1. Get the codegen templates
   const componentsIndexTemplatePath = path.resolve(

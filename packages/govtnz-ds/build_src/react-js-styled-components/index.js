@@ -1,6 +1,7 @@
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 
 export const Alert = () => import("./Alert");
+export const DiaLogo = () => import("./DiaLogo");
 export const Footer = () => import("./Footer");
 export const FooterLink = () => import("./FooterLink");
 export const FooterLinks = () => import("./FooterLinks");

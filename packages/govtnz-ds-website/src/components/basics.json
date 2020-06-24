@@ -1,4 +1,5 @@
 [
   { "id": "typography", "name": "Typography" },
+  { "id": "themes", "name": "Themes" },
   { "id": "colours", "name": "Colours" }
 ]

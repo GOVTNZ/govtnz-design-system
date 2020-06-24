@@ -25,8 +25,8 @@ Interact with the example to see how it works.
                             &copy; Crown Copyright 2020
                         </FlexColumn>
                         <FlexColumn xs="12" sm="7" md="7" lg="7" xsHorizontalAlign="start" smHorizontalAlign="end" mdHorizontalAlign="end" lgHorizontalAlign="end">
-                            <a href="https://www.govt.nz/">
-                                <NzgLogo id="nzg-logo" className="example-subfooter-logo" />
+                            <a href="https://www.govt.nz/" className="example-invert-logo">
+                                <NzgLogo id="nzg-logo" />
                             </a>
                         </FlexColumn>
                     </FlexRow>
