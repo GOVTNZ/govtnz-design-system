@@ -12,6 +12,10 @@ import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
+import Ul from '@govtnz/ds/build/react-ts/Ul';
+import '../../commons/styles/ds/themed-Ul.scss';
+import Li from '@govtnz/ds/build/react-ts/Li';
+import '../../commons/styles/ds/themed-Li.scss';
 import components__Footer from '../../commons/examples/components__Footer';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -24,13 +28,10 @@ import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><P styleSize="large">This is the footer of your site.</P>
+const PageContent = (props) => <React.Fragment><P styleSize="large">The footer provides links to copyright, contact and privacy information about your website.</P>
 
-<H2 styleSize="large" id="how-it-works">How it works</H2>
-<p><code>Footer</code> is a simple container component for arbitary content.</p>
-<h2 id="examples">Examples</h2>
-<p>Interact with each example to see how it works.</p>
-<p>Please note that only the <code>Footer</code> component is part of the example. The other HTML/components are for example purposes only, and are optional. The grid is not required.</p>
+<H2 styleSize="large" id="example">Example</H2>
+<p>Interact with the example to see how it works.</p>
 <ExampleContainer>
     <Example  code={components__Footer[0]} iframeProps={{
         id:"iframe_componentsFooter0",
@@ -41,6 +42,18 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">This is the 
       }}></Example>
 
 </ExampleContainer>
+
+<h2 id="when-to-use-it">When to use it</h2>
+<p>Use the footer at the bottom of every page of your website.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>The footer component is a container that includes links to:</p>
+<Ul bulleted>
+<Li>Govt.nz using the English or te reo Māori version of the All-of-Government brand lockup</Li>
+<Li>your site&#39;s contact information, copyright and privacy statements (link targets are for you to set).</Li>
+</Ul>
+<p>Including these links helps your website meet several requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/">Web Usability Standard</a> for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.</p>
+<h2 id="credit">Credit</h2>
+<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
 </React.Fragment>
 
 export default function Code(props) {

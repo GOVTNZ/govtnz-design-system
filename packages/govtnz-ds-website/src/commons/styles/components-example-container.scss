@@ -10,6 +10,7 @@
   border: solid 1px var(--color-theme-mid-grey, $color-ds-default-mid-grey);
   margin-top: $spacing-64;
   margin-bottom: $spacing-40;
+  --g-theme-font-family: Arial, sans-serif;
 
   @include print {
     box-decoration-break: clone;

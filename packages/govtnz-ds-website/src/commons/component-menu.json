@@ -17,6 +17,11 @@
         "id": "Alerts",
         "name": "Page alerts",
         "stable": true
+      },
+      {
+        "id": "Footer",
+        "name": "Footer",
+        "stable": true
       }
     ]
   },
@@ -24,11 +29,6 @@
     "title": "Coming soon",
     "stable": false,
     "items": [
-      {
-        "id": "Footer",
-        "name": "Footer",
-        "stable": false
-      },
       { "id": "InsetText", "name": "Inset text", "stable": false },
       { "id": "FileUpload", "name": "File upload", "stable": false }
     ]
