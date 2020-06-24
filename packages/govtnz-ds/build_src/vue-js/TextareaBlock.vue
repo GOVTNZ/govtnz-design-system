@@ -184,7 +184,7 @@ export default Vue.extend({
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 2px solid #0b0c0c;
+  border: 1px solid #0b0c0c;
   border-radius: 0;
   -webkit-appearance: none;
 }

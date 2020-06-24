@@ -23,9 +23,9 @@
 }
 
 .g-main-nav__link__a--active {
-  border-left: solid 0.2em $g-theme-inverted-nav-active;
+  border-left: solid 0.2em $g-theme-inverted-nav-active-color;
   border-left: solid 0.2em
-    var(--g-theme-inverted-nav-active, $g-theme-inverted-nav-active);
+    var(--g-theme-inverted-nav-active-color, $g-theme-inverted-nav-active-color);
   padding-left: 0.8em;
 }
 
@@ -69,10 +69,10 @@
     left: 1em;
     right: 1em;
     height: 4px;
-    background: $g-theme-inverted-nav-active;
+    background: $g-theme-inverted-nav-active-color;
     background: var(
-      --g-theme-inverted-nav-active,
-      $g-theme-inverted-nav-active
+      --g-theme-inverted-nav-active-color,
+      $g-theme-inverted-nav-active-color
     );
   }
 }

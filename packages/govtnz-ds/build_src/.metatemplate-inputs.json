@@ -10,6 +10,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -55,7 +60,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -172,6 +177,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -217,7 +227,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -334,6 +344,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -379,7 +394,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -496,6 +511,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -541,7 +561,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -658,6 +678,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -703,7 +728,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -820,6 +845,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -865,7 +895,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -982,6 +1012,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1027,7 +1062,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1144,6 +1179,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1189,7 +1229,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1306,6 +1346,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1351,7 +1396,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1468,6 +1513,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1513,7 +1563,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1630,6 +1680,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1675,7 +1730,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1792,6 +1847,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1837,7 +1897,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -1954,6 +2014,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -1999,7 +2064,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2116,6 +2181,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2161,7 +2231,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2278,6 +2348,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2323,7 +2398,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2440,6 +2515,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2485,7 +2565,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2602,6 +2682,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2647,7 +2732,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2764,6 +2849,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2809,7 +2899,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -2926,6 +3016,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -2971,7 +3066,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3088,6 +3183,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3133,7 +3233,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3250,6 +3350,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3295,7 +3400,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3412,6 +3517,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3457,7 +3567,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3574,6 +3684,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3619,7 +3734,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3736,6 +3851,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3781,7 +3901,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -3898,6 +4018,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -3943,7 +4068,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4060,6 +4185,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4105,7 +4235,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4222,6 +4352,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4267,7 +4402,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4384,6 +4519,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4429,7 +4569,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4546,6 +4686,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4591,7 +4736,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4708,6 +4853,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4753,7 +4903,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -4870,6 +5020,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -4915,7 +5070,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5032,6 +5187,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5077,7 +5237,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5194,6 +5354,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5239,7 +5404,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5356,6 +5521,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5401,7 +5571,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5518,6 +5688,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5563,7 +5738,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5680,6 +5855,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5725,7 +5905,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -5842,6 +6022,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -5887,7 +6072,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6004,6 +6189,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6049,7 +6239,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6166,6 +6356,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6211,7 +6406,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6328,6 +6523,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6373,7 +6573,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6490,6 +6690,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6535,7 +6740,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6652,6 +6857,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6697,7 +6907,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6814,6 +7024,11 @@
         "defaultValue": "Arial, sans-serif"
       },
       {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
+      },
+      {
         "id": "g-theme-color",
         "valueSubstringMatch": "#2a2a2a",
         "defaultValue": "#2a2a2a"
@@ -6859,7 +7074,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -6968,12 +7183,17 @@
   "Textarea": {
     "id": "Textarea",
     "html": "<textarea\n  class=\"g-textarea\"\n  id=\"id\"\n  name=\"name\"\n  aria-describedby=\"describedById\"\n  rows=\"5\"\n></textarea>\n",
-    "css": ".g-textarea-character-count .g-textarea {\n  margin-bottom: 5px;\n}\n\n.g-textarea {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  min-height: 40px;\n  margin-bottom: 20px;\n  padding: 5px;\n  resize: vertical;\n  border: 2px solid #0b0c0c;\n  border-radius: 0;\n  -webkit-appearance: none;\n}\n\n@media print {\n  .g-textarea {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textarea {\n    font-size: 1.1875rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-textarea {\n    font-size: 14pt;\n    line-height: 1.25;\n  }\n}\n\n.g-textarea:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textarea {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textarea-hint > * {\n  margin-top: 0px;\n}\n",
+    "css": ".g-textarea-character-count .g-textarea {\n  margin-bottom: 5px;\n}\n\n.g-textarea {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  min-height: 40px;\n  margin-bottom: 20px;\n  padding: 5px;\n  resize: vertical;\n  border: 1px solid #0b0c0c;\n  border-radius: 0;\n  -webkit-appearance: none;\n}\n\n@media print {\n  .g-textarea {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textarea {\n    font-size: 1.1875rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-textarea {\n    font-size: 14pt;\n    line-height: 1.25;\n  }\n}\n\n.g-textarea:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textarea {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textarea-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
         "valueSubstringMatch": "Arial, sans-serif",
         "defaultValue": "Arial, sans-serif"
+      },
+      {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
       },
       {
         "id": "g-theme-color",
@@ -7021,7 +7241,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -7130,12 +7350,17 @@
   "TextareaBlock": {
     "id": "TextareaBlock",
     "html": "<div\n  class=\"g-textareaBlock-form-group {{ errorId?: g-textareaBlock-form-group--error }}\"\n>\n  <label class=\"g-textareaBlock-label\" for=\"id\">\n    <mt-variable key=\"label\">Label text</mt-variable>\n  </label>\n  <mt-if key=\"hintId\">\n    <div class=\"g-textareaBlock-hint\" id=\"hintId\">\n      <mt-variable key=\"hint\">Hint text</mt-variable>\n    </div>\n  </mt-if>\n  <mt-if key=\"errorId\">\n    <div class=\"g-textareaBlock-error-message\" id=\"errorId\">\n      <span class=\"g-textareaBlock-visually-hidden\">\n        Error:\n      </span>\n      <mt-variable key=\"error\">Error text</mt-variable>\n    </div>\n  </mt-if>\n  <textarea\n    class=\"g-textareaBlock-textarea\"\n    id=\"id\"\n    name=\"name\"\n    aria-describedby=\"hintId errorId\"\n    rows=\"5\"\n  ></textarea>\n</div>\n",
-    "css": ".g-textareaBlock-form-group {\n  margin-bottom: 20px;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-form-group {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textareaBlock-form-group .g-textareaBlock-form-group:last-of-type {\n  margin-bottom: 0;\n}\n\n.g-textareaBlock-form-group--error {\n  padding-left: 15px;\n  border-left: 5px solid #b10e1e;\n}\n\n.g-textareaBlock-form-group--error .g-textareaBlock-form-group {\n  padding: 0;\n  border: 0;\n}\n\n.g-textareaBlock-error-message {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n}\n\n@media print {\n  .g-textareaBlock-error-message {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-error-message {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-textareaBlock-hint {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n}\n\n@media print {\n  .g-textareaBlock-hint {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-hint {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-fieldset__legend + .g-textareaBlock-hint {\n  margin-top: -5px;\n}\n\n.g-textareaBlock-label {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n}\n\n@media print {\n  .g-textareaBlock-label {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n    color: #000000;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-label {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-textareaBlock-character-count .g-textareaBlock-textarea {\n  margin-bottom: 5px;\n}\n\n.g-textareaBlock-textarea {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  min-height: 40px;\n  margin-bottom: 20px;\n  padding: 5px;\n  resize: vertical;\n  border: 2px solid #0b0c0c;\n  border-radius: 0;\n  -webkit-appearance: none;\n}\n\n@media print {\n  .g-textareaBlock-textarea {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-textarea {\n    font-size: 1.1875rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-textareaBlock-textarea {\n    font-size: 14pt;\n    line-height: 1.25;\n  }\n}\n\n.g-textareaBlock-textarea:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-textarea {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textareaBlock-visually-hidden {\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n}\n\n.g-textareaBlock-hint > * {\n  margin-top: 0px;\n}\n",
+    "css": ".g-textareaBlock-form-group {\n  margin-bottom: 20px;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-form-group {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textareaBlock-form-group .g-textareaBlock-form-group:last-of-type {\n  margin-bottom: 0;\n}\n\n.g-textareaBlock-form-group--error {\n  padding-left: 15px;\n  border-left: 5px solid #b10e1e;\n}\n\n.g-textareaBlock-form-group--error .g-textareaBlock-form-group {\n  padding: 0;\n  border: 0;\n}\n\n.g-textareaBlock-error-message {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: #b10e1e;\n}\n\n@media print {\n  .g-textareaBlock-error-message {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-error-message {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-textareaBlock-hint {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: #595959;\n}\n\n@media print {\n  .g-textareaBlock-hint {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-hint {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-fieldset__legend + .g-textareaBlock-hint {\n  margin-top: -5px;\n}\n\n.g-textareaBlock-label {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: #2a2a2a;\n  display: block;\n  margin-bottom: 5px;\n}\n\n@media print {\n  .g-textareaBlock-label {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n    color: #000000;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-label {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n.g-textareaBlock-character-count .g-textareaBlock-textarea {\n  margin-bottom: 5px;\n}\n\n.g-textareaBlock-textarea {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  min-height: 40px;\n  margin-bottom: 20px;\n  padding: 5px;\n  resize: vertical;\n  border: 1px solid #0b0c0c;\n  border-radius: 0;\n  -webkit-appearance: none;\n}\n\n@media print {\n  .g-textareaBlock-textarea {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-textarea {\n    font-size: 1.1875rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-textareaBlock-textarea {\n    font-size: 14pt;\n    line-height: 1.25;\n  }\n}\n\n.g-textareaBlock-textarea:focus {\n  outline: 3px solid #b53cde;\n  outline-offset: 0;\n}\n\n@media (min-width: 40.0625em) {\n  .g-textareaBlock-textarea {\n    margin-bottom: 30px;\n  }\n}\n\n.g-textareaBlock-visually-hidden {\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n}\n\n.g-textareaBlock-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
         "valueSubstringMatch": "Arial, sans-serif",
         "defaultValue": "Arial, sans-serif"
+      },
+      {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
       },
       {
         "id": "g-theme-color",
@@ -7183,7 +7408,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
@@ -7291,13 +7516,18 @@
   },
   "Ul": {
     "id": "Ul",
-    "html": "<ul class=\"g-list {{ bulleted?: g-list--bullet }}\">\n  <mt-variable key=\"children\">Example text</mt-variable>\n</ul>\n",
-    "css": ".g-ul-list {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1.25rem;\n  line-height: 1.625;\n  color: #2a2a2a;\n  margin-top: 0;\n  margin-bottom: 1rem;\n  padding-left: 0;\n  list-style-type: none;\n}\n\n@media print {\n  .g-ul-list {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-ul-list {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n    margin-bottom: 1rem;\n  }\n}\n\n@media print {\n  .g-ul-list {\n    font-size: 14pt;\n    line-height: 1.15;\n    color: #000000;\n  }\n}\n\n.g-ul-list .g-ul-list {\n  margin-top: 10px;\n}\n\n.g-ul-list--bullet {\n  padding-left: 20px;\n  list-style-type: disc;\n}\n\n.g-ul-hint > * {\n  margin-top: 0px;\n}\n\n.g-ul-list li .g-ul-list {\n  margin-top: 0.5rem;\n}\n",
+    "html": "<ul\n  class=\"g-list {{ bulleted?: g-list--bullet }} {{ spacing?: g-list--spacing }}  \"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</ul>\n",
+    "css": ".g-list {\n  font-family: Arial, sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1.25rem;\n  line-height: 1.625;\n  color: #2a2a2a;\n  margin-top: 0;\n  margin-bottom: 1rem;\n  padding-left: 0;\n  list-style-type: none;\n}\n\n@media print {\n  .g-list {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-list {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n    margin-bottom: 1rem;\n  }\n}\n\n@media print {\n  .g-list {\n    font-size: 14pt;\n    line-height: 1.15;\n    color: #000000;\n  }\n}\n\n.g-list .g-list {\n  margin-top: 10px;\n}\n\n.g-list--bullet {\n  padding-left: 20px;\n  list-style-type: disc;\n}\n\n.g-hint > * {\n  margin-top: 0px;\n}\n\n.g-list li .g-list {\n  margin-top: 0.5rem;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
         "valueSubstringMatch": "Arial, sans-serif",
         "defaultValue": "Arial, sans-serif"
+      },
+      {
+        "id": "g-theme-background-color",
+        "valueSubstringMatch": "#ffffff",
+        "defaultValue": "#ffffff"
       },
       {
         "id": "g-theme-color",
@@ -7345,7 +7575,7 @@
         "defaultValue": "#d3d3d3"
       },
       {
-        "id": "g-theme-inverted-nav-active",
+        "id": "g-theme-inverted-nav-active-color",
         "valueSubstringMatch": "#24a882",
         "defaultValue": "#24a882"
       },
