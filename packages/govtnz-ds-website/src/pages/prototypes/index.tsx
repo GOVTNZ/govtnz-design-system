@@ -133,7 +133,7 @@ class ContactusForm extends React.Component {
     ];
 
     return (
-      <div className="theme-font-arial">
+      <React.Fragment>
         <form
           style={{ padding: '20px' }}
           onSubmit={this.handleSubmit}
@@ -259,7 +259,7 @@ class ContactusForm extends React.Component {
             Submit
           </button>
         </form>
-      </div>
+      </React.Fragment>
     );
   }
 }

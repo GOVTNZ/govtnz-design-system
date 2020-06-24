@@ -1,14 +1,8 @@
-<P styleSize="large">This is the footer of your site.</P>
+<P styleSize="large">The footer provides links to copyright, contact and privacy information about your website.</P>
 
-## How it works
+## Example
 
-`Footer` is a simple container component for arbitary content.
-
-## Examples
-
-Interact with each example to see how it works.
-
-Please note that only the `Footer` component is part of the example. The other HTML/components are for example purposes only, and are optional. The grid is not required.
+Interact with the example to see how it works.
 
 <ExampleContainer>
     <Example title="Example: Footer">
@@ -42,3 +36,20 @@ Please note that only the `Footer` component is part of the example. The other H
     </Example>
 
 </ExampleContainer>
+
+## When to use it
+
+Use the footer at the bottom of every page of your website.
+
+## How it works
+
+The footer component is a container that includes links to:
+
+- Govt.nz using the English or te reo Māori version of the All-of-Government brand lockup
+- your site's contact information, copyright and privacy statements (link targets are for you to set).
+
+Including these links helps your website meet several requirements of the [Web Usability Standard](https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/) for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.
+
+## Credit
+
+Guidance, original HTML and CSS derived from [GOV.UK Design System](https://github.com/alphagov/govuk-frontend).

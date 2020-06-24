@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 const Ul = ({ bulleted, children }) => (
-  <ul className={`g-list${bulleted ? " g-list--bullet" : ""}`}>
+  <ul className={`g-list${bulleted ? ' g-list--bullet' : ''}`}>
     {children !== undefined ? (
       children
     ) : (

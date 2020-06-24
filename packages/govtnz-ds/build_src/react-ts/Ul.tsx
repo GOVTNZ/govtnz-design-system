@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type Props = {
   bulleted?: boolean;
@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Ul = ({ bulleted, children }: Props) => (
-  <ul className={`g-list${bulleted ? " g-list--bullet" : ""}`}>
+  <ul className={`g-list${bulleted ? ' g-list--bullet' : ''}`}>
     {children !== undefined ? (
       children
     ) : (
