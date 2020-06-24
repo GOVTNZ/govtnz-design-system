@@ -150,7 +150,7 @@ class ContactusForm extends React.Component {
               <H2 id="heading3">
                 Error: There’s a problem with the following responses
               </H2>
-              <Ul bulleted>
+              <Ul bulleted spacing>
                 {errorMessageFields.map((message) => (
                   <>
                     {message ? (
