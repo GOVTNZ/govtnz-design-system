@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mustache Snapshots mustache: complex make-usage nested mt-if 1`] = `
+Object {
+  "mustache": "// Developer note: ensure your \\".mustache\\" files are imported as plain text. In Webpack you might use https://github.com/webpack-contrib/raw-loader
+import Mustache from \\"mustache\\";
+import Alert from \\"@govtnz/ds/build/mustache/Alert.mustache\\";
+import H2 from \\"@govtnz/ds/build/mustache/H2.mustache\\";
+import P from \\"@govtnz/ds/build/mustache/P.mustache\\";
+import Ul from \\"@govtnz/ds/build/mustache/Ul.mustache\\";
+
+// The variables Alert, H2, P, Ul are all strings that are mustache templates.
+
+export default \`\${Mustache.render(Alert, {
+  mode: \`live\`,
+  \\"level=info\\": true,
+  level: true,
+  headingId: \`heading1\`,
+  children: \`\${Mustache.render(H2, {
+    id: \`heading1\`,
+    children: \`Info: You are alive\`
+  })}\${Mustache.render(P, {
+    children: \`Some text describing what's going on 1.\`
+  })}\`
+})}\${Mustache.render(Alert, {
+  \\"level=warning\\": true,
+  level: true,
+  headingId: \`heading2\`,
+  children: \`\${Mustache.render(H2, {
+    id: \`heading2\`,
+    children: \`Warning: You are alive\`
+  })}\${Mustache.render(P, {
+    children: \`Some text describing what's going on 2.\`
+  })}\`
+})}\${Mustache.render(Alert, {
+  \\"level=success\\": true,
+  level: true,
+  headingId: \`heading3\`,
+  children: \`\${Mustache.render(H2, {
+    id: \`heading3\`,
+    children: \`Success: You are alive\`
+  })}\${Mustache.render(P, {
+    children: \`Some text describing what's going on 3.\`
+  })}\`
+})}\${Mustache.render(Alert, {
+  \\"level=error\\": true,
+  level: true,
+  headingId: \`heading4\`,
+  children: \`\${Mustache.render(H2, {
+    id: \`heading4\`,
+    children: \`Error: You are alive\`
+  })}\${Mustache.render(Ul, {
+    bulleted: true,
+    children: \`<li ><a href=\\"#\\">Error in this field 4</a></li>\`
+  })}\`
+})}\`;
+",
+}
+`;
+
+exports[`mustache Snapshots mustache: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "mustache/children.mustache": "{{! DEVELOPER NOTE: This template uses triple-bracket \\"{{{\\"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - label.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
+
+  
+          
+<div
+class=\\"{{#errorId}}g-form-group--error{{/errorId}}\\"
+/>
+  
+            
+<label
+class=\\"g-selectBlock-label\\"
+{{#selectId}}
+  for=\\"{{selectId}}\\"
+{{/selectId}}
+>
+  
+              
+  {{{label}}}
+  
+            
+</label>
+  
+            
+<select
+class=\\"g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}\\"
+{{#selectId}}
+  id=\\"{{selectId}}\\"
+{{/selectId}}
+{{#name}}
+  name=\\"{{name}}\\"
+{{/name}}
+{{#multiple}}
+  multiple=\\"{{#multiple}}multiple{{/multiple}}\\"
+{{/multiple}}
+>
+  
+              
+                Options
+              
+            
+          
+          
+</select>",
+    },
+    "formatId": "mustache",
+  },
+]
+`;
+
+exports[`mustache Snapshots mustache: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "mustache/children.mustache": "{{! DEVELOPER NOTE: This template uses triple-bracket \\"{{{\\"
+    which disables HTML escaping.
+    Please ensure these variables are properly escaped:
+     - label.
+    The reason for this is to allow raw HTML, for values such as (eg) '<span lang=\\"mi\\">Māori</span>'. }}
+
+  
+          
+<div
+class=\\"{{#errorId}}g-form-group--error{{/errorId}}\\"
+/>
+  
+            
+<label
+class=\\"g-selectBlock-label\\"
+{{#selectId}}
+  for=\\"{{selectId}}\\"
+{{/selectId}}
+>
+  
+              
+  {{{label}}}
+  
+            
+</label>
+  
+            
+<select
+class=\\"g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}\\"
+{{#selectId}}
+  id=\\"{{selectId}}\\"
+{{/selectId}}
+{{#name}}
+  name=\\"{{name}}\\"
+{{/name}}
+{{#multiple}}
+  multiple=\\"{{#multiple}}multiple{{/multiple}}\\"
+{{/multiple}}
+>
+  
+              
+                Options
+              
+            
+          
+          
+</select>",
+    },
+    "formatId": "mustache",
+  },
+]
+`;

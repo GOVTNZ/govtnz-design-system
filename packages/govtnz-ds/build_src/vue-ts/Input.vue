@@ -67,7 +67,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-input {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -78,11 +78,12 @@ export default Vue.extend({
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: g-theme-form-background-color;
 }
 @media print {
   .g-input {
@@ -102,7 +103,7 @@ export default Vue.extend({
   }
 }
 .g-input:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
 .g-input::-webkit-outer-spin-button,
@@ -111,7 +112,7 @@ export default Vue.extend({
   -webkit-appearance: none;
 }
 .g-input--error {
-  border: 1px solid #b10e1e;
+  border: 1px solid g-theme-error-border-color;
 }
 .g-input--width-30 {
   max-width: 59ex;

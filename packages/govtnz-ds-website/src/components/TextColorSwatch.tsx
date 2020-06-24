@@ -7,7 +7,7 @@ import './text-color-swatch.scss';
 type Props = {
   colorCode: string;
   colorName: string;
-  textColors: array;
+  textColors: { color: string; name: string }[];
 };
 
 const TextColorSwatch = ({ colorCode, colorName, textColors }: Props) => (
@@ -23,15 +23,15 @@ const TextColorSwatch = ({ colorCode, colorName, textColors }: Props) => (
       className="text-color-swatch__color"
       style={{ backgroundColor: colorCode }}
     >
-      <Ul>
-        {textColors.map(color => (
-          <Li>
+      <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+        {textColors.map((color) => (
+          <li>
             <span style={{ color: color.color }}>
               {color.name} {color.color}
             </span>
-          </Li>
+          </li>
         ))}
-      </Ul>
+      </ul>
     </div>
   </div>
 );

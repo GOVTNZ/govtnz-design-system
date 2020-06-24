@@ -1,7 +1,7 @@
 import React from "react";
 
-const Ol = ({ numbered, children }) => (
-  <ol className={`g-list${numbered ? " g-list--number" : ""}`}>
+const Ol = ({ children }) => (
+  <ol className="g-ol">
     {children !== undefined ? (
       children
     ) : (

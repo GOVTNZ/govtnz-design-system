@@ -1,8 +1,5 @@
 // DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
 
-export { default as flexColumn } from "./FlexColumn";
-export { default as flexContainer } from "./FlexContainer";
-export { default as flexRow } from "./FlexRow";
 export { default as alert } from "./Alert";
 export { default as footer } from "./Footer";
 export { default as footerLink } from "./FooterLink";
@@ -12,6 +9,9 @@ export { default as mainNavLink } from "./MainNavLink";
 export { default as mainNav } from "./MainNav";
 export { default as nzgLogo } from "./NzgLogo";
 export { default as subfooter } from "./Subfooter";
+export { default as flexColumn } from "./FlexColumn";
+export { default as flexContainer } from "./FlexContainer";
+export { default as flexRow } from "./FlexRow";
 export { default as a } from "./A";
 export { default as button } from "./Button";
 export { default as captionL } from "./CaptionL";

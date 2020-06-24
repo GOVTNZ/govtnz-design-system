@@ -24,7 +24,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  color: #24a882;\n  transition: transform 0.15s;\n  vertical-align: middle;\n  margin-left: 0.2em;\n  width: 12px;\n  height: 12px;\n  transform: rotate(180deg);\n  transform: rotate(0deg);\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: inline-block;\n  color: g-theme-inverted-menu-button-color;\n  transition: transform 0.15s;\n  vertical-align: middle;\n  margin-left: 0.2em;\n  width: 12px;\n  height: 12px;\n  transform: rotate(180deg);\n  transform: rotate(0deg);\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -34,7 +34,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 3px;\n  right: 3px;\n  background: transparent;\n  color: #ffffff;\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid #b53cde;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  position: absolute;\n  top: 3px;\n  right: 3px;\n  background: transparent;\n  color: g-theme-inverted-color;\n  font-size: 16px;\n  display: none;\n  padding: 1em;\n  border: none;\n  display: inline-block;\n  @media only screen and (min-width: 48em) {\n    display: none;\n  }\n  :focus {\n    outline: 3px solid g-theme-focus-ring-color;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: #2a2a2a;\n  margin: 0px -1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px;\n    background-color: transparent;\n    margin: 0px -2rem;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: g-theme-color;\n  margin: 0px -1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px;\n    background-color: transparent;\n    margin: 0px -2rem;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

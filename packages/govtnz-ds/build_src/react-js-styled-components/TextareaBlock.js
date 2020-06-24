@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
     props.errorId &&
     styled.css`
       padding-left: 15px;
-      border-left: 5px solid #b10e1e;
+      border-left: 5px solid g-theme-error-border-color;
     `}
   padding: 0;
   border: 0;
@@ -21,20 +21,20 @@ const StyledDiv = styled.div`
 `;
 
 const StyledLabel = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
     font-family: sans-serif;
     font-size: 14pt;
     line-height: 1.15;
-    color: #000000;
+    color: g-theme-print-color;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
@@ -44,7 +44,7 @@ const StyledLabel = styled.label`
 `;
 
 const StyledDiv2 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -52,7 +52,7 @@ const StyledDiv2 = styled.div`
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
     font-size: 14pt;
@@ -67,7 +67,7 @@ const StyledDiv2 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -76,7 +76,7 @@ const StyledDiv3 = styled.div`
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
   @media print {
     font-family: sans-serif;
     font-size: 14pt;
@@ -106,7 +106,7 @@ const StyledSpan = styled.span`
 
 const StyledTextarea = styled.textarea`
   margin-bottom: 5px;
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -119,9 +119,10 @@ const StyledTextarea = styled.textarea`
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 1px solid #0b0c0c;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
+  background-color: g-theme-form-background-color;
   @media print {
     font-family: sans-serif;
   }
@@ -134,7 +135,7 @@ const StyledTextarea = styled.textarea`
     line-height: 1.25;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   @media (min-width: 40.0625em) {

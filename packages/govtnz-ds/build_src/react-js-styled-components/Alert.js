@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 const StyledDiv = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -21,16 +21,16 @@ const StyledDiv = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -38,17 +38,17 @@ const StyledSvg = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv2 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -61,16 +61,16 @@ const StyledDiv2 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -78,17 +78,17 @@ const StyledSvg2 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv3 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -101,16 +101,16 @@ const StyledDiv3 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -118,17 +118,17 @@ const StyledSvg3 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv4 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -141,16 +141,16 @@ const StyledDiv4 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -158,17 +158,17 @@ const StyledSvg4 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv5 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -181,16 +181,16 @@ const StyledDiv5 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -198,17 +198,17 @@ const StyledSvg5 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv6 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -221,16 +221,16 @@ const StyledDiv6 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -238,17 +238,17 @@ const StyledSvg6 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv7 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -261,16 +261,16 @@ const StyledDiv7 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -278,17 +278,17 @@ const StyledSvg7 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const StyledDiv8 = styled.div`
   position: relative;
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
   ::before {
     content: "";
     display: block;
@@ -301,16 +301,16 @@ const StyledDiv8 = styled.div`
     border-bottom-left-radius: 4px;
   }
   ::before {
-    background-color: #1f1bfb;
+    background-color: g-theme-alert-info-border-color;
   }
   ::before {
-    background-color: #d47500;
+    background-color: g-theme-alert-warning-border-color;
   }
   ::before {
-    background-color: #088a20;
+    background-color: g-theme-alert-success-border-color;
   }
   ::before {
-    background-color: #b10e1e;
+    background-color: g-theme-error-border-color;
   }
 `;
 
@@ -318,7 +318,7 @@ const StyledSvg8 = styled.svg`
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: g-theme-alert-icon-color;
 `;
 
 const Alert = ({ mode, level, children, headingId }) => (

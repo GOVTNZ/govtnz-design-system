@@ -164,10 +164,10 @@ Use lists to break up blocks of text into chunks to make them easier to read.
     <ExampleHeading>Bulleted lists</ExampleHeading>
     <Example title="Example: Bulleted lists (Typography)">
         <P styleSize="medium">To help keep the kitchen clean, please:</P>
-        <Ul bulleted>
+        <Ul>
             <Li>replace tea and coffee jars on shelf</Li>
             <Li>wipe down bench</Li>
-            <Li>wash dishes by: <Ul bulleted>
+            <Li>wash dishes by: <Ul>
                     <Li>loading the dishwasher, if it's empty</Li>
                     <Li>rinsing and stacking, if dishwasher is going</Li>
                 </Ul>
@@ -185,12 +185,12 @@ Use bulleted lists to highlight options and examples in content, especially when
     <ExampleHeading>Numbered lists</ExampleHeading>
     <Example title="Example: Numbered lists (Typography)">
         <P styleSize="medium">To sign up, you need to complete four steps.</P>
-        <Ol numbered>
+        <Ol>
             <Li>Prove your identity, such as with RealMe</Li>
             <Li>Provide a passport-sized photo</Li>
             <Li>
                 Enter your address details:
-                <Ol numbered>
+                <Ol>
                     <Li>Postal address</Li>
                     <Li>Delivery address</Li>
                 </Ol>

@@ -1,7 +1,8 @@
 {{! DEVELOPER NOTE: This template uses triple-bracket "{{{"
     which disables HTML escaping.
     Please ensure these variables are properly escaped:
-     - label.
+     - label,
+     - children.
     The reason for this is to allow raw HTML, for values such as (eg) '<span lang="mi">Māori</span>'. }}
 
 <div
@@ -38,7 +39,11 @@ class="g-selectBlock-select{{#error}} g-selectBlock-select--error{{/error}}"
   multiple="{{#multiple}}multiple{{/multiple}}"
 {{/multiple}}
 >
-  Options
+  
+    
+  {{{children}}}
+  
+  
 </select>
   
 

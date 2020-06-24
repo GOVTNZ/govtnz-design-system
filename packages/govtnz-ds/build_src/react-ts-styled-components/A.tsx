@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 type Props = {
-  isMuted?: boolean;
   className?: any;
   href: string;
   rel?: string;
@@ -12,53 +11,32 @@ type Props = {
 };
 
 const StyledA = styled.a`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @media print {
     font-family: sans-serif;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   :link {
-    color: #005ea5;
+    color: g-theme-link-color;
   }
   :visited {
-    color: #4c2c92;
+    color: g-theme-link-visited-color;
   }
   :hover {
-    color: #2b8cc4;
-  }
-  :active {
-    color: #2b8cc4;
+    color: g-theme-link-hover-color;
   }
   :focus {
-    color: #0b0c0c;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active {
-    color: #6f777b;
-  }
-  :focus {
-    color: #0b0c0c;
+    color: g-theme-link-focus-color;
   }
 `;
 
-const A = ({
-  isMuted,
-  className,
-  href,
-  rel,
-  target,
-  onClick,
-  children
-}: Props) => (
+const A = ({ className, href, rel, target, onClick, children }: Props) => (
   <StyledA
-    isMuted={isMuted}
     className={className}
     href={href}
     rel={rel}

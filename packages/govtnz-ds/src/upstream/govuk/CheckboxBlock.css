@@ -1,10 +1,10 @@
 .g-checkboxBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid #b10e1e;
+  border-left: 5px solid g-theme-error-border-color;
 }
 
 .g-checkboxBlock-error-message {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -13,7 +13,7 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
 }
 
 @media print {
@@ -37,7 +37,7 @@
 }
 
 .g-checkboxes__hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -45,7 +45,7 @@
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 
 @media print {
@@ -73,25 +73,25 @@
 }
 
 .g-checkboxes__label {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
 }
 
 @media print {
   .g-checkboxes__label {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 
 .g-checkboxes__item {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -166,7 +166,7 @@
   width: 40px;
   height: 40px;
   border: 2px solid currentColor;
-  background: transparent;
+  background-color: g-theme-form-background-color;
 }
 
 .g-checkboxes__input + .g-checkboxes__label::after {
@@ -190,7 +190,7 @@
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #b53cde;
+  box-shadow: 0 0 0 3px g-theme-focus-ring-color;
 }
 
 .g-checkboxes__input:checked + .g-checkboxes__label::after,

@@ -1,12 +1,11 @@
 import React from "react";
 
 type Props = {
-  numbered?: boolean;
   children?: React.ReactNode;
 };
 
-const Ol = ({ numbered, children }: Props) => (
-  <ol className={`g-list${numbered ? " g-list--number" : ""}`}>
+const Ol = ({ children }: Props) => (
+  <ol className="g-ol">
     {children !== undefined ? (
       children
     ) : (

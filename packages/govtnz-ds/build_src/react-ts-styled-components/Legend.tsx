@@ -6,13 +6,13 @@ type Props = {
 };
 
 const StyledLegend = styled.legend`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-color;
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -32,7 +32,7 @@ const StyledLegend = styled.legend`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;

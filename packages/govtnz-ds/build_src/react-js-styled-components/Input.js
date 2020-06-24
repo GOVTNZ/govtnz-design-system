@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledInput = styled.input`font-family: Arial, sans-serif;
+const StyledInput = styled.input`font-family: g-theme-font-family;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 font-weight: 400;
@@ -12,11 +12,12 @@ width: 100%;
 height: 40px;
 margin-top: 0;
 padding: 0.5rem;
-border: 1px solid #2a2a2a;
+border: 1px solid g-theme-form-border-color;
 border-radius: 0;
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+background-color: g-theme-form-background-color;
 @media print{
 font-family: sans-serif;;
 }
@@ -29,7 +30,7 @@ font-size: 14pt;
 line-height: 1.15;;
 }
 :focus{
-outline: 3px solid #b53cde;
+outline: 3px solid g-theme-focus-ring-color;
 outline-offset: 0;
 }
 ::-webkit-outer-spin-button,::-webkit-inner-spin-button{
@@ -39,7 +40,7 @@ margin: 0;
 ${props =>
   props.error &&
   styled.css`
-    border: 1px solid #b10e1e;
+    border: 1px solid g-theme-error-border-color;
   `}
 ${props =>
   props.width === "30" &&

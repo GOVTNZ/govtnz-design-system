@@ -1,17 +1,12 @@
 import React from "react";
 
 type Props = {
-  bulleted?: boolean;
   spacing?: boolean;
   children?: React.ReactNode;
 };
 
-const Ul = ({ bulleted, spacing, children }: Props) => (
-  <ul
-    className={`g-list${bulleted ? " g-list--bullet" : ""}${
-      spacing ? " g-list--spacing" : ""
-    }`}
-  >
+const Ul = ({ spacing, children }: Props) => (
+  <ul className={`g-ul${spacing ? " g-list--spacing" : ""}`}>
     {children !== undefined ? (
       children
     ) : (

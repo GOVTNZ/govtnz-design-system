@@ -15,7 +15,7 @@ const StyledNav = styled.nav`
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: #2a2a2a;
+  background-color: g-theme-color;
   margin: 0px -1rem;
   @media only screen and (min-width: 48em) {
     margin: 0px;
@@ -29,7 +29,7 @@ const StyledButton = styled.button`
   top: 3px;
   right: 3px;
   background: transparent;
-  color: #ffffff;
+  color: g-theme-inverted-color;
   font-size: 16px;
   display: none;
   padding: 1em;
@@ -39,13 +39,13 @@ const StyledButton = styled.button`
     display: none;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
   }
 `;
 
 const StyledSvg = styled.svg`
   display: inline-block;
-  color: #24a882;
+  color: g-theme-inverted-menu-button-color;
   transition: transform 0.15s;
   vertical-align: middle;
   margin-left: 0.2em;

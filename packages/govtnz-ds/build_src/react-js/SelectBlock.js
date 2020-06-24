@@ -9,7 +9,8 @@ const SelectBlock = ({
   required,
   multiple,
   onChange,
-  ref
+  ref,
+  children
 }) => (
   <div className={errorId ? "g-form-group--error" : ""}>
     <label className="g-selectBlock-label" htmlFor={selectId}>
@@ -30,7 +31,13 @@ const SelectBlock = ({
       onChange={onChange}
       ref={ref}
     >
-      Options
+      {children !== undefined ? (
+        children
+      ) : (
+        <React.Fragment>
+          <option>Options</option>
+        </React.Fragment>
+      )}
     </select>
   </div>
 );

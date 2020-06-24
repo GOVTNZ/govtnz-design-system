@@ -11,7 +11,7 @@ type Props = {
 };
 
 const StyledButton = styled.button<Pick<Props, "level">>`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
@@ -26,9 +26,9 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   padding: 16px;
   border: 2px solid transparent;
   border-radius: 4px;
-  color: #ffffff;
-  background-color: #00823b;
-  box-shadow: 0 2px 0 0 #2a2a2a;
+  color: g-theme-button-color;
+  background-color: g-theme-button-background-color;
+  box-shadow: 0 2px 0 0 g-theme-button-box-shadow-color;
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -45,7 +45,7 @@ const StyledButton = styled.button<Pick<Props, "level">>`
     line-height: 19px;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   @media (min-width: 40.0625em) {
@@ -58,7 +58,7 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   :visited,
   :active,
   :hover {
-    color: #ffffff;
+    color: g-theme-button-color;
     text-decoration: none;
   }
   ::-moz-focus-inner {
@@ -67,7 +67,7 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   }
   :hover,
   :focus {
-    background-color: #00692f;
+    background-color: g-theme-button-hover-background-color;
   }
   :active {
     top: 2px;
@@ -87,10 +87,10 @@ const StyledButton = styled.button<Pick<Props, "level">>`
     top: -4px;
   }
   opacity: 0.5;
-  background: #00823b;
+  background-color: g-theme-button-background-color;
   :hover,
   :hover {
-    background-color: #00823b;
+    background-color: g-theme-button-background-color;
     cursor: default;
   }
   :focus,
@@ -101,10 +101,10 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   padding-bottom: 16px;
   margin-top: 0px;
   opacity: 0.5;
-  background: #078766;
+  background: g-theme-button-disabled-background-color;
   :hover,
   :hover {
-    background-color: #078766;
+    background-color: g-theme-button-disabled-background-color;
     cursor: default;
   }
   :focus,
@@ -114,41 +114,41 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   :active,
   :active {
     top: 0;
-    box-shadow: 0 2px 0 #003418;
+    box-shadow: 0 2px 0 g-theme-button-active-box-shadow;
   }
   ${props =>
     props.level === "secondary" &&
     styled.css`
-      background-color: #d3d3d3;
-      box-shadow: 0 2px 0 #2a2a2a;
+      background-color: g-theme-button-secondary-background-color;
+      box-shadow: 0 2px 0 g-theme-button-box-shadow-color;
     `}
   :link,:visited,:active,:hover {
     ${props =>
       props.level === "secondary" &&
       styled.css`
-        color: #0b0c0c;
+        color: g-theme-button-secondary-color;
       `}
   }
   :hover,
   :focus {
-    background-color: #b2b2b2;
+    background-color: g-theme-button-secondary-hover-background-color;
   }
   ${props =>
     props.level === "warning" &&
     styled.css`
-      background-color: #b10e1e;
-      box-shadow: 0 2px 0 #2a2a2a;
+      background-color: g-theme-error-background-color;
+      box-shadow: 0 2px 0 g-theme-button-box-shadow-color;
     `}
   :link,:visited,:active,:hover {
     ${props =>
       props.level === "warning" &&
       styled.css`
-        color: #ffffff;
+        color: g-theme-button-color;
       `}
   }
   :hover,
   :focus {
-    background-color: #900815;
+    background-color: g-theme-button-warning-background-color;
   }
 `;
 

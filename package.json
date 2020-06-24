@@ -4,11 +4,12 @@
     "packages/*"
   ],
   "scripts": {
+    "build:metatemplate": "yarn workspace @springload/metatemplate build",
     "build:release": "yarn workspace @govtnz/ds build:release && yarn workspace @govtnz/ds build:compile",
     "build:website": "yarn workspace @govtnz/ds-website compile-markdown && yarn workspace @govtnz/ds-website build",
     "build:website:compile-markdown": "yarn workspace @govtnz/ds-website compile-markdown",
     "build:website:validate-build": "yarn workspace @govtnz/ds-website validate-build",
-    "build": "yarn build:release && yarn build:website:compile-markdown && yarn build:website",
+    "build": "yarn build:metatemplate && yarn build:release && yarn build:website:compile-markdown && yarn build:website",
     "develop:website": "yarn workspace @govtnz/ds-website run build && yarn workspace @govtnz/ds-website run serve",
     "test": "yarn workspace @govtnz/ds test",
     "serve": "yarn workspace @govtnz/ds-website serve",

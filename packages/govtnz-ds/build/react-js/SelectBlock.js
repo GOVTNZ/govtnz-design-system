@@ -18,7 +18,8 @@ var SelectBlock = function SelectBlock(_ref) {
       required = _ref.required,
       multiple = _ref.multiple,
       onChange = _ref.onChange,
-      ref = _ref.ref;
+      ref = _ref.ref,
+      children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: errorId ? "g-form-group--error" : ""
   }, /*#__PURE__*/_react["default"].createElement("label", {
@@ -32,7 +33,7 @@ var SelectBlock = function SelectBlock(_ref) {
     multiple: multiple,
     onChange: onChange,
     ref: ref
-  }, "Options"));
+  }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("option", null, "Options"))));
 };
 
 var _default = SelectBlock;

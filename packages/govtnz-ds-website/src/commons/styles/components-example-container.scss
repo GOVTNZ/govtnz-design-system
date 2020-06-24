@@ -53,12 +53,15 @@
   padding: $spacing-32 $spacing-32 $spacing-32;
 }
 
-.example__container + .g-heading-m,
-.example__container + .g-heading-s {
-  margin-top: $spacing-64 !important; // Override css from .g-heading-m/s
+.example__container .g-heading-m,
+.example__container .g-heading-s,
+.example__container .g-dswebsite-font {
+  --g-theme-font-family: National2, Arial, sans-serif;
 }
 
-.example__details {
+.example__container .g-heading-m,
+.example__container .g-heading-s {
+  margin-top: $spacing-64 !important; // Override css from .g-heading-m/s
 }
 
 [class^='g-heading'] + .example__container {

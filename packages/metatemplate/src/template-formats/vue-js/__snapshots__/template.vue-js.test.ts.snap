@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`vue-js Snapshots vue-js: complex make-usage nested mt-if 1`] = `
+Object {
+  "vue-js": "<template>
+  <c-alert mode=\\"live\\" level=\\"info\\" headingId=\\"heading1\\">
+    <c-h2 id=\\"heading1\\">
+      Info: You are alive
+    </c-h2>
+    <c-p>
+      Some text describing what's going on 1.
+    </c-p>
+  </c-alert>
+  <c-alert level=\\"warning\\" headingId=\\"heading2\\">
+    <c-h2 id=\\"heading2\\">
+      Warning: You are alive
+    </c-h2>
+    <c-p>
+      Some text describing what's going on 2.
+    </c-p>
+  </c-alert>
+  <c-alert level=\\"success\\" headingId=\\"heading3\\">
+    <c-h2 id=\\"heading3\\">
+      Success: You are alive
+    </c-h2>
+    <c-p>
+      Some text describing what's going on 3.
+    </c-p>
+  </c-alert>
+  <c-alert level=\\"error\\" headingId=\\"heading4\\">
+    <c-h2 id=\\"heading4\\">
+      Error: You are alive
+    </c-h2>
+    <c-ul bulleted>
+      <li>
+        <a href=\\"#\\">
+          Error in this field 4
+        </a>
+      </li>
+    </c-ul>
+  </c-alert>
+</template>
+<script>
+import Vue from \\"vue\\";
+import Alert from \\"@govtnz/ds/build/vue-js/Alert.vue\\";
+import H2 from \\"@govtnz/ds/build/vue-js/H2.vue\\";
+import P from \\"@govtnz/ds/build/vue-js/P.vue\\";
+import Ul from \\"@govtnz/ds/build/vue-js/Ul.vue\\";
+
+export default {
+  components: { \\"c-alert\\": Alert, \\"c-h2\\": H2, \\"c-p\\": P, \\"c-ul\\": Ul }
+};
+</script>
+",
+}
+`;
+
+exports[`vue-js Snapshots vue-js: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "vue-js/children.vue": "<template>
+  <div v-bind:class=\\"computed__class\\" />
+
+  <label class=\\"g-selectBlock-label\\" v-bind:for=\\"selectId\\">
+    <slot name=\\"label\\"></slot>
+  </label>
+
+  <select
+    v-bind:class=\\"computed__class2\\"
+    v-bind:id=\\"selectId\\"
+    v-bind:name=\\"name\\"
+    v-bind:multiple=\\"multiple\\"
+  >
+    Options
+  </select>
+</template>
+<script>
+import Vue from \\"vue\\";
+
+export default Vue.extend({
+  props: {
+    errorId: { type: Boolean, default: false, required: false },
+    selectId: { type: String, required: false },
+    label: { required: false, default: \\"Example label text\\" },
+    error: { type: Boolean, default: false, required: true },
+    name: { type: String, required: true },
+    multiple: { type: Boolean, default: false, required: false }
+  },
+  computed: {
+    computed__class() {
+      return this.errorId ? \\"g-form-group--error\\" : \\"\\";
+    },
+    computed__class2() {
+      return (
+        \\"g-selectBlock-select\\" +
+        (this.error ? \\" g-selectBlock-select--error\\" : \\"\\")
+      );
+    }
+  }
+});
+</script>
+",
+    },
+    "formatId": "vue-js",
+  },
+]
+`;
+
+exports[`vue-js Snapshots vue-js: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "vue-js/children.vue": "<template>
+  <div v-bind:class=\\"computed__class\\" />
+
+  <label class=\\"g-selectBlock-label\\" v-bind:for=\\"selectId\\">
+    <slot name=\\"label\\"></slot>
+  </label>
+
+  <select
+    v-bind:class=\\"computed__class2\\"
+    v-bind:id=\\"selectId\\"
+    v-bind:name=\\"name\\"
+    v-bind:multiple=\\"multiple\\"
+  >
+    Options
+  </select>
+</template>
+<script>
+import Vue from \\"vue\\";
+
+export default Vue.extend({
+  props: {
+    errorId: { type: Boolean, default: false, required: false },
+    selectId: { type: String, required: false },
+    label: { required: false, default: \\"Example label text\\" },
+    error: { type: Boolean, default: false, required: true },
+    name: { type: String, required: true },
+    multiple: { type: Boolean, default: false, required: false }
+  },
+  computed: {
+    computed__class() {
+      return this.errorId ? \\"g-form-group--error\\" : \\"\\";
+    },
+    computed__class2() {
+      return (
+        \\"g-selectBlock-select\\" +
+        (this.error ? \\" g-selectBlock-select--error\\" : \\"\\")
+      );
+    }
+  }
+});
+</script>
+",
+    },
+    "formatId": "vue-js",
+  },
+]
+`;

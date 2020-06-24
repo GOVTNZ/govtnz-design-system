@@ -40,12 +40,13 @@
 
 .g-alert--error::before {
   background-color: #b10e1e;
-  background-color: var(--g-theme-alert-error-border-color, #b10e1e);
+  background-color: var(--g-theme-error-border-color, #b10e1e);
 }
 
 .g-alert__icon {
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: #ffffff;
+  fill: var(--g-theme-alert-icon-color, #ffffff);
 }

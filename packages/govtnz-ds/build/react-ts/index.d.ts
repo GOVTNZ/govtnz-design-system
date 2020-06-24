@@ -1,6 +1,3 @@
-export declare const FlexColumn: () => Promise<typeof import("./FlexColumn")>;
-export declare const FlexContainer: () => Promise<typeof import("./FlexContainer")>;
-export declare const FlexRow: () => Promise<typeof import("./FlexRow")>;
 export declare const Alert: () => Promise<typeof import("./Alert")>;
 export declare const Footer: () => Promise<typeof import("./Footer")>;
 export declare const FooterLink: () => Promise<typeof import("./FooterLink")>;
@@ -10,6 +7,9 @@ export declare const MainNavLink: () => Promise<typeof import("./MainNavLink")>;
 export declare const MainNav: () => Promise<typeof import("./MainNav")>;
 export declare const NzgLogo: () => Promise<typeof import("./NzgLogo")>;
 export declare const Subfooter: () => Promise<typeof import("./Subfooter")>;
+export declare const FlexColumn: () => Promise<typeof import("./FlexColumn")>;
+export declare const FlexContainer: () => Promise<typeof import("./FlexContainer")>;
+export declare const FlexRow: () => Promise<typeof import("./FlexRow")>;
 export declare const A: () => Promise<typeof import("./A")>;
 export declare const Button: () => Promise<typeof import("./Button")>;
 export declare const CaptionL: () => Promise<typeof import("./CaptionL")>;

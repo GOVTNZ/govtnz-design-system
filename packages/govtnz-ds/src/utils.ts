@@ -101,39 +101,6 @@ export const gc = () => {
   }
 };
 
-type TimingsData = {
-  [numberOfJobs: number]: {
-    [numberOfWorkers: number]: number;
-  };
-};
-
-const mTTimingPath = path.join(os.tmpdir(), 'metatemplate-timings.json');
-
-export const getTimingBenchmarks = async (): Promise<TimingsData> => {
-  let timings: TimingsData | undefined;
-  try {
-    const timingsData: string = (
-      await fs.promises.readFile(mTTimingPath, {
-        encoding: 'utf-8'
-      })
-    ).toString();
-    if (timingsData && timingsData.includes('{')) {
-      timings = JSON.parse(timingsData);
-    } else {
-      timings = {};
-    }
-  } catch (e) {
-    // console.info(e);
-    timings = {};
-  }
-  return timings;
-};
-
-export const setTimingBenchmarks = async (timings: TimingsData) => {
-  const timingsJSON = JSON.stringify(timings, null, 2);
-  await fs.promises.writeFile(mTTimingPath, timingsJSON, { encoding: 'utf-8' });
-};
-
 const getLocalTemplateDefinitionData = async (
   source: string,
   version: 'any' | string

@@ -31,7 +31,7 @@ const StyledLabel = styled.label`
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media (min-width: 40.0625em) {
@@ -41,13 +41,13 @@ const StyledLabel = styled.label`
 `;
 
 const StyledInput = styled.input`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -62,15 +62,15 @@ const StyledInput = styled.input`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-color;
   @media print {
     font-family: sans-serif;
   }
@@ -83,10 +83,10 @@ const StyledInput = styled.input`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
 `;

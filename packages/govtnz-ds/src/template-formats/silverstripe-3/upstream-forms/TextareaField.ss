@@ -1,1 +1,0 @@
-<textarea $AttributesHTML>$Value</textarea>

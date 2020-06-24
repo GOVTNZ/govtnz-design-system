@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledTextarea = styled.textarea`
   margin-bottom: 5px;
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -16,9 +16,10 @@ const StyledTextarea = styled.textarea`
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 1px solid #0b0c0c;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
+  background-color: g-theme-form-background-color;
   @media print {
     font-family: sans-serif;
   }
@@ -31,7 +32,7 @@ const StyledTextarea = styled.textarea`
     line-height: 1.25;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   @media (min-width: 40.0625em) {

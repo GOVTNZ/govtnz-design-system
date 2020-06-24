@@ -175,7 +175,8 @@
   height: 24px;
   border: 2px solid currentColor;
   border-radius: 50%;
-  background: transparent;
+  background-color: #ffffff;
+  background-color: var(--g-theme-form-background-color, #ffffff);
 }
 
 .g-radios--big .g-radios__input + .g-radios__label::before {

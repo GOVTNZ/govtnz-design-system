@@ -14,89 +14,6 @@ import '@govtnz/ds/build/css/FieldsetBlock.css';
 import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import GetInTouch from '../../components/GetInTouch';
 
-type Theme = {
-  'g-theme-font-family': string;
-  'g-theme-color-heading': string;
-  'g-theme-color-link': string;
-  'g-theme-color-black': string;
-  'g-theme-color-grey': string;
-  'g-theme-color-darkblue': string;
-  'g-theme-color-brand-1': string;
-  'g-theme-color-light-grey': string;
-  'g-theme-color-mid-grey': string;
-  'g-theme-color-white': string;
-  'g-theme-color-brand-2': string;
-  'g-theme-color-brand-3': string;
-  'g-theme-color-brand-4': string;
-  'g-theme-color-dark2': string;
-  'g-theme-color-dark3': string;
-  'g-theme-color-dark4': string;
-  'g-theme-color-dark5': string;
-  'g-theme-color-dark6': string;
-  'g-theme-color-dark7': string;
-  'g-theme-color-dark8': string;
-  'g-theme-color-dark9': string;
-  'g-theme-color-dark10': string;
-  'g-theme-color-dark11': string;
-  'g-theme-button-color': string;
-  'g-theme-button-color-hover-focus': string;
-  'g-theme-button-color-secondary': string;
-  'g-theme-button-color-secondary-hover-focus': string;
-  'g-theme-button-color-secondary-box-shadow': string;
-  'g-theme-button-color-warning': string;
-  'g-theme-button-color-warning-hover-focus': string;
-  'g-theme-button-color-warning-box-shadow': string;
-  'g-theme-heading-font-weight': string;
-};
-
-function getColour(offset: string): string {
-  return `#${offset}0${offset}0${offset}0`;
-}
-
-function getTheme(offset: string): Theme {
-  return {
-    'g-theme-font-family': offset ? 'sans-serif' : 'serif',
-    'g-theme-color-heading': getColour(offset),
-    'g-theme-color-link': getColour(offset),
-    'g-theme-color-black': getColour(offset),
-    'g-theme-color-grey': getColour(offset),
-    'g-theme-color-darkblue': getColour(offset),
-    'g-theme-color-brand-1': getColour(offset),
-    'g-theme-color-light-grey': getColour(offset),
-    'g-theme-color-mid-grey': getColour(offset),
-    'g-theme-color-white': getColour(offset),
-    'g-theme-color-brand-2': getColour(offset),
-    'g-theme-color-brand-3': getColour(offset),
-    'g-theme-color-brand-4': getColour(offset),
-    'g-theme-color-dark2': getColour(offset),
-    'g-theme-color-dark3': getColour(offset),
-    'g-theme-color-dark4': getColour(offset),
-    'g-theme-color-dark5': getColour(offset),
-    'g-theme-color-dark6': getColour(offset),
-    'g-theme-color-dark7': getColour(offset),
-    'g-theme-color-dark8': getColour(offset),
-    'g-theme-color-dark9': getColour(offset),
-    'g-theme-color-dark10': getColour(offset),
-    'g-theme-color-dark11': getColour(offset),
-    'g-theme-button-color': getColour(offset),
-    'g-theme-button-color-hover-focus': getColour(offset),
-    'g-theme-button-color-secondary': getColour(offset),
-    'g-theme-button-color-secondary-hover-focus': getColour(offset),
-    'g-theme-button-color-secondary-box-shadow': getColour(offset),
-    'g-theme-button-color-warning': getColour(offset),
-    'g-theme-button-color-warning-hover-focus': getColour(offset),
-    'g-theme-button-color-warning-box-shadow': getColour(offset),
-    'g-theme-heading-font-weight': getColour(offset),
-  };
-}
-
-const themes: Record<string, Theme> = {
-  black: getTheme('0'),
-  dark: getTheme('3'),
-  mid: getTheme('7'),
-  bright: getTheme('b'),
-} as const;
-
 const ThemesPage = (pageProps: PageRendererProps) => {
   const [theme, setTheme] = useState('black');
   const iframeRef = useRef<HTMLIFrameElement>();
@@ -132,13 +49,11 @@ const ThemesPage = (pageProps: PageRendererProps) => {
       return;
     }
 
-    const themeMap = themes[theme];
+    body.classList.remove('theme-default');
+    body.classList.remove('theme-light');
+    body.classList.remove('theme-dark');
 
-    Object.keys(themeMap).forEach((key: string) => {
-      body.style.setProperty(`--${key}`, themeMap[key]);
-    });
-
-    console.log(themeMap);
+    body.classList.add(theme);
   }, [theme]);
 
   return (
@@ -174,30 +89,23 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               >
                 <RadioBlock
                   label="Default"
-                  id="anyRadioId3334"
-                  name="where"
-                  value="black"
+                  id="radio1"
+                  name="theme"
+                  value="theme-default"
                   onChange={updateTheme}
                 />
                 <RadioBlock
-                  label="South Island"
-                  id="anyRadioId42344"
-                  name="where"
-                  value="dark"
+                  label="Light theme"
+                  id="radio2"
+                  name="theme"
+                  value="theme-light"
                   onChange={updateTheme}
                 />
                 <RadioBlock
-                  label="Stewart Island"
-                  id="anyRadioId5234"
-                  name="where"
-                  value="mid"
-                  onChange={updateTheme}
-                />
-                <RadioBlock
-                  label="Chatham Islands"
-                  id="anyRadioId6234"
-                  name="where"
-                  value="bright"
+                  label="Dark theme"
+                  id="radio3"
+                  name="theme"
+                  value="theme-dark"
                   onChange={updateTheme}
                 />
               </FieldsetBlock>

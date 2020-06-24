@@ -25,6 +25,7 @@ const StyledInput = styled.input`
   cursor: pointer;
   margin: 0;
   opacity: 0;
+  background-color: g-theme-form-background-color;
   :disabled {
     cursor: default;
   }

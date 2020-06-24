@@ -22,7 +22,13 @@ name="{{ name | escape('html_attr') }}"
 required="{% if required %}required{% endif %}"
 multiple="{% if multiple %}multiple{% endif %}"
 >
-  Options
+  
+    
+{% block children %}
+      <option>Options</option>
+    {% endblock %}
+  
+  
 </select>
   
 

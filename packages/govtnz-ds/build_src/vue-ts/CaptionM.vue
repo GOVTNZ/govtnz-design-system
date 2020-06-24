@@ -13,14 +13,14 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-caption-m {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
   display: block;
-  color: #6f777c;
+  color: g-theme-caption-color;
 }
 @media print {
   .g-caption-m {

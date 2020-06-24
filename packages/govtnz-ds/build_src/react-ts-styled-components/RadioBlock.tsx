@@ -18,7 +18,7 @@ type Props = {
 };
 
 const StyledDiv = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -70,13 +70,13 @@ const StyledInput = styled.input`
 `;
 
 const StyledLabel = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -91,7 +91,7 @@ const StyledLabel = styled.label`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   display: inline-block;
   margin-bottom: 0;
@@ -110,7 +110,7 @@ const StyledLabel = styled.label`
     height: 24px;
     border: 2px solid currentColor;
     border-radius: 50%;
-    background: transparent;
+    background-color: g-theme-form-background-color;
   }
   ::before {
     width: 40px;
@@ -137,7 +137,7 @@ const StyledLabel = styled.label`
   :focus + .g-radios__label::before {
     outline: 3px solid transparent;
     outline-offset: 3px;
-    box-shadow: 0 0 0 4px #b53cde;
+    box-shadow: 0 0 0 4px g-theme-focus-ring-color;
   }
   :checked + .g-radios__label::after,
   :checked + .g-radios__label::after {
@@ -150,7 +150,7 @@ const StyledLabel = styled.label`
 `;
 
 const StyledDiv2 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -158,7 +158,7 @@ const StyledDiv2 = styled.div`
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
   }

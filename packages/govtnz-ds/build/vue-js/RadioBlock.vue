@@ -45,7 +45,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-radios__hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -53,7 +53,7 @@ export default Vue.extend({
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 @media print {
   .g-radios__hint {
@@ -76,13 +76,13 @@ export default Vue.extend({
   margin-top: -5px;
 }
 .g-radios__label {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
 }
@@ -105,7 +105,7 @@ export default Vue.extend({
 }
 @media print {
   .g-radios__label {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 .g-radios__hint {
@@ -118,7 +118,7 @@ export default Vue.extend({
   padding-left: 15px;
 }
 .g-radios__item {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -193,7 +193,7 @@ export default Vue.extend({
   height: 24px;
   border: 2px solid currentColor;
   border-radius: 50%;
-  background: transparent;
+  background-color: g-theme-form-background-color;
 }
 .g-radios--big .g-radios__input + .g-radios__label::before {
   width: 40px;
@@ -220,7 +220,7 @@ export default Vue.extend({
 .g-radios__input.\:focus + .g-radios__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 4px #b53cde;
+  box-shadow: 0 0 0 4px g-theme-focus-ring-color;
 }
 .g-radios__input:checked + .g-radios__label::after,
 .g-radios__input.\:checked + .g-radios__label::after {

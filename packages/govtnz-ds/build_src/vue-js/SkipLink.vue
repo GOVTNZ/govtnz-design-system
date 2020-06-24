@@ -25,20 +25,17 @@ export default Vue.extend({
   font-weight: 700;
 }
 .g-skipLink-error-summary__list a:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
 .g-skipLink-error-summary__list a:link,
 .g-skipLink-error-summary__list a:visited,
 .g-skipLink-error-summary__list a:hover,
 .g-skipLink-error-summary__list a:active {
-  color: #b10e1e;
-}
-.g-skipLink-error-summary__list a:focus {
-  color: #0b0c0c;
+  color: g-theme-error-color;
 }
 .g-skipLink-header__navigation-item a {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -63,9 +60,6 @@ export default Vue.extend({
     line-height: 1.2;
   }
 }
-.g-skipLink-header__navigation-item--active a:focus {
-  color: #0b0c0c;
-}
 .g-skip-link {
   position: absolute !important;
   width: 1px !important;
@@ -76,7 +70,7 @@ export default Vue.extend({
   -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
   white-space: nowrap !important;
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.875rem;
@@ -102,16 +96,9 @@ export default Vue.extend({
   }
 }
 .g-skip-link:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
-  background-color: #b53cde;
-}
-.g-skip-link:link,
-.g-skip-link:visited,
-.g-skip-link:hover,
-.g-skip-link:active,
-.g-skip-link:focus {
-  color: #0b0c0c;
+  background-color: g-theme-focus-ring-color;
 }
 @media print {
   .g-skip-link:link,
@@ -119,7 +106,7 @@ export default Vue.extend({
   .g-skip-link:hover,
   .g-skip-link:active,
   .g-skip-link:focus {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media (min-width: 40.0625em) {

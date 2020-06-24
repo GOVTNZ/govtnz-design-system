@@ -18,7 +18,7 @@ const StyledDiv = styled.div`
     props.errorId &&
     styled.css`
       padding-left: 15px;
-      border-left: 5px solid #b10e1e;
+      border-left: 5px solid g-theme-error-border-color;
     `}
   padding: 0;
   border: 0;
@@ -44,7 +44,7 @@ const StyledLegend = styled.legend`
 `;
 
 const StyledSpan = styled.span`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -52,7 +52,7 @@ const StyledSpan = styled.span`
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
   }
@@ -69,7 +69,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledSpan2 = styled.span`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -78,7 +78,7 @@ const StyledSpan2 = styled.span`
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
   @media print {
     font-family: sans-serif;
   }
@@ -139,13 +139,13 @@ const StyledDiv4 = styled.div`
 `;
 
 const StyledLabel = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -160,14 +160,14 @@ const StyledLabel = styled.label`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   display: block;
   margin-top: 0px;
 `;
 
 const StyledInput = styled.input`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -178,11 +178,12 @@ const StyledInput = styled.input`
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: g-theme-form-background-color;
   @media print {
     font-family: sans-serif;
   }
@@ -195,7 +196,7 @@ const StyledInput = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,
@@ -206,7 +207,7 @@ const StyledInput = styled.input`
   ${props =>
     props.error &&
     styled.css`
-      border: 1px solid #b10e1e;
+      border: 1px solid g-theme-error-border-color;
     `}
   max-width: 5.4ex;
   margin-bottom: 0;
@@ -240,13 +241,13 @@ const StyledDiv6 = styled.div`
 `;
 
 const StyledLabel2 = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -261,14 +262,14 @@ const StyledLabel2 = styled.label`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   display: block;
   margin-top: 0px;
 `;
 
 const StyledInput2 = styled.input`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -279,11 +280,12 @@ const StyledInput2 = styled.input`
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: g-theme-form-background-color;
   @media print {
     font-family: sans-serif;
   }
@@ -296,7 +298,7 @@ const StyledInput2 = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,
@@ -307,7 +309,7 @@ const StyledInput2 = styled.input`
   ${props =>
     props.error &&
     styled.css`
-      border: 1px solid #b10e1e;
+      border: 1px solid g-theme-error-border-color;
     `}
   max-width: 5.4ex;
   margin-bottom: 0;
@@ -341,13 +343,13 @@ const StyledDiv8 = styled.div`
 `;
 
 const StyledLabel3 = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -362,14 +364,14 @@ const StyledLabel3 = styled.label`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   display: block;
   margin-top: 0px;
 `;
 
 const StyledInput3 = styled.input`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -380,11 +382,12 @@ const StyledInput3 = styled.input`
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: g-theme-form-background-color;
   @media print {
     font-family: sans-serif;
   }
@@ -397,7 +400,7 @@ const StyledInput3 = styled.input`
     line-height: 1.15;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   ::-webkit-outer-spin-button,
@@ -408,7 +411,7 @@ const StyledInput3 = styled.input`
   ${props =>
     props.error &&
     styled.css`
-      border: 1px solid #b10e1e;
+      border: 1px solid g-theme-error-border-color;
     `}
   max-width: 9ex;
   margin-bottom: 0;

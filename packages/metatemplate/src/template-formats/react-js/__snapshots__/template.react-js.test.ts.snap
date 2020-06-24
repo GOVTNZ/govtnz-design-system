@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`React JS Snapshots react-js: complex make-usage nested mt-if 1`] = `
+Object {
+  "react-js": "import React from \\"react\\";
+import Alert from \\"@govtnz/ds/build/react-js/Alert\\";
+import \\"@govtnz/ds/build/css/Alert.css\\"; // or @govtnz/ds/build/scss/Alert.scss
+import H2 from \\"@govtnz/ds/build/react-js/H2\\";
+import \\"@govtnz/ds/build/css/H2.css\\"; // or @govtnz/ds/build/scss/H2.scss
+import P from \\"@govtnz/ds/build/react-js/P\\";
+import \\"@govtnz/ds/build/css/P.css\\"; // or @govtnz/ds/build/scss/P.scss
+import Ul from \\"@govtnz/ds/build/react-js/Ul\\";
+import \\"@govtnz/ds/build/css/Ul.css\\"; // or @govtnz/ds/build/scss/Ul.scss
+
+export default () => (
+  <React.Fragment>
+    <Alert mode=\\"live\\" level=\\"info\\" headingId=\\"heading1\\">
+      <H2 id=\\"heading1\\">Info: You are alive</H2>
+      <P>Some text describing what's going on 1.</P>
+    </Alert>
+    <Alert level=\\"warning\\" headingId=\\"heading2\\">
+      <H2 id=\\"heading2\\">Warning: You are alive</H2>
+      <P>Some text describing what's going on 2.</P>
+    </Alert>
+    <Alert level=\\"success\\" headingId=\\"heading3\\">
+      <H2 id=\\"heading3\\">Success: You are alive</H2>
+      <P>Some text describing what's going on 3.</P>
+    </Alert>
+    <Alert level=\\"error\\" headingId=\\"heading4\\">
+      <H2 id=\\"heading4\\">Error: You are alive</H2>
+      <Ul bulleted>
+        <li>
+          <a href=\\"#\\">Error in this field 4</a>
+        </li>
+      </Ul>
+    </Alert>
+  </React.Fragment>
+);
+",
+}
+`;
+
+exports[`React JS Snapshots react-js: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-js/children.js": "import React from \\"react\\";
+
+const Children = ({
+  errorId,
+  selectId,
+  label,
+  error,
+  name,
+  multiple,
+  onChange,
+  ref
+}) => (
+  <React.Fragment>
+    <div className={errorId ? \\"g-form-group--error\\" : \\"\\"} />
+    <label className=\\"g-selectBlock-label\\" htmlFor={selectId}>
+      {label !== undefined ? (
+        label
+      ) : (
+        <React.Fragment>Example label text</React.Fragment>
+      )}
+    </label>
+    <select
+      className={\`g-selectBlock-select\${
+        error ? \\" g-selectBlock-select--error\\" : \\"\\"
+      }\`}
+      id={selectId}
+      name={name}
+      multiple={multiple}
+      onChange={onChange}
+      ref={ref}
+    >
+      Options
+    </select>
+  </React.Fragment>
+);
+
+export default Children;
+",
+    },
+    "formatId": "react-js",
+  },
+]
+`;
+
+exports[`React JS Snapshots react-js: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "react-js/children.js": "import React from \\"react\\";
+
+const Children = ({
+  errorId,
+  selectId,
+  label,
+  error,
+  name,
+  multiple,
+  onChange,
+  ref
+}) => (
+  <React.Fragment>
+    <div className={errorId ? \\"g-form-group--error\\" : \\"\\"} />
+    <label className=\\"g-selectBlock-label\\" htmlFor={selectId}>
+      {label !== undefined ? (
+        label
+      ) : (
+        <React.Fragment>Example label text</React.Fragment>
+      )}
+    </label>
+    <select
+      className={\`g-selectBlock-select\${
+        error ? \\" g-selectBlock-select--error\\" : \\"\\"
+      }\`}
+      id={selectId}
+      name={name}
+      multiple={multiple}
+      onChange={onChange}
+      ref={ref}
+    >
+      Options
+    </select>
+  </React.Fragment>
+);
+
+export default Children;
+",
+    },
+    "formatId": "react-js",
+  },
+]
+`;

@@ -84,14 +84,14 @@ export default Vue.extend({
 }
 .g-textareaBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid #b10e1e;
+  border-left: 5px solid g-theme-error-border-color;
 }
 .g-textareaBlock-form-group--error .g-textareaBlock-form-group {
   padding: 0;
   border: 0;
 }
 .g-textareaBlock-error-message {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -100,7 +100,7 @@ export default Vue.extend({
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
 }
 @media print {
   .g-textareaBlock-error-message {
@@ -116,7 +116,7 @@ export default Vue.extend({
   }
 }
 .g-textareaBlock-hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -124,7 +124,7 @@ export default Vue.extend({
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 @media print {
   .g-textareaBlock-hint {
@@ -143,13 +143,13 @@ export default Vue.extend({
   margin-top: -5px;
 }
 .g-textareaBlock-label {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
 }
@@ -158,7 +158,7 @@ export default Vue.extend({
     font-family: sans-serif;
     font-size: 14pt;
     line-height: 1.15;
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media (min-width: 40.0625em) {
@@ -171,7 +171,7 @@ export default Vue.extend({
   margin-bottom: 5px;
 }
 .g-textareaBlock-textarea {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -184,9 +184,10 @@ export default Vue.extend({
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 1px solid #0b0c0c;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
+  background-color: g-theme-form-background-color;
 }
 @media print {
   .g-textareaBlock-textarea {
@@ -206,7 +207,7 @@ export default Vue.extend({
   }
 }
 .g-textareaBlock-textarea:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
 @media (min-width: 40.0625em) {

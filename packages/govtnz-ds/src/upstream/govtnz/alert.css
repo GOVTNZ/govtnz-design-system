@@ -1,14 +1,14 @@
 .g-alert {
   position: relative;
 
-  background: #f4f4f4;
-  color: #2a2a2a;
+  background: g-theme-alert-background-color;
+  color: g-theme-color;
 
   margin-bottom: 1em;
   padding: 24px 32px 24px 96px;
 
   border-radius: 4px;
-  border: solid 1px #d3d3d3;
+  border: solid 1px g-theme-alert-border-color;
 }
 
 .g-alert::before {
@@ -24,25 +24,24 @@
 }
 
 .g-alert--info::before {
-  background-color: #1f1bfb;
+  background-color: g-theme-alert-info-border-color;
 }
 
 .g-alert--warning::before {
-  background-color: #d47500;
+  background-color: g-theme-alert-warning-border-color;
 }
 
 .g-alert--success::before {
-  background-color: #088a20;
+  background-color: g-theme-alert-success-border-color;
 }
 
 .g-alert--error::before {
-  background-color: #b10e1e;
+  background-color: g-theme-error-border-color;
 }
 
 .g-alert__icon {
   position: absolute;
   left: 16px;
   top: 24px;
-
-  fill: white;
+  fill: g-theme-alert-icon-color;
 }

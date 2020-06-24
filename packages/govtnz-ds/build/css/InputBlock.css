@@ -15,7 +15,7 @@
 .g-inputBlock-form-group--error {
   padding-left: 15px;
   border-left: 5px solid #b10e1e;
-  border-left: 5px solid var(--g-theme-alert-error-border-color, #b10e1e);
+  border-left: 5px solid var(--g-theme-error-border-color, #b10e1e);
 }
 
 .g-inputBlock-form-group--error .g-inputBlock-form-group {
@@ -35,7 +35,7 @@
   margin-bottom: 15px;
   clear: both;
   color: #b10e1e;
-  color: var(--g-theme-alert-error-border-color, #b10e1e);
+  color: var(--g-theme-error-color, #b10e1e);
 }
 
 @media print {
@@ -151,11 +151,13 @@
   margin-top: 0;
   padding: 0.5rem;
   border: 1px solid #2a2a2a;
-  border: 1px solid var(--g-theme-color, #2a2a2a);
+  border: 1px solid var(--g-theme-form-border-color, #2a2a2a);
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: #ffffff;
+  background-color: var(--g-theme-form-background-color, #ffffff);
 }
 
 @media print {
@@ -192,7 +194,7 @@
 
 .g-inputBlock-input--error {
   border: 1px solid #b10e1e;
-  border: 1px solid var(--g-theme-alert-error-border-color, #b10e1e);
+  border: 1px solid var(--g-theme-error-border-color, #b10e1e);
 }
 
 .g-inputBlock-input--width-30 {

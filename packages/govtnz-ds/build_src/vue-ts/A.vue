@@ -13,7 +13,6 @@ import Vue from "vue";
 
 export default Vue.extend({
   props: {
-    isMuted: { type: Boolean, default: false, required: false },
     class: { type: String, required: false },
     href: { type: String, required: true },
     rel: { type: String, required: false },
@@ -22,14 +21,14 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return "g-link " + (this.isMuted ? " g-link--muted" : "") + this.class;
+      return "g-link " + this.class;
     }
   }
 });
 </script>
 <style scoped>
 .g-link {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,31 +38,19 @@ export default Vue.extend({
   }
 }
 .g-link:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
 .g-link:link {
-  color: #005ea5;
+  color: g-theme-link-color;
 }
 .g-link:visited {
-  color: #4c2c92;
+  color: g-theme-link-visited-color;
 }
 .g-link:hover {
-  color: #2b8cc4;
-}
-.g-link:active {
-  color: #2b8cc4;
+  color: g-theme-link-hover-color;
 }
 .g-link:focus {
-  color: #0b0c0c;
-}
-.g-link--muted:link,
-.g-link--muted:visited,
-.g-link--muted:hover,
-.g-link--muted:active {
-  color: #6f777b;
-}
-.g-link--muted:focus {
-  color: #0b0c0c;
+  color: g-theme-link-focus-color;
 }
 </style>

@@ -5,11 +5,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "xlarge" &&
     styled.css`
-      color: #2a2a2a;
-      font-family: Arial, sans-serif;
+      color: g-theme-heading-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 3rem;
       line-height: 1.125;
       display: block;
@@ -20,7 +20,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "xlarge" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {
@@ -56,11 +56,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "large" &&
     styled.css`
-      color: #2a2a2a;
-      font-family: Arial, sans-serif;
+      color: g-theme-heading-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 2rem;
       line-height: 1.2;
       display: block;
@@ -71,7 +71,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "large" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {
@@ -107,11 +107,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "medium" &&
     styled.css`
-      color: #0b0c0c;
-      font-family: Arial, sans-serif;
+      color: g-theme-heading-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 1.5rem;
       line-height: 1.25;
       display: block;
@@ -122,7 +122,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "medium" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {
@@ -158,11 +158,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "small" &&
     styled.css`
-      color: #2a2a2a;
-      font-family: Arial, sans-serif;
+      color: g-theme-heading-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 1.25rem;
       line-height: 1.25;
       display: block;
@@ -173,7 +173,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "small" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {
@@ -221,11 +221,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "xsmall" &&
     styled.css`
-      color: #2a2a2a;
-      font-family: Arial, sans-serif;
+      color: g-theme-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 1.125rem;
       line-height: 1.25;
       display: block;
@@ -236,7 +236,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "xsmall" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {
@@ -276,11 +276,11 @@ const StyledH3 = styled.h3`
   ${props =>
     props.styleSize === "xxsmall" &&
     styled.css`
-      color: #2a2a2a;
-      font-family: Arial, sans-serif;
+      color: g-theme-color;
+      font-family: g-theme-font-family;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-weight: bold;
+      font-weight: g-theme-heading-font-weight;
       font-size: 1rem;
       line-height: 1.25;
       display: block;
@@ -291,7 +291,7 @@ const StyledH3 = styled.h3`
     ${props =>
       props.styleSize === "xxsmall" &&
       styled.css`
-        color: #000000;
+        color: g-theme-print-color;
       `};
   }
   @media print {

@@ -1,0 +1,18 @@
+{
+  "include": ["src/**/*.ts"],
+  "exclude": ["dist", "src/**/*.test.ts", "src/**/*.test.tsx"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true,
+    "strict": false,
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "es2016", "es2017", "dom"]
+  }
+}

@@ -17,7 +17,7 @@ var PageContent = (props) => (<Example title="Example title: Error summary alert
         <WrappedAlert Component={Alert} level="error" headingId="heading4" {...onChangeGenerator({})}>
             <H2 id="heading4" {...onChangeGenerator({})}>Error: There’s a problem with the following responses
 </H2>
-            <Ul bulleted spacing {...onChangeGenerator({})}>
+            <Ul spacing {...onChangeGenerator({})}>
                 <Li {...onChangeGenerator({})}><a href="#form">First name must not be empty</a></Li>
                 <Li {...onChangeGenerator({})}><a href="#form">Last name must only include letters a to z, hyphens, spaces and apostrophes</a></Li>
                 <Li {...onChangeGenerator({})}><a href="#form">Hours worked a week must be between 16 and 99</a></Li>

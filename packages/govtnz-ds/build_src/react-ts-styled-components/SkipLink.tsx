@@ -11,19 +11,16 @@ type Props = {
 const StyledA = styled.a`
   font-weight: 700;
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
   :link,
   :visited,
   :hover,
   :active {
-    color: #b10e1e;
+    color: g-theme-error-color;
   }
-  :focus {
-    color: #0b0c0c;
-  }
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -41,9 +38,6 @@ const StyledA = styled.a`
     font-size: 14pt;
     line-height: 1.2;
   }
-  :focus {
-    color: #0b0c0c;
-  }
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -53,7 +47,7 @@ const StyledA = styled.a`
   -webkit-clip-path: inset(50%) !important;
   clip-path: inset(50%) !important;
   white-space: nowrap !important;
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 0.875rem;
@@ -76,16 +70,9 @@ const StyledA = styled.a`
     font-family: sans-serif;
   }
   :focus {
-    outline: 3px solid #b53cde;
+    outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
-    background-color: #b53cde;
-  }
-  :link,
-  :visited,
-  :hover,
-  :active,
-  :focus {
-    color: #0b0c0c;
+    background-color: g-theme-focus-ring-color;
   }
   @media print {
     :link,
@@ -93,7 +80,7 @@ const StyledA = styled.a`
     :hover,
     :active,
     :focus {
-      color: #000000;
+      color: g-theme-print-color;
     }
   }
   @media (min-width: 40.0625em) {

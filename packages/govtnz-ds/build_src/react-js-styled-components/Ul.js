@@ -2,17 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledUl = styled.ul`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.625;
-  color: #2a2a2a;
+  color: g-theme-color;
   margin-top: 0;
   margin-bottom: 1rem;
-  padding-left: 0;
-  list-style-type: none;
+  padding-left: 20px;
+  list-style-type: disc;
   @media print {
     font-family: sans-serif;
   }
@@ -24,21 +24,15 @@ const StyledUl = styled.ul`
   @media print {
     font-size: 14pt;
     line-height: 1.15;
-    color: #000000;
+    color: g-theme-print-color;
   }
   margin-top: 10px;
-  ${props =>
-    props.bulleted &&
-    styled.css`
-      padding-left: 20px;
-      list-style-type: disc;
-    `}
   margin-top: 0px;
   margin-top: 0.5rem;
 `;
 
-const Ul = ({ bulleted, spacing, children }) => (
-  <StyledUl bulleted={bulleted} spacing={spacing}>
+const Ul = ({ spacing, children }) => (
+  <StyledUl spacing={spacing}>
     {children !== undefined ? (
       children
     ) : (

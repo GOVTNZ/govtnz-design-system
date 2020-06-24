@@ -39,25 +39,25 @@ export default Vue.extend({
   margin-left: -0.9em;
   font-family: sans-serif;
   font-size: 18px;
-  color: #ffffff;
+  color: g-theme-inverted-color;
   letter-spacing: 0;
   line-height: 20px;
 }
 .g-main-nav__link__a {
   display: block;
   padding: 1em;
-  color: #ffffff;
+  color: g-theme-inverted-color;
   text-decoration: none;
 }
 .g-main-nav__link__a:hover {
   text-decoration: underline;
 }
 .g-main-nav__link__a--active {
-  border-left: solid 0.2em #24a882;
+  border-left: solid 0.2em g-theme-inverted-nav-active-border-color;
   padding-left: 0.8em;
 }
 .g-main-nav__link__a:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
 }
 @media only screen and (min-width: 48em) {
   .g-main-nav__link {
@@ -89,7 +89,7 @@ export default Vue.extend({
     left: 1em;
     right: 1em;
     height: 4px;
-    background: #24a882;
+    background: g-theme-inverted-nav-active-border-color;
   }
 }
 </style>

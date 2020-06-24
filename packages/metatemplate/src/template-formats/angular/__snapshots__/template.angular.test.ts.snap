@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`angular Snapshots angular: complex make-usage nested mt-if 1`] = `
+Object {
+  "angular": "",
+}
+`;
+
+exports[`angular Snapshots angular: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "angular/children.ts": "import { Component, Input } from \\"@angular/core\\";
+@Component({
+  selector: \\"g-children\\",
+  template: \`
+          
+<div class=\\"{{errorId ? \\"g-form-group--error\\" : \\"\\"}}\\"/>
+
+            
+<label class=\\"g-selectBlock-label\\" for=\\"{{selectId}}\\">
+
+              <slot name=\\"label\\"></slot>
+            
+
+</label>
+
+
+            
+<select class=\\"g-selectBlock-select{{error ? \\" g-selectBlock-select--error\\" : \\"\\"}}\\" id=\\"{{selectId}}\\" name=\\"{{name}}\\" multiple=\\"{{multiple}}\\">
+
+              
+                Options
+              
+            
+          
+          
+
+</select>
+
+\`
+})
+export class AppComponent {
+  @Input() errorId: boolean | undefined;
+  @Input() selectId: string | undefined;
+  @Input() label: React.ReactNode;
+  @Input() error: boolean;
+  @Input() name: string;
+  @Input() multiple: boolean | undefined;
+  title = \\"children\\";
+}
+",
+    },
+    "formatId": "angular",
+  },
+]
+`;
+
+exports[`angular Snapshots angular: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "angular/children.ts": "import { Component, Input } from \\"@angular/core\\";
+@Component({
+  selector: \\"g-children\\",
+  template: \`
+          
+<div class=\\"{{errorId ? \\"g-form-group--error\\" : \\"\\"}}\\"/>
+
+            
+<label class=\\"g-selectBlock-label\\" for=\\"{{selectId}}\\">
+
+              <slot name=\\"label\\"></slot>
+            
+
+</label>
+
+
+            
+<select class=\\"g-selectBlock-select{{error ? \\" g-selectBlock-select--error\\" : \\"\\"}}\\" id=\\"{{selectId}}\\" name=\\"{{name}}\\" multiple=\\"{{multiple}}\\">
+
+              
+                Options
+              
+            
+          
+          
+
+</select>
+
+\`
+})
+export class AppComponent {
+  @Input() errorId: boolean | undefined;
+  @Input() selectId: string | undefined;
+  @Input() label: React.ReactNode;
+  @Input() error: boolean;
+  @Input() name: string;
+  @Input() multiple: boolean | undefined;
+  title = \\"children\\";
+}
+",
+    },
+    "formatId": "angular",
+  },
+]
+`;

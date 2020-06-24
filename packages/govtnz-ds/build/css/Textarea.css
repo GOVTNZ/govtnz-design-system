@@ -17,10 +17,12 @@
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 1px solid #0b0c0c;
-  border: 1px solid var(--g-theme-link-focus-color, #0b0c0c);
+  border: 1px solid #2a2a2a;
+  border: 1px solid var(--g-theme-form-border-color, #2a2a2a);
   border-radius: 0;
   -webkit-appearance: none;
+  background-color: #ffffff;
+  background-color: var(--g-theme-form-background-color, #ffffff);
 }
 
 @media print {

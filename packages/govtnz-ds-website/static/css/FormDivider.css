@@ -7,7 +7,7 @@
   font-size: 1rem;
   line-height: 1.25;
   color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
+  color: var(--g-theme-formdivider-color, #0b0c0c);
   width: 40px;
   margin-bottom: 10px;
   text-align: center;

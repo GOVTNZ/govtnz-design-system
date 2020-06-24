@@ -12,16 +12,8 @@
 .g-skipLink-error-summary__list a:visited,
 .g-skipLink-error-summary__list a:hover,
 .g-skipLink-error-summary__list a:active {
-  color: $g-theme-alert-error-border-color;
-  color: var(
-    --g-theme-alert-error-border-color,
-    $g-theme-alert-error-border-color
-  );
-}
-
-.g-skipLink-error-summary__list a:focus {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  color: $g-theme-error-color;
+  color: var(--g-theme-error-color, $g-theme-error-color);
 }
 
 .g-skipLink-header__navigation-item a {
@@ -53,11 +45,6 @@
     font-size: 14pt;
     line-height: 1.2;
   }
-}
-
-.g-skipLink-header__navigation-item--active a:focus {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }
 
 .g-skip-link {
@@ -105,15 +92,6 @@
   outline-offset: 0;
   background-color: $g-theme-focus-ring-color;
   background-color: var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
-}
-
-.g-skip-link:link,
-.g-skip-link:visited,
-.g-skip-link:hover,
-.g-skip-link:active,
-.g-skip-link:focus {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }
 
 @media print {

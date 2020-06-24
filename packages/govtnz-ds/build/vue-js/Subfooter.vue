@@ -15,9 +15,9 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-subfooter {
-  background-color: #2a2a2a;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: g-theme-inverted-variant-background-color;
+  color: g-theme-inverted-color;
+  fill: g-theme-inverted-color;
   min-height: 146px;
 }
 @media only screen and (min-width: 48em) {

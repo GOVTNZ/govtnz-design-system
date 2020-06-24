@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  background-color: #363636;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: g-theme-inverted-background-color;
+  color: g-theme-inverted-color;
+  fill: g-theme-inverted-color;
 `;
 
 const Footer = ({ children }) => (

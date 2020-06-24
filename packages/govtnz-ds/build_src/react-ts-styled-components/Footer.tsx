@@ -6,9 +6,9 @@ type Props = {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #363636;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: g-theme-inverted-background-color;
+  color: g-theme-inverted-color;
+  fill: g-theme-inverted-color;
 `;
 
 const Footer = ({ children }: Props) => (

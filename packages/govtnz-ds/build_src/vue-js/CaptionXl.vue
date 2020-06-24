@@ -13,7 +13,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-caption-xl {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -21,7 +21,7 @@ export default Vue.extend({
   line-height: 1.11111;
   display: block;
   margin-bottom: 5px;
-  color: #6f777c;
+  color: g-theme-caption-color;
 }
 @media print {
   .g-caption-xl {

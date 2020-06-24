@@ -6,7 +6,7 @@ type Props = {
 };
 
 const StyledSpan = styled.span`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -14,7 +14,7 @@ const StyledSpan = styled.span`
   line-height: 1.11111;
   display: block;
   margin-bottom: 5px;
-  color: #6f777c;
+  color: g-theme-caption-color;
   @media print {
     font-family: sans-serif;
   }

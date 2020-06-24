@@ -10,10 +10,9 @@ exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var Ol = function Ol(_ref) {
-  var numbered = _ref.numbered,
-      children = _ref.children;
+  var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("ol", {
-    className: "g-list".concat(numbered ? " g-list--number" : "")
+    className: "g-ol"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

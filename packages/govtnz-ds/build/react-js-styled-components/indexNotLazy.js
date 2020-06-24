@@ -5,24 +5,6 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "flexColumn", {
-  enumerable: true,
-  get: function get() {
-    return _FlexColumn["default"];
-  }
-});
-Object.defineProperty(exports, "flexContainer", {
-  enumerable: true,
-  get: function get() {
-    return _FlexContainer["default"];
-  }
-});
-Object.defineProperty(exports, "flexRow", {
-  enumerable: true,
-  get: function get() {
-    return _FlexRow["default"];
-  }
-});
 Object.defineProperty(exports, "alert", {
   enumerable: true,
   get: function get() {
@@ -75,6 +57,24 @@ Object.defineProperty(exports, "subfooter", {
   enumerable: true,
   get: function get() {
     return _Subfooter["default"];
+  }
+});
+Object.defineProperty(exports, "flexColumn", {
+  enumerable: true,
+  get: function get() {
+    return _FlexColumn["default"];
+  }
+});
+Object.defineProperty(exports, "flexContainer", {
+  enumerable: true,
+  get: function get() {
+    return _FlexContainer["default"];
+  }
+});
+Object.defineProperty(exports, "flexRow", {
+  enumerable: true,
+  get: function get() {
+    return _FlexRow["default"];
   }
 });
 Object.defineProperty(exports, "a", {
@@ -282,12 +282,6 @@ Object.defineProperty(exports, "ul", {
   }
 });
 
-var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
-
-var _FlexContainer = _interopRequireDefault(require("./FlexContainer"));
-
-var _FlexRow = _interopRequireDefault(require("./FlexRow"));
-
 var _Alert = _interopRequireDefault(require("./Alert"));
 
 var _Footer = _interopRequireDefault(require("./Footer"));
@@ -305,6 +299,12 @@ var _MainNav = _interopRequireDefault(require("./MainNav"));
 var _NzgLogo = _interopRequireDefault(require("./NzgLogo"));
 
 var _Subfooter = _interopRequireDefault(require("./Subfooter"));
+
+var _FlexColumn = _interopRequireDefault(require("./FlexColumn"));
+
+var _FlexContainer = _interopRequireDefault(require("./FlexContainer"));
+
+var _FlexRow = _interopRequireDefault(require("./FlexRow"));
 
 var _A = _interopRequireDefault(require("./A"));
 

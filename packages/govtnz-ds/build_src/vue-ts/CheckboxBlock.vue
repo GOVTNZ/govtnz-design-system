@@ -61,7 +61,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-checkboxes__hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -69,7 +69,7 @@ export default Vue.extend({
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 @media print {
   .g-checkboxes__hint {
@@ -92,23 +92,23 @@ export default Vue.extend({
   margin-top: -5px;
 }
 .g-checkboxes__label {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
 }
 @media print {
   .g-checkboxes__label {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 .g-checkboxes__item {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -175,7 +175,7 @@ export default Vue.extend({
   width: 40px;
   height: 40px;
   border: 2px solid currentColor;
-  background: transparent;
+  background-color: g-theme-form-background-color;
 }
 .g-checkboxes__input + .g-checkboxes__label::after {
   content: "";
@@ -197,7 +197,7 @@ export default Vue.extend({
 .g-checkboxes__input.\:focus + .g-checkboxes__label::before {
   outline: 3px solid transparent;
   outline-offset: 3px;
-  box-shadow: 0 0 0 3px #b53cde;
+  box-shadow: 0 0 0 3px g-theme-focus-ring-color;
 }
 .g-checkboxes__input:checked + .g-checkboxes__label::after,
 .g-checkboxes__input.\:checked + .g-checkboxes__label::after {

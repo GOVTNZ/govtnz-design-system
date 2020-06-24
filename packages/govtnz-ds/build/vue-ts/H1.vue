@@ -51,11 +51,11 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-heading-xl {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+  color: g-theme-heading-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -64,7 +64,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-xl {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {
@@ -90,11 +90,11 @@ export default Vue.extend({
   }
 }
 .g-heading-l {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+  color: g-theme-heading-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -103,7 +103,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-l {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {
@@ -129,11 +129,11 @@ export default Vue.extend({
   }
 }
 .g-heading-m {
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
+  color: g-theme-heading-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -142,7 +142,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-m {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {
@@ -168,11 +168,11 @@ export default Vue.extend({
   }
 }
 .g-heading-s {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+  color: g-theme-heading-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -181,7 +181,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-s {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {
@@ -253,11 +253,11 @@ export default Vue.extend({
   }
 }
 .g-heading-xs {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -266,7 +266,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-xs {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {
@@ -306,11 +306,11 @@ export default Vue.extend({
   }
 }
 .g-heading-xxs {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: g-theme-heading-font-weight;
   font-size: 1rem;
   line-height: 1.25;
   display: block;
@@ -319,7 +319,7 @@ export default Vue.extend({
 }
 @media print {
   .g-heading-xxs {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media print {

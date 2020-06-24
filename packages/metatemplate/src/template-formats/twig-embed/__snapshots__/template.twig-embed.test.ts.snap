@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`twig-embed Snapshots twig-embed: complex make-usage nested mt-if 1`] = `
+Object {
+  "twig-embed": "{% embed \\"Alert.html.twig\\"  with {'mode':'live', 'level':'info', 'headingId':'heading1'} only %}{% block children %}{% embed \\"H2.html.twig\\"  with {'id':'heading1', 'children':'Info: You are alive'} only %}{% endembed %}
+{% embed \\"P.html.twig\\"  with {'children':'Some text describing what's going on 1.'} only %}{% endembed %}{% endblock %}{% endembed %}{% embed \\"Alert.html.twig\\"  with {'level':'warning', 'headingId':'heading2'} only %}{% block children %}{% embed \\"H2.html.twig\\"  with {'id':'heading2', 'children':'Warning: You are alive'} only %}{% endembed %}
+{% embed \\"P.html.twig\\"  with {'children':'Some text describing what's going on 2.'} only %}{% endembed %}{% endblock %}{% endembed %}{% embed \\"Alert.html.twig\\"  with {'level':'success', 'headingId':'heading3'} only %}{% block children %}{% embed \\"H2.html.twig\\"  with {'id':'heading3', 'children':'Success: You are alive'} only %}{% endembed %}
+{% embed \\"P.html.twig\\"  with {'children':'Some text describing what's going on 3.'} only %}{% endembed %}{% endblock %}{% endembed %}{% embed \\"Alert.html.twig\\"  with {'level':'error', 'headingId':'heading4'} only %}{% block children %}{% embed \\"H2.html.twig\\"  with {'id':'heading4', 'children':'Error: You are alive'} only %}{% endembed %}
+{% embed \\"Ul.html.twig\\"  with {'bulleted':'true'} only %}{% block children %}<li ><a href=\\"#\\">Error in this field 4</a></li>{% endblock %}{% endembed %}{% endblock %}{% endembed %}",
+}
+`;
+
+exports[`twig-embed Snapshots twig-embed: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/children.html.twig": "<div
+class=\\"{% if errorId %}g-form-group--error{% endif %}\\"
+/>
+  
+            
+<label
+class=\\"g-selectBlock-label\\"
+for=\\"{{ selectId | escape('html_attr') }}\\"
+>
+  
+              
+{% block label %}Example label text{% endblock %}
+  
+            
+</label>
+  
+            
+<select
+class=\\"g-selectBlock-select{% if error %} g-selectBlock-select--error{% endif %}\\"
+id=\\"{{ selectId | escape('html_attr') }}\\"
+name=\\"{{ name | escape('html_attr') }}\\"
+multiple=\\"{% if multiple %}multiple{% endif %}\\"
+>
+  
+              
+                Options
+              
+            
+          
+          
+</select>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;
+
+exports[`twig-embed Snapshots twig-embed: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "twig-embed/children.html.twig": "<div
+class=\\"{% if errorId %}g-form-group--error{% endif %}\\"
+/>
+  
+            
+<label
+class=\\"g-selectBlock-label\\"
+for=\\"{{ selectId | escape('html_attr') }}\\"
+>
+  
+              
+{% block label %}Example label text{% endblock %}
+  
+            
+</label>
+  
+            
+<select
+class=\\"g-selectBlock-select{% if error %} g-selectBlock-select--error{% endif %}\\"
+id=\\"{{ selectId | escape('html_attr') }}\\"
+name=\\"{{ name | escape('html_attr') }}\\"
+multiple=\\"{% if multiple %}multiple{% endif %}\\"
+>
+  
+              
+                Options
+              
+            
+          
+          
+</select>",
+    },
+    "formatId": "twig-embed",
+  },
+]
+`;

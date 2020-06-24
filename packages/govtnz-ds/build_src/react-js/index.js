@@ -1,8 +1,5 @@
 // DEVELOPER NOTE: These components are ready to lazy-load. You may also import components directly.
 
-export const FlexColumn = () => import("./FlexColumn");
-export const FlexContainer = () => import("./FlexContainer");
-export const FlexRow = () => import("./FlexRow");
 export const Alert = () => import("./Alert");
 export const Footer = () => import("./Footer");
 export const FooterLink = () => import("./FooterLink");
@@ -12,6 +9,9 @@ export const MainNavLink = () => import("./MainNavLink");
 export const MainNav = () => import("./MainNav");
 export const NzgLogo = () => import("./NzgLogo");
 export const Subfooter = () => import("./Subfooter");
+export const FlexColumn = () => import("./FlexColumn");
+export const FlexContainer = () => import("./FlexContainer");
+export const FlexRow = () => import("./FlexRow");
 export const A = () => import("./A");
 export const Button = () => import("./Button");
 export const CaptionL = () => import("./CaptionL");

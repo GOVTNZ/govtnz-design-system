@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
     props.errorId &&
     styled.css`
       padding-left: 15px;
-      border-left: 5px solid #b10e1e;
+      border-left: 5px solid g-theme-error-border-color;
     `}
   padding: 0;
   border: 0;
@@ -21,13 +21,13 @@ const StyledDiv = styled.div`
 `;
 
 const StyledLabel = styled.label`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
   @media print {
@@ -42,13 +42,13 @@ const StyledLabel = styled.label`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -56,7 +56,7 @@ const StyledDiv2 = styled.div`
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
   }
@@ -73,7 +73,7 @@ const StyledDiv2 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -82,7 +82,7 @@ const StyledDiv3 = styled.div`
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
   @media print {
     font-family: sans-serif;
   }
@@ -112,7 +112,7 @@ const StyledSpan = styled.span`
   margin-top: 0px;
 `;
 
-const StyledInput = styled.input`font-family: Arial, sans-serif;
+const StyledInput = styled.input`font-family: g-theme-font-family;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 font-weight: 400;
@@ -123,11 +123,12 @@ width: 100%;
 height: 40px;
 margin-top: 0;
 padding: 0.5rem;
-border: 1px solid #2a2a2a;
+border: 1px solid g-theme-form-border-color;
 border-radius: 0;
 -webkit-appearance: none;
 -moz-appearance: none;
 appearance: none;
+background-color: g-theme-form-background-color;
 @media print{
 font-family: sans-serif;;
 }
@@ -140,7 +141,7 @@ font-size: 14pt;
 line-height: 1.15;;
 }
 :focus{
-outline: 3px solid #b53cde;
+outline: 3px solid g-theme-focus-ring-color;
 outline-offset: 0;
 }
 ::-webkit-outer-spin-button,::-webkit-inner-spin-button{
@@ -150,7 +151,7 @@ margin: 0;
 ${props =>
   props.error &&
   styled.css`
-    border: 1px solid #b10e1e;
+    border: 1px solid g-theme-error-border-color;
   `}
 ${props =>
   props.width === "30" &&

@@ -15,10 +15,10 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Bulleted lists (Typography)" {...onChangeGenerator({})}>
         <P styleSize="medium" {...onChangeGenerator({})}>To help keep the kitchen clean, please:</P>
-        <Ul bulleted {...onChangeGenerator({})}>
+        <Ul {...onChangeGenerator({})}>
             <Li {...onChangeGenerator({})}>replace tea and coffee jars on shelf</Li>
             <Li {...onChangeGenerator({})}>wipe down bench</Li>
-            <Li {...onChangeGenerator({})}>wash dishes by: <Ul bulleted {...onChangeGenerator({})}>
+            <Li {...onChangeGenerator({})}>wash dishes by: <Ul {...onChangeGenerator({})}>
                     <Li {...onChangeGenerator({})}>loading the dishwasher, if it's empty</Li>
                     <Li {...onChangeGenerator({})}>rinsing and stacking, if dishwasher is going</Li>
                 </Ul>

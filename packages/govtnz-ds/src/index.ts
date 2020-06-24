@@ -1,9 +1,7 @@
-import { uniq } from 'lodash';
 import ArgParse from 'argparse';
 import fs from 'fs';
 import path from 'path';
 import fsExtra from 'fs-extra';
-import formatDuration from 'format-duration';
 import {
   makeTemplates,
   makeIndexImports,
@@ -20,16 +18,11 @@ import {
   ComponentToFilesArgs,
   ComponentToFilesResponse
 } from './types';
-import {
-  safeMergeCssVariables,
-  AnyObject,
-  gc,
-  getTimingBenchmarks,
-  setTimingBenchmarks
-} from './utils';
+import { safeMergeCssVariables, AnyObject, gc } from './utils';
 import glob from 'glob-promise';
 import PromisePool from 'es6-promise-pool';
-import { normalize, isColourMatch } from './normalize';
+import { toId } from './normalize';
+import { defaultTheme } from './theme';
 
 ensureNodeVersion();
 
@@ -122,18 +115,11 @@ async function main(
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem);
     release.push(releaseItem);
 
-    allCss += releaseItem.css;
-
     cssVariables = safeMergeCssVariables(
       cssVariables,
       releaseItem.cssVariables
     );
   }
-
-  const coloursWithoutVariables = uniq(allCss.match(/#[0-9A-F]{3,6}/gi))
-    .sort()
-    .filter(colour => !isColourMatch(colour));
-  console.log(coloursWithoutVariables);
 
   let allFiles = safeMerge(...release.map(releaseItem => releaseItem.files));
   const allReleaseVersions = release.map(
@@ -173,8 +159,6 @@ const makeReleaseSpecItem = async ({
     console.log(`Found these component Ids in ${sourceId}`, componentIds);
   }
 
-  let allCss = '';
-
   const components = await Promise.all(
     componentIds.map(async componentId => {
       const base = path.join(__dirname, 'upstream', sourceId);
@@ -189,22 +173,13 @@ const makeReleaseSpecItem = async ({
         })
       ).toString();
 
-      let component: Partial<Component>;
-
-      component = await normalize({
-        id: componentId,
-        html,
-        css
-      });
-
-      allCss += css;
-
-      component = {
+      return {
         version,
-        ...component
-      } as Component;
-
-      return component;
+        id: toId(componentId),
+        html,
+        css,
+        cssVariables: defaultTheme
+      };
     })
   );
 
@@ -228,9 +203,7 @@ const makeReleaseSpecItem = async ({
       const component = components[cIndex];
       const job: ComponentToFilesArgs = {
         component,
-        creditMarkdown: releaseVersion.creditMarkdown,
-        cssVariables,
-        metaTemplateFormatIds
+        creditMarkdown: releaseVersion.creditMarkdown
       };
       jobs.push(job);
     }
@@ -240,33 +213,6 @@ const makeReleaseSpecItem = async ({
   console.log(`Generating these templates: ${jobIds}`);
 
   const filesArr: AnyObject[] = [];
-
-  const startTime = Date.now();
-  const timings = await getTimingBenchmarks();
-  let timing = timings[jobs.length];
-  const expectedDuration: number =
-    timing && timing[MAX_METATEMPLATE_WORKERS]
-      ? timing[MAX_METATEMPLATE_WORKERS]
-      : jobs.length * AVERAGE_JOB_DURATION_ms;
-  if (jobs.length > 0) {
-    let message = `Because there are ${
-      jobs.length
-    } job(s) with ${MAX_METATEMPLATE_WORKERS} workers this may take approximately ${formatDuration(
-      expectedDuration
-    )}.`;
-    if (timing && timing[MAX_METATEMPLATE_WORKERS]) {
-      message = `Last time ${
-        jobs.length
-      } job(s) with ${MAX_METATEMPLATE_WORKERS} worker(s) took ${formatDuration(
-        expectedDuration
-      )}${
-        expectedDuration > LONGER_THAN_A_HUMAN_COULD_POSSIBILITY_TOLERATE_ms
-          ? ' ...so go get a cuppa.'
-          : '.'
-      }`;
-    }
-    console.info(message);
-  }
 
   const bar = new ProgressBar(
     `MetaTemplate Output generation (#${jobs.length} total) :bar :percent`,
@@ -314,65 +260,23 @@ const makeReleaseSpecItem = async ({
     }
   }
 
-  // Finished...
-  const actualDuration = Date.now() - startTime;
-  timing = {
-    ...timing,
-    [MAX_METATEMPLATE_WORKERS]: actualDuration
-  };
-  timings[jobs.length] = timing;
-  if (jobs.length > 0) {
-    console.log(
-      `That took took ${formatDuration(
-        actualDuration
-      )} with ${MAX_METATEMPLATE_WORKERS} worker(s).`
-    );
-  }
-  await setTimingBenchmarks(timings);
-
   const files = safeMerge(...filesArr);
 
   return {
     releaseVersions,
     files,
     creditMarkdown: releaseVersions[0].creditMarkdown,
-    cssVariables,
-    css: allCss
+    cssVariables
   };
 };
 
 const componentToFiles = async ({
   component,
-  creditMarkdown,
-  cssVariables,
-  metaTemplateFormatIds
+  creditMarkdown
 }: ComponentToFilesArgs): Promise<ComponentToFilesResponse> => {
   const cssReadme = `These CSS files can be bundled in any order because all selectors are namespaced.`;
-  cssVariables = safeMergeCssVariables(cssVariables, component.cssVariables);
 
-  const metaTemplateInput = Object.assign(
-    {},
-    ...Object.keys(component)
-      .filter(key => key !== 'props')
-      .map(key => {
-        return { [key]: component[key] };
-      }),
-    {
-      calculatedDynamicKeys:
-        component.calculatedDynamicKeys &&
-        Object.keys(component.calculatedDynamicKeys).map(key => {
-          return {
-            key,
-            expression: component.calculatedDynamicKeys[key]
-          };
-        })
-    }
-  );
-
-  const response = await makeTemplates(
-    metaTemplateInput,
-    metaTemplateFormatIds
-  );
+  const response = await makeTemplates(component);
 
   gc();
 
@@ -380,12 +284,19 @@ const componentToFiles = async ({
     metaTemplate => metaTemplate.files
   );
 
+  const files = safeMerge(...metaTemplateFiles, {
+    ['css/README.md']: cssReadme
+  });
+
+  // console.log(component.id);
+  // console.log(component.cssVariables);
+  // console.log(JSON.stringify(files['css/Alert.css']));
+  // process.exit();
+
   // merge all metatemplates together
   return {
-    files: safeMerge(...metaTemplateFiles, {
-      ['css/README.md']: cssReadme
-    }),
-    cssVariables,
+    files,
+    cssVariables: component.cssVariables,
     disposeMetaTemplate: response.disposeAll
   };
 };
@@ -529,8 +440,6 @@ const buildPath = path.resolve(__dirname, '..', 'build');
 const buildSrcPath = path.resolve(__dirname, '..', 'build_src');
 
 const MAX_METATEMPLATE_WORKERS = 1;
-const AVERAGE_JOB_DURATION_ms = 20 * 1000;
-const LONGER_THAN_A_HUMAN_COULD_POSSIBILITY_TOLERATE_ms = 6 * 60 * 1000;
 
 type MetaTemplateInputsById = {
   [key: string]: Component;

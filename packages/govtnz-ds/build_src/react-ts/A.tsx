@@ -1,7 +1,6 @@
 import React from "react";
 
 type Props = {
-  isMuted?: boolean;
   className?: any;
   href: string;
   rel?: string;
@@ -10,19 +9,9 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const A = ({
-  isMuted,
-  className,
-  href,
-  rel,
-  target,
-  onClick,
-  children
-}: Props) => (
+const A = ({ className, href, rel, target, onClick, children }: Props) => (
   <a
-    className={`g-link${isMuted ? " g-link--muted" : ""}${
-      className ? " " + className : ""
-    }`}
+    className={`g-link${className ? " " + className : ""}`}
     href={href}
     rel={rel}
     target={target}

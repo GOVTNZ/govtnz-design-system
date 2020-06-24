@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-formdivider-color;
   width: 40px;
   margin-bottom: 10px;
   text-align: center;
@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;

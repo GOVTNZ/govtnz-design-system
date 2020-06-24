@@ -42,6 +42,7 @@ export default Vue.extend({
   cursor: pointer;
   margin: 0;
   opacity: 0;
+  background-color: g-theme-form-background-color;
 }
 .g-checkboxes__input:disabled {
   cursor: default;

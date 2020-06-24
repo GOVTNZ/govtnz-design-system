@@ -84,7 +84,7 @@ export default class Example extends Component<Props, State> {
     window.removeEventListener('message', this.handleMessage);
   };
 
-  handleMessage = e => {
+  handleMessage = (e) => {
     if (e.origin !== window.location.origin) {
       console.info('Ignoring postMessage from', e.origin, e);
       return;
@@ -120,7 +120,7 @@ export default class Example extends Component<Props, State> {
     setTimeout(redrawCode, 750);
   };
 
-  copyToClipboard = e => {
+  copyToClipboard = (e) => {
     e.preventDefault();
     const { code } = this.props;
     const { formatId } = this.state;
@@ -166,7 +166,7 @@ export default class Example extends Component<Props, State> {
     this.resetFormatChoice();
   };
 
-  changeFormatId = formatId => {
+  changeFormatId = (formatId) => {
     this.setState({
       formatId,
       code: highlightCode(this.props.code[formatId], formatId),
@@ -215,7 +215,7 @@ export default class Example extends Component<Props, State> {
                 <div className="clipboard">
                   <button
                     key="clipboard-button"
-                    className="g-button g-button--secondary g-button--small g-button--nowrap"
+                    className="g-button g-button--secondary g-dswebsite-font"
                     onClick={this.copyToClipboard}
                     type="button"
                   >
@@ -295,7 +295,7 @@ export default class Example extends Component<Props, State> {
             </pre>
           </React.Fragment>
         )}
-        {Object.keys(allCode).map(codeType => {
+        {Object.keys(allCode).map((codeType) => {
           if (!allCode[codeType]) return null;
           return (
             <noscript key={codeType}>

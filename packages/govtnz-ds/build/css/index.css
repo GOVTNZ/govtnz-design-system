@@ -1,9 +1,6 @@
 // This file imports every CSS file.
 // Feel free to fork and modify this file to activate/deactivate particular components.
 
-@import "./FlexColumn";
-@import "./FlexContainer";
-@import "./FlexRow";
 @import "./Alert";
 @import "./Footer";
 @import "./FooterLink";
@@ -13,6 +10,9 @@
 @import "./MainNav";
 @import "./NzgLogo";
 @import "./Subfooter";
+@import "./FlexColumn";
+@import "./FlexContainer";
+@import "./FlexRow";
 @import "./A";
 @import "./Button";
 @import "./CaptionL";

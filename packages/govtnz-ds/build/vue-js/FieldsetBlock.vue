@@ -65,14 +65,14 @@ export default Vue.extend({
 }
 .g-fieldsetBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid #b10e1e;
+  border-left: 5px solid g-theme-error-border-color;
 }
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
   padding: 0;
   border: 0;
 }
 .g-fieldsetBlock-error-message {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -81,7 +81,7 @@ export default Vue.extend({
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
 }
 @media print {
   .g-fieldsetBlock-error-message {
@@ -111,13 +111,13 @@ export default Vue.extend({
   clear: both;
 }
 .g-fieldsetBlock-fieldset__legend {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-legend-color;
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -145,11 +145,11 @@ export default Vue.extend({
 }
 @media print {
   .g-fieldsetBlock-fieldset__legend {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 .g-fieldsetBlock-hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -157,7 +157,7 @@ export default Vue.extend({
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 @media print {
   .g-fieldsetBlock-hint {

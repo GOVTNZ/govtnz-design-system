@@ -175,7 +175,11 @@
   height: 24px;
   border: 2px solid currentColor;
   border-radius: 50%;
-  background: transparent;
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
 }
 
 .g-radios--big .g-radios__input + .g-radios__label::before {

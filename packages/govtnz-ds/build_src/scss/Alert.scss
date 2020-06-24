@@ -52,10 +52,10 @@
 }
 
 .g-alert--error::before {
-  background-color: $g-theme-alert-error-border-color;
+  background-color: $g-theme-error-border-color;
   background-color: var(
-    --g-theme-alert-error-border-color,
-    $g-theme-alert-error-border-color
+    --g-theme-error-border-color,
+    $g-theme-error-border-color
   );
 }
 
@@ -63,5 +63,6 @@
   position: absolute;
   left: 16px;
   top: 24px;
-  fill: white;
+  fill: $g-theme-alert-icon-color;
+  fill: var(--g-theme-alert-icon-color, $g-theme-alert-icon-color);
 }

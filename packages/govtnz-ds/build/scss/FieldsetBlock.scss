@@ -14,9 +14,9 @@
 
 .g-fieldsetBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-alert-error-border-color;
+  border-left: 5px solid $g-theme-error-border-color;
   border-left: 5px solid
-    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
+    var(--g-theme-error-border-color, $g-theme-error-border-color);
 }
 
 .g-fieldsetBlock-form-group--error .g-fieldsetBlock-form-group {
@@ -35,11 +35,8 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-alert-error-border-color;
-  color: var(
-    --g-theme-alert-error-border-color,
-    $g-theme-alert-error-border-color
-  );
+  color: $g-theme-error-color;
+  color: var(--g-theme-error-color, $g-theme-error-color);
 }
 
 @media print {
@@ -82,8 +79,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  color: $g-theme-legend-color;
+  color: var(--g-theme-legend-color, $g-theme-legend-color);
   box-sizing: border-box;
   display: table;
   max-width: 100%;

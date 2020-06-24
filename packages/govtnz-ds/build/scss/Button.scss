@@ -15,15 +15,14 @@
   padding: 16px;
   border: 2px solid transparent;
   border-radius: 4px;
-  color: $g-theme-inverted-color;
-  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
+  color: $g-theme-button-color;
+  color: var(--g-theme-button-color, $g-theme-button-color);
   background-color: $g-theme-button-background-color;
   background-color: var(
     --g-theme-button-background-color,
     $g-theme-button-background-color
   );
-  box-shadow: 0 2px 0 0 $g-theme-color;
-  box-shadow: 0 2px 0 0 var(--g-theme-color, $g-theme-color);
+  box-shadow: 0 2px 0 0 g-theme-button-box-shadow-color;
   text-align: center;
   vertical-align: top;
   cursor: pointer;
@@ -72,8 +71,8 @@
 .g-button:visited,
 .g-button:active,
 .g-button:hover {
-  color: $g-theme-inverted-color;
-  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
+  color: $g-theme-button-color;
+  color: var(--g-theme-button-color, $g-theme-button-color);
   text-decoration: none;
 }
 
@@ -114,8 +113,8 @@
 .g-button--disabled,
 .g-button[disabled] {
   opacity: 0.5;
-  background: $g-theme-button-background-color;
-  background: var(
+  background-color: $g-theme-button-background-color;
+  background-color: var(
     --g-theme-button-background-color,
     $g-theme-button-background-color
   );
@@ -179,13 +178,12 @@
 }
 
 .g-button--secondary {
-  background-color: $g-theme-alert-border-color;
+  background-color: $g-theme-button-secondary-background-color;
   background-color: var(
-    --g-theme-alert-border-color,
-    $g-theme-alert-border-color
+    --g-theme-button-secondary-background-color,
+    $g-theme-button-secondary-background-color
   );
-  box-shadow: 0 2px 0 $g-theme-color;
-  box-shadow: 0 2px 0 var(--g-theme-color, $g-theme-color);
+  box-shadow: 0 2px 0 g-theme-button-box-shadow-color;
 }
 
 .g-button--secondary,
@@ -193,27 +191,26 @@
 .g-button--secondary:visited,
 .g-button--secondary:active,
 .g-button--secondary:hover {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  color: $g-theme-button-secondary-color;
+  color: var(--g-theme-button-secondary-color, $g-theme-button-secondary-color);
 }
 
 .g-button--secondary:hover,
 .g-button--secondary:focus {
-  background-color: $g-theme-button-secondary-background-color;
+  background-color: $g-theme-button-secondary-hover-background-color;
   background-color: var(
-    --g-theme-button-secondary-background-color,
-    $g-theme-button-secondary-background-color
+    --g-theme-button-secondary-hover-background-color,
+    $g-theme-button-secondary-hover-background-color
   );
 }
 
 .g-button--warning {
-  background-color: $g-theme-alert-error-border-color;
+  background-color: $g-theme-error-background-color;
   background-color: var(
-    --g-theme-alert-error-border-color,
-    $g-theme-alert-error-border-color
+    --g-theme-error-background-color,
+    $g-theme-error-background-color
   );
-  box-shadow: 0 2px 0 $g-theme-color;
-  box-shadow: 0 2px 0 var(--g-theme-color, $g-theme-color);
+  box-shadow: 0 2px 0 g-theme-button-box-shadow-color;
 }
 
 .g-button--warning,
@@ -221,8 +218,8 @@
 .g-button--warning:visited,
 .g-button--warning:active,
 .g-button--warning:hover {
-  color: $g-theme-inverted-color;
-  color: var(--g-theme-inverted-color, $g-theme-inverted-color);
+  color: $g-theme-button-color;
+  color: var(--g-theme-button-color, $g-theme-button-color);
 }
 
 .g-button--warning:hover,

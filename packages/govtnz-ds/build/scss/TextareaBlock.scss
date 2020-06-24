@@ -14,9 +14,9 @@
 
 .g-textareaBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid $g-theme-alert-error-border-color;
+  border-left: 5px solid $g-theme-error-border-color;
   border-left: 5px solid
-    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
+    var(--g-theme-error-border-color, $g-theme-error-border-color);
 }
 
 .g-textareaBlock-form-group--error .g-textareaBlock-form-group {
@@ -35,11 +35,8 @@
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: $g-theme-alert-error-border-color;
-  color: var(
-    --g-theme-alert-error-border-color,
-    $g-theme-alert-error-border-color
-  );
+  color: $g-theme-error-color;
+  color: var(--g-theme-error-color, $g-theme-error-color);
 }
 
 @media print {
@@ -140,10 +137,15 @@
   margin-bottom: 20px;
   padding: 5px;
   resize: vertical;
-  border: 1px solid $g-theme-link-focus-color;
-  border: 1px solid var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
   border-radius: 0;
   -webkit-appearance: none;
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
 }
 
 @media print {

@@ -14,9 +14,6 @@ var AppComponent = /** @class */ (function () {
     }
     __decorate([
         core_1.Input()
-    ], AppComponent.prototype, "isMuted", void 0);
-    __decorate([
-        core_1.Input()
     ], AppComponent.prototype, "class", void 0);
     __decorate([
         core_1.Input()
@@ -33,7 +30,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: "g-A",
-            template: "\n<a class=\"g-link{{isMuted ? \" g-link--muted\" : \"\"}}{{class ? \" \" +  class : \"\"}}\" href=\"{{href}}\" rel=\"{{rel}}\" target=\"{{target}}\">\n<slot></slot>\n\n</a>\n\n\n"
+            template: "\n<a class=\"g-link{{class ? \" \" +  class : \"\"}}\" href=\"{{href}}\" rel=\"{{rel}}\" target=\"{{target}}\">\n<slot></slot>\n\n</a>\n\n\n"
         })
     ], AppComponent);
     return AppComponent;

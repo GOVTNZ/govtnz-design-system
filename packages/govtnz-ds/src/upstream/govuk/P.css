@@ -1,6 +1,6 @@
-.g-p-body-l {
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
+.g-body-l {
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -11,40 +11,40 @@
 }
 
 @media print {
-  .g-p-body-l {
-    color: #000000;
+  .g-body-l {
+    color: g-theme-print-color;
   }
 }
 
 @media print {
-  .g-p-body-l {
+  .g-body-l {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-l {
+  .g-body-l {
     font-size: 1.5rem;
     line-height: 1.25;
   }
 }
 
 @media print {
-  .g-p-body-l {
+  .g-body-l {
     font-size: 18pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-l {
+  .g-body-l {
     margin-bottom: 30px;
   }
 }
 
-.g-p-body-m {
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
+.g-body-m {
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -55,40 +55,40 @@
 }
 
 @media print {
-  .g-p-body-m {
-    color: #000000;
+  .g-body-m {
+    color: g-theme-print-color;
   }
 }
 
 @media print {
-  .g-p-body-m {
+  .g-body-m {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-m {
+  .g-body-m {
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
 @media print {
-  .g-p-body-m {
+  .g-body-m {
     font-size: 14pt;
     line-height: 1.15;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-m {
+  .g-body-m {
     margin-bottom: 20px;
   }
 }
 
-.g-p-body-s {
-  color: #2a2a2a;
-  font-family: Arial, sans-serif;
+.g-body-s {
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -99,40 +99,40 @@
 }
 
 @media print {
-  .g-p-body-s {
-    color: #000000;
+  .g-body-s {
+    color: g-theme-print-color;
   }
 }
 
 @media print {
-  .g-p-body-s {
+  .g-body-s {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-s {
+  .g-body-s {
     font-size: 1rem;
     line-height: 1.25;
   }
 }
 
 @media print {
-  .g-p-body-s {
+  .g-body-s {
     font-size: 14pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-s {
+  .g-body-s {
     margin-bottom: 20px;
   }
 }
 
-.g-p-body-xs {
-  color: #0b0c0c;
-  font-family: Arial, sans-serif;
+.g-body-xs {
+  color: g-theme-color;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -143,33 +143,33 @@
 }
 
 @media print {
-  .g-p-body-xs {
-    color: #000000;
+  .g-body-xs {
+    color: g-theme-print-color;
   }
 }
 
 @media print {
-  .g-p-body-xs {
+  .g-body-xs {
     font-family: sans-serif;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-xs {
+  .g-body-xs {
     font-size: 0.875rem;
     line-height: 1.42857;
   }
 }
 
 @media print {
-  .g-p-body-xs {
+  .g-body-xs {
     font-size: 12pt;
     line-height: 1.2;
   }
 }
 
 @media (min-width: 40.0625em) {
-  .g-p-body-xs {
+  .g-body-xs {
     margin-bottom: 20px;
   }
 }

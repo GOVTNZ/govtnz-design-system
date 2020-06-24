@@ -22,7 +22,7 @@ const StyledDiv = styled.div<Pick<Props, "errorId">>`
     props.errorId &&
     styled.css`
       padding-left: 15px;
-      border-left: 5px solid #b10e1e;
+      border-left: 5px solid g-theme-error-border-color;
     `}
   padding: 0;
   border: 0;
@@ -43,13 +43,13 @@ const StyledFieldset = styled.fieldset`
 `;
 
 const StyledLegend = styled.legend`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-legend-color;
   box-sizing: border-box;
   display: table;
   max-width: 100%;
@@ -69,13 +69,13 @@ const StyledLegend = styled.legend`
     line-height: 1.15;
   }
   @media print {
-    color: #000000;
+    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;
 
 const StyledDiv2 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -83,7 +83,7 @@ const StyledDiv2 = styled.div`
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
   }
@@ -100,7 +100,7 @@ const StyledDiv2 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -109,7 +109,7 @@ const StyledDiv3 = styled.div`
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
   @media print {
     font-family: sans-serif;
   }

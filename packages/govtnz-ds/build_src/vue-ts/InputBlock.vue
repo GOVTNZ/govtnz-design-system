@@ -119,14 +119,14 @@ export default Vue.extend({
 }
 .g-inputBlock-form-group--error {
   padding-left: 15px;
-  border-left: 5px solid #b10e1e;
+  border-left: 5px solid g-theme-error-border-color;
 }
 .g-inputBlock-form-group--error .g-inputBlock-form-group {
   padding: 0;
   border: 0;
 }
 .g-inputBlock-error-message {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 700;
@@ -135,7 +135,7 @@ export default Vue.extend({
   display: block;
   margin-bottom: 15px;
   clear: both;
-  color: #b10e1e;
+  color: g-theme-error-color;
 }
 @media print {
   .g-inputBlock-error-message {
@@ -155,7 +155,7 @@ export default Vue.extend({
   }
 }
 .g-inputBlock-hint {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -163,7 +163,7 @@ export default Vue.extend({
   line-height: 1.25;
   display: block;
   margin-bottom: 15px;
-  color: #595959;
+  color: g-theme-hint-color;
 }
 @media print {
   .g-inputBlock-hint {
@@ -186,13 +186,13 @@ export default Vue.extend({
   margin-top: -5px;
 }
 .g-inputBlock-label {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
   font-size: 1.25rem;
   line-height: 1.25;
-  color: #2a2a2a;
+  color: g-theme-color;
   display: block;
   margin-bottom: 5px;
 }
@@ -215,11 +215,11 @@ export default Vue.extend({
 }
 @media print {
   .g-inputBlock-label {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 .g-inputBlock-input {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -230,11 +230,12 @@ export default Vue.extend({
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid g-theme-form-border-color;
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: g-theme-form-background-color;
 }
 @media print {
   .g-inputBlock-input {
@@ -254,7 +255,7 @@ export default Vue.extend({
   }
 }
 .g-inputBlock-input:focus {
-  outline: 3px solid #b53cde;
+  outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
 .g-inputBlock-input::-webkit-outer-spin-button,
@@ -263,7 +264,7 @@ export default Vue.extend({
   -webkit-appearance: none;
 }
 .g-inputBlock-input--error {
-  border: 1px solid #b10e1e;
+  border: 1px solid g-theme-error-border-color;
 }
 .g-inputBlock-input--width-30 {
   max-width: 59ex;

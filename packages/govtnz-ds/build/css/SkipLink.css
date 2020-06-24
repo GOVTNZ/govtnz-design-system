@@ -13,12 +13,7 @@
 .g-skipLink-error-summary__list a:hover,
 .g-skipLink-error-summary__list a:active {
   color: #b10e1e;
-  color: var(--g-theme-alert-error-border-color, #b10e1e);
-}
-
-.g-skipLink-error-summary__list a:focus {
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
+  color: var(--g-theme-error-color, #b10e1e);
 }
 
 .g-skipLink-header__navigation-item a {
@@ -50,11 +45,6 @@
     font-size: 14pt;
     line-height: 1.2;
   }
-}
-
-.g-skipLink-header__navigation-item--active a:focus {
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
 }
 
 .g-skip-link {
@@ -102,15 +92,6 @@
   outline-offset: 0;
   background-color: #b53cde;
   background-color: var(--g-theme-focus-ring-color, #b53cde);
-}
-
-.g-skip-link:link,
-.g-skip-link:visited,
-.g-skip-link:hover,
-.g-skip-link:active,
-.g-skip-link:focus {
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
 }
 
 @media print {

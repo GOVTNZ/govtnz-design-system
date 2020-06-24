@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS Snapshots css: complex make-usage nested mt-if 1`] = `
+Object {
+  "css": "",
+}
+`;
+
+exports[`CSS Snapshots css: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/children.css": "",
+    },
+    "formatId": "css",
+  },
+]
+`;
+
+exports[`CSS Snapshots css: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "css/children.css": "",
+    },
+    "formatId": "css",
+  },
+]
+`;

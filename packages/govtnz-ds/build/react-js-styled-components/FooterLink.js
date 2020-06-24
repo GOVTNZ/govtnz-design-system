@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0.7em 1em;\n  color: #d2d2d2;\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n  @media only screen and (min-width: 48em) {\n    :first-child {\n      margin-left: -1em;\n    }\n    display: inline-block;\n    margin-right: 1em;\n    margin-top: 1.5em;\n    margin-bottom: 1.5em;\n  }\n  :hover {\n    color: #ffffff;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0.7em 1em;\n  color: g-theme-inverted-link-color;\n  margin-left: -1em;\n  margin-right: -1em;\n  margin-top: 0.5em;\n  margin-bottom: 0.5em;\n  @media only screen and (min-width: 48em) {\n    :first-child {\n      margin-left: -1em;\n    }\n    display: inline-block;\n    margin-right: 1em;\n    margin-top: 1.5em;\n    margin-bottom: 1.5em;\n  }\n  :hover {\n    color: g-theme-inverted-color;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;

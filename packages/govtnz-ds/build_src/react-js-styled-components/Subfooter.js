@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledDiv = styled.div`
-  background-color: #2a2a2a;
-  color: #ffffff;
-  fill: #ffffff;
+  background-color: g-theme-inverted-variant-background-color;
+  color: g-theme-inverted-color;
+  fill: g-theme-inverted-color;
   min-height: 146px;
   @media only screen and (min-width: 48em) {
     min-height: 104px;

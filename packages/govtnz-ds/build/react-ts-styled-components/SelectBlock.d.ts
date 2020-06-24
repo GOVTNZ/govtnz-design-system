@@ -9,6 +9,7 @@ declare type Props = {
     multiple?: boolean;
     onChange?: React.SelectHTMLAttributes<HTMLSelectElement>["onChange"];
     ref?: React.RefObject<HTMLSelectElement>;
+    children?: React.ReactNode;
 };
-declare const SelectBlock: ({ errorId, selectId, label, error, name, required, multiple, onChange, ref }: Props) => JSX.Element;
+declare const SelectBlock: ({ errorId, selectId, label, error, name, required, multiple, onChange, ref, children }: Props) => JSX.Element;
 export default SelectBlock;

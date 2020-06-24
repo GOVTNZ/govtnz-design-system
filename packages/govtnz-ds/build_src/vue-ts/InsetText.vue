@@ -14,19 +14,19 @@ export default Vue.extend({
 </script>
 <style scoped>
 .g-inset-text {
-  font-family: Arial, sans-serif;
+  font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
+  color: g-theme-color;
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
   clear: both;
-  border-left: 8px solid #23cba5;
-  background: #f4f4f4;
+  border-left: 8px solid g-theme-inset-border-color;
+  background-color: g-theme-inset-background-color;
 }
 @media print {
   .g-inset-text {
@@ -47,7 +47,7 @@ export default Vue.extend({
 }
 @media print {
   .g-inset-text {
-    color: #000000;
+    color: g-theme-print-color;
   }
 }
 @media (min-width: 40.0625em) {

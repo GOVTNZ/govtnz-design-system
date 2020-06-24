@@ -15,7 +15,6 @@ export type Component = {
   html: string;
   css: string;
   cssVariables?: CSSVariablePattern[];
-  calculatedDynamicKeys?: { [key: string]: string };
 };
 
 export type CSSVariablePattern = {
@@ -37,15 +36,12 @@ export type ReleaseItem = {
   files: Object;
   releaseVersions: ReleaseVersion[];
   creditMarkdown: string;
-  cssVariables?: CSSVariablePattern[];
-  css?: string;
+  cssVariables: CSSVariablePattern[];
 };
 
 export type ComponentToFilesArgs = {
   component: Component;
   creditMarkdown: string;
-  cssVariables: CSSVariablePattern[];
-  metaTemplateFormatIds?: string[] | undefined;
 };
 
 export type ComponentToFilesResponse = {

@@ -1,12 +1,6 @@
 "use strict";
 // DEVELOPER NOTE: This file includes all components so importing this file may be very inefficient. Use carefully! You may prefer to import components directly or use index.js which has import functions, typically treated as a code splitting point.
 Object.defineProperty(exports, "__esModule", { value: true });
-var FlexColumn_1 = require("./FlexColumn");
-Object.defineProperty(exports, "flexColumn", { enumerable: true, get: function () { return FlexColumn_1.default; } });
-var FlexContainer_1 = require("./FlexContainer");
-Object.defineProperty(exports, "flexContainer", { enumerable: true, get: function () { return FlexContainer_1.default; } });
-var FlexRow_1 = require("./FlexRow");
-Object.defineProperty(exports, "flexRow", { enumerable: true, get: function () { return FlexRow_1.default; } });
 var Alert_1 = require("./Alert");
 Object.defineProperty(exports, "alert", { enumerable: true, get: function () { return Alert_1.default; } });
 var Footer_1 = require("./Footer");
@@ -25,6 +19,12 @@ var NzgLogo_1 = require("./NzgLogo");
 Object.defineProperty(exports, "nzgLogo", { enumerable: true, get: function () { return NzgLogo_1.default; } });
 var Subfooter_1 = require("./Subfooter");
 Object.defineProperty(exports, "subfooter", { enumerable: true, get: function () { return Subfooter_1.default; } });
+var FlexColumn_1 = require("./FlexColumn");
+Object.defineProperty(exports, "flexColumn", { enumerable: true, get: function () { return FlexColumn_1.default; } });
+var FlexContainer_1 = require("./FlexContainer");
+Object.defineProperty(exports, "flexContainer", { enumerable: true, get: function () { return FlexContainer_1.default; } });
+var FlexRow_1 = require("./FlexRow");
+Object.defineProperty(exports, "flexRow", { enumerable: true, get: function () { return FlexRow_1.default; } });
 var A_1 = require("./A");
 Object.defineProperty(exports, "a", { enumerable: true, get: function () { return A_1.default; } });
 var Button_1 = require("./Button");

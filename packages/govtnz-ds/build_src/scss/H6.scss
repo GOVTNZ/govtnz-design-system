@@ -1,11 +1,12 @@
 .g-heading-xl {
-  color: $g-theme-color;
-  color: var(--g-theme-color, $g-theme-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -47,13 +48,14 @@
 }
 
 .g-heading-l {
-  color: $g-theme-color;
-  color: var(--g-theme-color, $g-theme-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -95,13 +97,14 @@
 }
 
 .g-heading-m {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -143,13 +146,14 @@
 }
 
 .g-heading-s {
-  color: $g-theme-color;
-  color: var(--g-theme-color, $g-theme-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -243,13 +247,14 @@
 }
 
 .g-heading-xs {
-  color: $g-theme-color;
-  color: var(--g-theme-color, $g-theme-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -307,13 +312,14 @@
 }
 
 .g-heading-xxs {
-  color: $g-theme-color;
-  color: var(--g-theme-color, $g-theme-color);
+  color: $g-theme-heading-color;
+  color: var(--g-theme-heading-color, $g-theme-heading-color);
   font-family: $g-theme-font-family;
   font-family: var(--g-theme-font-family, $g-theme-font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: bold;
+  font-weight: $g-theme-heading-font-weight;
+  font-weight: var(--g-theme-heading-font-weight, $g-theme-heading-font-weight);
   font-size: 1rem;
   line-height: 1.25;
   display: block;

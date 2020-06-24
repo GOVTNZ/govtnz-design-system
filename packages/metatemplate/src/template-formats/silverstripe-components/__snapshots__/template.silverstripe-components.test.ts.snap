@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`silverstripe-components Snapshots silverstripe-components: complex make-usage nested mt-if 1`] = `
+Object {
+  "silverstripe-components": "",
+}
+`;
+
+exports[`silverstripe-components Snapshots silverstripe-components: multiple <mt-if> key comparison 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "silverstripe-components/children.ss": "<div class=\\"<% if $errorId %>g-form-group--error<% end_if %>\\"/> 
+            <label class=\\"g-selectBlock-label\\"<% if $selectId %> for=\\"{$selectId}\\"<% end_if %>> 
+              {$label}
+
+            </label> 
+            <select class=\\"g-selectBlock-select<% if $error %>  g-selectBlock-select--error<% end_if %>\\"<% if $selectId %> id=\\"{$selectId}\\"<% end_if %><% if $name %> name=\\"{$name}\\"<% end_if %><% if $multiple %> multiple=\\"<% if $multiple %>undefined<% end_if %>\\"<% end_if %>> 
+              
+                Options
+              
+            
+          
+          </select>",
+    },
+    "formatId": "silverstripe-components",
+  },
+]
+`;
+
+exports[`silverstripe-components Snapshots silverstripe-components: with it 1`] = `
+Array [
+  Object {
+    "files": Object {
+      "silverstripe-components/children.ss": "<div class=\\"<% if $errorId %>g-form-group--error<% end_if %>\\"/> 
+            <label class=\\"g-selectBlock-label\\"<% if $selectId %> for=\\"{$selectId}\\"<% end_if %>> 
+              {$label}
+
+            </label> 
+            <select class=\\"g-selectBlock-select<% if $error %>  g-selectBlock-select--error<% end_if %>\\"<% if $selectId %> id=\\"{$selectId}\\"<% end_if %><% if $name %> name=\\"{$name}\\"<% end_if %><% if $multiple %> multiple=\\"<% if $multiple %>undefined<% end_if %>\\"<% end_if %>> 
+              
+                Options
+              
+            
+          
+          </select>",
+    },
+    "formatId": "silverstripe-components",
+  },
+]
+`;

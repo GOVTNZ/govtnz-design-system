@@ -1,11 +1,12 @@
 .g-heading-xl {
   color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 3rem;
   line-height: 1.125;
   display: block;
@@ -48,12 +49,13 @@
 
 .g-heading-l {
   color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 2rem;
   line-height: 1.2;
   display: block;
@@ -95,13 +97,14 @@
 }
 
 .g-heading-m {
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
+  color: #2a2a2a;
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
@@ -144,12 +147,13 @@
 
 .g-heading-s {
   color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
@@ -244,12 +248,13 @@
 
 .g-heading-xs {
   color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
@@ -308,12 +313,13 @@
 
 .g-heading-xxs {
   color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: var(--g-theme-heading-color, #2a2a2a);
   font-family: Arial, sans-serif;
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: bold;
+  font-weight: var(--g-theme-heading-font-weight, bold);
   font-size: 1rem;
   line-height: 1.25;
   display: block;

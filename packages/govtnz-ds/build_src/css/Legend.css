@@ -6,8 +6,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
+  color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
   box-sizing: border-box;
   display: table;
   max-width: 100%;

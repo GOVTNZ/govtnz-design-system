@@ -144,7 +144,7 @@ To orient screen reader users and others to the alert, the Design System user mu
         <Alert level="error" headingId="heading4">
             <H2 id="heading4">Error: There’s a problem with the following responses
 </H2>
-            <Ul bulleted spacing>
+            <Ul spacing>
                 <Li><a href="#form">First name must not be empty</a></Li>
                 <Li><a href="#form">Last name must only include letters a to z, hyphens, spaces and apostrophes</a></Li>
                 <Li><a href="#form">Hours worked a week must be between 16 and 99</a></Li>

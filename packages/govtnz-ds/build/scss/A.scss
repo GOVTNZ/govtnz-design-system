@@ -32,25 +32,7 @@
   color: var(--g-theme-link-hover-color, $g-theme-link-hover-color);
 }
 
-.g-link:active {
-  color: $g-theme-link-hover-color;
-  color: var(--g-theme-link-hover-color, $g-theme-link-hover-color);
-}
-
 .g-link:focus {
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
-}
-
-.g-link--muted:link,
-.g-link--muted:visited,
-.g-link--muted:hover,
-.g-link--muted:active {
-  color: $g-theme-alert-color;
-  color: var(--g-theme-alert-color, $g-theme-alert-color);
-}
-
-.g-link--muted:focus {
   color: $g-theme-link-focus-color;
   color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
 }

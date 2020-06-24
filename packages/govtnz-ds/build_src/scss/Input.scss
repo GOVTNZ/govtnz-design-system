@@ -11,12 +11,17 @@
   height: 40px;
   margin-top: 0;
   padding: 0.5rem;
-  border: 1px solid $g-theme-color;
-  border: 1px solid var(--g-theme-color, $g-theme-color);
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
   border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
 }
 
 @media print {
@@ -52,9 +57,9 @@
 }
 
 .g-input--error {
-  border: 1px solid $g-theme-alert-error-border-color;
+  border: 1px solid $g-theme-error-border-color;
   border: 1px solid
-    var(--g-theme-alert-error-border-color, $g-theme-alert-error-border-color);
+    var(--g-theme-error-border-color, $g-theme-error-border-color);
 }
 
 .g-input--width-30 {

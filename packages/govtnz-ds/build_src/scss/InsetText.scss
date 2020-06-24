@@ -6,8 +6,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: $g-theme-link-focus-color;
-  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
   padding: 15px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -15,10 +15,10 @@
   border-left: 8px solid $g-theme-inset-border-color;
   border-left: 8px solid
     var(--g-theme-inset-border-color, $g-theme-inset-border-color);
-  background: $g-theme-alert-background-color;
-  background: var(
-    --g-theme-alert-background-color,
-    $g-theme-alert-background-color
+  background-color: $g-theme-inset-background-color;
+  background-color: var(
+    --g-theme-inset-background-color,
+    $g-theme-inset-background-color
   );
 }
 

@@ -66,8 +66,8 @@
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
-  color: #0b0c0c;
-  color: var(--g-theme-link-focus-color, #0b0c0c);
+  color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
 }
 
 @media print {
@@ -104,10 +104,11 @@
 }
 
 .g-fileUpload__label {
-  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  font-family: var(--Arial, sans-serif, Arial, sans-serif);
   font-family: var(
-    --g-theme-font-family,
-    var(--g-theme-font-family, Arial, sans-serif)
+    --var(--g-theme-font-family, Arial, sans-serif),
+    Arial,
+    sans-serif
   );
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

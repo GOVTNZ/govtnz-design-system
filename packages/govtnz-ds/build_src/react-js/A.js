@@ -1,10 +1,8 @@
 import React from "react";
 
-const A = ({ isMuted, className, href, rel, target, onClick, children }) => (
+const A = ({ className, href, rel, target, onClick, children }) => (
   <a
-    className={`g-link${isMuted ? " g-link--muted" : ""}${
-      className ? " " + className : ""
-    }`}
+    className={`g-link${className ? " " + className : ""}`}
     href={href}
     rel={rel}
     target={target}
