@@ -139,7 +139,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   <iframe
                     src="/basics/themes__examples__example0.html"
                     title=""
-                    style={{ width: '100%', height: '2000px' }}
+                    style={{ width: '100%', height: '100vh' }}
                     ref={iframeRef}
                     className="example__iframe"
                   ></iframe>
