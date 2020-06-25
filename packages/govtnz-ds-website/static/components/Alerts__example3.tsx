@@ -72,6 +72,17 @@ class MainNavMobileMenuContext extends Component<
   }
 }
 
+if (typeof window !== 'undefined') {
+  const hash =
+    window.document.location.hash &&
+    window.document.location.hash.replace(/#/gi, '');
+
+  if (hash && window.document.body && window.document.body.classList) {
+    // used for themes
+    window.document.body.classList.add(hash);
+  }
+}
+
 type WrappedMainNavProps = {
   Component: React.Component;
 };

@@ -37,9 +37,9 @@
                         <InputBlock type="email" label="Email address" name="email" id="anyEmailId"/>
                         <FieldsetBlock
                             legend={
-                            <H1 styleSize="small" id="whereLiveTitle">
+                            <H2 styleSize="small" id="whereLiveTitle">
                                 What is your issue about?
-                            </H1>
+                            </H2>
                             }
                         >
                             <RadioBlock

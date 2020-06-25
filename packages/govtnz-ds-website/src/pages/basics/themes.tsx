@@ -124,7 +124,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             <div className="example__container ">
               <ExampleHeading>{humanReadableTheme}</ExampleHeading>
               <div className="example">
-                {/* <div className="example__iframe-link-container">
+                <div className="example__iframe-link-container">
                   <a
                     className="g-link"
                     href="/basics/themes__examples__example0.html"
@@ -134,10 +134,10 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                     Open this <span className="visually-hidden"> Themes</span>{' '}
                     example in a new window
                   </a>
-                </div> */}
+                </div>
                 <div className="example__iframe-wrapper">
                   <iframe
-                    src="/basics/themes__examples__example0.html"
+                    src={`/basics/themes__examples__example0.html#${theme}`}
                     title=""
                     style={{ width: '100%', height: '100vh' }}
                     ref={iframeRef}
