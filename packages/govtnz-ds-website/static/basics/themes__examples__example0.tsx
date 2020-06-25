@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import H1 from '@govtnz/ds/build/react-ts/H1';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';import Button from '@govtnz/ds/build/react-ts/Button';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
+import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import H1 from '@govtnz/ds/build/react-ts/H1';import P from '@govtnz/ds/build/react-ts/P';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';import Button from '@govtnz/ds/build/react-ts/Button';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -43,7 +43,7 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                 <FlexRow {...onChangeGenerator({})}>
                     <FlexColumn xs="12" sm="12" md="12" lg="12" {...onChangeGenerator({})}>
                         <H1 {...onChangeGenerator({})}>Contact us</H1>
-                        <p styleSize="large">Here is an intro for the page.</p>
+                        <P styleSize="large" {...onChangeGenerator({})}>Here is an intro for the page.</P>
                         <p>Please do not hesitate to get in touch with us</p>
                         <InputBlock type="text" label="Name" name="anyName" id="anyNameId" {...onChangeGenerator({})}></InputBlock>
                         <InputBlock type="email" label="Email address" name="email" id="anyEmailId" {...onChangeGenerator({})}></InputBlock>

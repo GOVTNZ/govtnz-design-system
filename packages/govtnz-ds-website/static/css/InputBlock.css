@@ -158,6 +158,8 @@
   appearance: none;
   background-color: #ffffff;
   background-color: var(--g-theme-form-background-color, #ffffff);
+  color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
 }
 
 @media print {

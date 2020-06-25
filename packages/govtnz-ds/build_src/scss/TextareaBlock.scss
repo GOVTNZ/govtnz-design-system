@@ -146,6 +146,8 @@
     --g-theme-form-background-color,
     $g-theme-form-background-color
   );
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
 }
 
 @media print {

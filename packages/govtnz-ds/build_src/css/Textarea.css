@@ -23,6 +23,7 @@
   -webkit-appearance: none;
   background-color: #ffffff;
   background-color: var(--g-theme-form-background-color, #ffffff);
+  color: g-theme-form-color;
 }
 
 @media print {

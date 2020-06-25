@@ -178,8 +178,10 @@ body.theme-dark {
   --g-theme-inverted-nav-active-border-color: #000000;
   --g-theme-inverted-nav-active-color: #000000;
   --g-theme-select-background-color: #363636;
+  --g-theme-select-color: #ffffff;
   --g-theme-form-background-color: #363636;
   --g-theme-form-border-color: #737373;
+  --g-theme-form-color: #ffffff;
   --g-theme-button-active-box-shadow: #000000;
   --g-theme-button-color: #000000;
   --g-theme-button-background-color: #d3d3d3;

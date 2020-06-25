@@ -38,6 +38,7 @@ const StyledTextarea = styled.textarea`
   border-radius: 0;
   -webkit-appearance: none;
   background-color: g-theme-form-background-color;
+  color: g-theme-form-color;
   @media print {
     font-family: sans-serif;
   }

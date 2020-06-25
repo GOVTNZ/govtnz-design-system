@@ -236,6 +236,7 @@ export default Vue.extend({
   -moz-appearance: none;
   appearance: none;
   background-color: g-theme-form-background-color;
+  color: g-theme-color;
 }
 @media print {
   .g-inputBlock-input {

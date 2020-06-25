@@ -31,7 +31,7 @@
                 <FlexRow>
                     <FlexColumn xs="12" sm="12" md="12" lg="12">
                         <H1>Contact us</H1>
-                        <p styleSize="large">Here is an intro for the page.</p>
+                        <P styleSize="large">Here is an intro for the page.</P>
                         <p>Please do not hesitate to get in touch with us</p>
                         <InputBlock type="text" label="Name" name="anyName" id="anyNameId" />
                         <InputBlock type="email" label="Email address" name="email" id="anyEmailId"/>

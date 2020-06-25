@@ -188,6 +188,7 @@ export default Vue.extend({
   border-radius: 0;
   -webkit-appearance: none;
   background-color: g-theme-form-background-color;
+  color: g-theme-color;
 }
 @media print {
   .g-textareaBlock-textarea {

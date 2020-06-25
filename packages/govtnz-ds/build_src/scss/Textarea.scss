@@ -26,6 +26,7 @@
     --g-theme-form-background-color,
     $g-theme-form-background-color
   );
+  color: g-theme-form-color;
 }
 
 @media print {
