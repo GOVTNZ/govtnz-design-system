@@ -78,6 +78,7 @@
   border-style: solid;
   border-color: #000;
   border-width: 0px 0px 1px 0px;
+  resize: vertical;
 
   @include print {
     box-decoration-break: clone;

@@ -13,6 +13,7 @@ import '@govtnz/ds/build/css/RadioBlock.css';
 import '@govtnz/ds/build/css/FieldsetBlock.css';
 import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import GetInTouch from '../../components/GetInTouch';
+import ExampleHeading from '../../commons/ExampleHeading';
 
 const ThemesPage = (pageProps: PageRendererProps) => {
   const [theme, setTheme] = useState('theme-default');
@@ -74,7 +75,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             <BasicsMenu pageProps={pageProps} />
           </Column>
           <Column xs="12" sm="9" md="8" lg="8">
-            <CaptionL>Themes</CaptionL>
+            <CaptionL>Basics</CaptionL>
             <H1 styleSize="xlarge" id="main-heading">
               Themes
             </H1>
@@ -88,7 +89,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                 }
               >
                 <RadioBlock
-                  label="Default"
+                  label="Default theme"
                   id="radio1"
                   name="theme"
                   value="theme-default"
@@ -115,6 +116,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             </div>
 
             <div className="example__container ">
+              <ExampleHeading>{theme}</ExampleHeading>
               <div className="example">
                 {/* <div className="example__iframe-link-container">
                   <a
