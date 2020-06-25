@@ -18,10 +18,7 @@ import onChangeGenerator from '../../commons/onChangeGenerator';
 
 const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Community</H1>
 <P styleSize="large">
-    <a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
-        Government Information Services
-    </a>&nbsp;
-    is creating New Zealand’s New Zealand Government Design System (NZGDS) now. Our
+    All of Government Services Delivery is creating New Zealand’s New Zealand Government Design System (NZGDS) now. Our
     overall aim is to improve digital service delivery across the New Zealand
     public service.
 </P>

@@ -24,8 +24,7 @@ const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-h
     how and when to use them. 
 </P>
 
-<p><a href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">Government Information Services</a>&nbsp;
-is creating the NZGDS now. Our overall aim is to improve digital
+<p>All of Government Services Delivery is creating the NZGDS now. Our overall aim is to improve digital
 service delivery across the New Zealand public service.</p>
 <p><a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</a>.</p>
 <p>This alpha website shows you what we have built so far, what we&#39;re working on,

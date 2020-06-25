@@ -38,7 +38,7 @@ import PatternsIcon from '../commons/svgs/icon-home-patterns.svg';
 
 // import { Details, Summary } from 'react-accessible-details'
 
-const IndexPage = props => {
+const IndexPage = (props) => {
   return (
     <Layout {...props}>
       <SEO
@@ -86,12 +86,10 @@ const IndexPage = props => {
               when to use them.
             </P>
             <P styleSize="medium">
-              <A href="https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/">
-                Government Information Services
-              </A>{' '}
-              is creating the design system now, and you can contribute. This
-              alpha site shows you what we have built so far, what we're working
-              on, and how you can get involved.
+              All of Government Services Delivery is creating the design system
+              now, and you can contribute. This alpha site shows you what we
+              have built so far, what we're working on, and how you can get
+              involved.
             </P>
             <span className="hr hr--large" />
             <H2 styleSize="large">Benefits of the design system</H2>
