@@ -91,16 +91,20 @@ export default class Example extends Component<Props, State> {
     }
     const data = e.data;
     const resizeById = data && data.resizeById;
+    console.log(resizeById, this.props.iframeProps.id);
     if (
       this.props.iframeProps &&
       this.props.iframeProps.id &&
       this.props.iframeProps.id === resizeById
     ) {
-      const iframeHeightClamped = data.height > 50 ? data.height : 50;
-      this.setState({
-        // iframeWidth: data.width > 300 ? data.width : 300,
-        iframeHeight: iframeHeightClamped,
-      });
+      const iframeHeightClamped = data.height > 100 ? data.height : 100;
+      if (this.state.iframeHeight < iframeHeightClamped) {
+        // never shrink height. might be interactive component that changes height, so only ever increase height to be a stable size.
+        this.setState({
+          // iframeWidth: data.width > 300 ? data.width : 300,
+          iframeHeight: iframeHeightClamped,
+        });
+      }
     }
   };
 

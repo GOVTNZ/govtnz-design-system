@@ -60,6 +60,7 @@
 
         window.addEventListener('resize', updateIframeSize, false);
         window.addEventListener('orientationchange', updateIframeSize, false);
+        window.addEventListener('click', updateIframeSize, false);
         [50, 100].forEach(function (ms) {
           // temporary workaround to prevent race condition where the parent
           // hasn't yet registered addEventListener('message')
