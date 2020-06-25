@@ -100,8 +100,6 @@ class ContactusForm extends React.Component {
   scrollToElement = (id) => {
     const scrollElement: Element | null = document.getElementById(id);
 
-    console.log('id', id);
-
     if (scrollElement) {
       scrollElement.scrollIntoView({ behavior: 'smooth' });
     }
@@ -165,7 +163,6 @@ class ContactusForm extends React.Component {
               <H3 id="heading3">
                 Error: There’s a problem with the following responses
               </H3>
-
               {errorMessages.map(
                 (error): React.ReactElement => (
                   <>
@@ -230,7 +227,6 @@ class ContactusForm extends React.Component {
 
           <div style={{ marginTop: '20px' }}>
             <FieldsetBlock
-              id="scroll-field-radio"
               legend={
                 <H1 styleSize="medium" id="nameChangeId5">
                   Where do you live?
@@ -241,6 +237,7 @@ class ContactusForm extends React.Component {
             >
               <Radios>
                 <RadioBlock
+                  id="scroll-field-radio"
                   label="North Island"
                   name="radio"
                   required
