@@ -1,7 +1,7 @@
 # Themes Example
 
 <ExampleContainer>
-    <Example title="Example: Header containing a MainNav">
+    <Example title="Example: Header containing a MainNav" noPadding>
         <Header>
             <MainNavMobileMenuContext>
                 <FlexContainer width="fluid">
@@ -26,7 +26,48 @@
                 </FlexContainer>
             </MainNavMobileMenuContext>
         </Header>
-        <p>Page content...</p>        
+        <main role="main" id="main-content" className="main-content theme-main">
+            <FlexContainer width="fixed">
+                <FlexRow>
+                    <FlexColumn xs="12" sm="12" md="12" lg="12">
+                        <H1>Contact us</H1>
+                        <p styleSize="large">Here is an intro for the page.</p>
+                        <p>Please do not hesitate to get in touch with us</p>
+                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" />
+                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId"/>
+                        <FieldsetBlock
+                            legend={
+                            <H1 styleSize="small" id="whereLiveTitle">
+                                What is your issue about?
+                            </H1>
+                            }
+                        >
+                            <RadioBlock
+                                label="Our website"
+                                id="radioIssue1"
+                                name="issueType"
+                            />
+                            <RadioBlock
+                                label="One of our services"
+                                id="radioIssue2"
+                                name="issueType"
+                            />
+                            <RadioBlock
+                                label="Something else"
+                                id="radioIssue3"
+                                name="issueType"
+                            />
+                        </FieldsetBlock>
+                        <TextareaBlock
+                            id="comments"
+                            name="comments"
+                            label="Comment?"
+                        />
+                        <Button>Submit</Button>
+                    </FlexColumn>
+                </FlexRow>
+            </FlexContainer>
+        </main>
         <Footer>
             <FlexContainer width="fixed">
                 <FlexRow>
@@ -80,4 +121,5 @@
             </Subfooter>
         </Footer>
     </Example>
+
 </ExampleContainer>

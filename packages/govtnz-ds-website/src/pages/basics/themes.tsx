@@ -114,15 +114,30 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               </FieldsetBlock>
             </div>
 
-            <a href="/basics/themes__examples__example0.html" target="_blank">
-              open in new{' '}
-            </a>
-            <iframe
-              src="/basics/themes__examples__example0.html"
-              title=""
-              style={{ width: '100%', height: '400px' }}
-              ref={iframeRef}
-            ></iframe>
+            <div className="example__container ">
+              <div className="example">
+                {/* <div className="example__iframe-link-container">
+                  <a
+                    className="g-link"
+                    href="/basics/themes__examples__example0.html"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Open this <span className="visually-hidden"> Themes</span>{' '}
+                    example in a new window
+                  </a>
+                </div> */}
+                <div className="example__iframe-wrapper">
+                  <iframe
+                    src="/basics/themes__examples__example0.html"
+                    title=""
+                    style={{ width: '100%', height: '400px' }}
+                    ref={iframeRef}
+                    className="example__iframe"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
 
             <GetInTouch title="Themes" />
           </Column>

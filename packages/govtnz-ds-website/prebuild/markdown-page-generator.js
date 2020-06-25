@@ -308,6 +308,7 @@ const generatePage = async (
       const exampleAsJS = jsxtojson(fullExample);
 
       let heading = exampleAsJS.props && exampleAsJS.props.title;
+      let noPadding = exampleAsJS.props && exampleAsJS.props.noPadding;
 
       if (!heading) {
         heading =
@@ -336,7 +337,8 @@ const generatePage = async (
         exampleTitles[counter],
         exampleIds[counter],
         `./${pageId}`,
-        linkBackPageName
+        linkBackPageName,
+        noPadding
       );
 
       const exampleHeight = await getExampleHeight(exampleSrcPath);

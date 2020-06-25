@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
+import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import H1 from '@govtnz/ds/build/react-ts/H1';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';import Button from '@govtnz/ds/build/react-ts/Button';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example: Header containing a MainNav" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example: Header containing a MainNav" noPadding {...onChangeGenerator({})}>
         <Header {...onChangeGenerator({})}>
             <MainNavMobileMenuContext {...onChangeGenerator({})}>
                 <FlexContainer width="fluid" {...onChangeGenerator({})}>
@@ -38,7 +38,30 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                 </FlexContainer>
             </MainNavMobileMenuContext>
         </Header>
-        <p>Page content...</p>        
+        <main role="main" id="main-content" className="main-content theme-main">
+            <FlexContainer width="fixed" {...onChangeGenerator({})}>
+                <FlexRow {...onChangeGenerator({})}>
+                    <FlexColumn xs="12" sm="12" md="12" lg="12" {...onChangeGenerator({})}>
+                        <H1 {...onChangeGenerator({})}>Contact us</H1>
+                        <p styleSize="large">Here is an intro for the page.</p>
+                        <p>Please do not hesitate to get in touch with us</p>
+                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" {...onChangeGenerator({})}></InputBlock>
+                        <FieldsetBlock legend={
+                            <H1 styleSize="small" id="whereLiveTitle">
+                                What is your issue about?
+                            </H1>
+                            } {...onChangeGenerator({})}>
+                            <RadioBlock label="Our website" id="radioIssue1" name="issueType" {...onChangeGenerator({})}></RadioBlock>
+                            <RadioBlock label="One of our services" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
+                            <RadioBlock label="Something else" id="radioIssue3" name="issueType" {...onChangeGenerator({})}></RadioBlock>
+                        </FieldsetBlock>
+                        <TextareaBlock id="comments" name="comments" label="Comment?" {...onChangeGenerator({})}></TextareaBlock>
+                        <Button {...onChangeGenerator({})}>Submit</Button>
+                    </FlexColumn>
+                </FlexRow>
+            </FlexContainer>
+        </main>
         <Footer {...onChangeGenerator({})}>
             <FlexContainer width="fixed" {...onChangeGenerator({})}>
                 <FlexRow {...onChangeGenerator({})}>

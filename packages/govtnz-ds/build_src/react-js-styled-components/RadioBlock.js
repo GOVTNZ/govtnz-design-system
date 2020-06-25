@@ -92,7 +92,7 @@ const StyledLabel = styled.label`
     left: 0;
     width: 24px;
     height: 24px;
-    border: 2px solid currentColor;
+    border: g-theme-radio-border;
     border-radius: 50%;
     background-color: g-theme-form-background-color;
   }

@@ -33,6 +33,7 @@ const defaultThemeMap = {
   'g-theme-button-secondary-color': '#0b0c0c',
   'g-theme-button-warning-background-color': '#900815',
   'g-theme-button-box-shadow-color': '#2a2a2a',
+  'g-theme-radio-border': '2px solid currentColor',
   'g-theme-link-color': '#005ea5',
   'g-theme-link-focus-color': '#0b0c0c',
   'g-theme-link-hover-color': '#000c48',

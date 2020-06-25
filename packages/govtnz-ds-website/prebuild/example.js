@@ -22,7 +22,8 @@ const writeExamplePage = async (
   title,
   id,
   parentUrl,
-  linkBackPageName
+  linkBackPageName,
+  noPadding
 ) => {
   // This writes an example HTML file so that we can iframe it.
   //
@@ -358,7 +359,9 @@ const writeExamplePage = async (
     scriptUrl,
     serverExampleHTML,
     linkBackPageName,
-  }).replace('@css', cssImports);
+  })
+    .replace('@css', cssImports)
+    .replace('@noPadding', noPadding ? ' example-no-padding ' : '');
 
   const htmlRelativePath = `${exampleRelativePagePath}.html`;
   const htmlFullPath = path.resolve(

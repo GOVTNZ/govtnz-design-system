@@ -24,7 +24,7 @@
       of the
       <a href="/">New Zealand Government design system</a>.
     </noscript>
-    <div id="iframed-message" style="display:none">
+    <div id="iframed-message" style="display: none;">
       This example originates from the
       <a href="./Date"
         >Date input components page</a
@@ -32,7 +32,7 @@
       of the
       <a href="/">New Zealand Government design system</a>.
     </div>
-    <div id="root" class="css-changes-for-example-only">
+    <div id="root" class="css-changes-for-example-only ">
       <div class="g-dateInput-form-group"><fieldset aria-describedby="bday-hint" class="g-dateInput-fieldset" role="group"><legend class="g-dateInput-fieldset__legend"><h1 class="g-heading g-heading-l g-heading-mb-0">What is your date of birth?</h1></legend><span class="g-dateInput-hint" id="bday-hint">For example, 31 3 1980</span><div class="g-dateInput" id="bday"><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="bday-day">Day</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2" id="bday-day" maxLength="2" pattern="[0-9]*" autoComplete="birthday-day"/></div></div><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="bday-month">Month</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2" id="bday-month" maxLength="2" pattern="[0-9]*" autoComplete="birthday-day"/></div></div><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="bday-year">Year</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-4" id="bday-year" maxLength="4" pattern="[0-9]*" autoComplete="birthday-day"/></div></div></div></fieldset></div>
     </div>
     <script>
@@ -60,7 +60,7 @@
 
         window.addEventListener('resize', updateIframeSize, false);
         window.addEventListener('orientationchange', updateIframeSize, false);
-        [50, 100].forEach(function(ms) {
+        [50, 100].forEach(function (ms) {
           // temporary workaround to prevent race condition where the parent
           // hasn't yet registered addEventListener('message')
           // FIXME
