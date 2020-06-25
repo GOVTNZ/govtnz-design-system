@@ -172,8 +172,8 @@ class ContactusForm extends React.Component {
             <Alert level="success" headingId="heading3">
               <H2 id="heading3">Success: Your message has been sent.</H2>
               <P>
-                Thanks for contacting us. We will reply to your email within 1-3
-                working days
+                Thanks for contacting us. We’ll get back to you in 1–3 working
+                days.
               </P>
             </Alert>
           </div>
@@ -269,8 +269,8 @@ const PrototypePageContent = () => (
     <H1 styleSize="xlarge">Prototypes</H1>
     <p>
       See example prototypes built using Design System components. We’ll
-      continue to update this page with prototypes to show how components 
-      look and work when used together.
+      continue to update this page with prototypes to show how components look
+      and work when used together.
     </p>
     <H2 styleSize="large">Contact form</H2>
     <p>
@@ -292,13 +292,13 @@ const PrototypePageContent = () => (
         </Column>
       </Row>
     </ExampleContainer>
-    
+
     <p>
       <a href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds-website/src/pages/prototypes/index.tsx">
         View source code on GitHub
       </a>
     </p>
-     
+
     <h2 id="credit">Credit</h2>
     <p>
       Guidance, original HTML and CSS derived from{' '}
