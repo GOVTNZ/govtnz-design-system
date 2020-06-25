@@ -1,4 +1,4 @@
-Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.
+<P styleSize="large">Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</P>
 
 ## Examples
 

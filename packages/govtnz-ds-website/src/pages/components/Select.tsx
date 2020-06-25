@@ -8,6 +8,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
+import P from '@govtnz/ds/build/react-ts/P';
+import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
 import components__Select from '../../commons/examples/components__Select';
@@ -22,7 +24,8 @@ import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><p>The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</p>
+const PageContent = (props) => <React.Fragment><P styleSize="large">The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</P>
+
 <H2 styleSize="large" id="example">Example</H2>
 <p>Interact with this example to see how it works.</p>
 <ExampleContainer>

@@ -1,4 +1,4 @@
-The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.
+<P styleSize="large">The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</P>
 
 ## Example
 

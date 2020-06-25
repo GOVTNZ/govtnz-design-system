@@ -8,6 +8,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
+import P from '@govtnz/ds/build/react-ts/P';
+import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
 import Ul from '@govtnz/ds/build/react-ts/Ul';
@@ -26,7 +28,8 @@ import MainNavMobileMenuContext from '../../commons/MainNavMobileMenuContext';
 import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
-const PageContent = (props) => <React.Fragment><p>Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</p>
+const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</P>
+
 <H2 styleSize="large" id="examples">Examples</H2>
 <p>Interact with each example to see how it works.</p>
 <ExampleContainer>
