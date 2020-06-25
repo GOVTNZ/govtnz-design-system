@@ -105,8 +105,11 @@ const generateContentPages = async (
         `src/pages/${sectionId}`,
         `${pageId}.tsx`
       );
-      await writeFile(targetPagePath, page);
-      filesToDelete = removeMatch(filesToDelete, targetPagePath);
+      if (!pageId.endsWith('__examples')) {
+        // __examples pages are ones that are only used to generate iframed pages so we don't want the DS Website page just the iframe targets
+        await writeFile(targetPagePath, page);
+        filesToDelete = removeMatch(filesToDelete, targetPagePath);
+      }
     })
   );
   return filesToDelete;
@@ -123,7 +126,7 @@ const generatePage = async (
   // documentation page that groups together several components into
   // one page of documentation.
 
-  let linkBackPageName = pageId;
+  let linkBackPageName = pageId.replace(/__examples/g, '').replace(/_/gi, ' '); // pages that end in __examples link to a different page so remove the examples title
   if (sectionId === 'components') {
     componentsJson.forEach((menuSection) => {
       menuSection.items.forEach((item) => {

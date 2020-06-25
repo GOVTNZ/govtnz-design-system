@@ -16,11 +16,36 @@ import GetInTouch from '../../components/GetInTouch';
 import ExampleHeading from '../../commons/ExampleHeading';
 
 const ThemesPage = (pageProps: PageRendererProps) => {
-  const [theme, setTheme] = useState('theme-default');
+  const [theme, setTheme] = useState<string>('theme-default');
+  const [iframeHeight, setIframeHeight] = useState<string>('100vh');
   const iframeRef = useRef<HTMLIFrameElement>();
   const updateTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTheme(e.target.value);
   };
+
+  const handleMessage = (e) => {
+    console.log(e);
+
+    if (e.origin !== window.location.origin) {
+      console.info('Ignoring postMessage from', e.origin, e);
+      return;
+    }
+    const data = e.data;
+    const resizeById = data && data.resizeById;
+    console.log({ resizeById });
+    if (resizeById !== 'iframe_basicsthemes__examples0') {
+      return;
+    }
+    const iframeHeightClamped = data.height > 150 ? data.height : 150;
+    setIframeHeight(iframeHeightClamped);
+  };
+
+  useEffect(() => {
+    window.addEventListener('message', handleMessage, false);
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
 
   useEffect(() => {
     console.log(iframeRef);
@@ -127,7 +152,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                 <div className="example__iframe-link-container">
                   <a
                     className="g-link"
-                    href="/basics/themes__examples__example0.html"
+                    href={`/basics/themes__examples__example0.html#${theme}`}
                     rel="noreferrer noopener"
                     target="_blank"
                   >
@@ -139,7 +164,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   <iframe
                     src={`/basics/themes__examples__example0.html#${theme}`}
                     title=""
-                    style={{ width: '100%', height: '100vh' }}
+                    style={{ width: '100%', height: iframeHeight }}
                     ref={iframeRef}
                     className="example__iframe"
                   ></iframe>

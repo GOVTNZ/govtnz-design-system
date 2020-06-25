@@ -4,6 +4,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#iframed-message {
+  background: white;
+  color: black;
+}
+
 .css-changes-for-example-only [class^='g-caption'] + [class^='g-heading'],
 .css-changes-for-example-only [class^='g-heading']:first-child {
   margin-top: 0 !important;

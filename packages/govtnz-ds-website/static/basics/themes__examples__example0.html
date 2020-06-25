@@ -18,16 +18,16 @@
   <body>
     <noscript>
       This example originates from the
-      <a href="./themes__examples"
-        >themes__examples page</a
+      <a href="./themes"
+        >themes page</a
       >
       of the
       <a href="/">New Zealand Government design system</a>.
     </noscript>
     <div id="iframed-message" style="display: none;">
       This example originates from the
-      <a href="./themes__examples"
-        >themes__examples page</a
+      <a href="./themes"
+        >themes page</a
       >
       of the
       <a href="/">New Zealand Government design system</a>.
@@ -93,6 +93,17 @@
           return;
         }
         iframedMessage.style.display = isIframed ? 'none' : 'block';
+      }
+
+      if (typeof window !== 'undefined') {
+        const hash =
+          window.document.location.hash &&
+          window.document.location.hash.replace(/#/gi, '');
+
+        if (hash && window.document.body && window.document.body.classList) {
+          // used for themes
+          window.document.body.classList.add(hash);
+        }
       }
     </script>
   </body>
