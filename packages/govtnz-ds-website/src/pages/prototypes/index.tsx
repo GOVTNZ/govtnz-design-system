@@ -13,6 +13,9 @@ import '@govtnz/ds/build/css/Alert.css';
 import H2 from '@govtnz/ds/build/react-js/H2';
 import '@govtnz/ds/build/css/H2.css';
 
+import H3 from '@govtnz/ds/build/react-js/H3';
+import '@govtnz/ds/build/css/H3.css';
+
 import P from '@govtnz/ds/build/react-js/P';
 import '@govtnz/ds/build/css/P.css';
 
@@ -94,10 +97,8 @@ class ContactusForm extends React.Component {
     return formfieldValues;
   };
 
-  scrollToElement = () => {
-    const scrollElement: Element | null = document.getElementById(
-      'scroll-field'
-    );
+  scrollToElement = (id) => {
+    const scrollElement: Element | null = document.getElementById(id);
 
     if (scrollElement) {
       scrollElement.scrollIntoView({ behavior: 'smooth' });
@@ -125,11 +126,23 @@ class ContactusForm extends React.Component {
       ? 'Check your email address'
       : 'Enter your email address';
 
-    const errorMessageFields = [
-      username.valid ? '' : 'Enter your name',
-      email.valid ? '' : isInvalidEmail,
-      radio.valid ? '' : 'Select where you live',
-      textarea.valid ? '' : 'Enter your message',
+    const errorMessages = [
+      {
+        id: '#scroll-field-name',
+        message: username.valid ? '' : 'Enter your name',
+      },
+      {
+        id: '#scroll-field-email',
+        message: email.valid ? '' : isInvalidEmail,
+      },
+      {
+        id: '#scroll-field-radio',
+        message: radio.valid ? '' : 'Select where you live',
+      },
+      {
+        id: '#scroll-field-text-area',
+        message: textarea.valid ? '' : 'Enter your message',
+      },
     ];
 
     return (
@@ -147,30 +160,35 @@ class ContactusForm extends React.Component {
             ''
           ) : (
             <Alert level="error" headingId="heading3">
-              <H2 id="heading3">
+              <H3 id="heading3">
                 Error: There’s a problem with the following responses
-              </H2>
-              <Ul bulleted spacing>
-                {errorMessageFields.map((message) => (
+              </H3>
+              {errorMessages.map(
+                (error): React.ReactElement => (
                   <>
-                    {message ? (
-                      <Li>
-                        <a href="#scroll-field" onClick={this.scrollToElement}>
-                          {message}
-                        </a>
-                      </Li>
+                    {error.message ? (
+                      <Ul spacing key={error.message}>
+                        <Li>
+                          <a
+                            href={error.id}
+                            onClick={this.scrollToElement(error.id)}
+                          >
+                            {error.message}
+                          </a>
+                        </Li>
+                      </Ul>
                     ) : (
                       ''
                     )}
                   </>
-                ))}
-              </Ul>
+                )
+              )}
             </Alert>
           )}
 
           <div style={{ display: successMessage }}>
             <Alert level="success" headingId="heading3">
-              <H2 id="heading3">Success: Your message has been sent.</H2>
+              <H3 id="heading3">Success: Your message has been sent.</H3>
               <P>
                 Thanks for contacting us. We’ll get back to you in 1–3 working
                 days.
@@ -180,7 +198,7 @@ class ContactusForm extends React.Component {
 
           <div style={{ marginTop: '40px' }}>
             <InputBlock
-              id="scroll-field"
+              id="scroll-field-name"
               width="30"
               maxLength={30}
               type="text"
@@ -194,6 +212,7 @@ class ContactusForm extends React.Component {
 
           <div style={{ marginTop: '40px' }}>
             <InputBlock
+              id="scroll-field-email"
               width="30"
               maxLength={30}
               hintId="anyHintId3"
@@ -218,6 +237,7 @@ class ContactusForm extends React.Component {
             >
               <Radios>
                 <RadioBlock
+                  id="scroll-field-radio"
                   label="North Island"
                   name="radio"
                   required
@@ -242,6 +262,7 @@ class ContactusForm extends React.Component {
           </div>
           <div style={{ marginTop: '40px' }}>
             <TextareaBlock
+              id="scroll-field-text-area"
               autoComplete="off"
               name="textarea"
               label="What’s your message?"
