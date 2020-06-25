@@ -57,6 +57,12 @@ const ThemesPage = (pageProps: PageRendererProps) => {
     body.classList.add(theme);
   }, [theme]);
 
+  const humanReadableTheme = {
+    'theme-default': 'Default theme',
+    'theme-light': 'Light theme',
+    'theme-dark': 'Dark theme',
+  }[theme];
+
   return (
     <Layout {...pageProps}>
       <SEO
@@ -116,7 +122,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             </div>
 
             <div className="example__container ">
-              <ExampleHeading>{theme}</ExampleHeading>
+              <ExampleHeading>{humanReadableTheme}</ExampleHeading>
               <div className="example">
                 {/* <div className="example__iframe-link-container">
                   <a
@@ -133,7 +139,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                   <iframe
                     src="/basics/themes__examples__example0.html"
                     title=""
-                    style={{ width: '100%', height: '400px' }}
+                    style={{ width: '100%', height: '2000px' }}
                     ref={iframeRef}
                     className="example__iframe"
                   ></iframe>

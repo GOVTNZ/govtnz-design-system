@@ -532,6 +532,8 @@ const getExampleHeight = async (srcPath) => {
   // then you can ignore that. It's from Chrome and it's just a possible
   // error and afaik we're doing everything correctly.
 
+  const minimumHeight = 200;
+
   let height = 200;
   const npmProjectPath = path.resolve(__dirname, '..');
 
@@ -547,7 +549,7 @@ const getExampleHeight = async (srcPath) => {
       srcPath,
       ' This might be expected if this is a new example, and re-running this after a `yarn build` should make this error go away.'
     );
-    return height;
+    return height < minimumHeight ? minimumHeight : height;
   }
 
   const browser = await puppeteer.launch();
