@@ -13,7 +13,7 @@ var Ul = function Ul(_ref) {
   var spacing = _ref.spacing,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("ul", {
-    className: "g-ul".concat(spacing ? " g-list--spacing" : "")
+    className: "g-ul".concat(spacing ? " g-ul--spacing" : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Ul = ({ spacing, children }: Props) => (
-  <ul className={`g-ul${spacing ? " g-list--spacing" : ""}`}>
+  <ul className={`g-ul${spacing ? " g-ul--spacing" : ""}`}>
     {children !== undefined ? (
       children
     ) : (

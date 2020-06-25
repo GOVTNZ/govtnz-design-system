@@ -13,7 +13,7 @@ export default Vue.extend({
   },
   computed: {
     computed__class() {
-      return "g-ul " + (this.spacing ? " g-list--spacing" : "");
+      return "g-ul " + (this.spacing ? " g-ul--spacing" : "");
     }
   }
 });
