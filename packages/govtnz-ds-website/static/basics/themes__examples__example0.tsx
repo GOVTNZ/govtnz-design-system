@@ -45,8 +45,8 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                         <H1 {...onChangeGenerator({})}>Contact us</H1>
                         <P styleSize="large" {...onChangeGenerator({})}>Here is an intro for the page.</P>
                         <p>Please do not hesitate to get in touch with us</p>
-                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" maxLength={20} {...onChangeGenerator({})}></InputBlock>
-                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" maxLength={20} {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" width={20} {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
                         <FieldsetBlock legend={
                             <H2 styleSize="small" id="whereLiveTitle">
                                 What is your issue about?
@@ -56,7 +56,7 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                             <RadioBlock label="One of our services" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                             <RadioBlock label="Something else" id="radioIssue3" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                         </FieldsetBlock>
-                        <TextareaBlock id="comments" name="comments" label="Comment?" cols={30} {...onChangeGenerator({})}></TextareaBlock>
+                        <TextareaBlock id="comments" name="comments" label="Comment?" cols={20} {...onChangeGenerator({})}></TextareaBlock>
                         <Button {...onChangeGenerator({})}>Submit</Button>
                     </FlexColumn>
                 </FlexRow>
