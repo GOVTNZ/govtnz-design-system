@@ -86,13 +86,6 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   :active::before {
     top: -4px;
   }
-  opacity: 0.5;
-  background-color: g-theme-button-background-color;
-  :hover,
-  :hover {
-    background-color: g-theme-button-background-color;
-    cursor: default;
-  }
   :focus,
   :focus {
     outline: none;
@@ -100,11 +93,9 @@ const StyledButton = styled.button<Pick<Props, "level">>`
   padding-top: 16px;
   padding-bottom: 16px;
   margin-top: 0px;
-  opacity: 0.5;
   background: g-theme-button-disabled-background-color;
   :hover,
   :hover {
-    background-color: g-theme-button-disabled-background-color;
     cursor: default;
   }
   :focus,

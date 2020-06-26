@@ -133,16 +133,6 @@ export default Vue.extend({
 .g-button:active::before {
   top: -4px;
 }
-.g-button--disabled,
-.g-button[disabled] {
-  opacity: 0.5;
-  background-color: g-theme-button-background-color;
-}
-.g-button--disabled:hover,
-.g-button[disabled]:hover {
-  background-color: g-theme-button-background-color;
-  cursor: default;
-}
 .g-button--disabled:focus,
 .g-button[disabled]:focus {
   outline: none;
@@ -156,12 +146,10 @@ export default Vue.extend({
 }
 .g-button--disabled,
 .g-button[disabled] {
-  opacity: 0.5;
   background: g-theme-button-disabled-background-color;
 }
 .g-button--disabled:hover,
 .g-button[disabled]:hover {
-  background-color: g-theme-button-disabled-background-color;
   cursor: default;
 }
 .g-button--disabled:focus,

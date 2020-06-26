@@ -33,8 +33,8 @@
                         <H1>Contact us</H1>
                         <P styleSize="large">Here is an intro for the page.</P>
                         <p>Please do not hesitate to get in touch with us</p>
-                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" />
-                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId"/>
+                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" maxLength={20}  />
+                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" maxLength={20} />
                         <FieldsetBlock
                             legend={
                             <H2 styleSize="small" id="whereLiveTitle">
@@ -62,6 +62,7 @@
                             id="comments"
                             name="comments"
                             label="Comment?"
+                            cols={30} 
                         />
                         <Button>Submit</Button>
                     </FlexColumn>
