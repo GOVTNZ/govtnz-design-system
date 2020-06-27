@@ -188,7 +188,7 @@ class ContactusForm extends React.Component {
 
           <div style={{ display: successMessage }}>
             <Alert level="success" headingId="heading3">
-              <H3 id="heading3">Success: Your message has been sent.</H3>
+              <H3 id="heading3">Success: Your message has been sent</H3>
               <P>
                 Thanks for contacting us. We’ll get back to you in 1–3 working
                 days.
@@ -322,7 +322,7 @@ const PrototypePageContent = () => (
 
     <h2 id="credit">Credit</h2>
     <p>
-      Guidance, original HTML and CSS derived from{' '}
+      Original HTML and CSS derived from{' '}
       <a href="https://github.com/alphagov/govuk-frontend">
         GOV.UK Design System
       </a>

@@ -7,8 +7,7 @@
     how and when to use them. 
 </P>
 
-[Government Information Services](https://www.digital.govt.nz/digital-government/leadership-and-governance/government-chief-digital-officer-gcdo/who-supports-the-gcdo/)&nbsp;
-is creating the NZGDS now. Our overall aim is to improve digital
+All of Government Services Delivery is creating the NZGDS now. Our overall aim is to improve digital
 service delivery across the New Zealand public service.
 
 [Read about the benefits of using our Design System, and how we are building it, on the homepage](https://design-system-alpha.digital.govt.nz/).
