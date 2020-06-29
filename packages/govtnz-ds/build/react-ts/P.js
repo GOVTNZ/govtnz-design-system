@@ -13,10 +13,10 @@ var constants = {
     }
 };
 var P = function (_a) {
-    var styleSize = _a.styleSize, children = _a.children;
-    return (react_1.default.createElement("p", { className: constants.styleSize[styleSize] !== undefined
-            ? constants.styleSize[styleSize]
-            : "" }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
+    var styleSize = _a.styleSize, marginBottom0 = _a.marginBottom0, children = _a.children;
+    return (react_1.default.createElement("p", { className: "g-body" + (constants.styleSize[styleSize] !== undefined
+            ? " " + constants.styleSize[styleSize]
+            : "") + (marginBottom0 ? " g-body-marginBottom0" : "") }, children !== undefined ? (children) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))));
 };
 exports.default = P;
 //# sourceMappingURL=P.js.map

@@ -28,11 +28,11 @@ Users can find open-ended questions difficult to answer. It might be better to b
 
 ### Ask a simple closed question
 
-If you need to let users select a single answer from a list of options, use [radio buttons](./components/Radios). For selecting one or more options, or to toggle a single option on or off, use [checkboxes](./components/Checkboxes).
+If you need to let users select a single answer from a list of options, use [radio buttons](/components/Radios). For selecting one or more options, or to toggle a single option on or off, use [checkboxes](/components/Checkboxes).
 
 ### Ask a simple open question
 
-If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the [text input](./components/Input) component.
+If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the [text input](/components/Input) component.
 
 ## How it works
 
@@ -51,10 +51,6 @@ Allow users to resize the textarea by dragging the resize handle icon in the bot
 ## Do not disable copy and paste
 
 Users will often need to copy and paste information into a textarea, so do not stop them from doing this.
-
-## Limiting the number of characters
-
-If there’s a good reason to limit the number of characters users can enter, you can use the [character count](./components/CharacterCount) component.
 
 ## Error messages
 

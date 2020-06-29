@@ -50,3 +50,11 @@
   fill: #ffffff;
   fill: var(--g-theme-alert-icon-color, #ffffff);
 }
+
+.g-alert *:first-child {
+  margin-top: 0px;
+}
+
+.g-alert *:last-child {
+  margin-bottom: 0px;
+}

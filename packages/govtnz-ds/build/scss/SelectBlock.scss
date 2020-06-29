@@ -66,6 +66,7 @@
     --g-theme-select-background-color,
     $g-theme-select-background-color
   );
+  color: g-theme-form-color;
 }
 
 @media print {

@@ -28,7 +28,7 @@ import ExampleSection from '../../commons/ExampleSection';
 const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, accessible content relies on a clear font, consistent headings, succinct body text paragraphs, descriptive links, and scannable lists.</P>
 
 <H2 styleSize="large" id="font">Font</H2>
-<p>We are investigating how font choice will be incorporated into the design system, in order to meet New Zealand language requirements.</p>
+<P>We are investigating how font choice will be incorporated into the design system, in order to meet New Zealand language requirements.</P>
 <h2 id="headings">Headings</h2>
 <ExampleContainer>
     <Example  code={basics__typography[0]} iframeProps={{
@@ -51,9 +51,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Use headings consistently to create a clear hierarchy throughout your content, and to allow people using assistive technology to quickly scan and move through the page.</p>
-<p>Mark up headings semantically using the appropriate <code>&lt;h#&gt;</code> level HTML element. In our design system, the font size is independent of the heading hierarchy. This allows for design flexibility.</p>
-<p>Write all headings in sentence case, with the exception of proper nouns, which require initial capitals.</p>
+<P>Use headings consistently to create a clear hierarchy throughout your content, and to allow people using assistive technology to quickly scan and move through the page.</P>
+<P>Mark up headings semantically using the appropriate <code>&lt;h#&gt;</code> level HTML element. In our design system, the font size is independent of the heading hierarchy. This allows for design flexibility.</P>
+<P>Write all headings in sentence case, with the exception of proper nouns, which require initial capitals.</P>
 <ExampleContainer>
     <ExampleHeading>Headings with captions</ExampleHeading>
     <Example  code={basics__typography[2]} iframeProps={{
@@ -65,7 +65,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</p>
+<P>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</P>
 <ExampleContainer>
     <ExampleHeading>Headings with captions inside the <code>h1</code></ExampleHeading>
     <Example  code={basics__typography[3]} iframeProps={{
@@ -77,15 +77,15 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>If the caption should be considered part of the page heading, you can also nest the caption within the <code>h1</code>.</p>
+<P>If the caption should be considered part of the page heading, you can also nest the caption within the <code>h1</code>.</P>
 <h2 id="paragraphs">Paragraphs</h2>
-<p>There are three font sizes for paragraphs, giving you:</p>
+<P>There are three font sizes for paragraphs, giving you:</P>
 <Ul bulleted>
 <Li>a large size for lead paragraphs</Li>
 <Li>a medium size for standard body text</Li>
 <Li>a smaller size for small body text.</Li>
 </Ul>
-<p>You can use these text sizes to indicate the relative importance of the content on the page.</p>
+<P>You can use these text sizes to indicate the relative importance of the content on the page.</P>
 <ExampleContainer>
     <ExampleHeading>Large size for lead paragraph</ExampleHeading>
     <Example  code={basics__typography[4]} iframeProps={{
@@ -97,9 +97,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>A lead paragraph, also called a summary or short description, is the introduction at the top of a page that summarises what a user can expect from that page.</p>
-<p>Remember that the summary, along with the title, is usually what users see in search results. Keep the content short, or put the key information at the start, as Google usually only shows the first 160 characters.</p>
-<p>Only use one lead paragraph per page.</p>
+<P>A lead paragraph, also called a summary or short description, is the introduction at the top of a page that summarises what a user can expect from that page.</P>
+<P>Remember that the summary, along with the title, is usually what users see in search results. Keep the content short, or put the key information at the start, as Google usually only shows the first 160 characters.</P>
+<P>Only use one lead paragraph per page.</P>
 <ExampleContainer>
     <ExampleHeading>Medium size for standard body text</ExampleHeading>
     <Example  code={basics__typography[5]} iframeProps={{
@@ -111,7 +111,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>The majority of your body copy should use medium size.</p>
+<P>The majority of your body copy should use medium size.</P>
 <ExampleContainer>
     <ExampleHeading>Small size for small body text</ExampleHeading>
     <Example  code={basics__typography[6]} iframeProps={{
@@ -123,7 +123,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Use it sparingly for &#39;small print&#39; content, such as notes and references.</p>
+<P>Use it sparingly for &#39;small print&#39; content, such as notes and references.</P>
 <h2 id="links">Links</h2>
 <ExampleContainer>
     <ExampleHeading>Default</ExampleHeading>
@@ -136,10 +136,10 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Links are blue and underlined by default. If your link is at the end of a sentence or paragraph, make sure that the linked text does not include the full stop.</p>
-<p>Remember to make link text descriptive of the destination. Just “Read more” is not acceptable.</p>
+<P>Links are blue and underlined by default. If your link is at the end of a sentence or paragraph, make sure that the linked text does not include the full stop.</P>
+<P>Remember to make link text descriptive of the destination. Just “Read more” is not acceptable.</P>
 <h2 id="lists">Lists</h2>
-<p>Use lists to break up blocks of text into chunks to make them easier to read.</p>
+<P>Use lists to break up blocks of text into chunks to make them easier to read.</P>
 <ExampleContainer>
     <ExampleHeading>Bulleted lists</ExampleHeading>
     <Example  code={basics__typography[8]} iframeProps={{
@@ -151,8 +151,8 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Introduce bulleted lists with a partial ‘stub’ sentence ending in a colon. Start each list item with a lowercase letter, and do not use a full stop at the end. Ensure each list item makes grammatical sense when read after the stub sentence above.</p>
-<p>Use bulleted lists to highlight options and examples in content, especially when a sentence contains more than three clauses.</p>
+<P>Introduce bulleted lists with a partial ‘stub’ sentence ending in a colon. Start each list item with a lowercase letter, and do not use a full stop at the end. Ensure each list item makes grammatical sense when read after the stub sentence above.</P>
+<P>Use bulleted lists to highlight options and examples in content, especially when a sentence contains more than three clauses.</P>
 <ExampleContainer>
     <ExampleHeading>Numbered lists</ExampleHeading>
     <Example  code={basics__typography[9]} iframeProps={{
@@ -164,10 +164,10 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
       }}></Example>
 </ExampleContainer>
 
-<p>Use numbered lists instead of bulleted lists when the order of the items is relevant.</p>
-<p>You do not need a lead-in line for numbered lists, although a summary sentence can be helpful for users. If numbered items are complete sentences, use full stops at the end.</p>
+<P>Use numbered lists instead of bulleted lists when the order of the items is relevant.</P>
+<P>You do not need a lead-in line for numbered lists, although a summary sentence can be helpful for users. If numbered items are complete sentences, use full stops at the end.</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

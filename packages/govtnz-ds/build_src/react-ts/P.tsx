@@ -2,6 +2,7 @@ import React from "react";
 
 type Props = {
   styleSize: "large" | "medium" | "small" | "x-small";
+  marginBottom0?: boolean;
   children?: React.ReactNode;
 };
 
@@ -14,13 +15,13 @@ const constants = {
   }
 };
 
-const P = ({ styleSize, children }: Props) => (
+const P = ({ styleSize, marginBottom0, children }: Props) => (
   <p
-    className={
+    className={`g-body${
       constants.styleSize[styleSize] !== undefined
-        ? constants.styleSize[styleSize]
+        ? " " + constants.styleSize[styleSize]
         : ""
-    }
+    }${marginBottom0 ? " g-body-marginBottom0" : ""}`}
   >
     {children !== undefined ? (
       children

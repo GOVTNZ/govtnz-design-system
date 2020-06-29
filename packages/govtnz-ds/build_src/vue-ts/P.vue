@@ -24,23 +24,31 @@ export default Vue.extend({
       },
       required: true
     },
+    marginBottom0: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Example text" }
   },
   computed: {
     computed__class() {
-      return constants.styleSize[this.styleSize] !== undefined
-        ? constants.styleSize[this.styleSize]
-        : "";
+      return (
+        "g-body " +
+        (constants.styleSize[this.styleSize] !== undefined
+          ? ` ${constants.styleSize[this.styleSize]}`
+          : "") +
+        (this.marginBottom0 ? " g-body-marginBottom0" : "")
+      );
     }
   }
 });
 </script>
 <style scoped>
-.g-body-l {
+.g-body {
   color: g-theme-color;
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1875rem;
+}
+.g-body-l {
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.11111;
@@ -75,10 +83,6 @@ export default Vue.extend({
   }
 }
 .g-body-m {
-  color: g-theme-color;
-  font-family: g-theme-font-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.25;
@@ -113,10 +117,6 @@ export default Vue.extend({
   }
 }
 .g-body-s {
-  color: g-theme-color;
-  font-family: g-theme-font-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.625;
@@ -151,10 +151,6 @@ export default Vue.extend({
   }
 }
 .g-body-xs {
-  color: g-theme-color;
-  font-family: g-theme-font-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.25;
@@ -188,23 +184,7 @@ export default Vue.extend({
     margin-bottom: 20px;
   }
 }
-.g-p-summary-list__value > p {
-  margin-bottom: 10px;
-}
-.g-p-details__text p {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.g-p-error-summary__body p {
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-@media (min-width: 40.0625em) {
-  .g-p-error-summary__body p {
-    margin-bottom: 20px;
-  }
-}
-.g-p-hint > * {
-  margin-top: 0px;
+.g-body-marginBottom0 {
+  margin-bottom: 0px !important;
 }
 </style>

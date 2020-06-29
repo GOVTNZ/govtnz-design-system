@@ -16,7 +16,7 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 var PageContent = (props) => (<Example title="Example: Alerts (static)" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} level="success" headingId="heading3" {...onChangeGenerator({})}>
             <H2 id="heading3" {...onChangeGenerator({})}>Success: Your account has been activated</H2>
-            <P {...onChangeGenerator({})}>You can now access all features of the service.</P>
+            <P marginBottom0 {...onChangeGenerator({})}>You can now access all features of the service.</P>
         </WrappedAlert>
     </Example>);
 

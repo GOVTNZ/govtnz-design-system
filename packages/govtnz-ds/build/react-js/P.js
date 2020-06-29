@@ -20,9 +20,10 @@ var constants = {
 
 var P = function P(_ref) {
   var styleSize = _ref.styleSize,
+      marginBottom0 = _ref.marginBottom0,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("p", {
-    className: constants.styleSize[styleSize] !== undefined ? constants.styleSize[styleSize] : ""
+    className: "g-body".concat(constants.styleSize[styleSize] !== undefined ? " " + constants.styleSize[styleSize] : "").concat(marginBottom0 ? " g-body-marginBottom0" : "")
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

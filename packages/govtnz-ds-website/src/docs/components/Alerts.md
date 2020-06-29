@@ -56,21 +56,21 @@ Success and error summary alerts are not intended to be used as live alerts. Sin
 Use information alerts to inform users of important information or changes on a page only. They should be used sparingly.
 
 <ExampleContainer>
-    <ExampleHeading>Information alert - Static</ExampleHeading>
-    <Example title="Example title: Warning alert - Static">
+    <ExampleHeading>Information alert: Static</ExampleHeading>
+    <Example title="Example title: Warning alert: Static">
         <Alert level="info" headingId="heading1">
             <H2 id="heading1">Note: Nominations are currently closed</H2>
-            <P>You can nominate a new provider at the start of the next financial year.</P>
+            <P marginBottom0>You can nominate a new provider at the start of the next financial year.</P>
         </Alert>
     </Example>
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Information alert - Live</ExampleHeading>
-    <Example title="Example title: Information alert - Live">
+    <ExampleHeading>Information alert: Live</ExampleHeading>
+    <Example title="Example title: Information alert: Live">
         <Alert mode="live" level="info" headingId="heading1">
             <H2 id="heading1">Note: There are only 3 spaces remaining</H2>
-            <P>Complete your order to reserve your place on the course.</P>
+            <P marginBottom0>Complete your order to reserve your place on the course.</P>
         </Alert>
     </Example>
 </ExampleContainer>
@@ -84,7 +84,7 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
     <Example title="Example title: Warning alert - Static">
         <Alert level="warning" headingId="heading2">
             <H2 id="heading2">Warning: Your subscription will expire soon</H2>
-            <P>You’ll need to renew your subscription to keep using the service.</P>
+            <P marginBottom0>You’ll need to renew your subscription to keep using the service.</P>
         </Alert>
     </Example>
 </ExampleContainer>
@@ -94,7 +94,7 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
     <Example title="Example title: Warning alert - Live">
         <Alert mode="live" level="warning" headingId="heading1">
             <H2 id="heading1">Warning: The option you’ve selected is for people aged 65 or over only</H2>
-            <P>You’ll need to provide evidence of your date of birth when you submit your application.</P>
+            <P marginBottom0>You’ll need to provide evidence of your date of birth when you submit your application.</P>
         </Alert>
     </Example>
 </ExampleContainer>
@@ -115,7 +115,7 @@ To orient screen reader users and others to the alert, the Design System user mu
     <Example title="Example: Alerts (static)">
         <Alert level="success" headingId="heading3">
             <H2 id="heading3">Success: Your account has been activated</H2>
-            <P>You can now access all features of the service.</P>
+            <P marginBottom0>You can now access all features of the service.</P>
         </Alert>
     </Example>
 </ExampleContainer>
@@ -142,12 +142,11 @@ To orient screen reader users and others to the alert, the Design System user mu
     <ExampleHeading>Error summary alert</ExampleHeading>
     <Example title="Example title: Error summary alert">
         <Alert level="error" headingId="heading4">
-            <H2 id="heading4">Error: There’s a problem with the following responses
-</H2>
-            <Ul spacing>
-                <Li><a href="#form">First name must not be empty</a></Li>
-                <Li><a href="#form">Last name must only include letters a to z, hyphens, spaces and apostrophes</a></Li>
-                <Li><a href="#form">Hours worked a week must be between 16 and 99</a></Li>
+            <H2 id="heading4">Error: There’s a problem with the following responses</H2>
+            <Ul spacing marginBottom0>
+                <Li><A href="#form">First name must not be empty</A></Li>
+                <Li><A href="#form">Last name must only include letters a to z, hyphens, spaces and apostrophes</A></Li>
+                <Li><A href="#form">Hours worked a week must be between 16 and 99</A></Li>
             </Ul>
         </Alert>
     </Example>

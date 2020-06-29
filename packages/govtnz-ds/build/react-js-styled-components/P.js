@@ -13,6 +13,16 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject26() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      margin-bottom: 0px !important;\n    "]);
+
+  _templateObject26 = function _templateObject26() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject25() {
   var data = (0, _taggedTemplateLiteral2["default"])(["\n        margin-bottom: 20px;\n      "]);
 
@@ -64,7 +74,7 @@ function _templateObject21() {
 }
 
 function _templateObject20() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n      color: g-theme-color;\n      font-family: g-theme-font-family;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n      font-weight: 400;\n      font-size: 0.75rem;\n      line-height: 1.25;\n      margin-top: 0;\n      margin-bottom: 15px;\n    "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      font-weight: 400;\n      font-size: 0.75rem;\n      line-height: 1.25;\n      margin-top: 0;\n      margin-bottom: 15px;\n    "]);
 
   _templateObject20 = function _templateObject20() {
     return data;
@@ -124,7 +134,7 @@ function _templateObject15() {
 }
 
 function _templateObject14() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n      color: g-theme-color;\n      font-family: g-theme-font-family;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n      font-weight: 400;\n      font-size: 0.875rem;\n      line-height: 1.625;\n      margin-top: 0;\n      margin-bottom: 1rem;\n    "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      font-weight: 400;\n      font-size: 0.875rem;\n      line-height: 1.625;\n      margin-top: 0;\n      margin-bottom: 1rem;\n    "]);
 
   _templateObject14 = function _templateObject14() {
     return data;
@@ -184,7 +194,7 @@ function _templateObject9() {
 }
 
 function _templateObject8() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n      color: g-theme-color;\n      font-family: g-theme-font-family;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n      font-weight: 400;\n      font-size: 1rem;\n      line-height: 1.25;\n      margin-top: 0;\n      margin-bottom: 15px;\n    "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      font-weight: 400;\n      font-size: 1rem;\n      line-height: 1.25;\n      margin-top: 0;\n      margin-bottom: 15px;\n    "]);
 
   _templateObject8 = function _templateObject8() {
     return data;
@@ -244,7 +254,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n      color: g-theme-color;\n      font-family: g-theme-font-family;\n      -webkit-font-smoothing: antialiased;\n      -moz-osx-font-smoothing: grayscale;\n      font-weight: 400;\n      font-size: 1.125rem;\n      line-height: 1.11111;\n      margin-top: 0;\n      margin-bottom: 20px;\n    "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n      font-weight: 400;\n      font-size: 1.125rem;\n      line-height: 1.11111;\n      margin-top: 0;\n      margin-bottom: 20px;\n    "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -254,7 +264,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  margin-bottom: 10px;\n  margin-top: 0;\n  margin-bottom: 20px;\n  margin-top: 0;\n  margin-bottom: 15px;\n  @media (min-width: 40.0625em) {\n    margin-bottom: 20px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 1.1875rem;\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n  @media print {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  @media print {\n    ", ";\n  }\n  @media (min-width: 40.0625em) {\n    ", ";\n  }\n  ", "\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -311,13 +321,17 @@ var StyledP = _styledComponents["default"].p(_templateObject(), function (props)
   return props.styleSize === "x-small" && _styledComponents["default"].css(_templateObject24());
 }, function (props) {
   return props.styleSize === "x-small" && _styledComponents["default"].css(_templateObject25());
+}, function (props) {
+  return props.marginBottom0 && _styledComponents["default"].css(_templateObject26());
 });
 
 var P = function P(_ref) {
   var styleSize = _ref.styleSize,
+      marginBottom0 = _ref.marginBottom0,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement(StyledP, {
-    styleSize: styleSize
+    styleSize: styleSize,
+    marginBottom0: marginBottom0
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

@@ -23,7 +23,7 @@ Interact with the example to see how it works.
 
 Use the fieldset component when you need to show a relationship between multiple form inputs. For example, you may need to group a set of text inputs into a single fieldset when asking for an address.
 
-If you’re using the [radio buttons](./components/Radios), [checkboxes](./components/Checkboxes) or [date input](./components/Date) components, the fieldset component will already be included.
+If you’re using the [radio buttons](/components/Radios), [checkboxes](/components/Checkboxes) or [date input](/components/Date) components, the fieldset component will already be included.
 
 ## How it works
 

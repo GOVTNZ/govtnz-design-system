@@ -31,7 +31,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 const PageContent = (props) => <React.Fragment><P styleSize="large">The footer provides links to copyright, contact and privacy information about your website.</P>
 
 <H2 styleSize="large" id="example">Example</H2>
-<p>Interact with the example to see how it works.</p>
+<P>Interact with the example to see how it works.</P>
 <ExampleContainer>
     <Example  code={components__Footer[0]} iframeProps={{
         id:"iframe_componentsFooter0",
@@ -44,16 +44,16 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The footer p
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
-<p>Use the footer at the bottom of every page of your website.</p>
+<P>Use the footer at the bottom of every page of your website.</P>
 <h2 id="how-it-works">How it works</h2>
-<p>The footer component is a container that includes links to:</p>
+<P>The footer component is a container that includes links to:</P>
 <Ul bulleted>
 <Li>Govt.nz using the English or te reo Māori version of the All-of-Government brand lockup</Li>
 <Li>your site&#39;s contact information, copyright and privacy statements (link targets are for you to set).</Li>
 </Ul>
-<p>Including these links helps your website meet several requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/">Web Usability Standard</a> for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.</p>
+<P>Including these links helps your website meet several requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/">Web Usability Standard</a> for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

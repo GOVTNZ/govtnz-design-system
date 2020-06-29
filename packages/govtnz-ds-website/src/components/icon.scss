@@ -24,12 +24,7 @@
 
 .icon--theme-highlight {
   > use {
-    fill: $color-ds-default-green-mid;
-    fill: var(--color-theme-highlight-ui, $color-ds-default-green-mid);
-
-    @include print {
-      fill: $color-core-black;
-    }
+    fill: #000000;
   }
 }
 

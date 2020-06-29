@@ -45,7 +45,7 @@ export default Vue.extend({
   color: g-theme-link-color;
 }
 .g-link:visited {
-  color: g-theme-link-visited-color;
+  color: g-theme-link-color;
 }
 .g-link:hover {
   color: g-theme-link-hover-color;

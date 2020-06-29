@@ -23,8 +23,8 @@
 }
 
 .g-link:visited {
-  color: $g-theme-link-visited-color;
-  color: var(--g-theme-link-visited-color, $g-theme-link-visited-color);
+  color: $g-theme-link-color;
+  color: var(--g-theme-link-color, $g-theme-link-color);
 }
 
 .g-link:hover {

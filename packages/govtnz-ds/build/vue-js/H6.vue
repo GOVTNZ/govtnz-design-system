@@ -32,6 +32,8 @@ export default Vue.extend({
     },
     marginBottom8: { type: Boolean, default: false, required: false },
     marginBottom0: { type: Boolean, default: false, required: false },
+    marginTop0: { type: Boolean, default: false, required: false },
+    marginTop8: { type: Boolean, default: false, required: false },
     id: { type: String, required: false },
     children: { required: false, default: "Example text" }
   },
@@ -43,7 +45,9 @@ export default Vue.extend({
           ? ` ${constants.styleSize[this.styleSize]}`
           : "") +
         (this.marginBottom8 ? " g-heading-mb-8" : "") +
-        (this.marginBottom0 ? " g-heading-mb-0" : "")
+        (this.marginBottom0 ? " g-heading-mb-0" : "") +
+        (this.marginTop0 ? " g-heading-mt-0" : "") +
+        (this.marginTop8 ? " g-heading-mt-8" : "")
       );
     }
   }
@@ -65,10 +69,6 @@ export default Vue.extend({
 @media print {
   .g-heading-xl {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-xl {
     font-family: sans-serif;
   }
 }
@@ -104,10 +104,6 @@ export default Vue.extend({
 @media print {
   .g-heading-l {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-l {
     font-family: sans-serif;
   }
 }
@@ -143,10 +139,6 @@ export default Vue.extend({
 @media print {
   .g-heading-m {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-m {
     font-family: sans-serif;
   }
 }
@@ -182,10 +174,6 @@ export default Vue.extend({
 @media print {
   .g-heading-s {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-s {
     font-family: sans-serif;
   }
 }
@@ -206,54 +194,8 @@ export default Vue.extend({
     margin-bottom: 0.5rem;
   }
 }
-.g-body-l + .g-heading-l,
-.g-body-lead + .g-heading-l {
-  padding-top: 5px;
-}
-@media (min-width: 40.0625em) {
-  .g-body-l + .g-heading-l,
-  .g-body-lead + .g-heading-l {
-    padding-top: 10px;
-  }
-}
-.g-body-m + .g-heading-l,
-.g-body + .g-heading-l,
-.g-body-s + .g-heading-l,
-.g-list + .g-heading-l {
-  padding-top: 15px;
-}
-@media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-l,
-  .g-body + .g-heading-l,
-  .g-body-s + .g-heading-l,
-  .g-list + .g-heading-l {
-    padding-top: 20px;
-  }
-}
-.g-body-m + .g-heading-m,
-.g-body + .g-heading-m,
-.g-body-s + .g-heading-m,
-.g-list + .g-heading-m,
-.g-body-m + .g-heading-s,
-.g-body + .g-heading-s,
-.g-body-s + .g-heading-s,
-.g-list + .g-heading-s {
-  padding-top: 5px;
-}
-@media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-m,
-  .g-body + .g-heading-m,
-  .g-body-s + .g-heading-m,
-  .g-list + .g-heading-m,
-  .g-body-m + .g-heading-s,
-  .g-body + .g-heading-s,
-  .g-body-s + .g-heading-s,
-  .g-list + .g-heading-s {
-    padding-top: 10px;
-  }
-}
 .g-heading-xs {
-  color: g-theme-heading-color;
+  color: g-theme-color;
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -267,10 +209,6 @@ export default Vue.extend({
 @media print {
   .g-heading-xs {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-xs {
     font-family: sans-serif;
   }
 }
@@ -291,22 +229,8 @@ export default Vue.extend({
     margin-bottom: 0.5rem;
   }
 }
-.g-body-m + .g-heading-xs,
-.g-body + .g-heading-xs,
-.g-body-s + .g-heading-xs,
-.g-list + .g-heading-xs {
-  padding-top: 5px;
-}
-@media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-xs,
-  .g-body + .g-heading-xs,
-  .g-body-s + .g-heading-xs,
-  .g-list + .g-heading-xs {
-    padding-top: 10px;
-  }
-}
 .g-heading-xxs {
-  color: g-theme-heading-color;
+  color: g-theme-color;
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -320,10 +244,6 @@ export default Vue.extend({
 @media print {
   .g-heading-xxs {
     color: g-theme-print-color;
-  }
-}
-@media print {
-  .g-heading-xxs {
     font-family: sans-serif;
   }
 }
@@ -344,27 +264,16 @@ export default Vue.extend({
     margin-bottom: 20px;
   }
 }
-.g-body-m + .g-heading-xxs,
-.g-body + .g-heading-xxs,
-.g-body-s + .g-heading-xxs,
-.g-list + .g-heading-xxs {
-  padding-top: 5px;
-}
-@media (min-width: 40.0625em) {
-  .g-body-m + .g-heading-xxs,
-  .g-body + .g-heading-xxs,
-  .g-body-s + .g-heading-xxs,
-  .g-list + .g-heading-xxs {
-    padding-top: 10px;
-  }
-}
 .g-heading-mb-8 {
   margin-bottom: 8px;
 }
 .g-heading-mb-0 {
   margin-bottom: 0px;
 }
-.g-hint > * {
-  margin-top: 0px;
+.g-heading-mt-8 {
+  margin-bottom: 8px;
+}
+.g-heading-mt-0 {
+  margin-bottom: 0px;
 }
 </style>

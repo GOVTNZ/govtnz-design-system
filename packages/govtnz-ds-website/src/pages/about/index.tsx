@@ -24,15 +24,15 @@ const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-h
     how and when to use them. 
 </P>
 
-<p>All of Government Services Delivery is creating the NZGDS now. Our overall aim is to improve digital
-service delivery across the New Zealand public service.</p>
-<p><a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</a>.</p>
-<p>This alpha website shows you what we have built so far, what we&#39;re working on,
-and how you can get involved.</p>
+<P>All of Government Services Delivery is creating the NZGDS now. Our overall aim is to improve digital
+service delivery across the New Zealand public service.</P>
+<P><a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</a>.</P>
+<P>This alpha website shows you what we have built so far, what we&#39;re working on,
+and how you can get involved.</P>
 <h2 id="get-involved">Get involved</h2>
-<p>Since the Design System will be available for everyone in central and local
+<P>Since the Design System will be available for everyone in central and local
 government (and beyond) to use, we want a strong cross-government community
-backing it. You can contribute by:</p>
+backing it. You can contribute by:</P>
 <Ul bulleted>
 <Li>testing our components and patterns</Li>
 <Li>helping to develop new components and patterns</Li>

@@ -91,7 +91,6 @@ export default class Example extends Component<Props, State> {
     }
     const data = e.data;
     const resizeById = data && data.resizeById;
-    console.log(resizeById, this.props.iframeProps.id);
     if (
       this.props.iframeProps &&
       this.props.iframeProps.id &&

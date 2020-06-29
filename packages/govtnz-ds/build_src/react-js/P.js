@@ -9,13 +9,13 @@ const constants = {
   }
 };
 
-const P = ({ styleSize, children }) => (
+const P = ({ styleSize, marginBottom0, children }) => (
   <p
-    className={
+    className={`g-body${
       constants.styleSize[styleSize] !== undefined
-        ? constants.styleSize[styleSize]
+        ? " " + constants.styleSize[styleSize]
         : ""
-    }
+    }${marginBottom0 ? " g-body-marginBottom0" : ""}`}
   >
     {children !== undefined ? (
       children

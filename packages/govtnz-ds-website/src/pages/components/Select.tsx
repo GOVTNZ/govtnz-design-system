@@ -27,7 +27,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 const PageContent = (props) => <React.Fragment><P styleSize="large">The select component (sometimes called a dropdown list) allows users to choose a single item from a collapsible list of options.</P>
 
 <H2 styleSize="large" id="example">Example</H2>
-<p>Interact with this example to see how it works.</p>
+<P>Interact with this example to see how it works.</P>
 <ExampleContainer>
     <Example  code={components__Select[0]} iframeProps={{
         id:"iframe_componentsSelect0",
@@ -39,13 +39,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The select c
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
-<p>Only use a select component if you have no other option, because research shows many users have difficulty choosing items from dropdown lists. Also, select components are implemented differently on various devices, and can be especially problematic on mobiles. <a href="https://www.youtube.com/watch?v=CUkMCQR4TpY">Watch a video about how some users struggle with select components</a>.</p>
-<p>Consider using <Link to="/components/Radios/">radio buttons</Link> or <Link to="/components/Checkboxes/">checkboxes</Link> instead of a select dropdown.</p>
+<P>Only use a select component if you have no other option, because research shows many users have difficulty choosing items from dropdown lists. Also, select components are implemented differently on various devices, and can be especially problematic on mobiles. <a href="https://www.youtube.com/watch?v=CUkMCQR4TpY">Watch a video about how some users struggle with select components</a>.</P>
+<P>Consider using <Link className="g-link" to="/components/Radios/">radio buttons</Link> or <Link className="g-link" to="/components/Checkboxes/">checkboxes</Link> instead of a select dropdown.</P>
 <h2 id="how-it-works">How it works</h2>
-<p>The select component allows users to choose an option from a list, usually more than 6 and fewer than 15 options.</p>
-<p>Before deciding to use a select component, do some research with users to find out if fewer options are feasible. If you can reduce the list to 6 items or fewer, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
+<P>The select component allows users to choose an option from a list, usually more than 6 and fewer than 15 options.</P>
+<P>Before deciding to use a select component, do some research with users to find out if fewer options are feasible. If you can reduce the list to 6 items or fewer, use <Link className="g-link" to="/components/Radios/">radio buttons</Link> instead.</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

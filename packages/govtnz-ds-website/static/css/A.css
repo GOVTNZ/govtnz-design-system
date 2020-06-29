@@ -23,8 +23,8 @@
 }
 
 .g-link:visited {
-  color: #4c2c92;
-  color: var(--g-theme-link-visited-color, #4c2c92);
+  color: #005ea5;
+  color: var(--g-theme-link-color, #005ea5);
 }
 
 .g-link:hover {

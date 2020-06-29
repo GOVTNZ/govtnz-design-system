@@ -83,7 +83,7 @@ const StyledButton = styled.button`
   }
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-top: 0px;
+  opacity: 0.5;
   background: g-theme-button-disabled-background-color;
   :hover,
   :hover {

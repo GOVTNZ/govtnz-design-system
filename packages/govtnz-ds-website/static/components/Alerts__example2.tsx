@@ -16,7 +16,7 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 var PageContent = (props) => (<Example title="Example title: Warning alert - Static" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} level="warning" headingId="heading2" {...onChangeGenerator({})}>
             <H2 id="heading2" {...onChangeGenerator({})}>Warning: Your subscription will expire soon</H2>
-            <P {...onChangeGenerator({})}>You’ll need to renew your subscription to keep using the service.</P>
+            <P marginBottom0 {...onChangeGenerator({})}>You’ll need to renew your subscription to keep using the service.</P>
         </WrappedAlert>
     </Example>);
 

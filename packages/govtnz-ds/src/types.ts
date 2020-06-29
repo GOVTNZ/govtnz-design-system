@@ -20,9 +20,7 @@ export type Component = {
 export type CSSVariablePattern = {
   id: string;
   defaultValue: string;
-  nameMatch?: string;
-  valueMatch?: string;
-  valueSubstringMatch?: string;
+  valueSubstringMatch: string;
 };
 
 export type ReleaseSpecItem = {

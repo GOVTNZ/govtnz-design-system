@@ -24,10 +24,12 @@ var H6 = function H6(_ref) {
   var styleSize = _ref.styleSize,
       marginBottom8 = _ref.marginBottom8,
       marginBottom0 = _ref.marginBottom0,
+      marginTop0 = _ref.marginTop0,
+      marginTop8 = _ref.marginTop8,
       id = _ref.id,
       children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("h6", {
-    className: "g-heading".concat(constants.styleSize[styleSize] !== undefined ? " " + constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : "").concat(marginBottom0 ? " g-heading-mb-0" : ""),
+    className: "g-heading".concat(constants.styleSize[styleSize] !== undefined ? " " + constants.styleSize[styleSize] : "").concat(marginBottom8 ? " g-heading-mb-8" : "").concat(marginBottom0 ? " g-heading-mb-0" : "").concat(marginTop0 ? " g-heading-mt-0" : "").concat(marginTop8 ? " g-heading-mt-8" : ""),
     id: id
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };

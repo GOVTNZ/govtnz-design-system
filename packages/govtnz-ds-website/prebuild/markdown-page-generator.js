@@ -274,6 +274,11 @@ const generatePage = async (
     .replace(/<\/li>/g, () => {
       // Convert markdown to DS Component
       return '</Li>';
+    })
+    .replace(/<p(>|\s[^>]*?>)/g, '<P$1')
+    .replace(/<\/p>/g, () => {
+      // Convert markdown to DS Component
+      return '</P>';
     });
 
   const exampleContainersRegex = /<ExampleContainer>([\s\S]*?)<\/ExampleContainer>/g;
@@ -471,7 +476,7 @@ const generatePage = async (
       let link = match
         .replace(/^<a/gi, '<Link')
         .replace(/<\/a>$/gi, '</Link>')
-        .replace('href=', 'to=');
+        .replace('href=', 'className="g-link" to=');
 
       if (link.includes('/components/')) {
         link = link.replace(/to="(.*?)"/, (match, uri) => {

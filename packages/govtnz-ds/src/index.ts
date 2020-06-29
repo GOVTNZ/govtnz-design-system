@@ -104,12 +104,7 @@ async function main(
     console.log(
       `Release build step ${i + 1} ${
         releaseSpecItem.sourceId
-      }@${releaseSpecItem.version ||
-        '(fork -- see govtnz-ds/src/upstream)'}. Scraping ${
-        releaseSpecItem.componentIds
-          ? releaseSpecItem.componentIds.toString()
-          : 'ALL patterns.'
-      } `
+      } see govtnz-ds/src/upstream)`
     );
 
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem);

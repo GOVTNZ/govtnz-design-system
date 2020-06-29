@@ -169,7 +169,7 @@ class ContactusForm extends React.Component {
                         <Li>
                           <a
                             href={error.id}
-                            onClick={this.scrollToElement(error.id)}
+                            onClick={() => this.scrollToElement(error.id)}
                           >
                             {error.message}
                           </a>
@@ -196,6 +196,7 @@ class ContactusForm extends React.Component {
 
           <div style={{ marginTop: '40px' }}>
             <InputBlock
+              autoComplete="name"
               id="scroll-field-name"
               width="30"
               maxLength={30}
@@ -210,6 +211,7 @@ class ContactusForm extends React.Component {
 
           <div style={{ marginTop: '40px' }}>
             <InputBlock
+              autoComplete="email"
               id="scroll-field-email"
               width="30"
               maxLength={30}
@@ -269,9 +271,8 @@ class ContactusForm extends React.Component {
               required
             />
           </div>
-
           <button
-            style={{ marginTop: '40px' }}
+            style={{ marginTop: '20px' }}
             className="g-button"
             type="submit"
           >

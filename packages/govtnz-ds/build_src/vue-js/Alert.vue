@@ -283,4 +283,10 @@ export default Vue.extend({
   top: 24px;
   fill: g-theme-alert-icon-color;
 }
+.g-alert *:first-child {
+  margin-top: 0px;
+}
+.g-alert *:last-child {
+  margin-bottom: 0px;
+}
 </style>

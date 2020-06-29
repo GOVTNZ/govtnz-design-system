@@ -10,6 +10,8 @@ import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
+import P from '@govtnz/ds/build/react-ts/P';
+import '../../commons/styles/ds/themed-P.scss';
 import components__InsetText from '../../commons/examples/components__InsetText';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -34,7 +36,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
 </ExampleContainer>
 
 <H2 styleSize="large" id="credit">Credit</H2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

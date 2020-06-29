@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H1 from '@govtnz/ds/build/react-ts/H1';import P from '@govtnz/ds/build/react-ts/P';import CheckboxBlock from '@govtnz/ds/build/react-ts/CheckboxBlock';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Error state (Checkboxes)" {...onChangeGenerator({})}>
-        <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle2" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId21" errorId="errorId21" error="You must choose at least one provider." {...onChangeGenerator({})}>
+        <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle2" marginBottom8>Who are your providers?</H1>} hint={<P>Select all that apply.</P>} hintId="hintId21" errorId="errorId21" error="You must choose at least one provider." {...onChangeGenerator({})}>
             <CheckboxBlock label="Aardvark Access" id="anyCheckboxId21" value="provider1" name="providerChoice2" {...onChangeGenerator({"value":"provider1"})}></CheckboxBlock>
             <CheckboxBlock label="Bumblebee Business" id="kboxId22" value="provider2" name="providerChoice2" {...onChangeGenerator({"value":"provider2"})}></CheckboxBlock>
             <CheckboxBlock label="Caterpillar Company" id="anyCheckboxId23" value="provider3" name="providerChoice2" labelId="labelId23" {...onChangeGenerator({"value":"provider3"})}></CheckboxBlock>

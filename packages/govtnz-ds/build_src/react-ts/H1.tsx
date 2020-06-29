@@ -4,6 +4,8 @@ type Props = {
   styleSize: "xlarge" | "large" | "medium" | "small" | "xsmall" | "xxsmall";
   marginBottom8?: boolean;
   marginBottom0?: boolean;
+  marginTop0?: boolean;
+  marginTop8?: boolean;
   id?: string;
   children?: React.ReactNode;
 };
@@ -23,6 +25,8 @@ const H1 = ({
   styleSize,
   marginBottom8,
   marginBottom0,
+  marginTop0,
+  marginTop8,
   id,
   children
 }: Props) => (
@@ -33,6 +37,8 @@ const H1 = ({
         : ""
     }${marginBottom8 ? " g-heading-mb-8" : ""}${
       marginBottom0 ? " g-heading-mb-0" : ""
+    }${marginTop0 ? " g-heading-mt-0" : ""}${
+      marginTop8 ? " g-heading-mt-8" : ""
     }`}
     id={id}
   >

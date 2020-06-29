@@ -10,6 +10,8 @@ import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
+import P from '@govtnz/ds/build/react-ts/P';
+import '../../commons/styles/ds/themed-P.scss';
 
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import BasicsPage from '../../components/basicsPage';
@@ -20,8 +22,8 @@ import ExampleHeading from '../../commons/ExampleHeading';
 import ExampleSection from '../../commons/ExampleSection';
 
 const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Basics</H1>
-<p>Basic design elements apply to all parts of a website. Key basic elements provided by the New Zealand Government Design System (NZGDS) include typography and colour guidance for interaction design. Additional basic elements are coming soon.</p>
-<p>Browse available basics via the sidebar menu if you’re on a desktop, or the main menu if you’re using a mobile.</p>
+<P>Basic design elements apply to all parts of a website. Key basic elements provided by the New Zealand Government Design System (NZGDS) include typography and colour guidance for interaction design. Additional basic elements are coming soon.</P>
+<P>Browse available basics via the sidebar menu if you’re on a desktop, or the main menu if you’re using a mobile.</P>
 </React.Fragment>
 
 export default function Code(props) {

@@ -1,47 +1,5 @@
 [
-  {
-    "sourceId": "govtnz"
-  },
-  {
-    "sourceId": "flexboxgrid"
-  },
-  {
-    "sourceId": "govuk",
-    "componentIds": [
-      "A",
-      "Button",
-      "CaptionL",
-      "CaptionM",
-      "CaptionXl",
-      "Checkbox",
-      "CheckboxBlock",
-      "DateInput",
-      "Fieldset",
-      "FieldsetBlock",
-      "FileUpload",
-      "FormDivider",
-      "H1",
-      "H2",
-      "H3",
-      "H4",
-      "H5",
-      "H6",
-      "Input",
-      "InputBlock",
-      "InsetText",
-      "Legend",
-      "Li",
-      "Ol",
-      "P",
-      "Radio",
-      "RadioBlock",
-      "Radios",
-      "Select",
-      "SelectBlock",
-      "SkipLink",
-      "Textarea",
-      "TextareaBlock",
-      "Ul"
-    ]
-  }
+  { "sourceId": "govtnz" },
+  { "sourceId": "flexboxgrid" },
+  { "sourceId": "govuk" }
 ]

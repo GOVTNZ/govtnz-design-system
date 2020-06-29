@@ -31,7 +31,7 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes enable users to select one or more options from a visible list of options, and to toggle a single option on or off.</P>
 
 <H2 styleSize="large" id="examples">Examples</H2>
-<p>Interact with each example to see how it works.</p>
+<P>Interact with each example to see how it works.</P>
 <ExampleContainer>
     <Example  code={components__Checkboxes[0]} iframeProps={{
         id:"iframe_componentsCheckboxes0",
@@ -65,30 +65,30 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 </ExampleContainer>
 
 <h2 id="when-to-use-it">When to use it</h2>
-<p>Use the checkboxes component when you need to help users:</p>
+<P>Use the checkboxes component when you need to help users:</P>
 <Ul bulleted>
 <Li>select one or more options from a list</Li>
 <Li>toggle a single option on or off.</Li>
 </Ul>
 <h2 id="when-not-to-use-it">When not to use it</h2>
-<p>Do not use the <a href="https://design-system-alpha.digital.govt.nz/components/Checkboxes/">checkboxes component</a> if users can only choose one option from a selection. In this case, use <Link to="/components/Radios/">radio buttons</Link> instead.</p>
+<P>Do not use the <a href="https://design-system-alpha.digital.govt.nz/components/Checkboxes/">checkboxes component</a> if users can only choose one option from a selection. In this case, use <Link className="g-link" to="/components/Radios/">radio buttons</Link> instead.</P>
 <h2 id="how-it-works">How it works</h2>
-<p>Checkboxes are grouped together in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> that describes them, as shown in the examples on this page. This is usually a question, like ‘Who are your providers?’.</p>
-<p>If you are asking just one question per page, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading. This is good practice because users of screen readers will only hear the contents once.</p>
-<p>Always position each checkbox to the left of its label. This makes it easier to find, especially for users of screen magnifiers.</p>
-<p>Unlike with radio buttons, users can select multiple checkboxes from a list. Do not assume that users will know how many checkboxes they can select based on only the visual difference between radio buttons and checkboxes.</p>
-<p>If needed, add a hint to explain this, like ‘Select all that apply’.</p>
-<p>Do not pre-select checkboxes as users are likely to:</p>
+<P>Checkboxes are grouped together in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> that describes them, as shown in the examples on this page. This is usually a question, like ‘Who are your providers?’.</P>
+<P>If you are asking just one question per page, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading. This is good practice because users of screen readers will only hear the contents once.</P>
+<P>Always position each checkbox to the left of its label. This makes it easier to find, especially for users of screen magnifiers.</P>
+<P>Unlike with radio buttons, users can select multiple checkboxes from a list. Do not assume that users will know how many checkboxes they can select based on only the visual difference between radio buttons and checkboxes.</P>
+<P>If needed, add a hint to explain this, like ‘Select all that apply’.</P>
+<P>Do not pre-select checkboxes as users are likely to:</P>
 <Ul bulleted>
 <Li>not realise they’ve missed a question</Li>
 <Li>submit the wrong answer.</Li>
 </Ul>
-<p>Order checkbox labels alphabetically by default.</p>
-<p>In some cases, pre-selected ordering can be helpful, such as listing options from the most to the least common. An example is ordering answers to the question ‘What is your nationality?’ based on population size.</p>
-<p>Another example of pre-selected ordering is listing options chronologically. For example, you could order possible time periods for contact from earliest to latest, so users can select the periods that suit them best.</p>
-<p>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</p>
+<P>Order checkbox labels alphabetically by default.</P>
+<P>In some cases, pre-selected ordering can be helpful, such as listing options from the most to the least common. An example is ordering answers to the question ‘What is your nationality?’ based on population size.</P>
+<P>Another example of pre-selected ordering is listing options chronologically. For example, you could order possible time periods for contact from earliest to latest, so users can select the periods that suit them best.</P>
+<P>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

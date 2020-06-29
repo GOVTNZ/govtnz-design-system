@@ -39,10 +39,25 @@
   margin-top: 10px;
 }
 
-.g-hint > * {
-  margin-top: 0px;
-}
-
 .g-ul li .g-ul {
   margin-top: 0.5rem;
+}
+
+.g-ul--mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.g-ul--mt-0 {
+  margin-top: 0px !important;
+}
+
+.g-ul--spacing {
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+.g-ul--no-bullet {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
 }

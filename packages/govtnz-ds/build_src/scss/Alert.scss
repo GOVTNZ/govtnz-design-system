@@ -66,3 +66,11 @@
   fill: $g-theme-alert-icon-color;
   fill: var(--g-theme-alert-icon-color, $g-theme-alert-icon-color);
 }
+
+.g-alert *:first-child {
+  margin-top: 0px;
+}
+
+.g-alert *:last-child {
+  margin-bottom: 0px;
+}

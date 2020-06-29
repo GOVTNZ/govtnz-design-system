@@ -25,7 +25,7 @@ const StyledA = styled.a`
     color: g-theme-link-color;
   }
   :visited {
-    color: g-theme-link-visited-color;
+    color: g-theme-link-color;
   }
   :hover {
     color: g-theme-link-hover-color;

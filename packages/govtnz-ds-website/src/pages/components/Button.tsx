@@ -34,14 +34,14 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </P>
 
 <H2 styleSize="large" id="when-to-use-it">When to use it</H2>
-<p>Use buttons to help users carry out key actions in a task flow, like starting
-an application or saving their information.</p>
-<p>If you are considering using an icon in a button, we suggest you use visible
-text as well to ensure all users understand the button&#39;s function.</p>
+<P>Use buttons to help users carry out key actions in a task flow, like starting
+an application or saving their information.</P>
+<P>If you are considering using an icon in a button, we suggest you use visible
+text as well to ensure all users understand the button&#39;s function.</P>
 <h2 id="how-it-works">How it works</h2>
-<p>Keep button text short. Start with a verb that clearly describes the action
-the button performs. Write button text in sentence case.</p>
-<p>Some typical examples of button text are:</p>
+<P>Keep button text short. Start with a verb that clearly describes the action
+the button performs. Write button text in sentence case.</P>
+<P>Some typical examples of button text are:</P>
 <Ul bulleted>
 <Li>&#39;Start now&#39; at the start of the service</Li>
 <Li>&#39;Sign in&#39; to an account a user has already created</Li>
@@ -59,14 +59,14 @@ must agree to</Li>
 the button text describes clearly what this button will add, in case there are
 other similar buttons on the same page or form.</Li>
 </Ul>
-<p>Consider if you need to include more words to clearly describe a button&#39;s
-action. For example, &#39;Add another address&#39; or &#39;Accept and claim a tax refund&#39;.</p>
+<P>Consider if you need to include more words to clearly describe a button&#39;s
+action. For example, &#39;Add another address&#39; or &#39;Accept and claim a tax refund&#39;.</P>
 <h2 id="primary-buttons">Primary buttons</h2>
-<p>Use a primary button for the main &#39;call to action&#39; on a page, such
-as &#39;Save and send&#39;.</p>
-<p>Avoid using several primary buttons on a single page. Having more than one
+<P>Use a primary button for the main &#39;call to action&#39; on a page, such
+as &#39;Save and send&#39;.</P>
+<P>Avoid using several primary buttons on a single page. Having more than one
 &#39;call to action&#39; reduces its impact, and makes it harder for users to know
-what to do next.</p>
+what to do next.</P>
 <ExampleContainer>
     <ExampleHeading>Primary buttons</ExampleHeading>
     <Example  code={components__Button[0]} iframeProps={{
@@ -79,10 +79,10 @@ what to do next.</p>
 </ExampleContainer>
 
 <h2 id="secondary-buttons">Secondary buttons</h2>
-<p>Use secondary buttons for alternative or intermediary actions on a page.
+<P>Use secondary buttons for alternative or intermediary actions on a page.
 Pages with too many calls to action make it hard for users to know what to do
 next. Before adding a secondary button, try to simplify the page or break the
-content down into several pages.</p>
+content down into several pages.</P>
 <ExampleContainer>
     <ExampleHeading>Secondary buttons</ExampleHeading>
     <Example  code={components__Button[1]} iframeProps={{
@@ -94,10 +94,10 @@ content down into several pages.</p>
       }}></Example>
 </ExampleContainer>
 
-<p>You can use secondary buttons in combination with a primary button, such as
+<P>You can use secondary buttons in combination with a primary button, such as
 offering &#39;Cancel&#39; or &#39;Save and return later&#39; options. Consider limiting
 combinations to a maximum of two secondary buttons with a single primary
-button, as more can confuse users.</p>
+button, as more can confuse users.</P>
 <ExampleContainer>
     <ExampleHeading>Primary and secondary combination</ExampleHeading>
     <Example  code={components__Button[2]} iframeProps={{
@@ -110,19 +110,19 @@ button, as more can confuse users.</p>
 </ExampleContainer>
 
 <h2 id="warning-buttons">Warning buttons</h2>
-<p>Warning buttons are designed to make users think carefully before they use
-them. Warning buttons only work well if used very sparingly..</p>
-<p>Only use warning buttons for actions with serious destructive consequences that
-cannot be easily undone by a user, such as permanently deleting an account.</p>
-<p>When letting users carry out an action like this, it&#39;s a good idea to include
+<P>Warning buttons are designed to make users think carefully before they use
+them. Warning buttons only work well if used very sparingly..</P>
+<P>Only use warning buttons for actions with serious destructive consequences that
+cannot be easily undone by a user, such as permanently deleting an account.</P>
+<P>When letting users carry out an action like this, it&#39;s a good idea to include
 an extra first step that asks users to confirm they want to do
-the destructive action.</p>
-<p>In this instance, use one warning button for the initial call to action, and
-another warning button for the final confirmation.</p>
-<p>Do not only rely solely on the red colour of a warning button to communicate
+the destructive action.</P>
+<P>In this instance, use one warning button for the initial call to action, and
+another warning button for the final confirmation.</P>
+<P>Do not only rely solely on the red colour of a warning button to communicate
 the serious nature of the action. Not all users will be able to see the colour
 or may not understand what it signifies. Make sure the context and button text
-make clear what will happen if the user selects it.</p>
+make clear what will happen if the user selects it.</P>
 <ExampleContainer>
     <ExampleHeading>Warning buttons</ExampleHeading>
     <Example  code={components__Button[3]} iframeProps={{
@@ -135,11 +135,11 @@ make clear what will happen if the user selects it.</p>
 </ExampleContainer>
 
 <h2 id="disabled-buttons">Disabled buttons</h2>
-<p>Disabled buttons, which are often greyed out, have poor contrast and can
+<P>Disabled buttons, which are often greyed out, have poor contrast and can
 confuse some users, so avoid them if possible. Disabled buttons may also
-impede keyboard accessibility.</p>
-<p>Only use disabled buttons if your research shows it makes the user interface
-easier to understand.</p>
+impede keyboard accessibility.</P>
+<P>Only use disabled buttons if your research shows it makes the user interface
+easier to understand.</P>
 <ExampleContainer>
     <ExampleHeading>Disabled buttons</ExampleHeading>
     <Example  code={components__Button[4]} iframeProps={{
@@ -152,9 +152,9 @@ easier to understand.</p>
 </ExampleContainer>
 
 <h2 id="stop-users-from-accidentally-sending-information-twice">Stop users from accidentally sending information twice</h2>
-<p>You can prevent users from accidentally sending information more than once by
-preventing multiple clicks from registering.</p>
-<p>Sometimes, users will click buttons more than once because they:</p>
+<P>You can prevent users from accidentally sending information more than once by
+preventing multiple clicks from registering.</P>
+<P>Sometimes, users will click buttons more than once because they:</P>
 <Ul bulleted>
 <Li>have used operating systems where they have to rapidly click twice on items
 to make them work</Li>
@@ -163,17 +163,17 @@ on their action quickly enough</Li>
 <Li>have motor impairments, such as hand tremors, that cause them to click
 the button involuntarily.</Li>
 </Ul>
-<p>In some cases, multiple clicks can mean users&#39; information is sent more than
+<P>In some cases, multiple clicks can mean users&#39; information is sent more than
 once. For example, a notify team found that a number of users were receiving
 invitations twice, because the person sending them was clicking twice on
-the &#39;Send&#39; button.</p>
-<p>If you are working in production and your research shows that users are
+the &#39;Send&#39; button.</P>
+<P>If you are working in production and your research shows that users are
 frequently sending information twice, consider using features that configure
 the button to ignore a rapid second click. If the cause is a slow connection,
-give the user a &#39;loading spinner&#39; to show progress.</p>
+give the user a &#39;loading spinner&#39; to show progress.</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from&nbsp;
-<a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from&nbsp;
+<a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

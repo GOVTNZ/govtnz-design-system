@@ -11,7 +11,15 @@ const constants = {
   }
 };
 
-const H3 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
+const H3 = ({
+  styleSize,
+  marginBottom8,
+  marginBottom0,
+  marginTop0,
+  marginTop8,
+  id,
+  children
+}) => (
   <h3
     className={`g-heading${
       constants.styleSize[styleSize] !== undefined
@@ -19,6 +27,8 @@ const H3 = ({ styleSize, marginBottom8, marginBottom0, id, children }) => (
         : ""
     }${marginBottom8 ? " g-heading-mb-8" : ""}${
       marginBottom0 ? " g-heading-mb-0" : ""
+    }${marginTop0 ? " g-heading-mt-0" : ""}${
+      marginTop8 ? " g-heading-mt-8" : ""
     }`}
     id={id}
   >

@@ -9,11 +9,18 @@ import Vue from "vue";
 export default Vue.extend({
   props: {
     spacing: { type: Boolean, default: false, required: false },
+    marginBottom0: { type: Boolean, default: false, required: false },
+    noBullet: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Example text" }
   },
   computed: {
     computed__class() {
-      return "g-ul " + (this.spacing ? " g-ul--spacing" : "");
+      return (
+        "g-ul " +
+        (this.spacing ? " g-ul--spacing" : "") +
+        (this.marginBottom0 ? " g-ul--mb-0" : "") +
+        (this.noBullet ? " g-ul--no-bullet" : "")
+      );
     }
   }
 });
@@ -54,10 +61,19 @@ export default Vue.extend({
 .g-ul .g-ul {
   margin-top: 10px;
 }
-.g-hint > * {
-  margin-top: 0px;
-}
 .g-ul li .g-ul {
   margin-top: 0.5rem;
+}
+.g-ul--mb-0 {
+  margin-bottom: 0px !important;
+}
+.g-ul--spacing {
+  margin-bottom: 0;
+  line-height: 32px;
+}
+.g-ul--no-bullet {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
 }
 </style>

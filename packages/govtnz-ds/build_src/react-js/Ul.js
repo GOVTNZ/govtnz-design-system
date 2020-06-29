@@ -1,7 +1,11 @@
 import React from "react";
 
-const Ul = ({ spacing, children }) => (
-  <ul className={`g-ul${spacing ? " g-ul--spacing" : ""}`}>
+const Ul = ({ spacing, marginBottom0, noBullet, children }) => (
+  <ul
+    className={`g-ul${spacing ? " g-ul--spacing" : ""}${
+      marginBottom0 ? " g-ul--mb-0" : ""
+    }${noBullet ? " g-ul--no-bullet" : ""}`}
+  >
     {children !== undefined ? (
       children
     ) : (

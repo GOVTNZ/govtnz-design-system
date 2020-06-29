@@ -6,17 +6,19 @@ import React from 'react';
 
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
+import P from '@govtnz/ds/build/react-ts/P';
+import '../../commons/styles/ds/themed-P.scss';
 
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 
 const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-heading">Patterns (coming soon)</H1>
-<p>Help users by using our patterns which provide easy action flows for specific tasks, as well as templates for common forms.
+<P>Help users by using our patterns which provide easy action flows for specific tasks, as well as templates for common forms.
 Typical examples include collecting users&#39; address and contact details, and
-guiding users through a step-by-step application form.</p>
-<p>We&#39;ll be inviting you to co-design some patterns with us soon. To keep updated
+guiding users through a step-by-step application form.</P>
+<P>We&#39;ll be inviting you to co-design some patterns with us soon. To keep updated
 with what we are doing now, what we are planning to do next, and how you can
-get involved, <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the New Zealand Government Design System (NZGDS) newsletter</a>.</p>
+get involved, <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the New Zealand Government Design System (NZGDS) newsletter</a>.</P>
 </React.Fragment>
 
 const template = (props) => {

@@ -31,8 +31,8 @@ import '../../commons/styles/ds/themed-CaptionL.scss';
 const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flexible grid to structure website content. The grid is mobile-first, powered by Flexbox, and based on a 12-column system. The grid includes gutters, column spanning, 4 breakpoints, and column alignment.</P>
 
 <H2 styleSize="large" id="how-it-works">How it works</H2>
-<p>The grid system uses a series of containers, rows, and columns to lay out and align content.</p>
-<p>The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.</p>
+<P>The grid system uses a series of containers, rows, and columns to lay out and align content.</P>
+<P>The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.</P>
 <ExampleContainer>
     <ExampleHeading>3-column Flexbox grid</ExampleHeading>
     <Example  code={components__FlexGrid[0]} iframeProps={{
@@ -45,21 +45,21 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 </ExampleContainer>
 
 <h3 id="containers">Containers</h3>
-<p>Flex container width can be fixed or fluid. The fixed container fills the available width until it reaches the maximum of 1366 pixels.</p>
-<p>The fluid container has no constraints and fills all of the available space. This is ideal for display uses, such as widescreen HD display.</p>
+<P>Flex container width can be fixed or fluid. The fixed container fills the available width until it reaches the maximum of 1366 pixels.</P>
+<P>The fluid container has no constraints and fills all of the available space. This is ideal for display uses, such as widescreen HD display.</P>
 <h3 id="rows">Rows</h3>
-<p>All columns must have a flex row as a parent.</p>
+<P>All columns must have a flex row as a parent.</P>
 <h3 id="columns">Columns</h3>
-<p>Our 12-column grid has gutters, column spanning, four breakpoints, and column alignment.</p>
-<p>The &quot;md&quot; in the above example refers to the breakpoint size. Here&#39;s the full range of breakpoint options:</p>
+<P>Our 12-column grid has gutters, column spanning, four breakpoints, and column alignment.</P>
+<P>The &quot;md&quot; in the above example refers to the breakpoint size. Here&#39;s the full range of breakpoint options:</P>
 <Ul bulleted>
 <Li>xs = minimum width of 0 pixels</Li>
 <Li>sm = minimum width of 768 pixels</Li>
 <Li>md = minimum width of 1024 pixels</Li>
 <Li>lg = minimum width of 1200 pixels</Li>
 </Ul>
-<p>We also support offsets to allow flexibility of design, essentially allowing blank columns to assist aesthetics in layout.</p>
-<p>The following example shows all the possible variants of column widths.</p>
+<P>We also support offsets to allow flexibility of design, essentially allowing blank columns to assist aesthetics in layout.</P>
+<P>The following example shows all the possible variants of column widths.</P>
 <ExampleContainer>
     <ExampleHeading>Flexgrid column variants</ExampleHeading>
     <Example  code={components__FlexGrid[1]} iframeProps={{
@@ -72,9 +72,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 </ExampleContainer>
 
 <h2 id="why-use-a-flexbox-grid">Why use a Flexbox grid?</h2>
-<p>We chose Flexbox because it&#39;s implemented by our supported browsers. We have labelled this grid type &quot;Flex&quot; so that we can add other grid types later. We&#39;re considering adding support for CSS Grid.</p>
+<P>We chose Flexbox because it&#39;s implemented by our supported browsers. We have labelled this grid type &quot;Flex&quot; so that we can add other grid types later. We&#39;re considering adding support for CSS Grid.</P>
 <h2 id="credit">Credit</h2>
-<p>Original HTML and CSS derived from <a href="http://flexboxgrid.com/">FlexboxGrid</a> version 6.3.2. Licensed under <a href="https://github.com/kristoferjoseph/flexboxgrid">the Apache Licence version 2.0</a>.</p>
+<P>Original HTML and CSS derived from <a href="http://flexboxgrid.com/">FlexboxGrid</a> version 6.3.2. Licensed under <a href="https://github.com/kristoferjoseph/flexboxgrid">the Apache Licence version 2.0</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

@@ -29,7 +29,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </P>
 
 <H2 styleSize="large" id="example">Example</H2>
-<p>Interact with the example to see how it works.</p>
+<P>Interact with the example to see how it works.</P>
 <ExampleContainer>
     <Example  code={components__Textarea[0]} iframeProps={{
         id:"iframe_componentsTextarea0",
@@ -41,26 +41,24 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <h2 id="when-to-use-this-component">When to use this component</h2>
-<p>Use the textarea component when you need to let users enter an amount of text that’s longer than a single line.</p>
+<P>Use the textarea component when you need to let users enter an amount of text that’s longer than a single line.</P>
 <h2 id="when-not-to-use-this-component">When not to use this component</h2>
-<p>Users can find open-ended questions difficult to answer. It might be better to break up one complex open question into a series of simple ones.</p>
+<P>Users can find open-ended questions difficult to answer. It might be better to break up one complex open question into a series of simple ones.</P>
 <h3 id="ask-a-simple-closed-question">Ask a simple closed question</h3>
-<p>If you need to let users select a single answer from a list of options, use <Link to="./components/Radios/">radio buttons</Link>. For selecting one or more options, or to toggle a single option on or off, use <Link to="./components/Checkboxes/">checkboxes</Link>.</p>
+<P>If you need to let users select a single answer from a list of options, use <Link className="g-link" to="/components/Radios/">radio buttons</Link>. For selecting one or more options, or to toggle a single option on or off, use <Link className="g-link" to="/components/Checkboxes/">checkboxes</Link>.</P>
 <h3 id="ask-a-simple-open-question">Ask a simple open question</h3>
-<p>If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the <Link to="./components/Input/">text input</Link> component.</p>
+<P>If you need to let users enter shorter answers no longer than a single line, such as a phone number or name, use the <Link className="g-link" to="/components/Input/">text input</Link> component.</P>
 <h2 id="how-it-works">How it works</h2>
 <h3 id="label-textareas">Label textareas</h3>
-<p>You must label textareas. Placeholder text is not a suitable substitute for a label, as it may disappear when users click inside the textarea.</p>
-<p>Labels must be aligned above the textarea they refer to. They should be short, direct and written in sentence case. Do not use colons at the end of labels.</p>
+<P>You must label textareas. Placeholder text is not a suitable substitute for a label, as it may disappear when users click inside the textarea.</P>
+<P>Labels must be aligned above the textarea they refer to. They should be short, direct and written in sentence case. Do not use colons at the end of labels.</P>
 <h2 id="use-appropriately-sized-textareas">Use appropriately-sized textareas</h2>
-<p>Make the height of a textarea proportional to the amount of text you expect users to enter. You can set the height of a textarea by by specifying the <code>rows</code> attribute.</p>
-<p>Allow users to resize the textarea by dragging the resize handle icon in the bottom-right corner of the textarea.</p>
+<P>Make the height of a textarea proportional to the amount of text you expect users to enter. You can set the height of a textarea by by specifying the <code>rows</code> attribute.</P>
+<P>Allow users to resize the textarea by dragging the resize handle icon in the bottom-right corner of the textarea.</P>
 <h2 id="do-not-disable-copy-and-paste">Do not disable copy and paste</h2>
-<p>Users will often need to copy and paste information into a textarea, so do not stop them from doing this.</p>
-<h2 id="limiting-the-number-of-characters">Limiting the number of characters</h2>
-<p>If there’s a good reason to limit the number of characters users can enter, you can use the <Link to="./components/CharacterCount/">character count</Link> component.</p>
+<P>Users will often need to copy and paste information into a textarea, so do not stop them from doing this.</P>
 <h2 id="error-messages">Error messages</h2>
-<p>Error messages should be styled like this:</p>
+<P>Error messages should be styled like this:</P>
 <ExampleContainer>
     <Example  code={components__Textarea[1]} iframeProps={{
         id:"iframe_componentsTextarea1",
@@ -71,27 +69,27 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
       }}></Example>
 </ExampleContainer>
 
-<p>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</p>
+<P>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</P>
 <h3 id="if-the-input-is-empty">If the input is empty</h3>
-<p>Say ‘Enter [whatever it is]’.</p>
-<p>For example, ‘Enter summary’.</p>
+<P>Say ‘Enter [whatever it is]’.</P>
+<P>For example, ‘Enter summary’.</P>
 <h3 id="if-the-input-is-too-long">If the input is too long</h3>
-<p>Say ‘[whatever it is] must be [number] characters or fewer’.</p>
-<p>For example, ‘Summary must be 400 characters or fewer’.</p>
+<P>Say ‘[whatever it is] must be [number] characters or fewer’.</P>
+<P>For example, ‘Summary must be 400 characters or fewer’.</P>
 <h3 id="if-the-input-is-too-short">If the input is too short</h3>
-<p>Say ‘[whatever it is] must be [number] characters or more’.</p>
-<p>For example, ‘Summary must be 10 characters or more’.</p>
+<P>Say ‘[whatever it is] must be [number] characters or more’.</P>
+<P>For example, ‘Summary must be 10 characters or more’.</P>
 <h3 id="if-the-input-is-too-long-or-too-short">If the input is too long or too short</h3>
-<p>Say ‘[whatever it is] must be between [number] and [number] characters’.</p>
-<p>For example, ‘Summary must be between 10 and 400 characters’.</p>
+<P>Say ‘[whatever it is] must be between [number] and [number] characters’.</P>
+<P>For example, ‘Summary must be between 10 and 400 characters’.</P>
 <h3 id="if-the-input-uses-characters-that-are-not-allowed-and-you-know-what-the-characters-are">If the input uses characters that are not allowed and you know what the characters are</h3>
-<p>Say ‘[whatever it is] must not include [characters]’.</p>
-<p>For example, ‘Summary must not include ē and $’.</p>
+<P>Say ‘[whatever it is] must not include [characters]’.</P>
+<P>For example, ‘Summary must not include ē and $’.</P>
 <h3 id="if-the-input-uses-characters-that-are-not-allowed-and-you-do-not-know-what-the-characters-are">If the input uses characters that are not allowed and you do not know what the characters are</h3>
-<p>Say ‘[whatever it is] must only include [list of allowed characters]’.</p>
-<p>For example, ‘Summary must only include letters a to z, hyphens, spaces and apostrophes.’</p>
+<P>Say ‘[whatever it is] must only include [list of allowed characters]’.</P>
+<P>For example, ‘Summary must only include letters a to z, hyphens, spaces and apostrophes.’</P>
 <h2 id="credit">Credit</h2>
-<p>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</p>
+<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {

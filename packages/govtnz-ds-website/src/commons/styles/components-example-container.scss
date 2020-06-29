@@ -53,8 +53,11 @@
   padding: $spacing-32 $spacing-32 $spacing-32;
 }
 
+.example__container .g-heading-xl,
+.example__container .g-heading-l,
 .example__container .g-heading-m,
 .example__container .g-heading-s,
+.example__container .g-heading-xs,
 .g-dswebsite-font,
 .example__container .g-dswebsite-font {
   --g-theme-font-family: National2, Arial, sans-serif;
@@ -62,15 +65,6 @@
 
 .g-ds-font {
   --g-theme-font-family: Arial, sans-serif;
-}
-
-.example__container .g-heading-m,
-.example__container .g-heading-s {
-  margin-top: $spacing-64 !important; // Override css from .g-heading-m/s
-}
-
-[class^='g-heading'] + .example__container {
-  margin-top: $spacing-32;
 }
 
 .example__iframe {

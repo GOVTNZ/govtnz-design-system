@@ -23,7 +23,7 @@ const TextColorSwatch = ({ colorCode, colorName, textColors }: Props) => (
       className="text-color-swatch__color"
       style={{ backgroundColor: colorCode }}
     >
-      <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+      <Ul noBullet>
         {textColors.map((color) => (
           <li>
             <span style={{ color: color.color }}>
@@ -31,7 +31,7 @@ const TextColorSwatch = ({ colorCode, colorName, textColors }: Props) => (
             </span>
           </li>
         ))}
-      </ul>
+      </Ul>
     </div>
   </div>
 );

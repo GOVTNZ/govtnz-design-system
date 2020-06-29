@@ -141,11 +141,9 @@ export default Vue.extend({
   padding-top: 16px;
   padding-bottom: 16px;
 }
-.g-button-hint > * {
-  margin-top: 0px;
-}
 .g-button--disabled,
 .g-button[disabled] {
+  opacity: 0.5;
   background: g-theme-button-disabled-background-color;
 }
 .g-button--disabled:hover,
