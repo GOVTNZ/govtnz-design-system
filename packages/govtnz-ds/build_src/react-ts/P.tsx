@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  styleSize: "large" | "medium" | "small" | "x-small";
+  styleSize?: "large" | "medium" | "small" | "x-small";
   marginBottom0?: boolean;
   children?: React.ReactNode;
 };

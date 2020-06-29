@@ -88,23 +88,23 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <h2 id="warning">Warning</h2>
 <P>Use warning alerts to tell users something urgent. Only use this alert if the information will help users avoid a problem.</P>
 <ExampleContainer>
-    <ExampleHeading>Warning alert - Static</ExampleHeading>
+    <ExampleHeading>Warning alert: Static</ExampleHeading>
     <Example  code={components__Alerts[2]} iframeProps={{
         id:"iframe_componentsAlerts2",
         className: "example__iframe",
         src:"/components/Alerts__example2.html",
-        title:"Example title: Warning alert - Static",
+        title:"Example title: Warning alert: Static",
         height: 216
       }}></Example>
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Warning alert - Live</ExampleHeading>
+    <ExampleHeading>Warning alert: Live</ExampleHeading>
     <Example  code={components__Alerts[3]} iframeProps={{
         id:"iframe_componentsAlerts3",
         className: "example__iframe",
         src:"/components/Alerts__example3.html",
-        title:"Example title: Warning alert - Live",
+        title:"Example title: Warning alert: Live",
         height: 167
       }}></Example>
 </ExampleContainer>

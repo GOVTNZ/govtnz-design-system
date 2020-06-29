@@ -7,16 +7,18 @@ import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 
-import Alert from '@govtnz/ds/build/react-js/Alert';
+import Alert from '@govtnz/ds/build/react-ts/Alert';
 import '@govtnz/ds/build/css/Alert.css';
 
-import H2 from '@govtnz/ds/build/react-js/H2';
+import A from '@govtnz/ds/build/react-ts/A';
+
+import H2 from '@govtnz/ds/build/react-ts/H2';
 import '@govtnz/ds/build/css/H2.css';
 
-import H3 from '@govtnz/ds/build/react-js/H3';
+import H3 from '@govtnz/ds/build/react-ts/H3';
 import '@govtnz/ds/build/css/H3.css';
 
-import P from '@govtnz/ds/build/react-js/P';
+import P from '@govtnz/ds/build/react-ts/P';
 import '@govtnz/ds/build/css/P.css';
 
 import Ul from '@govtnz/ds/build/react-ts/Ul';
@@ -34,7 +36,7 @@ import '@govtnz/ds/build/css/TextareaBlock.css';
 import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 import '@govtnz/ds/build/css/RadioBlock.css';
 
-import FieldsetBlock from '@govtnz/ds/build/react-js/FieldsetBlock';
+import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';
 import '@govtnz/ds/build/css/FieldsetBlock.css';
 
 import Radios from '@govtnz/ds/build/react-ts/Radios';
@@ -158,7 +160,7 @@ class ContactusForm extends React.Component {
             ''
           ) : (
             <Alert level="error" headingId="heading3">
-              <H3 id="heading3">
+              <H3 id="heading3" styleSize="medium">
                 Error: There’s a problem with the following responses
               </H3>
               {errorMessages.map(
@@ -167,12 +169,12 @@ class ContactusForm extends React.Component {
                     {error.message ? (
                       <Ul spacing key={error.message}>
                         <Li>
-                          <a
+                          <A
                             href={error.id}
                             onClick={() => this.scrollToElement(error.id)}
                           >
                             {error.message}
-                          </a>
+                          </A>
                         </Li>
                       </Ul>
                     ) : (
@@ -186,7 +188,9 @@ class ContactusForm extends React.Component {
 
           <div style={{ display: successMessage }}>
             <Alert level="success" headingId="heading3">
-              <H3 id="heading3">Success: Your message has been sent</H3>
+              <H3 id="heading3" styleSize="medium">
+                Success: Your message has been sent
+              </H3>
               <P>
                 Thanks for contacting us. We’ll get back to you in 1–3 working
                 days.
@@ -240,26 +244,34 @@ class ContactusForm extends React.Component {
                   id="scroll-field-radio"
                   label="North Island"
                   name="radio"
+                  value="North Island"
                   required
                 ></RadioBlock>
                 <RadioBlock
+                  id="south-island-radio"
                   label="South Island"
                   name="radio"
+                  value="South Island"
                   required
                 ></RadioBlock>
                 <RadioBlock
+                  id="stewart-island-radio"
                   label="Stewart Island"
                   name="radio"
+                  value="Stewart Island"
                   required
                 ></RadioBlock>
                 <RadioBlock
+                  id="chatham-islands-radio"
                   label="Chatham Islands"
                   name="radio"
+                  value="Chatham Islands"
                   required
                 ></RadioBlock>
               </Radios>
             </FieldsetBlock>
           </div>
+
           <div style={{ marginTop: '40px' }}>
             <TextareaBlock
               id="scroll-field-text-area"

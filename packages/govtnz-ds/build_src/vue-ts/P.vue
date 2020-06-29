@@ -22,7 +22,7 @@ export default Vue.extend({
       validator: value => {
         return ["large", "medium", "small", "x-small"].indexOf(value) !== -1;
       },
-      required: true
+      required: false
     },
     marginBottom0: { type: Boolean, default: false, required: false },
     children: { required: false, default: "Example text" }

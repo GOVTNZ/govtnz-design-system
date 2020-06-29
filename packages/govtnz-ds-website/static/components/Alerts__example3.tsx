@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example title: Warning alert - Live" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example title: Warning alert: Live" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} mode="live" level="warning" headingId="heading1" {...onChangeGenerator({})}>
             <H2 id="heading1" {...onChangeGenerator({})}>Warning: The option you’ve selected is for people aged 65 or over only</H2>
             <P marginBottom0 {...onChangeGenerator({})}>You’ll need to provide evidence of your date of birth when you submit your application.</P>

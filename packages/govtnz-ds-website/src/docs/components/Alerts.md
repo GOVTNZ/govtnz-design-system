@@ -80,8 +80,8 @@ Use information alerts to inform users of important information or changes on a 
 Use warning alerts to tell users something urgent. Only use this alert if the information will help users avoid a problem.
 
 <ExampleContainer>
-    <ExampleHeading>Warning alert - Static</ExampleHeading>
-    <Example title="Example title: Warning alert - Static">
+    <ExampleHeading>Warning alert: Static</ExampleHeading>
+    <Example title="Example title: Warning alert: Static">
         <Alert level="warning" headingId="heading2">
             <H2 id="heading2">Warning: Your subscription will expire soon</H2>
             <P marginBottom0>You’ll need to renew your subscription to keep using the service.</P>
@@ -90,8 +90,8 @@ Use warning alerts to tell users something urgent. Only use this alert if the in
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Warning alert - Live</ExampleHeading>
-    <Example title="Example title: Warning alert - Live">
+    <ExampleHeading>Warning alert: Live</ExampleHeading>
+    <Example title="Example title: Warning alert: Live">
         <Alert mode="live" level="warning" headingId="heading1">
             <H2 id="heading1">Warning: The option you’ve selected is for people aged 65 or over only</H2>
             <P marginBottom0>You’ll need to provide evidence of your date of birth when you submit your application.</P>

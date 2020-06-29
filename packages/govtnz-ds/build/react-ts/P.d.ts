@@ -1,6 +1,6 @@
 import React from "react";
 declare type Props = {
-    styleSize: "large" | "medium" | "small" | "x-small";
+    styleSize?: "large" | "medium" | "small" | "x-small";
     marginBottom0?: boolean;
     children?: React.ReactNode;
 };
