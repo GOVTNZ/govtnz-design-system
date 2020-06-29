@@ -27,7 +27,7 @@ const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-h
 government — and beyond — to use, we want a strong cross-government community
 backing it.</P>
 <P>You can contribute by:</P>
-<Ul bulleted>
+<Ul>
 <Li>testing our components and patterns</Li>
 <Li>helping to develop new components and patterns</Li>
 <Li>commenting on our guidance.</Li>

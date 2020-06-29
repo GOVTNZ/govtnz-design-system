@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <h3 id="columns">Columns</h3>
 <P>Our 12-column grid has gutters, column spanning, four breakpoints, and column alignment.</P>
 <P>The &quot;md&quot; in the above example refers to the breakpoint size. Here&#39;s the full range of breakpoint options:</P>
-<Ul bulleted>
+<Ul>
 <Li>xs = minimum width of 0 pixels</Li>
 <Li>sm = minimum width of 768 pixels</Li>
 <Li>md = minimum width of 1024 pixels</Li>

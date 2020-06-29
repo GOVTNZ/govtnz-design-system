@@ -47,7 +47,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The footer p
 <P>Use the footer at the bottom of every page of your website.</P>
 <h2 id="how-it-works">How it works</h2>
 <P>The footer component is a container that includes links to:</P>
-<Ul bulleted>
+<Ul>
 <Li>Govt.nz using the English or te reo Māori version of the All-of-Government brand lockup</Li>
 <Li>your site&#39;s contact information, copyright and privacy statements (link targets are for you to set).</Li>
 </Ul>

@@ -101,11 +101,6 @@ const main = async () => {
       encoding: 'utf-8',
     }
   );
-  const allComponentsIndexPath = path.resolve(
-    __dirname,
-    '..',
-    'src/commons/templates/all-components-index-template.tsx'
-  );
 
   // Step 2. Get ALL the release files
   const releaseSrcPath = path.resolve(

@@ -66,7 +66,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 
 <h2 id="when-to-use-it">When to use it</h2>
 <P>Use the checkboxes component when you need to help users:</P>
-<Ul bulleted>
+<Ul>
 <Li>select one or more options from a list</Li>
 <Li>toggle a single option on or off.</Li>
 </Ul>
@@ -79,7 +79,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 <P>Unlike with radio buttons, users can select multiple checkboxes from a list. Do not assume that users will know how many checkboxes they can select based on only the visual difference between radio buttons and checkboxes.</P>
 <P>If needed, add a hint to explain this, like ‘Select all that apply’.</P>
 <P>Do not pre-select checkboxes as users are likely to:</P>
-<Ul bulleted>
+<Ul>
 <Li>not realise they’ve missed a question</Li>
 <Li>submit the wrong answer.</Li>
 </Ul>

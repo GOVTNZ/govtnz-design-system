@@ -80,7 +80,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <P>If the caption should be considered part of the page heading, you can also nest the caption within the <code>h1</code>.</P>
 <h2 id="paragraphs">Paragraphs</h2>
 <P>There are three font sizes for paragraphs, giving you:</P>
-<Ul bulleted>
+<Ul>
 <Li>a large size for lead paragraphs</Li>
 <Li>a medium size for standard body text</Li>
 <Li>a smaller size for small body text.</Li>

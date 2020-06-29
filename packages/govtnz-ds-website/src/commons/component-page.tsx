@@ -9,16 +9,17 @@ import GetInTouch from '../components/GetInTouch';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import P from '@govtnz/ds/build/react-ts/P';
-import A from '@govtnz/ds/build/react-ts/A';
 import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import Note from '../components/Note';
 import componentsMenu from './component-menu.json';
 
-export default function ComponentPage({ id, pageProps, PageContent }: Props) {
+export default function ComponentPage(props: Props) {
+  const { id, pageProps, PageContent } = props;
+
   let menuItem;
   let isStable: boolean | undefined;
-  componentsMenu.forEach(category => {
-    const itemMatch = category.items.find(item => item.id === id);
+  componentsMenu.forEach((category) => {
+    const itemMatch = category.items.find((item) => item.id === id);
     if (itemMatch) {
       menuItem = itemMatch;
       isStable = category.stable;
@@ -45,7 +46,7 @@ export default function ComponentPage({ id, pageProps, PageContent }: Props) {
                   {title}
                 </H1>
               </>
-            ) : id !== 'index' ? (
+            ) : id !== 'index' && id !== undefined ? (
               <>
                 <CaptionL>Components</CaptionL>
                 <H1 styleSize="xlarge" id="main-heading">
@@ -87,7 +88,7 @@ export const ComponentsMenu = ({ pageProps }: ComponentsMenuProps) => (
           <div className="sidebar__category" key={index}>
             <h2 className="sidebar__category-title">{category.title}</h2>
             <ul className="sidebar__category__items">
-              {category.items.map(item => {
+              {category.items.map((item) => {
                 const currentTo =
                   pageProps &&
                   pageProps.location &&

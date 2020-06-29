@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <P>Always position radio buttons to the left of their labels. This makes them easier to find, especially for users of screen magnifiers.</P>
 <P>Unlike with checkboxes, users can only select one option from a list of radio buttons. Do not assume that users will know how many options they can select based on the visual difference between radio buttons and checkboxes alone. If needed, add a hint explaining this, like ‘Select one option’.</P>
 <P>Do not pre-select radio button options. Pre-selecting radio button options makes it more likely that users will:</P>
-<Ul bulleted>
+<Ul>
 <Li>not realise they’ve missed a question</Li>
 <Li>submit the wrong answer.</Li>
 </Ul>

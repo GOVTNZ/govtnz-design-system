@@ -32,7 +32,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 
 <H2 styleSize="large" id="when-to-use-it">When to use it</H2>
 <P>Use the page alerts component to inform users of:</P>
-<Ul bulleted>
+<Ul>
 <Li>important information</Li>
 <Li>changes on a page</Li>
 <Li>successful or unsuccessful completion of a task.</Li>
@@ -44,7 +44,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <P>Site and system-wide alerts will be developed as part of the banner component during the Design System’s beta phase.</P>
 <h2 id="how-it-works">How it works</h2>
 <P>All alerts use a colour and icon that corresponds with their message intent. The alert type — information, warning, success, or error — is communicated to all users by:</P>
-<Ul bulleted>
+<Ul>
 <Li>the visual appearance, including the icon and colour</Li>
 <Li>the first word of the alert&#39;s heading, for example, ‘Warning’.</Li>
 </Ul>
@@ -113,7 +113,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <P>Use success alerts to notify users that a form submission has completed successfully.</P>
 <P>Success alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</P>
 <P>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</P>
-<Ul bulleted>
+<Ul>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
 <Li>the document’s <code>title</code> starts with &quot;Success:&quot;.</Li>
 </Ul>
@@ -131,14 +131,14 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <h2 id="error-summary">Error summary</h2>
 <P>Use the error summary alert to inform users of every error they need to correct in a form before they can move on to the next step or complete their task.</P>
 <P>Form errors must be presented using:</P>
-<Ul bulleted>
+<Ul>
 <Li>the error summary alert</Li>
 <Li>individual error messages next to each form field with an error.</Li>
 </Ul>
 <P>The error summary should be added at the top of the page above the form and link to each form field that has an error.</P>
 <P>Error summary alerts are always static, as they are included as part of a new page or view, and remain unchanged until the user initiates a change of context.</P>
 <P>To orient screen reader users and others to the alert, the Design System user must ensure that when the page or view first loads:</P>
-<Ul bulleted>
+<Ul>
 <Li>focus is moved to the alert (the alert container is preset with <code>tabindex=”-1”</code> to make it programmatically focusable)</Li>
 <Li>the document’s <code>title</code> starts with &quot;Error:&quot;.</Li>
 </Ul>
@@ -155,7 +155,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 
 <h2 id="error-messages">Error messages</h2>
 <P>Specific error messages must be provided for specific error states. Style error messages as shown in the ‘Error messages’ sections of the guidance for the following form components:</P>
-<Ul bulleted>
+<Ul>
 <Li><a href="https://design-system-alpha.digital.govt.nz/components/Input/">Text input</a></Li>
 <Li><a href="https://design-system-alpha.digital.govt.nz/components/Radios/">Radio buttons</a></Li>
 <Li><a href="https://design-system-alpha.digital.govt.nz/components/Date/">Date input</a></Li>

@@ -49,7 +49,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>Design System users should avoid wrapping main navigation links over two or more lines. Instead, try to present links in an unbroken horizontal list for screen widths above 768px. For screen widths of 768px or below, the mobile menu will be triggered by default.</P>
 <h2 id="when-to-use-it">When to use it</h2>
 <P>A header is required on all government websites. When this header component is used, it must include:</P>
-<Ul bulleted>
+<Ul>
 <Li>your logo or site name</Li>
 <Li>your site&#39;s primary navigation.</Li>
 </Ul>
@@ -63,7 +63,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h3 id="colour-scheme">Colour scheme</h3>
 <P>The header component uses the dark grey colour palette of the Design System by default. You can implement your own visual identity guidelines, but you must make sure they meet requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/"> NZ Government Web Accessibility Standard</a>.</P>
 <P>In particular, the text and UI elements within the component must meet Web Content Accessibility Guidelines (WCAG) success criteria:</P>
-<Ul bulleted>
+<Ul>
 <Li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3 Contrast (Minimum)</a></Li>
 <Li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a></Li>
 </Ul>
@@ -97,7 +97,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>By default, the header component hides the main navigation and adds a button for users to open and close it.</P>
 <P>The button has an <code>aria-expanded</code> attribute. The value (true or false) signals to screen reader users whether the main navigation is open or closed.</P>
 <P>The button also includes a chevron icon. The chevron’s orientation helps to visually indicate the main navigation’s state. A downward-pointing chevron indicates that the main navigation is closed and an upward-pointing chevron indicates that it is open.</P>
-<Ul bulleted>
+<Ul>
 <Li>choosing the right text for the button—using the word ‘Menu’ (or its equivalent in the page’s main language if that is not English) is strongly recommended</Li>
 <Li>implementing the JavaScript to manage the main navigation’s open and closed states as triggered by the ‘Menu’ button.</Li>
 </Ul>

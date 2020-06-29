@@ -42,7 +42,7 @@ text as well to ensure all users understand the button&#39;s function.</P>
 <P>Keep button text short. Start with a verb that clearly describes the action
 the button performs. Write button text in sentence case.</P>
 <P>Some typical examples of button text are:</P>
-<Ul bulleted>
+<Ul>
 <Li>&#39;Start now&#39; at the start of the service</Li>
 <Li>&#39;Sign in&#39; to an account a user has already created</Li>
 <Li>&#39;Continue&#39; when the service does not save a user&#39;s information</Li>
@@ -155,7 +155,7 @@ easier to understand.</P>
 <P>You can prevent users from accidentally sending information more than once by
 preventing multiple clicks from registering.</P>
 <P>Sometimes, users will click buttons more than once because they:</P>
-<Ul bulleted>
+<Ul>
 <Li>have used operating systems where they have to rapidly click twice on items
 to make them work</Li>
 <Li>are experiencing a slow connection, which means they are not given feedback

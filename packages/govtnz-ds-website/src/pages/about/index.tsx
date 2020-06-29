@@ -33,7 +33,7 @@ and how you can get involved.</P>
 <P>Since the Design System will be available for everyone in central and local
 government (and beyond) to use, we want a strong cross-government community
 backing it. You can contribute by:</P>
-<Ul bulleted>
+<Ul>
 <Li>testing our components and patterns</Li>
 <Li>helping to develop new components and patterns</Li>
 <Li>commenting on our guidance.</Li>

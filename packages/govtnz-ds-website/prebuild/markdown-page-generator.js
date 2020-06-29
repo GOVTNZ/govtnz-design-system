@@ -261,7 +261,7 @@ const generatePage = async (
     })
     .replace(/<ul>/g, () => {
       // Convert markdown to DS Component
-      return '<Ul bulleted>';
+      return '<Ul>';
     })
     .replace(/<\/ul>/g, () => {
       // Convert markdown to DS Component
