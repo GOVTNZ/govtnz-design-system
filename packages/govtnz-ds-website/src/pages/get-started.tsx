@@ -15,7 +15,7 @@ import GetInTouch from '../components/GetInTouch';
 
 // import { Details, Summary } from 'react-accessible-details'
 
-const IndexPage = props => (
+const IndexPage = (props) => (
   <Layout {...props}>
     <SEO
       title="Get started | Design System - Alpha"
@@ -85,7 +85,7 @@ const IndexPage = props => (
           <P styleSize="medium">
             The design system currently provides components in:
           </P>
-          <Ul bulleted>
+          <Ul>
             <Li>HTML and CSS (or Sass (SCSS))</Li>
             <Li>
               <A href="https://reactjs.org/">React</A>, in JavaScript or
@@ -101,7 +101,7 @@ const IndexPage = props => (
             </Li>
           </Ul>
           <P styleSize="medium">Soon we will also be supporting:</P>
-          <Ul bulleted>
+          <Ul>
             <Li>
               SilverStripe for{' '}
               <A href="https://www.silverstripe.org/">SilverStripe</A> 3 and 4.
@@ -153,7 +153,7 @@ const IndexPage = props => (
           <P styleSize="medium">
             Prototypes can be easily produced at any stage to:
           </P>
-          <Ul bulleted>
+          <Ul>
             <Li>
               demonstrate your product vision to stakeholders to get buy-in
             </Li>
@@ -162,7 +162,7 @@ const IndexPage = props => (
             <Li>help you to visualise the end-product during development.</Li>
           </Ul>
           <P styleSize="medium">You can confidently promote your product as:</P>
-          <Ul bulleted>
+          <Ul>
             <Li>meeting all accessibility requirements</Li>
             <Li>focussed on usability</Li>
             <Li>being at the forefront of international best practice.</Li>

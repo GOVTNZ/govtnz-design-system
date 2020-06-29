@@ -250,7 +250,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             </p>
             <p>
               <Link to="/basics/typography/">
-                Read about the typography of the Design System.
+                Read about the typography of the Design System
               </Link>
             </p>
 

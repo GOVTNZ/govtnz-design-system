@@ -9,7 +9,6 @@
     "build:release": "yarn build:source-release && yarn build:compile",
     "build:source-release": "babel-node --max_old_space_size=8192 --expose-gc --extensions '.ts' ./src/index.ts",
     "build:compile": "yarn babel build_src --out-dir build && yarn tsc",
-    "test": "jest",
     "test:typescript": "tsc --project ./ --noEmit",
     "node-modules-clear": "rimraf ./node_modules",
     "cache-clear": "rimraf ./yarn-error.log"

@@ -1,5 +1,16 @@
 # Change log
 
+## Version 0.1.2
+
+- New: FieldsetBlock component
+- New: TextAreaBlock component
+- Fix: TextAreaBlock's error id added to `aria-describedby`.
+
+## Version 0.1.1
+
+- `radioId` prop renamed `id`, `checkboxId` renamed `id` etc.
+- React TypeScript improvements
+
 ## Version 0.0.8
 
 - Button and Date Picker

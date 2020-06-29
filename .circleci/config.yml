@@ -27,10 +27,6 @@ jobs:
             yarn build:website
             yarn build:website:validate-build
       - run:
-          name: test
-          command: |-
-            yarn test
-      - run:
           name: set ENVIRONMENT variable
           command: |-
             set -e

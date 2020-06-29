@@ -1,2 +1,0 @@
-<p class="<% if $styleSize == "large" %>g-body-l<% else_if $styleSize == "medium" %>g-body-m<% else_if $styleSize == "small" %>g-body-s<% else_if $styleSize == "x-small" %>g-body-xs<% end_if %>"> {$children}
-</p>

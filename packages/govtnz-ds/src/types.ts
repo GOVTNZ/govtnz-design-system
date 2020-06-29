@@ -14,7 +14,7 @@ export type Component = {
   version: string;
   html: string;
   css: string;
-  cssVariables?: CSSVariablePattern[];
+  cssVariables: CSSVariablePattern[];
 };
 
 export type CSSVariablePattern = {

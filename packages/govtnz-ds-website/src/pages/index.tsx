@@ -101,7 +101,7 @@ const IndexPage = (props) => {
               new websites or improve existing ones.
             </P>
             <P styleSize="medium">With the NZGDS, you will soon be able to:</P>
-            <Ul bulleted>
+            <Ul>
               <Li>
                 prototype, design, and develop websites quickly and efficiently
               </Li>
@@ -210,7 +210,7 @@ const IndexPage = (props) => {
               service.
             </P>
             <P styleSize="medium">You can contribute by:</P>
-            <Ul bulleted>
+            <Ul>
               <Li>testing our components and patterns</Li>
               <Li>helping to develop new components and patterns</Li>
               <Li>commenting on our guidance.</Li>
@@ -220,7 +220,7 @@ const IndexPage = (props) => {
               If you have a question, idea, or suggestion about the design
               system, please get in touch through:
             </P>
-            <Ul bulleted>
+            <Ul>
               <Li>
                 email{' '}
                 <A href="mailto:info@digital.govt.nz">info@digital.govt.nz</A>

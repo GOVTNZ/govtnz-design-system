@@ -309,7 +309,7 @@ const PrototypePageContent = () => (
     </p>
     <ExampleContainer>
       <Row>
-        <Column className="" xs="12" sm="12" md="9" lg="12">
+        <Column xs="12" sm="12" md="9" lg="12">
           <ContactusForm />
         </Column>
       </Row>

@@ -80,8 +80,6 @@ async function main(
     }, []);
   }
 
-  let allCss = '';
-
   // Sequentially run because may result in jsdom and resource contention
   // issues...so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
@@ -104,7 +102,7 @@ async function main(
     console.log(
       `Release build step ${i + 1} ${
         releaseSpecItem.sourceId
-      } see govtnz-ds/src/upstream)`
+      } see govtnz-ds/src/template-sources)`
     );
 
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem);
@@ -141,7 +139,7 @@ const makeReleaseSpecItem = async ({
   componentIds,
   metaTemplateFormatIds
 }: ReleaseSpecItem): Promise<ReleaseItem> => {
-  const base = path.join(__dirname, 'upstream', sourceId);
+  const base = path.join(__dirname, 'template-sources', sourceId);
   let releaseVersions: ReleaseVersion[];
 
   if (!componentIds) {
@@ -156,7 +154,7 @@ const makeReleaseSpecItem = async ({
 
   const components = await Promise.all(
     componentIds.map(async componentId => {
-      const base = path.join(__dirname, 'upstream', sourceId);
+      const base = path.join(__dirname, 'template-sources', sourceId);
       const html = (
         await fs.promises.readFile(path.join(base, `${componentId}.html`), {
           encoding: 'utf-8'
@@ -301,11 +299,12 @@ const saveRelease = async (
   allReleaseVersions?: ReleaseVersion[][] | undefined
 ) => {
   // Expects an Object that acts as a pseudo-filesystem.
-  // The Object `files` has keys that are paths and values that are data.
-  // The keys are paths relative to ./release without a leading '/' or '.'.
+  //
+  // The Object `files` has keys that are paths and values of file data.
+  //
   // The values can be strings or binary data.
   //
-  // ie,
+  // eg,
   //
   // files = {
   //   'css/back-link.css': 'body { background:red }',

@@ -40,10 +40,18 @@ Please raise a Github PR with your changes, or contact us to discuss changes.
 
 A `Development install` is only necessary for contributing components or bug-fixes.
 
+This Git repo uses [Symlinks](https://en.wikipedia.org/wiki/Symbolic_link). When you clone the repo you must have symlinks enabled. To set this globally run the command,
+
+```
+git config --global core.symlinks true
+```
+
+Then clone the repo and follow these steps
+
 1. Install [`NVM`](https://github.com/creationix/nvm#installation).
 2. `nvm install`
 3. `yarn` (installs)
-4. `yarn build:all` (this may take a while)
+4. `yarn build:all` (this may take a while, about 5 minutes)
 
 #### Adding new components
 
