@@ -31,10 +31,9 @@
                 <FlexRow>
                     <FlexColumn xs="12" sm="12" md="12" lg="12">
                         <H1>Contact us</H1>
-                        <P styleSize="large">Here is an intro for the page.</P>
-                        <p>Please do not hesitate to get in touch with us</p>
-                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" width={20}  />
-                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" width={20} />
+                        <P>Send a message to let us know about the issue you’re having.</P>
+                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20}  />
+                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} />
                         <FieldsetBlock
                             legend={
                             <H2 styleSize="small" id="whereLiveTitle">
@@ -48,7 +47,7 @@
                                 name="issueType"
                             />
                             <RadioBlock
-                                label="One of our services"
+                                label="Our service"
                                 id="radioIssue2"
                                 name="issueType"
                             />
@@ -59,9 +58,9 @@
                             />
                         </FieldsetBlock>
                         <TextareaBlock
+                            label="What's your message?"
                             id="comments"
                             name="comments"
-                            label="Comment?"
                             cols={20} 
                         />
                         <Button>Submit</Button>

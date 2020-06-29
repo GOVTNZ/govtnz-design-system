@@ -43,20 +43,19 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                 <FlexRow {...onChangeGenerator({})}>
                     <FlexColumn xs="12" sm="12" md="12" lg="12" {...onChangeGenerator({})}>
                         <H1 {...onChangeGenerator({})}>Contact us</H1>
-                        <P styleSize="large" {...onChangeGenerator({})}>Here is an intro for the page.</P>
-                        <p>Please do not hesitate to get in touch with us</p>
-                        <InputBlock type="text" label="Name" name="anyName" id="anyNameId" width={20} {...onChangeGenerator({})}></InputBlock>
-                        <InputBlock type="email" label="Email address" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
+                        <P {...onChangeGenerator({})}>Send a message to let us know about the issue you’re having.</P>
+                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20} {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
                         <FieldsetBlock legend={
                             <H2 styleSize="small" id="whereLiveTitle">
                                 What is your issue about?
                             </H2>
                             } {...onChangeGenerator({})}>
                             <RadioBlock label="Our website" id="radioIssue1" name="issueType" {...onChangeGenerator({})}></RadioBlock>
-                            <RadioBlock label="One of our services" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
+                            <RadioBlock label="Our service" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                             <RadioBlock label="Something else" id="radioIssue3" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                         </FieldsetBlock>
-                        <TextareaBlock id="comments" name="comments" label="Comment?" cols={20} {...onChangeGenerator({})}></TextareaBlock>
+                        <TextareaBlock label="What's your message?" id="comments" name="comments" cols={20} {...onChangeGenerator({})}></TextareaBlock>
                         <Button {...onChangeGenerator({})}>Submit</Button>
                     </FlexColumn>
                 </FlexRow>
