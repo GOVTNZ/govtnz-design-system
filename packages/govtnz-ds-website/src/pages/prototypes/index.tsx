@@ -286,7 +286,9 @@ class ContactusForm extends React.Component {
 
 const PrototypePageContent = () => (
   <React.Fragment>
-    <H1 styleSize="xlarge">Prototypes</H1>
+    <H1 styleSize="xlarge" id="main-heading">
+      Prototypes
+    </H1>
     <p>
       See example prototypes built using Design System components. We’ll
       continue to update this page with prototypes to show how components look
