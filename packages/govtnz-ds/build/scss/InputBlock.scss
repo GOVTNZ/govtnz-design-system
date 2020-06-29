@@ -1,0 +1,264 @@
+.g-inputBlock-form-group {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-inputBlock-form-group {
+    margin-bottom: 30px;
+  }
+}
+
+.g-inputBlock-form-group .g-inputBlock-form-group:last-of-type {
+  margin-bottom: 0;
+}
+
+.g-inputBlock-form-group--error {
+  padding-left: 15px;
+  border-left: 5px solid $g-theme-error-border-color;
+  border-left: 5px solid
+    var(--g-theme-error-border-color, $g-theme-error-border-color);
+}
+
+.g-inputBlock-form-group--error .g-inputBlock-form-group {
+  padding: 0;
+  border: 0;
+}
+
+.g-inputBlock-error-message {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  clear: both;
+  color: $g-theme-error-color;
+  color: var(--g-theme-error-color, $g-theme-error-color);
+}
+
+@media print {
+  .g-inputBlock-error-message {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-inputBlock-error-message {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-inputBlock-error-message {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-inputBlock-hint {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  display: block;
+  margin-bottom: 15px;
+  color: $g-theme-hint-color;
+  color: var(--g-theme-hint-color, $g-theme-hint-color);
+}
+
+@media print {
+  .g-inputBlock-hint {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-inputBlock-hint {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-inputBlock-hint {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-fieldset__legend + .g-inputBlock-hint {
+  margin-top: -5px;
+}
+
+.g-inputBlock-label {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media print {
+  .g-inputBlock-label {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-inputBlock-label {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-inputBlock-label {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-inputBlock-label {
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
+  }
+}
+
+.g-inputBlock-input {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  margin-top: 0;
+  padding: 0.5rem;
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
+  border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+}
+
+.g-inputBlock-input:valid,
+.g-inputBlock-input:invalid {
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
+}
+
+@media print {
+  .g-inputBlock-input {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-inputBlock-input {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-inputBlock-input {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+.g-inputBlock-input:focus {
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
+  outline-offset: 0;
+}
+
+.g-inputBlock-input::-webkit-outer-spin-button,
+.g-inputBlock-input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+.g-inputBlock-input--error {
+  border: 1px solid $g-theme-error-border-color;
+  border: 1px solid
+    var(--g-theme-error-border-color, $g-theme-error-border-color);
+}
+
+.g-inputBlock-input--width-30 {
+  max-width: 59ex;
+}
+
+.g-inputBlock-input--width-20 {
+  max-width: 41ex;
+}
+
+.g-inputBlock-input--width-10 {
+  max-width: 23ex;
+}
+
+.g-inputBlock-input--width-5 {
+  max-width: 10.8ex;
+}
+
+.g-inputBlock-input--width-4 {
+  max-width: 9ex;
+}
+
+.g-inputBlock-input--width-3 {
+  max-width: 7.2ex;
+}
+
+.g-inputBlock-input--width-2 {
+  max-width: 5.4ex;
+}
+
+.g-inputBlock-visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+.g-inputBlock-hint > * {
+  margin-top: 0px;
+}

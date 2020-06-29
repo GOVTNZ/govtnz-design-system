@@ -41,4 +41,4 @@ A `Development install` is only necessary for contributing components or bug-fix
 3. `yarn` (installs)
 4. `yarn build:all` (this may take a while)
 
-Then, under `packages` add components to `govtnz-ds-upstream` and reference them from `govtnz-ds` and the `build-spec.json`.
+Then, under `packages` add components to `govtnz-ds/src/templates-sources`.

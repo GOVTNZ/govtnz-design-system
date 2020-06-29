@@ -1,0 +1,13 @@
+<select
+class="g-select"
+id="{{ selectId | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+required="{% if required %}required{% endif %}"
+multiple="{% if multiple %}multiple{% endif %}"
+>
+  
+  
+{% block children %}<option>Options</option>{% endblock %}
+  
+
+</select>

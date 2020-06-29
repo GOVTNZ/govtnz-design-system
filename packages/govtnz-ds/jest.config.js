@@ -79,12 +79,7 @@ module.exports = {
   // moduleNameMapper: {},
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
-  modulePathIgnorePatterns: [
-    "/node_modules/",
-    "src/upstream/govt-uk",
-    "src/tmp",
-    "website"
-  ],
+  modulePathIgnorePatterns: ['/node_modules/', 'src/tmp', 'website'],
 
   // Activates notifications for test results
   // notify: false,
@@ -149,12 +144,7 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: [
-    "/node_modules/",
-    "src/upstream/govt-uk",
-    "src/tmp",
-    "website"
-  ]
+  testPathIgnorePatterns: ['/node_modules/', 'src/tmp', 'website']
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],

@@ -102,7 +102,7 @@ async function main(
     console.log(
       `Release build step ${i + 1} ${
         releaseSpecItem.sourceId
-      } see govtnz-ds/src/template-sources)`
+      } see govtnz-ds/src/template-sources`
     );
 
     const releaseItem = await makeReleaseSpecItem(releaseSpecItem);
@@ -383,10 +383,7 @@ const saveRelease = async (
         };
       }
 
-      const hasData = !!files[releaseFilePath];
-      if (hasData) {
-        await fs.promises.writeFile(filePath, files[releaseFilePath], options);
-      }
+      await fs.promises.writeFile(filePath, files[releaseFilePath], options);
     })
   );
 

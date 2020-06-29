@@ -1,0 +1,38 @@
+.g-link {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  .g-link {
+    font-family: sans-serif;
+  }
+}
+
+.g-link:focus {
+  outline: 3px solid $g-theme-focus-ring-color;
+  outline: 3px solid var(--g-theme-focus-ring-color, $g-theme-focus-ring-color);
+  outline-offset: 0;
+}
+
+.g-link:link {
+  color: $g-theme-link-color;
+  color: var(--g-theme-link-color, $g-theme-link-color);
+}
+
+.g-link:visited {
+  color: $g-theme-link-color;
+  color: var(--g-theme-link-color, $g-theme-link-color);
+}
+
+.g-link:hover {
+  color: $g-theme-link-hover-color;
+  color: var(--g-theme-link-hover-color, $g-theme-link-hover-color);
+}
+
+.g-link:focus {
+  color: $g-theme-link-focus-color;
+  color: var(--g-theme-link-focus-color, $g-theme-link-focus-color);
+}

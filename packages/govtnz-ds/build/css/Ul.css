@@ -1,0 +1,61 @@
+.g-ul {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625;
+  color: #2a2a2a;
+  color: var(--g-theme-color, #2a2a2a);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+@media print {
+  .g-ul {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-ul {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+    margin-bottom: 1rem;
+  }
+}
+
+@media print {
+  .g-ul {
+    font-size: 14pt;
+    line-height: 1.15;
+    color: #000000;
+    color: var(--g-theme-print-color, #000000);
+  }
+}
+
+.g-ul .g-ul {
+  margin-top: 10px;
+}
+
+.g-ul li .g-ul {
+  margin-top: 0.5rem;
+}
+
+.g-ul--mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.g-ul--spacing {
+  margin-bottom: 0;
+  line-height: 32px;
+}
+
+.g-ul--no-bullet {
+  list-style: none;
+  padding-left: 0px;
+  margin-left: 0px;
+}

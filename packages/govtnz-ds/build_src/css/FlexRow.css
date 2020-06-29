@@ -1,0 +1,123 @@
+.g-flex-row {
+  box-sizing: border-box;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.g-flex-row.g-flex-reversed-xs,
+.g-flex-row.g-flex-reverse {
+  flex-direction: column-reverse;
+}
+
+.g-flex-row.g-flex-not-reversed-xs {
+  flex-direction: row;
+}
+
+.g-flex-top-xs {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.g-flex-bottom-xs {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media only screen and (min-width: 48em) {
+  .g-flex-top-sm {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .g-flex-middle-sm {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .g-flex-bottom-sm {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .g-flex-row.g-flex-reversed-sm {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .g-flex-row.g-flex-not-reversed-sm {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .g-flex-top-md {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .g-flex-middle-md {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .g-flex-bottom-md {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .g-flex-row.g-flex-reversed-md {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .g-flex-row.g-flex-not-reversed-md {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .g-flex-top-lg {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .g-flex-middle-lg {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .g-flex-bottom-lg {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+  }
+
+  .g-flex-row.g-flex-reversed-lg {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .g-flex-row.g-flex-not-reversed-lg {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,77 @@
+<div
+class="g-textareaBlock-form-group{% if errorId %} g-textareaBlock-form-group--error{% endif %}"
+>
+  
+  
+<label
+class="g-textareaBlock-label"
+for="{{ id | escape('html_attr') }}"
+>
+  
+    
+{% block label %}Label text{% endblock %}
+  
+  
+</label>
+  
+  
+  
+    
+<div
+class="g-textareaBlock-hint"
+id="{{ hintId | escape('html_attr') }}"
+>
+  
+      
+{% block hint %}Hint text{% endblock %}
+  
+    
+</div>
+  
+  
+  
+  
+  
+    
+<div
+class="g-textareaBlock-error-message"
+id="{{ errorId | escape('html_attr') }}"
+>
+  
+      
+<span
+class="g-textareaBlock-visually-hidden"
+>
+  
+        Error:
+      
+</span>
+  
+      
+{% block error %}Error text{% endblock %}
+  
+    
+</div>
+  
+  
+  
+  
+<textarea
+aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
+class="g-textareaBlock-textarea"
+id="{{ id | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+rows=""
+required="{% if required %}required{% endif %}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+cols=""
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
+spellcheck="{% if spellCheck %}spellCheck{% endif %}"
+autocomplete="{{ autoComplete | escape('html_attr') }}"
+maxlength=""
+value="{{ value | escape('html_attr') }}"
+/>
+  
+
+</div>

@@ -1,0 +1,49 @@
+.g-fieldset__legend {
+  font-family: $g-theme-font-family;
+  font-family: var(--g-theme-font-family, $g-theme-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  margin-bottom: 0px;
+  padding: 0;
+  overflow: hidden;
+  white-space: normal;
+}
+
+@media print {
+  .g-fieldset__legend {
+    font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .g-fieldset__legend {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
+@media print {
+  .g-fieldset__legend {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+}
+
+@media print {
+  .g-fieldset__legend {
+    color: $g-theme-print-color;
+    color: var(--g-theme-print-color, $g-theme-print-color);
+  }
+}
+
+.g-legend-hint > * {
+  margin-top: 0px;
+}

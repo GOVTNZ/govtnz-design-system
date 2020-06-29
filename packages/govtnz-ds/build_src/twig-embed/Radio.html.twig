@@ -1,0 +1,13 @@
+<input
+aria-describedby="{{ hintId | escape('html_attr') }}"
+class="g-radios__input"
+id="{{ id | escape('html_attr') }}"
+name="{{ name | escape('html_attr') }}"
+type="radio"
+required="{% if required %}required{% endif %}"
+disabled="{% if disabled %}disabled{% endif %}"
+readonly="{% if readOnly %}readOnly{% endif %}"
+autofocus="{% if autoFocus %}autoFocus{% endif %}"
+value="{{ value | escape('html_attr') }}"
+checked="{% if checked %}checked{% endif %}"
+/>

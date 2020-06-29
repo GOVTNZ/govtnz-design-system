@@ -1,0 +1,38 @@
+.g-link {
+  font-family: Arial, sans-serif;
+  font-family: var(--g-theme-font-family, Arial, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  .g-link {
+    font-family: sans-serif;
+  }
+}
+
+.g-link:focus {
+  outline: 3px solid #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
+  outline-offset: 0;
+}
+
+.g-link:link {
+  color: #005ea5;
+  color: var(--g-theme-link-color, #005ea5);
+}
+
+.g-link:visited {
+  color: #005ea5;
+  color: var(--g-theme-link-color, #005ea5);
+}
+
+.g-link:hover {
+  color: #000c48;
+  color: var(--g-theme-link-hover-color, #000c48);
+}
+
+.g-link:focus {
+  color: #0b0c0c;
+  color: var(--g-theme-link-focus-color, #0b0c0c);
+}

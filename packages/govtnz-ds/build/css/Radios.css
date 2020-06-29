@@ -1,0 +1,11 @@
+@media (min-width: 40.0625em) {
+  .g-radios--inline:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.g-radios-hint > * {
+  margin-top: 0px;
+}
