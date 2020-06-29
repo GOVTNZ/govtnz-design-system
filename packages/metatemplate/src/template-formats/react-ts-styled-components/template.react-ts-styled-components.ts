@@ -870,7 +870,19 @@ export default class ReactTsStyledComponents implements TemplateFormat {
 
     key = this.reactKeyTransform(key);
 
+    if (this.assignedDynamicKeys[key]) {
+      if (this.assignedDynamicKeys[key].optional) {
+        optional = true; // can't make a previously optional prop required
+      }
+
+      if (type === "boolean") {
+        // most other things can be coerced to boolean
+        type = this.assignedDynamicKeys[key].type;
+      }
+    }
+
     this.assignedDynamicKeys[key] = { type, optional, tagName };
+
     return key;
   };
 

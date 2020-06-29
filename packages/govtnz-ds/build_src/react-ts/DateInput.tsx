@@ -5,7 +5,7 @@ type Props = {
   hintId?: string;
   label?: React.ReactNode;
   hint?: React.ReactNode;
-  error?: boolean;
+  error?: React.ReactNode;
   id?: string;
   dayId?: string;
   required?: boolean;

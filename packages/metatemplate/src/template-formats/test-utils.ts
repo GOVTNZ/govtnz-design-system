@@ -14,7 +14,6 @@ export const testFormat = (formatId: string) => {
     //   const result = makeIndexImports({ fileKeys: Object.keys(files) });
     //   expect(result).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Basic variables`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -27,7 +26,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: form input[text]`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -40,7 +38,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: <img src="pic.jpeg" class="frogs">`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -52,7 +49,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Form input[checked]`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -64,7 +60,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: H1 with configurable Id`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -76,7 +71,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Form label input[checked]`, async () => {
     //   const metaTemplate = await makeTemplates(
     //     {
@@ -89,7 +83,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(metaTemplate).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Boolean attribute values`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -111,7 +104,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Boolean attribute values`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -154,7 +146,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: with it`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -183,7 +174,6 @@ export const testFormat = (formatId: string) => {
     //   }
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: with it`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -202,7 +192,6 @@ export const testFormat = (formatId: string) => {
     //   }
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: multiple <mt-if> key comparison`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -225,7 +214,6 @@ export const testFormat = (formatId: string) => {
     //   }
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: aria-labelledby ids`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -252,7 +240,6 @@ export const testFormat = (formatId: string) => {
     //   }
     //   expect(response.metaTemplates).toMatchSnapshot();
     // ?
-
     // it(`${formatId}: make-usage nested mt-if`, async () => {
     //   const code: TemplateUsages = [
     //     {
@@ -292,43 +279,38 @@ export const testFormat = (formatId: string) => {
     //   console.log(JSON.stringify(usages, null, 2));
     //   expect(usages).toMatchSnapshot();
     // });
-
-    it(`${formatId}: Link with class`, async () => {
-      const code: TemplateUsages = await jsxToUsageCode(
-        `<A href="http://html5zombo.com/" className="zero">thing</A>`
-      );
-
-      console.log(code);
-
-      // const code: TemplateUsages = [
-      //   {
-      //     templateId: "A",
-      //     variables: {
-      //       href: "http://html5zombo.com/",
-      //       class: "custom-class",
-      //       children: [],
-      //     },
-      //   },
-      // ];
-
-      const usages = await makeUsage(
-        code,
-        {
-          A: {
-            id: "A",
-            html: `
-            <a class="g-link {{ isMuted?: g-link--muted }} {{ class? }}" href="#"
-            ><mt-variable key="children">Example text</mt-variable></a>     `,
-            css: "",
-            cssVariables: [],
-          },
-        },
-        [formatId]
-      );
-      console.log(JSON.stringify(usages, null, 2));
-      expect(usages).toMatchSnapshot();
-    });
-
+    // it(`${formatId}: Link with class`, async () => {
+    //   const code: TemplateUsages = await jsxToUsageCode(
+    //     `<A href="http://html5zombo.com/" className="zero">thing</A>`
+    //   );
+    //   console.log(code);
+    //   // const code: TemplateUsages = [
+    //   //   {
+    //   //     templateId: "A",
+    //   //     variables: {
+    //   //       href: "http://html5zombo.com/",
+    //   //       class: "custom-class",
+    //   //       children: [],
+    //   //     },
+    //   //   },
+    //   // ];
+    //   const usages = await makeUsage(
+    //     code,
+    //     {
+    //       A: {
+    //         id: "A",
+    //         html: `
+    //         <a class="g-link {{ isMuted?: g-link--muted }} {{ class? }}" href="#"
+    //         ><mt-variable key="children">Example text</mt-variable></a>     `,
+    //         css: "",
+    //         cssVariables: [],
+    //       },
+    //     },
+    //     [formatId]
+    //   );
+    //   console.log(JSON.stringify(usages, null, 2));
+    //   expect(usages).toMatchSnapshot();
+    // });
     // it(`${formatId}: with it`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -347,6 +329,48 @@ export const testFormat = (formatId: string) => {
     //   }
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
+
+    it(`${formatId}: error as string not boolean`, async () => {
+      const response = await makeTemplates(
+        {
+          html: `
+          <div class="g-inputBlock-form-group {{ errorId?: g-inputBlock-form-group--error }}">
+            <label class="g-inputBlock-label " for="id">
+              <mt-variable key="label">Example text</mt-variable>
+            </label>
+            <mt-if key="hint">
+              <div class="g-inputBlock-hint" id="hintId">
+                <mt-variable key="hint">Example text</mt-variable>
+              </div>
+            </mt-if>
+            <mt-if key="errorId">
+              <div class="g-inputBlock-error-message" id="errorId">
+                <span class="g-inputBlock-visually-hidden">Error: </span>
+                <mt-variable key="error">Example text</mt-variable>
+              </div>
+            </mt-if>
+            <input
+              class="g-inputBlock-input {{ width?: g-inputBlock-input--width-30 as 30 | g-inputBlock-input--width-20 as 20 | g-inputBlock-input--width-10 as 10 | g-inputBlock-input--width-5 as 5 | g-inputBlock-input--width-4 as 4 | g-inputBlock-input--width-3 as 3 | g-inputBlock-input--width-2 as 2 }} {{ error?: g-inputBlock-input--error }}"
+              id="id"
+              name="name"
+              aria-describedby="hintId errorId"
+            />
+          </div>
+          `,
+          css: ``,
+          cssVariables: [],
+          id: "inputBlocky",
+        },
+        [formatId]
+      );
+      if (formatId === "react-ts") {
+        console.log(Object.keys(response.metaTemplates[0].files));
+        throw Error(
+          response.metaTemplates[0].files["react-ts/inputBlocky.tsx"]
+        );
+      }
+      expect(response.metaTemplates).toMatchSnapshot();
+    });
 
     //     it(`${formatId}: complex make-usage nested mt-if`, async () => {
     //       const code: TemplateUsages = await jsxToUsageCode(`     <Alert mode="live" level="info" headingId="heading1">
@@ -367,14 +391,12 @@ export const testFormat = (formatId: string) => {
     //           <li><a href="#">Error in this field 4</a></li>
     //       </Ul>
     //   </Alert>`);
-
     //       const usages = await makeUsage(
     //         code,
     //         {
     //           Alert: {
     //             id: "Alert",
     //             html: `
-
     //     <mt-if key="mode?=live">
     //     <div role="note" aria-live="polite" aria-atomic="true">
     //       <div<div class="{{ errorId?: g-form-group--error }}"></div>
@@ -390,7 +412,6 @@ export const testFormat = (formatId: string) => {
     //     </mt-variable>
     //   </select>
     // </div>
-
     //         class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
     //       >
     //         <mt-variable key="children"> Example alert content </mt-variable>
@@ -462,7 +483,6 @@ export const testFormat = (formatId: string) => {
     //       </div>
     //     </div>
     //   </mt-if>
-
     //           `,
     //             css: "",
     //           },
@@ -477,7 +497,6 @@ export const testFormat = (formatId: string) => {
     //         </h2>
     //         `,
     //           },
-
     //           Ul: {
     //             id: "Ul",
     //             html: `<ul class="g-list {{ bulleted?: g-list--bullet }}">
@@ -496,7 +515,6 @@ export const testFormat = (formatId: string) => {
     //       );
     //       expect(usages).toMatchSnapshot();
     //     });
-
     // it(`${formatId}: Enum attribute values`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -525,7 +543,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Lots of enum attribute values`, async () => {
     //   const response = await makeTemplates(
     //     {
@@ -554,7 +571,6 @@ export const testFormat = (formatId: string) => {
     //   );
     //   expect(response.metaTemplates).toMatchSnapshot();
     // });
-
     // it(`${formatId}: Link with boolean class`, async () => {
     //   const response = await makeTemplates(
     //     {

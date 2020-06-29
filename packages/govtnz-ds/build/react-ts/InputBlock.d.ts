@@ -5,7 +5,7 @@ declare type Props = {
     label?: React.ReactNode;
     hint?: React.ReactNode;
     hintId?: string;
-    error?: boolean;
+    error?: React.ReactNode;
     width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
     required?: boolean;
     disabled?: boolean;

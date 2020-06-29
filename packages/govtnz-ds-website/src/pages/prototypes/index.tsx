@@ -152,9 +152,7 @@ class ContactusForm extends React.Component {
           onSubmit={this.handleSubmit}
           noValidate
         >
-          <H1 styleSize="xlarge" id="main-heading">
-            Contact form
-          </H1>
+          <H2 styleSize="large">Contact us</H2>
 
           {username.valid && email.valid && radio.valid && textarea.valid ? (
             ''
@@ -225,12 +223,12 @@ class ContactusForm extends React.Component {
             />
           </div>
 
-          <div style={{ marginTop: '20px' }}>
+          <div>
             <FieldsetBlock
               legend={
-                <H1 styleSize="medium" id="nameChangeId5">
+                <H3 styleSize="medium" id="nameChangeId5">
                   Where do you live?
-                </H1>
+                </H3>
               }
               errorId={radio.valid ? '' : 'errorId5'}
               error={radio.valid ? '' : 'Select where you live'}
