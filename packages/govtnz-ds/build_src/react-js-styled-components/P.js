@@ -6,7 +6,8 @@ const StyledP = styled.p`
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1875rem;
+  font-size: 1.25rem;
+  line-height: 1.625;
   ${props =>
     props.styleSize === "large" &&
     styled.css`

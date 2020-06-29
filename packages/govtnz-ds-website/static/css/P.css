@@ -5,7 +5,8 @@
   font-family: var(--g-theme-font-family, Arial, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1875rem;
+  font-size: 1.25rem;
+  line-height: 1.625;
 }
 
 .g-body-l {
