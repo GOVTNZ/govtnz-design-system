@@ -281,6 +281,8 @@ const generatePage = async (
       return '</P>';
     });
 
+  importsByName.push(`A`);
+
   const exampleContainersRegex = /<ExampleContainer>([\s\S]*?)<\/ExampleContainer>/g;
   const exampleHeadingRegex = /<ExampleHeading>([\s\S]*?)<\/ExampleHeading>/g;
   const exampleRegex = /<Example( [\s\S]*?>|>)([\s\S]*?)<\/Example>/g;
@@ -470,7 +472,9 @@ const generatePage = async (
         aAttributes.indexOf('https://') !== -1 ||
         aAttributes.indexOf('http://') !== -1
       ) {
-        return match;
+        return match
+          .replace(/<a/g, '<A className="g-link" ')
+          .replace(/<\/a>/g, '</A>');
       }
       // Otherwise use <Link to>
       let link = match

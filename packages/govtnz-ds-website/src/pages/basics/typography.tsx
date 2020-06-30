@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import basics__typography from '../../commons/examples/basics__typography';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import BasicsPage from '../../components/basicsPage';
@@ -132,7 +134,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example7.html",
         title:"Example: Links (Typography)",
-        height: 106
+        height: 125
       }}></Example>
 </ExampleContainer>
 
@@ -147,7 +149,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example8.html",
         title:"Example: Bulleted lists (Typography)",
-        height: 308
+        height: 327
       }}></Example>
 </ExampleContainer>
 
@@ -160,14 +162,14 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example9.html",
         title:"Example: Numbered lists (Typography)",
-        height: 308
+        height: 327
       }}></Example>
 </ExampleContainer>
 
 <P>Use numbered lists instead of bulleted lists when the order of the items is relevant.</P>
 <P>You do not need a lead-in line for numbered lists, although a summary sentence can be helpful for users. If numbered items are complete sentences, use full stops at the end.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

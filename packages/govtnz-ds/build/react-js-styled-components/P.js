@@ -14,7 +14,7 @@ var _react = _interopRequireDefault(require("react"));
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _templateObject12() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 0.875rem;\n        line-height: 1.42857;\n        margin-bottom: 0px !important;\n      "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 0.875rem;\n        line-height: 1.42857;\n        margin-bottom: 0.75rem;\n      "]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -44,7 +44,7 @@ function _templateObject10() {
 }
 
 function _templateObject9() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1rem;\n        line-height: 1.25;\n        margin-bottom: 1.25px;\n      "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1rem;\n        line-height: 1.25;\n        margin-bottom: 1.25rem;\n      "]);
 
   _templateObject9 = function _templateObject9() {
     return data;
@@ -74,7 +74,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25px;\n      "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25rem;\n      "]);
 
   _templateObject6 = function _templateObject6() {
     return data;

@@ -10,6 +10,8 @@ import { Link } from 'gatsby';
 import onChangeGenerator from '../../commons/onChangeGenerator';
 import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';

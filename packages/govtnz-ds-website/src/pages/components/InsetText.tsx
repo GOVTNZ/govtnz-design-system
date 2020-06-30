@@ -12,6 +12,8 @@ import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
 import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__InsetText from '../../commons/examples/components__InsetText';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -36,7 +38,7 @@ const PageContent = (props) => <React.Fragment><ExampleContainer>
 </ExampleContainer>
 
 <H2 styleSize="large" id="credit">Credit</H2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

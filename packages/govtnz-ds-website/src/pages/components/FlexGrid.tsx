@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__FlexGrid from '../../commons/examples/components__FlexGrid';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -74,7 +76,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <h2 id="why-use-a-flexbox-grid">Why use a Flexbox grid?</h2>
 <P>We chose Flexbox because it&#39;s implemented by our supported browsers. We have labelled this grid type &quot;Flex&quot; so that we can add other grid types later. We&#39;re considering adding support for CSS Grid.</P>
 <h2 id="credit">Credit</h2>
-<P>Original HTML and CSS derived from <a href="http://flexboxgrid.com/">FlexboxGrid</a> version 6.3.2. Licensed under <a href="https://github.com/kristoferjoseph/flexboxgrid">the Apache Licence version 2.0</a>.</P>
+<P>Original HTML and CSS derived from <A className="g-link"  href="http://flexboxgrid.com/">FlexboxGrid</A> version 6.3.2. Licensed under <A className="g-link"  href="https://github.com/kristoferjoseph/flexboxgrid">the Apache Licence version 2.0</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

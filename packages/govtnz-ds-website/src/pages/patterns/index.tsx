@@ -8,6 +8,8 @@ import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 import PatternsPage from '../../components/PatternsPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
@@ -18,7 +20,7 @@ Typical examples include collecting users&#39; address and contact details, and
 guiding users through a step-by-step application form.</P>
 <P>We&#39;ll be inviting you to co-design some patterns with us soon. To keep updated
 with what we are doing now, what we are planning to do next, and how you can
-get involved, <a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the New Zealand Government Design System (NZGDS) newsletter</a>.</P>
+get involved, <A className="g-link"  href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the New Zealand Government Design System (NZGDS) newsletter</A>.</P>
 </React.Fragment>
 
 const template = (props) => {

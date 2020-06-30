@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Footer from '../../commons/examples/components__Footer';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -51,9 +53,9 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The footer p
 <Li>Govt.nz using the English or te reo Māori version of the All-of-Government brand lockup</Li>
 <Li>your site&#39;s contact information, copyright and privacy statements (link targets are for you to set).</Li>
 </Ul>
-<P>Including these links helps your website meet several requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/">Web Usability Standard</a> for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.</P>
+<P>Including these links helps your website meet several requirements of the <A className="g-link"  href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-usability-standard-1-3/">Web Usability Standard</A> for public facing sites. For internally facing websites, the above requirements do not apply and the links can be safely removed without failing the Web Usability Standard.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

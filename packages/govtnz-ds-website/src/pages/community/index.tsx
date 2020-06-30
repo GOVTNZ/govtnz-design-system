@@ -12,6 +12,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 import CommunityPage from '../../components/CommunityPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
@@ -34,14 +36,14 @@ backing it.</P>
 </Ul>
 <P>This alpha website shows you what we have built so far, what we&#39;re working on,
 and how you can get involved.&nbsp;
-<a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using the NZGDS, and how we are building it, on the homepage</a>.</P>
+<A className="g-link"  href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using the NZGDS, and how we are building it, on the homepage</A>.</P>
 <h2 id="keep-updated">Keep updated</h2>
 <P>The input and feedback we received from the initial user research, meetups,
 workshop, and user testing has been invaluable in shaping the alpha Design
 System.</P>
 <P>To keep updated with what we are doing now, what we are planning to do next,
 and how you can get involved,&nbsp;
-<a href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the NZGDS newsletter</a>.</P>
+<A className="g-link"  href="https://confirmsubscription.com/h/j/712F84D0A3086D2B">subscribe to the NZGDS newsletter</A>.</P>
 </React.Fragment>
 
 const template = (props) => {

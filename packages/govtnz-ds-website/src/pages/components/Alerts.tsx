@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Alerts from '../../commons/examples/components__Alerts';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -48,18 +50,18 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <Li>the visual appearance, including the icon and colour</Li>
 <Li>the first word of the alert&#39;s heading, for example, ‘Warning’.</Li>
 </Ul>
-<P>Changing the word at the start of the alert heading, or removing it, could make the alert less understandable, and therefore less accessible, to some users. If the type or strength of the alert is not indicated in text or in some other way for assistive technology users, it will also fail the <a href="https://www.digital.govt.nz/web-accessibility-standard/">NZ Government Web Accessibility Standard</a>.</P>
+<P>Changing the word at the start of the alert heading, or removing it, could make the alert less understandable, and therefore less accessible, to some users. If the type or strength of the alert is not indicated in text or in some other way for assistive technology users, it will also fail the <A className="g-link"  href="https://www.digital.govt.nz/web-accessibility-standard/">NZ Government Web Accessibility Standard</A>.</P>
 <P>Success and error summary alert messages appear at the top of a page following a submit action. They should give users clear, descriptive next steps.</P>
 <P>Information and warning alert messages can appear at the top of the page or in the body of the content. If used in the body, alert messages should appear next to the content they relate to.</P>
 <h3 id="static-alerts">Static alerts</h3>
-<P>Static alerts are added as part of a new page or view after a <a href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">change of context</a>, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.</P>
+<P>Static alerts are added as part of a new page or view after a <A className="g-link"  href="https://www.w3.org/TR/WCAG21/#dfn-change-of-context">change of context</A>, such as following a link or submitting a form. These are considered static because they remain unchanged unless there is another change of context.</P>
 <P>Information and warning alerts can be used in a wide range of scenarios. Success and error summary alerts are only ever used following a form submission, which is a change of context for the user. These alerts will always be static and part of a new page or view when it is loaded.</P>
 <P>Additionally, when the new page or view is first loaded, the Design System user must ensure that focus is moved to the success or error summary alert. This will cause it to be announced automatically by screen reader software, letting the user know the status of their form submission and what, if anything, they need to do to continue.</P>
 <P>The Design System user should also update the <code>title</code> element to start with &quot;Success:&quot; or &quot;Error:&quot; so that the feedback is provided in the page’s name.</P>
 <h3 id="live-alerts">Live alerts</h3>
 <P>Live alerts are dynamically inserted into an existing page or view as an immediate response to a user’s action, such as checking a checkbox. They’re used where the change to the page’s content is not significant enough to constitute a change of context.</P>
 <P>When implemented as a live alert, the alert container needs to be empty and present in the document object model (DOM) when the page or view is first loaded. The actual alert message is then dynamically inserted into the container following whatever user action triggers the alert.</P>
-<P>To ensure that screen reader users are notified of a live alert, the alert container is marked up as a <a href="https://w3c.github.io/aria/#dfn-live-region">live region</a>. When content is dynamically inserted in a live region container, that content is automatically announced to the user by the screen reader.</P>
+<P>To ensure that screen reader users are notified of a live alert, the alert container is marked up as a <A className="g-link"  href="https://w3c.github.io/aria/#dfn-live-region">live region</A>. When content is dynamically inserted in a live region container, that content is automatically announced to the user by the screen reader.</P>
 <P>Success and error summary alerts are not intended to be used as live alerts. Since they always follow form submission, which is a change of context, they are always static. However, if they are used as live alerts, they should be tested for accessibility. Also, as live alerts are already announced automatically to screen reader users, the alert should not receive focus.</P>
 <h2 id="information">Information</h2>
 <P>Use information alerts to inform users of important information or changes on a page only. They should be used sparingly.</P>
@@ -156,13 +158,13 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 <h2 id="error-messages">Error messages</h2>
 <P>Specific error messages must be provided for specific error states. Style error messages as shown in the ‘Error messages’ sections of the guidance for the following form components:</P>
 <Ul>
-<Li><a href="https://design-system-alpha.digital.govt.nz/components/Input/">Text input</a></Li>
-<Li><a href="https://design-system-alpha.digital.govt.nz/components/Radios/">Radio buttons</a></Li>
-<Li><a href="https://design-system-alpha.digital.govt.nz/components/Date/">Date input</a></Li>
+<Li><A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/Input/">Text input</A></Li>
+<Li><A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/Radios/">Radio buttons</A></Li>
+<Li><A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/Date/">Date input</A></Li>
 </Ul>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
-<P>Guidance for the page alerts component derived from the <a href="https://designsystem.gov.au/components/page-alerts/">Australian Government Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
+<P>Guidance for the page alerts component derived from the <A className="g-link"  href="https://designsystem.gov.au/components/page-alerts/">Australian Government Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

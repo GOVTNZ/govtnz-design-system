@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Radios from '../../commons/examples/components__Radios';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -154,7 +156,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <h4 id="if-nothing-is-selected-and-the-question-does-not-include-options-h4">If nothing is selected and the question does not include options [H4]</h4>
 <P>Say ‘Select [whatever it is]’. For example, ‘Select the day of the week you pay your rent’.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

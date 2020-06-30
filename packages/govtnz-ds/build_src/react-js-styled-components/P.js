@@ -66,7 +66,7 @@ const StyledP = styled.p`
       styled.css`
         font-size: 1.1875rem;
         line-height: 1.31579;
-        margin-bottom: 1.25px;
+        margin-bottom: 1.25rem;
       `};
   }
   ${props =>
@@ -94,7 +94,7 @@ const StyledP = styled.p`
       styled.css`
         font-size: 1rem;
         line-height: 1.25;
-        margin-bottom: 1.25px;
+        margin-bottom: 1.25rem;
       `};
   }
   ${props =>
@@ -122,7 +122,7 @@ const StyledP = styled.p`
       styled.css`
         font-size: 0.875rem;
         line-height: 1.42857;
-        margin-bottom: 0px !important;
+        margin-bottom: 0.75rem;
       `};
   }
 `;

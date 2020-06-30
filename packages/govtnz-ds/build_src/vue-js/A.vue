@@ -41,9 +41,7 @@ export default Vue.extend({
   outline: 3px solid g-theme-focus-ring-color;
   outline-offset: 0;
 }
-.g-link:link {
-  color: g-theme-link-color;
-}
+.g-link:link,
 .g-link:visited {
   color: g-theme-link-color;
 }

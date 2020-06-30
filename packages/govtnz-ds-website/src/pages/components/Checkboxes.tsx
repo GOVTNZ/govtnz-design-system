@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Checkboxes from '../../commons/examples/components__Checkboxes';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -71,7 +73,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 <Li>toggle a single option on or off.</Li>
 </Ul>
 <h2 id="when-not-to-use-it">When not to use it</h2>
-<P>Do not use the <a href="https://design-system-alpha.digital.govt.nz/components/Checkboxes/">checkboxes component</a> if users can only choose one option from a selection. In this case, use <Link className="g-link" to="/components/Radios/">radio buttons</Link> instead.</P>
+<P>Do not use the <A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/Checkboxes/">checkboxes component</A> if users can only choose one option from a selection. In this case, use <Link className="g-link" to="/components/Radios/">radio buttons</Link> instead.</P>
 <h2 id="how-it-works">How it works</h2>
 <P>Checkboxes are grouped together in a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code> that describes them, as shown in the examples on this page. This is usually a question, like ‘Who are your providers?’.</P>
 <P>If you are asking just one question per page, you can set the contents of the <code>&lt;legend&gt;</code> as the page heading. This is good practice because users of screen readers will only hear the contents once.</P>
@@ -88,7 +90,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 <P>Another example of pre-selected ordering is listing options chronologically. For example, you could order possible time periods for contact from earliest to latest, so users can select the periods that suit them best.</P>
 <P>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

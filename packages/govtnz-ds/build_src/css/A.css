@@ -17,11 +17,7 @@
   outline-offset: 0;
 }
 
-.g-link:link {
-  color: #005ea5;
-  color: var(--g-theme-link-color, #005ea5);
-}
-
+.g-link:link,
 .g-link:visited {
   color: #005ea5;
   color: var(--g-theme-link-color, #005ea5);

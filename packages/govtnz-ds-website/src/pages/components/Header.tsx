@@ -16,6 +16,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Header from '../../commons/examples/components__Header';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -34,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 
 <H2 styleSize="large" id="example">Example</H2>
 <P>Interact with the example to see how it works.</P>
-<P>Note that the logo and <a href="https://design-system-alpha.digital.govt.nz/components/FlexGrid/">flexbox grid component</a>, are for example purposes only and are optional.</P>
+<P>Note that the logo and <A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/FlexGrid/">flexbox grid component</A>, are for example purposes only and are optional.</P>
 <ExampleContainer>
     <Example  code={components__Header[0]} iframeProps={{
         id:"iframe_componentsHeader0",
@@ -61,11 +63,11 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>The logo should appear vertically centered in the header. As the header component has no strict padding or margin, it is up to Design System users to adjust spacing above and below the logo for ideal placement.</P>
 <P>The NZGDS does not include a logo component. Including a logo is a decision for the Design System user.</P>
 <h3 id="colour-scheme">Colour scheme</h3>
-<P>The header component uses the dark grey colour palette of the Design System by default. You can implement your own visual identity guidelines, but you must make sure they meet requirements of the <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/"> NZ Government Web Accessibility Standard</a>.</P>
+<P>The header component uses the dark grey colour palette of the Design System by default. You can implement your own visual identity guidelines, but you must make sure they meet requirements of the <A className="g-link"  href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/"> NZ Government Web Accessibility Standard</A>.</P>
 <P>In particular, the text and UI elements within the component must meet Web Content Accessibility Guidelines (WCAG) success criteria:</P>
 <Ul>
-<Li><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3 Contrast (Minimum)</a></Li>
-<Li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast</a></Li>
+<Li><A className="g-link"  href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">1.4.3 Contrast (Minimum)</A></Li>
+<Li><A className="g-link"  href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">1.4.11 Non-text Contrast</A></Li>
 </Ul>
 <h3 id="main-navigation">Main navigation</h3>
 <P>Your site&#39;s main navigation helps users to find the information they need. It typically includes the top level of the information architecture. It is intended as the primary way for users to navigate your site.</P>
@@ -104,8 +106,8 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h4 id="3-bar-icon-the-hamburger">3 bar icon (the ‘hamburger’)</h4>
 <P>Another common way to indicate the main navigation on small-screen devices is the 3 bar icon (often referred to as the ‘hamburger’). However, the 3 bar icon does not clearly indicate an opened or closed state and some users might not know what the icon means on its own. For these reasons, the Design System uses the chevron icon, alongside a clear text label.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
-<P>Guidance for the main navigation component derived from the <a href="https://designsystem.gov.au/components/main-nav/rationale">Australian Government Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
+<P>Guidance for the main navigation component derived from the <A className="g-link"  href="https://designsystem.gov.au/components/main-nav/rationale">Australian Government Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {

@@ -13,8 +13,6 @@ import Li from '@govtnz/ds/build/react-ts/Li';
 
 import GetInTouch from '../components/GetInTouch';
 
-// import { Details, Summary } from 'react-accessible-details'
-
 const IndexPage = (props) => (
   <Layout {...props}>
     <SEO
@@ -39,7 +37,7 @@ const IndexPage = (props) => (
             product owner or project manager.
           </P>
           <H2 styleSize="large">Designer</H2>
-          <P styleSize="medium">
+          <P>
             The design system gives designers a common visual style that you can
             apply flexibly to any government digital platform. Our visual style
             offers a clean aesthetic that meets the{' '}
@@ -49,7 +47,7 @@ const IndexPage = (props) => (
             , along with a design consistency that promotes an effortless user
             experience.
           </P>
-          <P styleSize="medium">
+          <P>
             Since you may need to customise the basic elements to follow your
             brand guidelines, we encourage you to make their look, feel, and
             usability as consistent as possible with the design system. And when
@@ -59,14 +57,14 @@ const IndexPage = (props) => (
             </A>
             .
           </P>
-          <P styleSize="medium">
+          <P>
             For UX designers, we're working on tools to create high-fidelity
             prototypes. You can use these prototypes for user testing, and to
             help product owners and project managers visualise the end product.
           </P>
 
           <H2 styleSize="large">Developer</H2>
-          <P styleSize="medium">
+          <P>
             Developers can pick and mix the building blocks for a webpage from
             the design system. Consistent UI components can slot into existing
             websites without conflicting with existing CSS. All components meet
@@ -76,15 +74,13 @@ const IndexPage = (props) => (
             </A>
             .
           </P>
-          <P styleSize="medium">
+          <P>
             <A href="https://github.com/GOVTNZ/govtnz-design-system/">
               Install instructions
             </A>{' '}
             can be found on our GitHub project.
           </P>
-          <P styleSize="medium">
-            The design system currently provides components in:
-          </P>
+          <P>The design system currently provides components in:</P>
           <Ul>
             <Li>HTML and CSS (or Sass (SCSS))</Li>
             <Li>
@@ -100,22 +96,22 @@ const IndexPage = (props) => (
               <A href="https://handlebarsjs.com/">Mustache / Handlebars</A>
             </Li>
           </Ul>
-          <P styleSize="medium">Soon we will also be supporting:</P>
+          <P>Soon we will also be supporting:</P>
           <Ul>
             <Li>
               SilverStripe for{' '}
               <A href="https://www.silverstripe.org/">SilverStripe</A> 3 and 4.
             </Li>
           </Ul>
-          <P styleSize="medium">
+          <P>
             More formats are under development, but if you have particular
             requirements please let us know via{' '}
-            <A href="mailto:info@digital.govt.nz?subject=Design System enquiry">
+            <A href="mailto:info@digital.govt.nz?subject=Design%20System%20enquiry">
               info@digital.govt.nz
             </A>
             .
           </P>
-          <P styleSize="medium">
+          <P>
             For browsers, the design system is supporting Internet Explorer{' '}
             <abbr title="version">v</abbr>11 and latest versions of most other
             browsers. More information is available on our{' '}
@@ -126,7 +122,7 @@ const IndexPage = (props) => (
           </P>
 
           <H2 styleSize="large">Content Designer </H2>
-          <P styleSize="medium">
+          <P>
             Components and patterns in the design system help content designers
             by providing a tried and tested structure for content that users can
             easily follow, and that meets the{' '}
@@ -139,20 +135,18 @@ const IndexPage = (props) => (
             </A>
             .
           </P>
-          <P styleSize="medium">
+          <P>
             Guidance on how best to write for each component and pattern is
             integral to the design system. For example, you'll get specific
             guidance for writing labels, help text, and error messages that work
             for forms.
           </P>
           <H2 styleSize="large">Product Owner and Project Manager</H2>
-          <P styleSize="medium">
+          <P>
             Using the design system’s tested components and basic elements can
             help speed up project delivery.
           </P>
-          <P styleSize="medium">
-            Prototypes can be easily produced at any stage to:
-          </P>
+          <P>Prototypes can be easily produced at any stage to:</P>
           <Ul>
             <Li>
               demonstrate your product vision to stakeholders to get buy-in
@@ -161,7 +155,7 @@ const IndexPage = (props) => (
             <Li>speed up the prototyping and testing cycle</Li>
             <Li>help you to visualise the end-product during development.</Li>
           </Ul>
-          <P styleSize="medium">You can confidently promote your product as:</P>
+          <P>You can confidently promote your product as:</P>
           <Ul>
             <Li>meeting all accessibility requirements</Li>
             <Li>focussed on usability</Li>

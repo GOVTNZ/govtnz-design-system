@@ -21,9 +21,7 @@ const StyledA = styled.a`
     outline: 3px solid g-theme-focus-ring-color;
     outline-offset: 0;
   }
-  :link {
-    color: g-theme-link-color;
-  }
+  :link,
   :visited {
     color: g-theme-link-color;
   }

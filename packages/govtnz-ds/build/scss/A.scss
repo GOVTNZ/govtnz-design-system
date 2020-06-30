@@ -17,11 +17,7 @@
   outline-offset: 0;
 }
 
-.g-link:link {
-  color: $g-theme-link-color;
-  color: var(--g-theme-link-color, $g-theme-link-color);
-}
-
+.g-link:link,
 .g-link:visited {
   color: $g-theme-link-color;
   color: var(--g-theme-link-color, $g-theme-link-color);

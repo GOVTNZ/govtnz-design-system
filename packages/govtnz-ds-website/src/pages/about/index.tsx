@@ -12,6 +12,8 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import '../../commons/styles/ds/themed-Ul.scss';
 import Li from '@govtnz/ds/build/react-ts/Li';
 import '../../commons/styles/ds/themed-Li.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 import AboutPage from '../../components/AboutPage';
 import onChangeGenerator from '../../commons/onChangeGenerator';
@@ -26,7 +28,7 @@ const PageContent = (props) => <React.Fragment><H1 styleSize="xlarge" id="main-h
 
 <P>All of Government Services Delivery is creating the NZGDS now. Our overall aim is to improve digital
 service delivery across the New Zealand public service.</P>
-<P><a href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</a>.</P>
+<P><A className="g-link"  href="https://design-system-alpha.digital.govt.nz/">Read about the benefits of using our Design System, and how we are building it, on the homepage</A>.</P>
 <P>This alpha website shows you what we have built so far, what we&#39;re working on,
 and how you can get involved.</P>
 <h2 id="get-involved">Get involved</h2>

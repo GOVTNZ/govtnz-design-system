@@ -12,6 +12,8 @@ import H1 from '@govtnz/ds/build/react-ts/H1';
 import '../../commons/styles/ds/themed-H1.scss';
 import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import BasicsPage from '../../components/basicsPage';

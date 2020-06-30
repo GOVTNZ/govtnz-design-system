@@ -12,6 +12,8 @@ import P from '@govtnz/ds/build/react-ts/P';
 import '../../commons/styles/ds/themed-P.scss';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import '../../commons/styles/ds/themed-H2.scss';
+import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 import components__Input from '../../commons/examples/components__Input';
 // Indirect relative import because this template is output to src/pages/components so it needs to step back to `commons`.
 import ComponentPage from '../../commons/component-page';
@@ -171,7 +173,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h4 id="if-the-input-is-an-amount-of-money-that-must-not-have-decimals">If the input is an amount of money that must not have decimals</h4>
 <P>Say ‘[whatever it is] must not include cents, like 123 or 156’. For example, ‘How much you earn a week must not include cents, like 123 or 156’.</P>
 <h2 id="credit">Credit</h2>
-<P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
+<P>Guidance, original HTML and CSS derived from <A className="g-link"  href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</A>.</P>
 </React.Fragment>
 
 export default function Code(props) {
