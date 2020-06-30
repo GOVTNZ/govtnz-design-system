@@ -163,6 +163,8 @@
 }
 
 .g-inputBlock-input:-webkit-autofill,
+.g-inputBlock-input:-webkit-autofill:hover,
+.g-inputBlock-input:-webkit-autofill:focus,
 .g-inputBlock-input:valid,
 .g-inputBlock-input:invalid {
   background-color: #ffffff;
@@ -173,7 +175,11 @@
   color: var(--g-theme-color, #2a2a2a);
   border: 1px solid #2a2a2a;
   border: 1px solid var(--g-theme-form-border-color, #2a2a2a);
-  box-shadow: none;
+  box-shadow: 0 0 0px 1000px #ffffff inset;
+  box-shadow: 0 0 0px 1000px var(--g-theme-form-background-color, #ffffff) inset;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-box-shadow: 0 0 0px 1000px
+    var(--g-theme-form-background-color, #ffffff) inset;
 }
 
 @media print {

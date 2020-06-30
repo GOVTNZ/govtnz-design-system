@@ -239,13 +239,16 @@ export default Vue.extend({
   color: g-theme-color;
 }
 .g-inputBlock-input:-webkit-autofill,
+.g-inputBlock-input:-webkit-autofill:hover,
+.g-inputBlock-input:-webkit-autofill:focus,
 .g-inputBlock-input:valid,
 .g-inputBlock-input:invalid {
   background-color: g-theme-form-background-color;
   -webkit-text-fill-color: g-theme-color !important;
   color: g-theme-color;
   border: 1px solid g-theme-form-border-color;
-  box-shadow: none;
+  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
+  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
 }
 @media print {
   .g-inputBlock-input {
