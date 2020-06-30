@@ -132,9 +132,10 @@ background-color: g-theme-form-background-color;
 color: g-theme-color;
 :-webkit-autofill,:valid,:invalid{
 background-color: g-theme-form-background-color;
--webkit-text-fill-color: g-theme-form-background-color !important;
+-webkit-text-fill-color: g-theme-color !important;
 color: g-theme-color;
 border: 1px solid g-theme-form-border-color;
+box-shadow: none;
 }
 @media print{
 font-family: sans-serif;;
