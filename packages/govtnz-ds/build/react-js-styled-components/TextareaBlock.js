@@ -13,8 +13,78 @@ var _react = _interopRequireDefault(require("react"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
+function _templateObject14() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 5.4ex;\n  "]);
+
+  _templateObject14 = function _templateObject14() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject13() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 7.2ex;\n  "]);
+
+  _templateObject13 = function _templateObject13() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject12() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 9ex;\n  "]);
+
+  _templateObject12 = function _templateObject12() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject11() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 10.8ex;\n  "]);
+
+  _templateObject11 = function _templateObject11() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject10() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 23ex;\n  "]);
+
+  _templateObject10 = function _templateObject10() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject9() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 41ex;\n  "]);
+
+  _templateObject9 = function _templateObject9() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject8() {
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    max-width: 59ex;\n  "]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  margin-bottom: 5px;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  display: block;\n  width: 100%;\n  min-height: 40px;\n  margin-bottom: 20px;\n  padding: 5px;\n  resize: vertical;\n  border: 1px solid g-theme-form-border-color;\n  border-radius: 0;\n  -webkit-appearance: none;\n  background-color: g-theme-form-background-color;\n  color: g-theme-color;\n  :-webkit-autofill,\n  :-webkit-autofill:hover,\n  :-webkit-autofill:focus,\n  :valid,\n  :invalid {\n    background-color: g-theme-form-background-color;\n    -webkit-text-fill-color: g-theme-color !important;\n    color: g-theme-color;\n    border: 1px solid g-theme-form-border-color;\n    box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n    -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n  }\n  @media print {\n    font-family: sans-serif;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.25;\n  }\n  @media print {\n    font-size: 14pt;\n    line-height: 1.25;\n  }\n  :focus {\n    outline: 3px solid g-theme-focus-ring-color;\n    outline-offset: 0;\n  }\n  @media (min-width: 40.0625em) {\n    margin-bottom: 30px;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["margin-bottom: 5px;\nfont-family: g-theme-font-family;\n-webkit-font-smoothing: antialiased;\n-moz-osx-font-smoothing: grayscale;\nfont-weight: 400;\nfont-size: 1rem;\nline-height: 1.25;\nbox-sizing: border-box;\ndisplay: block;\nwidth: 100%;\nmin-height: 40px;\nmargin-bottom: 20px;\npadding: 5px;\nresize: vertical;\nborder: 1px solid g-theme-form-border-color;\nborder-radius: 0;\n-webkit-appearance: none;\nbackground-color: g-theme-form-background-color;\ncolor: g-theme-color;\n:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:valid,:invalid{\nbackground-color: g-theme-form-background-color;\n-webkit-text-fill-color: g-theme-color !important;\ncolor: g-theme-color;\nborder: 1px solid g-theme-form-border-color;\nbox-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n-webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n}\n@media print{\nfont-family: sans-serif;;\n}\n@media (min-width: 40.0625em){\nfont-size: 1.1875rem;\nline-height: 1.25;;\n}\n@media print{\nfont-size: 14pt;\nline-height: 1.25;;\n}\n:focus{\noutline: 3px solid g-theme-focus-ring-color;\noutline-offset: 0;\n}\n@media (min-width: 40.0625em){\nmargin-bottom: 30px;;\n}\nmargin-top: 0px;\n", "\n", "\n", "\n", "\n", "\n", "\n", ""]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -54,7 +124,7 @@ function _templateObject4() {
 }
 
 function _templateObject3() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: g-theme-color;\n  display: block;\n  margin-bottom: 5px;\n  @media print {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n    color: g-theme-print-color;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  margin-top: 0px;\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: g-theme-color;\n  display: block;\n  margin-bottom: 12px;\n  @media print {\n    font-family: sans-serif;\n    font-size: 14pt;\n    line-height: 1.15;\n    color: g-theme-print-color;\n  }\n  @media (min-width: 40.0625em) {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n  margin-top: 0px;\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -95,7 +165,21 @@ var StyledDiv3 = _styledComponents["default"].div(_templateObject5());
 
 var StyledSpan = _styledComponents["default"].span(_templateObject6());
 
-var StyledTextarea = _styledComponents["default"].textarea(_templateObject7());
+var StyledTextarea = _styledComponents["default"].textarea(_templateObject7(), function (props) {
+  return props.width === "30" && _styledComponents["default"].css(_templateObject8());
+}, function (props) {
+  return props.width === "20" && _styledComponents["default"].css(_templateObject9());
+}, function (props) {
+  return props.width === "10" && _styledComponents["default"].css(_templateObject10());
+}, function (props) {
+  return props.width === "5" && _styledComponents["default"].css(_templateObject11());
+}, function (props) {
+  return props.width === "4" && _styledComponents["default"].css(_templateObject12());
+}, function (props) {
+  return props.width === "3" && _styledComponents["default"].css(_templateObject13());
+}, function (props) {
+  return props.width === "2" && _styledComponents["default"].css(_templateObject14());
+});
 
 var TextareaBlock = function TextareaBlock(_ref) {
   var errorId = _ref.errorId,
@@ -104,6 +188,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
       hintId = _ref.hintId,
       hint = _ref.hint,
       error = _ref.error,
+      width = _ref.width,
       name = _ref.name,
       required = _ref.required,
       disabled = _ref.disabled,
@@ -126,6 +211,7 @@ var TextareaBlock = function TextareaBlock(_ref) {
   }, hint !== undefined ? hint : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Hint text"))) : "", errorId !== undefined ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     id: errorId
   }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error:"), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Error text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledTextarea, {
+    width: width,
     "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
     id: id,
     name: name,

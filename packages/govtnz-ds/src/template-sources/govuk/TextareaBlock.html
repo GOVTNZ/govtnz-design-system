@@ -18,7 +18,7 @@
     </div>
   </mt-if>
   <textarea
-    class="g-textareaBlock-textarea"
+    class="g-textareaBlock-textarea {{ width?: g-textareaBlock-textarea--width-30 as 30 | g-textareaBlock-textarea--width-20 as 20 | g-textareaBlock-textarea--width-10 as 10 | g-textareaBlock-textarea--width-5 as 5 | g-textareaBlock-textarea--width-4 as 4 | g-textareaBlock-textarea--width-3 as 3 | g-textareaBlock-textarea--width-2 as 2 }}"
     id="id"
     name="name"
     aria-describedby="hintId errorId"

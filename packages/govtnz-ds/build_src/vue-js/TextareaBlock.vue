@@ -18,7 +18,7 @@
 
     <textarea
       v-bind:aria-describedby="computed__ariaDescribedby"
-      class="g-textareaBlock-textarea"
+      v-bind:class="computed__class2"
       v-bind:id="id"
       v-bind:name="name"
       v-bind:rows="rows"
@@ -37,6 +37,18 @@
 <script>
 import Vue from "vue";
 
+const constants = {
+  width: {
+    "2": "g-textareaBlock-textarea--width-2",
+    "3": "g-textareaBlock-textarea--width-3",
+    "4": "g-textareaBlock-textarea--width-4",
+    "5": "g-textareaBlock-textarea--width-5",
+    "10": "g-textareaBlock-textarea--width-10",
+    "20": "g-textareaBlock-textarea--width-20",
+    "30": "g-textareaBlock-textarea--width-30"
+  }
+};
+
 export default Vue.extend({
   props: {
     errorId: { type: String, required: false },
@@ -45,6 +57,13 @@ export default Vue.extend({
     hintId: { type: String, required: false },
     hint: { required: false, default: "Hint text" },
     error: { required: false, default: "Error text" },
+    width: {
+      type: String,
+      validator: value => {
+        return ["30", "20", "10", "5", "4", "3", "2"].indexOf(value) !== -1;
+      },
+      required: false
+    },
     name: { type: String, required: true },
     required: { type: Boolean, default: false, required: false },
     disabled: { type: Boolean, default: false, required: false },
@@ -66,6 +85,14 @@ export default Vue.extend({
     },
     computed__ariaDescribedby() {
       return this.hintId + this.errorId;
+    },
+    computed__class2() {
+      return (
+        "g-textareaBlock-textarea " +
+        (constants.width[this.width] !== undefined
+          ? ` ${constants.width[this.width]}`
+          : "")
+      );
     }
   }
 });
@@ -151,7 +178,7 @@ export default Vue.extend({
   line-height: 1.25;
   color: g-theme-color;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 @media print {
   .g-textareaBlock-label {
@@ -243,5 +270,26 @@ export default Vue.extend({
 }
 .g-textareaBlock-hint > * {
   margin-top: 0px;
+}
+.g-textareaBlock-textarea--width-30 {
+  max-width: 59ex;
+}
+.g-textareaBlock-textarea--width-20 {
+  max-width: 41ex;
+}
+.g-textareaBlock-textarea--width-10 {
+  max-width: 23ex;
+}
+.g-textareaBlock-textarea--width-5 {
+  max-width: 10.8ex;
+}
+.g-textareaBlock-textarea--width-4 {
+  max-width: 9ex;
+}
+.g-textareaBlock-textarea--width-3 {
+  max-width: 7.2ex;
+}
+.g-textareaBlock-textarea--width-2 {
+  max-width: 5.4ex;
 }
 </style>

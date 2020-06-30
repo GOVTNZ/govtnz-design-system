@@ -55,7 +55,7 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                             <RadioBlock label="Our service" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                             <RadioBlock label="Something else" id="radioIssue3" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                         </FieldsetBlock>
-                        <TextareaBlock label="What's your message?" id="comments" name="comments" cols={20} {...onChangeGenerator({})}></TextareaBlock>
+                        <TextareaBlock label="What's your message?" id="comments" name="comments" width={20} {...onChangeGenerator({})}></TextareaBlock>
                         <Button {...onChangeGenerator({})}>Submit</Button>
                     </FlexColumn>
                 </FlexRow>

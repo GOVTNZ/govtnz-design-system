@@ -61,7 +61,7 @@
                             label="What's your message?"
                             id="comments"
                             name="comments"
-                            cols={20} 
+                            width={20}
                         />
                         <Button>Submit</Button>
                     </FlexColumn>

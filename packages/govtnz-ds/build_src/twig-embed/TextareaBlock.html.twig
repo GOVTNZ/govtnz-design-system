@@ -58,7 +58,7 @@ class="g-textareaBlock-visually-hidden"
   
 <textarea
 aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
-class="g-textareaBlock-textarea"
+class="g-textareaBlock-textarea{% if width == "30" %}g-textareaBlock-textarea--width-30{% elseif width == "20" %}g-textareaBlock-textarea--width-20{% elseif width == "10" %}g-textareaBlock-textarea--width-10{% elseif width == "5" %}g-textareaBlock-textarea--width-5{% elseif width == "4" %}g-textareaBlock-textarea--width-4{% elseif width == "3" %}g-textareaBlock-textarea--width-3{% elseif width == "2" %}g-textareaBlock-textarea--width-2{% endif %}"
 id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
 rows=""

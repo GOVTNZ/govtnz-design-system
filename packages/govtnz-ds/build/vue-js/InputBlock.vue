@@ -186,7 +186,7 @@ export default Vue.extend({
   line-height: 1.25;
   color: g-theme-color;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 @media print {
   .g-inputBlock-label {

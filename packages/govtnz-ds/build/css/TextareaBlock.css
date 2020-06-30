@@ -97,7 +97,7 @@
   color: #2a2a2a;
   color: var(--g-theme-color, #2a2a2a);
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 @media print {
@@ -214,4 +214,32 @@
 
 .g-textareaBlock-hint > * {
   margin-top: 0px;
+}
+
+.g-textareaBlock-textarea--width-30 {
+  max-width: 59ex;
+}
+
+.g-textareaBlock-textarea--width-20 {
+  max-width: 41ex;
+}
+
+.g-textareaBlock-textarea--width-10 {
+  max-width: 23ex;
+}
+
+.g-textareaBlock-textarea--width-5 {
+  max-width: 10.8ex;
+}
+
+.g-textareaBlock-textarea--width-4 {
+  max-width: 9ex;
+}
+
+.g-textareaBlock-textarea--width-3 {
+  max-width: 7.2ex;
+}
+
+.g-textareaBlock-textarea--width-2 {
+  max-width: 5.4ex;
 }

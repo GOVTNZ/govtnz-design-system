@@ -18,6 +18,8 @@ import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import GetInTouch from '../../components/GetInTouch';
 import ExampleHeading from '../../commons/ExampleHeading';
 
+let themeTimer: NodeJS.Timeout | undefined;
+
 const ThemesPage = (pageProps: PageRendererProps) => {
   const [theme, setTheme] = useState<string>('theme-default');
   const [iframeHeight, setIframeHeight] = useState<string>('100vh');
@@ -27,15 +29,12 @@ const ThemesPage = (pageProps: PageRendererProps) => {
   };
 
   const handleMessage = (e) => {
-    console.log(e);
-
     if (e.origin !== window.location.origin) {
       console.info('Ignoring postMessage from', e.origin, e);
       return;
     }
     const data = e.data;
     const resizeById = data && data.resizeById;
-    console.log({ resizeById });
     if (resizeById !== 'iframe_basicsthemes__examples0') {
       return;
     }
@@ -50,23 +49,39 @@ const ThemesPage = (pageProps: PageRendererProps) => {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(iframeRef);
-
+  const setIframeTheme = (setTheme: string) => {
+    if (themeTimer) {
+      clearTimeout(themeTimer);
+    }
     const iframeEl: HTMLIFrameElement | null = iframeRef.current;
     if (!iframeEl) {
-      console.log('No iframe ref available.', iframeEl);
+      console.log('No iframe ref available.  Trying again in 50ms.', iframeEl);
+      themeTimer = setTimeout(() => {
+        setIframeTheme(setTheme);
+      }, 50);
       return;
     }
     // @ts-ignore
     const domDocument = iframeEl.contentWindow?.document;
     if (!domDocument) {
-      console.log('No iframe contentWindow document available.', domDocument);
+      console.log(
+        'No iframe contentWindow document available.  Trying again in 50ms.',
+        domDocument
+      );
+      themeTimer = setTimeout(() => {
+        setIframeTheme(setTheme);
+      }, 50);
       return;
     }
     const documentElement = domDocument.documentElement;
     if (!documentElement) {
-      console.log('No iframe documentElement available.', documentElement);
+      console.log(
+        'No iframe documentElement available.  Trying again in 50ms.',
+        documentElement
+      );
+      themeTimer = setTimeout(() => {
+        setIframeTheme(setTheme);
+      }, 50);
       return;
     }
     const body: HTMLBodyElement = documentElement.getElementsByTagName(
@@ -74,7 +89,10 @@ const ThemesPage = (pageProps: PageRendererProps) => {
     )[0];
 
     if (!body) {
-      console.log("Couldn't find <body>;");
+      console.log("Couldn't find iframe's <body>. Trying again in 50ms.");
+      themeTimer = setTimeout(() => {
+        setIframeTheme(setTheme);
+      }, 50);
       return;
     }
 
@@ -82,7 +100,13 @@ const ThemesPage = (pageProps: PageRendererProps) => {
     body.classList.remove('theme-light');
     body.classList.remove('theme-dark');
 
-    body.classList.add(theme);
+    body.classList.add(setTheme);
+
+    console.log(`Theme set to "${setTheme}"`);
+  };
+
+  useEffect(() => {
+    setIframeTheme(theme);
   }, [theme]);
 
   const humanReadableTheme = {
@@ -132,7 +156,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             <div className="g-ds-font">
               <FieldsetBlock
                 legend={
-                  <H3 styleSize="medium" id="whereLiveTitle">
+                  <H3 styleSize="small" id="chooseTheme" marginTop8>
                     Choose a theme
                   </H3>
                 }

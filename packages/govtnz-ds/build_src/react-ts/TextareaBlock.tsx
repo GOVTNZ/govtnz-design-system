@@ -7,6 +7,7 @@ type Props = {
   hintId?: string;
   hint?: React.ReactNode;
   error?: React.ReactNode;
+  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
   name: string;
   required?: boolean;
   disabled?: boolean;
@@ -22,6 +23,18 @@ type Props = {
   ref?: React.RefObject<HTMLTextAreaElement>;
 };
 
+const constants = {
+  width: {
+    "2": "g-textareaBlock-textarea--width-2",
+    "3": "g-textareaBlock-textarea--width-3",
+    "4": "g-textareaBlock-textarea--width-4",
+    "5": "g-textareaBlock-textarea--width-5",
+    "10": "g-textareaBlock-textarea--width-10",
+    "20": "g-textareaBlock-textarea--width-20",
+    "30": "g-textareaBlock-textarea--width-30"
+  }
+};
+
 const TextareaBlock = ({
   errorId,
   id,
@@ -29,6 +42,7 @@ const TextareaBlock = ({
   hintId,
   hint,
   error,
+  width,
   name,
   required,
   disabled,
@@ -88,7 +102,9 @@ const TextareaBlock = ({
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
           : undefined
       }
-      className="g-textareaBlock-textarea"
+      className={`g-textareaBlock-textarea${
+        constants.width[width] !== undefined ? " " + constants.width[width] : ""
+      }`}
       id={id}
       name={name}
       rows={rows}

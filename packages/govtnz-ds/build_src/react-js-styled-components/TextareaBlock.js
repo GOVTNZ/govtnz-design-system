@@ -29,7 +29,7 @@ const StyledLabel = styled.label`
   line-height: 1.25;
   color: g-theme-color;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   @media print {
     font-family: sans-serif;
     font-size: 14pt;
@@ -104,58 +104,87 @@ const StyledSpan = styled.span`
   margin-top: 0px;
 `;
 
-const StyledTextarea = styled.textarea`
-  margin-bottom: 5px;
-  font-family: g-theme-font-family;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.25;
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  min-height: 40px;
-  margin-bottom: 20px;
-  padding: 5px;
-  resize: vertical;
-  border: 1px solid g-theme-form-border-color;
-  border-radius: 0;
-  -webkit-appearance: none;
-  background-color: g-theme-form-background-color;
-  color: g-theme-color;
-  :-webkit-autofill,
-  :-webkit-autofill:hover,
-  :-webkit-autofill:focus,
-  :valid,
-  :invalid {
-    background-color: g-theme-form-background-color;
-    -webkit-text-fill-color: g-theme-color !important;
-    color: g-theme-color;
-    border: 1px solid g-theme-form-border-color;
-    box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
-    -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
-  }
-  @media print {
-    font-family: sans-serif;
-  }
-  @media (min-width: 40.0625em) {
-    font-size: 1.1875rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.25;
-  }
-  :focus {
-    outline: 3px solid g-theme-focus-ring-color;
-    outline-offset: 0;
-  }
-  @media (min-width: 40.0625em) {
-    margin-bottom: 30px;
-  }
-  margin-top: 0px;
-`;
+const StyledTextarea = styled.textarea`margin-bottom: 5px;
+font-family: g-theme-font-family;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: 400;
+font-size: 1rem;
+line-height: 1.25;
+box-sizing: border-box;
+display: block;
+width: 100%;
+min-height: 40px;
+margin-bottom: 20px;
+padding: 5px;
+resize: vertical;
+border: 1px solid g-theme-form-border-color;
+border-radius: 0;
+-webkit-appearance: none;
+background-color: g-theme-form-background-color;
+color: g-theme-color;
+:-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:valid,:invalid{
+background-color: g-theme-form-background-color;
+-webkit-text-fill-color: g-theme-color !important;
+color: g-theme-color;
+border: 1px solid g-theme-form-border-color;
+box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
+-webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
+}
+@media print{
+font-family: sans-serif;;
+}
+@media (min-width: 40.0625em){
+font-size: 1.1875rem;
+line-height: 1.25;;
+}
+@media print{
+font-size: 14pt;
+line-height: 1.25;;
+}
+:focus{
+outline: 3px solid g-theme-focus-ring-color;
+outline-offset: 0;
+}
+@media (min-width: 40.0625em){
+margin-bottom: 30px;;
+}
+margin-top: 0px;
+${props =>
+  props.width === "30" &&
+  styled.css`
+    max-width: 59ex;
+  `}
+${props =>
+  props.width === "20" &&
+  styled.css`
+    max-width: 41ex;
+  `}
+${props =>
+  props.width === "10" &&
+  styled.css`
+    max-width: 23ex;
+  `}
+${props =>
+  props.width === "5" &&
+  styled.css`
+    max-width: 10.8ex;
+  `}
+${props =>
+  props.width === "4" &&
+  styled.css`
+    max-width: 9ex;
+  `}
+${props =>
+  props.width === "3" &&
+  styled.css`
+    max-width: 7.2ex;
+  `}
+${props =>
+  props.width === "2" &&
+  styled.css`
+    max-width: 5.4ex;
+  `}`;
 
 const TextareaBlock = ({
   errorId,
@@ -164,6 +193,7 @@ const TextareaBlock = ({
   hintId,
   hint,
   error,
+  width,
   name,
   required,
   disabled,
@@ -214,6 +244,7 @@ const TextareaBlock = ({
       ""
     )}
     <StyledTextarea
+      width={width}
       aria-describedby={
         hintId !== undefined || errorId !== undefined
           ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
