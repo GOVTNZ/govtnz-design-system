@@ -101,7 +101,7 @@ export default Vue.extend({
   .g-body-m {
     font-size: 1.1875rem;
     line-height: 1.31579;
-    margin-bottom: 1.25x;
+    margin-bottom: 1.25px;
   }
 }
 .g-body-s {

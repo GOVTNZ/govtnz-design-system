@@ -29,7 +29,7 @@ var StyledP = styled_components_1.default.p(templateObject_12 || (templateObject
 }, function (props) {
     return props.styleSize === "medium" && styled_components_1.default.css(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n        color: g-theme-print-color;\n        font-family: sans-serif;\n        font-size: 14pt;\n        line-height: 1.15;\n      "], ["\n        color: g-theme-print-color;\n        font-family: sans-serif;\n        font-size: 14pt;\n        line-height: 1.15;\n      "])));
 }, function (props) {
-    return props.styleSize === "medium" && styled_components_1.default.css(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25x;\n      "], ["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25x;\n      "])));
+    return props.styleSize === "medium" && styled_components_1.default.css(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25px;\n      "], ["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25px;\n      "])));
 }, function (props) {
     return props.styleSize === "small" && styled_components_1.default.css(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n      font-weight: 400;\n      font-size: 0.875rem;\n      line-height: 1.625;\n      margin-top: 0;\n      margin-bottom: 1rem;\n    "], ["\n      font-weight: 400;\n      font-size: 0.875rem;\n      line-height: 1.625;\n      margin-top: 0;\n      margin-bottom: 1rem;\n    "])));
 }, function (props) {

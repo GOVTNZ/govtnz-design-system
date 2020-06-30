@@ -74,7 +74,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25x;\n      "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n        font-size: 1.1875rem;\n        line-height: 1.31579;\n        margin-bottom: 1.25px;\n      "]);
 
   _templateObject6 = function _templateObject6() {
     return data;

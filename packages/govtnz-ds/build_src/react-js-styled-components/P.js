@@ -66,7 +66,7 @@ const StyledP = styled.p`
       styled.css`
         font-size: 1.1875rem;
         line-height: 1.31579;
-        margin-bottom: 1.25x;
+        margin-bottom: 1.25px;
       `};
   }
   ${props =>
