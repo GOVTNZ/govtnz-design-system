@@ -8,6 +8,7 @@ const StyledP = styled.p`
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.25rem;
   line-height: 1.625;
+  margin-bottom: 1.25rem;
   font-size: 1rem;
   line-height: 1.25;
   color: g-theme-hint-color;
@@ -25,46 +26,19 @@ const StyledP = styled.p`
     props.styleSize === "large" &&
     styled.css`
       font-weight: 400;
-      font-size: 1.125rem;
-      line-height: 1.11111;
+      font-size: 1.5rem;
+      line-height: 1.625;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 1.25em;
     `}
   @media print {
     ${props =>
       props.styleSize === "large" &&
       styled.css`
         color: g-theme-print-color;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "large" &&
-      styled.css`
         font-family: sans-serif;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "large" &&
-      styled.css`
-        font-size: 1.5rem;
-        line-height: 1.25;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "large" &&
-      styled.css`
         font-size: 18pt;
         line-height: 1.15;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "large" &&
-      styled.css`
-        margin-bottom: 30px;
       `};
   }
   ${props =>
@@ -74,34 +48,14 @@ const StyledP = styled.p`
       font-size: 1rem;
       line-height: 1.25;
       margin-top: 0;
-      margin-bottom: 15px;
+      margin-bottom: 1rem;
     `}
   @media print {
     ${props =>
       props.styleSize === "medium" &&
       styled.css`
         color: g-theme-print-color;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "medium" &&
-      styled.css`
         font-family: sans-serif;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "medium" &&
-      styled.css`
-        font-size: 1.1875rem;
-        line-height: 1.31579;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "medium" &&
-      styled.css`
         font-size: 14pt;
         line-height: 1.15;
       `};
@@ -110,7 +64,9 @@ const StyledP = styled.p`
     ${props =>
       props.styleSize === "medium" &&
       styled.css`
-        margin-bottom: 20px;
+        font-size: 1.1875rem;
+        line-height: 1.31579;
+        margin-bottom: 1.25x;
       `};
   }
   ${props =>
@@ -127,27 +83,7 @@ const StyledP = styled.p`
       props.styleSize === "small" &&
       styled.css`
         color: g-theme-print-color;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "small" &&
-      styled.css`
         font-family: sans-serif;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "small" &&
-      styled.css`
-        font-size: 1rem;
-        line-height: 1.25;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "small" &&
-      styled.css`
         font-size: 14pt;
         line-height: 1.2;
       `};
@@ -156,7 +92,9 @@ const StyledP = styled.p`
     ${props =>
       props.styleSize === "small" &&
       styled.css`
-        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 1.25;
+        margin-bottom: 1.25px;
       `};
   }
   ${props =>
@@ -173,27 +111,7 @@ const StyledP = styled.p`
       props.styleSize === "x-small" &&
       styled.css`
         color: g-theme-print-color;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "x-small" &&
-      styled.css`
         font-family: sans-serif;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "x-small" &&
-      styled.css`
-        font-size: 0.875rem;
-        line-height: 1.42857;
-      `};
-  }
-  @media print {
-    ${props =>
-      props.styleSize === "x-small" &&
-      styled.css`
         font-size: 12pt;
         line-height: 1.2;
       `};
@@ -202,14 +120,11 @@ const StyledP = styled.p`
     ${props =>
       props.styleSize === "x-small" &&
       styled.css`
-        margin-bottom: 20px;
+        font-size: 0.875rem;
+        line-height: 1.42857;
+        margin-bottom: 0px !important;
       `};
   }
-  ${props =>
-    props.marginBottom0 &&
-    styled.css`
-      margin-bottom: 0px !important;
-    `}
 `;
 
 const P = ({ styleSize, marginBottom0, children }) => (

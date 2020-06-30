@@ -6,7 +6,7 @@
 
 .banner {
   padding-top: $spacing-48;
-  padding-bottom: $spacing-48;
+  padding-bottom: 2.25rem;
   margin-top: -$spacing-32; // Combats margin from .navigation--large (used on all other pages).
   margin-bottom: $spacing-32;
   @include medium {

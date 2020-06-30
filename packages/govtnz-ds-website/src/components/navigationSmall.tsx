@@ -68,7 +68,7 @@ class NavigationSmall extends React.Component<Props, State> {
           isOpen={showModal}
           onRequestClose={this.handleCloseModal}
           contentLabel="Main menu"
-          className="navigation-small__modal"
+          className="fake"
           overlayClassName="navigation-small__modal-overlay"
         >
           <div className="navigation-modal__header header">
@@ -89,29 +89,29 @@ class NavigationSmall extends React.Component<Props, State> {
                 </Column>
               </Row>
             </Container>
-            <div className="navigation-modal__heading">
-              <LogoLockUp />
-            </div>
-            <div className="navigation-modal__content">
-              <div className="navigation-modal__scroll">
-                <ul className="navigation-modal__list">
-                  <NavigationItem to="/get-started/" label="Get started" />
-                  <NavigationItem
-                    to="/basics/"
-                    label="Basics"
-                    childMenu={basicsMenuItems}
-                  />
-                  <NavigationItem
-                    to="/components/"
-                    label="Components"
-                    childMenu={componentMenu}
-                  />
-                  <NavigationItem to="/patterns/" label="Patterns" />
-                  <NavigationItem to="/prototypes/" label="Prototypes" />
-                  <NavigationItem to="/community/" label="Community" />
-                  <NavigationItem to="/about/" label="About" />
-                </ul>
-              </div>
+          </div>
+          <div className="navigation-modal__heading">
+            <LogoLockUp />
+          </div>
+          <div className="navigation-modal__content">
+            <div className="navigation-modal__scroll">
+              <ul className="navigation-modal__list">
+                <NavigationItem to="/get-started/" label="Get started" />
+                <NavigationItem
+                  to="/basics/"
+                  label="Basics"
+                  childMenu={basicsMenuItems}
+                />
+                <NavigationItem
+                  to="/components/"
+                  label="Components"
+                  childMenu={componentMenu}
+                />
+                <NavigationItem to="/patterns/" label="Patterns" />
+                <NavigationItem to="/prototypes/" label="Prototypes" />
+                <NavigationItem to="/community/" label="Community" />
+                <NavigationItem to="/about/" label="About" />
+              </ul>
             </div>
           </div>
         </Modal>

@@ -7,13 +7,13 @@
 
 .navigation-small {
   display: block;
+
   @include medium {
     display: none;
   }
 }
 
 .navigation-small__button {
-  padding: $spacing-12 0;
   background-color: transparent;
   border: none;
   color: $color-core-white;
@@ -21,6 +21,7 @@
   cursor: pointer;
   vertical-align: middle;
   float: right;
+  padding: 0.75rem 10px 0.75rem 10px;
 }
 
 .navigation-small__button-icon {
@@ -30,18 +31,36 @@
   margin-bottom: $spacing-2;
 }
 
+.navigation-small__modal-overlay {
+  position: fixed;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 // Modal Window
 
 .navigation-small__modal {
+  position: absolute;
   box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
   height: 100vh;
-  width: 300px;
-  position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   padding-bottom: $spacing-56;
 
-  /* disable text highlighting */
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  /* disable text selecting */
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -49,20 +68,12 @@
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
-.navigation-small__modal-overlay {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .navigation-modal__header {
+  position: absolute;
   margin-bottom: 0 !important;
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -70,54 +81,52 @@
   position: absolute;
   top: 9px;
   left: 1rem;
+  z-index: 3;
 }
 
 .navigation-modal__content {
-  background-color: $color-core-white;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  padding-top: 65px;
+  max-width: 300px;
+  right: 0px;
+  background-color: #ffffff;
   transform: translate(300px, 0);
   transition: transform 0.4s;
-}
-
-.navigation-modal__scroll {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .navigation-modal__list {
   padding-top: $spacing-24;
   padding-left: $spacing-24;
   padding-bottom: $spacing-40;
-  padding-right: $spacing-16;
+  padding-right: $spacing-24;
   list-style: none;
   margin: 0;
+  min-height: 100vh;
 }
 
 // React Modal
 
-.ReactModal__Body--open {
+.ReactModal__Body--open #___gatsby {
+  height: 100vh;
   overflow: hidden;
 }
 
 .ReactModal__Overlay {
   display: block;
-  background-color: rgba($color-core-black, 0);
+  background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.2s;
+
   @include medium {
     display: none;
   }
 }
 
 .ReactModal__Overlay--after-open {
-  background-color: rgba($color-core-black, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .ReactModal__Overlay--before-close {
-  background-color: rgba($color-core-black, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .ReactModal__Content {

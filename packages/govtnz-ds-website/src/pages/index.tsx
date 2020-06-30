@@ -79,13 +79,13 @@ const IndexPage = (props) => {
       <Container width="fixed">
         <Row>
           <Column xs="12" sm="12" md="9" lg="8" mdOffset="1" lgOffset="1">
-            <P styleSize="medium">
+            <P>
               The New Zealand Government Design System (NZGDS) alpha is a
               catalogue of reusable basic elements, components, and patterns for
               building websites and applications, along with guidance on how and
               when to use them.
             </P>
-            <P styleSize="medium">
+            <P>
               All of Government Services Delivery is creating the design system
               now, and you can contribute. This alpha site shows you what we
               have built so far, what we're working on, and how you can get
@@ -93,14 +93,14 @@ const IndexPage = (props) => {
             </P>
             <span className="hr hr--large" />
             <H2 styleSize="large">Benefits of the design system</H2>
-            <P styleSize="medium">
+            <P>
               A design system builds on a pattern library and style guide — it’s
               all the design standards, documentation, principles and UI
               components you need to prototype and develop digital experiences.
               You get a play box of building blocks from which you can construct
               new websites or improve existing ones.
             </P>
-            <P styleSize="medium">With the NZGDS, you will soon be able to:</P>
+            <P>With the NZGDS, you will soon be able to:</P>
             <Ul>
               <Li>
                 prototype, design, and develop websites quickly and efficiently
@@ -118,7 +118,7 @@ const IndexPage = (props) => {
               design, code, and content.
             </InsetText>
             <H3 styleSize="medium">Leading best practice</H3>
-            <P styleSize="medium">
+            <P>
               The New Zealand design system is based on the tried and tested{' '}
               <A href="https://design-system.service.gov.uk/">
                 GOV.UK design system
@@ -135,7 +135,7 @@ const IndexPage = (props) => {
               design system, you can be confident you are at the forefront of
               international best practice.
             </P>
-            <P styleSize="medium">
+            <P>
               New Zealanders — your users — will find consistent design and
               functionality across public service websites when the design
               system is implemented. This consistency will breed familiarity,
@@ -153,12 +153,12 @@ const IndexPage = (props) => {
                     />
                   </div>
                   <H3 styleSize="medium">Basics</H3>
-                  <P styleSize="medium">
+                  <P>
                     Guidance for applying basic elements, like colour and
                     typography. We’re working on layout, iconography, images,
                     and media now.
                   </P>
-                  <P styleSize="medium">
+                  <P>
                     <Link to="/basics/">Browse some basics</Link>
                   </P>
                 </div>
@@ -173,11 +173,11 @@ const IndexPage = (props) => {
                     />
                   </div>
                   <H3 styleSize="medium">Components</H3>
-                  <P styleSize="medium">
+                  <P>
                     Reusable multiple components for navigation, panels, forms,
                     tables, and more. We’re working on these now.
                   </P>
-                  <P styleSize="medium">
+                  <P>
                     <Link to="/components/">Browse some components</Link>
                   </P>
                 </div>
@@ -192,7 +192,7 @@ const IndexPage = (props) => {
                     />
                   </div>
                   <H3 styleSize="medium">Patterns (coming soon)</H3>
-                  <P styleSize="medium">
+                  <P>
                     Help users by providing easy flows to complete specific
                     tasks, like setting up accounts, filling in forms, and
                     checking eligibility. We’ll be inviting you to co-design
@@ -203,20 +203,20 @@ const IndexPage = (props) => {
             </Row>
             <span className="hr hr--large" />
             <H2 styleSize="large">Get involved</H2>
-            <P styleSize="medium">
+            <P>
               Since the NZGDS will be for everyone to use, we want a strong
               cross-government community backing it. Our overall aim is to
               improve digital service delivery across the New Zealand public
               service.
             </P>
-            <P styleSize="medium">You can contribute by:</P>
+            <P>You can contribute by:</P>
             <Ul>
               <Li>testing our components and patterns</Li>
               <Li>helping to develop new components and patterns</Li>
               <Li>commenting on our guidance.</Li>
             </Ul>
             <H3 styleSize="medium">Get in touch</H3>
-            <P styleSize="medium">
+            <P>
               If you have a question, idea, or suggestion about the design
               system, please get in touch through:
             </P>
