@@ -136,6 +136,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                     Choose a theme
                   </H3>
                 }
+                hintId="selectAThemeHintId"
                 hint={
                   <p>
                     Select one of the following themes to automatically apply it

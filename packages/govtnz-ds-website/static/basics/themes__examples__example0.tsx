@@ -48,7 +48,7 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                         <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
                         <FieldsetBlock legend={
                             <H2 styleSize="small" id="whereLiveTitle">
-                                What is your issue about?
+                                What’s your issue about?
                             </H2>
                             } {...onChangeGenerator({})}>
                             <RadioBlock label="Our website" id="radioIssue1" name="issueType" {...onChangeGenerator({})}></RadioBlock>
