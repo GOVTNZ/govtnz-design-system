@@ -113,29 +113,28 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             <H1 styleSize="xlarge" id="main-heading">
               Themes
             </H1>
-            <p className="g-body g-body-l">
+            <P className="large">
               Themes are used to customise your website’s colour and typography
               to align with your organisation’s branding. The example shows how
               you’ll be able to apply themes after the Design System comes out
               of Alpha.
-            </p>{' '}
+            </P>{' '}
             <H2 styleSize="large">Example themes</H2>{' '}
-            <p className="g-body g-body-m">
-              themes Select one of the following 3 theme options to see how
-              Design System components adapt to different colour schemes.
-              Anything you type in the text fields will remain when you switch
-              between themes. No information is sent if you select the ‘Submit’
-              button.
-            </p>{' '}
+            <P className="medium">
+              The following 3 theme options to see how Design System components
+              adapt to different colour schemes. Anything you type in the text
+              fields will remain when you switch between themes. No information
+              is sent if you select the ‘Submit’ button.
+            </P>{' '}
             <div className="g-ds-font">
               <FieldsetBlock
                 legend={
                   <>
                     <H2 styleSize="large">Select a theme</H2>
-                    <p className="g-body g-body-m">
+                    <P className="medium">
                       Select one of the following themes to automatically apply
                       it to the example.
-                    </p>
+                    </P>
                   </>
                 }
               >
@@ -191,7 +190,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               </div>
             </div>
             <H2 styleSize="large">Customising a theme</H2>
-            <p className="g-body g-body-m">
+            <P className="medium">
               You can customise the Design System theme to follow your brand
               guidelines by altering the values in the{' '}
               <a href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds/build/scss/_settings.scss">
@@ -205,7 +204,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                 Government Web Accessibility Standard
               </a>
               .
-            </p>
+            </P>
             <GetInTouch title="Themes" />
           </Column>
         </Row>

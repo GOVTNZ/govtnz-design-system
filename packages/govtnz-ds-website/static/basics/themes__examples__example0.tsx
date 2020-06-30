@@ -44,8 +44,8 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                     <FlexColumn xs="12" sm="12" md="12" lg="12" {...onChangeGenerator({})}>
                         <H1 {...onChangeGenerator({})}>Contact us</H1>
                         <P styleSize="large" {...onChangeGenerator({})}>Send a message to let us know about the issue you’re having.</P>
-                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" {...onChangeGenerator({})}></InputBlock>
-                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20} {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
                         <FieldsetBlock legend={
                             <H2 styleSize="small" id="whereLiveTitle">
                                 What’s your issue about?
