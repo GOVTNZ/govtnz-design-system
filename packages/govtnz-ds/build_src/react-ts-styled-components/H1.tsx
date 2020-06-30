@@ -201,6 +201,7 @@ ${props =>
     font-family: sans-serif;
   `};
 }
+font-size: 1.25rem;
 @media (min-width: 40.0625em){
 ${props =>
   props.styleSize === "small" &&
@@ -208,6 +209,7 @@ ${props =>
     font-size: 1.1875rem;
     line-height: 1.31579;
   `};
+font-size: 1.25rem;;
 }
 @media print{
 ${props =>

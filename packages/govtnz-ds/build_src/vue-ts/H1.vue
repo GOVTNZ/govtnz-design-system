@@ -201,10 +201,16 @@ export default Vue.extend({
     font-family: sans-serif;
   }
 }
+.g-fieldsetBlock-fieldset__legend .g-heading-s {
+  font-size: 1.25rem;
+}
 @media (min-width: 40.0625em) {
   .g-heading-s {
     font-size: 1.1875rem;
     line-height: 1.31579;
+  }
+  .g-fieldsetBlock-fieldset__legend .g-heading-s {
+    font-size: 1.25rem;
   }
 }
 @media print {
