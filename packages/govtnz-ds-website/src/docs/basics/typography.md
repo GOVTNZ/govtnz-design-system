@@ -121,7 +121,7 @@ Only use one lead paragraph per page.
     <ExampleHeading>Medium size for standard body text</ExampleHeading>
     <Example title="Example: Medium size for standard body text (Typography)">
         <ExampleSection>
-            <P styleSize="medium">
+            <P>
                 The New Zealand Government Design System (NZGDS) is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
         </ExampleSection>
     </Example>
@@ -146,7 +146,7 @@ Use it sparingly for 'small print' content, such as notes and references.
 <ExampleContainer>
     <ExampleHeading>Default</ExampleHeading>
     <Example title="Example: Links (Typography)">
-        <P styleSize="medium">
+        <P>
             <A href="#">Discuss typography on 'GitHub issues'</A>
         </P>
     </Example>
@@ -163,7 +163,7 @@ Use lists to break up blocks of text into chunks to make them easier to read.
 <ExampleContainer>
     <ExampleHeading>Bulleted lists</ExampleHeading>
     <Example title="Example: Bulleted lists (Typography)">
-        <P styleSize="medium">To help keep the kitchen clean, please:</P>
+        <P>To help keep the kitchen clean, please:</P>
         <Ul>
             <Li>replace tea and coffee jars on shelf</Li>
             <Li>wipe down bench</Li>
@@ -184,7 +184,7 @@ Use bulleted lists to highlight options and examples in content, especially when
 <ExampleContainer>
     <ExampleHeading>Numbered lists</ExampleHeading>
     <Example title="Example: Numbered lists (Typography)">
-        <P styleSize="medium">To sign up, you need to complete four steps.</P>
+        <P>To sign up, you need to complete four steps.</P>
         <Ol>
             <Li>Prove your identity, such as with RealMe</Li>
             <Li>Provide a passport-sized photo</Li>

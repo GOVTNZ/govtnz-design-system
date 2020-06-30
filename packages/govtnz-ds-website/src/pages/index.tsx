@@ -159,7 +159,9 @@ const IndexPage = (props) => {
                     and media now.
                   </P>
                   <P>
-                    <Link to="/basics/">Browse some basics</Link>
+                    <Link to="/basics/" className="g-link">
+                      Browse some basics
+                    </Link>
                   </P>
                 </div>
               </Column>
@@ -178,7 +180,9 @@ const IndexPage = (props) => {
                     tables, and more. We’re working on these now.
                   </P>
                   <P>
-                    <Link to="/components/">Browse some components</Link>
+                    <Link to="/components/" className="g-link">
+                      Browse some components
+                    </Link>
                   </P>
                 </div>
               </Column>

@@ -230,7 +230,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               requirements.
             </p>
             <p>
-              <Link to="/basics/colours/">
+              <Link to="/basics/colours/" className="g-link">
                 Read about the Design System colour structure
               </Link>
             </p>
@@ -250,7 +250,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               .
             </p>
             <p>
-              <Link to="/basics/typography/">
+              <Link to="/basics/typography/" className="g-link">
                 Read about the typography of the Design System
               </Link>
             </p>

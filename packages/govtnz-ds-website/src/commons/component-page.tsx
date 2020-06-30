@@ -61,7 +61,7 @@ export default function ComponentPage(props: Props) {
             {isStable === false && (
               <Note>
                 <H2 styleSize="medium">Note: Component coming soon</H2>
-                <P styleSize="medium">
+                <P>
                   We are still working on this component. We will release it
                   soon, and we would appreciate your feedback then.
                 </P>

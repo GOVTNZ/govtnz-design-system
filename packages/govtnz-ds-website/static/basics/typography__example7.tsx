@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Links (Typography)" {...onChangeGenerator({})}>
-        <P styleSize="medium" {...onChangeGenerator({})}>
+        <P {...onChangeGenerator({})}>
             <A href="#" {...onChangeGenerator({})}>Discuss typography on 'GitHub issues'</A>
         </P>
     </Example>);

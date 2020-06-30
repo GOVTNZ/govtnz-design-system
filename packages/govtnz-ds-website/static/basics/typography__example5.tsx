@@ -15,7 +15,7 @@ const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Medium size for standard body text (Typography)" {...onChangeGenerator({})}>
         <ExampleSection {...onChangeGenerator({})}>
-            <P styleSize="medium" {...onChangeGenerator({})}>
+            <P {...onChangeGenerator({})}>
                 The New Zealand Government Design System (NZGDS) is a catalogue of reusable basic elements, components and patterns for building websites and applications, along with guidance on how and when to use them.</P>
         </ExampleSection>
     </Example>);

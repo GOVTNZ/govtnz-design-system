@@ -11,7 +11,7 @@ type Props = {
 const GetInTouch = ({ title }: Props) => (
   <div className="g-inset-text g-inset-text--borderless">
     <H2 styleSize="medium">Get in touch</H2>
-    <P styleSize="medium">
+    <P>
       If you’ve got a question, idea, or suggestion, email the Design System
       (DS) team at{' '}
       <A href="mailto:info@digital.govt.nz">info@digital.govt.nz</A>, use our{' '}

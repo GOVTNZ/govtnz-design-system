@@ -158,7 +158,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             palette is being worked on now, and will be available in the near
             future.
           </P>
-          <P styleSize="medium">
+          <P>
             Colour choice for the design system was based on a survey of the
             palettes used on websites of 15 core New Zealand government
             agencies. We grouped these colours by hue and brightness, and
@@ -166,14 +166,14 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             formed the basis of our colour structure.
           </P>
           <H2 styleSize="large">Colour contrast</H2>
-          <P styleSize="medium">
+          <P>
             Accessible colour contrast ratios help people with sight and colour
             vision conditions to understand coloured text and design features.
             In New Zealand, over 8% of men have some form of colour-blindness,
             and so do some women. Others have vision affected by colour contrast
             and sizing conditions.
           </P>
-          <P styleSize="medium">
+          <P>
             The contrast ratio of text and interactive elements in your website
             must meet the{' '}
             <A href="https://www.digital.govt.nz/web-accessibility-standard">
@@ -186,18 +186,18 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             to level AA. The New Zealand Government Design System (NZGDS) has
             been built to meet these standards.
           </P>
-          <P styleSize="medium">
+          <P>
             To ensure compliance, only use the variables in the context they are
             designed for.
           </P>
           <H2 styleSize="large">Greys suite</H2>
-          <P styleSize="medium">
+          <P>
             The Slate in this grey palette is used for all text and core UI,
             such as borders of text input fields and checkboxes. The suite of
             grey tints can be used for a variety of graphic elements.
           </P>
           <Row>
-            {swatches[1].map(swatch => (
+            {swatches[1].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"
@@ -214,7 +214,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             ))}
           </Row>
           <Row>
-            {swatches[2].map(swatch => (
+            {swatches[2].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"
@@ -231,12 +231,12 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             ))}
           </Row>
           <H2 styleSize="large">Brand colours</H2>
-          <P styleSize="medium">
+          <P>
             Once theming is released, you will be able to customise this palette
             to express your digital brand.
           </P>
           <Row>
-            {swatches[3].map(swatch => (
+            {swatches[3].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"
@@ -253,7 +253,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             ))}
           </Row>
           <H2 styleSize="large">UI colours</H2>
-          <P styleSize="medium">
+          <P>
             This range has been carefully selected to meet the{' '}
             <A href="https://www.digital.govt.nz/web-accessibility-standard/">
               Web Accessibility Standard
@@ -261,7 +261,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             for the design system’s user interface.
           </P>
           <Row>
-            {swatches[4].map(swatch => (
+            {swatches[4].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"
@@ -278,7 +278,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             ))}
           </Row>
           <H2 styleSize="large">Alerts</H2>
-          <P styleSize="medium">
+          <P>
             These colours are used for alerts, such as confirming success with
             text input, warnings, and error messages. This ‘traffic light’
             palette is commonly used for this purpose. To avoid confusing the
@@ -286,7 +286,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             purpose.
           </P>
           <Row>
-            {swatches[5].map(swatch => (
+            {swatches[5].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"
@@ -303,7 +303,7 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             ))}
           </Row>
           <H2 styleSize="large">Text colours</H2>
-          <P styleSize="medium">
+          <P>
             These text and background colour combinations have been tested to
             meet the{' '}
             <A href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
@@ -452,12 +452,12 @@ const ColoursPage = (pageProps: PageRendererProps) => (
             </Column>
           </Row>
           <H2 styleSize="large">Core government brand colours</H2>
-          <P styleSize="medium">
+          <P>
             These colours are part of the core all-of-government brand and
             should only be used as shown.
           </P>
           <Row>
-            {swatches[0].map(swatch => (
+            {swatches[0].map((swatch) => (
               <Column
                 xs="12"
                 sm="6"

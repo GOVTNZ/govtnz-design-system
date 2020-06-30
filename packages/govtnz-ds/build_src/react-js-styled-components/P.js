@@ -42,34 +42,6 @@ const StyledP = styled.p`
       `};
   }
   ${props =>
-    props.styleSize === "medium" &&
-    styled.css`
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.25;
-      margin-top: 0;
-      margin-bottom: 1rem;
-    `}
-  @media print {
-    ${props =>
-      props.styleSize === "medium" &&
-      styled.css`
-        color: g-theme-print-color;
-        font-family: sans-serif;
-        font-size: 14pt;
-        line-height: 1.15;
-      `};
-  }
-  @media (min-width: 40.0625em) {
-    ${props =>
-      props.styleSize === "medium" &&
-      styled.css`
-        font-size: 1.1875rem;
-        line-height: 1.31579;
-        margin-bottom: 1.25rem;
-      `};
-  }
-  ${props =>
     props.styleSize === "small" &&
     styled.css`
       font-weight: 400;

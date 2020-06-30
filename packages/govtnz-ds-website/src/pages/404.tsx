@@ -23,6 +23,7 @@ const NotFoundPage = (pageProps: PageRendererProps) => (
             Sorry, this issue has been logged and we'll look into it.
           </P>
           <P styleSize="large">
+            {/* Intetentionally a <a> hyperlink not a <Link> because we want a full page refresh in case that was a bug that caused a 404 */}
             Go to <A href="/">the homepage</A> or tell us what you were looking
             for:
           </P>

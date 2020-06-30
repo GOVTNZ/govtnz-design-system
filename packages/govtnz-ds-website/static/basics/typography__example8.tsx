@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Bulleted lists (Typography)" {...onChangeGenerator({})}>
-        <P styleSize="medium" {...onChangeGenerator({})}>To help keep the kitchen clean, please:</P>
+        <P {...onChangeGenerator({})}>To help keep the kitchen clean, please:</P>
         <Ul {...onChangeGenerator({})}>
             <Li {...onChangeGenerator({})}>replace tea and coffee jars on shelf</Li>
             <Li {...onChangeGenerator({})}>wipe down bench</Li>

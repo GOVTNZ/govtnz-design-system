@@ -1,4 +1,3 @@
-import ArgParse from 'argparse';
 import fs from 'fs';
 import path from 'path';
 import fsExtra from 'fs-extra';
@@ -26,20 +25,8 @@ import { defaultTheme } from './theme';
 
 ensureNodeVersion();
 
-async function main(
-  componentIds?: string[] | undefined,
-  metaTemplateFormatIds: string[] | undefined = ['*'],
-  sources?: string[] | undefined
-) {
-  console.info('Command line args:');
-  console.info('  -  Sources: ', sources ? sources : 'All');
-  console.info('  -  Filter By Patterns:', componentIds ? componentIds : false);
-  console.info(
-    '  -  MetaTemplate formats:',
-    metaTemplateFormatIds ? metaTemplateFormatIds : false,
-    '\n'
-  );
-  console.log('\n\n\n');
+async function main() {
+  const metaTemplateFormatIds = ['*'];
 
   const specString: string = (
     await fs.promises.readFile(
@@ -54,42 +41,11 @@ async function main(
   const release: ReleaseItem[] = [];
   let cssVariables: CSSVariablePattern[] = [];
 
-  if (sources !== null) {
-    releaseSpecItems = sources.reduce((result, source) => {
-      const identifier = source.split('@');
-      const sourceId = identifier[0];
-      const version = identifier[1];
-
-      const releaseSpecItem = releaseSpecItems.find(item => {
-        if (item.sourceId !== sourceId) {
-          return false;
-        }
-
-        if (version !== undefined && item.version !== version) {
-          return false;
-        }
-
-        return true;
-      });
-
-      if (releaseSpecItem !== undefined) {
-        result.push(releaseSpecItem);
-      }
-
-      return result;
-    }, []);
-  }
-
   // Sequentially run because may result in jsdom and resource contention
   // issues...so this is intentionally sequential.
   for (let i = 0; i < releaseSpecItems.length; i++) {
     const releaseSpecItem = releaseSpecItems[i];
-    const validComponentIds =
-      componentIds !== null && releaseSpecItem.componentIds !== undefined
-        ? componentIds.filter(componentId =>
-            releaseSpecItem.componentIds.includes(componentId)
-          )
-        : [];
+    const validComponentIds = [];
 
     releaseSpecItem.componentIds =
       validComponentIds.length > 0
@@ -451,32 +407,4 @@ type MetaTemplateInputsById = {
   [key: string]: Component;
 };
 
-var ArgumentParser = ArgParse.ArgumentParser;
-var parser = new ArgumentParser({
-  version: '0.0.1',
-  addHelp: true,
-  description: 'Govt NZ Design System builder'
-});
-parser.addArgument(['-f', '--filter'], {
-  help: 'Filter by template Ids (comma separated)'
-});
-parser.addArgument(['-m', '--metaTemplateFormat'], {
-  help: 'MetaTemplate formats by Id (comma separated)'
-});
-parser.addArgument(['-s', '--sources'], {
-  help:
-    'Use specific sources Ids (comma seperated). Use "-s mysource@1.2.3" for a specific version of a source.'
-});
-
-const args = parser.parseArgs();
-
-const argMt =
-  (args.metaTemplateFormat &&
-    args.metaTemplateFormat.split(',').filter(val => !!val)) ||
-  undefined;
-
-main(
-  args.filter && args.filter.split(','),
-  argMt && argMt.length > 0 ? argMt : undefined,
-  args.sources && args.sources.split(',')
-);
+main();
