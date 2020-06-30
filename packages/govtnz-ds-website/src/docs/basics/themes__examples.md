@@ -1,15 +1,3 @@
-# Themes
-
-Themes are used to customise your website’s colour and typography to align with your organisation’s branding. The example shows how you’ll be able to apply themes after the Design System comes out of Alpha.
-
-## Example themes
-
-Select one of the following 3 theme options to see how Design System components adapt to different colour schemes. Anything you type in the text fields will remain when you switch between themes. No information is sent if you select the ‘Submit’ button.
-
-### Select a theme
-
-Select one of the following themes to automatically apply it to the example.
-
 <ExampleContainer>
     <Example title="Example: Header containing a MainNav" noPadding>
         <Header>
@@ -133,9 +121,3 @@ Select one of the following themes to automatically apply it to the example.
     </Example>
 
 </ExampleContainer>
-
-## Customising a theme
-
-You can customise the Design System theme to follow your brand guidelines by altering the values in the [Sass variables file](https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds/build/scss/_settings.scss).
-
-We encourage you to make the look, feel, and usability of elements as consistent as possible with the Design System. And when you customise, make sure your visual elements continue to meet the NZ [Government Web Accessibility Standard](https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/).

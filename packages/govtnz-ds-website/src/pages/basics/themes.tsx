@@ -9,7 +9,10 @@ import Column from '@govtnz/ds/build/react-ts/FlexColumn';
 import H1 from '@govtnz/ds/build/react-ts/H1';
 import H2 from '@govtnz/ds/build/react-ts/H2';
 import H3 from '@govtnz/ds/build/react-ts/H3';
+<<<<<<< HEAD
 import P from '@govtnz/ds/build/react-ts/P';
+=======
+>>>>>>>  move content
 import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';
 import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';
 import '@govtnz/ds/build/css/RadioBlock.css';
@@ -113,35 +116,30 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             <H1 styleSize="xlarge" id="main-heading">
               Themes
             </H1>
-
-            <P styleSize="large">
+            <p className="g-body-l">
               Themes are used to customise your website’s colour and typography
               to align with your organisation’s branding. The example shows how
               you’ll be able to apply themes after the Design System comes out
               of Alpha.
-            </P>
-
-            <H2 styleSize="large">Example themes</H2>
+            </p>{' '}
+            <H2 styleSize="large">Example themes</H2>{' '}
             <p>
-              Select one of the following 3 theme options to see how Design
-              System components adapt to different colour schemes. Anything you
-              type in the text fields will remain when you switch between
-              themes. No information is sent if you select the ‘Submit’ button.
-            </p>
-
+              themes Select one of the following 3 theme options to see how
+              Design System components adapt to different colour schemes.
+              Anything you type in the text fields will remain when you switch
+              between themes. No information is sent if you select the ‘Submit’
+              button.
+            </p>{' '}
             <div className="g-ds-font">
               <FieldsetBlock
                 legend={
-                  <H3 styleSize="medium" id="whereLiveTitle">
-                    Choose a theme
-                  </H3>
-                }
-                hintId="selectAThemeHintId"
-                hint={
-                  <p>
-                    Select one of the following themes to automatically apply it
-                    to the example.
-                  </p>
+                  <>
+                    <H2 styleSize="large">Select a theme</H2>
+                    <p>
+                      Select one of the following themes to automatically apply
+                      it to the example.
+                    </p>
+                  </>
                 }
               >
                 <RadioBlock
@@ -170,7 +168,6 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                 />
               </FieldsetBlock>
             </div>
-
             <div className="example__container ">
               <ExampleHeading>{humanReadableTheme}</ExampleHeading>
               <div className="example">
@@ -196,65 +193,19 @@ const ThemesPage = (pageProps: PageRendererProps) => {
                 </div>
               </div>
             </div>
-
             <H2 styleSize="large">Customising a theme</H2>
-            <p>
-              You can customise the Design System theme to follow your brand
-              guidelines by altering the values in the{' '}
-              <a
-                href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds/build/scss/_settings.scss"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Sass variables
-              </a>{' '}
-              file.
-            </p>
-            <p>
-              We encourage you to make the look, feel, and usability of elements
-              as consistent as possible with the Design System. And when you
-              customise, make sure your visual elements continue to meet the{' '}
-              <a
-                href="https://www.digital.govt.nz/web-accessibility-standard"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                NZ Government Web Accessibility Standard
-              </a>
-              .
-            </p>
-            <H3 styleSize="medium">Colour</H3>
-            <p>
-              The colour palette provides a colour structure for your website.
-              You’ll be able to adapt this to your digital brand’s colour
-              requirements.
-            </p>
-            <p>
-              <Link to="/basics/colours/">
-                Read about the Design System colour structure
-              </Link>
-            </p>
-            <H3 styleSize="medium">Typography</H3>
-            <p>
-              We’re investigating how to include font choice in the Design
-              System to meet New Zealand language requirements. However, you may
-              choose to use your own fonts on your website to align with your
-              brand. If so, you’ll still need to make sure you meet the{' '}
-              <a
-                href="https://www.digital.govt.nz/web-accessibility-standard"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                NZ Government Web Accessibility Standard
-              </a>
-              .
-            </p>
-            <p>
-              <Link to="/basics/typography/">
-                Read about the typography of the Design System
-              </Link>
-            </p>
-
+            You can customise the Design System theme to follow your brand
+            guidelines by altering the values in the{' '}
+            <a href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds/build/scss/_settings.scss">
+              Sass variables file
+            </a>
+            . We encourage you to make the look, feel, and usability of elements
+            as consistent as possible with the Design System. And when you
+            customise, make sure your visual elements continue to meet the NZ{' '}
+            <a href="https://www.digital.govt.nz/standards-and-guidance/nz-government-web-standards/web-accessibility-standard-1-1/">
+              Government Web Accessibility Standard
+            </a>
+            .
             <GetInTouch title="Themes" />
           </Column>
         </Row>
