@@ -23,7 +23,8 @@
   -webkit-appearance: none;
   background-color: #ffffff;
   background-color: var(--g-theme-form-background-color, #ffffff);
-  color: g-theme-form-color;
+  color: #000000;
+  color: var(--g-theme-form-color, #000000);
 }
 
 .g-textarea:-webkit-autofill,

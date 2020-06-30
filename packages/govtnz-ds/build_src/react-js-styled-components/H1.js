@@ -110,7 +110,7 @@ ${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-m-font-weight;
     font-size: 1.5rem;
     line-height: 1.25;
     display: block;

@@ -21,6 +21,7 @@ const defaultThemeMap = {
   'g-theme-inverted-background-color': '#363636',
   'g-theme-inverted-variant-background-color': '#2a2a2a',
   'g-theme-form-background-color': '#ffffff',
+  'g-theme-form-color': '#000000',
   'g-theme-select-background-color': '#ffffff',
   'g-theme-form-border-color': '#2a2a2a',
   'g-theme-legend-color': '#0b0c0c',

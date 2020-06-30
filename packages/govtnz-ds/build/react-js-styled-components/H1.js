@@ -244,7 +244,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-font-weight;\n    font-size: 1.5rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-m-font-weight;\n    font-size: 1.5rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
 
   _templateObject12 = function _templateObject12() {
     return data;

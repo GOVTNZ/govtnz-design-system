@@ -66,7 +66,8 @@
     --g-theme-select-background-color,
     $g-theme-select-background-color
   );
-  color: g-theme-form-color;
+  color: $g-theme-form-color;
+  color: var(--g-theme-form-color, $g-theme-form-color);
 }
 
 .g-selectBlock-select:-webkit-autofill,

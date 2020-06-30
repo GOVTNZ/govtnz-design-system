@@ -122,7 +122,7 @@ class ContactusForm extends React.Component {
 
   render() {
     const { email, username, textarea, radio, isFieldsValid } = this.state;
-    const successMessage = isFieldsValid ? 'block' : 'none';
+    const showSuccessMessage = isFieldsValid;
 
     const isInvalidEmail = email.typeMismatch
       ? 'Check your email address'
@@ -150,139 +150,137 @@ class ContactusForm extends React.Component {
     return (
       <React.Fragment>
         <form
-          style={{ padding: '20px' }}
+          style={{ padding: '40px 20px 20px 20px' }}
           onSubmit={this.handleSubmit}
           noValidate
         >
           <H2 styleSize="large">Contact us</H2>
 
-          {username.valid && email.valid && radio.valid && textarea.valid ? (
-            ''
-          ) : (
-            <Alert level="error" headingId="heading3">
-              <H3 id="heading3" styleSize="medium">
-                Error: There’s a problem with the following responses
-              </H3>
-              {errorMessages.map(
-                (error): React.ReactElement => (
-                  <>
-                    {error.message ? (
-                      <Ul spacing key={error.message}>
-                        <Li>
-                          <A
-                            href={error.id}
-                            onClick={() => this.scrollToElement(error.id)}
-                          >
-                            {error.message}
-                          </A>
-                        </Li>
-                      </Ul>
-                    ) : (
-                      ''
-                    )}
-                  </>
-                )
-              )}
-            </Alert>
-          )}
-
-          <div style={{ display: successMessage }}>
-            <Alert level="success" headingId="heading3">
-              <H3 id="heading3" styleSize="medium">
-                Success: Your message has been sent
-              </H3>
-              <P>
-                Thanks for contacting us. We’ll get back to you in 1–3 working
-                days.
-              </P>
-            </Alert>
-          </div>
-
-          <div style={{ marginTop: '40px' }}>
-            <InputBlock
-              autoComplete="name"
-              id="scroll-field-name"
-              width="30"
-              maxLength={30}
-              type="text"
-              label="What’s your name?"
-              name="username"
-              errorId={username.valid ? '' : 'anyErrorId2Error'}
-              error={username.valid ? '' : 'Enter your name'}
-              required
-            />
-          </div>
-
-          <div style={{ marginTop: '40px' }}>
-            <InputBlock
-              autoComplete="email"
-              id="scroll-field-email"
-              width="30"
-              maxLength={30}
-              hintId="anyHintId3"
-              label="What’s your email address?"
-              errorId={email.valid ? '' : 'anyErrorId2Error'}
-              error={email.valid ? '' : isInvalidEmail}
-              type="email"
-              name="email"
-              required
-            />
-          </div>
-
-          <div>
-            <FieldsetBlock
-              legend={
-                <H3 styleSize="small" id="nameChangeId5">
-                  Where do you live?
+          <Alert level="error" headingId="heading3">
+            {!username.valid ||
+            !email.valid ||
+            !radio.valid ||
+            !textarea.valid ? (
+              <React.Fragment>
+                <H3 id="heading3" styleSize="medium">
+                  Error: There’s a problem with the following responses
                 </H3>
-              }
-              errorId={radio.valid ? '' : 'errorId5'}
-              error={radio.valid ? '' : 'Select where you live'}
-            >
-              <Radios>
-                <RadioBlock
-                  id="scroll-field-radio"
-                  label="North Island"
-                  name="radio"
-                  value="North Island"
-                  required
-                ></RadioBlock>
-                <RadioBlock
-                  id="south-island-radio"
-                  label="South Island"
-                  name="radio"
-                  value="South Island"
-                  required
-                ></RadioBlock>
-                <RadioBlock
-                  id="stewart-island-radio"
-                  label="Stewart Island"
-                  name="radio"
-                  value="Stewart Island"
-                  required
-                ></RadioBlock>
-                <RadioBlock
-                  id="chatham-islands-radio"
-                  label="Chatham Islands"
-                  name="radio"
-                  value="Chatham Islands"
-                  required
-                ></RadioBlock>
-              </Radios>
-            </FieldsetBlock>
-          </div>
+                {errorMessages.map(
+                  (error): React.ReactElement => (
+                    <>
+                      {error.message ? (
+                        <Ul spacing key={error.message}>
+                          <Li>
+                            <A
+                              href={error.id}
+                              onClick={() => this.scrollToElement(error.id)}
+                            >
+                              {error.message}
+                            </A>
+                          </Li>
+                        </Ul>
+                      ) : (
+                        ''
+                      )}
+                    </>
+                  )
+                )}
+              </React.Fragment>
+            ) : undefined}
+          </Alert>
 
-          <div style={{ marginTop: '40px' }}>
-            <TextareaBlock
-              id="scroll-field-text-area"
-              autoComplete="off"
-              name="textarea"
-              label="What’s your message?"
-              errorId={textarea.valid ? '' : 'anyErrorId2Error'}
-              error={textarea.valid ? '' : 'Enter your message'}
-              required
-            />
-          </div>
+          <Alert level="success" headingId="heading4">
+            {showSuccessMessage ? (
+              <React.Fragment>
+                <H3 id="heading4" styleSize="medium">
+                  Success: Your message has been sent
+                </H3>
+                <P>
+                  Thanks for contacting us. We’ll get back to you in 1–3 working
+                  days.
+                </P>
+              </React.Fragment>
+            ) : undefined}
+          </Alert>
+
+          <InputBlock
+            autoComplete="name"
+            id="scroll-field-name"
+            width="30"
+            maxLength={30}
+            type="text"
+            label="What’s your name?"
+            name="username"
+            errorId={username.valid ? '' : 'anyErrorId2Error'}
+            error={username.valid ? '' : 'Enter your name'}
+            required
+          />
+
+          <InputBlock
+            autoComplete="email"
+            id="scroll-field-email"
+            width="30"
+            maxLength={30}
+            hintId="anyHintId3"
+            label="What’s your email address?"
+            errorId={email.valid ? '' : 'anyErrorId2Error'}
+            error={email.valid ? '' : isInvalidEmail}
+            type="email"
+            name="email"
+            required
+          />
+
+          <FieldsetBlock
+            legend={
+              <H3 styleSize="small" id="nameChangeId5">
+                Where do you live?
+              </H3>
+            }
+            errorId={radio.valid ? undefined : 'errorId5'}
+            error={radio.valid ? undefined : 'Select where you live'}
+          >
+            <Radios>
+              <RadioBlock
+                id="scroll-field-radio"
+                label="North Island"
+                name="radio"
+                value="North Island"
+                required
+              ></RadioBlock>
+              <RadioBlock
+                id="south-island-radio"
+                label="South Island"
+                name="radio"
+                value="South Island"
+                required
+              ></RadioBlock>
+              <RadioBlock
+                id="stewart-island-radio"
+                label="Stewart Island"
+                name="radio"
+                value="Stewart Island"
+                required
+              ></RadioBlock>
+              <RadioBlock
+                id="chatham-islands-radio"
+                label="Chatham Islands"
+                name="radio"
+                value="Chatham Islands"
+                required
+              ></RadioBlock>
+            </Radios>
+          </FieldsetBlock>
+
+          <TextareaBlock
+            id="scroll-field-text-area"
+            autoComplete="off"
+            name="textarea"
+            label="What’s your message?"
+            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
+            error={textarea.valid ? '' : 'Enter your message'}
+            required
+          />
+
           <button
             style={{ marginTop: '20px' }}
             className="g-button"

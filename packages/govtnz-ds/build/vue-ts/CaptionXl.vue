@@ -1,5 +1,5 @@
 <template>
-  <span class="g-caption-xl">
+  <span class="g-caption g-caption-xl">
     <slot></slot>
   </span>
 </template>

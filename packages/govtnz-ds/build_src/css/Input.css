@@ -19,6 +19,8 @@
   appearance: none;
   background-color: #ffffff;
   background-color: var(--g-theme-form-background-color, #ffffff);
+  color: #000000;
+  color: var(--g-theme-form-color, #000000);
 }
 
 .g-input:-webkit-autofill,
@@ -30,8 +32,8 @@
   -webkit-text-fill-color: var(--g-theme-color, #2a2a2a) !important;
   background-color: #ffffff;
   background-color: var(--g-theme-form-background-color, #ffffff);
-  color: #2a2a2a;
-  color: var(--g-theme-color, #2a2a2a);
+  color: #000000;
+  color: var(--g-theme-form-color, #000000);
   border: 1px solid #2a2a2a;
   border: 1px solid var(--g-theme-form-border-color, #2a2a2a);
   box-shadow: 0 0 0px 1000px #ffffff inset;

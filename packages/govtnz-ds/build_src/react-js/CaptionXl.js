@@ -1,7 +1,7 @@
 import React from "react";
 
 const CaptionXl = ({ children }) => (
-  <span className="g-caption-xl">
+  <span className="g-caption g-caption-xl">
     {children !== undefined ? (
       children
     ) : (

@@ -66,6 +66,7 @@ export default Vue.extend({
   margin-top: 4rem;
   margin-bottom: 1rem;
 }
+.g-caption + .g-heading-xl,
 .g-heading-xl:first-child {
   margin-top: 0rem;
 }
@@ -107,6 +108,7 @@ export default Vue.extend({
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
 }
+.g-caption + .g-heading-l,
 .g-heading-l:first-child {
   margin-top: 0rem;
 }
@@ -141,13 +143,14 @@ export default Vue.extend({
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-m-font-weight;
   font-size: 1.5rem;
   line-height: 1.25;
   display: block;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
+.g-caption + .g-heading-m,
 .g-heading-m:first-child {
   margin-top: 0rem;
 }
@@ -189,6 +192,7 @@ export default Vue.extend({
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
+.g-caption + .g-heading-s,
 .g-heading-s:first-child {
   margin-top: 0rem;
 }
@@ -201,10 +205,16 @@ export default Vue.extend({
     font-family: sans-serif;
   }
 }
+.g-fieldsetBlock-fieldset__legend .g-heading-s {
+  font-size: 1.25rem;
+}
 @media (min-width: 40.0625em) {
   .g-heading-s {
     font-size: 1.1875rem;
     line-height: 1.31579;
+  }
+  .g-fieldsetBlock-fieldset__legend .g-heading-s {
+    font-size: 1.25rem;
   }
 }
 @media print {
@@ -230,6 +240,7 @@ export default Vue.extend({
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
+.g-caption + .g-heading-xs,
 .g-heading-xs:first-child {
   margin-top: 0rem;
 }
@@ -271,6 +282,7 @@ export default Vue.extend({
   margin-top: 2.5rem;
   margin-bottom: 15px;
 }
+.g-caption + .g-heading-xxs,
 .g-heading-xxs:first-child {
   margin-top: 0rem;
 }

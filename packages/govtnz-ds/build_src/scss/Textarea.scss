@@ -26,7 +26,8 @@
     --g-theme-form-background-color,
     $g-theme-form-background-color
   );
-  color: g-theme-form-color;
+  color: $g-theme-form-color;
+  color: var(--g-theme-form-color, $g-theme-form-color);
 }
 
 .g-textarea:-webkit-autofill,

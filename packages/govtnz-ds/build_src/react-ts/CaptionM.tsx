@@ -5,7 +5,7 @@ type Props = {
 };
 
 const CaptionM = ({ children }: Props) => (
-  <span className="g-caption-m">
+  <span className="g-caption g-caption-m">
     {children !== undefined ? (
       children
     ) : (

@@ -155,11 +155,11 @@ border-radius: 0;
 -moz-appearance: none;
 appearance: none;
 background-color: g-theme-form-background-color;
-color: g-theme-color;
+color: g-theme-form-color;
 :-webkit-autofill,:-webkit-autofill:hover,:-webkit-autofill:focus,:valid,:invalid{
 background-color: g-theme-form-background-color;
 -webkit-text-fill-color: g-theme-color !important;
-color: g-theme-color;
+color: g-theme-form-color;
 border: 1px solid g-theme-form-border-color;
 box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
 -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;

@@ -383,6 +383,21 @@ const saveRelease = async (
         };
       }
 
+      const unconvertedVariable = ' g-theme-';
+      if (
+        (releaseFilePath.endsWith('.css') ||
+          releaseFilePath.endsWith('.scss')) &&
+        files[releaseFilePath].includes(unconvertedVariable)
+      ) {
+        const uVIndex = files[releaseFilePath].indexOf(unconvertedVariable);
+
+        throw Error(
+          `${releaseFilePath} included unconverted variable starting with g-theme-... . File data was: ${files[
+            releaseFilePath
+          ].substring(uVIndex - 10, uVIndex + 100)}`
+        );
+      }
+
       await fs.promises.writeFile(filePath, files[releaseFilePath], options);
     })
   );

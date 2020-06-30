@@ -12,7 +12,7 @@ var _react = _interopRequireDefault(require("react"));
 var CaptionM = function CaptionM(_ref) {
   var children = _ref.children;
   return /*#__PURE__*/_react["default"].createElement("span", {
-    className: "g-caption-m"
+    className: "g-caption g-caption-m"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"));
 };
 

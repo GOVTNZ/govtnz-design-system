@@ -1,7 +1,7 @@
 {
   "Alert": {
     "id": "Alert",
-    "html": "<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"30\"\n            viewBox=\"0 0 32 30\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n        <svg\n          width=\"32\"\n          height=\"30\"\n          viewBox=\"0 0 32 30\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <div\n        class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n      >\n        <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n        <svg\n          width=\"32\"\n          height=\"32\"\n          viewBox=\"0 0 32 32\"\n          class=\"g-alert__icon\"\n          aria-hidden=\"true\"\n          focusable=\"false\"\n        >\n          <path\n            d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n          />\n        </svg>\n      </div>\n    </div>\n  </mt-if>\n</mt-if>\n",
+    "html": "<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"30\"\n            viewBox=\"0 0 32 30\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" aria-live=\"polite\" aria-atomic=\"true\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=info\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zM16 14c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2s2-.895 2-2v-8c0-1.105-.895-2-2-2zm-.003-8c-1.042.002-2 .727-1.997 2.015.002 1.265.962 1.987 2.003 1.985 1.042-.002 2-.727 1.997-1.992-.002-1.288-.962-2.01-2.003-2.008z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=warning\">\n    <div role=\"note\" aria-labelledby=\"headingId\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n          <svg\n            width=\"32\"\n            height=\"30\"\n            viewBox=\"0 0 32 30\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M16.035 0c.746 0 1.424.387 1.778.995l13.95 26.233c.333.58.314 1.289-.05 1.851-.364.57-1.013.921-1.72.921H2.016c-.707 0-1.366-.349-1.73-.92-.362-.563-.383-1.273-.048-1.852L14.267.995C14.611.387 15.287 0 16.035 0zm-.006 22.938c-1.02 0-1.848.8-1.816 1.752 0 .92.86 1.691 1.847 1.691 1.019 0 1.847-.772 1.847-1.721-.031-.95-.86-1.722-1.878-1.722zm.477-14.015c-.892-.208-1.783.207-2.165.98-.127.266-.16.563-.128.8.063.86.095 1.722.159 2.583.096 1.366.159 2.701.255 4.037.03.415.03.831.063 1.247.033.742.606 1.276 1.37 1.276.732 0 1.337-.534 1.37-1.217.095-2.048.223-4.126.35-6.204l.096-1.662c.063-.86-.51-1.633-1.37-1.84z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=success\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M4.686 4.686c6.248-6.248 16.38-6.248 22.628 0 6.248 6.248 6.248 16.38 0 22.628-6.248 6.248-16.38 6.248-22.628 0-6.248-6.248-6.248-16.38 0-22.628zm15.047 7.004c-.96.878-5.696 5.559-5.996 5.735-.78-.703-2.039-1.99-2.878-2.809-.84-.76-1.379-.117-2.398.936-1.14 1.112 0 1.697 1.619 3.277l2.938 2.867c1.08.936 1.979-.468 3.417-1.814l5.877-5.792c1.858-1.756 2.278-1.756.779-3.16-1.32-1.346-1.26-1.346-3.358.76z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n\n<mt-if key=\"mode?!=live\">\n  <mt-if key=\"level=error\">\n    <div role=\"note\" tabindex=\"-1\" aria-labelledby=\"headingId\">\n      <mt-if key=\"children\">\n        <div\n          class=\"g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}\"\n        >\n          <mt-variable key=\"children\"> Example alert content </mt-variable>\n          <svg\n            width=\"32\"\n            height=\"32\"\n            viewBox=\"0 0 32 32\"\n            class=\"g-alert__icon\"\n            aria-hidden=\"true\"\n            focusable=\"false\"\n          >\n            <path\n              d=\"M27.314 27.314c6.248-6.248 6.248-16.38 0-22.628-6.248-6.248-16.38-6.248-22.628 0-6.248 6.248-6.248 16.38 0 22.628 6.248 6.248 16.38 6.248 22.628 0zM14.21 7.175c.405-.878 1.35-1.35 2.297-1.114.911.236 1.52 1.114 1.452 2.093l-.102 1.892c-.134 2.364-.27 4.728-.372 7.058-.034.777-.675 1.385-1.452 1.385-.81 0-1.418-.608-1.453-1.452-.034-.473-.034-.946-.067-1.419-.101-1.52-.169-3.04-.27-4.593-.068-.98-.102-1.96-.17-2.938-.032-.27.002-.609.137-.912zM16 21.873c1.08 0 1.959.879 1.992 1.96 0 1.08-.879 1.959-1.96 1.959-1.047 0-1.958-.88-1.958-1.925-.033-1.082.845-1.994 1.926-1.994z\"\n            />\n          </svg>\n        </div>\n      </mt-if>\n    </div>\n  </mt-if>\n</mt-if>\n",
     "css": ".g-alert {\n  position: relative;\n\n  background: g-theme-alert-background-color;\n  color: g-theme-color;\n\n  margin-bottom: 1em;\n  padding: 24px 32px 24px 96px;\n\n  border-radius: 4px;\n  border: solid 1px g-theme-alert-border-color;\n}\n\n.g-alert::before {\n  content: '';\n  display: block;\n  width: 64px;\n  position: absolute;\n  top: 0px;\n  bottom: 0px;\n  left: 0px;\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n\n.g-alert--info::before {\n  background-color: g-theme-alert-info-border-color;\n}\n\n.g-alert--warning::before {\n  background-color: g-theme-alert-warning-border-color;\n}\n\n.g-alert--success::before {\n  background-color: g-theme-alert-success-border-color;\n}\n\n.g-alert--error::before {\n  background-color: g-theme-error-border-color;\n}\n\n.g-alert__icon {\n  position: absolute;\n  left: 16px;\n  top: 24px;\n  fill: g-theme-alert-icon-color;\n}\n\n.g-alert *:first-child {\n  margin-top: 0px;\n}\n\n.g-alert *:last-child {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
@@ -103,6 +103,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -377,6 +382,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -647,6 +657,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -921,6 +936,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -1191,6 +1211,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -1465,6 +1490,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -1735,6 +1765,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -2009,6 +2044,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -2279,6 +2319,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -2553,6 +2598,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -2823,6 +2873,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -3097,6 +3152,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -3367,6 +3427,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -3641,6 +3706,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -3913,6 +3983,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -4081,7 +4156,7 @@
   },
   "CaptionL": {
     "id": "CaptionL",
-    "html": "<span class=\"g-caption-l\"\n  ><mt-variable key=\"children\">Example text</mt-variable></span\n>\n",
+    "html": "<span class=\"g-caption g-caption-l\"\n  ><mt-variable key=\"children\">Example text</mt-variable>\n</span>\n",
     "css": ".g-caption-l {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1.125rem;\n  line-height: 1.11111;\n  display: block;\n  margin-bottom: 5px;\n  color: g-theme-caption-color;\n}\n\n@media print {\n  .g-caption-l {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-caption-l {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-caption-l {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-caption-l {\n    margin-bottom: 0;\n  }\n}\n\n.g-captionL-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
@@ -4183,6 +4258,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -4353,7 +4433,7 @@
   },
   "CaptionM": {
     "id": "CaptionM",
-    "html": "<span class=\"g-caption-m\"\n  ><mt-variable key=\"children\">Example text</mt-variable></span\n>\n",
+    "html": "<span class=\"g-caption g-caption-m\">\n  <mt-variable key=\"children\">Example text</mt-variable>\n</span>\n",
     "css": ".g-caption-m {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  color: g-theme-caption-color;\n}\n\n@media print {\n  .g-caption-m {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-caption-m {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-caption-m {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-captionM-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
@@ -4455,6 +4535,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -4625,7 +4710,7 @@
   },
   "CaptionXl": {
     "id": "CaptionXl",
-    "html": "<span class=\"g-caption-xl\"\n  ><mt-variable key=\"children\">Example text</mt-variable></span\n>\n",
+    "html": "<span class=\"g-caption g-caption-xl\">\n  <mt-variable key=\"children\">Example text</mt-variable>\n</span>\n",
     "css": ".g-caption-xl {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1.125rem;\n  line-height: 1.11111;\n  display: block;\n  margin-bottom: 5px;\n  color: g-theme-caption-color;\n}\n\n@media print {\n  .g-caption-xl {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-caption-xl {\n    font-size: 1.6875rem;\n    line-height: 1.11111;\n  }\n}\n\n@media print {\n  .g-caption-xl {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n.g-captionXl-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
@@ -4727,6 +4812,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -5001,6 +5091,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -5271,6 +5366,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -5545,6 +5645,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -5815,6 +5920,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -6089,6 +6199,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -6359,6 +6474,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -6633,6 +6753,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -6802,7 +6927,7 @@
   "H1": {
     "id": "H1",
     "html": "<h1\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h1>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -6903,6 +7028,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -7074,7 +7204,7 @@
   "H2": {
     "id": "H2",
     "html": "<h2\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h2>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7175,6 +7305,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -7346,7 +7481,7 @@
   "H3": {
     "id": "H3",
     "html": "<h3\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h3>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7447,6 +7582,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -7618,7 +7758,7 @@
   "H4": {
     "id": "H4",
     "html": "<h4\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h4>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7719,6 +7859,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -7890,7 +8035,7 @@
   "H5": {
     "id": "H5",
     "html": "<h5\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h5>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7991,6 +8136,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -8162,7 +8312,7 @@
   "H6": {
     "id": "H6",
     "html": "<h6\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h6>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -8263,6 +8413,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -8434,7 +8589,7 @@
   "Input": {
     "id": "Input",
     "html": "<input\n  class=\"g-input {{ width?: g-input--width-30 as 30 | g-input--width-20 as 20 | g-input--width-10 as 10 | g-input--width-5 as 5 | g-input--width-4 as 4 | g-input--width-3 as 3 | g-input--width-2 as 2 }} {{ error?: g-input--error }}\"\n  id=\"id\"\n  name=\"name\"\n  type=\"text\"\n  aria-describedby=\"describedBy\"\n/>\n",
-    "css": ".g-input {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid g-theme-form-border-color;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background-color: g-theme-form-background-color;\n}\n\n.g-input:-webkit-autofill,\n.g-input:-webkit-autofill:hover,\n.g-input:-webkit-autofill:focus,\n.g-input:valid,\n.g-input:invalid {\n  -webkit-text-fill-color: g-theme-color !important;\n  background-color: g-theme-form-background-color;\n  color: g-theme-color;\n  border: 1px solid g-theme-form-border-color;\n  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n}\n\n@media print {\n  .g-input {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-input {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-input {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-input:focus {\n  outline: 3px solid g-theme-focus-ring-color;\n  outline-offset: 0;\n}\n\n.g-input::-webkit-outer-spin-button,\n.g-input::-webkit-inner-spin-button {\n  margin: 0;\n  -webkit-appearance: none;\n}\n\n.g-input--error {\n  border: 1px solid g-theme-error-border-color;\n}\n\n.g-input--width-30 {\n  max-width: 59ex;\n}\n\n.g-input--width-20 {\n  max-width: 41ex;\n}\n\n.g-input--width-10 {\n  max-width: 23ex;\n}\n\n.g-input--width-5 {\n  max-width: 10.8ex;\n}\n\n.g-input--width-4 {\n  max-width: 9ex;\n}\n\n.g-input--width-3 {\n  max-width: 7.2ex;\n}\n\n.g-input--width-2 {\n  max-width: 5.4ex;\n}\n\n.g-input-hint > * {\n  margin-top: 0px;\n}\n",
+    "css": ".g-input {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid g-theme-form-border-color;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background-color: g-theme-form-background-color;\n  color: g-theme-form-color;\n}\n\n.g-input:-webkit-autofill,\n.g-input:-webkit-autofill:hover,\n.g-input:-webkit-autofill:focus,\n.g-input:valid,\n.g-input:invalid {\n  -webkit-text-fill-color: g-theme-color !important;\n  background-color: g-theme-form-background-color;\n  color: g-theme-form-color;\n  border: 1px solid g-theme-form-border-color;\n  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n}\n\n@media print {\n  .g-input {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-input {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-input {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-input:focus {\n  outline: 3px solid g-theme-focus-ring-color;\n  outline-offset: 0;\n}\n\n.g-input::-webkit-outer-spin-button,\n.g-input::-webkit-inner-spin-button {\n  margin: 0;\n  -webkit-appearance: none;\n}\n\n.g-input--error {\n  border: 1px solid g-theme-error-border-color;\n}\n\n.g-input--width-30 {\n  max-width: 59ex;\n}\n\n.g-input--width-20 {\n  max-width: 41ex;\n}\n\n.g-input--width-10 {\n  max-width: 23ex;\n}\n\n.g-input--width-5 {\n  max-width: 10.8ex;\n}\n\n.g-input--width-4 {\n  max-width: 9ex;\n}\n\n.g-input--width-3 {\n  max-width: 7.2ex;\n}\n\n.g-input--width-2 {\n  max-width: 5.4ex;\n}\n\n.g-input-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -8535,6 +8690,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -8706,7 +8866,7 @@
   "InputBlock": {
     "id": "InputBlock",
     "html": "<div\n  class=\"g-inputBlock-form-group {{ errorId?: g-inputBlock-form-group--error }}\"\n>\n  <label class=\"g-inputBlock-label \" for=\"id\">\n    <mt-variable key=\"label\">Example text</mt-variable>\n  </label>\n  <mt-if key=\"hint\">\n    <div class=\"g-inputBlock-hint\" id=\"hintId\">\n      <mt-variable key=\"hint\">Example text</mt-variable>\n    </div>\n  </mt-if>\n  <mt-if key=\"errorId\">\n    <div class=\"g-inputBlock-error-message\" id=\"errorId\">\n      <span class=\"g-inputBlock-visually-hidden\">Error: </span>\n      <mt-variable key=\"error\">Example text</mt-variable>\n    </div>\n  </mt-if>\n  <input\n    class=\"g-inputBlock-input {{ width?: g-inputBlock-input--width-30 as 30 | g-inputBlock-input--width-20 as 20 | g-inputBlock-input--width-10 as 10 | g-inputBlock-input--width-5 as 5 | g-inputBlock-input--width-4 as 4 | g-inputBlock-input--width-3 as 3 | g-inputBlock-input--width-2 as 2 }} {{ error?: g-inputBlock-input--error }}\"\n    id=\"id\"\n    name=\"name\"\n    aria-describedby=\"hintId errorId\"\n  />\n</div>\n",
-    "css": ".g-inputBlock-form-group {\n  margin-bottom: 20px;\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-form-group {\n    margin-bottom: 30px;\n  }\n}\n\n.g-inputBlock-form-group .g-inputBlock-form-group:last-of-type {\n  margin-bottom: 0;\n}\n\n.g-inputBlock-form-group--error {\n  padding-left: 15px;\n  border-left: 5px solid g-theme-error-border-color;\n}\n\n.g-inputBlock-form-group--error .g-inputBlock-form-group {\n  padding: 0;\n  border: 0;\n}\n\n.g-inputBlock-error-message {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: g-theme-error-color;\n}\n\n@media print {\n  .g-inputBlock-error-message {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-error-message {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-error-message {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-inputBlock-hint {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: g-theme-hint-color;\n}\n\n@media print {\n  .g-inputBlock-hint {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-hint {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-hint {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-fieldset__legend + .g-inputBlock-hint {\n  margin-top: -5px;\n}\n\n.g-inputBlock-label {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: g-theme-color;\n  display: block;\n  margin-bottom: 5px;\n}\n\n@media print {\n  .g-inputBlock-label {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-label {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-label {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-inputBlock-label {\n    color: g-theme-print-color;\n  }\n}\n\n.g-inputBlock-input {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid g-theme-form-border-color;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background-color: g-theme-form-background-color;\n  color: g-theme-color;\n}\n\n.g-inputBlock-input:-webkit-autofill,\n.g-inputBlock-input:-webkit-autofill:hover,\n.g-inputBlock-input:-webkit-autofill:focus,\n.g-inputBlock-input:valid,\n.g-inputBlock-input:invalid {\n  background-color: g-theme-form-background-color;\n  -webkit-text-fill-color: g-theme-color !important;\n  color: g-theme-color;\n  border: 1px solid g-theme-form-border-color;\n  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n}\n\n@media print {\n  .g-inputBlock-input {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-input {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-input {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-inputBlock-input:focus {\n  outline: 3px solid g-theme-focus-ring-color;\n  outline-offset: 0;\n}\n\n.g-inputBlock-input::-webkit-outer-spin-button,\n.g-inputBlock-input::-webkit-inner-spin-button {\n  margin: 0;\n  -webkit-appearance: none;\n}\n\n.g-inputBlock-input--error {\n  border: 1px solid g-theme-error-border-color;\n}\n\n.g-inputBlock-input--width-30 {\n  max-width: 59ex;\n}\n\n.g-inputBlock-input--width-20 {\n  max-width: 41ex;\n}\n\n.g-inputBlock-input--width-10 {\n  max-width: 23ex;\n}\n\n.g-inputBlock-input--width-5 {\n  max-width: 10.8ex;\n}\n\n.g-inputBlock-input--width-4 {\n  max-width: 9ex;\n}\n\n.g-inputBlock-input--width-3 {\n  max-width: 7.2ex;\n}\n\n.g-inputBlock-input--width-2 {\n  max-width: 5.4ex;\n}\n\n.g-inputBlock-visually-hidden {\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n}\n\n.g-inputBlock-hint > * {\n  margin-top: 0px;\n}\n",
+    "css": ".g-inputBlock-form-group {\n  margin-bottom: 20px;\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-form-group {\n    margin-bottom: 30px;\n  }\n}\n\n.g-inputBlock-form-group .g-inputBlock-form-group:last-of-type {\n  margin-bottom: 0;\n}\n\n.g-inputBlock-form-group--error {\n  padding-left: 15px;\n  border-left: 5px solid g-theme-error-border-color;\n}\n\n.g-inputBlock-form-group--error .g-inputBlock-form-group {\n  padding: 0;\n  border: 0;\n}\n\n.g-inputBlock-error-message {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 700;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  clear: both;\n  color: g-theme-error-color;\n}\n\n@media print {\n  .g-inputBlock-error-message {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-error-message {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-error-message {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-inputBlock-hint {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-bottom: 15px;\n  color: g-theme-hint-color;\n}\n\n@media print {\n  .g-inputBlock-hint {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-hint {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-hint {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-fieldset__legend + .g-inputBlock-hint {\n  margin-top: -5px;\n}\n\n.g-inputBlock-label {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  color: g-theme-color;\n  display: block;\n  margin-bottom: 5px;\n}\n\n@media print {\n  .g-inputBlock-label {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-label {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-label {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-inputBlock-label {\n    color: g-theme-print-color;\n  }\n}\n\n.g-inputBlock-input {\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: 400;\n  font-size: 1rem;\n  line-height: 1.25;\n  box-sizing: border-box;\n  width: 100%;\n  height: 40px;\n  margin-top: 0;\n  padding: 0.5rem;\n  border: 1px solid g-theme-form-border-color;\n  border-radius: 0;\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none;\n  background-color: g-theme-form-background-color;\n  color: g-theme-form-color;\n}\n\n.g-inputBlock-input:-webkit-autofill,\n.g-inputBlock-input:-webkit-autofill:hover,\n.g-inputBlock-input:-webkit-autofill:focus,\n.g-inputBlock-input:valid,\n.g-inputBlock-input:invalid {\n  background-color: g-theme-form-background-color;\n  -webkit-text-fill-color: g-theme-color !important;\n  color: g-theme-form-color;\n  border: 1px solid g-theme-form-border-color;\n  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;\n}\n\n@media print {\n  .g-inputBlock-input {\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-inputBlock-input {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-inputBlock-input {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n.g-inputBlock-input:focus {\n  outline: 3px solid g-theme-focus-ring-color;\n  outline-offset: 0;\n}\n\n.g-inputBlock-input::-webkit-outer-spin-button,\n.g-inputBlock-input::-webkit-inner-spin-button {\n  margin: 0;\n  -webkit-appearance: none;\n}\n\n.g-inputBlock-input--error {\n  border: 1px solid g-theme-error-border-color;\n}\n\n.g-inputBlock-input--width-30 {\n  max-width: 59ex;\n}\n\n.g-inputBlock-input--width-20 {\n  max-width: 41ex;\n}\n\n.g-inputBlock-input--width-10 {\n  max-width: 23ex;\n}\n\n.g-inputBlock-input--width-5 {\n  max-width: 10.8ex;\n}\n\n.g-inputBlock-input--width-4 {\n  max-width: 9ex;\n}\n\n.g-inputBlock-input--width-3 {\n  max-width: 7.2ex;\n}\n\n.g-inputBlock-input--width-2 {\n  max-width: 5.4ex;\n}\n\n.g-inputBlock-visually-hidden {\n  position: absolute !important;\n  width: 1px !important;\n  height: 1px !important;\n  margin: 0 !important;\n  padding: 0 !important;\n  overflow: hidden !important;\n  clip: rect(0 0 0 0) !important;\n  -webkit-clip-path: inset(50%) !important;\n  clip-path: inset(50%) !important;\n  border: 0 !important;\n  white-space: nowrap !important;\n}\n\n.g-inputBlock-hint > * {\n  margin-top: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -8807,6 +8967,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -9081,6 +9246,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -9351,6 +9521,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -9625,6 +9800,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -9895,6 +10075,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -10169,6 +10354,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -10439,6 +10629,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -10713,6 +10908,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -10983,6 +11183,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -11257,6 +11462,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -11527,6 +11737,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -11801,6 +12016,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -12071,6 +12291,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
@@ -12345,6 +12570,11 @@
         "defaultValue": "#ffffff"
       },
       {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
+      },
+      {
         "id": "g-theme-select-background-color",
         "valueSubstringMatch": "g-theme-select-background-color",
         "defaultValue": "#ffffff"
@@ -12615,6 +12845,11 @@
         "id": "g-theme-form-background-color",
         "valueSubstringMatch": "g-theme-form-background-color",
         "defaultValue": "#ffffff"
+      },
+      {
+        "id": "g-theme-form-color",
+        "valueSubstringMatch": "g-theme-form-color",
+        "defaultValue": "#000000"
       },
       {
         "id": "g-theme-select-background-color",
