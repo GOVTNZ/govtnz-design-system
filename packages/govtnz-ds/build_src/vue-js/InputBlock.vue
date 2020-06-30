@@ -140,18 +140,14 @@ export default Vue.extend({
 @media print {
   .g-inputBlock-error-message {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .g-inputBlock-error-message {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-inputBlock-error-message {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 .g-inputBlock-hint {
@@ -168,18 +164,14 @@ export default Vue.extend({
 @media print {
   .g-inputBlock-hint {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .g-inputBlock-hint {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-inputBlock-hint {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 .g-fieldset__legend + .g-inputBlock-hint {
@@ -194,28 +186,20 @@ export default Vue.extend({
   line-height: 1.25;
   color: g-theme-color;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 @media print {
   .g-inputBlock-label {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: g-theme-print-color;
   }
 }
 @media (min-width: 40.0625em) {
   .g-inputBlock-label {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-inputBlock-label {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-@media print {
-  .g-inputBlock-label {
-    color: g-theme-print-color;
   }
 }
 .g-inputBlock-input {
@@ -253,18 +237,14 @@ export default Vue.extend({
 @media print {
   .g-inputBlock-input {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
 }
 @media (min-width: 40.0625em) {
   .g-inputBlock-input {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-}
-@media print {
-  .g-inputBlock-input {
-    font-size: 14pt;
-    line-height: 1.15;
   }
 }
 .g-inputBlock-input:focus {

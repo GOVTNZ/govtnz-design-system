@@ -53,20 +53,16 @@ const StyledLabel = styled.label`
   line-height: 1.25;
   color: g-theme-color;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: g-theme-print-color;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;
@@ -83,14 +79,12 @@ const StyledDiv2 = styled.div`
   color: g-theme-hint-color;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
   }
   margin-top: -5px;
   margin-top: 0px;
@@ -109,14 +103,12 @@ const StyledDiv3 = styled.div`
   color: g-theme-error-color;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
   }
   margin-top: 0px;
 `;
@@ -165,15 +157,13 @@ box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
 -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
 }
 @media print{
-font-family: sans-serif;;
+font-family: sans-serif;
+font-size: 14pt;
+line-height: 1.15;;
 }
 @media (min-width: 40.0625em){
 font-size: 1.1875rem;
 line-height: 1.31579;;
-}
-@media print{
-font-size: 14pt;
-line-height: 1.15;;
 }
 :focus{
 outline: 3px solid g-theme-focus-ring-color;
