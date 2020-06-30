@@ -47,6 +47,18 @@ export default Vue.extend({
   background-color: g-theme-select-background-color;
   color: g-theme-form-color;
 }
+.g-select:-webkit-autofill,
+.g-select:-webkit-autofill:hover,
+.g-select:-webkit-autofill:focus,
+.g-select:valid,
+.g-select:invalid {
+  background-color: g-theme-form-background-color;
+  -webkit-text-fill-color: g-theme-color !important;
+  color: g-theme-color;
+  border: 1px solid g-theme-form-border-color;
+  box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
+  -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
+}
 @media print {
   .g-select {
     font-family: sans-serif;

@@ -150,6 +150,30 @@
   color: var(--g-theme-color, $g-theme-color);
 }
 
+.g-textareaBlock-textarea:-webkit-autofill,
+.g-textareaBlock-textarea:-webkit-autofill:hover,
+.g-textareaBlock-textarea:-webkit-autofill:focus,
+.g-textareaBlock-textarea:valid,
+.g-textareaBlock-textarea:invalid {
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
+  -webkit-text-fill-color: $g-theme-color !important;
+  -webkit-text-fill-color: var(--g-theme-color, $g-theme-color) !important;
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
+  box-shadow: 0 0 0px 1000px $g-theme-form-background-color inset;
+  box-shadow: 0 0 0px 1000px
+    var(--g-theme-form-background-color, $g-theme-form-background-color) inset;
+  -webkit-box-shadow: 0 0 0px 1000px $g-theme-form-background-color inset;
+  -webkit-box-shadow: 0 0 0px 1000px
+    var(--g-theme-form-background-color, $g-theme-form-background-color) inset;
+}
+
 @media print {
   .g-textareaBlock-textarea {
     font-family: sans-serif;
