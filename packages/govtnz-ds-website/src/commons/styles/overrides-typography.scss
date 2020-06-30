@@ -3,6 +3,11 @@
 [class^='g-heading']:first-child,
 [class^='g-caption'] + [class^='g-heading'] {
   margin-top: 0 !important;
+  font-family: National2, Arial, sans-serif;
+}
+
+.g-body {
+  font-family: National2, Arial, sans-serif;
 }
 
 .g-caption-xl,
@@ -72,6 +77,7 @@
 // ============================================
 
 .g-link {
+  color: #005dbb;
   color: var(--color-theme-link, #005dbb) !important;
 
   @media print {
@@ -79,6 +85,7 @@
   }
 
   &:hover {
+    color: #000c48;
     color: var(--color-theme-link-hover, #000c48) !important;
   }
 }

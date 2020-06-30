@@ -85,6 +85,14 @@ export default Vue.extend({
   appearance: none;
   background-color: g-theme-form-background-color;
 }
+.g-input:-webkit-autofill,
+.g-input:valid,
+.g-input:invalid {
+  background-color: g-theme-form-background-color;
+  -webkit-text-fill-color: g-theme-form-background-color !important;
+  color: g-theme-color;
+  border: 1px solid g-theme-form-border-color;
+}
 @media print {
   .g-input {
     font-family: sans-serif;

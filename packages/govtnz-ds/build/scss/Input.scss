@@ -24,6 +24,25 @@
   );
 }
 
+.g-input:-webkit-autofill,
+.g-input:valid,
+.g-input:invalid {
+  background-color: $g-theme-form-background-color;
+  background-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  );
+  -webkit-text-fill-color: $g-theme-form-background-color !important;
+  -webkit-text-fill-color: var(
+    --g-theme-form-background-color,
+    $g-theme-form-background-color
+  ) !important;
+  color: $g-theme-color;
+  color: var(--g-theme-color, $g-theme-color);
+  border: 1px solid $g-theme-form-border-color;
+  border: 1px solid var(--g-theme-form-border-color, $g-theme-form-border-color);
+}
+
 @media print {
   .g-input {
     font-family: sans-serif;

@@ -238,9 +238,11 @@ export default Vue.extend({
   background-color: g-theme-form-background-color;
   color: g-theme-color;
 }
+.g-inputBlock-input:-webkit-autofill,
 .g-inputBlock-input:valid,
 .g-inputBlock-input:invalid {
   background-color: g-theme-form-background-color;
+  -webkit-text-fill-color: g-theme-form-background-color !important;
   color: g-theme-color;
   border: 1px solid g-theme-form-border-color;
 }
