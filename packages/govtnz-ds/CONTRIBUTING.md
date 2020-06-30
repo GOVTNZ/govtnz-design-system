@@ -57,7 +57,7 @@ Then clone the repo and follow these steps
 
 Adding new components isn't just a matter of adding HTML and CSS because our Design System provides template definitions in many formats such as React, Vue, SilverStripe, and so on.
 
-So contributing involves providing an abstract template definition to [MetaTemplate](https://www.npmjs.com/package/@springload/metatemplate).
+So contributing involves providing an abstract template definition to MetaTemplate (`/packages/metatemplate`).
 
 First see if there is an existing component available from the [GOV.UK Design System](https://design-system.service.gov.uk/). If so, then identify the HTML and CSS from that component in `packages/govtnz-ds-upstream/src/upstream/govuk/ANY_VERSION/` and note down the filenames. If the filenames were "h1.html" and "h1.css" then the `patternId` would be "h1", so add that to `build-spec.json` (within `packages/govtnz-ds/src/build-types`).
 
@@ -79,4 +79,4 @@ Then [raise a PR](https://help.github.com/en/articles/creating-a-pull-request) a
 
 If it's an HTML or CSS fix to a GOV.UK-derived component then you can contribute fixes to `normalize-govuk.ts` and [raise a PR](https://help.github.com/en/articles/creating-a-pull-request).
 
-If it's a framework-specific fix then please raise an issue on [MetaTemplate](https://github.com/springload/metatemplate/issues).
+If it's a framework-specific fix then please raise an issue on MetaTemplate (`/packages/metatemplate`).
