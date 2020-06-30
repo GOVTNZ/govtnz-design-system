@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Fieldset__example0.html",
         title:"Example: Fieldset",
-        height: 484
+        height: 529
       }}></Example>
 </ExampleContainer>
 

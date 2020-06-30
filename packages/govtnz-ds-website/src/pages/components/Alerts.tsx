@@ -162,7 +162,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Page alerts 
 </Ul>
 <h2 id="credit">Credit</h2>
 <P>Guidance, original HTML and CSS derived from <a href="https://github.com/alphagov/govuk-frontend">GOV.UK Design System</a>.</P>
-<P>Guidance for the page alerts component derived from the <a href="https://designsystem.gov.au/components/main-nav/rationale/">Australian Government Design System</a>.</P>
+<P>Guidance for the page alerts component derived from the <a href="https://designsystem.gov.au/components/page-alerts/">Australian Government Design System</a>.</P>
 </React.Fragment>
 
 export default function Code(props) {
