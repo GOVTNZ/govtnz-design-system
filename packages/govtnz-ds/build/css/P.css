@@ -9,6 +9,28 @@
   line-height: 1.625;
 }
 
+.g-fieldsetBlock-hint .g-body {
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #595959;
+  color: var(--g-theme-hint-color, #595959);
+}
+
+.g-fieldsetBlock-hint .g-body:first-child {
+  margin-top: 0px;
+}
+
+.g-fieldsetBlock-hint .g-body:last-child {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 40.0625em) {
+  .g-fieldsetBlock-hint .g-body {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
+}
+
 .g-body-l {
   font-weight: 400;
   font-size: 1.125rem;

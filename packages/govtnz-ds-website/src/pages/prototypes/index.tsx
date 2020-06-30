@@ -232,7 +232,7 @@ class ContactusForm extends React.Component {
           <div>
             <FieldsetBlock
               legend={
-                <H3 styleSize="medium" id="nameChangeId5">
+                <H3 styleSize="small" id="nameChangeId5">
                   Where do you live?
                 </H3>
               }

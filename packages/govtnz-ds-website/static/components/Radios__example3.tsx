@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example title="Example: Radio button items with hints" {...onChangeGenerator({})}>
-            <FieldsetBlock legend={<H1 styleSize="medium" id="providerChoiceTitle1">Choose one provider</H1>} hint={<P>Select one provider.</P>} hintId="hintId" {...onChangeGenerator({})}>
+            <FieldsetBlock legend={<H1 styleSize="small" id="providerChoiceTitle1">Choose one provider</H1>} hint={<P>Select one provider.</P>} hintId="hintId" {...onChangeGenerator({})}>
                 <RadioBlock label="Sign in with Aardvark services" hint="North Island only" hintId="someHintId7" id="anyRadioId7234" name="providerChoice3" value="provider1" labelId="labelId5" {...onChangeGenerator({"value":"provider1"})}></RadioBlock>
                 <RadioBlock label="Sign in with Bumblebee services" hint="North and South Island" hintId="someHintId8" id="anyRadioId8234" name="providerChoice3" value="provider2" labelId="labelId8" {...onChangeGenerator({"value":"provider2"})}></RadioBlock>
                 <RadioBlock label="Sign in with Caterpillar company" hint="All new Zealand territories" hintId="someHintId7234" id="anyRadioId9f" name="providerChoice3" value="provider3" labelId="labelId9" {...onChangeGenerator({"value":"provider3"})}></RadioBlock>

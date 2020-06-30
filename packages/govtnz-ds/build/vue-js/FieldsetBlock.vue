@@ -121,7 +121,7 @@ export default Vue.extend({
   box-sizing: border-box;
   display: table;
   max-width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   padding: 0;
   overflow: hidden;
   white-space: normal;
@@ -159,6 +159,9 @@ export default Vue.extend({
   margin-bottom: 15px;
   color: g-theme-hint-color;
 }
+.g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
+  margin-top: -16px;
+}
 @media print {
   .g-fieldsetBlock-hint {
     font-family: sans-serif;
@@ -175,12 +178,6 @@ export default Vue.extend({
     font-size: 14pt;
     line-height: 1.15;
   }
-}
-.g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
-  margin-top: -5px;
-}
-.g-fieldsetBlock-character-count .g-fieldsetBlock-form-group {
-  margin-bottom: 5px;
 }
 .g-fieldsetBlock-visually-hidden {
   position: absolute !important;

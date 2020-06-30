@@ -8,6 +8,19 @@ const StyledP = styled.p`
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.25rem;
   line-height: 1.625;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: g-theme-hint-color;
+  :first-child {
+    margin-top: 0px;
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
+  @media (min-width: 40.0625em) {
+    font-size: 1.1875rem;
+    line-height: 1.31579;
+  }
   ${props =>
     props.styleSize === "large" &&
     styled.css`

@@ -3,12 +3,20 @@
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-xl-font-weight;
   font-size: 3rem;
   line-height: 1.125;
   display: block;
-  margin-top: 0;
+  margin-top: 4rem;
   margin-bottom: 1rem;
+}
+
+.g-heading-xl:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-xl:last-child {
+  margin-bottom: 0rem;
 }
 
 @media print {
@@ -43,12 +51,20 @@
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-l-font-weight;
   font-size: 2rem;
   line-height: 1.2;
   display: block;
   margin-top: 3.5rem;
   margin-bottom: 0.5rem;
+}
+
+.g-heading-l:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-l:last-child {
+  margin-bottom: 0rem;
 }
 
 @media print {
@@ -91,6 +107,14 @@
   margin-bottom: 0.5rem;
 }
 
+.g-heading-m:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-m:last-child {
+  margin-bottom: 0rem;
+}
+
 @media print {
   .g-heading-m {
     color: g-theme-print-color;
@@ -123,12 +147,20 @@
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-s-font-weight;
   font-size: 1.25rem;
   line-height: 1.25;
   display: block;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
+}
+
+.g-heading-s:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-s:last-child {
+  margin-bottom: 0rem;
 }
 
 @media print {
@@ -163,12 +195,20 @@
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-xs-font-weight;
   font-size: 1.125rem;
   line-height: 1.25;
   display: block;
   margin-top: 2.5rem;
   margin-bottom: 0.5rem;
+}
+
+.g-heading-xs:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-xs:last-child {
+  margin-bottom: 0rem;
 }
 
 @media print {
@@ -203,12 +243,20 @@
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: g-theme-heading-font-weight;
+  font-weight: g-theme-heading-xxs-font-weight;
   font-size: 1rem;
   line-height: 1.25;
   display: block;
   margin-top: 2.5rem;
   margin-bottom: 15px;
+}
+
+.g-heading-xxs:first-child {
+  margin-top: 0rem;
+}
+
+.g-heading-xxs:last-child {
+  margin-bottom: 0rem;
 }
 
 @media print {

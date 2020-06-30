@@ -83,7 +83,7 @@
   box-sizing: border-box;
   display: table;
   max-width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   padding: 0;
   overflow: hidden;
   white-space: normal;
@@ -130,6 +130,10 @@
   color: var(--g-theme-hint-color, #595959);
 }
 
+.g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
+  margin-top: -16px;
+}
+
 @media print {
   .g-fieldsetBlock-hint {
     font-family: sans-serif;
@@ -148,14 +152,6 @@
     font-size: 14pt;
     line-height: 1.15;
   }
-}
-
-.g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
-  margin-top: -5px;
-}
-
-.g-fieldsetBlock-character-count .g-fieldsetBlock-form-group {
-  margin-bottom: 5px;
 }
 
 .g-fieldsetBlock-visually-hidden {

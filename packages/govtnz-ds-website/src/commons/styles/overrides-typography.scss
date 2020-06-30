@@ -1,11 +1,18 @@
 @import 'settings-global';
 
+/*
 [class^='g-heading']:first-child,
 [class^='g-caption'] + [class^='g-heading'] {
   margin-top: 0 !important;
-  font-family: National2, Arial, sans-serif;
 }
+*/
 
+.g-heading-xl,
+.g-heading-l,
+.g-heading-m,
+.g-heading-s,
+.g-heading-xs,
+.g-heading-xxs,
 .g-body {
   font-family: National2, Arial, sans-serif;
 }

@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example0.html",
         title:"Example: Headings (Typography)",
-        height: 436
+        height: 430
       }}></Example>
 </ExampleContainer>
 
@@ -47,7 +47,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example1.html",
         title:"Example: Same heading level varying by size only (Typography)",
-        height: 436
+        height: 430
       }}></Example>
 </ExampleContainer>
 
@@ -61,7 +61,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example2.html",
         title:"Example: Headings with captions (Typography)",
-        height: 391
+        height: 385
       }}></Example>
 </ExampleContainer>
 
@@ -73,7 +73,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
         className: "example__iframe",
         src:"/basics/typography__example3.html",
         title:"Example: Headings with captions inside the h1 (Typography)",
-        height: 194
+        height: 178
       }}></Example>
 </ExampleContainer>
 

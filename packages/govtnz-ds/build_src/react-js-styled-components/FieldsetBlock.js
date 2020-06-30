@@ -17,7 +17,6 @@ const StyledDiv = styled.div`
     `}
   padding: 0;
   border: 0;
-  margin-bottom: 5px;
   margin-top: 0px;
 `;
 
@@ -44,7 +43,7 @@ const StyledLegend = styled.legend`
   box-sizing: border-box;
   display: table;
   max-width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   padding: 0;
   overflow: hidden;
   white-space: normal;
@@ -75,6 +74,7 @@ const StyledDiv2 = styled.div`
   display: block;
   margin-bottom: 15px;
   color: g-theme-hint-color;
+  margin-top: -16px;
   @media print {
     font-family: sans-serif;
   }
@@ -86,7 +86,6 @@ const StyledDiv2 = styled.div`
     font-size: 14pt;
     line-height: 1.15;
   }
-  margin-top: -5px;
   margin-top: 0px;
 `;
 

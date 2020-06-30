@@ -8,13 +8,19 @@ const StyledH3 = styled.h3`${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-xl-font-weight;
     font-size: 3rem;
     line-height: 1.125;
     display: block;
-    margin-top: 0;
+    margin-top: 4rem;
     margin-bottom: 1rem;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "xlarge" &&
@@ -53,13 +59,19 @@ ${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-l-font-weight;
     font-size: 2rem;
     line-height: 1.2;
     display: block;
     margin-top: 3.5rem;
     margin-bottom: 0.5rem;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "large" &&
@@ -105,6 +117,12 @@ ${props =>
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "medium" &&
@@ -143,13 +161,19 @@ ${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-s-font-weight;
     font-size: 1.25rem;
     line-height: 1.25;
     display: block;
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "small" &&
@@ -188,13 +212,19 @@ ${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-xs-font-weight;
     font-size: 1.125rem;
     line-height: 1.25;
     display: block;
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "xsmall" &&
@@ -233,13 +263,19 @@ ${props =>
     font-family: g-theme-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-weight: g-theme-heading-font-weight;
+    font-weight: g-theme-heading-xxs-font-weight;
     font-size: 1rem;
     line-height: 1.25;
     display: block;
     margin-top: 2.5rem;
     margin-bottom: 15px;
   `}
+:first-child{
+margin-top: 0rem;
+}
+:last-child{
+margin-bottom: 0rem;
+}
 @media print{
 ${props =>
   props.styleSize === "xxsmall" &&
