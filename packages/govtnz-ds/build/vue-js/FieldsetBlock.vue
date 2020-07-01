@@ -160,7 +160,7 @@ export default Vue.extend({
   color: g-theme-hint-color;
 }
 .g-fieldsetBlock-fieldset__legend + .g-fieldsetBlock-hint {
-  margin-top: -16px;
+  margin-top: -4px;
 }
 @media print {
   .g-fieldsetBlock-hint {

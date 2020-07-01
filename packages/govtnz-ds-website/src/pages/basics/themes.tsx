@@ -17,6 +17,7 @@ import '@govtnz/ds/build/css/FieldsetBlock.css';
 import CaptionL from '@govtnz/ds/build/react-ts/CaptionL';
 import GetInTouch from '../../components/GetInTouch';
 import ExampleHeading from '../../commons/ExampleHeading';
+import '../../commons/styles/utilities.scss';
 
 let themeTimer: NodeJS.Timeout | undefined;
 
@@ -153,7 +154,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
               themes. No information is sent if you select the ‘Submit’ button.
             </p>
 
-            <div className="g-ds-font">
+            <div className="g-ds-font mt-30">
               <FieldsetBlock
                 legend={
                   <H3 styleSize="small" id="chooseTheme" marginTop8>

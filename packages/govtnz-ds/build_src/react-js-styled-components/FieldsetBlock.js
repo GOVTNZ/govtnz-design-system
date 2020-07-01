@@ -74,7 +74,7 @@ const StyledDiv2 = styled.div`
   display: block;
   margin-bottom: 15px;
   color: g-theme-hint-color;
-  margin-top: -16px;
+  margin-top: -4px;
   @media print {
     font-family: sans-serif;
   }
