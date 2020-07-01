@@ -50,6 +50,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -57,17 +62,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -327,6 +332,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -334,17 +344,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -604,6 +614,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -611,17 +626,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -881,6 +896,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -888,17 +908,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -1158,6 +1178,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -1165,17 +1190,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -1435,6 +1460,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -1442,17 +1472,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -1712,6 +1742,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -1719,17 +1754,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -1989,6 +2024,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -1996,17 +2036,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -2266,6 +2306,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -2273,17 +2318,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -2543,6 +2588,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -2550,17 +2600,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -2820,6 +2870,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -2827,17 +2882,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -3097,6 +3152,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -3104,17 +3164,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -3374,6 +3434,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -3381,17 +3446,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -3651,6 +3716,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -3658,17 +3728,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -3928,6 +3998,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -3935,17 +4010,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -4205,6 +4280,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -4212,17 +4292,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -4482,6 +4562,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -4489,17 +4574,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -4759,6 +4844,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -4766,17 +4856,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -5036,6 +5126,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -5043,17 +5138,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -5313,6 +5408,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -5320,17 +5420,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -5590,6 +5690,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -5597,17 +5702,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -5867,6 +5972,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -5874,17 +5984,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -6144,6 +6254,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -6151,17 +6266,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -6421,6 +6536,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -6428,17 +6548,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -6650,7 +6770,7 @@
   "H1": {
     "id": "H1",
     "html": "<h1\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h1>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -6698,6 +6818,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -6705,17 +6830,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -6927,7 +7052,7 @@
   "H2": {
     "id": "H2",
     "html": "<h2\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h2>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -6975,6 +7100,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -6982,17 +7112,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -7204,7 +7334,7 @@
   "H3": {
     "id": "H3",
     "html": "<h3\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h3>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7252,6 +7382,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -7259,17 +7394,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -7481,7 +7616,7 @@
   "H4": {
     "id": "H4",
     "html": "<h4\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h4>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7529,6 +7664,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -7536,17 +7676,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -7758,7 +7898,7 @@
   "H5": {
     "id": "H5",
     "html": "<h5\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h5>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -7806,6 +7946,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -7813,17 +7958,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -8035,7 +8180,7 @@
   "H6": {
     "id": "H6",
     "html": "<h6\n  class=\"g-heading {{ styleSize: g-heading-xl as xlarge | g-heading-l as large | g-heading-m as medium | g-heading-s as small | g-heading-xs as xsmall | g-heading-xxs as xxsmall }}{{ marginBottom8?: g-heading-mb-8 }}{{ marginBottom0?: g-heading-mb-0 }}{{ marginTop0?: g-heading-mt-0 }}{{ marginTop8?: g-heading-mt-8 }}\"\n  id=\"id\"\n>\n  <mt-variable key=\"children\">Example text</mt-variable>\n</h6>\n",
-    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
+    "css": ".g-heading-xl {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xl-font-weight;\n  font-size: 3rem;\n  line-height: 1.125;\n  display: block;\n  margin-top: 4rem;\n  margin-bottom: 1rem;\n}\n\n.g-caption + .g-heading-xl,\n.g-heading-xl:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xl:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xl {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    font-size: 3.5rem;\n    line-height: 1.15;\n  }\n}\n\n@media print {\n  .g-heading-xl {\n    font-size: 32pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xl {\n    margin-bottom: 1rem;\n  }\n}\n\n.g-heading-l {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-l-font-weight;\n  font-size: 2rem;\n  line-height: 1.2;\n  display: block;\n  margin-top: 3.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-l,\n.g-heading-l:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-l:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-l {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    font-size: 2.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-l {\n    font-size: 24pt;\n    line-height: 1.05;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-l {\n    margin-bottom: 30px;\n  }\n}\n\n.g-heading-m {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-m-font-weight;\n  font-size: 1.5rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-m,\n.g-heading-m:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-m:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-m {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    font-size: 1.5rem;\n    line-height: 1.25;\n  }\n}\n\n@media print {\n  .g-heading-m {\n    font-size: 18pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-m {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-s {\n  color: g-theme-heading-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-s-font-weight;\n  font-size: 1.25rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-s,\n.g-heading-s:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-s:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-s {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n.g-fieldsetBlock-fieldset__legend .g-heading-s {\n  font-size: 1.25rem;\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    font-size: 1.1875rem;\n    line-height: 1.31579;\n  }\n\n  .g-fieldsetBlock-fieldset__legend .g-heading-s {\n    font-size: 1.25rem;\n  }\n}\n\n@media print {\n  .g-heading-s {\n    font-size: 14pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-s {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xs-font-weight;\n  font-size: 1.125rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 0.5rem;\n}\n\n.g-caption + .g-heading-xs,\n.g-heading-xs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    font-size: 0.9375rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xs {\n    font-size: 13pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xs {\n    margin-bottom: 0.5rem;\n  }\n}\n\n.g-heading-xxs {\n  color: g-theme-color;\n  font-family: g-theme-heading-font-family;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: g-theme-heading-xxs-font-weight;\n  font-size: 1rem;\n  line-height: 1.25;\n  display: block;\n  margin-top: 2.5rem;\n  margin-bottom: 15px;\n}\n\n.g-caption + .g-heading-xxs,\n.g-heading-xxs:first-child {\n  margin-top: 0rem;\n}\n\n.g-heading-xxs:last-child {\n  margin-bottom: 0rem;\n}\n\n@media print {\n  .g-heading-xxs {\n    color: g-theme-print-color;\n    font-family: sans-serif;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    font-size: 0.875rem;\n    line-height: 1.31579;\n  }\n}\n\n@media print {\n  .g-heading-xxs {\n    font-size: 12pt;\n    line-height: 1.15;\n  }\n}\n\n@media (min-width: 40.0625em) {\n  .g-heading-xxs {\n    margin-bottom: 20px;\n  }\n}\n\n.g-heading-mb-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mb-0 {\n  margin-bottom: 0px;\n}\n\n.g-heading-mt-16 {\n  margin-bottom: 16px;\n}\n\n.g-heading-mt-8 {\n  margin-bottom: 8px;\n}\n\n.g-heading-mt-0 {\n  margin-bottom: 0px;\n}\n",
     "cssVariables": [
       {
         "id": "g-theme-font-family",
@@ -8083,6 +8228,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -8090,17 +8240,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -8360,6 +8510,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -8367,17 +8522,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -8637,6 +8792,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -8644,17 +8804,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -8914,6 +9074,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -8921,17 +9086,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -9191,6 +9356,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -9198,17 +9368,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -9468,6 +9638,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -9475,17 +9650,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -9745,6 +9920,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -9752,17 +9932,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -10022,6 +10202,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -10029,17 +10214,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -10299,6 +10484,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -10306,17 +10496,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -10576,6 +10766,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -10583,17 +10778,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -10853,6 +11048,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -10860,17 +11060,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -11130,6 +11330,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -11137,17 +11342,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -11407,6 +11612,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -11414,17 +11624,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -11684,6 +11894,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -11691,17 +11906,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -11961,6 +12176,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -11968,17 +12188,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",
@@ -12238,6 +12458,11 @@
         "defaultValue": "#b53cde"
       },
       {
+        "id": "g-theme-heading-font-family",
+        "valueSubstringMatch": "g-theme-heading-font-family",
+        "defaultValue": "Arial, sans-serif"
+      },
+      {
         "id": "g-theme-heading-color",
         "valueSubstringMatch": "g-theme-heading-color",
         "defaultValue": "#2a2a2a"
@@ -12245,17 +12470,17 @@
       {
         "id": "g-theme-heading-xl-font-weight",
         "valueSubstringMatch": "g-theme-heading-xl-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-l-font-weight",
         "valueSubstringMatch": "g-theme-heading-l-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-m-font-weight",
         "valueSubstringMatch": "g-theme-heading-m-font-weight",
-        "defaultValue": "500"
+        "defaultValue": "600"
       },
       {
         "id": "g-theme-heading-s-font-weight",

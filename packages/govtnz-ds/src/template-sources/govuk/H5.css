@@ -1,6 +1,6 @@
 .g-heading-xl {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xl-font-weight;
@@ -49,7 +49,7 @@
 
 .g-heading-l {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-l-font-weight;
@@ -98,7 +98,7 @@
 
 .g-heading-m {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-m-font-weight;
@@ -147,7 +147,7 @@
 
 .g-heading-s {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-s-font-weight;
@@ -204,7 +204,7 @@
 
 .g-heading-xs {
   color: g-theme-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xs-font-weight;
@@ -253,7 +253,7 @@
 
 .g-heading-xxs {
   color: g-theme-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xxs-font-weight;

@@ -24,7 +24,7 @@ const StyledH5 = styled.h5<
   props.styleSize === "xlarge" &&
   styled.css`
     color: g-theme-heading-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-xl-font-weight;
@@ -75,7 +75,7 @@ ${props =>
   props.styleSize === "large" &&
   styled.css`
     color: g-theme-heading-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-l-font-weight;
@@ -126,7 +126,7 @@ ${props =>
   props.styleSize === "medium" &&
   styled.css`
     color: g-theme-heading-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-m-font-weight;
@@ -177,7 +177,7 @@ ${props =>
   props.styleSize === "small" &&
   styled.css`
     color: g-theme-heading-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-s-font-weight;
@@ -230,7 +230,7 @@ ${props =>
   props.styleSize === "xsmall" &&
   styled.css`
     color: g-theme-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-xs-font-weight;
@@ -281,7 +281,7 @@ ${props =>
   props.styleSize === "xxsmall" &&
   styled.css`
     color: g-theme-color;
-    font-family: g-theme-font-family;
+    font-family: g-theme-heading-font-family;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: g-theme-heading-xxs-font-weight;

@@ -56,7 +56,7 @@ export default Vue.extend({
 <style scoped>
 .g-heading-xl {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xl-font-weight;
@@ -98,7 +98,7 @@ export default Vue.extend({
 }
 .g-heading-l {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-l-font-weight;
@@ -140,7 +140,7 @@ export default Vue.extend({
 }
 .g-heading-m {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-m-font-weight;
@@ -182,7 +182,7 @@ export default Vue.extend({
 }
 .g-heading-s {
   color: g-theme-heading-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-s-font-weight;
@@ -230,7 +230,7 @@ export default Vue.extend({
 }
 .g-heading-xs {
   color: g-theme-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xs-font-weight;
@@ -272,7 +272,7 @@ export default Vue.extend({
 }
 .g-heading-xxs {
   color: g-theme-color;
-  font-family: g-theme-font-family;
+  font-family: g-theme-heading-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: g-theme-heading-xxs-font-weight;

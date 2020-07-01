@@ -94,7 +94,7 @@ function _templateObject28() {
 }
 
 function _templateObject27() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xxs-font-weight;\n    font-size: 1rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 15px;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xxs-font-weight;\n    font-size: 1rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 15px;\n  "]);
 
   _templateObject27 = function _templateObject27() {
     return data;
@@ -144,7 +144,7 @@ function _templateObject23() {
 }
 
 function _templateObject22() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xs-font-weight;\n    font-size: 1.125rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xs-font-weight;\n    font-size: 1.125rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
 
   _templateObject22 = function _templateObject22() {
     return data;
@@ -194,7 +194,7 @@ function _templateObject18() {
 }
 
 function _templateObject17() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-s-font-weight;\n    font-size: 1.25rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-s-font-weight;\n    font-size: 1.25rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
 
   _templateObject17 = function _templateObject17() {
     return data;
@@ -244,7 +244,7 @@ function _templateObject13() {
 }
 
 function _templateObject12() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-m-font-weight;\n    font-size: 1.5rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-m-font-weight;\n    font-size: 1.5rem;\n    line-height: 1.25;\n    display: block;\n    margin-top: 2.5rem;\n    margin-bottom: 0.5rem;\n  "]);
 
   _templateObject12 = function _templateObject12() {
     return data;
@@ -294,7 +294,7 @@ function _templateObject8() {
 }
 
 function _templateObject7() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-l-font-weight;\n    font-size: 2rem;\n    line-height: 1.2;\n    display: block;\n    margin-top: 3.5rem;\n    margin-bottom: 0.5rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-l-font-weight;\n    font-size: 2rem;\n    line-height: 1.2;\n    display: block;\n    margin-top: 3.5rem;\n    margin-bottom: 0.5rem;\n  "]);
 
   _templateObject7 = function _templateObject7() {
     return data;
@@ -344,7 +344,7 @@ function _templateObject3() {
 }
 
 function _templateObject2() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xl-font-weight;\n    font-size: 3rem;\n    line-height: 1.125;\n    display: block;\n    margin-top: 4rem;\n    margin-bottom: 1rem;\n  "]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n    color: g-theme-heading-color;\n    font-family: g-theme-heading-font-family;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    font-weight: g-theme-heading-xl-font-weight;\n    font-size: 3rem;\n    line-height: 1.125;\n    display: block;\n    margin-top: 4rem;\n    margin-bottom: 1rem;\n  "]);
 
   _templateObject2 = function _templateObject2() {
     return data;
