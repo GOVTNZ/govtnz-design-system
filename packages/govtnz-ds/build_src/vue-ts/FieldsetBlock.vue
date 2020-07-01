@@ -121,7 +121,7 @@ export default Vue.extend({
   box-sizing: border-box;
   display: table;
   max-width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   padding: 0;
   overflow: hidden;
   white-space: normal;
