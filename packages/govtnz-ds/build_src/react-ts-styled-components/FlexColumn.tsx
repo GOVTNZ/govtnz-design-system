@@ -123,7 +123,7 @@ type Props = {
   mdHorizontalAlign?: "start" | "center" | "end";
   lgHorizontalAlign?: "start" | "center" | "end";
   isReversed?: boolean;
-  className?: any;
+  className?: string;
   children?: React.ReactNode;
 };
 

@@ -147,8 +147,8 @@ body.theme-light {
   --g-theme-inverted-nav-active-border-color: #0466ff;
   --g-theme-button-active-box-shadow: #003418;
   --g-theme-button-background-color: #0256ef;
-  --g-theme-button-hover-background-color: #00692f;
-  --g-theme-button-disabled-background-color: #078766;
+  --g-theme-button-hover-background-color: #0550c4;
+  --g-theme-button-disabled-background-color: #0256ef;
   --g-theme-button-secondary-background-color: #b2b2b2;
   --g-theme-button-warning-background-color: #900815;
   --g-theme-link-color: #005ea5;
@@ -190,8 +190,8 @@ body.theme-dark {
   --g-theme-button-active-box-shadow: #000000;
   --g-theme-button-color: #000000;
   --g-theme-button-background-color: #d3d3d3;
-  --g-theme-button-hover-background-color: #cccccc;
-  --g-theme-button-disabled-background-color: #078766;
+  --g-theme-button-hover-background-color: #bbbbbb;
+  --g-theme-button-disabled-background-color: #d3d3d3;
   --g-theme-button-secondary-background-color: #b2b2b2;
   --g-theme-button-warning-background-color: #900815;
   --g-theme-link-color: #005ea5;

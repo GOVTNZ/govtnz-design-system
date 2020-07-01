@@ -11,7 +11,7 @@ type Props = {
   mdReversed?: "true" | "false";
   lgReversed?: "true" | "false";
   isReversed?: boolean;
-  className?: any;
+  className?: string;
   children?: React.ReactNode;
 };
 

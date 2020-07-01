@@ -656,6 +656,10 @@ export default class ReactTsStyledComponents implements TemplateFormat {
     if (optional === undefined)
       throw Error(`Required 'optional' but given "${optional}"`);
 
+    if ((key === "class" || key === "className") && type === undefined) {
+      type = "string";
+    }
+
     switch (type) {
       case "string": {
         typing = ["string"];
@@ -864,10 +868,6 @@ export default class ReactTsStyledComponents implements TemplateFormat {
       );
     }
 
-    if (key === "class") {
-      type === "string";
-    }
-
     key = this.reactKeyTransform(key);
 
     if (this.assignedDynamicKeys[key]) {
@@ -879,6 +879,10 @@ export default class ReactTsStyledComponents implements TemplateFormat {
         // most other things can be coerced to boolean
         type = this.assignedDynamicKeys[key].type;
       }
+    }
+
+    if (key === "class" || key === "className") {
+      type === "string";
     }
 
     this.assignedDynamicKeys[key] = { type, optional, tagName };

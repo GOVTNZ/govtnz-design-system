@@ -1,5 +1,5 @@
 declare type Props = {
-    className?: any;
+    className?: string;
     id?: string;
 };
 declare const DiaLogo: ({ className, id }: Props) => JSX.Element;

@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  className?: any;
+  className?: string;
   href: string;
   rel?: string;
   target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];

@@ -13,7 +13,7 @@ declare type Props = {
     mdHorizontalAlign?: "start" | "center" | "end";
     lgHorizontalAlign?: "start" | "center" | "end";
     isReversed?: boolean;
-    className?: any;
+    className?: string;
     children?: React.ReactNode;
 };
 declare const FlexColumn: ({ xs, sm, md, lg, xsOffset, smOffset, mdOffset, lgOffset, xsHorizontalAlign, smHorizontalAlign, mdHorizontalAlign, lgHorizontalAlign, isReversed, className, children }: Props) => JSX.Element;

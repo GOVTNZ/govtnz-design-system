@@ -9,7 +9,7 @@ declare type Props = {
     mdReversed?: "true" | "false";
     lgReversed?: "true" | "false";
     isReversed?: boolean;
-    className?: any;
+    className?: string;
     children?: React.ReactNode;
 };
 declare const FlexRow: ({ xsVerticalAlign, smVerticalAlign, mdVerticalAlign, lgVerticalAlign, xsReversed, smReversed, mdReversed, lgReversed, isReversed, className, children }: Props) => JSX.Element;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 type Props = {
-  className?: any;
+  className?: string;
   href: string;
   rel?: string;
   target?: React.AnchorHTMLAttributes<HTMLAnchorElement>["target"];
