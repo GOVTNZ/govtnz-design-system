@@ -102,6 +102,7 @@ body.theme-default {
   --g-theme-error-color: #b10e1e;
   --g-theme-hint-color: #595959;
   --g-theme-focus-ring-color: #b53cde;
+  --g-theme-heading-font-family: Arial, sans-serif;
   --g-theme-heading-color: #2a2a2a;
   --g-theme-inverted-color: #ffffff;
   --g-theme-inverted-background-color: #363636;
@@ -139,6 +140,7 @@ body.theme-light {
   --g-theme-hint-color: #595959;
   --g-theme-focus-ring-color: #b53cde;
   --g-theme-heading-color: #27283a;
+  --g-theme-heading-font-family: Arial, sans-serif;
   --g-theme-inverted-color: #ffffff;
   --g-theme-inverted-background-color: #27283a;
   --g-theme-inverted-variant-background-color: #181822;
@@ -175,6 +177,7 @@ body.theme-dark {
   --g-theme-error-color: #b10e1e;
   --g-theme-hint-color: #595959;
   --g-theme-focus-ring-color: #b53cde;
+  --g-theme-heading-font-family: Arial, sans-serif;
   --g-theme-heading-color: #ffffff;
   --g-theme-inverted-color: #ffffff;
   --g-theme-inverted-background-color: #078766;

@@ -11,6 +11,7 @@
   margin-top: $spacing-64;
   margin-bottom: $spacing-40;
   --g-theme-font-family: Arial, sans-serif;
+  --g-theme-heading-font-family: Arial, sans-serif;
 
   @include print {
     box-decoration-break: clone;
@@ -56,10 +57,12 @@
 .g-dswebsite-font,
 .example__container .g-dswebsite-font {
   --g-theme-font-family: National2, Arial, sans-serif;
+  --g-theme-heading-font-family: National2, Arial, sans-serif;
 }
 
 .g-ds-font {
   --g-theme-font-family: Arial, sans-serif;
+  --g-theme-heading-font-family: Arial, sans-serif;
 }
 
 .example__iframe {
