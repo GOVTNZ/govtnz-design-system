@@ -5,13 +5,14 @@
 ### Version 0.2.0
 
 - New: Themes. See the Themes page, under Basics, for details and examples.
-- New: Header and MainNav component.
+- New: Header and Main navigation component.
 - New: Footer component.
-- New: Alert component.
-- New: Prototypes page showing an example contact form.
+- New: Page alerts component.
+- New: Prototypes page showing an example contact form for prototyping purpose.
 - New: Opening examples in a new window and resizing example iframes.
-- Radios now default to small. See the Radio examples page for ways to use the older-style Big radios.
+- Radios now default to small. See the Radio examples page for ways to use the older-style large radios.
 - Fix: Scss for Buttons had a bug.
+- Fix: Broken url on Homepage, About and Community page
 
 ### Version 0.1.2
 
