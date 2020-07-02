@@ -5,12 +5,12 @@ This is the GitHub repo for developers. More documentation is available on the [
 This is a new service – your feedback will help us to improve it.
 
 - Email the Design System (DS) team at [info@digital.govt.nz](mailto:info@digital.govt.nz)
-- Use our [AOG-DS Slack app](https://nz-aog-design-system.slack.com/)
+- Use our [NZGDS Slack app](https://nz-aog-design-system.slack.com/)
 - Open an Issue in this GitHub repo.
 
 ## Contributions
 
-We welcome contributions to the all of government (AOG) design system. See [CONTRIBUTING](https://github.com/GOVTNZ/govtnz-design-system/blob/master/CONTRIBUTING.md).
+We welcome contributions to the New Zealand Government Design System (NZGDS). See [CONTRIBUTING](https://github.com/GOVTNZ/govtnz-design-system/blob/master/CONTRIBUTING.md).
 
 ## Install
 
