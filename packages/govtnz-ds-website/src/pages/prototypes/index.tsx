@@ -70,10 +70,17 @@ class ContactusForm extends React.Component {
     const elements = Array.prototype.slice.call(formElements);
 
     const formfieldValues = elements
-      .filter((elem) => elem.name.length > 0)
+      .filter(
+        (name) =>
+          name &&
+          name.getAttribute('name') &&
+          name.getAttribute('name').length > 0
+      )
       .map((field) => {
         const { typeMismatch } = field.validity;
-        const { name, type, value } = field;
+        const { value } = field;
+        const name = field.getAttribute('name');
+        const type = field.getAttribute('type');
 
         return {
           name,
@@ -83,7 +90,6 @@ class ContactusForm extends React.Component {
           valid: field.checkValidity(),
         };
       })
-
       .reduce((acc, currentVal) => {
         const { value, valid, typeMismatch } = currentVal;
 
