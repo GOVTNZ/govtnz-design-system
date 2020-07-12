@@ -156,11 +156,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
 
             <div className="g-ds-font mt-30">
               <FieldsetBlock
-                legend={
-                  <H3 styleSize="small" id="chooseTheme" marginTop8>
-                    Choose a theme
-                  </H3>
-                }
+                legend="Choose a theme"
                 hintId="selectAThemeHintId"
                 hint={
                   <p>
@@ -197,7 +193,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
             </div>
 
             <div className="example__container ">
-              <ExampleHeading>{humanReadableTheme}</ExampleHeading>
+              <ExampleHeading level={3}>{humanReadableTheme}</ExampleHeading>
               <div className="example">
                 <div className="example__iframe-link-container">
                   <a
