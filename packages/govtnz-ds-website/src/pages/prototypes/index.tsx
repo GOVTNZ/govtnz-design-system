@@ -110,7 +110,9 @@ class ContactusForm extends React.Component {
   };
 
   scrollToElement = (id) => {
-    const scrollElement: Element | null = document.getElementById(id);
+    const scrollElement: Element | null = document.getElementById(
+      id.replace(/\#/, '')
+    );
 
     if (scrollElement) {
       scrollElement.scrollIntoView({ behavior: 'smooth' });
@@ -191,26 +193,22 @@ class ContactusForm extends React.Component {
                 <H4 id="errorSummaryHeading" styleSize="medium">
                   Error: There’s a problem with the following responses
                 </H4>
-                {errorMessages.map(
-                  (error): React.ReactElement => (
-                    <>
-                      {error.message ? (
-                        <Ul spacing key={error.message}>
-                          <Li>
-                            <A
-                              href={error.id}
-                              onClick={() => this.scrollToElement(error.id)}
-                            >
-                              {error.message}
-                            </A>
-                          </Li>
-                        </Ul>
-                      ) : (
-                        ''
-                      )}
-                    </>
-                  )
-                )}
+                <Ul spacing>
+                  {errorMessages
+                    .filter((error) => error.message)
+                    .map(
+                      (error): React.ReactElement => (
+                        <Li key={error.message}>
+                          <A
+                            href={error.id}
+                            onClick={() => this.scrollToElement(error.id)}
+                          >
+                            {error.message}
+                          </A>
+                        </Li>
+                      )
+                    )}
+                </Ul>
               </React.Fragment>
             ) : undefined}
           </Alert>

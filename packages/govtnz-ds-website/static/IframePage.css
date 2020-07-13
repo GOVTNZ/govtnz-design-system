@@ -45,11 +45,6 @@ body {
   margin-bottom: 0.25rem;
 }
 
-a:focus {
-  outline: #b53cde;
-  outline: 3px solid var(--color-theme-focus, #b53cde);
-}
-
 .css-changes-for-example-only .example-agency-logo {
   margin: 3px;
   display: inline-block;
@@ -176,7 +171,7 @@ body.theme-dark {
   --g-theme-print-color: #000000;
   --g-theme-error-color: #b10e1e;
   --g-theme-hint-color: #595959;
-  --g-theme-focus-ring-color: #b53cde;
+  --g-theme-focus-ring-color: #ffffff;
   --g-theme-heading-font-family: Arial, sans-serif;
   --g-theme-heading-color: #ffffff;
   --g-theme-inverted-color: #ffffff;
@@ -219,6 +214,11 @@ body.theme-dark {
 body {
   background-color: var(--g-theme-background-color, #ffffff);
   color: var(--g-theme-color, #2a2a2a);
+}
+
+a:focus {
+  outline: #b53cde;
+  outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
 }
 
 .css-changes-for-example-only .example-invert-logo {
