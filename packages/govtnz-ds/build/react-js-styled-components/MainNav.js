@@ -44,7 +44,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: g-theme-color;\n  margin: 0px -1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px;\n    background-color: transparent;\n    margin: 0px -2rem;\n  }\n"]);
+  var data = (0, _taggedTemplateLiteral2["default"])(["\n  display: block;\n  padding: 0px;\n  margin: 0px;\n  background-color: --g-theme-inverted-variant-background-color;\n  color: --g-theme-inverted-color;\n  margin: 0px -1rem;\n  @media only screen and (min-width: 48em) {\n    margin: 0px;\n    background-color: transparent;\n    margin: 0px -2rem;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;

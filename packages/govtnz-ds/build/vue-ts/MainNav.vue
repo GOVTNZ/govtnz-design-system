@@ -76,7 +76,8 @@ export default Vue.extend({
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: g-theme-color;
+  background-color: --g-theme-inverted-variant-background-color;
+  color: --g-theme-inverted-color;
 }
 .g-flex-container .g-main-nav,
 .g-flex-container-fluid .g-main-nav {

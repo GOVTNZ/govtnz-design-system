@@ -15,7 +15,8 @@ const StyledNav = styled.nav`
   display: block;
   padding: 0px;
   margin: 0px;
-  background-color: g-theme-color;
+  background-color: --g-theme-inverted-variant-background-color;
+  color: --g-theme-inverted-color;
   margin: 0px -1rem;
   @media only screen and (min-width: 48em) {
     margin: 0px;
