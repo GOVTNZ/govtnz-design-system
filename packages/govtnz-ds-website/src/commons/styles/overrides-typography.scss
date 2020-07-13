@@ -23,30 +23,30 @@
   color: #000 !important;
 }
 
-// Lists
-// ===========================================
-.g-ul,
-.g-ol {
-  line-height: 1.625 !important;
-  margin-bottom: 1rem !important;
-  font-size: 1.125rem !important;
+// // Lists
+// // ===========================================
+// .g-ul,
+// .g-ol {
+//   line-height: 1.625 !important;
+//   margin-bottom: 1rem !important;
+//   font-size: 1.125rem !important;
 
-  @media (min-width: 40.0625em) {
-    font-size: 1.25rem !important;
-  }
-}
+//   @media (min-width: 40.0625em) {
+//     font-size: 1.25rem !important;
+//   }
+// }
 
-.g-ul li,
-.g-ol li {
-  margin-bottom: 0.25rem;
-}
+// .g-ul li,
+// .g-ol li {
+//   margin-bottom: 0.25rem;
+// }
 
-.g-ul li .g-ul,
-.g-ul li .g-ol,
-.g-ol li .g-ol,
-.g-ol li .g-ul {
-  margin-top: 0.5rem;
-}
+// .g-ul li .g-ul,
+// .g-ul li .g-ol,
+// .g-ol li .g-ol,
+// .g-ol li .g-ul {
+//   margin-top: 0.5rem;
+// }
 
 // Links
 // ============================================
