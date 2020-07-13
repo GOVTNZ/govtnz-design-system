@@ -43,9 +43,9 @@ var TextareaBlock = function (_a) {
     var errorId = _a.errorId, id = _a.id, label = _a.label, hintId = _a.hintId, hint = _a.hint, error = _a.error, width = _a.width, name = _a.name, required = _a.required, disabled = _a.disabled, readOnly = _a.readOnly, rows = _a.rows, cols = _a.cols, autoFocus = _a.autoFocus, spellCheck = _a.spellCheck, autoComplete = _a.autoComplete, maxLength = _a.maxLength, value = _a.value, onChange = _a.onChange, ref = _a.ref;
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
         react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
-        hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        hintId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
-        errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv3, { id: errorId },
                 react_1.default.createElement(StyledSpan, null, "Error:"),
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : (""),

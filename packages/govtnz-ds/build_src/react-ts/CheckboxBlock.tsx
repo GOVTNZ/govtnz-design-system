@@ -60,7 +60,7 @@ const CheckboxBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
-    {hintId !== undefined ? (
+    {hintId ? (
       <React.Fragment>
         <div className="g-checkboxes__hint" id={hintId}>
           {hint !== undefined ? (
@@ -73,7 +73,7 @@ const CheckboxBlock = ({
     ) : (
       ""
     )}
-    {errorId !== undefined ? (
+    {errorId ? (
       <React.Fragment>
         <div className="g-error-message" id={errorId}>
           <span className="g-visually-hidden">Error:</span>

@@ -47,7 +47,7 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </label>
-    {hint !== undefined ? (
+    {hint ? (
       <React.Fragment>
         <div className="g-inputBlock-hint" id={hintId}>
           {hint !== undefined ? (
@@ -60,7 +60,7 @@ const InputBlock = ({
     ) : (
       ""
     )}
-    {errorId !== undefined ? (
+    {errorId ? (
       <React.Fragment>
         <div className="g-inputBlock-error-message" id={errorId}>
           <span className="g-inputBlock-visually-hidden">Error: </span>

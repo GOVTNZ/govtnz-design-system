@@ -498,7 +498,7 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </StyledSpan>
-      {errorId !== undefined ? (
+      {errorId ? (
         <React.Fragment>
           <StyledSpan2 id={errorId}>
             <StyledSpan3>Error: </StyledSpan3>

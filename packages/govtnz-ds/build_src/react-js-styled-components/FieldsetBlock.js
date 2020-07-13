@@ -36,7 +36,7 @@ const StyledLegend = styled.legend`
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.25;
   color: g-theme-legend-color;
@@ -149,7 +149,7 @@ const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
           <React.Fragment>Legend text</React.Fragment>
         )}
       </StyledLegend>
-      {hintId !== undefined ? (
+      {hintId ? (
         <React.Fragment>
           <StyledDiv2 id={hintId}>
             {hint !== undefined ? (
@@ -162,7 +162,7 @@ const FieldsetBlock = ({ errorId, hintId, legend, hint, error, children }) => (
       ) : (
         ""
       )}
-      {errorId !== undefined ? (
+      {errorId ? (
         <React.Fragment>
           <StyledDiv3 id={errorId}>
             <StyledSpan>Error:</StyledSpan>

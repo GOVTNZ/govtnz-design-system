@@ -126,6 +126,7 @@ export const parseDynamicKey = (dk: string): DynamicKey => {
         const parts: string[] = option.split(" as ");
         const enumOption: EnumOption = {
           value: parts[0].trim(),
+          comparison: "=",
           name: parts.length === 2 ? parts[1].trim() : parts[0].trim(),
         };
         return enumOption;
@@ -216,6 +217,7 @@ export type DynamicKeyType =
   | EnumOption[];
 
 export type EnumOption = {
+  comparison?: "=" | "!=";
   value: string;
   name: string;
 };
@@ -348,19 +350,22 @@ export const VENDOR_CSS_PROPERTIES_WITH_GENERIC_NAMES = [
 
 export const parseMtIf = (key: string): OnIf => {
   const optional = key.includes("?");
+  const isNot = key.includes("!");
   key = key.replace(/\?/, "");
   let comparison = undefined;
   let equalsString = undefined;
   if (key.includes("=")) {
     comparison = key.includes("!=") ? "!=" : "=";
     equalsString = key.substring(key.indexOf("=") + 1);
-    key = key.substring(0, key.indexOf("=")).replace("!", "");
+    key = key.substring(0, key.indexOf("="));
   }
+  key = key.replace(/\!/g, "");
   return {
     key,
     optional,
-    comparison,
+    comparison: isNot === true ? "!=" : comparison,
     equalsString,
+    isNot,
   };
 };
 
@@ -394,6 +399,7 @@ export type OnIf = {
   optional: boolean;
   comparison?: "=" | "!=";
   equalsString?: string;
+  isNot: boolean;
 };
 
 export type OnCloseIf = {};

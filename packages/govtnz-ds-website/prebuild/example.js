@@ -353,6 +353,13 @@ const writeExamplePage = async (
     React.createElement(thisExample.default)
   );
 
+  if (!serverExampleHTML) {
+    console.warn(
+      `Warning: React.renderToString() returned nothing for ${requirePath}`,
+      { serverExampleHTML, serverExampleHTMLTypeOf: typeof serverExampleHTML }
+    );
+  }
+
   const html = insertTemplate(htmlTemplate, {
     id,
     title,

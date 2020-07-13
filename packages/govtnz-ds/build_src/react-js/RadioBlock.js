@@ -40,7 +40,7 @@ const RadioBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
-    {hintId !== undefined ? (
+    {hintId ? (
       <React.Fragment>
         <div className="g-radios__hint" id={hintId}>
           {hint !== undefined ? (

@@ -191,15 +191,18 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
         const isSelfClosing = !node.childNodes.length;
         if (tagName === "mt-if") {
           let key: string = await NodeGetAttribute(node, "key");
+          const isNot = key.includes("!");
           const isOptional = key.includes("?");
           key = key.replace(/\?/g, ""); // will only replace one, but there should only be one
           let ifArgs: OnIf = {
             key,
             optional: false,
+            isNot,
           };
-          if (key.includes("=")) {
+          if (key.includes("=") || isNot === true) {
             ifArgs = parseMtIf(key);
             ifArgs.optional = isOptional;
+            ifArgs.isNot = isNot;
             key = ifArgs.key;
             let options = Array.from(
               node.ownerDocument.querySelectorAll("mt-if")
@@ -216,15 +219,20 @@ const walk = async (walkArgs: WalkArgs): Promise<WalkResponse> => {
                 (mtIf: OnIf): EnumOption => {
                   return {
                     name: mtIf.equalsString,
+                    comparison: isNot === true ? "!=" : mtIf.comparison,
                     value: mtIf.equalsString,
                   };
                 }
               );
             options = uniqWith(options, isEqual);
+            // if (key === "mode") {
+            //   console.log("mt-if", options);
+            // }
+            key = key.replace(/!/g, "");
             key = format.registerDynamicKey(
               key,
-              options,
-              ifArgs.optional,
+              isNot === true ? "string" : options,
+              isNot === true ? true : ifArgs.optional,
               tagName
             );
           } else {

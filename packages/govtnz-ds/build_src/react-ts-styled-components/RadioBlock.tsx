@@ -217,7 +217,7 @@ const RadioBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </StyledLabel>
-    {hintId !== undefined ? (
+    {hintId ? (
       <React.Fragment>
         <StyledDiv2 id={hintId}>
           {hint !== undefined ? (

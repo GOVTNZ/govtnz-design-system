@@ -11,12 +11,16 @@ import Alert from '@govtnz/ds/build/react-ts/Alert';
 import '@govtnz/ds/build/css/Alert.css';
 
 import A from '@govtnz/ds/build/react-ts/A';
+import '../../commons/styles/ds/themed-A.scss';
 
 import H2 from '@govtnz/ds/build/react-ts/H2';
-import '@govtnz/ds/build/css/H2.css';
+import '../../commons/styles/ds/themed-H2.scss';
 
 import H3 from '@govtnz/ds/build/react-ts/H3';
-import '@govtnz/ds/build/css/H3.css';
+import '../../commons/styles/ds/themed-H3.scss';
+
+import H4 from '@govtnz/ds/build/react-ts/H4';
+import '../../commons/styles/ds/themed-H4.scss';
 
 import P from '@govtnz/ds/build/react-ts/P';
 import '@govtnz/ds/build/css/P.css';
@@ -124,6 +128,19 @@ class ContactusForm extends React.Component {
       .some((field) => !field.valid);
 
     this.setState({ ...formValues, isFieldsValid });
+
+    setTimeout(() => {
+      // after React render set focus
+      const target = isFieldsValid
+        ? document.getElementById('successHeading')
+        : document.getElementById('errorSummaryHeading');
+
+      console.log('Moving focus to ', target);
+      if (target) {
+        target.focus();
+        target.scrollIntoView();
+      }
+    }, 50);
   };
 
   render() {
@@ -153,6 +170,9 @@ class ContactusForm extends React.Component {
       },
     ];
 
+    const anythingInvalid =
+      !username.valid || !email.valid || !radio.valid || !textarea.valid;
+
     return (
       <React.Fragment>
         <form
@@ -160,17 +180,17 @@ class ContactusForm extends React.Component {
           onSubmit={this.handleSubmit}
           noValidate
         >
-          <H2 styleSize="large">Contact us</H2>
+          <H3 styleSize="large">Contact us</H3>
 
-          <Alert level="error" headingId="heading3">
-            {!username.valid ||
-            !email.valid ||
-            !radio.valid ||
-            !textarea.valid ? (
+          <Alert
+            level="error"
+            headingId={anythingInvalid ? 'errorSummaryHeading' : undefined}
+          >
+            {anythingInvalid ? (
               <React.Fragment>
-                <H3 id="heading3" styleSize="medium">
+                <H4 id="errorSummaryHeading" styleSize="medium">
                   Error: There’s a problem with the following responses
-                </H3>
+                </H4>
                 {errorMessages.map(
                   (error): React.ReactElement => (
                     <>
@@ -195,12 +215,15 @@ class ContactusForm extends React.Component {
             ) : undefined}
           </Alert>
 
-          <Alert level="success" headingId="heading4">
+          <Alert
+            level="success"
+            headingId={showSuccessMessage ? 'successHeading' : undefined}
+          >
             {showSuccessMessage ? (
               <React.Fragment>
-                <H3 id="heading4" styleSize="medium">
+                <H4 id="successHeading" styleSize="medium">
                   Success: Your message has been sent
-                </H3>
+                </H4>
                 <P>
                   Thanks for contacting us. We’ll get back to you in 1–3 working
                   days.
@@ -217,8 +240,8 @@ class ContactusForm extends React.Component {
             type="text"
             label="What’s your name?"
             name="username"
-            errorId={username.valid ? '' : 'anyErrorId2Error'}
-            error={username.valid ? '' : 'Enter your name'}
+            errorId={!username.valid ? 'anyErrorNameError' : undefined}
+            error={!username.valid ? 'Enter your name' : undefined}
             required
           />
 
@@ -227,23 +250,18 @@ class ContactusForm extends React.Component {
             id="scroll-field-email"
             width="30"
             maxLength={30}
-            hintId="anyHintId3"
             label="What’s your email address?"
-            errorId={email.valid ? '' : 'anyErrorId2Error'}
-            error={email.valid ? '' : isInvalidEmail}
+            errorId={!email.valid ? 'anyErrorEmailError' : undefined}
+            error={!email.valid ? isInvalidEmail : undefined}
             type="email"
             name="email"
             required
           />
 
           <FieldsetBlock
-            legend={
-              <H3 styleSize="small" id="nameChangeId5">
-                Where do you live?
-              </H3>
-            }
-            errorId={radio.valid ? undefined : 'errorId5'}
-            error={radio.valid ? undefined : 'Select where you live'}
+            legend="Where do you live?"
+            errorId={!radio.valid ? 'errorId5' : undefined}
+            error={!radio.valid ? 'Select where you live' : undefined}
           >
             <Radios>
               <RadioBlock
@@ -282,8 +300,8 @@ class ContactusForm extends React.Component {
             autoComplete="off"
             name="textarea"
             label="What’s your message?"
-            errorId={textarea.valid ? '' : 'anyErrorId2Error'}
-            error={textarea.valid ? '' : 'Enter your message'}
+            errorId={!textarea.valid ? 'anyErrorMessageError' : undefined}
+            error={!textarea.valid ? 'Enter your message' : undefined}
             required
           />
 
@@ -325,16 +343,16 @@ const PrototypePageContent = () => (
     </p>
     <ExampleContainer>
       <Row>
-        <Column xs="12" sm="12" md="9" lg="12">
+        <Column xs="12" sm="12" md="9" lg="9">
           <ContactusForm />
         </Column>
       </Row>
     </ExampleContainer>
 
     <p>
-      <a href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds-website/src/pages/prototypes/index.tsx">
+      <A href="https://github.com/GOVTNZ/govtnz-design-system/blob/master/packages/govtnz-ds-website/src/pages/prototypes/index.tsx">
         View source code on GitHub
-      </a>
+      </A>
     </p>
 
     <h2 id="credit">Credit</h2>

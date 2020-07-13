@@ -48,7 +48,7 @@ var DateInput = function (_a) {
                 : undefined, role: "group" },
             react_1.default.createElement(StyledLegend, null, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label"))),
             react_1.default.createElement(StyledSpan, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint"))),
-            errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+            errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
                 react_1.default.createElement(StyledSpan2, { id: errorId },
                     react_1.default.createElement(StyledSpan3, null, "Error: "),
                     error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error"))))) : (""),

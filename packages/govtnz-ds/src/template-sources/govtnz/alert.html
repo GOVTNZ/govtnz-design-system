@@ -1,111 +1,203 @@
 <mt-if key="mode?=live">
   <mt-if key="level=info">
-    <div role="note" aria-live="polite" aria-atomic="true">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div
+        role="note"
+        aria-labelledby="headingId"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <mt-if key="children">
+          <div class="g-alert g-alert--info">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note">
+        <mt-if key="children" aria-live="polite" aria-atomic="true">
+          <div class="g-alert g-alert--info">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?=live">
   <mt-if key="level=warning">
-    <div role="note" aria-live="polite" aria-atomic="true">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div
+        role="note"
+        aria-labelledby="headingId"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <mt-if key="children">
+          <div class="g-alert g-alert--warning">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note" aria-live="polite" aria-atomic="true">
+        <mt-if key="children">
+          <div class="g-alert g-alert--warning">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?=live">
   <mt-if key="level=success">
-    <div role="note" aria-live="polite" aria-atomic="true">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div
+        role="note"
+        aria-labelledby="headingId"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <mt-if key="children">
+          <div class="g-alert g-alert--success">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note" aria-live="polite" aria-atomic="true">
+        <mt-if key="children">
+          <div class="g-alert g-alert--success">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?=live">
   <mt-if key="level=error">
-    <div role="note" aria-live="polite" aria-atomic="true">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div
+        role="note"
+        aria-labelledby="headingId"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <mt-if key="children">
+          <div class="g-alert g-alert--error">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note" aria-live="polite" aria-atomic="true">
+        <mt-if key="children">
+          <div class="g-alert g-alert--error">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?!=live">
   <mt-if key="level=info">
-    <div role="note" aria-labelledby="headingId">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div role="note" aria-labelledby="headingId">
+        <mt-if key="children">
+          <div class="g-alert g-alert--info">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note">
+        <mt-if key="children">
+          <div class="g-alert g-alert--info">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?!=live">
   <mt-if key="level=warning">
-    <div role="note" aria-labelledby="headingId">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div role="note" aria-labelledby="headingId">
+        <mt-if key="children">
+          <div class="g-alert g-alert--warning">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note">
+        <mt-if key="children">
+          <div class="g-alert g-alert--warning">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?!=live">
   <mt-if key="level=success">
-    <div role="note" tabindex="-1" aria-labelledby="headingId">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div role="note" aria-labelledby="headingId">
+        <mt-if key="children">
+          <div class="g-alert g-alert--success">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note">
+        <mt-if key="children">
+          <div class="g-alert g-alert--success">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>
 
 <mt-if key="mode?!=live">
   <mt-if key="level=error">
-    <div role="note" tabindex="-1" aria-labelledby="headingId">
-      <mt-if key="children">
-        <div
-          class="g-alert {{ level: g-alert--info as info | g-alert--warning as warning | g-alert--success as success | g-alert--error as error }}"
-        >
-          <mt-variable key="children"> Example alert content </mt-variable>
-        </div>
-      </mt-if>
-    </div>
+    <mt-if key="headingId">
+      <div role="note" aria-labelledby="headingId">
+        <mt-if key="children">
+          <div class="g-alert g-alert--error">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
+    <mt-if key="!headingId">
+      <div role="note">
+        <mt-if key="children">
+          <div class="g-alert g-alert--error">
+            <mt-variable key="children"> Example alert content </mt-variable>
+          </div>
+        </mt-if>
+      </div>
+    </mt-if>
   </mt-if>
 </mt-if>

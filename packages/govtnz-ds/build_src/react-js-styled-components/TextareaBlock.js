@@ -216,7 +216,7 @@ const TextareaBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </StyledLabel>
-    {hintId !== undefined ? (
+    {hintId ? (
       <React.Fragment>
         <StyledDiv2 id={hintId}>
           {hint !== undefined ? (
@@ -229,7 +229,7 @@ const TextareaBlock = ({
     ) : (
       ""
     )}
-    {errorId !== undefined ? (
+    {errorId ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
           <StyledSpan>Error:</StyledSpan>

@@ -12,7 +12,7 @@ var DateInput = function (_a) {
                 : undefined, className: "g-dateInput-fieldset", role: "group" },
             react_1.default.createElement("legend", { className: "g-dateInput-fieldset__legend" }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example label"))),
             react_1.default.createElement("span", { className: "g-dateInput-hint", id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example hint"))),
-            errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+            errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
                 react_1.default.createElement("span", { className: "g-dateInput-error-message", id: errorId },
                     react_1.default.createElement("span", { className: "g-dateInput-visually-hidden" }, "Error: "),
                     error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example error"))))) : (""),

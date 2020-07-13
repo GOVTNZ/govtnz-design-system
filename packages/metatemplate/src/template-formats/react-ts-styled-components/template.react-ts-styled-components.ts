@@ -509,14 +509,19 @@ export default class ReactTsStyledComponents implements TemplateFormat {
     this.render += `{${key} !== undefined ? ${key} : <React.Fragment>${defaultValue}</React.Fragment>}`;
   };
 
-  onIf = async ({ key, comparison, equalsString }: OnIf): Promise<void> => {
-    if (comparison) {
-      this.render += `{${key} ${
-        comparison === "!=" ? "!==" : "==="
-      } "${equalsString}" ? <React.Fragment>`;
-    } else {
-      this.render += `{${key} !== undefined ? <React.Fragment>`;
+  onIf = async (props: OnIf): Promise<void> => {
+    const { key, comparison, equalsString, isNot } = props;
+    let expression = `${key} ${
+      comparison === "!=" ? "!==" : "==="
+    } "${equalsString}"`;
+
+    if (equalsString === undefined || equalsString.length === 0) {
+      expression = `${comparison === "!=" || isNot === true ? "!" : ""}${key}`;
+    } else if (comparison === undefined) {
+      expression = `${key} !== undefined`;
     }
+
+    this.render += `{${expression} ? <React.Fragment>`;
   };
 
   onCloseIf = async ({}: OnCloseIf): Promise<void> => {
@@ -739,7 +744,6 @@ export default class ReactTsStyledComponents implements TemplateFormat {
         } else {
           // TODO: Add Function typing for onChange using React's ChangeEvent
           typing = ["any"];
-          "";
         }
         break;
       }
@@ -884,6 +888,10 @@ export default class ReactTsStyledComponents implements TemplateFormat {
     if (key === "class" || key === "className") {
       type === "string";
     }
+
+    // if (key === "mode") {
+    //   console.log("RDK", key, type, optional, tagName);
+    // }
 
     this.assignedDynamicKeys[key] = { type, optional, tagName };
 

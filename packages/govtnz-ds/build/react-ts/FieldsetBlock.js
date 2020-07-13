@@ -11,9 +11,9 @@ var FieldsetBlock = function (_a) {
                 ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
                 : undefined, className: "g-fieldsetBlock-fieldset" },
             react_1.default.createElement("legend", { className: "g-fieldsetBlock-fieldset__legend" }, legend !== undefined ? (legend) : (react_1.default.createElement(react_1.default.Fragment, null, "Legend text"))),
-            hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+            hintId ? (react_1.default.createElement(react_1.default.Fragment, null,
                 react_1.default.createElement("div", { className: "g-fieldsetBlock-hint", id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
-            errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+            errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
                 react_1.default.createElement("div", { className: "g-fieldsetBlock-error-message", id: errorId },
                     react_1.default.createElement("span", { className: "g-fieldsetBlock-visually-hidden" }, "Error:"),
                     error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : (""),

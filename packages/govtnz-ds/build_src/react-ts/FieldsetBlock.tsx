@@ -37,7 +37,7 @@ const FieldsetBlock = ({
           <React.Fragment>Legend text</React.Fragment>
         )}
       </legend>
-      {hintId !== undefined ? (
+      {hintId ? (
         <React.Fragment>
           <div className="g-fieldsetBlock-hint" id={hintId}>
             {hint !== undefined ? (
@@ -50,7 +50,7 @@ const FieldsetBlock = ({
       ) : (
         ""
       )}
-      {errorId !== undefined ? (
+      {errorId ? (
         <React.Fragment>
           <div className="g-fieldsetBlock-error-message" id={errorId}>
             <span className="g-fieldsetBlock-visually-hidden">Error:</span>

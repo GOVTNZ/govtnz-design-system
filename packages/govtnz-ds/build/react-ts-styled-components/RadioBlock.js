@@ -18,7 +18,7 @@ var RadioBlock = function (_a) {
     return (react_1.default.createElement(StyledDiv, null,
         react_1.default.createElement(StyledInput, { "aria-describedby": hintId, id: id, name: name, type: "radio", required: required, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, value: value, checked: checked, onChange: onChange, ref: ref }),
         react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
-        hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        hintId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : ("")));
 };
 exports.default = RadioBlock;

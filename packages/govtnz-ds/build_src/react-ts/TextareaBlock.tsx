@@ -69,7 +69,7 @@ const TextareaBlock = ({
         <React.Fragment>Label text</React.Fragment>
       )}
     </label>
-    {hintId !== undefined ? (
+    {hintId ? (
       <React.Fragment>
         <div className="g-textareaBlock-hint" id={hintId}>
           {hint !== undefined ? (
@@ -82,7 +82,7 @@ const TextareaBlock = ({
     ) : (
       ""
     )}
-    {errorId !== undefined ? (
+    {errorId ? (
       <React.Fragment>
         <div className="g-textareaBlock-error-message" id={errorId}>
           <span className="g-textareaBlock-visually-hidden">Error:</span>

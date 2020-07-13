@@ -5,7 +5,7 @@
 import React, { Fragment, useState, Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import H1 from '@govtnz/ds/build/react-ts/H1';import P from '@govtnz/ds/build/react-ts/P';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import H2 from '@govtnz/ds/build/react-ts/H2';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';import Button from '@govtnz/ds/build/react-ts/Button';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
+import Header from '@govtnz/ds/build/react-ts/Header';import FlexContainer from '@govtnz/ds/build/react-ts/FlexContainer';import FlexRow from '@govtnz/ds/build/react-ts/FlexRow';import FlexColumn from '@govtnz/ds/build/react-ts/FlexColumn';import DiaLogo from '@govtnz/ds/build/react-ts/DiaLogo';import MainNav from '@govtnz/ds/build/react-ts/MainNav';import MainNavLink from '@govtnz/ds/build/react-ts/MainNavLink';import H1 from '@govtnz/ds/build/react-ts/H1';import P from '@govtnz/ds/build/react-ts/P';import InputBlock from '@govtnz/ds/build/react-ts/InputBlock';import FieldsetBlock from '@govtnz/ds/build/react-ts/FieldsetBlock';import RadioBlock from '@govtnz/ds/build/react-ts/RadioBlock';import TextareaBlock from '@govtnz/ds/build/react-ts/TextareaBlock';import Button from '@govtnz/ds/build/react-ts/Button';import Footer from '@govtnz/ds/build/react-ts/Footer';import FooterLinks from '@govtnz/ds/build/react-ts/FooterLinks';import FooterLink from '@govtnz/ds/build/react-ts/FooterLink';import Subfooter from '@govtnz/ds/build/react-ts/Subfooter';import NzgLogo from '@govtnz/ds/build/react-ts/NzgLogo';
 const ExampleContainer = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleHeading = ({ children }) => <Fragment>{children}</Fragment>;
 const ExampleSection = ({ children }) => (
@@ -44,13 +44,9 @@ var PageContent = (props) => (<Example title="Example: Header containing a MainN
                     <FlexColumn xs="12" sm="12" md="12" lg="12" {...onChangeGenerator({})}>
                         <H1 {...onChangeGenerator({})}>Contact us</H1>
                         <P {...onChangeGenerator({})}>Send a message to let us know about the issue you’re having.</P>
-                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20} {...onChangeGenerator({})}></InputBlock>
-                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} {...onChangeGenerator({})}></InputBlock>
-                        <FieldsetBlock legend={
-                            <H2 styleSize="small" id="whereLiveTitle">
-                                What’s your issue about?
-                            </H2>
-                            } {...onChangeGenerator({})}>
+                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20} autocomplete="name" {...onChangeGenerator({})}></InputBlock>
+                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} autocomplete="email" {...onChangeGenerator({})}></InputBlock>
+                        <FieldsetBlock legend="What’s your issue about?" {...onChangeGenerator({})}>
                             <RadioBlock label="Our website" id="radioIssue1" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                             <RadioBlock label="Our service" id="radioIssue2" name="issueType" {...onChangeGenerator({})}></RadioBlock>
                             <RadioBlock label="Something else" id="radioIssue3" name="issueType" {...onChangeGenerator({})}></RadioBlock>

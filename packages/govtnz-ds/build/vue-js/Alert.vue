@@ -1,48 +1,116 @@
 <template>
-  <div aria-atomic="true" aria-live="polite" role="note">
-    <div v-bind:class="computed__class">
+  <div
+    aria-atomic="true"
+    v-bind:aria-labelledby="headingId"
+    aria-live="polite"
+    role="note"
+  >
+    <div class="g-alert g-alert--info">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div role="note">
+    <div class="g-alert g-alert--info">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div
+    aria-atomic="true"
+    v-bind:aria-labelledby="headingId"
+    aria-live="polite"
+    role="note"
+  >
+    <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
   <div aria-atomic="true" aria-live="polite" role="note">
-    <div v-bind:class="computed__class2">
+    <div class="g-alert g-alert--warning">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div
+    aria-atomic="true"
+    v-bind:aria-labelledby="headingId"
+    aria-live="polite"
+    role="note"
+  >
+    <div class="g-alert g-alert--success">
       <slot></slot>
     </div>
   </div>
 
   <div aria-atomic="true" aria-live="polite" role="note">
-    <div v-bind:class="computed__class3">
+    <div class="g-alert g-alert--success">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div
+    aria-atomic="true"
+    v-bind:aria-labelledby="headingId"
+    aria-live="polite"
+    role="note"
+  >
+    <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
   </div>
 
   <div aria-atomic="true" aria-live="polite" role="note">
-    <div v-bind:class="computed__class4">
+    <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
   </div>
 
   <div v-bind:aria-labelledby="headingId" role="note">
-    <div v-bind:class="computed__class5">
+    <div class="g-alert g-alert--info">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div role="note">
+    <div class="g-alert g-alert--info">
       <slot></slot>
     </div>
   </div>
 
   <div v-bind:aria-labelledby="headingId" role="note">
-    <div v-bind:class="computed__class6">
+    <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
-    <div v-bind:class="computed__class7">
+  <div role="note">
+    <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
-    <div v-bind:class="computed__class8">
+  <div v-bind:aria-labelledby="headingId" role="note">
+    <div class="g-alert g-alert--success">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div role="note">
+    <div class="g-alert g-alert--success">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div v-bind:aria-labelledby="headingId" role="note">
+    <div class="g-alert g-alert--error">
+      <slot></slot>
+    </div>
+  </div>
+
+  <div role="note">
+    <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
   </div>
@@ -50,94 +118,14 @@
 <script>
 import Vue from "vue";
 
-const constants = {
-  level: {
-    info: "g-alert--info",
-    warning: "g-alert--warning",
-    success: "g-alert--success",
-    error: "g-alert--error"
-  }
-};
-
 export default Vue.extend({
   props: {
     mode: { required: false },
-    level: {
-      type: String,
-      validator: value => {
-        return ["info", "warning", "success", "error"].indexOf(value) !== -1;
-      },
-      required: true
-    },
-    children: { required: false, default: " Example alert content " },
-    headingId: { type: String, required: false }
+    level: { required: false },
+    headingId: { type: String, required: false },
+    children: { required: false, default: " Example alert content " }
   },
-  computed: {
-    computed__class() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class2() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class3() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class4() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class5() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class6() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class7() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    },
-    computed__class8() {
-      return (
-        "g-alert " +
-        (constants.level[this.level] !== undefined
-          ? ` ${constants.level[this.level]}`
-          : "")
-      );
-    }
-  }
+  computed: {}
 });
 </script>
 <style scoped>

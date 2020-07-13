@@ -53,6 +53,7 @@ export const getTemplateAttributes = async (
                 const parts: string[] = option.split(" as ");
                 const enumOption: EnumOption = {
                   value: parts[0].trim(),
+                  comparison: "=",
                   name: parts.length === 2 ? parts[1].trim() : parts[0].trim(),
                 };
                 return enumOption;
@@ -928,8 +929,8 @@ export type DynamicEnumerationTypes =
   | typeof onClick
   | typeof ariaCurrent;
 
-const byNames = (enumOptions: EnumOption[]) =>
-  enumOptions.map((enumOption) => enumOption.name);
+// const byNames = (enumOptions: EnumOption[]) =>
+//   enumOptions.map((enumOption) => enumOption.name);
 
 export const NodeAddClass = async (node, className): Promise<Function> => {
   if (node.isPuppeteer) {

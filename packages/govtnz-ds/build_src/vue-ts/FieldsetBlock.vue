@@ -114,7 +114,7 @@ export default Vue.extend({
   font-family: g-theme-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.25;
   color: g-theme-legend-color;

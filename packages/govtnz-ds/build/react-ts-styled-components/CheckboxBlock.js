@@ -20,9 +20,9 @@ var CheckboxBlock = function (_a) {
     return (react_1.default.createElement(StyledDiv, { errorId: errorId },
         react_1.default.createElement(StyledInput, { "aria-describedby": hintId, id: id, type: "checkbox", required: required, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, name: name, value: value, checked: checked, onChange: onChange, ref: ref }),
         react_1.default.createElement(StyledLabel, { htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
-        hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        hintId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv2, { id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
-        errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement(StyledDiv3, { id: errorId },
                 react_1.default.createElement(StyledSpan, null, "Error:"),
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : ("")));

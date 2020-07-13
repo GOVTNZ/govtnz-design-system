@@ -19,9 +19,9 @@ var InputBlock = function (_a) {
     var errorId = _a.errorId, id = _a.id, label = _a.label, hint = _a.hint, hintId = _a.hintId, error = _a.error, width = _a.width, required = _a.required, disabled = _a.disabled, readOnly = _a.readOnly, autoFocus = _a.autoFocus, name = _a.name, value = _a.value, min = _a.min, max = _a.max, type = _a.type, spellCheck = _a.spellCheck, maxLength = _a.maxLength, autoComplete = _a.autoComplete, onChange = _a.onChange, ref = _a.ref;
     return (react_1.default.createElement("div", { className: "g-inputBlock-form-group" + (errorId ? " g-inputBlock-form-group--error" : "") },
         react_1.default.createElement("label", { className: "g-inputBlock-label", htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))),
-        hint !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        hint ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement("div", { className: "g-inputBlock-hint", id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))))) : (""),
-        errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement("div", { className: "g-inputBlock-error-message", id: errorId },
                 react_1.default.createElement("span", { className: "g-inputBlock-visually-hidden" }, "Error: "),
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))))) : (""),

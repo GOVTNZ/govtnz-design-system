@@ -220,7 +220,7 @@ const InputBlock = ({
         <React.Fragment>Example text</React.Fragment>
       )}
     </StyledLabel>
-    {hint !== undefined ? (
+    {hint ? (
       <React.Fragment>
         <StyledDiv2 id={hintId}>
           {hint !== undefined ? (
@@ -233,7 +233,7 @@ const InputBlock = ({
     ) : (
       ""
     )}
-    {errorId !== undefined ? (
+    {errorId ? (
       <React.Fragment>
         <StyledDiv3 id={errorId}>
           <StyledSpan>Error: </StyledSpan>

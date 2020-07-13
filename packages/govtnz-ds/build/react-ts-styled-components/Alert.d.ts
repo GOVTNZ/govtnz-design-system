@@ -1,9 +1,9 @@
 import React from "react";
 declare type Props = {
-    mode?: "live";
+    mode?: string;
     level: "info" | "warning" | "success" | "error";
-    children?: React.ReactNode;
     headingId?: string;
+    children?: React.ReactNode;
 };
-declare const Alert: ({ mode, level, children, headingId }: Props) => JSX.Element;
+declare const Alert: ({ mode, level, headingId, children }: Props) => JSX.Element;
 export default Alert;

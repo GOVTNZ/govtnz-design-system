@@ -9,9 +9,9 @@ var CheckboxBlock = function (_a) {
     return (react_1.default.createElement("div", { className: "g-checkboxes__item" + (errorId ? " g-form-group--error" : "") },
         react_1.default.createElement("input", { "aria-describedby": hintId, className: "g-checkboxes__input", id: id, type: "checkbox", required: required, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, name: name, value: value, checked: checked, onChange: onChange, ref: ref }),
         react_1.default.createElement("label", { className: "g-checkboxes__label", htmlFor: id }, label !== undefined ? (label) : (react_1.default.createElement(react_1.default.Fragment, null, "Label text"))),
-        hintId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        hintId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement("div", { className: "g-checkboxes__hint", id: hintId }, hint !== undefined ? (hint) : (react_1.default.createElement(react_1.default.Fragment, null, "Hint text"))))) : (""),
-        errorId !== undefined ? (react_1.default.createElement(react_1.default.Fragment, null,
+        errorId ? (react_1.default.createElement(react_1.default.Fragment, null,
             react_1.default.createElement("div", { className: "g-error-message", id: errorId },
                 react_1.default.createElement("span", { className: "g-visually-hidden" }, "Error:"),
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Error text"))))) : ("")));

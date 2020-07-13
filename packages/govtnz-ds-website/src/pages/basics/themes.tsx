@@ -156,7 +156,7 @@ const ThemesPage = (pageProps: PageRendererProps) => {
 
             <div className="g-ds-font mt-30">
               <FieldsetBlock
-                legend={<b>Choose a theme</b>}
+                legend="Choose a theme"
                 hintId="selectAThemeHintId"
                 hint={
                   <p>

@@ -56,7 +56,7 @@ const DateInput = ({
           <React.Fragment>Example hint</React.Fragment>
         )}
       </span>
-      {errorId !== undefined ? (
+      {errorId ? (
         <React.Fragment>
           <span className="g-dateInput-error-message" id={errorId}>
             <span className="g-dateInput-visually-hidden">Error: </span>
