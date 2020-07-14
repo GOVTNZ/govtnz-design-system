@@ -186,16 +186,38 @@ class WrappedAlert extends React.Component<
   }
 
   toggle() {
-    const { isChecked } = this.state;
+    const { mode } = this.props;
+    const { isChecked, id } = this.state;
+
+    const newIsChecked = !isChecked;
 
     this.setState({
-      isChecked: !isChecked,
+      isChecked: newIsChecked,
     });
+
+    console.log({ id, mode, newIsChecked });
+
+    if (id && mode === 'live' && newIsChecked === true) {
+      setTimeout(() => {
+        const target = document.getElementById(id);
+        const targetChildren = [...target.childNodes];
+
+        const targetDiv = targetChildren.filter(
+          (elm) => elm.nodeName.toLowerCase() === 'div'
+        )[0];
+
+        if (targetDiv) {
+          targetDiv.focus();
+        }
+      }, 100);
+    }
   }
 
   render() {
     const { mode, level, Component } = this.props;
     const { isChecked, id } = this.state;
+
+    const keyId = `${id}_alert`;
 
     if (mode === 'live') {
       return (
@@ -211,7 +233,7 @@ class WrappedAlert extends React.Component<
           </button>
           <div id={id}>
             {isChecked ? (
-              <Component key={`${id}_alert`} {...this.props} />
+              <Component key={keyId} {...this.props} />
             ) : (
               <Component
                 key={`${id}_alert`}

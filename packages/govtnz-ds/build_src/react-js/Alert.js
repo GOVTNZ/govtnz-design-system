@@ -13,6 +13,7 @@ const Alert = ({ mode, level, headingId, children }) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -79,6 +80,7 @@ const Alert = ({ mode, level, headingId, children }) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -103,7 +105,12 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div aria-atomic="true" aria-live="polite" role="note">
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--warning">
@@ -145,6 +152,7 @@ const Alert = ({ mode, level, headingId, children }) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -169,7 +177,12 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div aria-atomic="true" aria-live="polite" role="note">
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--success">
@@ -211,6 +224,7 @@ const Alert = ({ mode, level, headingId, children }) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -235,7 +249,12 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div aria-atomic="true" aria-live="polite" role="note">
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--error">

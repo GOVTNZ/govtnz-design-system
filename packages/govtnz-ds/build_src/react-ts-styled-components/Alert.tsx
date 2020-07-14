@@ -693,6 +693,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -759,6 +760,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -783,7 +785,12 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv7 aria-atomic="true" aria-live="polite" role="note">
+                <StyledDiv7
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv8>
@@ -825,6 +832,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -849,7 +857,12 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv11 aria-atomic="true" aria-live="polite" role="note">
+                <StyledDiv11
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv12>
@@ -891,6 +904,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
+                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -915,7 +929,12 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv15 aria-atomic="true" aria-live="polite" role="note">
+                <StyledDiv15
+                  aria-atomic="true"
+                  aria-live="polite"
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv16>

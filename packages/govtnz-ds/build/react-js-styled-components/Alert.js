@@ -406,36 +406,43 @@ var Alert = function Alert(_ref) {
     "aria-atomic": "true",
     "aria-labelledby": headingId,
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv2, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv3, {
     role: "note"
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv4, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode === "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "warning" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv5, {
     "aria-atomic": "true",
     "aria-labelledby": headingId,
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv6, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv7, {
     "aria-atomic": "true",
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv8, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode === "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "success" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv9, {
     "aria-atomic": "true",
     "aria-labelledby": headingId,
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv10, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv11, {
     "aria-atomic": "true",
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv12, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode === "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "error" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv13, {
     "aria-atomic": "true",
     "aria-labelledby": headingId,
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv14, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv15, {
     "aria-atomic": "true",
     "aria-live": "polite",
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv16, null, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode !== "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "info" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(StyledDiv17, {
     "aria-labelledby": headingId,
     role: "note"

@@ -4,6 +4,7 @@
     v-bind:aria-labelledby="headingId"
     aria-live="polite"
     role="note"
+    tabindex="-1"
   >
     <div class="g-alert g-alert--info">
       <slot></slot>
@@ -21,13 +22,14 @@
     v-bind:aria-labelledby="headingId"
     aria-live="polite"
     role="note"
+    tabindex="-1"
   >
     <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
-  <div aria-atomic="true" aria-live="polite" role="note">
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
     <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
@@ -38,13 +40,14 @@
     v-bind:aria-labelledby="headingId"
     aria-live="polite"
     role="note"
+    tabindex="-1"
   >
     <div class="g-alert g-alert--success">
       <slot></slot>
     </div>
   </div>
 
-  <div aria-atomic="true" aria-live="polite" role="note">
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
     <div class="g-alert g-alert--success">
       <slot></slot>
     </div>
@@ -55,13 +58,14 @@
     v-bind:aria-labelledby="headingId"
     aria-live="polite"
     role="note"
+    tabindex="-1"
   >
     <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
   </div>
 
-  <div aria-atomic="true" aria-live="polite" role="note">
+  <div aria-atomic="true" aria-live="polite" role="note" tabindex="-1">
     <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
