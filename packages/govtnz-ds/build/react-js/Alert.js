@@ -73,38 +73,46 @@ var Alert = function Alert(_ref) {
     className: "g-alert g-alert--error"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode !== "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "info" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     "aria-labelledby": headingId,
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--info"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--info"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode !== "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "warning" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     "aria-labelledby": headingId,
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--warning"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--warning"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode !== "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "success" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     "aria-labelledby": headingId,
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--success"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--success"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "", mode !== "live" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, level === "error" ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     "aria-labelledby": headingId,
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--error"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "", !headingId ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
-    role: "note"
+    role: "note",
+    tabIndex: -1
   }, children ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("div", {
     className: "g-alert g-alert--error"
   }, children !== undefined ? children : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, " ", "Example alert content", " "))) : "")) : "") : "") : "");

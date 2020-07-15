@@ -71,49 +71,49 @@
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note">
+  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div class="g-alert g-alert--info">
       <slot></slot>
     </div>
   </div>
 
-  <div role="note">
+  <div role="note" tabindex="-1">
     <div class="g-alert g-alert--info">
       <slot></slot>
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note">
+  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
-  <div role="note">
+  <div role="note" tabindex="-1">
     <div class="g-alert g-alert--warning">
       <slot></slot>
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note">
+  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div class="g-alert g-alert--success">
       <slot></slot>
     </div>
   </div>
 
-  <div role="note">
+  <div role="note" tabindex="-1">
     <div class="g-alert g-alert--success">
       <slot></slot>
     </div>
   </div>
 
-  <div v-bind:aria-labelledby="headingId" role="note">
+  <div v-bind:aria-labelledby="headingId" role="note" tabindex="-1">
     <div class="g-alert g-alert--error">
       <slot></slot>
     </div>
   </div>
 
-  <div role="note">
+  <div role="note" tabindex="-1">
     <div class="g-alert g-alert--error">
       <slot></slot>
     </div>

@@ -964,7 +964,11 @@ const Alert = ({ mode, level, headingId, children }) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <StyledDiv17 aria-labelledby={headingId} role="note">
+                <StyledDiv17
+                  aria-labelledby={headingId}
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv18>
@@ -988,7 +992,7 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv19 role="note">
+                <StyledDiv19 role="note" tabIndex={-1}>
                   {children ? (
                     <React.Fragment>
                       <StyledDiv20>
@@ -1025,7 +1029,11 @@ const Alert = ({ mode, level, headingId, children }) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <StyledDiv21 aria-labelledby={headingId} role="note">
+                <StyledDiv21
+                  aria-labelledby={headingId}
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv22>
@@ -1049,7 +1057,7 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv23 role="note">
+                <StyledDiv23 role="note" tabIndex={-1}>
                   {children ? (
                     <React.Fragment>
                       <StyledDiv24>
@@ -1086,7 +1094,11 @@ const Alert = ({ mode, level, headingId, children }) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <StyledDiv25 aria-labelledby={headingId} role="note">
+                <StyledDiv25
+                  aria-labelledby={headingId}
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv26>
@@ -1110,7 +1122,7 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv27 role="note">
+                <StyledDiv27 role="note" tabIndex={-1}>
                   {children ? (
                     <React.Fragment>
                       <StyledDiv28>
@@ -1147,7 +1159,11 @@ const Alert = ({ mode, level, headingId, children }) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <StyledDiv29 aria-labelledby={headingId} role="note">
+                <StyledDiv29
+                  aria-labelledby={headingId}
+                  role="note"
+                  tabIndex={-1}
+                >
                   {children ? (
                     <React.Fragment>
                       <StyledDiv30>
@@ -1171,7 +1187,7 @@ const Alert = ({ mode, level, headingId, children }) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <StyledDiv31 role="note">
+                <StyledDiv31 role="note" tabIndex={-1}>
                   {children ? (
                     <React.Fragment>
                       <StyledDiv32>
