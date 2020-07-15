@@ -12,6 +12,12 @@
   margin-bottom: $spacing-40;
   --g-theme-font-family: Arial, sans-serif;
   --g-theme-heading-font-family: Arial, sans-serif;
+  --g-theme-heading-xl-font-weight: 600;
+  --g-theme-heading-l-font-weight: 600;
+  --g-theme-heading-m-font-weight: 600;
+  --g-theme-heading-s-font-weight: 600;
+  --g-theme-heading-xs-font-weight: 600;
+  --g-theme-heading-xxs-font-weight: 600;
 
   @include print {
     box-decoration-break: clone;

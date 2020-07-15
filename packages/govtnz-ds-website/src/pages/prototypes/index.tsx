@@ -137,10 +137,12 @@ class ContactusForm extends React.Component {
         ? document.getElementById('successHeading')
         : document.getElementById('errorSummaryHeading');
 
-      console.log('Moving focus to ', target);
-      if (target) {
-        target.focus();
-        target.scrollIntoView();
+      const alertContainer = target.parentNode && target.parentNode.parentNode;
+
+      console.log('Moving focus to ', alertContainer);
+      if (alertContainer) {
+        alertContainer.focus();
+        alertContainer.scrollIntoView();
       }
     }, 50);
   };
@@ -185,6 +187,7 @@ class ContactusForm extends React.Component {
           <H3 styleSize="large">Contact us</H3>
 
           <Alert
+            mode="live"
             level="error"
             headingId={anythingInvalid ? 'errorSummaryHeading' : undefined}
           >
@@ -214,6 +217,7 @@ class ContactusForm extends React.Component {
           </Alert>
 
           <Alert
+            mode="live"
             level="success"
             headingId={showSuccessMessage ? 'successHeading' : undefined}
           >
