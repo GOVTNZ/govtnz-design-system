@@ -32,8 +32,8 @@
                     <FlexColumn xs="12" sm="12" md="12" lg="12">
                         <H1>Contact us</H1>
                         <P>Send a message to let us know about the issue you’re having.</P>
-                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20}  autocomplete="name" />
-                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} autocomplete="email" />
+                        <InputBlock type="text" label="What’s your name?" name="anyName" id="anyNameId" width={20}  autoComplete="name" />
+                        <InputBlock type="email" label="What’s your email address?" name="email" id="anyEmailId" width={20} autoComplete="email" />
                         <FieldsetBlock legend="What’s your issue about?">
                             <RadioBlock
                                 label="Our website"
