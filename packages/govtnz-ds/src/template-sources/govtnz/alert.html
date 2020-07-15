@@ -6,7 +6,6 @@
         aria-labelledby="headingId"
         aria-live="polite"
         aria-atomic="true"
-        tabindex="-1"
       >
         <mt-if key="children">
           <div class="g-alert g-alert--info">
@@ -17,12 +16,7 @@
     </mt-if>
     <mt-if key="!headingId">
       <div role="note">
-        <mt-if
-          key="children"
-          aria-live="polite"
-          aria-atomic="true"
-          tabindex="-1"
-        >
+        <mt-if key="children" aria-live="polite" aria-atomic="true">
           <div class="g-alert g-alert--info">
             <mt-variable key="children"> Example alert content </mt-variable>
           </div>
@@ -40,7 +34,6 @@
         aria-labelledby="headingId"
         aria-live="polite"
         aria-atomic="true"
-        tabindex="-1"
       >
         <mt-if key="children">
           <div class="g-alert g-alert--warning">
@@ -50,7 +43,7 @@
       </div>
     </mt-if>
     <mt-if key="!headingId">
-      <div role="note" aria-live="polite" aria-atomic="true" tabindex="-1">
+      <div role="note" aria-live="polite" aria-atomic="true">
         <mt-if key="children">
           <div class="g-alert g-alert--warning">
             <mt-variable key="children"> Example alert content </mt-variable>
@@ -122,7 +115,7 @@
 <mt-if key="mode?!=live">
   <mt-if key="level=info">
     <mt-if key="headingId">
-      <div role="note" aria-labelledby="headingId" tabindex="-1">
+      <div role="note" aria-labelledby="headingId">
         <mt-if key="children">
           <div class="g-alert g-alert--info">
             <mt-variable key="children"> Example alert content </mt-variable>
@@ -131,7 +124,7 @@
       </div>
     </mt-if>
     <mt-if key="!headingId">
-      <div role="note" tabindex="-1">
+      <div role="note">
         <mt-if key="children">
           <div class="g-alert g-alert--info">
             <mt-variable key="children"> Example alert content </mt-variable>
@@ -145,7 +138,7 @@
 <mt-if key="mode?!=live">
   <mt-if key="level=warning">
     <mt-if key="headingId">
-      <div role="note" aria-labelledby="headingId" tabindex="-1">
+      <div role="note" aria-labelledby="headingId">
         <mt-if key="children">
           <div class="g-alert g-alert--warning">
             <mt-variable key="children"> Example alert content </mt-variable>
@@ -154,7 +147,7 @@
       </div>
     </mt-if>
     <mt-if key="!headingId">
-      <div role="note" tabindex="-1">
+      <div role="note">
         <mt-if key="children">
           <div class="g-alert g-alert--warning">
             <mt-variable key="children"> Example alert content </mt-variable>

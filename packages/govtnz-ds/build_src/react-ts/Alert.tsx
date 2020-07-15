@@ -20,7 +20,6 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
-                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -87,7 +86,6 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
                   aria-labelledby={headingId}
                   aria-live="polite"
                   role="note"
-                  tabIndex={-1}
                 >
                   {children ? (
                     <React.Fragment>
@@ -112,12 +110,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div
-                  aria-atomic="true"
-                  aria-live="polite"
-                  role="note"
-                  tabIndex={-1}
-                >
+                <div aria-atomic="true" aria-live="polite" role="note">
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--warning">
@@ -298,7 +291,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <div aria-labelledby={headingId} role="note" tabIndex={-1}>
+                <div aria-labelledby={headingId} role="note">
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--info">
@@ -322,7 +315,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div role="note" tabIndex={-1}>
+                <div role="note">
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--info">
@@ -359,7 +352,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
           <React.Fragment>
             {headingId ? (
               <React.Fragment>
-                <div aria-labelledby={headingId} role="note" tabIndex={-1}>
+                <div aria-labelledby={headingId} role="note">
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--warning">
@@ -383,7 +376,7 @@ const Alert = ({ mode, level, headingId, children }: Props) => (
             )}
             {!headingId ? (
               <React.Fragment>
-                <div role="note" tabIndex={-1}>
+                <div role="note">
                   {children ? (
                     <React.Fragment>
                       <div className="g-alert g-alert--warning">
