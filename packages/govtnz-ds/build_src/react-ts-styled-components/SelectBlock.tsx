@@ -30,17 +30,13 @@ const StyledLabel = styled.label`
   margin-bottom: 5px;
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
+    color: g-theme-print-color;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
     line-height: 1.31579;
-  }
-  @media print {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-  @media print {
-    color: g-theme-print-color;
   }
   margin-top: 0px;
 `;
@@ -63,10 +59,10 @@ const StyledSelect = styled.select<Pick<Props, "error">>`
   background-repeat: no-repeat;
   border-radius: 0;
   background-position: right 0.7em top 50%;
-  background-size: 1rem auto;
-  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%20%20%20%20%20%20%20%20%20%20%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%228.5%22%20viewBox%3D%220%200%2016%2010.5%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M1%201%20L8%208.5%20L15%201%22%20stroke-width%3D%223%22%20stroke%3D%22currentColor%22%20fill%3D%22transparent%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%20%20%3C%2Fsvg%3E");
   background-color: g-theme-select-background-color;
   color: g-theme-form-color;
+  background-size: 1rem auto;
+  background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='14' height='8.5' viewBox='0 0 16 10.5'%3E%3Cpath d='M1 1 L8 8.5 L15 1' stroke-width='3' stroke='currentColor' fill='transparent' /%3E%3C/svg%3E");
   :-webkit-autofill,
   :-webkit-autofill:hover,
   :-webkit-autofill:focus,
@@ -76,18 +72,14 @@ const StyledSelect = styled.select<Pick<Props, "error">>`
     -webkit-text-fill-color: g-theme-color !important;
     color: g-theme-color;
     border: 1px solid g-theme-form-border-color;
-    box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
-    -webkit-box-shadow: 0 0 0px 1000px g-theme-form-background-color inset;
   }
   @media print {
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.25;
   }
   @media (min-width: 40.0625em) {
     font-size: 1.1875rem;
-    line-height: 1.25;
-  }
-  @media print {
-    font-size: 14pt;
     line-height: 1.25;
   }
   :focus {
