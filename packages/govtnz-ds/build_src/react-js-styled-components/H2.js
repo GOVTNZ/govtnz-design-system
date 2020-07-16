@@ -1,7 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledH2 = styled.h2`${props =>
+const StyledH2 = styled.h2`color: g-theme-heading-color;
+font-family: g-theme-heading-font-family;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-weight: g-theme-heading-l-font-weight;
+:first-child{
+margin-top: 0px;
+}
+:first-child,:last-child{
+margin-bottom: 0px;
+}
+${props =>
   props.styleSize === "xlarge" &&
   styled.css`
     color: g-theme-heading-color;
@@ -16,10 +27,7 @@ const StyledH2 = styled.h2`${props =>
     margin-bottom: 1rem;
   `}
 :first-child{
-margin-top: 0rem;
-}
-:last-child{
-margin-bottom: 0rem;
+margin-top: 0px;
 }
 @media print{
 ${props =>
@@ -27,20 +35,6 @@ ${props =>
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "xlarge" &&
-  styled.css`
-    font-size: 3.5rem;
-    line-height: 1.15;
-  `};
-}
-@media print{
-${props =>
-  props.styleSize === "xlarge" &&
-  styled.css`
     font-size: 32pt;
     line-height: 1.15;
   `};
@@ -49,8 +43,13 @@ ${props =>
 ${props =>
   props.styleSize === "xlarge" &&
   styled.css`
+    font-size: 3.5rem;
+    line-height: 1.15;
     margin-bottom: 1rem;
   `};
+}
+:first-child,:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.styleSize === "large" &&
@@ -69,29 +68,12 @@ ${props =>
 :first-child{
 margin-top: 0rem;
 }
-:last-child{
-margin-bottom: 0rem;
-}
 @media print{
 ${props =>
   props.styleSize === "large" &&
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "large" &&
-  styled.css`
-    font-size: 2.5rem;
-    line-height: 1.25;
-  `};
-}
-@media print{
-${props =>
-  props.styleSize === "large" &&
-  styled.css`
     font-size: 24pt;
     line-height: 1.05;
   `};
@@ -100,8 +82,13 @@ ${props =>
 ${props =>
   props.styleSize === "large" &&
   styled.css`
+    font-size: 2.5rem;
+    line-height: 1.25;
     margin-bottom: 30px;
   `};
+}
+:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.styleSize === "medium" &&
@@ -120,29 +107,12 @@ ${props =>
 :first-child{
 margin-top: 0rem;
 }
-:last-child{
-margin-bottom: 0rem;
-}
 @media print{
 ${props =>
   props.styleSize === "medium" &&
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "medium" &&
-  styled.css`
-    font-size: 1.5rem;
-    line-height: 1.25;
-  `};
-}
-@media print{
-${props =>
-  props.styleSize === "medium" &&
-  styled.css`
     font-size: 18pt;
     line-height: 1.15;
   `};
@@ -151,8 +121,13 @@ ${props =>
 ${props =>
   props.styleSize === "medium" &&
   styled.css`
+    font-size: 1.5rem;
+    line-height: 1.25;
     margin-bottom: 0.5rem;
   `};
+}
+:first-child,:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.styleSize === "small" &&
@@ -171,15 +146,14 @@ ${props =>
 :first-child{
 margin-top: 0rem;
 }
-:last-child{
-margin-bottom: 0rem;
-}
 @media print{
 ${props =>
   props.styleSize === "small" &&
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
+    font-size: 14pt;
+    line-height: 1.15;
   `};
 }
 font-size: 1.25rem;
@@ -189,23 +163,12 @@ ${props =>
   styled.css`
     font-size: 1.1875rem;
     line-height: 1.31579;
+    margin-bottom: 0.5rem;
   `};
 font-size: 1.25rem;;
 }
-@media print{
-${props =>
-  props.styleSize === "small" &&
-  styled.css`
-    font-size: 14pt;
-    line-height: 1.15;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "small" &&
-  styled.css`
-    margin-bottom: 0.5rem;
-  `};
+:first-child,:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.styleSize === "xsmall" &&
@@ -224,29 +187,12 @@ ${props =>
 :first-child{
 margin-top: 0rem;
 }
-:last-child{
-margin-bottom: 0rem;
-}
 @media print{
 ${props =>
   props.styleSize === "xsmall" &&
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "xsmall" &&
-  styled.css`
-    font-size: 0.9375rem;
-    line-height: 1.31579;
-  `};
-}
-@media print{
-${props =>
-  props.styleSize === "xsmall" &&
-  styled.css`
     font-size: 13pt;
     line-height: 1.15;
   `};
@@ -255,8 +201,13 @@ ${props =>
 ${props =>
   props.styleSize === "xsmall" &&
   styled.css`
+    font-size: 0.9375rem;
+    line-height: 1.31579;
     margin-bottom: 0.5rem;
   `};
+}
+:first-child,:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.styleSize === "xxsmall" &&
@@ -275,29 +226,12 @@ ${props =>
 :first-child{
 margin-top: 0rem;
 }
-:last-child{
-margin-bottom: 0rem;
-}
 @media print{
 ${props =>
   props.styleSize === "xxsmall" &&
   styled.css`
     color: g-theme-print-color;
     font-family: sans-serif;
-  `};
-}
-@media (min-width: 40.0625em){
-${props =>
-  props.styleSize === "xxsmall" &&
-  styled.css`
-    font-size: 0.875rem;
-    line-height: 1.31579;
-  `};
-}
-@media print{
-${props =>
-  props.styleSize === "xxsmall" &&
-  styled.css`
     font-size: 12pt;
     line-height: 1.15;
   `};
@@ -306,8 +240,13 @@ ${props =>
 ${props =>
   props.styleSize === "xxsmall" &&
   styled.css`
+    font-size: 0.875rem;
+    line-height: 1.31579;
     margin-bottom: 20px;
   `};
+}
+:first-child,:last-child{
+margin-bottom: 0rem;
 }
 ${props =>
   props.marginBottom8 &&
@@ -328,7 +267,8 @@ ${props =>
   props.marginTop0 &&
   styled.css`
     margin-bottom: 0px;
-  `}`;
+  `}
+margin-bottom: 0px;`;
 
 const H2 = ({
   styleSize,

@@ -52,8 +52,12 @@
   fill: g-theme-alert-icon-color;
 }
 
-.g-alert *:first-child {
+.g-alert > *:first-child {
   margin-top: 0px;
+}
+
+.g-alert > *:nth-child(2) {
+  margin-top: 8px;
 }
 
 .g-alert *:last-child {

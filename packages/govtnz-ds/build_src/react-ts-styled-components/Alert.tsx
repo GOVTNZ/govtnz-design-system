@@ -12,6 +12,9 @@ const StyledDiv = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -45,6 +48,9 @@ const StyledDiv2 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -53,6 +59,9 @@ const StyledDiv2 = styled.div`
 const StyledDiv3 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -87,6 +96,9 @@ const StyledDiv4 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -95,6 +107,9 @@ const StyledDiv4 = styled.div`
 const StyledDiv5 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -129,6 +144,9 @@ const StyledDiv6 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -137,6 +155,9 @@ const StyledDiv6 = styled.div`
 const StyledDiv7 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -171,6 +192,9 @@ const StyledDiv8 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -179,6 +203,9 @@ const StyledDiv8 = styled.div`
 const StyledDiv9 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -213,6 +240,9 @@ const StyledDiv10 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -221,6 +251,9 @@ const StyledDiv10 = styled.div`
 const StyledDiv11 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -255,6 +288,9 @@ const StyledDiv12 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -263,6 +299,9 @@ const StyledDiv12 = styled.div`
 const StyledDiv13 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -297,6 +336,9 @@ const StyledDiv14 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -305,6 +347,9 @@ const StyledDiv14 = styled.div`
 const StyledDiv15 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -339,6 +384,9 @@ const StyledDiv16 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -347,6 +395,9 @@ const StyledDiv16 = styled.div`
 const StyledDiv17 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -381,6 +432,9 @@ const StyledDiv18 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -389,6 +443,9 @@ const StyledDiv18 = styled.div`
 const StyledDiv19 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -423,6 +480,9 @@ const StyledDiv20 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -431,6 +491,9 @@ const StyledDiv20 = styled.div`
 const StyledDiv21 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -465,6 +528,9 @@ const StyledDiv22 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -473,6 +539,9 @@ const StyledDiv22 = styled.div`
 const StyledDiv23 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -507,6 +576,9 @@ const StyledDiv24 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -515,6 +587,9 @@ const StyledDiv24 = styled.div`
 const StyledDiv25 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -549,6 +624,9 @@ const StyledDiv26 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -557,6 +635,9 @@ const StyledDiv26 = styled.div`
 const StyledDiv27 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -591,6 +672,9 @@ const StyledDiv28 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -599,6 +683,9 @@ const StyledDiv28 = styled.div`
 const StyledDiv29 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -633,6 +720,9 @@ const StyledDiv30 = styled.div`
   :first-child {
     margin-top: 0px;
   }
+  :nth-child(2) {
+    margin-top: 8px;
+  }
   :last-child {
     margin-bottom: 0px;
   }
@@ -641,6 +731,9 @@ const StyledDiv30 = styled.div`
 const StyledDiv31 = styled.div`
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
@@ -674,6 +767,9 @@ const StyledDiv32 = styled.div`
   }
   :first-child {
     margin-top: 0px;
+  }
+  :nth-child(2) {
+    margin-top: 8px;
   }
   :last-child {
     margin-bottom: 0px;
