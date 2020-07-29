@@ -99,6 +99,36 @@ a {
   }
 }
 
+code[class*='language-'],
+pre[class*='language-'],
+pre[class*='language-'] code {
+  color: #494949;
+  background: none;
+  text-shadow: 0 1px white;
+  font-size: 1rem;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+pre {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
 code {
   // We need to override styling coming from the prism-js theme.
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
