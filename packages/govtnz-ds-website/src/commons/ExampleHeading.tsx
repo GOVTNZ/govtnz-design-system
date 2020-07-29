@@ -1,5 +1,4 @@
 import React from 'react';
-import { useLevel, H } from 'react-accessible-headings';
 import './styles/components-example-heading.scss';
 
 type Props = {
@@ -11,7 +10,6 @@ type Props = {
 
 export default ({ children, white, level }: Props) => {
   const Heading = `h${level !== undefined ? level : 4}`;
-  const level = useLevel();
 
   return (
     <>
@@ -27,10 +25,6 @@ export default ({ children, white, level }: Props) => {
         >
           {children ? children : 'Default'}
         </Heading>
-      </div>
-
-      <div className={`heading--${level}`}>
-        <H>text</H>
       </div>
     </>
   );
