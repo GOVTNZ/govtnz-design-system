@@ -56,7 +56,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h2 id="when-to-use-it">When to use it</h2>
 <P>Use the text input component for single line answers, such as a user’s name or phone number.</P>
 <h2 id="when-not-to-use-it">When not to use it</h2>
-<P>If you expect multiple line answers from users, do not use the text input component. Use the <code>textarea</code> component instead (currently under development).</P>
+<P>If you expect multiple line answers from users, do not use the text input component. Use the <Link className="g-link" to="/components/Textarea/">textarea</Link> component instead (currently under development).</P>
 <h2 id="how-it-works">How it works</h2>
 <P>Text input components need be clearly labelled, sized for the answer you require, and provided with any hints the user needs to complete them successfully.</P>
 <h3 id="label-text-inputs">Label text inputs</h3>
