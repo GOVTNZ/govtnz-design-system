@@ -100,6 +100,7 @@ a {
 }
 
 pre {
+  // We need this for when js is disabled.
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
