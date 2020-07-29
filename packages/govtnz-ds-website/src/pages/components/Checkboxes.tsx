@@ -35,6 +35,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 <H2 styleSize="large" id="examples">Examples</H2>
 <P>Interact with each example to see how it works.</P>
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example  code={components__Checkboxes[0]} iframeProps={{
         id:"iframe_componentsCheckboxes0",
         className: "example__iframe",

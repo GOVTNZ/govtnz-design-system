@@ -7,6 +7,7 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Date input">
         <DateInput
             id="passport-issued"

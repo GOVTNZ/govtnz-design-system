@@ -5,6 +5,7 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Checkboxes">
         <FieldsetBlock legend={<H1 styleSize="large" id="providerChoiceTitle1" marginBottom8>Who are your providers?</H1>} hint={<p>Select all that apply.</p>} hintId="hintId1">
             <CheckboxBlock label="Aardvark Access" id="anyCheckboxId1" value="provider1" name="providerChoice1" />

@@ -57,6 +57,7 @@ Users will often need to copy and paste information into a textarea, so do not s
 Error messages should be styled like this:
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Textarea error">
         <TextareaBlock
             id="detail"

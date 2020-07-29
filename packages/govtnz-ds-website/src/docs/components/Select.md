@@ -5,6 +5,7 @@
 Interact with this example to see how it works.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Select">
         <SelectBlock id="select1" label="Order by">
             <option value="published">Recently published</option>
