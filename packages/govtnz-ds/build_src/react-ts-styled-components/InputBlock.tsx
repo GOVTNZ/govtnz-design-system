@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 type Props = {
   errorId?: string;
@@ -8,7 +8,7 @@ type Props = {
   hint?: React.ReactNode;
   hintId?: string;
   error?: React.ReactNode;
-  width?: "30" | "20" | "10" | "5" | "4" | "3" | "2";
+  width?: '30' | '20' | '10' | '5' | '4' | '3' | '2';
   required?: boolean;
   disabled?: boolean;
   readOnly?: boolean;
@@ -17,15 +17,15 @@ type Props = {
   value?: string;
   min?: number;
   max?: number;
-  type: React.InputHTMLAttributes<HTMLInputElement>["type"];
+  type: React.InputHTMLAttributes<HTMLInputElement>['type'];
   spellCheck?: boolean;
   maxLength?: number;
-  autoComplete: React.InputHTMLAttributes<HTMLInputElement>["autoComplete"];
-  onChange?: React.InputHTMLAttributes<HTMLInputElement>["onChange"];
+  autoComplete: React.InputHTMLAttributes<HTMLInputElement>['autoComplete'];
+  onChange?: React.InputHTMLAttributes<HTMLInputElement>['onChange'];
   ref?: React.RefObject<HTMLInputElement>;
 };
 
-const StyledDiv = styled.div<Pick<Props, "errorId">>`
+const StyledDiv = styled.div<Pick<Props, 'errorId'>>`
   margin-bottom: 20px;
   @media (min-width: 40.0625em) {
     margin-bottom: 30px;
@@ -129,7 +129,7 @@ const StyledSpan = styled.span`
 `;
 
 const StyledInput = styled.input<
-  Pick<Props, "error" | "width">
+  Pick<Props, 'error' | 'width'>
 >`font-family: g-theme-font-family;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
@@ -179,37 +179,37 @@ ${props =>
     border: 1px solid g-theme-error-border-color;
   `}
 ${props =>
-  props.width === "30" &&
+  props.width === '30' &&
   styled.css`
     max-width: 59ex;
   `}
 ${props =>
-  props.width === "20" &&
+  props.width === '20' &&
   styled.css`
     max-width: 41ex;
   `}
 ${props =>
-  props.width === "10" &&
+  props.width === '10' &&
   styled.css`
     max-width: 23ex;
   `}
 ${props =>
-  props.width === "5" &&
+  props.width === '5' &&
   styled.css`
     max-width: 10.8ex;
   `}
 ${props =>
-  props.width === "4" &&
+  props.width === '4' &&
   styled.css`
     max-width: 9ex;
   `}
 ${props =>
-  props.width === "3" &&
+  props.width === '3' &&
   styled.css`
     max-width: 7.2ex;
   `}
 ${props =>
-  props.width === "2" &&
+  props.width === '2' &&
   styled.css`
     max-width: 5.4ex;
   `}
@@ -257,7 +257,7 @@ const InputBlock = ({
         </StyledDiv2>
       </React.Fragment>
     ) : (
-      ""
+      ''
     )}
     {errorId ? (
       <React.Fragment>
@@ -271,21 +271,21 @@ const InputBlock = ({
         </StyledDiv3>
       </React.Fragment>
     ) : (
-      ""
+      ''
     )}
     <StyledInput
       width={width}
       error={error}
       aria-describedby={
         hintId !== undefined || errorId !== undefined
-          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+          ? `${errorId ? ' ' + errorId : ''}${hintId ? hintId : ''}`
           : undefined
       }
       id={id}
       name={name}
       required={required}
       disabled={
-        disabled !== undefined ? disabled.toString() === "true" : undefined
+        disabled !== undefined ? disabled.toString() === 'true' : undefined
       }
       readOnly={readOnly}
       autoFocus={autoFocus}
