@@ -1,21 +1,21 @@
-import React from 'react'
-import Button from '@govtnz/ds/build/react-ts/Button'
-import './search.scss'
-import '../commons/styles/components/input.scss'
-import '../commons/styles/components/icon.scss'
-import '../commons/styles/components/button.scss'
-import '../commons/styles/components/utilities.scss'
-import SearchIcon from '../commons/svgs/icon-search.svg'
+import React from 'react';
+import Button from '@govtnz/ds/build/react-ts/Button';
+import './search.scss';
+import '../commons/styles/components/input.scss';
+import '../commons/styles/components/icon.scss';
+import '../commons/styles/components/button.scss';
+import '../commons/styles/components/utilities.scss';
+import SearchIcon from '../commons/svgs/icon-search.svg';
 import Icon from '../components/Icon';
 
 class Search extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
-  onSubmit = e => {
-    e.preventDefault()
-  }
+  onSubmit = (e) => {
+    e.preventDefault();
+  };
 
   render() {
     return (
@@ -37,7 +37,7 @@ class Search extends React.Component {
               <Button aria-label="Submit">
                 <Icon
                   className="icon icon--white"
-                  role="presentation"
+                  role="img"
                   id={SearchIcon.id}
                 />
               </Button>
@@ -45,8 +45,8 @@ class Search extends React.Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
-export default Search
+export default Search;
