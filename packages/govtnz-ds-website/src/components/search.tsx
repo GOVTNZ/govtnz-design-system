@@ -39,6 +39,8 @@ class Search extends React.Component {
                   className="icon icon--white"
                   role="img"
                   id={SearchIcon.id}
+                  title="search submit"
+                  aria-labelledby={`#unique ${SearchIcon.id}`}
                 />
               </Button>
             </div>

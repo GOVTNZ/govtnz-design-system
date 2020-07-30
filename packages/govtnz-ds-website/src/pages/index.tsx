@@ -71,8 +71,6 @@ const IndexPage = (props) => {
                 className="banner__icon"
                 role="presentation"
                 id={HeroIcon.id}
-                title="decorative-icon-hero"
-                aria-labelledby="decorative-icon-hero"
               />
             </Column>
           </Row>
@@ -152,8 +150,6 @@ const IndexPage = (props) => {
                       className="card__icon"
                       role="presentation"
                       id={BasicsIcon.id}
-                      title="decorative-icon-basics"
-                      aria-labelledby="decorative-icon-basics"
                     />
                   </div>
                   <H3 styleSize="medium">Basics</H3>
@@ -176,8 +172,6 @@ const IndexPage = (props) => {
                       className="card__icon"
                       role="presentation"
                       id={ComponentsIcon.id}
-                      title="decorative-icon-components"
-                      aria-labelledby="decorative-icon-components"
                     />
                   </div>
                   <H3 styleSize="medium">Components</H3>
@@ -195,12 +189,7 @@ const IndexPage = (props) => {
               <Column xs="12" sm="6" md="4" lg="4">
                 <div className="card">
                   <div className="card__icon-container">
-                    <Icon
-                      className="card__icon"
-                      role="presentation"
-                      title="decorative-icon-patterns"
-                      aria-labelledby="decorative-icon-patterns"
-                    />
+                    <Icon className="card__icon" role="presentation" />
                   </div>
                   <H3 styleSize="medium">Patterns (coming soon)</H3>
                   <P>

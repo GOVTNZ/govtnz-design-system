@@ -58,8 +58,6 @@ class NavigationSmall extends React.Component<Props, State> {
               className="navigation-small__button-icon icon"
               role="presentation"
               id={iconMenu.id}
-              title="decorative-icon-menu"
-              aria-labelledby="decorative-icon-menu"
             />
             <span className="navigation-small__button-span">Menu</span>
           </button>
@@ -85,8 +83,6 @@ class NavigationSmall extends React.Component<Props, State> {
                       className="navigation-small__button-icon icon"
                       role="presentation"
                       id={iconClose.id}
-                      title="decorative-icon-close"
-                      aria-labelledby="decorative-icon-close"
                     />
                     <span className="navigation-small__button-span">Close</span>
                   </button>

@@ -47,13 +47,12 @@ const Footer = () => (
               href="https://www.govt.nz/"
               className="g-footer__standard-link--plain"
             >
-              <span className="g-footer-visually-hidden">
-                New Zealand Government
-              </span>
               <Icon
                 className="g-footer__icon-govt-logo"
                 role="img"
                 id={LogoIcon.id}
+                title="New Zealand Government"
+                aria-labelledby={`#unique ${LogoIcon.id}`}
               />
             </a>
             <div className="g-footer__standard-licence">
@@ -69,19 +68,20 @@ const Footer = () => (
                   href="https://creativecommons.org/licenses/by/4.0/"
                   className="g-footer__standard-link--plain"
                 >
-                  <span className="g-footer-visually-hidden">
-                    Creative Commons 4.0 International Licence
-                  </span>
                   <Icon
                     className="g-footer__icon-cc"
                     role="img"
                     id={CCIcon.id}
+                    title="Creative Commons 4.0 International Licence"
+                    aria-labelledby={`#unique ${CCIcon.id}`}
                   />
                   &nbsp;
                   <Icon
                     className="g-footer__icon-cc"
                     role="img"
                     id={CCByIcon.id}
+                    title="Creative Commons 4.0 International Licence"
+                    aria-labelledby={`#unique ${CCByIcon.id}`}
                   />
                 </a>
                 <br />
@@ -92,13 +92,12 @@ const Footer = () => (
           </Column>
           <Column xs="12" sm="4" md="2" lg="3">
             <div className="g-footer__standard-copyright">
-              <span className="g-footer-visually-hidden">
-                New Zealand Coat of Arms
-              </span>
               <Icon
                 className="g-footer__icon-coat-of-arms"
                 role="img"
                 id={CoatIcon.id}
+                title="NewZealand-Coat-of-Arms"
+                aria-labelledby={`#unique ${CoatIcon.id}`}
               />
               <p className="g-footer__standard-small-text">
                 © Crown Copyright <span>{new Date().getFullYear()}</span>

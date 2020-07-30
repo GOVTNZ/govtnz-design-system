@@ -10,7 +10,13 @@ type Props = {
 const Note = ({ children }: Props) => (
   <div className="note" role="note">
     <div className="note__strip">
-      <Icon className="note__icon" role="img" id={InfoIcon.id} />
+      <Icon
+        className="note__icon"
+        role="img"
+        title="search submit"
+        aria-labelledby={`#unique ${InfoIcon.id}`}
+        id={InfoIcon.id}
+      />
     </div>
     <div className="note__content">{children}</div>
   </div>
