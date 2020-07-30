@@ -7,7 +7,7 @@ const LogoLockUp = () => (
     <div className="header__logo header__logo--show@medium header__logo--show-print">
       <svg
         className="header__icon"
-        role="presentation"
+        role="img"
         focusable="false"
         xmlns="http://www.w3.org/2000/svg"
         width="230"
@@ -17,11 +17,7 @@ const LogoLockUp = () => (
       </svg>
     </div>
     <div className="header__logo header__logo--hide@medium header__logo--hide-print">
-      <Icon
-        className="header__icon"
-        role="presentation"
-        id={iconNZGShortLogo.id}
-      />
+      <Icon className="header__icon" role="img" id={iconNZGShortLogo.id} />
     </div>
     <span className="visually-hidden">New Zealand Government</span>
     <div className="header__title">Design System</div>

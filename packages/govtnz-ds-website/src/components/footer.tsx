@@ -52,7 +52,7 @@ const Footer = () => (
               </span>
               <Icon
                 className="g-footer__icon-govt-logo"
-                role="presentation"
+                role="img"
                 id={LogoIcon.id}
               />
             </a>
@@ -74,13 +74,13 @@ const Footer = () => (
                   </span>
                   <Icon
                     className="g-footer__icon-cc"
-                    role="presentation"
+                    role="img"
                     id={CCIcon.id}
                   />
                   &nbsp;
                   <Icon
                     className="g-footer__icon-cc"
-                    role="presentation"
+                    role="img"
                     id={CCByIcon.id}
                   />
                 </a>
@@ -97,7 +97,7 @@ const Footer = () => (
               </span>
               <Icon
                 className="g-footer__icon-coat-of-arms"
-                role="presentation"
+                role="img"
                 id={CoatIcon.id}
               />
               <p className="g-footer__standard-small-text">

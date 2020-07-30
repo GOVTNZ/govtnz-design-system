@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Details, Summary } from 'react-accessible-details'
-import Icon from './Icon'
-import iconDown from '../commons/svgs/icon-down.svg'
+import React from 'react';
+import { Link } from 'gatsby';
+import { Details, Summary } from 'react-accessible-details';
+import Icon from './Icon';
+import iconDown from '../commons/svgs/icon-down.svg';
 
 type Props = {
-  to: string
-  label: string
-  childMenu?: Array<any>
-}
+  to: string;
+  label: string;
+  childMenu?: Array<any>;
+};
 
 const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
   return (
@@ -19,6 +19,7 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
           className="navigation__link-icon navigation__link-icon--down icon icon--theme-highlight"
           role="presentation"
           id={iconDown.id}
+          title={iconDown.id}
         />
       </Summary>
       <ul className="sidebar__navigation">
@@ -31,7 +32,7 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
             {label} overview
           </Link>
         </li>
-        {childMenu.map(item => {
+        {childMenu.map((item) => {
           if (item.items) {
             // is a Component category
             return (
@@ -40,8 +41,8 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
                   {item.title}
                 </span>
                 <ul className="sidebar__category">
-                  {item.items.map(item => {
-                    const toString = `${to}${item.id}/`
+                  {item.items.map((item) => {
+                    const toString = `${to}${item.id}/`;
                     return (
                       <li>
                         <Link
@@ -52,13 +53,13 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
                           {item.name}
                         </Link>
                       </li>
-                    )
+                    );
                   })}
                 </ul>
               </li>
-            )
+            );
           } else {
-            const toString = `${to}${item.id}/`
+            const toString = `${to}${item.id}/`;
             return (
               <li>
                 <Link
@@ -69,12 +70,12 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
                   {item.name}
                 </Link>
               </li>
-            )
+            );
           }
         })}
       </ul>
     </Details>
-  )
-}
+  );
+};
 
-export default NavigationItemsDetails
+export default NavigationItemsDetails;
