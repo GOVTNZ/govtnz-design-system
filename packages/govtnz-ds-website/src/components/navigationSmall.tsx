@@ -84,7 +84,8 @@ class NavigationSmall extends React.Component<Props, State> {
                       className="navigation-small__button-icon icon"
                       role="presentation"
                       id={iconClose.id}
-                      title={iconClose.id}
+                      title="decorative-icon-close"
+                      aria-labelledby="decorative-icon-close"
                     />
                     <span className="navigation-small__button-span">Close</span>
                   </button>

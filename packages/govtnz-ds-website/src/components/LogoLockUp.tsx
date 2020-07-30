@@ -7,7 +7,7 @@ const LogoLockUp = () => (
     <div className="header__logo header__logo--show@medium header__logo--show-print">
       <svg
         className="header__icon"
-        role="img"
+        role="presentation"
         focusable="false"
         xmlns="http://www.w3.org/2000/svg"
         width="230"

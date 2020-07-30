@@ -19,7 +19,8 @@ const NavigationItemsDetails = ({ to, label, childMenu }: Props) => {
           className="navigation__link-icon navigation__link-icon--down icon icon--theme-highlight"
           role="presentation"
           id={iconDown.id}
-          title={iconDown.id}
+          title="decorative-icon-down"
+          aria-labelledby="decorative-icon-down"
         />
       </Summary>
       <ul className="sidebar__navigation">
