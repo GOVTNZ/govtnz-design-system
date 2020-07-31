@@ -221,6 +221,12 @@ a:focus {
   outline: 3px solid var(--g-theme-focus-ring-color, #b53cde);
 }
 
+/* Fix not showing on IE 11 */
+#iframed-messagea a:focus {
+  outline: #b53cde;
+  outline: 3px solid #b53cde;
+}
+
 .css-changes-for-example-only .example-invert-logo {
   color: white;
   color: var(--g-theme-inverted-color, white);
