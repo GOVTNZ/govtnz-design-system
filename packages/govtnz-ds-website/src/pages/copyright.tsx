@@ -18,7 +18,7 @@ import { Link } from 'gatsby';
 const IndexPage = (props) => (
   <Layout {...props}>
     <SEO
-      title="Privacy | Design System - Alpha"
+      title="Copyright | Design System - Alpha"
       keywords={[
         'government',
         `design system`,

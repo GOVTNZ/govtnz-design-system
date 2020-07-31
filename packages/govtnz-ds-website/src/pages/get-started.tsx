@@ -16,7 +16,7 @@ import GetInTouch from '../components/GetInTouch';
 const IndexPage = (props) => (
   <Layout {...props}>
     <SEO
-      title="Copyright | Design System - Alpha"
+      title="Get started | Design System - Alpha"
       keywords={[
         'government',
         `design system`,
