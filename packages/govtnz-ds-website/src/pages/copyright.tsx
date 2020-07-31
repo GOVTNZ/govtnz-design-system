@@ -13,7 +13,6 @@ import Ul from '@govtnz/ds/build/react-ts/Ul';
 import Li from '@govtnz/ds/build/react-ts/Li';
 
 import GetInTouch from '../components/GetInTouch';
-import { Link } from 'gatsby';
 
 const IndexPage = (props) => (
   <Layout {...props}>
