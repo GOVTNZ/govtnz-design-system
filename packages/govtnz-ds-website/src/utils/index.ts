@@ -9,11 +9,11 @@ export function generatePrintLinksList() {
   const mainContent = document.querySelector('main');
   if (!mainContent) return;
 
-  const links = mainContent.querySelectorAll('a');
+  const links = Array.from(mainContent.querySelectorAll('a'));
   if (!links.length) return;
 
   const linksWrapper = document.createElement('div');
-  linksWrapper.setAttribute('class', 'external-links-print-wrapper');
+  linksWrapper.className = 'external-links-print-wrapper';
   mainContent.appendChild(linksWrapper);
 
   const linksWrapperHeading = document.createElement('h2');
@@ -28,7 +28,7 @@ export function generatePrintLinksList() {
     if (link.host !== window.location.host) {
       // Add an item numbers next to the source link
       const itemNumber = document.createElement('sup');
-      itemNumber.setAttribute('class', 'external-link-print-superscript');
+      itemNumber.className = 'external-link-print-superscript';
       itemNumber.innerHTML = `${counter}`;
       link.parentNode.insertBefore(itemNumber, link.nextSibling);
 
