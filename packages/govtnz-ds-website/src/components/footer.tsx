@@ -30,12 +30,9 @@ const Footer = () => (
                   </a>
                 </li>
                 <li className="g-footer__standard-inline-list-item">
-                  <a
-                    className="g-footer__standard-link"
-                    href="https://www.digital.govt.nz/home/about-digital-govt-nz/privacy/"
-                  >
+                  <Link to="/privacy" className="g-footer__standard-link">
                     Privacy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
