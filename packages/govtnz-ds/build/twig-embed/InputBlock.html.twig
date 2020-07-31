@@ -55,7 +55,7 @@ class="g-inputBlock-visually-hidden"
   
   
 <input
-aria-describedby="{{ hintId | escape('html_attr') }} {{ errorId | escape('html_attr') }}"
+aria-describedby="{{ errorId | escape('html_attr') }} {{ hintId | escape('html_attr') }}"
 class="g-inputBlock-input{% if width == "30" %}g-inputBlock-input--width-30{% elseif width == "20" %}g-inputBlock-input--width-20{% elseif width == "10" %}g-inputBlock-input--width-10{% elseif width == "5" %}g-inputBlock-input--width-5{% elseif width == "4" %}g-inputBlock-input--width-4{% elseif width == "3" %}g-inputBlock-input--width-3{% elseif width == "2" %}g-inputBlock-input--width-2{% endif %} {% if error %} g-inputBlock-input--error{% endif %}"
 id="{{ id | escape('html_attr') }}"
 name="{{ name | escape('html_attr') }}"
