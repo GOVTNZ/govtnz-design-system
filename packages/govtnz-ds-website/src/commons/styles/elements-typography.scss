@@ -99,6 +99,13 @@ a {
   }
 }
 
+pre {
+  // We need this for when js is disabled.
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
 code {
   // We need to override styling coming from the prism-js theme.
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
