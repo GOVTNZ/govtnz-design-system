@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { StaticQuery, graphql, PageRendererProps } from 'gatsby';
+import { generatePrintLinksList } from '../utils';
 import Container from '@govtnz/ds/build/react-ts/FlexContainer';
 import Row from '@govtnz/ds/build/react-ts/FlexRow';
 import Column from '@govtnz/ds/build/react-ts/FlexColumn';
@@ -22,8 +23,12 @@ const Layout = (props: Props) => {
 
   useEffect(() => {
     if (document.body.classList) {
-      document.documentElement.classList.add('theme-default');
+      document.documentElement.classList.add('theme-default', 'js');
     }
+
+    window.onbeforeprint = () => {
+      generatePrintLinksList();
+    };
   }, []);
 
   return (
@@ -37,7 +42,7 @@ const Layout = (props: Props) => {
           }
         }
       `}
-      render={data => (
+      render={(data) => (
         <>
           <SkipLink href="#main-heading" key={path} />
           <Header siteTitle={data.site.siteMetadata.title} />

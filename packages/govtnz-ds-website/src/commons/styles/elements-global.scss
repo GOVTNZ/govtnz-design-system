@@ -95,3 +95,25 @@ body {
   /* this affects the margin in the printer settings */
   margin: 15mm 15mm 15mm 15mm;
 }
+
+.external-links-print-wrapper,
+.external-link-print-superscript {
+  display: none;
+}
+
+@media print {
+  .external-links-print-wrapper {
+    display: block;
+  }
+  .external-link-print-superscript {
+    display: inline;
+  }
+
+  // 'external-links-print-wrapper' won't load without JS,
+  // so non-JS users can see links inline in print view instead:
+  body:not(.js) {
+    a[href^='http']::after {
+      content: ' (' attr(href) ')';
+    }
+  }
+}
