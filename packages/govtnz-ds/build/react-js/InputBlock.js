@@ -57,7 +57,7 @@ var InputBlock = function InputBlock(_ref) {
   }, /*#__PURE__*/_react["default"].createElement("span", {
     className: "g-inputBlock-visually-hidden"
   }, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", /*#__PURE__*/_react["default"].createElement("input", {
-    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
+    "aria-describedby": errorId !== undefined || hintId !== undefined ? "".concat(errorId ? errorId : "").concat(hintId ? " " + hintId : "") : undefined,
     className: "g-inputBlock-input".concat(constants.width[width] !== undefined ? " " + constants.width[width] : "").concat(error ? " g-inputBlock-input--error" : ""),
     id: id,
     name: name,

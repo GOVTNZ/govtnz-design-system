@@ -226,7 +226,7 @@ var InputBlock = function InputBlock(_ref) {
   }, /*#__PURE__*/_react["default"].createElement(StyledSpan, null, "Error: "), error !== undefined ? error : /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, "Example text"))) : "", /*#__PURE__*/_react["default"].createElement(StyledInput, {
     width: width,
     error: error,
-    "aria-describedby": hintId !== undefined || errorId !== undefined ? "".concat(hintId ? hintId : "").concat(errorId ? " " + errorId : "") : undefined,
+    "aria-describedby": errorId !== undefined || hintId !== undefined ? "".concat(errorId ? errorId : "").concat(hintId ? " " + hintId : "") : undefined,
     id: id,
     name: name,
     required: required,

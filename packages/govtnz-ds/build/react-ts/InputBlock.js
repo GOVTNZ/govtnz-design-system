@@ -25,8 +25,8 @@ var InputBlock = function (_a) {
             react_1.default.createElement("div", { className: "g-inputBlock-error-message", id: errorId },
                 react_1.default.createElement("span", { className: "g-inputBlock-visually-hidden" }, "Error: "),
                 error !== undefined ? (error) : (react_1.default.createElement(react_1.default.Fragment, null, "Example text"))))) : (""),
-        react_1.default.createElement("input", { "aria-describedby": hintId !== undefined || errorId !== undefined
-                ? "" + (hintId ? hintId : "") + (errorId ? " " + errorId : "")
+        react_1.default.createElement("input", { "aria-describedby": errorId !== undefined || hintId !== undefined
+                ? "" + (errorId ? errorId : "") + (hintId ? " " + hintId : "")
                 : undefined, className: "g-inputBlock-input" + (constants.width[width] !== undefined ? " " + constants.width[width] : "") + (error ? " g-inputBlock-input--error" : ""), id: id, name: name, required: required, disabled: disabled !== undefined ? disabled.toString() === "true" : undefined, readOnly: readOnly, autoFocus: autoFocus, value: value, min: min, max: max, type: type, spellCheck: spellCheck, maxLength: maxLength, autoComplete: autoComplete, onChange: onChange, ref: ref })));
 };
 exports.default = InputBlock;

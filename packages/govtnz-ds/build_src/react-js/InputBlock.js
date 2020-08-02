@@ -76,8 +76,8 @@ const InputBlock = ({
     )}
     <input
       aria-describedby={
-        hintId !== undefined || errorId !== undefined
-          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+        errorId !== undefined || hintId !== undefined
+          ? `${errorId ? errorId : ""}${hintId ? " " + hintId : ""}`
           : undefined
       }
       className={`g-inputBlock-input${

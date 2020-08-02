@@ -91,7 +91,7 @@ export default Vue.extend({
       );
     },
     computed__ariaDescribedby() {
-      return this.hintId + this.errorId;
+      return this.errorId + this.hintId;
     },
     computed__class2() {
       return (

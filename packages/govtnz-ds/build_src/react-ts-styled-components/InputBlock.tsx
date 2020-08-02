@@ -277,8 +277,8 @@ const InputBlock = ({
       width={width}
       error={error}
       aria-describedby={
-        hintId !== undefined || errorId !== undefined
-          ? `${hintId ? hintId : ""}${errorId ? " " + errorId : ""}`
+        errorId !== undefined || hintId !== undefined
+          ? `${errorId ? errorId : ""}${hintId ? " " + hintId : ""}`
           : undefined
       }
       id={id}
