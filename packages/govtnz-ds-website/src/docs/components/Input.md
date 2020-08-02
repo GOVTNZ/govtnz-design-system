@@ -25,7 +25,7 @@ Use the text input component for single line answers, such as a user’s name or
 
 ## When not to use it
 
-If you expect multiple line answers from users, do not use the text input component. Use the `textarea` component instead (currently under development).
+If you expect multiple line answers from users, do not use the text input component. Use the [textarea](/components/Textarea) component instead (currently under development).
 
 ## How it works
 
