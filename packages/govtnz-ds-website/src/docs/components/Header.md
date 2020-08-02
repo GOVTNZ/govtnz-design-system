@@ -9,6 +9,7 @@ Interact with the example to see how it works.
 Note that the logo and [flexbox grid component](https://design-system-alpha.digital.govt.nz/components/FlexGrid/), are for example purposes only and are optional.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Header containing a MainNav">
         <Header>
             <MainNavMobileMenuContext>

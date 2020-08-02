@@ -5,6 +5,7 @@
 Interact with each example to see how it works.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Radio buttons">
         <FieldsetBlock legend={<H1 styleSize="small" id="nameChangeId5">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
             <Radios inline>

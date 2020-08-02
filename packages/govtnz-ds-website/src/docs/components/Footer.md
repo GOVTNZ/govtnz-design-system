@@ -5,6 +5,7 @@
 Interact with the example to see how it works.
 
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example title="Example: Footer">
         <Footer>
             <FlexContainer width="fixed">

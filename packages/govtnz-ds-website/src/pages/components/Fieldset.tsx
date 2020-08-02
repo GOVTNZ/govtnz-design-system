@@ -33,6 +33,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <H2 styleSize="large" id="examples">Examples</H2>
 <P>Interact with the example to see how it works.</P>
 <ExampleContainer>
+    <ExampleHeading></ExampleHeading>
     <Example  code={components__Fieldset[0]} iframeProps={{
         id:"iframe_componentsFieldset0",
         className: "example__iframe",
