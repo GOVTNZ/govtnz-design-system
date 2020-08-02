@@ -222,7 +222,7 @@ a:focus {
 }
 
 /* Fix not showing on IE 11 */
-#iframed-messagea a:focus {
+#iframed-message a:focus {
   outline: #b53cde;
   outline: 3px solid #b53cde;
 }
