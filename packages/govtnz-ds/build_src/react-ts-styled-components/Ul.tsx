@@ -21,7 +21,7 @@ const StyledUl = styled.ul<
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 20px;
-  list-style-type: disc;
+  list-style-type: circle;
   ${props =>
     props.spacing &&
     styled.css`

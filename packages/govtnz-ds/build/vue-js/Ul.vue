@@ -37,7 +37,7 @@ export default Vue.extend({
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 20px;
-  list-style-type: disc;
+  list-style-type: circle;
 }
 .g-ul--spacing {
   margin-bottom: 0;

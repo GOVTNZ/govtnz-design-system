@@ -23,7 +23,7 @@ export default Vue.extend({
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 20px;
-  list-style-type: decimal;
+  list-style-type: lower-alpha;
 }
 @media print {
   .g-ol {

@@ -16,7 +16,7 @@ const StyledOl = styled.ol`
   margin-top: 0;
   margin-bottom: 1rem;
   padding-left: 20px;
-  list-style-type: decimal;
+  list-style-type: lower-alpha;
   @media print {
     font-family: sans-serif;
   }
