@@ -10,7 +10,7 @@
   margin-bottom: 1rem;
   padding-left: 0;
   padding-left: 20px;
-  list-style-type: lower-alpha;
+  list-style-type: decimal;
 }
 
 @media print {
@@ -46,6 +46,7 @@
 }
 
 .g-ol .g-ol {
+  list-style-type: lower-alpha;
   margin-top: 10px;
 }
 
