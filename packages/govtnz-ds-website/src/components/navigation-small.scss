@@ -82,6 +82,11 @@
   top: 9px;
   left: 1rem;
   z-index: 3;
+  @include font-smoothing;
+
+  @supports (-webkit-touch-callout: none) {
+    top: 13px;
+  }
 }
 
 .navigation-modal__content {
