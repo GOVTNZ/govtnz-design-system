@@ -19,7 +19,7 @@ const Header = ({ siteTitle }: Props) => (
       <Container width="fixed">
         <Row>
           <Column xs="10" sm="10" md="8" lg="8">
-            <LogoLockUp siteTitle={siteTitle} />
+            <LogoLockUp />
           </Column>
           <Column xs="2" sm="2" md="4" lg="4">
             <NavigationSmall siteTitle={siteTitle} />
