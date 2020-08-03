@@ -91,7 +91,7 @@ class NavigationSmall extends React.Component<Props, State> {
             </Container>
           </div>
           <div className="navigation-modal__heading">
-            <LogoLockUp />
+            <LogoLockUp tabIndex={-1} />
           </div>
           <div className="navigation-modal__content">
             <div className="navigation-modal__scroll">

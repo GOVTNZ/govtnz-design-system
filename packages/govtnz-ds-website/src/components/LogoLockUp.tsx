@@ -2,8 +2,12 @@ import React from 'react';
 import Icon from './Icon';
 import iconNZGShortLogo from '../commons/svgs/icon-nzg-short.svg';
 
-const LogoLockUp = () => (
-  <a href="/">
+type Props = {
+  tabIndex?: number;
+};
+
+const LogoLockUp = ({ tabIndex }: Props) => (
+  <a href="/" tabIndex={tabIndex}>
     <div className="header__logo header__logo--show@medium header__logo--show-print">
       <svg
         className="header__icon"
