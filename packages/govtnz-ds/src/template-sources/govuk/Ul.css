@@ -40,6 +40,10 @@
   }
 }
 
+.g-ul .g-ul {
+  list-style-type: circle;
+}
+
 .g-ul--mb-0 {
   margin-bottom: 0px !important;
 }

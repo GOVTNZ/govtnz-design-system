@@ -30,6 +30,7 @@ const StyledOl = styled.ol`
   @media (min-width: 40.0625em) {
     margin-bottom: 1rem;
   }
+  list-style-type: lower-alpha;
   margin-top: 10px;
   margin-top: 0px;
   margin-top: 0.5rem;

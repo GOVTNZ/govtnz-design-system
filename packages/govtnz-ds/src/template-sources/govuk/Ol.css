@@ -46,6 +46,7 @@
 }
 
 .g-ol .g-ol {
+  list-style-type: lower-alpha;
   margin-top: 10px;
 }
 

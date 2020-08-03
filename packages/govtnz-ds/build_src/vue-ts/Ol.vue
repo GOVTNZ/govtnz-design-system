@@ -53,6 +53,7 @@ export default Vue.extend({
   }
 }
 .g-ol .g-ol {
+  list-style-type: lower-alpha;
   margin-top: 10px;
 }
 .g-ol-hint > * {

@@ -62,6 +62,9 @@ export default Vue.extend({
     line-height: 32px;
   }
 }
+.g-ul .g-ul {
+  list-style-type: circle;
+}
 .g-ul--mb-0 {
   margin-bottom: 0px !important;
 }
