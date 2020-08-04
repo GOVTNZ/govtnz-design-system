@@ -117,7 +117,7 @@
 }
 
 .ReactModal__Overlay {
-  display: block;
+  visibility: visible;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.2s;
 
