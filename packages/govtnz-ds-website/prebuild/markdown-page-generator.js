@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Marked = require('marked');
 const glob = require('glob-promise');
-const { startCase, uniq } = require('lodash');
+const { startCase, uniq, clamp } = require('lodash');
 const {
   escapeRegex,
   importGenerator,
@@ -284,8 +284,22 @@ const generatePage = async (
   importsByName.push(`A`);
 
   const exampleContainersRegex = /<ExampleContainer>([\s\S]*?)<\/ExampleContainer>/g;
-  const exampleHeadingRegex = /<ExampleHeading>([\s\S]*?)<\/ExampleHeading>/g;
+  const exampleHeadingRegex = /<ExampleHeading([\s\S]*?)<\/ExampleHeading>/g;
   const exampleRegex = /<Example( [\s\S]*?>|>)([\s\S]*?)<\/Example>/g;
+
+  html = html.replace(/<ExampleHeading/gi, (match, offset, ...args) => {
+    const precedingHTML = html.substr(0, offset);
+    const headings = precedingHTML.replace(exampleRegex, '').match(/<h[1-6]/gi);
+
+    let exampleHeadingLevel =
+      headings && headings.length
+        ? parseInt(headings[headings.length - 1].substr(2), 10) + 1
+        : 4;
+
+    exampleHeadingLevel = clamp(exampleHeadingLevel, 1, 6);
+
+    return `${match} level={${exampleHeadingLevel}}`;
+  });
 
   const matches = html.match(exampleContainersRegex);
 
@@ -314,6 +328,8 @@ const generatePage = async (
       }
 
       const fullExample = fullExamples[0];
+
+      // console.log({ fullExample });
 
       const exampleAsJS = jsxtojson(fullExample);
 
@@ -360,7 +376,7 @@ const generatePage = async (
       const example = fullExample
         .replace(/<ExampleSection>/g, '')
         .replace(/<\/ExampleSection>/g, '')
-        .replace(/<ExampleHeading>/g, '')
+        .replace(/<ExampleHeading( [\s\S]*?>|>)>/g, '')
         .replace(/<\/ExampleHeading>/g, '')
         .replace(/<Example( [\s\S]*?>|>)/g, '')
         .replace(/<\/Example>/g, '')

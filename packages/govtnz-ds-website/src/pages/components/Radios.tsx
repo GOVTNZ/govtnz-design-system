@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <H2 styleSize="large" id="examples">Examples</H2>
 <P>Interact with each example to see how it works.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Radios[0]} iframeProps={{
         id:"iframe_componentsRadios0",
         className: "example__iframe",
@@ -65,7 +65,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <P>Another example of pre-selected ordering is listing options chronologically. For example, you could order available appointment times in a day from earliest to latest.</P>
 <P>However, using pre-selected ordering could reinforce bias in your service, so use it with caution. If in doubt, order alphabetically.</P>
 <ExampleContainer>
-    <ExampleHeading>Stacked radio buttons</ExampleHeading>
+    <ExampleHeading level={3}>Stacked radio buttons</ExampleHeading>
     <Example  code={components__Radios[1]} iframeProps={{
         id:"iframe_componentsRadios1",
         className: "example__iframe",
@@ -77,7 +77,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 
 <P>When there are more than 2 options, radio buttons should be stacked.</P>
 <ExampleContainer>
-    <ExampleHeading>Inline radio buttons</ExampleHeading>
+    <ExampleHeading level={3}>Inline radio buttons</ExampleHeading>
     <Example  code={components__Radios[2]} iframeProps={{
         id:"iframe_componentsRadios2",
         className: "example__iframe",
@@ -89,7 +89,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 
 <P>If there are only 2 options, you can either stack the radio buttons or display them inline.</P>
 <ExampleContainer>
-    <ExampleHeading>Radio button items with hints</ExampleHeading>
+    <ExampleHeading level={3}>Radio button items with hints</ExampleHeading>
     <Example  code={components__Radios[3]} iframeProps={{
         id:"iframe_componentsRadios3",
         className: "example__iframe",
@@ -101,7 +101,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 
 <P>You can add hints to radio button items to provide more information about the options.</P>
 <ExampleContainer>
-    <ExampleHeading>Radio button items with a text divider</ExampleHeading>
+    <ExampleHeading level={3}>Radio button items with a text divider</ExampleHeading>
     <Example  code={components__Radios[4]} iframeProps={{
         id:"iframe_componentsRadios4",
         className: "example__iframe",
@@ -116,7 +116,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <P>The default radio button size should be used in nearly all cases. However, larger versions work well on pages where it’s helpful to make them more visually prominent.</P>
 <P>For example if you are asking users a single question on a page, larger buttons are easier to see and interact with.</P>
 <ExampleContainer>
-    <ExampleHeading>Large radio buttons</ExampleHeading>
+    <ExampleHeading level={3}>Large radio buttons</ExampleHeading>
     <Example  code={components__Radios[5]} iframeProps={{
         id:"iframe_componentsRadios5",
         className: "example__iframe",
@@ -129,7 +129,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 <h2 id="error-messages">Error messages</h2>
 <P>Make sure error messages follow the guidance below, and that you have specific error messages for specific error states.</P>
 <ExampleContainer>
-    <ExampleHeading>Default radio buttons with error</ExampleHeading>
+    <ExampleHeading level={3}>Default radio buttons with error</ExampleHeading>
     <Example  code={components__Radios[6]} iframeProps={{
         id:"iframe_componentsRadios6",
         className: "example__iframe",
@@ -140,7 +140,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Large radio buttons with error</ExampleHeading>
+    <ExampleHeading level={3}>Large radio buttons with error</ExampleHeading>
     <Example  code={components__Radios[7]} iframeProps={{
         id:"iframe_componentsRadios7",
         className: "example__iframe",

@@ -62,7 +62,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h2 id="error-messages">Error messages</h2>
 <P>Error messages should be styled like this:</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Textarea[1]} iframeProps={{
         id:"iframe_componentsTextarea1",
         className: "example__iframe",

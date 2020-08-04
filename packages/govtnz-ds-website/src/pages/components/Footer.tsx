@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The footer p
 <H2 styleSize="large" id="example">Example</H2>
 <P>Interact with the example to see how it works.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Footer[0]} iframeProps={{
         id:"iframe_componentsFooter0",
         className: "example__iframe",

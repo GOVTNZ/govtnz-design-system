@@ -33,7 +33,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <H2 styleSize="large" id="examples">Examples</H2>
 <P>Interact with each example to see how it works.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Date[0]} iframeProps={{
         id:"iframe_componentsDate0",
         className: "example__iframe",
@@ -44,7 +44,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Error</ExampleHeading>
+    <ExampleHeading level={3}>Error</ExampleHeading>
     <Example  code={components__Date[1]} iframeProps={{
         id:"iframe_componentsDate1",
         className: "example__iframe",
@@ -66,12 +66,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>Use the <code>autocomplete</code> attribute on the date input component when you&#39;re asking for a date of birth. This allows browsers to autofill the information on a user&#39;s behalf if they&#39;ve entered it previously.</P>
 <P>To enable this functionality, set the <code>autocomplete</code> attribute on the fields to <code>bday-day</code>, <code>bday-month</code>, and <code>bday-year</code>. You&#39;ll need to do this to meet WCAG 2.1 Level AA.</P>
 <ExampleContainer>
-    <ExampleHeading white>Code</ExampleHeading>
+    <ExampleHeading level={3} white>Code</ExampleHeading>
     <Example codeOnly code={components__Date[2]} iframeProps={{
         id:"iframe_componentsDate2",
         className: "example__iframe",
         src:"/components/Date__example2.html",
-        title:"Example 3",
+        title:"Code (Date example)",
         height: 270
       }}></Example>
 </ExampleContainer>
@@ -79,7 +79,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h2 id="error-messages">Error messages</h2>
 <P>Style error messages as shown in the following example.</P>
 <ExampleContainer>
-    <ExampleHeading>Error</ExampleHeading>
+    <ExampleHeading level={3}>Error</ExampleHeading>
     <Example  code={components__Date[3]} iframeProps={{
         id:"iframe_componentsDate3",
         className: "example__iframe",

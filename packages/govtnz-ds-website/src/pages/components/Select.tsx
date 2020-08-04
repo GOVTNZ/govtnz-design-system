@@ -31,7 +31,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">The select c
 <H2 styleSize="large" id="example">Example</H2>
 <P>Interact with this example to see how it works.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Select[0]} iframeProps={{
         id:"iframe_componentsSelect0",
         className: "example__iframe",

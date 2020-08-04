@@ -43,7 +43,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Error state</ExampleHeading>
+    <ExampleHeading level={3}>Error state</ExampleHeading>
     <Example  code={components__Input[1]} iframeProps={{
         id:"iframe_componentsInput1",
         className: "example__iframe",
@@ -68,7 +68,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>By default, the width of text inputs in the design system is fluid and will fit the full width of the container they are placed into.</P>
 <P>If you want to make the input smaller, you can either use a fixed-width input, or use the width override classes to create a smaller fluid-width input.</P>
 <ExampleContainer>
-    <ExampleHeading>Fixed-width text input</ExampleHeading>
+    <ExampleHeading level={4}>Fixed-width text input</ExampleHeading>
     <Example  code={components__Input[2]} iframeProps={{
         id:"iframe_componentsInput2",
         className: "example__iframe",
@@ -81,7 +81,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>Use fixed-width inputs for content that has a specific, known length. For example, postcode inputs should be postcode-sized, and telephone number inputs should be telephone number-sized.</P>
 <P>On fixed-width inputs, the width will remain fixed on all screens unless it is wider than the viewport, in which case it will shrink to fit.</P>
 <ExampleContainer>
-    <ExampleHeading>Hint text</ExampleHeading>
+    <ExampleHeading level={4}>Hint text</ExampleHeading>
     <Example  code={components__Input[3]} iframeProps={{
         id:"iframe_componentsInput3",
         className: "example__iframe",
@@ -97,12 +97,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>For example, to enable autofill on a postcode field, set the <code>autocomplete</code> attribute to <code>postal-code</code>. If you are working in production and there is a relevant input purpose, you’ll need to use the <code>autocomplete</code> attribute to meet Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.</P>
 <P>See how to do this in the following example.</P>
 <ExampleContainer>
-    <ExampleHeading white>Code</ExampleHeading>
+    <ExampleHeading level={4} white>Code</ExampleHeading>
     <Example codeOnly code={components__Input[4]} iframeProps={{
         id:"iframe_componentsInput4",
         className: "example__iframe",
         src:"/components/Input__example4.html",
-        title:"Example 5",
+        title:"Code (Input example)",
         height: 227
       }}></Example>
 </ExampleContainer>
@@ -114,12 +114,12 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>If you are asking users for information that&#39;s not appropriate to spellcheck, like a reference number, name, or email address, disable the spellcheck.</P>
 <P>To disable spellcheck, set <code>spellcheck=&quot;false&quot;</code>.</P>
 <ExampleContainer>
-    <ExampleHeading white>Code</ExampleHeading>
+    <ExampleHeading level={4} white>Code</ExampleHeading>
     <Example codeOnly code={components__Input[5]} iframeProps={{
         id:"iframe_componentsInput5",
         className: "example__iframe",
         src:"/components/Input__example5.html",
-        title:"Example 6",
+        title:"Code (Input example)",
         height: 227
       }}></Example>
 </ExampleContainer>
@@ -131,7 +131,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <h2 id="error-messages">Error messages</h2>
 <P>Style error messages as shown in the following example.</P>
 <ExampleContainer>
-    <ExampleHeading>Error state</ExampleHeading>
+    <ExampleHeading level={3}>Error state</ExampleHeading>
     <Example  code={components__Input[6]} iframeProps={{
         id:"iframe_componentsInput6",
         className: "example__iframe",

@@ -38,7 +38,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
 <P>Interact with the example to see how it works.</P>
 <P>Note that the logo and <A className="g-link"  href="https://design-system-alpha.digital.govt.nz/components/FlexGrid/">flexbox grid component</A>, are for example purposes only and are optional.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Header[0]} iframeProps={{
         id:"iframe_componentsHeader0",
         className: "example__iframe",

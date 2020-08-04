@@ -27,13 +27,13 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer>
-    <ExampleHeading>Example of File Upload</ExampleHeading>
+    <ExampleHeading level={4}>Example of File Upload</ExampleHeading>
     <Example  code={components__FileUpload[0]} iframeProps={{
         id:"iframe_componentsFileUpload0",
         className: "example__iframe",
         src:"/components/FileUpload__example0.html",
         title:"Example: File upload",
-        height: 165
+        height: 168
       }}></Example>
 </ExampleContainer>
 

@@ -27,7 +27,7 @@ import '../../commons/styles/ds/themed-Button.scss';
 import '../../commons/styles/ds/themed-CaptionL.scss';
 
 const PageContent = (props) => <React.Fragment><ExampleContainer>
-    <ExampleHeading>Example of Inset Text</ExampleHeading>
+    <ExampleHeading level={4}>Example of Inset Text</ExampleHeading>
     <Example  code={components__InsetText[0]} iframeProps={{
         id:"iframe_componentsInsetText0",
         className: "example__iframe",

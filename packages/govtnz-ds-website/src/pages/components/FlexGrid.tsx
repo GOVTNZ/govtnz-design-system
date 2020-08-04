@@ -36,7 +36,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <P>The grid system uses a series of containers, rows, and columns to lay out and align content.</P>
 <P>The following layout (non-responsive) example creates three equal-width columns on tablet, desktop, and widescreen devices using our predefined grid classes. Those columns are centered in the page with the parent flex container.</P>
 <ExampleContainer>
-    <ExampleHeading>3-column Flexbox grid</ExampleHeading>
+    <ExampleHeading level={3}>3-column Flexbox grid</ExampleHeading>
     <Example  code={components__FlexGrid[0]} iframeProps={{
         id:"iframe_componentsFlexGrid0",
         className: "example__iframe",
@@ -63,7 +63,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
 <P>We also support offsets to allow flexibility of design, essentially allowing blank columns to assist aesthetics in layout.</P>
 <P>The following example shows all the possible variants of column widths.</P>
 <ExampleContainer>
-    <ExampleHeading>Flexgrid column variants</ExampleHeading>
+    <ExampleHeading level={4}>Flexgrid column variants</ExampleHeading>
     <Example  code={components__FlexGrid[1]} iframeProps={{
         id:"iframe_componentsFlexGrid1",
         className: "example__iframe",

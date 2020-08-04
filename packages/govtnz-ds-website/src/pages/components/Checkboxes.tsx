@@ -35,7 +35,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 <H2 styleSize="large" id="examples">Examples</H2>
 <P>Interact with each example to see how it works.</P>
 <ExampleContainer>
-    <ExampleHeading></ExampleHeading>
+    <ExampleHeading level={3}></ExampleHeading>
     <Example  code={components__Checkboxes[0]} iframeProps={{
         id:"iframe_componentsCheckboxes0",
         className: "example__iframe",
@@ -46,7 +46,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Error</ExampleHeading>
+    <ExampleHeading level={3}>Error</ExampleHeading>
     <Example  code={components__Checkboxes[1]} iframeProps={{
         id:"iframe_componentsCheckboxes1",
         className: "example__iframe",
@@ -57,7 +57,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Checkboxes with hints</ExampleHeading>
+    <ExampleHeading level={3}>Checkboxes with hints</ExampleHeading>
     <Example  code={components__Checkboxes[2]} iframeProps={{
         id:"iframe_componentsCheckboxes2",
         className: "example__iframe",

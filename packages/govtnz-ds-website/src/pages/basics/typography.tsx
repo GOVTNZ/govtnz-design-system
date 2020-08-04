@@ -43,7 +43,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 </ExampleContainer>
 
 <ExampleContainer>
-    <ExampleHeading>Same heading level varying by size only</ExampleHeading>
+    <ExampleHeading level={3}>Same heading level varying by size only</ExampleHeading>
     <Example  code={basics__typography[1]} iframeProps={{
         id:"iframe_basicstypography1",
         className: "example__iframe",
@@ -57,7 +57,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <P>Mark up headings semantically using the appropriate <code>&lt;h#&gt;</code> level HTML element. In our design system, the font size is independent of the heading hierarchy. This allows for design flexibility.</P>
 <P>Write all headings in sentence case, with the exception of proper nouns, which require initial capitals.</P>
 <ExampleContainer>
-    <ExampleHeading>Headings with captions</ExampleHeading>
+    <ExampleHeading level={3}>Headings with captions</ExampleHeading>
     <Example  code={basics__typography[2]} iframeProps={{
         id:"iframe_basicstypography2",
         className: "example__iframe",
@@ -69,7 +69,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 
 <P>Sometimes you may need to make it clear that content under a heading is part of a larger section or group. To do this, you can use a heading with a caption.</P>
 <ExampleContainer>
-    <ExampleHeading>Headings with captions inside the <code>h1</code></ExampleHeading>
+    <ExampleHeading level={3}>Headings with captions inside the <code>h1</code></ExampleHeading>
     <Example  code={basics__typography[3]} iframeProps={{
         id:"iframe_basicstypography3",
         className: "example__iframe",
@@ -89,7 +89,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 </Ul>
 <P>You can use these text sizes to indicate the relative importance of the content on the page.</P>
 <ExampleContainer>
-    <ExampleHeading>Large size for lead paragraph</ExampleHeading>
+    <ExampleHeading level={3}>Large size for lead paragraph</ExampleHeading>
     <Example  code={basics__typography[4]} iframeProps={{
         id:"iframe_basicstypography4",
         className: "example__iframe",
@@ -103,7 +103,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <P>Remember that the summary, along with the title, is usually what users see in search results. Keep the content short, or put the key information at the start, as Google usually only shows the first 160 characters.</P>
 <P>Only use one lead paragraph per page.</P>
 <ExampleContainer>
-    <ExampleHeading>Medium size for standard body text</ExampleHeading>
+    <ExampleHeading level={3}>Medium size for standard body text</ExampleHeading>
     <Example  code={basics__typography[5]} iframeProps={{
         id:"iframe_basicstypography5",
         className: "example__iframe",
@@ -115,7 +115,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 
 <P>The majority of your body copy should use medium size.</P>
 <ExampleContainer>
-    <ExampleHeading>Small size for small body text</ExampleHeading>
+    <ExampleHeading level={3}>Small size for small body text</ExampleHeading>
     <Example  code={basics__typography[6]} iframeProps={{
         id:"iframe_basicstypography6",
         className: "example__iframe",
@@ -128,7 +128,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <P>Use it sparingly for &#39;small print&#39; content, such as notes and references.</P>
 <h2 id="links">Links</h2>
 <ExampleContainer>
-    <ExampleHeading>Default</ExampleHeading>
+    <ExampleHeading level={3}>Default</ExampleHeading>
     <Example  code={basics__typography[7]} iframeProps={{
         id:"iframe_basicstypography7",
         className: "example__iframe",
@@ -143,7 +143,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <h2 id="lists">Lists</h2>
 <P>Use lists to break up blocks of text into chunks to make them easier to read.</P>
 <ExampleContainer>
-    <ExampleHeading>Bulleted lists</ExampleHeading>
+    <ExampleHeading level={3}>Bulleted lists</ExampleHeading>
     <Example  code={basics__typography[8]} iframeProps={{
         id:"iframe_basicstypography8",
         className: "example__iframe",
@@ -156,7 +156,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Effective, a
 <P>Introduce bulleted lists with a partial ‘stub’ sentence ending in a colon. Start each list item with a lowercase letter, and do not use a full stop at the end. Ensure each list item makes grammatical sense when read after the stub sentence above.</P>
 <P>Use bulleted lists to highlight options and examples in content, especially when a sentence contains more than three clauses.</P>
 <ExampleContainer>
-    <ExampleHeading>Numbered lists</ExampleHeading>
+    <ExampleHeading level={3}>Numbered lists</ExampleHeading>
     <Example  code={basics__typography[9]} iframeProps={{
         id:"iframe_basicstypography9",
         className: "example__iframe",

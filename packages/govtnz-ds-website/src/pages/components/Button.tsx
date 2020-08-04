@@ -70,7 +70,7 @@ as &#39;Save and send&#39;.</P>
 &#39;call to action&#39; reduces its impact, and makes it harder for users to know
 what to do next.</P>
 <ExampleContainer>
-    <ExampleHeading>Primary buttons</ExampleHeading>
+    <ExampleHeading level={3}>Primary buttons</ExampleHeading>
     <Example  code={components__Button[0]} iframeProps={{
         id:"iframe_componentsButton0",
         className: "example__iframe",
@@ -86,7 +86,7 @@ Pages with too many calls to action make it hard for users to know what to do
 next. Before adding a secondary button, try to simplify the page or break the
 content down into several pages.</P>
 <ExampleContainer>
-    <ExampleHeading>Secondary buttons</ExampleHeading>
+    <ExampleHeading level={3}>Secondary buttons</ExampleHeading>
     <Example  code={components__Button[1]} iframeProps={{
         id:"iframe_componentsButton1",
         className: "example__iframe",
@@ -101,7 +101,7 @@ offering &#39;Cancel&#39; or &#39;Save and return later&#39; options. Consider l
 combinations to a maximum of two secondary buttons with a single primary
 button, as more can confuse users.</P>
 <ExampleContainer>
-    <ExampleHeading>Primary and secondary combination</ExampleHeading>
+    <ExampleHeading level={3}>Primary and secondary combination</ExampleHeading>
     <Example  code={components__Button[2]} iframeProps={{
         id:"iframe_componentsButton2",
         className: "example__iframe",
@@ -126,7 +126,7 @@ the serious nature of the action. Not all users will be able to see the colour
 or may not understand what it signifies. Make sure the context and button text
 make clear what will happen if the user selects it.</P>
 <ExampleContainer>
-    <ExampleHeading>Warning buttons</ExampleHeading>
+    <ExampleHeading level={3}>Warning buttons</ExampleHeading>
     <Example  code={components__Button[3]} iframeProps={{
         id:"iframe_componentsButton3",
         className: "example__iframe",
@@ -143,7 +143,7 @@ impede keyboard accessibility.</P>
 <P>Only use disabled buttons if your research shows it makes the user interface
 easier to understand.</P>
 <ExampleContainer>
-    <ExampleHeading>Disabled buttons</ExampleHeading>
+    <ExampleHeading level={3}>Disabled buttons</ExampleHeading>
     <Example  code={components__Button[4]} iframeProps={{
         id:"iframe_componentsButton4",
         className: "example__iframe",
