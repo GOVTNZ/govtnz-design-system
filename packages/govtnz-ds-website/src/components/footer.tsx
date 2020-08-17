@@ -71,14 +71,14 @@ const Footer = () => (
                     className="g-footer__icon-cc"
                     role="presentation"
                     id={CCIcon.id}
-                    title="Creative Commons"
+                    title=""
                   />
                   &nbsp;
                   <Icon
                     className="g-footer__icon-cc"
                     role="presentation"
                     id={CCByIcon.id}
-                    title="Creative Commons"
+                    title=""
                   />
                 </a>
                 <br />

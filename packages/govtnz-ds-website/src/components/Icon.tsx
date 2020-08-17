@@ -15,12 +15,13 @@ const Icon = ({ className, role, focusable, id, title }: Props) => {
       .toString()
       .replace(/[^0-9]/gi, '')}`
   );
+
   return (
     <svg
       className={className}
       role={role}
       focusable={focusable}
-      aria-labelledby={title && titleId}
+      aria-labelledby={title ? titleId : undefined}
     >
       {title && <title id={titleId}>{title}</title>}
       <use xlinkHref={`#${id}`} />
