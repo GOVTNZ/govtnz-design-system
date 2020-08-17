@@ -44,13 +44,11 @@ const Footer = () => (
               href="https://www.govt.nz/"
               className="g-footer__standard-link--plain"
             >
-              <span className="g-footer-visually-hidden">
-                New Zealand Government
-              </span>
               <Icon
                 className="g-footer__icon-govt-logo"
-                role="presentation"
+                role="img"
                 id={LogoIcon.id}
+                title="New Zealand Government"
               />
             </a>
             <div className="g-footer__standard-licence">
@@ -73,12 +71,14 @@ const Footer = () => (
                     className="g-footer__icon-cc"
                     role="presentation"
                     id={CCIcon.id}
+                    title="Creative Commons"
                   />
                   &nbsp;
                   <Icon
                     className="g-footer__icon-cc"
                     role="presentation"
                     id={CCByIcon.id}
+                    title="Creative Commons"
                   />
                 </a>
                 <br />
@@ -89,13 +89,11 @@ const Footer = () => (
           </Column>
           <Column xs="12" sm="4" md="2" lg="3">
             <div className="g-footer__standard-copyright">
-              <span className="g-footer-visually-hidden">
-                New Zealand Coat of Arms
-              </span>
               <Icon
                 className="g-footer__icon-coat-of-arms"
                 role="presentation"
                 id={CoatIcon.id}
+                title="New Zealand Coat of Arms"
               />
               <p className="g-footer__standard-small-text">
                 © Crown Copyright <span>{new Date().getFullYear()}</span>

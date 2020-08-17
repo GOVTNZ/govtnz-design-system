@@ -39,6 +39,10 @@ A `Development install` is only necessary for contributing components or bug-fix
 1. Install [`NVM`](https://github.com/creationix/nvm#installation).
 2. `nvm install`
 3. `yarn` (installs)
-4. `yarn build:all` (this may take a while)
+4. `yarn build` (this may take a while)
 
 Then, under `packages` add components to `govtnz-ds/src/templates-sources`.
+
+### Testing
+
+1. `yarn test`
