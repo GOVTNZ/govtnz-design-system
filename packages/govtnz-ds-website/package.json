@@ -17,6 +17,7 @@
     "@types/react-dom": "^16.9.8",
     "acorn": "^7.3.1",
     "acorn-jsx": "^5.2.0",
+    "axe-puppeteer": "^1.1.0",
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "babel-preset-gatsby": "^0.4.9",
@@ -45,6 +46,7 @@
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
+    "pretty3": "^0.4.2",
     "prismjs-mt": "1.16.0",
     "query-string": "^6.13.1",
     "raf": "^3.4.1",
@@ -56,9 +58,6 @@
     "rmfr": "^2.0.0",
     "typescript": "^3.9.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build:release": "yarn workspace @govtnz/ds run build:release",
@@ -72,17 +71,13 @@
     "serve": "gatsby serve",
     "watch-prebuild": "nodemon ./prebuild/prebuild.js",
     "format": "prettier --write \"src/**/*.js\"",
-    "validate-build": "yarn jest -- --runInBand",
+    "ci:validate-build": "yarn jest -- --runInBand",
+    "validate-build": "yarn ci:validate-build && yarn axe-test",
+    "axe-test": "node postbuild/axe.js",
+    "test": "yarn validate-build",
     "test:typescript": "exit 0",
     "node-modules-clear": "rimraf ./node_modules",
     "cache-clear": "rimraf ./public/ && rimraf ./.cache && rimraf .tmp && rimraf static/basics && rimraf static/components && rimraf static/css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "nodemonConfig": {
     "ext": "tsx ts html css",

@@ -2559,7 +2559,7 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@^4.0.0, ansi-styles@^4.1.0:
+ansi-styles@^4.0.0, ansi-styles@^4.1.0, ansi-styles@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.2.1.tgz#90ae75c424d008d2624c5bf29ead3177ebfcf359"
   integrity sha512-9VGjrMsG1vePxcSweQsN20KY/c4zN0h9fLjqAbwbPfahM3t+NL+M9HC8xeXG2I8pX5NoamTGNuomEUFI7fcUjA==
@@ -2930,10 +2930,17 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.10.0.tgz#a17b3a8ea811060e74d47d306122400ad4497ae2"
   integrity sha512-3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==
 
-axe-core@^3.5.4:
+axe-core@^3.5.3, axe-core@^3.5.4:
   version "3.5.5"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
   integrity sha512-5P0QZ6J5xGikH780pghEdbEKijCTrruK9KxtPZCFWUpef0f6GipO+xEZ5GKCb020mmqgbiNO6TcA55CriL784Q==
+
+axe-puppeteer@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/axe-puppeteer/-/axe-puppeteer-1.1.0.tgz#efcf0666a7d8fefec6930b4b6ec3476c403d1b91"
+  integrity sha512-VS17Y1rDQe6A0PdeTPxwOSBfmOdj6efgxyre9cN1du1snnVilczSDtQsgifBKBlzoL/3DKfGpgIi+N+zrzODOg==
+  dependencies:
+    axe-core "^3.5.3"
 
 axios@^0.19.2:
   version "0.19.2"
@@ -13437,6 +13444,13 @@ pretty-hrtime@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
+
+pretty3@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/pretty3/-/pretty3-0.4.2.tgz#5306fe0d3f2f134ee766fca4ce9a75fc487d40db"
+  integrity sha512-T/BJX0w65Z5uKj1vV7ltuc8x2ttOVpGqYa7ogByYvgCSgzFOU2oUAMyI/ph9gB6yWlt+3XTTr3j1hfRKFxiLpw==
+  dependencies:
+    ansi-styles "^4.2.1"
 
 private@^0.1.8:
   version "0.1.8"
