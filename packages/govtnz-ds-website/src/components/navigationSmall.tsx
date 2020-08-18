@@ -111,7 +111,6 @@ class NavigationSmall extends React.Component<Props, State> {
                 <NavigationItem to="/prototypes/" label="Prototypes" />
                 <NavigationItem to="/community/" label="Community" />
                 <NavigationItem to="/about/" label="About" />
-                <NavigationItem to="/copyright/" label="Copyright" />
               </ul>
             </div>
           </div>
