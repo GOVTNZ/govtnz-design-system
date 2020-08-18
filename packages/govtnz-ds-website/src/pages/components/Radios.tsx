@@ -121,7 +121,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Radio button
         id:"iframe_componentsRadios5",
         className: "example__iframe",
         src:"/components/Radios__example5.html",
-        title:"Example: Radio buttons",
+        title:"Example: Large radio buttons",
         height: 258
       }}></Example>
 </ExampleContainer>

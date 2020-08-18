@@ -74,9 +74,9 @@ To enable this functionality, set the `autocomplete` attribute on the fields to 
             yearId="bday-year"
             label={<H1 styleSize="large" marginBottom0>What is your date of birth?</H1>}
             hint="For example, 31 3 1980"
-            autoComplete="birthday-day"
-            autoComplete2="birthday-month"
-            autoComplete3="birthday-year"
+            autoComplete="bday-day"
+            autoComplete2="bday-month"
+            autoComplete3="bday-year"
         />
     </Example>
 </ExampleContainer>

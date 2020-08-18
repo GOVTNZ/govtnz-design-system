@@ -13,7 +13,7 @@ const ExampleSection = ({ children }) => (
 );
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
-var PageContent = (props) => (<Example title="Example title: Warning alert: Static" {...onChangeGenerator({})}>
+var PageContent = (props) => (<Example title="Example title: Info alert: Static" {...onChangeGenerator({})}>
         <WrappedAlert Component={Alert} level="info" headingId="heading1" {...onChangeGenerator({})}>
             <H2 id="heading1" {...onChangeGenerator({})}>Note: Nominations are currently closed</H2>
             <P marginBottom0 {...onChangeGenerator({})}>You can nominate a new provider at the start of the next financial year.</P>

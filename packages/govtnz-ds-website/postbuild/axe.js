@@ -30,8 +30,6 @@ JSON.parse(siteMapJsonString).forEach((pathname) => {
   routesToTest.push(pathname);
 });
 
-console.log(routesToTest);
-
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();

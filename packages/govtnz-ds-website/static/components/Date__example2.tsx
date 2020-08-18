@@ -14,7 +14,7 @@ const ExampleSection = ({ children }) => (
 const Example = ({ children }) => <Fragment>{children}</Fragment>;
 
 var PageContent = (props) => (<Example codeOnly {...onChangeGenerator({})}>
-        <DateInput id="bday" hintId="bday-hint" dayId="bday-day" monthId="bday-month" yearId="bday-year" label={<H1 styleSize="large" marginBottom0>What is your date of birth?</H1>} hint="For example, 31 3 1980" autoComplete="birthday-day" autoComplete2="birthday-month" autoComplete3="birthday-year" {...onChangeGenerator({})}></DateInput>
+        <DateInput id="bday" hintId="bday-hint" dayId="bday-day" monthId="bday-month" yearId="bday-year" label={<H1 styleSize="large" marginBottom0>What is your date of birth?</H1>} hint="For example, 31 3 1980" autoComplete="bday-day" autoComplete2="bday-month" autoComplete3="bday-year" {...onChangeGenerator({})}></DateInput>
     </Example>);
 
 type MainNavMobileMenuContextProps = {

@@ -114,7 +114,7 @@ For example if you are asking users a single question on a page, larger buttons 
 
 <ExampleContainer>
     <ExampleHeading>Large radio buttons</ExampleHeading>
-    <Example title="Example: Radio buttons">
+    <Example title="Example: Large radio buttons">
         <FieldsetBlock legend={<H1 styleSize="large" id="nameChangeId1">Have you changed your name?</H1>} hint={<p>This includes changing your last name or spelling your name differently.</p>} hintId="hintId1">
             <Radios inline big>
                 <RadioBlock label="Yes" id="anyRadioId" 

@@ -16,23 +16,25 @@
     <link rel="stylesheet" href="../css/DateInput.css"><link rel="stylesheet" href="../css/H1.css">
   </head>
   <body>
-    <noscript>
-      This example originates from the
-      <a href="./Date"
-        >Date input components page</a
-      >
-      of the
-      <a href="/">New Zealand Government design system</a>.
-    </noscript>
-    <div id="iframed-message" style="display: none;">
-      This example originates from the
-      <a href="./Date"
-        >Date input components page</a
-      >
-      of the
-      <a href="/">New Zealand Government design system</a>.
+    <div role="banner">
+      <noscript>
+        This example originates from the
+        <a href="./Date"
+          >Date input components page</a
+        >
+        of the
+        <a href="/">New Zealand Government design system</a>.
+      </noscript>
+      <div id="iframed-message" style="display: none;">
+        This example originates from the
+        <a href="./Date"
+          >Date input components page</a
+        >
+        of the
+        <a href="/">New Zealand Government design system</a>.
+      </div>
     </div>
-    <div id="root" class="css-changes-for-example-only ">
+    <div id="root" role="main" class="css-changes-for-example-only ">
       <div class="g-dateInput-form-group g-dateInput-form-group--error"><fieldset aria-describedby="passport-issued-hint passport-issued-error" class="g-dateInput-fieldset" role="group"><legend class="g-dateInput-fieldset__legend"><h1 class="g-heading g-heading-l g-heading-mb-0">When was your passport issued?</h1></legend><span class="g-dateInput-hint" id="passport-issued-hint">For example, 12 11 2007</span><span class="g-dateInput-error-message" id="passport-issued-error"><span class="g-dateInput-visually-hidden">Error: </span>The date your passport was issued must be in the past</span><div class="g-dateInput" id="passport-issued"><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="passport-issued-day">Day</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2 g-dateInput-input--error" id="passport-issued-day" maxLength="2" pattern="[0-9]*" value="6"/></div></div><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="passport-issued-month">Month</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-2 g-dateInput-input--error" id="passport-issued-month" maxLength="2" pattern="[0-9]*" value="3"/></div></div><div class="g-dateInput__item"><div class="g-dateInput-form-group"><label class="g-dateInput-label g-dateInput__label" for="passport-issued-year">Year</label><input type="text" class="g-dateInput-input g-dateInput__input g-dateInput-input--width-4 g-dateInput-input--error" id="passport-issued-year" maxLength="4" pattern="[0-9]*" value="2076"/></div></div></div></fieldset></div>
     </div>
     <script>

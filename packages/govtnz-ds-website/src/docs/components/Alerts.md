@@ -57,7 +57,7 @@ Use information alerts to inform users of important information or changes on a 
 
 <ExampleContainer>
     <ExampleHeading>Information alert: Static</ExampleHeading>
-    <Example title="Example title: Warning alert: Static">
+    <Example title="Example title: Info alert: Static">
         <Alert level="info" headingId="heading1">
             <H2 id="heading1">Note: Nominations are currently closed</H2>
             <P marginBottom0>You can nominate a new provider at the start of the next financial year.</P>
