@@ -34,6 +34,11 @@ const Footer = () => (
                     Privacy
                   </Link>
                 </li>
+                <li className="g-footer__standard-inline-list-item">
+                  <Link to="/copyright" className="g-footer__standard-link">
+                    Copyright
+                  </Link>
+                </li>
               </ul>
             </div>
           </Column>

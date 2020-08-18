@@ -33,19 +33,19 @@ const IndexPage = (props) => (
             Copyright and attribution
           </H1>
           <P styleSize="large">
-            Nearly all Digital.govt.nz content is licensed under Creative
-            Commons.
+            Nearly all Design-System-Alpha.digital.govt.nz content is licensed
+            under Creative Commons.
           </P>
           <P>
             This means you must make it clear that any content you use comes
-            from the Digital.govt.nz website and is owned by the Crown. Unless
-            noted as an exception, or on specific items or collections of
-            content:
+            from the Design-System-Alpha.digital.govt.nz website and is owned by
+            the Crown. Unless noted as an exception, or on specific items or
+            collections of content:
           </P>
           <Ul>
             <Li>
-              any copyright in content on Digital.govt.nz is owned by the New
-              Zealand Crown
+              any copyright in content on Design-System-Alpha.digital.govt.nz is
+              owned by the New Zealand Crown
             </Li>
             <Li>
               the Department of Internal Affairs (on behalf of the Crown)
@@ -56,7 +56,7 @@ const IndexPage = (props) => (
           </Ul>
           <P>
             Under the terms of the licence, you must attribute the content to
-            the Crown and the Digital.govt.nz website.
+            the Crown and the Design-System-Alpha.digital.govt.nz website.
           </P>
           <P>
             <A href="https://creativecommons.org/licenses/by/4.0/">
@@ -67,16 +67,16 @@ const IndexPage = (props) => (
           <H3 styleSize="medium">Government logos</H3>
           <P>
             The New Zealand Government logo, Coat of Arms and other logos,
-            emblems and trade marks on Digital.govt.nz are protected by law. You
-            must not copy or use any logo, emblem or trade mark without express
-            permission and compliance with applicable laws.
+            emblems and trade marks on Design-System-Alpha.digital.govt.nz are
+            protected by law. You must not copy or use any logo, emblem or trade
+            mark without express permission and compliance with applicable laws.
           </P>
           <H3 styleSize="medium">Photographs and images</H3>
           <P>
-            Copyright in photographs on Digital.govt.nz is not owned or licensed
-            to you by the Crown. Unless otherwise stated in relation to specific
-            photographs, you cannot copy, distribute or adapt any photograph
-            without the agreement of the copyright owner.
+            Copyright in photographs on Design-System-Alpha.digital.govt.nz is
+            not owned or licensed to you by the Crown. Unless otherwise stated
+            in relation to specific photographs, you cannot copy, distribute or
+            adapt any photograph without the agreement of the copyright owner.
           </P>
           <GetInTouch title="this" />
         </Column>
