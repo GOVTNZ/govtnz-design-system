@@ -16,6 +16,8 @@ const {
   pathExists,
 } = require('./utils');
 
+const htmlExamplePaths = [];
+
 const writeExamplePage = async (
   exampleRelativePagePath,
   exampleData,
@@ -377,6 +379,22 @@ const writeExamplePage = async (
     '..',
     'static',
     htmlRelativePath
+  );
+
+  htmlExamplePaths.push(
+    htmlFullPath.substring(path.resolve(__dirname, '..', 'static').length)
+  );
+  const sitemapExamples = path.resolve(
+    __dirname,
+    '..',
+    'static',
+    'sitemap-examples.json'
+  );
+
+  await fs.promises.writeFile(
+    sitemapExamples,
+    JSON.stringify(htmlExamplePaths, null, 2),
+    { encoding: 'utf-8' }
   );
 
   await fs.promises.writeFile(htmlFullPath, html, { encoding: 'utf-8' });

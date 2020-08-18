@@ -1,14 +1,36 @@
 const { AxePuppeteer } = require('axe-puppeteer');
 const puppeteer = require('puppeteer');
 const { Pretty } = require('pretty3');
+const fs = require('fs');
+const path = require('path');
+const parseString = require('xml2js').parseString;
 
-const routesToTest = [
-  '/',
-  '/basics/',
-  '/components/',
-  '/components/FlexGrid/',
-  '/prototypes/',
-];
+const siteMapXmlString = fs.readFileSync(
+  path.resolve(__dirname, '..', 'public', 'sitemap.xml'),
+  { encoding: 'utf-8' }
+);
+
+const routesToTest = [];
+
+parseString(siteMapXmlString, (err, result) => {
+  result.urlset.url
+    .map((item) => item.loc)
+    .map((url) => new URL(url).pathname)
+    .forEach((pathname) => {
+      routesToTest.push(pathname);
+    });
+});
+
+const siteMapJsonString = fs.readFileSync(
+  path.resolve(__dirname, '..', 'public', 'sitemap-examples.json'),
+  { encoding: 'utf-8' }
+);
+
+JSON.parse(siteMapJsonString).forEach((pathname) => {
+  routesToTest.push(pathname);
+});
+
+console.log(routesToTest);
 
 (async () => {
   const browser = await puppeteer.launch();

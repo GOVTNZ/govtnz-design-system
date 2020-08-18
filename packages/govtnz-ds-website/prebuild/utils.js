@@ -112,8 +112,13 @@ const insertTemplate = (template, replacer, importsString = '') => {
   return filledTemplate;
 };
 
+let staticFiles = [];
+
 const writeFile = async (filePath, content) => {
   try {
+    if (filePath.includes('static')) {
+      console.log('STATIC', filePath);
+    }
     await fs.promises.writeFile(filePath, content, { encoding: 'utf-8' });
   } catch (e) {
     console.error(`Unable to write: ${filePath}. Reason: ${e}`);
