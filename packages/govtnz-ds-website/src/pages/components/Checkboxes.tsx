@@ -52,7 +52,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
         className: "example__iframe",
         src:"/components/Checkboxes__example1.html",
         title:"Example: Error state (Checkboxes)",
-        height: 400
+        height: 284
       }}></Example>
 </ExampleContainer>
 
@@ -63,7 +63,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Checkboxes e
         className: "example__iframe",
         src:"/components/Checkboxes__example2.html",
         title:"Example: Checkboxes with hints",
-        height: 444
+        height: 320
       }}></Example>
 </ExampleContainer>
 

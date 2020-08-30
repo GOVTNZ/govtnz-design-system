@@ -69,7 +69,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">Use our flex
         className: "example__iframe",
         src:"/components/FlexGrid__example1.html",
         title:"Example: Flexgrid column variants (Flexbox grid)",
-        height: 388
+        height: 696
       }}></Example>
 </ExampleContainer>
 

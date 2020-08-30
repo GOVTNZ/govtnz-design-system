@@ -50,7 +50,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example1.html",
         title:"Example: Error state #1 (Date input)",
-        height: 310
+        height: 318
       }}></Example>
 </ExampleContainer>
 
@@ -72,7 +72,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example2.html",
         title:"Code (Date example)",
-        height: 270
+        height: 278
       }}></Example>
 </ExampleContainer>
 
@@ -85,7 +85,7 @@ const PageContent = (props) => <React.Fragment><P styleSize="large">
         className: "example__iframe",
         src:"/components/Date__example3.html",
         title:"Example: Error state #2 (Date input)",
-        height: 310
+        height: 318
       }}></Example>
 </ExampleContainer>
 

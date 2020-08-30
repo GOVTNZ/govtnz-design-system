@@ -92,7 +92,7 @@ content down into several pages.</P>
         className: "example__iframe",
         src:"/components/Button__example1.html",
         title:"Example: Secondary buttons",
-        height: 167
+        height: 101
       }}></Example>
 </ExampleContainer>
 
@@ -107,7 +107,7 @@ button, as more can confuse users.</P>
         className: "example__iframe",
         src:"/components/Button__example2.html",
         title:"Example: Primary and secondary combination (Button)",
-        height: 167
+        height: 101
       }}></Example>
 </ExampleContainer>
 
@@ -132,7 +132,7 @@ make clear what will happen if the user selects it.</P>
         className: "example__iframe",
         src:"/components/Button__example3.html",
         title:"Example: Warning buttons",
-        height: 167
+        height: 101
       }}></Example>
 </ExampleContainer>
 
@@ -149,7 +149,7 @@ easier to understand.</P>
         className: "example__iframe",
         src:"/components/Button__example4.html",
         title:"Example: Disabled buttons",
-        height: 167
+        height: 101
       }}></Example>
 </ExampleContainer>
 
