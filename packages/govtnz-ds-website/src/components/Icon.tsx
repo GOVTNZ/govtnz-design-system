@@ -22,7 +22,7 @@ const Icon = ({ className, role, ariaHidden, focusable, id, title }: Props) => {
       className={className}
       role={role}
       focusable={focusable}
-      ariaHidden={ariaHidden}
+      aria-hidden={ariaHidden}
       aria-labelledby={title ? titleId : undefined}
     >
       {title && <title id={titleId}>{title}</title>}
