@@ -303,7 +303,7 @@ export default class Example extends Component<Props, State> {
           return (
             <noscript key={codeType}>
               <h3>{CodeToName[codeType] || codeType}</h3>
-              <pre>
+              <pre tabIndex={0}>
                 <code>{allCode[codeType]}</code>
               </pre>
             </noscript>
