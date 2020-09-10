@@ -7,9 +7,10 @@ type Props = {
   focusable: 'true' | 'false';
   id: string;
   title?: string;
+  ariaHidden?: boolean;
 };
 
-const Icon = ({ className, role, focusable, id, title }: Props) => {
+const Icon = ({ className, role, focusable, id, title, ariaHidden }: Props) => {
   const [titleId] = useState(
     `logo-${Math.random()
       .toString()
@@ -22,6 +23,7 @@ const Icon = ({ className, role, focusable, id, title }: Props) => {
       role={role}
       focusable={focusable}
       aria-labelledby={title ? titleId : undefined}
+      aria-hidden={ariaHidden}
     >
       {title && <title id={titleId}>{title}</title>}
       <use xlinkHref={`#${id}`} />

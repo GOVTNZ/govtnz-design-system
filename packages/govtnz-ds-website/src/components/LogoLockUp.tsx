@@ -31,7 +31,12 @@ const LogoLockUp = ({ tabIndex, ariaHidden }: Props) => {
         </svg>
       </div>
       <div className="header__logo header__logo--hide@medium header__logo--hide-print">
-        <Icon className="header__icon" role="img" id={iconNZGShortLogo.id} />
+        <Icon
+          className="header__icon"
+          ariaHidden
+          role="img"
+          id={iconNZGShortLogo.id}
+        />
       </div>
       <div className="header__title">Design System</div>
     </a>
