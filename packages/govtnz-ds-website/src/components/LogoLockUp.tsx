@@ -33,7 +33,7 @@ const LogoLockUp = ({ tabIndex, ariaHidden }: Props) => {
       <div className="header__logo header__logo--hide@medium header__logo--hide-print">
         <Icon
           className="header__icon"
-          ariaHidden={true}
+          ariaHidden
           role="img"
           id={iconNZGShortLogo.id}
         />

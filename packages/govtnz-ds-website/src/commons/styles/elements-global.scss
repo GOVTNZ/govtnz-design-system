@@ -111,9 +111,9 @@ body {
 
   // 'external-links-print-wrapper' won't load without JS,
   // so non-JS users can see links inline in print view instead:
-  body:not(.js) {
-    a[href^='http']::after {
-      content: ' (' attr(href) ')';
-    }
-  }
+  // body:not(.js) {
+  //   a[href^='http']::after {
+  //     content: ' (' attr(href) ')';
+  //   }
+  // }
 }
