@@ -26,6 +26,10 @@ const Layout = (props: Props) => {
       document.documentElement.classList.add('theme-default', 'js');
     }
 
+    if (typeof window !== 'undefined') {
+      document.documentElement.classList.add('no-after-link-js', 'js');
+    }
+
     window.onbeforeprint = () => {
       generatePrintLinksList();
     };
