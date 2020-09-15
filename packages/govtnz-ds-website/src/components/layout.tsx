@@ -24,6 +24,10 @@ const Layout = (props: Props) => {
   useEffect(() => {
     if (document.body.classList) {
       document.documentElement.classList.add('theme-default', 'js');
+
+      if (typeof window !== 'undefined') {
+        document.documentElement.classList.add('no-after-link-js');
+      }
     }
 
     window.onbeforeprint = () => {

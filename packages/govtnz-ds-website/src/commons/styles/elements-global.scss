@@ -109,6 +109,13 @@ body {
     display: inline;
   }
 
+  // so JS users can't see the after links
+  .no-after-link-js {
+    a[href^='http']::after {
+      display: none;
+    }
+  }
+
   // 'external-links-print-wrapper' won't load without JS,
   // so non-JS users can see links inline in print view instead:
   body:not(.js) {
