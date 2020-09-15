@@ -111,10 +111,8 @@ body {
 
   // so JS users can't see the after links
   .no-after-link-js {
-    body {
-      a[href^='http']::after {
-        display: none;
-      }
+    a[href^='http']::after {
+      display: none;
     }
   }
 

@@ -27,7 +27,7 @@ const Layout = (props: Props) => {
     }
 
     if (typeof window !== 'undefined') {
-      document.documentElement.classList.add('no-after-link-js', 'js');
+      document.documentElement.classList.add('no-after-link-js');
     }
 
     window.onbeforeprint = () => {
