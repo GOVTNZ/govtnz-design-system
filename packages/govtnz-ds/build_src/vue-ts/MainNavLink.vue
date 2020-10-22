@@ -37,7 +37,6 @@ export default Vue.extend({
   display: block;
   margin-right: 0em;
   margin-left: -0.9em;
-  font-family: sans-serif;
   font-size: 18px;
   color: g-theme-inverted-color;
   letter-spacing: 0;
